@@ -1,0 +1,27 @@
+experiment: ROBLOX-CLASSIFIER-PILOT-001
+seed: 20261102
+purpose: QUICK_CROSS_SECTIONAL_CLASSIFIER_NOT_FUTURE_REVENUE
+collection:
+  target_games: 1200
+  max_creators: 120
+  max_requests: 180
+  max_seconds: 600
+  interval_seconds: 1
+  max_pages_per_creator: 5
+  page_size: 50
+labels:
+  min_age_days: 90
+  min_description_chars: 60
+  high_activity_min_ccu: 1000
+  low_traction_max_ccu: 10
+  low_traction_max_visits: 100000
+  low_traction_max_visits_per_day_proxy: 100
+  dormant_min_visits: 1000000
+split:
+  folds: 5
+  validation_fold: 1
+  test_fold: 0
+  near_duplicate_cosine: 0.92
+model:
+  tfidf_max_features: 20000
+  logistic_C: 1.0

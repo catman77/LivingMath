@@ -1,0 +1,44 @@
+background_enrichment:
+  max_requests: 160
+  pages_per_query: 6
+  queries:
+  - obby
+  - tycoon
+  - simulator
+  - puzzle
+  - racing
+  - tower defense
+  - horror
+  - adventure
+  seed_frame: GENRE_SEARCH_BACKGROUND_NOT_FAILURE_KEYWORDS
+collection:
+  interval_seconds: 1
+  max_creators: 120
+  max_pages_per_creator: 5
+  max_requests: 180
+  max_seconds: 600
+  page_size: 50
+  target_games: 1200
+experiment: ROBLOX-CURRENT-AUDIENCE-CLASSIFIER-002
+labels:
+  dormant_min_visits: 1000000
+  high_activity_min_ccu: 1000
+  low_traction_max_ccu: 10
+  low_traction_max_visits: 100000
+  low_traction_max_visits_per_day_proxy: 100
+  min_age_days: 90
+  min_description_chars: 60
+  target_mode: CURRENT_AUDIENCE
+  low_activity_max_ccu: 100
+model:
+  logistic_C: 1.0
+  tfidf_max_features: 20000
+purpose: EXPLORATORY_HIGH_VS_LOW_CURRENT_AUDIENCE_NOT_LAUNCH_FAILURE
+seed: 20261102
+split:
+  folds: 5
+  near_duplicate_cosine: 0.92
+  test_fold: 0
+  validation_fold: 1
+previous_exploration: Strict lifetime-traction v1 retained in sibling prepared/; only
+  15 described negatives and 3 negative test cases, too few for reliable comparison

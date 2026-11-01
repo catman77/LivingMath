@@ -1,0 +1,403 @@
+{
+  "dataset": {
+    "status": "CLASSIFIER_DATASET_PREPARED",
+    "all_games": 946,
+    "classifier_games": 501,
+    "activity_classes": {
+      "HIGH_ACTIVITY": 250,
+      "INTERMEDIATE": 219,
+      "LOW_ACTIVITY_LOW_REACH": 64,
+      "LOW_ACTIVITY_PAST_REACH": 236,
+      "YOUNG_OR_UNKNOWN_RELEASE": 177
+    },
+    "labels": {
+      "1": 249,
+      "0": 252
+    },
+    "splits": {
+      "train": {
+        "1": 149,
+        "0": 151
+      },
+      "validation": {
+        "1": 50,
+        "0": 50
+      },
+      "test": {
+        "1": 50,
+        "0": 51
+      }
+    },
+    "creators": 409,
+    "split_components": 408,
+    "missing_or_short_description": 60,
+    "unavailable_games": 5,
+    "requests": null,
+    "source_errors": [
+      {
+        "stop_reason": "timed out"
+      },
+      {
+        "stop_reason": "SOURCE_UNIVERSE_RESPONSE_BINDING"
+      },
+      {
+        "phase": "metadata",
+        "zero_id_placeholders": 1,
+        "requested_ids": [
+          8965805202
+        ]
+      },
+      {
+        "phase": "catalog",
+        "creator": "Group:33026353",
+        "error": "timed out"
+      },
+      {
+        "phase": "catalog",
+        "creator": "Group:33645148",
+        "error": "timed out"
+      },
+      {
+        "phase": "metadata",
+        "zero_id_placeholders": 1,
+        "requested_ids": [
+          9381503487,
+          10021175790,
+          10081194651,
+          10767789514,
+          10767811328,
+          10770186190
+        ]
+      },
+      {
+        "phase": "metadata",
+        "universe_ids": [
+          9079674072
+        ],
+        "error": "timed out"
+      },
+      {
+        "phase": "metadata",
+        "zero_id_placeholders": 1,
+        "requested_ids": [
+          10765368832
+        ]
+      },
+      {
+        "phase": "metadata",
+        "zero_id_placeholders": 1,
+        "requested_ids": [
+          3355302804,
+          6847420341,
+          8193850773,
+          9841623993
+        ]
+      },
+      {
+        "phase": "metadata",
+        "zero_id_placeholders": 1,
+        "requested_ids": [
+          1428468823
+        ]
+      },
+      {
+        "stop_reason": "RATE_LIMIT_STOP_RETRY_AFTER:UNKNOWN"
+      },
+      {
+        "phase": "genre_metadata",
+        "stop_reason": "HTTP_429; no further network; recovered successful raw captures offline"
+      }
+    ],
+    "truncated_portfolios": 0,
+    "directory": "/home/catman/CatmanCode/LivingMath/roblox-pred-001/data/classifier/20261101T222627421900Z/combined/current-audience/prepared",
+    "model_inputs_exclude_targets": true,
+    "target": "HIGH_ACTIVITY vs LOW_CURRENT_AUDIENCE; historical-reach subtypes retained",
+    "generalization_scope": "Charts, public creator portfolios and genre-search background; cross-sectional, not marketwide launch prediction",
+    "suti_livingmath_comparison": "READY_FOR_BLIND_PREDICTIONS_NOT_EXECUTED"
+  },
+  "baseline": {
+    "status": "BASELINE_MEASURED_ON_ACTIVITY_PROXY_LABELS",
+    "metrics": {
+      "validation": {
+        "M0_base_rate": {
+          "n": 100,
+          "positive": 50,
+          "top_k": 10,
+          "top_fraction": 0.1,
+          "test_prevalence": 0.5,
+          "precision_at_fraction": 0.5,
+          "lift_at_fraction": 1.0,
+          "pr_auc": 0.5,
+          "roc_auc": 0.5,
+          "log_loss": 0.6931694032760092,
+          "brier": 0.25001111111111113,
+          "selected_sample_ids": [
+            "case-00001",
+            "case-00006",
+            "case-00029",
+            "case-00044",
+            "case-00045",
+            "case-00055",
+            "case-00062",
+            "case-00091",
+            "case-00101",
+            "case-00107"
+          ],
+          "calibration_status": "NOT_VALIDATED",
+          "confidence_intervals": null,
+          "balanced_accuracy": 0.5,
+          "f1": 0.0,
+          "confusion_matrix": [
+            [
+              50,
+              0
+            ],
+            [
+              50,
+              0
+            ]
+          ]
+        },
+        "M0_metadata": {
+          "n": 100,
+          "positive": 50,
+          "top_k": 10,
+          "top_fraction": 0.1,
+          "test_prevalence": 0.5,
+          "precision_at_fraction": 0.9,
+          "lift_at_fraction": 1.8,
+          "pr_auc": 0.7310079285870388,
+          "roc_auc": 0.7111999999999999,
+          "log_loss": 0.6170709916761432,
+          "brier": 0.21493461607696887,
+          "selected_sample_ids": [
+            "case-00268",
+            "case-00373",
+            "case-00275",
+            "case-00640",
+            "case-00890",
+            "case-00218",
+            "case-00700",
+            "case-00579",
+            "case-00526",
+            "case-00905"
+          ],
+          "calibration_status": "NOT_VALIDATED",
+          "confidence_intervals": null,
+          "balanced_accuracy": 0.6799999999999999,
+          "f1": 0.673469387755102,
+          "confusion_matrix": [
+            [
+              35,
+              15
+            ],
+            [
+              17,
+              33
+            ]
+          ]
+        },
+        "M2_text_metadata": {
+          "n": 100,
+          "positive": 50,
+          "top_k": 10,
+          "top_fraction": 0.1,
+          "test_prevalence": 0.5,
+          "precision_at_fraction": 0.9,
+          "lift_at_fraction": 1.8,
+          "pr_auc": 0.786841402476534,
+          "roc_auc": 0.7712,
+          "log_loss": 0.5819510454519774,
+          "brier": 0.19892838930843537,
+          "selected_sample_ids": [
+            "case-00373",
+            "case-00268",
+            "case-00640",
+            "case-00218",
+            "case-00700",
+            "case-00356",
+            "case-00905",
+            "case-00275",
+            "case-00890",
+            "case-00526"
+          ],
+          "calibration_status": "NOT_VALIDATED",
+          "confidence_intervals": null,
+          "balanced_accuracy": 0.67,
+          "f1": 0.6732673267326733,
+          "confusion_matrix": [
+            [
+              33,
+              17
+            ],
+            [
+              16,
+              34
+            ]
+          ]
+        }
+      },
+      "test": {
+        "M0_base_rate": {
+          "n": 101,
+          "positive": 50,
+          "top_k": 11,
+          "top_fraction": 0.1,
+          "test_prevalence": 0.49504950495049505,
+          "precision_at_fraction": 0.36363636363636365,
+          "lift_at_fraction": 0.7345454545454546,
+          "pr_auc": 0.49504950495049505,
+          "roc_auc": 0.5,
+          "log_loss": 0.6931033956974474,
+          "brier": 0.24997810781078106,
+          "selected_sample_ids": [
+            "case-00012",
+            "case-00037",
+            "case-00040",
+            "case-00056",
+            "case-00057",
+            "case-00064",
+            "case-00083",
+            "case-00098",
+            "case-00106",
+            "case-00109",
+            "case-00133"
+          ],
+          "calibration_status": "NOT_VALIDATED",
+          "confidence_intervals": null,
+          "balanced_accuracy": 0.5,
+          "f1": 0.0,
+          "confusion_matrix": [
+            [
+              51,
+              0
+            ],
+            [
+              50,
+              0
+            ]
+          ]
+        },
+        "M0_metadata": {
+          "n": 101,
+          "positive": 50,
+          "top_k": 11,
+          "top_fraction": 0.1,
+          "test_prevalence": 0.49504950495049505,
+          "precision_at_fraction": 0.7272727272727273,
+          "lift_at_fraction": 1.4690909090909092,
+          "pr_auc": 0.5936379961019779,
+          "roc_auc": 0.5964705882352942,
+          "log_loss": 0.6834259547486045,
+          "brier": 0.24446541380972517,
+          "selected_sample_ids": [
+            "case-00485",
+            "case-00303",
+            "case-00848",
+            "case-00656",
+            "case-00164",
+            "case-00329",
+            "case-00827",
+            "case-00409",
+            "case-00037",
+            "case-00144",
+            "case-00835"
+          ],
+          "calibration_status": "NOT_VALIDATED",
+          "confidence_intervals": null,
+          "balanced_accuracy": 0.583921568627451,
+          "f1": 0.5714285714285714,
+          "confusion_matrix": [
+            [
+              31,
+              20
+            ],
+            [
+              22,
+              28
+            ]
+          ]
+        },
+        "M2_text_metadata": {
+          "n": 101,
+          "positive": 50,
+          "top_k": 11,
+          "top_fraction": 0.1,
+          "test_prevalence": 0.49504950495049505,
+          "precision_at_fraction": 0.8181818181818182,
+          "lift_at_fraction": 1.6527272727272728,
+          "pr_auc": 0.6481174723827975,
+          "roc_auc": 0.6811764705882353,
+          "log_loss": 0.654345698506662,
+          "brier": 0.23010077461226705,
+          "selected_sample_ids": [
+            "case-00485",
+            "case-00303",
+            "case-00300",
+            "case-00329",
+            "case-00827",
+            "case-00164",
+            "case-00144",
+            "case-00282",
+            "case-00409",
+            "case-00037",
+            "case-00848"
+          ],
+          "calibration_status": "NOT_VALIDATED",
+          "confidence_intervals": null,
+          "balanced_accuracy": 0.6135294117647059,
+          "f1": 0.5979381443298969,
+          "confusion_matrix": [
+            [
+              33,
+              18
+            ],
+            [
+              21,
+              29
+            ]
+          ]
+        }
+      }
+    },
+    "scope": "CREATOR_AND_NEAR_DUPLICATE_GROUP_DISJOINT_CROSS_SECTIONAL_WEAK_LABEL_TEST",
+    "suti_livingmath_result": null,
+    "suti_livingmath_status": "BLIND_EVALUATION_PACK_PREPARED_NOT_RUN",
+    "not_a_future_or_financial_success_claim": true
+  },
+  "scope": "QUICK_EXPLORATORY_CURRENT_AUDIENCE_CLASSIFIER_WITH_WEAK_LABELS",
+  "preserved_v1_result": "/home/catman/CatmanCode/LivingMath/roblox-pred-001/data/classifier/20261101T222627421900Z/combined/prepared/baseline-result.json",
+  "strict_low_traction_described_cases": 15,
+  "low_reach_negative_cases": 32,
+  "past_reach_negative_cases": 220,
+  "collection_status": "PARTIAL_STOPPED_AT_HTTP429_SUCCESSFUL_RAW_CAPTURES_RECOVERED_OFFLINE",
+  "unresolved_candidate_ids": 854,
+  "raw_file_timestamp_recovery_games": 500,
+  "checks": {
+    "pytest_passed": 66,
+    "pytest_failed": 0,
+    "group_overlap": false,
+    "common_scorer_matches_baseline": true,
+    "source_files_immutable_hashes_present": true,
+    "strict_low_traction_examples_count": 15,
+    "native_suti_executed": false,
+    "test_input_explicit_target_fields_present": false,
+    "source_sha256_verified": true
+  },
+  "source_manifest_sha256": "87a895104b5c752972b5fa08831c3a95551d88fc8b2eb23d755d4c22425ecdad",
+  "files": {
+    "all_games.csv": "/home/catman/CatmanCode/LivingMath/roblox-pred-001/data/classifier/20261101T222627421900Z/combined/current-audience/prepared/all_games.csv",
+    "classifier_dataset.csv": "/home/catman/CatmanCode/LivingMath/roblox-pred-001/data/classifier/20261101T222627421900Z/combined/current-audience/prepared/classifier_dataset.csv",
+    "train_input.jsonl": "/home/catman/CatmanCode/LivingMath/roblox-pred-001/data/classifier/20261101T222627421900Z/combined/current-audience/prepared/train_input.jsonl",
+    "validation_input.jsonl": "/home/catman/CatmanCode/LivingMath/roblox-pred-001/data/classifier/20261101T222627421900Z/combined/current-audience/prepared/validation_input.jsonl",
+    "test_input.jsonl": "/home/catman/CatmanCode/LivingMath/roblox-pred-001/data/classifier/20261101T222627421900Z/combined/current-audience/prepared/test_input.jsonl",
+    "test_labels.csv": "/home/catman/CatmanCode/LivingMath/roblox-pred-001/data/classifier/20261101T222627421900Z/combined/current-audience/prepared/test_labels.csv",
+    "low_reach_examples.csv": "/home/catman/CatmanCode/LivingMath/roblox-pred-001/data/classifier/20261101T222627421900Z/combined/current-audience/prepared/low_reach_examples.csv",
+    "strict_low_traction_examples.csv": "/home/catman/CatmanCode/LivingMath/roblox-pred-001/data/classifier/20261101T222627421900Z/combined/current-audience/prepared/strict_low_traction_examples.csv",
+    "baseline-result.json": "/home/catman/CatmanCode/LivingMath/roblox-pred-001/data/classifier/20261101T222627421900Z/combined/current-audience/prepared/baseline-result.json",
+    "baseline-models.joblib": "/home/catman/CatmanCode/LivingMath/roblox-pred-001/data/classifier/20261101T222627421900Z/combined/current-audience/prepared/baseline-models.joblib"
+  },
+  "daily_collection_enabled": false,
+  "production_server_modified": false,
+  "LLM_API_calls": 0
+}
