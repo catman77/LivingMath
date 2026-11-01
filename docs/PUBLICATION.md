@@ -61,3 +61,8 @@ fixture ZIP также распакован для проверки. Production 
 
 Научный итог Meaning014 остаётся `FAIL_NO_GAIN_OVER_B_PLUS`, независимо от
 инженерного PASS. Production не развёртывался; видимость GitHub остаётся private.
+
+После push обратное клонирование подтвердило все621 исходных SHA. GitHub
+Actions вернул `startup_failure` до создания jobs, в том числе при явном
+workflow_dispatch. CI не объявлен прошедшим; [факты, границы RCA и действие
+владельца](CI_STATUS.md) сохранены отдельно.

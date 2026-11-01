@@ -47,7 +47,22 @@
       "required_fixture_ZIP_and_nested_archives_inspected": true,
       "forbidden_DB_or_key_entries_in_archives": 0
     },
-    "current_Markdown_links": "PASS after adding this receipt"
+    "current_Markdown_links": "PASS after adding this receipt",
+    "GitHub_Actions": {
+      "status": "NOT_RUN_STARTUP_FAILURE",
+      "checked_at_UTC": "2026-11-01T15:18:46.845970+00:00",
+      "push_run_id": 41319519723,
+      "workflow_dispatch_run_id": 41320090919,
+      "jobs_created": 0,
+      "workflow_active": true,
+      "Actions_enabled": true,
+      "allowed_actions": "all",
+      "actionlint_version": "1.7.12",
+      "actionlint_exit": 0,
+      "exact_root_cause": "NOT_ESTABLISHED; Checks API403; no runner/job logs",
+      "details": "docs/CI_STATUS.md",
+      "tests_not_disabled": true
+    }
   },
   "limitations": {
     "scientific_status": "FAIL_NO_GAIN_OVER_B_PLUS",

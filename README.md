@@ -35,6 +35,7 @@ python -m unified_system.local smoke --instance development
 
 Подробно: [установка, запуск и подключение ChatGPT](docs/INSTALL.md),
 [использование и точные JSON-запросы](docs/USAGE.md), [тестирование](docs/TESTING.md).
+GitHub Actions пока завершается до запуска jobs: [данные и RCA](docs/CI_STATUS.md).
 Для LLM-формализации требуется отдельно включить существующий Codex backend;
 инструкции описывают вход через ChatGPT без API-ключа.
 
