@@ -1,0 +1,23 @@
+{
+  "schema": "bridge-evaluation-preregistration/v0.1",
+  "created_before_execution": true,
+  "model": "NO_LLM_USED",
+  "prompt": "No model prompts executed. Source text is never an instruction.",
+  "model_version": null,
+  "blind_evaluator": "NOT_AVAILABLE",
+  "randomization_seed": 1729,
+  "seed_commitment": "dbbcf656e3a3fcafcb70e70538dd86f37d10fd7de1a5b5963f48c90909f94628",
+  "files": {
+    "eval/settings.json": "4d089351520d9c967be5d62ffb39dd951f38de1e6c81ee4309843692c57f5583",
+    "eval/tasks.json": "3f257d6a5e48a812064ac6cf14a7502dea493b0bda2d68a8c455cd899f93dc0f",
+    "fixtures/boa.json": "d9bda8c4c2757b573ede114f09e602009fac292754de6aaa1c3577ddcec60af5",
+    "fixtures/boa.txt": "78e188cfc915719e9c2ae6d0686f41eaede0f6d5db6a46f58d98b3eb91b7a0d3",
+    "fixtures/poetry.json": "31655716674004e9d3ed9ce6b36e1a8da634db81de509b1056bb2be50b3cac89",
+    "fixtures/poetry.txt": "be2d169ffee5a518aa1ba6214be24622be477eda7959981e4259fe9c8bd36863",
+    "fixtures/pythagoras.json": "c22425cff607ac2f419cc6f943c0fcbd3f0b1828d35b475f51fd268134327dc3",
+    "fixtures/pythagoras.txt": "44b497da4e5deb9f56df5992478d8445e6b1b7bd51201818fb921f593335739a",
+    "fixtures/rights-ledger.json": "4fc3c4dd384b7e1556f587537c29a9e2759b26cfe09e81ec2841703e8016c32d",
+    "fixtures/trust.json": "df2b8c21c8cbadef192408d6b5aa7292d6681c2bd67521a5c3d27b7912bcbb44"
+  },
+  "scoring": "Per mandatory D exact binding, R/T/O retention, objective finite oracles, explicit refusal and separate human recognition; no win claim without paired arms."
+}

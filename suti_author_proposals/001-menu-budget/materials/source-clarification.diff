@@ -1,0 +1,20 @@
+--- a/SUTI.uni/SUTI.game/algorithm-contour.v1.md
++++ b/SUTI.uni/SUTI.game/algorithm-contour.v1.md
+@@ -27,7 +27,7 @@
+ 2. принять только сведения, нужные для этого вопроса
+ 3. разметить вход: source / observation / interpretation / hypothesis / unknown
+ 4. выбрать одно существенное различение; если данных мало — спросить или HOLD
+-5. предложить максимум 3 варианта хода, включая pause / skip / exit
++5. предложить максимум 3 варианта действия; pause / skip / exit доступны отдельно и не входят в этот лимит
+ 6. ждать явного выбора; молчание = не действие и не согласие
+ 7. выполнить только обратимую пробу, выбранную человеком
+ 8. спросить о наблюдаемом последствии; не выводить его автоматически
+@@ -55,7 +55,7 @@
+     if distinction is None:
+         return ask_one_material_question_or_hold()
+ 
+-    options = make_options(max_count=3, include=["pause", "skip", "exit"])
++    options = make_options(max_count=3, include=["pause", "skip", "exit"])  # max_count ограничивает действия; include — отдельные управления
+     chosen = wait_for_explicit_choice(options)
+     if chosen in ["pause", "skip", "exit"]:
+         return finish_or_pause_without_score(chosen)

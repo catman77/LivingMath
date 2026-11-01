@@ -1,0 +1,373 @@
+{
+  "project": "LM_QA_CYCLE009_20261027T052731872797Z_affine",
+  "schema_version": 5,
+  "tables": {
+    "events": [
+      {
+        "id": 2057,
+        "timestamp": 1793081598,
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_affine",
+        "kind": "qa_source",
+        "focus": "fixture",
+        "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"environment_commitment\": \"f7c20d88704800d564930acfb8c46ab0d9195bc3c0f6916c68dfa1ab47df3001\", \"fixture_sha256\": \"83e7737dd1e6de689180587c1636328cd223b082c1fd7877e36b1c6ba65ee641\", \"public_source_parameters\": {\"actions\": [\"a0\", \"a1\", \"a2\", \"a3\"], \"coefficients\": [0, 2, 6, 1], \"family\": \"affine\", \"initial\": [1, 0], \"modulus\": 12}, \"representation\": \"fixture009:83e7737dd1e6de689180587c1636328cd223b082c1fd7877e36b1c6ba65ee641\", \"scope\": \"QA009/20261027T052731872797Z/affine/83e7737dd1e6de689180587c1636328cd223b082c1fd7877e36b1c6ba65ee641\", \"statement\": \"Operator-supplied sealed finite QA fixture.\", \"version\": 1}",
+        "status": "observation",
+        "evidence": "",
+        "parent_id": null
+      },
+      {
+        "id": 2058,
+        "timestamp": 1793081599,
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_affine",
+        "kind": "hypothesis",
+        "focus": "v1-H0",
+        "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"QA009/20261027T052731872797Z/affine/83e7737dd1e6de689180587c1636328cd223b082c1fd7877e36b1c6ba65ee641\", \"statement\": \"Operator declared finite history, not actual hidden environment.\", \"version\": 1, \"word\": []}",
+        "status": "hypothesis",
+        "evidence": "",
+        "parent_id": 2057
+      },
+      {
+        "id": 2059,
+        "timestamp": 1793081599,
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_affine",
+        "kind": "hypothesis",
+        "focus": "v1-H1",
+        "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"QA009/20261027T052731872797Z/affine/83e7737dd1e6de689180587c1636328cd223b082c1fd7877e36b1c6ba65ee641\", \"statement\": \"Operator declared finite history, not actual hidden environment.\", \"version\": 1, \"word\": [\"a2\"]}",
+        "status": "hypothesis",
+        "evidence": "",
+        "parent_id": 2057
+      },
+      {
+        "id": 2060,
+        "timestamp": 1793081599,
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_affine",
+        "kind": "hypothesis",
+        "focus": "v1-H2",
+        "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"QA009/20261027T052731872797Z/affine/83e7737dd1e6de689180587c1636328cd223b082c1fd7877e36b1c6ba65ee641\", \"statement\": \"Operator declared finite history, not actual hidden environment.\", \"version\": 1, \"word\": [\"a1\"]}",
+        "status": "hypothesis",
+        "evidence": "",
+        "parent_id": 2057
+      },
+      {
+        "id": 2061,
+        "timestamp": 1793081599,
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_affine",
+        "kind": "hypothesis",
+        "focus": "v1-IND",
+        "content": "{\"claim_type\": \"HYPOTHESIS\", \"relations\": [], \"representation\": \"native_007/v1\", \"scope\": \"independent\", \"statement\": \"Independent branch, unchanged finite observation; version projection is not a new measurement.\", \"version\": 1, \"word\": []}",
+        "status": "hypothesis",
+        "evidence": "",
+        "parent_id": 2057
+      },
+      {
+        "id": 2062,
+        "timestamp": 1793081599,
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_affine",
+        "kind": "hypothesis",
+        "focus": "v1-source",
+        "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"relations\": [], \"representation\": \"native_007/v1\", \"scope\": \"QA009/20261027T052731872797Z/affine/83e7737dd1e6de689180587c1636328cd223b082c1fd7877e36b1c6ba65ee641\", \"source_spec\": {\"current_observation\": 1, \"family\": \"affine\", \"histories\": [\"event:2058\", \"event:2059\", \"event:2060\"], \"hypotheses\": [{\"depends_on\": [], \"id\": \"H0\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:2058\", \"weight\": 1}, {\"depends_on\": [], \"id\": \"H1\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:2059\", \"weight\": 1}, {\"depends_on\": [], \"id\": \"H2\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:2060\", \"weight\": 1}, {\"depends_on\": [\"H0\"], \"id\": \"D0\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:2058\", \"weight\": 1}, {\"depends_on\": [\"H1\"], \"id\": \"D1\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:2059\", \"weight\": 1}, {\"depends_on\": [\"H2\"], \"id\": \"D2\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:2060\", \"weight\": 1}, {\"depends_on\": [], \"id\": \"IND\", \"predictive\": false, \"question\": \"independent\", \"ref\": \"event:2061\", \"weight\": 1}], \"independent_ref\": \"event:2061\", \"known_failures\": [], \"observer\": {\"mod\": null, \"projection\": \"primary\"}, \"parameters\": {\"actions\": [\"a0\", \"a1\", \"a2\", \"a3\"], \"coefficients\": [0, 2, 6, 1], \"family\": \"affine\", \"initial\": [1, 0], \"modulus\": 12}, \"primitive_sha256\": \"299734fcc7435508b0f13656fe1ce1c5812f2203aa44c334510f95e2c95a2f4f\", \"representation\": \"native_007/v1\", \"scope\": \"QA009/20261027T052731872797Z/affine/83e7737dd1e6de689180587c1636328cd223b082c1fd7877e36b1c6ba65ee641\", \"tests\": [{\"cost\": 20, \"id\": \"t0\", \"ordinal\": 0, \"suffix\": [\"a0\"]}, {\"cost\": 0, \"id\": \"t1\", \"ordinal\": 1, \"suffix\": [\"a1\"]}, {\"cost\": 20, \"id\": \"t2\", \"ordinal\": 2, \"suffix\": [\"a2\"]}, {\"cost\": 4, \"id\": \"t3\", \"ordinal\": 3, \"suffix\": [\"a3\"]}], \"unknowns\": [\"The actual environment history is unknown to I/T.\", \"No equivalence or truth outside registered D.\"], \"version\": 1}, \"statement\": \"Registered native operations/D. Applicability projection retains original sources and negative evidence.\", \"version\": 1}",
+        "status": "hypothesis",
+        "evidence": "",
+        "parent_id": 2057
+      },
+      {
+        "id": 2063,
+        "timestamp": 1793081599,
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_affine",
+        "kind": "hypothesis",
+        "focus": "v1-law",
+        "content": "{\"claim_type\": \"FORMAL_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"QA009/20261027T052731872797Z/affine/83e7737dd1e6de689180587c1636328cd223b082c1fd7877e36b1c6ba65ee641\", \"source_certificate\": {\"coverage\": [0, 1], \"guard\": {\"total_admissibility\": true, \"width\": 2}, \"kind\": \"affine-injective\", \"native_hash\": \"299734fcc7435508b0f13656fe1ce1c5812f2203aa44c334510f95e2c95a2f4f\", \"observer_hash\": \"cece26f1db1aeca73633ba60ae797d2dc9902a7e5747cae64ec5b1345df22ea4\", \"project\": \"LM_QA_CYCLE009_20261027T052731872797Z_affine\", \"schema\": \"separating-coordinate/v1\", \"scope\": \"QA009/20261027T052731872797Z/affine/83e7737dd1e6de689180587c1636328cd223b082c1fd7877e36b1c6ba65ee641\", \"source_hash\": \"52bfd5732fe904e2309452e1d1e974e51cc19fa8d880a7e98a15386d7524fa54\", \"source_ref\": \"event:2062\", \"version\": 1}, \"statement\": \"Operator-supplied reviewed finite source law; no theorem/verified status.\", \"version\": 1}",
+        "status": "hypothesis",
+        "evidence": "",
+        "parent_id": 2062
+      },
+      {
+        "id": 2064,
+        "timestamp": 1793081602,
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_affine",
+        "kind": "counterexample",
+        "focus": "affine-step1-measurement",
+        "content": "{\"claim_type\": \"EXPERIMENT_RESULT\", \"fixture_sha256\": \"83e7737dd1e6de689180587c1636328cd223b082c1fd7877e36b1c6ba65ee641\", \"measurement_origin\": \"external_bounded_native_executor\", \"observation\": {\"observer\": {\"mod\": null, \"projection\": \"primary\"}, \"readout\": {\"admissibility\": [true], \"defined\": true, \"observation\": 1}, \"scope\": \"QA009/20261027T052731872797Z/affine/83e7737dd1e6de689180587c1636328cd223b082c1fd7877e36b1c6ba65ee641\", \"test_id\": \"t1\", \"version\": 1}, \"outcome\": \"FAILURE\", \"proof_status\": \"unverified\", \"scope\": \"QA009/20261027T052731872797Z/affine/83e7737dd1e6de689180587c1636328cd223b082c1fd7877e36b1c6ba65ee641\", \"statement\": \"Finite measured readout; no mathematical truth is established.\", \"test_id\": \"t1\", \"version\": 1}",
+        "status": "experiment",
+        "evidence": "",
+        "parent_id": 2062
+      }
+    ],
+    "research_obligations": [
+      {
+        "id": 769,
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_affine",
+        "current_version": 1,
+        "created_at": 1793081599
+      }
+    ],
+    "frontier_constraints": [
+      {
+        "id": 208,
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_affine",
+        "obligation_id": 769,
+        "kind": "allowed_experiment",
+        "payload_json": "{\"mechanisms\":[\"qa_cycle_measurement\"],\"reason\":\"User-authorized isolated QA fixture only; no global experimental permission.\",\"reopen_conditions\":[\"New fixture, scope, mechanism or observer requires independent review.\"],\"scope\":\"QA009/20261027T052731872797Z/affine/83e7737dd1e6de689180587c1636328cd223b082c1fd7877e36b1c6ba65ee641\",\"source_event_ids\":[2057],\"source_representations\":[\"fixture009:83e7737dd1e6de689180587c1636328cd223b082c1fd7877e36b1c6ba65ee641\"]}"
+      }
+    ],
+    "transformation_contracts": [],
+    "research_moves": [
+      {
+        "id": 185,
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_affine",
+        "fingerprint": "30e11bef3a85edf78e917c5b3c8cbc38a8fa4af2bd601f992e64434859d6a155",
+        "payload_json": "{\"active_frontier_id\":769,\"active_frontier_version\":1,\"evidence_refs\":[\"event:2057\",\"event:2062\"],\"evidence_roles\":{},\"fingerprint\":{\"claims\":{\"mathematical_properties\":[\"Finite declared test t1\"],\"premises\":[\"Exact operator fixture 83e7737dd1e6de689180587c1636328cd223b082c1fd7877e36b1c6ba65ee641\",\"Purpose unexecuted stale-permission canary\"],\"required_evidence\":[\"Actual project-local measurement of t1\"],\"testable_consequence\":\"Readout for t1 matches the declared finite candidate {\\\"admissibility\\\": [true], \\\"defined\\\": true, \\\"observation\\\": 5}\"},\"complete\":true,\"digest\":\"30e11bef3a85edf78e917c5b3c8cbc38a8fa4af2bd601f992e64434859d6a155\",\"normalization_version\":1},\"parent_event_ids\":[2057,2062],\"proposed_operation\":{\"intent\":\"experiment\",\"mathematical_properties\":[\"Finite declared test t1\"],\"mechanism\":\"qa_cycle_measurement\",\"premises\":[\"Exact operator fixture 83e7737dd1e6de689180587c1636328cd223b082c1fd7877e36b1c6ba65ee641\",\"Purpose unexecuted stale-permission canary\"],\"required_evidence\":[\"Actual project-local measurement of t1\"],\"testable_consequence\":\"Readout for t1 matches the declared finite candidate {\\\"admissibility\\\": [true], \\\"defined\\\": true, \\\"observation\\\": 5}\"},\"scope\":\"QA009/20261027T052731872797Z/affine/83e7737dd1e6de689180587c1636328cd223b082c1fd7877e36b1c6ba65ee641\",\"source_representation\":\"fixture009:83e7737dd1e6de689180587c1636328cd223b082c1fd7877e36b1c6ba65ee641\",\"target_representation\":\"fixture009:83e7737dd1e6de689180587c1636328cd223b082c1fd7877e36b1c6ba65ee641\",\"verification_plan\":{\"failure_condition\":\"Mismatch with candidate readout or fixture/source/observer/version drift.\",\"method\":\"External bounded native readout under an explicit current scoped grant.\"}}",
+        "created_at": 1793081602
+      },
+      {
+        "id": 186,
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_affine",
+        "fingerprint": "784f8a34ee0347a7778e30c1eba50cf4b1450c88c5ec75ee8ba05d9b0014e510",
+        "payload_json": "{\"active_frontier_id\":769,\"active_frontier_version\":1,\"evidence_refs\":[\"event:2057\",\"event:2062\"],\"evidence_roles\":{},\"fingerprint\":{\"claims\":{\"mathematical_properties\":[\"Finite declared test t1\"],\"premises\":[\"Exact operator fixture 83e7737dd1e6de689180587c1636328cd223b082c1fd7877e36b1c6ba65ee641\",\"Purpose cycle\"],\"required_evidence\":[\"Actual project-local measurement of t1\"],\"testable_consequence\":\"Readout for t1 matches the declared finite candidate {\\\"admissibility\\\": [true], \\\"defined\\\": true, \\\"observation\\\": 5}\"},\"complete\":true,\"digest\":\"784f8a34ee0347a7778e30c1eba50cf4b1450c88c5ec75ee8ba05d9b0014e510\",\"normalization_version\":1},\"parent_event_ids\":[2057,2062],\"proposed_operation\":{\"intent\":\"experiment\",\"mathematical_properties\":[\"Finite declared test t1\"],\"mechanism\":\"qa_cycle_measurement\",\"premises\":[\"Exact operator fixture 83e7737dd1e6de689180587c1636328cd223b082c1fd7877e36b1c6ba65ee641\",\"Purpose cycle\"],\"required_evidence\":[\"Actual project-local measurement of t1\"],\"testable_consequence\":\"Readout for t1 matches the declared finite candidate {\\\"admissibility\\\": [true], \\\"defined\\\": true, \\\"observation\\\": 5}\"},\"scope\":\"QA009/20261027T052731872797Z/affine/83e7737dd1e6de689180587c1636328cd223b082c1fd7877e36b1c6ba65ee641\",\"source_representation\":\"fixture009:83e7737dd1e6de689180587c1636328cd223b082c1fd7877e36b1c6ba65ee641\",\"target_representation\":\"fixture009:83e7737dd1e6de689180587c1636328cd223b082c1fd7877e36b1c6ba65ee641\",\"verification_plan\":{\"failure_condition\":\"Mismatch with candidate readout or fixture/source/observer/version drift.\",\"method\":\"External bounded native readout under an explicit current scoped grant.\"}}",
+        "created_at": 1793081602
+      }
+    ],
+    "adverse_evidence_reviews": [],
+    "reviews": [],
+    "research_obligation_versions": [
+      {
+        "obligation_id": 769,
+        "version": 1,
+        "status": "OPEN",
+        "payload_json": "{\"closure_reason\":\"\",\"evidence_refs\":[\"event:2057\"],\"id\":769,\"project\":\"LM_QA_CYCLE009_20261027T052731872797Z_affine\",\"proof_status\":\"unverified\",\"reopen_conditions\":[],\"reopen_reason\":\"\",\"scope\":\"QA009/20261027T052731872797Z/affine/83e7737dd1e6de689180587c1636328cd223b082c1fd7877e36b1c6ba65ee641\",\"source_event_ids\":[2057],\"statement\":\"Two bounded readouts of only fixture 83e7737dd1e6de689180587c1636328cd223b082c1fd7877e36b1c6ba65ee641\",\"status\":\"OPEN\",\"version\":1}",
+        "created_at": 1793081599
+      }
+    ],
+    "research_move_audits": [
+      {
+        "id": 384,
+        "move_id": 185,
+        "frontier_versions_json": "{\"769\":1}",
+        "report_json": "{\"activation_required\":true,\"adverse_evidence\":[],\"audit_contract_version\":\"0.4.2\",\"candidate\":\"\",\"classification\":\"ACTIVE_CONTINUATION\",\"execution_permission\":{\"allowed\":false},\"findings\":[],\"fingerprint\":{\"claims\":{\"mathematical_properties\":[\"Finite declared test t1\"],\"premises\":[\"Exact operator fixture 83e7737dd1e6de689180587c1636328cd223b082c1fd7877e36b1c6ba65ee641\",\"Purpose unexecuted stale-permission canary\"],\"required_evidence\":[\"Actual project-local measurement of t1\"],\"testable_consequence\":\"Readout for t1 matches the declared finite candidate {\\\"admissibility\\\": [true], \\\"defined\\\": true, \\\"observation\\\": 5}\"},\"complete\":true,\"digest\":\"30e11bef3a85edf78e917c5b3c8cbc38a8fa4af2bd601f992e64434859d6a155\",\"normalization_version\":1},\"formal_checks\":{\"compares_declared_claims_only\":true,\"mathematical_equivalence_decided\":false,\"source_event_references_valid\":true},\"permitted_use\":\"bounded_experiment\",\"preservation_checks\":[{\"established\":false,\"evidence_refs\":[],\"property\":\"point_value\",\"status\":\"MISSING_WITNESS\"},{\"established\":false,\"evidence_refs\":[],\"property\":\"analytic_function\",\"status\":\"MISSING_WITNESS\"},{\"established\":false,\"evidence_refs\":[],\"property\":\"observables\",\"status\":\"MISSING_WITNESS\"},{\"established\":false,\"evidence_refs\":[],\"property\":\"source_provenance\",\"status\":\"MISSING_WITNESS\"},{\"established\":false,\"evidence_refs\":[],\"property\":\"rule_applicability\",\"status\":\"MISSING_WITNESS\"}],\"proof_status\":\"unverified\",\"semantic_review_required\":false,\"verdict\":\"EXPERIMENT_ALLOWED\",\"warnings\":[]}",
+        "created_at": 1793081602
+      },
+      {
+        "id": 385,
+        "move_id": 185,
+        "frontier_versions_json": "{\"769\":1}",
+        "report_json": "{\"activation_required\":true,\"adverse_evidence\":[],\"audit_contract_version\":\"0.4.2\",\"candidate\":\"\",\"classification\":\"ACTIVE_CONTINUATION\",\"execution_permission\":{\"allowed\":false},\"findings\":[],\"fingerprint\":{\"claims\":{\"mathematical_properties\":[\"Finite declared test t1\"],\"premises\":[\"Exact operator fixture 83e7737dd1e6de689180587c1636328cd223b082c1fd7877e36b1c6ba65ee641\",\"Purpose unexecuted stale-permission canary\"],\"required_evidence\":[\"Actual project-local measurement of t1\"],\"testable_consequence\":\"Readout for t1 matches the declared finite candidate {\\\"admissibility\\\": [true], \\\"defined\\\": true, \\\"observation\\\": 5}\"},\"complete\":true,\"digest\":\"30e11bef3a85edf78e917c5b3c8cbc38a8fa4af2bd601f992e64434859d6a155\",\"normalization_version\":1},\"formal_checks\":{\"compares_declared_claims_only\":true,\"mathematical_equivalence_decided\":false,\"source_event_references_valid\":true},\"permitted_use\":\"bounded_experiment\",\"preservation_checks\":[{\"established\":false,\"evidence_refs\":[],\"property\":\"point_value\",\"status\":\"MISSING_WITNESS\"},{\"established\":false,\"evidence_refs\":[],\"property\":\"analytic_function\",\"status\":\"MISSING_WITNESS\"},{\"established\":false,\"evidence_refs\":[],\"property\":\"observables\",\"status\":\"MISSING_WITNESS\"},{\"established\":false,\"evidence_refs\":[],\"property\":\"source_provenance\",\"status\":\"MISSING_WITNESS\"},{\"established\":false,\"evidence_refs\":[],\"property\":\"rule_applicability\",\"status\":\"MISSING_WITNESS\"}],\"proof_status\":\"unverified\",\"semantic_review_required\":false,\"verdict\":\"EXPERIMENT_ALLOWED\",\"warnings\":[]}",
+        "created_at": 1793081602
+      },
+      {
+        "id": 386,
+        "move_id": 186,
+        "frontier_versions_json": "{\"769\":1}",
+        "report_json": "{\"activation_required\":true,\"adverse_evidence\":[],\"audit_contract_version\":\"0.4.2\",\"candidate\":\"\",\"classification\":\"ACTIVE_CONTINUATION\",\"execution_permission\":{\"allowed\":false},\"findings\":[],\"fingerprint\":{\"claims\":{\"mathematical_properties\":[\"Finite declared test t1\"],\"premises\":[\"Exact operator fixture 83e7737dd1e6de689180587c1636328cd223b082c1fd7877e36b1c6ba65ee641\",\"Purpose cycle\"],\"required_evidence\":[\"Actual project-local measurement of t1\"],\"testable_consequence\":\"Readout for t1 matches the declared finite candidate {\\\"admissibility\\\": [true], \\\"defined\\\": true, \\\"observation\\\": 5}\"},\"complete\":true,\"digest\":\"784f8a34ee0347a7778e30c1eba50cf4b1450c88c5ec75ee8ba05d9b0014e510\",\"normalization_version\":1},\"formal_checks\":{\"compares_declared_claims_only\":true,\"mathematical_equivalence_decided\":false,\"source_event_references_valid\":true},\"permitted_use\":\"bounded_experiment\",\"preservation_checks\":[{\"established\":false,\"evidence_refs\":[],\"property\":\"point_value\",\"status\":\"MISSING_WITNESS\"},{\"established\":false,\"evidence_refs\":[],\"property\":\"analytic_function\",\"status\":\"MISSING_WITNESS\"},{\"established\":false,\"evidence_refs\":[],\"property\":\"observables\",\"status\":\"MISSING_WITNESS\"},{\"established\":false,\"evidence_refs\":[],\"property\":\"source_provenance\",\"status\":\"MISSING_WITNESS\"},{\"established\":false,\"evidence_refs\":[],\"property\":\"rule_applicability\",\"status\":\"MISSING_WITNESS\"}],\"proof_status\":\"unverified\",\"semantic_review_required\":false,\"verdict\":\"EXPERIMENT_ALLOWED\",\"warnings\":[]}",
+        "created_at": 1793081602
+      },
+      {
+        "id": 387,
+        "move_id": 186,
+        "frontier_versions_json": "{\"769\":1}",
+        "report_json": "{\"activation_required\":true,\"adverse_evidence\":[],\"audit_contract_version\":\"0.4.2\",\"candidate\":\"\",\"classification\":\"ACTIVE_CONTINUATION\",\"execution_permission\":{\"allowed\":false},\"findings\":[],\"fingerprint\":{\"claims\":{\"mathematical_properties\":[\"Finite declared test t1\"],\"premises\":[\"Exact operator fixture 83e7737dd1e6de689180587c1636328cd223b082c1fd7877e36b1c6ba65ee641\",\"Purpose cycle\"],\"required_evidence\":[\"Actual project-local measurement of t1\"],\"testable_consequence\":\"Readout for t1 matches the declared finite candidate {\\\"admissibility\\\": [true], \\\"defined\\\": true, \\\"observation\\\": 5}\"},\"complete\":true,\"digest\":\"784f8a34ee0347a7778e30c1eba50cf4b1450c88c5ec75ee8ba05d9b0014e510\",\"normalization_version\":1},\"formal_checks\":{\"compares_declared_claims_only\":true,\"mathematical_equivalence_decided\":false,\"source_event_references_valid\":true},\"permitted_use\":\"bounded_experiment\",\"preservation_checks\":[{\"established\":false,\"evidence_refs\":[],\"property\":\"point_value\",\"status\":\"MISSING_WITNESS\"},{\"established\":false,\"evidence_refs\":[],\"property\":\"analytic_function\",\"status\":\"MISSING_WITNESS\"},{\"established\":false,\"evidence_refs\":[],\"property\":\"observables\",\"status\":\"MISSING_WITNESS\"},{\"established\":false,\"evidence_refs\":[],\"property\":\"source_provenance\",\"status\":\"MISSING_WITNESS\"},{\"established\":false,\"evidence_refs\":[],\"property\":\"rule_applicability\",\"status\":\"MISSING_WITNESS\"}],\"proof_status\":\"unverified\",\"semantic_review_required\":false,\"verdict\":\"EXPERIMENT_ALLOWED\",\"warnings\":[]}",
+        "created_at": 1793081602
+      }
+    ],
+    "research_move_status_history": [
+      {
+        "id": 984,
+        "move_id": 185,
+        "sequence": 1,
+        "status": "PROPOSED",
+        "reason": "Proposal recorded; execution is not authorized.",
+        "audit_id": null,
+        "decision_json": "{\"allowed\":false}",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_affine:propose:affine-canary",
+        "created_at": 1793081602
+      },
+      {
+        "id": 985,
+        "move_id": 185,
+        "sequence": 2,
+        "status": "AUDITED",
+        "reason": "Audit recorded independently of execution authorization.",
+        "audit_id": 384,
+        "decision_json": "{\"allowed\":false}",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_affine:propose:affine-canary",
+        "created_at": 1793081602
+      },
+      {
+        "id": 986,
+        "move_id": 185,
+        "sequence": 3,
+        "status": "AUDITED",
+        "reason": "Audit recorded independently of execution authorization.",
+        "audit_id": 385,
+        "decision_json": "{\"allowed\":false}",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_affine:audit:affine-canary",
+        "created_at": 1793081602
+      },
+      {
+        "id": 987,
+        "move_id": 185,
+        "sequence": 4,
+        "status": "EXPERIMENT_ALLOWED",
+        "reason": "Explicit bounded experiment activation.",
+        "audit_id": 385,
+        "decision_json": "{\"allowed\":true,\"frontier_versions\":{\"769\":1},\"operation\":\"bounded_experiment\",\"proof_allowed\":false,\"scope\":\"QA009/20261027T052731872797Z/affine/83e7737dd1e6de689180587c1636328cd223b082c1fd7877e36b1c6ba65ee641\",\"transformation_allowed\":false}",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_affine:activate:affine-canary",
+        "created_at": 1793081602
+      },
+      {
+        "id": 988,
+        "move_id": 186,
+        "sequence": 1,
+        "status": "PROPOSED",
+        "reason": "Proposal recorded; execution is not authorized.",
+        "audit_id": null,
+        "decision_json": "{\"allowed\":false}",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_affine:propose:affine-step1",
+        "created_at": 1793081602
+      },
+      {
+        "id": 989,
+        "move_id": 186,
+        "sequence": 2,
+        "status": "AUDITED",
+        "reason": "Audit recorded independently of execution authorization.",
+        "audit_id": 386,
+        "decision_json": "{\"allowed\":false}",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_affine:propose:affine-step1",
+        "created_at": 1793081602
+      },
+      {
+        "id": 990,
+        "move_id": 186,
+        "sequence": 3,
+        "status": "AUDITED",
+        "reason": "Audit recorded independently of execution authorization.",
+        "audit_id": 387,
+        "decision_json": "{\"allowed\":false}",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_affine:audit:affine-step1",
+        "created_at": 1793081602
+      },
+      {
+        "id": 991,
+        "move_id": 186,
+        "sequence": 4,
+        "status": "EXPERIMENT_ALLOWED",
+        "reason": "Explicit bounded experiment activation.",
+        "audit_id": 387,
+        "decision_json": "{\"allowed\":true,\"frontier_versions\":{\"769\":1},\"operation\":\"bounded_experiment\",\"proof_allowed\":false,\"scope\":\"QA009/20261027T052731872797Z/affine/83e7737dd1e6de689180587c1636328cd223b082c1fd7877e36b1c6ba65ee641\",\"transformation_allowed\":false}",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_affine:activate:affine-step1",
+        "created_at": 1793081602
+      },
+      {
+        "id": 992,
+        "move_id": 186,
+        "sequence": 5,
+        "status": "COMPLETED",
+        "reason": "External bounded result event exists and matches this scoped experiment.",
+        "audit_id": 387,
+        "decision_json": "{\"allowed\":false,\"completion_claim\":true,\"completion_contract\":\"v0.4.2\",\"evidence_refs\":[\"event:2064\"],\"proof_status\":\"unverified\",\"result\":{\"data\":{\"fixture_sha256\":\"83e7737dd1e6de689180587c1636328cd223b082c1fd7877e36b1c6ba65ee641\",\"measurement_event_id\":2064,\"readout\":{\"admissibility\":[true],\"defined\":true,\"observation\":1}},\"outcome\":\"FAILURE\",\"summary\":\"Actual finite readout of t1; candidate consistency only.\"}}",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_affine:complete:affine-step1",
+        "created_at": 1793081603
+      }
+    ],
+    "research_move_bindings": [
+      {
+        "move_id": 185,
+        "scope": "QA009/20261027T052731872797Z/affine/83e7737dd1e6de689180587c1636328cd223b082c1fd7877e36b1c6ba65ee641",
+        "frontier_id": 769,
+        "frontier_version": 1,
+        "identity_hash": "af7232b34a6fda4528683b5351b35d97bdbf1eafeaf09cbb9f7025778bafb917",
+        "request_hash": "c70b996a4f1ff096c33de5b15a3e9d394741978adbd9247f9f43ac32cdf487e4"
+      },
+      {
+        "move_id": 186,
+        "scope": "QA009/20261027T052731872797Z/affine/83e7737dd1e6de689180587c1636328cd223b082c1fd7877e36b1c6ba65ee641",
+        "frontier_id": 769,
+        "frontier_version": 1,
+        "identity_hash": "96e80be24c5cbf8414464245dc0baddd99039f7ad2298d3ca02d5894ac943bd7",
+        "request_hash": "2778a3b2f13ece595d11fefd3cb34175fa70eb96c6605ea313ec9028ca76402c"
+      }
+    ],
+    "research_move_request_keys": [
+      {
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_affine",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_affine:propose:affine-canary",
+        "request_hash": "c70b996a4f1ff096c33de5b15a3e9d394741978adbd9247f9f43ac32cdf487e4",
+        "move_id": 185
+      },
+      {
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_affine",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_affine:audit:affine-canary",
+        "request_hash": "95efc2d82a77aa85fdd9815b13dee1f96746fb8c62c2d5b01df31b8ee7c0e53c",
+        "move_id": 185
+      },
+      {
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_affine",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_affine:activate:affine-canary",
+        "request_hash": "a43441d7e1cb13d709b0760901c7422393dc3fc763a8da56e785fa23634c4970",
+        "move_id": 185
+      },
+      {
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_affine",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_affine:propose:affine-step1",
+        "request_hash": "2778a3b2f13ece595d11fefd3cb34175fa70eb96c6605ea313ec9028ca76402c",
+        "move_id": 186
+      },
+      {
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_affine",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_affine:audit:affine-step1",
+        "request_hash": "3718bc4475e77294b29a54da35d5baf32813aef8a3679d767d716feacd55e4b0",
+        "move_id": 186
+      },
+      {
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_affine",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_affine:activate:affine-step1",
+        "request_hash": "8130b25121a52d1da794b4ceeab101371bfb1787fb792ee06bdb7785fdd48ffc",
+        "move_id": 186
+      },
+      {
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_affine",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_affine:complete:affine-step1",
+        "request_hash": "ce7b6587c153e27634be68165180dfbbd7eadd332d273e4e13a6c64a06cea3d9",
+        "move_id": 186
+      }
+    ],
+    "policies": [
+      {
+        "code": "FAILURE_FIRST",
+        "content": "После провала — RCA и проверяемый контрпример прежде новой эвристики.",
+        "enabled": 1
+      },
+      {
+        "code": "FTL_CONTROL",
+        "content": "Совпадение смыслов через известный канал не доказывает независимую передачу новой информации.",
+        "enabled": 1
+      },
+      {
+        "code": "NO_SUBSTITUTION",
+        "content": "Не подменять обнаруженный механизм готовым DSL или аппаратом без сравнения преемственности.",
+        "enabled": 1
+      },
+      {
+        "code": "PROOF_STATUS",
+        "content": "Аналогии, тексты модели и численные тесты не являются математическими доказательствами.",
+        "enabled": 1
+      },
+      {
+        "code": "SOURCE_VS_READER",
+        "content": "Разделять изменение источника, интерпретации и способа проверки.",
+        "enabled": 1
+      },
+      {
+        "code": "TWO_OPERATIONS",
+        "content": "Интерпретация и перенос внимания; новые фундаментальные операции требуют доказательств.",
+        "enabled": 1
+      }
+    ],
+    "frontier_imports": [
+      {
+        "import_key": "LM_QA_CYCLE009_20261027T052731872797Z_affine:scoped-operator-constraint",
+        "digest": "dc6d6f9741f1c88f245978b8a52be2c7a0a57b95d11980c7b283120f3545ce1f",
+        "summary_json": "{\"epistemic_status\":\"Scoped history claims; no mathematical truth inferred.\",\"import_key\":\"LM_QA_CYCLE009_20261027T052731872797Z_affine:scoped-operator-constraint\",\"obligation_ids\":{\"cycle\":769},\"operator\":\"User-authorized frozen009 QA operator\",\"project\":\"LM_QA_CYCLE009_20261027T052731872797Z_affine\",\"source_event_ids\":[2057]}"
+      }
+    ]
+  }
+}

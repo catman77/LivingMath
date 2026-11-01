@@ -1,0 +1,37 @@
+{
+  "id": "p_905a8afc2a35286329",
+  "document_id": "s05",
+  "document_sha256": "8b47a27640322f12bd83e1bb094ab67e6a46e3a33dd9c786ec9f8e9162ee2703",
+  "edition": "ORIGINAL_SYNTHETIC_CONTROL/003",
+  "language": "en",
+  "spans": [
+    {
+      "id": "s05:3",
+      "document_id": "s05",
+      "document_sha256": "8b47a27640322f12bd83e1bb094ab67e6a46e3a33dd9c786ec9f8e9162ee2703",
+      "edition": "ORIGINAL_SYNTHETIC_CONTROL/003",
+      "start": 49,
+      "end": 91,
+      "text": "In this account, \"he\" refers to the pilot.",
+      "source_address": {
+        "fixture_line": 3,
+        "origin": "ORIGINAL_SYNTHETIC_CONTROL"
+      }
+    },
+    {
+      "id": "s05:4",
+      "document_id": "s05",
+      "document_sha256": "8b47a27640322f12bd83e1bb094ab67e6a46e3a33dd9c786ec9f8e9162ee2703",
+      "edition": "ORIGINAL_SYNTHETIC_CONTROL/003",
+      "start": 92,
+      "end": 137,
+      "text": "In this account, \"he\" refers to the engineer.",
+      "source_address": {
+        "fixture_line": 4,
+        "origin": "ORIGINAL_SYNTHETIC_CONTROL"
+      }
+    }
+  ],
+  "context": [],
+  "grammar": {}
+}

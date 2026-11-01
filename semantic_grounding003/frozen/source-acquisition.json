@@ -1,0 +1,22 @@
+{
+  "ripley": {
+    "uri": "https://raw.githubusercontent.com/textcreationpartnership/A10786/aa59eb69ea39206801d8aa46b1d7cfd601292e4e/A10786.xml",
+    "sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b",
+    "projection": "Exact itertext for new Gate4 stanzas1-4; old public calibration retained verbatim",
+    "rights": "CC0 transcription, printed1591 original public domain"
+  },
+  "anchar": {
+    "url": "https://rvb.ru/pushkin/01text/01versus/0423_36/1828/0480.htm",
+    "sha256": "8f4d2ae5a9b224f9e9e40f43e1a76d126dcecd15fc00b135f8f97f4aab8f44fa",
+    "edition": "RVB Pushkin10vol 1959-1962, online6.0 2019; hash-pinned acquisition2026-10-30",
+    "rights": "Original poem public domain; RVB digital attribution retained; no translation/commentary used"
+  },
+  "initial_Wikisource_failure": {
+    "status": "FAIL_ACQUISITION",
+    "resource": "Wikisource index.php pinned oldid5320884",
+    "HTTP_status": 403,
+    "response_used_as_source": false,
+    "production_modified": false
+  },
+  "fallback": "Actual RVB HTML acquired successfully; frozen version differs from old Tucha by design."
+}

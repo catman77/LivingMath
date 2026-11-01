@@ -1,0 +1,53 @@
+{
+  "id": "p_d8688144ccb1db0a79",
+  "document_id": "r4",
+  "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+  "edition": "Ripley1591/TCP-A10786-aa59eb69",
+  "language": "en",
+  "spans": [
+    {
+      "id": "r4:40",
+      "document_id": "r4",
+      "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+      "edition": "Ripley1591/TCP-A10786-aa59eb69",
+      "start": 1823,
+      "end": 1868,
+      "text": "How to congeale, he needeth not much to care,",
+      "source_address": {
+        "old_public_line_id": "line-01295",
+        "xml_path": "/TEI[1]/text[1]/body[1]/div[3]/div[6]/lg[1]/l[5]",
+        "gate": 6
+      }
+    },
+    {
+      "id": "r4:41",
+      "document_id": "r4",
+      "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+      "edition": "Ripley1591/TCP-A10786-aa59eb69",
+      "start": 1869,
+      "end": 1907,
+      "text": "For Elements will knit together soone,",
+      "source_address": {
+        "old_public_line_id": "line-01296",
+        "xml_path": "/TEI[1]/text[1]/body[1]/div[3]/div[6]/lg[1]/l[6]",
+        "gate": 6
+      }
+    },
+    {
+      "id": "r4:42",
+      "document_id": "r4",
+      "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+      "edition": "Ripley1591/TCP-A10786-aa59eb69",
+      "start": 1908,
+      "end": 1945,
+      "text": "So that Putrifaction be kindly doone.",
+      "source_address": {
+        "old_public_line_id": "line-01297",
+        "xml_path": "/TEI[1]/text[1]/body[1]/div[3]/div[6]/lg[1]/l[7]",
+        "gate": 6
+      }
+    }
+  ],
+  "context": [],
+  "grammar": {}
+}

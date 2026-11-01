@@ -1,0 +1,15 @@
+{
+  "fixture-operator-v1": {
+    "public_key_hex": "554759f4f5a7d4a81fb5ba26eabdb988f50b30363fff4ce0f01cd97f00bb3046",
+    "identity": "local-fixture-operator",
+    "roles": [
+      "operator"
+    ],
+    "source_ids": [
+      "fixture-poetry",
+      "fixture-pythagoras",
+      "fixture-boa"
+    ],
+    "revoked": false
+  }
+}

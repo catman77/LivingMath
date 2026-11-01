@@ -1,0 +1,9 @@
+{
+  "livingmath.native007.reviewed.v1": {
+    "native_sha256": "299734fcc7435508b0f13656fe1ce1c5812f2203aa44c334510f95e2c95a2f4f",
+    "representation": "native_007/v1",
+    "reviewed_core": "007.2",
+    "I_T": "006.2",
+    "assurance": "Reviewed finite program schemas and guarded parameters, not arbitrary Python verification."
+  }
+}

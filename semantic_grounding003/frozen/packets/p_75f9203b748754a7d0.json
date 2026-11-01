@@ -1,0 +1,24 @@
+{
+  "id": "p_75f9203b748754a7d0",
+  "document_id": "s04",
+  "document_sha256": "938a229be24fa17c4d73de54970a0be9ae562c8711a334e4bdd772d52fea74ee",
+  "edition": "ORIGINAL_SYNTHETIC_CONTROL/003",
+  "language": "en",
+  "spans": [
+    {
+      "id": "s04:2",
+      "document_id": "s04",
+      "document_sha256": "938a229be24fa17c4d73de54970a0be9ae562c8711a334e4bdd772d52fea74ee",
+      "edition": "ORIGINAL_SYNTHETIC_CONTROL/003",
+      "start": 32,
+      "end": 86,
+      "text": "Both occurrences of \"porter\" refer to the same person.",
+      "source_address": {
+        "fixture_line": 2,
+        "origin": "ORIGINAL_SYNTHETIC_CONTROL"
+      }
+    }
+  ],
+  "context": [],
+  "grammar": {}
+}

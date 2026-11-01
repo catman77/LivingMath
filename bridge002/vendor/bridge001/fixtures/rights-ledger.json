@@ -1,0 +1,74 @@
+[
+  {
+    "source_id": "fixture-poetry",
+    "source_hash": "be2d169ffee5a518aa1ba6214be24622be477eda7959981e4259fe9c8bd36863",
+    "rights": {
+      "owner": "Local synthetic QA fixture generated for this implementation; no external poetry",
+      "scope": [
+        "local_process",
+        "local_export",
+        "mcp_metadata"
+      ],
+      "license": "Synthetic test permission for repository QA; no rights claimed over SUTI or the presentation",
+      "retention": {
+        "expires_at": "2030-01-01T00:00:00Z",
+        "policy": "Raw content in separate fixture files; remove at expiry, retain hashes only under lawful audit basis."
+      },
+      "redaction": {
+        "mode": "deny_external",
+        "reason": "Only non-content metadata may reach live MCP."
+      }
+    },
+    "consent_role": "operator",
+    "author_review": "NO_REVIEW",
+    "source_origin": "SYNTHETIC_MANUAL_NOT_SUTI"
+  },
+  {
+    "source_id": "fixture-pythagoras",
+    "source_hash": "44b497da4e5deb9f56df5992478d8445e6b1b7bd51201818fb921f593335739a",
+    "rights": {
+      "owner": "Local synthetic QA fixture generated for this implementation; no external poetry",
+      "scope": [
+        "local_process",
+        "local_export",
+        "mcp_metadata"
+      ],
+      "license": "Synthetic test permission for repository QA; no rights claimed over SUTI or the presentation",
+      "retention": {
+        "expires_at": "2030-01-01T00:00:00Z",
+        "policy": "Raw content in separate fixture files; remove at expiry, retain hashes only under lawful audit basis."
+      },
+      "redaction": {
+        "mode": "deny_external",
+        "reason": "Only non-content metadata may reach live MCP."
+      }
+    },
+    "consent_role": "operator",
+    "author_review": "NO_REVIEW",
+    "source_origin": "SYNTHETIC_MANUAL_NOT_SUTI"
+  },
+  {
+    "source_id": "fixture-boa",
+    "source_hash": "78e188cfc915719e9c2ae6d0686f41eaede0f6d5db6a46f58d98b3eb91b7a0d3",
+    "rights": {
+      "owner": "Local synthetic QA fixture generated for this implementation; no external poetry",
+      "scope": [
+        "local_process",
+        "local_export",
+        "mcp_metadata"
+      ],
+      "license": "Synthetic test permission for repository QA; no rights claimed over SUTI or the presentation",
+      "retention": {
+        "expires_at": "2030-01-01T00:00:00Z",
+        "policy": "Raw content in separate fixture files; remove at expiry, retain hashes only under lawful audit basis."
+      },
+      "redaction": {
+        "mode": "deny_external",
+        "reason": "Only non-content metadata may reach live MCP."
+      }
+    },
+    "consent_role": "operator",
+    "author_review": "NO_REVIEW",
+    "source_origin": "SYNTHETIC_MANUAL_NOT_SUTI"
+  }
+]

@@ -1,0 +1,290 @@
+[
+  {
+    "id": "e1-order",
+    "experiment": "E1",
+    "family": "order",
+    "train_packet": "p_ac0bf6d36fddbdc913",
+    "challenge_packet": "p_010951b7207ae243c7",
+    "new_primary_material": true,
+    "synthetic": false,
+    "hard_negative": false,
+    "competing_predictions": [
+      "TEXT_ORDER_ONLY",
+      "PROCESS_PREREQUISITE"
+    ],
+    "annotation_status": "SEMANTIC_REVIEW_PENDING",
+    "external_annotations": [],
+    "control_expected_label": null,
+    "selection_notes": "Primary: chapter adjacency versus procedural prerequisite; challenge never/untill clauses."
+  },
+  {
+    "id": "e1-scope",
+    "experiment": "E1",
+    "family": "scope",
+    "train_packet": "p_9660d9dcf1a5222a03",
+    "challenge_packet": "p_b0f58b16085d62bf55",
+    "new_primary_material": true,
+    "synthetic": false,
+    "hard_negative": false,
+    "competing_predictions": [
+      "SAME_ROLE",
+      "DIFFERENT_ROLE"
+    ],
+    "annotation_status": "SEMANTIC_REVIEW_PENDING",
+    "external_annotations": [],
+    "control_expected_label": null,
+    "selection_notes": "Two occurrences of Coniunction; challenge explicitly distinguishes two Coniunctions."
+  },
+  {
+    "id": "e1-role-identity",
+    "experiment": "E1",
+    "family": "identity",
+    "train_packet": "p_263da2649d0cacf3dc",
+    "challenge_packet": "p_010951b7207ae243c7",
+    "new_primary_material": false,
+    "synthetic": false,
+    "hard_negative": false,
+    "competing_predictions": [
+      "SAME_ROLE",
+      "DIFFERENT_ROLE"
+    ],
+    "annotation_status": "SEMANTIC_REVIEW_PENDING",
+    "external_annotations": [],
+    "control_expected_label": null,
+    "selection_notes": "Old ordered reversal calibration; do not invent body/spirit referent identity from first/then."
+  },
+  {
+    "id": "e1-gate6",
+    "experiment": "E1",
+    "family": "necessity",
+    "train_packet": "p_27ecf0a2895c01e156",
+    "challenge_packet": "p_d8688144ccb1db0a79",
+    "new_primary_material": false,
+    "synthetic": false,
+    "hard_negative": false,
+    "competing_predictions": [
+      "ORDERED",
+      "UNRESOLVED"
+    ],
+    "annotation_status": "SEMANTIC_REVIEW_PENDING",
+    "external_annotations": [],
+    "control_expected_label": null,
+    "selection_notes": "Known negative: co-predication does not entail P=>Q."
+  },
+  {
+    "id": "e2-anaphora",
+    "experiment": "E2",
+    "family": "anaphora",
+    "train_packet": "p_b9f4b9c30aa1ca113d",
+    "challenge_packet": "p_e5e295a16b9b292bc9",
+    "new_primary_material": true,
+    "synthetic": false,
+    "hard_negative": false,
+    "competing_predictions": [
+      "SAME_ROLE",
+      "DIFFERENT_ROLE"
+    ],
+    "annotation_status": "SEMANTIC_REVIEW_PENDING",
+    "external_annotations": [],
+    "control_expected_label": null,
+    "selection_notes": "Who travels? Continued singular subject is a defeasible reading, no explicit pronoun definition."
+  },
+  {
+    "id": "e2-analogy",
+    "experiment": "E2",
+    "family": "analogy",
+    "train_packet": "p_9f1cabe1484f742bce",
+    "challenge_packet": "p_241ec09b84ccdd0442",
+    "new_primary_material": true,
+    "synthetic": false,
+    "hard_negative": false,
+    "competing_predictions": [
+      "SAME_ROLE",
+      "ANALOGY_ONLY"
+    ],
+    "annotation_status": "SEMANTIC_REVIEW_PENDING",
+    "external_annotations": [],
+    "control_expected_label": null,
+    "selection_notes": "Independent original author footnote identifies the tree; metaphor not reference identity."
+  },
+  {
+    "id": "e2-human-roles",
+    "experiment": "E2",
+    "family": "actor_object",
+    "train_packet": "p_b9f4b9c30aa1ca113d",
+    "challenge_packet": "p_974f093890e703c391",
+    "new_primary_material": true,
+    "synthetic": false,
+    "hard_negative": false,
+    "competing_predictions": [
+      "SAME_ROLE",
+      "DIFFERENT_ROLE"
+    ],
+    "annotation_status": "SEMANTIC_REVIEW_PENDING",
+    "external_annotations": [],
+    "control_expected_label": null,
+    "selection_notes": "Human actor/object and later servant/master; do not force king/master identity."
+  },
+  {
+    "id": "e2-material-agent",
+    "experiment": "E2",
+    "family": "material_agent",
+    "train_packet": "p_587f280ea0259529c3",
+    "challenge_packet": "p_7d6230c10f234d3c98",
+    "new_primary_material": true,
+    "synthetic": false,
+    "hard_negative": false,
+    "competing_predictions": [
+      "SAME_ROLE",
+      "DIFFERENT_ROLE"
+    ],
+    "annotation_status": "SEMANTIC_REVIEW_PENDING",
+    "external_annotations": [],
+    "control_expected_label": null,
+    "selection_notes": "Instrumental poison versus acting king; no empirical toxicity or chemical species identity."
+  },
+  {
+    "id": "s01",
+    "experiment": "CONTROL",
+    "family": "anaphora",
+    "train_packet": "p_ca7259f0ddefd307bf",
+    "challenge_packet": "p_9e929bc400c07a756b",
+    "new_primary_material": false,
+    "synthetic": true,
+    "hard_negative": false,
+    "competing_predictions": [
+      "SAME_ROLE",
+      "DIFFERENT_ROLE"
+    ],
+    "annotation_status": "SYNTHETIC_KNOWN_CONSTRUCTION",
+    "external_annotations": [],
+    "control_expected_label": "SAME_ROLE",
+    "selection_notes": ""
+  },
+  {
+    "id": "s02",
+    "experiment": "CONTROL",
+    "family": "anaphora",
+    "train_packet": "p_8775159e9af4adce9d",
+    "challenge_packet": "p_b148b835374ee2475d",
+    "new_primary_material": false,
+    "synthetic": true,
+    "hard_negative": true,
+    "competing_predictions": [
+      "SAME_ROLE",
+      "DIFFERENT_ROLE"
+    ],
+    "annotation_status": "SYNTHETIC_KNOWN_CONSTRUCTION",
+    "external_annotations": [],
+    "control_expected_label": "DIFFERENT_ROLE",
+    "selection_notes": ""
+  },
+  {
+    "id": "s03",
+    "experiment": "CONTROL",
+    "family": "scope",
+    "train_packet": "p_3cba2ed8493a86db1a",
+    "challenge_packet": "p_a2320687ef1da5c80d",
+    "new_primary_material": false,
+    "synthetic": true,
+    "hard_negative": true,
+    "competing_predictions": [
+      "SAME_ROLE",
+      "DIFFERENT_ROLE"
+    ],
+    "annotation_status": "SYNTHETIC_KNOWN_CONSTRUCTION",
+    "external_annotations": [],
+    "control_expected_label": "DIFFERENT_ROLE",
+    "selection_notes": ""
+  },
+  {
+    "id": "s04",
+    "experiment": "CONTROL",
+    "family": "scope",
+    "train_packet": "p_6f318d3617da07143a",
+    "challenge_packet": "p_75f9203b748754a7d0",
+    "new_primary_material": false,
+    "synthetic": true,
+    "hard_negative": false,
+    "competing_predictions": [
+      "SAME_ROLE",
+      "DIFFERENT_ROLE"
+    ],
+    "annotation_status": "SYNTHETIC_KNOWN_CONSTRUCTION",
+    "external_annotations": [],
+    "control_expected_label": "SAME_ROLE",
+    "selection_notes": ""
+  },
+  {
+    "id": "s05",
+    "experiment": "CONTROL",
+    "family": "anaphora",
+    "train_packet": "p_5da4b12c87c0762b9f",
+    "challenge_packet": "p_905a8afc2a35286329",
+    "new_primary_material": false,
+    "synthetic": true,
+    "hard_negative": true,
+    "competing_predictions": [
+      "SAME_ROLE",
+      "DIFFERENT_ROLE"
+    ],
+    "annotation_status": "SYNTHETIC_KNOWN_CONSTRUCTION",
+    "external_annotations": [],
+    "control_expected_label": "UNRESOLVED",
+    "selection_notes": ""
+  },
+  {
+    "id": "s06",
+    "experiment": "CONTROL",
+    "family": "anaphora",
+    "train_packet": "p_185a8cadc90c249b3d",
+    "challenge_packet": "p_0688dda6451220bee5",
+    "new_primary_material": false,
+    "synthetic": true,
+    "hard_negative": false,
+    "competing_predictions": [
+      "SAME_ROLE",
+      "DIFFERENT_ROLE"
+    ],
+    "annotation_status": "SYNTHETIC_KNOWN_CONSTRUCTION",
+    "external_annotations": [],
+    "control_expected_label": "SAME_ROLE",
+    "selection_notes": ""
+  },
+  {
+    "id": "s07",
+    "experiment": "CONTROL",
+    "family": "anaphora",
+    "train_packet": "p_77db7d7da31bb7a4ff",
+    "challenge_packet": "p_e71688a09ba82bbdaa",
+    "new_primary_material": false,
+    "synthetic": true,
+    "hard_negative": true,
+    "competing_predictions": [
+      "SAME_ROLE",
+      "DIFFERENT_ROLE"
+    ],
+    "annotation_status": "SYNTHETIC_KNOWN_CONSTRUCTION",
+    "external_annotations": [],
+    "control_expected_label": "DIFFERENT_ROLE",
+    "selection_notes": ""
+  },
+  {
+    "id": "s08",
+    "experiment": "CONTROL",
+    "family": "order",
+    "train_packet": "p_c6e166260936b31af5",
+    "challenge_packet": "p_11befe48ca8ae8bc40",
+    "new_primary_material": false,
+    "synthetic": true,
+    "hard_negative": true,
+    "competing_predictions": [
+      "TEXT_ORDER_ONLY",
+      "PROCESS_PREREQUISITE"
+    ],
+    "annotation_status": "SYNTHETIC_KNOWN_CONSTRUCTION",
+    "external_annotations": [],
+    "control_expected_label": "UNRESOLVED",
+    "selection_notes": ""
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "id": "p_ca7259f0ddefd307bf",
+  "document_id": "s01",
+  "document_sha256": "d2ab7f3ae3e2f4295fa2642bcf4a3f159928b692eb073305cc5e6ec761efc066",
+  "edition": "ORIGINAL_SYNTHETIC_CONTROL/003",
+  "language": "en",
+  "spans": [
+    {
+      "id": "s01:1",
+      "document_id": "s01",
+      "document_sha256": "d2ab7f3ae3e2f4295fa2642bcf4a3f159928b692eb073305cc5e6ec761efc066",
+      "edition": "ORIGINAL_SYNTHETIC_CONTROL/003",
+      "start": 0,
+      "end": 27,
+      "text": "The pilot met the engineer.",
+      "source_address": {
+        "fixture_line": 1,
+        "origin": "ORIGINAL_SYNTHETIC_CONTROL"
+      }
+    },
+    {
+      "id": "s01:2",
+      "document_id": "s01",
+      "document_sha256": "d2ab7f3ae3e2f4295fa2642bcf4a3f159928b692eb073305cc5e6ec761efc066",
+      "edition": "ORIGINAL_SYNTHETIC_CONTROL/003",
+      "start": 28,
+      "end": 48,
+      "text": "He returned at dawn.",
+      "source_address": {
+        "fixture_line": 2,
+        "origin": "ORIGINAL_SYNTHETIC_CONTROL"
+      }
+    }
+  ],
+  "context": [],
+  "grammar": {}
+}

@@ -1,0 +1,107 @@
+{
+  "id": "packet_12d391ebd337f81095",
+  "document_id": "ripley004",
+  "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+  "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+  "language": "en",
+  "spans": [
+    {
+      "id": "ripley004:40",
+      "document_id": "ripley004",
+      "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "start": 1715,
+      "end": 1753,
+      "text": "So into Ayre the water as I tell thee,",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[10]/lg[5]/l[5]",
+        "section": "gate10",
+        "stanza": 5,
+        "line": 5,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "ripley004:41",
+      "document_id": "ripley004",
+      "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "start": 1754,
+      "end": 1794,
+      "text": "When heate of colde hath got domination,",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[10]/lg[5]/l[6]",
+        "section": "gate10",
+        "stanza": 5,
+        "line": 6,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "ripley004:42",
+      "document_id": "ripley004",
+      "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "start": 1795,
+      "end": 1842,
+      "text": "Shall be conuerted by craft of our circulation.",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[10]/lg[5]/l[7]",
+        "section": "gate10",
+        "stanza": 5,
+        "line": 7,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "ripley004:43",
+      "document_id": "ripley004",
+      "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "start": 1843,
+      "end": 1885,
+      "text": "And of the Ayre then fire haue thou shall,",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[10]/lg[6]/l[1]",
+        "section": "gate10",
+        "stanza": 6,
+        "line": 1,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "ripley004:44",
+      "document_id": "ripley004",
+      "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "start": 1886,
+      "end": 1922,
+      "text": "By loosing putrifying and subliming,",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[10]/lg[6]/l[2]",
+        "section": "gate10",
+        "stanza": 6,
+        "line": 2,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "ripley004:45",
+      "document_id": "ripley004",
+      "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "start": 1923,
+      "end": 1965,
+      "text": "And fire thou hast of the earth materiall,",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[10]/lg[6]/l[3]",
+        "section": "gate10",
+        "stanza": 6,
+        "line": 3,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    }
+  ],
+  "context": [],
+  "grammar": {}
+}

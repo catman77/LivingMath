@@ -1,0 +1,37 @@
+{
+  "id": "p_c6e166260936b31af5",
+  "document_id": "s08",
+  "document_sha256": "db0be1a2e458b5a47673bb19553c06ca553897b75da1cb7561f64fb7c87c8d7e",
+  "edition": "ORIGINAL_SYNTHETIC_CONTROL/003",
+  "language": "en",
+  "spans": [
+    {
+      "id": "s08:1",
+      "document_id": "s08",
+      "document_sha256": "db0be1a2e458b5a47673bb19553c06ca553897b75da1cb7561f64fb7c87c8d7e",
+      "edition": "ORIGINAL_SYNTHETIC_CONTROL/003",
+      "start": 0,
+      "end": 28,
+      "text": "After the chapter of mixing,",
+      "source_address": {
+        "fixture_line": 1,
+        "origin": "ORIGINAL_SYNTHETIC_CONTROL"
+      }
+    },
+    {
+      "id": "s08:2",
+      "document_id": "s08",
+      "document_sha256": "db0be1a2e458b5a47673bb19553c06ca553897b75da1cb7561f64fb7c87c8d7e",
+      "edition": "ORIGINAL_SYNTHETIC_CONTROL/003",
+      "start": 29,
+      "end": 60,
+      "text": "The chapter of joining follows.",
+      "source_address": {
+        "fixture_line": 2,
+        "origin": "ORIGINAL_SYNTHETIC_CONTROL"
+      }
+    }
+  ],
+  "context": [],
+  "grammar": {}
+}

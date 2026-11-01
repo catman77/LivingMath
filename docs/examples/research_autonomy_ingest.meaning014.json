@@ -1,0 +1,18 @@
+{
+  "project": "QA_MEANING014_EXAMPLE",
+  "request_key": "color-mass-v1",
+  "source": {
+    "format": "livingmath-artifact/1",
+    "profile": "typed008/1",
+    "interpretation": "meaning014",
+    "scope": "qa/meaning014",
+    "source_name": "Original diagnostic source",
+    "edition": "Original diagnostic, version 1",
+    "language": "en",
+    "rights": {
+      "basis": "USER_SESSION",
+      "origin": "Original example supplied by the operator for this research session"
+    },
+    "raw_text": "Observer C records the color of states A and B as red in both. Observer M records their masses as 2 and 3 respectively. Both records refer to the same two samples and the same measurement session.\n"
+  }
+}

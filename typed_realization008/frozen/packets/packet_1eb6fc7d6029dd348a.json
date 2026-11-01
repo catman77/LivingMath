@@ -1,0 +1,75 @@
+{
+  "id": "packet_1eb6fc7d6029dd348a",
+  "document_id": "ripley004",
+  "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+  "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+  "language": "en",
+  "spans": [
+    {
+      "id": "ripley004:22",
+      "document_id": "ripley004",
+      "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "start": 949,
+      "end": 990,
+      "text": "But yet more kindly some other men doone,",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[9]/lg[3]/l[1]",
+        "section": "gate9",
+        "stanza": 3,
+        "line": 1,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "ripley004:23",
+      "document_id": "ripley004",
+      "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "start": 991,
+      "end": 1031,
+      "text": "Fermenting their medicines in this wise,",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[9]/lg[3]/l[2]",
+        "section": "gate9",
+        "stanza": 3,
+        "line": 2,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "ripley004:24",
+      "document_id": "ripley004",
+      "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "start": 1032,
+      "end": 1076,
+      "text": "In Mercurie dissoluing both Sunne and Moone,",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[9]/lg[3]/l[3]",
+        "section": "gate9",
+        "stanza": 3,
+        "line": 3,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "ripley004:25",
+      "document_id": "ripley004",
+      "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "start": 1077,
+      "end": 1119,
+      "text": "Till time with the spirit they will arise,",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[9]/lg[3]/l[4]",
+        "section": "gate9",
+        "stanza": 3,
+        "line": 4,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    }
+  ],
+  "context": [],
+  "grammar": {}
+}

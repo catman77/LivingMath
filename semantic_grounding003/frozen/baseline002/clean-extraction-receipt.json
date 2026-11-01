@@ -1,0 +1,48 @@
+{
+  "archive": {
+    "zip": "/home/catman/.local/state/livingmath/artifact_genesis002/20261030T213046Z/artifact-genesis002-trial1.zip",
+    "sha256": "8fa12e484fad091f1644510454b6bdf54cf569d5ef3b79f686b9b8f4b15adf8e",
+    "bytes": 7569489,
+    "files": 417,
+    "bundle_manifest_sha256": "cb1a98f438258762ecd2420a394a0fb965a1743a9df5ea6c4e150c440bb50055"
+  },
+  "receipt": {
+    "status": "PASS_CLEAN_EXTRACTED_GENESIS_REPLAY",
+    "scientific_status": "INSUFFICIENT_SEMANTIC_EVIDENCE",
+    "G3": "FAIL",
+    "semantic_review": "SEMANTIC_NOT_EXTERNALLY_REVIEWED",
+    "old001_G3": "FAIL_NO_NEW_STRUCTURAL_TRANSFER",
+    "scientific_sha256": {
+      "candidate-source-relations.jsonl": "0e8eb3fe008ef0ca1ba149f5526be40b59014a64b2daa53a403eef548e98baaa",
+      "alternative-readings.jsonl": "f02256ce1de8829939305343c4c30644724f61198e7464056b56f719f2b56050",
+      "repair-history.jsonl": "5de6c2a12a6cc173d7844f84a184592f02f7a1dfb24003036ab1faeeadffc931",
+      "preholdout-predictions.jsonl": "3479b9338e252ef645a103905fab8c9a4e65395d13a5067793c8c31a20b03331",
+      "holdout-checks.jsonl": "8438089729426bafe2e3cb98b47f95c2099017e201fdec739f960b65ea324985",
+      "nontriviality-controls.jsonl": "5ddb12cd39f339e35ce9cf76e158f2cb25e37b17398ab2c0df818f45c2b8285d",
+      "target-bindings.jsonl": "71ae3815aa2cde88ae9865077c675a5448d17d00119db311d39154e50b2bec20",
+      "loss-ledger.jsonl": "d7934c7d0a6020d6dda59e14bca51479dd7464d8c7a08246f5d73bcd78237130",
+      "source-audits.jsonl": "74ab17efff6893418c51569708880e4745735f32e532f0a0d3065ebb8ea4feb8",
+      "unknown-resolution.jsonl": "d9b4cd2f39163f3a1af7a3a49bf738c3d4b7ce91e2d131b9d9e554b3b4d5328f"
+    },
+    "private_mcp_status": "PASS_EXISTING_PRIVATE_OAUTH_MCP",
+    "private_mcp_calls": 25,
+    "private_mcp_checks": 42,
+    "journal": {
+      "ok": true,
+      "entries": 83,
+      "head_hash": "54b5304cdb45075dcd75fccbfaab600b1339823ba7f7ad4274dc44520d9eb238",
+      "identity_scope": "LOCAL_EXPERIMENT_NOT_MCP_ID"
+    },
+    "source_tree": "/home/catman/.local/state/livingmath/artifact_genesis002/20261030T213046Z/extracted-trial1/ARTIFACT_GENESIS_002/live_math_mcp_prod",
+    "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:16:10) [GCC 11.2.0]",
+    "bundle_manifest_sha256": "cb1a98f438258762ecd2420a394a0fb965a1743a9df5ea6c4e150c440bb50055",
+    "production_accessed": false,
+    "ALCH005_sealed_accessed": false,
+    "network_required_except_loopback": false,
+    "wall_ms": 26215.732536977157,
+    "proof_status": "unverified",
+    "execution_permission": {
+      "allowed": false
+    }
+  }
+}

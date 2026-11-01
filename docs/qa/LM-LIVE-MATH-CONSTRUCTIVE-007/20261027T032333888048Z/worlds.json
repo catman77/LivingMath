@@ -1,0 +1,1656 @@
+[
+  {
+    "id": "W0",
+    "index": 0,
+    "family": "affine",
+    "held_out": false,
+    "history": {
+      "project": "LOCAL_CONSTRUCTIVE007_0",
+      "schema_version": 5,
+      "tables": {
+        "events": [
+          {
+            "id": 1,
+            "timestamp": 1793131200,
+            "project": "LOCAL_CONSTRUCTIVE007_0",
+            "kind": "hypothesis",
+            "focus": "h0",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_0\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": [\"g107007_6\"]}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 2,
+            "timestamp": 1793131200,
+            "project": "LOCAL_CONSTRUCTIVE007_0",
+            "kind": "hypothesis",
+            "focus": "h1",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_0\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": [\"g107007_6\", \"g107007_3\"]}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 3,
+            "timestamp": 1793131200,
+            "project": "LOCAL_CONSTRUCTIVE007_0",
+            "kind": "hypothesis",
+            "focus": "h2",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_0\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": [\"g107007_6\"]}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 4,
+            "timestamp": 1793131200,
+            "project": "LOCAL_CONSTRUCTIVE007_0",
+            "kind": "hypothesis",
+            "focus": "h3",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_0\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": []}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 5,
+            "timestamp": 1793131200,
+            "project": "LOCAL_CONSTRUCTIVE007_0",
+            "kind": "hypothesis",
+            "focus": "h4",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_0\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": [\"g107007_0\"]}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 6,
+            "timestamp": 1793131200,
+            "project": "LOCAL_CONSTRUCTIVE007_0",
+            "kind": "hypothesis",
+            "focus": "h5",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_0\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": [\"g107007_6\", \"g107007_0\"]}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 7,
+            "timestamp": 1793131200,
+            "project": "LOCAL_CONSTRUCTIVE007_0",
+            "kind": "hypothesis",
+            "focus": "independent",
+            "content": "{\"claim_type\": \"HYPOTHESIS\", \"representation\": \"native_007/v1\", \"scope\": \"independent\", \"statement\": \"Independent question retained.\", \"version\": 1, \"word\": []}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 8,
+            "timestamp": 1793131200,
+            "project": "LOCAL_CONSTRUCTIVE007_0",
+            "kind": "hypothesis",
+            "focus": "root",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_0\", \"source_spec\": {\"current_observation\": 1, \"family\": \"affine\", \"histories\": [\"event:1\", \"event:2\", \"event:3\", \"event:4\", \"event:5\", \"event:6\"], \"hypotheses\": [{\"depends_on\": [], \"id\": \"H0\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:1\", \"weight\": 1}, {\"depends_on\": [], \"id\": \"H1\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:2\", \"weight\": 2}, {\"depends_on\": [], \"id\": \"H2\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:3\", \"weight\": 3}, {\"depends_on\": [], \"id\": \"H3\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:4\", \"weight\": 4}, {\"depends_on\": [], \"id\": \"H4\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:5\", \"weight\": 5}, {\"depends_on\": [], \"id\": \"H5\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:6\", \"weight\": 6}, {\"depends_on\": [\"H0\"], \"id\": \"D0\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:1\", \"weight\": 1}, {\"depends_on\": [\"H1\"], \"id\": \"D1\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:2\", \"weight\": 1}, {\"depends_on\": [\"H2\"], \"id\": \"D2\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:3\", \"weight\": 1}, {\"depends_on\": [\"H3\"], \"id\": \"D3\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:4\", \"weight\": 1}, {\"depends_on\": [\"H4\"], \"id\": \"D4\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:5\", \"weight\": 1}, {\"depends_on\": [\"H5\"], \"id\": \"D5\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:6\", \"weight\": 1}, {\"depends_on\": [], \"id\": \"I\", \"predictive\": false, \"question\": \"independent\", \"ref\": \"event:7\", \"weight\": 1}], \"independent_ref\": \"event:7\", \"known_failures\": [], \"observer\": {\"mod\": null, \"projection\": \"primary\"}, \"parameters\": {\"actions\": [\"g107007_0\", \"g107007_1\", \"g107007_2\", \"g107007_3\", \"g107007_4\", \"g107007_5\", \"g107007_6\"], \"coefficients\": [0, 2, 4, 6, 8, 10, 1], \"family\": \"affine\", \"initial\": [0, 1], \"modulus\": 12}, \"primitive_sha256\": \"299734fcc7435508b0f13656fe1ce1c5812f2203aa44c334510f95e2c95a2f4f\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_0\", \"tests\": [{\"cost\": 2, \"id\": \"t00\", \"ordinal\": 0, \"suffix\": [\"g107007_0\"]}, {\"cost\": 3, \"id\": \"t01\", \"ordinal\": 1, \"suffix\": [\"g107007_1\"]}, {\"cost\": 4, \"id\": \"t02\", \"ordinal\": 2, \"suffix\": [\"g107007_2\"]}, {\"cost\": 2, \"id\": \"t03\", \"ordinal\": 3, \"suffix\": [\"g107007_3\"]}, {\"cost\": 3, \"id\": \"t04\", \"ordinal\": 4, \"suffix\": [\"g107007_4\"]}, {\"cost\": 4, \"id\": \"t05\", \"ordinal\": 5, \"suffix\": [\"g107007_5\"]}, {\"cost\": 2, \"id\": \"t06\", \"ordinal\": 6, \"suffix\": [\"g107007_6\"]}, {\"cost\": 3, \"id\": \"t07\", \"ordinal\": 7, \"suffix\": [\"g107007_0\", \"g107007_0\"]}, {\"cost\": 4, \"id\": \"t08\", \"ordinal\": 8, \"suffix\": [\"g107007_1\", \"g107007_0\"]}, {\"cost\": 4, \"id\": \"t09\", \"ordinal\": 9, \"suffix\": [\"g107007_0\", \"g107007_1\"]}], \"unknowns\": [\"Actual hidden source history and truth outside registered D are unknown.\"], \"version\": 1}, \"statement\": \"Native source definitions, not witness answers.\", \"version\": 1}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 9,
+            "timestamp": 1793131200,
+            "project": "LOCAL_CONSTRUCTIVE007_0",
+            "kind": "hypothesis",
+            "focus": "law",
+            "content": "{\"claim_type\": \"FORMAL_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_0\", \"source_certificate\": {\"coverage\": [0, 1], \"guard\": {\"total_admissibility\": true, \"width\": 2}, \"kind\": \"affine-injective\", \"native_hash\": \"299734fcc7435508b0f13656fe1ce1c5812f2203aa44c334510f95e2c95a2f4f\", \"observer_hash\": \"cece26f1db1aeca73633ba60ae797d2dc9902a7e5747cae64ec5b1345df22ea4\", \"project\": \"LOCAL_CONSTRUCTIVE007_0\", \"schema\": \"separating-coordinate/v1\", \"scope\": \"source_law_scope_0\", \"source_hash\": \"64da14ef7dba0414edb0c42758025fdc1eed3420ae831c485f97841a62e94a62\", \"source_ref\": \"event:8\", \"version\": 1}, \"statement\": \"Candidate bound program-schema law; not server verification.\", \"version\": 1}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          }
+        ],
+        "research_obligations": [
+          {
+            "id": 1,
+            "project": "LOCAL_CONSTRUCTIVE007_0",
+            "current_version": 1,
+            "created_at": 1793131200
+          }
+        ],
+        "frontier_constraints": [],
+        "transformation_contracts": [],
+        "research_moves": [],
+        "adverse_evidence_reviews": [],
+        "reviews": [],
+        "research_obligation_versions": [
+          {
+            "obligation_id": 1,
+            "version": 1,
+            "status": "OPEN",
+            "payload_json": "{\"closure_reason\":\"\",\"evidence_refs\":[],\"id\":1,\"project\":\"LOCAL_CONSTRUCTIVE007_0\",\"proof_status\":\"unverified\",\"reopen_conditions\":[],\"reopen_reason\":\"\",\"scope\":\"source_law_scope_0\",\"source_event_ids\":[8],\"statement\":\"Test finite source-certified interpretation.\",\"status\":\"OPEN\",\"version\":1}",
+            "created_at": 1793131200
+          }
+        ],
+        "research_move_audits": [],
+        "research_move_status_history": [],
+        "research_move_bindings": [],
+        "research_move_request_keys": [],
+        "policies": [
+          {
+            "code": "FAILURE_FIRST",
+            "content": "После провала — RCA и проверяемый контрпример прежде новой эвристики.",
+            "enabled": 1
+          },
+          {
+            "code": "FTL_CONTROL",
+            "content": "Совпадение смыслов через известный канал не доказывает независимую передачу новой информации.",
+            "enabled": 1
+          },
+          {
+            "code": "NO_SUBSTITUTION",
+            "content": "Не подменять обнаруженный механизм готовым DSL или аппаратом без сравнения преемственности.",
+            "enabled": 1
+          },
+          {
+            "code": "PROOF_STATUS",
+            "content": "Аналогии, тексты модели и численные тесты не являются математическими доказательствами.",
+            "enabled": 1
+          },
+          {
+            "code": "SOURCE_VS_READER",
+            "content": "Разделять изменение источника, интерпретации и способа проверки.",
+            "enabled": 1
+          },
+          {
+            "code": "TWO_OPERATIONS",
+            "content": "Интерпретация и перенос внимания; новые фундаментальные операции требуют доказательств.",
+            "enabled": 1
+          }
+        ],
+        "frontier_imports": []
+      }
+    },
+    "query": {
+      "id": "constructive007-source",
+      "project": "LOCAL_CONSTRUCTIVE007_0",
+      "root_ref": "event:8",
+      "scope": "source_law_scope_0",
+      "version": 1,
+      "move": {
+        "active_frontier_id": 1,
+        "parent_event_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "proposed_operation": {
+          "mechanism": "readonly_source_law_interpretation",
+          "intent": "advisory"
+        }
+      }
+    },
+    "refs": {
+      "h0": "event:1",
+      "h1": "event:2",
+      "h2": "event:3",
+      "h3": "event:4",
+      "h4": "event:5",
+      "h5": "event:6",
+      "independent": "event:7",
+      "root": "event:8",
+      "law": "event:9"
+    },
+    "certificate_ref": "event:9",
+    "database": "/home/catman/.local/state/livingmath/constructive007/20261027T032333888048Z/databases/world0.sqlite3"
+  },
+  {
+    "id": "W1",
+    "index": 1,
+    "family": "permutation",
+    "held_out": false,
+    "history": {
+      "project": "LOCAL_CONSTRUCTIVE007_1",
+      "schema_version": 5,
+      "tables": {
+        "events": [
+          {
+            "id": 1,
+            "timestamp": 1793131201,
+            "project": "LOCAL_CONSTRUCTIVE007_1",
+            "kind": "hypothesis",
+            "focus": "h0",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_1\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": []}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 2,
+            "timestamp": 1793131201,
+            "project": "LOCAL_CONSTRUCTIVE007_1",
+            "kind": "hypothesis",
+            "focus": "h1",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_1\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": [\"g107008_1\"]}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 3,
+            "timestamp": 1793131201,
+            "project": "LOCAL_CONSTRUCTIVE007_1",
+            "kind": "hypothesis",
+            "focus": "h2",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_1\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": []}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 4,
+            "timestamp": 1793131201,
+            "project": "LOCAL_CONSTRUCTIVE007_1",
+            "kind": "hypothesis",
+            "focus": "h3",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_1\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": [\"g107008_5\"]}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 5,
+            "timestamp": 1793131201,
+            "project": "LOCAL_CONSTRUCTIVE007_1",
+            "kind": "hypothesis",
+            "focus": "h4",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_1\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": [\"g107008_1\", \"g107008_1\"]}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 6,
+            "timestamp": 1793131201,
+            "project": "LOCAL_CONSTRUCTIVE007_1",
+            "kind": "hypothesis",
+            "focus": "h5",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_1\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": [\"g107008_1\", \"g107008_4\"]}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 7,
+            "timestamp": 1793131201,
+            "project": "LOCAL_CONSTRUCTIVE007_1",
+            "kind": "hypothesis",
+            "focus": "independent",
+            "content": "{\"claim_type\": \"HYPOTHESIS\", \"representation\": \"native_007/v1\", \"scope\": \"independent\", \"statement\": \"Independent question retained.\", \"version\": 1, \"word\": []}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 8,
+            "timestamp": 1793131201,
+            "project": "LOCAL_CONSTRUCTIVE007_1",
+            "kind": "hypothesis",
+            "focus": "root",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_1\", \"source_spec\": {\"current_observation\": 0, \"family\": \"permutation\", \"histories\": [\"event:1\", \"event:2\", \"event:3\", \"event:4\", \"event:5\", \"event:6\"], \"hypotheses\": [{\"depends_on\": [], \"id\": \"H0\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:1\", \"weight\": 1}, {\"depends_on\": [], \"id\": \"H1\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:2\", \"weight\": 2}, {\"depends_on\": [], \"id\": \"H2\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:3\", \"weight\": 3}, {\"depends_on\": [], \"id\": \"H3\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:4\", \"weight\": 4}, {\"depends_on\": [], \"id\": \"H4\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:5\", \"weight\": 5}, {\"depends_on\": [], \"id\": \"H5\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:6\", \"weight\": 6}, {\"depends_on\": [\"H0\"], \"id\": \"D0\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:1\", \"weight\": 1}, {\"depends_on\": [\"H1\"], \"id\": \"D1\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:2\", \"weight\": 1}, {\"depends_on\": [\"H2\"], \"id\": \"D2\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:3\", \"weight\": 1}, {\"depends_on\": [\"H3\"], \"id\": \"D3\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:4\", \"weight\": 1}, {\"depends_on\": [\"H4\"], \"id\": \"D4\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:5\", \"weight\": 1}, {\"depends_on\": [\"H5\"], \"id\": \"D5\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:6\", \"weight\": 1}, {\"depends_on\": [], \"id\": \"I\", \"predictive\": false, \"question\": \"independent\", \"ref\": \"event:7\", \"weight\": 1}], \"independent_ref\": \"event:7\", \"known_failures\": [], \"observer\": {\"mod\": null, \"projection\": \"primary\"}, \"parameters\": {\"actions\": [\"g107008_0\", \"g107008_1\", \"g107008_2\", \"g107008_3\", \"g107008_4\", \"g107008_5\", \"g107008_6\"], \"family\": \"permutation\", \"initial\": [0, 1, 2, 3], \"permutations\": [[0, 1, 2, 3], [0, 2, 1, 3], [0, 1, 3, 2], [0, 2, 3, 1], [2, 1, 0, 3], [1, 0, 2, 3], [3, 1, 2, 0]]}, \"primitive_sha256\": \"299734fcc7435508b0f13656fe1ce1c5812f2203aa44c334510f95e2c95a2f4f\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_1\", \"tests\": [{\"cost\": 2, \"id\": \"t00\", \"ordinal\": 0, \"suffix\": [\"g107008_0\"]}, {\"cost\": 3, \"id\": \"t01\", \"ordinal\": 1, \"suffix\": [\"g107008_1\"]}, {\"cost\": 4, \"id\": \"t02\", \"ordinal\": 2, \"suffix\": [\"g107008_2\"]}, {\"cost\": 2, \"id\": \"t03\", \"ordinal\": 3, \"suffix\": [\"g107008_3\"]}, {\"cost\": 3, \"id\": \"t04\", \"ordinal\": 4, \"suffix\": [\"g107008_4\"]}, {\"cost\": 4, \"id\": \"t05\", \"ordinal\": 5, \"suffix\": [\"g107008_5\"]}, {\"cost\": 2, \"id\": \"t06\", \"ordinal\": 6, \"suffix\": [\"g107008_6\"]}, {\"cost\": 3, \"id\": \"t07\", \"ordinal\": 7, \"suffix\": [\"g107008_0\", \"g107008_0\"]}, {\"cost\": 4, \"id\": \"t08\", \"ordinal\": 8, \"suffix\": [\"g107008_1\", \"g107008_0\"]}, {\"cost\": 4, \"id\": \"t09\", \"ordinal\": 9, \"suffix\": [\"g107008_0\", \"g107008_1\"]}], \"unknowns\": [\"Actual hidden source history and truth outside registered D are unknown.\"], \"version\": 1}, \"statement\": \"Native source definitions, not witness answers.\", \"version\": 1}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 9,
+            "timestamp": 1793131201,
+            "project": "LOCAL_CONSTRUCTIVE007_1",
+            "kind": "hypothesis",
+            "focus": "law",
+            "content": "{\"claim_type\": \"FORMAL_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_1\", \"source_certificate\": {\"coverage\": [0, 1, 2, 3], \"guard\": {\"total_admissibility\": true, \"width\": 4}, \"kind\": \"right-projection\", \"native_hash\": \"299734fcc7435508b0f13656fe1ce1c5812f2203aa44c334510f95e2c95a2f4f\", \"observer_hash\": \"cece26f1db1aeca73633ba60ae797d2dc9902a7e5747cae64ec5b1345df22ea4\", \"project\": \"LOCAL_CONSTRUCTIVE007_1\", \"schema\": \"separating-coordinate/v1\", \"scope\": \"source_law_scope_1\", \"source_hash\": \"17c2746834c87e539823f236933993f2650faa40c4fb46d00095858a70efa1aa\", \"source_ref\": \"event:8\", \"version\": 1}, \"statement\": \"Candidate bound program-schema law; not server verification.\", \"version\": 1}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          }
+        ],
+        "research_obligations": [
+          {
+            "id": 1,
+            "project": "LOCAL_CONSTRUCTIVE007_1",
+            "current_version": 1,
+            "created_at": 1793131201
+          }
+        ],
+        "frontier_constraints": [],
+        "transformation_contracts": [],
+        "research_moves": [],
+        "adverse_evidence_reviews": [],
+        "reviews": [],
+        "research_obligation_versions": [
+          {
+            "obligation_id": 1,
+            "version": 1,
+            "status": "OPEN",
+            "payload_json": "{\"closure_reason\":\"\",\"evidence_refs\":[],\"id\":1,\"project\":\"LOCAL_CONSTRUCTIVE007_1\",\"proof_status\":\"unverified\",\"reopen_conditions\":[],\"reopen_reason\":\"\",\"scope\":\"source_law_scope_1\",\"source_event_ids\":[8],\"statement\":\"Test finite source-certified interpretation.\",\"status\":\"OPEN\",\"version\":1}",
+            "created_at": 1793131201
+          }
+        ],
+        "research_move_audits": [],
+        "research_move_status_history": [],
+        "research_move_bindings": [],
+        "research_move_request_keys": [],
+        "policies": [
+          {
+            "code": "FAILURE_FIRST",
+            "content": "После провала — RCA и проверяемый контрпример прежде новой эвристики.",
+            "enabled": 1
+          },
+          {
+            "code": "FTL_CONTROL",
+            "content": "Совпадение смыслов через известный канал не доказывает независимую передачу новой информации.",
+            "enabled": 1
+          },
+          {
+            "code": "NO_SUBSTITUTION",
+            "content": "Не подменять обнаруженный механизм готовым DSL или аппаратом без сравнения преемственности.",
+            "enabled": 1
+          },
+          {
+            "code": "PROOF_STATUS",
+            "content": "Аналогии, тексты модели и численные тесты не являются математическими доказательствами.",
+            "enabled": 1
+          },
+          {
+            "code": "SOURCE_VS_READER",
+            "content": "Разделять изменение источника, интерпретации и способа проверки.",
+            "enabled": 1
+          },
+          {
+            "code": "TWO_OPERATIONS",
+            "content": "Интерпретация и перенос внимания; новые фундаментальные операции требуют доказательств.",
+            "enabled": 1
+          }
+        ],
+        "frontier_imports": []
+      }
+    },
+    "query": {
+      "id": "constructive007-source",
+      "project": "LOCAL_CONSTRUCTIVE007_1",
+      "root_ref": "event:8",
+      "scope": "source_law_scope_1",
+      "version": 1,
+      "move": {
+        "active_frontier_id": 1,
+        "parent_event_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "proposed_operation": {
+          "mechanism": "readonly_source_law_interpretation",
+          "intent": "advisory"
+        }
+      }
+    },
+    "refs": {
+      "h0": "event:1",
+      "h1": "event:2",
+      "h2": "event:3",
+      "h3": "event:4",
+      "h4": "event:5",
+      "h5": "event:6",
+      "independent": "event:7",
+      "root": "event:8",
+      "law": "event:9"
+    },
+    "certificate_ref": "event:9",
+    "database": "/home/catman/.local/state/livingmath/constructive007/20261027T032333888048Z/databases/world1.sqlite3"
+  },
+  {
+    "id": "W2",
+    "index": 2,
+    "family": "erasure",
+    "held_out": false,
+    "history": {
+      "project": "LOCAL_CONSTRUCTIVE007_2",
+      "schema_version": 5,
+      "tables": {
+        "events": [
+          {
+            "id": 1,
+            "timestamp": 1793131202,
+            "project": "LOCAL_CONSTRUCTIVE007_2",
+            "kind": "hypothesis",
+            "focus": "h0",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_2\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": []}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 2,
+            "timestamp": 1793131202,
+            "project": "LOCAL_CONSTRUCTIVE007_2",
+            "kind": "hypothesis",
+            "focus": "h1",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_2\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": [\"g107009_5\"]}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 3,
+            "timestamp": 1793131202,
+            "project": "LOCAL_CONSTRUCTIVE007_2",
+            "kind": "hypothesis",
+            "focus": "h2",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_2\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": []}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 4,
+            "timestamp": 1793131202,
+            "project": "LOCAL_CONSTRUCTIVE007_2",
+            "kind": "hypothesis",
+            "focus": "h3",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_2\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": [\"g107009_6\"]}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 5,
+            "timestamp": 1793131202,
+            "project": "LOCAL_CONSTRUCTIVE007_2",
+            "kind": "hypothesis",
+            "focus": "h4",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_2\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": [\"g107009_6\", \"g107009_6\"]}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 6,
+            "timestamp": 1793131202,
+            "project": "LOCAL_CONSTRUCTIVE007_2",
+            "kind": "hypothesis",
+            "focus": "h5",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_2\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": [\"g107009_0\"]}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 7,
+            "timestamp": 1793131202,
+            "project": "LOCAL_CONSTRUCTIVE007_2",
+            "kind": "hypothesis",
+            "focus": "independent",
+            "content": "{\"claim_type\": \"HYPOTHESIS\", \"representation\": \"native_007/v1\", \"scope\": \"independent\", \"statement\": \"Independent question retained.\", \"version\": 1, \"word\": []}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 8,
+            "timestamp": 1793131202,
+            "project": "LOCAL_CONSTRUCTIVE007_2",
+            "kind": "hypothesis",
+            "focus": "root",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_2\", \"source_spec\": {\"current_observation\": \"a\", \"family\": \"erasure\", \"histories\": [\"event:1\", \"event:2\", \"event:3\", \"event:4\", \"event:5\", \"event:6\"], \"hypotheses\": [{\"depends_on\": [], \"id\": \"H0\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:1\", \"weight\": 1}, {\"depends_on\": [], \"id\": \"H1\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:2\", \"weight\": 2}, {\"depends_on\": [], \"id\": \"H2\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:3\", \"weight\": 3}, {\"depends_on\": [], \"id\": \"H3\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:4\", \"weight\": 4}, {\"depends_on\": [], \"id\": \"H4\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:5\", \"weight\": 5}, {\"depends_on\": [], \"id\": \"H5\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:6\", \"weight\": 6}, {\"depends_on\": [\"H0\"], \"id\": \"D0\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:1\", \"weight\": 1}, {\"depends_on\": [\"H1\"], \"id\": \"D1\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:2\", \"weight\": 1}, {\"depends_on\": [\"H2\"], \"id\": \"D2\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:3\", \"weight\": 1}, {\"depends_on\": [\"H3\"], \"id\": \"D3\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:4\", \"weight\": 1}, {\"depends_on\": [\"H4\"], \"id\": \"D4\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:5\", \"weight\": 1}, {\"depends_on\": [\"H5\"], \"id\": \"D5\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:6\", \"weight\": 1}, {\"depends_on\": [], \"id\": \"I\", \"predictive\": false, \"question\": \"independent\", \"ref\": \"event:7\", \"weight\": 1}], \"independent_ref\": \"event:7\", \"known_failures\": [], \"observer\": {\"mod\": null, \"projection\": \"primary\"}, \"parameters\": {\"actions\": [\"g107009_0\", \"g107009_1\", \"g107009_2\", \"g107009_3\", \"g107009_4\", \"g107009_5\", \"g107009_6\"], \"cuts\": [0, 0, 0, 1, 2, 3, 6], \"family\": \"erasure\", \"initial\": [\"a\", \"a\", \"b\", \"a\", \"a\", \"c\"]}, \"primitive_sha256\": \"299734fcc7435508b0f13656fe1ce1c5812f2203aa44c334510f95e2c95a2f4f\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_2\", \"tests\": [{\"cost\": 2, \"id\": \"t00\", \"ordinal\": 0, \"suffix\": [\"g107009_0\"]}, {\"cost\": 3, \"id\": \"t01\", \"ordinal\": 1, \"suffix\": [\"g107009_1\"]}, {\"cost\": 4, \"id\": \"t02\", \"ordinal\": 2, \"suffix\": [\"g107009_2\"]}, {\"cost\": 2, \"id\": \"t03\", \"ordinal\": 3, \"suffix\": [\"g107009_3\"]}, {\"cost\": 3, \"id\": \"t04\", \"ordinal\": 4, \"suffix\": [\"g107009_4\"]}, {\"cost\": 4, \"id\": \"t05\", \"ordinal\": 5, \"suffix\": [\"g107009_5\"]}, {\"cost\": 2, \"id\": \"t06\", \"ordinal\": 6, \"suffix\": [\"g107009_6\"]}, {\"cost\": 3, \"id\": \"t07\", \"ordinal\": 7, \"suffix\": [\"g107009_0\", \"g107009_0\"]}, {\"cost\": 4, \"id\": \"t08\", \"ordinal\": 8, \"suffix\": [\"g107009_1\", \"g107009_0\"]}, {\"cost\": 4, \"id\": \"t09\", \"ordinal\": 9, \"suffix\": [\"g107009_0\", \"g107009_1\"]}], \"unknowns\": [\"Actual hidden source history and truth outside registered D are unknown.\"], \"version\": 1}, \"statement\": \"Native source definitions, not witness answers.\", \"version\": 1}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 9,
+            "timestamp": 1793131202,
+            "project": "LOCAL_CONSTRUCTIVE007_2",
+            "kind": "hypothesis",
+            "focus": "law",
+            "content": "{\"claim_type\": \"FORMAL_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_2\", \"source_certificate\": {\"coverage\": [0, 1, 2, 3, 4, 5], \"guard\": {\"total_admissibility\": true, \"width\": 6}, \"kind\": \"prefix-projection\", \"native_hash\": \"299734fcc7435508b0f13656fe1ce1c5812f2203aa44c334510f95e2c95a2f4f\", \"observer_hash\": \"cece26f1db1aeca73633ba60ae797d2dc9902a7e5747cae64ec5b1345df22ea4\", \"project\": \"LOCAL_CONSTRUCTIVE007_2\", \"schema\": \"separating-coordinate/v1\", \"scope\": \"source_law_scope_2\", \"source_hash\": \"c0d441f498382f453a509f8ea31b8b09c3910476d900a81a18c38c8561f79f99\", \"source_ref\": \"event:8\", \"version\": 1}, \"statement\": \"Candidate bound program-schema law; not server verification.\", \"version\": 1}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          }
+        ],
+        "research_obligations": [
+          {
+            "id": 1,
+            "project": "LOCAL_CONSTRUCTIVE007_2",
+            "current_version": 1,
+            "created_at": 1793131202
+          }
+        ],
+        "frontier_constraints": [],
+        "transformation_contracts": [],
+        "research_moves": [],
+        "adverse_evidence_reviews": [],
+        "reviews": [],
+        "research_obligation_versions": [
+          {
+            "obligation_id": 1,
+            "version": 1,
+            "status": "OPEN",
+            "payload_json": "{\"closure_reason\":\"\",\"evidence_refs\":[],\"id\":1,\"project\":\"LOCAL_CONSTRUCTIVE007_2\",\"proof_status\":\"unverified\",\"reopen_conditions\":[],\"reopen_reason\":\"\",\"scope\":\"source_law_scope_2\",\"source_event_ids\":[8],\"statement\":\"Test finite source-certified interpretation.\",\"status\":\"OPEN\",\"version\":1}",
+            "created_at": 1793131202
+          }
+        ],
+        "research_move_audits": [],
+        "research_move_status_history": [],
+        "research_move_bindings": [],
+        "research_move_request_keys": [],
+        "policies": [
+          {
+            "code": "FAILURE_FIRST",
+            "content": "После провала — RCA и проверяемый контрпример прежде новой эвристики.",
+            "enabled": 1
+          },
+          {
+            "code": "FTL_CONTROL",
+            "content": "Совпадение смыслов через известный канал не доказывает независимую передачу новой информации.",
+            "enabled": 1
+          },
+          {
+            "code": "NO_SUBSTITUTION",
+            "content": "Не подменять обнаруженный механизм готовым DSL или аппаратом без сравнения преемственности.",
+            "enabled": 1
+          },
+          {
+            "code": "PROOF_STATUS",
+            "content": "Аналогии, тексты модели и численные тесты не являются математическими доказательствами.",
+            "enabled": 1
+          },
+          {
+            "code": "SOURCE_VS_READER",
+            "content": "Разделять изменение источника, интерпретации и способа проверки.",
+            "enabled": 1
+          },
+          {
+            "code": "TWO_OPERATIONS",
+            "content": "Интерпретация и перенос внимания; новые фундаментальные операции требуют доказательств.",
+            "enabled": 1
+          }
+        ],
+        "frontier_imports": []
+      }
+    },
+    "query": {
+      "id": "constructive007-source",
+      "project": "LOCAL_CONSTRUCTIVE007_2",
+      "root_ref": "event:8",
+      "scope": "source_law_scope_2",
+      "version": 1,
+      "move": {
+        "active_frontier_id": 1,
+        "parent_event_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "proposed_operation": {
+          "mechanism": "readonly_source_law_interpretation",
+          "intent": "advisory"
+        }
+      }
+    },
+    "refs": {
+      "h0": "event:1",
+      "h1": "event:2",
+      "h2": "event:3",
+      "h3": "event:4",
+      "h4": "event:5",
+      "h5": "event:6",
+      "independent": "event:7",
+      "root": "event:8",
+      "law": "event:9"
+    },
+    "certificate_ref": "event:9",
+    "database": "/home/catman/.local/state/livingmath/constructive007/20261027T032333888048Z/databases/world2.sqlite3"
+  },
+  {
+    "id": "W3",
+    "index": 3,
+    "family": "affine",
+    "held_out": true,
+    "history": {
+      "project": "LOCAL_CONSTRUCTIVE007_3",
+      "schema_version": 5,
+      "tables": {
+        "events": [
+          {
+            "id": 1,
+            "timestamp": 1793131203,
+            "project": "LOCAL_CONSTRUCTIVE007_3",
+            "kind": "hypothesis",
+            "focus": "h0",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_3\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": [\"g107010_7\"]}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 2,
+            "timestamp": 1793131203,
+            "project": "LOCAL_CONSTRUCTIVE007_3",
+            "kind": "hypothesis",
+            "focus": "h1",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_3\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": [\"g107010_7\", \"g107010_5\"]}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 3,
+            "timestamp": 1793131203,
+            "project": "LOCAL_CONSTRUCTIVE007_3",
+            "kind": "hypothesis",
+            "focus": "h2",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_3\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": [\"g107010_7\"]}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 4,
+            "timestamp": 1793131203,
+            "project": "LOCAL_CONSTRUCTIVE007_3",
+            "kind": "hypothesis",
+            "focus": "h3",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_3\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": []}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 5,
+            "timestamp": 1793131203,
+            "project": "LOCAL_CONSTRUCTIVE007_3",
+            "kind": "hypothesis",
+            "focus": "h4",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_3\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": [\"g107010_0\"]}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 6,
+            "timestamp": 1793131203,
+            "project": "LOCAL_CONSTRUCTIVE007_3",
+            "kind": "hypothesis",
+            "focus": "h5",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_3\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": [\"g107010_7\", \"g107010_0\"]}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 7,
+            "timestamp": 1793131203,
+            "project": "LOCAL_CONSTRUCTIVE007_3",
+            "kind": "hypothesis",
+            "focus": "independent",
+            "content": "{\"claim_type\": \"HYPOTHESIS\", \"representation\": \"native_007/v1\", \"scope\": \"independent\", \"statement\": \"Independent question retained.\", \"version\": 1, \"word\": []}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 8,
+            "timestamp": 1793131203,
+            "project": "LOCAL_CONSTRUCTIVE007_3",
+            "kind": "hypothesis",
+            "focus": "root",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_3\", \"source_spec\": {\"current_observation\": 2, \"family\": \"affine\", \"histories\": [\"event:1\", \"event:2\", \"event:3\", \"event:4\", \"event:5\", \"event:6\"], \"hypotheses\": [{\"depends_on\": [], \"id\": \"H0\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:1\", \"weight\": 1}, {\"depends_on\": [], \"id\": \"H1\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:2\", \"weight\": 2}, {\"depends_on\": [], \"id\": \"H2\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:3\", \"weight\": 3}, {\"depends_on\": [], \"id\": \"H3\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:4\", \"weight\": 4}, {\"depends_on\": [], \"id\": \"H4\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:5\", \"weight\": 5}, {\"depends_on\": [], \"id\": \"H5\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:6\", \"weight\": 6}, {\"depends_on\": [\"H0\"], \"id\": \"D0\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:1\", \"weight\": 1}, {\"depends_on\": [\"H1\"], \"id\": \"D1\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:2\", \"weight\": 1}, {\"depends_on\": [\"H2\"], \"id\": \"D2\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:3\", \"weight\": 1}, {\"depends_on\": [\"H3\"], \"id\": \"D3\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:4\", \"weight\": 1}, {\"depends_on\": [\"H4\"], \"id\": \"D4\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:5\", \"weight\": 1}, {\"depends_on\": [\"H5\"], \"id\": \"D5\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:6\", \"weight\": 1}, {\"depends_on\": [], \"id\": \"I\", \"predictive\": false, \"question\": \"independent\", \"ref\": \"event:7\", \"weight\": 1}], \"independent_ref\": \"event:7\", \"known_failures\": [], \"observer\": {\"mod\": null, \"projection\": \"primary\"}, \"parameters\": {\"actions\": [\"g107010_0\", \"g107010_1\", \"g107010_2\", \"g107010_3\", \"g107010_4\", \"g107010_5\", \"g107010_6\", \"g107010_7\"], \"coefficients\": [0, 3, 6, 9, 12, 5, 1, 2], \"family\": \"affine\", \"initial\": [0, 1], \"modulus\": 15}, \"primitive_sha256\": \"299734fcc7435508b0f13656fe1ce1c5812f2203aa44c334510f95e2c95a2f4f\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_3\", \"tests\": [{\"cost\": 2, \"id\": \"t00\", \"ordinal\": 0, \"suffix\": [\"g107010_0\"]}, {\"cost\": 3, \"id\": \"t01\", \"ordinal\": 1, \"suffix\": [\"g107010_1\"]}, {\"cost\": 4, \"id\": \"t02\", \"ordinal\": 2, \"suffix\": [\"g107010_2\"]}, {\"cost\": 2, \"id\": \"t03\", \"ordinal\": 3, \"suffix\": [\"g107010_3\"]}, {\"cost\": 3, \"id\": \"t04\", \"ordinal\": 4, \"suffix\": [\"g107010_4\"]}, {\"cost\": 4, \"id\": \"t05\", \"ordinal\": 5, \"suffix\": [\"g107010_5\"]}, {\"cost\": 2, \"id\": \"t06\", \"ordinal\": 6, \"suffix\": [\"g107010_6\"]}, {\"cost\": 3, \"id\": \"t07\", \"ordinal\": 7, \"suffix\": [\"g107010_7\"]}, {\"cost\": 3, \"id\": \"t08\", \"ordinal\": 8, \"suffix\": [\"g107010_0\", \"g107010_0\"]}, {\"cost\": 4, \"id\": \"t09\", \"ordinal\": 9, \"suffix\": [\"g107010_1\", \"g107010_0\"]}, {\"cost\": 4, \"id\": \"t10\", \"ordinal\": 10, \"suffix\": [\"g107010_0\", \"g107010_1\"]}], \"unknowns\": [\"Actual hidden source history and truth outside registered D are unknown.\"], \"version\": 1}, \"statement\": \"Native source definitions, not witness answers.\", \"version\": 1}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 9,
+            "timestamp": 1793131203,
+            "project": "LOCAL_CONSTRUCTIVE007_3",
+            "kind": "hypothesis",
+            "focus": "law",
+            "content": "{\"claim_type\": \"FORMAL_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_3\", \"source_certificate\": {\"coverage\": [0, 1], \"guard\": {\"total_admissibility\": true, \"width\": 2}, \"kind\": \"affine-injective\", \"native_hash\": \"299734fcc7435508b0f13656fe1ce1c5812f2203aa44c334510f95e2c95a2f4f\", \"observer_hash\": \"cece26f1db1aeca73633ba60ae797d2dc9902a7e5747cae64ec5b1345df22ea4\", \"project\": \"LOCAL_CONSTRUCTIVE007_3\", \"schema\": \"separating-coordinate/v1\", \"scope\": \"source_law_scope_3\", \"source_hash\": \"945eb07e093da586f2419294ef3abbe925678806555857a8942089d817b1c36b\", \"source_ref\": \"event:8\", \"version\": 1}, \"statement\": \"Candidate bound program-schema law; not server verification.\", \"version\": 1}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          }
+        ],
+        "research_obligations": [
+          {
+            "id": 1,
+            "project": "LOCAL_CONSTRUCTIVE007_3",
+            "current_version": 1,
+            "created_at": 1793131203
+          }
+        ],
+        "frontier_constraints": [],
+        "transformation_contracts": [],
+        "research_moves": [],
+        "adverse_evidence_reviews": [],
+        "reviews": [],
+        "research_obligation_versions": [
+          {
+            "obligation_id": 1,
+            "version": 1,
+            "status": "OPEN",
+            "payload_json": "{\"closure_reason\":\"\",\"evidence_refs\":[],\"id\":1,\"project\":\"LOCAL_CONSTRUCTIVE007_3\",\"proof_status\":\"unverified\",\"reopen_conditions\":[],\"reopen_reason\":\"\",\"scope\":\"source_law_scope_3\",\"source_event_ids\":[8],\"statement\":\"Test finite source-certified interpretation.\",\"status\":\"OPEN\",\"version\":1}",
+            "created_at": 1793131203
+          }
+        ],
+        "research_move_audits": [],
+        "research_move_status_history": [],
+        "research_move_bindings": [],
+        "research_move_request_keys": [],
+        "policies": [
+          {
+            "code": "FAILURE_FIRST",
+            "content": "После провала — RCA и проверяемый контрпример прежде новой эвристики.",
+            "enabled": 1
+          },
+          {
+            "code": "FTL_CONTROL",
+            "content": "Совпадение смыслов через известный канал не доказывает независимую передачу новой информации.",
+            "enabled": 1
+          },
+          {
+            "code": "NO_SUBSTITUTION",
+            "content": "Не подменять обнаруженный механизм готовым DSL или аппаратом без сравнения преемственности.",
+            "enabled": 1
+          },
+          {
+            "code": "PROOF_STATUS",
+            "content": "Аналогии, тексты модели и численные тесты не являются математическими доказательствами.",
+            "enabled": 1
+          },
+          {
+            "code": "SOURCE_VS_READER",
+            "content": "Разделять изменение источника, интерпретации и способа проверки.",
+            "enabled": 1
+          },
+          {
+            "code": "TWO_OPERATIONS",
+            "content": "Интерпретация и перенос внимания; новые фундаментальные операции требуют доказательств.",
+            "enabled": 1
+          }
+        ],
+        "frontier_imports": []
+      }
+    },
+    "query": {
+      "id": "constructive007-source",
+      "project": "LOCAL_CONSTRUCTIVE007_3",
+      "root_ref": "event:8",
+      "scope": "source_law_scope_3",
+      "version": 1,
+      "move": {
+        "active_frontier_id": 1,
+        "parent_event_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "proposed_operation": {
+          "mechanism": "readonly_source_law_interpretation",
+          "intent": "advisory"
+        }
+      }
+    },
+    "refs": {
+      "h0": "event:1",
+      "h1": "event:2",
+      "h2": "event:3",
+      "h3": "event:4",
+      "h4": "event:5",
+      "h5": "event:6",
+      "independent": "event:7",
+      "root": "event:8",
+      "law": "event:9"
+    },
+    "certificate_ref": "event:9",
+    "database": "/home/catman/.local/state/livingmath/constructive007/20261027T032333888048Z/databases/world3.sqlite3"
+  },
+  {
+    "id": "W4",
+    "index": 4,
+    "family": "permutation",
+    "held_out": true,
+    "history": {
+      "project": "LOCAL_CONSTRUCTIVE007_4",
+      "schema_version": 5,
+      "tables": {
+        "events": [
+          {
+            "id": 1,
+            "timestamp": 1793131204,
+            "project": "LOCAL_CONSTRUCTIVE007_4",
+            "kind": "hypothesis",
+            "focus": "h0",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_4\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": []}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 2,
+            "timestamp": 1793131204,
+            "project": "LOCAL_CONSTRUCTIVE007_4",
+            "kind": "hypothesis",
+            "focus": "h1",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_4\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": [\"g107011_1\"]}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 3,
+            "timestamp": 1793131204,
+            "project": "LOCAL_CONSTRUCTIVE007_4",
+            "kind": "hypothesis",
+            "focus": "h2",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_4\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": []}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 4,
+            "timestamp": 1793131204,
+            "project": "LOCAL_CONSTRUCTIVE007_4",
+            "kind": "hypothesis",
+            "focus": "h3",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_4\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": [\"g107011_5\"]}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 5,
+            "timestamp": 1793131204,
+            "project": "LOCAL_CONSTRUCTIVE007_4",
+            "kind": "hypothesis",
+            "focus": "h4",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_4\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": [\"g107011_1\", \"g107011_1\"]}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 6,
+            "timestamp": 1793131204,
+            "project": "LOCAL_CONSTRUCTIVE007_4",
+            "kind": "hypothesis",
+            "focus": "h5",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_4\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": [\"g107011_1\", \"g107011_4\"]}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 7,
+            "timestamp": 1793131204,
+            "project": "LOCAL_CONSTRUCTIVE007_4",
+            "kind": "hypothesis",
+            "focus": "independent",
+            "content": "{\"claim_type\": \"HYPOTHESIS\", \"representation\": \"native_007/v1\", \"scope\": \"independent\", \"statement\": \"Independent question retained.\", \"version\": 1, \"word\": []}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 8,
+            "timestamp": 1793131204,
+            "project": "LOCAL_CONSTRUCTIVE007_4",
+            "kind": "hypothesis",
+            "focus": "root",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_4\", \"source_spec\": {\"current_observation\": 0, \"family\": \"permutation\", \"histories\": [\"event:1\", \"event:2\", \"event:3\", \"event:4\", \"event:5\", \"event:6\"], \"hypotheses\": [{\"depends_on\": [], \"id\": \"H0\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:1\", \"weight\": 1}, {\"depends_on\": [], \"id\": \"H1\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:2\", \"weight\": 2}, {\"depends_on\": [], \"id\": \"H2\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:3\", \"weight\": 3}, {\"depends_on\": [], \"id\": \"H3\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:4\", \"weight\": 4}, {\"depends_on\": [], \"id\": \"H4\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:5\", \"weight\": 5}, {\"depends_on\": [], \"id\": \"H5\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:6\", \"weight\": 6}, {\"depends_on\": [\"H0\"], \"id\": \"D0\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:1\", \"weight\": 1}, {\"depends_on\": [\"H1\"], \"id\": \"D1\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:2\", \"weight\": 1}, {\"depends_on\": [\"H2\"], \"id\": \"D2\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:3\", \"weight\": 1}, {\"depends_on\": [\"H3\"], \"id\": \"D3\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:4\", \"weight\": 1}, {\"depends_on\": [\"H4\"], \"id\": \"D4\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:5\", \"weight\": 1}, {\"depends_on\": [\"H5\"], \"id\": \"D5\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:6\", \"weight\": 1}, {\"depends_on\": [], \"id\": \"I\", \"predictive\": false, \"question\": \"independent\", \"ref\": \"event:7\", \"weight\": 1}], \"independent_ref\": \"event:7\", \"known_failures\": [], \"observer\": {\"mod\": null, \"projection\": \"primary\"}, \"parameters\": {\"actions\": [\"g107011_0\", \"g107011_1\", \"g107011_2\", \"g107011_3\", \"g107011_4\", \"g107011_5\", \"g107011_6\"], \"family\": \"permutation\", \"initial\": [0, 1, 2, 3, 4], \"permutations\": [[0, 1, 2, 3, 4], [0, 2, 1, 3, 4], [0, 1, 3, 2, 4], [0, 2, 3, 4, 1], [4, 1, 2, 3, 0], [2, 1, 0, 3, 4], [1, 0, 2, 3, 4]]}, \"primitive_sha256\": \"299734fcc7435508b0f13656fe1ce1c5812f2203aa44c334510f95e2c95a2f4f\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_4\", \"tests\": [{\"cost\": 2, \"id\": \"t00\", \"ordinal\": 0, \"suffix\": [\"g107011_0\"]}, {\"cost\": 3, \"id\": \"t01\", \"ordinal\": 1, \"suffix\": [\"g107011_1\"]}, {\"cost\": 4, \"id\": \"t02\", \"ordinal\": 2, \"suffix\": [\"g107011_2\"]}, {\"cost\": 2, \"id\": \"t03\", \"ordinal\": 3, \"suffix\": [\"g107011_3\"]}, {\"cost\": 3, \"id\": \"t04\", \"ordinal\": 4, \"suffix\": [\"g107011_4\"]}, {\"cost\": 4, \"id\": \"t05\", \"ordinal\": 5, \"suffix\": [\"g107011_5\"]}, {\"cost\": 2, \"id\": \"t06\", \"ordinal\": 6, \"suffix\": [\"g107011_6\"]}, {\"cost\": 3, \"id\": \"t07\", \"ordinal\": 7, \"suffix\": [\"g107011_0\", \"g107011_0\"]}, {\"cost\": 4, \"id\": \"t08\", \"ordinal\": 8, \"suffix\": [\"g107011_1\", \"g107011_0\"]}, {\"cost\": 4, \"id\": \"t09\", \"ordinal\": 9, \"suffix\": [\"g107011_0\", \"g107011_1\"]}], \"unknowns\": [\"Actual hidden source history and truth outside registered D are unknown.\"], \"version\": 1}, \"statement\": \"Native source definitions, not witness answers.\", \"version\": 1}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 9,
+            "timestamp": 1793131204,
+            "project": "LOCAL_CONSTRUCTIVE007_4",
+            "kind": "hypothesis",
+            "focus": "law",
+            "content": "{\"claim_type\": \"FORMAL_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_4\", \"source_certificate\": {\"coverage\": [0, 1, 2, 3, 4], \"guard\": {\"total_admissibility\": true, \"width\": 5}, \"kind\": \"right-projection\", \"native_hash\": \"299734fcc7435508b0f13656fe1ce1c5812f2203aa44c334510f95e2c95a2f4f\", \"observer_hash\": \"cece26f1db1aeca73633ba60ae797d2dc9902a7e5747cae64ec5b1345df22ea4\", \"project\": \"LOCAL_CONSTRUCTIVE007_4\", \"schema\": \"separating-coordinate/v1\", \"scope\": \"source_law_scope_4\", \"source_hash\": \"583ebc58d0c64184bfd12bec414c10575802dc76484b45973497d46a7181ba26\", \"source_ref\": \"event:8\", \"version\": 1}, \"statement\": \"Candidate bound program-schema law; not server verification.\", \"version\": 1}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          }
+        ],
+        "research_obligations": [
+          {
+            "id": 1,
+            "project": "LOCAL_CONSTRUCTIVE007_4",
+            "current_version": 1,
+            "created_at": 1793131204
+          }
+        ],
+        "frontier_constraints": [],
+        "transformation_contracts": [],
+        "research_moves": [],
+        "adverse_evidence_reviews": [],
+        "reviews": [],
+        "research_obligation_versions": [
+          {
+            "obligation_id": 1,
+            "version": 1,
+            "status": "OPEN",
+            "payload_json": "{\"closure_reason\":\"\",\"evidence_refs\":[],\"id\":1,\"project\":\"LOCAL_CONSTRUCTIVE007_4\",\"proof_status\":\"unverified\",\"reopen_conditions\":[],\"reopen_reason\":\"\",\"scope\":\"source_law_scope_4\",\"source_event_ids\":[8],\"statement\":\"Test finite source-certified interpretation.\",\"status\":\"OPEN\",\"version\":1}",
+            "created_at": 1793131204
+          }
+        ],
+        "research_move_audits": [],
+        "research_move_status_history": [],
+        "research_move_bindings": [],
+        "research_move_request_keys": [],
+        "policies": [
+          {
+            "code": "FAILURE_FIRST",
+            "content": "После провала — RCA и проверяемый контрпример прежде новой эвристики.",
+            "enabled": 1
+          },
+          {
+            "code": "FTL_CONTROL",
+            "content": "Совпадение смыслов через известный канал не доказывает независимую передачу новой информации.",
+            "enabled": 1
+          },
+          {
+            "code": "NO_SUBSTITUTION",
+            "content": "Не подменять обнаруженный механизм готовым DSL или аппаратом без сравнения преемственности.",
+            "enabled": 1
+          },
+          {
+            "code": "PROOF_STATUS",
+            "content": "Аналогии, тексты модели и численные тесты не являются математическими доказательствами.",
+            "enabled": 1
+          },
+          {
+            "code": "SOURCE_VS_READER",
+            "content": "Разделять изменение источника, интерпретации и способа проверки.",
+            "enabled": 1
+          },
+          {
+            "code": "TWO_OPERATIONS",
+            "content": "Интерпретация и перенос внимания; новые фундаментальные операции требуют доказательств.",
+            "enabled": 1
+          }
+        ],
+        "frontier_imports": []
+      }
+    },
+    "query": {
+      "id": "constructive007-source",
+      "project": "LOCAL_CONSTRUCTIVE007_4",
+      "root_ref": "event:8",
+      "scope": "source_law_scope_4",
+      "version": 1,
+      "move": {
+        "active_frontier_id": 1,
+        "parent_event_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "proposed_operation": {
+          "mechanism": "readonly_source_law_interpretation",
+          "intent": "advisory"
+        }
+      }
+    },
+    "refs": {
+      "h0": "event:1",
+      "h1": "event:2",
+      "h2": "event:3",
+      "h3": "event:4",
+      "h4": "event:5",
+      "h5": "event:6",
+      "independent": "event:7",
+      "root": "event:8",
+      "law": "event:9"
+    },
+    "certificate_ref": "event:9",
+    "database": "/home/catman/.local/state/livingmath/constructive007/20261027T032333888048Z/databases/world4.sqlite3"
+  },
+  {
+    "id": "W5",
+    "index": 5,
+    "family": "erasure",
+    "held_out": true,
+    "history": {
+      "project": "LOCAL_CONSTRUCTIVE007_5",
+      "schema_version": 5,
+      "tables": {
+        "events": [
+          {
+            "id": 1,
+            "timestamp": 1793131205,
+            "project": "LOCAL_CONSTRUCTIVE007_5",
+            "kind": "hypothesis",
+            "focus": "h0",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_5\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": []}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 2,
+            "timestamp": 1793131205,
+            "project": "LOCAL_CONSTRUCTIVE007_5",
+            "kind": "hypothesis",
+            "focus": "h1",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_5\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": [\"g107012_4\"]}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 3,
+            "timestamp": 1793131205,
+            "project": "LOCAL_CONSTRUCTIVE007_5",
+            "kind": "hypothesis",
+            "focus": "h2",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_5\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": []}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 4,
+            "timestamp": 1793131205,
+            "project": "LOCAL_CONSTRUCTIVE007_5",
+            "kind": "hypothesis",
+            "focus": "h3",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_5\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": [\"g107012_6\"]}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 5,
+            "timestamp": 1793131205,
+            "project": "LOCAL_CONSTRUCTIVE007_5",
+            "kind": "hypothesis",
+            "focus": "h4",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_5\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": [\"g107012_6\", \"g107012_6\"]}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 6,
+            "timestamp": 1793131205,
+            "project": "LOCAL_CONSTRUCTIVE007_5",
+            "kind": "hypothesis",
+            "focus": "h5",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_5\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": [\"g107012_0\"]}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 7,
+            "timestamp": 1793131205,
+            "project": "LOCAL_CONSTRUCTIVE007_5",
+            "kind": "hypothesis",
+            "focus": "independent",
+            "content": "{\"claim_type\": \"HYPOTHESIS\", \"representation\": \"native_007/v1\", \"scope\": \"independent\", \"statement\": \"Independent question retained.\", \"version\": 1, \"word\": []}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 8,
+            "timestamp": 1793131205,
+            "project": "LOCAL_CONSTRUCTIVE007_5",
+            "kind": "hypothesis",
+            "focus": "root",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_5\", \"source_spec\": {\"current_observation\": \"r\", \"family\": \"erasure\", \"histories\": [\"event:1\", \"event:2\", \"event:3\", \"event:4\", \"event:5\", \"event:6\"], \"hypotheses\": [{\"depends_on\": [], \"id\": \"H0\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:1\", \"weight\": 1}, {\"depends_on\": [], \"id\": \"H1\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:2\", \"weight\": 2}, {\"depends_on\": [], \"id\": \"H2\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:3\", \"weight\": 3}, {\"depends_on\": [], \"id\": \"H3\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:4\", \"weight\": 4}, {\"depends_on\": [], \"id\": \"H4\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:5\", \"weight\": 5}, {\"depends_on\": [], \"id\": \"H5\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:6\", \"weight\": 6}, {\"depends_on\": [\"H0\"], \"id\": \"D0\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:1\", \"weight\": 1}, {\"depends_on\": [\"H1\"], \"id\": \"D1\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:2\", \"weight\": 1}, {\"depends_on\": [\"H2\"], \"id\": \"D2\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:3\", \"weight\": 1}, {\"depends_on\": [\"H3\"], \"id\": \"D3\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:4\", \"weight\": 1}, {\"depends_on\": [\"H4\"], \"id\": \"D4\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:5\", \"weight\": 1}, {\"depends_on\": [\"H5\"], \"id\": \"D5\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:6\", \"weight\": 1}, {\"depends_on\": [], \"id\": \"I\", \"predictive\": false, \"question\": \"independent\", \"ref\": \"event:7\", \"weight\": 1}], \"independent_ref\": \"event:7\", \"known_failures\": [], \"observer\": {\"mod\": null, \"projection\": \"primary\"}, \"parameters\": {\"actions\": [\"g107012_0\", \"g107012_1\", \"g107012_2\", \"g107012_3\", \"g107012_4\", \"g107012_5\", \"g107012_6\"], \"cuts\": [0, 0, 1, 0, 3, 2, 8], \"family\": \"erasure\", \"initial\": [\"r\", \"r\", \"q\", \"r\", \"r\", \"s\", \"r\", \"t\"]}, \"primitive_sha256\": \"299734fcc7435508b0f13656fe1ce1c5812f2203aa44c334510f95e2c95a2f4f\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_5\", \"tests\": [{\"cost\": 2, \"id\": \"t00\", \"ordinal\": 0, \"suffix\": [\"g107012_0\"]}, {\"cost\": 3, \"id\": \"t01\", \"ordinal\": 1, \"suffix\": [\"g107012_1\"]}, {\"cost\": 4, \"id\": \"t02\", \"ordinal\": 2, \"suffix\": [\"g107012_2\"]}, {\"cost\": 2, \"id\": \"t03\", \"ordinal\": 3, \"suffix\": [\"g107012_3\"]}, {\"cost\": 3, \"id\": \"t04\", \"ordinal\": 4, \"suffix\": [\"g107012_4\"]}, {\"cost\": 4, \"id\": \"t05\", \"ordinal\": 5, \"suffix\": [\"g107012_5\"]}, {\"cost\": 2, \"id\": \"t06\", \"ordinal\": 6, \"suffix\": [\"g107012_6\"]}, {\"cost\": 3, \"id\": \"t07\", \"ordinal\": 7, \"suffix\": [\"g107012_0\", \"g107012_0\"]}, {\"cost\": 4, \"id\": \"t08\", \"ordinal\": 8, \"suffix\": [\"g107012_1\", \"g107012_0\"]}, {\"cost\": 4, \"id\": \"t09\", \"ordinal\": 9, \"suffix\": [\"g107012_0\", \"g107012_1\"]}], \"unknowns\": [\"Actual hidden source history and truth outside registered D are unknown.\"], \"version\": 1}, \"statement\": \"Native source definitions, not witness answers.\", \"version\": 1}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 9,
+            "timestamp": 1793131205,
+            "project": "LOCAL_CONSTRUCTIVE007_5",
+            "kind": "hypothesis",
+            "focus": "law",
+            "content": "{\"claim_type\": \"FORMAL_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_5\", \"source_certificate\": {\"coverage\": [0, 1, 2, 3, 4, 5, 6, 7], \"guard\": {\"total_admissibility\": true, \"width\": 8}, \"kind\": \"prefix-projection\", \"native_hash\": \"299734fcc7435508b0f13656fe1ce1c5812f2203aa44c334510f95e2c95a2f4f\", \"observer_hash\": \"cece26f1db1aeca73633ba60ae797d2dc9902a7e5747cae64ec5b1345df22ea4\", \"project\": \"LOCAL_CONSTRUCTIVE007_5\", \"schema\": \"separating-coordinate/v1\", \"scope\": \"source_law_scope_5\", \"source_hash\": \"1c42b446565ba349af96751fc6aa3b4b57a1f33bf9271fd4cdb059655959ed10\", \"source_ref\": \"event:8\", \"version\": 1}, \"statement\": \"Candidate bound program-schema law; not server verification.\", \"version\": 1}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          }
+        ],
+        "research_obligations": [
+          {
+            "id": 1,
+            "project": "LOCAL_CONSTRUCTIVE007_5",
+            "current_version": 1,
+            "created_at": 1793131205
+          }
+        ],
+        "frontier_constraints": [],
+        "transformation_contracts": [],
+        "research_moves": [],
+        "adverse_evidence_reviews": [],
+        "reviews": [],
+        "research_obligation_versions": [
+          {
+            "obligation_id": 1,
+            "version": 1,
+            "status": "OPEN",
+            "payload_json": "{\"closure_reason\":\"\",\"evidence_refs\":[],\"id\":1,\"project\":\"LOCAL_CONSTRUCTIVE007_5\",\"proof_status\":\"unverified\",\"reopen_conditions\":[],\"reopen_reason\":\"\",\"scope\":\"source_law_scope_5\",\"source_event_ids\":[8],\"statement\":\"Test finite source-certified interpretation.\",\"status\":\"OPEN\",\"version\":1}",
+            "created_at": 1793131205
+          }
+        ],
+        "research_move_audits": [],
+        "research_move_status_history": [],
+        "research_move_bindings": [],
+        "research_move_request_keys": [],
+        "policies": [
+          {
+            "code": "FAILURE_FIRST",
+            "content": "После провала — RCA и проверяемый контрпример прежде новой эвристики.",
+            "enabled": 1
+          },
+          {
+            "code": "FTL_CONTROL",
+            "content": "Совпадение смыслов через известный канал не доказывает независимую передачу новой информации.",
+            "enabled": 1
+          },
+          {
+            "code": "NO_SUBSTITUTION",
+            "content": "Не подменять обнаруженный механизм готовым DSL или аппаратом без сравнения преемственности.",
+            "enabled": 1
+          },
+          {
+            "code": "PROOF_STATUS",
+            "content": "Аналогии, тексты модели и численные тесты не являются математическими доказательствами.",
+            "enabled": 1
+          },
+          {
+            "code": "SOURCE_VS_READER",
+            "content": "Разделять изменение источника, интерпретации и способа проверки.",
+            "enabled": 1
+          },
+          {
+            "code": "TWO_OPERATIONS",
+            "content": "Интерпретация и перенос внимания; новые фундаментальные операции требуют доказательств.",
+            "enabled": 1
+          }
+        ],
+        "frontier_imports": []
+      }
+    },
+    "query": {
+      "id": "constructive007-source",
+      "project": "LOCAL_CONSTRUCTIVE007_5",
+      "root_ref": "event:8",
+      "scope": "source_law_scope_5",
+      "version": 1,
+      "move": {
+        "active_frontier_id": 1,
+        "parent_event_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "proposed_operation": {
+          "mechanism": "readonly_source_law_interpretation",
+          "intent": "advisory"
+        }
+      }
+    },
+    "refs": {
+      "h0": "event:1",
+      "h1": "event:2",
+      "h2": "event:3",
+      "h3": "event:4",
+      "h4": "event:5",
+      "h5": "event:6",
+      "independent": "event:7",
+      "root": "event:8",
+      "law": "event:9"
+    },
+    "certificate_ref": "event:9",
+    "database": "/home/catman/.local/state/livingmath/constructive007/20261027T032333888048Z/databases/world5.sqlite3"
+  },
+  {
+    "id": "W6",
+    "index": 6,
+    "family": "opaque",
+    "held_out": false,
+    "history": {
+      "project": "LOCAL_CONSTRUCTIVE007_6",
+      "schema_version": 5,
+      "tables": {
+        "events": [
+          {
+            "id": 1,
+            "timestamp": 1793131206,
+            "project": "LOCAL_CONSTRUCTIVE007_6",
+            "kind": "hypothesis",
+            "focus": "h0",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_6\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": [\"g107013_0\"]}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 2,
+            "timestamp": 1793131206,
+            "project": "LOCAL_CONSTRUCTIVE007_6",
+            "kind": "hypothesis",
+            "focus": "h1",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_6\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": [\"g107013_1\"]}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 3,
+            "timestamp": 1793131206,
+            "project": "LOCAL_CONSTRUCTIVE007_6",
+            "kind": "hypothesis",
+            "focus": "h2",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_6\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": [\"g107013_0\"]}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 4,
+            "timestamp": 1793131206,
+            "project": "LOCAL_CONSTRUCTIVE007_6",
+            "kind": "hypothesis",
+            "focus": "h3",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_6\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": [\"g107013_2\"]}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 5,
+            "timestamp": 1793131206,
+            "project": "LOCAL_CONSTRUCTIVE007_6",
+            "kind": "hypothesis",
+            "focus": "h4",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_6\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": [\"g107013_0\", \"g107013_0\"]}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 6,
+            "timestamp": 1793131206,
+            "project": "LOCAL_CONSTRUCTIVE007_6",
+            "kind": "hypothesis",
+            "focus": "h5",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_6\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": [\"g107013_1\", \"g107013_0\"]}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 7,
+            "timestamp": 1793131206,
+            "project": "LOCAL_CONSTRUCTIVE007_6",
+            "kind": "hypothesis",
+            "focus": "independent",
+            "content": "{\"claim_type\": \"HYPOTHESIS\", \"representation\": \"native_007/v1\", \"scope\": \"independent\", \"statement\": \"Independent question retained.\", \"version\": 1, \"word\": []}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 8,
+            "timestamp": 1793131206,
+            "project": "LOCAL_CONSTRUCTIVE007_6",
+            "kind": "hypothesis",
+            "focus": "root",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_6\", \"source_spec\": {\"current_observation\": 0, \"family\": \"opaque\", \"histories\": [\"event:1\", \"event:2\", \"event:3\", \"event:4\", \"event:5\", \"event:6\"], \"hypotheses\": [{\"depends_on\": [], \"id\": \"H0\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:1\", \"weight\": 1}, {\"depends_on\": [], \"id\": \"H1\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:2\", \"weight\": 2}, {\"depends_on\": [], \"id\": \"H2\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:3\", \"weight\": 3}, {\"depends_on\": [], \"id\": \"H3\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:4\", \"weight\": 4}, {\"depends_on\": [], \"id\": \"H4\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:5\", \"weight\": 5}, {\"depends_on\": [], \"id\": \"H5\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:6\", \"weight\": 6}, {\"depends_on\": [\"H0\"], \"id\": \"D0\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:1\", \"weight\": 1}, {\"depends_on\": [\"H1\"], \"id\": \"D1\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:2\", \"weight\": 1}, {\"depends_on\": [\"H2\"], \"id\": \"D2\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:3\", \"weight\": 1}, {\"depends_on\": [\"H3\"], \"id\": \"D3\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:4\", \"weight\": 1}, {\"depends_on\": [\"H4\"], \"id\": \"D4\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:5\", \"weight\": 1}, {\"depends_on\": [\"H5\"], \"id\": \"D5\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:6\", \"weight\": 1}, {\"depends_on\": [], \"id\": \"I\", \"predictive\": false, \"question\": \"independent\", \"ref\": \"event:7\", \"weight\": 1}], \"independent_ref\": \"event:7\", \"known_failures\": [], \"observer\": {\"mod\": null, \"projection\": \"primary\"}, \"parameters\": {\"actions\": [\"g107013_0\", \"g107013_1\", \"g107013_2\", \"g107013_3\"], \"family\": \"opaque\", \"initial\": [0]}, \"primitive_sha256\": \"299734fcc7435508b0f13656fe1ce1c5812f2203aa44c334510f95e2c95a2f4f\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_6\", \"tests\": [{\"cost\": 2, \"id\": \"t00\", \"ordinal\": 0, \"suffix\": [\"g107013_0\"]}, {\"cost\": 3, \"id\": \"t01\", \"ordinal\": 1, \"suffix\": [\"g107013_1\"]}, {\"cost\": 4, \"id\": \"t02\", \"ordinal\": 2, \"suffix\": [\"g107013_2\"]}, {\"cost\": 2, \"id\": \"t03\", \"ordinal\": 3, \"suffix\": [\"g107013_3\"]}, {\"cost\": 3, \"id\": \"t04\", \"ordinal\": 4, \"suffix\": [\"g107013_0\", \"g107013_0\"]}, {\"cost\": 4, \"id\": \"t05\", \"ordinal\": 5, \"suffix\": [\"g107013_0\", \"g107013_1\"]}, {\"cost\": 5, \"id\": \"t06\", \"ordinal\": 6, \"suffix\": [\"g107013_0\", \"g107013_2\"]}, {\"cost\": 3, \"id\": \"t07\", \"ordinal\": 7, \"suffix\": [\"g107013_0\", \"g107013_3\"]}, {\"cost\": 4, \"id\": \"t08\", \"ordinal\": 8, \"suffix\": [\"g107013_1\", \"g107013_0\"]}, {\"cost\": 5, \"id\": \"t09\", \"ordinal\": 9, \"suffix\": [\"g107013_1\", \"g107013_1\"]}, {\"cost\": 6, \"id\": \"t10\", \"ordinal\": 10, \"suffix\": [\"g107013_1\", \"g107013_2\"]}, {\"cost\": 4, \"id\": \"t11\", \"ordinal\": 11, \"suffix\": [\"g107013_1\", \"g107013_3\"]}, {\"cost\": 5, \"id\": \"t12\", \"ordinal\": 12, \"suffix\": [\"g107013_2\", \"g107013_0\"]}, {\"cost\": 6, \"id\": \"t13\", \"ordinal\": 13, \"suffix\": [\"g107013_2\", \"g107013_1\"]}, {\"cost\": 7, \"id\": \"t14\", \"ordinal\": 14, \"suffix\": [\"g107013_2\", \"g107013_2\"]}, {\"cost\": 5, \"id\": \"t15\", \"ordinal\": 15, \"suffix\": [\"g107013_2\", \"g107013_3\"]}, {\"cost\": 3, \"id\": \"t16\", \"ordinal\": 16, \"suffix\": [\"g107013_3\", \"g107013_0\"]}, {\"cost\": 4, \"id\": \"t17\", \"ordinal\": 17, \"suffix\": [\"g107013_3\", \"g107013_1\"]}, {\"cost\": 5, \"id\": \"t18\", \"ordinal\": 18, \"suffix\": [\"g107013_3\", \"g107013_2\"]}, {\"cost\": 3, \"id\": \"t19\", \"ordinal\": 19, \"suffix\": [\"g107013_3\", \"g107013_3\"]}], \"unknowns\": [\"Actual hidden source history and truth outside registered D are unknown.\"], \"version\": 1}, \"statement\": \"Native source definitions, not witness answers.\", \"version\": 1}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          }
+        ],
+        "research_obligations": [
+          {
+            "id": 1,
+            "project": "LOCAL_CONSTRUCTIVE007_6",
+            "current_version": 1,
+            "created_at": 1793131206
+          }
+        ],
+        "frontier_constraints": [],
+        "transformation_contracts": [],
+        "research_moves": [],
+        "adverse_evidence_reviews": [],
+        "reviews": [],
+        "research_obligation_versions": [
+          {
+            "obligation_id": 1,
+            "version": 1,
+            "status": "OPEN",
+            "payload_json": "{\"closure_reason\":\"\",\"evidence_refs\":[],\"id\":1,\"project\":\"LOCAL_CONSTRUCTIVE007_6\",\"proof_status\":\"unverified\",\"reopen_conditions\":[],\"reopen_reason\":\"\",\"scope\":\"source_law_scope_6\",\"source_event_ids\":[8],\"statement\":\"Test finite source-certified interpretation.\",\"status\":\"OPEN\",\"version\":1}",
+            "created_at": 1793131206
+          }
+        ],
+        "research_move_audits": [],
+        "research_move_status_history": [],
+        "research_move_bindings": [],
+        "research_move_request_keys": [],
+        "policies": [
+          {
+            "code": "FAILURE_FIRST",
+            "content": "После провала — RCA и проверяемый контрпример прежде новой эвристики.",
+            "enabled": 1
+          },
+          {
+            "code": "FTL_CONTROL",
+            "content": "Совпадение смыслов через известный канал не доказывает независимую передачу новой информации.",
+            "enabled": 1
+          },
+          {
+            "code": "NO_SUBSTITUTION",
+            "content": "Не подменять обнаруженный механизм готовым DSL или аппаратом без сравнения преемственности.",
+            "enabled": 1
+          },
+          {
+            "code": "PROOF_STATUS",
+            "content": "Аналогии, тексты модели и численные тесты не являются математическими доказательствами.",
+            "enabled": 1
+          },
+          {
+            "code": "SOURCE_VS_READER",
+            "content": "Разделять изменение источника, интерпретации и способа проверки.",
+            "enabled": 1
+          },
+          {
+            "code": "TWO_OPERATIONS",
+            "content": "Интерпретация и перенос внимания; новые фундаментальные операции требуют доказательств.",
+            "enabled": 1
+          }
+        ],
+        "frontier_imports": []
+      }
+    },
+    "query": {
+      "id": "constructive007-source",
+      "project": "LOCAL_CONSTRUCTIVE007_6",
+      "root_ref": "event:8",
+      "scope": "source_law_scope_6",
+      "version": 1,
+      "move": {
+        "active_frontier_id": 1,
+        "parent_event_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "proposed_operation": {
+          "mechanism": "readonly_source_law_interpretation",
+          "intent": "advisory"
+        }
+      }
+    },
+    "refs": {
+      "h0": "event:1",
+      "h1": "event:2",
+      "h2": "event:3",
+      "h3": "event:4",
+      "h4": "event:5",
+      "h5": "event:6",
+      "independent": "event:7",
+      "root": "event:8"
+    },
+    "certificate_ref": null,
+    "database": "/home/catman/.local/state/livingmath/constructive007/20261027T032333888048Z/databases/world6.sqlite3"
+  },
+  {
+    "id": "W7",
+    "index": 7,
+    "family": "boundary",
+    "held_out": false,
+    "history": {
+      "project": "LOCAL_CONSTRUCTIVE007_7",
+      "schema_version": 5,
+      "tables": {
+        "events": [
+          {
+            "id": 1,
+            "timestamp": 1793131207,
+            "project": "LOCAL_CONSTRUCTIVE007_7",
+            "kind": "hypothesis",
+            "focus": "h0",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_7\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": [\"g107014_0\"]}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 2,
+            "timestamp": 1793131207,
+            "project": "LOCAL_CONSTRUCTIVE007_7",
+            "kind": "hypothesis",
+            "focus": "h1",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_7\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": [\"g107014_1\"]}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 3,
+            "timestamp": 1793131207,
+            "project": "LOCAL_CONSTRUCTIVE007_7",
+            "kind": "hypothesis",
+            "focus": "h2",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_7\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": [\"g107014_0\"]}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 4,
+            "timestamp": 1793131207,
+            "project": "LOCAL_CONSTRUCTIVE007_7",
+            "kind": "hypothesis",
+            "focus": "h3",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_7\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": [\"g107014_2\"]}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 5,
+            "timestamp": 1793131207,
+            "project": "LOCAL_CONSTRUCTIVE007_7",
+            "kind": "hypothesis",
+            "focus": "h4",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_7\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": [\"g107014_0\", \"g107014_0\"]}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 6,
+            "timestamp": 1793131207,
+            "project": "LOCAL_CONSTRUCTIVE007_7",
+            "kind": "hypothesis",
+            "focus": "h5",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_7\", \"statement\": \"Raw finite source history, not an equivalence claim.\", \"version\": 1, \"word\": [\"g107014_1\", \"g107014_0\"]}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 7,
+            "timestamp": 1793131207,
+            "project": "LOCAL_CONSTRUCTIVE007_7",
+            "kind": "hypothesis",
+            "focus": "independent",
+            "content": "{\"claim_type\": \"HYPOTHESIS\", \"representation\": \"native_007/v1\", \"scope\": \"independent\", \"statement\": \"Independent question retained.\", \"version\": 1, \"word\": []}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          },
+          {
+            "id": 8,
+            "timestamp": 1793131207,
+            "project": "LOCAL_CONSTRUCTIVE007_7",
+            "kind": "hypothesis",
+            "focus": "root",
+            "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_7\", \"source_spec\": {\"current_observation\": 0, \"family\": \"boundary\", \"histories\": [\"event:1\", \"event:2\", \"event:3\", \"event:4\", \"event:5\", \"event:6\"], \"hypotheses\": [{\"depends_on\": [], \"id\": \"H0\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:1\", \"weight\": 1}, {\"depends_on\": [], \"id\": \"H1\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:2\", \"weight\": 2}, {\"depends_on\": [], \"id\": \"H2\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:3\", \"weight\": 3}, {\"depends_on\": [], \"id\": \"H3\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:4\", \"weight\": 4}, {\"depends_on\": [], \"id\": \"H4\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:5\", \"weight\": 5}, {\"depends_on\": [], \"id\": \"H5\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:6\", \"weight\": 6}, {\"depends_on\": [\"H0\"], \"id\": \"D0\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:1\", \"weight\": 1}, {\"depends_on\": [\"H1\"], \"id\": \"D1\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:2\", \"weight\": 1}, {\"depends_on\": [\"H2\"], \"id\": \"D2\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:3\", \"weight\": 1}, {\"depends_on\": [\"H3\"], \"id\": \"D3\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:4\", \"weight\": 1}, {\"depends_on\": [\"H4\"], \"id\": \"D4\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:5\", \"weight\": 1}, {\"depends_on\": [\"H5\"], \"id\": \"D5\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:6\", \"weight\": 1}, {\"depends_on\": [], \"id\": \"I\", \"predictive\": false, \"question\": \"independent\", \"ref\": \"event:7\", \"weight\": 1}], \"independent_ref\": \"event:7\", \"known_failures\": [], \"observer\": {\"mod\": null, \"projection\": \"primary\"}, \"parameters\": {\"actions\": [\"g107014_0\", \"g107014_1\", \"g107014_2\", \"g107014_3\"], \"family\": \"boundary\", \"initial\": [0]}, \"primitive_sha256\": \"299734fcc7435508b0f13656fe1ce1c5812f2203aa44c334510f95e2c95a2f4f\", \"representation\": \"native_007/v1\", \"scope\": \"source_law_scope_7\", \"tests\": [{\"cost\": 2, \"id\": \"t00\", \"ordinal\": 0, \"suffix\": [\"g107014_0\"]}, {\"cost\": 3, \"id\": \"t01\", \"ordinal\": 1, \"suffix\": [\"g107014_1\"]}, {\"cost\": 4, \"id\": \"t02\", \"ordinal\": 2, \"suffix\": [\"g107014_2\"]}, {\"cost\": 2, \"id\": \"t03\", \"ordinal\": 3, \"suffix\": [\"g107014_3\"]}, {\"cost\": 3, \"id\": \"t04\", \"ordinal\": 4, \"suffix\": [\"g107014_0\", \"g107014_0\"]}, {\"cost\": 4, \"id\": \"t05\", \"ordinal\": 5, \"suffix\": [\"g107014_0\", \"g107014_1\"]}, {\"cost\": 5, \"id\": \"t06\", \"ordinal\": 6, \"suffix\": [\"g107014_0\", \"g107014_2\"]}, {\"cost\": 3, \"id\": \"t07\", \"ordinal\": 7, \"suffix\": [\"g107014_0\", \"g107014_3\"]}, {\"cost\": 4, \"id\": \"t08\", \"ordinal\": 8, \"suffix\": [\"g107014_1\", \"g107014_0\"]}, {\"cost\": 5, \"id\": \"t09\", \"ordinal\": 9, \"suffix\": [\"g107014_1\", \"g107014_1\"]}, {\"cost\": 6, \"id\": \"t10\", \"ordinal\": 10, \"suffix\": [\"g107014_1\", \"g107014_2\"]}, {\"cost\": 4, \"id\": \"t11\", \"ordinal\": 11, \"suffix\": [\"g107014_1\", \"g107014_3\"]}, {\"cost\": 5, \"id\": \"t12\", \"ordinal\": 12, \"suffix\": [\"g107014_2\", \"g107014_0\"]}, {\"cost\": 6, \"id\": \"t13\", \"ordinal\": 13, \"suffix\": [\"g107014_2\", \"g107014_1\"]}, {\"cost\": 7, \"id\": \"t14\", \"ordinal\": 14, \"suffix\": [\"g107014_2\", \"g107014_2\"]}, {\"cost\": 5, \"id\": \"t15\", \"ordinal\": 15, \"suffix\": [\"g107014_2\", \"g107014_3\"]}, {\"cost\": 3, \"id\": \"t16\", \"ordinal\": 16, \"suffix\": [\"g107014_3\", \"g107014_0\"]}, {\"cost\": 4, \"id\": \"t17\", \"ordinal\": 17, \"suffix\": [\"g107014_3\", \"g107014_1\"]}, {\"cost\": 5, \"id\": \"t18\", \"ordinal\": 18, \"suffix\": [\"g107014_3\", \"g107014_2\"]}, {\"cost\": 3, \"id\": \"t19\", \"ordinal\": 19, \"suffix\": [\"g107014_3\", \"g107014_3\"]}], \"unknowns\": [\"Actual hidden source history and truth outside registered D are unknown.\"], \"version\": 1}, \"statement\": \"Native source definitions, not witness answers.\", \"version\": 1}",
+            "status": "hypothesis",
+            "evidence": "",
+            "parent_id": null
+          }
+        ],
+        "research_obligations": [
+          {
+            "id": 1,
+            "project": "LOCAL_CONSTRUCTIVE007_7",
+            "current_version": 1,
+            "created_at": 1793131207
+          }
+        ],
+        "frontier_constraints": [],
+        "transformation_contracts": [],
+        "research_moves": [],
+        "adverse_evidence_reviews": [],
+        "reviews": [],
+        "research_obligation_versions": [
+          {
+            "obligation_id": 1,
+            "version": 1,
+            "status": "OPEN",
+            "payload_json": "{\"closure_reason\":\"\",\"evidence_refs\":[],\"id\":1,\"project\":\"LOCAL_CONSTRUCTIVE007_7\",\"proof_status\":\"unverified\",\"reopen_conditions\":[],\"reopen_reason\":\"\",\"scope\":\"source_law_scope_7\",\"source_event_ids\":[8],\"statement\":\"Test finite source-certified interpretation.\",\"status\":\"OPEN\",\"version\":1}",
+            "created_at": 1793131207
+          }
+        ],
+        "research_move_audits": [],
+        "research_move_status_history": [],
+        "research_move_bindings": [],
+        "research_move_request_keys": [],
+        "policies": [
+          {
+            "code": "FAILURE_FIRST",
+            "content": "После провала — RCA и проверяемый контрпример прежде новой эвристики.",
+            "enabled": 1
+          },
+          {
+            "code": "FTL_CONTROL",
+            "content": "Совпадение смыслов через известный канал не доказывает независимую передачу новой информации.",
+            "enabled": 1
+          },
+          {
+            "code": "NO_SUBSTITUTION",
+            "content": "Не подменять обнаруженный механизм готовым DSL или аппаратом без сравнения преемственности.",
+            "enabled": 1
+          },
+          {
+            "code": "PROOF_STATUS",
+            "content": "Аналогии, тексты модели и численные тесты не являются математическими доказательствами.",
+            "enabled": 1
+          },
+          {
+            "code": "SOURCE_VS_READER",
+            "content": "Разделять изменение источника, интерпретации и способа проверки.",
+            "enabled": 1
+          },
+          {
+            "code": "TWO_OPERATIONS",
+            "content": "Интерпретация и перенос внимания; новые фундаментальные операции требуют доказательств.",
+            "enabled": 1
+          }
+        ],
+        "frontier_imports": []
+      }
+    },
+    "query": {
+      "id": "constructive007-source",
+      "project": "LOCAL_CONSTRUCTIVE007_7",
+      "root_ref": "event:8",
+      "scope": "source_law_scope_7",
+      "version": 1,
+      "move": {
+        "active_frontier_id": 1,
+        "parent_event_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "proposed_operation": {
+          "mechanism": "readonly_source_law_interpretation",
+          "intent": "advisory"
+        }
+      }
+    },
+    "refs": {
+      "h0": "event:1",
+      "h1": "event:2",
+      "h2": "event:3",
+      "h3": "event:4",
+      "h4": "event:5",
+      "h5": "event:6",
+      "independent": "event:7",
+      "root": "event:8"
+    },
+    "certificate_ref": null,
+    "database": "/home/catman/.local/state/livingmath/constructive007/20261027T032333888048Z/databases/world7.sqlite3"
+  }
+]

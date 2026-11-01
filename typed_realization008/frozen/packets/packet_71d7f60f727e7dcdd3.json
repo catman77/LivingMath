@@ -1,0 +1,75 @@
+{
+  "id": "packet_71d7f60f727e7dcdd3",
+  "document_id": "ripley004",
+  "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+  "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+  "language": "en",
+  "spans": [
+    {
+      "id": "ripley004:8",
+      "document_id": "ripley004",
+      "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "start": 323,
+      "end": 362,
+      "text": "The second manner is called Triptatiue,",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[4]/lg[7]/l[1]",
+        "section": "gate4",
+        "stanza": 7,
+        "line": 1,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "ripley004:12",
+      "document_id": "ripley004",
+      "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "start": 499,
+      "end": 549,
+      "text": "For as the soule to the spirite the bond must bee;",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[4]/lg[7]/l[5]",
+        "section": "gate4",
+        "stanza": 7,
+        "line": 5,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "ripley004:13",
+      "document_id": "ripley004",
+      "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "start": 550,
+      "end": 596,
+      "text": "Right so the bodie the soule to him must knit,",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[4]/lg[7]/l[6]",
+        "section": "gate4",
+        "stanza": 7,
+        "line": 6,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "ripley004:14",
+      "document_id": "ripley004",
+      "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "start": 597,
+      "end": 639,
+      "text": "Out of thy minde let not this lesson flit.",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[4]/lg[7]/l[7]",
+        "section": "gate4",
+        "stanza": 7,
+        "line": 7,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    }
+  ],
+  "context": [],
+  "grammar": {}
+}

@@ -1,0 +1,24 @@
+{
+  "id": "p_b148b835374ee2475d",
+  "document_id": "s02",
+  "document_sha256": "3c5bcac02c5f2035efdf639c629cb8a9de6130ffea6f228b44031d5e9de0ea9c",
+  "edition": "ORIGINAL_SYNTHETIC_CONTROL/003",
+  "language": "en",
+  "spans": [
+    {
+      "id": "s02:3",
+      "document_id": "s02",
+      "document_sha256": "3c5bcac02c5f2035efdf639c629cb8a9de6130ffea6f228b44031d5e9de0ea9c",
+      "edition": "ORIGINAL_SYNTHETIC_CONTROL/003",
+      "start": 49,
+      "end": 94,
+      "text": "In this account, \"he\" refers to the engineer.",
+      "source_address": {
+        "fixture_line": 3,
+        "origin": "ORIGINAL_SYNTHETIC_CONTROL"
+      }
+    }
+  ],
+  "context": [],
+  "grammar": {}
+}

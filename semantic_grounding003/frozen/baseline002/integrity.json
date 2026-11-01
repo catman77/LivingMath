@@ -1,0 +1,129 @@
+{
+  "all_existing_files_unchanged": true,
+  "protected_file_count": 2342,
+  "production": {
+    "canonical": {
+      "old_rows_preserved": true,
+      "integrity_check": "ok",
+      "foreign_keys": [],
+      "row_deltas": {
+        "policies": 0,
+        "events": 0,
+        "sqlite_sequence": 0,
+        "policy_requests": 0,
+        "reviews": 0,
+        "operations": 0,
+        "request_keys": 0,
+        "event_fingerprints": 0,
+        "research_obligations": 0,
+        "research_obligation_versions": 0,
+        "research_moves": 0,
+        "transformation_contracts": 0,
+        "frontier_constraints": 0,
+        "frontier_imports": 0,
+        "research_move_bindings": 0,
+        "research_move_keys": 0,
+        "research_move_request_keys": 0,
+        "research_move_audits": 0,
+        "research_move_status_history": 0,
+        "adverse_evidence_reviews": 0
+      }
+    },
+    "typed": {
+      "old_rows_preserved": true,
+      "integrity_check": "ok",
+      "foreign_keys": [],
+      "row_deltas": {
+        "policies": 0,
+        "events": 0,
+        "sqlite_sequence": 0,
+        "policy_requests": 0,
+        "reviews": 0,
+        "operations": 0,
+        "request_keys": 0,
+        "event_fingerprints": 0,
+        "research_obligations": 0,
+        "research_obligation_versions": 0,
+        "research_moves": 0,
+        "transformation_contracts": 0,
+        "frontier_constraints": 0,
+        "frontier_imports": 0,
+        "research_move_bindings": 0,
+        "research_move_keys": 0,
+        "research_move_request_keys": 0,
+        "research_move_audits": 0,
+        "research_move_status_history": 0,
+        "adverse_evidence_reviews": 0,
+        "typed011_configuration": 0,
+        "typed011_scopes": 0,
+        "typed011_precommits": 0,
+        "typed011_moves": 0,
+        "typed011_activations": 0,
+        "typed011_executions": 0,
+        "typed011_receipts": 0,
+        "typed011_journal": 0,
+        "engine017_sources": 0,
+        "engine017_requests": 0,
+        "engine017_projections": 0,
+        "deploy018_leases": 0,
+        "deploy018_attempts": 0,
+        "deploy018_attestations": 0,
+        "deploy018_consumptions": 0,
+        "deploy018_revocations": 0
+      }
+    },
+    "dav": {
+      "old_rows_preserved": true,
+      "integrity_check": "ok",
+      "foreign_keys": [],
+      "row_deltas": {
+        "dav_records": 0
+      },
+      "hash_chain_ok": true,
+      "rows": 494,
+      "head_hash": "dd6bcc1ef14422ebcaaa912b7ec361d660b75252199614b8d532cbd424d34e66"
+    }
+  },
+  "private_QA": {
+    "canonical": {
+      "old_rows_preserved": true,
+      "integrity_check": "ok",
+      "foreign_keys": [],
+      "row_deltas": {
+        "policies": 0,
+        "events": 4,
+        "sqlite_sequence": 0,
+        "policy_requests": 0,
+        "reviews": 0,
+        "operations": 4,
+        "request_keys": 4,
+        "event_fingerprints": 4,
+        "research_obligations": 0,
+        "research_obligation_versions": 0,
+        "research_moves": 0,
+        "transformation_contracts": 0,
+        "frontier_constraints": 0,
+        "frontier_imports": 0,
+        "research_move_bindings": 0,
+        "research_move_keys": 0,
+        "research_move_request_keys": 0,
+        "research_move_audits": 0,
+        "research_move_status_history": 0,
+        "adverse_evidence_reviews": 0
+      }
+    },
+    "dav": {
+      "old_rows_preserved": true,
+      "integrity_check": "ok",
+      "foreign_keys": [],
+      "row_deltas": {
+        "dav_records": 8
+      },
+      "hash_chain_ok": true,
+      "rows": 502,
+      "head_hash": "3d1f888efa545d0fd8df8c1cc5ca2db878a2d4812851723d40072b5d52f5f218"
+    }
+  },
+  "production_services_unchanged": true,
+  "OAuth_note": "Normal owner authentication bookkeeping only; no research writes."
+}

@@ -1,0 +1,15 @@
+{
+  "scientific_sha256": {
+    "candidate-source-relations.jsonl": "0e8eb3fe008ef0ca1ba149f5526be40b59014a64b2daa53a403eef548e98baaa",
+    "alternative-readings.jsonl": "f02256ce1de8829939305343c4c30644724f61198e7464056b56f719f2b56050",
+    "repair-history.jsonl": "5de6c2a12a6cc173d7844f84a184592f02f7a1dfb24003036ab1faeeadffc931",
+    "preholdout-predictions.jsonl": "3479b9338e252ef645a103905fab8c9a4e65395d13a5067793c8c31a20b03331",
+    "holdout-checks.jsonl": "8438089729426bafe2e3cb98b47f95c2099017e201fdec739f960b65ea324985",
+    "nontriviality-controls.jsonl": "5ddb12cd39f339e35ce9cf76e158f2cb25e37b17398ab2c0df818f45c2b8285d",
+    "target-bindings.jsonl": "71ae3815aa2cde88ae9865077c675a5448d17d00119db311d39154e50b2bec20",
+    "loss-ledger.jsonl": "d7934c7d0a6020d6dda59e14bca51479dd7464d8c7a08246f5d73bcd78237130",
+    "source-audits.jsonl": "74ab17efff6893418c51569708880e4745735f32e532f0a0d3065ebb8ea4feb8",
+    "unknown-resolution.jsonl": "d9b4cd2f39163f3a1af7a3a49bf738c3d4b7ce91e2d131b9d9e554b3b4d5328f"
+  },
+  "normalization": "Only measured resource metrics excluded. H, source roles/quotes, alternatives, counterexamples, revisions and verdicts must match. Each execution journal chain separately verified; its measurement-bearing hashes need not equal another run."
+}

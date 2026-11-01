@@ -1,0 +1,89 @@
+{
+  "id": "packet_3bbaaaa05ffee4d4f8",
+  "document_id": "echo",
+  "document_sha256": "e04a015ccfbb225f9423e077d0038fd421fa31990b5124322c0918b17d1baf93",
+  "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+  "language": "ru",
+  "spans": [
+    {
+      "id": "echo:7",
+      "document_id": "echo",
+      "document_sha256": "e04a015ccfbb225f9423e077d0038fd421fa31990b5124322c0918b17d1baf93",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 264,
+      "end": 314,
+      "text": "Ты внемлешь грохоту громов,",
+      "source_address": {
+        "html_id": "L7",
+        "section": "echo"
+      }
+    },
+    {
+      "id": "echo:8",
+      "document_id": "echo",
+      "document_sha256": "e04a015ccfbb225f9423e077d0038fd421fa31990b5124322c0918b17d1baf93",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 315,
+      "end": 352,
+      "text": "И гласу бури и валов,",
+      "source_address": {
+        "html_id": "L8",
+        "section": "echo"
+      }
+    },
+    {
+      "id": "echo:9",
+      "document_id": "echo",
+      "document_sha256": "e04a015ccfbb225f9423e077d0038fd421fa31990b5124322c0918b17d1baf93",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 353,
+      "end": 404,
+      "text": "И крику сельских пастухов —",
+      "source_address": {
+        "html_id": "L9",
+        "section": "echo"
+      }
+    },
+    {
+      "id": "echo:10",
+      "document_id": "echo",
+      "document_sha256": "e04a015ccfbb225f9423e077d0038fd421fa31990b5124322c0918b17d1baf93",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 405,
+      "end": 431,
+      "text": " И шлешь ответ;",
+      "source_address": {
+        "html_id": "L10",
+        "section": "echo"
+      }
+    },
+    {
+      "id": "echo:11",
+      "document_id": "echo",
+      "document_sha256": "e04a015ccfbb225f9423e077d0038fd421fa31990b5124322c0918b17d1baf93",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 432,
+      "end": 477,
+      "text": "Тебе ж нет отзыва... Таков",
+      "source_address": {
+        "html_id": "L11",
+        "section": "echo"
+      }
+    },
+    {
+      "id": "echo:12",
+      "document_id": "echo",
+      "document_sha256": "e04a015ccfbb225f9423e077d0038fd421fa31990b5124322c0918b17d1baf93",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 478,
+      "end": 497,
+      "text": " И ты, поэт!",
+      "source_address": {
+        "html_id": "L12",
+        "section": "echo"
+      }
+    }
+  ],
+  "context": [],
+  "grammar": {}
+}

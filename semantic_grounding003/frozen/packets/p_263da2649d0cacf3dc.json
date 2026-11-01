@@ -1,0 +1,109 @@
+{
+  "id": "p_263da2649d0cacf3dc",
+  "document_id": "r4",
+  "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+  "edition": "Ripley1591/TCP-A10786-aa59eb69",
+  "language": "en",
+  "spans": [
+    {
+      "id": "r4:43",
+      "document_id": "r4",
+      "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+      "edition": "Ripley1591/TCP-A10786-aa59eb69",
+      "start": 1946,
+      "end": 1983,
+      "text": "HEre of our Sublimation a word or two",
+      "source_address": {
+        "old_public_line_id": "line-01543",
+        "xml_path": "/TEI[1]/text[1]/body[1]/div[3]/div[8]/lg[1]/l[1]",
+        "gate": 8
+      }
+    },
+    {
+      "id": "r4:44",
+      "document_id": "r4",
+      "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+      "edition": "Ripley1591/TCP-A10786-aa59eb69",
+      "start": 1984,
+      "end": 2026,
+      "text": "I haue to speake, which the eight Gate is.",
+      "source_address": {
+        "old_public_line_id": "line-01544",
+        "xml_path": "/TEI[1]/text[1]/body[1]/div[3]/div[8]/lg[1]/l[2]",
+        "gate": 8
+      }
+    },
+    {
+      "id": "r4:45",
+      "document_id": "r4",
+      "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+      "edition": "Ripley1591/TCP-A10786-aa59eb69",
+      "start": 2027,
+      "end": 2071,
+      "text": "Fooles doo sublime, but sublime thou not so,",
+      "source_address": {
+        "old_public_line_id": "line-01545",
+        "xml_path": "/TEI[1]/text[1]/body[1]/div[3]/div[8]/lg[1]/l[3]",
+        "gate": 8
+      }
+    },
+    {
+      "id": "r4:46",
+      "document_id": "r4",
+      "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+      "edition": "Ripley1591/TCP-A10786-aa59eb69",
+      "start": 2072,
+      "end": 2108,
+      "text": "For we sublime not as they doe ywis:",
+      "source_address": {
+        "old_public_line_id": "line-01546",
+        "xml_path": "/TEI[1]/text[1]/body[1]/div[3]/div[8]/lg[1]/l[4]",
+        "gate": 8
+      }
+    },
+    {
+      "id": "r4:47",
+      "document_id": "r4",
+      "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+      "edition": "Ripley1591/TCP-A10786-aa59eb69",
+      "start": 2109,
+      "end": 2155,
+      "text": "To sublime truly therefore thou shalt not mis,",
+      "source_address": {
+        "old_public_line_id": "line-01547",
+        "xml_path": "/TEI[1]/text[1]/body[1]/div[3]/div[8]/lg[1]/l[5]",
+        "gate": 8
+      }
+    },
+    {
+      "id": "r4:48",
+      "document_id": "r4",
+      "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+      "edition": "Ripley1591/TCP-A10786-aa59eb69",
+      "start": 2156,
+      "end": 2203,
+      "text": "If thou canst make thy bodies first spirituall,",
+      "source_address": {
+        "old_public_line_id": "line-01548",
+        "xml_path": "/TEI[1]/text[1]/body[1]/div[3]/div[8]/lg[1]/l[6]",
+        "gate": 8
+      }
+    },
+    {
+      "id": "r4:49",
+      "document_id": "r4",
+      "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+      "edition": "Ripley1591/TCP-A10786-aa59eb69",
+      "start": 2204,
+      "end": 2259,
+      "text": "And then thy spirits (as I haue taught thee) corporall.",
+      "source_address": {
+        "old_public_line_id": "line-01549",
+        "xml_path": "/TEI[1]/text[1]/body[1]/div[3]/div[8]/lg[1]/l[7]",
+        "gate": 8
+      }
+    }
+  ],
+  "context": [],
+  "grammar": {}
+}

@@ -1,0 +1,31 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "basis": {
+      "enum": [
+        "USER_SESSION",
+        "PUBLIC_DOMAIN"
+      ],
+      "title": "Basis",
+      "type": "string"
+    },
+    "origin": {
+      "maxLength": 1000,
+      "minLength": 1,
+      "title": "Origin",
+      "type": "string"
+    },
+    "attribution": {
+      "default": "",
+      "maxLength": 1000,
+      "title": "Attribution",
+      "type": "string"
+    }
+  },
+  "required": [
+    "basis",
+    "origin"
+  ],
+  "title": "Rights",
+  "type": "object"
+}

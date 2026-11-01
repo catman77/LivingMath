@@ -1,0 +1,66 @@
+{
+  "source_family": "automata-lib original public finite NFA",
+  "repository": "https://github.com/caleb531/automata",
+  "version": "9.2.0",
+  "commit": "04dc1947315f322825991b5dc637604567703c9c",
+  "license": "MIT",
+  "files": {
+    "LICENSE.txt": {
+      "url": "https://raw.githubusercontent.com/caleb531/automata/04dc1947315f322825991b5dc637604567703c9c/LICENSE.txt",
+      "sha256": "bb1b43c220d2f56c1bd6a5ac39413591151c30245b450ecb8447a2e747693f95"
+    },
+    "fa-examples.md": {
+      "url": "https://raw.githubusercontent.com/caleb531/automata/04dc1947315f322825991b5dc637604567703c9c/docs/examples/fa-examples.md",
+      "sha256": "b33a22dbe08efb43ad58da0b1e3ba82ec3cd7e2adcf1f6813fee4ba518d122b0"
+    },
+    "nfa.py.txt": {
+      "url": "https://raw.githubusercontent.com/caleb531/automata/04dc1947315f322825991b5dc637604567703c9c/automata/fa/nfa.py",
+      "sha256": "17fa180fcd226257a3cbd57cfcb1938d9030ef25c1e2e268ec89d1cb3a45b3f1"
+    },
+    "nfa.json": {
+      "sha256": "6bad0c1e91f3ee2254fb910384d8d0320babac59d7e7a26d28e0ad7bfc2c196d",
+      "extraction": "ast.literal_eval only; first original my_nfa call; operations/initial/final unchanged"
+    }
+  },
+  "observer": {
+    "projection": "primary",
+    "mod": null
+  },
+  "observer_semantics": "1 iff current epsilon-closed state set intersects original final_states; else0",
+  "operations": [
+    "a",
+    "b"
+  ],
+  "history_max": 3,
+  "suffix_max": 4,
+  "native_steps_max": 256,
+  "wall_seconds_max": 120,
+  "worker_memory_bytes": 1073741824,
+  "instrumentation": [
+    "exact",
+    "withheld_sensor",
+    "instrument_error"
+  ],
+  "environments": [
+    {
+      "target_word": [],
+      "mode": "exact"
+    },
+    {
+      "target_word": [
+        1
+      ],
+      "mode": "exact"
+    },
+    {
+      "target_word": [],
+      "mode": "withheld_sensor"
+    },
+    {
+      "target_word": [],
+      "mode": "instrument_error"
+    }
+  ],
+  "law_status": "bounded source-formula replay; no discovery or proof claim",
+  "proof_status": "unverified"
+}

@@ -1,0 +1,63 @@
+{
+  "id": "p_7d6230c10f234d3c98",
+  "document_id": "anchar",
+  "document_sha256": "354f0c4173bcf4360851c9ea1223011100517954c7ad6a9b14a3fb58097f198b",
+  "edition": "RVB Pushkin10vol 1959-1962, online6.0 2019; hash-pinned acquisition2026-10-30",
+  "language": "ru",
+  "spans": [
+    {
+      "id": "anchar:9",
+      "document_id": "anchar",
+      "document_sha256": "354f0c4173bcf4360851c9ea1223011100517954c7ad6a9b14a3fb58097f198b",
+      "edition": "RVB Pushkin10vol 1959-1962, online6.0 2019; hash-pinned acquisition2026-10-30",
+      "start": 384,
+      "end": 431,
+      "text": "Яд каплет сквозь его кору,",
+      "source_address": {
+        "html_id": "L9",
+        "verse_line": 9
+      }
+    },
+    {
+      "id": "anchar:10",
+      "document_id": "anchar",
+      "document_sha256": "354f0c4173bcf4360851c9ea1223011100517954c7ad6a9b14a3fb58097f198b",
+      "edition": "RVB Pushkin10vol 1959-1962, online6.0 2019; hash-pinned acquisition2026-10-30",
+      "start": 432,
+      "end": 483,
+      "text": "К полудню растопясь от зною,",
+      "source_address": {
+        "html_id": "L10",
+        "verse_line": 10
+      }
+    },
+    {
+      "id": "anchar:11",
+      "document_id": "anchar",
+      "document_sha256": "354f0c4173bcf4360851c9ea1223011100517954c7ad6a9b14a3fb58097f198b",
+      "edition": "RVB Pushkin10vol 1959-1962, online6.0 2019; hash-pinned acquisition2026-10-30",
+      "start": 484,
+      "end": 520,
+      "text": "И застывает ввечеру",
+      "source_address": {
+        "html_id": "L11",
+        "verse_line": 11
+      }
+    },
+    {
+      "id": "anchar:12",
+      "document_id": "anchar",
+      "document_sha256": "354f0c4173bcf4360851c9ea1223011100517954c7ad6a9b14a3fb58097f198b",
+      "edition": "RVB Pushkin10vol 1959-1962, online6.0 2019; hash-pinned acquisition2026-10-30",
+      "start": 521,
+      "end": 568,
+      "text": "Густой прозрачною смолою.",
+      "source_address": {
+        "html_id": "L12",
+        "verse_line": 12
+      }
+    }
+  ],
+  "context": [],
+  "grammar": {}
+}

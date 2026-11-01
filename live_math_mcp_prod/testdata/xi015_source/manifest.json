@@ -1,0 +1,11 @@
+{
+  "source_archive": "RH_XI_ROUTES_EXPORT_001.zip",
+  "source_archive_sha256": "19e3112882242fd8f686bfaf12b888bd7a8abe930e07b542fe298720044b14dd",
+  "files": {
+    "reproduce.py": "28a9982d06328e6cc8b459b8fd9a6b5b6d22010c044da3b10e56b054ffb556d7",
+    "vendor/source.py": "265b21e4baaa3c0f1488ee718a541b8ca710a5233666b095bc89afce1f84ba58",
+    "vendor/intervals.py": "9a84ae1b1e9270fea0b8cd67480c7c4e2eca00aef4c1e22b6caa90dd8690cba9",
+    "vendor/ALGEBRAIC_NODES.json": "b063f211da136322f7bcd3f54bb054fd5b5dd0fb5235d60b3effae6c1b72de8e"
+  },
+  "basis": "Exact original source files used by existing015/016 tests, not replacement source or new test answers."
+}

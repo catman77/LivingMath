@@ -1,0 +1,25 @@
+{
+  "status": "CONDITIONAL_LIVENESS_COUNTEREXAMPLE",
+  "source_sha256": "fd44e90f875913c54cb3f5fb61e8a088f2e9e89e74fcfeb3b3d59ac74cca0f55",
+  "assumption_under_test": "The trial branch should be selectable in this literal single-menu interpretation.",
+  "mandatory_controls": [
+    "pause",
+    "skip",
+    "exit"
+  ],
+  "total_budget": 3,
+  "minimum_with_one_action": 4,
+  "arithmetic_witness": "3 required distinct controls + 1 distinct trial choice = 4 > 3",
+  "literal_admissible_menus": [
+    [
+      "pause",
+      "skip",
+      "exit"
+    ]
+  ],
+  "trial_selectable": false,
+  "scope": "Exact finite implication of a literal counting scope; not a refutation of SUTI or proof of the author intended scope.",
+  "recovery_candidate": "Count <=3 actions, keep pause/skip/exit in separate control channel.",
+  "recovery_semantic_loss": "NARROWED:D_MENU_BUDGET",
+  "proof_status": "unverified"
+}

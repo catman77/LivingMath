@@ -1,0 +1,107 @@
+{
+  "id": "packet_3dd66d42450d498d18",
+  "document_id": "ripley004",
+  "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+  "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+  "language": "en",
+  "spans": [
+    {
+      "id": "ripley004:19",
+      "document_id": "ripley004",
+      "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "start": 824,
+      "end": 864,
+      "text": "Which in the fire when they be examinate",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[9]/lg[2]/l[5]",
+        "section": "gate9",
+        "stanza": 2,
+        "line": 5,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "ripley004:20",
+      "document_id": "ripley004",
+      "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "start": 865,
+      "end": 906,
+      "text": "May not abide, nor alter with complement:",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[9]/lg[2]/l[6]",
+        "section": "gate9",
+        "stanza": 2,
+        "line": 6,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "ripley004:21",
+      "document_id": "ripley004",
+      "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "start": 907,
+      "end": 948,
+      "text": "For such Firmenting is not to our intent.",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[9]/lg[2]/l[7]",
+        "section": "gate9",
+        "stanza": 2,
+        "line": 7,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "ripley004:26",
+      "document_id": "ripley004",
+      "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "start": 1120,
+      "end": 1160,
+      "text": "Subliming them together twice or thrice;",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[9]/lg[3]/l[5]",
+        "section": "gate9",
+        "stanza": 3,
+        "line": 5,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "ripley004:27",
+      "document_id": "ripley004",
+      "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "start": 1161,
+      "end": 1199,
+      "text": "Then Fermentation therewith they make:",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[9]/lg[3]/l[6]",
+        "section": "gate9",
+        "stanza": 3,
+        "line": 6,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "ripley004:28",
+      "document_id": "ripley004",
+      "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "start": 1200,
+      "end": 1237,
+      "text": "That is a way, but yet we it forsake.",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[9]/lg[3]/l[7]",
+        "section": "gate9",
+        "stanza": 3,
+        "line": 7,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    }
+  ],
+  "context": [],
+  "grammar": {}
+}

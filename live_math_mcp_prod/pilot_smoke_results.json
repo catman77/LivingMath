@@ -1,0 +1,29 @@
+{
+  "RH": {
+    "records": 3,
+    "flags": [
+      "No independently inspectable witness declared"
+    ],
+    "last_status": "refuted"
+  },
+  "SoftFTL": {
+    "records": 3,
+    "flags": [
+      "No independently inspectable witness declared"
+    ],
+    "last_status": "refuted"
+  },
+  "ARC": {
+    "records": 3,
+    "flags": [
+      "No independently inspectable witness declared"
+    ],
+    "last_status": "refuted"
+  },
+  "isolation": true,
+  "audit": {
+    "ok": true,
+    "entries": 9,
+    "last_hash": "d1a03723367123960a6e94a9529ac87e2df805e2eb05fd968c6c54b975611f40"
+  }
+}

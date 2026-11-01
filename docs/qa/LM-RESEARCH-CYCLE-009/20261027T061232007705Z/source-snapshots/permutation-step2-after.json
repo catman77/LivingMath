@@ -1,0 +1,642 @@
+{
+  "project": "LM_QA_CYCLE009_20261027T052731872797Z_permutation",
+  "schema_version": 5,
+  "tables": {
+    "events": [
+      {
+        "id": 2085,
+        "timestamp": 1793081625,
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_permutation",
+        "kind": "qa_source",
+        "focus": "fixture",
+        "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"environment_commitment\": \"56cfadf1d9279961964f27cad3d708e0bdb88893746e44fa727b9c0d19ce1d9c\", \"fixture_sha256\": \"52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\", \"public_source_parameters\": {\"actions\": [\"a0\", \"a1\", \"a2\", \"a3\", \"a4\"], \"family\": \"permutation\", \"initial\": [0, 1, 2, 3], \"permutations\": [[0, 1, 2, 3], [0, 2, 1, 3], [0, 1, 3, 2], [1, 0, 2, 3], [2, 1, 0, 3]]}, \"representation\": \"fixture009:52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\", \"scope\": \"QA009/20261027T052731872797Z/permutation/52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\", \"statement\": \"Operator-supplied sealed finite QA fixture.\", \"version\": 1}",
+        "status": "observation",
+        "evidence": "",
+        "parent_id": null
+      },
+      {
+        "id": 2086,
+        "timestamp": 1793081625,
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_permutation",
+        "kind": "hypothesis",
+        "focus": "v1-H0",
+        "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"QA009/20261027T052731872797Z/permutation/52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\", \"statement\": \"Operator declared finite history, not actual hidden environment.\", \"version\": 1, \"word\": []}",
+        "status": "hypothesis",
+        "evidence": "",
+        "parent_id": 2085
+      },
+      {
+        "id": 2087,
+        "timestamp": 1793081625,
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_permutation",
+        "kind": "hypothesis",
+        "focus": "v1-H1",
+        "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"QA009/20261027T052731872797Z/permutation/52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\", \"statement\": \"Operator declared finite history, not actual hidden environment.\", \"version\": 1, \"word\": [\"a1\"]}",
+        "status": "hypothesis",
+        "evidence": "",
+        "parent_id": 2085
+      },
+      {
+        "id": 2088,
+        "timestamp": 1793081625,
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_permutation",
+        "kind": "hypothesis",
+        "focus": "v1-H2",
+        "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"QA009/20261027T052731872797Z/permutation/52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\", \"statement\": \"Operator declared finite history, not actual hidden environment.\", \"version\": 1, \"word\": [\"a2\"]}",
+        "status": "hypothesis",
+        "evidence": "",
+        "parent_id": 2085
+      },
+      {
+        "id": 2089,
+        "timestamp": 1793081625,
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_permutation",
+        "kind": "hypothesis",
+        "focus": "v1-IND",
+        "content": "{\"claim_type\": \"HYPOTHESIS\", \"relations\": [], \"representation\": \"native_007/v1\", \"scope\": \"independent\", \"statement\": \"Independent branch, unchanged finite observation; version projection is not a new measurement.\", \"version\": 1, \"word\": []}",
+        "status": "hypothesis",
+        "evidence": "",
+        "parent_id": 2085
+      },
+      {
+        "id": 2090,
+        "timestamp": 1793081625,
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_permutation",
+        "kind": "hypothesis",
+        "focus": "v1-source",
+        "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"relations\": [], \"representation\": \"native_007/v1\", \"scope\": \"QA009/20261027T052731872797Z/permutation/52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\", \"source_spec\": {\"current_observation\": 0, \"family\": \"permutation\", \"histories\": [\"event:2086\", \"event:2087\", \"event:2088\"], \"hypotheses\": [{\"depends_on\": [], \"id\": \"H0\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:2086\", \"weight\": 1}, {\"depends_on\": [], \"id\": \"H1\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:2087\", \"weight\": 1}, {\"depends_on\": [], \"id\": \"H2\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:2088\", \"weight\": 1}, {\"depends_on\": [\"H0\"], \"id\": \"D0\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:2086\", \"weight\": 1}, {\"depends_on\": [\"H1\"], \"id\": \"D1\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:2087\", \"weight\": 1}, {\"depends_on\": [\"H2\"], \"id\": \"D2\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:2088\", \"weight\": 1}, {\"depends_on\": [], \"id\": \"IND\", \"predictive\": false, \"question\": \"independent\", \"ref\": \"event:2089\", \"weight\": 1}], \"independent_ref\": \"event:2089\", \"known_failures\": [], \"observer\": {\"mod\": null, \"projection\": \"primary\"}, \"parameters\": {\"actions\": [\"a0\", \"a1\", \"a2\", \"a3\", \"a4\"], \"family\": \"permutation\", \"initial\": [0, 1, 2, 3], \"permutations\": [[0, 1, 2, 3], [0, 2, 1, 3], [0, 1, 3, 2], [1, 0, 2, 3], [2, 1, 0, 3]]}, \"primitive_sha256\": \"299734fcc7435508b0f13656fe1ce1c5812f2203aa44c334510f95e2c95a2f4f\", \"representation\": \"native_007/v1\", \"scope\": \"QA009/20261027T052731872797Z/permutation/52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\", \"tests\": [{\"cost\": 20, \"id\": \"t0\", \"ordinal\": 0, \"suffix\": [\"a0\"]}, {\"cost\": 20, \"id\": \"t1\", \"ordinal\": 1, \"suffix\": [\"a1\"]}, {\"cost\": 20, \"id\": \"t2\", \"ordinal\": 2, \"suffix\": [\"a2\"]}, {\"cost\": 0, \"id\": \"t3\", \"ordinal\": 3, \"suffix\": [\"a3\"]}, {\"cost\": 4, \"id\": \"t4\", \"ordinal\": 4, \"suffix\": [\"a4\"]}], \"unknowns\": [\"The actual environment history is unknown to I/T.\", \"No equivalence or truth outside registered D.\"], \"version\": 1}, \"statement\": \"Registered native operations/D. Applicability projection retains original sources and negative evidence.\", \"version\": 1}",
+        "status": "hypothesis",
+        "evidence": "",
+        "parent_id": 2085
+      },
+      {
+        "id": 2091,
+        "timestamp": 1793081625,
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_permutation",
+        "kind": "hypothesis",
+        "focus": "v1-law",
+        "content": "{\"claim_type\": \"FORMAL_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"QA009/20261027T052731872797Z/permutation/52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\", \"source_certificate\": {\"coverage\": [0, 1, 2, 3], \"guard\": {\"total_admissibility\": true, \"width\": 4}, \"kind\": \"right-projection\", \"native_hash\": \"299734fcc7435508b0f13656fe1ce1c5812f2203aa44c334510f95e2c95a2f4f\", \"observer_hash\": \"cece26f1db1aeca73633ba60ae797d2dc9902a7e5747cae64ec5b1345df22ea4\", \"project\": \"LM_QA_CYCLE009_20261027T052731872797Z_permutation\", \"schema\": \"separating-coordinate/v1\", \"scope\": \"QA009/20261027T052731872797Z/permutation/52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\", \"source_hash\": \"c3b2c902396f824ca6b0163e8dd50911b33bbab38b3dd905d9d35ca4d96f4f6f\", \"source_ref\": \"event:2090\", \"version\": 1}, \"statement\": \"Operator-supplied reviewed finite source law; no theorem/verified status.\", \"version\": 1}",
+        "status": "hypothesis",
+        "evidence": "",
+        "parent_id": 2090
+      },
+      {
+        "id": 2092,
+        "timestamp": 1793081629,
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_permutation",
+        "kind": "counterexample",
+        "focus": "permutation-step1-measurement",
+        "content": "{\"claim_type\": \"EXPERIMENT_RESULT\", \"fixture_sha256\": \"52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\", \"measurement_origin\": \"external_bounded_native_executor\", \"observation\": {\"observer\": {\"mod\": null, \"projection\": \"primary\"}, \"readout\": {\"admissibility\": [true], \"defined\": true, \"observation\": 1}, \"scope\": \"QA009/20261027T052731872797Z/permutation/52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\", \"test_id\": \"t3\", \"version\": 1}, \"outcome\": \"FAILURE\", \"proof_status\": \"unverified\", \"scope\": \"QA009/20261027T052731872797Z/permutation/52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\", \"statement\": \"Finite measured readout; no mathematical truth is established.\", \"test_id\": \"t3\", \"version\": 1}",
+        "status": "experiment",
+        "evidence": "",
+        "parent_id": 2090
+      },
+      {
+        "id": 2093,
+        "timestamp": 1793081632,
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_permutation",
+        "kind": "hypothesis",
+        "focus": "v2-H0",
+        "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"relations\": [{\"target_ref\": \"event:2086\", \"type\": \"derived_from\"}], \"representation\": \"native_007/v1\", \"scope\": \"QA009/20261027T052731872797Z/permutation/52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\", \"statement\": \"Operator declared finite history, not actual hidden environment.\", \"version\": 2, \"word\": []}",
+        "status": "hypothesis",
+        "evidence": "",
+        "parent_id": 2086
+      },
+      {
+        "id": 2094,
+        "timestamp": 1793081632,
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_permutation",
+        "kind": "hypothesis",
+        "focus": "v2-H1",
+        "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"relations\": [{\"target_ref\": \"event:2087\", \"type\": \"derived_from\"}], \"representation\": \"native_007/v1\", \"scope\": \"QA009/20261027T052731872797Z/permutation/52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\", \"statement\": \"Operator declared finite history, not actual hidden environment.\", \"version\": 2, \"word\": [\"a1\"]}",
+        "status": "hypothesis",
+        "evidence": "",
+        "parent_id": 2087
+      },
+      {
+        "id": 2095,
+        "timestamp": 1793081633,
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_permutation",
+        "kind": "hypothesis",
+        "focus": "v2-H2",
+        "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"relations\": [{\"target_ref\": \"event:2088\", \"type\": \"derived_from\"}], \"representation\": \"native_007/v1\", \"scope\": \"QA009/20261027T052731872797Z/permutation/52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\", \"statement\": \"Operator declared finite history, not actual hidden environment.\", \"version\": 2, \"word\": [\"a2\"]}",
+        "status": "hypothesis",
+        "evidence": "",
+        "parent_id": 2088
+      },
+      {
+        "id": 2096,
+        "timestamp": 1793081633,
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_permutation",
+        "kind": "hypothesis",
+        "focus": "v2-IND",
+        "content": "{\"claim_type\": \"HYPOTHESIS\", \"relations\": [{\"target_ref\": \"event:2089\", \"type\": \"derived_from\"}], \"representation\": \"native_007/v1\", \"scope\": \"independent\", \"statement\": \"Independent branch, unchanged finite observation; version projection is not a new measurement.\", \"version\": 2, \"word\": []}",
+        "status": "hypothesis",
+        "evidence": "",
+        "parent_id": 2089
+      },
+      {
+        "id": 2097,
+        "timestamp": 1793081633,
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_permutation",
+        "kind": "hypothesis",
+        "focus": "v2-source",
+        "content": "{\"claim_type\": \"SOURCE_CLAIM\", \"relations\": [{\"target_ref\": \"event:2090\", \"type\": \"derived_from\"}], \"representation\": \"native_007/v1\", \"scope\": \"QA009/20261027T052731872797Z/permutation/52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\", \"source_spec\": {\"current_observation\": 0, \"family\": \"permutation\", \"histories\": [\"event:2093\", \"event:2094\", \"event:2095\"], \"hypotheses\": [{\"depends_on\": [], \"id\": \"H0\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:2093\", \"weight\": 1}, {\"depends_on\": [], \"id\": \"H2\", \"predictive\": true, \"question\": \"current\", \"ref\": \"event:2095\", \"weight\": 1}, {\"depends_on\": [\"H0\"], \"id\": \"D0\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:2093\", \"weight\": 1}, {\"depends_on\": [\"H2\"], \"id\": \"D2\", \"predictive\": false, \"question\": \"current\", \"ref\": \"event:2095\", \"weight\": 1}, {\"depends_on\": [], \"id\": \"IND\", \"predictive\": false, \"question\": \"independent\", \"ref\": \"event:2096\", \"weight\": 1}], \"independent_ref\": \"event:2096\", \"known_failures\": [{\"event_ref\": \"event:2092\", \"excluded_guard_ids\": [\"H1\"], \"not_universal_refutation\": true, \"scope\": \"QA009/20261027T052731872797Z/permutation/52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\"}], \"observer\": {\"mod\": null, \"projection\": \"primary\"}, \"parameters\": {\"actions\": [\"a0\", \"a1\", \"a2\", \"a3\", \"a4\"], \"family\": \"permutation\", \"initial\": [0, 1, 2, 3], \"permutations\": [[0, 1, 2, 3], [0, 2, 1, 3], [0, 1, 3, 2], [1, 0, 2, 3], [2, 1, 0, 3]]}, \"primitive_sha256\": \"299734fcc7435508b0f13656fe1ce1c5812f2203aa44c334510f95e2c95a2f4f\", \"representation\": \"native_007/v1\", \"scope\": \"QA009/20261027T052731872797Z/permutation/52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\", \"tests\": [{\"cost\": 20, \"id\": \"t0\", \"ordinal\": 0, \"suffix\": [\"a0\"]}, {\"cost\": 20, \"id\": \"t1\", \"ordinal\": 1, \"suffix\": [\"a1\"]}, {\"cost\": 20, \"id\": \"t2\", \"ordinal\": 2, \"suffix\": [\"a2\"]}, {\"cost\": 0, \"id\": \"t3\", \"ordinal\": 3, \"suffix\": [\"a3\"]}, {\"cost\": 4, \"id\": \"t4\", \"ordinal\": 4, \"suffix\": [\"a4\"]}], \"unknowns\": [\"The actual environment history is unknown to I/T.\", \"No equivalence or truth outside registered D.\"], \"version\": 2}, \"statement\": \"Registered native operations/D. Applicability projection retains original sources and negative evidence.\", \"version\": 2}",
+        "status": "hypothesis",
+        "evidence": "",
+        "parent_id": 2090
+      },
+      {
+        "id": 2098,
+        "timestamp": 1793081633,
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_permutation",
+        "kind": "hypothesis",
+        "focus": "v2-law",
+        "content": "{\"claim_type\": \"FORMAL_CLAIM\", \"representation\": \"native_007/v1\", \"scope\": \"QA009/20261027T052731872797Z/permutation/52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\", \"source_certificate\": {\"coverage\": [0, 1, 2, 3], \"guard\": {\"total_admissibility\": true, \"width\": 4}, \"kind\": \"right-projection\", \"native_hash\": \"299734fcc7435508b0f13656fe1ce1c5812f2203aa44c334510f95e2c95a2f4f\", \"observer_hash\": \"cece26f1db1aeca73633ba60ae797d2dc9902a7e5747cae64ec5b1345df22ea4\", \"project\": \"LM_QA_CYCLE009_20261027T052731872797Z_permutation\", \"schema\": \"separating-coordinate/v1\", \"scope\": \"QA009/20261027T052731872797Z/permutation/52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\", \"source_hash\": \"6382280a1d96c8cf38814757b5f8b948164a3cf9e55648fa564f0d80663f9ad7\", \"source_ref\": \"event:2097\", \"version\": 2}, \"statement\": \"Operator-supplied reviewed finite source law; no theorem/verified status.\", \"version\": 2}",
+        "status": "hypothesis",
+        "evidence": "",
+        "parent_id": 2097
+      },
+      {
+        "id": 2099,
+        "timestamp": 1793081633,
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_permutation",
+        "kind": "counterexample",
+        "focus": "v2-scoped-negative-projection",
+        "content": "{\"claim_type\": \"COUNTEREXAMPLE\", \"observation\": {\"observer\": {\"mod\": null, \"projection\": \"primary\"}, \"readout\": {\"admissibility\": [true], \"defined\": true, \"observation\": 1}, \"scope\": \"QA009/20261027T052731872797Z/permutation/52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\", \"test_id\": \"t3\", \"version\": 2}, \"relations\": [{\"target_ref\": \"event:2092\", \"type\": \"derived_from\"}], \"scope\": \"QA009/20261027T052731872797Z/permutation/52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\", \"statement\": \"Same earlier measurement re-scoped to v2; not another external observation.\", \"version\": 2}",
+        "status": "experiment",
+        "evidence": "",
+        "parent_id": 2092
+      },
+      {
+        "id": 2100,
+        "timestamp": 1793081637,
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_permutation",
+        "kind": "counterexample",
+        "focus": "permutation-step2-measurement",
+        "content": "{\"claim_type\": \"EXPERIMENT_RESULT\", \"fixture_sha256\": \"52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\", \"measurement_origin\": \"external_bounded_native_executor\", \"observation\": {\"observer\": {\"mod\": null, \"projection\": \"primary\"}, \"readout\": {\"admissibility\": [true], \"defined\": true, \"observation\": 2}, \"scope\": \"QA009/20261027T052731872797Z/permutation/52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\", \"test_id\": \"t4\", \"version\": 2}, \"outcome\": \"SUCCESS\", \"proof_status\": \"unverified\", \"scope\": \"QA009/20261027T052731872797Z/permutation/52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\", \"statement\": \"Finite measured readout; no mathematical truth is established.\", \"test_id\": \"t4\", \"version\": 2}",
+        "status": "experiment",
+        "evidence": "",
+        "parent_id": 2097
+      }
+    ],
+    "research_obligations": [
+      {
+        "id": 770,
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_permutation",
+        "current_version": 2,
+        "created_at": 1793081625
+      }
+    ],
+    "frontier_constraints": [
+      {
+        "id": 209,
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_permutation",
+        "obligation_id": 770,
+        "kind": "allowed_experiment",
+        "payload_json": "{\"mechanisms\":[\"qa_cycle_measurement\"],\"reason\":\"User-authorized isolated QA fixture only; no global experimental permission.\",\"reopen_conditions\":[\"New fixture, scope, mechanism or observer requires independent review.\"],\"scope\":\"QA009/20261027T052731872797Z/permutation/52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\",\"source_event_ids\":[2085],\"source_representations\":[\"fixture009:52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\"]}"
+      }
+    ],
+    "transformation_contracts": [],
+    "research_moves": [
+      {
+        "id": 190,
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_permutation",
+        "fingerprint": "aaf9789ff80b51b6be83315a4462c022ab7268cdc18837d48a994d9e59a9fae8",
+        "payload_json": "{\"active_frontier_id\":770,\"active_frontier_version\":1,\"evidence_refs\":[\"event:2085\",\"event:2090\"],\"evidence_roles\":{},\"fingerprint\":{\"claims\":{\"mathematical_properties\":[\"Finite declared test t3\"],\"premises\":[\"Exact operator fixture 52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\",\"Purpose unexecuted stale-permission canary\"],\"required_evidence\":[\"Actual project-local measurement of t3\"],\"testable_consequence\":\"Readout for t3 matches the declared finite candidate {\\\"admissibility\\\": [true], \\\"defined\\\": true, \\\"observation\\\": 2}\"},\"complete\":true,\"digest\":\"aaf9789ff80b51b6be83315a4462c022ab7268cdc18837d48a994d9e59a9fae8\",\"normalization_version\":1},\"parent_event_ids\":[2085,2090],\"proposed_operation\":{\"intent\":\"experiment\",\"mathematical_properties\":[\"Finite declared test t3\"],\"mechanism\":\"qa_cycle_measurement\",\"premises\":[\"Exact operator fixture 52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\",\"Purpose unexecuted stale-permission canary\"],\"required_evidence\":[\"Actual project-local measurement of t3\"],\"testable_consequence\":\"Readout for t3 matches the declared finite candidate {\\\"admissibility\\\": [true], \\\"defined\\\": true, \\\"observation\\\": 2}\"},\"scope\":\"QA009/20261027T052731872797Z/permutation/52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\",\"source_representation\":\"fixture009:52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\",\"target_representation\":\"fixture009:52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\",\"verification_plan\":{\"failure_condition\":\"Mismatch with candidate readout or fixture/source/observer/version drift.\",\"method\":\"External bounded native readout under an explicit current scoped grant.\"}}",
+        "created_at": 1793081628
+      },
+      {
+        "id": 191,
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_permutation",
+        "fingerprint": "cd2458e9d19a670be8a95b958d75147b8427cf140a326b8188173d495baa61d2",
+        "payload_json": "{\"active_frontier_id\":770,\"active_frontier_version\":1,\"evidence_refs\":[\"event:2085\",\"event:2090\"],\"evidence_roles\":{},\"fingerprint\":{\"claims\":{\"mathematical_properties\":[\"Finite declared test t3\"],\"premises\":[\"Exact operator fixture 52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\",\"Purpose cycle\"],\"required_evidence\":[\"Actual project-local measurement of t3\"],\"testable_consequence\":\"Readout for t3 matches the declared finite candidate {\\\"admissibility\\\": [true], \\\"defined\\\": true, \\\"observation\\\": 2}\"},\"complete\":true,\"digest\":\"cd2458e9d19a670be8a95b958d75147b8427cf140a326b8188173d495baa61d2\",\"normalization_version\":1},\"parent_event_ids\":[2085,2090],\"proposed_operation\":{\"intent\":\"experiment\",\"mathematical_properties\":[\"Finite declared test t3\"],\"mechanism\":\"qa_cycle_measurement\",\"premises\":[\"Exact operator fixture 52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\",\"Purpose cycle\"],\"required_evidence\":[\"Actual project-local measurement of t3\"],\"testable_consequence\":\"Readout for t3 matches the declared finite candidate {\\\"admissibility\\\": [true], \\\"defined\\\": true, \\\"observation\\\": 2}\"},\"scope\":\"QA009/20261027T052731872797Z/permutation/52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\",\"source_representation\":\"fixture009:52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\",\"target_representation\":\"fixture009:52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\",\"verification_plan\":{\"failure_condition\":\"Mismatch with candidate readout or fixture/source/observer/version drift.\",\"method\":\"External bounded native readout under an explicit current scoped grant.\"}}",
+        "created_at": 1793081628
+      },
+      {
+        "id": 192,
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_permutation",
+        "fingerprint": "47d273c57d0a08a9fb2008cbbe4ae79e29a6e53a9f84acf0b11fa91087e7bbac",
+        "payload_json": "{\"active_frontier_id\":770,\"active_frontier_version\":2,\"evidence_refs\":[\"event:2085\",\"event:2097\",\"event:2092\",\"event:2099\"],\"evidence_roles\":{\"2092\":{\"reason\":\"Bounded diagnosis of the excluded finite guard, not support for that rejected premise.\",\"role\":\"diagnostic_subject\"},\"2099\":{\"reason\":\"Bounded diagnosis of the excluded finite guard, not support for that rejected premise.\",\"role\":\"diagnostic_subject\"}},\"fingerprint\":{\"claims\":{\"mathematical_properties\":[\"Finite declared test t4\"],\"premises\":[\"Exact operator fixture 52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\",\"Purpose cycle\"],\"required_evidence\":[\"Actual project-local measurement of t4\"],\"testable_consequence\":\"Readout for t4 matches the declared finite candidate {\\\"admissibility\\\": [true], \\\"defined\\\": true, \\\"observation\\\": 2}\"},\"complete\":true,\"digest\":\"47d273c57d0a08a9fb2008cbbe4ae79e29a6e53a9f84acf0b11fa91087e7bbac\",\"normalization_version\":1},\"parent_event_ids\":[2085,2097,2092,2099],\"proposed_operation\":{\"intent\":\"experiment\",\"mathematical_properties\":[\"Finite declared test t4\"],\"mechanism\":\"qa_cycle_measurement\",\"premises\":[\"Exact operator fixture 52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\",\"Purpose cycle\"],\"required_evidence\":[\"Actual project-local measurement of t4\"],\"testable_consequence\":\"Readout for t4 matches the declared finite candidate {\\\"admissibility\\\": [true], \\\"defined\\\": true, \\\"observation\\\": 2}\"},\"scope\":\"QA009/20261027T052731872797Z/permutation/52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\",\"source_representation\":\"fixture009:52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\",\"target_representation\":\"fixture009:52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\",\"verification_plan\":{\"failure_condition\":\"Mismatch with candidate readout or fixture/source/observer/version drift.\",\"method\":\"External bounded native readout under an explicit current scoped grant.\"}}",
+        "created_at": 1793081636
+      }
+    ],
+    "adverse_evidence_reviews": [
+      {
+        "id": 37,
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_permutation",
+        "event_id": 2092,
+        "obligation_id": 770,
+        "frontier_version": 2,
+        "scope": "QA009/20261027T052731872797Z/permutation/52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800",
+        "fingerprint": "47d273c57d0a08a9fb2008cbbe4ae79e29a6e53a9f84acf0b11fa91087e7bbac",
+        "payload_json": "{\"disposition\":\"diagnostic_subject\",\"event_id\":2092,\"event_sha256\":\"2e9d37518e78947b5caa8904645f6394f5260b638dc528da1d0a8154177c423f\",\"evidence_refs\":[\"event:2092\",\"event:2085\"],\"fingerprint\":\"47d273c57d0a08a9fb2008cbbe4ae79e29a6e53a9f84acf0b11fa91087e7bbac\",\"frontier_version\":2,\"obligation_id\":770,\"operator\":\"Explicit user-authorized isolated QA operator\",\"project\":\"LM_QA_CYCLE009_20261027T052731872797Z_permutation\",\"proof_status\":\"unverified\",\"reason\":\"Frozen QA operator policy: the actual failed guard is the diagnostic subject; the next experiment uses surviving candidates only, not the false premise.\",\"scope\":\"QA009/20261027T052731872797Z/permutation/52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\"}",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_permutation:review:step2:2092",
+        "request_hash": "0169c13099938011529858d66338a41e3dab6105b6c83f3ce128401598597874",
+        "created_at": 1793081636
+      },
+      {
+        "id": 38,
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_permutation",
+        "event_id": 2099,
+        "obligation_id": 770,
+        "frontier_version": 2,
+        "scope": "QA009/20261027T052731872797Z/permutation/52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800",
+        "fingerprint": "47d273c57d0a08a9fb2008cbbe4ae79e29a6e53a9f84acf0b11fa91087e7bbac",
+        "payload_json": "{\"disposition\":\"diagnostic_subject\",\"event_id\":2099,\"event_sha256\":\"1759c0d0afe9e97dd67bcb121968c18a96f793b5ae0aae260935a3e19bdbfa60\",\"evidence_refs\":[\"event:2099\",\"event:2085\"],\"fingerprint\":\"47d273c57d0a08a9fb2008cbbe4ae79e29a6e53a9f84acf0b11fa91087e7bbac\",\"frontier_version\":2,\"obligation_id\":770,\"operator\":\"Explicit user-authorized isolated QA operator\",\"project\":\"LM_QA_CYCLE009_20261027T052731872797Z_permutation\",\"proof_status\":\"unverified\",\"reason\":\"Frozen QA operator policy: the actual failed guard is the diagnostic subject; the next experiment uses surviving candidates only, not the false premise.\",\"scope\":\"QA009/20261027T052731872797Z/permutation/52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\"}",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_permutation:review:step2:2099",
+        "request_hash": "f93a100577ca7012207e7d6ac768e366d179b77586cc007fdf4c3170e1f72aa1",
+        "created_at": 1793081636
+      }
+    ],
+    "reviews": [],
+    "research_obligation_versions": [
+      {
+        "obligation_id": 770,
+        "version": 1,
+        "status": "OPEN",
+        "payload_json": "{\"closure_reason\":\"\",\"evidence_refs\":[\"event:2085\"],\"id\":770,\"project\":\"LM_QA_CYCLE009_20261027T052731872797Z_permutation\",\"proof_status\":\"unverified\",\"reopen_conditions\":[],\"reopen_reason\":\"\",\"scope\":\"QA009/20261027T052731872797Z/permutation/52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\",\"source_event_ids\":[2085],\"statement\":\"Two bounded readouts of only fixture 52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\",\"status\":\"OPEN\",\"version\":1}",
+        "created_at": 1793081625
+      },
+      {
+        "obligation_id": 770,
+        "version": 2,
+        "status": "TESTING",
+        "payload_json": "{\"closure_reason\":\"\",\"evidence_refs\":[\"event:2092\"],\"id\":770,\"project\":\"LM_QA_CYCLE009_20261027T052731872797Z_permutation\",\"proof_status\":\"unverified\",\"reopen_conditions\":[],\"reopen_reason\":\"\",\"scope\":\"QA009/20261027T052731872797Z/permutation/52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\",\"source_event_ids\":[2085,2097,2092],\"statement\":\"Continue only surviving finite guards after negative measurement; no theorem claim.\",\"status\":\"TESTING\",\"version\":2}",
+        "created_at": 1793081633
+      }
+    ],
+    "research_move_audits": [
+      {
+        "id": 393,
+        "move_id": 190,
+        "frontier_versions_json": "{\"770\":1}",
+        "report_json": "{\"activation_required\":true,\"adverse_evidence\":[],\"audit_contract_version\":\"0.4.2\",\"candidate\":\"\",\"classification\":\"ACTIVE_CONTINUATION\",\"execution_permission\":{\"allowed\":false},\"findings\":[],\"fingerprint\":{\"claims\":{\"mathematical_properties\":[\"Finite declared test t3\"],\"premises\":[\"Exact operator fixture 52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\",\"Purpose unexecuted stale-permission canary\"],\"required_evidence\":[\"Actual project-local measurement of t3\"],\"testable_consequence\":\"Readout for t3 matches the declared finite candidate {\\\"admissibility\\\": [true], \\\"defined\\\": true, \\\"observation\\\": 2}\"},\"complete\":true,\"digest\":\"aaf9789ff80b51b6be83315a4462c022ab7268cdc18837d48a994d9e59a9fae8\",\"normalization_version\":1},\"formal_checks\":{\"compares_declared_claims_only\":true,\"mathematical_equivalence_decided\":false,\"source_event_references_valid\":true},\"permitted_use\":\"bounded_experiment\",\"preservation_checks\":[{\"established\":false,\"evidence_refs\":[],\"property\":\"point_value\",\"status\":\"MISSING_WITNESS\"},{\"established\":false,\"evidence_refs\":[],\"property\":\"analytic_function\",\"status\":\"MISSING_WITNESS\"},{\"established\":false,\"evidence_refs\":[],\"property\":\"observables\",\"status\":\"MISSING_WITNESS\"},{\"established\":false,\"evidence_refs\":[],\"property\":\"source_provenance\",\"status\":\"MISSING_WITNESS\"},{\"established\":false,\"evidence_refs\":[],\"property\":\"rule_applicability\",\"status\":\"MISSING_WITNESS\"}],\"proof_status\":\"unverified\",\"semantic_review_required\":false,\"verdict\":\"EXPERIMENT_ALLOWED\",\"warnings\":[]}",
+        "created_at": 1793081628
+      },
+      {
+        "id": 394,
+        "move_id": 190,
+        "frontier_versions_json": "{\"770\":1}",
+        "report_json": "{\"activation_required\":true,\"adverse_evidence\":[],\"audit_contract_version\":\"0.4.2\",\"candidate\":\"\",\"classification\":\"ACTIVE_CONTINUATION\",\"execution_permission\":{\"allowed\":false},\"findings\":[],\"fingerprint\":{\"claims\":{\"mathematical_properties\":[\"Finite declared test t3\"],\"premises\":[\"Exact operator fixture 52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\",\"Purpose unexecuted stale-permission canary\"],\"required_evidence\":[\"Actual project-local measurement of t3\"],\"testable_consequence\":\"Readout for t3 matches the declared finite candidate {\\\"admissibility\\\": [true], \\\"defined\\\": true, \\\"observation\\\": 2}\"},\"complete\":true,\"digest\":\"aaf9789ff80b51b6be83315a4462c022ab7268cdc18837d48a994d9e59a9fae8\",\"normalization_version\":1},\"formal_checks\":{\"compares_declared_claims_only\":true,\"mathematical_equivalence_decided\":false,\"source_event_references_valid\":true},\"permitted_use\":\"bounded_experiment\",\"preservation_checks\":[{\"established\":false,\"evidence_refs\":[],\"property\":\"point_value\",\"status\":\"MISSING_WITNESS\"},{\"established\":false,\"evidence_refs\":[],\"property\":\"analytic_function\",\"status\":\"MISSING_WITNESS\"},{\"established\":false,\"evidence_refs\":[],\"property\":\"observables\",\"status\":\"MISSING_WITNESS\"},{\"established\":false,\"evidence_refs\":[],\"property\":\"source_provenance\",\"status\":\"MISSING_WITNESS\"},{\"established\":false,\"evidence_refs\":[],\"property\":\"rule_applicability\",\"status\":\"MISSING_WITNESS\"}],\"proof_status\":\"unverified\",\"semantic_review_required\":false,\"verdict\":\"EXPERIMENT_ALLOWED\",\"warnings\":[]}",
+        "created_at": 1793081628
+      },
+      {
+        "id": 395,
+        "move_id": 191,
+        "frontier_versions_json": "{\"770\":1}",
+        "report_json": "{\"activation_required\":true,\"adverse_evidence\":[],\"audit_contract_version\":\"0.4.2\",\"candidate\":\"\",\"classification\":\"ACTIVE_CONTINUATION\",\"execution_permission\":{\"allowed\":false},\"findings\":[],\"fingerprint\":{\"claims\":{\"mathematical_properties\":[\"Finite declared test t3\"],\"premises\":[\"Exact operator fixture 52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\",\"Purpose cycle\"],\"required_evidence\":[\"Actual project-local measurement of t3\"],\"testable_consequence\":\"Readout for t3 matches the declared finite candidate {\\\"admissibility\\\": [true], \\\"defined\\\": true, \\\"observation\\\": 2}\"},\"complete\":true,\"digest\":\"cd2458e9d19a670be8a95b958d75147b8427cf140a326b8188173d495baa61d2\",\"normalization_version\":1},\"formal_checks\":{\"compares_declared_claims_only\":true,\"mathematical_equivalence_decided\":false,\"source_event_references_valid\":true},\"permitted_use\":\"bounded_experiment\",\"preservation_checks\":[{\"established\":false,\"evidence_refs\":[],\"property\":\"point_value\",\"status\":\"MISSING_WITNESS\"},{\"established\":false,\"evidence_refs\":[],\"property\":\"analytic_function\",\"status\":\"MISSING_WITNESS\"},{\"established\":false,\"evidence_refs\":[],\"property\":\"observables\",\"status\":\"MISSING_WITNESS\"},{\"established\":false,\"evidence_refs\":[],\"property\":\"source_provenance\",\"status\":\"MISSING_WITNESS\"},{\"established\":false,\"evidence_refs\":[],\"property\":\"rule_applicability\",\"status\":\"MISSING_WITNESS\"}],\"proof_status\":\"unverified\",\"semantic_review_required\":false,\"verdict\":\"EXPERIMENT_ALLOWED\",\"warnings\":[]}",
+        "created_at": 1793081628
+      },
+      {
+        "id": 396,
+        "move_id": 191,
+        "frontier_versions_json": "{\"770\":1}",
+        "report_json": "{\"activation_required\":true,\"adverse_evidence\":[],\"audit_contract_version\":\"0.4.2\",\"candidate\":\"\",\"classification\":\"ACTIVE_CONTINUATION\",\"execution_permission\":{\"allowed\":false},\"findings\":[],\"fingerprint\":{\"claims\":{\"mathematical_properties\":[\"Finite declared test t3\"],\"premises\":[\"Exact operator fixture 52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\",\"Purpose cycle\"],\"required_evidence\":[\"Actual project-local measurement of t3\"],\"testable_consequence\":\"Readout for t3 matches the declared finite candidate {\\\"admissibility\\\": [true], \\\"defined\\\": true, \\\"observation\\\": 2}\"},\"complete\":true,\"digest\":\"cd2458e9d19a670be8a95b958d75147b8427cf140a326b8188173d495baa61d2\",\"normalization_version\":1},\"formal_checks\":{\"compares_declared_claims_only\":true,\"mathematical_equivalence_decided\":false,\"source_event_references_valid\":true},\"permitted_use\":\"bounded_experiment\",\"preservation_checks\":[{\"established\":false,\"evidence_refs\":[],\"property\":\"point_value\",\"status\":\"MISSING_WITNESS\"},{\"established\":false,\"evidence_refs\":[],\"property\":\"analytic_function\",\"status\":\"MISSING_WITNESS\"},{\"established\":false,\"evidence_refs\":[],\"property\":\"observables\",\"status\":\"MISSING_WITNESS\"},{\"established\":false,\"evidence_refs\":[],\"property\":\"source_provenance\",\"status\":\"MISSING_WITNESS\"},{\"established\":false,\"evidence_refs\":[],\"property\":\"rule_applicability\",\"status\":\"MISSING_WITNESS\"}],\"proof_status\":\"unverified\",\"semantic_review_required\":false,\"verdict\":\"EXPERIMENT_ALLOWED\",\"warnings\":[]}",
+        "created_at": 1793081628
+      },
+      {
+        "id": 397,
+        "move_id": 192,
+        "frontier_versions_json": "{\"770\":2}",
+        "report_json": "{\"activation_required\":true,\"adverse_evidence\":[{\"event_id\":2092,\"event_sha256\":\"2e9d37518e78947b5caa8904645f6394f5260b638dc528da1d0a8154177c423f\",\"proof_status\":\"unverified\",\"reason\":\"Cited adverse evidence has not been adjudicated for this claim, scope and frontier version.\",\"reopen_conditions\":[\"Record a scoped operator disposition for diagnostic use or label correction; otherwise resolve the conflict affecting the premises.\"],\"review_id\":null,\"role\":\"diagnostic_subject\",\"status\":\"REVIEW_REQUIRED\"},{\"event_id\":2099,\"event_sha256\":\"1759c0d0afe9e97dd67bcb121968c18a96f793b5ae0aae260935a3e19bdbfa60\",\"proof_status\":\"unverified\",\"reason\":\"Cited adverse evidence has not been adjudicated for this claim, scope and frontier version.\",\"reopen_conditions\":[\"Record a scoped operator disposition for diagnostic use or label correction; otherwise resolve the conflict affecting the premises.\"],\"review_id\":null,\"role\":\"diagnostic_subject\",\"status\":\"REVIEW_REQUIRED\"}],\"audit_contract_version\":\"0.4.2\",\"candidate\":\"\",\"classification\":\"REQUIRES_SEMANTIC_REVIEW\",\"execution_permission\":{\"allowed\":false},\"findings\":[{\"code\":\"ADVERSE_EVIDENCE_REQUIRES_REVIEW\",\"constraint\":\"Cited adverse evidence has not been adjudicated for this claim, scope and frontier version.\",\"missing_data\":[],\"reason\":\"Cited adverse evidence has not been adjudicated for this claim, scope and frontier version.\",\"reopen_conditions\":[\"Record a scoped operator disposition for diagnostic use or label correction; otherwise resolve the conflict affecting the premises.\"],\"source_event_ids\":[2092]},{\"code\":\"ADVERSE_EVIDENCE_REQUIRES_REVIEW\",\"constraint\":\"Cited adverse evidence has not been adjudicated for this claim, scope and frontier version.\",\"missing_data\":[],\"reason\":\"Cited adverse evidence has not been adjudicated for this claim, scope and frontier version.\",\"reopen_conditions\":[\"Record a scoped operator disposition for diagnostic use or label correction; otherwise resolve the conflict affecting the premises.\"],\"source_event_ids\":[2099]}],\"fingerprint\":{\"claims\":{\"mathematical_properties\":[\"Finite declared test t4\"],\"premises\":[\"Exact operator fixture 52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\",\"Purpose cycle\"],\"required_evidence\":[\"Actual project-local measurement of t4\"],\"testable_consequence\":\"Readout for t4 matches the declared finite candidate {\\\"admissibility\\\": [true], \\\"defined\\\": true, \\\"observation\\\": 2}\"},\"complete\":true,\"digest\":\"47d273c57d0a08a9fb2008cbbe4ae79e29a6e53a9f84acf0b11fa91087e7bbac\",\"normalization_version\":1},\"formal_checks\":{\"compares_declared_claims_only\":true,\"mathematical_equivalence_decided\":false,\"source_event_references_valid\":true},\"permitted_use\":\"review_or_reopen\",\"preservation_checks\":[{\"established\":false,\"evidence_refs\":[],\"property\":\"point_value\",\"status\":\"MISSING_WITNESS\"},{\"established\":false,\"evidence_refs\":[],\"property\":\"analytic_function\",\"status\":\"MISSING_WITNESS\"},{\"established\":false,\"evidence_refs\":[],\"property\":\"observables\",\"status\":\"MISSING_WITNESS\"},{\"established\":false,\"evidence_refs\":[],\"property\":\"source_provenance\",\"status\":\"MISSING_WITNESS\"},{\"established\":false,\"evidence_refs\":[],\"property\":\"rule_applicability\",\"status\":\"MISSING_WITNESS\"}],\"proof_status\":\"unverified\",\"semantic_review_required\":true,\"verdict\":\"REQUIRES_SEMANTIC_REVIEW\",\"warnings\":[\"ADVERSE_EVIDENCE_REQUIRES_REVIEW\"]}",
+        "created_at": 1793081636
+      },
+      {
+        "id": 398,
+        "move_id": 192,
+        "frontier_versions_json": "{\"770\":2}",
+        "report_json": "{\"activation_required\":true,\"adverse_evidence\":[{\"event_id\":2092,\"event_sha256\":\"2e9d37518e78947b5caa8904645f6394f5260b638dc528da1d0a8154177c423f\",\"proof_status\":\"unverified\",\"reason\":\"Frozen QA operator policy: the actual failed guard is the diagnostic subject; the next experiment uses surviving candidates only, not the false premise.\",\"reopen_conditions\":[\"Record a scoped operator disposition for diagnostic use or label correction; otherwise resolve the conflict affecting the premises.\"],\"review_id\":37,\"role\":\"diagnostic_subject\",\"status\":\"SCOPED_DISPOSITION\"},{\"event_id\":2099,\"event_sha256\":\"1759c0d0afe9e97dd67bcb121968c18a96f793b5ae0aae260935a3e19bdbfa60\",\"proof_status\":\"unverified\",\"reason\":\"Frozen QA operator policy: the actual failed guard is the diagnostic subject; the next experiment uses surviving candidates only, not the false premise.\",\"reopen_conditions\":[\"Record a scoped operator disposition for diagnostic use or label correction; otherwise resolve the conflict affecting the premises.\"],\"review_id\":38,\"role\":\"diagnostic_subject\",\"status\":\"SCOPED_DISPOSITION\"}],\"audit_contract_version\":\"0.4.2\",\"candidate\":\"\",\"classification\":\"ACTIVE_CONTINUATION\",\"execution_permission\":{\"allowed\":false},\"findings\":[],\"fingerprint\":{\"claims\":{\"mathematical_properties\":[\"Finite declared test t4\"],\"premises\":[\"Exact operator fixture 52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\",\"Purpose cycle\"],\"required_evidence\":[\"Actual project-local measurement of t4\"],\"testable_consequence\":\"Readout for t4 matches the declared finite candidate {\\\"admissibility\\\": [true], \\\"defined\\\": true, \\\"observation\\\": 2}\"},\"complete\":true,\"digest\":\"47d273c57d0a08a9fb2008cbbe4ae79e29a6e53a9f84acf0b11fa91087e7bbac\",\"normalization_version\":1},\"formal_checks\":{\"compares_declared_claims_only\":true,\"mathematical_equivalence_decided\":false,\"source_event_references_valid\":true},\"permitted_use\":\"bounded_experiment\",\"preservation_checks\":[{\"established\":false,\"evidence_refs\":[],\"property\":\"point_value\",\"status\":\"MISSING_WITNESS\"},{\"established\":false,\"evidence_refs\":[],\"property\":\"analytic_function\",\"status\":\"MISSING_WITNESS\"},{\"established\":false,\"evidence_refs\":[],\"property\":\"observables\",\"status\":\"MISSING_WITNESS\"},{\"established\":false,\"evidence_refs\":[],\"property\":\"source_provenance\",\"status\":\"MISSING_WITNESS\"},{\"established\":false,\"evidence_refs\":[],\"property\":\"rule_applicability\",\"status\":\"MISSING_WITNESS\"}],\"proof_status\":\"unverified\",\"semantic_review_required\":false,\"verdict\":\"EXPERIMENT_ALLOWED\",\"warnings\":[]}",
+        "created_at": 1793081636
+      }
+    ],
+    "research_move_status_history": [
+      {
+        "id": 1011,
+        "move_id": 190,
+        "sequence": 1,
+        "status": "PROPOSED",
+        "reason": "Proposal recorded; execution is not authorized.",
+        "audit_id": null,
+        "decision_json": "{\"allowed\":false}",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_permutation:propose:permutation-canary",
+        "created_at": 1793081628
+      },
+      {
+        "id": 1012,
+        "move_id": 190,
+        "sequence": 2,
+        "status": "AUDITED",
+        "reason": "Audit recorded independently of execution authorization.",
+        "audit_id": 393,
+        "decision_json": "{\"allowed\":false}",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_permutation:propose:permutation-canary",
+        "created_at": 1793081628
+      },
+      {
+        "id": 1013,
+        "move_id": 190,
+        "sequence": 3,
+        "status": "AUDITED",
+        "reason": "Audit recorded independently of execution authorization.",
+        "audit_id": 394,
+        "decision_json": "{\"allowed\":false}",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_permutation:audit:permutation-canary",
+        "created_at": 1793081628
+      },
+      {
+        "id": 1014,
+        "move_id": 190,
+        "sequence": 4,
+        "status": "EXPERIMENT_ALLOWED",
+        "reason": "Explicit bounded experiment activation.",
+        "audit_id": 394,
+        "decision_json": "{\"allowed\":true,\"frontier_versions\":{\"770\":1},\"operation\":\"bounded_experiment\",\"proof_allowed\":false,\"scope\":\"QA009/20261027T052731872797Z/permutation/52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\",\"transformation_allowed\":false}",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_permutation:activate:permutation-canary",
+        "created_at": 1793081628
+      },
+      {
+        "id": 1020,
+        "move_id": 190,
+        "sequence": 5,
+        "status": "REQUIRES_REVIEW",
+        "reason": "FRONTIER_VERSION_CHANGED: obligation 770 is now version 2; re-audit required.",
+        "audit_id": 394,
+        "decision_json": "{\"allowed\":false}",
+        "request_key": "",
+        "created_at": 1793081633
+      },
+      {
+        "id": 1021,
+        "move_id": 190,
+        "sequence": 6,
+        "status": "ABANDONED",
+        "reason": "Unexecuted old permission invalidated by the evidence-bearing version change.",
+        "audit_id": 394,
+        "decision_json": "{\"allowed\":false}",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_permutation:canary-cleanup",
+        "created_at": 1793081633
+      },
+      {
+        "id": 1015,
+        "move_id": 191,
+        "sequence": 1,
+        "status": "PROPOSED",
+        "reason": "Proposal recorded; execution is not authorized.",
+        "audit_id": null,
+        "decision_json": "{\"allowed\":false}",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_permutation:propose:permutation-step1",
+        "created_at": 1793081628
+      },
+      {
+        "id": 1016,
+        "move_id": 191,
+        "sequence": 2,
+        "status": "AUDITED",
+        "reason": "Audit recorded independently of execution authorization.",
+        "audit_id": 395,
+        "decision_json": "{\"allowed\":false}",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_permutation:propose:permutation-step1",
+        "created_at": 1793081628
+      },
+      {
+        "id": 1017,
+        "move_id": 191,
+        "sequence": 3,
+        "status": "AUDITED",
+        "reason": "Audit recorded independently of execution authorization.",
+        "audit_id": 396,
+        "decision_json": "{\"allowed\":false}",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_permutation:audit:permutation-step1",
+        "created_at": 1793081628
+      },
+      {
+        "id": 1018,
+        "move_id": 191,
+        "sequence": 4,
+        "status": "EXPERIMENT_ALLOWED",
+        "reason": "Explicit bounded experiment activation.",
+        "audit_id": 396,
+        "decision_json": "{\"allowed\":true,\"frontier_versions\":{\"770\":1},\"operation\":\"bounded_experiment\",\"proof_allowed\":false,\"scope\":\"QA009/20261027T052731872797Z/permutation/52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\",\"transformation_allowed\":false}",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_permutation:activate:permutation-step1",
+        "created_at": 1793081628
+      },
+      {
+        "id": 1019,
+        "move_id": 191,
+        "sequence": 5,
+        "status": "COMPLETED",
+        "reason": "External bounded result event exists and matches this scoped experiment.",
+        "audit_id": 396,
+        "decision_json": "{\"allowed\":false,\"completion_claim\":true,\"completion_contract\":\"v0.4.2\",\"evidence_refs\":[\"event:2092\"],\"proof_status\":\"unverified\",\"result\":{\"data\":{\"fixture_sha256\":\"52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\",\"measurement_event_id\":2092,\"readout\":{\"admissibility\":[true],\"defined\":true,\"observation\":1}},\"outcome\":\"FAILURE\",\"summary\":\"Actual finite readout of t3; candidate consistency only.\"}}",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_permutation:complete:permutation-step1",
+        "created_at": 1793081629
+      },
+      {
+        "id": 1022,
+        "move_id": 192,
+        "sequence": 1,
+        "status": "PROPOSED",
+        "reason": "Proposal recorded; execution is not authorized.",
+        "audit_id": null,
+        "decision_json": "{\"allowed\":false}",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_permutation:propose:permutation-step2",
+        "created_at": 1793081636
+      },
+      {
+        "id": 1023,
+        "move_id": 192,
+        "sequence": 2,
+        "status": "AUDITED",
+        "reason": "Audit recorded independently of execution authorization.",
+        "audit_id": 397,
+        "decision_json": "{\"allowed\":false}",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_permutation:propose:permutation-step2",
+        "created_at": 1793081636
+      },
+      {
+        "id": 1024,
+        "move_id": 192,
+        "sequence": 3,
+        "status": "REQUIRES_REVIEW",
+        "reason": "Semantic review or missing evidence.",
+        "audit_id": 397,
+        "decision_json": "{\"allowed\":false}",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_permutation:propose:permutation-step2",
+        "created_at": 1793081636
+      },
+      {
+        "id": 1025,
+        "move_id": 192,
+        "sequence": 4,
+        "status": "AUDITED",
+        "reason": "Audit recorded independently of execution authorization.",
+        "audit_id": 398,
+        "decision_json": "{\"allowed\":false}",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_permutation:audit:permutation-step2",
+        "created_at": 1793081636
+      },
+      {
+        "id": 1026,
+        "move_id": 192,
+        "sequence": 5,
+        "status": "EXPERIMENT_ALLOWED",
+        "reason": "Explicit bounded experiment activation.",
+        "audit_id": 398,
+        "decision_json": "{\"allowed\":true,\"frontier_versions\":{\"770\":2},\"operation\":\"bounded_experiment\",\"proof_allowed\":false,\"scope\":\"QA009/20261027T052731872797Z/permutation/52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\",\"transformation_allowed\":false}",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_permutation:activate:permutation-step2",
+        "created_at": 1793081636
+      },
+      {
+        "id": 1027,
+        "move_id": 192,
+        "sequence": 6,
+        "status": "COMPLETED",
+        "reason": "External bounded result event exists and matches this scoped experiment.",
+        "audit_id": 398,
+        "decision_json": "{\"allowed\":false,\"completion_claim\":true,\"completion_contract\":\"v0.4.2\",\"evidence_refs\":[\"event:2100\"],\"proof_status\":\"unverified\",\"result\":{\"data\":{\"fixture_sha256\":\"52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800\",\"measurement_event_id\":2100,\"readout\":{\"admissibility\":[true],\"defined\":true,\"observation\":2}},\"outcome\":\"SUCCESS\",\"summary\":\"Actual finite readout of t4; candidate consistency only.\"}}",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_permutation:complete:permutation-step2",
+        "created_at": 1793081637
+      }
+    ],
+    "research_move_bindings": [
+      {
+        "move_id": 190,
+        "scope": "QA009/20261027T052731872797Z/permutation/52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800",
+        "frontier_id": 770,
+        "frontier_version": 1,
+        "identity_hash": "6932e287e277b13e8f7ea52987d7a751771e3ae0c162757e976d6cbdd6c3d562",
+        "request_hash": "3a5169c930af5a372681bac80b4b207e34e3e60667d68157fc8c97b422d672b4"
+      },
+      {
+        "move_id": 191,
+        "scope": "QA009/20261027T052731872797Z/permutation/52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800",
+        "frontier_id": 770,
+        "frontier_version": 1,
+        "identity_hash": "4af17279da9f55ba214635d8d3f8db5e60d94b1709655ab071ca1899fbabd634",
+        "request_hash": "eb31592fd268c06de18fd0ec70777b26b643d1594daf6a6ff5c814da61330e53"
+      },
+      {
+        "move_id": 192,
+        "scope": "QA009/20261027T052731872797Z/permutation/52e548d5d9d09af062687578152ec8e6820c961efe0738ad002f45364dbbe800",
+        "frontier_id": 770,
+        "frontier_version": 2,
+        "identity_hash": "2edea8fc51c8a52bed50c27c8d9a8cd5835ad33344de244ffd1e510f33ea2626",
+        "request_hash": "3aa313433d3d1833e5e79e519fba90f9eb407539075fe3e152c1eeb8e7451564"
+      }
+    ],
+    "research_move_request_keys": [
+      {
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_permutation",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_permutation:propose:permutation-canary",
+        "request_hash": "3a5169c930af5a372681bac80b4b207e34e3e60667d68157fc8c97b422d672b4",
+        "move_id": 190
+      },
+      {
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_permutation",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_permutation:audit:permutation-canary",
+        "request_hash": "20facbbdb4f85980012f935950f0ee4fdc94ac971554df3ae9449ad208950a7f",
+        "move_id": 190
+      },
+      {
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_permutation",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_permutation:activate:permutation-canary",
+        "request_hash": "0916c280170d50585ee90f312375e9b32c61968c9bd2ba6959fa66c1e98bfa70",
+        "move_id": 190
+      },
+      {
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_permutation",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_permutation:propose:permutation-step1",
+        "request_hash": "eb31592fd268c06de18fd0ec70777b26b643d1594daf6a6ff5c814da61330e53",
+        "move_id": 191
+      },
+      {
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_permutation",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_permutation:audit:permutation-step1",
+        "request_hash": "38a67205b55eb9561c36002e0ff5ac0246a9e6e3f70c3abc9f3b162b02af8eac",
+        "move_id": 191
+      },
+      {
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_permutation",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_permutation:activate:permutation-step1",
+        "request_hash": "aae088348eb416b660c28e2b740d87325f22c16b9ea6e665370ba10f135a80b3",
+        "move_id": 191
+      },
+      {
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_permutation",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_permutation:complete:permutation-step1",
+        "request_hash": "6fdfb5bc7ce17034d690bafbb47b2bd876fedd6ae42214b741b6389dddffaad0",
+        "move_id": 191
+      },
+      {
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_permutation",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_permutation:canary-cleanup",
+        "request_hash": "69a2c1d6f2e8b462c74c4cec70b9041e9fbbd5f37a85d62d4b12a59f6e2adaa5",
+        "move_id": 190
+      },
+      {
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_permutation",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_permutation:propose:permutation-step2",
+        "request_hash": "3aa313433d3d1833e5e79e519fba90f9eb407539075fe3e152c1eeb8e7451564",
+        "move_id": 192
+      },
+      {
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_permutation",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_permutation:audit:permutation-step2",
+        "request_hash": "87bb19750ad6478d994e80a072ed2d290a1780df19b2e98f372e67a39320159d",
+        "move_id": 192
+      },
+      {
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_permutation",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_permutation:activate:permutation-step2",
+        "request_hash": "76432d08718b38b84ccb31e2f7c915f038cf3f91ace53caf6cf821ec53c1c817",
+        "move_id": 192
+      },
+      {
+        "project": "LM_QA_CYCLE009_20261027T052731872797Z_permutation",
+        "request_key": "LM_QA_CYCLE009_20261027T052731872797Z_permutation:complete:permutation-step2",
+        "request_hash": "3f33ea5dc271af67be806e23a163f3470493e6e9b618c800c55ee03f43af0216",
+        "move_id": 192
+      }
+    ],
+    "policies": [
+      {
+        "code": "FAILURE_FIRST",
+        "content": "После провала — RCA и проверяемый контрпример прежде новой эвристики.",
+        "enabled": 1
+      },
+      {
+        "code": "FTL_CONTROL",
+        "content": "Совпадение смыслов через известный канал не доказывает независимую передачу новой информации.",
+        "enabled": 1
+      },
+      {
+        "code": "NO_SUBSTITUTION",
+        "content": "Не подменять обнаруженный механизм готовым DSL или аппаратом без сравнения преемственности.",
+        "enabled": 1
+      },
+      {
+        "code": "PROOF_STATUS",
+        "content": "Аналогии, тексты модели и численные тесты не являются математическими доказательствами.",
+        "enabled": 1
+      },
+      {
+        "code": "SOURCE_VS_READER",
+        "content": "Разделять изменение источника, интерпретации и способа проверки.",
+        "enabled": 1
+      },
+      {
+        "code": "TWO_OPERATIONS",
+        "content": "Интерпретация и перенос внимания; новые фундаментальные операции требуют доказательств.",
+        "enabled": 1
+      }
+    ],
+    "frontier_imports": [
+      {
+        "import_key": "LM_QA_CYCLE009_20261027T052731872797Z_permutation:scoped-operator-constraint",
+        "digest": "2aed9bdcd7ffe7cbf92aa732d5655e79ea3eae7ba41c305dee9c8fb39ef29c42",
+        "summary_json": "{\"epistemic_status\":\"Scoped history claims; no mathematical truth inferred.\",\"import_key\":\"LM_QA_CYCLE009_20261027T052731872797Z_permutation:scoped-operator-constraint\",\"obligation_ids\":{\"cycle\":770},\"operator\":\"User-authorized frozen009 QA operator\",\"project\":\"LM_QA_CYCLE009_20261027T052731872797Z_permutation\",\"source_event_ids\":[2085]}"
+      }
+    ]
+  }
+}

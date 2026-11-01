@@ -1,0 +1,252 @@
+[
+  {
+    "id": "M1",
+    "group": "mathematical",
+    "question": "Pythagoras: invariant under orthogonality versus quadratic attention",
+    "fixture": "pythagoras",
+    "author_confirmation": "AUTHOR_REVIEW_NOT_AVAILABLE",
+    "input_contract_sha256": "120827c3d44c1130a4bdb0be095fbb757e9836842ac2f4aaca1d6553405ba6ed",
+    "arm_order": [
+      "A_direct_LLM",
+      "C_human_control",
+      "B_same_LLM_plus_Bridge"
+    ],
+    "identical_budget": {
+      "input_tokens": 4096,
+      "output_tokens": 2048,
+      "native_calls": 0,
+      "wall_seconds": 120
+    },
+    "arms": {
+      "A_direct_LLM": "NOT_TESTED_NO_AUTHORIZED_MODEL_RUN",
+      "B_same_LLM_plus_Bridge": "NOT_TESTED_NO_AUTHORIZED_MODEL_RUN",
+      "C_human_control": "NOT_TESTED_NO_INDEPENDENT_HUMAN"
+    },
+    "local_only": "DETERMINISTIC_FIXTURE_CHECK"
+  },
+  {
+    "id": "M2",
+    "group": "mathematical",
+    "question": "Inverse of second-order XOR on all declared pairs",
+    "fixture": "boa",
+    "author_confirmation": "AUTHOR_REVIEW_NOT_AVAILABLE",
+    "input_contract_sha256": "7db5f2448054c11d6bf2ef2825bf3b963f3f9df3ba0312fe5f05966c7c3051e8",
+    "arm_order": [
+      "B_same_LLM_plus_Bridge",
+      "C_human_control",
+      "A_direct_LLM"
+    ],
+    "identical_budget": {
+      "input_tokens": 4096,
+      "output_tokens": 2048,
+      "native_calls": 0,
+      "wall_seconds": 120
+    },
+    "arms": {
+      "A_direct_LLM": "NOT_TESTED_NO_AUTHORIZED_MODEL_RUN",
+      "B_same_LLM_plus_Bridge": "NOT_TESTED_NO_AUTHORIZED_MODEL_RUN",
+      "C_human_control": "NOT_TESTED_NO_INDEPENDENT_HUMAN"
+    },
+    "local_only": "DETERMINISTIC_FIXTURE_CHECK"
+  },
+  {
+    "id": "M3",
+    "group": "mathematical",
+    "question": "Exhibit noninjective first-order G collision",
+    "fixture": "boa",
+    "author_confirmation": "AUTHOR_REVIEW_NOT_AVAILABLE",
+    "input_contract_sha256": "7db5f2448054c11d6bf2ef2825bf3b963f3f9df3ba0312fe5f05966c7c3051e8",
+    "arm_order": [
+      "A_direct_LLM",
+      "C_human_control",
+      "B_same_LLM_plus_Bridge"
+    ],
+    "identical_budget": {
+      "input_tokens": 4096,
+      "output_tokens": 2048,
+      "native_calls": 0,
+      "wall_seconds": 120
+    },
+    "arms": {
+      "A_direct_LLM": "NOT_TESTED_NO_AUTHORIZED_MODEL_RUN",
+      "B_same_LLM_plus_Bridge": "NOT_TESTED_NO_AUTHORIZED_MODEL_RUN",
+      "C_human_control": "NOT_TESTED_NO_INDEPENDENT_HUMAN"
+    },
+    "local_only": "DETERMINISTIC_FIXTURE_CHECK"
+  },
+  {
+    "id": "M4",
+    "group": "mathematical",
+    "question": "Distinguish coordinate equality from pair/source identity",
+    "fixture": "boa",
+    "author_confirmation": "AUTHOR_REVIEW_NOT_AVAILABLE",
+    "input_contract_sha256": "7db5f2448054c11d6bf2ef2825bf3b963f3f9df3ba0312fe5f05966c7c3051e8",
+    "arm_order": [
+      "B_same_LLM_plus_Bridge",
+      "C_human_control",
+      "A_direct_LLM"
+    ],
+    "identical_budget": {
+      "input_tokens": 4096,
+      "output_tokens": 2048,
+      "native_calls": 0,
+      "wall_seconds": 120
+    },
+    "arms": {
+      "A_direct_LLM": "NOT_TESTED_NO_AUTHORIZED_MODEL_RUN",
+      "B_same_LLM_plus_Bridge": "NOT_TESTED_NO_AUTHORIZED_MODEL_RUN",
+      "C_human_control": "NOT_TESTED_NO_INDEPENDENT_HUMAN"
+    },
+    "local_only": "DETERMINISTIC_FIXTURE_CHECK"
+  },
+  {
+    "id": "L1",
+    "group": "linguistic",
+    "question": "Original two poems in both reading orders",
+    "fixture": "poetry",
+    "author_confirmation": "AUTHOR_REVIEW_NOT_AVAILABLE",
+    "input_contract_sha256": "19b6b36884551fc301945072cbf480180e4c736b65ec9cb3a2dbc3e5912ad038",
+    "arm_order": [
+      "C_human_control",
+      "B_same_LLM_plus_Bridge",
+      "A_direct_LLM"
+    ],
+    "identical_budget": {
+      "input_tokens": 4096,
+      "output_tokens": 2048,
+      "native_calls": 0,
+      "wall_seconds": 120
+    },
+    "arms": {
+      "A_direct_LLM": "NOT_TESTED_NO_AUTHORIZED_MODEL_RUN",
+      "B_same_LLM_plus_Bridge": "NOT_TESTED_NO_AUTHORIZED_MODEL_RUN",
+      "C_human_control": "NOT_TESTED_NO_INDEPENDENT_HUMAN"
+    },
+    "local_only": "DETERMINISTIC_FIXTURE_CHECK"
+  },
+  {
+    "id": "L2",
+    "group": "linguistic",
+    "question": "Retain repetition versus mathematical fixed point distinction",
+    "fixture": "poetry",
+    "author_confirmation": "AUTHOR_REVIEW_NOT_AVAILABLE",
+    "input_contract_sha256": "19b6b36884551fc301945072cbf480180e4c736b65ec9cb3a2dbc3e5912ad038",
+    "arm_order": [
+      "A_direct_LLM",
+      "C_human_control",
+      "B_same_LLM_plus_Bridge"
+    ],
+    "identical_budget": {
+      "input_tokens": 4096,
+      "output_tokens": 2048,
+      "native_calls": 0,
+      "wall_seconds": 120
+    },
+    "arms": {
+      "A_direct_LLM": "NOT_TESTED_NO_AUTHORIZED_MODEL_RUN",
+      "B_same_LLM_plus_Bridge": "NOT_TESTED_NO_AUTHORIZED_MODEL_RUN",
+      "C_human_control": "NOT_TESTED_NO_INDEPENDENT_HUMAN"
+    },
+    "local_only": "DETERMINISTIC_FIXTURE_CHECK"
+  },
+  {
+    "id": "L3",
+    "group": "linguistic",
+    "question": "Distinguish boundary imagery from formal state boundary",
+    "fixture": "poetry",
+    "author_confirmation": "AUTHOR_REVIEW_NOT_AVAILABLE",
+    "input_contract_sha256": "19b6b36884551fc301945072cbf480180e4c736b65ec9cb3a2dbc3e5912ad038",
+    "arm_order": [
+      "C_human_control",
+      "B_same_LLM_plus_Bridge",
+      "A_direct_LLM"
+    ],
+    "identical_budget": {
+      "input_tokens": 4096,
+      "output_tokens": 2048,
+      "native_calls": 0,
+      "wall_seconds": 120
+    },
+    "arms": {
+      "A_direct_LLM": "NOT_TESTED_NO_AUTHORIZED_MODEL_RUN",
+      "B_same_LLM_plus_Bridge": "NOT_TESTED_NO_AUTHORIZED_MODEL_RUN",
+      "C_human_control": "NOT_TESTED_NO_INDEPENDENT_HUMAN"
+    },
+    "local_only": "DETERMINISTIC_FIXTURE_CHECK"
+  },
+  {
+    "id": "I1",
+    "group": "image_practical",
+    "question": "Boa metaphor versus reversible state pair",
+    "fixture": "boa",
+    "author_confirmation": "AUTHOR_REVIEW_NOT_AVAILABLE",
+    "input_contract_sha256": "7db5f2448054c11d6bf2ef2825bf3b963f3f9df3ba0312fe5f05966c7c3051e8",
+    "arm_order": [
+      "C_human_control",
+      "B_same_LLM_plus_Bridge",
+      "A_direct_LLM"
+    ],
+    "identical_budget": {
+      "input_tokens": 4096,
+      "output_tokens": 2048,
+      "native_calls": 0,
+      "wall_seconds": 120
+    },
+    "arms": {
+      "A_direct_LLM": "NOT_TESTED_NO_AUTHORIZED_MODEL_RUN",
+      "B_same_LLM_plus_Bridge": "NOT_TESTED_NO_AUTHORIZED_MODEL_RUN",
+      "C_human_control": "NOT_TESTED_NO_INDEPENDENT_HUMAN"
+    },
+    "local_only": "DETERMINISTIC_FIXTURE_CHECK"
+  },
+  {
+    "id": "I2",
+    "group": "image_practical",
+    "question": "Proposed garden-gate image; needs prior author agreement",
+    "fixture": null,
+    "author_confirmation": "AUTHOR_REVIEW_NOT_AVAILABLE",
+    "input_contract_sha256": null,
+    "arm_order": [
+      "A_direct_LLM",
+      "C_human_control",
+      "B_same_LLM_plus_Bridge"
+    ],
+    "identical_budget": {
+      "input_tokens": 4096,
+      "output_tokens": 2048,
+      "native_calls": 0,
+      "wall_seconds": 120
+    },
+    "arms": {
+      "A_direct_LLM": "NOT_TESTED_NO_AUTHORIZED_MODEL_RUN",
+      "B_same_LLM_plus_Bridge": "NOT_TESTED_NO_AUTHORIZED_MODEL_RUN",
+      "C_human_control": "NOT_TESTED_NO_INDEPENDENT_HUMAN"
+    },
+    "local_only": "PENDING_AUTHOR_SOURCE_AND_RIGHTS"
+  },
+  {
+    "id": "I3",
+    "group": "image_practical",
+    "question": "Proposed folded-map image; needs prior author agreement",
+    "fixture": null,
+    "author_confirmation": "AUTHOR_REVIEW_NOT_AVAILABLE",
+    "input_contract_sha256": null,
+    "arm_order": [
+      "C_human_control",
+      "A_direct_LLM",
+      "B_same_LLM_plus_Bridge"
+    ],
+    "identical_budget": {
+      "input_tokens": 4096,
+      "output_tokens": 2048,
+      "native_calls": 0,
+      "wall_seconds": 120
+    },
+    "arms": {
+      "A_direct_LLM": "NOT_TESTED_NO_AUTHORIZED_MODEL_RUN",
+      "B_same_LLM_plus_Bridge": "NOT_TESTED_NO_AUTHORIZED_MODEL_RUN",
+      "C_human_control": "NOT_TESTED_NO_INDEPENDENT_HUMAN"
+    },
+    "local_only": "PENDING_AUTHOR_SOURCE_AND_RIGHTS"
+  }
+]

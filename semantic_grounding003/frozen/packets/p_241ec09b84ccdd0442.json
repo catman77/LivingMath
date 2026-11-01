@@ -1,0 +1,76 @@
+{
+  "id": "p_241ec09b84ccdd0442",
+  "document_id": "anchar",
+  "document_sha256": "354f0c4173bcf4360851c9ea1223011100517954c7ad6a9b14a3fb58097f198b",
+  "edition": "RVB Pushkin10vol 1959-1962, online6.0 2019; hash-pinned acquisition2026-10-30",
+  "language": "ru",
+  "spans": [
+    {
+      "id": "anchar:37",
+      "document_id": "anchar",
+      "document_sha256": "354f0c4173bcf4360851c9ea1223011100517954c7ad6a9b14a3fb58097f198b",
+      "edition": "RVB Pushkin10vol 1959-1962, online6.0 2019; hash-pinned acquisition2026-10-30",
+      "start": 1712,
+      "end": 1730,
+      "text": "Древо яда.",
+      "source_address": {
+        "kind": "AUTHOR_FOOTNOTE",
+        "text_node": "Original author footnote in acquired RVB HTML"
+      }
+    },
+    {
+      "id": "anchar:5",
+      "document_id": "anchar",
+      "document_sha256": "354f0c4173bcf4360851c9ea1223011100517954c7ad6a9b14a3fb58097f198b",
+      "edition": "RVB Pushkin10vol 1959-1962, online6.0 2019; hash-pinned acquisition2026-10-30",
+      "start": 208,
+      "end": 252,
+      "text": "Природа жаждущих степей",
+      "source_address": {
+        "html_id": "L5",
+        "verse_line": 5
+      }
+    },
+    {
+      "id": "anchar:6",
+      "document_id": "anchar",
+      "document_sha256": "354f0c4173bcf4360851c9ea1223011100517954c7ad6a9b14a3fb58097f198b",
+      "edition": "RVB Pushkin10vol 1959-1962, online6.0 2019; hash-pinned acquisition2026-10-30",
+      "start": 253,
+      "end": 300,
+      "text": "Его в день гнева породила,",
+      "source_address": {
+        "html_id": "L6",
+        "verse_line": 6
+      }
+    },
+    {
+      "id": "anchar:7",
+      "document_id": "anchar",
+      "document_sha256": "354f0c4173bcf4360851c9ea1223011100517954c7ad6a9b14a3fb58097f198b",
+      "edition": "RVB Pushkin10vol 1959-1962, online6.0 2019; hash-pinned acquisition2026-10-30",
+      "start": 301,
+      "end": 344,
+      "text": "И зелень мертвую ветвей",
+      "source_address": {
+        "html_id": "L7",
+        "verse_line": 7
+      }
+    },
+    {
+      "id": "anchar:8",
+      "document_id": "anchar",
+      "document_sha256": "354f0c4173bcf4360851c9ea1223011100517954c7ad6a9b14a3fb58097f198b",
+      "edition": "RVB Pushkin10vol 1959-1962, online6.0 2019; hash-pinned acquisition2026-10-30",
+      "start": 345,
+      "end": 383,
+      "text": "И корни ядом напоила.",
+      "source_address": {
+        "html_id": "L8",
+        "verse_line": 8
+      }
+    }
+  ],
+  "context": [],
+  "grammar": {}
+}

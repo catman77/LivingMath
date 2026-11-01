@@ -1,0 +1,89 @@
+{
+  "id": "p_974f093890e703c391",
+  "document_id": "anchar",
+  "document_sha256": "354f0c4173bcf4360851c9ea1223011100517954c7ad6a9b14a3fb58097f198b",
+  "edition": "RVB Pushkin10vol 1959-1962, online6.0 2019; hash-pinned acquisition2026-10-30",
+  "language": "ru",
+  "spans": [
+    {
+      "id": "anchar:31",
+      "document_id": "anchar",
+      "document_sha256": "354f0c4173bcf4360851c9ea1223011100517954c7ad6a9b14a3fb58097f198b",
+      "edition": "RVB Pushkin10vol 1959-1962, online6.0 2019; hash-pinned acquisition2026-10-30",
+      "start": 1446,
+      "end": 1487,
+      "text": "И умер бедный раб у ног",
+      "source_address": {
+        "html_id": "L31",
+        "verse_line": 31
+      }
+    },
+    {
+      "id": "anchar:32",
+      "document_id": "anchar",
+      "document_sha256": "354f0c4173bcf4360851c9ea1223011100517954c7ad6a9b14a3fb58097f198b",
+      "edition": "RVB Pushkin10vol 1959-1962, online6.0 2019; hash-pinned acquisition2026-10-30",
+      "start": 1488,
+      "end": 1528,
+      "text": "Непобедимого владыки.",
+      "source_address": {
+        "html_id": "L32",
+        "verse_line": 32
+      }
+    },
+    {
+      "id": "anchar:33",
+      "document_id": "anchar",
+      "document_sha256": "354f0c4173bcf4360851c9ea1223011100517954c7ad6a9b14a3fb58097f198b",
+      "edition": "RVB Pushkin10vol 1959-1962, online6.0 2019; hash-pinned acquisition2026-10-30",
+      "start": 1529,
+      "end": 1571,
+      "text": "А царь тем ядом напитал",
+      "source_address": {
+        "html_id": "L33",
+        "verse_line": 33
+      }
+    },
+    {
+      "id": "anchar:34",
+      "document_id": "anchar",
+      "document_sha256": "354f0c4173bcf4360851c9ea1223011100517954c7ad6a9b14a3fb58097f198b",
+      "edition": "RVB Pushkin10vol 1959-1962, online6.0 2019; hash-pinned acquisition2026-10-30",
+      "start": 1572,
+      "end": 1616,
+      "text": "Свои послушливые стрелы",
+      "source_address": {
+        "html_id": "L34",
+        "verse_line": 34
+      }
+    },
+    {
+      "id": "anchar:35",
+      "document_id": "anchar",
+      "document_sha256": "354f0c4173bcf4360851c9ea1223011100517954c7ad6a9b14a3fb58097f198b",
+      "edition": "RVB Pushkin10vol 1959-1962, online6.0 2019; hash-pinned acquisition2026-10-30",
+      "start": 1617,
+      "end": 1661,
+      "text": "И с ними гибель разослал",
+      "source_address": {
+        "html_id": "L35",
+        "verse_line": 35
+      }
+    },
+    {
+      "id": "anchar:36",
+      "document_id": "anchar",
+      "document_sha256": "354f0c4173bcf4360851c9ea1223011100517954c7ad6a9b14a3fb58097f198b",
+      "edition": "RVB Pushkin10vol 1959-1962, online6.0 2019; hash-pinned acquisition2026-10-30",
+      "start": 1662,
+      "end": 1711,
+      "text": "К соседям в чуждые пределы.",
+      "source_address": {
+        "html_id": "L36",
+        "verse_line": 36
+      }
+    }
+  ],
+  "context": [],
+  "grammar": {}
+}

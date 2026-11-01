@@ -1,0 +1,98 @@
+[
+  {
+    "pair_id": "P1-001",
+    "archive": "SUTI.uni.zip",
+    "archive_sha256": "020e256a8ed77a91a0d50775c01b54e8b60db87366ea57d7c911ff65a0fd2c37",
+    "member": "SUTI.uni/README.md",
+    "source_sha256": "0746636236669970d19972645fc1f871beb9d585637f20e075675b4fc0601dec",
+    "source_revision": "0746636236669970d19972645fc1f871beb9d585637f20e075675b4fc0601dec",
+    "span": {
+      "start": 1377,
+      "end": 1495,
+      "byte_start": 2386,
+      "byte_end": 2606,
+      "quote": "Сначала фиксируются источник и права, затем создаётся объяснение для читателя; публикация остаётся отдельным решением.",
+      "quote_sha256": "1ee7cc746668d6e00bee4410a9cde38a239aa532dc422ae0f9fda49f3ac3f0ce"
+    },
+    "phase": "SOURCE_CONTEXT_REVIEW",
+    "claim_type": "DOCUMENTATION_CANDIDATE",
+    "confidence_origin": "SOURCE_DOCUMENTED",
+    "declared_version": {},
+    "observer": {
+      "kind": "data_property_projection",
+      "fields": [
+        "visibility"
+      ]
+    },
+    "subject_target_fields": [
+      "visibility",
+      "transfer_status"
+    ],
+    "matched_exact_fields": [],
+    "applicability_assumptions": [
+      "Operator follow-up of a scanned source member; not a preselected executable rule.",
+      "Field/version/stage identity remains UNKNOWN; text cannot invalidate schema-valid records."
+    ],
+    "testable_consequence": "Ask author for exact scope and executable source binding; no ban inferred.",
+    "loss_ledger": [
+      {
+        "distinction": "documentation versus executable invariant",
+        "state": "PRESERVED"
+      },
+      {
+        "distinction": "exact field/version/stage binding",
+        "state": "UNKNOWN"
+      }
+    ],
+    "selection_origin": "OPERATOR_POST_DISCOVERY_CONTEXT_REVIEW",
+    "id": "19815aaaddd6f228809c6393cd4891d579c0e7b63680da5735aa79a4cba71758"
+  },
+  {
+    "pair_id": "P1-002",
+    "archive": "SUTI.uni.zip",
+    "archive_sha256": "020e256a8ed77a91a0d50775c01b54e8b60db87366ea57d7c911ff65a0fd2c37",
+    "member": "SUTI.uni/SUTI.studium/README.md",
+    "source_sha256": "37756b77cb6ca208e7de97dd290b1e76da74a897fc66cfbee5dc9a03f93eaab8",
+    "source_revision": "37756b77cb6ca208e7de97dd290b1e76da74a897fc66cfbee5dc9a03f93eaab8",
+    "span": {
+      "start": 14037,
+      "end": 14146,
+      "byte_start": 24899,
+      "byte_end": 25100,
+      "quote": "Решение о расширении, закупке, интеграции ПО или передаче данных является отдельным от удачной учебной пробы.",
+      "quote_sha256": "aeaccffb105b4d8e3d1fa16df9db902a239dbaec83520c4f1184b427341e2f93"
+    },
+    "phase": "SOURCE_CONTEXT_REVIEW",
+    "claim_type": "DOCUMENTATION_CANDIDATE",
+    "confidence_origin": "SOURCE_DOCUMENTED",
+    "declared_version": {},
+    "observer": {
+      "kind": "data_property_projection",
+      "fields": [
+        "external_transfer"
+      ]
+    },
+    "subject_target_fields": [
+      "external_transfer",
+      "decision"
+    ],
+    "matched_exact_fields": [],
+    "applicability_assumptions": [
+      "Operator follow-up of a scanned source member; not a preselected executable rule.",
+      "Field/version/stage identity remains UNKNOWN; text cannot invalidate schema-valid records."
+    ],
+    "testable_consequence": "Ask author for exact scope and executable source binding; no ban inferred.",
+    "loss_ledger": [
+      {
+        "distinction": "documentation versus executable invariant",
+        "state": "PRESERVED"
+      },
+      {
+        "distinction": "exact field/version/stage binding",
+        "state": "UNKNOWN"
+      }
+    ],
+    "selection_origin": "OPERATOR_POST_DISCOVERY_CONTEXT_REVIEW",
+    "id": "6a1be25a0184d1d5aaedb5afd7bc1bc95714411d54cff07ea72db1f3158167b3"
+  }
+]

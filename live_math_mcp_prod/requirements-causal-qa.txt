@@ -1,0 +1,3 @@
+-r requirements-dev.txt
+tiktoken==0.14.0
+jsonschema>=4,<5

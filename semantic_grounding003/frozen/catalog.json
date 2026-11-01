@@ -1,0 +1,212 @@
+{
+  "p_ac0bf6d36fddbdc913": {
+    "partition": "train",
+    "path": "frozen/packets/p_ac0bf6d36fddbdc913.json",
+    "document_path": "frozen/documents/r4.txt",
+    "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+    "edition": "Ripley1591/TCP-A10786-aa59eb69"
+  },
+  "p_010951b7207ae243c7": {
+    "partition": "holdout",
+    "path": "frozen/packets/p_010951b7207ae243c7.json",
+    "document_path": "frozen/documents/r4.txt",
+    "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+    "edition": "Ripley1591/TCP-A10786-aa59eb69"
+  },
+  "p_9660d9dcf1a5222a03": {
+    "partition": "train",
+    "path": "frozen/packets/p_9660d9dcf1a5222a03.json",
+    "document_path": "frozen/documents/r4.txt",
+    "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+    "edition": "Ripley1591/TCP-A10786-aa59eb69"
+  },
+  "p_b0f58b16085d62bf55": {
+    "partition": "holdout",
+    "path": "frozen/packets/p_b0f58b16085d62bf55.json",
+    "document_path": "frozen/documents/r4.txt",
+    "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+    "edition": "Ripley1591/TCP-A10786-aa59eb69"
+  },
+  "p_263da2649d0cacf3dc": {
+    "partition": "train",
+    "path": "frozen/packets/p_263da2649d0cacf3dc.json",
+    "document_path": "frozen/documents/r4.txt",
+    "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+    "edition": "Ripley1591/TCP-A10786-aa59eb69"
+  },
+  "p_27ecf0a2895c01e156": {
+    "partition": "train",
+    "path": "frozen/packets/p_27ecf0a2895c01e156.json",
+    "document_path": "frozen/documents/r4.txt",
+    "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+    "edition": "Ripley1591/TCP-A10786-aa59eb69"
+  },
+  "p_d8688144ccb1db0a79": {
+    "partition": "holdout",
+    "path": "frozen/packets/p_d8688144ccb1db0a79.json",
+    "document_path": "frozen/documents/r4.txt",
+    "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+    "edition": "Ripley1591/TCP-A10786-aa59eb69"
+  },
+  "p_b9f4b9c30aa1ca113d": {
+    "partition": "train",
+    "path": "frozen/packets/p_b9f4b9c30aa1ca113d.json",
+    "document_path": "frozen/documents/anchar.txt",
+    "document_sha256": "354f0c4173bcf4360851c9ea1223011100517954c7ad6a9b14a3fb58097f198b",
+    "edition": "RVB Pushkin10vol 1959-1962, online6.0 2019; hash-pinned acquisition2026-10-30"
+  },
+  "p_e5e295a16b9b292bc9": {
+    "partition": "holdout",
+    "path": "frozen/packets/p_e5e295a16b9b292bc9.json",
+    "document_path": "frozen/documents/anchar.txt",
+    "document_sha256": "354f0c4173bcf4360851c9ea1223011100517954c7ad6a9b14a3fb58097f198b",
+    "edition": "RVB Pushkin10vol 1959-1962, online6.0 2019; hash-pinned acquisition2026-10-30"
+  },
+  "p_9f1cabe1484f742bce": {
+    "partition": "train",
+    "path": "frozen/packets/p_9f1cabe1484f742bce.json",
+    "document_path": "frozen/documents/anchar.txt",
+    "document_sha256": "354f0c4173bcf4360851c9ea1223011100517954c7ad6a9b14a3fb58097f198b",
+    "edition": "RVB Pushkin10vol 1959-1962, online6.0 2019; hash-pinned acquisition2026-10-30"
+  },
+  "p_241ec09b84ccdd0442": {
+    "partition": "holdout",
+    "path": "frozen/packets/p_241ec09b84ccdd0442.json",
+    "document_path": "frozen/documents/anchar.txt",
+    "document_sha256": "354f0c4173bcf4360851c9ea1223011100517954c7ad6a9b14a3fb58097f198b",
+    "edition": "RVB Pushkin10vol 1959-1962, online6.0 2019; hash-pinned acquisition2026-10-30"
+  },
+  "p_974f093890e703c391": {
+    "partition": "holdout",
+    "path": "frozen/packets/p_974f093890e703c391.json",
+    "document_path": "frozen/documents/anchar.txt",
+    "document_sha256": "354f0c4173bcf4360851c9ea1223011100517954c7ad6a9b14a3fb58097f198b",
+    "edition": "RVB Pushkin10vol 1959-1962, online6.0 2019; hash-pinned acquisition2026-10-30"
+  },
+  "p_587f280ea0259529c3": {
+    "partition": "train",
+    "path": "frozen/packets/p_587f280ea0259529c3.json",
+    "document_path": "frozen/documents/anchar.txt",
+    "document_sha256": "354f0c4173bcf4360851c9ea1223011100517954c7ad6a9b14a3fb58097f198b",
+    "edition": "RVB Pushkin10vol 1959-1962, online6.0 2019; hash-pinned acquisition2026-10-30"
+  },
+  "p_7d6230c10f234d3c98": {
+    "partition": "holdout",
+    "path": "frozen/packets/p_7d6230c10f234d3c98.json",
+    "document_path": "frozen/documents/anchar.txt",
+    "document_sha256": "354f0c4173bcf4360851c9ea1223011100517954c7ad6a9b14a3fb58097f198b",
+    "edition": "RVB Pushkin10vol 1959-1962, online6.0 2019; hash-pinned acquisition2026-10-30"
+  },
+  "p_ca7259f0ddefd307bf": {
+    "partition": "train",
+    "path": "frozen/packets/p_ca7259f0ddefd307bf.json",
+    "document_path": "frozen/documents/s01.txt",
+    "document_sha256": "d2ab7f3ae3e2f4295fa2642bcf4a3f159928b692eb073305cc5e6ec761efc066",
+    "edition": "ORIGINAL_SYNTHETIC_CONTROL/003"
+  },
+  "p_9e929bc400c07a756b": {
+    "partition": "holdout",
+    "path": "frozen/packets/p_9e929bc400c07a756b.json",
+    "document_path": "frozen/documents/s01.txt",
+    "document_sha256": "d2ab7f3ae3e2f4295fa2642bcf4a3f159928b692eb073305cc5e6ec761efc066",
+    "edition": "ORIGINAL_SYNTHETIC_CONTROL/003"
+  },
+  "p_8775159e9af4adce9d": {
+    "partition": "train",
+    "path": "frozen/packets/p_8775159e9af4adce9d.json",
+    "document_path": "frozen/documents/s02.txt",
+    "document_sha256": "3c5bcac02c5f2035efdf639c629cb8a9de6130ffea6f228b44031d5e9de0ea9c",
+    "edition": "ORIGINAL_SYNTHETIC_CONTROL/003"
+  },
+  "p_b148b835374ee2475d": {
+    "partition": "holdout",
+    "path": "frozen/packets/p_b148b835374ee2475d.json",
+    "document_path": "frozen/documents/s02.txt",
+    "document_sha256": "3c5bcac02c5f2035efdf639c629cb8a9de6130ffea6f228b44031d5e9de0ea9c",
+    "edition": "ORIGINAL_SYNTHETIC_CONTROL/003"
+  },
+  "p_3cba2ed8493a86db1a": {
+    "partition": "train",
+    "path": "frozen/packets/p_3cba2ed8493a86db1a.json",
+    "document_path": "frozen/documents/s03.txt",
+    "document_sha256": "e6f7f62907fb5db11257b82b810d448b494cf76af4cdef5b3f4ed9163822fb71",
+    "edition": "ORIGINAL_SYNTHETIC_CONTROL/003"
+  },
+  "p_a2320687ef1da5c80d": {
+    "partition": "holdout",
+    "path": "frozen/packets/p_a2320687ef1da5c80d.json",
+    "document_path": "frozen/documents/s03.txt",
+    "document_sha256": "e6f7f62907fb5db11257b82b810d448b494cf76af4cdef5b3f4ed9163822fb71",
+    "edition": "ORIGINAL_SYNTHETIC_CONTROL/003"
+  },
+  "p_6f318d3617da07143a": {
+    "partition": "train",
+    "path": "frozen/packets/p_6f318d3617da07143a.json",
+    "document_path": "frozen/documents/s04.txt",
+    "document_sha256": "938a229be24fa17c4d73de54970a0be9ae562c8711a334e4bdd772d52fea74ee",
+    "edition": "ORIGINAL_SYNTHETIC_CONTROL/003"
+  },
+  "p_75f9203b748754a7d0": {
+    "partition": "holdout",
+    "path": "frozen/packets/p_75f9203b748754a7d0.json",
+    "document_path": "frozen/documents/s04.txt",
+    "document_sha256": "938a229be24fa17c4d73de54970a0be9ae562c8711a334e4bdd772d52fea74ee",
+    "edition": "ORIGINAL_SYNTHETIC_CONTROL/003"
+  },
+  "p_5da4b12c87c0762b9f": {
+    "partition": "train",
+    "path": "frozen/packets/p_5da4b12c87c0762b9f.json",
+    "document_path": "frozen/documents/s05.txt",
+    "document_sha256": "8b47a27640322f12bd83e1bb094ab67e6a46e3a33dd9c786ec9f8e9162ee2703",
+    "edition": "ORIGINAL_SYNTHETIC_CONTROL/003"
+  },
+  "p_905a8afc2a35286329": {
+    "partition": "holdout",
+    "path": "frozen/packets/p_905a8afc2a35286329.json",
+    "document_path": "frozen/documents/s05.txt",
+    "document_sha256": "8b47a27640322f12bd83e1bb094ab67e6a46e3a33dd9c786ec9f8e9162ee2703",
+    "edition": "ORIGINAL_SYNTHETIC_CONTROL/003"
+  },
+  "p_185a8cadc90c249b3d": {
+    "partition": "train",
+    "path": "frozen/packets/p_185a8cadc90c249b3d.json",
+    "document_path": "frozen/documents/s06.txt",
+    "document_sha256": "629d6a48fc9d4b192f827b630c88efb6c0eda4e7bb51b168455816586a064f46",
+    "edition": "ORIGINAL_SYNTHETIC_CONTROL/003"
+  },
+  "p_0688dda6451220bee5": {
+    "partition": "holdout",
+    "path": "frozen/packets/p_0688dda6451220bee5.json",
+    "document_path": "frozen/documents/s06.txt",
+    "document_sha256": "629d6a48fc9d4b192f827b630c88efb6c0eda4e7bb51b168455816586a064f46",
+    "edition": "ORIGINAL_SYNTHETIC_CONTROL/003"
+  },
+  "p_77db7d7da31bb7a4ff": {
+    "partition": "train",
+    "path": "frozen/packets/p_77db7d7da31bb7a4ff.json",
+    "document_path": "frozen/documents/s07.txt",
+    "document_sha256": "54c4d577329f9ab4fde5033a6191ce08800ef69f68e1e826dd4614f43fe0f3ee",
+    "edition": "ORIGINAL_SYNTHETIC_CONTROL/003"
+  },
+  "p_e71688a09ba82bbdaa": {
+    "partition": "holdout",
+    "path": "frozen/packets/p_e71688a09ba82bbdaa.json",
+    "document_path": "frozen/documents/s07.txt",
+    "document_sha256": "54c4d577329f9ab4fde5033a6191ce08800ef69f68e1e826dd4614f43fe0f3ee",
+    "edition": "ORIGINAL_SYNTHETIC_CONTROL/003"
+  },
+  "p_c6e166260936b31af5": {
+    "partition": "train",
+    "path": "frozen/packets/p_c6e166260936b31af5.json",
+    "document_path": "frozen/documents/s08.txt",
+    "document_sha256": "db0be1a2e458b5a47673bb19553c06ca553897b75da1cb7561f64fb7c87c8d7e",
+    "edition": "ORIGINAL_SYNTHETIC_CONTROL/003"
+  },
+  "p_11befe48ca8ae8bc40": {
+    "partition": "holdout",
+    "path": "frozen/packets/p_11befe48ca8ae8bc40.json",
+    "document_path": "frozen/documents/s08.txt",
+    "document_sha256": "db0be1a2e458b5a47673bb19553c06ca553897b75da1cb7561f64fb7c87c8d7e",
+    "edition": "ORIGINAL_SYNTHETIC_CONTROL/003"
+  }
+}

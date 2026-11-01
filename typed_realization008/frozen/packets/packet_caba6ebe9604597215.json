@@ -1,0 +1,75 @@
+{
+  "id": "packet_caba6ebe9604597215",
+  "document_id": "ripley004",
+  "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+  "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+  "language": "en",
+  "spans": [
+    {
+      "id": "ripley004:15",
+      "document_id": "ripley004",
+      "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "start": 640,
+      "end": 681,
+      "text": "Firmentations in diuers manners be doone,",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[9]/lg[2]/l[1]",
+        "section": "gate9",
+        "stanza": 2,
+        "line": 1,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "ripley004:16",
+      "document_id": "ripley004",
+      "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "start": 682,
+      "end": 722,
+      "text": "By which our medicine must be perpetuate",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[9]/lg[2]/l[2]",
+        "section": "gate9",
+        "stanza": 2,
+        "line": 2,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "ripley004:17",
+      "document_id": "ripley004",
+      "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "start": 723,
+      "end": 771,
+      "text": "Into cleere water: some looseth Sunne and Moone,",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[9]/lg[2]/l[3]",
+        "section": "gate9",
+        "stanza": 2,
+        "line": 3,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "ripley004:18",
+      "document_id": "ripley004",
+      "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "start": 772,
+      "end": 823,
+      "text": "And with their medicines make them to be congelate;",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[9]/lg[2]/l[4]",
+        "section": "gate9",
+        "stanza": 2,
+        "line": 4,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    }
+  ],
+  "context": [],
+  "grammar": {}
+}

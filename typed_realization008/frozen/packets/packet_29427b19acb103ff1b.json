@@ -1,0 +1,123 @@
+{
+  "id": "packet_29427b19acb103ff1b",
+  "document_id": "ripley004",
+  "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+  "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+  "language": "en",
+  "spans": [
+    {
+      "id": "ripley004:29",
+      "document_id": "ripley004",
+      "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "start": 1238,
+      "end": 1285,
+      "text": "That poynt therefore I will disclose vnto thee,",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[9]/lg[5]/l[1]",
+        "section": "gate9",
+        "stanza": 5,
+        "line": 1,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "ripley004:30",
+      "document_id": "ripley004",
+      "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "start": 1286,
+      "end": 1334,
+      "text": "Looke how thou didst with thine vnperfect bodie,",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[9]/lg[5]/l[2]",
+        "section": "gate9",
+        "stanza": 5,
+        "line": 2,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "ripley004:31",
+      "document_id": "ripley004",
+      "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "start": 1335,
+      "end": 1381,
+      "text": "Doe so with thy perfect bodies in each degree,",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[9]/lg[5]/l[3]",
+        "section": "gate9",
+        "stanza": 5,
+        "line": 3,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "ripley004:32",
+      "document_id": "ripley004",
+      "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "start": 1382,
+      "end": 1423,
+      "text": "That is to say, first thou them putrifie,",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[9]/lg[5]/l[4]",
+        "section": "gate9",
+        "stanza": 5,
+        "line": 4,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "ripley004:33",
+      "document_id": "ripley004",
+      "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "start": 1424,
+      "end": 1466,
+      "text": "Their former qualities destroying vtterly,",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[9]/lg[5]/l[5]",
+        "section": "gate9",
+        "stanza": 5,
+        "line": 5,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "ripley004:34",
+      "document_id": "ripley004",
+      "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "start": 1467,
+      "end": 1500,
+      "text": "For this is wholly to our intent,",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[9]/lg[5]/l[6]",
+        "section": "gate9",
+        "stanza": 5,
+        "line": 6,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "ripley004:35",
+      "document_id": "ripley004",
+      "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "start": 1501,
+      "end": 1543,
+      "text": "That first thou alter before thou ferment.",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[9]/lg[5]/l[7]",
+        "section": "gate9",
+        "stanza": 5,
+        "line": 7,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    }
+  ],
+  "context": [],
+  "grammar": {}
+}

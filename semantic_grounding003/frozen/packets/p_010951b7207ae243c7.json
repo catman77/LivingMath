@@ -1,0 +1,123 @@
+{
+  "id": "p_010951b7207ae243c7",
+  "document_id": "r4",
+  "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+  "edition": "Ripley1591/TCP-A10786-aa59eb69",
+  "language": "en",
+  "spans": [
+    {
+      "id": "r4:15",
+      "document_id": "r4",
+      "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+      "edition": "Ripley1591/TCP-A10786-aa59eb69",
+      "start": 631,
+      "end": 672,
+      "text": "For vntill the time the soule be seperate",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[4]/lg[3]/l[1]",
+        "gate": 4,
+        "stanza": 3,
+        "line": 1,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "r4:16",
+      "document_id": "r4",
+      "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+      "edition": "Ripley1591/TCP-A10786-aa59eb69",
+      "start": 673,
+      "end": 710,
+      "text": "And cleansed from his originall sinne",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[4]/lg[3]/l[2]",
+        "gate": 4,
+        "stanza": 3,
+        "line": 2,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "r4:17",
+      "document_id": "r4",
+      "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+      "edition": "Ripley1591/TCP-A10786-aa59eb69",
+      "start": 711,
+      "end": 756,
+      "text": "With the water, and throughly spiritualizate,",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[4]/lg[3]/l[3]",
+        "gate": 4,
+        "stanza": 3,
+        "line": 3,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "r4:18",
+      "document_id": "r4",
+      "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+      "edition": "Ripley1591/TCP-A10786-aa59eb69",
+      "start": 757,
+      "end": 801,
+      "text": "The true Coniunction maist thou neuer begin:",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[4]/lg[3]/l[4]",
+        "gate": 4,
+        "stanza": 3,
+        "line": 4,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "r4:19",
+      "document_id": "r4",
+      "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+      "edition": "Ripley1591/TCP-A10786-aa59eb69",
+      "start": 802,
+      "end": 849,
+      "text": "Therefore the soule first from the bodie twyne,",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[4]/lg[3]/l[5]",
+        "gate": 4,
+        "stanza": 3,
+        "line": 5,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "r4:20",
+      "document_id": "r4",
+      "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+      "edition": "Ripley1591/TCP-A10786-aa59eb69",
+      "start": 850,
+      "end": 899,
+      "text": "Then of the corporall part and of the spirituall.",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[4]/lg[3]/l[6]",
+        "gate": 4,
+        "stanza": 3,
+        "line": 6,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "r4:21",
+      "document_id": "r4",
+      "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+      "edition": "Ripley1591/TCP-A10786-aa59eb69",
+      "start": 900,
+      "end": 945,
+      "text": "The soule shall cause coniunction perpetuall.",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[4]/lg[3]/l[7]",
+        "gate": 4,
+        "stanza": 3,
+        "line": 7,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    }
+  ],
+  "context": [],
+  "grammar": {}
+}

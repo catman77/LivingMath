@@ -1,0 +1,413 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "bridge-projection/v0.1"
+    },
+    "source_ref": {
+      "type": "string"
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "contract_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "source_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "rights_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "observer_id": {
+      "type": "string"
+    },
+    "candidate": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "$id": "urn:livingmath:bridge001:candidate",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4096
+        },
+        "interpretation_kind": {
+          "enum": [
+            "mathematical_model",
+            "semantic_interpretation",
+            "unresolved"
+          ]
+        },
+        "question": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4096
+        },
+        "model_kind": {
+          "enum": [
+            "poetry_A_then_B",
+            "poetry_B_then_A",
+            "pythagoras_orthogonality",
+            "pythagoras_quadratic",
+            "boa_first_order",
+            "boa_second_order"
+          ]
+        },
+        "observer_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+        },
+        "assumptions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          },
+          "maxItems": 128
+        },
+        "source_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4096
+        },
+        "contract_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "interpretation_kind",
+        "question",
+        "model_kind",
+        "observer_id",
+        "assumptions",
+        "source_ref",
+        "contract_sha256",
+        "revision"
+      ]
+    },
+    "structural_fingerprint": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "model_family": {
+      "enum": [
+        "poetry",
+        "pythagoras",
+        "boa"
+      ]
+    },
+    "operation_order": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "bindings": {
+      "type": "array",
+      "maxItems": 512,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "section": {
+            "enum": [
+              "D",
+              "R",
+              "T",
+              "O"
+            ]
+          },
+          "item_id": {
+            "type": "string"
+          },
+          "model_element_id": {
+            "type": "string"
+          },
+          "source_address": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "source_id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+              },
+              "kind": {
+                "enum": [
+                  "text_span",
+                  "opaque"
+                ]
+              },
+              "start": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "end": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "quote": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 4096
+              }
+            },
+            "required": [
+              "source_id",
+              "kind",
+              "start",
+              "end",
+              "quote"
+            ]
+          },
+          "source_item_sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "distinction_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "declared_statement": {
+            "type": "string"
+          },
+          "test_id": {
+            "type": "string"
+          },
+          "claim": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "section",
+          "item_id",
+          "model_element_id",
+          "source_address",
+          "source_item_sha256",
+          "distinction_ids",
+          "declared_statement",
+          "test_id",
+          "claim"
+        ]
+      }
+    },
+    "observations": {
+      "type": "object"
+    },
+    "settings_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "equality_layers": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "object": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string"
+        },
+        "coordinate": {
+          "type": "string"
+        },
+        "observation": {
+          "type": "string"
+        },
+        "scalar": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "object",
+        "source",
+        "coordinate",
+        "observation",
+        "scalar"
+      ]
+    },
+    "loss_ledger": {
+      "type": "array",
+      "maxItems": 512,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "section": {
+            "enum": [
+              "D",
+              "R",
+              "T",
+              "O"
+            ]
+          },
+          "id": {
+            "type": "string"
+          },
+          "state": {
+            "enum": [
+              "PRESERVED",
+              "NARROWED",
+              "LOST",
+              "UNKNOWN",
+              "REJECTED"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          },
+          "must_preserve": {
+            "type": "boolean"
+          },
+          "source_address": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "source_id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+              },
+              "kind": {
+                "enum": [
+                  "text_span",
+                  "opaque"
+                ]
+              },
+              "start": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "end": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "quote": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 4096
+              }
+            },
+            "required": [
+              "source_id",
+              "kind",
+              "start",
+              "end",
+              "quote"
+            ]
+          },
+          "recovery_pointer": {
+            "type": "string"
+          },
+          "admissible_for_audit": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "section",
+          "id",
+          "state",
+          "reason",
+          "must_preserve",
+          "source_address",
+          "recovery_pointer",
+          "admissible_for_audit"
+        ]
+      }
+    },
+    "admissible_for_audit": {
+      "type": "boolean"
+    },
+    "recovery_pointer": {
+      "type": "string"
+    },
+    "semantic_status": {
+      "type": "string"
+    },
+    "mathematical_status": {
+      "type": "string"
+    },
+    "execution_status": {
+      "type": "string"
+    },
+    "author_review_status": {
+      "type": "string"
+    },
+    "proof_status": {
+      "const": "unverified"
+    },
+    "execution_permission": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "allowed": {
+          "const": false
+        }
+      },
+      "required": [
+        "allowed"
+      ]
+    },
+    "source_provenance": {
+      "type": "object"
+    },
+    "unknowns": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "source_ref",
+    "source_id",
+    "revision",
+    "contract_sha256",
+    "source_hash",
+    "rights_sha256",
+    "observer_id",
+    "candidate",
+    "structural_fingerprint",
+    "model_family",
+    "operation_order",
+    "bindings",
+    "observations",
+    "settings_sha256",
+    "equality_layers",
+    "loss_ledger",
+    "admissible_for_audit",
+    "recovery_pointer",
+    "semantic_status",
+    "mathematical_status",
+    "execution_status",
+    "author_review_status",
+    "proof_status",
+    "execution_permission",
+    "source_provenance",
+    "unknowns"
+  ]
+}

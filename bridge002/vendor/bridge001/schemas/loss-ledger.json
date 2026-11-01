@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "maxItems": 512,
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "section": {
+        "enum": [
+          "D",
+          "R",
+          "T",
+          "O"
+        ]
+      },
+      "id": {
+        "type": "string"
+      },
+      "state": {
+        "enum": [
+          "PRESERVED",
+          "NARROWED",
+          "LOST",
+          "UNKNOWN",
+          "REJECTED"
+        ]
+      },
+      "reason": {
+        "type": "string"
+      },
+      "must_preserve": {
+        "type": "boolean"
+      },
+      "source_address": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "source_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+          },
+          "kind": {
+            "enum": [
+              "text_span",
+              "opaque"
+            ]
+          },
+          "start": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "end": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "quote": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          }
+        },
+        "required": [
+          "source_id",
+          "kind",
+          "start",
+          "end",
+          "quote"
+        ]
+      },
+      "recovery_pointer": {
+        "type": "string"
+      },
+      "admissible_for_audit": {
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "section",
+      "id",
+      "state",
+      "reason",
+      "must_preserve",
+      "source_address",
+      "recovery_pointer",
+      "admissible_for_audit"
+    ]
+  }
+}

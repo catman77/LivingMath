@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:livingmath:bridge001:candidate",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4096
+    },
+    "interpretation_kind": {
+      "enum": [
+        "mathematical_model",
+        "semantic_interpretation",
+        "unresolved"
+      ]
+    },
+    "question": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4096
+    },
+    "model_kind": {
+      "enum": [
+        "poetry_A_then_B",
+        "poetry_B_then_A",
+        "pythagoras_orthogonality",
+        "pythagoras_quadratic",
+        "boa_first_order",
+        "boa_second_order"
+      ]
+    },
+    "observer_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 4096
+      },
+      "maxItems": 128
+    },
+    "source_ref": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4096
+    },
+    "contract_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1
+    }
+  },
+  "required": [
+    "id",
+    "title",
+    "interpretation_kind",
+    "question",
+    "model_kind",
+    "observer_id",
+    "assumptions",
+    "source_ref",
+    "contract_sha256",
+    "revision"
+  ]
+}

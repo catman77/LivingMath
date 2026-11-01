@@ -1,0 +1,37 @@
+{
+  "id": "packet_32f59cbabe878459a8",
+  "document_id": "poet",
+  "document_sha256": "c2fe4f0e84c0d7eb4e4f0661d556a22abf52d1c185b61a3af3e75414db6d603d",
+  "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+  "language": "ru",
+  "spans": [
+    {
+      "id": "poet:15",
+      "document_id": "poet",
+      "document_sha256": "c2fe4f0e84c0d7eb4e4f0661d556a22abf52d1c185b61a3af3e75414db6d603d",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 659,
+      "end": 704,
+      "text": "К ногам народного кумира",
+      "source_address": {
+        "html_id": "L15",
+        "section": "poet"
+      }
+    },
+    {
+      "id": "poet:16",
+      "document_id": "poet",
+      "document_sha256": "c2fe4f0e84c0d7eb4e4f0661d556a22abf52d1c185b61a3af3e75414db6d603d",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 705,
+      "end": 749,
+      "text": "Не клонит гордой головы;",
+      "source_address": {
+        "html_id": "L16",
+        "section": "poet"
+      }
+    }
+  ],
+  "context": [],
+  "grammar": {}
+}

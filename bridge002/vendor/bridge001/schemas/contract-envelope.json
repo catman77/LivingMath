@@ -1,0 +1,863 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:livingmath:bridge001:contract-envelope",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "bridge-contract/v0.1"
+    },
+    "contract_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "source_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+    },
+    "creator_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+    },
+    "source_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "observer_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+    },
+    "rights": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "owner": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4096
+        },
+        "scope": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "local_process",
+              "local_export",
+              "mcp_metadata",
+              "remote_source"
+            ]
+          },
+          "maxItems": 128
+        },
+        "license": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4096
+        },
+        "retention": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "expires_at": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "policy": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 4096
+            }
+          },
+          "required": [
+            "expires_at",
+            "policy"
+          ]
+        },
+        "redaction": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "mode": {
+              "enum": [
+                "none",
+                "deny_external",
+                "masked"
+              ]
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 4096
+            }
+          },
+          "required": [
+            "mode",
+            "reason"
+          ]
+        }
+      },
+      "required": [
+        "owner",
+        "scope",
+        "license",
+        "retention",
+        "redaction"
+      ]
+    },
+    "provenance": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "ref": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        },
+        "required": [
+          "ref",
+          "sha256"
+        ]
+      },
+      "maxItems": 128
+    },
+    "X": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "source_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4096
+        },
+        "mime_type": {
+          "type": "string",
+          "pattern": "^(text/plain|image/[a-zA-Z0-9.+-]+|application/x-structured-eidogram)$"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "declared_reader": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4096
+        }
+      },
+      "required": [
+        "source_ref",
+        "mime_type",
+        "sha256",
+        "declared_reader"
+      ]
+    },
+    "D": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+          },
+          "source_address": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "source_id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+              },
+              "kind": {
+                "enum": [
+                  "text_span",
+                  "opaque"
+                ]
+              },
+              "start": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "end": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "quote": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 4096
+              }
+            },
+            "required": [
+              "source_id",
+              "kind",
+              "start",
+              "end",
+              "quote"
+            ]
+          },
+          "statement": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          },
+          "must_preserve": {
+            "type": "boolean"
+          },
+          "test_oracle": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "kind": {
+                "enum": [
+                  "structural",
+                  "reader_judgment",
+                  "numeric"
+                ]
+              },
+              "test_id": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 4096
+              },
+              "expected": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 4096
+              },
+              "evaluator": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 4096
+              }
+            },
+            "required": [
+              "kind",
+              "test_id",
+              "expected",
+              "evaluator"
+            ]
+          },
+          "acceptable_loss": {
+            "enum": [
+              "REFUSE",
+              "ALLOW_NARROWING",
+              "ALLOW_LOSS"
+            ]
+          },
+          "author_reason": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          }
+        },
+        "required": [
+          "id",
+          "source_address",
+          "statement",
+          "must_preserve",
+          "test_oracle",
+          "acceptable_loss",
+          "author_reason"
+        ]
+      },
+      "maxItems": 128
+    },
+    "R": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+          },
+          "source_address": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "source_id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+              },
+              "kind": {
+                "enum": [
+                  "text_span",
+                  "opaque"
+                ]
+              },
+              "start": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "end": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "quote": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 4096
+              }
+            },
+            "required": [
+              "source_id",
+              "kind",
+              "start",
+              "end",
+              "quote"
+            ]
+          },
+          "statement": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          },
+          "must_preserve": {
+            "type": "boolean"
+          },
+          "test_oracle": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "kind": {
+                "enum": [
+                  "structural",
+                  "reader_judgment",
+                  "numeric"
+                ]
+              },
+              "test_id": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 4096
+              },
+              "expected": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 4096
+              },
+              "evaluator": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 4096
+              }
+            },
+            "required": [
+              "kind",
+              "test_id",
+              "expected",
+              "evaluator"
+            ]
+          },
+          "acceptable_loss": {
+            "enum": [
+              "REFUSE",
+              "ALLOW_NARROWING",
+              "ALLOW_LOSS"
+            ]
+          },
+          "type": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          },
+          "distinction_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+            },
+            "maxItems": 128
+          }
+        },
+        "required": [
+          "id",
+          "source_address",
+          "statement",
+          "must_preserve",
+          "test_oracle",
+          "acceptable_loss",
+          "type",
+          "distinction_ids"
+        ]
+      },
+      "maxItems": 128
+    },
+    "T": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+          },
+          "source_address": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "source_id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+              },
+              "kind": {
+                "enum": [
+                  "text_span",
+                  "opaque"
+                ]
+              },
+              "start": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "end": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "quote": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 4096
+              }
+            },
+            "required": [
+              "source_id",
+              "kind",
+              "start",
+              "end",
+              "quote"
+            ]
+          },
+          "statement": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          },
+          "must_preserve": {
+            "type": "boolean"
+          },
+          "test_oracle": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "kind": {
+                "enum": [
+                  "structural",
+                  "reader_judgment",
+                  "numeric"
+                ]
+              },
+              "test_id": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 4096
+              },
+              "expected": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 4096
+              },
+              "evaluator": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 4096
+              }
+            },
+            "required": [
+              "kind",
+              "test_id",
+              "expected",
+              "evaluator"
+            ]
+          },
+          "acceptable_loss": {
+            "enum": [
+              "REFUSE",
+              "ALLOW_NARROWING",
+              "ALLOW_LOSS"
+            ]
+          },
+          "distinction_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+            },
+            "maxItems": 128
+          },
+          "initial_state": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          },
+          "input": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          },
+          "result_meaning": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          },
+          "preconditions": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 4096
+            },
+            "maxItems": 128
+          },
+          "forbidden_transformations": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 4096
+            },
+            "maxItems": 128
+          },
+          "composition_order": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+            },
+            "maxItems": 128
+          },
+          "authorized_roles": {
+            "type": "array",
+            "items": {
+              "enum": [
+                "operator",
+                "author"
+              ]
+            },
+            "maxItems": 128
+          }
+        },
+        "required": [
+          "id",
+          "source_address",
+          "statement",
+          "must_preserve",
+          "test_oracle",
+          "acceptable_loss",
+          "distinction_ids",
+          "initial_state",
+          "input",
+          "result_meaning",
+          "preconditions",
+          "forbidden_transformations",
+          "composition_order",
+          "authorized_roles"
+        ]
+      },
+      "maxItems": 128
+    },
+    "O": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+          },
+          "source_address": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "source_id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+              },
+              "kind": {
+                "enum": [
+                  "text_span",
+                  "opaque"
+                ]
+              },
+              "start": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "end": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "quote": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 4096
+              }
+            },
+            "required": [
+              "source_id",
+              "kind",
+              "start",
+              "end",
+              "quote"
+            ]
+          },
+          "statement": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          },
+          "must_preserve": {
+            "type": "boolean"
+          },
+          "test_oracle": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "kind": {
+                "enum": [
+                  "structural",
+                  "reader_judgment",
+                  "numeric"
+                ]
+              },
+              "test_id": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 4096
+              },
+              "expected": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 4096
+              },
+              "evaluator": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 4096
+              }
+            },
+            "required": [
+              "kind",
+              "test_id",
+              "expected",
+              "evaluator"
+            ]
+          },
+          "acceptable_loss": {
+            "enum": [
+              "REFUSE",
+              "ALLOW_NARROWING",
+              "ALLOW_LOSS"
+            ]
+          },
+          "distinction_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+            },
+            "maxItems": 128
+          },
+          "method": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          },
+          "scope": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          },
+          "uncertainty": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          },
+          "evidence_type": {
+            "enum": [
+              "numeric",
+              "structural",
+              "reader_judgment"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "source_address",
+          "statement",
+          "must_preserve",
+          "test_oracle",
+          "acceptable_loss",
+          "distinction_ids",
+          "method",
+          "scope",
+          "uncertainty",
+          "evidence_type"
+        ]
+      },
+      "maxItems": 128
+    },
+    "P": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "confirmed_revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "attestations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "attestation_id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+              },
+              "key_id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+              },
+              "identity": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+              },
+              "role": {
+                "enum": [
+                  "operator",
+                  "author"
+                ]
+              },
+              "contract_sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "signed_at": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "signature_hex": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{128}$"
+              }
+            },
+            "required": [
+              "attestation_id",
+              "key_id",
+              "identity",
+              "role",
+              "contract_sha256",
+              "signed_at",
+              "signature_hex"
+            ]
+          },
+          "maxItems": 128
+        },
+        "amendments": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "previous_contract_sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 4096
+              }
+            },
+            "required": [
+              "previous_contract_sha256",
+              "reason"
+            ]
+          },
+          "maxItems": 128
+        },
+        "revoked_attestation_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+          },
+          "maxItems": 128
+        }
+      },
+      "required": [
+        "confirmed_revision",
+        "attestations",
+        "amendments",
+        "revoked_attestation_ids"
+      ]
+    },
+    "ambiguities": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 4096
+      },
+      "maxItems": 128
+    },
+    "unknowns": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 4096
+      },
+      "maxItems": 128
+    },
+    "explicit_nonclaims": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 4096
+      },
+      "maxItems": 128
+    }
+  },
+  "required": [
+    "schema_version",
+    "contract_id",
+    "revision",
+    "source_id",
+    "creator_id",
+    "source_hash",
+    "created_at",
+    "observer_id",
+    "rights",
+    "provenance",
+    "X",
+    "D",
+    "R",
+    "T",
+    "O",
+    "P",
+    "ambiguities",
+    "unknowns",
+    "explicit_nonclaims"
+  ]
+}

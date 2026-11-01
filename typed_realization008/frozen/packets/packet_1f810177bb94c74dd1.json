@@ -1,0 +1,59 @@
+{
+  "id": "packet_1f810177bb94c74dd1",
+  "document_id": "ripley004",
+  "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+  "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+  "language": "en",
+  "spans": [
+    {
+      "id": "ripley004:9",
+      "document_id": "ripley004",
+      "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "start": 363,
+      "end": 406,
+      "text": "Which is Coniunction, made of things three,",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[4]/lg[7]/l[2]",
+        "section": "gate4",
+        "stanza": 7,
+        "line": 2,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "ripley004:10",
+      "document_id": "ripley004",
+      "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "start": 407,
+      "end": 456,
+      "text": "Of bodie, soule and spirit, that they not striue,",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[4]/lg[7]/l[3]",
+        "section": "gate4",
+        "stanza": 7,
+        "line": 3,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "ripley004:11",
+      "document_id": "ripley004",
+      "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "start": 457,
+      "end": 498,
+      "text": "Which trinitie thou must bring to vnitee,",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[4]/lg[7]/l[4]",
+        "section": "gate4",
+        "stanza": 7,
+        "line": 4,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    }
+  ],
+  "context": [],
+  "grammar": {}
+}

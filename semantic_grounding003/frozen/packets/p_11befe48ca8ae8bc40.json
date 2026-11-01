@@ -1,0 +1,24 @@
+{
+  "id": "p_11befe48ca8ae8bc40",
+  "document_id": "s08",
+  "document_sha256": "db0be1a2e458b5a47673bb19553c06ca553897b75da1cb7561f64fb7c87c8d7e",
+  "edition": "ORIGINAL_SYNTHETIC_CONTROL/003",
+  "language": "en",
+  "spans": [
+    {
+      "id": "s08:3",
+      "document_id": "s08",
+      "document_sha256": "db0be1a2e458b5a47673bb19553c06ca553897b75da1cb7561f64fb7c87c8d7e",
+      "edition": "ORIGINAL_SYNTHETIC_CONTROL/003",
+      "start": 61,
+      "end": 130,
+      "text": "These headings describe the book, not a required order of operations.",
+      "source_address": {
+        "fixture_line": 3,
+        "origin": "ORIGINAL_SYNTHETIC_CONTROL"
+      }
+    }
+  ],
+  "context": [],
+  "grammar": {}
+}

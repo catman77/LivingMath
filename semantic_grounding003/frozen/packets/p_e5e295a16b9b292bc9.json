@@ -1,0 +1,102 @@
+{
+  "id": "p_e5e295a16b9b292bc9",
+  "document_id": "anchar",
+  "document_sha256": "354f0c4173bcf4360851c9ea1223011100517954c7ad6a9b14a3fb58097f198b",
+  "edition": "RVB Pushkin10vol 1959-1962, online6.0 2019; hash-pinned acquisition2026-10-30",
+  "language": "ru",
+  "spans": [
+    {
+      "id": "anchar:23",
+      "document_id": "anchar",
+      "document_sha256": "354f0c4173bcf4360851c9ea1223011100517954c7ad6a9b14a3fb58097f198b",
+      "edition": "RVB Pushkin10vol 1959-1962, online6.0 2019; hash-pinned acquisition2026-10-30",
+      "start": 1063,
+      "end": 1112,
+      "text": "И тот послушно в путь потек",
+      "source_address": {
+        "html_id": "L23",
+        "verse_line": 23
+      }
+    },
+    {
+      "id": "anchar:24",
+      "document_id": "anchar",
+      "document_sha256": "354f0c4173bcf4360851c9ea1223011100517954c7ad6a9b14a3fb58097f198b",
+      "edition": "RVB Pushkin10vol 1959-1962, online6.0 2019; hash-pinned acquisition2026-10-30",
+      "start": 1113,
+      "end": 1163,
+      "text": "И к утру возвратился с ядом.",
+      "source_address": {
+        "html_id": "L24",
+        "verse_line": 24
+      }
+    },
+    {
+      "id": "anchar:25",
+      "document_id": "anchar",
+      "document_sha256": "354f0c4173bcf4360851c9ea1223011100517954c7ad6a9b14a3fb58097f198b",
+      "edition": "RVB Pushkin10vol 1959-1962, online6.0 2019; hash-pinned acquisition2026-10-30",
+      "start": 1164,
+      "end": 1209,
+      "text": "Принес он смертную смолу",
+      "source_address": {
+        "html_id": "L25",
+        "verse_line": 25
+      }
+    },
+    {
+      "id": "anchar:29",
+      "document_id": "anchar",
+      "document_sha256": "354f0c4173bcf4360851c9ea1223011100517954c7ad6a9b14a3fb58097f198b",
+      "edition": "RVB Pushkin10vol 1959-1962, online6.0 2019; hash-pinned acquisition2026-10-30",
+      "start": 1353,
+      "end": 1397,
+      "text": "Принес — и ослабел и лег",
+      "source_address": {
+        "html_id": "L29",
+        "verse_line": 29
+      }
+    },
+    {
+      "id": "anchar:30",
+      "document_id": "anchar",
+      "document_sha256": "354f0c4173bcf4360851c9ea1223011100517954c7ad6a9b14a3fb58097f198b",
+      "edition": "RVB Pushkin10vol 1959-1962, online6.0 2019; hash-pinned acquisition2026-10-30",
+      "start": 1398,
+      "end": 1445,
+      "text": "Под сводом шалаша на лыки,",
+      "source_address": {
+        "html_id": "L30",
+        "verse_line": 30
+      }
+    },
+    {
+      "id": "anchar:31",
+      "document_id": "anchar",
+      "document_sha256": "354f0c4173bcf4360851c9ea1223011100517954c7ad6a9b14a3fb58097f198b",
+      "edition": "RVB Pushkin10vol 1959-1962, online6.0 2019; hash-pinned acquisition2026-10-30",
+      "start": 1446,
+      "end": 1487,
+      "text": "И умер бедный раб у ног",
+      "source_address": {
+        "html_id": "L31",
+        "verse_line": 31
+      }
+    },
+    {
+      "id": "anchar:32",
+      "document_id": "anchar",
+      "document_sha256": "354f0c4173bcf4360851c9ea1223011100517954c7ad6a9b14a3fb58097f198b",
+      "edition": "RVB Pushkin10vol 1959-1962, online6.0 2019; hash-pinned acquisition2026-10-30",
+      "start": 1488,
+      "end": 1528,
+      "text": "Непобедимого владыки.",
+      "source_address": {
+        "html_id": "L32",
+        "verse_line": 32
+      }
+    }
+  ],
+  "context": [],
+  "grammar": {}
+}

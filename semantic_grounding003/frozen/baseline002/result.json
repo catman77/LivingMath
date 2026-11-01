@@ -1,0 +1,63 @@
+{
+  "scientific_status": "INSUFFICIENT_SEMANTIC_EVIDENCE",
+  "software_status": "PASS",
+  "G3": "FAIL",
+  "semantic_review": "SEMANTIC_NOT_EXTERNALLY_REVIEWED",
+  "proposer": "NO_LLM_SEMANTIC_PROPOSER",
+  "integration": "STAGING_ONLY_NO_NEW_PRODUCTION_TOOLS",
+  "raw_train_packets": 4,
+  "hypotheses": 20,
+  "source_proxy_supported": 10,
+  "source_predictions": 4,
+  "all_baseline_predictions_sealed": 10,
+  "heldout_checks": 7,
+  "all_baseline_heldout_checks": 17,
+  "heldout_proxy_matches": 3,
+  "binding_revisions": 2,
+  "controls": 19,
+  "journal": {
+    "ok": true,
+    "entries": 83,
+    "head_hash": "628e29eb81b6ba6ec68c8f5c88a28b35d31610f42693b98b3db0e2037498360d",
+    "identity_scope": "LOCAL_EXPERIMENT_NOT_MCP_ID"
+  },
+  "new_independently_validated_source_relations": 0,
+  "cycle_break": "Proxy grammar/source occurrences -> independent non-template semantic law: not established; finite target truth cannot supply it.",
+  "proof_status": "unverified",
+  "execution_permission": {
+    "allowed": false
+  },
+  "tests": {
+    "full_passed": 780,
+    "skipped": 12,
+    "new_tests": 13,
+    "old_golden": 7
+  },
+  "private_MCP": {
+    "status": "PASS_EXISTING_PRIVATE_OAUTH_MCP",
+    "tool_count": 29,
+    "calls": 25,
+    "checks": 42,
+    "objects": [
+      {
+        "hypothesis_id": "a835ea1889fff3ad4692a29f82a879d14f0d6ce4d0a504449d11ccad25ad18a5",
+        "source_event_id": 2059,
+        "old_registration_id": 495,
+        "counterexample_id": 496,
+        "revised_registration_id": 497,
+        "revision_event_id": 2060
+      },
+      {
+        "hypothesis_id": "7e86ade387ef7e1234e2632a9c2306bab407c1ed6e3635e99e510530d7ada5d9",
+        "source_event_id": 2061,
+        "old_registration_id": 498,
+        "counterexample_id": 499,
+        "revised_registration_id": 500,
+        "revision_event_id": 2062
+      }
+    ]
+  },
+  "clean_replay": "PASS_CLEAN_EXTRACTED_GENESIS_REPLAY",
+  "production_research_changed": false,
+  "replay_regressions_passed": 62
+}

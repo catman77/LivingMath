@@ -1,0 +1,24 @@
+{
+  "id": "p_9e929bc400c07a756b",
+  "document_id": "s01",
+  "document_sha256": "d2ab7f3ae3e2f4295fa2642bcf4a3f159928b692eb073305cc5e6ec761efc066",
+  "edition": "ORIGINAL_SYNTHETIC_CONTROL/003",
+  "language": "en",
+  "spans": [
+    {
+      "id": "s01:3",
+      "document_id": "s01",
+      "document_sha256": "d2ab7f3ae3e2f4295fa2642bcf4a3f159928b692eb073305cc5e6ec761efc066",
+      "edition": "ORIGINAL_SYNTHETIC_CONTROL/003",
+      "start": 49,
+      "end": 91,
+      "text": "In this account, \"he\" refers to the pilot.",
+      "source_address": {
+        "fixture_line": 3,
+        "origin": "ORIGINAL_SYNTHETIC_CONTROL"
+      }
+    }
+  ],
+  "context": [],
+  "grammar": {}
+}

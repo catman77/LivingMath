@@ -1,0 +1,37 @@
+{
+  "id": "p_587f280ea0259529c3",
+  "document_id": "anchar",
+  "document_sha256": "354f0c4173bcf4360851c9ea1223011100517954c7ad6a9b14a3fb58097f198b",
+  "edition": "RVB Pushkin10vol 1959-1962, online6.0 2019; hash-pinned acquisition2026-10-30",
+  "language": "ru",
+  "spans": [
+    {
+      "id": "anchar:33",
+      "document_id": "anchar",
+      "document_sha256": "354f0c4173bcf4360851c9ea1223011100517954c7ad6a9b14a3fb58097f198b",
+      "edition": "RVB Pushkin10vol 1959-1962, online6.0 2019; hash-pinned acquisition2026-10-30",
+      "start": 1529,
+      "end": 1571,
+      "text": "А царь тем ядом напитал",
+      "source_address": {
+        "html_id": "L33",
+        "verse_line": 33
+      }
+    },
+    {
+      "id": "anchar:34",
+      "document_id": "anchar",
+      "document_sha256": "354f0c4173bcf4360851c9ea1223011100517954c7ad6a9b14a3fb58097f198b",
+      "edition": "RVB Pushkin10vol 1959-1962, online6.0 2019; hash-pinned acquisition2026-10-30",
+      "start": 1572,
+      "end": 1616,
+      "text": "Свои послушливые стрелы",
+      "source_address": {
+        "html_id": "L34",
+        "verse_line": 34
+      }
+    }
+  ],
+  "context": [],
+  "grammar": {}
+}

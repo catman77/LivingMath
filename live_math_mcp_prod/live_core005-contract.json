@@ -1,0 +1,87 @@
+{
+  "protocol": "005.P0.1",
+  "seed": 105005,
+  "worlds": 4,
+  "histories_per_world": 6,
+  "pairs_per_world": 15,
+  "observers": [
+    "x",
+    "parity",
+    "x",
+    "constant"
+  ],
+  "finite_suffixes": [
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [
+      2
+    ],
+    [
+      3
+    ],
+    [
+      4
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      2
+    ]
+  ],
+  "native_rule": "start(0,1); append k: (x,y)=((x+k*y)%5,(y+k)%5)",
+  "I": "constant-size algebraic probes from source; no oracle import or complete Sig enumeration",
+  "T_loss": "cost +7/3 * expected remaining alternative count; declared positive prior weights",
+  "T_ties": "lowest loss, then cost, then opaque test ID; all minimum-loss IDs reported",
+  "P0_gate": "Every registered pair: correct hidden-distinction status and exact witness; no false novelty or missed distinctions. All attention ranks match independent oracle; all negative controls fail closed; independent branch and original source preserved; full local tests and86 actual isolated MCP invariants PASS.",
+  "controls": [
+    "point-zero/germ-zero",
+    "alias/equivalence",
+    "renaming",
+    "NO_NEW_DISTINCTION",
+    "observer mismatch",
+    "stale/closed obligation",
+    "C4",
+    "missing C2",
+    "budget C3",
+    "foreign project",
+    "context/catalog hash tamper"
+  ],
+  "P1": {
+    "max_calls": 6,
+    "tasks": 2,
+    "conditions": [
+      "A source-only",
+      "B normalizer+LLM",
+      "C normalizer+I/T+LLM"
+    ],
+    "model": "gpt-6-luna",
+    "reasoning": "low",
+    "concurrency": 1,
+    "timeout_seconds": 120,
+    "matched_user_tokens": 7000,
+    "baseline_first": true,
+    "baseline_quality_gate": [
+      0.25,
+      0.95
+    ],
+    "upper_bound_exclusive": true,
+    "stop": "Any transport/schema/tool failure or baseline ceiling/floor => STOP_WITH_RCA; no retries.",
+    "main_max_calls": 24,
+    "main": "Separate after-pilot decision; never automatic",
+    "answer_leak_guard": "Current optimal test/ranking/complete prediction tables withheld; C may expose source-supported I and T alternative counts/unknowns, not current selection.",
+    "statistics": "Paired complete cases only, coverage>=90%; two-task pilot exploratory INCONCLUSIVE, no population superiority claim."
+  },
+  "no_execution_authority": true,
+  "proof_status": "unverified"
+}

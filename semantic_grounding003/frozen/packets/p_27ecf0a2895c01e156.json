@@ -1,0 +1,67 @@
+{
+  "id": "p_27ecf0a2895c01e156",
+  "document_id": "r4",
+  "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+  "edition": "Ripley1591/TCP-A10786-aa59eb69",
+  "language": "en",
+  "spans": [
+    {
+      "id": "r4:36",
+      "document_id": "r4",
+      "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+      "edition": "Ripley1591/TCP-A10786-aa59eb69",
+      "start": 1648,
+      "end": 1688,
+      "text": "OF Congelation I need not much to write:",
+      "source_address": {
+        "old_public_line_id": "line-01291",
+        "xml_path": "/TEI[1]/text[1]/body[1]/div[3]/div[6]/lg[1]/l[1]",
+        "gate": 6
+      }
+    },
+    {
+      "id": "r4:37",
+      "document_id": "r4",
+      "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+      "edition": "Ripley1591/TCP-A10786-aa59eb69",
+      "start": 1689,
+      "end": 1728,
+      "text": "But what it is, I will to thee declare;",
+      "source_address": {
+        "old_public_line_id": "line-01292",
+        "xml_path": "/TEI[1]/text[1]/body[1]/div[3]/div[6]/lg[1]/l[2]",
+        "gate": 6
+      }
+    },
+    {
+      "id": "r4:38",
+      "document_id": "r4",
+      "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+      "edition": "Ripley1591/TCP-A10786-aa59eb69",
+      "start": 1729,
+      "end": 1777,
+      "text": "It is of soft things induration of colour white,",
+      "source_address": {
+        "old_public_line_id": "line-01293",
+        "xml_path": "/TEI[1]/text[1]/body[1]/div[3]/div[6]/lg[1]/l[3]",
+        "gate": 6
+      }
+    },
+    {
+      "id": "r4:39",
+      "document_id": "r4",
+      "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+      "edition": "Ripley1591/TCP-A10786-aa59eb69",
+      "start": 1778,
+      "end": 1822,
+      "text": "And confixation of spirits which flying are;",
+      "source_address": {
+        "old_public_line_id": "line-01294",
+        "xml_path": "/TEI[1]/text[1]/body[1]/div[3]/div[6]/lg[1]/l[4]",
+        "gate": 6
+      }
+    }
+  ],
+  "context": [],
+  "grammar": {}
+}

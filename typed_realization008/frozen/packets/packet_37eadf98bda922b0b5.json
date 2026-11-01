@@ -1,0 +1,89 @@
+{
+  "id": "packet_37eadf98bda922b0b5",
+  "document_id": "echo",
+  "document_sha256": "e04a015ccfbb225f9423e077d0038fd421fa31990b5124322c0918b17d1baf93",
+  "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+  "language": "ru",
+  "spans": [
+    {
+      "id": "echo:1",
+      "document_id": "echo",
+      "document_sha256": "e04a015ccfbb225f9423e077d0038fd421fa31990b5124322c0918b17d1baf93",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 0,
+      "end": 52,
+      "text": "Ревет ли зверь в лесу глухом,",
+      "source_address": {
+        "html_id": "L1",
+        "section": "echo"
+      }
+    },
+    {
+      "id": "echo:2",
+      "document_id": "echo",
+      "document_sha256": "e04a015ccfbb225f9423e077d0038fd421fa31990b5124322c0918b17d1baf93",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 53,
+      "end": 106,
+      "text": "Трубит ли рог, гремит ли гром,",
+      "source_address": {
+        "html_id": "L2",
+        "section": "echo"
+      }
+    },
+    {
+      "id": "echo:3",
+      "document_id": "echo",
+      "document_sha256": "e04a015ccfbb225f9423e077d0038fd421fa31990b5124322c0918b17d1baf93",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 107,
+      "end": 151,
+      "text": "Поет ли дева за холмом —",
+      "source_address": {
+        "html_id": "L3",
+        "section": "echo"
+      }
+    },
+    {
+      "id": "echo:4",
+      "document_id": "echo",
+      "document_sha256": "e04a015ccfbb225f9423e077d0038fd421fa31990b5124322c0918b17d1baf93",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 152,
+      "end": 179,
+      "text": " На всякий звук",
+      "source_address": {
+        "html_id": "L4",
+        "section": "echo"
+      }
+    },
+    {
+      "id": "echo:5",
+      "document_id": "echo",
+      "document_sha256": "e04a015ccfbb225f9423e077d0038fd421fa31990b5124322c0918b17d1baf93",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 180,
+      "end": 232,
+      "text": "Свой отклик в воздухе пустом",
+      "source_address": {
+        "html_id": "L5",
+        "section": "echo"
+      }
+    },
+    {
+      "id": "echo:6",
+      "document_id": "echo",
+      "document_sha256": "e04a015ccfbb225f9423e077d0038fd421fa31990b5124322c0918b17d1baf93",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 233,
+      "end": 263,
+      "text": " Родишь ты вдруг.",
+      "source_address": {
+        "html_id": "L6",
+        "section": "echo"
+      }
+    }
+  ],
+  "context": [],
+  "grammar": {}
+}

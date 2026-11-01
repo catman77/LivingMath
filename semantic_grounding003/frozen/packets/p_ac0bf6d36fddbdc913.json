@@ -1,0 +1,123 @@
+{
+  "id": "p_ac0bf6d36fddbdc913",
+  "document_id": "r4",
+  "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+  "edition": "Ripley1591/TCP-A10786-aa59eb69",
+  "language": "en",
+  "spans": [
+    {
+      "id": "r4:1",
+      "document_id": "r4",
+      "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+      "edition": "Ripley1591/TCP-A10786-aa59eb69",
+      "start": 0,
+      "end": 42,
+      "text": "AFter the Chapiter of naturall Seperation,",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[4]/lg[1]/l[1]",
+        "gate": 4,
+        "stanza": 1,
+        "line": 1,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "r4:2",
+      "document_id": "r4",
+      "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+      "edition": "Ripley1591/TCP-A10786-aa59eb69",
+      "start": 43,
+      "end": 93,
+      "text": "By which the elemēts of our stone disseuered be,",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[4]/lg[1]/l[2]",
+        "gate": 4,
+        "stanza": 1,
+        "line": 2,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "r4:3",
+      "document_id": "r4",
+      "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+      "edition": "Ripley1591/TCP-A10786-aa59eb69",
+      "start": 94,
+      "end": 143,
+      "text": "The chapter here followeth of secret Coniunction,",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[4]/lg[1]/l[3]",
+        "gate": 4,
+        "stanza": 1,
+        "line": 3,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "r4:4",
+      "document_id": "r4",
+      "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+      "edition": "Ripley1591/TCP-A10786-aa59eb69",
+      "start": 144,
+      "end": 194,
+      "text": "Which Natures repugnant ioyneth to perfect vnitie,",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[4]/lg[1]/l[4]",
+        "gate": 4,
+        "stanza": 1,
+        "line": 4,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "r4:5",
+      "document_id": "r4",
+      "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+      "edition": "Ripley1591/TCP-A10786-aa59eb69",
+      "start": 195,
+      "end": 247,
+      "text": "And so them knitteth that none from others may flie,",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[4]/lg[1]/l[5]",
+        "gate": 4,
+        "stanza": 1,
+        "line": 5,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "r4:6",
+      "document_id": "r4",
+      "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+      "edition": "Ripley1591/TCP-A10786-aa59eb69",
+      "start": 248,
+      "end": 283,
+      "text": "When they by fire shalbe examinate,",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[4]/lg[1]/l[6]",
+        "gate": 4,
+        "stanza": 1,
+        "line": 6,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "r4:7",
+      "document_id": "r4",
+      "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+      "edition": "Ripley1591/TCP-A10786-aa59eb69",
+      "start": 284,
+      "end": 323,
+      "text": "They be togethers so surely coniungate.",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[4]/lg[1]/l[7]",
+        "gate": 4,
+        "stanza": 1,
+        "line": 7,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    }
+  ],
+  "context": [],
+  "grammar": {}
+}

@@ -1,0 +1,8 @@
+{
+  "basis": "Hashes of original retained causal002 files; hash reference does not mean source bytes are present/rehashed in a GitHub checkout.",
+  "files": {
+    "report.md": "4af8339bf7c982065d005f44b2f0295e2e13b8da209b47bb6988679c7f18cf9a",
+    "RCA.md": "e5c551175493735e4be031ee2b60aa4c06a408b2f081fed59d93ac0bfee244ae",
+    "model_outputs.jsonl": "619aa10e8728cb6312faca7ad945aa982df3f7cc3b2f364b7f1c52138f09f1c4"
+  }
+}

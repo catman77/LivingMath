@@ -1,0 +1,186 @@
+{
+  "import_key": "RH-frontier-v04-from-events-9-13-14-15-16",
+  "project": "RH",
+  "sources": [
+    {
+      "id": 9,
+      "sha256": "d9d7c2c254ba9828fad7a48909eb4869e91836e0dfc8fce8fc551effae3e22a3"
+    },
+    {
+      "id": 13,
+      "sha256": "6440bed87a722685c42c69394926da0fb7df316de7a65c5cce981cfa2b9bfabf"
+    },
+    {
+      "id": 14,
+      "sha256": "550a14b9ed01acc8e8618a4548b243088553c20691f95d18bc11ac459a5414e7"
+    },
+    {
+      "id": 15,
+      "sha256": "ad5e6d5078feb8f09f11828be3710f98b5c11d98e28011335aaee5c6426d9017"
+    },
+    {
+      "id": 16,
+      "sha256": "cc951a297ff852290e6eb0485fb6d2220874ff27468887a9c9b7fb1c297a5adb"
+    }
+  ],
+  "obligations": [
+    {
+      "key": "archival_x4",
+      "statement": "Do not substitute the archival X4/Sigma_coord toy branch for the current Xi-word frontier.",
+      "scope": "Current RH frontier after event #9; archival X4 work is not current proof progress.",
+      "source_event_ids": [
+        9
+      ],
+      "evidence_refs": [
+        "event:9"
+      ],
+      "status": "SUPERSEDED",
+      "closure_reason": "Event #9 retracts promotion of the old X4/Sigma_coord representation.",
+      "reopen_conditions": [
+        "Supply a source-derived connection to the current actual T49/T54 Xi-word carrier.",
+        "Record new evidence and explicit reopening grounds; obtain semantic review."
+      ]
+    },
+    {
+      "key": "coarse_path_geometry",
+      "statement": "Coarse route arclength and maximal prefix failed to distinguish the recorded nearby cases.",
+      "scope": "Only the two finite CASE-A/CASE-B diagnostics in event #14; no universal no-go is asserted.",
+      "source_event_ids": [
+        14
+      ],
+      "evidence_refs": [
+        "event:14"
+      ],
+      "status": "REFUTED",
+      "closure_reason": "Event #14 records a bounded negative diagnostic, not a critical-line discriminator.",
+      "reopen_conditions": [
+        "Provide new source-linked data or a precisely different observable and scoped falsifying test."
+      ]
+    },
+    {
+      "key": "case_c_preservation",
+      "statement": "A pointwise-zero CASE-C pair cannot be erased while claiming analytic germ preservation without witnesses.",
+      "scope": "CASE-C-PAIR-456..459 from event #13; point values, h/t derivatives, provenance, and native T54 applicability are separate.",
+      "source_event_ids": [
+        13
+      ],
+      "evidence_refs": [
+        "event:13"
+      ],
+      "status": "OPEN",
+      "closure_reason": "",
+      "reopen_conditions": []
+    },
+    {
+      "key": "theta_source_matching",
+      "statement": "Compare actual theta-source edges by identical source_address and origin_id.",
+      "scope": "Finite source-matched exploratory comparison from event #15; floating midpoints are not interval certification or proof.",
+      "source_event_ids": [
+        15
+      ],
+      "evidence_refs": [
+        "event:15"
+      ],
+      "status": "OPEN",
+      "closure_reason": "",
+      "reopen_conditions": []
+    },
+    {
+      "key": "semantic_audit",
+      "statement": "Distinguish the four history-dependent adversarial research moves.",
+      "scope": "LivingMath audit behavior recorded in event #16 and the v0.4 T1–T7 acceptance contract.",
+      "source_event_ids": [
+        16
+      ],
+      "evidence_refs": [
+        "event:16"
+      ],
+      "status": "TESTING",
+      "closure_reason": "",
+      "reopen_conditions": []
+    }
+  ],
+  "constraints": [
+    {
+      "kind": "obsolete_mechanism",
+      "obligation_key": "archival_x4",
+      "mechanisms": [
+        "x4_arithmetic_source"
+      ],
+      "source_event_ids": [
+        9
+      ],
+      "reason": "Event #9 marks the archival X4/Sigma_coord substitution obsolete for the current RH frontier.",
+      "reopen_conditions": [
+        "Source-derived connection to current T49/T54 carrier, new evidence, explicit reopening and semantic review."
+      ]
+    },
+    {
+      "kind": "preservation_required",
+      "obligation_key": "case_c_preservation",
+      "mechanisms": [
+        "erase_point_loop"
+      ],
+      "source_event_ids": [
+        13
+      ],
+      "reason": "Event #13 records nonzero h/t derivatives of pointwise-zero CASE-C pairs; point equality does not justify germ-preserving erasure.",
+      "required_properties": [
+        "analytic_function",
+        "observables",
+        "source_provenance",
+        "rule_applicability"
+      ],
+      "reopen_conditions": [
+        "Provide a scoped germ/derivative preservation witness and an applicable native reduction rule."
+      ]
+    },
+    {
+      "kind": "allowed_experiment",
+      "obligation_key": "theta_source_matching",
+      "mechanisms": [
+        "theta_edge_address_match"
+      ],
+      "source_event_ids": [
+        15
+      ],
+      "reason": "Event #15 supports source-address/origin matching as a finite exploratory experiment.",
+      "reopen_conditions": [
+        "Further claims require appropriate independent evidence; no proof conclusion follows."
+      ],
+      "source_representations": [
+        "actual_theta_source_edges"
+      ]
+    }
+  ],
+  "moves": [
+    {
+      "parent_event_ids": [
+        14
+      ],
+      "proposed_operation": {
+        "mechanism": "route_arclength",
+        "display_name": "coarse route length",
+        "intent": "experiment",
+        "premises": [
+          "same T49/T54 finite theta-source word",
+          "two nearby parameters only"
+        ],
+        "mathematical_properties": [
+          "route length",
+          "maximum prefix excursion"
+        ],
+        "testable_consequence": "coarse path geometry discriminates the two recorded finite cases",
+        "required_evidence": [
+          "certified source-matched measurements",
+          "scope-limited discrimination test"
+        ]
+      },
+      "evidence_refs": [
+        "event:14"
+      ],
+      "outcome": "bounded_negative_result",
+      "scope": "Only the two finite nearby cases in event #14."
+    }
+  ]
+}

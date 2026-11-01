@@ -1,0 +1,115 @@
+{
+  "id": "packet_1b690a440c3a03270e",
+  "document_id": "poet",
+  "document_sha256": "c2fe4f0e84c0d7eb4e4f0661d556a22abf52d1c185b61a3af3e75414db6d603d",
+  "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+  "language": "ru",
+  "spans": [
+    {
+      "id": "poet:1",
+      "document_id": "poet",
+      "document_sha256": "c2fe4f0e84c0d7eb4e4f0661d556a22abf52d1c185b61a3af3e75414db6d603d",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 0,
+      "end": 39,
+      "text": "Пока не требует поэта",
+      "source_address": {
+        "html_id": "L1",
+        "section": "poet"
+      }
+    },
+    {
+      "id": "poet:2",
+      "document_id": "poet",
+      "document_sha256": "c2fe4f0e84c0d7eb4e4f0661d556a22abf52d1c185b61a3af3e75414db6d603d",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 40,
+      "end": 90,
+      "text": "К священной жертве Аполлон,",
+      "source_address": {
+        "html_id": "L2",
+        "section": "poet"
+      }
+    },
+    {
+      "id": "poet:9",
+      "document_id": "poet",
+      "document_sha256": "c2fe4f0e84c0d7eb4e4f0661d556a22abf52d1c185b61a3af3e75414db6d603d",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 374,
+      "end": 425,
+      "text": "Но лишь божественный глагол",
+      "source_address": {
+        "html_id": "L9",
+        "section": "poet"
+      }
+    },
+    {
+      "id": "poet:10",
+      "document_id": "poet",
+      "document_sha256": "c2fe4f0e84c0d7eb4e4f0661d556a22abf52d1c185b61a3af3e75414db6d603d",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 426,
+      "end": 474,
+      "text": "До слуха чуткого коснется,",
+      "source_address": {
+        "html_id": "L10",
+        "section": "poet"
+      }
+    },
+    {
+      "id": "poet:11",
+      "document_id": "poet",
+      "document_sha256": "c2fe4f0e84c0d7eb4e4f0661d556a22abf52d1c185b61a3af3e75414db6d603d",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 475,
+      "end": 520,
+      "text": "Душа поэта встрепенется,",
+      "source_address": {
+        "html_id": "L11",
+        "section": "poet"
+      }
+    },
+    {
+      "id": "poet:12",
+      "document_id": "poet",
+      "document_sha256": "c2fe4f0e84c0d7eb4e4f0661d556a22abf52d1c185b61a3af3e75414db6d603d",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 521,
+      "end": 564,
+      "text": "Как пробудившийся орел.",
+      "source_address": {
+        "html_id": "L12",
+        "section": "poet"
+      }
+    },
+    {
+      "id": "poet:13",
+      "document_id": "poet",
+      "document_sha256": "c2fe4f0e84c0d7eb4e4f0661d556a22abf52d1c185b61a3af3e75414db6d603d",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 565,
+      "end": 612,
+      "text": "Тоскует он в забавах мира,",
+      "source_address": {
+        "html_id": "L13",
+        "section": "poet"
+      }
+    },
+    {
+      "id": "poet:14",
+      "document_id": "poet",
+      "document_sha256": "c2fe4f0e84c0d7eb4e4f0661d556a22abf52d1c185b61a3af3e75414db6d603d",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 613,
+      "end": 658,
+      "text": "Людской чуждается молвы,",
+      "source_address": {
+        "html_id": "L14",
+        "section": "poet"
+      }
+    }
+  ],
+  "context": [],
+  "grammar": {}
+}

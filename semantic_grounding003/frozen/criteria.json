@@ -1,0 +1,83 @@
+{
+  "version": "semantic-grounding003/freeze1",
+  "cases": 16,
+  "external_annotation_status": "SEMANTIC_REVIEW_PENDING",
+  "source_internal_rule": "Independent evidence spans must be disjoint in byte range from every proposal input span, exact-edition/hash/quote bound; target and proposal rationale excluded.",
+  "hypothesis_pairs": {
+    "order": [
+      "TEXT_ORDER_ONLY",
+      "PROCESS_PREREQUISITE"
+    ],
+    "scope": [
+      "SAME_ROLE",
+      "DIFFERENT_ROLE"
+    ],
+    "identity": [
+      "SAME_ROLE",
+      "DIFFERENT_ROLE"
+    ],
+    "necessity": [
+      "ORDERED",
+      "UNRESOLVED"
+    ],
+    "anaphora": [
+      "SAME_ROLE",
+      "DIFFERENT_ROLE"
+    ],
+    "analogy": [
+      "SAME_ROLE",
+      "ANALOGY_ONLY"
+    ],
+    "actor_object": [
+      "SAME_ROLE",
+      "DIFFERENT_ROLE"
+    ],
+    "material_agent": [
+      "SAME_ROLE",
+      "DIFFERENT_ROLE"
+    ]
+  },
+  "essential_premise": "Source identity/prerequisite evidence must be necessary to the source decision; remove it on same train. Formal premise tested on same all-markings domain; directly encoded guard remains FAIL_TARGET_TAUTOLOGY.",
+  "G3": "Requires independent semantic assessment plus non-template, non-vacuous source relation on withheld evidence. No external annotations => no PASS_SEMANTIC_GENERALIZATION.",
+  "budgets": {
+    "cases": 16,
+    "hypotheses_per_case": 2,
+    "raw_worker_input_bytes": 64000,
+    "worker_wall_seconds": 6,
+    "worker_CPU_seconds": 5,
+    "worker_address_space_MiB": 512,
+    "species": 8,
+    "formal_states": 256,
+    "formal_checks_per_case": 6,
+    "context_attempts_per_case": 1
+  },
+  "baselines": {
+    "B0": "Literal train quotes only, no source identity decision",
+    "B1": "Exact unchanged grammar002 on train, no independent context binding",
+    "B2": "Same competing H, independent evidence ablated",
+    "C": "Independent source witnesses, disjoint from proposal; retain unresolved"
+  },
+  "semantic_discriminators": {
+    "order": "Actual prohibition/condition about starting an operation, versus chapter arrangement only",
+    "scope": "Explicit two senses/scopes/definition, not repeated word",
+    "anaphora": "Explicit external-to-proposal referent definition; conflicting definitions unresolved",
+    "analogy": "Separate author definition plus comparison; not metaphor-as-identity",
+    "actor_object": "Case-distinct slots with independently opposed narrative roles; no unsupported entity equality",
+    "material_agent": "Agent versus instrumental object of predicate, with separate material descriptions"
+  },
+  "LLM": {
+    "status": "NO_LLM_PROPOSER",
+    "provider": null,
+    "model": null,
+    "calls": 0,
+    "tokens": null,
+    "reason": "No authorized pinned generic text inference/token-accounting endpoint exposed; coding agent is implementer, not independent reviewer."
+  },
+  "human_review": {
+    "independent_annotators": 0,
+    "human_hours": 0,
+    "status": "SEMANTIC_REVIEW_PENDING"
+  },
+  "holdout": "ENGINEERING_HOLDOUT, public corpus seen by implementer; not PROSPECTIVE_BLIND",
+  "synthetic_labels": "Only controlled fixtures have oracle labels. Real-source label fields left empty for independent review."
+}

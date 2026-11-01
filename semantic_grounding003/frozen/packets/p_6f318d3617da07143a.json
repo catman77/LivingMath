@@ -1,0 +1,24 @@
+{
+  "id": "p_6f318d3617da07143a",
+  "document_id": "s04",
+  "document_sha256": "938a229be24fa17c4d73de54970a0be9ae562c8711a334e4bdd772d52fea74ee",
+  "edition": "ORIGINAL_SYNTHETIC_CONTROL/003",
+  "language": "en",
+  "spans": [
+    {
+      "id": "s04:1",
+      "document_id": "s04",
+      "document_sha256": "938a229be24fa17c4d73de54970a0be9ae562c8711a334e4bdd772d52fea74ee",
+      "edition": "ORIGINAL_SYNTHETIC_CONTROL/003",
+      "start": 0,
+      "end": 31,
+      "text": "The porter examined the porter.",
+      "source_address": {
+        "fixture_line": 1,
+        "origin": "ORIGINAL_SYNTHETIC_CONTROL"
+      }
+    }
+  ],
+  "context": [],
+  "grammar": {}
+}

@@ -1,0 +1,714 @@
+[
+  {
+    "id": "R1",
+    "input": {
+      "format": "livingmath-artifact/1",
+      "scope": "known/R1",
+      "source_name": "known-R1",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "language": "en",
+      "rights": {
+        "basis": "USER_SESSION",
+        "origin": "Owner-authorized008 frozen packets",
+        "attribution": "ripley004"
+      },
+      "raw_text": "The second manner is called Triptatiue,\nFor as the soule to the spirite the bond must bee;\nRight so the bodie the soule to him must knit,\nOut of thy minde let not this lesson flit.\n\nWhich is Coniunction, made of things three,\nOf bodie, soule and spirit, that they not striue,\nWhich trinitie thou must bring to vnitee,\n",
+      "expected_sha256": "41a20d9d3cd49496be55fb7ec5fe4bbabf5ac3c0f8b8092c7fe37800e09a318b"
+    },
+    "original_source_spans": [
+      {
+        "id": "ripley004:8",
+        "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+        "start": 323,
+        "end": 362,
+        "text": "The second manner is called Triptatiue,"
+      },
+      {
+        "id": "ripley004:12",
+        "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+        "start": 499,
+        "end": 549,
+        "text": "For as the soule to the spirite the bond must bee;"
+      },
+      {
+        "id": "ripley004:13",
+        "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+        "start": 550,
+        "end": 596,
+        "text": "Right so the bodie the soule to him must knit,"
+      },
+      {
+        "id": "ripley004:14",
+        "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+        "start": 597,
+        "end": 639,
+        "text": "Out of thy minde let not this lesson flit."
+      },
+      {
+        "id": "ripley004:9",
+        "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+        "start": 363,
+        "end": 406,
+        "text": "Which is Coniunction, made of things three,"
+      },
+      {
+        "id": "ripley004:10",
+        "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+        "start": 407,
+        "end": 456,
+        "text": "Of bodie, soule and spirit, that they not striue,"
+      },
+      {
+        "id": "ripley004:11",
+        "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+        "start": 457,
+        "end": 498,
+        "text": "Which trinitie thou must bring to vnitee,"
+      }
+    ]
+  },
+  {
+    "id": "R2",
+    "input": {
+      "format": "livingmath-artifact/1",
+      "scope": "known/R2",
+      "source_name": "known-R2",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "language": "en",
+      "rights": {
+        "basis": "USER_SESSION",
+        "origin": "Owner-authorized008 frozen packets",
+        "attribution": "ripley004"
+      },
+      "raw_text": "Firmentations in diuers manners be doone,\nBy which our medicine must be perpetuate\nInto cleere water: some looseth Sunne and Moone,\nAnd with their medicines make them to be congelate;\n\nBut yet more kindly some other men doone,\nFermenting their medicines in this wise,\nIn Mercurie dissoluing both Sunne and Moone,\nTill time with the spirit they will arise,\n",
+      "expected_sha256": "45bd63fe23dbb63c60bd109ea40f139ac6c0c3a760dd505017cc91695cf2881e"
+    },
+    "original_source_spans": [
+      {
+        "id": "ripley004:15",
+        "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+        "start": 640,
+        "end": 681,
+        "text": "Firmentations in diuers manners be doone,"
+      },
+      {
+        "id": "ripley004:16",
+        "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+        "start": 682,
+        "end": 722,
+        "text": "By which our medicine must be perpetuate"
+      },
+      {
+        "id": "ripley004:17",
+        "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+        "start": 723,
+        "end": 771,
+        "text": "Into cleere water: some looseth Sunne and Moone,"
+      },
+      {
+        "id": "ripley004:18",
+        "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+        "start": 772,
+        "end": 823,
+        "text": "And with their medicines make them to be congelate;"
+      },
+      {
+        "id": "ripley004:22",
+        "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+        "start": 949,
+        "end": 990,
+        "text": "But yet more kindly some other men doone,"
+      },
+      {
+        "id": "ripley004:23",
+        "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+        "start": 991,
+        "end": 1031,
+        "text": "Fermenting their medicines in this wise,"
+      },
+      {
+        "id": "ripley004:24",
+        "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+        "start": 1032,
+        "end": 1076,
+        "text": "In Mercurie dissoluing both Sunne and Moone,"
+      },
+      {
+        "id": "ripley004:25",
+        "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+        "start": 1077,
+        "end": 1119,
+        "text": "Till time with the spirit they will arise,"
+      }
+    ]
+  },
+  {
+    "id": "R3",
+    "input": {
+      "format": "livingmath-artifact/1",
+      "scope": "known/R3",
+      "source_name": "known-R3",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "language": "en",
+      "rights": {
+        "basis": "USER_SESSION",
+        "origin": "Owner-authorized008 frozen packets",
+        "attribution": "ripley004"
+      },
+      "raw_text": "And we dissolue into water which wetteth no hand,\nFor when the earth is integrately incinerate,\nThen is the water congealed; this vnderstand\nFor the elements be so together concatenate,\nThat when the bodie is from his first forme alterate,\nA new forme is induced immediatly,\nFor nothing being without all forme is vtterly.\n\nThat is to say, first thou them putrifie,\nTheir former qualities destroying vtterly,\nFor this is wholly to our intent,\nThat first thou alter before thou ferment.\n",
+      "expected_sha256": "720a5cff1a9b386d9744368db7f031f5786c6c1ac952d2ee327b733b32df3410"
+    },
+    "original_source_spans": [
+      {
+        "id": "ripley004:1",
+        "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+        "start": 0,
+        "end": 49,
+        "text": "And we dissolue into water which wetteth no hand,"
+      },
+      {
+        "id": "ripley004:2",
+        "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+        "start": 50,
+        "end": 95,
+        "text": "For when the earth is integrately incinerate,"
+      },
+      {
+        "id": "ripley004:3",
+        "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+        "start": 96,
+        "end": 140,
+        "text": "Then is the water congealed; this vnderstand"
+      },
+      {
+        "id": "ripley004:4",
+        "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+        "start": 141,
+        "end": 185,
+        "text": "For the elements be so together concatenate,"
+      },
+      {
+        "id": "ripley004:5",
+        "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+        "start": 186,
+        "end": 239,
+        "text": "That when the bodie is from his first forme alterate,"
+      },
+      {
+        "id": "ripley004:6",
+        "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+        "start": 240,
+        "end": 274,
+        "text": "A new forme is induced immediatly,"
+      },
+      {
+        "id": "ripley004:7",
+        "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+        "start": 275,
+        "end": 322,
+        "text": "For nothing being without all forme is vtterly."
+      },
+      {
+        "id": "ripley004:32",
+        "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+        "start": 1382,
+        "end": 1423,
+        "text": "That is to say, first thou them putrifie,"
+      },
+      {
+        "id": "ripley004:33",
+        "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+        "start": 1424,
+        "end": 1466,
+        "text": "Their former qualities destroying vtterly,"
+      },
+      {
+        "id": "ripley004:34",
+        "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+        "start": 1467,
+        "end": 1500,
+        "text": "For this is wholly to our intent,"
+      },
+      {
+        "id": "ripley004:35",
+        "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+        "start": 1501,
+        "end": 1543,
+        "text": "That first thou alter before thou ferment."
+      }
+    ]
+  },
+  {
+    "id": "R4",
+    "input": {
+      "format": "livingmath-artifact/1",
+      "scope": "known/R4",
+      "source_name": "known-R4",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "language": "en",
+      "rights": {
+        "basis": "USER_SESSION",
+        "origin": "Owner-authorized008 frozen packets",
+        "attribution": "ripley004"
+      },
+      "raw_text": "So into Ayre the water as I tell thee,\nWhen heate of colde hath got domination,\nShall be conuerted by craft of our circulation.\nAnd of the Ayre then fire haue thou shall,\nBy loosing putrifying and subliming,\nAnd fire thou hast of the earth materiall,\n\nThine Elements thus by craft disseuering,\nMost especially thine earth well calcining,\nAnd when they be each one made pure,\nThen doe they holde all of the first nature.\n",
+      "expected_sha256": "ab7659077d7b077a7077db0cd599569d98137cc0d7b8fbffad59fa9e82797bff"
+    },
+    "original_source_spans": [
+      {
+        "id": "ripley004:40",
+        "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+        "start": 1715,
+        "end": 1753,
+        "text": "So into Ayre the water as I tell thee,"
+      },
+      {
+        "id": "ripley004:41",
+        "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+        "start": 1754,
+        "end": 1794,
+        "text": "When heate of colde hath got domination,"
+      },
+      {
+        "id": "ripley004:42",
+        "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+        "start": 1795,
+        "end": 1842,
+        "text": "Shall be conuerted by craft of our circulation."
+      },
+      {
+        "id": "ripley004:43",
+        "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+        "start": 1843,
+        "end": 1885,
+        "text": "And of the Ayre then fire haue thou shall,"
+      },
+      {
+        "id": "ripley004:44",
+        "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+        "start": 1886,
+        "end": 1922,
+        "text": "By loosing putrifying and subliming,"
+      },
+      {
+        "id": "ripley004:45",
+        "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+        "start": 1923,
+        "end": 1965,
+        "text": "And fire thou hast of the earth materiall,"
+      },
+      {
+        "id": "ripley004:46",
+        "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+        "start": 1966,
+        "end": 2007,
+        "text": "Thine Elements thus by craft disseuering,"
+      },
+      {
+        "id": "ripley004:47",
+        "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+        "start": 2008,
+        "end": 2051,
+        "text": "Most especially thine earth well calcining,"
+      },
+      {
+        "id": "ripley004:48",
+        "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+        "start": 2052,
+        "end": 2088,
+        "text": "And when they be each one made pure,"
+      },
+      {
+        "id": "ripley004:49",
+        "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+        "start": 2089,
+        "end": 2133,
+        "text": "Then doe they holde all of the first nature."
+      }
+    ]
+  },
+  {
+    "id": "P1",
+    "input": {
+      "format": "livingmath-artifact/1",
+      "scope": "known/P1",
+      "source_name": "known-P1",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "language": "ru",
+      "rights": {
+        "basis": "USER_SESSION",
+        "origin": "Owner-authorized008 frozen packets",
+        "attribution": "life"
+      },
+      "raw_text": "Сердце в будущем живет;\nНастоящее уныло:\nВсе мгновенно, все пройдет;\nЧто пройдет, то будет мило.\n\nЕсли жизнь тебя обманет,\nНе печалься, не сердись!\nВ день уныния смирись:\nДень веселья, верь, настанет.\n",
+      "expected_sha256": "b83b5317e019dd475600d970cd0e1e258c8c010ea3dd91e42b4619780c1b5cb3"
+    },
+    "original_source_spans": [
+      {
+        "id": "life:5",
+        "document_sha256": "2c8cd80feaacbc5fd51a0c6a0d3f1b7be2b3f12488633bdc67fe98a60407f3d8",
+        "start": 183,
+        "end": 225,
+        "text": "Сердце в будущем живет;"
+      },
+      {
+        "id": "life:6",
+        "document_sha256": "2c8cd80feaacbc5fd51a0c6a0d3f1b7be2b3f12488633bdc67fe98a60407f3d8",
+        "start": 226,
+        "end": 256,
+        "text": "Настоящее уныло:"
+      },
+      {
+        "id": "life:7",
+        "document_sha256": "2c8cd80feaacbc5fd51a0c6a0d3f1b7be2b3f12488633bdc67fe98a60407f3d8",
+        "start": 257,
+        "end": 306,
+        "text": "Все мгновенно, все пройдет;"
+      },
+      {
+        "id": "life:8",
+        "document_sha256": "2c8cd80feaacbc5fd51a0c6a0d3f1b7be2b3f12488633bdc67fe98a60407f3d8",
+        "start": 307,
+        "end": 355,
+        "text": "Что пройдет, то будет мило."
+      },
+      {
+        "id": "life:1",
+        "document_sha256": "2c8cd80feaacbc5fd51a0c6a0d3f1b7be2b3f12488633bdc67fe98a60407f3d8",
+        "start": 0,
+        "end": 44,
+        "text": "Если жизнь тебя обманет,"
+      },
+      {
+        "id": "life:2",
+        "document_sha256": "2c8cd80feaacbc5fd51a0c6a0d3f1b7be2b3f12488633bdc67fe98a60407f3d8",
+        "start": 45,
+        "end": 88,
+        "text": "Не печалься, не сердись!"
+      },
+      {
+        "id": "life:3",
+        "document_sha256": "2c8cd80feaacbc5fd51a0c6a0d3f1b7be2b3f12488633bdc67fe98a60407f3d8",
+        "start": 89,
+        "end": 129,
+        "text": "В день уныния смирись:"
+      },
+      {
+        "id": "life:4",
+        "document_sha256": "2c8cd80feaacbc5fd51a0c6a0d3f1b7be2b3f12488633bdc67fe98a60407f3d8",
+        "start": 130,
+        "end": 182,
+        "text": "День веселья, верь, настанет."
+      }
+    ]
+  },
+  {
+    "id": "P2",
+    "input": {
+      "format": "livingmath-artifact/1",
+      "scope": "known/P2",
+      "source_name": "known-P2",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "language": "ru",
+      "rights": {
+        "basis": "USER_SESSION",
+        "origin": "Owner-authorized008 frozen packets",
+        "attribution": "poet"
+      },
+      "raw_text": "Пока не требует поэта\nК священной жертве Аполлон,\nНо лишь божественный глагол\nДо слуха чуткого коснется,\nДуша поэта встрепенется,\nКак пробудившийся орел.\nТоскует он в забавах мира,\nЛюдской чуждается молвы,\n\nБежит он, дикий и суровый,\nИ звуков и смятенья полн,\nНа берега пустынных волн,\nВ широкошумные дубровы...\n",
+      "expected_sha256": "5ef172adf829c84eb5531deede1ed5b5e3f776be82681ede932c935bb4a43361"
+    },
+    "original_source_spans": [
+      {
+        "id": "poet:1",
+        "document_sha256": "c2fe4f0e84c0d7eb4e4f0661d556a22abf52d1c185b61a3af3e75414db6d603d",
+        "start": 0,
+        "end": 39,
+        "text": "Пока не требует поэта"
+      },
+      {
+        "id": "poet:2",
+        "document_sha256": "c2fe4f0e84c0d7eb4e4f0661d556a22abf52d1c185b61a3af3e75414db6d603d",
+        "start": 40,
+        "end": 90,
+        "text": "К священной жертве Аполлон,"
+      },
+      {
+        "id": "poet:9",
+        "document_sha256": "c2fe4f0e84c0d7eb4e4f0661d556a22abf52d1c185b61a3af3e75414db6d603d",
+        "start": 374,
+        "end": 425,
+        "text": "Но лишь божественный глагол"
+      },
+      {
+        "id": "poet:10",
+        "document_sha256": "c2fe4f0e84c0d7eb4e4f0661d556a22abf52d1c185b61a3af3e75414db6d603d",
+        "start": 426,
+        "end": 474,
+        "text": "До слуха чуткого коснется,"
+      },
+      {
+        "id": "poet:11",
+        "document_sha256": "c2fe4f0e84c0d7eb4e4f0661d556a22abf52d1c185b61a3af3e75414db6d603d",
+        "start": 475,
+        "end": 520,
+        "text": "Душа поэта встрепенется,"
+      },
+      {
+        "id": "poet:12",
+        "document_sha256": "c2fe4f0e84c0d7eb4e4f0661d556a22abf52d1c185b61a3af3e75414db6d603d",
+        "start": 521,
+        "end": 564,
+        "text": "Как пробудившийся орел."
+      },
+      {
+        "id": "poet:13",
+        "document_sha256": "c2fe4f0e84c0d7eb4e4f0661d556a22abf52d1c185b61a3af3e75414db6d603d",
+        "start": 565,
+        "end": 612,
+        "text": "Тоскует он в забавах мира,"
+      },
+      {
+        "id": "poet:14",
+        "document_sha256": "c2fe4f0e84c0d7eb4e4f0661d556a22abf52d1c185b61a3af3e75414db6d603d",
+        "start": 613,
+        "end": 658,
+        "text": "Людской чуждается молвы,"
+      },
+      {
+        "id": "poet:17",
+        "document_sha256": "c2fe4f0e84c0d7eb4e4f0661d556a22abf52d1c185b61a3af3e75414db6d603d",
+        "start": 750,
+        "end": 796,
+        "text": "Бежит он, дикий и суровый,"
+      },
+      {
+        "id": "poet:18",
+        "document_sha256": "c2fe4f0e84c0d7eb4e4f0661d556a22abf52d1c185b61a3af3e75414db6d603d",
+        "start": 797,
+        "end": 842,
+        "text": "И звуков и смятенья полн,"
+      },
+      {
+        "id": "poet:19",
+        "document_sha256": "c2fe4f0e84c0d7eb4e4f0661d556a22abf52d1c185b61a3af3e75414db6d603d",
+        "start": 843,
+        "end": 889,
+        "text": "На берега пустынных волн,"
+      },
+      {
+        "id": "poet:20",
+        "document_sha256": "c2fe4f0e84c0d7eb4e4f0661d556a22abf52d1c185b61a3af3e75414db6d603d",
+        "start": 890,
+        "end": 935,
+        "text": "В широкошумные дубровы..."
+      }
+    ]
+  },
+  {
+    "id": "P3",
+    "input": {
+      "format": "livingmath-artifact/1",
+      "scope": "known/P3",
+      "source_name": "known-P3",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "language": "ru",
+      "rights": {
+        "basis": "USER_SESSION",
+        "origin": "Owner-authorized008 frozen packets",
+        "attribution": "echo"
+      },
+      "raw_text": "Ревет ли зверь в лесу глухом,\nТрубит ли рог, гремит ли гром,\nПоет ли дева за холмом —\n На всякий звук\nСвой отклик в воздухе пустом\n Родишь ты вдруг.\n\nТы внемлешь грохоту громов,\nИ гласу бури и валов,\nИ крику сельских пастухов —\n И шлешь ответ;\nТебе ж нет отзыва... Таков\n И ты, поэт!\n",
+      "expected_sha256": "b29c6738d1d6e648ccf65baba86dfd8ed883c71e6b458944eb03eee790f09ae3"
+    },
+    "original_source_spans": [
+      {
+        "id": "echo:1",
+        "document_sha256": "e04a015ccfbb225f9423e077d0038fd421fa31990b5124322c0918b17d1baf93",
+        "start": 0,
+        "end": 52,
+        "text": "Ревет ли зверь в лесу глухом,"
+      },
+      {
+        "id": "echo:2",
+        "document_sha256": "e04a015ccfbb225f9423e077d0038fd421fa31990b5124322c0918b17d1baf93",
+        "start": 53,
+        "end": 106,
+        "text": "Трубит ли рог, гремит ли гром,"
+      },
+      {
+        "id": "echo:3",
+        "document_sha256": "e04a015ccfbb225f9423e077d0038fd421fa31990b5124322c0918b17d1baf93",
+        "start": 107,
+        "end": 151,
+        "text": "Поет ли дева за холмом —"
+      },
+      {
+        "id": "echo:4",
+        "document_sha256": "e04a015ccfbb225f9423e077d0038fd421fa31990b5124322c0918b17d1baf93",
+        "start": 152,
+        "end": 179,
+        "text": " На всякий звук"
+      },
+      {
+        "id": "echo:5",
+        "document_sha256": "e04a015ccfbb225f9423e077d0038fd421fa31990b5124322c0918b17d1baf93",
+        "start": 180,
+        "end": 232,
+        "text": "Свой отклик в воздухе пустом"
+      },
+      {
+        "id": "echo:6",
+        "document_sha256": "e04a015ccfbb225f9423e077d0038fd421fa31990b5124322c0918b17d1baf93",
+        "start": 233,
+        "end": 263,
+        "text": " Родишь ты вдруг."
+      },
+      {
+        "id": "echo:7",
+        "document_sha256": "e04a015ccfbb225f9423e077d0038fd421fa31990b5124322c0918b17d1baf93",
+        "start": 264,
+        "end": 314,
+        "text": "Ты внемлешь грохоту громов,"
+      },
+      {
+        "id": "echo:8",
+        "document_sha256": "e04a015ccfbb225f9423e077d0038fd421fa31990b5124322c0918b17d1baf93",
+        "start": 315,
+        "end": 352,
+        "text": "И гласу бури и валов,"
+      },
+      {
+        "id": "echo:9",
+        "document_sha256": "e04a015ccfbb225f9423e077d0038fd421fa31990b5124322c0918b17d1baf93",
+        "start": 353,
+        "end": 404,
+        "text": "И крику сельских пастухов —"
+      },
+      {
+        "id": "echo:10",
+        "document_sha256": "e04a015ccfbb225f9423e077d0038fd421fa31990b5124322c0918b17d1baf93",
+        "start": 405,
+        "end": 431,
+        "text": " И шлешь ответ;"
+      },
+      {
+        "id": "echo:11",
+        "document_sha256": "e04a015ccfbb225f9423e077d0038fd421fa31990b5124322c0918b17d1baf93",
+        "start": 432,
+        "end": 477,
+        "text": "Тебе ж нет отзыва... Таков"
+      },
+      {
+        "id": "echo:12",
+        "document_sha256": "e04a015ccfbb225f9423e077d0038fd421fa31990b5124322c0918b17d1baf93",
+        "start": 478,
+        "end": 497,
+        "text": " И ты, поэт!"
+      }
+    ]
+  },
+  {
+    "id": "P4",
+    "input": {
+      "format": "livingmath-artifact/1",
+      "scope": "known/P4",
+      "source_name": "known-P4",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "language": "ru",
+      "rights": {
+        "basis": "USER_SESSION",
+        "origin": "Owner-authorized008 frozen packets",
+        "attribution": "prophet"
+      },
+      "raw_text": "Перстами легкими как сон\nМоих зениц коснулся он.\nОтверзлись вещие зеницы,\nКак у испуганной орлицы.\nМоих ушей коснулся он, —\nИ их наполнил шум и звон:\nИ внял я неба содроганье,\nИ горний ангелов полет,\n\n«Восстань, пророк, и виждь, и внемли,\nИсполнись волею моей,\nИ, обходя моря и земли,\nГлаголом жги сердца людей».\n",
+      "expected_sha256": "6b0d7e60c1dabb84f7afa4e0fe4b76e43548427b642fd9a365af6655bd025ac5"
+    },
+    "original_source_spans": [
+      {
+        "id": "prophet:5",
+        "document_sha256": "b808f9a49df8c8d83eeb731093bfe59daa8db2ef17e6521cc7a596ef056410dd",
+        "start": 186,
+        "end": 231,
+        "text": "Перстами легкими как сон"
+      },
+      {
+        "id": "prophet:6",
+        "document_sha256": "b808f9a49df8c8d83eeb731093bfe59daa8db2ef17e6521cc7a596ef056410dd",
+        "start": 232,
+        "end": 274,
+        "text": "Моих зениц коснулся он."
+      },
+      {
+        "id": "prophet:7",
+        "document_sha256": "b808f9a49df8c8d83eeb731093bfe59daa8db2ef17e6521cc7a596ef056410dd",
+        "start": 275,
+        "end": 320,
+        "text": "Отверзлись вещие зеницы,"
+      },
+      {
+        "id": "prophet:8",
+        "document_sha256": "b808f9a49df8c8d83eeb731093bfe59daa8db2ef17e6521cc7a596ef056410dd",
+        "start": 321,
+        "end": 365,
+        "text": "Как у испуганной орлицы."
+      },
+      {
+        "id": "prophet:9",
+        "document_sha256": "b808f9a49df8c8d83eeb731093bfe59daa8db2ef17e6521cc7a596ef056410dd",
+        "start": 366,
+        "end": 410,
+        "text": "Моих ушей коснулся он, —"
+      },
+      {
+        "id": "prophet:10",
+        "document_sha256": "b808f9a49df8c8d83eeb731093bfe59daa8db2ef17e6521cc7a596ef056410dd",
+        "start": 411,
+        "end": 455,
+        "text": "И их наполнил шум и звон:"
+      },
+      {
+        "id": "prophet:11",
+        "document_sha256": "b808f9a49df8c8d83eeb731093bfe59daa8db2ef17e6521cc7a596ef056410dd",
+        "start": 456,
+        "end": 501,
+        "text": "И внял я неба содроганье,"
+      },
+      {
+        "id": "prophet:12",
+        "document_sha256": "b808f9a49df8c8d83eeb731093bfe59daa8db2ef17e6521cc7a596ef056410dd",
+        "start": 502,
+        "end": 544,
+        "text": "И горний ангелов полет,"
+      },
+      {
+        "id": "prophet:27",
+        "document_sha256": "b808f9a49df8c8d83eeb731093bfe59daa8db2ef17e6521cc7a596ef056410dd",
+        "start": 1199,
+        "end": 1264,
+        "text": "«Восстань, пророк, и виждь, и внемли,"
+      },
+      {
+        "id": "prophet:28",
+        "document_sha256": "b808f9a49df8c8d83eeb731093bfe59daa8db2ef17e6521cc7a596ef056410dd",
+        "start": 1265,
+        "end": 1304,
+        "text": "Исполнись волею моей,"
+      },
+      {
+        "id": "prophet:29",
+        "document_sha256": "b808f9a49df8c8d83eeb731093bfe59daa8db2ef17e6521cc7a596ef056410dd",
+        "start": 1305,
+        "end": 1345,
+        "text": "И, обходя моря и земли,"
+      },
+      {
+        "id": "prophet:30",
+        "document_sha256": "b808f9a49df8c8d83eeb731093bfe59daa8db2ef17e6521cc7a596ef056410dd",
+        "start": 1346,
+        "end": 1396,
+        "text": "Глаголом жги сердца людей»."
+      }
+    ]
+  }
+]

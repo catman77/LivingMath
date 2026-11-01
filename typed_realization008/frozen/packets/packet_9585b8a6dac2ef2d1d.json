@@ -1,0 +1,63 @@
+{
+  "id": "packet_9585b8a6dac2ef2d1d",
+  "document_id": "life",
+  "document_sha256": "2c8cd80feaacbc5fd51a0c6a0d3f1b7be2b3f12488633bdc67fe98a60407f3d8",
+  "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+  "language": "ru",
+  "spans": [
+    {
+      "id": "life:1",
+      "document_id": "life",
+      "document_sha256": "2c8cd80feaacbc5fd51a0c6a0d3f1b7be2b3f12488633bdc67fe98a60407f3d8",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 0,
+      "end": 44,
+      "text": "Если жизнь тебя обманет,",
+      "source_address": {
+        "html_id": "L1",
+        "section": "life"
+      }
+    },
+    {
+      "id": "life:2",
+      "document_id": "life",
+      "document_sha256": "2c8cd80feaacbc5fd51a0c6a0d3f1b7be2b3f12488633bdc67fe98a60407f3d8",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 45,
+      "end": 88,
+      "text": "Не печалься, не сердись!",
+      "source_address": {
+        "html_id": "L2",
+        "section": "life"
+      }
+    },
+    {
+      "id": "life:3",
+      "document_id": "life",
+      "document_sha256": "2c8cd80feaacbc5fd51a0c6a0d3f1b7be2b3f12488633bdc67fe98a60407f3d8",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 89,
+      "end": 129,
+      "text": "В день уныния смирись:",
+      "source_address": {
+        "html_id": "L3",
+        "section": "life"
+      }
+    },
+    {
+      "id": "life:4",
+      "document_id": "life",
+      "document_sha256": "2c8cd80feaacbc5fd51a0c6a0d3f1b7be2b3f12488633bdc67fe98a60407f3d8",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 130,
+      "end": 182,
+      "text": "День веселья, верь, настанет.",
+      "source_address": {
+        "html_id": "L4",
+        "section": "life"
+      }
+    }
+  ],
+  "context": [],
+  "grammar": {}
+}

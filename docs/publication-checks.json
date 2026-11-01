@@ -1,0 +1,70 @@
+{
+  "version": "1.2.0rc4-meaning014-experimental",
+  "checked_at_UTC": "2026-11-01T15:03:49.730171+00:00",
+  "scope": "Initial private GitHub source publication; not production deployment or semantic verification",
+  "source": {
+    "runtime_and_test_input_files": 430,
+    "runtime_input_manifest_sha256": "1e173ac02e09b07899dcf72bff12b5d8535399284615a5714851087171f9a052",
+    "source_fixture_files": 95,
+    "source_fixtures_manifest": "assets/test-fixtures.manifest.json",
+    "source_fixtures_manifest_sha256": "be3ab1440c5a617319b995d51bd8b8ca68e937c403db44963efde58aca7fffb0",
+    "AGENTS_unchanged_sha256": "968331ddc809f60cdbe7499abf212ddbfe52fca1d91bda425688d7dca4a7559b"
+  },
+  "checks": {
+    "clean_selected_checkout": true,
+    "new_venv_hash_locked_install": "PASS",
+    "fresh_instance_prepare_final_code": "PASS",
+    "pytest": {
+      "passed": 1074,
+      "skipped": 12,
+      "warnings": 1,
+      "seconds": 136.09,
+      "log_sha256": "d84eb8483faac49e9ba169d22be094c767d7a5d76c77d31f9a2652bc67384ec4"
+    },
+    "ruff_new_installation_modules": "PASS",
+    "mypy_new_installation_modules": "PASS",
+    "MCP": {
+      "transport": "REAL_LOCAL_HTTPS_OAUTH",
+      "tool_count": 44,
+      "meaning014_input_enum": true,
+      "published_ingest_example_accepted": true,
+      "same_request_key_same_objects": true,
+      "restart_new_client_same_objects": true,
+      "model_backend_during_MCP_QA": "DISABLED; no new LLM inference claim"
+    },
+    "integrity": {
+      "four_private_SQLite_stores": "PASS",
+      "ledger_and_DAV_chains": "PASS",
+      "QA_activations": 0,
+      "production_accessed": false
+    },
+    "secret_scan": {
+      "engine": "detect-secrets1.5.0",
+      "network_verification": false,
+      "unfiltered_scan_and_candidate_review": true,
+      "reviewed_findings": "SHA hashes/public fixture keys, source scope/edition/project IDs, preserved source bytes and explicit unit-test credential literals",
+      "live_credentials_detected": 0,
+      "required_fixture_ZIP_and_nested_archives_inspected": true,
+      "forbidden_DB_or_key_entries_in_archives": 0
+    },
+    "current_Markdown_links": "PASS after adding this receipt"
+  },
+  "limitations": {
+    "scientific_status": "FAIL_NO_GAIN_OVER_B_PLUS",
+    "semantic_accuracy": null,
+    "human_noninferiority": "NOT_TESTED",
+    "known014_cost_bound_cases": [
+      "K4415",
+      "KREORDER",
+      "KNO_REPEAT"
+    ],
+    "historical_signed_release_tests": "12 existing skips; original signed packages not replaced",
+    "actual_ChatGPT_UI_connection_to_this_new_instance": "NOT_TESTED; MCP SDK client tested"
+  },
+  "publication": {
+    "repository": "catman77/LivingMath",
+    "branch": "main",
+    "visibility": "private",
+    "production_deployed": false
+  }
+}

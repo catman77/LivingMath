@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:livingmath:bridge001:author-review",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "bridge-author-review/v0.1"
+    },
+    "source_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "contract_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "projection_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "reviewer_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+    },
+    "key_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_.:-]{1,100}$"
+    },
+    "reviewed_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "decision": {
+      "enum": [
+        "RECOGNIZED",
+        "PARTIAL",
+        "REJECTED",
+        "NO_REVIEW"
+      ]
+    },
+    "reason": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4096
+    },
+    "signature_hex": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{128}$"
+    }
+  },
+  "required": [
+    "schema_version",
+    "source_id",
+    "revision",
+    "contract_sha256",
+    "projection_sha256",
+    "reviewer_id",
+    "key_id",
+    "reviewed_at",
+    "decision",
+    "reason",
+    "signature_hex"
+  ]
+}

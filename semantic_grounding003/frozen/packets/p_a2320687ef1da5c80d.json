@@ -1,0 +1,24 @@
+{
+  "id": "p_a2320687ef1da5c80d",
+  "document_id": "s03",
+  "document_sha256": "e6f7f62907fb5db11257b82b810d448b494cf76af4cdef5b3f4ed9163822fb71",
+  "edition": "ORIGINAL_SYNTHETIC_CONTROL/003",
+  "language": "en",
+  "spans": [
+    {
+      "id": "s03:2",
+      "document_id": "s03",
+      "document_sha256": "e6f7f62907fb5db11257b82b810d448b494cf76af4cdef5b3f4ed9163822fb71",
+      "edition": "ORIGINAL_SYNTHETIC_CONTROL/003",
+      "start": 32,
+      "end": 105,
+      "text": "The first \"porter\" denotes a worker; the second \"porter\" denotes a drink.",
+      "source_address": {
+        "fixture_line": 2,
+        "origin": "ORIGINAL_SYNTHETIC_CONTROL"
+      }
+    }
+  ],
+  "context": [],
+  "grammar": {}
+}

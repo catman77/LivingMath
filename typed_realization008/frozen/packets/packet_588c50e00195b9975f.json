@@ -1,0 +1,63 @@
+{
+  "id": "packet_588c50e00195b9975f",
+  "document_id": "poet",
+  "document_sha256": "c2fe4f0e84c0d7eb4e4f0661d556a22abf52d1c185b61a3af3e75414db6d603d",
+  "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+  "language": "ru",
+  "spans": [
+    {
+      "id": "poet:17",
+      "document_id": "poet",
+      "document_sha256": "c2fe4f0e84c0d7eb4e4f0661d556a22abf52d1c185b61a3af3e75414db6d603d",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 750,
+      "end": 796,
+      "text": "Бежит он, дикий и суровый,",
+      "source_address": {
+        "html_id": "L17",
+        "section": "poet"
+      }
+    },
+    {
+      "id": "poet:18",
+      "document_id": "poet",
+      "document_sha256": "c2fe4f0e84c0d7eb4e4f0661d556a22abf52d1c185b61a3af3e75414db6d603d",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 797,
+      "end": 842,
+      "text": "И звуков и смятенья полн,",
+      "source_address": {
+        "html_id": "L18",
+        "section": "poet"
+      }
+    },
+    {
+      "id": "poet:19",
+      "document_id": "poet",
+      "document_sha256": "c2fe4f0e84c0d7eb4e4f0661d556a22abf52d1c185b61a3af3e75414db6d603d",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 843,
+      "end": 889,
+      "text": "На берега пустынных волн,",
+      "source_address": {
+        "html_id": "L19",
+        "section": "poet"
+      }
+    },
+    {
+      "id": "poet:20",
+      "document_id": "poet",
+      "document_sha256": "c2fe4f0e84c0d7eb4e4f0661d556a22abf52d1c185b61a3af3e75414db6d603d",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 890,
+      "end": 935,
+      "text": "В широкошумные дубровы...",
+      "source_address": {
+        "html_id": "L20",
+        "section": "poet"
+      }
+    }
+  ],
+  "context": [],
+  "grammar": {}
+}

@@ -1,0 +1,63 @@
+{
+  "id": "packet_15434b6abc91ab0db6",
+  "document_id": "prophet",
+  "document_sha256": "b808f9a49df8c8d83eeb731093bfe59daa8db2ef17e6521cc7a596ef056410dd",
+  "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+  "language": "ru",
+  "spans": [
+    {
+      "id": "prophet:27",
+      "document_id": "prophet",
+      "document_sha256": "b808f9a49df8c8d83eeb731093bfe59daa8db2ef17e6521cc7a596ef056410dd",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 1199,
+      "end": 1264,
+      "text": "«Восстань, пророк, и виждь, и внемли,",
+      "source_address": {
+        "html_id": "L27",
+        "section": "prophet"
+      }
+    },
+    {
+      "id": "prophet:28",
+      "document_id": "prophet",
+      "document_sha256": "b808f9a49df8c8d83eeb731093bfe59daa8db2ef17e6521cc7a596ef056410dd",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 1265,
+      "end": 1304,
+      "text": "Исполнись волею моей,",
+      "source_address": {
+        "html_id": "L28",
+        "section": "prophet"
+      }
+    },
+    {
+      "id": "prophet:29",
+      "document_id": "prophet",
+      "document_sha256": "b808f9a49df8c8d83eeb731093bfe59daa8db2ef17e6521cc7a596ef056410dd",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 1305,
+      "end": 1345,
+      "text": "И, обходя моря и земли,",
+      "source_address": {
+        "html_id": "L29",
+        "section": "prophet"
+      }
+    },
+    {
+      "id": "prophet:30",
+      "document_id": "prophet",
+      "document_sha256": "b808f9a49df8c8d83eeb731093bfe59daa8db2ef17e6521cc7a596ef056410dd",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 1346,
+      "end": 1396,
+      "text": "Глаголом жги сердца людей».",
+      "source_address": {
+        "html_id": "L30",
+        "section": "prophet"
+      }
+    }
+  ],
+  "context": [],
+  "grammar": {}
+}

@@ -1,0 +1,115 @@
+{
+  "id": "packet_364e7ab2b9a834ffeb",
+  "document_id": "prophet",
+  "document_sha256": "b808f9a49df8c8d83eeb731093bfe59daa8db2ef17e6521cc7a596ef056410dd",
+  "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+  "language": "ru",
+  "spans": [
+    {
+      "id": "prophet:5",
+      "document_id": "prophet",
+      "document_sha256": "b808f9a49df8c8d83eeb731093bfe59daa8db2ef17e6521cc7a596ef056410dd",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 186,
+      "end": 231,
+      "text": "Перстами легкими как сон",
+      "source_address": {
+        "html_id": "L5",
+        "section": "prophet"
+      }
+    },
+    {
+      "id": "prophet:6",
+      "document_id": "prophet",
+      "document_sha256": "b808f9a49df8c8d83eeb731093bfe59daa8db2ef17e6521cc7a596ef056410dd",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 232,
+      "end": 274,
+      "text": "Моих зениц коснулся он.",
+      "source_address": {
+        "html_id": "L6",
+        "section": "prophet"
+      }
+    },
+    {
+      "id": "prophet:7",
+      "document_id": "prophet",
+      "document_sha256": "b808f9a49df8c8d83eeb731093bfe59daa8db2ef17e6521cc7a596ef056410dd",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 275,
+      "end": 320,
+      "text": "Отверзлись вещие зеницы,",
+      "source_address": {
+        "html_id": "L7",
+        "section": "prophet"
+      }
+    },
+    {
+      "id": "prophet:8",
+      "document_id": "prophet",
+      "document_sha256": "b808f9a49df8c8d83eeb731093bfe59daa8db2ef17e6521cc7a596ef056410dd",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 321,
+      "end": 365,
+      "text": "Как у испуганной орлицы.",
+      "source_address": {
+        "html_id": "L8",
+        "section": "prophet"
+      }
+    },
+    {
+      "id": "prophet:9",
+      "document_id": "prophet",
+      "document_sha256": "b808f9a49df8c8d83eeb731093bfe59daa8db2ef17e6521cc7a596ef056410dd",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 366,
+      "end": 410,
+      "text": "Моих ушей коснулся он, —",
+      "source_address": {
+        "html_id": "L9",
+        "section": "prophet"
+      }
+    },
+    {
+      "id": "prophet:10",
+      "document_id": "prophet",
+      "document_sha256": "b808f9a49df8c8d83eeb731093bfe59daa8db2ef17e6521cc7a596ef056410dd",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 411,
+      "end": 455,
+      "text": "И их наполнил шум и звон:",
+      "source_address": {
+        "html_id": "L10",
+        "section": "prophet"
+      }
+    },
+    {
+      "id": "prophet:11",
+      "document_id": "prophet",
+      "document_sha256": "b808f9a49df8c8d83eeb731093bfe59daa8db2ef17e6521cc7a596ef056410dd",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 456,
+      "end": 501,
+      "text": "И внял я неба содроганье,",
+      "source_address": {
+        "html_id": "L11",
+        "section": "prophet"
+      }
+    },
+    {
+      "id": "prophet:12",
+      "document_id": "prophet",
+      "document_sha256": "b808f9a49df8c8d83eeb731093bfe59daa8db2ef17e6521cc7a596ef056410dd",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 502,
+      "end": 544,
+      "text": "И горний ангелов полет,",
+      "source_address": {
+        "html_id": "L12",
+        "section": "prophet"
+      }
+    }
+  ],
+  "context": [],
+  "grammar": {}
+}

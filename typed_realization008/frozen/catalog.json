@@ -1,0 +1,135 @@
+{
+  "packet_71d7f60f727e7dcdd3": {
+    "partition": "proposal",
+    "path": "frozen/packets/packet_71d7f60f727e7dcdd3.json",
+    "document_path": "frozen/documents/ripley004.txt",
+    "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+    "edition": "Ripley1591/TCP-aa59eb69/public-projection004"
+  },
+  "packet_1f810177bb94c74dd1": {
+    "partition": "validation",
+    "path": "frozen/packets/packet_1f810177bb94c74dd1.json",
+    "document_path": "frozen/documents/ripley004.txt",
+    "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+    "edition": "Ripley1591/TCP-aa59eb69/public-projection004"
+  },
+  "packet_caba6ebe9604597215": {
+    "partition": "proposal",
+    "path": "frozen/packets/packet_caba6ebe9604597215.json",
+    "document_path": "frozen/documents/ripley004.txt",
+    "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+    "edition": "Ripley1591/TCP-aa59eb69/public-projection004"
+  },
+  "packet_3dd66d42450d498d18": {
+    "partition": "acquisition",
+    "path": "frozen/packets/packet_3dd66d42450d498d18.json",
+    "document_path": "frozen/documents/ripley004.txt",
+    "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+    "edition": "Ripley1591/TCP-aa59eb69/public-projection004"
+  },
+  "packet_29427b19acb103ff1b": {
+    "partition": "acquisition",
+    "path": "frozen/packets/packet_29427b19acb103ff1b.json",
+    "document_path": "frozen/documents/ripley004.txt",
+    "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+    "edition": "Ripley1591/TCP-aa59eb69/public-projection004"
+  },
+  "packet_1eb6fc7d6029dd348a": {
+    "partition": "validation",
+    "path": "frozen/packets/packet_1eb6fc7d6029dd348a.json",
+    "document_path": "frozen/documents/ripley004.txt",
+    "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+    "edition": "Ripley1591/TCP-aa59eb69/public-projection004"
+  },
+  "packet_b42b5cff2c6d31cdb8": {
+    "partition": "proposal",
+    "path": "frozen/packets/packet_b42b5cff2c6d31cdb8.json",
+    "document_path": "frozen/documents/ripley004.txt",
+    "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+    "edition": "Ripley1591/TCP-aa59eb69/public-projection004"
+  },
+  "packet_2bfc75e03e46cd5950": {
+    "partition": "validation",
+    "path": "frozen/packets/packet_2bfc75e03e46cd5950.json",
+    "document_path": "frozen/documents/ripley004.txt",
+    "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+    "edition": "Ripley1591/TCP-aa59eb69/public-projection004"
+  },
+  "packet_12d391ebd337f81095": {
+    "partition": "proposal",
+    "path": "frozen/packets/packet_12d391ebd337f81095.json",
+    "document_path": "frozen/documents/ripley004.txt",
+    "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+    "edition": "Ripley1591/TCP-aa59eb69/public-projection004"
+  },
+  "packet_f2ea3768ed011db706": {
+    "partition": "validation",
+    "path": "frozen/packets/packet_f2ea3768ed011db706.json",
+    "document_path": "frozen/documents/ripley004.txt",
+    "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+    "edition": "Ripley1591/TCP-aa59eb69/public-projection004"
+  },
+  "packet_533921ba3bf7ff4acf": {
+    "partition": "proposal",
+    "path": "frozen/packets/packet_533921ba3bf7ff4acf.json",
+    "document_path": "frozen/documents/life.txt",
+    "document_sha256": "2c8cd80feaacbc5fd51a0c6a0d3f1b7be2b3f12488633bdc67fe98a60407f3d8",
+    "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned"
+  },
+  "packet_9585b8a6dac2ef2d1d": {
+    "partition": "validation",
+    "path": "frozen/packets/packet_9585b8a6dac2ef2d1d.json",
+    "document_path": "frozen/documents/life.txt",
+    "document_sha256": "2c8cd80feaacbc5fd51a0c6a0d3f1b7be2b3f12488633bdc67fe98a60407f3d8",
+    "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned"
+  },
+  "packet_1b690a440c3a03270e": {
+    "partition": "proposal",
+    "path": "frozen/packets/packet_1b690a440c3a03270e.json",
+    "document_path": "frozen/documents/poet.txt",
+    "document_sha256": "c2fe4f0e84c0d7eb4e4f0661d556a22abf52d1c185b61a3af3e75414db6d603d",
+    "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned"
+  },
+  "packet_32f59cbabe878459a8": {
+    "partition": "acquisition",
+    "path": "frozen/packets/packet_32f59cbabe878459a8.json",
+    "document_path": "frozen/documents/poet.txt",
+    "document_sha256": "c2fe4f0e84c0d7eb4e4f0661d556a22abf52d1c185b61a3af3e75414db6d603d",
+    "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned"
+  },
+  "packet_588c50e00195b9975f": {
+    "partition": "validation",
+    "path": "frozen/packets/packet_588c50e00195b9975f.json",
+    "document_path": "frozen/documents/poet.txt",
+    "document_sha256": "c2fe4f0e84c0d7eb4e4f0661d556a22abf52d1c185b61a3af3e75414db6d603d",
+    "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned"
+  },
+  "packet_37eadf98bda922b0b5": {
+    "partition": "proposal",
+    "path": "frozen/packets/packet_37eadf98bda922b0b5.json",
+    "document_path": "frozen/documents/echo.txt",
+    "document_sha256": "e04a015ccfbb225f9423e077d0038fd421fa31990b5124322c0918b17d1baf93",
+    "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned"
+  },
+  "packet_3bbaaaa05ffee4d4f8": {
+    "partition": "validation",
+    "path": "frozen/packets/packet_3bbaaaa05ffee4d4f8.json",
+    "document_path": "frozen/documents/echo.txt",
+    "document_sha256": "e04a015ccfbb225f9423e077d0038fd421fa31990b5124322c0918b17d1baf93",
+    "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned"
+  },
+  "packet_364e7ab2b9a834ffeb": {
+    "partition": "proposal",
+    "path": "frozen/packets/packet_364e7ab2b9a834ffeb.json",
+    "document_path": "frozen/documents/prophet.txt",
+    "document_sha256": "b808f9a49df8c8d83eeb731093bfe59daa8db2ef17e6521cc7a596ef056410dd",
+    "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned"
+  },
+  "packet_15434b6abc91ab0db6": {
+    "partition": "validation",
+    "path": "frozen/packets/packet_15434b6abc91ab0db6.json",
+    "document_path": "frozen/documents/prophet.txt",
+    "document_sha256": "b808f9a49df8c8d83eeb731093bfe59daa8db2ef17e6521cc7a596ef056410dd",
+    "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned"
+  }
+}

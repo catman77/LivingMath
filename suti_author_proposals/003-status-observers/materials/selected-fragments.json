@@ -1,0 +1,94 @@
+[
+  {
+    "id": "P1-001",
+    "archive_name": "SUTI.uni.zip",
+    "archive_sha256": "020e256a8ed77a91a0d50775c01b54e8b60db87366ea57d7c911ff65a0fd2c37",
+    "member": "SUTI.uni/templates/learning-crystal.v1.schema.json",
+    "source_sha256": "8038431a0c13868dfb0427256f5ee9b32929635d5414c7f2db41652036045ba3",
+    "bytes": 2181,
+    "selected_fields": [
+      "visibility",
+      "transfer_status",
+      "publication_status"
+    ],
+    "spans": [
+      {
+        "source_id": "P1-001",
+        "source_sha256": "8038431a0c13868dfb0427256f5ee9b32929635d5414c7f2db41652036045ba3",
+        "pointer": "/properties/visibility",
+        "start": 648,
+        "end": 715,
+        "byte_start": 648,
+        "byte_end": 715,
+        "quote": "\"visibility\": {\"enum\": [\"private\", \"shared\", \"internal\", \"public\"]}"
+      },
+      {
+        "source_id": "P1-001",
+        "source_sha256": "8038431a0c13868dfb0427256f5ee9b32929635d5414c7f2db41652036045ba3",
+        "pointer": "/properties/transfer_status",
+        "start": 1949,
+        "end": 2042,
+        "byte_start": 1949,
+        "byte_end": 2042,
+        "quote": "\"transfer_status\": {\"enum\": [\"HOLD\", \"ready-after-review\", \"transferred-by-explicit-choice\"]}"
+      },
+      {
+        "source_id": "P1-001",
+        "source_sha256": "8038431a0c13868dfb0427256f5ee9b32929635d5414c7f2db41652036045ba3",
+        "pointer": "/properties/publication_status",
+        "start": 2048,
+        "end": 2142,
+        "byte_start": 2048,
+        "byte_end": 2142,
+        "quote": "\"publication_status\": {\"enum\": [\"HOLD\", \"ready-after-review\", \"published-by-explicit-choice\"]}"
+      }
+    ],
+    "scope": "Schema-admissible counterfactual records and observer information loss only; no runtime action semantics."
+  },
+  {
+    "id": "P1-002",
+    "archive_name": "SUTI.uni.zip",
+    "archive_sha256": "020e256a8ed77a91a0d50775c01b54e8b60db87366ea57d7c911ff65a0fd2c37",
+    "member": "SUTI.uni/SUTI.studium/schemas/study-session.v1.schema.json",
+    "source_sha256": "fda1ee197c3a740f274b6142aae981b8dc4f59c867ff0e8dfbf49ef3dcbf8b74",
+    "bytes": 5012,
+    "selected_fields": [
+      "permissions_review",
+      "decision",
+      "external_transfer"
+    ],
+    "spans": [
+      {
+        "source_id": "P1-002",
+        "source_sha256": "fda1ee197c3a740f274b6142aae981b8dc4f59c867ff0e8dfbf49ef3dcbf8b74",
+        "pointer": "/properties/permissions_review",
+        "start": 2466,
+        "end": 2538,
+        "byte_start": 2466,
+        "byte_end": 2538,
+        "quote": "\"permissions_review\": { \"enum\": [\"PASS\", \"PARTIAL\", \"FAIL\", \"UNKNOWN\"] }"
+      },
+      {
+        "source_id": "P1-002",
+        "source_sha256": "fda1ee197c3a740f274b6142aae981b8dc4f59c867ff0e8dfbf49ef3dcbf8b74",
+        "pointer": "/properties/decision",
+        "start": 4951,
+        "end": 5005,
+        "byte_start": 4951,
+        "byte_end": 5005,
+        "quote": "\"decision\": { \"enum\": [\"COMMIT\", \"HOLD\", \"ROLLBACK\"] }"
+      },
+      {
+        "source_id": "P1-002",
+        "source_sha256": "fda1ee197c3a740f274b6142aae981b8dc4f59c867ff0e8dfbf49ef3dcbf8b74",
+        "pointer": "/properties/external_transfer",
+        "start": 4830,
+        "end": 4870,
+        "byte_start": 4830,
+        "byte_end": 4870,
+        "quote": "\"external_transfer\": { \"const\": \"HOLD\" }"
+      }
+    ],
+    "scope": "Schema-admissible counterfactual records and observer information loss only; no runtime action semantics."
+  }
+]

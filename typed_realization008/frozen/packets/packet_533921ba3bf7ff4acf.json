@@ -1,0 +1,63 @@
+{
+  "id": "packet_533921ba3bf7ff4acf",
+  "document_id": "life",
+  "document_sha256": "2c8cd80feaacbc5fd51a0c6a0d3f1b7be2b3f12488633bdc67fe98a60407f3d8",
+  "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+  "language": "ru",
+  "spans": [
+    {
+      "id": "life:5",
+      "document_id": "life",
+      "document_sha256": "2c8cd80feaacbc5fd51a0c6a0d3f1b7be2b3f12488633bdc67fe98a60407f3d8",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 183,
+      "end": 225,
+      "text": "Сердце в будущем живет;",
+      "source_address": {
+        "html_id": "L5",
+        "section": "life"
+      }
+    },
+    {
+      "id": "life:6",
+      "document_id": "life",
+      "document_sha256": "2c8cd80feaacbc5fd51a0c6a0d3f1b7be2b3f12488633bdc67fe98a60407f3d8",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 226,
+      "end": 256,
+      "text": "Настоящее уныло:",
+      "source_address": {
+        "html_id": "L6",
+        "section": "life"
+      }
+    },
+    {
+      "id": "life:7",
+      "document_id": "life",
+      "document_sha256": "2c8cd80feaacbc5fd51a0c6a0d3f1b7be2b3f12488633bdc67fe98a60407f3d8",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 257,
+      "end": 306,
+      "text": "Все мгновенно, все пройдет;",
+      "source_address": {
+        "html_id": "L7",
+        "section": "life"
+      }
+    },
+    {
+      "id": "life:8",
+      "document_id": "life",
+      "document_sha256": "2c8cd80feaacbc5fd51a0c6a0d3f1b7be2b3f12488633bdc67fe98a60407f3d8",
+      "edition": "RVB Pushkin10vol1959-1962 online6.0 2019; acquired hash-pinned",
+      "start": 307,
+      "end": 355,
+      "text": "Что пройдет, то будет мило.",
+      "source_address": {
+        "html_id": "L8",
+        "section": "life"
+      }
+    }
+  ],
+  "context": [],
+  "grammar": {}
+}

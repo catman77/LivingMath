@@ -1,0 +1,16 @@
+{
+  "project": "BRIDGE_QA_INGEST_DOCS009",
+  "request_key": "artifact-example-v1",
+  "source": {
+    "format": "livingmath-artifact/1",
+    "scope": "example/first-text",
+    "source_name": "Пример из текущего чата",
+    "edition": "Пользовательский текст, версия 1",
+    "language": "ru",
+    "rights": {
+      "basis": "USER_SESSION",
+      "origin": "Текст предоставлен пользователем в текущем чате"
+    },
+    "raw_text": "Скажи слово.\nСлушай голос.\n"
+  }
+}

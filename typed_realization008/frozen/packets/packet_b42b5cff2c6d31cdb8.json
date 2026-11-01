@@ -1,0 +1,123 @@
+{
+  "id": "packet_b42b5cff2c6d31cdb8",
+  "document_id": "ripley004",
+  "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+  "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+  "language": "en",
+  "spans": [
+    {
+      "id": "ripley004:1",
+      "document_id": "ripley004",
+      "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "start": 0,
+      "end": 49,
+      "text": "And we dissolue into water which wetteth no hand,",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[2]/lg[5]/l[1]",
+        "section": "gate2",
+        "stanza": 5,
+        "line": 1,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "ripley004:2",
+      "document_id": "ripley004",
+      "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "start": 50,
+      "end": 95,
+      "text": "For when the earth is integrately incinerate,",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[2]/lg[5]/l[2]",
+        "section": "gate2",
+        "stanza": 5,
+        "line": 2,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "ripley004:3",
+      "document_id": "ripley004",
+      "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "start": 96,
+      "end": 140,
+      "text": "Then is the water congealed; this vnderstand",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[2]/lg[5]/l[3]",
+        "section": "gate2",
+        "stanza": 5,
+        "line": 3,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "ripley004:4",
+      "document_id": "ripley004",
+      "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "start": 141,
+      "end": 185,
+      "text": "For the elements be so together concatenate,",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[2]/lg[5]/l[4]",
+        "section": "gate2",
+        "stanza": 5,
+        "line": 4,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "ripley004:5",
+      "document_id": "ripley004",
+      "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "start": 186,
+      "end": 239,
+      "text": "That when the bodie is from his first forme alterate,",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[2]/lg[5]/l[5]",
+        "section": "gate2",
+        "stanza": 5,
+        "line": 5,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "ripley004:6",
+      "document_id": "ripley004",
+      "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "start": 240,
+      "end": 274,
+      "text": "A new forme is induced immediatly,",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[2]/lg[5]/l[6]",
+        "section": "gate2",
+        "stanza": 5,
+        "line": 6,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "ripley004:7",
+      "document_id": "ripley004",
+      "document_sha256": "365c57d4b382e26a305d9342af67091c7e1ce3fc7b2c1da475013513e09f122f",
+      "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+      "start": 275,
+      "end": 322,
+      "text": "For nothing being without all forme is vtterly.",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[2]/lg[5]/l[7]",
+        "section": "gate2",
+        "stanza": 5,
+        "line": 7,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    }
+  ],
+  "context": [],
+  "grammar": {}
+}

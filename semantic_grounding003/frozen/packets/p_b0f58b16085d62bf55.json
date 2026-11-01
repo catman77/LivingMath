@@ -1,0 +1,123 @@
+{
+  "id": "p_b0f58b16085d62bf55",
+  "document_id": "r4",
+  "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+  "edition": "Ripley1591/TCP-A10786-aa59eb69",
+  "language": "en",
+  "spans": [
+    {
+      "id": "r4:22",
+      "document_id": "r4",
+      "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+      "edition": "Ripley1591/TCP-A10786-aa59eb69",
+      "start": 946,
+      "end": 992,
+      "text": "Of two Coniunctions Philosophers mencion make,",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[4]/lg[4]/l[1]",
+        "gate": 4,
+        "stanza": 4,
+        "line": 1,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "r4:23",
+      "document_id": "r4",
+      "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+      "edition": "Ripley1591/TCP-A10786-aa59eb69",
+      "start": 993,
+      "end": 1045,
+      "text": "Grosse when the bodie with Mercury is reincrudate▪",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[4]/lg[4]/l[2]",
+        "gate": 4,
+        "stanza": 4,
+        "line": 2,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "r4:24",
+      "document_id": "r4",
+      "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+      "edition": "Ripley1591/TCP-A10786-aa59eb69",
+      "start": 1046,
+      "end": 1095,
+      "text": "But let this passe, and to the second heede take,",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[4]/lg[4]/l[3]",
+        "gate": 4,
+        "stanza": 4,
+        "line": 3,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "r4:25",
+      "document_id": "r4",
+      "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+      "edition": "Ripley1591/TCP-A10786-aa59eb69",
+      "start": 1096,
+      "end": 1143,
+      "text": "Which as I saide is after Seperation celebrate,",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[4]/lg[4]/l[4]",
+        "gate": 4,
+        "stanza": 4,
+        "line": 4,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "r4:26",
+      "document_id": "r4",
+      "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+      "edition": "Ripley1591/TCP-A10786-aa59eb69",
+      "start": 1144,
+      "end": 1197,
+      "text": "In which the parties be left with least to colligate,",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[4]/lg[4]/l[5]",
+        "gate": 4,
+        "stanza": 4,
+        "line": 5,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "r4:27",
+      "document_id": "r4",
+      "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+      "edition": "Ripley1591/TCP-A10786-aa59eb69",
+      "start": 1198,
+      "end": 1243,
+      "text": "And so promoted vnto most perfect temperance,",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[4]/lg[4]/l[6]",
+        "gate": 4,
+        "stanza": 4,
+        "line": 6,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "r4:28",
+      "document_id": "r4",
+      "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+      "edition": "Ripley1591/TCP-A10786-aa59eb69",
+      "start": 1244,
+      "end": 1292,
+      "text": "That neuer after amongst them may be repugnance.",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[4]/lg[4]/l[7]",
+        "gate": 4,
+        "stanza": 4,
+        "line": 7,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    }
+  ],
+  "context": [],
+  "grammar": {}
+}

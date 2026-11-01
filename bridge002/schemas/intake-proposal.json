@@ -1,0 +1,279 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "bridge002-local-intake-proposal/v0.1"
+    },
+    "profile_status": {
+      "const": "AWAITING_SUTI_APPROVAL"
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 4000000
+        },
+        "mime_type": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4096
+        },
+        "observer_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        }
+      },
+      "required": [
+        "id",
+        "revision",
+        "sha256",
+        "bytes",
+        "mime_type",
+        "observer_id"
+      ]
+    },
+    "origin": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "producer": {
+          "enum": [
+            "SUTI",
+            "SYNTHETIC"
+          ]
+        },
+        "producer_version": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4096
+        },
+        "exported_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "procedure": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4096
+        },
+        "origin_record_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "required": [
+        "producer",
+        "producer_version",
+        "exported_at",
+        "procedure",
+        "origin_record_sha256"
+      ]
+    },
+    "rights": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "owner_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "allowed_uses": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "local_experiment",
+              "private_storage"
+            ]
+          },
+          "maxItems": 128
+        },
+        "redistribution_allowed": {
+          "type": "boolean"
+        },
+        "retention_until": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "constraints": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          },
+          "maxItems": 128
+        }
+      },
+      "required": [
+        "owner_id",
+        "allowed_uses",
+        "redistribution_allowed",
+        "retention_until",
+        "constraints"
+      ]
+    },
+    "annotations": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "D": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "must_preserve"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "must_preserve": {
+                "type": "boolean"
+              }
+            },
+            "additionalProperties": true
+          },
+          "maxItems": 128
+        },
+        "R": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "must_preserve"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "must_preserve": {
+                "type": "boolean"
+              }
+            },
+            "additionalProperties": true
+          },
+          "maxItems": 128
+        },
+        "T": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "must_preserve"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "must_preserve": {
+                "type": "boolean"
+              }
+            },
+            "additionalProperties": true
+          },
+          "maxItems": 128
+        },
+        "O": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "must_preserve"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 128
+              },
+              "must_preserve": {
+                "type": "boolean"
+              }
+            },
+            "additionalProperties": true
+          },
+          "maxItems": 128
+        }
+      },
+      "required": [
+        "D",
+        "R",
+        "T",
+        "O"
+      ]
+    },
+    "authorized_reviewers": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 128
+      },
+      "maxItems": 128
+    },
+    "opaque_extensions": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "consent": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "key_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "signature_hex": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{128}$"
+        }
+      },
+      "required": [
+        "key_id",
+        "signature_hex"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "profile_status",
+    "source",
+    "origin",
+    "rights",
+    "annotations",
+    "authorized_reviewers",
+    "opaque_extensions",
+    "consent"
+  ]
+}

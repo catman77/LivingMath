@@ -1,0 +1,33 @@
+{
+  "pilot_n": 24,
+  "styles": 4,
+  "author": "Original AI-authored open fragments; historical style is not archival primary evidence",
+  "blinding": "OPEN_AUTHOR_KNOWN; NOT_PROSPECTIVE_BLIND",
+  "A0_available_pilot": 24,
+  "readable_model_availability_pilot": 1.0,
+  "C_additional_discriminators_vs_B_plus": 0,
+  "C_questions": 8,
+  "B_plus_questions": 8,
+  "semantic_accuracy": null,
+  "semantic_coverage": null,
+  "unsupported_definite_claim_rate": null,
+  "correct_source_discriminator_rate": null,
+  "independent_source_validations": 0,
+  "human_reviewers": 0,
+  "human_gold": "HUMAN_GOLD_NOT_AVAILABLE",
+  "noninferiority": "NOT_TESTED",
+  "confidence_interval": null,
+  "known_cost_bound": [
+    "K4415",
+    "KREORDER",
+    "KNO_REPEAT"
+  ],
+  "known_semantic_checks": "PARTIAL;3 COST_BOUND cases NOT_TESTED",
+  "mutation_cases": 12,
+  "mutation_semantic_accuracy": null,
+  "critic_exposure": "Full common A0 including unselected source forecasts; no evaluator-selected mathematical query, target model/proof or gold. Not a blinded source reviewer.",
+  "confirmatory_n": 0,
+  "confirmatory_status": "NOT_TESTED",
+  "scientific_verdict": "FAIL_NO_GAIN_OVER_B_PLUS",
+  "recommendation": "B/B_PLUS_PRIMARY; C_EXPERIMENTAL; STOP_NO_OBSERVER015"
+}

@@ -1,0 +1,84 @@
+{
+  "status": "PASS_EXACT_ISSUED_ZIP_REPLAY",
+  "archive": {
+    "path": "releases/LM_DAV_ARTIFACT_GENESIS_002_20261031.zip",
+    "sha256": "ba008ea95006a42341b397b48c7424dd13f0fb179163e088d424772082b102ad",
+    "bytes": 7580088,
+    "files": 424,
+    "bundle_manifest_sha256": "a53305a51c4131f89dfc378113253867606f81bf34e8bd3137141853b68514ab"
+  },
+  "replay": {
+    "status": "PASS_CLEAN_EXTRACTED_GENESIS_REPLAY",
+    "scientific_status": "INSUFFICIENT_SEMANTIC_EVIDENCE",
+    "G3": "FAIL",
+    "semantic_review": "SEMANTIC_NOT_EXTERNALLY_REVIEWED",
+    "old001_G3": "FAIL_NO_NEW_STRUCTURAL_TRANSFER",
+    "scientific_sha256": {
+      "candidate-source-relations.jsonl": "0e8eb3fe008ef0ca1ba149f5526be40b59014a64b2daa53a403eef548e98baaa",
+      "alternative-readings.jsonl": "f02256ce1de8829939305343c4c30644724f61198e7464056b56f719f2b56050",
+      "repair-history.jsonl": "5de6c2a12a6cc173d7844f84a184592f02f7a1dfb24003036ab1faeeadffc931",
+      "preholdout-predictions.jsonl": "3479b9338e252ef645a103905fab8c9a4e65395d13a5067793c8c31a20b03331",
+      "holdout-checks.jsonl": "8438089729426bafe2e3cb98b47f95c2099017e201fdec739f960b65ea324985",
+      "nontriviality-controls.jsonl": "5ddb12cd39f339e35ce9cf76e158f2cb25e37b17398ab2c0df818f45c2b8285d",
+      "target-bindings.jsonl": "71ae3815aa2cde88ae9865077c675a5448d17d00119db311d39154e50b2bec20",
+      "loss-ledger.jsonl": "d7934c7d0a6020d6dda59e14bca51479dd7464d8c7a08246f5d73bcd78237130",
+      "source-audits.jsonl": "74ab17efff6893418c51569708880e4745735f32e532f0a0d3065ebb8ea4feb8",
+      "unknown-resolution.jsonl": "d9b4cd2f39163f3a1af7a3a49bf738c3d4b7ce91e2d131b9d9e554b3b4d5328f"
+    },
+    "private_mcp_status": "PASS_EXISTING_PRIVATE_OAUTH_MCP",
+    "private_mcp_calls": 25,
+    "private_mcp_checks": 42,
+    "journal": {
+      "ok": true,
+      "entries": 83,
+      "head_hash": "33e823da0cbf493b6a3510198948816d934e0a121af7265616bb983a22eeb9ae",
+      "identity_scope": "LOCAL_EXPERIMENT_NOT_MCP_ID"
+    },
+    "source_tree": "/home/catman/.local/state/livingmath/artifact_genesis002/20261030T213046Z/extracted-final/ARTIFACT_GENESIS_002/live_math_mcp_prod",
+    "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:16:10) [GCC 11.2.0]",
+    "bundle_manifest_sha256": "a53305a51c4131f89dfc378113253867606f81bf34e8bd3137141853b68514ab",
+    "production_accessed": false,
+    "ALCH005_sealed_accessed": false,
+    "network_required_except_loopback": false,
+    "wall_ms": 23924.814749974757,
+    "proof_status": "unverified",
+    "execution_permission": {
+      "allowed": false
+    }
+  },
+  "targeted_tests": {
+    "passed": 62,
+    "log_sha256": "39cf9a8dcac22ece639dcc93596aa4b120ccb9094e655ad0213612cb8eeb9d7c"
+  },
+  "production_final_check": {
+    "protected_files_unchanged": 2342,
+    "source_freeze_unchanged": true,
+    "production_DBs": {
+      "canonical": {
+        "unchanged": true,
+        "integrity": "ok",
+        "tables": 20
+      },
+      "typed": {
+        "unchanged": true,
+        "integrity": "ok",
+        "tables": 36
+      },
+      "dav": {
+        "unchanged": true,
+        "integrity": "ok",
+        "tables": 1
+      }
+    },
+    "production_services_unchanged": true
+  },
+  "secret_scan": {
+    "status": "PASS",
+    "members_checked": 866,
+    "credential_matches": 0,
+    "private_db_or_key_members": 0
+  },
+  "immutable_old_source_files_in_ZIP": 303,
+  "required_deliverables": 17,
+  "scope": "Software/process replay PASS; scientific result stays insufficient, G3 FAIL. No production deployment."
+}

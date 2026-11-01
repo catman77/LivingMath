@@ -1,0 +1,441 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "normalizer_version": {
+      "type": "string"
+    },
+    "project": {
+      "type": "string"
+    },
+    "focus": {
+      "type": "string"
+    },
+    "level": {
+      "enum": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C4"
+      ]
+    },
+    "status": {
+      "enum": [
+        "COMPLETE",
+        "INSUFFICIENT_CONTEXT",
+        "EXPLANATION_ONLY"
+      ]
+    },
+    "input_digest": {
+      "type": "string"
+    },
+    "source_catalog": {
+      "type": "object"
+    },
+    "concepts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "concept_id": {
+            "type": "string"
+          },
+          "surface_forms": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "type": "string"
+                },
+                "raw_literal": {
+                  "type": "string"
+                },
+                "source_ref": {
+                  "type": "string"
+                },
+                "span": {
+                  "type": "object",
+                  "properties": {
+                    "field": {
+                      "type": "string"
+                    },
+                    "start": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "end": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "json_pointer": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "field",
+                    "start",
+                    "end",
+                    "json_pointer"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "required": [
+                "text",
+                "raw_literal",
+                "source_ref",
+                "span"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "claim_type": {
+            "enum": [
+              "SOURCE_CLAIM",
+              "HYPOTHESIS",
+              "EXPERIMENT_RESULT",
+              "COUNTEREXAMPLE",
+              "UNKNOWN",
+              "FORMAL_CLAIM",
+              "OPERATOR_DECISION"
+            ]
+          },
+          "statement": {},
+          "source_record": {
+            "type": "object"
+          },
+          "source_refs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "ref": {
+                  "type": "string"
+                },
+                "project": {
+                  "type": "string"
+                },
+                "sha256": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                },
+                "span": {
+                  "type": "object",
+                  "properties": {
+                    "field": {
+                      "type": "string"
+                    },
+                    "start": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "end": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "json_pointer": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "field",
+                    "start",
+                    "end",
+                    "json_pointer"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "required": [
+                "ref",
+                "project",
+                "sha256",
+                "span"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "premises": {
+            "type": "array",
+            "items": {}
+          },
+          "scope": {},
+          "representation": {},
+          "version": {},
+          "claim_map": {},
+          "method_model": {
+            "type": "object",
+            "properties": {
+              "input": {},
+              "operation": {},
+              "output": {}
+            },
+            "required": [
+              "input",
+              "operation",
+              "output"
+            ],
+            "additionalProperties": false
+          },
+          "counter_reading": {},
+          "observables": {
+            "type": "array",
+            "items": {}
+          },
+          "alternatives": {
+            "type": "array",
+            "items": {}
+          },
+          "counterevidence": {
+            "type": "array",
+            "items": {}
+          },
+          "unknowns": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "field": {
+                  "type": "string"
+                },
+                "reason": {
+                  "type": "string"
+                },
+                "source_ref": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "field",
+                "reason",
+                "source_ref"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "open_obligations": {
+            "type": "array",
+            "items": {}
+          },
+          "relations": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "enum": [
+                    "depends_on",
+                    "contradicts",
+                    "alias_candidate",
+                    "refines",
+                    "derived_from",
+                    "requires_witness",
+                    "independent_of"
+                  ]
+                },
+                "target_ref": {
+                  "type": "string"
+                },
+                "source_refs": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "ref": {
+                        "type": "string"
+                      },
+                      "project": {
+                        "type": "string"
+                      },
+                      "sha256": {
+                        "type": "string",
+                        "pattern": "^[0-9a-f]{64}$"
+                      },
+                      "span": {
+                        "type": "object",
+                        "properties": {
+                          "field": {
+                            "type": "string"
+                          },
+                          "start": {
+                            "type": "integer",
+                            "minimum": 0
+                          },
+                          "end": {
+                            "type": "integer",
+                            "minimum": 0
+                          },
+                          "json_pointer": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "field",
+                          "start",
+                          "end",
+                          "json_pointer"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "required": [
+                      "ref",
+                      "project",
+                      "sha256",
+                      "span"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "assertion_status": {
+                  "enum": [
+                    "SOURCE_DECLARED",
+                    "HYPOTHESIS"
+                  ]
+                },
+                "substitution_allowed": {
+                  "const": false
+                }
+              },
+              "required": [
+                "type",
+                "target_ref",
+                "source_refs",
+                "assertion_status",
+                "substitution_allowed"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "epistemic_status": {
+            "enum": [
+              "observed",
+              "unverified",
+              "refuted",
+              "superseded",
+              "requires_review"
+            ]
+          },
+          "extraction_method": {
+            "type": "string"
+          },
+          "normalizer_version": {
+            "type": "string"
+          },
+          "input_hashes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "confidence": {
+            "type": "object",
+            "properties": {
+              "extraction_quality": {
+                "enum": [
+                  "EXACT_JSON",
+                  "OPAQUE",
+                  "AMBIGUOUS"
+                ]
+              },
+              "truth_probability": {
+                "type": "null"
+              }
+            },
+            "required": [
+              "extraction_quality",
+              "truth_probability"
+            ],
+            "additionalProperties": false
+          },
+          "loss_ledger": {
+            "type": "array",
+            "items": {}
+          }
+        },
+        "required": [
+          "concept_id",
+          "surface_forms",
+          "claim_type",
+          "statement",
+          "source_record",
+          "source_refs",
+          "premises",
+          "scope",
+          "representation",
+          "version",
+          "claim_map",
+          "method_model",
+          "counter_reading",
+          "observables",
+          "alternatives",
+          "counterevidence",
+          "unknowns",
+          "open_obligations",
+          "relations",
+          "epistemic_status",
+          "extraction_method",
+          "normalizer_version",
+          "input_hashes",
+          "confidence",
+          "loss_ledger"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "interpretations": {
+      "type": "array",
+      "items": {}
+    },
+    "audit_context": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "coverage": {
+      "type": "object"
+    },
+    "unresolved": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "loss_ledger": {
+      "type": "array",
+      "items": {}
+    },
+    "certificate": {
+      "type": "object"
+    },
+    "proof_status": {
+      "const": "unverified"
+    }
+  },
+  "required": [
+    "schema_version",
+    "normalizer_version",
+    "project",
+    "focus",
+    "level",
+    "status",
+    "input_digest",
+    "source_catalog",
+    "concepts",
+    "interpretations",
+    "audit_context",
+    "coverage",
+    "unresolved",
+    "loss_ledger",
+    "certificate",
+    "proof_status"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LivingMath source-preserving normalization view v1"
+}

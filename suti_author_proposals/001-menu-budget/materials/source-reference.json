@@ -1,0 +1,36 @@
+{
+  "archive": {
+    "name": "SUTI.uni.zip",
+    "sha256": "020e256a8ed77a91a0d50775c01b54e8b60db87366ea57d7c911ff65a0fd2c37"
+  },
+  "source": {
+    "member": "SUTI.uni/SUTI.game/algorithm-contour.v1.md",
+    "sha256": "fd44e90f875913c54cb3f5fb61e8a088f2e9e89e74fcfeb3b3d59ac74cca0f55",
+    "bytes": 14505
+  },
+  "scope": "Source-local counting limit; current working document, not a formal release.",
+  "materials": {
+    "analysis-for-author.md": {
+      "copied_from": "bridge002/explanation-for-author.md",
+      "sha256": "1d7d017b755900158e49ae7cefc17e81724af89e47f95efaf1ae38ef2c392c50"
+    },
+    "counterexample.json": {
+      "copied_from": "bridge002/evidence/working-current/first-counterexample.json",
+      "sha256": "cd915ad1c0c974eab6ddcf8b20bc3be2027d6318e2b8392a385e0bc95470c9d6"
+    },
+    "source-clarification.diff": {
+      "copied_from": "bridge002/source-clarification-proposal.diff",
+      "sha256": "90474535a2e74d3f1c9b3a1aca3130a5800a3476c15540502ce05b3ee63b7cef"
+    }
+  },
+  "evidence": {
+    "case_report": "../../../bridge002/report.md",
+    "models": "../../../bridge002/bridge2/choice_case.py",
+    "working_contract": "../../../bridge002/evidence/working-current/contract.json",
+    "MCP_result": "../../../bridge002/evidence/working-current/mcp/result.json"
+  },
+  "author_feedback": {
+    "status": "NO_REVIEW",
+    "response_received": false
+  }
+}

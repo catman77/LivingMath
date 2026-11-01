@@ -1,0 +1,43 @@
+{
+  "id": "p_9660d9dcf1a5222a03",
+  "document_id": "r4",
+  "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+  "edition": "Ripley1591/TCP-A10786-aa59eb69",
+  "language": "en",
+  "spans": [
+    {
+      "id": "r4:3",
+      "document_id": "r4",
+      "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+      "edition": "Ripley1591/TCP-A10786-aa59eb69",
+      "start": 94,
+      "end": 143,
+      "text": "The chapter here followeth of secret Coniunction,",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[4]/lg[1]/l[3]",
+        "gate": 4,
+        "stanza": 1,
+        "line": 3,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    },
+    {
+      "id": "r4:9",
+      "document_id": "r4",
+      "document_sha256": "d4c6075fd69e3be395633c2234d500c26bcfaa67a939a5b83f4a6d4c1ba9a122",
+      "edition": "Ripley1591/TCP-A10786-aa59eb69",
+      "start": 372,
+      "end": 410,
+      "text": "Saying this Coniunction is nothing els",
+      "source_address": {
+        "xml_path": "/TEI/text/body/div[3]/div[4]/lg[2]/l[2]",
+        "gate": 4,
+        "stanza": 2,
+        "line": 2,
+        "upstream_sha256": "2f0265dc83f8d64a6fcd5fefd61bae4861cd2ac65c3bb0579f0b0837c457ba8b"
+      }
+    }
+  ],
+  "context": [],
+  "grammar": {}
+}

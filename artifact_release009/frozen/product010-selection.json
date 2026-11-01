@@ -1,0 +1,60 @@
+{
+  "selected_before_execution": true,
+  "selection_changes_allowed": false,
+  "sources": [
+    {
+      "id": "010-A",
+      "selection": "Chosen before testing or observer extension; public-domain 1837 poem, first two addressed lines.",
+      "input": {
+        "format": "livingmath-artifact/1",
+        "scope": "product/borodino",
+        "source_name": "borodino-excerpt",
+        "edition": "Lermontov Borodino1837, public domain short excerpt",
+        "language": "ru",
+        "rights": {
+          "basis": "PUBLIC_DOMAIN",
+          "origin": "https://ru.wikisource.org/wiki/Бородино_(Лермонтов)",
+          "attribution": "М. Ю. Лермонтов, Бородино (1837)"
+        },
+        "raw_text": "— Скажи-ка, дядя, ведь не даром\nМосква, спаленная пожаром,\n",
+        "expected_sha256": "14ec6ac337bfc9d2256d891e1685d1d58c4555243a52f4524b673b316d87e6ab"
+      }
+    },
+    {
+      "id": "010-B",
+      "selection": "Chosen before testing: Ripley addressed lines36–39 outside all eight proposal/validation tasks; known archive, not a blind scientific transfer.",
+      "input": {
+        "format": "livingmath-artifact/1",
+        "scope": "product/cold-air",
+        "source_name": "ripley-other-excerpt",
+        "edition": "Ripley1591/TCP-aa59eb69/public-projection004",
+        "language": "en",
+        "rights": {
+          "basis": "USER_SESSION",
+          "origin": "Owner-authorized hash-pinned Ripley working text, lines36–39",
+          "attribution": "George Ripley, The compound of alchymy"
+        },
+        "raw_text": "For when the colde hath ouercome the heate,\nThen into water the Ayre shall turned be,\nAnd so two contraries together shall meete,\nTill either with orher right well agree,\n",
+        "expected_sha256": "9ef620ffc00b472d367f4e5a06fbc87a4e5045c3fe81839b52bbe7117ef78ed7"
+      }
+    },
+    {
+      "id": "010-U",
+      "selection": "Preregistered unsupported prose, no installed relation grammar; no replacement after testing.",
+      "input": {
+        "format": "livingmath-artifact/1",
+        "scope": "product/unsupported",
+        "source_name": "unsupported-prose",
+        "edition": "Lermontov Borodino1837 excerpt",
+        "language": "ru",
+        "rights": {
+          "basis": "PUBLIC_DOMAIN",
+          "origin": "https://ru.wikisource.org/wiki/Бородино_(Лермонтов)",
+          "attribution": "М. Ю. Лермонтов"
+        },
+        "raw_text": "Богатыри — не вы!\n",
+        "expected_sha256": "04e9b408ac6c962df7db00386f0c16b7d1258ae13648366c80d5e26281811ba6"
+      }
+    }
+  ]
+}

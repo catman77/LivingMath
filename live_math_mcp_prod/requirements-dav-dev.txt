@@ -1,0 +1,4 @@
+-r requirements-019.in
+-r requirements-dav.txt
+mypy==2.4.1
+ruff==0.17.3

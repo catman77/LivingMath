@@ -1,0 +1,275 @@
+{
+  "schema_version": "bridge-contract/v0.1",
+  "contract_id": "contract-poetry",
+  "revision": 1,
+  "source_id": "fixture-poetry",
+  "creator_id": "synthetic-fixture-author-NOT-HUMAN",
+  "source_hash": "be2d169ffee5a518aa1ba6214be24622be477eda7959981e4259fe9c8bd36863",
+  "created_at": "2026-10-28T00:00:00Z",
+  "observer_id": "fixture-observer-v1",
+  "rights": {
+    "owner": "Local synthetic QA fixture generated for this implementation; no external poetry",
+    "scope": [
+      "local_process",
+      "local_export",
+      "mcp_metadata"
+    ],
+    "license": "Synthetic test permission for repository QA; no rights claimed over SUTI or the presentation",
+    "retention": {
+      "expires_at": "2030-01-01T00:00:00Z",
+      "policy": "Raw content in separate fixture files; remove at expiry, retain hashes only under lawful audit basis."
+    },
+    "redaction": {
+      "mode": "deny_external",
+      "reason": "Only non-content metadata may reach live MCP."
+    }
+  },
+  "provenance": [
+    {
+      "ref": "local synthetic fixture, not a SUTI export",
+      "sha256": "be2d169ffee5a518aa1ba6214be24622be477eda7959981e4259fe9c8bd36863"
+    }
+  ],
+  "X": {
+    "source_ref": "fixtures/poetry.txt",
+    "mime_type": "text/plain",
+    "sha256": "be2d169ffee5a518aa1ba6214be24622be477eda7959981e4259fe9c8bd36863",
+    "declared_reader": "bridge-fixture/poetry"
+  },
+  "D": [
+    {
+      "id": "D1",
+      "source_address": {
+        "source_id": "fixture-poetry",
+        "kind": "text_span",
+        "start": 0,
+        "end": 25,
+        "quote": "Окно хранит повтор дождя."
+      },
+      "statement": "Repetition belongs to text A, not a mathematical fixed point.",
+      "must_preserve": true,
+      "test_oracle": {
+        "kind": "structural",
+        "test_id": "D1:source_binding",
+        "expected": "Repetition belongs to text A, not a mathematical fixed point.",
+        "evaluator": "independent exact-address/hash audit; reader meaning separately unknown"
+      },
+      "acceptable_loss": "REFUSE",
+      "author_reason": "Synthetic operator-authored QA declaration; no SUTI-author recognition claimed."
+    },
+    {
+      "id": "D2",
+      "source_address": {
+        "source_id": "fixture-poetry",
+        "kind": "text_span",
+        "start": 52,
+        "end": 81,
+        "quote": "За дверью сад чертит границу."
+      },
+      "statement": "Boundary belongs to text B; changing order can change the declared attention model.",
+      "must_preserve": true,
+      "test_oracle": {
+        "kind": "structural",
+        "test_id": "D2:source_binding",
+        "expected": "Boundary belongs to text B; changing order can change the declared attention model.",
+        "evaluator": "independent exact-address/hash audit; reader meaning separately unknown"
+      },
+      "acceptable_loss": "REFUSE",
+      "author_reason": "Synthetic operator-authored QA declaration; no SUTI-author recognition claimed."
+    }
+  ],
+  "R": [
+    {
+      "id": "R1",
+      "source_address": {
+        "source_id": "fixture-poetry",
+        "kind": "text_span",
+        "start": 0,
+        "end": 25,
+        "quote": "Окно хранит повтор дождя."
+      },
+      "statement": "Keep the two distinctions separate.",
+      "must_preserve": true,
+      "test_oracle": {
+        "kind": "structural",
+        "test_id": "R1:source_binding",
+        "expected": "Keep the two distinctions separate.",
+        "evaluator": "independent exact-address/hash audit; reader meaning separately unknown"
+      },
+      "acceptable_loss": "REFUSE",
+      "type": "source-local:separation",
+      "distinction_ids": [
+        "D1",
+        "D2"
+      ]
+    }
+  ],
+  "T": [
+    {
+      "id": "read_A",
+      "source_address": {
+        "source_id": "fixture-poetry",
+        "kind": "text_span",
+        "start": 52,
+        "end": 81,
+        "quote": "За дверью сад чертит границу."
+      },
+      "statement": "Apply only the declared read_A finite model.",
+      "must_preserve": true,
+      "test_oracle": {
+        "kind": "structural",
+        "test_id": "read_A:source_binding",
+        "expected": "Apply only the declared read_A finite model.",
+        "evaluator": "independent exact-address/hash audit; reader meaning separately unknown"
+      },
+      "acceptable_loss": "REFUSE",
+      "distinction_ids": [
+        "D1",
+        "D2"
+      ],
+      "initial_state": "Declared local demo initial state; no LivingMath activation",
+      "input": "read_A",
+      "result_meaning": "Finite model observation only",
+      "preconditions": [
+        "signed local fixture consent",
+        "declared model family"
+      ],
+      "forbidden_transformations": [
+        "erase mandatory distinction",
+        "declare verified",
+        "grant execution",
+        "equate scalar observation with source identity"
+      ],
+      "composition_order": [
+        "read_A",
+        "read_B"
+      ],
+      "authorized_roles": [
+        "operator"
+      ]
+    },
+    {
+      "id": "read_B",
+      "source_address": {
+        "source_id": "fixture-poetry",
+        "kind": "text_span",
+        "start": 52,
+        "end": 81,
+        "quote": "За дверью сад чертит границу."
+      },
+      "statement": "Apply only the declared read_B finite model.",
+      "must_preserve": true,
+      "test_oracle": {
+        "kind": "structural",
+        "test_id": "read_B:source_binding",
+        "expected": "Apply only the declared read_B finite model.",
+        "evaluator": "independent exact-address/hash audit; reader meaning separately unknown"
+      },
+      "acceptable_loss": "REFUSE",
+      "distinction_ids": [
+        "D1",
+        "D2"
+      ],
+      "initial_state": "Declared local demo initial state; no LivingMath activation",
+      "input": "read_B",
+      "result_meaning": "Finite model observation only",
+      "preconditions": [
+        "signed local fixture consent",
+        "declared model family"
+      ],
+      "forbidden_transformations": [
+        "erase mandatory distinction",
+        "declare verified",
+        "grant execution",
+        "equate scalar observation with source identity"
+      ],
+      "composition_order": [
+        "read_A",
+        "read_B"
+      ],
+      "authorized_roles": [
+        "operator"
+      ]
+    }
+  ],
+  "O": [
+    {
+      "id": "O1",
+      "source_address": {
+        "source_id": "fixture-poetry",
+        "kind": "text_span",
+        "start": 52,
+        "end": 81,
+        "quote": "За дверью сад чертит границу."
+      },
+      "statement": "Measure finite model outputs while retaining independent semantic review.",
+      "must_preserve": true,
+      "test_oracle": {
+        "kind": "structural",
+        "test_id": "O1:source_binding",
+        "expected": "Measure finite model outputs while retaining independent semantic review.",
+        "evaluator": "independent exact-address/hash audit; reader meaning separately unknown"
+      },
+      "acceptable_loss": "REFUSE",
+      "distinction_ids": [
+        "D1",
+        "D2"
+      ],
+      "method": "Fixed reviewed Python demo; independently recomputed",
+      "scope": "Synthetic local fixture only",
+      "uncertainty": "No human/author semantic judgment available",
+      "evidence_type": "structural"
+    },
+    {
+      "id": "O2",
+      "source_address": {
+        "source_id": "fixture-poetry",
+        "kind": "text_span",
+        "start": 0,
+        "end": 25,
+        "quote": "Окно хранит повтор дождя."
+      },
+      "statement": "Author recognizes the intended meaning.",
+      "must_preserve": false,
+      "test_oracle": {
+        "kind": "reader_judgment",
+        "test_id": "O2:source_binding",
+        "expected": "Author recognizes the intended meaning.",
+        "evaluator": "independent exact-address/hash audit; reader meaning separately unknown"
+      },
+      "acceptable_loss": "ALLOW_LOSS",
+      "distinction_ids": [
+        "D1"
+      ],
+      "method": "Independent signed author receipt",
+      "scope": "Original source and exact projection revision",
+      "uncertainty": "NO_REVIEW",
+      "evidence_type": "reader_judgment"
+    }
+  ],
+  "P": {
+    "confirmed_revision": 1,
+    "attestations": [
+      {
+        "attestation_id": "fixture-consent-poetry",
+        "key_id": "fixture-operator-v1",
+        "identity": "local-fixture-operator",
+        "role": "operator",
+        "contract_sha256": "dd6259f7fdafa8ecdb53bfa64cf1550e2ebc2233f3fea51a140548475ae785b6",
+        "signed_at": "2026-10-28T00:00:00Z",
+        "signature_hex": "b9c15bdcc57b706269b56a7ea88b7dd85edf576662b45413bc52cbe7e914ed7c141128758541474f59c4540876abf12a9dc5e78a0850e8b6c7d815a0f501cf05"
+      }
+    ],
+    "amendments": [],
+    "revoked_attestation_ids": []
+  },
+  "ambiguities": [
+    "A finite model does not exhaust human meaning."
+  ],
+  "unknowns": [
+    "Author review and real SUTI export are unavailable."
+  ],
+  "explicit_nonclaims": [
+    "No new theorem, no physical law, no SUTI API approval, no mathematical verification."
+  ]
+}
