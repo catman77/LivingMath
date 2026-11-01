@@ -1,0 +1,14 @@
+# Managed by LivingMath ROBLOX-PRED-001
+[Unit]
+Description=LivingMath Roblox public API observation (one bounded snapshot)
+
+[Service]
+Type=oneshot
+WorkingDirectory=@PROJECT_ROOT@
+ExecStart="@PYTHON@" "@PROJECT_ROOT@/scripts/collect_snapshots.py" --config "@PROJECT_ROOT@/configs/public-observation.yaml"
+Environment=PYTHONUNBUFFERED=1
+UMask=0077
+NoNewPrivileges=true
+TimeoutStartSec=90
+StandardOutput=journal
+StandardError=journal

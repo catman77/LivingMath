@@ -45,7 +45,7 @@ def test_sampling_slot_and_foreign_universe_are_not_outcomes():
 
 
 def test_import_manifest_missing_is_explicit_gate(tmp_path):
-    with pytest.raises(ValueError, match='NO_LICENSED_MANIFEST'):
+    with pytest.raises(ValueError, match='NO_OBSERVED_DATASET_MANIFEST'):
         build_dataset(tmp_path, {'input_manifest': 'missing.json'})
 
 

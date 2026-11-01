@@ -61,12 +61,17 @@ def registry(root: Path, config: dict) -> dict[str, SourcePolicy]:
 
 
 def authorize(policy: SourcePolicy, root: Path, *, collect: bool = False) -> None:
-    if (policy.rights_status != 'EXPLICIT_EXCEPTION_OR_LICENSE' or not policy.ml_allowed
-            or not policy.commercial_allowed or (collect and not policy.collection_allowed)):
+    public_observation = (policy.family == 'ROBLOX_PUBLIC'
+        and policy.rights_status == 'PUBLIC_API_OBSERVATION'
+        and ((collect and policy.collection_allowed) or (not collect and policy.ml_allowed and policy.commercial_allowed))
+        and policy.documentation_url == 'https://create.roblox.com/docs/cloud/reference/domains/games')
+    licensed = (policy.rights_status == 'EXPLICIT_EXCEPTION_OR_LICENSE' and policy.ml_allowed
+        and policy.commercial_allowed and (not collect or policy.collection_allowed))
+    if not public_observation and not licensed:
         raise ValueError('SOURCE_RIGHTS_BLOCKED:' + policy.source_id)
     if not policy.authorization_evidence or not policy.authorization_sha256:
         raise ValueError('SOURCE_RIGHTS_EVIDENCE_REQUIRED')
     evidence = (root / policy.authorization_evidence).resolve(strict=True)
     if hashlib.sha256(evidence.read_bytes()).hexdigest() != policy.authorization_sha256:
         raise ValueError('SOURCE_RIGHTS_EVIDENCE_DRIFT')
-    # This records an operator-reviewed evidence document, never machine-certified rights.
+    # Scope flags record the operator's choice, not an independent legal certification.

@@ -50,7 +50,7 @@ def main(command: str) -> int:
                 raise ValueError('COLLECTION_DISABLED_NO_SCHEDULER_INSTALLED')
             if collect['max_cycles'] != 1:
                 raise ValueError('BOUNDED_SINGLE_CYCLE_REQUIRED_USE_EXTERNAL_APPROVED_SCHEDULE')
-            frame_path = root/'data'/'input'/'prospective-frame.json'
+            frame_path = root/collect.get('frame_file', 'data/input/prospective-frame.json')
             frame = json.loads(frame_path.read_text())
             if (set(frame['universe_ids']) != set(collect['universe_ids'])
                     or frame['frame_id'] != config['cohort']['frame_id']
@@ -58,7 +58,7 @@ def main(command: str) -> int:
                 raise ValueError('PROSPECTIVE_FIXED_FRAME_REQUIRED')
             # Freeze *before* the first call; future additions need a separate cohort/version.
             from roblox_pred.evaluation.runner import freeze
-            freeze(root/'data'/'processed'/'prospective-frame-frozen.json', {
+            freeze(root/config['storage']['directory']/'prospective-frame-frozen.json', {
                 'frame': frame, 'protocol': config, 'source_policy': policy.model_dump()})
             journal = root/'data'/'raw'/'collection-journal.jsonl'
             journal.parent.mkdir(parents=True, exist_ok=True, mode=0o700)

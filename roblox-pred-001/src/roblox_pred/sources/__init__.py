@@ -1,4 +1,4 @@
-"""Documented public transport; current ML-denied policy is checked before network IO."""
+"""Documented public transport with explicit collection/analysis scope and bounded IO."""
 from datetime import UTC, datetime
 import hashlib
 import json
@@ -21,11 +21,25 @@ class RobloxPublicSource:
         self.started = time.monotonic()
 
     def fetch(self, universe_ids: list[int]) -> tuple[list[Game], list[Snapshot], dict]:
-        authorize(self.policy, self.root, collect=True)
-        if self.policy.family != 'ROBLOX_PUBLIC' or not universe_ids or len(universe_ids) > 50:
+        if not universe_ids or len(universe_ids) > 50:
             raise ValueError('REGISTERED_PUBLIC_SOURCE_AND_BOUNDED_UNIVERSES_REQUIRED')
         if len(set(universe_ids)) != len(universe_ids) or any(type(x) is not int or x <= 0 for x in universe_ids):
             raise ValueError('INVALID_UNIVERSE_IDENTITIES')
+        payload, receipt = self.get_public_json('/v1/games', {'universeIds': ','.join(map(str, universe_ids))})
+        receipt['requested_universe_ids'] = universe_ids
+        observed = datetime.fromisoformat(receipt['observed_at'])
+        games, snapshots = normalize(payload, universe_ids, observed, receipt, self.policy.source_id,
+                                     self.policy.authorization_sha256 or '')
+        return games, snapshots, receipt
+
+    def get_public_json(self, path: str, params: dict) -> tuple[dict, dict]:
+        import re
+        authorize(self.policy, self.root, collect=True)
+        if self.policy.family != 'ROBLOX_PUBLIC' or not re.fullmatch(
+                r'/v1/games|/v2/groups/[1-9][0-9]*/gamesV2|/v2/users/[1-9][0-9]*/games', path):
+            raise ValueError('UNDOCUMENTED_OR_PRIVATE_ENDPOINT')
+        if path != '/v1/games' and params.get('accessFilter') != 'Public':
+            raise ValueError('PUBLIC_CATALOG_FILTER_REQUIRED')
         if self.calls >= self.limits['max_requests'] or time.monotonic()-self.started >= self.limits['max_total_seconds']:
             raise ValueError('SOURCE_REQUEST_BUDGET_EXHAUSTED')
         if self.calls:
@@ -33,7 +47,7 @@ class RobloxPublicSource:
         self.calls += 1
         client = self.client or httpx.Client(timeout=self.limits['timeout_seconds'], follow_redirects=False)
         try:
-            with client.stream('GET', self.endpoint, params={'universeIds': ','.join(map(str, universe_ids))},
+            with client.stream('GET', 'https://games.roblox.com'+path, params=params,
                     headers={'User-Agent': 'LivingMath-ROBLOX-PRED-001/0.1 authorized-aggregate-collector'}) as response:
                 status = response.status_code
                 if status == 429:
@@ -49,7 +63,7 @@ class RobloxPublicSource:
                 captured = datetime.now(UTC)
                 receipt = {'source_id': self.policy.source_id, 'url': str(response.url), 'http_status': status,
                     'observed_at': captured.isoformat(), 'response_sha256': hashlib.sha256(raw).hexdigest(),
-                    'server_date': response.headers.get('Date'), 'requested_universe_ids': universe_ids,
+                    'server_date': response.headers.get('Date'),
                     'automatic_retries': 0}
         finally:
             if self.client is None: client.close()
@@ -63,9 +77,7 @@ class RobloxPublicSource:
                 stream.write(raw)
             path.chmod(0o600)
         receipt['raw_capture_path'] = str(path.relative_to(self.root))
-        games, snapshots = normalize(json.loads(raw), universe_ids, captured, receipt, self.policy.source_id,
-                                     self.policy.authorization_sha256 or '')
-        return games, snapshots, receipt
+        return json.loads(raw), receipt
 
 
 def normalize(payload: dict, universe_ids: list[int], observed: datetime, receipt: dict,

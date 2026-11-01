@@ -60,7 +60,7 @@ def read_records(path: Path, model) -> list:
 def build_dataset(root: Path, config: dict) -> tuple[list[Sample], dict, dict]:
     manifest_path = root / config['input_manifest']
     if not manifest_path.exists():
-        raise ValueError('DATA_GATE_BLOCKED:NO_LICENSED_MANIFEST; разрешённые исторические данные не предоставлены')
+        raise ValueError('DATA_GATE_PENDING:NO_OBSERVED_DATASET_MANIFEST; нет зарегистрированной истории и завершённых исходов')
     manifest = json.loads(manifest_path.read_text())
     if manifest.get('format') != 'roblox-pred-import/1' or config['scenario'] != 'Pfirst':
         raise ValueError('SUPPORTED_IMPORT_IS_PFIRST_ONLY')

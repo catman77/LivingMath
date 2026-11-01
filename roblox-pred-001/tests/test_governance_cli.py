@@ -51,11 +51,10 @@ def test_authorized_mock_capture_persisted_hash_bound_and_missing_retained(tmp_p
 
 @pytest.mark.parametrize('script,extra,code,marker',[
     ('audit_sources',[],0,'RECORDED_AUDIT_REPLAY_NO_NETWORK'),
-    ('audit_sources',['--live'],3,'SOURCE_RIGHTS_BLOCKED'),
-    ('collect_snapshots',[],3,'SOURCE_RIGHTS_BLOCKED'),
-    ('build_dataset',[],3,'NO_LICENSED_MANIFEST'),
-    ('run_baseline',[],3,'NO_LICENSED_MANIFEST'),
-    ('run_eval',[],3,'NO_LICENSED_MANIFEST'),
+    ('collect_snapshots',[],3,'COLLECTION_DISABLED'),
+    ('build_dataset',[],3,'NO_OBSERVED_DATASET_MANIFEST'),
+    ('run_baseline',[],3,'NO_OBSERVED_DATASET_MANIFEST'),
+    ('run_eval',[],3,'NO_OBSERVED_DATASET_MANIFEST'),
     ('run_semantic',['--dry-run'],0,'SYNTHETIC_CONTRACT_DRY_RUN'),
     ('run_semantic',[],3,'NATIVE_ROBLOX_BINDING_NOT_IDENTIFIED')])
 def test_cli_honest_gates(script,extra,code,marker):

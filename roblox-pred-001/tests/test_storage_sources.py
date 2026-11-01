@@ -45,7 +45,8 @@ def test_denied_policy_blocks_before_network():
     policies=registry(root,cfg)
     def fail(request): raise AssertionError('Network must not be called')
     client=httpx.Client(transport=httpx.MockTransport(fail))
-    source=RobloxPublicSource(policies['roblox_public_games'],root,cfg['audit'],client)
+    policy=policies['roblox_public_games'].model_copy(update={'rights_status':'DENIED','collection_allowed':False})
+    source=RobloxPublicSource(policy,root,cfg['audit'],client)
     with pytest.raises(ValueError,match='SOURCE_RIGHTS_BLOCKED'):source.fetch([1])
     assert source.calls==0
 

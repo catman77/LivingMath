@@ -1,0 +1,12 @@
+# Managed by LivingMath ROBLOX-PRED-001
+[Unit]
+Description=Daily public Roblox game snapshot at 18:00 UTC
+
+[Timer]
+OnCalendar=*-*-* 18:00:00 UTC
+Persistent=true
+AccuracySec=1min
+Unit=livingmath-roblox-observation.service
+
+[Install]
+WantedBy=timers.target

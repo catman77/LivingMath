@@ -1,0 +1,149 @@
+{
+  "status": "PUBLIC_API_COLLECTION_RUNNING",
+  "previous_snapshot_commit": "777ec3e",
+  "previous_blanket_collection_block_replaced": true,
+  "scope": "PUBLIC_API_PORTFOLIO_OBSERVATION",
+  "unique_projects": 15,
+  "snapshot_records": 45,
+  "capture_times": [
+    "2026-11-01T17:14:01.808176+00:00",
+    "2026-11-01T17:17:28.152367+00:00",
+    "2026-11-01T17:20:33.783945+00:00"
+  ],
+  "initial_descriptions_present": 10,
+  "initial_zero_current_players": 7,
+  "http_requests_this_update": 7,
+  "http_authentication": "NONE",
+  "http_retries": 0,
+  "discovery_receipts": [
+    {
+      "creator_type": "Group",
+      "creator_id": 4372130,
+      "returned": 1,
+      "accepted_universe_ids": [
+        994732206
+      ],
+      "unplayable_not_followed": 0,
+      "pagination_truncated": false,
+      "receipt": {
+        "source_id": "roblox_public_games",
+        "url": "https://games.roblox.com/v2/groups/4372130/gamesV2?accessFilter=Public&sortOrder=Asc&limit=50",
+        "http_status": 200,
+        "observed_at": "2026-11-01T17:13:55.611783+00:00",
+        "response_sha256": "b77e0e8dbb773409b3939c4ca447d97f061ae16ee213e94a56bb20c42068b13c",
+        "server_date": "Sun, 01 Nov 2026 17:13:54 GMT",
+        "automatic_retries": 0,
+        "raw_capture_path": "data/raw/captures/b77e0e8dbb773409b3939c4ca447d97f061ae16ee213e94a56bb20c42068b13c.json"
+      }
+    },
+    {
+      "creator_type": "Group",
+      "creator_id": 295182,
+      "returned": 2,
+      "accepted_universe_ids": [
+        383310974,
+        6731755890
+      ],
+      "unplayable_not_followed": 0,
+      "pagination_truncated": false,
+      "receipt": {
+        "source_id": "roblox_public_games",
+        "url": "https://games.roblox.com/v2/groups/295182/gamesV2?accessFilter=Public&sortOrder=Asc&limit=50",
+        "http_status": 200,
+        "observed_at": "2026-11-01T17:13:57.098060+00:00",
+        "response_sha256": "44343fd25d007b21545e2437a45ee25adbb2c5d15ea338a63f2689a9a44d7f3d",
+        "server_date": "Sun, 01 Nov 2026 17:13:56 GMT",
+        "automatic_retries": 0,
+        "raw_capture_path": "data/raw/captures/44343fd25d007b21545e2437a45ee25adbb2c5d15ea338a63f2689a9a44d7f3d.json"
+      }
+    },
+    {
+      "creator_type": "Group",
+      "creator_id": 2613928,
+      "returned": 6,
+      "accepted_universe_ids": [
+        111958650,
+        327709123,
+        1392301017,
+        1468394780,
+        3139902823,
+        5351946502
+      ],
+      "unplayable_not_followed": 0,
+      "pagination_truncated": false,
+      "receipt": {
+        "source_id": "roblox_public_games",
+        "url": "https://games.roblox.com/v2/groups/2613928/gamesV2?accessFilter=Public&sortOrder=Asc&limit=50",
+        "http_status": 200,
+        "observed_at": "2026-11-01T17:13:58.615488+00:00",
+        "response_sha256": "3c40007ea5f58b3354ebb0a6a175bb9ebaaeca12c97c724dcc6e03f6ca3f0c36",
+        "server_date": "Sun, 01 Nov 2026 17:13:57 GMT",
+        "automatic_retries": 0,
+        "raw_capture_path": "data/raw/captures/3c40007ea5f58b3354ebb0a6a175bb9ebaaeca12c97c724dcc6e03f6ca3f0c36.json"
+      }
+    },
+    {
+      "creator_type": "User",
+      "creator_id": 1,
+      "returned": 3,
+      "accepted_universe_ids": [
+        295594,
+        246424,
+        13058
+      ],
+      "unplayable_not_followed": 0,
+      "pagination_truncated": false,
+      "receipt": {
+        "source_id": "roblox_public_games",
+        "url": "https://games.roblox.com/v2/users/1/games?accessFilter=Public&sortOrder=Asc&limit=50",
+        "http_status": 200,
+        "observed_at": "2026-11-01T17:14:00.121316+00:00",
+        "response_sha256": "f1a391b5ba0c661846496c28aa0c45db0b419251542a4937e434b1c97d32be2a",
+        "server_date": "Sun, 01 Nov 2026 17:13:59 GMT",
+        "automatic_retries": 0,
+        "raw_capture_path": "data/raw/captures/f1a391b5ba0c661846496c28aa0c45db0b419251542a4937e434b1c97d32be2a.json"
+      }
+    }
+  ],
+  "game_response_sha256": [
+    "41a0d55b110ad8a39d9cdc83ff9f7efe692c5640844cea3d02bb15d448771008",
+    "c3a85f4f59af3cea2e736276004f66aba6771d2535eebaf4e4a5fff93c3ee88a",
+    "df8472f33243d554221d5b92d4611155a30eb6035b44b1ba4715d010680155c1"
+  ],
+  "csv": "roblox-pred-001/data/observations/20261101T171355069471Z/projects.csv",
+  "duckdb": "roblox-pred-001/data/public-observation/research.duckdb",
+  "revenue_status": "OWNER_ANALYTICS_REQUIRED_NOT_PUBLIC",
+  "revenue_robux": null,
+  "financial_estimates_made": false,
+  "launch_dates_invented": false,
+  "ml_training_performed": false,
+  "predictive_validation": "PENDING_FUTURE_OUTCOMES",
+  "timer": {
+    "unit": "livingmath-roblox-observation.timer",
+    "enabled": true,
+    "active": true,
+    "on_calendar": "*-*-* 18:00:00 UTC",
+    "moscow_time": "21:00",
+    "user_linger": true,
+    "service_last_result": "success",
+    "service_last_exit_code": 0
+  },
+  "preserved_failed_service_attempt": {
+    "result": "FAIL",
+    "cause": "Installer resolved venv interpreter symlink into base Python; package import failed before network",
+    "resolution": "Preserve venv executable path; regression test probes installed package in rendered interpreter. TimeoutStartSec replaces ignored oneshot RuntimeMaxSec."
+  },
+  "production_LivingMath_modified": false,
+  "native_runtime_runs": 0,
+  "llm_calls": 0,
+  "rights_scope_note": "Flags record the user-directed workflow; they do not certify a new license or mathematical truth.",
+  "checks": {
+    "pytest_passed": 56,
+    "pytest_failed": 0,
+    "ruff_E9_F": "PASS",
+    "synthetic_smoke": "ENGINEERING_PASS",
+    "synthetic_smoke_real_metrics": null,
+    "pytest_stdout_sha256": "1ce712961db197aa496ebe40e50d24acc97d12581895cf21940e3e762706d40a",
+    "source_code_sha256": "ca887b011b9db4ec71f57b118716a76632b136ec156c48aaf1c4c0ef89b82e3c"
+  }
+}
