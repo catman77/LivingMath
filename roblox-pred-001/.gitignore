@@ -1,0 +1,13 @@
+.venv/
+.env
+data/
+*.duckdb*
+*.parquet
+reports/private/
+reports/model-artifacts/
+*.pkl
+*.joblib
+*.egg-info/
+__pycache__/
+.pytest_cache/
+.ruff_cache/

@@ -1,0 +1,209 @@
+{
+  "scope": "CONNECTED_PLUGIN_READ_ONLY_DISCOVERY_AND_LOCAL_AST_NOT_TOOLS_LIST",
+  "observed_on": "2026-11-01",
+  "version": "1.2.0rc3-observer012",
+  "deployment_id": "20261101T044526Z-observer012",
+  "server_reported_tool_count": 44,
+  "advertised_connected_tool_count": 44,
+  "advertised_tools": [
+    "mcp__codex_apps__livingmath_attend",
+    "mcp__codex_apps__livingmath_audit_research_move",
+    "mcp__codex_apps__livingmath_audit_research_shift",
+    "mcp__codex_apps__livingmath_bridge_catalog",
+    "mcp__codex_apps__livingmath_bridge_inspect",
+    "mcp__codex_apps__livingmath_bridge_run_alchemy",
+    "mcp__codex_apps__livingmath_bridge_system_status",
+    "mcp__codex_apps__livingmath_bridge_validate_records",
+    "mcp__codex_apps__livingmath_dav_audit_adapter",
+    "mcp__codex_apps__livingmath_dav_check_law",
+    "mcp__codex_apps__livingmath_dav_export_evidence",
+    "mcp__codex_apps__livingmath_dav_find_counterexample",
+    "mcp__codex_apps__livingmath_dav_generate_candidates",
+    "mcp__codex_apps__livingmath_dav_observe",
+    "mcp__codex_apps__livingmath_dav_reduce_library",
+    "mcp__codex_apps__livingmath_dav_register_adapter",
+    "mcp__codex_apps__livingmath_interpret",
+    "mcp__codex_apps__livingmath_propose_research_policy",
+    "mcp__codex_apps__livingmath_record_research_move",
+    "mcp__codex_apps__livingmath_record_result",
+    "mcp__codex_apps__livingmath_record_transformation_contract",
+    "mcp__codex_apps__livingmath_research_autonomy_control",
+    "mcp__codex_apps__livingmath_research_autonomy_history",
+    "mcp__codex_apps__livingmath_research_autonomy_ingest",
+    "mcp__codex_apps__livingmath_research_autonomy_status",
+    "mcp__codex_apps__livingmath_research_context",
+    "mcp__codex_apps__livingmath_research_contract",
+    "mcp__codex_apps__livingmath_research_cycle_history",
+    "mcp__codex_apps__livingmath_research_cycle_next",
+    "mcp__codex_apps__livingmath_research_cycle_precommit",
+    "mcp__codex_apps__livingmath_research_cycle_preview",
+    "mcp__codex_apps__livingmath_research_cycle_validate",
+    "mcp__codex_apps__livingmath_research_focus_candidates",
+    "mcp__codex_apps__livingmath_research_frontier",
+    "mcp__codex_apps__livingmath_research_move_history",
+    "mcp__codex_apps__livingmath_research_native_preview",
+    "mcp__codex_apps__livingmath_research_normalize_preview",
+    "mcp__codex_apps__livingmath_research_novelty_snapshot",
+    "mcp__codex_apps__livingmath_research_obligation_create",
+    "mcp__codex_apps__livingmath_research_obligation_history",
+    "mcp__codex_apps__livingmath_research_obligation_update",
+    "mcp__codex_apps__livingmath_research_source_contract",
+    "mcp__codex_apps__livingmath_service_health",
+    "mcp__codex_apps__livingmath_transition_research_move"
+  ],
+  "called_read_only_tools": [
+    "livingmath_bridge_system_status",
+    "livingmath_bridge_catalog",
+    "livingmath_service_health"
+  ],
+  "tool_receipt_sha256": {
+    "livingmath_bridge_system_status": "580a1ed885ea3a118f3180baed35e4572c63bf1538d3424e453cd8c4b48b531f",
+    "livingmath_bridge_catalog": "efd2d8badc83aa2770532d2aa24b28eada889f6a233de460f14ef3a7323278cf",
+    "livingmath_service_health": "5b48b65cb8190ab87671a4188be7339e656870c555e3665459acdca94006a313"
+  },
+  "catalog_total": 3,
+  "sqlite_integrity": "ok",
+  "event_count": 2058,
+  "audit": {
+    "ok": true,
+    "entries": 4817,
+    "last_hash": "c9c0048be5cc2e782cb2f2377da524e5ad04303d86b65792ef1d503b8c1c3d50"
+  },
+  "SUTI_native_runtime": "NOT_EXECUTED",
+  "proof_status": "unverified",
+  "execution_permission": {
+    "allowed": false
+  },
+  "model_calls_this_pilot": 0,
+  "production_writes_this_pilot": 0,
+  "new_native_runs": 0,
+  "local_SOMA": {
+    "scope": "READ_ONLY_AST_INSPECTION_NOT_NATIVE_EXECUTION",
+    "path": "../SOMA/soma_m0/src/soma_m0/core/adapter.py",
+    "sha256": "ef3dfc951acb4b18ef117cf45c073c34f7f181cb7632eca8ca87faa598f3f103",
+    "class": "SomaMarketAdapter",
+    "methods": [
+      {
+        "name": "__init__",
+        "arguments": [
+          "self",
+          "quantum",
+          "seed",
+          "mode",
+          "delta",
+          "lease",
+          "rej_bits",
+          "anchors",
+          "adapter",
+          "state",
+          "nc"
+        ],
+        "line": 53
+      },
+      {
+        "name": "reset_transient",
+        "arguments": [
+          "self"
+        ],
+        "line": 62
+      },
+      {
+        "name": "predict_next",
+        "arguments": [
+          "self"
+        ],
+        "line": 65
+      },
+      {
+        "name": "observe",
+        "arguments": [
+          "self",
+          "x_float",
+          "score",
+          "x_adapted",
+          "t",
+          "new_episode"
+        ],
+        "line": 78
+      },
+      {
+        "name": "probe_state",
+        "arguments": [
+          "self",
+          "schema"
+        ],
+        "line": 98
+      },
+      {
+        "name": "structural_state",
+        "arguments": [
+          "self"
+        ],
+        "line": 106
+      },
+      {
+        "name": "checkpoint",
+        "arguments": [
+          "self",
+          "path",
+          "extra"
+        ],
+        "line": 109
+      },
+      {
+        "name": "load_checkpoint",
+        "arguments": [
+          "self",
+          "path"
+        ],
+        "line": 113
+      },
+      {
+        "name": "run",
+        "arguments": [
+          "self",
+          "XI",
+          "XF",
+          "EPI",
+          "t0",
+          "t1",
+          "bits_out"
+        ],
+        "line": 118
+      },
+      {
+        "name": "run_probe",
+        "arguments": [
+          "self",
+          "XI",
+          "XF",
+          "EPI",
+          "t0",
+          "t1",
+          "bits_out",
+          "schema",
+          "Z"
+        ],
+        "line": 127
+      }
+    ],
+    "Roblox_mapping_confirmed": false,
+    "kernel_modified": false,
+    "kernel_sha256": "a1b273e11b316a4420ff8fac47d036c830a8012c0bb52e814d3c3e5b9c396e06"
+  },
+  "requested_task_contract": "roblox_project_structural_features/v1",
+  "native_task_binding": "NOT_IDENTIFIED",
+  "DAVE_task_binding": "NOT_IDENTIFIED_IN_INSPECTED_LOCATIONS",
+  "structural_features": null,
+  "kernel_channels": 5,
+  "read_only_call_count": 4,
+  "health_recheck": {
+    "event_count": 2058,
+    "audit_entries": 4817,
+    "audit_last_hash": "c9c0048be5cc2e782cb2f2377da524e5ad04303d86b65792ef1d503b8c1c3d50",
+    "canonical_state_unchanged": true,
+    "receipt_sha256": "5b48b65cb8190ab87671a4188be7339e656870c555e3665459acdca94006a313"
+  },
+  "numeric_native_kernel_source_present": true,
+  "native_execution_availability": "NOT_TESTED"
+}

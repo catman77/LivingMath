@@ -1,0 +1,53 @@
+sources:
+  - source_id: roblox_public_games
+    family: ROBLOX_PUBLIC
+    documentation_url: https://create.roblox.com/docs/cloud/reference/domains/games
+    terms_url: https://en.help.roblox.com/hc/en-us/articles/115004647846-Roblox-Terms-of-Use
+    rights_status: DENIED
+    rights_reason: Roblox User Terms9.2.4-9.2.5; automated collection for ML/AI not approved
+    commercial_allowed: false
+    ml_allowed: false
+    collection_allowed: false
+    historical_snapshots: false
+    sampling_frame_confirmed: false
+    authorization_evidence: null
+    authorization_sha256: null
+  - source_id: roblox_creator_catalog
+    family: ROBLOX_PUBLIC
+    documentation_url: https://create.roblox.com/docs/cloud/reference/domains/games
+    terms_url: https://en.help.roblox.com/hc/en-us/articles/115004647846-Roblox-Terms-of-Use
+    rights_status: DENIED
+    rights_reason: Same public-source ML collection restriction; not a full population frame
+    commercial_allowed: false
+    ml_allowed: false
+    collection_allowed: false
+    historical_snapshots: false
+    sampling_frame_confirmed: false
+    authorization_evidence: null
+    authorization_sha256: null
+  - source_id: rolimons
+    family: THIRD_PARTY
+    documentation_url: https://www.rolimons.com/termsandprivacy
+    terms_url: https://www.rolimons.com/termsandprivacy
+    rights_status: DENIED
+    rights_reason: Automated/systematic and commercial collection restricted without written consent
+    commercial_allowed: false
+    ml_allowed: false
+    collection_allowed: false
+    historical_snapshots: false
+    sampling_frame_confirmed: false
+    authorization_evidence: null
+    authorization_sha256: null
+  - source_id: partner_licensed_export
+    family: OPERATOR_IMPORT
+    documentation_url: null
+    terms_url: null
+    rights_status: UNKNOWN
+    rights_reason: No owned or licensed dataset provided by user
+    commercial_allowed: false
+    ml_allowed: false
+    collection_allowed: false
+    historical_snapshots: false
+    sampling_frame_confirmed: false
+    authorization_evidence: null
+    authorization_sha256: null

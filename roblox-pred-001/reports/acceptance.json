@@ -1,0 +1,296 @@
+{
+  "scope": "ITERATION_A_ENGINEERING_ACCEPTANCE_NOT_COMMERCIAL_VALIDATION",
+  "python": "3.13.9",
+  "checks": [
+    {
+      "name": "pytest",
+      "command": [
+        "python",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "status": "PASS",
+      "seconds": 11.54,
+      "stdout_sha256": "55659d54f401ffa364df1de9b87c84c8bae6abbde7ac250be63f161305fe5c82",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "ruff",
+      "command": [
+        "/home/catman/.local/state/livingmath/dav001/20261030T103020Z/venv/bin/ruff",
+        "check",
+        ".",
+        "--select",
+        "E9,F",
+        "--output-format",
+        "concise"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.008,
+      "stdout_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "audit_sources",
+      "command": [
+        "python",
+        "scripts/audit_sources.py",
+        "--config",
+        "configs/protocol.yaml"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "status": "PASS",
+      "seconds": 1.035,
+      "stdout_sha256": "727e21138389a7d47937bb2db258ebfe363b279e30726827c2f26a53991cacbb",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "observed_status": "RECORDED_AUDIT_REPLAY_NO_NETWORK"
+    },
+    {
+      "name": "audit_sources-live",
+      "command": [
+        "python",
+        "scripts/audit_sources.py",
+        "--config",
+        "configs/protocol.yaml",
+        "--live"
+      ],
+      "exit_code": 3,
+      "expected_exit_code": 3,
+      "status": "PASS",
+      "seconds": 1.034,
+      "stdout_sha256": "e184ae00184832610c4bb7f8ddace80d3e1cd7d620b38855ae6b0084bfedba89",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "observed_status": "BLOCKED",
+      "reason": "SOURCE_RIGHTS_BLOCKED:roblox_public_games"
+    },
+    {
+      "name": "collect_snapshots",
+      "command": [
+        "python",
+        "scripts/collect_snapshots.py",
+        "--config",
+        "configs/protocol.yaml"
+      ],
+      "exit_code": 3,
+      "expected_exit_code": 3,
+      "status": "PASS",
+      "seconds": 1.045,
+      "stdout_sha256": "e184ae00184832610c4bb7f8ddace80d3e1cd7d620b38855ae6b0084bfedba89",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "observed_status": "BLOCKED",
+      "reason": "SOURCE_RIGHTS_BLOCKED:roblox_public_games"
+    },
+    {
+      "name": "build_dataset",
+      "command": [
+        "python",
+        "scripts/build_dataset.py",
+        "--config",
+        "configs/protocol.yaml"
+      ],
+      "exit_code": 3,
+      "expected_exit_code": 3,
+      "status": "PASS",
+      "seconds": 1.033,
+      "stdout_sha256": "42a2ff80960ed65b024407bba03f771a4624196aaa25a522ab17cb22d31755f0",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "observed_status": "BLOCKED",
+      "reason": "DATA_GATE_BLOCKED:NO_LICENSED_MANIFEST; разрешённые исторические данные не предоставлены"
+    },
+    {
+      "name": "run_baseline",
+      "command": [
+        "python",
+        "scripts/run_baseline.py",
+        "--config",
+        "configs/protocol.yaml"
+      ],
+      "exit_code": 3,
+      "expected_exit_code": 3,
+      "status": "PASS",
+      "seconds": 1.021,
+      "stdout_sha256": "42a2ff80960ed65b024407bba03f771a4624196aaa25a522ab17cb22d31755f0",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "observed_status": "BLOCKED",
+      "reason": "DATA_GATE_BLOCKED:NO_LICENSED_MANIFEST; разрешённые исторические данные не предоставлены"
+    },
+    {
+      "name": "run_semantic-dry-run",
+      "command": [
+        "python",
+        "scripts/run_semantic.py",
+        "--config",
+        "configs/protocol.yaml",
+        "--dry-run"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "status": "PASS",
+      "seconds": 1.075,
+      "stdout_sha256": "7b38688f413bb7a61eea25f0ab5abdae69b40e389d1cf764bee9ba7ccb6376e3",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "observed_status": "SYNTHETIC_CONTRACT_DRY_RUN"
+    },
+    {
+      "name": "run_semantic",
+      "command": [
+        "python",
+        "scripts/run_semantic.py",
+        "--config",
+        "configs/protocol.yaml"
+      ],
+      "exit_code": 3,
+      "expected_exit_code": 3,
+      "status": "PASS",
+      "seconds": 1.029,
+      "stdout_sha256": "8436c6b17d73e93cd1dab1de9a96c376694a297fa26734693a2118485cbc5b4d",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "observed_status": "BLOCKED",
+      "reason": "NATIVE_ROBLOX_BINDING_NOT_IDENTIFIED; Stage B закрыт data gate"
+    },
+    {
+      "name": "run_eval",
+      "command": [
+        "python",
+        "scripts/run_eval.py",
+        "--config",
+        "configs/protocol.yaml"
+      ],
+      "exit_code": 3,
+      "expected_exit_code": 3,
+      "status": "PASS",
+      "seconds": 1.029,
+      "stdout_sha256": "42a2ff80960ed65b024407bba03f771a4624196aaa25a522ab17cb22d31755f0",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "observed_status": "BLOCKED",
+      "reason": "DATA_GATE_BLOCKED:NO_LICENSED_MANIFEST; разрешённые исторические данные не предоставлены"
+    },
+    {
+      "name": "smoke",
+      "command": [
+        "python",
+        "scripts/run_baseline.py",
+        "--config",
+        "configs/protocol.yaml",
+        "--smoke",
+        "--output",
+        "<private-run>/smoke-final2"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "status": "PASS",
+      "seconds": 1.588,
+      "stdout_sha256": "3400de85d83bf8e0bff7d42256785a3097a5e1ac129c44a02ccec37d9c2f3dca",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "observed_status": "ENGINEERING_PASS"
+    },
+    {
+      "name": "smoke-replay",
+      "command": [
+        "python",
+        "scripts/run_baseline.py",
+        "--config",
+        "configs/protocol.yaml",
+        "--smoke",
+        "--output",
+        "<private-run>/smoke-final2"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "status": "PASS",
+      "seconds": 1.129,
+      "stdout_sha256": "3400de85d83bf8e0bff7d42256785a3097a5e1ac129c44a02ccec37d9c2f3dca",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "observed_status": "ENGINEERING_PASS"
+    },
+    {
+      "name": "smoke_exact_replay",
+      "status": "PASS"
+    },
+    {
+      "name": "smoke_under_five_minutes",
+      "seconds": 1.588,
+      "status": "PASS",
+      "model_evaluation_seconds": 0.20527691999450326
+    },
+    {
+      "name": "actual_six_game_asof_and_parquet_duckdb_roundtrip",
+      "status": "PASS",
+      "game_records": 6,
+      "snapshots": 6,
+      "measured_zero_players": 3,
+      "ml_training_on_audit_data": false,
+      "release_dates_invented": 0,
+      "parquet_sha256": {
+        "games/a632e7a3c535f29d16ed9e3bb2fb536c55a0cc2ad04c080302639c1bc710eda4.parquet": "15e907d99e6b74146d562d878dfff95357369e8206d76acc2e8a20579d4a7d53",
+        "snapshots/9a4a769fa20dbb17056f83bee2ddfb2ec048c9de9d1cc4262a596e56696fd72c.parquet": "0a5d2b239605048ee22ecac1fce6ad7dd84f9554acc6a5b86414d0fd7e7062de"
+      }
+    },
+    {
+      "name": "source_archive_exact_copy",
+      "status": "PASS",
+      "sha256": "58d28cb4265185d1b2fef61c9056ec35ffeed2e3dc58f79ed8d5ed936bc1d9ff"
+    },
+    {
+      "name": "root_AGENTS_preserved",
+      "status": "PASS"
+    }
+  ],
+  "all_engineering_checks_pass": true,
+  "package_versions": {
+    "pytest": "9.2.0",
+    "tzdata": "2026.6",
+    "pandas": "3.1.0",
+    "typing-inspection": "0.4.4",
+    "pydantic": "2.14.2",
+    "scikit-learn": "1.9.1",
+    "Pygments": "2.21.0",
+    "iniconfig": "2.3.1",
+    "httpcore": "1.0.9",
+    "threadpoolctl": "3.7.0",
+    "setuptools": "84.2.1",
+    "h11": "0.16.0",
+    "packaging": "26.3",
+    "idna": "3.20",
+    "numpy": "2.5.4",
+    "duckdb": "1.5.6",
+    "annotated-types": "0.8.0",
+    "wheel": "0.48.0",
+    "cloudpickle": "3.1.2",
+    "pydantic_core": "2.50.2",
+    "certifi": "2026.10.23",
+    "httpx": "0.28.1",
+    "narwhals": "2.28.0",
+    "pluggy": "1.7.0",
+    "pyarrow": "26.0.0",
+    "joblib": "1.6.0",
+    "typing_extensions": "4.16.0",
+    "python-dateutil": "4.0.0",
+    "roblox-pred-001": "0.1.0",
+    "anyio": "4.16.0",
+    "PyYAML": "6.0.3",
+    "scipy": "1.18.1"
+  },
+  "lock_sha256": "3852dec021679e40ee1967cca35eea69f494334da2730608218ef7a4ccf2df86",
+  "recorded_failures_preserved": [
+    "tests-red.log",
+    "tests-first.log",
+    "tests-second.log"
+  ],
+  "data_gate": "BLOCKED",
+  "research_conclusion": "INCONCLUSIVE",
+  "real_predictive_metrics": null,
+  "production_health_recheck": {
+    "event_count": 2058,
+    "audit_entries": 4817,
+    "audit_last_hash": "c9c0048be5cc2e782cb2f2377da524e5ad04303d86b65792ef1d503b8c1c3d50",
+    "canonical_state_unchanged": true,
+    "receipt_sha256": "5b48b65cb8190ab87671a4188be7339e656870c555e3665459acdca94006a313"
+  }
+}

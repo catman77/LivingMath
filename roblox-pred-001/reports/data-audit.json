@@ -1,0 +1,94 @@
+{
+  "observed_at": "2026-11-01T16:18:01.987386Z",
+  "scope": "BOUNDED_TRANSPORT_AUDIT_NOT_ELIGIBLE_DATASET",
+  "data_gate": "BLOCKED",
+  "retrospective_benchmark": false,
+  "prospective_collection": false,
+  "full_game_records": 6,
+  "catalog_records": 3,
+  "unique_universe_ids": 9,
+  "requests": [
+    {
+      "name": "swagger_v1",
+      "url": "https://games.roblox.com/docs/json/v1",
+      "requested_at": "2026-11-01T16:17:59.093400+00:00",
+      "authentication": "NONE",
+      "automatic_retries": 0,
+      "http_status": 404,
+      "error": "Not Found",
+      "completed_at": "2026-11-01T16:17:59.747463+00:00",
+      "elapsed_s": 0.6539301250013523
+    },
+    {
+      "name": "swagger_v2",
+      "url": "https://games.roblox.com/docs/json/v2",
+      "requested_at": "2026-11-01T16:18:00.047766+00:00",
+      "authentication": "NONE",
+      "automatic_retries": 0,
+      "http_status": 404,
+      "error": "Not Found",
+      "completed_at": "2026-11-01T16:18:00.356498+00:00",
+      "elapsed_s": 0.30865461798384786
+    },
+    {
+      "name": "games",
+      "url": "https://games.roblox.com/v1/games?universeIds=1,2,3,994732206,383310974,111958650",
+      "requested_at": "2026-11-01T16:18:00.656796+00:00",
+      "authentication": "NONE",
+      "automatic_retries": 0,
+      "http_status": 200,
+      "response_headers": {
+        "Date": "Sun, 01 Nov 2026 16:18:00 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "no-store, must-revalidate, no-cache"
+      },
+      "bytes": 7116,
+      "sha256": "e61722f93ff196f1e3e3b45f761b0735848ba7f9daddbfdae31f1f1606adaa53",
+      "returned_games": 6,
+      "universe_ids": [
+        1,
+        2,
+        3,
+        994732206,
+        383310974,
+        111958650
+      ],
+      "completed_at": "2026-11-01T16:18:01.220462+00:00",
+      "elapsed_s": 0.56360480398871
+    },
+    {
+      "name": "creator_catalog",
+      "url": "https://games.roblox.com/v2/users/1/games?accessFilter=Public&sortOrder=Asc&limit=10",
+      "requested_at": "2026-11-01T16:18:01.520704+00:00",
+      "authentication": "NONE",
+      "automatic_retries": 0,
+      "http_status": 200,
+      "response_headers": {
+        "Date": "Sun, 01 Nov 2026 16:18:01 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "no-cache"
+      },
+      "bytes": 3604,
+      "sha256": "653fe1f695b85af7ba6b16f099c798a02306380df869039440700c04a02895c2",
+      "returned_games": 3,
+      "universe_ids": [
+        295594,
+        246424,
+        13058
+      ],
+      "completed_at": "2026-11-01T16:18:01.987386+00:00",
+      "elapsed_s": 0.4666081960313022
+    }
+  ],
+  "actual_data_date_range": [
+    "2026-11-01",
+    "2026-11-01"
+  ],
+  "creation_date_range_not_feature_history": [
+    "2013-10-31",
+    "2019-01-16"
+  ],
+  "dataset_available": false,
+  "real_predictive_metrics": null,
+  "source_terms_checked": "2026-11-01"
+}

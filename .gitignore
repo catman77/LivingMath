@@ -20,6 +20,8 @@
 !/docs/RESEARCH_STATUS.md
 !/docs/PUBLICATION.md
 !/docs/CI_STATUS.md
+!/docs/ROBLOX_PRED_001_STARTER.zip
+!/docs/ROBLOX_PRED_001/
 !/docs/publication-checks.json
 !/docs/examples/
 /docs/examples/*
@@ -53,6 +55,7 @@
 !/meaning_pivot014/metrics.json
 !/meaning_pivot014/RCA.md
 !/meaning_pivot014/USER_MODEL_REPORT.md
+!/roblox-pred-001/
 
 # Private state and generated output, at every level.
 .venv/
@@ -72,6 +75,7 @@ __pycache__/
 *.sqlite3
 *.sqlite3-*
 *.zip
+!/docs/ROBLOX_PRED_001_STARTER.zip
 *.tar.gz
 *.log
 *.pem
@@ -80,6 +84,7 @@ __pycache__/
 *.pfx
 .env
 .env.*
+!/roblox-pred-001/.env.example
 auth.json
 owner-password
 login-password

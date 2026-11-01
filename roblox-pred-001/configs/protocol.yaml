@@ -1,0 +1,64 @@
+protocol_id: ROBLOX-PRED-001-A-v1
+stage: STAGE0_STAGE1
+seed: 20261101
+scenario: Pfirst
+primary_outcome: mean_daily_sampled_current_players_d61_90
+outcome_first_day: 61
+outcome_last_day: 90
+min_outcome_days: 30
+utc_daily_sampling_hour: 18
+sampling_tolerance_minutes: 30
+top_fraction: 0.1
+threshold_quantile_method: linear
+threshold_ties: greater_or_equal
+embargo_days: 91
+cohort:
+  frame_id: RIGHTS_CLEARED_FIXED_ENROLMENT_REQUIRED
+  start_rule: FIRST_APPROVED_SAMPLE
+  train_offsets_days: [0, 60]
+  validation_offsets_days: [151, 181]
+  test_offsets_days: [272, 302]
+  creator_disjoint: true
+  clone_disjoint: true
+  min_train: 200
+  min_validation: 100
+  min_test: 100
+  min_train_positive: 10
+  min_test_positive: 10
+models:
+  tabular_backend: sklearn
+  numeric_features: [visits_total, current_players, favorites, likes, dislikes, age_days]
+  categorical_features: [genre]
+  forest_trees: 100
+  max_depth: 6
+  min_samples_leaf: 5
+audit:
+  max_requests: 12
+  max_total_seconds: 60
+  timeout_seconds: 10
+  max_response_bytes: 2000000
+  interval_seconds: 1
+  automatic_retries: 0
+  requested_universe_ids: [1, 2, 3, 994732206, 383310974, 111958650]
+collection:
+  enabled: false
+  source_id: roblox_public_games
+  universe_ids: []
+  max_cycles: 1
+  interval_seconds: 86400
+storage:
+  directory: data/processed
+  database: data/processed/research.duckdb
+sources_registry: configs/sources.yaml
+input_manifest: data/input/manifest.json
+report_directory: reports
+semantic:
+  requested_contract: roblox_project_structural_features/v1
+  native_binding_confirmed: false
+  max_model_calls: 0
+evaluation:
+  primary_comparison: M1_vs_M0_logistic
+  structural_comparison: M2_vs_H1_DEFERRED_DATA_GATE
+  test_policy: SEALED_ONCE_AFTER_PROTOCOL_AND_MODELS_FROZEN
+  multiple_comparisons: EXPLORATORY_ONLY
+  revenue_target: DISABLED_NO_VERIFIED_REVENUE

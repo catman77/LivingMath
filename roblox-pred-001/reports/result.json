@@ -1,0 +1,71 @@
+{
+  "experiment": "ROBLOX-PRED-001",
+  "delivery": "ITERATION_A_IMPLEMENTED",
+  "data_gate": "BLOCKED",
+  "research_conclusion": "INCONCLUSIVE",
+  "engineering_tests": {
+    "pytest_passed": 50,
+    "pytest_failed": 0,
+    "pytest_skipped": 0,
+    "acceptance_checks_passed": 17,
+    "acceptance_checks_failed": 0
+  },
+  "actual_observations": {
+    "http_requests": 4,
+    "http_200": 2,
+    "http_404": 2,
+    "full_game_records": 6,
+    "catalog_records": 3,
+    "unique_universe_ids": 9,
+    "capture_date": "2026-11-01",
+    "eligible_cohort_size": 0,
+    "historical_snapshots": 0,
+    "complete_future_outcomes": 0
+  },
+  "synthetic_smoke": {
+    "scope": "SYNTHETIC_ENGINEERING_ONLY",
+    "fold_sizes": {
+      "train": 240,
+      "validation": 120,
+      "test": 120
+    },
+    "prediction_count": 960,
+    "wall_seconds": 1.588,
+    "experiment_id": "e2ea15b478882ce89b8b143ae7ad558cf7eff6129bc3823ff654eea3276cf841",
+    "source_code_sha256": "555f183d4d85c752fea07d73d8c0945b6a063289e533c186a0d3ddac609a5bca",
+    "model_backend": "sklearn_RandomForest",
+    "seed": 20261101,
+    "cache_replay_identical": true
+  },
+  "real_predictive_metrics": null,
+  "native_advantage": null,
+  "revenue_or_roi": null,
+  "model_calls": 0,
+  "native_runs": 0,
+  "retrospective_benchmark_allowed_now": false,
+  "prospective_collection_started": false,
+  "scheduler_installed": false,
+  "production_modified": false,
+  "production_health": {
+    "event_count": 2058,
+    "audit_entries": 4817,
+    "audit_last_hash": "c9c0048be5cc2e782cb2f2377da524e5ad04303d86b65792ef1d503b8c1c3d50",
+    "canonical_state_unchanged": true,
+    "receipt_sha256": "5b48b65cb8190ab87671a4188be7339e656870c555e3665459acdca94006a313"
+  },
+  "blocking_reasons": [
+    "NO_LICENSED_DATASET",
+    "PUBLIC_SOURCE_ML_COLLECTION_NOT_AUTHORIZED",
+    "NO_AS_OF_HISTORY_OR_FUTURE_OUTCOMES",
+    "NO_NATIVE_ROBLOX_TASK_BINDING"
+  ],
+  "next_action_ru": "Получить документированно разрешённую для ML агрегированную выгрузку с полной cohort и временными версиями",
+  "archive_sha256": "58d28cb4265185d1b2fef61c9056ec35ffeed2e3dc58f79ed8d5ed936bc1d9ff",
+  "artifacts": [
+    "data-audit.json",
+    "capabilities.json",
+    "acceptance.json",
+    "synthetic-smoke.json"
+  ],
+  "git_note": "Испытания выполнены до локального коммита; точный исполняемый код закреплён source_code_sha256. Финальный commit сообщён в ответе."
+}
