@@ -1,7 +1,7 @@
 {
-  "status_at_last_inspection": "RUNNING",
-  "inspected_at": "2026-11-02T00:20:53.727883+00:00",
-  "completed_at_inspection": 26,
+  "status_at_last_inspection": "COMPLETED_MEASURED_COMPARISON",
+  "inspected_at": "2026-11-02T04:02:00.985831+00:00",
+  "completed_at_inspection": 501,
   "total_cases": 501,
   "run_directory": "/home/catman/.local/state/livingmath/roblox-formal/20261102T000934Z",
   "service": "livingmath-roblox-formal.service",
@@ -30,7 +30,7 @@
   "screenshots_used": false,
   "native_SUTI_runtime_executed": false,
   "source_claim_verified": false,
-  "scores_ready": false,
+  "scores_ready": true,
   "notification": "DESKTOP_DBUS_ON_TERMINAL_STATE_NOT_AUTOMATIC_CHAT_MESSAGE",
   "run_manifest_sha256": "01d2f54f0f9b1f8c7feb773689b38be0389b1cb5adc14d53cfd4b7375a8d4dc3",
   "final_report": "/home/catman/.local/state/livingmath/roblox-formal/20261102T000934Z/report.md",
@@ -45,5 +45,9 @@
     "guard_preserved": true,
     "control_adapter_fix": "B+ reads original typed LLM output even if formal alignment rejects it; no formal admission weakened"
   },
-  "formal_available_at_inspection": 22
+  "formal_available_at_inspection": 453,
+  "semantic_available_at_inspection": 497,
+  "finished_at": "2026-11-02T03:46:01.313696+00:00",
+  "comparison_artifact": "reports/formal-result.json",
+  "integrity_artifact": "/home/catman/.local/state/livingmath/roblox-formal/20261102T000934Z/final-integrity.json"
 }
