@@ -1,0 +1,25 @@
+{
+  "project": "BRIDGE_QA_RIGHTS_CONTRACT_20261102",
+  "request_key": "pushkin-echo-rights-v1",
+  "source": {
+    "format": "livingmath-artifact/1",
+    "profile": "typed008/1",
+    "interpretation": "observer012",
+    "scope": "rights-contract/pushkin-echo/v1",
+    "source_name": "А. С. Пушкин — Эхо (фрагмент)",
+    "edition": "Фрагмент, предоставленный оператором для проверки входного контракта",
+    "language": "ru",
+    "rights": {
+      "basis": "PUBLIC_DOMAIN",
+      "origin": "А. С. Пушкин, «Эхо», 1831; оригинальный русский текст, автор умер в 1837 году; декларация оператора для данного входа.",
+      "attribution": "Александр Сергеевич Пушкин"
+    },
+    "raw_text": "Ты внемлешь грохоту громов,\nИ гласу бури и валов,\nИ крику сельских пастухов —\nИ шлешь ответ;\nТебе ж нет отзыва... Таков\nИ ты, поэт!",
+    "budget": {
+      "workers": 16,
+      "models": 4,
+      "source_views": 1,
+      "retries": 1
+    }
+  }
+}
