@@ -4,16 +4,28 @@
 обязательная итерация A приложенного ТЗ: аудит, типизированное хранилище, проверка
 времени признаков, M0/M1 и воспроизводимый инженерный прогон.
 
-**Текущий набор —946 игр, включая малоактивные примеры.** Для быстрого
-классификатора подготовлен501 размеченный пример:249 с высокой аудиторией и252
-с низкой. Train/validation/test —300/100/101; создатели и близкие описания
-разделены. Для SUTI–LivingMath есть те же обучающие и слепые тестовые входы.
-[Набор, измеренный baseline и команды](docs/CLASSIFIER_PILOT_RU.md).
+**Формальное сравнение запущено на 501 примере.** Используется установленный
+LivingMath observer012: source graph → формальная модель → независимая проверка
+→ фиксированный 512-мерный encoder → тот же logistic readout. Обычный TF-IDF,
+семантический LLM-контроль и переставленные формальные признаки сравниваются
+на тех же train/validation/test 300/100/101. Скриншоты в этот прогон не входят.
+[Зафиксированный протокол](docs/FORMAL_COMPARISON_PROTOCOL_RU.md).
 
-Отдельно сохранены32 малоохватных и15 более строгих low-traction примеров;
-прошлый большой охват не выдан за изначальный провал запуска.
-Ежедневный timer остаётся отключённым. Предыдущий срез50 топ-игр сохранён
-в `data/quick-top/`; новый набор — `data/classifier/<run>/combined/current-audience/prepared/`.
+```bash
+python scripts/formal_status.py
+systemctl --user status livingmath-roblox-formal.service
+```
+
+Прогон фоновый, четыре source workers, отдельные приватные журналы. По завершении
+или остановке появляется desktop-уведомление и `report.md`/`comparison.json`.
+Это не автоматическое сообщение в чат. [Фактический run и MCP-проба](reports/formal-run.json).
+До завершения scores не объявляются полученными. Перезапуск после остановки:
+`systemctl --user restart livingmath-roblox-formal.service`; остановка:
+`systemctl --user stop livingmath-roblox-formal.service`. Готовые cases повторно
+не вычисляются; неизменность кода/данных проверяется по freeze.
+
+Корпус 946 игр и 501 weak-label пример сохранены; ежедневный сбор API отключён.
+[Данные, подтипы отрицательных примеров и исходный baseline](docs/CLASSIFIER_PILOT_RU.md).
 
 ## Установка
 
@@ -84,13 +96,17 @@ python scripts/collect_snapshots.py --config configs/protocol.yaml
 `--output /tmp/roblox-smoke-run` задаёт каталог явно. Повтор идентичного прогона
 читает сохранённый результат; изменение данных/кода/конфига после freeze запрещено.
 
-`run_semantic --dry-run` проверяет только контракт: native execution=false,
+Прежний `run_semantic --dry-run` проверяет только контракт native binding: native execution=false,
 features/relations=null, статус UNSUPPORTED. Без подтверждённого native binding
-реальный вызов отклоняется. Ни платных LLM-вызовов, ни суррогатного SUTI-парсера нет.
+реальный вызов этим CLI отклоняется. Новый `run_formal_comparison.py` запускает
+существующий source/formal pipeline LivingMath через подписочный backend;
+он отдельно не заявляет исполнение native SUTI runtime.
 
 Реальные build/train/eval сейчас возвращают **exit 3** с конкретным data-gate
 сообщением. Старый `protocol.yaml` сохраняет сбор выключенным; для наблюдения используйте
-`public-observation.yaml`. Его коллектор работает и подключён к ежедневному timer. Успешное исполнение и сохранённый аудит возвращают 0.
+`public-observation.yaml`. Коллектор работает, но ежедневный timer сейчас отключён.
+Эти ограничения прежнего CLI не распространяются на запущенное сравнение текущей
+аудитории из `CLASSIFIER_PILOT_RU.md`. Успешное исполнение и сохранённый аудит возвращают 0.
 
 ## Структура
 

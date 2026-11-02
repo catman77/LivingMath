@@ -1,0 +1,49 @@
+{
+  "status_at_last_inspection": "RUNNING",
+  "inspected_at": "2026-11-02T00:20:53.727883+00:00",
+  "completed_at_inspection": 26,
+  "total_cases": 501,
+  "run_directory": "/home/catman/.local/state/livingmath/roblox-formal/20261102T000934Z",
+  "service": "livingmath-roblox-formal.service",
+  "workers": 4,
+  "installed_product_version": "1.2.0rc3-observer012",
+  "product_layer": "/home/catman/.local/state/livingmath/observer012_deploy/20261101T044526Z/layer",
+  "pipeline": "INSTALLED_LIVINGMATH_OBSERVER012_CONTROLLER_COMPILER_CHECKER",
+  "batch_transport": "ISOLATED_PRIVATE_JOURNALS_USING_INSTALLED_CODE",
+  "actual_MCP_probe": {
+    "project": "BRIDGE_QA_ROBLOX_FORMAL_PILOT_001",
+    "case_id": 4553,
+    "snapshot_id": 4551,
+    "status": "COMPLETED",
+    "outcome": "SOURCE_META_FORMALIZATION",
+    "target_dynamic_model": "NOT_APPLICABLE"
+  },
+  "feature_basis": "livingmath-source-graph-basis/1",
+  "feature_dimensions": 512,
+  "arms": [
+    "A_text",
+    "B_semantic",
+    "C_formal",
+    "C_shuffled",
+    "formal_only"
+  ],
+  "screenshots_used": false,
+  "native_SUTI_runtime_executed": false,
+  "source_claim_verified": false,
+  "scores_ready": false,
+  "notification": "DESKTOP_DBUS_ON_TERMINAL_STATE_NOT_AUTOMATIC_CHAT_MESSAGE",
+  "run_manifest_sha256": "01d2f54f0f9b1f8c7feb773689b38be0389b1cb5adc14d53cfd4b7375a8d4dc3",
+  "final_report": "/home/catman/.local/state/livingmath/roblox-formal/20261102T000934Z/report.md",
+  "final_metrics": "/home/catman/.local/state/livingmath/roblox-formal/20261102T000934Z/comparison.json",
+  "tests": {
+    "pytest_passed": 72,
+    "pytest_failed": 0
+  },
+  "startup_preserved": {
+    "directory": "/home/catman/.local/state/livingmath/roblox-formal/20261102T000317Z",
+    "first_case_formal_error": "CRITIC_REFERENCES_FOREIGN_RELATION",
+    "guard_preserved": true,
+    "control_adapter_fix": "B+ reads original typed LLM output even if formal alignment rejects it; no formal admission weakened"
+  },
+  "formal_available_at_inspection": 22
+}
