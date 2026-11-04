@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "$id": "lm-suti.assurance.publication-policy/0.1",
+  "properties": {
+    "schema": {
+      "const": "lm-suti.assurance.publication-policy/0.1"
+    },
+    "audiences": {
+      "type": "array",
+      "uniqueItems": true,
+      "minItems": 1,
+      "items": {
+        "enum": [
+          "private",
+          "reviewers",
+          "public"
+        ]
+      }
+    },
+    "allow_source_bytes": {
+      "type": "boolean"
+    },
+    "reason": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "schema",
+    "audiences",
+    "allow_source_bytes",
+    "reason"
+  ]
+}

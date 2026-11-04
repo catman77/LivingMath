@@ -1,3 +1,7 @@
+# v0.1 assurance CLI
+
+For the independent finite assurance package use [README_QUICKSTART_RU.md](../README_QUICKSTART_RU.md). The following installation instructions cover the retained legacy system.
+
 # Установка SUTI–Bridge–LivingMath
 
 ## Поддерживаемое окружение

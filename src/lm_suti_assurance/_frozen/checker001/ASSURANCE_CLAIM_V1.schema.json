@@ -1,0 +1,163 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:symseq:assurance:candidate:v1",
+  "title": "Candidate Claim, NOT Assurance Decision",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "candidate_id",
+    "task_id",
+    "claim_kind",
+    "assertion",
+    "scope",
+    "assumptions",
+    "source_refs",
+    "evidence_refs",
+    "generator"
+  ],
+  "properties": {
+    "schema": {
+      "const": "symseq.assurance.candidate.v1"
+    },
+    "candidate_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "task_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "claim_kind": {
+      "enum": [
+        "FINITE_PROPOSITION",
+        "SOURCE_CLAIM",
+        "EXECUTABLE_BOUNDED",
+        "EMPIRICAL_HYPOTHESIS",
+        "FORMAL_PROPOSITION"
+      ]
+    },
+    "assertion": {
+      "type": "object",
+      "required": [
+        "language",
+        "content"
+      ],
+      "properties": {
+        "language": {
+          "enum": [
+            "finite-logic-v1",
+            "source-claim-v1",
+            "bounded-program-v1",
+            "natural-language",
+            "formal-term-v1"
+          ]
+        },
+        "content": {
+          "type": "string",
+          "minLength": 1
+        },
+        "machine_term": {
+          "type": [
+            "object",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "scope": {
+      "type": "object",
+      "minProperties": 1
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "source_refs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "source_id",
+          "sha256"
+        ],
+        "properties": {
+          "source_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "pointer": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "byte_start": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "byte_end": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 0
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "proposed_status": {
+      "enum": [
+        "ENTAILED_UNDER_PUBLIC_CONTRACT",
+        "CONDITIONAL_HYPOTHESIS",
+        "UNKNOWN",
+        "SOURCE_ATTESTED",
+        "OBSERVATION_RECORDED",
+        "PROVED_FORMAL",
+        "UNSPECIFIED"
+      ]
+    },
+    "generator": {
+      "type": "object",
+      "required": [
+        "kind",
+        "id",
+        "config_digest"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "LLM",
+            "SYMBOLIC",
+            "HUMAN",
+            "OTHER"
+          ]
+        },
+        "id": {
+          "type": "string"
+        },
+        "config_digest": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}

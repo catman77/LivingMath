@@ -1,0 +1,224 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://symseq.example/spec/assurance/proposal-delta-v1",
+  "title": "Untrusted minimal proposal. Task kind and scope checked separately.",
+  "description": "This validates transport structure only, not mathematical truth. No source/scope/auth fields allowed.",
+  "oneOf": [
+    {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "type": "string",
+          "const": "symseq.assurance.proposal-delta.v1"
+        },
+        "intent": {
+          "const": "ABSTAIN"
+        },
+        "reason": {
+          "type": "string",
+          "maxLength": 256
+        }
+      },
+      "required": [
+        "schema",
+        "intent",
+        "reason"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "type": "string",
+          "const": "symseq.assurance.proposal-delta.v1"
+        },
+        "intent": {
+          "type": "string",
+          "const": "PROPOSE"
+        },
+        "kind": {
+          "const": "FINITE_TRACE"
+        },
+        "trace": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "enum": [
+              0,
+              1
+            ]
+          },
+          "minItems": 1,
+          "maxItems": 6
+        },
+        "strength": {
+          "type": "string",
+          "enum": [
+            "ENTAILED",
+            "CONDITIONAL"
+          ]
+        }
+      },
+      "required": [
+        "schema",
+        "intent",
+        "kind",
+        "trace",
+        "strength"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "type": "string",
+          "const": "symseq.assurance.proposal-delta.v1"
+        },
+        "intent": {
+          "type": "string",
+          "const": "PROPOSE"
+        },
+        "kind": {
+          "const": "SOURCE_PROJECTION"
+        },
+        "relation": {
+          "type": "string",
+          "enum": [
+            "LOSS_DETECTED",
+            "PRESERVED_FOR_DECLARED_Q"
+          ]
+        }
+      },
+      "required": [
+        "schema",
+        "intent",
+        "kind",
+        "relation"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "type": "string",
+          "const": "symseq.assurance.proposal-delta.v1"
+        },
+        "intent": {
+          "type": "string",
+          "const": "PROPOSE"
+        },
+        "kind": {
+          "const": "SOURCE_FIELD"
+        },
+        "source_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "pointer": {
+          "type": "string",
+          "pattern": "^/"
+        },
+        "value": {}
+      },
+      "required": [
+        "schema",
+        "intent",
+        "kind",
+        "source_id",
+        "pointer",
+        "value"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "type": "string",
+          "const": "symseq.assurance.proposal-delta.v1"
+        },
+        "intent": {
+          "type": "string",
+          "const": "PROPOSE"
+        },
+        "kind": {
+          "const": "SOURCE_PERMISSION"
+        },
+        "action": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        }
+      },
+      "required": [
+        "schema",
+        "intent",
+        "kind",
+        "action"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "type": "string",
+          "const": "symseq.assurance.proposal-delta.v1"
+        },
+        "intent": {
+          "type": "string",
+          "const": "PROPOSE"
+        },
+        "kind": {
+          "const": "BOUNDED_PROPERTY"
+        },
+        "property": {
+          "type": "string",
+          "enum": [
+            "PRESERVES_POPCOUNT",
+            "PRESERVES_VALUE"
+          ]
+        }
+      },
+      "required": [
+        "schema",
+        "intent",
+        "kind",
+        "property"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "type": "string",
+          "const": "symseq.assurance.proposal-delta.v1"
+        },
+        "intent": {
+          "type": "string",
+          "const": "PROPOSE"
+        },
+        "kind": {
+          "const": "EMPIRICAL_HYPOTHESIS"
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 3000
+        }
+      },
+      "required": [
+        "schema",
+        "intent",
+        "kind",
+        "text"
+      ],
+      "additionalProperties": false
+    }
+  ]
+}

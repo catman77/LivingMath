@@ -1,0 +1,28 @@
+{
+  "release": "v0.1.0-developer-preview",
+  "source_archive": "LM_SUTI_ASSURANCE_003_DELIVERY.zip",
+  "source_archive_sha256": "10072b9e22809e4b97549770ec9b3047275ad03fe83b0999738343c749b80d84",
+  "source_manifest_members_checked": 2278,
+  "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+  "binder_digest": "8c760eeaa960cc4a2eb227ee1669d004f82db8e6e51ce871caaaa1b79c39105a",
+  "source_file_sha256": {
+    "_frozen/common002.py": "0d036b67ab3586670e7531fc1f76a7a80c9188bcbf005e156bc0cca540b19f10",
+    "_frozen/proposal_schema.py": "1c5677bf23ef48e3437a2494ac75fc0d6420fd695d7dd86711905fab71550574",
+    "_frozen/proposal_binder.py": "12dec19cc4d7ad9e3473713274dffa5e4213ad3b6408222457b66e436d5bcdd1",
+    "_frozen/PROPOSAL_DELTA_V1.schema.json": "3385c26ca911af7f62f9a371f597226a1622b53698a94ec218e91eb5e35dbd77",
+    "_frozen/checker001/contracts.py": "a041d665405b0d1544d1c03fb9934966a4903c36f613ec6c0823f8e75ce1f05d",
+    "_frozen/checker001/checks.py": "cc5cc01b854e3326024f62b40ea776aa6799f231a29c0d5f9554bece615fb924",
+    "_frozen/checker001/finite_semantics.py": "90d5f4e581c75fa9c9aae5834869e5c632f4fe92e9569c8844488d6aa5f4336d",
+    "_frozen/checker001/independent_vm.py": "4562b2a4bde9890b3d149d4d86827135b3de10b2e702dc3c7523d8bb2d47d414",
+    "_frozen/checker001/bounded_program.py": "8198adfaa7e14ecd94c59a62af578e7203a8ba23361b271f1d24405733c9c752",
+    "_frozen/checker001/ledger.py": "0c8fbbb9bf78d62b398c17dcc79d5a00c6e2fdbcbfb613e542395d256d6baca0",
+    "_frozen/checker001/ASSURANCE_CLAIM_V1.schema.json": "09134f125377af7da83888684316e8420f3bbb5494cfb66837a06e945be79450",
+    "_frozen/checker001/ASSURANCE_DECISION_V1.schema.json": "00ccf26c7220f7fac2e71854ca57264cc3f2274cb1b0624ff2fddd773aca40ef",
+    "_frozen/checker001/SOURCE_SNAPSHOT_V1.schema.json": "c01ffa8bc3661e3c58997e49f76de906c095c5196cdf23c1c9c18bb48b144b13"
+  },
+  "baseline_logical_digest": "29f4ea271493891371854048d413d0b5f9cc9836e047c5050b4189623f6a8bfa",
+  "source_archive_preserved": true,
+  "runtime_frozen_islands": 1,
+  "native_SUTI": "NOT_EXECUTED",
+  "formal_adapter": "UNAVAILABLE_NOT_REGISTERED"
+}

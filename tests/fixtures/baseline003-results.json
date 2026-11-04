@@ -1,0 +1,4656 @@
+{
+  "status": "PASS",
+  "passed": 24,
+  "total": 24,
+  "false_accepts": 0,
+  "false_status_promotion": 0,
+  "original_checker_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+  "results": [
+    {
+      "test_id": "T01",
+      "status": "PASS",
+      "expected_status": "CHECKED_FINITE",
+      "expected_reason": null,
+      "evaluation": {
+        "interface": "FULL",
+        "raw_sha256": "de95fe667c0b7af5f7164c95c233ff40947613b478d957a5779f0b11cd1eca71",
+        "runtime": {
+          "kind": "SYMBOLIC",
+          "model_id": "offline003-control-no-model",
+          "call_id": "T",
+          "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+        },
+        "schema_valid": true,
+        "binding_applicable": false,
+        "bind_success": null,
+        "payload": {
+          "assertion": {
+            "content": "{\"input_domain\":[0,15],\"predicate\":\"preserves_popcount\"}",
+            "language": "bounded-program-v1",
+            "machine_term": {
+              "input_domain": [
+                0,
+                15
+              ],
+              "predicate": "preserves_popcount"
+            }
+          },
+          "assumptions": [
+            "Only the declared immutable source and bounded contract apply.",
+            "Source attestation does not establish real-world truth."
+          ],
+          "candidate_id": "qa-candidate",
+          "claim_kind": "EXECUTABLE_BOUNDED",
+          "evidence_refs": [
+            "sha256:b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+          ],
+          "generator": {
+            "config_digest": "4b7bb4d41ab65bcca9e71f54cd99ea3c0ab1c9f2813635e392df3c5a7ec5ed5b",
+            "id": "symbolic-reference",
+            "kind": "SYMBOLIC"
+          },
+          "proposed_status": "ENTAILED_UNDER_PUBLIC_CONTRACT",
+          "schema": "symseq.assurance.candidate.v1",
+          "scope": {
+            "execution_permission": false,
+            "input_domain": [
+              0,
+              15
+            ],
+            "scope_version": 1,
+            "source_snapshots": {
+              "program:C1": "b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+            },
+            "task_id": "C1"
+          },
+          "source_refs": [
+            {
+              "byte_end": 259,
+              "byte_start": 0,
+              "pointer": null,
+              "sha256": "8198adfaa7e14ecd94c59a62af578e7203a8ba23361b271f1d24405733c9c752",
+              "source_id": "program:C1"
+            }
+          ],
+          "task_id": "C1"
+        },
+        "binding": null,
+        "candidate": {
+          "assertion": {
+            "content": "{\"input_domain\":[0,15],\"predicate\":\"preserves_popcount\"}",
+            "language": "bounded-program-v1",
+            "machine_term": {
+              "input_domain": [
+                0,
+                15
+              ],
+              "predicate": "preserves_popcount"
+            }
+          },
+          "assumptions": [
+            "Only the declared immutable source and bounded contract apply.",
+            "Source attestation does not establish real-world truth."
+          ],
+          "candidate_id": "qa-candidate",
+          "claim_kind": "EXECUTABLE_BOUNDED",
+          "evidence_refs": [
+            "sha256:b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+          ],
+          "generator": {
+            "config_digest": "4b7bb4d41ab65bcca9e71f54cd99ea3c0ab1c9f2813635e392df3c5a7ec5ed5b",
+            "id": "symbolic-reference",
+            "kind": "SYMBOLIC"
+          },
+          "proposed_status": "ENTAILED_UNDER_PUBLIC_CONTRACT",
+          "schema": "symseq.assurance.candidate.v1",
+          "scope": {
+            "execution_permission": false,
+            "input_domain": [
+              0,
+              15
+            ],
+            "scope_version": 1,
+            "source_snapshots": {
+              "program:C1": "b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+            },
+            "task_id": "C1"
+          },
+          "source_refs": [
+            {
+              "byte_end": 259,
+              "byte_start": 0,
+              "pointer": null,
+              "sha256": "8198adfaa7e14ecd94c59a62af578e7203a8ba23361b271f1d24405733c9c752",
+              "source_id": "program:C1"
+            }
+          ],
+          "task_id": "C1"
+        },
+        "compiled_candidate_sha256": "91fb43709652bba17b8a942ca2c9b2c7114e9b6d5181e6a9a5d721f222475d9c",
+        "execution_permission": false,
+        "decision": {
+          "schema": "symseq.assurance.decision.v1",
+          "candidate_digest": "807cd172622db159131922cf8cb853b18313b14ceb24e5c5e4f40b2e2fc08095",
+          "source_digest": "524426d44851d31591f1f49555c6a46224523db887681efecda43d15635b1211",
+          "scope_digest": "59f1d6ba43538108d59ea19b8312d54dad32cf034b5b3111d001642489ca5209",
+          "verifier_id": "assurance001/v1",
+          "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+          "decision": "ACCEPT",
+          "assurance_status": "CHECKED_FINITE",
+          "claim_kind": "EXECUTABLE_BOUNDED",
+          "check_kind": "FINITE_EXHAUSTIVE",
+          "reason_code": "ALL_16_INPUTS_EXHAUSTED",
+          "witness_refs": [
+            "sha256:1953234d08def2a2dde579e88533a5ce98a4328fab41efebc1f0c72f910f1a3b"
+          ],
+          "dependencies": [
+            "sha256:b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+          ],
+          "execution_permission": false,
+          "decision_digest": "ae125699ff06c4361c4047295a5da21678fc4a56c2bd690e44e930e5e79cd03e"
+        },
+        "witnesses": {
+          "sha256:1953234d08def2a2dde579e88533a5ce98a4328fab41efebc1f0c72f910f1a3b": {
+            "schema": "symseq.assurance.witness.v1",
+            "kind": "bounded_exhaustive",
+            "source_digest": "524426d44851d31591f1f49555c6a46224523db887681efecda43d15635b1211",
+            "scope_digest": "59f1d6ba43538108d59ea19b8312d54dad32cf034b5b3111d001642489ca5209",
+            "payload": {
+              "all_16_inputs": [
+                [
+                  0,
+                  0,
+                  true
+                ],
+                [
+                  1,
+                  2,
+                  true
+                ],
+                [
+                  2,
+                  4,
+                  true
+                ],
+                [
+                  3,
+                  6,
+                  true
+                ],
+                [
+                  4,
+                  8,
+                  true
+                ],
+                [
+                  5,
+                  10,
+                  true
+                ],
+                [
+                  6,
+                  12,
+                  true
+                ],
+                [
+                  7,
+                  14,
+                  true
+                ],
+                [
+                  8,
+                  1,
+                  true
+                ],
+                [
+                  9,
+                  3,
+                  true
+                ],
+                [
+                  10,
+                  5,
+                  true
+                ],
+                [
+                  11,
+                  7,
+                  true
+                ],
+                [
+                  12,
+                  9,
+                  true
+                ],
+                [
+                  13,
+                  11,
+                  true
+                ],
+                [
+                  14,
+                  13,
+                  true
+                ],
+                [
+                  15,
+                  15,
+                  true
+                ]
+              ],
+              "unbounded_claim": false
+            }
+          }
+        },
+        "semantic_status": "CHECKED_FINITE",
+        "reason_code": "ALL_16_INPUTS_EXHAUSTED",
+        "failure_stage": null,
+        "checker_invoked": true
+      },
+      "extra": {
+        "authoritative_FULL_hash_exact": true
+      },
+      "contract_hash": "27d3a3464c5035148f7c05108647668a89022d553339fbf417e6beeae8bdddf7"
+    },
+    {
+      "test_id": "T02",
+      "status": "PASS",
+      "expected_status": "REJECTED",
+      "expected_reason": "BOUNDED_PROGRAM_COUNTEREXAMPLE",
+      "evaluation": {
+        "interface": "FULL",
+        "raw_sha256": "2e12525a3dc5bd6f19b3babe00ed81a17f1a6f2082c27a596a19784a7fdb79db",
+        "runtime": {
+          "kind": "SYMBOLIC",
+          "model_id": "offline003-control-no-model",
+          "call_id": "T",
+          "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+        },
+        "schema_valid": true,
+        "binding_applicable": false,
+        "bind_success": null,
+        "payload": {
+          "assertion": {
+            "content": "{\"input_domain\":[0,15],\"predicate\":\"preserves_value\"}",
+            "language": "bounded-program-v1",
+            "machine_term": {
+              "input_domain": [
+                0,
+                15
+              ],
+              "predicate": "preserves_value"
+            }
+          },
+          "assumptions": [
+            "Only the declared immutable source and bounded contract apply.",
+            "Source attestation does not establish real-world truth."
+          ],
+          "candidate_id": "qa-candidate",
+          "claim_kind": "EXECUTABLE_BOUNDED",
+          "evidence_refs": [
+            "sha256:b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+          ],
+          "generator": {
+            "config_digest": "4b7bb4d41ab65bcca9e71f54cd99ea3c0ab1c9f2813635e392df3c5a7ec5ed5b",
+            "id": "symbolic-reference",
+            "kind": "SYMBOLIC"
+          },
+          "proposed_status": "ENTAILED_UNDER_PUBLIC_CONTRACT",
+          "schema": "symseq.assurance.candidate.v1",
+          "scope": {
+            "execution_permission": false,
+            "input_domain": [
+              0,
+              15
+            ],
+            "scope_version": 1,
+            "source_snapshots": {
+              "program:C1": "b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+            },
+            "task_id": "C1"
+          },
+          "source_refs": [
+            {
+              "byte_end": 259,
+              "byte_start": 0,
+              "pointer": null,
+              "sha256": "8198adfaa7e14ecd94c59a62af578e7203a8ba23361b271f1d24405733c9c752",
+              "source_id": "program:C1"
+            }
+          ],
+          "task_id": "C1"
+        },
+        "binding": null,
+        "candidate": {
+          "assertion": {
+            "content": "{\"input_domain\":[0,15],\"predicate\":\"preserves_value\"}",
+            "language": "bounded-program-v1",
+            "machine_term": {
+              "input_domain": [
+                0,
+                15
+              ],
+              "predicate": "preserves_value"
+            }
+          },
+          "assumptions": [
+            "Only the declared immutable source and bounded contract apply.",
+            "Source attestation does not establish real-world truth."
+          ],
+          "candidate_id": "qa-candidate",
+          "claim_kind": "EXECUTABLE_BOUNDED",
+          "evidence_refs": [
+            "sha256:b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+          ],
+          "generator": {
+            "config_digest": "4b7bb4d41ab65bcca9e71f54cd99ea3c0ab1c9f2813635e392df3c5a7ec5ed5b",
+            "id": "symbolic-reference",
+            "kind": "SYMBOLIC"
+          },
+          "proposed_status": "ENTAILED_UNDER_PUBLIC_CONTRACT",
+          "schema": "symseq.assurance.candidate.v1",
+          "scope": {
+            "execution_permission": false,
+            "input_domain": [
+              0,
+              15
+            ],
+            "scope_version": 1,
+            "source_snapshots": {
+              "program:C1": "b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+            },
+            "task_id": "C1"
+          },
+          "source_refs": [
+            {
+              "byte_end": 259,
+              "byte_start": 0,
+              "pointer": null,
+              "sha256": "8198adfaa7e14ecd94c59a62af578e7203a8ba23361b271f1d24405733c9c752",
+              "source_id": "program:C1"
+            }
+          ],
+          "task_id": "C1"
+        },
+        "compiled_candidate_sha256": "2920782e91a4ea90d64ebe78690f6aa3471199c5e60581d8b753ce519a7a61b6",
+        "execution_permission": false,
+        "decision": {
+          "schema": "symseq.assurance.decision.v1",
+          "candidate_digest": "9843803cd56a86865d1d71aeba06dd89474ad0e07654eb74416293f5aae9d757",
+          "source_digest": "524426d44851d31591f1f49555c6a46224523db887681efecda43d15635b1211",
+          "scope_digest": "59f1d6ba43538108d59ea19b8312d54dad32cf034b5b3111d001642489ca5209",
+          "verifier_id": "assurance001/v1",
+          "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+          "decision": "REJECT",
+          "assurance_status": "REJECTED",
+          "claim_kind": "EXECUTABLE_BOUNDED",
+          "check_kind": "FINITE_EXHAUSTIVE",
+          "reason_code": "BOUNDED_PROGRAM_COUNTEREXAMPLE",
+          "witness_refs": [
+            "sha256:aa89dbaa8ba3479b124e759cd290fb7412e61dad1edcea3c6a08d0807dbf77fd"
+          ],
+          "dependencies": [
+            "sha256:b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+          ],
+          "execution_permission": false,
+          "decision_digest": "e12c067aaefacd905c08532abfad3d2f5e91237090c9999249448e03b07fe80d"
+        },
+        "witnesses": {
+          "sha256:aa89dbaa8ba3479b124e759cd290fb7412e61dad1edcea3c6a08d0807dbf77fd": {
+            "schema": "symseq.assurance.witness.v1",
+            "kind": "bounded_exhaustive",
+            "source_digest": "524426d44851d31591f1f49555c6a46224523db887681efecda43d15635b1211",
+            "scope_digest": "59f1d6ba43538108d59ea19b8312d54dad32cf034b5b3111d001642489ca5209",
+            "payload": {
+              "all_16_inputs": [
+                [
+                  0,
+                  0,
+                  true
+                ],
+                [
+                  1,
+                  2,
+                  false
+                ],
+                [
+                  2,
+                  4,
+                  false
+                ],
+                [
+                  3,
+                  6,
+                  false
+                ],
+                [
+                  4,
+                  8,
+                  false
+                ],
+                [
+                  5,
+                  10,
+                  false
+                ],
+                [
+                  6,
+                  12,
+                  false
+                ],
+                [
+                  7,
+                  14,
+                  false
+                ],
+                [
+                  8,
+                  1,
+                  false
+                ],
+                [
+                  9,
+                  3,
+                  false
+                ],
+                [
+                  10,
+                  5,
+                  false
+                ],
+                [
+                  11,
+                  7,
+                  false
+                ],
+                [
+                  12,
+                  9,
+                  false
+                ],
+                [
+                  13,
+                  11,
+                  false
+                ],
+                [
+                  14,
+                  13,
+                  false
+                ],
+                [
+                  15,
+                  15,
+                  true
+                ]
+              ],
+              "unbounded_claim": false
+            }
+          }
+        },
+        "semantic_status": "REJECTED",
+        "reason_code": "BOUNDED_PROGRAM_COUNTEREXAMPLE",
+        "failure_stage": "CHECKER",
+        "checker_invoked": true
+      },
+      "extra": {
+        "both_properties_retained": true
+      },
+      "contract_hash": "27d3a3464c5035148f7c05108647668a89022d553339fbf417e6beeae8bdddf7"
+    },
+    {
+      "test_id": "T03",
+      "status": "PASS",
+      "expected_status": "CHECKED_FINITE",
+      "expected_reason": null,
+      "evaluation": {
+        "interface": "DELTA",
+        "raw_sha256": "1bba60c6b380b8cdc1c106146b6dbecb7b0f98863161d3d8fd40d654136ac0df",
+        "runtime": {
+          "kind": "SYMBOLIC",
+          "model_id": "offline003-control-no-model",
+          "call_id": "T",
+          "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+        },
+        "schema_valid": true,
+        "binding_applicable": true,
+        "bind_success": true,
+        "payload": {
+          "intent": "PROPOSE",
+          "kind": "BOUNDED_PROPERTY",
+          "property": "PRESERVES_POPCOUNT",
+          "schema": "symseq.assurance.proposal-delta.v1"
+        },
+        "binding": {
+          "proposal_raw_sha256": "3864e841582ed8b7962efda6bfe79061221c9b5fa09000a668c2845e17d31d1e",
+          "binder_version": "proposal-binder/1",
+          "binder_digest": "8c760eeaa960cc4a2eb227ee1669d004f82db8e6e51ce871caaaa1b79c39105a",
+          "task_id": "C1",
+          "source_snapshot_bindings": {
+            "program:C1": "b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+          },
+          "runtime_digest": "745020ab0ca74feff83a68e97f79085f105e28fc5c87b54e156a9a38e8538632",
+          "execution_permission": false,
+          "source_refs": [
+            {
+              "source_id": "program:C1",
+              "sha256": "8198adfaa7e14ecd94c59a62af578e7203a8ba23361b271f1d24405733c9c752",
+              "pointer": null,
+              "byte_start": 0,
+              "byte_end": 259
+            }
+          ],
+          "source_rights_origin": {
+            "program:C1": "User-authorized reviewed local QA executable, all inputs declared"
+          },
+          "record_kind": "CompiledCandidateRecord",
+          "proposal": {
+            "intent": "PROPOSE",
+            "kind": "BOUNDED_PROPERTY",
+            "property": "PRESERVES_POPCOUNT",
+            "schema": "symseq.assurance.proposal-delta.v1"
+          },
+          "candidate": {
+            "schema": "symseq.assurance.candidate.v1",
+            "candidate_id": "T:3864e841582ed8b7",
+            "task_id": "C1",
+            "claim_kind": "EXECUTABLE_BOUNDED",
+            "assertion": {
+              "language": "bounded-program-v1",
+              "content": "{\"input_domain\":[0,15],\"predicate\":\"preserves_popcount\"}",
+              "machine_term": {
+                "predicate": "preserves_popcount",
+                "input_domain": [
+                  0,
+                  15
+                ]
+              }
+            },
+            "scope": {
+              "task_id": "C1",
+              "source_snapshots": {
+                "program:C1": "b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+              },
+              "scope_version": 1,
+              "execution_permission": false,
+              "input_domain": [
+                0,
+                15
+              ]
+            },
+            "assumptions": [
+              "Only the declared immutable source and bounded contract apply.",
+              "Source attestation does not establish real-world truth."
+            ],
+            "source_refs": [
+              {
+                "source_id": "program:C1",
+                "sha256": "8198adfaa7e14ecd94c59a62af578e7203a8ba23361b271f1d24405733c9c752",
+                "pointer": null,
+                "byte_start": 0,
+                "byte_end": 259
+              }
+            ],
+            "evidence_refs": [
+              "sha256:b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+            ],
+            "proposed_status": "ENTAILED_UNDER_PUBLIC_CONTRACT",
+            "generator": {
+              "kind": "SYMBOLIC",
+              "id": "offline003-control-no-model",
+              "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+            }
+          },
+          "compiled_candidate_sha256": "2f7b25ced5768d5b72c3c9f224ea364814db462ee17bc9431a53c5c26ee2b87d",
+          "positive_assurance": false,
+          "checker_invoked": false,
+          "field_provenance": {
+            "/schema": "CandidateRecord v1 constant",
+            "/candidate_id": "TRUSTED_RUNTIME:/call_id + raw SHA",
+            "/task_id": "TRUSTED_TASK:/task_id",
+            "/claim_kind": "TRUSTED_TASK:/claim_kind",
+            "/scope": "TRUSTED_TASK:/scope",
+            "/assumptions": "TRUSTED_TASK:/assumptions",
+            "/source_refs": "AUTHENTIC_SOURCE_SNAPSHOTS:source_id/SHA/full byte spans",
+            "/evidence_refs": "AUTHENTIC_SOURCE_SNAPSHOTS:complete snapshot digests including rights.origin",
+            "/assertion/language": "TRUSTED_TASK:/claim_kind (existing language mapping)",
+            "/assertion/content": "CANONICAL_JSON_OF_EXACT_COMPILED_MACHINE_TERM",
+            "/generator": "TRUSTED_RUNTIME:actual model identity/configuration",
+            "/proposed_status": "MODEL_DELTA:/kind (fixed request-status mapping, never checker-derived)",
+            "/assertion/machine_term/predicate": "MODEL_DELTA:/property (literal enum mapping)",
+            "/assertion/machine_term/input_domain": "TRUSTED_TASK:/scope/input_domain"
+          }
+        },
+        "candidate": {
+          "schema": "symseq.assurance.candidate.v1",
+          "candidate_id": "T:3864e841582ed8b7",
+          "task_id": "C1",
+          "claim_kind": "EXECUTABLE_BOUNDED",
+          "assertion": {
+            "language": "bounded-program-v1",
+            "content": "{\"input_domain\":[0,15],\"predicate\":\"preserves_popcount\"}",
+            "machine_term": {
+              "predicate": "preserves_popcount",
+              "input_domain": [
+                0,
+                15
+              ]
+            }
+          },
+          "scope": {
+            "task_id": "C1",
+            "source_snapshots": {
+              "program:C1": "b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+            },
+            "scope_version": 1,
+            "execution_permission": false,
+            "input_domain": [
+              0,
+              15
+            ]
+          },
+          "assumptions": [
+            "Only the declared immutable source and bounded contract apply.",
+            "Source attestation does not establish real-world truth."
+          ],
+          "source_refs": [
+            {
+              "source_id": "program:C1",
+              "sha256": "8198adfaa7e14ecd94c59a62af578e7203a8ba23361b271f1d24405733c9c752",
+              "pointer": null,
+              "byte_start": 0,
+              "byte_end": 259
+            }
+          ],
+          "evidence_refs": [
+            "sha256:b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+          ],
+          "proposed_status": "ENTAILED_UNDER_PUBLIC_CONTRACT",
+          "generator": {
+            "kind": "SYMBOLIC",
+            "id": "offline003-control-no-model",
+            "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+          }
+        },
+        "compiled_candidate_sha256": "2f7b25ced5768d5b72c3c9f224ea364814db462ee17bc9431a53c5c26ee2b87d",
+        "execution_permission": false,
+        "decision": {
+          "schema": "symseq.assurance.decision.v1",
+          "candidate_digest": "807cd172622db159131922cf8cb853b18313b14ceb24e5c5e4f40b2e2fc08095",
+          "source_digest": "524426d44851d31591f1f49555c6a46224523db887681efecda43d15635b1211",
+          "scope_digest": "59f1d6ba43538108d59ea19b8312d54dad32cf034b5b3111d001642489ca5209",
+          "verifier_id": "assurance001/v1",
+          "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+          "decision": "ACCEPT",
+          "assurance_status": "CHECKED_FINITE",
+          "claim_kind": "EXECUTABLE_BOUNDED",
+          "check_kind": "FINITE_EXHAUSTIVE",
+          "reason_code": "ALL_16_INPUTS_EXHAUSTED",
+          "witness_refs": [
+            "sha256:1953234d08def2a2dde579e88533a5ce98a4328fab41efebc1f0c72f910f1a3b"
+          ],
+          "dependencies": [
+            "sha256:b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+          ],
+          "execution_permission": false,
+          "decision_digest": "ae125699ff06c4361c4047295a5da21678fc4a56c2bd690e44e930e5e79cd03e"
+        },
+        "witnesses": {
+          "sha256:1953234d08def2a2dde579e88533a5ce98a4328fab41efebc1f0c72f910f1a3b": {
+            "schema": "symseq.assurance.witness.v1",
+            "kind": "bounded_exhaustive",
+            "source_digest": "524426d44851d31591f1f49555c6a46224523db887681efecda43d15635b1211",
+            "scope_digest": "59f1d6ba43538108d59ea19b8312d54dad32cf034b5b3111d001642489ca5209",
+            "payload": {
+              "all_16_inputs": [
+                [
+                  0,
+                  0,
+                  true
+                ],
+                [
+                  1,
+                  2,
+                  true
+                ],
+                [
+                  2,
+                  4,
+                  true
+                ],
+                [
+                  3,
+                  6,
+                  true
+                ],
+                [
+                  4,
+                  8,
+                  true
+                ],
+                [
+                  5,
+                  10,
+                  true
+                ],
+                [
+                  6,
+                  12,
+                  true
+                ],
+                [
+                  7,
+                  14,
+                  true
+                ],
+                [
+                  8,
+                  1,
+                  true
+                ],
+                [
+                  9,
+                  3,
+                  true
+                ],
+                [
+                  10,
+                  5,
+                  true
+                ],
+                [
+                  11,
+                  7,
+                  true
+                ],
+                [
+                  12,
+                  9,
+                  true
+                ],
+                [
+                  13,
+                  11,
+                  true
+                ],
+                [
+                  14,
+                  13,
+                  true
+                ],
+                [
+                  15,
+                  15,
+                  true
+                ]
+              ],
+              "unbounded_claim": false
+            }
+          }
+        },
+        "semantic_status": "CHECKED_FINITE",
+        "reason_code": "ALL_16_INPUTS_EXHAUSTED",
+        "failure_stage": null,
+        "checker_invoked": true
+      },
+      "extra": {
+        "authoritative_DELTA_hash_exact": true
+      },
+      "contract_hash": "c9b5ec96508c8fd1862fe3bed1c008d6a3c32268f7460c81788ec966b11bc023"
+    },
+    {
+      "test_id": "T04",
+      "status": "PASS",
+      "expected_status": "NO_PROPOSAL",
+      "expected_reason": null,
+      "evaluation": {
+        "interface": "DELTA",
+        "raw_sha256": "11a440aa6544c4612af7a522b8e9a4a9a9f2b9b04ccb746b22bce9c88093b3a8",
+        "runtime": {
+          "kind": "SYMBOLIC",
+          "model_id": "offline003-control-no-model",
+          "call_id": "T",
+          "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+        },
+        "schema_valid": true,
+        "binding_applicable": true,
+        "bind_success": true,
+        "payload": {
+          "intent": "ABSTAIN",
+          "reason": "",
+          "schema": "symseq.assurance.proposal-delta.v1"
+        },
+        "binding": {
+          "proposal_raw_sha256": "9e46443261713fff41fc82dc063577e6f089c3b82de939a6fa6ea1e0ca617996",
+          "binder_version": "proposal-binder/1",
+          "binder_digest": "8c760eeaa960cc4a2eb227ee1669d004f82db8e6e51ce871caaaa1b79c39105a",
+          "task_id": "C1",
+          "source_snapshot_bindings": {
+            "program:C1": "b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+          },
+          "runtime_digest": "745020ab0ca74feff83a68e97f79085f105e28fc5c87b54e156a9a38e8538632",
+          "execution_permission": false,
+          "source_refs": [
+            {
+              "source_id": "program:C1",
+              "sha256": "8198adfaa7e14ecd94c59a62af578e7203a8ba23361b271f1d24405733c9c752",
+              "pointer": null,
+              "byte_start": 0,
+              "byte_end": 259
+            }
+          ],
+          "source_rights_origin": {
+            "program:C1": "User-authorized reviewed local QA executable, all inputs declared"
+          },
+          "record_kind": "NoProposalRecord",
+          "proposal": {
+            "intent": "ABSTAIN",
+            "reason": "",
+            "schema": "symseq.assurance.proposal-delta.v1"
+          },
+          "candidate": null,
+          "compiled_candidate_sha256": null,
+          "semantic_status": "NO_PROPOSAL",
+          "positive_assurance": false,
+          "checker_invoked": false,
+          "field_provenance": {
+            "/reason": "MODEL_DELTA:/reason",
+            "/intent": "MODEL_DELTA:/intent",
+            "/task_id": "TRUSTED_TASK:/task_id",
+            "/source_snapshot_bindings": "AUTHENTIC_SOURCE_SNAPSHOTS"
+          }
+        },
+        "candidate": null,
+        "compiled_candidate_sha256": null,
+        "execution_permission": false,
+        "decision": null,
+        "witnesses": {},
+        "semantic_status": "NO_PROPOSAL",
+        "reason_code": "MODEL_ABSTAINED",
+        "failure_stage": null,
+        "checker_invoked": false
+      },
+      "extra": {
+        "abstain_and_both_properties_retained": true,
+        "no_candidate_no_checker": true
+      },
+      "contract_hash": "c9b5ec96508c8fd1862fe3bed1c008d6a3c32268f7460c81788ec966b11bc023"
+    },
+    {
+      "test_id": "T05",
+      "status": "PASS",
+      "expected_status": "REJECTED",
+      "expected_reason": "SOURCE_FLAG_IS_NOT_EXTERNAL_PERMISSION",
+      "evaluation": {
+        "interface": "DELTA",
+        "raw_sha256": "6cfb78c440ee0f7a9471e85be4737d32ab910f7e026f5c460020df094f04c369",
+        "runtime": {
+          "kind": "SYMBOLIC",
+          "model_id": "offline003-control-no-model",
+          "call_id": "T",
+          "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+        },
+        "schema_valid": true,
+        "binding_applicable": true,
+        "bind_success": true,
+        "payload": {
+          "action": "publish",
+          "intent": "PROPOSE",
+          "kind": "SOURCE_PERMISSION",
+          "schema": "symseq.assurance.proposal-delta.v1"
+        },
+        "binding": {
+          "proposal_raw_sha256": "a7a7106464cf33d11c59ca98e7106e285e73d8dccb22a6941d1334922971bdce",
+          "binder_version": "proposal-binder/1",
+          "binder_digest": "8c760eeaa960cc4a2eb227ee1669d004f82db8e6e51ce871caaaa1b79c39105a",
+          "task_id": "S1",
+          "source_snapshot_bindings": {
+            "P1-001:record:0": "5238d83dc9a36127adda7114c57ace594272a915447c5abfd77ee86db29d16ac",
+            "P1-001:record:1": "0d2bd23cd5462d63c4c5aa7c4ad3fe331acf6a4392b7f276c87ecf14a46641ad",
+            "P1-001:schema": "5e9f2610cf40a1ecd61c5f9eb24eb4c4428854414116d7467045486d415c94b0"
+          },
+          "runtime_digest": "745020ab0ca74feff83a68e97f79085f105e28fc5c87b54e156a9a38e8538632",
+          "execution_permission": false,
+          "source_refs": [
+            {
+              "source_id": "P1-001:record:0",
+              "sha256": "a3f65de1ec7acbd73b9400a878040eb8a9d0e3f13d0a09bf8f2014ab0dff6ac5",
+              "pointer": null,
+              "byte_start": 0,
+              "byte_end": 302
+            },
+            {
+              "source_id": "P1-001:record:1",
+              "sha256": "4a9ca42438e052116e89ee1faa5691bb8a397024dc92c5fd8a4ab1240b8b1e85",
+              "pointer": null,
+              "byte_start": 0,
+              "byte_end": 328
+            },
+            {
+              "source_id": "P1-001:schema",
+              "sha256": "8038431a0c13868dfb0427256f5ee9b32929635d5414c7f2db41652036045ba3",
+              "pointer": null,
+              "byte_start": 0,
+              "byte_end": 2181
+            }
+          ],
+          "source_rights_origin": {
+            "P1-001:record:0": "Actual source-schema-admissible counterfactual witness from live MCP, not a real permission/event",
+            "P1-001:record:1": "Actual source-schema-admissible counterfactual witness from live MCP, not a real permission/event",
+            "P1-001:schema": "SUTI author-provided reviewed source schema; actual live MCP source hash"
+          },
+          "record_kind": "CompiledCandidateRecord",
+          "proposal": {
+            "action": "publish",
+            "intent": "PROPOSE",
+            "kind": "SOURCE_PERMISSION",
+            "schema": "symseq.assurance.proposal-delta.v1"
+          },
+          "candidate": {
+            "schema": "symseq.assurance.candidate.v1",
+            "candidate_id": "T:a7a7106464cf33d1",
+            "task_id": "S1",
+            "claim_kind": "SOURCE_CLAIM",
+            "assertion": {
+              "language": "source-claim-v1",
+              "content": "{\"action\":\"publish\",\"predicate\":\"permission_granted\"}",
+              "machine_term": {
+                "predicate": "permission_granted",
+                "action": "publish"
+              }
+            },
+            "scope": {
+              "task_id": "S1",
+              "source_snapshots": {
+                "P1-001:record:0": "5238d83dc9a36127adda7114c57ace594272a915447c5abfd77ee86db29d16ac",
+                "P1-001:record:1": "0d2bd23cd5462d63c4c5aa7c4ad3fe331acf6a4392b7f276c87ecf14a46641ad",
+                "P1-001:schema": "5e9f2610cf40a1ecd61c5f9eb24eb4c4428854414116d7467045486d415c94b0"
+              },
+              "scope_version": 1,
+              "execution_permission": false,
+              "projected_fields": [
+                "visibility"
+              ],
+              "required_fields": [
+                "visibility",
+                "transfer_status"
+              ]
+            },
+            "assumptions": [
+              "Only the declared immutable source and bounded contract apply.",
+              "Source attestation does not establish real-world truth."
+            ],
+            "source_refs": [
+              {
+                "source_id": "P1-001:record:0",
+                "sha256": "a3f65de1ec7acbd73b9400a878040eb8a9d0e3f13d0a09bf8f2014ab0dff6ac5",
+                "pointer": null,
+                "byte_start": 0,
+                "byte_end": 302
+              },
+              {
+                "source_id": "P1-001:record:1",
+                "sha256": "4a9ca42438e052116e89ee1faa5691bb8a397024dc92c5fd8a4ab1240b8b1e85",
+                "pointer": null,
+                "byte_start": 0,
+                "byte_end": 328
+              },
+              {
+                "source_id": "P1-001:schema",
+                "sha256": "8038431a0c13868dfb0427256f5ee9b32929635d5414c7f2db41652036045ba3",
+                "pointer": null,
+                "byte_start": 0,
+                "byte_end": 2181
+              }
+            ],
+            "evidence_refs": [
+              "sha256:5238d83dc9a36127adda7114c57ace594272a915447c5abfd77ee86db29d16ac",
+              "sha256:0d2bd23cd5462d63c4c5aa7c4ad3fe331acf6a4392b7f276c87ecf14a46641ad",
+              "sha256:5e9f2610cf40a1ecd61c5f9eb24eb4c4428854414116d7467045486d415c94b0"
+            ],
+            "proposed_status": "SOURCE_ATTESTED",
+            "generator": {
+              "kind": "SYMBOLIC",
+              "id": "offline003-control-no-model",
+              "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+            }
+          },
+          "compiled_candidate_sha256": "9b4ee34381a83572dabc35dc980ba850add5c5e21f715be24dfe3c91844372fa",
+          "positive_assurance": false,
+          "checker_invoked": false,
+          "field_provenance": {
+            "/schema": "CandidateRecord v1 constant",
+            "/candidate_id": "TRUSTED_RUNTIME:/call_id + raw SHA",
+            "/task_id": "TRUSTED_TASK:/task_id",
+            "/claim_kind": "TRUSTED_TASK:/claim_kind",
+            "/scope": "TRUSTED_TASK:/scope",
+            "/assumptions": "TRUSTED_TASK:/assumptions",
+            "/source_refs": "AUTHENTIC_SOURCE_SNAPSHOTS:source_id/SHA/full byte spans",
+            "/evidence_refs": "AUTHENTIC_SOURCE_SNAPSHOTS:complete snapshot digests including rights.origin",
+            "/assertion/language": "TRUSTED_TASK:/claim_kind (existing language mapping)",
+            "/assertion/content": "CANONICAL_JSON_OF_EXACT_COMPILED_MACHINE_TERM",
+            "/generator": "TRUSTED_RUNTIME:actual model identity/configuration",
+            "/proposed_status": "MODEL_DELTA:/kind (fixed request-status mapping, never checker-derived)",
+            "/assertion/machine_term/predicate": "MODEL_DELTA:/kind (literal enum mapping)",
+            "/assertion/machine_term/action": "MODEL_DELTA:/action"
+          }
+        },
+        "candidate": {
+          "schema": "symseq.assurance.candidate.v1",
+          "candidate_id": "T:a7a7106464cf33d1",
+          "task_id": "S1",
+          "claim_kind": "SOURCE_CLAIM",
+          "assertion": {
+            "language": "source-claim-v1",
+            "content": "{\"action\":\"publish\",\"predicate\":\"permission_granted\"}",
+            "machine_term": {
+              "predicate": "permission_granted",
+              "action": "publish"
+            }
+          },
+          "scope": {
+            "task_id": "S1",
+            "source_snapshots": {
+              "P1-001:record:0": "5238d83dc9a36127adda7114c57ace594272a915447c5abfd77ee86db29d16ac",
+              "P1-001:record:1": "0d2bd23cd5462d63c4c5aa7c4ad3fe331acf6a4392b7f276c87ecf14a46641ad",
+              "P1-001:schema": "5e9f2610cf40a1ecd61c5f9eb24eb4c4428854414116d7467045486d415c94b0"
+            },
+            "scope_version": 1,
+            "execution_permission": false,
+            "projected_fields": [
+              "visibility"
+            ],
+            "required_fields": [
+              "visibility",
+              "transfer_status"
+            ]
+          },
+          "assumptions": [
+            "Only the declared immutable source and bounded contract apply.",
+            "Source attestation does not establish real-world truth."
+          ],
+          "source_refs": [
+            {
+              "source_id": "P1-001:record:0",
+              "sha256": "a3f65de1ec7acbd73b9400a878040eb8a9d0e3f13d0a09bf8f2014ab0dff6ac5",
+              "pointer": null,
+              "byte_start": 0,
+              "byte_end": 302
+            },
+            {
+              "source_id": "P1-001:record:1",
+              "sha256": "4a9ca42438e052116e89ee1faa5691bb8a397024dc92c5fd8a4ab1240b8b1e85",
+              "pointer": null,
+              "byte_start": 0,
+              "byte_end": 328
+            },
+            {
+              "source_id": "P1-001:schema",
+              "sha256": "8038431a0c13868dfb0427256f5ee9b32929635d5414c7f2db41652036045ba3",
+              "pointer": null,
+              "byte_start": 0,
+              "byte_end": 2181
+            }
+          ],
+          "evidence_refs": [
+            "sha256:5238d83dc9a36127adda7114c57ace594272a915447c5abfd77ee86db29d16ac",
+            "sha256:0d2bd23cd5462d63c4c5aa7c4ad3fe331acf6a4392b7f276c87ecf14a46641ad",
+            "sha256:5e9f2610cf40a1ecd61c5f9eb24eb4c4428854414116d7467045486d415c94b0"
+          ],
+          "proposed_status": "SOURCE_ATTESTED",
+          "generator": {
+            "kind": "SYMBOLIC",
+            "id": "offline003-control-no-model",
+            "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+          }
+        },
+        "compiled_candidate_sha256": "9b4ee34381a83572dabc35dc980ba850add5c5e21f715be24dfe3c91844372fa",
+        "execution_permission": false,
+        "decision": {
+          "schema": "symseq.assurance.decision.v1",
+          "candidate_digest": "580b2cc86ae497d693838e811436578fc7b315face9ff8e505c1d2efd65cb7fe",
+          "source_digest": "2d80c41bfebfb73cbfb7c8c994651cb270c89c95d9abc2849bb79b18542d44bb",
+          "scope_digest": "ae6c8a1cae3e5490e66c1e9ec3747c0b5224b77a7782ca6732bf6ed9fb6d12ab",
+          "verifier_id": "assurance001/v1",
+          "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+          "decision": "REJECT",
+          "assurance_status": "REJECTED",
+          "claim_kind": "SOURCE_CLAIM",
+          "check_kind": "NONE",
+          "reason_code": "SOURCE_FLAG_IS_NOT_EXTERNAL_PERMISSION",
+          "witness_refs": [
+            "sha256:b551472e3782a20229c92ddadd91399efec3d8ba7ace3c557d8e31a0dd59f656"
+          ],
+          "dependencies": [
+            "sha256:5238d83dc9a36127adda7114c57ace594272a915447c5abfd77ee86db29d16ac",
+            "sha256:0d2bd23cd5462d63c4c5aa7c4ad3fe331acf6a4392b7f276c87ecf14a46641ad",
+            "sha256:5e9f2610cf40a1ecd61c5f9eb24eb4c4428854414116d7467045486d415c94b0"
+          ],
+          "execution_permission": false,
+          "decision_digest": "388dd78ae2715d55ea2fbc460d9d8ad3a51e34b8ed077975c3e0a7e9952e79e3"
+        },
+        "witnesses": {
+          "sha256:b551472e3782a20229c92ddadd91399efec3d8ba7ace3c557d8e31a0dd59f656": {
+            "schema": "symseq.assurance.witness.v1",
+            "kind": "permission_boundary",
+            "source_digest": "2d80c41bfebfb73cbfb7c8c994651cb270c89c95d9abc2849bb79b18542d44bb",
+            "scope_digest": "ae6c8a1cae3e5490e66c1e9ec3747c0b5224b77a7782ca6732bf6ed9fb6d12ab",
+            "payload": {
+              "publication_status": "HOLD",
+              "execution_permission": false
+            }
+          }
+        },
+        "semantic_status": "REJECTED",
+        "reason_code": "SOURCE_FLAG_IS_NOT_EXTERNAL_PERMISSION",
+        "failure_stage": "CHECKER",
+        "checker_invoked": true
+      },
+      "extra": {
+        "real_llama_converter_rejects_unanchored_regex": true,
+        "error": "Pattern must start with \"^\" and end with \"$\""
+      },
+      "contract_hash": "c9b5ec96508c8fd1862fe3bed1c008d6a3c32268f7460c81788ec966b11bc023"
+    },
+    {
+      "test_id": "T06",
+      "status": "PASS",
+      "expected_status": "REJECTED",
+      "expected_reason": "MODEL_DELTA_INVALID",
+      "evaluation": {
+        "interface": "DELTA",
+        "raw_sha256": "e4d70d41648a0f9ac5305103b332eed6f431c209576aecf6740750e40e2a0404",
+        "runtime": {
+          "kind": "SYMBOLIC",
+          "model_id": "offline003-control-no-model",
+          "call_id": "T",
+          "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+        },
+        "schema_valid": false,
+        "binding_applicable": true,
+        "bind_success": false,
+        "payload": null,
+        "binding": null,
+        "candidate": null,
+        "compiled_candidate_sha256": null,
+        "decision": null,
+        "witnesses": {},
+        "semantic_status": "REJECTED",
+        "reason_code": "MODEL_DELTA_INVALID",
+        "failure_stage": "LOCAL_SCHEMA",
+        "checker_invoked": false,
+        "execution_permission": false
+      },
+      "extra": {
+        "backend_admits_widened_pointer_but_local_rejects": true
+      },
+      "contract_hash": "c9b5ec96508c8fd1862fe3bed1c008d6a3c32268f7460c81788ec966b11bc023"
+    },
+    {
+      "test_id": "T07",
+      "status": "PASS",
+      "expected_status": "REJECTED",
+      "expected_reason": "MODEL_DELTA_INVALID",
+      "evaluation": {
+        "interface": "DELTA",
+        "raw_sha256": "69b0a3a4a707416371476c808cd3bf0e07256dbd9479da31913f082efe566d1b",
+        "runtime": {
+          "kind": "SYMBOLIC",
+          "model_id": "offline003-control-no-model",
+          "call_id": "T",
+          "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+        },
+        "schema_valid": false,
+        "binding_applicable": true,
+        "bind_success": false,
+        "payload": null,
+        "binding": null,
+        "candidate": null,
+        "compiled_candidate_sha256": null,
+        "decision": null,
+        "witnesses": {},
+        "semantic_status": "REJECTED",
+        "reason_code": "MODEL_DELTA_INVALID",
+        "failure_stage": "LOCAL_SCHEMA",
+        "checker_invoked": false,
+        "execution_permission": false
+      },
+      "extra": {},
+      "contract_hash": "c9b5ec96508c8fd1862fe3bed1c008d6a3c32268f7460c81788ec966b11bc023"
+    },
+    {
+      "test_id": "T08",
+      "status": "PASS",
+      "expected_status": "REJECTED",
+      "expected_reason": "INVALID_JSON",
+      "evaluation": {
+        "interface": "DELTA",
+        "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "runtime": {
+          "kind": "SYMBOLIC",
+          "model_id": "offline003-control-no-model",
+          "call_id": "T",
+          "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+        },
+        "schema_valid": false,
+        "binding_applicable": true,
+        "bind_success": false,
+        "payload": null,
+        "binding": null,
+        "candidate": null,
+        "compiled_candidate_sha256": null,
+        "decision": null,
+        "witnesses": {},
+        "semantic_status": "REJECTED",
+        "reason_code": "INVALID_JSON",
+        "failure_stage": "STRICT_JSON",
+        "checker_invoked": false,
+        "execution_permission": false
+      },
+      "extra": {
+        "real_historical_HTTP400": true,
+        "historical_usage_null": true
+      },
+      "contract_hash": "c9b5ec96508c8fd1862fe3bed1c008d6a3c32268f7460c81788ec966b11bc023"
+    },
+    {
+      "test_id": "T09",
+      "status": "PASS",
+      "expected_status": "REJECTED",
+      "expected_reason": "DUPLICATE_JSON_KEY",
+      "evaluation": {
+        "interface": "DELTA",
+        "raw_sha256": "1d4cc77d74b2284cc90b8167802801d42063f6cf86a43d33fa0c3cf8ec9b815f",
+        "runtime": {
+          "kind": "SYMBOLIC",
+          "model_id": "offline003-control-no-model",
+          "call_id": "T",
+          "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+        },
+        "schema_valid": false,
+        "binding_applicable": true,
+        "bind_success": false,
+        "payload": null,
+        "binding": null,
+        "candidate": null,
+        "compiled_candidate_sha256": null,
+        "decision": null,
+        "witnesses": {},
+        "semantic_status": "REJECTED",
+        "reason_code": "DUPLICATE_JSON_KEY",
+        "failure_stage": "STRICT_JSON",
+        "checker_invoked": false,
+        "execution_permission": false
+      },
+      "extra": {
+        "nonfinite_rejected": true
+      },
+      "contract_hash": "c9b5ec96508c8fd1862fe3bed1c008d6a3c32268f7460c81788ec966b11bc023"
+    },
+    {
+      "test_id": "T10",
+      "status": "PASS",
+      "expected_status": "REJECTED",
+      "expected_reason": "CLAIM_TEXT_NOT_BOUND_TO_MACHINE_TERM",
+      "evaluation": {
+        "interface": "FULL",
+        "raw_sha256": "ddc6e809f82babf14f691c60ec79a74cabba26076e0c97df3bb6ccf35f133bd9",
+        "runtime": {
+          "kind": "SYMBOLIC",
+          "model_id": "offline003-control-no-model",
+          "call_id": "T",
+          "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+        },
+        "schema_valid": true,
+        "binding_applicable": false,
+        "bind_success": null,
+        "payload": {
+          "assertion": {
+            "content": "A different theorem is proven.",
+            "language": "bounded-program-v1",
+            "machine_term": {
+              "input_domain": [
+                0,
+                15
+              ],
+              "predicate": "preserves_popcount"
+            }
+          },
+          "assumptions": [
+            "Only the declared immutable source and bounded contract apply.",
+            "Source attestation does not establish real-world truth."
+          ],
+          "candidate_id": "qa-candidate",
+          "claim_kind": "EXECUTABLE_BOUNDED",
+          "evidence_refs": [
+            "sha256:b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+          ],
+          "generator": {
+            "config_digest": "4b7bb4d41ab65bcca9e71f54cd99ea3c0ab1c9f2813635e392df3c5a7ec5ed5b",
+            "id": "symbolic-reference",
+            "kind": "SYMBOLIC"
+          },
+          "proposed_status": "ENTAILED_UNDER_PUBLIC_CONTRACT",
+          "schema": "symseq.assurance.candidate.v1",
+          "scope": {
+            "execution_permission": false,
+            "input_domain": [
+              0,
+              15
+            ],
+            "scope_version": 1,
+            "source_snapshots": {
+              "program:C1": "b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+            },
+            "task_id": "C1"
+          },
+          "source_refs": [
+            {
+              "byte_end": 259,
+              "byte_start": 0,
+              "pointer": null,
+              "sha256": "8198adfaa7e14ecd94c59a62af578e7203a8ba23361b271f1d24405733c9c752",
+              "source_id": "program:C1"
+            }
+          ],
+          "task_id": "C1"
+        },
+        "binding": null,
+        "candidate": {
+          "assertion": {
+            "content": "A different theorem is proven.",
+            "language": "bounded-program-v1",
+            "machine_term": {
+              "input_domain": [
+                0,
+                15
+              ],
+              "predicate": "preserves_popcount"
+            }
+          },
+          "assumptions": [
+            "Only the declared immutable source and bounded contract apply.",
+            "Source attestation does not establish real-world truth."
+          ],
+          "candidate_id": "qa-candidate",
+          "claim_kind": "EXECUTABLE_BOUNDED",
+          "evidence_refs": [
+            "sha256:b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+          ],
+          "generator": {
+            "config_digest": "4b7bb4d41ab65bcca9e71f54cd99ea3c0ab1c9f2813635e392df3c5a7ec5ed5b",
+            "id": "symbolic-reference",
+            "kind": "SYMBOLIC"
+          },
+          "proposed_status": "ENTAILED_UNDER_PUBLIC_CONTRACT",
+          "schema": "symseq.assurance.candidate.v1",
+          "scope": {
+            "execution_permission": false,
+            "input_domain": [
+              0,
+              15
+            ],
+            "scope_version": 1,
+            "source_snapshots": {
+              "program:C1": "b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+            },
+            "task_id": "C1"
+          },
+          "source_refs": [
+            {
+              "byte_end": 259,
+              "byte_start": 0,
+              "pointer": null,
+              "sha256": "8198adfaa7e14ecd94c59a62af578e7203a8ba23361b271f1d24405733c9c752",
+              "source_id": "program:C1"
+            }
+          ],
+          "task_id": "C1"
+        },
+        "compiled_candidate_sha256": "69e1c8d99967ad189b824b498d06409dbe7496b221398ea19a83ef2bb718b539",
+        "execution_permission": false,
+        "decision": {
+          "schema": "symseq.assurance.decision.v1",
+          "candidate_digest": "9481d3b7465c8496e2a87ce39cb2c554618516bfe3bea46b638cb5980bfeae6e",
+          "source_digest": "524426d44851d31591f1f49555c6a46224523db887681efecda43d15635b1211",
+          "scope_digest": "59f1d6ba43538108d59ea19b8312d54dad32cf034b5b3111d001642489ca5209",
+          "verifier_id": "assurance001/v1",
+          "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+          "decision": "REJECT",
+          "assurance_status": "REJECTED",
+          "claim_kind": "EXECUTABLE_BOUNDED",
+          "check_kind": "NONE",
+          "reason_code": "CLAIM_TEXT_NOT_BOUND_TO_MACHINE_TERM",
+          "witness_refs": [
+            "sha256:d6153d3e132fe8c111aa0eadb2156dae0c294cd3cfa47d0a1a92d5b763b5492e"
+          ],
+          "dependencies": [
+            "sha256:b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+          ],
+          "execution_permission": false,
+          "decision_digest": "d7b93e8b80083139a8496985c9a2dc15c4b7046889aa95a5dae65172193bce3a"
+        },
+        "witnesses": {
+          "sha256:d6153d3e132fe8c111aa0eadb2156dae0c294cd3cfa47d0a1a92d5b763b5492e": {
+            "schema": "symseq.assurance.witness.v1",
+            "kind": "contract_failure",
+            "source_digest": "524426d44851d31591f1f49555c6a46224523db887681efecda43d15635b1211",
+            "scope_digest": "59f1d6ba43538108d59ea19b8312d54dad32cf034b5b3111d001642489ca5209",
+            "payload": {
+              "reason": "CLAIM_TEXT_NOT_BOUND_TO_MACHINE_TERM",
+              "scientific_refutation_claimed": false
+            }
+          }
+        },
+        "semantic_status": "REJECTED",
+        "reason_code": "CLAIM_TEXT_NOT_BOUND_TO_MACHINE_TERM",
+        "failure_stage": "CHECKER",
+        "checker_invoked": true
+      },
+      "extra": {},
+      "contract_hash": "27d3a3464c5035148f7c05108647668a89022d553339fbf417e6beeae8bdddf7"
+    },
+    {
+      "test_id": "T11",
+      "status": "PASS",
+      "expected_status": "REJECTED",
+      "expected_reason": "MODEL_DELTA_INVALID",
+      "evaluation": {
+        "interface": "DELTA",
+        "raw_sha256": "6e2fba14ae9d7805f51c06ad54492577aa864933f6093ca0b8e5ee84f03803a8",
+        "runtime": {
+          "kind": "SYMBOLIC",
+          "model_id": "offline003-control-no-model",
+          "call_id": "T",
+          "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+        },
+        "schema_valid": false,
+        "binding_applicable": true,
+        "bind_success": false,
+        "payload": null,
+        "binding": null,
+        "candidate": null,
+        "compiled_candidate_sha256": null,
+        "decision": null,
+        "witnesses": {},
+        "semantic_status": "REJECTED",
+        "reason_code": "MODEL_DELTA_INVALID",
+        "failure_stage": "LOCAL_SCHEMA",
+        "checker_invoked": false,
+        "execution_permission": false
+      },
+      "extra": {},
+      "contract_hash": "c9b5ec96508c8fd1862fe3bed1c008d6a3c32268f7460c81788ec966b11bc023"
+    },
+    {
+      "test_id": "T12",
+      "status": "PASS",
+      "expected_status": "REJECTED",
+      "expected_reason": "SOURCE_OR_RIGHTS_SCOPE_DRIFT",
+      "evaluation": {
+        "interface": "DELTA",
+        "raw_sha256": "1bba60c6b380b8cdc1c106146b6dbecb7b0f98863161d3d8fd40d654136ac0df",
+        "runtime": {
+          "kind": "SYMBOLIC",
+          "model_id": "offline003-control-no-model",
+          "call_id": "T",
+          "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+        },
+        "schema_valid": true,
+        "binding_applicable": true,
+        "bind_success": false,
+        "payload": null,
+        "binding": null,
+        "candidate": null,
+        "compiled_candidate_sha256": null,
+        "decision": null,
+        "witnesses": {},
+        "semantic_status": "REJECTED",
+        "reason_code": "SOURCE_OR_RIGHTS_SCOPE_DRIFT",
+        "failure_stage": "BINDING",
+        "checker_invoked": false,
+        "execution_permission": false
+      },
+      "extra": {
+        "missing_bytes_rejected": true
+      },
+      "contract_hash": "c9b5ec96508c8fd1862fe3bed1c008d6a3c32268f7460c81788ec966b11bc023"
+    },
+    {
+      "test_id": "T13",
+      "status": "PASS",
+      "expected_status": "REJECTED",
+      "expected_reason": "FROZEN_ASSUMPTIONS_CHANGED",
+      "evaluation": {
+        "interface": "FULL",
+        "raw_sha256": "7caf072a6a60609d3ef60e28bbedf64f78ad0f7cd97d1c6940a223721ce01525",
+        "runtime": {
+          "kind": "SYMBOLIC",
+          "model_id": "offline003-control-no-model",
+          "call_id": "T",
+          "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+        },
+        "schema_valid": true,
+        "binding_applicable": false,
+        "bind_success": null,
+        "payload": {
+          "assertion": {
+            "content": "{\"input_domain\":[0,15],\"predicate\":\"preserves_popcount\"}",
+            "language": "bounded-program-v1",
+            "machine_term": {
+              "input_domain": [
+                0,
+                15
+              ],
+              "predicate": "preserves_popcount"
+            }
+          },
+          "assumptions": [
+            "Replacement assertion"
+          ],
+          "candidate_id": "qa-candidate",
+          "claim_kind": "EXECUTABLE_BOUNDED",
+          "evidence_refs": [
+            "sha256:b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+          ],
+          "generator": {
+            "config_digest": "4b7bb4d41ab65bcca9e71f54cd99ea3c0ab1c9f2813635e392df3c5a7ec5ed5b",
+            "id": "symbolic-reference",
+            "kind": "SYMBOLIC"
+          },
+          "proposed_status": "ENTAILED_UNDER_PUBLIC_CONTRACT",
+          "schema": "symseq.assurance.candidate.v1",
+          "scope": {
+            "execution_permission": false,
+            "input_domain": [
+              0,
+              15
+            ],
+            "scope_version": 1,
+            "source_snapshots": {
+              "program:C1": "b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+            },
+            "task_id": "C1"
+          },
+          "source_refs": [
+            {
+              "byte_end": 259,
+              "byte_start": 0,
+              "pointer": null,
+              "sha256": "8198adfaa7e14ecd94c59a62af578e7203a8ba23361b271f1d24405733c9c752",
+              "source_id": "program:C1"
+            }
+          ],
+          "task_id": "C1"
+        },
+        "binding": null,
+        "candidate": {
+          "assertion": {
+            "content": "{\"input_domain\":[0,15],\"predicate\":\"preserves_popcount\"}",
+            "language": "bounded-program-v1",
+            "machine_term": {
+              "input_domain": [
+                0,
+                15
+              ],
+              "predicate": "preserves_popcount"
+            }
+          },
+          "assumptions": [
+            "Replacement assertion"
+          ],
+          "candidate_id": "qa-candidate",
+          "claim_kind": "EXECUTABLE_BOUNDED",
+          "evidence_refs": [
+            "sha256:b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+          ],
+          "generator": {
+            "config_digest": "4b7bb4d41ab65bcca9e71f54cd99ea3c0ab1c9f2813635e392df3c5a7ec5ed5b",
+            "id": "symbolic-reference",
+            "kind": "SYMBOLIC"
+          },
+          "proposed_status": "ENTAILED_UNDER_PUBLIC_CONTRACT",
+          "schema": "symseq.assurance.candidate.v1",
+          "scope": {
+            "execution_permission": false,
+            "input_domain": [
+              0,
+              15
+            ],
+            "scope_version": 1,
+            "source_snapshots": {
+              "program:C1": "b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+            },
+            "task_id": "C1"
+          },
+          "source_refs": [
+            {
+              "byte_end": 259,
+              "byte_start": 0,
+              "pointer": null,
+              "sha256": "8198adfaa7e14ecd94c59a62af578e7203a8ba23361b271f1d24405733c9c752",
+              "source_id": "program:C1"
+            }
+          ],
+          "task_id": "C1"
+        },
+        "compiled_candidate_sha256": "fe52249b603d18348d35009195415efa734e1cf0a18849decd6b66bbc069cd80",
+        "execution_permission": false,
+        "decision": {
+          "schema": "symseq.assurance.decision.v1",
+          "candidate_digest": "5b62b17e9b6a19e29511333fe5756b6c6f070eb31a4ee3c649e1269b1e1aec60",
+          "source_digest": "524426d44851d31591f1f49555c6a46224523db887681efecda43d15635b1211",
+          "scope_digest": "59f1d6ba43538108d59ea19b8312d54dad32cf034b5b3111d001642489ca5209",
+          "verifier_id": "assurance001/v1",
+          "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+          "decision": "REJECT",
+          "assurance_status": "REJECTED",
+          "claim_kind": "EXECUTABLE_BOUNDED",
+          "check_kind": "NONE",
+          "reason_code": "FROZEN_ASSUMPTIONS_CHANGED",
+          "witness_refs": [
+            "sha256:453e0758a58d089662361c0d2bcb0fda8922ad6b44944bd5800228c1e91dc1c5"
+          ],
+          "dependencies": [
+            "sha256:b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+          ],
+          "execution_permission": false,
+          "decision_digest": "11abb1982334198cd9ed6e60fcb26a00603124ea042c629556cb35fb79b63cf6"
+        },
+        "witnesses": {
+          "sha256:453e0758a58d089662361c0d2bcb0fda8922ad6b44944bd5800228c1e91dc1c5": {
+            "schema": "symseq.assurance.witness.v1",
+            "kind": "contract_failure",
+            "source_digest": "524426d44851d31591f1f49555c6a46224523db887681efecda43d15635b1211",
+            "scope_digest": "59f1d6ba43538108d59ea19b8312d54dad32cf034b5b3111d001642489ca5209",
+            "payload": {
+              "reason": "FROZEN_ASSUMPTIONS_CHANGED",
+              "scientific_refutation_claimed": false
+            }
+          }
+        },
+        "semantic_status": "REJECTED",
+        "reason_code": "FROZEN_ASSUMPTIONS_CHANGED",
+        "failure_stage": "CHECKER",
+        "checker_invoked": true
+      },
+      "extra": {
+        "scope_rejected": true
+      },
+      "contract_hash": "27d3a3464c5035148f7c05108647668a89022d553339fbf417e6beeae8bdddf7"
+    },
+    {
+      "test_id": "T14",
+      "status": "PASS",
+      "expected_status": "REJECTED",
+      "expected_reason": "INVALID_TRACE_CONTRACT",
+      "evaluation": {
+        "interface": "DELTA",
+        "raw_sha256": "6877417275fb2a7ef1c71c3d2cf176d875eb10d2a5cd7e1bf5ae669578624723",
+        "runtime": {
+          "kind": "SYMBOLIC",
+          "model_id": "offline003-control-no-model",
+          "call_id": "T",
+          "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+        },
+        "schema_valid": true,
+        "binding_applicable": true,
+        "bind_success": true,
+        "payload": {
+          "intent": "PROPOSE",
+          "kind": "FINITE_TRACE",
+          "schema": "symseq.assurance.proposal-delta.v1",
+          "strength": "ENTAILED",
+          "trace": [
+            1,
+            1,
+            1
+          ]
+        },
+        "binding": {
+          "proposal_raw_sha256": "ea0b554f40fdfbf685541c349ff22a47bece0687bfcf8132336213b548172547",
+          "binder_version": "proposal-binder/1",
+          "binder_digest": "8c760eeaa960cc4a2eb227ee1669d004f82db8e6e51ce871caaaa1b79c39105a",
+          "task_id": "F2",
+          "source_snapshot_bindings": {
+            "finite:F2": "dc304e10943168310934c124570a143dd6a3d47b8819c1b268029f1ce1cdd9aa"
+          },
+          "runtime_digest": "745020ab0ca74feff83a68e97f79085f105e28fc5c87b54e156a9a38e8538632",
+          "execution_permission": false,
+          "source_refs": [
+            {
+              "source_id": "finite:F2",
+              "sha256": "f01da92a425b79b09343db75b4ead8dc4dc89c19a664a3d5836e9ab12b222761",
+              "pointer": null,
+              "byte_start": 0,
+              "byte_end": 1692
+            }
+          ],
+          "source_rights_origin": {
+            "finite:F2": "User-authorized generated finite QA contract"
+          },
+          "record_kind": "CompiledCandidateRecord",
+          "proposal": {
+            "intent": "PROPOSE",
+            "kind": "FINITE_TRACE",
+            "schema": "symseq.assurance.proposal-delta.v1",
+            "strength": "ENTAILED",
+            "trace": [
+              1,
+              1,
+              1
+            ]
+          },
+          "candidate": {
+            "schema": "symseq.assurance.candidate.v1",
+            "candidate_id": "T:ea0b554f40fdfbf6",
+            "task_id": "F2",
+            "claim_kind": "FINITE_PROPOSITION",
+            "assertion": {
+              "language": "finite-logic-v1",
+              "content": "{\"predicate\":\"trace_equals\",\"query\":{\"actions\":[{\"id\":\"action:read\",\"kind\":\"action\"},{\"id\":\"action:read\",\"kind\":\"action\"},{\"id\":\"action:read\",\"kind\":\"action\"}],\"context_id\":\"context:1\"},\"trace\":[1,1,1]}",
+              "machine_term": {
+                "predicate": "trace_equals",
+                "query": {
+                  "context_id": "context:1",
+                  "actions": [
+                    {
+                      "kind": "action",
+                      "id": "action:read"
+                    },
+                    {
+                      "kind": "action",
+                      "id": "action:read"
+                    },
+                    {
+                      "kind": "action",
+                      "id": "action:read"
+                    }
+                  ]
+                },
+                "trace": [
+                  1,
+                  1,
+                  1
+                ]
+              }
+            },
+            "scope": {
+              "task_id": "F2",
+              "source_snapshots": {
+                "finite:F2": "dc304e10943168310934c124570a143dd6a3d47b8819c1b268029f1ce1cdd9aa"
+              },
+              "scope_version": 1,
+              "execution_permission": false,
+              "max_actions": 5,
+              "action_namespace": [
+                "action:a",
+                "action:b",
+                "action:read"
+              ],
+              "reset": "x=context_bit;y=0",
+              "public_class": "complete_affine_memory_class/1"
+            },
+            "assumptions": [
+              "Only the declared immutable source and bounded contract apply.",
+              "Source attestation does not establish real-world truth."
+            ],
+            "source_refs": [
+              {
+                "source_id": "finite:F2",
+                "sha256": "f01da92a425b79b09343db75b4ead8dc4dc89c19a664a3d5836e9ab12b222761",
+                "pointer": null,
+                "byte_start": 0,
+                "byte_end": 1692
+              }
+            ],
+            "evidence_refs": [
+              "sha256:dc304e10943168310934c124570a143dd6a3d47b8819c1b268029f1ce1cdd9aa"
+            ],
+            "proposed_status": "ENTAILED_UNDER_PUBLIC_CONTRACT",
+            "generator": {
+              "kind": "SYMBOLIC",
+              "id": "offline003-control-no-model",
+              "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+            }
+          },
+          "compiled_candidate_sha256": "86b2477b991895ef159074631ba3a448f723cfcfabfb622296790e232769d585",
+          "positive_assurance": false,
+          "checker_invoked": false,
+          "field_provenance": {
+            "/schema": "CandidateRecord v1 constant",
+            "/candidate_id": "TRUSTED_RUNTIME:/call_id + raw SHA",
+            "/task_id": "TRUSTED_TASK:/task_id",
+            "/claim_kind": "TRUSTED_TASK:/claim_kind",
+            "/scope": "TRUSTED_TASK:/scope",
+            "/assumptions": "TRUSTED_TASK:/assumptions",
+            "/source_refs": "AUTHENTIC_SOURCE_SNAPSHOTS:source_id/SHA/full byte spans",
+            "/evidence_refs": "AUTHENTIC_SOURCE_SNAPSHOTS:complete snapshot digests including rights.origin",
+            "/assertion/language": "TRUSTED_TASK:/claim_kind (existing language mapping)",
+            "/assertion/content": "CANONICAL_JSON_OF_EXACT_COMPILED_MACHINE_TERM",
+            "/generator": "TRUSTED_RUNTIME:actual model identity/configuration",
+            "/proposed_status": "MODEL_DELTA:/strength (literal enum mapping)",
+            "/assertion/machine_term/predicate": "MODEL_DELTA:/kind (literal enum mapping)",
+            "/assertion/machine_term/trace": "MODEL_DELTA:/trace",
+            "/assertion/machine_term/query": "TRUSTED_TASK:/query"
+          }
+        },
+        "candidate": {
+          "schema": "symseq.assurance.candidate.v1",
+          "candidate_id": "T:ea0b554f40fdfbf6",
+          "task_id": "F2",
+          "claim_kind": "FINITE_PROPOSITION",
+          "assertion": {
+            "language": "finite-logic-v1",
+            "content": "{\"predicate\":\"trace_equals\",\"query\":{\"actions\":[{\"id\":\"action:read\",\"kind\":\"action\"},{\"id\":\"action:read\",\"kind\":\"action\"},{\"id\":\"action:read\",\"kind\":\"action\"}],\"context_id\":\"context:1\"},\"trace\":[1,1,1]}",
+            "machine_term": {
+              "predicate": "trace_equals",
+              "query": {
+                "context_id": "context:1",
+                "actions": [
+                  {
+                    "kind": "action",
+                    "id": "action:read"
+                  },
+                  {
+                    "kind": "action",
+                    "id": "action:read"
+                  },
+                  {
+                    "kind": "action",
+                    "id": "action:read"
+                  }
+                ]
+              },
+              "trace": [
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "scope": {
+            "task_id": "F2",
+            "source_snapshots": {
+              "finite:F2": "dc304e10943168310934c124570a143dd6a3d47b8819c1b268029f1ce1cdd9aa"
+            },
+            "scope_version": 1,
+            "execution_permission": false,
+            "max_actions": 5,
+            "action_namespace": [
+              "action:a",
+              "action:b",
+              "action:read"
+            ],
+            "reset": "x=context_bit;y=0",
+            "public_class": "complete_affine_memory_class/1"
+          },
+          "assumptions": [
+            "Only the declared immutable source and bounded contract apply.",
+            "Source attestation does not establish real-world truth."
+          ],
+          "source_refs": [
+            {
+              "source_id": "finite:F2",
+              "sha256": "f01da92a425b79b09343db75b4ead8dc4dc89c19a664a3d5836e9ab12b222761",
+              "pointer": null,
+              "byte_start": 0,
+              "byte_end": 1692
+            }
+          ],
+          "evidence_refs": [
+            "sha256:dc304e10943168310934c124570a143dd6a3d47b8819c1b268029f1ce1cdd9aa"
+          ],
+          "proposed_status": "ENTAILED_UNDER_PUBLIC_CONTRACT",
+          "generator": {
+            "kind": "SYMBOLIC",
+            "id": "offline003-control-no-model",
+            "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+          }
+        },
+        "compiled_candidate_sha256": "86b2477b991895ef159074631ba3a448f723cfcfabfb622296790e232769d585",
+        "execution_permission": false,
+        "decision": {
+          "schema": "symseq.assurance.decision.v1",
+          "candidate_digest": "408bf2223e630a7bd4b286f6ef471481c19fae2b252d43aa183614d08ad46fa8",
+          "source_digest": "fee2278a3fe7bc43105f44b95c8691eec953cb5a355f2c0b6e04473585a74952",
+          "scope_digest": "658e4a0373ac5e77fa9f206676f98c488f8cbfa554e78e1310e0d09c7bdde01b",
+          "verifier_id": "assurance001/v1",
+          "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+          "decision": "REJECT",
+          "assurance_status": "REJECTED",
+          "claim_kind": "FINITE_PROPOSITION",
+          "check_kind": "NONE",
+          "reason_code": "INVALID_TRACE_CONTRACT",
+          "witness_refs": [
+            "sha256:dbbf60bdb49af734425f0bfb5c9278d7f8556f98d0186bb48effc54b3038a3fd"
+          ],
+          "dependencies": [
+            "sha256:dc304e10943168310934c124570a143dd6a3d47b8819c1b268029f1ce1cdd9aa"
+          ],
+          "execution_permission": false,
+          "decision_digest": "0ba6e2ab4cd50d4da5f20c2a5247c9c2c22826f3e8b5e362f80bcbafa9cbc270"
+        },
+        "witnesses": {
+          "sha256:dbbf60bdb49af734425f0bfb5c9278d7f8556f98d0186bb48effc54b3038a3fd": {
+            "schema": "symseq.assurance.witness.v1",
+            "kind": "contract_failure",
+            "source_digest": "fee2278a3fe7bc43105f44b95c8691eec953cb5a355f2c0b6e04473585a74952",
+            "scope_digest": "658e4a0373ac5e77fa9f206676f98c488f8cbfa554e78e1310e0d09c7bdde01b",
+            "payload": {
+              "reason": "INVALID_TRACE_CONTRACT",
+              "scientific_refutation_claimed": false
+            }
+          }
+        },
+        "semantic_status": "REJECTED",
+        "reason_code": "INVALID_TRACE_CONTRACT",
+        "failure_stage": "CHECKER",
+        "checker_invoked": true
+      },
+      "extra": {},
+      "contract_hash": "c9b5ec96508c8fd1862fe3bed1c008d6a3c32268f7460c81788ec966b11bc023"
+    },
+    {
+      "test_id": "T15",
+      "status": "PASS",
+      "expected_status": "REJECTED",
+      "expected_reason": "INVALID_TRACE_CONTRACT",
+      "evaluation": {
+        "interface": "DELTA",
+        "raw_sha256": "ee350a00276a88fdd369d13749ad0c5a0aceed2c90c9eaba002d4fdd03bacbef",
+        "runtime": {
+          "kind": "SYMBOLIC",
+          "model_id": "offline003-control-no-model",
+          "call_id": "T",
+          "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+        },
+        "schema_valid": true,
+        "binding_applicable": true,
+        "bind_success": true,
+        "payload": {
+          "intent": "PROPOSE",
+          "kind": "FINITE_TRACE",
+          "schema": "symseq.assurance.proposal-delta.v1",
+          "strength": "ENTAILED",
+          "trace": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "binding": {
+          "proposal_raw_sha256": "2c220a8fce513a9d6d1556b3449260de05463d8b62796bead11c01a18d16bc25",
+          "binder_version": "proposal-binder/1",
+          "binder_digest": "8c760eeaa960cc4a2eb227ee1669d004f82db8e6e51ce871caaaa1b79c39105a",
+          "task_id": "F2",
+          "source_snapshot_bindings": {
+            "finite:F2": "dc304e10943168310934c124570a143dd6a3d47b8819c1b268029f1ce1cdd9aa"
+          },
+          "runtime_digest": "745020ab0ca74feff83a68e97f79085f105e28fc5c87b54e156a9a38e8538632",
+          "execution_permission": false,
+          "source_refs": [
+            {
+              "source_id": "finite:F2",
+              "sha256": "f01da92a425b79b09343db75b4ead8dc4dc89c19a664a3d5836e9ab12b222761",
+              "pointer": null,
+              "byte_start": 0,
+              "byte_end": 1692
+            }
+          ],
+          "source_rights_origin": {
+            "finite:F2": "User-authorized generated finite QA contract"
+          },
+          "record_kind": "CompiledCandidateRecord",
+          "proposal": {
+            "intent": "PROPOSE",
+            "kind": "FINITE_TRACE",
+            "schema": "symseq.assurance.proposal-delta.v1",
+            "strength": "ENTAILED",
+            "trace": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          "candidate": {
+            "schema": "symseq.assurance.candidate.v1",
+            "candidate_id": "T:2c220a8fce513a9d",
+            "task_id": "F2",
+            "claim_kind": "FINITE_PROPOSITION",
+            "assertion": {
+              "language": "finite-logic-v1",
+              "content": "{\"predicate\":\"trace_equals\",\"query\":{\"actions\":[{\"id\":\"action:read\",\"kind\":\"action\"},{\"id\":\"action:read\",\"kind\":\"action\"},{\"id\":\"action:read\",\"kind\":\"action\"}],\"context_id\":\"context:1\"},\"trace\":[1,1,1,1,1]}",
+              "machine_term": {
+                "predicate": "trace_equals",
+                "query": {
+                  "context_id": "context:1",
+                  "actions": [
+                    {
+                      "kind": "action",
+                      "id": "action:read"
+                    },
+                    {
+                      "kind": "action",
+                      "id": "action:read"
+                    },
+                    {
+                      "kind": "action",
+                      "id": "action:read"
+                    }
+                  ]
+                },
+                "trace": [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            },
+            "scope": {
+              "task_id": "F2",
+              "source_snapshots": {
+                "finite:F2": "dc304e10943168310934c124570a143dd6a3d47b8819c1b268029f1ce1cdd9aa"
+              },
+              "scope_version": 1,
+              "execution_permission": false,
+              "max_actions": 5,
+              "action_namespace": [
+                "action:a",
+                "action:b",
+                "action:read"
+              ],
+              "reset": "x=context_bit;y=0",
+              "public_class": "complete_affine_memory_class/1"
+            },
+            "assumptions": [
+              "Only the declared immutable source and bounded contract apply.",
+              "Source attestation does not establish real-world truth."
+            ],
+            "source_refs": [
+              {
+                "source_id": "finite:F2",
+                "sha256": "f01da92a425b79b09343db75b4ead8dc4dc89c19a664a3d5836e9ab12b222761",
+                "pointer": null,
+                "byte_start": 0,
+                "byte_end": 1692
+              }
+            ],
+            "evidence_refs": [
+              "sha256:dc304e10943168310934c124570a143dd6a3d47b8819c1b268029f1ce1cdd9aa"
+            ],
+            "proposed_status": "ENTAILED_UNDER_PUBLIC_CONTRACT",
+            "generator": {
+              "kind": "SYMBOLIC",
+              "id": "offline003-control-no-model",
+              "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+            }
+          },
+          "compiled_candidate_sha256": "65e6ca6d12d767687ba4a65db26581c045c8916fd83fcc79f0e8676647e7aad9",
+          "positive_assurance": false,
+          "checker_invoked": false,
+          "field_provenance": {
+            "/schema": "CandidateRecord v1 constant",
+            "/candidate_id": "TRUSTED_RUNTIME:/call_id + raw SHA",
+            "/task_id": "TRUSTED_TASK:/task_id",
+            "/claim_kind": "TRUSTED_TASK:/claim_kind",
+            "/scope": "TRUSTED_TASK:/scope",
+            "/assumptions": "TRUSTED_TASK:/assumptions",
+            "/source_refs": "AUTHENTIC_SOURCE_SNAPSHOTS:source_id/SHA/full byte spans",
+            "/evidence_refs": "AUTHENTIC_SOURCE_SNAPSHOTS:complete snapshot digests including rights.origin",
+            "/assertion/language": "TRUSTED_TASK:/claim_kind (existing language mapping)",
+            "/assertion/content": "CANONICAL_JSON_OF_EXACT_COMPILED_MACHINE_TERM",
+            "/generator": "TRUSTED_RUNTIME:actual model identity/configuration",
+            "/proposed_status": "MODEL_DELTA:/strength (literal enum mapping)",
+            "/assertion/machine_term/predicate": "MODEL_DELTA:/kind (literal enum mapping)",
+            "/assertion/machine_term/trace": "MODEL_DELTA:/trace",
+            "/assertion/machine_term/query": "TRUSTED_TASK:/query"
+          }
+        },
+        "candidate": {
+          "schema": "symseq.assurance.candidate.v1",
+          "candidate_id": "T:2c220a8fce513a9d",
+          "task_id": "F2",
+          "claim_kind": "FINITE_PROPOSITION",
+          "assertion": {
+            "language": "finite-logic-v1",
+            "content": "{\"predicate\":\"trace_equals\",\"query\":{\"actions\":[{\"id\":\"action:read\",\"kind\":\"action\"},{\"id\":\"action:read\",\"kind\":\"action\"},{\"id\":\"action:read\",\"kind\":\"action\"}],\"context_id\":\"context:1\"},\"trace\":[1,1,1,1,1]}",
+            "machine_term": {
+              "predicate": "trace_equals",
+              "query": {
+                "context_id": "context:1",
+                "actions": [
+                  {
+                    "kind": "action",
+                    "id": "action:read"
+                  },
+                  {
+                    "kind": "action",
+                    "id": "action:read"
+                  },
+                  {
+                    "kind": "action",
+                    "id": "action:read"
+                  }
+                ]
+              },
+              "trace": [
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "scope": {
+            "task_id": "F2",
+            "source_snapshots": {
+              "finite:F2": "dc304e10943168310934c124570a143dd6a3d47b8819c1b268029f1ce1cdd9aa"
+            },
+            "scope_version": 1,
+            "execution_permission": false,
+            "max_actions": 5,
+            "action_namespace": [
+              "action:a",
+              "action:b",
+              "action:read"
+            ],
+            "reset": "x=context_bit;y=0",
+            "public_class": "complete_affine_memory_class/1"
+          },
+          "assumptions": [
+            "Only the declared immutable source and bounded contract apply.",
+            "Source attestation does not establish real-world truth."
+          ],
+          "source_refs": [
+            {
+              "source_id": "finite:F2",
+              "sha256": "f01da92a425b79b09343db75b4ead8dc4dc89c19a664a3d5836e9ab12b222761",
+              "pointer": null,
+              "byte_start": 0,
+              "byte_end": 1692
+            }
+          ],
+          "evidence_refs": [
+            "sha256:dc304e10943168310934c124570a143dd6a3d47b8819c1b268029f1ce1cdd9aa"
+          ],
+          "proposed_status": "ENTAILED_UNDER_PUBLIC_CONTRACT",
+          "generator": {
+            "kind": "SYMBOLIC",
+            "id": "offline003-control-no-model",
+            "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+          }
+        },
+        "compiled_candidate_sha256": "65e6ca6d12d767687ba4a65db26581c045c8916fd83fcc79f0e8676647e7aad9",
+        "execution_permission": false,
+        "decision": {
+          "schema": "symseq.assurance.decision.v1",
+          "candidate_digest": "a441a7eed657615d4339057d0df53a98f933ad7ab9785c689989c8fe47032fcd",
+          "source_digest": "fee2278a3fe7bc43105f44b95c8691eec953cb5a355f2c0b6e04473585a74952",
+          "scope_digest": "658e4a0373ac5e77fa9f206676f98c488f8cbfa554e78e1310e0d09c7bdde01b",
+          "verifier_id": "assurance001/v1",
+          "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+          "decision": "REJECT",
+          "assurance_status": "REJECTED",
+          "claim_kind": "FINITE_PROPOSITION",
+          "check_kind": "NONE",
+          "reason_code": "INVALID_TRACE_CONTRACT",
+          "witness_refs": [
+            "sha256:dbbf60bdb49af734425f0bfb5c9278d7f8556f98d0186bb48effc54b3038a3fd"
+          ],
+          "dependencies": [
+            "sha256:dc304e10943168310934c124570a143dd6a3d47b8819c1b268029f1ce1cdd9aa"
+          ],
+          "execution_permission": false,
+          "decision_digest": "790fad3bd84d5926caf0878bfae0ee5fa1ba04ae18a18c8f0e853e24397521cb"
+        },
+        "witnesses": {
+          "sha256:dbbf60bdb49af734425f0bfb5c9278d7f8556f98d0186bb48effc54b3038a3fd": {
+            "schema": "symseq.assurance.witness.v1",
+            "kind": "contract_failure",
+            "source_digest": "fee2278a3fe7bc43105f44b95c8691eec953cb5a355f2c0b6e04473585a74952",
+            "scope_digest": "658e4a0373ac5e77fa9f206676f98c488f8cbfa554e78e1310e0d09c7bdde01b",
+            "payload": {
+              "reason": "INVALID_TRACE_CONTRACT",
+              "scientific_refutation_claimed": false
+            }
+          }
+        },
+        "semantic_status": "REJECTED",
+        "reason_code": "INVALID_TRACE_CONTRACT",
+        "failure_stage": "CHECKER",
+        "checker_invoked": true
+      },
+      "extra": {},
+      "contract_hash": "c9b5ec96508c8fd1862fe3bed1c008d6a3c32268f7460c81788ec966b11bc023"
+    },
+    {
+      "test_id": "T16",
+      "status": "PASS",
+      "expected_status": "REJECTED",
+      "expected_reason": "INVALID_ACTION_CONTRACT",
+      "evaluation": {
+        "interface": "FULL",
+        "raw_sha256": "1955afd326329433dae3f5f53b1970685ca79222c07be84c6b8b20e12c3f902a",
+        "runtime": {
+          "kind": "SYMBOLIC",
+          "model_id": "offline003-control-no-model",
+          "call_id": "T",
+          "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+        },
+        "schema_valid": true,
+        "binding_applicable": false,
+        "bind_success": null,
+        "payload": {
+          "assertion": {
+            "content": "{\"predicate\":\"trace_equals\",\"query\":{\"actions\":[{\"id\":\"state:0\",\"kind\":\"state\"},{\"id\":\"action:read\",\"kind\":\"action\"},{\"id\":\"action:read\",\"kind\":\"action\"}],\"context_id\":\"context:1\"},\"trace\":[1,1,1,1]}",
+            "language": "finite-logic-v1",
+            "machine_term": {
+              "predicate": "trace_equals",
+              "query": {
+                "actions": [
+                  {
+                    "id": "state:0",
+                    "kind": "state"
+                  },
+                  {
+                    "id": "action:read",
+                    "kind": "action"
+                  },
+                  {
+                    "id": "action:read",
+                    "kind": "action"
+                  }
+                ],
+                "context_id": "context:1"
+              },
+              "trace": [
+                1,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "assumptions": [
+            "Only the declared immutable source and bounded contract apply.",
+            "Source attestation does not establish real-world truth."
+          ],
+          "candidate_id": "qa-candidate",
+          "claim_kind": "FINITE_PROPOSITION",
+          "evidence_refs": [
+            "sha256:dc304e10943168310934c124570a143dd6a3d47b8819c1b268029f1ce1cdd9aa"
+          ],
+          "generator": {
+            "config_digest": "4b7bb4d41ab65bcca9e71f54cd99ea3c0ab1c9f2813635e392df3c5a7ec5ed5b",
+            "id": "symbolic-reference",
+            "kind": "SYMBOLIC"
+          },
+          "proposed_status": "ENTAILED_UNDER_PUBLIC_CONTRACT",
+          "schema": "symseq.assurance.candidate.v1",
+          "scope": {
+            "action_namespace": [
+              "action:a",
+              "action:b",
+              "action:read"
+            ],
+            "execution_permission": false,
+            "max_actions": 5,
+            "public_class": "complete_affine_memory_class/1",
+            "reset": "x=context_bit;y=0",
+            "scope_version": 1,
+            "source_snapshots": {
+              "finite:F2": "dc304e10943168310934c124570a143dd6a3d47b8819c1b268029f1ce1cdd9aa"
+            },
+            "task_id": "F2"
+          },
+          "source_refs": [
+            {
+              "byte_end": 1692,
+              "byte_start": 0,
+              "pointer": null,
+              "sha256": "f01da92a425b79b09343db75b4ead8dc4dc89c19a664a3d5836e9ab12b222761",
+              "source_id": "finite:F2"
+            }
+          ],
+          "task_id": "F2"
+        },
+        "binding": null,
+        "candidate": {
+          "assertion": {
+            "content": "{\"predicate\":\"trace_equals\",\"query\":{\"actions\":[{\"id\":\"state:0\",\"kind\":\"state\"},{\"id\":\"action:read\",\"kind\":\"action\"},{\"id\":\"action:read\",\"kind\":\"action\"}],\"context_id\":\"context:1\"},\"trace\":[1,1,1,1]}",
+            "language": "finite-logic-v1",
+            "machine_term": {
+              "predicate": "trace_equals",
+              "query": {
+                "actions": [
+                  {
+                    "id": "state:0",
+                    "kind": "state"
+                  },
+                  {
+                    "id": "action:read",
+                    "kind": "action"
+                  },
+                  {
+                    "id": "action:read",
+                    "kind": "action"
+                  }
+                ],
+                "context_id": "context:1"
+              },
+              "trace": [
+                1,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "assumptions": [
+            "Only the declared immutable source and bounded contract apply.",
+            "Source attestation does not establish real-world truth."
+          ],
+          "candidate_id": "qa-candidate",
+          "claim_kind": "FINITE_PROPOSITION",
+          "evidence_refs": [
+            "sha256:dc304e10943168310934c124570a143dd6a3d47b8819c1b268029f1ce1cdd9aa"
+          ],
+          "generator": {
+            "config_digest": "4b7bb4d41ab65bcca9e71f54cd99ea3c0ab1c9f2813635e392df3c5a7ec5ed5b",
+            "id": "symbolic-reference",
+            "kind": "SYMBOLIC"
+          },
+          "proposed_status": "ENTAILED_UNDER_PUBLIC_CONTRACT",
+          "schema": "symseq.assurance.candidate.v1",
+          "scope": {
+            "action_namespace": [
+              "action:a",
+              "action:b",
+              "action:read"
+            ],
+            "execution_permission": false,
+            "max_actions": 5,
+            "public_class": "complete_affine_memory_class/1",
+            "reset": "x=context_bit;y=0",
+            "scope_version": 1,
+            "source_snapshots": {
+              "finite:F2": "dc304e10943168310934c124570a143dd6a3d47b8819c1b268029f1ce1cdd9aa"
+            },
+            "task_id": "F2"
+          },
+          "source_refs": [
+            {
+              "byte_end": 1692,
+              "byte_start": 0,
+              "pointer": null,
+              "sha256": "f01da92a425b79b09343db75b4ead8dc4dc89c19a664a3d5836e9ab12b222761",
+              "source_id": "finite:F2"
+            }
+          ],
+          "task_id": "F2"
+        },
+        "compiled_candidate_sha256": "ae37b2c73904f83caebcc44138fb965e2b03d7d8b13156b963ec18c4746ce239",
+        "execution_permission": false,
+        "decision": {
+          "schema": "symseq.assurance.decision.v1",
+          "candidate_digest": "56b151e65c629f2ab557aaa93b6f34c522469a748147f4b927ee88c47f8682f1",
+          "source_digest": "fee2278a3fe7bc43105f44b95c8691eec953cb5a355f2c0b6e04473585a74952",
+          "scope_digest": "658e4a0373ac5e77fa9f206676f98c488f8cbfa554e78e1310e0d09c7bdde01b",
+          "verifier_id": "assurance001/v1",
+          "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+          "decision": "REJECT",
+          "assurance_status": "REJECTED",
+          "claim_kind": "FINITE_PROPOSITION",
+          "check_kind": "NONE",
+          "reason_code": "INVALID_ACTION_CONTRACT",
+          "witness_refs": [
+            "sha256:3b1c1c2fd4bfb367fe83098259b224a55428164167edf51965be038d12417a15"
+          ],
+          "dependencies": [
+            "sha256:dc304e10943168310934c124570a143dd6a3d47b8819c1b268029f1ce1cdd9aa"
+          ],
+          "execution_permission": false,
+          "decision_digest": "7d04e1b0d6468da84093c7a6e55ee4ff1145f5bdc6031f41c627f73da509e4fb"
+        },
+        "witnesses": {
+          "sha256:3b1c1c2fd4bfb367fe83098259b224a55428164167edf51965be038d12417a15": {
+            "schema": "symseq.assurance.witness.v1",
+            "kind": "contract_failure",
+            "source_digest": "fee2278a3fe7bc43105f44b95c8691eec953cb5a355f2c0b6e04473585a74952",
+            "scope_digest": "658e4a0373ac5e77fa9f206676f98c488f8cbfa554e78e1310e0d09c7bdde01b",
+            "payload": {
+              "reason": "INVALID_ACTION_CONTRACT",
+              "scientific_refutation_claimed": false
+            }
+          }
+        },
+        "semantic_status": "REJECTED",
+        "reason_code": "INVALID_ACTION_CONTRACT",
+        "failure_stage": "CHECKER",
+        "checker_invoked": true
+      },
+      "extra": {},
+      "contract_hash": "27d3a3464c5035148f7c05108647668a89022d553339fbf417e6beeae8bdddf7"
+    },
+    {
+      "test_id": "T17",
+      "status": "PASS",
+      "expected_status": "REJECTED",
+      "expected_reason": "FALSE_ENTAILED_ANSWER_UNKNOWN",
+      "evaluation": {
+        "interface": "DELTA",
+        "raw_sha256": "eaee31054dc753749089fe560c5b1f8d14416a08a331db7effb8893d18536a39",
+        "runtime": {
+          "kind": "SYMBOLIC",
+          "model_id": "offline003-control-no-model",
+          "call_id": "T",
+          "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+        },
+        "schema_valid": true,
+        "binding_applicable": true,
+        "bind_success": true,
+        "payload": {
+          "intent": "PROPOSE",
+          "kind": "FINITE_TRACE",
+          "schema": "symseq.assurance.proposal-delta.v1",
+          "strength": "ENTAILED",
+          "trace": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "binding": {
+          "proposal_raw_sha256": "2e65d78f8130efbf52c096dfb4fc0efb5a84ff77ff8a9ef6f59b9da9aa12ca3f",
+          "binder_version": "proposal-binder/1",
+          "binder_digest": "8c760eeaa960cc4a2eb227ee1669d004f82db8e6e51ce871caaaa1b79c39105a",
+          "task_id": "F1",
+          "source_snapshot_bindings": {
+            "finite:F1": "6147629c03ffe5b62fde38182b23328b44383e5b21ab59cca1e390752ed57383"
+          },
+          "runtime_digest": "745020ab0ca74feff83a68e97f79085f105e28fc5c87b54e156a9a38e8538632",
+          "execution_permission": false,
+          "source_refs": [
+            {
+              "source_id": "finite:F1",
+              "sha256": "b67bd3045e101850f50e7ea22c6cc860f600981c39112478203a6fc10f2ac9aa",
+              "pointer": null,
+              "byte_start": 0,
+              "byte_end": 1812
+            }
+          ],
+          "source_rights_origin": {
+            "finite:F1": "User-generated DISCOVERY-006 public observations; no selected law"
+          },
+          "record_kind": "CompiledCandidateRecord",
+          "proposal": {
+            "intent": "PROPOSE",
+            "kind": "FINITE_TRACE",
+            "schema": "symseq.assurance.proposal-delta.v1",
+            "strength": "ENTAILED",
+            "trace": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "candidate": {
+            "schema": "symseq.assurance.candidate.v1",
+            "candidate_id": "T:2e65d78f8130efbf",
+            "task_id": "F1",
+            "claim_kind": "FINITE_PROPOSITION",
+            "assertion": {
+              "language": "finite-logic-v1",
+              "content": "{\"predicate\":\"trace_equals\",\"query\":{\"actions\":[{\"id\":\"action:a\",\"kind\":\"action\"},{\"id\":\"action:b\",\"kind\":\"action\"},{\"id\":\"action:b\",\"kind\":\"action\"},{\"id\":\"action:a\",\"kind\":\"action\"},{\"id\":\"action:b\",\"kind\":\"action\"}],\"context_id\":\"context:0\"},\"trace\":[0,0,0,0,0,0]}",
+              "machine_term": {
+                "predicate": "trace_equals",
+                "query": {
+                  "context_id": "context:0",
+                  "actions": [
+                    {
+                      "kind": "action",
+                      "id": "action:a"
+                    },
+                    {
+                      "kind": "action",
+                      "id": "action:b"
+                    },
+                    {
+                      "kind": "action",
+                      "id": "action:b"
+                    },
+                    {
+                      "kind": "action",
+                      "id": "action:a"
+                    },
+                    {
+                      "kind": "action",
+                      "id": "action:b"
+                    }
+                  ]
+                },
+                "trace": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            },
+            "scope": {
+              "task_id": "F1",
+              "source_snapshots": {
+                "finite:F1": "6147629c03ffe5b62fde38182b23328b44383e5b21ab59cca1e390752ed57383"
+              },
+              "scope_version": 1,
+              "execution_permission": false,
+              "max_actions": 5,
+              "action_namespace": [
+                "action:a",
+                "action:b",
+                "action:read"
+              ],
+              "reset": "x=context_bit;y=0",
+              "public_class": "complete_affine_memory_class/1"
+            },
+            "assumptions": [
+              "Only the declared immutable source and bounded contract apply.",
+              "Source attestation does not establish real-world truth."
+            ],
+            "source_refs": [
+              {
+                "source_id": "finite:F1",
+                "sha256": "b67bd3045e101850f50e7ea22c6cc860f600981c39112478203a6fc10f2ac9aa",
+                "pointer": null,
+                "byte_start": 0,
+                "byte_end": 1812
+              }
+            ],
+            "evidence_refs": [
+              "sha256:6147629c03ffe5b62fde38182b23328b44383e5b21ab59cca1e390752ed57383"
+            ],
+            "proposed_status": "ENTAILED_UNDER_PUBLIC_CONTRACT",
+            "generator": {
+              "kind": "SYMBOLIC",
+              "id": "offline003-control-no-model",
+              "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+            }
+          },
+          "compiled_candidate_sha256": "1c4d2e49c236452d6f95307f1d8cc1dde5decf9521bcc64819e807f3343041e4",
+          "positive_assurance": false,
+          "checker_invoked": false,
+          "field_provenance": {
+            "/schema": "CandidateRecord v1 constant",
+            "/candidate_id": "TRUSTED_RUNTIME:/call_id + raw SHA",
+            "/task_id": "TRUSTED_TASK:/task_id",
+            "/claim_kind": "TRUSTED_TASK:/claim_kind",
+            "/scope": "TRUSTED_TASK:/scope",
+            "/assumptions": "TRUSTED_TASK:/assumptions",
+            "/source_refs": "AUTHENTIC_SOURCE_SNAPSHOTS:source_id/SHA/full byte spans",
+            "/evidence_refs": "AUTHENTIC_SOURCE_SNAPSHOTS:complete snapshot digests including rights.origin",
+            "/assertion/language": "TRUSTED_TASK:/claim_kind (existing language mapping)",
+            "/assertion/content": "CANONICAL_JSON_OF_EXACT_COMPILED_MACHINE_TERM",
+            "/generator": "TRUSTED_RUNTIME:actual model identity/configuration",
+            "/proposed_status": "MODEL_DELTA:/strength (literal enum mapping)",
+            "/assertion/machine_term/predicate": "MODEL_DELTA:/kind (literal enum mapping)",
+            "/assertion/machine_term/trace": "MODEL_DELTA:/trace",
+            "/assertion/machine_term/query": "TRUSTED_TASK:/query"
+          }
+        },
+        "candidate": {
+          "schema": "symseq.assurance.candidate.v1",
+          "candidate_id": "T:2e65d78f8130efbf",
+          "task_id": "F1",
+          "claim_kind": "FINITE_PROPOSITION",
+          "assertion": {
+            "language": "finite-logic-v1",
+            "content": "{\"predicate\":\"trace_equals\",\"query\":{\"actions\":[{\"id\":\"action:a\",\"kind\":\"action\"},{\"id\":\"action:b\",\"kind\":\"action\"},{\"id\":\"action:b\",\"kind\":\"action\"},{\"id\":\"action:a\",\"kind\":\"action\"},{\"id\":\"action:b\",\"kind\":\"action\"}],\"context_id\":\"context:0\"},\"trace\":[0,0,0,0,0,0]}",
+            "machine_term": {
+              "predicate": "trace_equals",
+              "query": {
+                "context_id": "context:0",
+                "actions": [
+                  {
+                    "kind": "action",
+                    "id": "action:a"
+                  },
+                  {
+                    "kind": "action",
+                    "id": "action:b"
+                  },
+                  {
+                    "kind": "action",
+                    "id": "action:b"
+                  },
+                  {
+                    "kind": "action",
+                    "id": "action:a"
+                  },
+                  {
+                    "kind": "action",
+                    "id": "action:b"
+                  }
+                ]
+              },
+              "trace": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "scope": {
+            "task_id": "F1",
+            "source_snapshots": {
+              "finite:F1": "6147629c03ffe5b62fde38182b23328b44383e5b21ab59cca1e390752ed57383"
+            },
+            "scope_version": 1,
+            "execution_permission": false,
+            "max_actions": 5,
+            "action_namespace": [
+              "action:a",
+              "action:b",
+              "action:read"
+            ],
+            "reset": "x=context_bit;y=0",
+            "public_class": "complete_affine_memory_class/1"
+          },
+          "assumptions": [
+            "Only the declared immutable source and bounded contract apply.",
+            "Source attestation does not establish real-world truth."
+          ],
+          "source_refs": [
+            {
+              "source_id": "finite:F1",
+              "sha256": "b67bd3045e101850f50e7ea22c6cc860f600981c39112478203a6fc10f2ac9aa",
+              "pointer": null,
+              "byte_start": 0,
+              "byte_end": 1812
+            }
+          ],
+          "evidence_refs": [
+            "sha256:6147629c03ffe5b62fde38182b23328b44383e5b21ab59cca1e390752ed57383"
+          ],
+          "proposed_status": "ENTAILED_UNDER_PUBLIC_CONTRACT",
+          "generator": {
+            "kind": "SYMBOLIC",
+            "id": "offline003-control-no-model",
+            "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+          }
+        },
+        "compiled_candidate_sha256": "1c4d2e49c236452d6f95307f1d8cc1dde5decf9521bcc64819e807f3343041e4",
+        "execution_permission": false,
+        "decision": {
+          "schema": "symseq.assurance.decision.v1",
+          "candidate_digest": "fdd49c17da9fa68d9119e18c2f47ce009e99c87672d090e1ad64a18a79267d4c",
+          "source_digest": "339691b7d1a25f36d22787fe06a87a7a5c8e29c56cb1f13a8374df118845b72e",
+          "scope_digest": "3abee0c0a359a37a9c66cca5b9625409aa36433ac37b40c62bf502712529b417",
+          "verifier_id": "assurance001/v1",
+          "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+          "decision": "REJECT",
+          "assurance_status": "REJECTED",
+          "claim_kind": "FINITE_PROPOSITION",
+          "check_kind": "FINITE_EXHAUSTIVE",
+          "reason_code": "FALSE_ENTAILED_ANSWER_UNKNOWN",
+          "witness_refs": [
+            "sha256:d8fed2070de7a5232087e4099096a917e22ca8459e0a6367209778b04322cdcb"
+          ],
+          "dependencies": [
+            "sha256:6147629c03ffe5b62fde38182b23328b44383e5b21ab59cca1e390752ed57383"
+          ],
+          "execution_permission": false,
+          "decision_digest": "e15e6a537a0e25a3b7b77f04e4b97a17f8994a9808d3657a97de3dbd2da199ae"
+        },
+        "witnesses": {
+          "sha256:d8fed2070de7a5232087e4099096a917e22ca8459e0a6367209778b04322cdcb": {
+            "schema": "symseq.assurance.witness.v1",
+            "kind": "finite_counterexample",
+            "source_digest": "339691b7d1a25f36d22787fe06a87a7a5c8e29c56cb1f13a8374df118845b72e",
+            "scope_digest": "3abee0c0a359a37a9c66cca5b9625409aa36433ac37b40c62bf502712529b417",
+            "payload": {
+              "query": {
+                "context_id": "context:0",
+                "actions": [
+                  {
+                    "kind": "action",
+                    "id": "action:a"
+                  },
+                  {
+                    "kind": "action",
+                    "id": "action:b"
+                  },
+                  {
+                    "kind": "action",
+                    "id": "action:b"
+                  },
+                  {
+                    "kind": "action",
+                    "id": "action:a"
+                  },
+                  {
+                    "kind": "action",
+                    "id": "action:b"
+                  }
+                ]
+              },
+              "complete_public_class_size": 192,
+              "posterior_behavior_classes": 24,
+              "distribution": [
+                {
+                  "trace": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "count": 23
+                },
+                {
+                  "trace": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1
+                  ],
+                  "count": 1
+                }
+              ],
+              "countermodels": [
+                {
+                  "hypothetical_model": {
+                    "a": 0,
+                    "b": 0,
+                    "sensor": 1
+                  },
+                  "trace": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "class_count": 23,
+                  "fits_all_observations": true
+                },
+                {
+                  "hypothetical_model": {
+                    "a": 7,
+                    "b": 0,
+                    "sensor": 1
+                  },
+                  "trace": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1
+                  ],
+                  "class_count": 1,
+                  "fits_all_observations": true
+                }
+              ],
+              "answer_status": "UNKNOWN",
+              "enumeration_digest": "d2769cc9e49860878d37f25927afc8eae80ae858a7c60220b4a4c49df407249a"
+            }
+          }
+        },
+        "semantic_status": "REJECTED",
+        "reason_code": "FALSE_ENTAILED_ANSWER_UNKNOWN",
+        "failure_stage": "CHECKER",
+        "checker_invoked": true
+      },
+      "extra": {
+        "two_countermodels_and_UNKNOWN": true
+      },
+      "contract_hash": "c9b5ec96508c8fd1862fe3bed1c008d6a3c32268f7460c81788ec966b11bc023"
+    },
+    {
+      "test_id": "T18",
+      "status": "PASS",
+      "expected_status": "CONDITIONAL_HYPOTHESIS",
+      "expected_reason": "SUPPORTED_NOT_ENTAILED",
+      "evaluation": {
+        "interface": "DELTA",
+        "raw_sha256": "1f934bc3b61d5f75c376cda1da4bee7a0ea7fc26325ba057303bd5698d07840c",
+        "runtime": {
+          "kind": "SYMBOLIC",
+          "model_id": "offline003-control-no-model",
+          "call_id": "T",
+          "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+        },
+        "schema_valid": true,
+        "binding_applicable": true,
+        "bind_success": true,
+        "payload": {
+          "intent": "PROPOSE",
+          "kind": "FINITE_TRACE",
+          "schema": "symseq.assurance.proposal-delta.v1",
+          "strength": "CONDITIONAL",
+          "trace": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "binding": {
+          "proposal_raw_sha256": "a3e6836091d833d3dfc2eb5cbd18a69bb25a89784b6d76a24606d9d7efba11cc",
+          "binder_version": "proposal-binder/1",
+          "binder_digest": "8c760eeaa960cc4a2eb227ee1669d004f82db8e6e51ce871caaaa1b79c39105a",
+          "task_id": "F1",
+          "source_snapshot_bindings": {
+            "finite:F1": "6147629c03ffe5b62fde38182b23328b44383e5b21ab59cca1e390752ed57383"
+          },
+          "runtime_digest": "745020ab0ca74feff83a68e97f79085f105e28fc5c87b54e156a9a38e8538632",
+          "execution_permission": false,
+          "source_refs": [
+            {
+              "source_id": "finite:F1",
+              "sha256": "b67bd3045e101850f50e7ea22c6cc860f600981c39112478203a6fc10f2ac9aa",
+              "pointer": null,
+              "byte_start": 0,
+              "byte_end": 1812
+            }
+          ],
+          "source_rights_origin": {
+            "finite:F1": "User-generated DISCOVERY-006 public observations; no selected law"
+          },
+          "record_kind": "CompiledCandidateRecord",
+          "proposal": {
+            "intent": "PROPOSE",
+            "kind": "FINITE_TRACE",
+            "schema": "symseq.assurance.proposal-delta.v1",
+            "strength": "CONDITIONAL",
+            "trace": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "candidate": {
+            "schema": "symseq.assurance.candidate.v1",
+            "candidate_id": "T:a3e6836091d833d3",
+            "task_id": "F1",
+            "claim_kind": "FINITE_PROPOSITION",
+            "assertion": {
+              "language": "finite-logic-v1",
+              "content": "{\"predicate\":\"trace_equals\",\"query\":{\"actions\":[{\"id\":\"action:a\",\"kind\":\"action\"},{\"id\":\"action:b\",\"kind\":\"action\"},{\"id\":\"action:b\",\"kind\":\"action\"},{\"id\":\"action:a\",\"kind\":\"action\"},{\"id\":\"action:b\",\"kind\":\"action\"}],\"context_id\":\"context:0\"},\"trace\":[0,0,0,0,0,0]}",
+              "machine_term": {
+                "predicate": "trace_equals",
+                "query": {
+                  "context_id": "context:0",
+                  "actions": [
+                    {
+                      "kind": "action",
+                      "id": "action:a"
+                    },
+                    {
+                      "kind": "action",
+                      "id": "action:b"
+                    },
+                    {
+                      "kind": "action",
+                      "id": "action:b"
+                    },
+                    {
+                      "kind": "action",
+                      "id": "action:a"
+                    },
+                    {
+                      "kind": "action",
+                      "id": "action:b"
+                    }
+                  ]
+                },
+                "trace": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            },
+            "scope": {
+              "task_id": "F1",
+              "source_snapshots": {
+                "finite:F1": "6147629c03ffe5b62fde38182b23328b44383e5b21ab59cca1e390752ed57383"
+              },
+              "scope_version": 1,
+              "execution_permission": false,
+              "max_actions": 5,
+              "action_namespace": [
+                "action:a",
+                "action:b",
+                "action:read"
+              ],
+              "reset": "x=context_bit;y=0",
+              "public_class": "complete_affine_memory_class/1"
+            },
+            "assumptions": [
+              "Only the declared immutable source and bounded contract apply.",
+              "Source attestation does not establish real-world truth."
+            ],
+            "source_refs": [
+              {
+                "source_id": "finite:F1",
+                "sha256": "b67bd3045e101850f50e7ea22c6cc860f600981c39112478203a6fc10f2ac9aa",
+                "pointer": null,
+                "byte_start": 0,
+                "byte_end": 1812
+              }
+            ],
+            "evidence_refs": [
+              "sha256:6147629c03ffe5b62fde38182b23328b44383e5b21ab59cca1e390752ed57383"
+            ],
+            "proposed_status": "CONDITIONAL_HYPOTHESIS",
+            "generator": {
+              "kind": "SYMBOLIC",
+              "id": "offline003-control-no-model",
+              "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+            }
+          },
+          "compiled_candidate_sha256": "247a1a815335a0d9bcf51f6ed12853f01369eca14413d2701583c4c385655605",
+          "positive_assurance": false,
+          "checker_invoked": false,
+          "field_provenance": {
+            "/schema": "CandidateRecord v1 constant",
+            "/candidate_id": "TRUSTED_RUNTIME:/call_id + raw SHA",
+            "/task_id": "TRUSTED_TASK:/task_id",
+            "/claim_kind": "TRUSTED_TASK:/claim_kind",
+            "/scope": "TRUSTED_TASK:/scope",
+            "/assumptions": "TRUSTED_TASK:/assumptions",
+            "/source_refs": "AUTHENTIC_SOURCE_SNAPSHOTS:source_id/SHA/full byte spans",
+            "/evidence_refs": "AUTHENTIC_SOURCE_SNAPSHOTS:complete snapshot digests including rights.origin",
+            "/assertion/language": "TRUSTED_TASK:/claim_kind (existing language mapping)",
+            "/assertion/content": "CANONICAL_JSON_OF_EXACT_COMPILED_MACHINE_TERM",
+            "/generator": "TRUSTED_RUNTIME:actual model identity/configuration",
+            "/proposed_status": "MODEL_DELTA:/strength (literal enum mapping)",
+            "/assertion/machine_term/predicate": "MODEL_DELTA:/kind (literal enum mapping)",
+            "/assertion/machine_term/trace": "MODEL_DELTA:/trace",
+            "/assertion/machine_term/query": "TRUSTED_TASK:/query"
+          }
+        },
+        "candidate": {
+          "schema": "symseq.assurance.candidate.v1",
+          "candidate_id": "T:a3e6836091d833d3",
+          "task_id": "F1",
+          "claim_kind": "FINITE_PROPOSITION",
+          "assertion": {
+            "language": "finite-logic-v1",
+            "content": "{\"predicate\":\"trace_equals\",\"query\":{\"actions\":[{\"id\":\"action:a\",\"kind\":\"action\"},{\"id\":\"action:b\",\"kind\":\"action\"},{\"id\":\"action:b\",\"kind\":\"action\"},{\"id\":\"action:a\",\"kind\":\"action\"},{\"id\":\"action:b\",\"kind\":\"action\"}],\"context_id\":\"context:0\"},\"trace\":[0,0,0,0,0,0]}",
+            "machine_term": {
+              "predicate": "trace_equals",
+              "query": {
+                "context_id": "context:0",
+                "actions": [
+                  {
+                    "kind": "action",
+                    "id": "action:a"
+                  },
+                  {
+                    "kind": "action",
+                    "id": "action:b"
+                  },
+                  {
+                    "kind": "action",
+                    "id": "action:b"
+                  },
+                  {
+                    "kind": "action",
+                    "id": "action:a"
+                  },
+                  {
+                    "kind": "action",
+                    "id": "action:b"
+                  }
+                ]
+              },
+              "trace": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "scope": {
+            "task_id": "F1",
+            "source_snapshots": {
+              "finite:F1": "6147629c03ffe5b62fde38182b23328b44383e5b21ab59cca1e390752ed57383"
+            },
+            "scope_version": 1,
+            "execution_permission": false,
+            "max_actions": 5,
+            "action_namespace": [
+              "action:a",
+              "action:b",
+              "action:read"
+            ],
+            "reset": "x=context_bit;y=0",
+            "public_class": "complete_affine_memory_class/1"
+          },
+          "assumptions": [
+            "Only the declared immutable source and bounded contract apply.",
+            "Source attestation does not establish real-world truth."
+          ],
+          "source_refs": [
+            {
+              "source_id": "finite:F1",
+              "sha256": "b67bd3045e101850f50e7ea22c6cc860f600981c39112478203a6fc10f2ac9aa",
+              "pointer": null,
+              "byte_start": 0,
+              "byte_end": 1812
+            }
+          ],
+          "evidence_refs": [
+            "sha256:6147629c03ffe5b62fde38182b23328b44383e5b21ab59cca1e390752ed57383"
+          ],
+          "proposed_status": "CONDITIONAL_HYPOTHESIS",
+          "generator": {
+            "kind": "SYMBOLIC",
+            "id": "offline003-control-no-model",
+            "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+          }
+        },
+        "compiled_candidate_sha256": "247a1a815335a0d9bcf51f6ed12853f01369eca14413d2701583c4c385655605",
+        "execution_permission": false,
+        "decision": {
+          "schema": "symseq.assurance.decision.v1",
+          "candidate_digest": "5f75b80138cca674c74112a3d996c51aba37585d9a79d2133d4f1bb3f6aede23",
+          "source_digest": "339691b7d1a25f36d22787fe06a87a7a5c8e29c56cb1f13a8374df118845b72e",
+          "scope_digest": "3abee0c0a359a37a9c66cca5b9625409aa36433ac37b40c62bf502712529b417",
+          "verifier_id": "assurance001/v1",
+          "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+          "decision": "ACCEPT",
+          "assurance_status": "CONDITIONAL_HYPOTHESIS",
+          "claim_kind": "FINITE_PROPOSITION",
+          "check_kind": "CONDITIONAL_CHECK",
+          "reason_code": "SUPPORTED_NOT_ENTAILED",
+          "witness_refs": [
+            "sha256:8782a08120a999bf5bb99d4e3606db205468350a1ceba577c5862a3d2f998958"
+          ],
+          "dependencies": [
+            "sha256:6147629c03ffe5b62fde38182b23328b44383e5b21ab59cca1e390752ed57383"
+          ],
+          "execution_permission": false,
+          "decision_digest": "1cc1295d901c174f543bdec6466a90bbd0ee1fc7e984d55cadf7ba09ea392cb4"
+        },
+        "witnesses": {
+          "sha256:8782a08120a999bf5bb99d4e3606db205468350a1ceba577c5862a3d2f998958": {
+            "schema": "symseq.assurance.witness.v1",
+            "kind": "finite_conditional",
+            "source_digest": "339691b7d1a25f36d22787fe06a87a7a5c8e29c56cb1f13a8374df118845b72e",
+            "scope_digest": "3abee0c0a359a37a9c66cca5b9625409aa36433ac37b40c62bf502712529b417",
+            "payload": {
+              "query": {
+                "context_id": "context:0",
+                "actions": [
+                  {
+                    "kind": "action",
+                    "id": "action:a"
+                  },
+                  {
+                    "kind": "action",
+                    "id": "action:b"
+                  },
+                  {
+                    "kind": "action",
+                    "id": "action:b"
+                  },
+                  {
+                    "kind": "action",
+                    "id": "action:a"
+                  },
+                  {
+                    "kind": "action",
+                    "id": "action:b"
+                  }
+                ]
+              },
+              "complete_public_class_size": 192,
+              "posterior_behavior_classes": 24,
+              "distribution": [
+                {
+                  "trace": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "count": 23
+                },
+                {
+                  "trace": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1
+                  ],
+                  "count": 1
+                }
+              ],
+              "countermodels": [
+                {
+                  "hypothetical_model": {
+                    "a": 0,
+                    "b": 0,
+                    "sensor": 1
+                  },
+                  "trace": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "class_count": 23,
+                  "fits_all_observations": true
+                },
+                {
+                  "hypothetical_model": {
+                    "a": 7,
+                    "b": 0,
+                    "sensor": 1
+                  },
+                  "trace": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1
+                  ],
+                  "class_count": 1,
+                  "fits_all_observations": true
+                }
+              ],
+              "answer_status": "UNKNOWN",
+              "enumeration_digest": "d2769cc9e49860878d37f25927afc8eae80ae858a7c60220b4a4c49df407249a"
+            }
+          }
+        },
+        "semantic_status": "CONDITIONAL_HYPOTHESIS",
+        "reason_code": "SUPPORTED_NOT_ENTAILED",
+        "failure_stage": null,
+        "checker_invoked": true
+      },
+      "extra": {},
+      "contract_hash": "c9b5ec96508c8fd1862fe3bed1c008d6a3c32268f7460c81788ec966b11bc023"
+    },
+    {
+      "test_id": "T19",
+      "status": "PASS",
+      "expected_status": "REJECTED",
+      "expected_reason": "BOUNDED_PROGRAM_COUNTEREXAMPLE",
+      "evaluation": {
+        "interface": "DELTA",
+        "raw_sha256": "8f8cb8cbe17befc5458f111431be8bb121df9ed7d8d02bbc9d622e193ab8064a",
+        "runtime": {
+          "kind": "SYMBOLIC",
+          "model_id": "offline003-control-no-model",
+          "call_id": "T",
+          "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+        },
+        "schema_valid": true,
+        "binding_applicable": true,
+        "bind_success": true,
+        "payload": {
+          "intent": "PROPOSE",
+          "kind": "BOUNDED_PROPERTY",
+          "property": "PRESERVES_VALUE",
+          "schema": "symseq.assurance.proposal-delta.v1"
+        },
+        "binding": {
+          "proposal_raw_sha256": "97f6a158ecb67b0acc05ece2246df110c5917c22d285dcae5d5929bb73658831",
+          "binder_version": "proposal-binder/1",
+          "binder_digest": "8c760eeaa960cc4a2eb227ee1669d004f82db8e6e51ce871caaaa1b79c39105a",
+          "task_id": "C1",
+          "source_snapshot_bindings": {
+            "program:C1": "b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+          },
+          "runtime_digest": "745020ab0ca74feff83a68e97f79085f105e28fc5c87b54e156a9a38e8538632",
+          "execution_permission": false,
+          "source_refs": [
+            {
+              "source_id": "program:C1",
+              "sha256": "8198adfaa7e14ecd94c59a62af578e7203a8ba23361b271f1d24405733c9c752",
+              "pointer": null,
+              "byte_start": 0,
+              "byte_end": 259
+            }
+          ],
+          "source_rights_origin": {
+            "program:C1": "User-authorized reviewed local QA executable, all inputs declared"
+          },
+          "record_kind": "CompiledCandidateRecord",
+          "proposal": {
+            "intent": "PROPOSE",
+            "kind": "BOUNDED_PROPERTY",
+            "property": "PRESERVES_VALUE",
+            "schema": "symseq.assurance.proposal-delta.v1"
+          },
+          "candidate": {
+            "schema": "symseq.assurance.candidate.v1",
+            "candidate_id": "T:97f6a158ecb67b0a",
+            "task_id": "C1",
+            "claim_kind": "EXECUTABLE_BOUNDED",
+            "assertion": {
+              "language": "bounded-program-v1",
+              "content": "{\"input_domain\":[0,15],\"predicate\":\"preserves_value\"}",
+              "machine_term": {
+                "predicate": "preserves_value",
+                "input_domain": [
+                  0,
+                  15
+                ]
+              }
+            },
+            "scope": {
+              "task_id": "C1",
+              "source_snapshots": {
+                "program:C1": "b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+              },
+              "scope_version": 1,
+              "execution_permission": false,
+              "input_domain": [
+                0,
+                15
+              ]
+            },
+            "assumptions": [
+              "Only the declared immutable source and bounded contract apply.",
+              "Source attestation does not establish real-world truth."
+            ],
+            "source_refs": [
+              {
+                "source_id": "program:C1",
+                "sha256": "8198adfaa7e14ecd94c59a62af578e7203a8ba23361b271f1d24405733c9c752",
+                "pointer": null,
+                "byte_start": 0,
+                "byte_end": 259
+              }
+            ],
+            "evidence_refs": [
+              "sha256:b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+            ],
+            "proposed_status": "ENTAILED_UNDER_PUBLIC_CONTRACT",
+            "generator": {
+              "kind": "SYMBOLIC",
+              "id": "offline003-control-no-model",
+              "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+            }
+          },
+          "compiled_candidate_sha256": "43566465e91e7176546d1883dacae6927ab9c35088bd36b05fdfdd9af497a7f6",
+          "positive_assurance": false,
+          "checker_invoked": false,
+          "field_provenance": {
+            "/schema": "CandidateRecord v1 constant",
+            "/candidate_id": "TRUSTED_RUNTIME:/call_id + raw SHA",
+            "/task_id": "TRUSTED_TASK:/task_id",
+            "/claim_kind": "TRUSTED_TASK:/claim_kind",
+            "/scope": "TRUSTED_TASK:/scope",
+            "/assumptions": "TRUSTED_TASK:/assumptions",
+            "/source_refs": "AUTHENTIC_SOURCE_SNAPSHOTS:source_id/SHA/full byte spans",
+            "/evidence_refs": "AUTHENTIC_SOURCE_SNAPSHOTS:complete snapshot digests including rights.origin",
+            "/assertion/language": "TRUSTED_TASK:/claim_kind (existing language mapping)",
+            "/assertion/content": "CANONICAL_JSON_OF_EXACT_COMPILED_MACHINE_TERM",
+            "/generator": "TRUSTED_RUNTIME:actual model identity/configuration",
+            "/proposed_status": "MODEL_DELTA:/kind (fixed request-status mapping, never checker-derived)",
+            "/assertion/machine_term/predicate": "MODEL_DELTA:/property (literal enum mapping)",
+            "/assertion/machine_term/input_domain": "TRUSTED_TASK:/scope/input_domain"
+          }
+        },
+        "candidate": {
+          "schema": "symseq.assurance.candidate.v1",
+          "candidate_id": "T:97f6a158ecb67b0a",
+          "task_id": "C1",
+          "claim_kind": "EXECUTABLE_BOUNDED",
+          "assertion": {
+            "language": "bounded-program-v1",
+            "content": "{\"input_domain\":[0,15],\"predicate\":\"preserves_value\"}",
+            "machine_term": {
+              "predicate": "preserves_value",
+              "input_domain": [
+                0,
+                15
+              ]
+            }
+          },
+          "scope": {
+            "task_id": "C1",
+            "source_snapshots": {
+              "program:C1": "b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+            },
+            "scope_version": 1,
+            "execution_permission": false,
+            "input_domain": [
+              0,
+              15
+            ]
+          },
+          "assumptions": [
+            "Only the declared immutable source and bounded contract apply.",
+            "Source attestation does not establish real-world truth."
+          ],
+          "source_refs": [
+            {
+              "source_id": "program:C1",
+              "sha256": "8198adfaa7e14ecd94c59a62af578e7203a8ba23361b271f1d24405733c9c752",
+              "pointer": null,
+              "byte_start": 0,
+              "byte_end": 259
+            }
+          ],
+          "evidence_refs": [
+            "sha256:b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+          ],
+          "proposed_status": "ENTAILED_UNDER_PUBLIC_CONTRACT",
+          "generator": {
+            "kind": "SYMBOLIC",
+            "id": "offline003-control-no-model",
+            "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+          }
+        },
+        "compiled_candidate_sha256": "43566465e91e7176546d1883dacae6927ab9c35088bd36b05fdfdd9af497a7f6",
+        "execution_permission": false,
+        "decision": {
+          "schema": "symseq.assurance.decision.v1",
+          "candidate_digest": "9843803cd56a86865d1d71aeba06dd89474ad0e07654eb74416293f5aae9d757",
+          "source_digest": "524426d44851d31591f1f49555c6a46224523db887681efecda43d15635b1211",
+          "scope_digest": "59f1d6ba43538108d59ea19b8312d54dad32cf034b5b3111d001642489ca5209",
+          "verifier_id": "assurance001/v1",
+          "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+          "decision": "REJECT",
+          "assurance_status": "REJECTED",
+          "claim_kind": "EXECUTABLE_BOUNDED",
+          "check_kind": "FINITE_EXHAUSTIVE",
+          "reason_code": "BOUNDED_PROGRAM_COUNTEREXAMPLE",
+          "witness_refs": [
+            "sha256:aa89dbaa8ba3479b124e759cd290fb7412e61dad1edcea3c6a08d0807dbf77fd"
+          ],
+          "dependencies": [
+            "sha256:b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+          ],
+          "execution_permission": false,
+          "decision_digest": "e12c067aaefacd905c08532abfad3d2f5e91237090c9999249448e03b07fe80d"
+        },
+        "witnesses": {
+          "sha256:aa89dbaa8ba3479b124e759cd290fb7412e61dad1edcea3c6a08d0807dbf77fd": {
+            "schema": "symseq.assurance.witness.v1",
+            "kind": "bounded_exhaustive",
+            "source_digest": "524426d44851d31591f1f49555c6a46224523db887681efecda43d15635b1211",
+            "scope_digest": "59f1d6ba43538108d59ea19b8312d54dad32cf034b5b3111d001642489ca5209",
+            "payload": {
+              "all_16_inputs": [
+                [
+                  0,
+                  0,
+                  true
+                ],
+                [
+                  1,
+                  2,
+                  false
+                ],
+                [
+                  2,
+                  4,
+                  false
+                ],
+                [
+                  3,
+                  6,
+                  false
+                ],
+                [
+                  4,
+                  8,
+                  false
+                ],
+                [
+                  5,
+                  10,
+                  false
+                ],
+                [
+                  6,
+                  12,
+                  false
+                ],
+                [
+                  7,
+                  14,
+                  false
+                ],
+                [
+                  8,
+                  1,
+                  false
+                ],
+                [
+                  9,
+                  3,
+                  false
+                ],
+                [
+                  10,
+                  5,
+                  false
+                ],
+                [
+                  11,
+                  7,
+                  false
+                ],
+                [
+                  12,
+                  9,
+                  false
+                ],
+                [
+                  13,
+                  11,
+                  false
+                ],
+                [
+                  14,
+                  13,
+                  false
+                ],
+                [
+                  15,
+                  15,
+                  true
+                ]
+              ],
+              "unbounded_claim": false
+            }
+          }
+        },
+        "semantic_status": "REJECTED",
+        "reason_code": "BOUNDED_PROGRAM_COUNTEREXAMPLE",
+        "failure_stage": "CHECKER",
+        "checker_invoked": true
+      },
+      "extra": {},
+      "contract_hash": "c9b5ec96508c8fd1862fe3bed1c008d6a3c32268f7460c81788ec966b11bc023"
+    },
+    {
+      "test_id": "T20",
+      "status": "PASS",
+      "expected_status": "REJECTED",
+      "expected_reason": "FALSE_PROJECTION_PRESERVATION",
+      "evaluation": {
+        "interface": "DELTA",
+        "raw_sha256": "c2d552da73193a4376594778eecba41ced27a4852aa975a928068435d41c3210",
+        "runtime": {
+          "kind": "SYMBOLIC",
+          "model_id": "offline003-control-no-model",
+          "call_id": "T",
+          "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+        },
+        "schema_valid": true,
+        "binding_applicable": true,
+        "bind_success": true,
+        "payload": {
+          "intent": "PROPOSE",
+          "kind": "SOURCE_PROJECTION",
+          "relation": "PRESERVED_FOR_DECLARED_Q",
+          "schema": "symseq.assurance.proposal-delta.v1"
+        },
+        "binding": {
+          "proposal_raw_sha256": "ca65a322f7f496baaf769a4e30d97612c9a95c1f0d1318a9de40836f0361a29f",
+          "binder_version": "proposal-binder/1",
+          "binder_digest": "8c760eeaa960cc4a2eb227ee1669d004f82db8e6e51ce871caaaa1b79c39105a",
+          "task_id": "S1",
+          "source_snapshot_bindings": {
+            "P1-001:record:0": "5238d83dc9a36127adda7114c57ace594272a915447c5abfd77ee86db29d16ac",
+            "P1-001:record:1": "0d2bd23cd5462d63c4c5aa7c4ad3fe331acf6a4392b7f276c87ecf14a46641ad",
+            "P1-001:schema": "5e9f2610cf40a1ecd61c5f9eb24eb4c4428854414116d7467045486d415c94b0"
+          },
+          "runtime_digest": "745020ab0ca74feff83a68e97f79085f105e28fc5c87b54e156a9a38e8538632",
+          "execution_permission": false,
+          "source_refs": [
+            {
+              "source_id": "P1-001:record:0",
+              "sha256": "a3f65de1ec7acbd73b9400a878040eb8a9d0e3f13d0a09bf8f2014ab0dff6ac5",
+              "pointer": null,
+              "byte_start": 0,
+              "byte_end": 302
+            },
+            {
+              "source_id": "P1-001:record:1",
+              "sha256": "4a9ca42438e052116e89ee1faa5691bb8a397024dc92c5fd8a4ab1240b8b1e85",
+              "pointer": null,
+              "byte_start": 0,
+              "byte_end": 328
+            },
+            {
+              "source_id": "P1-001:schema",
+              "sha256": "8038431a0c13868dfb0427256f5ee9b32929635d5414c7f2db41652036045ba3",
+              "pointer": null,
+              "byte_start": 0,
+              "byte_end": 2181
+            }
+          ],
+          "source_rights_origin": {
+            "P1-001:record:0": "Actual source-schema-admissible counterfactual witness from live MCP, not a real permission/event",
+            "P1-001:record:1": "Actual source-schema-admissible counterfactual witness from live MCP, not a real permission/event",
+            "P1-001:schema": "SUTI author-provided reviewed source schema; actual live MCP source hash"
+          },
+          "record_kind": "CompiledCandidateRecord",
+          "proposal": {
+            "intent": "PROPOSE",
+            "kind": "SOURCE_PROJECTION",
+            "relation": "PRESERVED_FOR_DECLARED_Q",
+            "schema": "symseq.assurance.proposal-delta.v1"
+          },
+          "candidate": {
+            "schema": "symseq.assurance.candidate.v1",
+            "candidate_id": "T:ca65a322f7f496ba",
+            "task_id": "S1",
+            "claim_kind": "SOURCE_CLAIM",
+            "assertion": {
+              "language": "source-claim-v1",
+              "content": "{\"expectation\":\"preserved\",\"predicate\":\"projection_relation\",\"projected_fields\":[\"visibility\"],\"required_fields\":[\"visibility\",\"transfer_status\"]}",
+              "machine_term": {
+                "predicate": "projection_relation",
+                "projected_fields": [
+                  "visibility"
+                ],
+                "required_fields": [
+                  "visibility",
+                  "transfer_status"
+                ],
+                "expectation": "preserved"
+              }
+            },
+            "scope": {
+              "task_id": "S1",
+              "source_snapshots": {
+                "P1-001:record:0": "5238d83dc9a36127adda7114c57ace594272a915447c5abfd77ee86db29d16ac",
+                "P1-001:record:1": "0d2bd23cd5462d63c4c5aa7c4ad3fe331acf6a4392b7f276c87ecf14a46641ad",
+                "P1-001:schema": "5e9f2610cf40a1ecd61c5f9eb24eb4c4428854414116d7467045486d415c94b0"
+              },
+              "scope_version": 1,
+              "execution_permission": false,
+              "projected_fields": [
+                "visibility"
+              ],
+              "required_fields": [
+                "visibility",
+                "transfer_status"
+              ]
+            },
+            "assumptions": [
+              "Only the declared immutable source and bounded contract apply.",
+              "Source attestation does not establish real-world truth."
+            ],
+            "source_refs": [
+              {
+                "source_id": "P1-001:record:0",
+                "sha256": "a3f65de1ec7acbd73b9400a878040eb8a9d0e3f13d0a09bf8f2014ab0dff6ac5",
+                "pointer": null,
+                "byte_start": 0,
+                "byte_end": 302
+              },
+              {
+                "source_id": "P1-001:record:1",
+                "sha256": "4a9ca42438e052116e89ee1faa5691bb8a397024dc92c5fd8a4ab1240b8b1e85",
+                "pointer": null,
+                "byte_start": 0,
+                "byte_end": 328
+              },
+              {
+                "source_id": "P1-001:schema",
+                "sha256": "8038431a0c13868dfb0427256f5ee9b32929635d5414c7f2db41652036045ba3",
+                "pointer": null,
+                "byte_start": 0,
+                "byte_end": 2181
+              }
+            ],
+            "evidence_refs": [
+              "sha256:5238d83dc9a36127adda7114c57ace594272a915447c5abfd77ee86db29d16ac",
+              "sha256:0d2bd23cd5462d63c4c5aa7c4ad3fe331acf6a4392b7f276c87ecf14a46641ad",
+              "sha256:5e9f2610cf40a1ecd61c5f9eb24eb4c4428854414116d7467045486d415c94b0"
+            ],
+            "proposed_status": "SOURCE_ATTESTED",
+            "generator": {
+              "kind": "SYMBOLIC",
+              "id": "offline003-control-no-model",
+              "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+            }
+          },
+          "compiled_candidate_sha256": "449853f9a63dc0ad5d51f7b8c27685e05715a46c6cadf4c0489febe5ee87d2cd",
+          "positive_assurance": false,
+          "checker_invoked": false,
+          "field_provenance": {
+            "/schema": "CandidateRecord v1 constant",
+            "/candidate_id": "TRUSTED_RUNTIME:/call_id + raw SHA",
+            "/task_id": "TRUSTED_TASK:/task_id",
+            "/claim_kind": "TRUSTED_TASK:/claim_kind",
+            "/scope": "TRUSTED_TASK:/scope",
+            "/assumptions": "TRUSTED_TASK:/assumptions",
+            "/source_refs": "AUTHENTIC_SOURCE_SNAPSHOTS:source_id/SHA/full byte spans",
+            "/evidence_refs": "AUTHENTIC_SOURCE_SNAPSHOTS:complete snapshot digests including rights.origin",
+            "/assertion/language": "TRUSTED_TASK:/claim_kind (existing language mapping)",
+            "/assertion/content": "CANONICAL_JSON_OF_EXACT_COMPILED_MACHINE_TERM",
+            "/generator": "TRUSTED_RUNTIME:actual model identity/configuration",
+            "/proposed_status": "MODEL_DELTA:/kind (fixed request-status mapping, never checker-derived)",
+            "/assertion/machine_term/predicate": "MODEL_DELTA:/kind (literal enum mapping)",
+            "/assertion/machine_term/expectation": "MODEL_DELTA:/relation (literal enum mapping)",
+            "/assertion/machine_term/projected_fields": "TRUSTED_TASK:/projected_fields",
+            "/assertion/machine_term/required_fields": "TRUSTED_TASK:/required_fields"
+          }
+        },
+        "candidate": {
+          "schema": "symseq.assurance.candidate.v1",
+          "candidate_id": "T:ca65a322f7f496ba",
+          "task_id": "S1",
+          "claim_kind": "SOURCE_CLAIM",
+          "assertion": {
+            "language": "source-claim-v1",
+            "content": "{\"expectation\":\"preserved\",\"predicate\":\"projection_relation\",\"projected_fields\":[\"visibility\"],\"required_fields\":[\"visibility\",\"transfer_status\"]}",
+            "machine_term": {
+              "predicate": "projection_relation",
+              "projected_fields": [
+                "visibility"
+              ],
+              "required_fields": [
+                "visibility",
+                "transfer_status"
+              ],
+              "expectation": "preserved"
+            }
+          },
+          "scope": {
+            "task_id": "S1",
+            "source_snapshots": {
+              "P1-001:record:0": "5238d83dc9a36127adda7114c57ace594272a915447c5abfd77ee86db29d16ac",
+              "P1-001:record:1": "0d2bd23cd5462d63c4c5aa7c4ad3fe331acf6a4392b7f276c87ecf14a46641ad",
+              "P1-001:schema": "5e9f2610cf40a1ecd61c5f9eb24eb4c4428854414116d7467045486d415c94b0"
+            },
+            "scope_version": 1,
+            "execution_permission": false,
+            "projected_fields": [
+              "visibility"
+            ],
+            "required_fields": [
+              "visibility",
+              "transfer_status"
+            ]
+          },
+          "assumptions": [
+            "Only the declared immutable source and bounded contract apply.",
+            "Source attestation does not establish real-world truth."
+          ],
+          "source_refs": [
+            {
+              "source_id": "P1-001:record:0",
+              "sha256": "a3f65de1ec7acbd73b9400a878040eb8a9d0e3f13d0a09bf8f2014ab0dff6ac5",
+              "pointer": null,
+              "byte_start": 0,
+              "byte_end": 302
+            },
+            {
+              "source_id": "P1-001:record:1",
+              "sha256": "4a9ca42438e052116e89ee1faa5691bb8a397024dc92c5fd8a4ab1240b8b1e85",
+              "pointer": null,
+              "byte_start": 0,
+              "byte_end": 328
+            },
+            {
+              "source_id": "P1-001:schema",
+              "sha256": "8038431a0c13868dfb0427256f5ee9b32929635d5414c7f2db41652036045ba3",
+              "pointer": null,
+              "byte_start": 0,
+              "byte_end": 2181
+            }
+          ],
+          "evidence_refs": [
+            "sha256:5238d83dc9a36127adda7114c57ace594272a915447c5abfd77ee86db29d16ac",
+            "sha256:0d2bd23cd5462d63c4c5aa7c4ad3fe331acf6a4392b7f276c87ecf14a46641ad",
+            "sha256:5e9f2610cf40a1ecd61c5f9eb24eb4c4428854414116d7467045486d415c94b0"
+          ],
+          "proposed_status": "SOURCE_ATTESTED",
+          "generator": {
+            "kind": "SYMBOLIC",
+            "id": "offline003-control-no-model",
+            "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+          }
+        },
+        "compiled_candidate_sha256": "449853f9a63dc0ad5d51f7b8c27685e05715a46c6cadf4c0489febe5ee87d2cd",
+        "execution_permission": false,
+        "decision": {
+          "schema": "symseq.assurance.decision.v1",
+          "candidate_digest": "f075b2da2c76f61406917c2d7c085f4a25171408d0d16b57c28ac973d4f1de5d",
+          "source_digest": "2d80c41bfebfb73cbfb7c8c994651cb270c89c95d9abc2849bb79b18542d44bb",
+          "scope_digest": "ae6c8a1cae3e5490e66c1e9ec3747c0b5224b77a7782ca6732bf6ed9fb6d12ab",
+          "verifier_id": "assurance001/v1",
+          "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+          "decision": "REJECT",
+          "assurance_status": "REJECTED",
+          "claim_kind": "SOURCE_CLAIM",
+          "check_kind": "NONE",
+          "reason_code": "FALSE_PROJECTION_PRESERVATION",
+          "witness_refs": [
+            "sha256:21226c8bc5e5a9d4df0cb2d8f0607bbfd18c02f489201dd350c65a4866504f70"
+          ],
+          "dependencies": [
+            "sha256:5238d83dc9a36127adda7114c57ace594272a915447c5abfd77ee86db29d16ac",
+            "sha256:0d2bd23cd5462d63c4c5aa7c4ad3fe331acf6a4392b7f276c87ecf14a46641ad",
+            "sha256:5e9f2610cf40a1ecd61c5f9eb24eb4c4428854414116d7467045486d415c94b0"
+          ],
+          "execution_permission": false,
+          "decision_digest": "16003e5cb1625be911092400b77b0fa0ea7821b8c2c91a334a655eb4bfcf8b17"
+        },
+        "witnesses": {
+          "sha256:21226c8bc5e5a9d4df0cb2d8f0607bbfd18c02f489201dd350c65a4866504f70": {
+            "schema": "symseq.assurance.witness.v1",
+            "kind": "source_projection",
+            "source_digest": "2d80c41bfebfb73cbfb7c8c994651cb270c89c95d9abc2849bb79b18542d44bb",
+            "scope_digest": "ae6c8a1cae3e5490e66c1e9ec3747c0b5224b77a7782ca6732bf6ed9fb6d12ab",
+            "payload": {
+              "source_ids": [
+                "P1-001:record:0",
+                "P1-001:record:1"
+              ],
+              "projection": [
+                {
+                  "visibility": "public"
+                },
+                {
+                  "visibility": "public"
+                }
+              ],
+              "different_required_fields": [
+                "transfer_status"
+              ],
+              "relation": "LOSS_DETECTED",
+              "rights_origins": [
+                "Actual source-schema-admissible counterfactual witness from live MCP, not a real permission/event",
+                "Actual source-schema-admissible counterfactual witness from live MCP, not a real permission/event"
+              ],
+              "absolute_identity_claimed": false
+            }
+          }
+        },
+        "semantic_status": "REJECTED",
+        "reason_code": "FALSE_PROJECTION_PRESERVATION",
+        "failure_stage": "CHECKER",
+        "checker_invoked": true
+      },
+      "extra": {},
+      "contract_hash": "c9b5ec96508c8fd1862fe3bed1c008d6a3c32268f7460c81788ec966b11bc023"
+    },
+    {
+      "test_id": "T21",
+      "status": "PASS",
+      "expected_status": "NO_PROPOSAL",
+      "expected_reason": null,
+      "evaluation": {
+        "interface": "DELTA",
+        "raw_sha256": "e9bf8050c5d6c59923d067fad5854dcdc04e4cbc8fb205cdb16b8ce59b016b10",
+        "runtime": {
+          "kind": "SYMBOLIC",
+          "model_id": "offline003-control-no-model",
+          "call_id": "T",
+          "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+        },
+        "schema_valid": true,
+        "binding_applicable": true,
+        "bind_success": true,
+        "payload": {
+          "intent": "ABSTAIN",
+          "reason": "No proposal",
+          "schema": "symseq.assurance.proposal-delta.v1"
+        },
+        "binding": {
+          "proposal_raw_sha256": "4b5d05ccefb7442bb26b9ab6105aacf06e01c5b710b0d4c7cbf5173119ca0404",
+          "binder_version": "proposal-binder/1",
+          "binder_digest": "8c760eeaa960cc4a2eb227ee1669d004f82db8e6e51ce871caaaa1b79c39105a",
+          "task_id": "F2",
+          "source_snapshot_bindings": {
+            "finite:F2": "dc304e10943168310934c124570a143dd6a3d47b8819c1b268029f1ce1cdd9aa"
+          },
+          "runtime_digest": "745020ab0ca74feff83a68e97f79085f105e28fc5c87b54e156a9a38e8538632",
+          "execution_permission": false,
+          "source_refs": [
+            {
+              "source_id": "finite:F2",
+              "sha256": "f01da92a425b79b09343db75b4ead8dc4dc89c19a664a3d5836e9ab12b222761",
+              "pointer": null,
+              "byte_start": 0,
+              "byte_end": 1692
+            }
+          ],
+          "source_rights_origin": {
+            "finite:F2": "User-authorized generated finite QA contract"
+          },
+          "record_kind": "NoProposalRecord",
+          "proposal": {
+            "intent": "ABSTAIN",
+            "reason": "No proposal",
+            "schema": "symseq.assurance.proposal-delta.v1"
+          },
+          "candidate": null,
+          "compiled_candidate_sha256": null,
+          "semantic_status": "NO_PROPOSAL",
+          "positive_assurance": false,
+          "checker_invoked": false,
+          "field_provenance": {
+            "/reason": "MODEL_DELTA:/reason",
+            "/intent": "MODEL_DELTA:/intent",
+            "/task_id": "TRUSTED_TASK:/task_id",
+            "/source_snapshot_bindings": "AUTHENTIC_SOURCE_SNAPSHOTS"
+          }
+        },
+        "candidate": null,
+        "compiled_candidate_sha256": null,
+        "execution_permission": false,
+        "decision": null,
+        "witnesses": {},
+        "semantic_status": "NO_PROPOSAL",
+        "reason_code": "MODEL_ABSTAINED",
+        "failure_stage": null,
+        "checker_invoked": false
+      },
+      "extra": {
+        "no_candidate_no_checker": true
+      },
+      "contract_hash": "c9b5ec96508c8fd1862fe3bed1c008d6a3c32268f7460c81788ec966b11bc023"
+    },
+    {
+      "test_id": "T22",
+      "status": "PASS",
+      "expected_status": "UNKNOWN",
+      "expected_reason": "EMPIRICAL_CONDITIONAL_VALIDITY_UNCHECKED",
+      "evaluation": {
+        "interface": "DELTA",
+        "raw_sha256": "e96339cbb7359d7a6b4c7d44432e2bd804794cbb6696bfe6679d43f162d52e2b",
+        "runtime": {
+          "kind": "SYMBOLIC",
+          "model_id": "offline003-control-no-model",
+          "call_id": "T",
+          "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+        },
+        "schema_valid": true,
+        "binding_applicable": true,
+        "bind_success": true,
+        "payload": {
+          "intent": "PROPOSE",
+          "kind": "EMPIRICAL_HYPOTHESIS",
+          "schema": "symseq.assurance.proposal-delta.v1",
+          "text": "The physical effect is certainly proven."
+        },
+        "binding": {
+          "proposal_raw_sha256": "a075ac2247b6899c2fa052d142de7c0dc2c15360de44405763a27e2cef6afc46",
+          "binder_version": "proposal-binder/1",
+          "binder_digest": "8c760eeaa960cc4a2eb227ee1669d004f82db8e6e51ce871caaaa1b79c39105a",
+          "task_id": "U1",
+          "source_snapshot_bindings": {
+            "empirical:U1": "b63ab6d671e88245ac4f051677d811e9b4163359f0eb557f7e9a383ec7e23cbe"
+          },
+          "runtime_digest": "745020ab0ca74feff83a68e97f79085f105e28fc5c87b54e156a9a38e8538632",
+          "execution_permission": false,
+          "source_refs": [
+            {
+              "source_id": "empirical:U1",
+              "sha256": "cc811c7209f6db82eec845c84ac44df799cccbd40b519ad85f13194b2591912e",
+              "pointer": null,
+              "byte_start": 0,
+              "byte_end": 214
+            }
+          ],
+          "source_rights_origin": {
+            "empirical:U1": "User-provided open research question; no empirical measurements claimed"
+          },
+          "record_kind": "CompiledCandidateRecord",
+          "proposal": {
+            "intent": "PROPOSE",
+            "kind": "EMPIRICAL_HYPOTHESIS",
+            "schema": "symseq.assurance.proposal-delta.v1",
+            "text": "The physical effect is certainly proven."
+          },
+          "candidate": {
+            "schema": "symseq.assurance.candidate.v1",
+            "candidate_id": "T:a075ac2247b6899c",
+            "task_id": "U1",
+            "claim_kind": "EMPIRICAL_HYPOTHESIS",
+            "assertion": {
+              "language": "natural-language",
+              "content": "{\"predicate\":\"hypothesis\",\"text\":\"The physical effect is certainly proven.\"}",
+              "machine_term": {
+                "predicate": "hypothesis",
+                "text": "The physical effect is certainly proven."
+              }
+            },
+            "scope": {
+              "task_id": "U1",
+              "source_snapshots": {
+                "empirical:U1": "b63ab6d671e88245ac4f051677d811e9b4163359f0eb557f7e9a383ec7e23cbe"
+              },
+              "scope_version": 1,
+              "execution_permission": false
+            },
+            "assumptions": [
+              "Only the declared immutable source and bounded contract apply.",
+              "Source attestation does not establish real-world truth."
+            ],
+            "source_refs": [
+              {
+                "source_id": "empirical:U1",
+                "sha256": "cc811c7209f6db82eec845c84ac44df799cccbd40b519ad85f13194b2591912e",
+                "pointer": null,
+                "byte_start": 0,
+                "byte_end": 214
+              }
+            ],
+            "evidence_refs": [
+              "sha256:b63ab6d671e88245ac4f051677d811e9b4163359f0eb557f7e9a383ec7e23cbe"
+            ],
+            "proposed_status": "CONDITIONAL_HYPOTHESIS",
+            "generator": {
+              "kind": "SYMBOLIC",
+              "id": "offline003-control-no-model",
+              "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+            }
+          },
+          "compiled_candidate_sha256": "e4aca66227371830495b801681b15aa74e1e0bbe8fc799dfa7bca128284dd6bf",
+          "positive_assurance": false,
+          "checker_invoked": false,
+          "field_provenance": {
+            "/schema": "CandidateRecord v1 constant",
+            "/candidate_id": "TRUSTED_RUNTIME:/call_id + raw SHA",
+            "/task_id": "TRUSTED_TASK:/task_id",
+            "/claim_kind": "TRUSTED_TASK:/claim_kind",
+            "/scope": "TRUSTED_TASK:/scope",
+            "/assumptions": "TRUSTED_TASK:/assumptions",
+            "/source_refs": "AUTHENTIC_SOURCE_SNAPSHOTS:source_id/SHA/full byte spans",
+            "/evidence_refs": "AUTHENTIC_SOURCE_SNAPSHOTS:complete snapshot digests including rights.origin",
+            "/assertion/language": "TRUSTED_TASK:/claim_kind (existing language mapping)",
+            "/assertion/content": "CANONICAL_JSON_OF_EXACT_COMPILED_MACHINE_TERM",
+            "/generator": "TRUSTED_RUNTIME:actual model identity/configuration",
+            "/proposed_status": "MODEL_DELTA:/kind (fixed request-status mapping, never checker-derived)",
+            "/assertion/machine_term/predicate": "MODEL_DELTA:/kind (literal enum mapping)",
+            "/assertion/machine_term/text": "MODEL_DELTA:/text"
+          }
+        },
+        "candidate": {
+          "schema": "symseq.assurance.candidate.v1",
+          "candidate_id": "T:a075ac2247b6899c",
+          "task_id": "U1",
+          "claim_kind": "EMPIRICAL_HYPOTHESIS",
+          "assertion": {
+            "language": "natural-language",
+            "content": "{\"predicate\":\"hypothesis\",\"text\":\"The physical effect is certainly proven.\"}",
+            "machine_term": {
+              "predicate": "hypothesis",
+              "text": "The physical effect is certainly proven."
+            }
+          },
+          "scope": {
+            "task_id": "U1",
+            "source_snapshots": {
+              "empirical:U1": "b63ab6d671e88245ac4f051677d811e9b4163359f0eb557f7e9a383ec7e23cbe"
+            },
+            "scope_version": 1,
+            "execution_permission": false
+          },
+          "assumptions": [
+            "Only the declared immutable source and bounded contract apply.",
+            "Source attestation does not establish real-world truth."
+          ],
+          "source_refs": [
+            {
+              "source_id": "empirical:U1",
+              "sha256": "cc811c7209f6db82eec845c84ac44df799cccbd40b519ad85f13194b2591912e",
+              "pointer": null,
+              "byte_start": 0,
+              "byte_end": 214
+            }
+          ],
+          "evidence_refs": [
+            "sha256:b63ab6d671e88245ac4f051677d811e9b4163359f0eb557f7e9a383ec7e23cbe"
+          ],
+          "proposed_status": "CONDITIONAL_HYPOTHESIS",
+          "generator": {
+            "kind": "SYMBOLIC",
+            "id": "offline003-control-no-model",
+            "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+          }
+        },
+        "compiled_candidate_sha256": "e4aca66227371830495b801681b15aa74e1e0bbe8fc799dfa7bca128284dd6bf",
+        "execution_permission": false,
+        "decision": {
+          "schema": "symseq.assurance.decision.v1",
+          "candidate_digest": "c28fd96919f93b079d3f6ccad3a23fbcc5a93cf74b0d6a336691b5efa4c61b90",
+          "source_digest": "ea9ac364fd3bd37c797a36c9c3a5c76d6e3d59a8cfedebf30c064409058cb370",
+          "scope_digest": "479a334144aaa209f49258cfc1ff0fafbf7ea243edab078e2219724260fc9e9d",
+          "verifier_id": "assurance001/v1",
+          "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+          "decision": "UNKNOWN",
+          "assurance_status": "UNKNOWN",
+          "claim_kind": "EMPIRICAL_HYPOTHESIS",
+          "check_kind": "NONE",
+          "reason_code": "EMPIRICAL_CONDITIONAL_VALIDITY_UNCHECKED",
+          "witness_refs": [
+            "sha256:4d9a751437f0236b22d17e3ff3b99d5f17f084bbbad2e9fe79758fbd1751c29c"
+          ],
+          "dependencies": [
+            "sha256:b63ab6d671e88245ac4f051677d811e9b4163359f0eb557f7e9a383ec7e23cbe"
+          ],
+          "execution_permission": false,
+          "decision_digest": "46cc241e592321c8e24b68f025a38f1f144ce1eb653edb7bd83f68b213274012"
+        },
+        "witnesses": {
+          "sha256:4d9a751437f0236b22d17e3ff3b99d5f17f084bbbad2e9fe79758fbd1751c29c": {
+            "schema": "symseq.assurance.witness.v1",
+            "kind": "unverified_empirical_hypothesis",
+            "source_digest": "ea9ac364fd3bd37c797a36c9c3a5c76d6e3d59a8cfedebf30c064409058cb370",
+            "scope_digest": "479a334144aaa209f49258cfc1ff0fafbf7ea243edab078e2219724260fc9e9d",
+            "payload": {
+              "assumptions": [
+                "Only the declared immutable source and bounded contract apply.",
+                "Source attestation does not establish real-world truth."
+              ],
+              "world_truth_checked": false
+            }
+          }
+        },
+        "semantic_status": "UNKNOWN",
+        "reason_code": "EMPIRICAL_CONDITIONAL_VALIDITY_UNCHECKED",
+        "failure_stage": null,
+        "checker_invoked": true
+      },
+      "extra": {},
+      "contract_hash": "c9b5ec96508c8fd1862fe3bed1c008d6a3c32268f7460c81788ec966b11bc023"
+    },
+    {
+      "test_id": "T23",
+      "status": "PASS",
+      "expected_status": "CHECKED_FINITE",
+      "expected_reason": null,
+      "evaluation": {
+        "interface": "FULL",
+        "raw_sha256": "de95fe667c0b7af5f7164c95c233ff40947613b478d957a5779f0b11cd1eca71",
+        "runtime": {
+          "kind": "SYMBOLIC",
+          "model_id": "offline003-control-no-model",
+          "call_id": "T",
+          "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+        },
+        "schema_valid": true,
+        "binding_applicable": false,
+        "bind_success": null,
+        "payload": {
+          "assertion": {
+            "content": "{\"input_domain\":[0,15],\"predicate\":\"preserves_popcount\"}",
+            "language": "bounded-program-v1",
+            "machine_term": {
+              "input_domain": [
+                0,
+                15
+              ],
+              "predicate": "preserves_popcount"
+            }
+          },
+          "assumptions": [
+            "Only the declared immutable source and bounded contract apply.",
+            "Source attestation does not establish real-world truth."
+          ],
+          "candidate_id": "qa-candidate",
+          "claim_kind": "EXECUTABLE_BOUNDED",
+          "evidence_refs": [
+            "sha256:b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+          ],
+          "generator": {
+            "config_digest": "4b7bb4d41ab65bcca9e71f54cd99ea3c0ab1c9f2813635e392df3c5a7ec5ed5b",
+            "id": "symbolic-reference",
+            "kind": "SYMBOLIC"
+          },
+          "proposed_status": "ENTAILED_UNDER_PUBLIC_CONTRACT",
+          "schema": "symseq.assurance.candidate.v1",
+          "scope": {
+            "execution_permission": false,
+            "input_domain": [
+              0,
+              15
+            ],
+            "scope_version": 1,
+            "source_snapshots": {
+              "program:C1": "b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+            },
+            "task_id": "C1"
+          },
+          "source_refs": [
+            {
+              "byte_end": 259,
+              "byte_start": 0,
+              "pointer": null,
+              "sha256": "8198adfaa7e14ecd94c59a62af578e7203a8ba23361b271f1d24405733c9c752",
+              "source_id": "program:C1"
+            }
+          ],
+          "task_id": "C1"
+        },
+        "binding": null,
+        "candidate": {
+          "assertion": {
+            "content": "{\"input_domain\":[0,15],\"predicate\":\"preserves_popcount\"}",
+            "language": "bounded-program-v1",
+            "machine_term": {
+              "input_domain": [
+                0,
+                15
+              ],
+              "predicate": "preserves_popcount"
+            }
+          },
+          "assumptions": [
+            "Only the declared immutable source and bounded contract apply.",
+            "Source attestation does not establish real-world truth."
+          ],
+          "candidate_id": "qa-candidate",
+          "claim_kind": "EXECUTABLE_BOUNDED",
+          "evidence_refs": [
+            "sha256:b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+          ],
+          "generator": {
+            "config_digest": "4b7bb4d41ab65bcca9e71f54cd99ea3c0ab1c9f2813635e392df3c5a7ec5ed5b",
+            "id": "symbolic-reference",
+            "kind": "SYMBOLIC"
+          },
+          "proposed_status": "ENTAILED_UNDER_PUBLIC_CONTRACT",
+          "schema": "symseq.assurance.candidate.v1",
+          "scope": {
+            "execution_permission": false,
+            "input_domain": [
+              0,
+              15
+            ],
+            "scope_version": 1,
+            "source_snapshots": {
+              "program:C1": "b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+            },
+            "task_id": "C1"
+          },
+          "source_refs": [
+            {
+              "byte_end": 259,
+              "byte_start": 0,
+              "pointer": null,
+              "sha256": "8198adfaa7e14ecd94c59a62af578e7203a8ba23361b271f1d24405733c9c752",
+              "source_id": "program:C1"
+            }
+          ],
+          "task_id": "C1"
+        },
+        "compiled_candidate_sha256": "91fb43709652bba17b8a942ca2c9b2c7114e9b6d5181e6a9a5d721f222475d9c",
+        "execution_permission": false,
+        "decision": {
+          "schema": "symseq.assurance.decision.v1",
+          "candidate_digest": "807cd172622db159131922cf8cb853b18313b14ceb24e5c5e4f40b2e2fc08095",
+          "source_digest": "524426d44851d31591f1f49555c6a46224523db887681efecda43d15635b1211",
+          "scope_digest": "59f1d6ba43538108d59ea19b8312d54dad32cf034b5b3111d001642489ca5209",
+          "verifier_id": "assurance001/v1",
+          "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+          "decision": "ACCEPT",
+          "assurance_status": "CHECKED_FINITE",
+          "claim_kind": "EXECUTABLE_BOUNDED",
+          "check_kind": "FINITE_EXHAUSTIVE",
+          "reason_code": "ALL_16_INPUTS_EXHAUSTED",
+          "witness_refs": [
+            "sha256:1953234d08def2a2dde579e88533a5ce98a4328fab41efebc1f0c72f910f1a3b"
+          ],
+          "dependencies": [
+            "sha256:b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+          ],
+          "execution_permission": false,
+          "decision_digest": "ae125699ff06c4361c4047295a5da21678fc4a56c2bd690e44e930e5e79cd03e"
+        },
+        "witnesses": {
+          "sha256:1953234d08def2a2dde579e88533a5ce98a4328fab41efebc1f0c72f910f1a3b": {
+            "schema": "symseq.assurance.witness.v1",
+            "kind": "bounded_exhaustive",
+            "source_digest": "524426d44851d31591f1f49555c6a46224523db887681efecda43d15635b1211",
+            "scope_digest": "59f1d6ba43538108d59ea19b8312d54dad32cf034b5b3111d001642489ca5209",
+            "payload": {
+              "all_16_inputs": [
+                [
+                  0,
+                  0,
+                  true
+                ],
+                [
+                  1,
+                  2,
+                  true
+                ],
+                [
+                  2,
+                  4,
+                  true
+                ],
+                [
+                  3,
+                  6,
+                  true
+                ],
+                [
+                  4,
+                  8,
+                  true
+                ],
+                [
+                  5,
+                  10,
+                  true
+                ],
+                [
+                  6,
+                  12,
+                  true
+                ],
+                [
+                  7,
+                  14,
+                  true
+                ],
+                [
+                  8,
+                  1,
+                  true
+                ],
+                [
+                  9,
+                  3,
+                  true
+                ],
+                [
+                  10,
+                  5,
+                  true
+                ],
+                [
+                  11,
+                  7,
+                  true
+                ],
+                [
+                  12,
+                  9,
+                  true
+                ],
+                [
+                  13,
+                  11,
+                  true
+                ],
+                [
+                  14,
+                  13,
+                  true
+                ],
+                [
+                  15,
+                  15,
+                  true
+                ]
+              ],
+              "unbounded_claim": false
+            }
+          }
+        },
+        "semantic_status": "CHECKED_FINITE",
+        "reason_code": "ALL_16_INPUTS_EXHAUSTED",
+        "failure_stage": null,
+        "checker_invoked": true
+      },
+      "extra": {
+        "metadata_invariant": true
+      },
+      "contract_hash": "27d3a3464c5035148f7c05108647668a89022d553339fbf417e6beeae8bdddf7"
+    },
+    {
+      "test_id": "T24",
+      "status": "PASS",
+      "expected_status": "CHECKED_FINITE",
+      "expected_reason": null,
+      "evaluation": {
+        "interface": "DELTA",
+        "raw_sha256": "1bba60c6b380b8cdc1c106146b6dbecb7b0f98863161d3d8fd40d654136ac0df",
+        "runtime": {
+          "kind": "SYMBOLIC",
+          "model_id": "offline003-control-no-model",
+          "call_id": "T",
+          "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+        },
+        "schema_valid": true,
+        "binding_applicable": true,
+        "bind_success": true,
+        "payload": {
+          "intent": "PROPOSE",
+          "kind": "BOUNDED_PROPERTY",
+          "property": "PRESERVES_POPCOUNT",
+          "schema": "symseq.assurance.proposal-delta.v1"
+        },
+        "binding": {
+          "proposal_raw_sha256": "3864e841582ed8b7962efda6bfe79061221c9b5fa09000a668c2845e17d31d1e",
+          "binder_version": "proposal-binder/1",
+          "binder_digest": "8c760eeaa960cc4a2eb227ee1669d004f82db8e6e51ce871caaaa1b79c39105a",
+          "task_id": "C1",
+          "source_snapshot_bindings": {
+            "program:C1": "b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+          },
+          "runtime_digest": "745020ab0ca74feff83a68e97f79085f105e28fc5c87b54e156a9a38e8538632",
+          "execution_permission": false,
+          "source_refs": [
+            {
+              "source_id": "program:C1",
+              "sha256": "8198adfaa7e14ecd94c59a62af578e7203a8ba23361b271f1d24405733c9c752",
+              "pointer": null,
+              "byte_start": 0,
+              "byte_end": 259
+            }
+          ],
+          "source_rights_origin": {
+            "program:C1": "User-authorized reviewed local QA executable, all inputs declared"
+          },
+          "record_kind": "CompiledCandidateRecord",
+          "proposal": {
+            "intent": "PROPOSE",
+            "kind": "BOUNDED_PROPERTY",
+            "property": "PRESERVES_POPCOUNT",
+            "schema": "symseq.assurance.proposal-delta.v1"
+          },
+          "candidate": {
+            "schema": "symseq.assurance.candidate.v1",
+            "candidate_id": "T:3864e841582ed8b7",
+            "task_id": "C1",
+            "claim_kind": "EXECUTABLE_BOUNDED",
+            "assertion": {
+              "language": "bounded-program-v1",
+              "content": "{\"input_domain\":[0,15],\"predicate\":\"preserves_popcount\"}",
+              "machine_term": {
+                "predicate": "preserves_popcount",
+                "input_domain": [
+                  0,
+                  15
+                ]
+              }
+            },
+            "scope": {
+              "task_id": "C1",
+              "source_snapshots": {
+                "program:C1": "b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+              },
+              "scope_version": 1,
+              "execution_permission": false,
+              "input_domain": [
+                0,
+                15
+              ]
+            },
+            "assumptions": [
+              "Only the declared immutable source and bounded contract apply.",
+              "Source attestation does not establish real-world truth."
+            ],
+            "source_refs": [
+              {
+                "source_id": "program:C1",
+                "sha256": "8198adfaa7e14ecd94c59a62af578e7203a8ba23361b271f1d24405733c9c752",
+                "pointer": null,
+                "byte_start": 0,
+                "byte_end": 259
+              }
+            ],
+            "evidence_refs": [
+              "sha256:b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+            ],
+            "proposed_status": "ENTAILED_UNDER_PUBLIC_CONTRACT",
+            "generator": {
+              "kind": "SYMBOLIC",
+              "id": "offline003-control-no-model",
+              "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+            }
+          },
+          "compiled_candidate_sha256": "2f7b25ced5768d5b72c3c9f224ea364814db462ee17bc9431a53c5c26ee2b87d",
+          "positive_assurance": false,
+          "checker_invoked": false,
+          "field_provenance": {
+            "/schema": "CandidateRecord v1 constant",
+            "/candidate_id": "TRUSTED_RUNTIME:/call_id + raw SHA",
+            "/task_id": "TRUSTED_TASK:/task_id",
+            "/claim_kind": "TRUSTED_TASK:/claim_kind",
+            "/scope": "TRUSTED_TASK:/scope",
+            "/assumptions": "TRUSTED_TASK:/assumptions",
+            "/source_refs": "AUTHENTIC_SOURCE_SNAPSHOTS:source_id/SHA/full byte spans",
+            "/evidence_refs": "AUTHENTIC_SOURCE_SNAPSHOTS:complete snapshot digests including rights.origin",
+            "/assertion/language": "TRUSTED_TASK:/claim_kind (existing language mapping)",
+            "/assertion/content": "CANONICAL_JSON_OF_EXACT_COMPILED_MACHINE_TERM",
+            "/generator": "TRUSTED_RUNTIME:actual model identity/configuration",
+            "/proposed_status": "MODEL_DELTA:/kind (fixed request-status mapping, never checker-derived)",
+            "/assertion/machine_term/predicate": "MODEL_DELTA:/property (literal enum mapping)",
+            "/assertion/machine_term/input_domain": "TRUSTED_TASK:/scope/input_domain"
+          }
+        },
+        "candidate": {
+          "schema": "symseq.assurance.candidate.v1",
+          "candidate_id": "T:3864e841582ed8b7",
+          "task_id": "C1",
+          "claim_kind": "EXECUTABLE_BOUNDED",
+          "assertion": {
+            "language": "bounded-program-v1",
+            "content": "{\"input_domain\":[0,15],\"predicate\":\"preserves_popcount\"}",
+            "machine_term": {
+              "predicate": "preserves_popcount",
+              "input_domain": [
+                0,
+                15
+              ]
+            }
+          },
+          "scope": {
+            "task_id": "C1",
+            "source_snapshots": {
+              "program:C1": "b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+            },
+            "scope_version": 1,
+            "execution_permission": false,
+            "input_domain": [
+              0,
+              15
+            ]
+          },
+          "assumptions": [
+            "Only the declared immutable source and bounded contract apply.",
+            "Source attestation does not establish real-world truth."
+          ],
+          "source_refs": [
+            {
+              "source_id": "program:C1",
+              "sha256": "8198adfaa7e14ecd94c59a62af578e7203a8ba23361b271f1d24405733c9c752",
+              "pointer": null,
+              "byte_start": 0,
+              "byte_end": 259
+            }
+          ],
+          "evidence_refs": [
+            "sha256:b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+          ],
+          "proposed_status": "ENTAILED_UNDER_PUBLIC_CONTRACT",
+          "generator": {
+            "kind": "SYMBOLIC",
+            "id": "offline003-control-no-model",
+            "config_digest": "eb021b857be4bf958285c6cf8ff0fcca57f04eb18a265684df336f8693739fd5"
+          }
+        },
+        "compiled_candidate_sha256": "2f7b25ced5768d5b72c3c9f224ea364814db462ee17bc9431a53c5c26ee2b87d",
+        "execution_permission": false,
+        "decision": {
+          "schema": "symseq.assurance.decision.v1",
+          "candidate_digest": "807cd172622db159131922cf8cb853b18313b14ceb24e5c5e4f40b2e2fc08095",
+          "source_digest": "524426d44851d31591f1f49555c6a46224523db887681efecda43d15635b1211",
+          "scope_digest": "59f1d6ba43538108d59ea19b8312d54dad32cf034b5b3111d001642489ca5209",
+          "verifier_id": "assurance001/v1",
+          "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+          "decision": "ACCEPT",
+          "assurance_status": "CHECKED_FINITE",
+          "claim_kind": "EXECUTABLE_BOUNDED",
+          "check_kind": "FINITE_EXHAUSTIVE",
+          "reason_code": "ALL_16_INPUTS_EXHAUSTED",
+          "witness_refs": [
+            "sha256:1953234d08def2a2dde579e88533a5ce98a4328fab41efebc1f0c72f910f1a3b"
+          ],
+          "dependencies": [
+            "sha256:b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+          ],
+          "execution_permission": false,
+          "decision_digest": "ae125699ff06c4361c4047295a5da21678fc4a56c2bd690e44e930e5e79cd03e"
+        },
+        "witnesses": {
+          "sha256:1953234d08def2a2dde579e88533a5ce98a4328fab41efebc1f0c72f910f1a3b": {
+            "schema": "symseq.assurance.witness.v1",
+            "kind": "bounded_exhaustive",
+            "source_digest": "524426d44851d31591f1f49555c6a46224523db887681efecda43d15635b1211",
+            "scope_digest": "59f1d6ba43538108d59ea19b8312d54dad32cf034b5b3111d001642489ca5209",
+            "payload": {
+              "all_16_inputs": [
+                [
+                  0,
+                  0,
+                  true
+                ],
+                [
+                  1,
+                  2,
+                  true
+                ],
+                [
+                  2,
+                  4,
+                  true
+                ],
+                [
+                  3,
+                  6,
+                  true
+                ],
+                [
+                  4,
+                  8,
+                  true
+                ],
+                [
+                  5,
+                  10,
+                  true
+                ],
+                [
+                  6,
+                  12,
+                  true
+                ],
+                [
+                  7,
+                  14,
+                  true
+                ],
+                [
+                  8,
+                  1,
+                  true
+                ],
+                [
+                  9,
+                  3,
+                  true
+                ],
+                [
+                  10,
+                  5,
+                  true
+                ],
+                [
+                  11,
+                  7,
+                  true
+                ],
+                [
+                  12,
+                  9,
+                  true
+                ],
+                [
+                  13,
+                  11,
+                  true
+                ],
+                [
+                  14,
+                  13,
+                  true
+                ],
+                [
+                  15,
+                  15,
+                  true
+                ]
+              ],
+              "unbounded_claim": false
+            }
+          }
+        },
+        "semantic_status": "CHECKED_FINITE",
+        "reason_code": "ALL_16_INPUTS_EXHAUSTED",
+        "failure_stage": null,
+        "checker_invoked": true
+      },
+      "extra": {
+        "direct_compiled_same": true,
+        "tampering_detected": true
+      },
+      "contract_hash": "c9b5ec96508c8fd1862fe3bed1c008d6a3c32268f7460c81788ec966b11bc023"
+    }
+  ]
+}

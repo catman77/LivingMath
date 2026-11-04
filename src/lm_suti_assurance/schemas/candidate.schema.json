@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "$id": "lm-suti.assurance.candidate/0.1",
+  "properties": {
+    "schema": {
+      "const": "lm-suti.assurance.candidate/0.1"
+    },
+    "project": {
+      "type": "string",
+      "minLength": 1
+    },
+    "task_ref": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "format": {
+      "enum": [
+        "candidate",
+        "delta"
+      ]
+    },
+    "raw": {
+      "type": "string",
+      "minLength": 1
+    },
+    "supersedes": {
+      "oneOf": [
+        {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "schema",
+    "project",
+    "task_ref",
+    "format",
+    "raw"
+  ]
+}

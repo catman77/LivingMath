@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "$id": "lm-suti.assurance.package-manifest/0.1",
+  "properties": {
+    "schema": {
+      "const": "lm-suti.assurance.package-manifest/0.1"
+    },
+    "release": {
+      "const": "v0.1.0-developer-preview"
+    },
+    "project": {
+      "type": "string",
+      "minLength": 1
+    },
+    "audience": {
+      "enum": [
+        "private",
+        "reviewers",
+        "public"
+      ]
+    },
+    "verifier_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "binder_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "journal_head": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "files": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      }
+    },
+    "source_dependencies": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      }
+    },
+    "execution_permission": {
+      "const": false
+    }
+  },
+  "required": [
+    "schema",
+    "release",
+    "project",
+    "audience",
+    "verifier_digest",
+    "binder_digest",
+    "journal_head",
+    "files",
+    "source_dependencies",
+    "execution_permission"
+  ]
+}

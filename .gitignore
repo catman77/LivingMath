@@ -91,3 +91,21 @@ login-password
 inference-spool/
 model-calls/
 backend-stderr.log
+
+# v0.1 assurance product and exact release request.
+!/src/
+!/tests/
+!/tools/
+!/pyproject.toml
+!/BASELINE_LOCK.json
+!/README_QUICKSTART_RU.md
+!/CLI_REFERENCE.md
+!/LIMITATIONS.md
+!/CHANGELOG.md
+!/docs/release-v01/
+!/docs/LM_SUTI_RELEASE_V01/
+!/docs/LM_SUTI_RELEASE_V01_ROADMAP_AND_START.zip
+!/docs/LM_SUTI_RELEASE_V01_ROADMAP_AND_START.zip.sha256
+*.egg-info/
+build/
+dist/

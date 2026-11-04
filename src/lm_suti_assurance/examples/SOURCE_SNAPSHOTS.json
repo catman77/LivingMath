@@ -1,0 +1,211 @@
+{
+  "finite:F1": {
+    "schema": "symseq.assurance.source.v1",
+    "source_id": "finite:F1",
+    "version": "1",
+    "kind": "qa",
+    "content_utf8": "{\"hypothesis_class\":{\"initialization\":\"x=context_bit; y=false, at every reset\",\"kind\":\"complete_affine_memory_class/1\",\"memory_registers\":[\"x\",\"y\"],\"observation_contract\":\"One fixed unknown nonzero linear sensor mask: x, y, or x XOR y. Outputs are bits. This declares all alternatives, not the selected law.\",\"operations\":[{\"id\":\"operation:0\",\"offset\":[false,false],\"row_x\":[true,false],\"row_y\":[false,true]},{\"id\":\"operation:1\",\"offset\":[false,false],\"row_x\":[true,false],\"row_y\":[true,true]},{\"id\":\"operation:2\",\"offset\":[false,false],\"row_x\":[false,true],\"row_y\":[true,false]},{\"id\":\"operation:3\",\"offset\":[false,false],\"row_x\":[false,true],\"row_y\":[true,true]},{\"id\":\"operation:4\",\"offset\":[false,false],\"row_x\":[true,true],\"row_y\":[true,false]},{\"id\":\"operation:5\",\"offset\":[false,false],\"row_x\":[true,true],\"row_y\":[false,true]},{\"id\":\"operation:6\",\"offset\":[true,false],\"row_x\":[true,false],\"row_y\":[true,true]},{\"id\":\"operation:7\",\"offset\":[false,true],\"row_x\":[true,true],\"row_y\":[false,true]}],\"prior\":\"Uniform over EXACT distinguishable source-and-declared-transfer behaviors, not duplicate internal realizations.\",\"private_selected_operations_provided\":false,\"raw_model_count\":192,\"transfer\":\"Swap the two coefficients of the sensor; keep the two transition maps and initialization. Identity observation decoder. This is a changed physical readout channel, not an alpha-rename.\",\"transition_contract\":\"Independently choose one listed operation for a and one for b, fixed across resets. Each output bit is XOR of selected old register bits and offset. read is identity.\"},\"observations\":[{\"actions\":[],\"context\":0,\"observations\":[0]},{\"actions\":[],\"context\":1,\"observations\":[1]},{\"actions\":[\"b\",\"a\"],\"context\":1,\"observations\":[1,1,1]},{\"actions\":[\"a\",\"b\",\"b\"],\"context\":0,\"observations\":[0,0,0,0]}]}",
+    "sha256": "b67bd3045e101850f50e7ea22c6cc860f600981c39112478203a6fc10f2ac9aa",
+    "schema_id": null,
+    "rights": {
+      "origin": "User-generated DISCOVERY-006 public observations; no selected law",
+      "status": "DECLARED_USER_AUTHORIZED",
+      "can_embed": true,
+      "attribution": "User-generated DISCOVERY-006 public observations; no selected law"
+    },
+    "provenance": {
+      "method": "immutable_bytes",
+      "author_endorsement_claimed": false
+    }
+  },
+  "finite:F2": {
+    "schema": "symseq.assurance.source.v1",
+    "source_id": "finite:F2",
+    "version": "1",
+    "kind": "qa",
+    "content_utf8": "{\"hypothesis_class\":{\"initialization\":\"x=context_bit; y=false, at every reset\",\"kind\":\"complete_affine_memory_class/1\",\"memory_registers\":[\"x\",\"y\"],\"observation_contract\":\"One fixed unknown nonzero linear sensor mask: x, y, or x XOR y. Outputs are bits. This declares all alternatives, not the selected law.\",\"operations\":[{\"id\":\"operation:0\",\"offset\":[false,false],\"row_x\":[true,false],\"row_y\":[false,true]},{\"id\":\"operation:1\",\"offset\":[false,false],\"row_x\":[true,false],\"row_y\":[true,true]},{\"id\":\"operation:2\",\"offset\":[false,false],\"row_x\":[false,true],\"row_y\":[true,false]},{\"id\":\"operation:3\",\"offset\":[false,false],\"row_x\":[false,true],\"row_y\":[true,true]},{\"id\":\"operation:4\",\"offset\":[false,false],\"row_x\":[true,true],\"row_y\":[true,false]},{\"id\":\"operation:5\",\"offset\":[false,false],\"row_x\":[true,true],\"row_y\":[false,true]},{\"id\":\"operation:6\",\"offset\":[true,false],\"row_x\":[true,false],\"row_y\":[true,true]},{\"id\":\"operation:7\",\"offset\":[false,true],\"row_x\":[true,true],\"row_y\":[false,true]}],\"prior\":\"Uniform over EXACT distinguishable source-and-declared-transfer behaviors, not duplicate internal realizations.\",\"private_selected_operations_provided\":false,\"raw_model_count\":192,\"transfer\":\"Swap the two coefficients of the sensor; keep the two transition maps and initialization. Identity observation decoder. This is a changed physical readout channel, not an alpha-rename.\",\"transition_contract\":\"Independently choose one listed operation for a and one for b, fixed across resets. Each output bit is XOR of selected old register bits and offset. read is identity.\"},\"observations\":[{\"actions\":[],\"context\":0,\"observations\":[0]},{\"actions\":[],\"context\":1,\"observations\":[1]}]}",
+    "sha256": "f01da92a425b79b09343db75b4ead8dc4dc89c19a664a3d5836e9ab12b222761",
+    "schema_id": null,
+    "rights": {
+      "origin": "User-authorized generated finite QA contract",
+      "status": "DECLARED_USER_AUTHORIZED",
+      "can_embed": true,
+      "attribution": "User-authorized generated finite QA contract"
+    },
+    "provenance": {
+      "method": "immutable_bytes",
+      "author_endorsement_claimed": false
+    }
+  },
+  "P1-001:schema": {
+    "schema": "symseq.assurance.source.v1",
+    "source_id": "P1-001:schema",
+    "version": "1",
+    "kind": "schema",
+    "content_utf8": "{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"$id\": \"learning-crystal.v1.schema.json\",\n  \"title\": \"SUTI Learning Crystal\",\n  \"type\": \"object\",\n  \"required\": [\"schema\", \"id\", \"title\", \"question\", \"author\", \"audience\", \"visibility\", \"maturity\", \"version\", \"claims\", \"sources\", \"unknowns\", \"limitations\", \"chosen_next_step\", \"rights_and_reuse\", \"transfer_status\", \"publication_status\"],\n  \"properties\": {\n    \"schema\": {\"const\": \"suti.learning-crystal.v1\"},\n    \"id\": {\"type\": \"string\"},\n    \"title\": {\"type\": \"string\"},\n    \"question\": {\"type\": \"string\"},\n    \"author\": {\"type\": \"string\"},\n    \"audience\": {\"type\": \"string\"},\n    \"visibility\": {\"enum\": [\"private\", \"shared\", \"internal\", \"public\"]},\n    \"maturity\": {\"enum\": [\"seed\", \"experiment\", \"reviewed\", \"archive\"]},\n    \"version\": {\"type\": \"string\"},\n    \"learning_lenses\": {\"type\": \"array\", \"items\": {\"type\": \"string\"}},\n    \"claims\": {\"type\": \"array\", \"items\": {\"type\": \"object\", \"required\": [\"text\", \"type\", \"basis\", \"status\"], \"properties\": {\"text\": {\"type\": \"string\"}, \"type\": {\"enum\": [\"fact\", \"observation\", \"interpretation\", \"hypothesis\", \"evaluation\", \"symbol\", \"unknown\"]}, \"basis\": {\"type\": \"string\"}, \"source_refs\": {\"type\": \"array\", \"items\": {\"type\": \"string\"}}, \"status\": {\"enum\": [\"PASS\", \"PARTIAL\", \"FAIL\", \"UNKNOWN\", \"HOLD\"]}}, \"additionalProperties\": true}},\n    \"sources\": {\"type\": \"array\", \"items\": {\"type\": \"object\", \"required\": [\"id\", \"title\", \"creator\", \"date\", \"url_or_path\", \"rights_status\"], \"properties\": {\"id\": {\"type\": \"string\"}, \"title\": {\"type\": \"string\"}, \"creator\": {\"type\": \"string\"}, \"date\": {\"type\": \"string\"}, \"url_or_path\": {\"type\": \"string\"}, \"rights_status\": {\"type\": \"string\"}}, \"additionalProperties\": true}},\n    \"unknowns\": {\"type\": \"array\", \"items\": {\"type\": \"string\"}},\n    \"limitations\": {\"type\": \"array\", \"items\": {\"type\": \"string\"}},\n    \"chosen_next_step\": {\"type\": \"string\"},\n    \"rights_and_reuse\": {\"type\": \"string\"},\n    \"transfer_status\": {\"enum\": [\"HOLD\", \"ready-after-review\", \"transferred-by-explicit-choice\"]},\n    \"publication_status\": {\"enum\": [\"HOLD\", \"ready-after-review\", \"published-by-explicit-choice\"]}\n  },\n  \"additionalProperties\": true\n}\n",
+    "sha256": "8038431a0c13868dfb0427256f5ee9b32929635d5414c7f2db41652036045ba3",
+    "schema_id": null,
+    "rights": {
+      "origin": "SUTI author-provided reviewed source schema; actual live MCP source hash",
+      "status": "DECLARED_USER_AUTHORIZED",
+      "can_embed": true,
+      "attribution": "SUTI author-provided reviewed source schema; actual live MCP source hash"
+    },
+    "provenance": {
+      "method": "immutable_bytes",
+      "author_endorsement_claimed": false
+    }
+  },
+  "P1-001:record:0": {
+    "schema": "symseq.assurance.source.v1",
+    "source_id": "P1-001:record:0",
+    "version": "1",
+    "kind": "suti_record",
+    "content_utf8": "{\"audience\":\"\",\"author\":\"\",\"chosen_next_step\":\"\",\"claims\":[],\"id\":\"\",\"limitations\":[],\"maturity\":\"seed\",\"publication_status\":\"HOLD\",\"question\":\"\",\"rights_and_reuse\":\"\",\"schema\":\"suti.learning-crystal.v1\",\"sources\":[],\"title\":\"\",\"transfer_status\":\"HOLD\",\"unknowns\":[],\"version\":\"\",\"visibility\":\"public\"}",
+    "sha256": "a3f65de1ec7acbd73b9400a878040eb8a9d0e3f13d0a09bf8f2014ab0dff6ac5",
+    "schema_id": "P1-001:schema",
+    "rights": {
+      "origin": "Actual source-schema-admissible counterfactual witness from live MCP, not a real permission/event",
+      "status": "DECLARED_USER_AUTHORIZED",
+      "can_embed": true,
+      "attribution": "Actual source-schema-admissible counterfactual witness from live MCP, not a real permission/event"
+    },
+    "provenance": {
+      "method": "immutable_bytes",
+      "author_endorsement_claimed": false
+    }
+  },
+  "P1-001:record:1": {
+    "schema": "symseq.assurance.source.v1",
+    "source_id": "P1-001:record:1",
+    "version": "1",
+    "kind": "suti_record",
+    "content_utf8": "{\"audience\":\"\",\"author\":\"\",\"chosen_next_step\":\"\",\"claims\":[],\"id\":\"\",\"limitations\":[],\"maturity\":\"seed\",\"publication_status\":\"HOLD\",\"question\":\"\",\"rights_and_reuse\":\"\",\"schema\":\"suti.learning-crystal.v1\",\"sources\":[],\"title\":\"\",\"transfer_status\":\"transferred-by-explicit-choice\",\"unknowns\":[],\"version\":\"\",\"visibility\":\"public\"}",
+    "sha256": "4a9ca42438e052116e89ee1faa5691bb8a397024dc92c5fd8a4ab1240b8b1e85",
+    "schema_id": "P1-001:schema",
+    "rights": {
+      "origin": "Actual source-schema-admissible counterfactual witness from live MCP, not a real permission/event",
+      "status": "DECLARED_USER_AUTHORIZED",
+      "can_embed": true,
+      "attribution": "Actual source-schema-admissible counterfactual witness from live MCP, not a real permission/event"
+    },
+    "provenance": {
+      "method": "immutable_bytes",
+      "author_endorsement_claimed": false
+    }
+  },
+  "P1-002:schema": {
+    "schema": "symseq.assurance.source.v1",
+    "source_id": "P1-002:schema",
+    "version": "1",
+    "kind": "schema",
+    "content_utf8": "{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"title\": \"SUTI.studium study session\",\n  \"description\": \"A minimal, privacy-aware plan for one learning session. This schema does not authorize data collection, transfer, or deployment.\",\n  \"type\": \"object\",\n  \"additionalProperties\": false,\n  \"required\": [\n    \"id\",\n    \"version\",\n    \"status\",\n    \"subject\",\n    \"setting\",\n    \"learning_goal\",\n    \"starting_task\",\n    \"source\",\n    \"practice_step\",\n    \"feedback_criterion\",\n    \"transfer_task\",\n    \"access_options\",\n    \"minimum_data_needed\",\n    \"data_not_needed\",\n    \"permissions_review\",\n    \"safeguarding_review\",\n    \"responsible_role\",\n    \"learner_can_pause\",\n    \"alternative_path\",\n    \"record\",\n    \"external_transfer\",\n    \"evidence_status\",\n    \"decision\"\n  ],\n  \"properties\": {\n    \"id\": {\n      \"type\": \"string\",\n      \"pattern\": \"^[a-z0-9][a-z0-9._-]*$\",\n      \"maxLength\": 96\n    },\n    \"version\": { \"const\": 1 },\n    \"status\": { \"enum\": [\"example-template\", \"draft\", \"reviewed\", \"archive\"] },\n    \"subject\": { \"type\": \"string\", \"maxLength\": 240 },\n    \"setting\": { \"type\": \"string\", \"maxLength\": 240 },\n    \"learning_goal\": { \"type\": \"string\", \"maxLength\": 1000 },\n    \"starting_task\": { \"type\": \"string\", \"maxLength\": 2000 },\n    \"source\": {\n      \"type\": \"object\",\n      \"additionalProperties\": false,\n      \"required\": [\"title\", \"url\", \"checked_on\", \"rights_status\"],\n      \"properties\": {\n        \"title\": { \"type\": \"string\", \"maxLength\": 500 },\n        \"url\": { \"type\": \"string\", \"maxLength\": 2000 },\n        \"checked_on\": {\n          \"type\": \"string\",\n          \"anyOf\": [\n            { \"const\": \"\" },\n            { \"format\": \"date\" }\n          ]\n        },\n        \"rights_status\": { \"enum\": [\"PASS\", \"PARTIAL\", \"FAIL\", \"UNKNOWN\"] }\n      }\n    },\n    \"practice_step\": { \"type\": \"string\", \"maxLength\": 2000 },\n    \"feedback_criterion\": { \"type\": \"string\", \"maxLength\": 1000 },\n    \"transfer_task\": { \"type\": \"string\", \"maxLength\": 2000 },\n    \"access_options\": {\n      \"type\": \"array\",\n      \"items\": { \"type\": \"string\", \"maxLength\": 240 },\n      \"maxItems\": 20,\n      \"uniqueItems\": true\n    },\n    \"minimum_data_needed\": {\n      \"type\": \"array\",\n      \"items\": { \"type\": \"string\", \"maxLength\": 240 },\n      \"maxItems\": 20,\n      \"uniqueItems\": true\n    },\n    \"data_not_needed\": {\n      \"type\": \"array\",\n      \"items\": { \"type\": \"string\", \"maxLength\": 240 },\n      \"maxItems\": 30,\n      \"uniqueItems\": true\n    },\n    \"permissions_review\": { \"enum\": [\"PASS\", \"PARTIAL\", \"FAIL\", \"UNKNOWN\"] },\n    \"safeguarding_review\": { \"enum\": [\"PASS\", \"PARTIAL\", \"FAIL\", \"UNKNOWN\"] },\n    \"support_review\": {\n      \"type\": \"object\",\n      \"description\": \"Optional, non-personal preflight. Store roles and routes, never participant names, diagnoses, or sensitive disclosures.\",\n      \"additionalProperties\": false,\n      \"required\": [\n        \"participant_can_choose_format\",\n        \"concern_contact_role\",\n        \"alternate_concern_route\",\n        \"confidentiality_limits_explained\",\n        \"identity_disclosure_risk_reviewed\",\n        \"local_emergency_route_reviewed\",\n        \"disclosure_protocol_reviewed\"\n      ],\n      \"properties\": {\n        \"participant_can_choose_format\": { \"type\": \"boolean\" },\n        \"concern_contact_role\": { \"type\": \"string\", \"maxLength\": 240 },\n        \"alternate_concern_route\": { \"type\": \"string\", \"maxLength\": 500 },\n        \"confidentiality_limits_explained\": { \"type\": \"boolean\" },\n        \"identity_disclosure_risk_reviewed\": { \"enum\": [\"PASS\", \"PARTIAL\", \"FAIL\", \"UNKNOWN\"] },\n        \"local_emergency_route_reviewed\": { \"enum\": [\"PASS\", \"PARTIAL\", \"FAIL\", \"UNKNOWN\", \"NOT_APPLICABLE\"] },\n        \"disclosure_protocol_reviewed\": { \"enum\": [\"PASS\", \"PARTIAL\", \"FAIL\", \"UNKNOWN\"] }\n      }\n    },\n    \"responsible_role\": { \"type\": \"string\", \"maxLength\": 240 },\n    \"learner_can_pause\": { \"type\": \"boolean\" },\n    \"alternative_path\": { \"type\": \"string\", \"maxLength\": 1000 },\n    \"record\": {\n      \"type\": \"object\",\n      \"additionalProperties\": false,\n      \"required\": [\n        \"enabled\",\n        \"owner_role\",\n        \"access_roles\",\n        \"retention_or_deletion_rule\",\n        \"correction_path\",\n        \"export_path\",\n        \"deletion_path\"\n      ],\n      \"properties\": {\n        \"enabled\": { \"type\": \"boolean\" },\n        \"owner_role\": { \"type\": \"string\", \"maxLength\": 240 },\n        \"access_roles\": {\n          \"type\": \"array\",\n          \"items\": { \"type\": \"string\", \"maxLength\": 240 },\n          \"maxItems\": 20,\n          \"uniqueItems\": true\n        },\n        \"retention_or_deletion_rule\": { \"type\": \"string\", \"maxLength\": 1000 },\n        \"correction_path\": { \"type\": \"string\", \"maxLength\": 1000 },\n        \"export_path\": { \"type\": \"string\", \"maxLength\": 1000 },\n        \"deletion_path\": { \"type\": \"string\", \"maxLength\": 1000 }\n      }\n    },\n    \"external_transfer\": { \"const\": \"HOLD\" },\n    \"evidence_status\": { \"enum\": [\"PASS\", \"PARTIAL\", \"FAIL\", \"UNKNOWN\"] },\n    \"decision\": { \"enum\": [\"COMMIT\", \"HOLD\", \"ROLLBACK\"] }\n  }\n}\n",
+    "sha256": "fda1ee197c3a740f274b6142aae981b8dc4f59c867ff0e8dfbf49ef3dcbf8b74",
+    "schema_id": null,
+    "rights": {
+      "origin": "SUTI author-provided reviewed source schema; actual live MCP source hash",
+      "status": "DECLARED_USER_AUTHORIZED",
+      "can_embed": true,
+      "attribution": "SUTI author-provided reviewed source schema; actual live MCP source hash"
+    },
+    "provenance": {
+      "method": "immutable_bytes",
+      "author_endorsement_claimed": false
+    }
+  },
+  "P1-002:record:0": {
+    "schema": "symseq.assurance.source.v1",
+    "source_id": "P1-002:record:0",
+    "version": "1",
+    "kind": "suti_record",
+    "content_utf8": "{\"access_options\":[],\"alternative_path\":\"\",\"data_not_needed\":[],\"decision\":\"COMMIT\",\"evidence_status\":\"PASS\",\"external_transfer\":\"HOLD\",\"feedback_criterion\":\"\",\"id\":\"a\",\"learner_can_pause\":false,\"learning_goal\":\"\",\"minimum_data_needed\":[],\"permissions_review\":\"PASS\",\"practice_step\":\"\",\"record\":{\"access_roles\":[],\"correction_path\":\"\",\"deletion_path\":\"\",\"enabled\":false,\"export_path\":\"\",\"owner_role\":\"\",\"retention_or_deletion_rule\":\"\"},\"responsible_role\":\"\",\"safeguarding_review\":\"PASS\",\"setting\":\"\",\"source\":{\"checked_on\":\"\",\"rights_status\":\"PASS\",\"title\":\"\",\"url\":\"\"},\"starting_task\":\"\",\"status\":\"example-template\",\"subject\":\"\",\"transfer_task\":\"\",\"version\":1}",
+    "sha256": "7650558b96be3dfe1e0cb13d71872578699e3d2fa13df8d5d29ba0d90d5d6f5e",
+    "schema_id": "P1-002:schema",
+    "rights": {
+      "origin": "Actual source-schema-admissible counterfactual witness from live MCP, not a real permission/event",
+      "status": "DECLARED_USER_AUTHORIZED",
+      "can_embed": true,
+      "attribution": "Actual source-schema-admissible counterfactual witness from live MCP, not a real permission/event"
+    },
+    "provenance": {
+      "method": "immutable_bytes",
+      "author_endorsement_claimed": false
+    }
+  },
+  "P1-002:record:1": {
+    "schema": "symseq.assurance.source.v1",
+    "source_id": "P1-002:record:1",
+    "version": "1",
+    "kind": "suti_record",
+    "content_utf8": "{\"access_options\":[],\"alternative_path\":\"\",\"data_not_needed\":[],\"decision\":\"ROLLBACK\",\"evidence_status\":\"PASS\",\"external_transfer\":\"HOLD\",\"feedback_criterion\":\"\",\"id\":\"a\",\"learner_can_pause\":false,\"learning_goal\":\"\",\"minimum_data_needed\":[],\"permissions_review\":\"PASS\",\"practice_step\":\"\",\"record\":{\"access_roles\":[],\"correction_path\":\"\",\"deletion_path\":\"\",\"enabled\":false,\"export_path\":\"\",\"owner_role\":\"\",\"retention_or_deletion_rule\":\"\"},\"responsible_role\":\"\",\"safeguarding_review\":\"PASS\",\"setting\":\"\",\"source\":{\"checked_on\":\"\",\"rights_status\":\"PASS\",\"title\":\"\",\"url\":\"\"},\"starting_task\":\"\",\"status\":\"example-template\",\"subject\":\"\",\"transfer_task\":\"\",\"version\":1}",
+    "sha256": "0acf217ccce0bf7a26c3d38b450ee64588934fee5f571445da256045558e6a58",
+    "schema_id": "P1-002:schema",
+    "rights": {
+      "origin": "Actual source-schema-admissible counterfactual witness from live MCP, not a real permission/event",
+      "status": "DECLARED_USER_AUTHORIZED",
+      "can_embed": true,
+      "attribution": "Actual source-schema-admissible counterfactual witness from live MCP, not a real permission/event"
+    },
+    "provenance": {
+      "method": "immutable_bytes",
+      "author_endorsement_claimed": false
+    }
+  },
+  "program:C1": {
+    "schema": "symseq.assurance.source.v1",
+    "source_id": "program:C1",
+    "version": "1",
+    "kind": "bounded_program",
+    "content_utf8": "\"\"\"Reviewed QA program: rotate a four-bit word left by one. Domain 0..15.\"\"\"\n\ndef rotate_left(value: int) -> int:\n    if type(value) is not int or not 0 <= value <= 15:\n        raise ValueError('FOUR_BIT_DOMAIN')\n    return ((value << 1) & 15) | (value >> 3)\n",
+    "sha256": "8198adfaa7e14ecd94c59a62af578e7203a8ba23361b271f1d24405733c9c752",
+    "schema_id": null,
+    "rights": {
+      "origin": "User-authorized reviewed local QA executable, all inputs declared",
+      "status": "DECLARED_USER_AUTHORIZED",
+      "can_embed": true,
+      "attribution": "User-authorized reviewed local QA executable, all inputs declared"
+    },
+    "provenance": {
+      "method": "immutable_bytes",
+      "author_endorsement_claimed": false
+    }
+  },
+  "empirical:U1": {
+    "schema": "symseq.assurance.source.v1",
+    "source_id": "empirical:U1",
+    "version": "1",
+    "kind": "qa",
+    "content_utf8": "Hypothesis: an intervention improves an unknown physical device. No measurements, causal model, randomized control or field evidence have been supplied. A finite QA analogy does not identify the physical mechanism.",
+    "sha256": "cc811c7209f6db82eec845c84ac44df799cccbd40b519ad85f13194b2591912e",
+    "schema_id": null,
+    "rights": {
+      "origin": "User-provided open research question; no empirical measurements claimed",
+      "status": "DECLARED_USER_AUTHORIZED",
+      "can_embed": true,
+      "attribution": "User-provided open research question; no empirical measurements claimed"
+    },
+    "provenance": {
+      "method": "immutable_bytes",
+      "author_endorsement_claimed": false
+    }
+  },
+  "finite:N1": {
+    "schema": "symseq.assurance.source.v1",
+    "source_id": "finite:N1",
+    "version": "1",
+    "kind": "qa",
+    "content_utf8": "{\"hypothesis_class\":{\"initialization\":\"x=context_bit; y=false, at every reset\",\"kind\":\"complete_affine_memory_class/1\",\"memory_registers\":[\"x\",\"y\"],\"observation_contract\":\"One fixed unknown nonzero linear sensor mask: x, y, or x XOR y. Outputs are bits. This declares all alternatives, not the selected law.\",\"operations\":[{\"id\":\"operation:0\",\"offset\":[false,false],\"row_x\":[true,false],\"row_y\":[false,true]},{\"id\":\"operation:1\",\"offset\":[false,false],\"row_x\":[true,false],\"row_y\":[true,true]},{\"id\":\"operation:2\",\"offset\":[false,false],\"row_x\":[false,true],\"row_y\":[true,false]},{\"id\":\"operation:3\",\"offset\":[false,false],\"row_x\":[false,true],\"row_y\":[true,true]},{\"id\":\"operation:4\",\"offset\":[false,false],\"row_x\":[true,true],\"row_y\":[true,false]},{\"id\":\"operation:5\",\"offset\":[false,false],\"row_x\":[true,true],\"row_y\":[false,true]},{\"id\":\"operation:6\",\"offset\":[true,false],\"row_x\":[true,false],\"row_y\":[true,true]},{\"id\":\"operation:7\",\"offset\":[false,true],\"row_x\":[true,true],\"row_y\":[false,true]}],\"prior\":\"Uniform over EXACT distinguishable source-and-declared-transfer behaviors, not duplicate internal realizations.\",\"private_selected_operations_provided\":false,\"raw_model_count\":192,\"transfer\":\"Swap the two coefficients of the sensor; keep the two transition maps and initialization. Identity observation decoder. This is a changed physical readout channel, not an alpha-rename.\",\"transition_contract\":\"Independently choose one listed operation for a and one for b, fixed across resets. Each output bit is XOR of selected old register bits and offset. read is identity.\"},\"observations\":[{\"actions\":[\"a\",\"a\"],\"context\":0,\"observations\":[0,1,0]},{\"actions\":[],\"context\":1,\"observations\":[1]}]}",
+    "sha256": "50560816ee0837705ff6dc0cc2290d25dba104c4f3863e6fc762a59914fec2f4",
+    "schema_id": null,
+    "rights": {
+      "origin": "User-authorized generated public003 QA observations; complete finite class, no private selected law",
+      "status": "DECLARED_USER_AUTHORIZED",
+      "can_embed": true,
+      "attribution": "User-authorized generated public003 QA observations; complete finite class, no private selected law"
+    },
+    "provenance": {
+      "method": "immutable_bytes",
+      "author_endorsement_claimed": false
+    }
+  }
+}

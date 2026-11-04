@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:symseq:assurance:decision:v1",
+  "title": "Independent Assurance Decision",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "candidate_digest",
+    "source_digest",
+    "scope_digest",
+    "verifier_id",
+    "verifier_digest",
+    "decision",
+    "assurance_status",
+    "claim_kind",
+    "check_kind",
+    "reason_code",
+    "witness_refs",
+    "execution_permission"
+  ],
+  "properties": {
+    "schema": {
+      "const": "symseq.assurance.decision.v1"
+    },
+    "candidate_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "source_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "scope_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "verifier_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "verifier_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "decision": {
+      "enum": [
+        "ACCEPT",
+        "REJECT",
+        "HOLD",
+        "UNKNOWN"
+      ]
+    },
+    "assurance_status": {
+      "enum": [
+        "CHECKED_FINITE",
+        "PROVED_FORMAL",
+        "SOURCE_ATTESTED",
+        "OBSERVATION_RECORDED",
+        "CONDITIONAL_HYPOTHESIS",
+        "UNKNOWN",
+        "REJECTED",
+        "HOLD"
+      ]
+    },
+    "claim_kind": {
+      "enum": [
+        "FINITE_PROPOSITION",
+        "SOURCE_CLAIM",
+        "EXECUTABLE_BOUNDED",
+        "EMPIRICAL_HYPOTHESIS",
+        "FORMAL_PROPOSITION"
+      ]
+    },
+    "check_kind": {
+      "enum": [
+        "FINITE_EXHAUSTIVE",
+        "FORMAL_KERNEL",
+        "SOURCE_BYTE_SPAN",
+        "EMPIRICAL_RECORD",
+        "CONDITIONAL_CHECK",
+        "NONE"
+      ]
+    },
+    "reason_code": {
+      "type": "string",
+      "minLength": 1
+    },
+    "witness_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "dependencies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "execution_permission": {
+      "const": false
+    },
+    "decision_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  }
+}

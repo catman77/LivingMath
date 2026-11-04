@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lm-suti-assurance"
+version = "0.1.0.dev0"
+description = "Single-owner finite assurance CLI and immutable offline research bundles"
+requires-python = ">=3.13"
+dependencies = ["jsonschema==4.26.0"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+mcp = ["mcp==1.30.0"]
+
+[project.scripts]
+lm-suti = "lm_suti_assurance.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = false
+
+[tool.setuptools.package-data]
+lm_suti_assurance = ["BASELINE_LOCK.json", "schemas/*.json", "examples/*.json", "_frozen/*.py", "_frozen/*.json", "_frozen/checker001/*.py", "_frozen/checker001/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

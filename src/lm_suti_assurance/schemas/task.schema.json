@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "$id": "lm-suti.assurance.task/0.1",
+  "properties": {
+    "schema": {
+      "const": "lm-suti.assurance.task/0.1"
+    },
+    "project": {
+      "type": "string",
+      "minLength": 1
+    },
+    "task": {
+      "type": "object",
+      "required": [
+        "task_id",
+        "claim_kind",
+        "source_ids",
+        "assumptions",
+        "scope",
+        "allowed_predicates",
+        "question"
+      ],
+      "properties": {
+        "task_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "claim_kind": {
+          "enum": [
+            "FINITE_PROPOSITION",
+            "SOURCE_CLAIM",
+            "EXECUTABLE_BOUNDED",
+            "EMPIRICAL_HYPOTHESIS",
+            "FORMAL_PROPOSITION"
+          ]
+        },
+        "source_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "assumptions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "scope": {
+          "type": "object",
+          "required": [
+            "task_id",
+            "source_snapshots",
+            "scope_version",
+            "execution_permission"
+          ],
+          "properties": {
+            "task_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "source_snapshots": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              }
+            },
+            "scope_version": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "execution_permission": {
+              "const": false
+            }
+          }
+        },
+        "allowed_predicates": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "question": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  },
+  "required": [
+    "schema",
+    "project",
+    "task"
+  ]
+}

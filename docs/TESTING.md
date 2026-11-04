@@ -44,3 +44,7 @@ mypy добавляются через `requirements-dav-dev.txt`; lock019 уж�
 
 Формальное прохождение теста не является верификацией источниковой интерпретации.
 Научные отрицательные результаты сохраняйте отдельно от инженерного PASS.
+
+## v0.1 assurance package
+
+From the repository root: `python -m pip install ".[test,mcp]"` then `python -m pytest -q tests`. Manual, model-free verification after installation: `lm-suti doctor --smoke`. The legacy server suite still runs from `live_math_mcp_prod/`. Public HTTPS/OAuth acceptance traces and external-human R3 pilot evidence are separate checks.

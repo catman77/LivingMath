@@ -1,0 +1,2261 @@
+[
+  {
+    "fixture_id": "F01",
+    "expected_verdict": "CHECKED_FINITE",
+    "actual_verdict": "CHECKED_FINITE",
+    "reason_code": "EXHAUSTIVE_FULL_DECLARED_CLASS",
+    "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+    "witness_ref": [
+      "sha256:a6a88bbaa1b9283cb7dd624ed3e9f307371569948f8831d9231b7f795e58e04c"
+    ],
+    "status": "PASS",
+    "decision": {
+      "schema": "symseq.assurance.decision.v1",
+      "candidate_digest": "7db8581cebf28381e6ac8df1d3c01f8997b39dcbbbd3fcc9eb05104fc098bca3",
+      "source_digest": "fee2278a3fe7bc43105f44b95c8691eec953cb5a355f2c0b6e04473585a74952",
+      "scope_digest": "658e4a0373ac5e77fa9f206676f98c488f8cbfa554e78e1310e0d09c7bdde01b",
+      "verifier_id": "assurance001/v1",
+      "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+      "decision": "ACCEPT",
+      "assurance_status": "CHECKED_FINITE",
+      "claim_kind": "FINITE_PROPOSITION",
+      "check_kind": "FINITE_EXHAUSTIVE",
+      "reason_code": "EXHAUSTIVE_FULL_DECLARED_CLASS",
+      "witness_refs": [
+        "sha256:a6a88bbaa1b9283cb7dd624ed3e9f307371569948f8831d9231b7f795e58e04c"
+      ],
+      "dependencies": [
+        "sha256:dc304e10943168310934c124570a143dd6a3d47b8819c1b268029f1ce1cdd9aa"
+      ],
+      "execution_permission": false,
+      "decision_digest": "6b754a0c67173e82698896485c9cbaaa47cf50cfaf3f569bf524c5480827e38a"
+    },
+    "witnesses": {
+      "sha256:a6a88bbaa1b9283cb7dd624ed3e9f307371569948f8831d9231b7f795e58e04c": {
+        "schema": "symseq.assurance.witness.v1",
+        "kind": "finite_exhaustive",
+        "source_digest": "fee2278a3fe7bc43105f44b95c8691eec953cb5a355f2c0b6e04473585a74952",
+        "scope_digest": "658e4a0373ac5e77fa9f206676f98c488f8cbfa554e78e1310e0d09c7bdde01b",
+        "payload": {
+          "query": {
+            "context_id": "context:1",
+            "actions": [
+              {
+                "kind": "action",
+                "id": "action:read"
+              },
+              {
+                "kind": "action",
+                "id": "action:read"
+              },
+              {
+                "kind": "action",
+                "id": "action:read"
+              }
+            ]
+          },
+          "complete_public_class_size": 192,
+          "posterior_behavior_classes": 119,
+          "distribution": [
+            {
+              "trace": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "count": 119
+            }
+          ],
+          "countermodels": [
+            {
+              "hypothetical_model": {
+                "a": 0,
+                "b": 0,
+                "sensor": 1
+              },
+              "trace": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "class_count": 119,
+              "fits_all_observations": true
+            }
+          ],
+          "answer_status": "UNIQUE_FINITE",
+          "enumeration_digest": "b69e0498b8989459602ef787b40c0a9ef905f0b0d206a8150dffea6d8e928e77"
+        }
+      }
+    }
+  },
+  {
+    "fixture_id": "F02",
+    "expected_verdict": "REJECTED",
+    "actual_verdict": "REJECTED",
+    "reason_code": "FALSE_FINITE_PROPOSITION",
+    "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+    "witness_ref": [
+      "sha256:458bf3b7fee97fc12806f1b1ab144871821c217046a5c2aa34b3521a79d6ac12"
+    ],
+    "status": "PASS",
+    "decision": {
+      "schema": "symseq.assurance.decision.v1",
+      "candidate_digest": "24e034e686f89e516971ae467d3e635aa2c752ad09f1e8557cd8789600e764a5",
+      "source_digest": "fee2278a3fe7bc43105f44b95c8691eec953cb5a355f2c0b6e04473585a74952",
+      "scope_digest": "658e4a0373ac5e77fa9f206676f98c488f8cbfa554e78e1310e0d09c7bdde01b",
+      "verifier_id": "assurance001/v1",
+      "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+      "decision": "REJECT",
+      "assurance_status": "REJECTED",
+      "claim_kind": "FINITE_PROPOSITION",
+      "check_kind": "FINITE_EXHAUSTIVE",
+      "reason_code": "FALSE_FINITE_PROPOSITION",
+      "witness_refs": [
+        "sha256:458bf3b7fee97fc12806f1b1ab144871821c217046a5c2aa34b3521a79d6ac12"
+      ],
+      "dependencies": [
+        "sha256:dc304e10943168310934c124570a143dd6a3d47b8819c1b268029f1ce1cdd9aa"
+      ],
+      "execution_permission": false,
+      "decision_digest": "d4281a5b7f433b25ef1543ee360289e6cd6d9aa8d0db312f2063a956b998705f"
+    },
+    "witnesses": {
+      "sha256:458bf3b7fee97fc12806f1b1ab144871821c217046a5c2aa34b3521a79d6ac12": {
+        "schema": "symseq.assurance.witness.v1",
+        "kind": "finite_counterexample",
+        "source_digest": "fee2278a3fe7bc43105f44b95c8691eec953cb5a355f2c0b6e04473585a74952",
+        "scope_digest": "658e4a0373ac5e77fa9f206676f98c488f8cbfa554e78e1310e0d09c7bdde01b",
+        "payload": {
+          "query": {
+            "context_id": "context:1",
+            "actions": [
+              {
+                "kind": "action",
+                "id": "action:read"
+              },
+              {
+                "kind": "action",
+                "id": "action:read"
+              },
+              {
+                "kind": "action",
+                "id": "action:read"
+              }
+            ]
+          },
+          "complete_public_class_size": 192,
+          "posterior_behavior_classes": 119,
+          "distribution": [
+            {
+              "trace": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "count": 119
+            }
+          ],
+          "countermodels": [
+            {
+              "hypothetical_model": {
+                "a": 0,
+                "b": 0,
+                "sensor": 1
+              },
+              "trace": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "class_count": 119,
+              "fits_all_observations": true
+            }
+          ],
+          "answer_status": "UNIQUE_FINITE",
+          "enumeration_digest": "b69e0498b8989459602ef787b40c0a9ef905f0b0d206a8150dffea6d8e928e77"
+        }
+      }
+    }
+  },
+  {
+    "fixture_id": "F03",
+    "expected_verdict": "REJECTED",
+    "actual_verdict": "REJECTED",
+    "reason_code": "FALSE_ENTAILED_ANSWER_UNKNOWN",
+    "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+    "witness_ref": [
+      "sha256:d8fed2070de7a5232087e4099096a917e22ca8459e0a6367209778b04322cdcb"
+    ],
+    "status": "PASS",
+    "decision": {
+      "schema": "symseq.assurance.decision.v1",
+      "candidate_digest": "fdd49c17da9fa68d9119e18c2f47ce009e99c87672d090e1ad64a18a79267d4c",
+      "source_digest": "339691b7d1a25f36d22787fe06a87a7a5c8e29c56cb1f13a8374df118845b72e",
+      "scope_digest": "3abee0c0a359a37a9c66cca5b9625409aa36433ac37b40c62bf502712529b417",
+      "verifier_id": "assurance001/v1",
+      "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+      "decision": "REJECT",
+      "assurance_status": "REJECTED",
+      "claim_kind": "FINITE_PROPOSITION",
+      "check_kind": "FINITE_EXHAUSTIVE",
+      "reason_code": "FALSE_ENTAILED_ANSWER_UNKNOWN",
+      "witness_refs": [
+        "sha256:d8fed2070de7a5232087e4099096a917e22ca8459e0a6367209778b04322cdcb"
+      ],
+      "dependencies": [
+        "sha256:6147629c03ffe5b62fde38182b23328b44383e5b21ab59cca1e390752ed57383"
+      ],
+      "execution_permission": false,
+      "decision_digest": "e15e6a537a0e25a3b7b77f04e4b97a17f8994a9808d3657a97de3dbd2da199ae"
+    },
+    "witnesses": {
+      "sha256:d8fed2070de7a5232087e4099096a917e22ca8459e0a6367209778b04322cdcb": {
+        "schema": "symseq.assurance.witness.v1",
+        "kind": "finite_counterexample",
+        "source_digest": "339691b7d1a25f36d22787fe06a87a7a5c8e29c56cb1f13a8374df118845b72e",
+        "scope_digest": "3abee0c0a359a37a9c66cca5b9625409aa36433ac37b40c62bf502712529b417",
+        "payload": {
+          "query": {
+            "context_id": "context:0",
+            "actions": [
+              {
+                "kind": "action",
+                "id": "action:a"
+              },
+              {
+                "kind": "action",
+                "id": "action:b"
+              },
+              {
+                "kind": "action",
+                "id": "action:b"
+              },
+              {
+                "kind": "action",
+                "id": "action:a"
+              },
+              {
+                "kind": "action",
+                "id": "action:b"
+              }
+            ]
+          },
+          "complete_public_class_size": 192,
+          "posterior_behavior_classes": 24,
+          "distribution": [
+            {
+              "trace": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "count": 23
+            },
+            {
+              "trace": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "count": 1
+            }
+          ],
+          "countermodels": [
+            {
+              "hypothetical_model": {
+                "a": 0,
+                "b": 0,
+                "sensor": 1
+              },
+              "trace": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "class_count": 23,
+              "fits_all_observations": true
+            },
+            {
+              "hypothetical_model": {
+                "a": 7,
+                "b": 0,
+                "sensor": 1
+              },
+              "trace": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "class_count": 1,
+              "fits_all_observations": true
+            }
+          ],
+          "answer_status": "UNKNOWN",
+          "enumeration_digest": "d2769cc9e49860878d37f25927afc8eae80ae858a7c60220b4a4c49df407249a"
+        }
+      }
+    }
+  },
+  {
+    "fixture_id": "F04",
+    "expected_verdict": "UNKNOWN",
+    "actual_verdict": "UNKNOWN",
+    "reason_code": "MULTIPLE_ADMISSIBLE_CONTINUATIONS",
+    "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+    "witness_ref": [
+      "sha256:614913d7ba523d408efd0ee7a067ee1dd6a5600490fe466907bb0775358f60f5"
+    ],
+    "status": "PASS",
+    "decision": {
+      "schema": "symseq.assurance.decision.v1",
+      "candidate_digest": "f0806ada357ab3e59b08f23b0d6b5c2dfe6d889ff099c0063f1c49fdd247b423",
+      "source_digest": "339691b7d1a25f36d22787fe06a87a7a5c8e29c56cb1f13a8374df118845b72e",
+      "scope_digest": "3abee0c0a359a37a9c66cca5b9625409aa36433ac37b40c62bf502712529b417",
+      "verifier_id": "assurance001/v1",
+      "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+      "decision": "UNKNOWN",
+      "assurance_status": "UNKNOWN",
+      "claim_kind": "FINITE_PROPOSITION",
+      "check_kind": "FINITE_EXHAUSTIVE",
+      "reason_code": "MULTIPLE_ADMISSIBLE_CONTINUATIONS",
+      "witness_refs": [
+        "sha256:614913d7ba523d408efd0ee7a067ee1dd6a5600490fe466907bb0775358f60f5"
+      ],
+      "dependencies": [
+        "sha256:6147629c03ffe5b62fde38182b23328b44383e5b21ab59cca1e390752ed57383"
+      ],
+      "execution_permission": false,
+      "decision_digest": "94c7ffe7356a5ab2673aea9229d3dcf13355aba4b1eef23fe1ae415033ce76dc"
+    },
+    "witnesses": {
+      "sha256:614913d7ba523d408efd0ee7a067ee1dd6a5600490fe466907bb0775358f60f5": {
+        "schema": "symseq.assurance.witness.v1",
+        "kind": "finite_ambiguity",
+        "source_digest": "339691b7d1a25f36d22787fe06a87a7a5c8e29c56cb1f13a8374df118845b72e",
+        "scope_digest": "3abee0c0a359a37a9c66cca5b9625409aa36433ac37b40c62bf502712529b417",
+        "payload": {
+          "query": {
+            "context_id": "context:0",
+            "actions": [
+              {
+                "kind": "action",
+                "id": "action:a"
+              },
+              {
+                "kind": "action",
+                "id": "action:b"
+              },
+              {
+                "kind": "action",
+                "id": "action:b"
+              },
+              {
+                "kind": "action",
+                "id": "action:a"
+              },
+              {
+                "kind": "action",
+                "id": "action:b"
+              }
+            ]
+          },
+          "complete_public_class_size": 192,
+          "posterior_behavior_classes": 24,
+          "distribution": [
+            {
+              "trace": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "count": 23
+            },
+            {
+              "trace": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "count": 1
+            }
+          ],
+          "countermodels": [
+            {
+              "hypothetical_model": {
+                "a": 0,
+                "b": 0,
+                "sensor": 1
+              },
+              "trace": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "class_count": 23,
+              "fits_all_observations": true
+            },
+            {
+              "hypothetical_model": {
+                "a": 7,
+                "b": 0,
+                "sensor": 1
+              },
+              "trace": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "class_count": 1,
+              "fits_all_observations": true
+            }
+          ],
+          "answer_status": "UNKNOWN",
+          "enumeration_digest": "d2769cc9e49860878d37f25927afc8eae80ae858a7c60220b4a4c49df407249a"
+        }
+      }
+    }
+  },
+  {
+    "fixture_id": "F05",
+    "expected_verdict": "CONDITIONAL_HYPOTHESIS",
+    "actual_verdict": "CONDITIONAL_HYPOTHESIS",
+    "reason_code": "SUPPORTED_NOT_ENTAILED",
+    "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+    "witness_ref": [
+      "sha256:8782a08120a999bf5bb99d4e3606db205468350a1ceba577c5862a3d2f998958"
+    ],
+    "status": "PASS",
+    "decision": {
+      "schema": "symseq.assurance.decision.v1",
+      "candidate_digest": "5f75b80138cca674c74112a3d996c51aba37585d9a79d2133d4f1bb3f6aede23",
+      "source_digest": "339691b7d1a25f36d22787fe06a87a7a5c8e29c56cb1f13a8374df118845b72e",
+      "scope_digest": "3abee0c0a359a37a9c66cca5b9625409aa36433ac37b40c62bf502712529b417",
+      "verifier_id": "assurance001/v1",
+      "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+      "decision": "ACCEPT",
+      "assurance_status": "CONDITIONAL_HYPOTHESIS",
+      "claim_kind": "FINITE_PROPOSITION",
+      "check_kind": "CONDITIONAL_CHECK",
+      "reason_code": "SUPPORTED_NOT_ENTAILED",
+      "witness_refs": [
+        "sha256:8782a08120a999bf5bb99d4e3606db205468350a1ceba577c5862a3d2f998958"
+      ],
+      "dependencies": [
+        "sha256:6147629c03ffe5b62fde38182b23328b44383e5b21ab59cca1e390752ed57383"
+      ],
+      "execution_permission": false,
+      "decision_digest": "1cc1295d901c174f543bdec6466a90bbd0ee1fc7e984d55cadf7ba09ea392cb4"
+    },
+    "witnesses": {
+      "sha256:8782a08120a999bf5bb99d4e3606db205468350a1ceba577c5862a3d2f998958": {
+        "schema": "symseq.assurance.witness.v1",
+        "kind": "finite_conditional",
+        "source_digest": "339691b7d1a25f36d22787fe06a87a7a5c8e29c56cb1f13a8374df118845b72e",
+        "scope_digest": "3abee0c0a359a37a9c66cca5b9625409aa36433ac37b40c62bf502712529b417",
+        "payload": {
+          "query": {
+            "context_id": "context:0",
+            "actions": [
+              {
+                "kind": "action",
+                "id": "action:a"
+              },
+              {
+                "kind": "action",
+                "id": "action:b"
+              },
+              {
+                "kind": "action",
+                "id": "action:b"
+              },
+              {
+                "kind": "action",
+                "id": "action:a"
+              },
+              {
+                "kind": "action",
+                "id": "action:b"
+              }
+            ]
+          },
+          "complete_public_class_size": 192,
+          "posterior_behavior_classes": 24,
+          "distribution": [
+            {
+              "trace": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "count": 23
+            },
+            {
+              "trace": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "count": 1
+            }
+          ],
+          "countermodels": [
+            {
+              "hypothetical_model": {
+                "a": 0,
+                "b": 0,
+                "sensor": 1
+              },
+              "trace": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "class_count": 23,
+              "fits_all_observations": true
+            },
+            {
+              "hypothetical_model": {
+                "a": 7,
+                "b": 0,
+                "sensor": 1
+              },
+              "trace": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "class_count": 1,
+              "fits_all_observations": true
+            }
+          ],
+          "answer_status": "UNKNOWN",
+          "enumeration_digest": "d2769cc9e49860878d37f25927afc8eae80ae858a7c60220b4a4c49df407249a"
+        }
+      }
+    }
+  },
+  {
+    "fixture_id": "F06",
+    "expected_verdict": "HOLD",
+    "actual_verdict": "HOLD",
+    "reason_code": "INCOMPLETE_EXHAUSTIVE_EVIDENCE",
+    "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+    "witness_ref": [
+      "sha256:2671eef2a4baefc23ecb05d765a228269def36a51f1e6b05888c4999dd9b389d"
+    ],
+    "status": "PASS",
+    "decision": {
+      "schema": "symseq.assurance.decision.v1",
+      "candidate_digest": "55dffe2780920b3bd7d8ab8b73bc0c84ba59895e6d4419581d3dc32139bdecd9",
+      "source_digest": "fee2278a3fe7bc43105f44b95c8691eec953cb5a355f2c0b6e04473585a74952",
+      "scope_digest": "658e4a0373ac5e77fa9f206676f98c488f8cbfa554e78e1310e0d09c7bdde01b",
+      "verifier_id": "assurance001/v1",
+      "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+      "decision": "HOLD",
+      "assurance_status": "HOLD",
+      "claim_kind": "FINITE_PROPOSITION",
+      "check_kind": "NONE",
+      "reason_code": "INCOMPLETE_EXHAUSTIVE_EVIDENCE",
+      "witness_refs": [
+        "sha256:2671eef2a4baefc23ecb05d765a228269def36a51f1e6b05888c4999dd9b389d"
+      ],
+      "dependencies": [
+        "sha256:dc304e10943168310934c124570a143dd6a3d47b8819c1b268029f1ce1cdd9aa"
+      ],
+      "execution_permission": false,
+      "decision_digest": "def111062f7c5275bfd3ad56d3201c31e50d454bea5ff76dc10a7e6355ed0a17"
+    },
+    "witnesses": {
+      "sha256:2671eef2a4baefc23ecb05d765a228269def36a51f1e6b05888c4999dd9b389d": {
+        "schema": "symseq.assurance.witness.v1",
+        "kind": "contract_failure",
+        "source_digest": "fee2278a3fe7bc43105f44b95c8691eec953cb5a355f2c0b6e04473585a74952",
+        "scope_digest": "658e4a0373ac5e77fa9f206676f98c488f8cbfa554e78e1310e0d09c7bdde01b",
+        "payload": {
+          "reason": "INCOMPLETE_EXHAUSTIVE_EVIDENCE",
+          "scientific_refutation_claimed": false
+        }
+      }
+    }
+  },
+  {
+    "fixture_id": "F07",
+    "expected_verdict": "REJECTED",
+    "actual_verdict": "REJECTED",
+    "reason_code": "FROZEN_SCOPE_CHANGED",
+    "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+    "witness_ref": [
+      "sha256:c474155803c470801e46868d4a180f7bfc2bd25ac09f49cb102a2b1c6b099d79"
+    ],
+    "status": "PASS",
+    "decision": {
+      "schema": "symseq.assurance.decision.v1",
+      "candidate_digest": "b06665f5c2f7308f21b53c4da9e81f51016d1a0ca6e1e93aae6a058020581c93",
+      "source_digest": "fee2278a3fe7bc43105f44b95c8691eec953cb5a355f2c0b6e04473585a74952",
+      "scope_digest": "658e4a0373ac5e77fa9f206676f98c488f8cbfa554e78e1310e0d09c7bdde01b",
+      "verifier_id": "assurance001/v1",
+      "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+      "decision": "REJECT",
+      "assurance_status": "REJECTED",
+      "claim_kind": "FINITE_PROPOSITION",
+      "check_kind": "NONE",
+      "reason_code": "FROZEN_SCOPE_CHANGED",
+      "witness_refs": [
+        "sha256:c474155803c470801e46868d4a180f7bfc2bd25ac09f49cb102a2b1c6b099d79"
+      ],
+      "dependencies": [
+        "sha256:dc304e10943168310934c124570a143dd6a3d47b8819c1b268029f1ce1cdd9aa"
+      ],
+      "execution_permission": false,
+      "decision_digest": "125f9e57f81e52bb81986d51ac6ec47eccb2bac19fc601884bd6d9c2274bf0c1"
+    },
+    "witnesses": {
+      "sha256:c474155803c470801e46868d4a180f7bfc2bd25ac09f49cb102a2b1c6b099d79": {
+        "schema": "symseq.assurance.witness.v1",
+        "kind": "contract_failure",
+        "source_digest": "fee2278a3fe7bc43105f44b95c8691eec953cb5a355f2c0b6e04473585a74952",
+        "scope_digest": "658e4a0373ac5e77fa9f206676f98c488f8cbfa554e78e1310e0d09c7bdde01b",
+        "payload": {
+          "reason": "FROZEN_SCOPE_CHANGED",
+          "scientific_refutation_claimed": false
+        }
+      }
+    }
+  },
+  {
+    "fixture_id": "F08",
+    "expected_verdict": "REJECTED",
+    "actual_verdict": "REJECTED",
+    "reason_code": "INVALID_ACTION_CONTRACT",
+    "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+    "witness_ref": [
+      "sha256:3b1c1c2fd4bfb367fe83098259b224a55428164167edf51965be038d12417a15"
+    ],
+    "status": "PASS",
+    "decision": {
+      "schema": "symseq.assurance.decision.v1",
+      "candidate_digest": "b89c4a083e983b02d458a90c600fb54085a79ddcce384bec356211b1ea3f77c8",
+      "source_digest": "fee2278a3fe7bc43105f44b95c8691eec953cb5a355f2c0b6e04473585a74952",
+      "scope_digest": "658e4a0373ac5e77fa9f206676f98c488f8cbfa554e78e1310e0d09c7bdde01b",
+      "verifier_id": "assurance001/v1",
+      "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+      "decision": "REJECT",
+      "assurance_status": "REJECTED",
+      "claim_kind": "FINITE_PROPOSITION",
+      "check_kind": "NONE",
+      "reason_code": "INVALID_ACTION_CONTRACT",
+      "witness_refs": [
+        "sha256:3b1c1c2fd4bfb367fe83098259b224a55428164167edf51965be038d12417a15"
+      ],
+      "dependencies": [
+        "sha256:dc304e10943168310934c124570a143dd6a3d47b8819c1b268029f1ce1cdd9aa"
+      ],
+      "execution_permission": false,
+      "decision_digest": "acaf6aef1af9b3ac0b7d9930c04f874d76d395da7b2f674b3cb39bd5777a36ce"
+    },
+    "witnesses": {
+      "sha256:3b1c1c2fd4bfb367fe83098259b224a55428164167edf51965be038d12417a15": {
+        "schema": "symseq.assurance.witness.v1",
+        "kind": "contract_failure",
+        "source_digest": "fee2278a3fe7bc43105f44b95c8691eec953cb5a355f2c0b6e04473585a74952",
+        "scope_digest": "658e4a0373ac5e77fa9f206676f98c488f8cbfa554e78e1310e0d09c7bdde01b",
+        "payload": {
+          "reason": "INVALID_ACTION_CONTRACT",
+          "scientific_refutation_claimed": false
+        }
+      }
+    }
+  },
+  {
+    "fixture_id": "F09",
+    "expected_verdict": "CHECKED_FINITE",
+    "actual_verdict": "CHECKED_FINITE",
+    "reason_code": "EXHAUSTIVE_FULL_DECLARED_CLASS",
+    "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+    "witness_ref": [
+      "sha256:a6a88bbaa1b9283cb7dd624ed3e9f307371569948f8831d9231b7f795e58e04c"
+    ],
+    "status": "PASS",
+    "decision": {
+      "schema": "symseq.assurance.decision.v1",
+      "candidate_digest": "7db8581cebf28381e6ac8df1d3c01f8997b39dcbbbd3fcc9eb05104fc098bca3",
+      "source_digest": "fee2278a3fe7bc43105f44b95c8691eec953cb5a355f2c0b6e04473585a74952",
+      "scope_digest": "658e4a0373ac5e77fa9f206676f98c488f8cbfa554e78e1310e0d09c7bdde01b",
+      "verifier_id": "assurance001/v1",
+      "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+      "decision": "ACCEPT",
+      "assurance_status": "CHECKED_FINITE",
+      "claim_kind": "FINITE_PROPOSITION",
+      "check_kind": "FINITE_EXHAUSTIVE",
+      "reason_code": "EXHAUSTIVE_FULL_DECLARED_CLASS",
+      "witness_refs": [
+        "sha256:a6a88bbaa1b9283cb7dd624ed3e9f307371569948f8831d9231b7f795e58e04c"
+      ],
+      "dependencies": [
+        "sha256:dc304e10943168310934c124570a143dd6a3d47b8819c1b268029f1ce1cdd9aa"
+      ],
+      "execution_permission": false,
+      "decision_digest": "6b754a0c67173e82698896485c9cbaaa47cf50cfaf3f569bf524c5480827e38a"
+    },
+    "witnesses": {
+      "sha256:a6a88bbaa1b9283cb7dd624ed3e9f307371569948f8831d9231b7f795e58e04c": {
+        "schema": "symseq.assurance.witness.v1",
+        "kind": "finite_exhaustive",
+        "source_digest": "fee2278a3fe7bc43105f44b95c8691eec953cb5a355f2c0b6e04473585a74952",
+        "scope_digest": "658e4a0373ac5e77fa9f206676f98c488f8cbfa554e78e1310e0d09c7bdde01b",
+        "payload": {
+          "query": {
+            "context_id": "context:1",
+            "actions": [
+              {
+                "kind": "action",
+                "id": "action:read"
+              },
+              {
+                "kind": "action",
+                "id": "action:read"
+              },
+              {
+                "kind": "action",
+                "id": "action:read"
+              }
+            ]
+          },
+          "complete_public_class_size": 192,
+          "posterior_behavior_classes": 119,
+          "distribution": [
+            {
+              "trace": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "count": 119
+            }
+          ],
+          "countermodels": [
+            {
+              "hypothetical_model": {
+                "a": 0,
+                "b": 0,
+                "sensor": 1
+              },
+              "trace": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "class_count": 119,
+              "fits_all_observations": true
+            }
+          ],
+          "answer_status": "UNIQUE_FINITE",
+          "enumeration_digest": "b69e0498b8989459602ef787b40c0a9ef905f0b0d206a8150dffea6d8e928e77"
+        }
+      }
+    }
+  },
+  {
+    "fixture_id": "S01",
+    "expected_verdict": "SOURCE_ATTESTED",
+    "actual_verdict": "SOURCE_ATTESTED",
+    "reason_code": "EXACT_SOURCE_FIELD_ONLY",
+    "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+    "witness_ref": [
+      "sha256:04fb69b577fe2add22a43890a8e9f8681ea7345d234cce1af3bc42af5b9b093e"
+    ],
+    "status": "PASS",
+    "decision": {
+      "schema": "symseq.assurance.decision.v1",
+      "candidate_digest": "f19408ebb4aa92d48940f90850d81fd3dd9b886be4ac9090dc59aafbc8e374d5",
+      "source_digest": "2d80c41bfebfb73cbfb7c8c994651cb270c89c95d9abc2849bb79b18542d44bb",
+      "scope_digest": "ae6c8a1cae3e5490e66c1e9ec3747c0b5224b77a7782ca6732bf6ed9fb6d12ab",
+      "verifier_id": "assurance001/v1",
+      "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+      "decision": "ACCEPT",
+      "assurance_status": "SOURCE_ATTESTED",
+      "claim_kind": "SOURCE_CLAIM",
+      "check_kind": "SOURCE_BYTE_SPAN",
+      "reason_code": "EXACT_SOURCE_FIELD_ONLY",
+      "witness_refs": [
+        "sha256:04fb69b577fe2add22a43890a8e9f8681ea7345d234cce1af3bc42af5b9b093e"
+      ],
+      "dependencies": [
+        "sha256:5238d83dc9a36127adda7114c57ace594272a915447c5abfd77ee86db29d16ac",
+        "sha256:0d2bd23cd5462d63c4c5aa7c4ad3fe331acf6a4392b7f276c87ecf14a46641ad",
+        "sha256:5e9f2610cf40a1ecd61c5f9eb24eb4c4428854414116d7467045486d415c94b0"
+      ],
+      "execution_permission": false,
+      "decision_digest": "0839b34dfdf152fb4e9eb1f1081840101868ee16d78d685e16228bd2a1a12eac"
+    },
+    "witnesses": {
+      "sha256:04fb69b577fe2add22a43890a8e9f8681ea7345d234cce1af3bc42af5b9b093e": {
+        "schema": "symseq.assurance.witness.v1",
+        "kind": "source_field",
+        "source_digest": "2d80c41bfebfb73cbfb7c8c994651cb270c89c95d9abc2849bb79b18542d44bb",
+        "scope_digest": "ae6c8a1cae3e5490e66c1e9ec3747c0b5224b77a7782ca6732bf6ed9fb6d12ab",
+        "payload": {
+          "source_id": "P1-001:record:0",
+          "pointer": "/publication_status",
+          "actual": "HOLD",
+          "content_truth_established": false
+        }
+      }
+    }
+  },
+  {
+    "fixture_id": "S02",
+    "expected_verdict": "REJECTED",
+    "actual_verdict": "REJECTED",
+    "reason_code": "SOURCE_SHA_MISMATCH",
+    "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+    "witness_ref": [
+      "sha256:e0895c3053e25f8baf13c663741ee8a77bb912b1465ef31974382235ade79e55"
+    ],
+    "status": "PASS",
+    "decision": {
+      "schema": "symseq.assurance.decision.v1",
+      "candidate_digest": "e84f85892ef374c7b9d3d0363e676be7bfa5725a382c50414597cb8c2b49bbc3",
+      "source_digest": "23e850e0ef9460801d20127d5bad11101d913f4f39ff86a8c127e812590f2df3",
+      "scope_digest": "e50d41bc34a95b552cc111001af5bec03c36ec3dacce2e3c58d34a8e66bd725e",
+      "verifier_id": "assurance001/v1",
+      "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+      "decision": "REJECT",
+      "assurance_status": "REJECTED",
+      "claim_kind": "SOURCE_CLAIM",
+      "check_kind": "NONE",
+      "reason_code": "SOURCE_SHA_MISMATCH",
+      "witness_refs": [
+        "sha256:e0895c3053e25f8baf13c663741ee8a77bb912b1465ef31974382235ade79e55"
+      ],
+      "dependencies": [
+        "sha256:ca63372f93f6025d31e38a19fa3a50d9dd918bcf52784132e16541c354e17389",
+        "sha256:0d2bd23cd5462d63c4c5aa7c4ad3fe331acf6a4392b7f276c87ecf14a46641ad",
+        "sha256:5e9f2610cf40a1ecd61c5f9eb24eb4c4428854414116d7467045486d415c94b0"
+      ],
+      "execution_permission": false,
+      "decision_digest": "bec09fd53cfcc3df8cadbea330fa882bde9056248797708f055f549520cb155b"
+    },
+    "witnesses": {
+      "sha256:e0895c3053e25f8baf13c663741ee8a77bb912b1465ef31974382235ade79e55": {
+        "schema": "symseq.assurance.witness.v1",
+        "kind": "contract_failure",
+        "source_digest": "23e850e0ef9460801d20127d5bad11101d913f4f39ff86a8c127e812590f2df3",
+        "scope_digest": "e50d41bc34a95b552cc111001af5bec03c36ec3dacce2e3c58d34a8e66bd725e",
+        "payload": {
+          "reason": "SOURCE_SHA_MISMATCH",
+          "scientific_refutation_claimed": false
+        }
+      }
+    }
+  },
+  {
+    "fixture_id": "S03",
+    "expected_verdict": "REJECTED",
+    "actual_verdict": "REJECTED",
+    "reason_code": "SOURCE_VERSION_OR_RIGHTS_CHANGED",
+    "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+    "witness_ref": [
+      "sha256:f53dde8892c442c135532b4499c65d7d28434145f701f9797d6bc84e187d066a"
+    ],
+    "status": "PASS",
+    "decision": {
+      "schema": "symseq.assurance.decision.v1",
+      "candidate_digest": "f19408ebb4aa92d48940f90850d81fd3dd9b886be4ac9090dc59aafbc8e374d5",
+      "source_digest": "ae127c34c4371f71806edce2026d78a09af63faeba97982317524f02aa70a6a0",
+      "scope_digest": "ae6c8a1cae3e5490e66c1e9ec3747c0b5224b77a7782ca6732bf6ed9fb6d12ab",
+      "verifier_id": "assurance001/v1",
+      "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+      "decision": "REJECT",
+      "assurance_status": "REJECTED",
+      "claim_kind": "SOURCE_CLAIM",
+      "check_kind": "NONE",
+      "reason_code": "SOURCE_VERSION_OR_RIGHTS_CHANGED",
+      "witness_refs": [
+        "sha256:f53dde8892c442c135532b4499c65d7d28434145f701f9797d6bc84e187d066a"
+      ],
+      "dependencies": [
+        "sha256:b17686ea1c4113242f58d1bc4146d46a6b847d78eeac93f059643ce6498314df",
+        "sha256:0d2bd23cd5462d63c4c5aa7c4ad3fe331acf6a4392b7f276c87ecf14a46641ad",
+        "sha256:5e9f2610cf40a1ecd61c5f9eb24eb4c4428854414116d7467045486d415c94b0"
+      ],
+      "execution_permission": false,
+      "decision_digest": "59d0dbfb28dd90329a2bb5d4008432dbc701dbf54174ae1b5d9e4856536c7ba8"
+    },
+    "witnesses": {
+      "sha256:f53dde8892c442c135532b4499c65d7d28434145f701f9797d6bc84e187d066a": {
+        "schema": "symseq.assurance.witness.v1",
+        "kind": "contract_failure",
+        "source_digest": "ae127c34c4371f71806edce2026d78a09af63faeba97982317524f02aa70a6a0",
+        "scope_digest": "ae6c8a1cae3e5490e66c1e9ec3747c0b5224b77a7782ca6732bf6ed9fb6d12ab",
+        "payload": {
+          "reason": "SOURCE_VERSION_OR_RIGHTS_CHANGED",
+          "scientific_refutation_claimed": false
+        }
+      }
+    }
+  },
+  {
+    "fixture_id": "S04",
+    "expected_verdict": "SOURCE_ATTESTED",
+    "actual_verdict": "SOURCE_ATTESTED",
+    "reason_code": "LOSS_DETECTED",
+    "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+    "witness_ref": [
+      "sha256:21226c8bc5e5a9d4df0cb2d8f0607bbfd18c02f489201dd350c65a4866504f70"
+    ],
+    "status": "PASS",
+    "decision": {
+      "schema": "symseq.assurance.decision.v1",
+      "candidate_digest": "e6dcffa5d4bd23edc59c9a2f52a481c8c64b6064fc240e4f1e22f18cfdd7a958",
+      "source_digest": "2d80c41bfebfb73cbfb7c8c994651cb270c89c95d9abc2849bb79b18542d44bb",
+      "scope_digest": "ae6c8a1cae3e5490e66c1e9ec3747c0b5224b77a7782ca6732bf6ed9fb6d12ab",
+      "verifier_id": "assurance001/v1",
+      "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+      "decision": "ACCEPT",
+      "assurance_status": "SOURCE_ATTESTED",
+      "claim_kind": "SOURCE_CLAIM",
+      "check_kind": "SOURCE_BYTE_SPAN",
+      "reason_code": "LOSS_DETECTED",
+      "witness_refs": [
+        "sha256:21226c8bc5e5a9d4df0cb2d8f0607bbfd18c02f489201dd350c65a4866504f70"
+      ],
+      "dependencies": [
+        "sha256:5238d83dc9a36127adda7114c57ace594272a915447c5abfd77ee86db29d16ac",
+        "sha256:0d2bd23cd5462d63c4c5aa7c4ad3fe331acf6a4392b7f276c87ecf14a46641ad",
+        "sha256:5e9f2610cf40a1ecd61c5f9eb24eb4c4428854414116d7467045486d415c94b0"
+      ],
+      "execution_permission": false,
+      "decision_digest": "52ed390e33fe7f159d9dcd21ece00ee54d252539b947eda3b80bed066bceb9cc"
+    },
+    "witnesses": {
+      "sha256:21226c8bc5e5a9d4df0cb2d8f0607bbfd18c02f489201dd350c65a4866504f70": {
+        "schema": "symseq.assurance.witness.v1",
+        "kind": "source_projection",
+        "source_digest": "2d80c41bfebfb73cbfb7c8c994651cb270c89c95d9abc2849bb79b18542d44bb",
+        "scope_digest": "ae6c8a1cae3e5490e66c1e9ec3747c0b5224b77a7782ca6732bf6ed9fb6d12ab",
+        "payload": {
+          "source_ids": [
+            "P1-001:record:0",
+            "P1-001:record:1"
+          ],
+          "projection": [
+            {
+              "visibility": "public"
+            },
+            {
+              "visibility": "public"
+            }
+          ],
+          "different_required_fields": [
+            "transfer_status"
+          ],
+          "relation": "LOSS_DETECTED",
+          "rights_origins": [
+            "Actual source-schema-admissible counterfactual witness from live MCP, not a real permission/event",
+            "Actual source-schema-admissible counterfactual witness from live MCP, not a real permission/event"
+          ],
+          "absolute_identity_claimed": false
+        }
+      }
+    }
+  },
+  {
+    "fixture_id": "S05",
+    "expected_verdict": "SOURCE_ATTESTED",
+    "actual_verdict": "SOURCE_ATTESTED",
+    "reason_code": "LOSS_DETECTED",
+    "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+    "witness_ref": [
+      "sha256:6b3e944467cdc96b98ae77e098b6aab73505da3f785f8a224e381f8d02995c42"
+    ],
+    "status": "PASS",
+    "decision": {
+      "schema": "symseq.assurance.decision.v1",
+      "candidate_digest": "d65a529b67d87f52c581a50cc032c54f1deb06d91f28e2047e7817889a99a9bd",
+      "source_digest": "dacff48b664e1e84c8d2fcd5e61df547316abd59a00025719b51dd339bd130dc",
+      "scope_digest": "5a4c5afb5261d592205db448528d52aeee844028b54410f34d1b202be6360f23",
+      "verifier_id": "assurance001/v1",
+      "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+      "decision": "ACCEPT",
+      "assurance_status": "SOURCE_ATTESTED",
+      "claim_kind": "SOURCE_CLAIM",
+      "check_kind": "SOURCE_BYTE_SPAN",
+      "reason_code": "LOSS_DETECTED",
+      "witness_refs": [
+        "sha256:6b3e944467cdc96b98ae77e098b6aab73505da3f785f8a224e381f8d02995c42"
+      ],
+      "dependencies": [
+        "sha256:803217781c1055dc70ea8d62e87eb3918fb20de490317eba4e237aa49a67627f",
+        "sha256:9e0939c3c6b486591c84c895426fcb1154ffc2235b4d3b85aecf7ba810f701a7",
+        "sha256:d2ed51d7e09ea47bc7d9db556e7dc12642be4431d78a20083c360d87ceedd2fc"
+      ],
+      "execution_permission": false,
+      "decision_digest": "18b62c910b99b7cab2ea7ed127f5c748cf871bf7842e1c819820acbb8261371f"
+    },
+    "witnesses": {
+      "sha256:6b3e944467cdc96b98ae77e098b6aab73505da3f785f8a224e381f8d02995c42": {
+        "schema": "symseq.assurance.witness.v1",
+        "kind": "source_projection",
+        "source_digest": "dacff48b664e1e84c8d2fcd5e61df547316abd59a00025719b51dd339bd130dc",
+        "scope_digest": "5a4c5afb5261d592205db448528d52aeee844028b54410f34d1b202be6360f23",
+        "payload": {
+          "source_ids": [
+            "P1-002:record:0",
+            "P1-002:record:1"
+          ],
+          "projection": [
+            {
+              "external_transfer": "HOLD"
+            },
+            {
+              "external_transfer": "HOLD"
+            }
+          ],
+          "different_required_fields": [
+            "decision"
+          ],
+          "relation": "LOSS_DETECTED",
+          "rights_origins": [
+            "Actual source-schema-admissible counterfactual witness from live MCP, not a real permission/event",
+            "Actual source-schema-admissible counterfactual witness from live MCP, not a real permission/event"
+          ],
+          "absolute_identity_claimed": false
+        }
+      }
+    }
+  },
+  {
+    "fixture_id": "S06",
+    "expected_verdict": "REJECTED",
+    "actual_verdict": "REJECTED",
+    "reason_code": "SOURCE_FLAG_IS_NOT_EXTERNAL_PERMISSION",
+    "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+    "witness_ref": [
+      "sha256:b551472e3782a20229c92ddadd91399efec3d8ba7ace3c557d8e31a0dd59f656"
+    ],
+    "status": "PASS",
+    "decision": {
+      "schema": "symseq.assurance.decision.v1",
+      "candidate_digest": "580b2cc86ae497d693838e811436578fc7b315face9ff8e505c1d2efd65cb7fe",
+      "source_digest": "2d80c41bfebfb73cbfb7c8c994651cb270c89c95d9abc2849bb79b18542d44bb",
+      "scope_digest": "ae6c8a1cae3e5490e66c1e9ec3747c0b5224b77a7782ca6732bf6ed9fb6d12ab",
+      "verifier_id": "assurance001/v1",
+      "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+      "decision": "REJECT",
+      "assurance_status": "REJECTED",
+      "claim_kind": "SOURCE_CLAIM",
+      "check_kind": "NONE",
+      "reason_code": "SOURCE_FLAG_IS_NOT_EXTERNAL_PERMISSION",
+      "witness_refs": [
+        "sha256:b551472e3782a20229c92ddadd91399efec3d8ba7ace3c557d8e31a0dd59f656"
+      ],
+      "dependencies": [
+        "sha256:5238d83dc9a36127adda7114c57ace594272a915447c5abfd77ee86db29d16ac",
+        "sha256:0d2bd23cd5462d63c4c5aa7c4ad3fe331acf6a4392b7f276c87ecf14a46641ad",
+        "sha256:5e9f2610cf40a1ecd61c5f9eb24eb4c4428854414116d7467045486d415c94b0"
+      ],
+      "execution_permission": false,
+      "decision_digest": "388dd78ae2715d55ea2fbc460d9d8ad3a51e34b8ed077975c3e0a7e9952e79e3"
+    },
+    "witnesses": {
+      "sha256:b551472e3782a20229c92ddadd91399efec3d8ba7ace3c557d8e31a0dd59f656": {
+        "schema": "symseq.assurance.witness.v1",
+        "kind": "permission_boundary",
+        "source_digest": "2d80c41bfebfb73cbfb7c8c994651cb270c89c95d9abc2849bb79b18542d44bb",
+        "scope_digest": "ae6c8a1cae3e5490e66c1e9ec3747c0b5224b77a7782ca6732bf6ed9fb6d12ab",
+        "payload": {
+          "publication_status": "HOLD",
+          "execution_permission": false
+        }
+      }
+    }
+  },
+  {
+    "fixture_id": "S07",
+    "expected_verdict": "HOLD",
+    "actual_verdict": "HOLD",
+    "reason_code": "SOURCE_RIGHTS_ORIGIN_REQUIRED",
+    "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+    "witness_ref": [
+      "sha256:03ce2c18c1e89d51bf85b1072f85afbfe0b84cb167b53798413a905145cdc4ef"
+    ],
+    "status": "PASS",
+    "decision": {
+      "schema": "symseq.assurance.decision.v1",
+      "candidate_digest": "326822e94b5bec1e371c71edd520b6659437aaba1c8d1630a215a1f43d7c1e0b",
+      "source_digest": "c00ed04a46001b69f73eff7a1830a1156f6616c029904b58ef8d7f074ccb4f9b",
+      "scope_digest": "5e7654bc587d1bee1efa152c0c1c1c20a8675ffd2f1f08142632734457315060",
+      "verifier_id": "assurance001/v1",
+      "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+      "decision": "HOLD",
+      "assurance_status": "HOLD",
+      "claim_kind": "SOURCE_CLAIM",
+      "check_kind": "NONE",
+      "reason_code": "SOURCE_RIGHTS_ORIGIN_REQUIRED",
+      "witness_refs": [
+        "sha256:03ce2c18c1e89d51bf85b1072f85afbfe0b84cb167b53798413a905145cdc4ef"
+      ],
+      "dependencies": [
+        "sha256:2fb406af8e845c4316ce98d57a6a69d0d0f6a9d76802ec8c135ad2e99a9ac01c",
+        "sha256:0d2bd23cd5462d63c4c5aa7c4ad3fe331acf6a4392b7f276c87ecf14a46641ad",
+        "sha256:5e9f2610cf40a1ecd61c5f9eb24eb4c4428854414116d7467045486d415c94b0"
+      ],
+      "execution_permission": false,
+      "decision_digest": "7b95d6a931eef9e502b0830e6a508766f39cd4d0172aac05259e093bdcdd6663"
+    },
+    "witnesses": {
+      "sha256:03ce2c18c1e89d51bf85b1072f85afbfe0b84cb167b53798413a905145cdc4ef": {
+        "schema": "symseq.assurance.witness.v1",
+        "kind": "contract_failure",
+        "source_digest": "c00ed04a46001b69f73eff7a1830a1156f6616c029904b58ef8d7f074ccb4f9b",
+        "scope_digest": "5e7654bc587d1bee1efa152c0c1c1c20a8675ffd2f1f08142632734457315060",
+        "payload": {
+          "reason": "SOURCE_RIGHTS_ORIGIN_REQUIRED",
+          "scientific_refutation_claimed": false
+        }
+      }
+    }
+  },
+  {
+    "fixture_id": "S08",
+    "expected_verdict": "SOURCE_ATTESTED",
+    "actual_verdict": "SOURCE_ATTESTED",
+    "reason_code": "PRESERVED_FOR_DECLARED_Q",
+    "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+    "witness_ref": [
+      "sha256:d2871339e5a14ac11be425246aa23649d3b52911a34910e1ed377b9eb710d0f1"
+    ],
+    "status": "PASS",
+    "decision": {
+      "schema": "symseq.assurance.decision.v1",
+      "candidate_digest": "6ed2254bfd352e6c5abe457f6f55ae58cf9991e30f9d69c54163b2b7997b0d18",
+      "source_digest": "2d80c41bfebfb73cbfb7c8c994651cb270c89c95d9abc2849bb79b18542d44bb",
+      "scope_digest": "74c9ed65a33d9c8971152f46ac9663bbb871825a27951178146d1cb449dcd7ac",
+      "verifier_id": "assurance001/v1",
+      "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+      "decision": "ACCEPT",
+      "assurance_status": "SOURCE_ATTESTED",
+      "claim_kind": "SOURCE_CLAIM",
+      "check_kind": "SOURCE_BYTE_SPAN",
+      "reason_code": "PRESERVED_FOR_DECLARED_Q",
+      "witness_refs": [
+        "sha256:d2871339e5a14ac11be425246aa23649d3b52911a34910e1ed377b9eb710d0f1"
+      ],
+      "dependencies": [
+        "sha256:5238d83dc9a36127adda7114c57ace594272a915447c5abfd77ee86db29d16ac",
+        "sha256:0d2bd23cd5462d63c4c5aa7c4ad3fe331acf6a4392b7f276c87ecf14a46641ad",
+        "sha256:5e9f2610cf40a1ecd61c5f9eb24eb4c4428854414116d7467045486d415c94b0"
+      ],
+      "execution_permission": false,
+      "decision_digest": "d344a7d1f8430f24d29281ba42d5cc00decc8a5e44320f3d0839467eead6488d"
+    },
+    "witnesses": {
+      "sha256:d2871339e5a14ac11be425246aa23649d3b52911a34910e1ed377b9eb710d0f1": {
+        "schema": "symseq.assurance.witness.v1",
+        "kind": "source_projection",
+        "source_digest": "2d80c41bfebfb73cbfb7c8c994651cb270c89c95d9abc2849bb79b18542d44bb",
+        "scope_digest": "74c9ed65a33d9c8971152f46ac9663bbb871825a27951178146d1cb449dcd7ac",
+        "payload": {
+          "source_ids": [
+            "P1-001:record:0",
+            "P1-001:record:1"
+          ],
+          "projection": [
+            {
+              "visibility": "public"
+            },
+            {
+              "visibility": "public"
+            }
+          ],
+          "different_required_fields": [],
+          "relation": "PRESERVED_FOR_DECLARED_Q",
+          "rights_origins": [
+            "Actual source-schema-admissible counterfactual witness from live MCP, not a real permission/event",
+            "Actual source-schema-admissible counterfactual witness from live MCP, not a real permission/event"
+          ],
+          "absolute_identity_claimed": false
+        }
+      }
+    }
+  },
+  {
+    "fixture_id": "C01",
+    "expected_verdict": "REJECTED",
+    "actual_verdict": "REJECTED",
+    "reason_code": "FALSE_FINITE_PROPOSITION",
+    "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+    "witness_ref": [
+      "sha256:458bf3b7fee97fc12806f1b1ab144871821c217046a5c2aa34b3521a79d6ac12"
+    ],
+    "status": "PASS",
+    "decision": {
+      "schema": "symseq.assurance.decision.v1",
+      "candidate_digest": "24e034e686f89e516971ae467d3e635aa2c752ad09f1e8557cd8789600e764a5",
+      "source_digest": "fee2278a3fe7bc43105f44b95c8691eec953cb5a355f2c0b6e04473585a74952",
+      "scope_digest": "658e4a0373ac5e77fa9f206676f98c488f8cbfa554e78e1310e0d09c7bdde01b",
+      "verifier_id": "assurance001/v1",
+      "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+      "decision": "REJECT",
+      "assurance_status": "REJECTED",
+      "claim_kind": "FINITE_PROPOSITION",
+      "check_kind": "FINITE_EXHAUSTIVE",
+      "reason_code": "FALSE_FINITE_PROPOSITION",
+      "witness_refs": [
+        "sha256:458bf3b7fee97fc12806f1b1ab144871821c217046a5c2aa34b3521a79d6ac12"
+      ],
+      "dependencies": [
+        "sha256:dc304e10943168310934c124570a143dd6a3d47b8819c1b268029f1ce1cdd9aa"
+      ],
+      "execution_permission": false,
+      "decision_digest": "d4281a5b7f433b25ef1543ee360289e6cd6d9aa8d0db312f2063a956b998705f"
+    },
+    "witnesses": {
+      "sha256:458bf3b7fee97fc12806f1b1ab144871821c217046a5c2aa34b3521a79d6ac12": {
+        "schema": "symseq.assurance.witness.v1",
+        "kind": "finite_counterexample",
+        "source_digest": "fee2278a3fe7bc43105f44b95c8691eec953cb5a355f2c0b6e04473585a74952",
+        "scope_digest": "658e4a0373ac5e77fa9f206676f98c488f8cbfa554e78e1310e0d09c7bdde01b",
+        "payload": {
+          "query": {
+            "context_id": "context:1",
+            "actions": [
+              {
+                "kind": "action",
+                "id": "action:read"
+              },
+              {
+                "kind": "action",
+                "id": "action:read"
+              },
+              {
+                "kind": "action",
+                "id": "action:read"
+              }
+            ]
+          },
+          "complete_public_class_size": 192,
+          "posterior_behavior_classes": 119,
+          "distribution": [
+            {
+              "trace": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "count": 119
+            }
+          ],
+          "countermodels": [
+            {
+              "hypothetical_model": {
+                "a": 0,
+                "b": 0,
+                "sensor": 1
+              },
+              "trace": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "class_count": 119,
+              "fits_all_observations": true
+            }
+          ],
+          "answer_status": "UNIQUE_FINITE",
+          "enumeration_digest": "b69e0498b8989459602ef787b40c0a9ef905f0b0d206a8150dffea6d8e928e77"
+        }
+      }
+    }
+  },
+  {
+    "fixture_id": "C02",
+    "expected_verdict": "HOLD",
+    "actual_verdict": "HOLD",
+    "reason_code": "FORMAL_ADMISSION_ADAPTER_UNAVAILABLE",
+    "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+    "witness_ref": [
+      "sha256:d27ca5092cefe03a6c7f3db301e3ce8d622a19d9e7ff717d4831789dc4dba20c"
+    ],
+    "status": "PASS",
+    "decision": {
+      "schema": "symseq.assurance.decision.v1",
+      "candidate_digest": "06d6c4575afbccdd03dd13e73ae2c9eb4c59d5a9dbaee3dc52180185350dcad2",
+      "source_digest": "ea9ac364fd3bd37c797a36c9c3a5c76d6e3d59a8cfedebf30c064409058cb370",
+      "scope_digest": "479a334144aaa209f49258cfc1ff0fafbf7ea243edab078e2219724260fc9e9d",
+      "verifier_id": "assurance001/v1",
+      "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+      "decision": "HOLD",
+      "assurance_status": "HOLD",
+      "claim_kind": "FORMAL_PROPOSITION",
+      "check_kind": "NONE",
+      "reason_code": "FORMAL_ADMISSION_ADAPTER_UNAVAILABLE",
+      "witness_refs": [
+        "sha256:d27ca5092cefe03a6c7f3db301e3ce8d622a19d9e7ff717d4831789dc4dba20c"
+      ],
+      "dependencies": [
+        "sha256:b63ab6d671e88245ac4f051677d811e9b4163359f0eb557f7e9a383ec7e23cbe"
+      ],
+      "execution_permission": false,
+      "decision_digest": "a9371fec6d6f26e889537748cef1789ff837eec98bc1049e044445d591231a2b"
+    },
+    "witnesses": {
+      "sha256:d27ca5092cefe03a6c7f3db301e3ce8d622a19d9e7ff717d4831789dc4dba20c": {
+        "schema": "symseq.assurance.witness.v1",
+        "kind": "contract_failure",
+        "source_digest": "ea9ac364fd3bd37c797a36c9c3a5c76d6e3d59a8cfedebf30c064409058cb370",
+        "scope_digest": "479a334144aaa209f49258cfc1ff0fafbf7ea243edab078e2219724260fc9e9d",
+        "payload": {
+          "reason": "FORMAL_ADMISSION_ADAPTER_UNAVAILABLE",
+          "scientific_refutation_claimed": false
+        }
+      }
+    }
+  },
+  {
+    "fixture_id": "C03",
+    "expected_verdict": "HOLD",
+    "actual_verdict": "HOLD",
+    "reason_code": "FORMAL_ADMISSION_ADAPTER_UNAVAILABLE",
+    "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+    "witness_ref": [
+      "sha256:d27ca5092cefe03a6c7f3db301e3ce8d622a19d9e7ff717d4831789dc4dba20c"
+    ],
+    "status": "PASS",
+    "decision": {
+      "schema": "symseq.assurance.decision.v1",
+      "candidate_digest": "234f7f0c6998360623045f8aa3e83ac46613e5606ee29020ec3b8edd3defb7cb",
+      "source_digest": "ea9ac364fd3bd37c797a36c9c3a5c76d6e3d59a8cfedebf30c064409058cb370",
+      "scope_digest": "479a334144aaa209f49258cfc1ff0fafbf7ea243edab078e2219724260fc9e9d",
+      "verifier_id": "assurance001/v1",
+      "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+      "decision": "HOLD",
+      "assurance_status": "HOLD",
+      "claim_kind": "FORMAL_PROPOSITION",
+      "check_kind": "NONE",
+      "reason_code": "FORMAL_ADMISSION_ADAPTER_UNAVAILABLE",
+      "witness_refs": [
+        "sha256:d27ca5092cefe03a6c7f3db301e3ce8d622a19d9e7ff717d4831789dc4dba20c"
+      ],
+      "dependencies": [
+        "sha256:b63ab6d671e88245ac4f051677d811e9b4163359f0eb557f7e9a383ec7e23cbe"
+      ],
+      "execution_permission": false,
+      "decision_digest": "dfb283c731279feab11b4eff48e44bb1199a174c21d27d3ab76bc8a6a5668548"
+    },
+    "witnesses": {
+      "sha256:d27ca5092cefe03a6c7f3db301e3ce8d622a19d9e7ff717d4831789dc4dba20c": {
+        "schema": "symseq.assurance.witness.v1",
+        "kind": "contract_failure",
+        "source_digest": "ea9ac364fd3bd37c797a36c9c3a5c76d6e3d59a8cfedebf30c064409058cb370",
+        "scope_digest": "479a334144aaa209f49258cfc1ff0fafbf7ea243edab078e2219724260fc9e9d",
+        "payload": {
+          "reason": "FORMAL_ADMISSION_ADAPTER_UNAVAILABLE",
+          "scientific_refutation_claimed": false
+        }
+      }
+    }
+  },
+  {
+    "fixture_id": "C04",
+    "expected_verdict": "REJECTED",
+    "actual_verdict": "REJECTED",
+    "reason_code": "FROZEN_SCOPE_CHANGED",
+    "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+    "witness_ref": [
+      "sha256:c474155803c470801e46868d4a180f7bfc2bd25ac09f49cb102a2b1c6b099d79"
+    ],
+    "status": "PASS",
+    "decision": {
+      "schema": "symseq.assurance.decision.v1",
+      "candidate_digest": "5fc7b44e967a6bb3bb1604c9cd3df4e9d747bcd4ec4dd19aa3f7b4023e24ffe0",
+      "source_digest": "fee2278a3fe7bc43105f44b95c8691eec953cb5a355f2c0b6e04473585a74952",
+      "scope_digest": "658e4a0373ac5e77fa9f206676f98c488f8cbfa554e78e1310e0d09c7bdde01b",
+      "verifier_id": "assurance001/v1",
+      "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+      "decision": "REJECT",
+      "assurance_status": "REJECTED",
+      "claim_kind": "FINITE_PROPOSITION",
+      "check_kind": "NONE",
+      "reason_code": "FROZEN_SCOPE_CHANGED",
+      "witness_refs": [
+        "sha256:c474155803c470801e46868d4a180f7bfc2bd25ac09f49cb102a2b1c6b099d79"
+      ],
+      "dependencies": [
+        "sha256:dc304e10943168310934c124570a143dd6a3d47b8819c1b268029f1ce1cdd9aa"
+      ],
+      "execution_permission": false,
+      "decision_digest": "48e81347b1e41a1a3df3769afe3c522e5caaa23db05c7833c0070cad0650cc16"
+    },
+    "witnesses": {
+      "sha256:c474155803c470801e46868d4a180f7bfc2bd25ac09f49cb102a2b1c6b099d79": {
+        "schema": "symseq.assurance.witness.v1",
+        "kind": "contract_failure",
+        "source_digest": "fee2278a3fe7bc43105f44b95c8691eec953cb5a355f2c0b6e04473585a74952",
+        "scope_digest": "658e4a0373ac5e77fa9f206676f98c488f8cbfa554e78e1310e0d09c7bdde01b",
+        "payload": {
+          "reason": "FROZEN_SCOPE_CHANGED",
+          "scientific_refutation_claimed": false
+        }
+      }
+    }
+  },
+  {
+    "fixture_id": "C05",
+    "expected_verdict": "CHECKED_FINITE",
+    "actual_verdict": "CHECKED_FINITE",
+    "reason_code": "EXHAUSTIVE_FULL_DECLARED_CLASS",
+    "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+    "witness_ref": [
+      "sha256:a6a88bbaa1b9283cb7dd624ed3e9f307371569948f8831d9231b7f795e58e04c"
+    ],
+    "status": "PASS",
+    "decision": {
+      "schema": "symseq.assurance.decision.v1",
+      "candidate_digest": "7db8581cebf28381e6ac8df1d3c01f8997b39dcbbbd3fcc9eb05104fc098bca3",
+      "source_digest": "fee2278a3fe7bc43105f44b95c8691eec953cb5a355f2c0b6e04473585a74952",
+      "scope_digest": "658e4a0373ac5e77fa9f206676f98c488f8cbfa554e78e1310e0d09c7bdde01b",
+      "verifier_id": "assurance001/v1",
+      "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+      "decision": "ACCEPT",
+      "assurance_status": "CHECKED_FINITE",
+      "claim_kind": "FINITE_PROPOSITION",
+      "check_kind": "FINITE_EXHAUSTIVE",
+      "reason_code": "EXHAUSTIVE_FULL_DECLARED_CLASS",
+      "witness_refs": [
+        "sha256:a6a88bbaa1b9283cb7dd624ed3e9f307371569948f8831d9231b7f795e58e04c"
+      ],
+      "dependencies": [
+        "sha256:dc304e10943168310934c124570a143dd6a3d47b8819c1b268029f1ce1cdd9aa"
+      ],
+      "execution_permission": false,
+      "decision_digest": "6b754a0c67173e82698896485c9cbaaa47cf50cfaf3f569bf524c5480827e38a"
+    },
+    "witnesses": {
+      "sha256:a6a88bbaa1b9283cb7dd624ed3e9f307371569948f8831d9231b7f795e58e04c": {
+        "schema": "symseq.assurance.witness.v1",
+        "kind": "finite_exhaustive",
+        "source_digest": "fee2278a3fe7bc43105f44b95c8691eec953cb5a355f2c0b6e04473585a74952",
+        "scope_digest": "658e4a0373ac5e77fa9f206676f98c488f8cbfa554e78e1310e0d09c7bdde01b",
+        "payload": {
+          "query": {
+            "context_id": "context:1",
+            "actions": [
+              {
+                "kind": "action",
+                "id": "action:read"
+              },
+              {
+                "kind": "action",
+                "id": "action:read"
+              },
+              {
+                "kind": "action",
+                "id": "action:read"
+              }
+            ]
+          },
+          "complete_public_class_size": 192,
+          "posterior_behavior_classes": 119,
+          "distribution": [
+            {
+              "trace": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "count": 119
+            }
+          ],
+          "countermodels": [
+            {
+              "hypothetical_model": {
+                "a": 0,
+                "b": 0,
+                "sensor": 1
+              },
+              "trace": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "class_count": 119,
+              "fits_all_observations": true
+            }
+          ],
+          "answer_status": "UNIQUE_FINITE",
+          "enumeration_digest": "b69e0498b8989459602ef787b40c0a9ef905f0b0d206a8150dffea6d8e928e77"
+        }
+      }
+    }
+  },
+  {
+    "fixture_id": "C06",
+    "expected_verdict": "CHECKED_FINITE",
+    "actual_verdict": "CHECKED_FINITE",
+    "reason_code": "EXHAUSTIVE_FULL_DECLARED_CLASS",
+    "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+    "witness_ref": [
+      "sha256:a6a88bbaa1b9283cb7dd624ed3e9f307371569948f8831d9231b7f795e58e04c"
+    ],
+    "status": "PASS",
+    "decision": {
+      "schema": "symseq.assurance.decision.v1",
+      "candidate_digest": "7db8581cebf28381e6ac8df1d3c01f8997b39dcbbbd3fcc9eb05104fc098bca3",
+      "source_digest": "fee2278a3fe7bc43105f44b95c8691eec953cb5a355f2c0b6e04473585a74952",
+      "scope_digest": "658e4a0373ac5e77fa9f206676f98c488f8cbfa554e78e1310e0d09c7bdde01b",
+      "verifier_id": "assurance001/v1",
+      "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+      "decision": "ACCEPT",
+      "assurance_status": "CHECKED_FINITE",
+      "claim_kind": "FINITE_PROPOSITION",
+      "check_kind": "FINITE_EXHAUSTIVE",
+      "reason_code": "EXHAUSTIVE_FULL_DECLARED_CLASS",
+      "witness_refs": [
+        "sha256:a6a88bbaa1b9283cb7dd624ed3e9f307371569948f8831d9231b7f795e58e04c"
+      ],
+      "dependencies": [
+        "sha256:dc304e10943168310934c124570a143dd6a3d47b8819c1b268029f1ce1cdd9aa"
+      ],
+      "execution_permission": false,
+      "decision_digest": "6b754a0c67173e82698896485c9cbaaa47cf50cfaf3f569bf524c5480827e38a"
+    },
+    "witnesses": {
+      "sha256:a6a88bbaa1b9283cb7dd624ed3e9f307371569948f8831d9231b7f795e58e04c": {
+        "schema": "symseq.assurance.witness.v1",
+        "kind": "finite_exhaustive",
+        "source_digest": "fee2278a3fe7bc43105f44b95c8691eec953cb5a355f2c0b6e04473585a74952",
+        "scope_digest": "658e4a0373ac5e77fa9f206676f98c488f8cbfa554e78e1310e0d09c7bdde01b",
+        "payload": {
+          "query": {
+            "context_id": "context:1",
+            "actions": [
+              {
+                "kind": "action",
+                "id": "action:read"
+              },
+              {
+                "kind": "action",
+                "id": "action:read"
+              },
+              {
+                "kind": "action",
+                "id": "action:read"
+              }
+            ]
+          },
+          "complete_public_class_size": 192,
+          "posterior_behavior_classes": 119,
+          "distribution": [
+            {
+              "trace": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "count": 119
+            }
+          ],
+          "countermodels": [
+            {
+              "hypothetical_model": {
+                "a": 0,
+                "b": 0,
+                "sensor": 1
+              },
+              "trace": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "class_count": 119,
+              "fits_all_observations": true
+            }
+          ],
+          "answer_status": "UNIQUE_FINITE",
+          "enumeration_digest": "b69e0498b8989459602ef787b40c0a9ef905f0b0d206a8150dffea6d8e928e77"
+        }
+      }
+    }
+  },
+  {
+    "fixture_id": "C07",
+    "expected_verdict": "HOLD",
+    "actual_verdict": "HOLD",
+    "reason_code": "REPLAY_MISMATCH_VERIFIER_DIGEST",
+    "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+    "witness_ref": [
+      "sha256:ac833fb79fc8edb64be7fff83c0b6a1f987b9748258830815eae0f1773a187e4"
+    ],
+    "status": "PASS",
+    "decision": {
+      "schema": "symseq.assurance.decision.v1",
+      "candidate_digest": "7db8581cebf28381e6ac8df1d3c01f8997b39dcbbbd3fcc9eb05104fc098bca3",
+      "source_digest": "fee2278a3fe7bc43105f44b95c8691eec953cb5a355f2c0b6e04473585a74952",
+      "scope_digest": "658e4a0373ac5e77fa9f206676f98c488f8cbfa554e78e1310e0d09c7bdde01b",
+      "verifier_id": "assurance001/v1",
+      "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+      "decision": "HOLD",
+      "assurance_status": "HOLD",
+      "claim_kind": "FINITE_PROPOSITION",
+      "check_kind": "NONE",
+      "reason_code": "REPLAY_MISMATCH_VERIFIER_DIGEST",
+      "witness_refs": [
+        "sha256:ac833fb79fc8edb64be7fff83c0b6a1f987b9748258830815eae0f1773a187e4"
+      ],
+      "dependencies": [
+        "sha256:dc304e10943168310934c124570a143dd6a3d47b8819c1b268029f1ce1cdd9aa"
+      ],
+      "execution_permission": false,
+      "decision_digest": "34bbbb57213aba955f5c752ae1a1a9b1b009f6b3da3b335aab8286f674b6c738"
+    },
+    "witnesses": {
+      "sha256:ac833fb79fc8edb64be7fff83c0b6a1f987b9748258830815eae0f1773a187e4": {
+        "schema": "symseq.assurance.witness.v1",
+        "kind": "contract_failure",
+        "source_digest": "fee2278a3fe7bc43105f44b95c8691eec953cb5a355f2c0b6e04473585a74952",
+        "scope_digest": "658e4a0373ac5e77fa9f206676f98c488f8cbfa554e78e1310e0d09c7bdde01b",
+        "payload": {
+          "reason": "REPLAY_MISMATCH_VERIFIER_DIGEST",
+          "scientific_refutation_claimed": false
+        }
+      }
+    }
+  },
+  {
+    "fixture_id": "C08",
+    "expected_verdict": "CHECKED_FINITE",
+    "actual_verdict": "CHECKED_FINITE",
+    "reason_code": "EXHAUSTIVE_FULL_DECLARED_CLASS",
+    "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+    "witness_ref": [
+      "sha256:a6a88bbaa1b9283cb7dd624ed3e9f307371569948f8831d9231b7f795e58e04c"
+    ],
+    "status": "PASS",
+    "decision": {
+      "schema": "symseq.assurance.decision.v1",
+      "candidate_digest": "7db8581cebf28381e6ac8df1d3c01f8997b39dcbbbd3fcc9eb05104fc098bca3",
+      "source_digest": "fee2278a3fe7bc43105f44b95c8691eec953cb5a355f2c0b6e04473585a74952",
+      "scope_digest": "658e4a0373ac5e77fa9f206676f98c488f8cbfa554e78e1310e0d09c7bdde01b",
+      "verifier_id": "assurance001/v1",
+      "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+      "decision": "ACCEPT",
+      "assurance_status": "CHECKED_FINITE",
+      "claim_kind": "FINITE_PROPOSITION",
+      "check_kind": "FINITE_EXHAUSTIVE",
+      "reason_code": "EXHAUSTIVE_FULL_DECLARED_CLASS",
+      "witness_refs": [
+        "sha256:a6a88bbaa1b9283cb7dd624ed3e9f307371569948f8831d9231b7f795e58e04c"
+      ],
+      "dependencies": [
+        "sha256:dc304e10943168310934c124570a143dd6a3d47b8819c1b268029f1ce1cdd9aa"
+      ],
+      "execution_permission": false,
+      "decision_digest": "6b754a0c67173e82698896485c9cbaaa47cf50cfaf3f569bf524c5480827e38a"
+    },
+    "witnesses": {
+      "sha256:a6a88bbaa1b9283cb7dd624ed3e9f307371569948f8831d9231b7f795e58e04c": {
+        "schema": "symseq.assurance.witness.v1",
+        "kind": "finite_exhaustive",
+        "source_digest": "fee2278a3fe7bc43105f44b95c8691eec953cb5a355f2c0b6e04473585a74952",
+        "scope_digest": "658e4a0373ac5e77fa9f206676f98c488f8cbfa554e78e1310e0d09c7bdde01b",
+        "payload": {
+          "query": {
+            "context_id": "context:1",
+            "actions": [
+              {
+                "kind": "action",
+                "id": "action:read"
+              },
+              {
+                "kind": "action",
+                "id": "action:read"
+              },
+              {
+                "kind": "action",
+                "id": "action:read"
+              }
+            ]
+          },
+          "complete_public_class_size": 192,
+          "posterior_behavior_classes": 119,
+          "distribution": [
+            {
+              "trace": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "count": 119
+            }
+          ],
+          "countermodels": [
+            {
+              "hypothetical_model": {
+                "a": 0,
+                "b": 0,
+                "sensor": 1
+              },
+              "trace": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "class_count": 119,
+              "fits_all_observations": true
+            }
+          ],
+          "answer_status": "UNIQUE_FINITE",
+          "enumeration_digest": "b69e0498b8989459602ef787b40c0a9ef905f0b0d206a8150dffea6d8e928e77"
+        }
+      }
+    }
+  },
+  {
+    "fixture_id": "C09",
+    "expected_verdict": "CHECKED_FINITE",
+    "actual_verdict": "CHECKED_FINITE",
+    "reason_code": "EXHAUSTIVE_FULL_DECLARED_CLASS",
+    "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+    "witness_ref": [
+      "sha256:a6a88bbaa1b9283cb7dd624ed3e9f307371569948f8831d9231b7f795e58e04c"
+    ],
+    "status": "PASS",
+    "decision": {
+      "schema": "symseq.assurance.decision.v1",
+      "candidate_digest": "7db8581cebf28381e6ac8df1d3c01f8997b39dcbbbd3fcc9eb05104fc098bca3",
+      "source_digest": "fee2278a3fe7bc43105f44b95c8691eec953cb5a355f2c0b6e04473585a74952",
+      "scope_digest": "658e4a0373ac5e77fa9f206676f98c488f8cbfa554e78e1310e0d09c7bdde01b",
+      "verifier_id": "assurance001/v1",
+      "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+      "decision": "ACCEPT",
+      "assurance_status": "CHECKED_FINITE",
+      "claim_kind": "FINITE_PROPOSITION",
+      "check_kind": "FINITE_EXHAUSTIVE",
+      "reason_code": "EXHAUSTIVE_FULL_DECLARED_CLASS",
+      "witness_refs": [
+        "sha256:a6a88bbaa1b9283cb7dd624ed3e9f307371569948f8831d9231b7f795e58e04c"
+      ],
+      "dependencies": [
+        "sha256:dc304e10943168310934c124570a143dd6a3d47b8819c1b268029f1ce1cdd9aa"
+      ],
+      "execution_permission": false,
+      "decision_digest": "6b754a0c67173e82698896485c9cbaaa47cf50cfaf3f569bf524c5480827e38a"
+    },
+    "witnesses": {
+      "sha256:a6a88bbaa1b9283cb7dd624ed3e9f307371569948f8831d9231b7f795e58e04c": {
+        "schema": "symseq.assurance.witness.v1",
+        "kind": "finite_exhaustive",
+        "source_digest": "fee2278a3fe7bc43105f44b95c8691eec953cb5a355f2c0b6e04473585a74952",
+        "scope_digest": "658e4a0373ac5e77fa9f206676f98c488f8cbfa554e78e1310e0d09c7bdde01b",
+        "payload": {
+          "query": {
+            "context_id": "context:1",
+            "actions": [
+              {
+                "kind": "action",
+                "id": "action:read"
+              },
+              {
+                "kind": "action",
+                "id": "action:read"
+              },
+              {
+                "kind": "action",
+                "id": "action:read"
+              }
+            ]
+          },
+          "complete_public_class_size": 192,
+          "posterior_behavior_classes": 119,
+          "distribution": [
+            {
+              "trace": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "count": 119
+            }
+          ],
+          "countermodels": [
+            {
+              "hypothetical_model": {
+                "a": 0,
+                "b": 0,
+                "sensor": 1
+              },
+              "trace": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "class_count": 119,
+              "fits_all_observations": true
+            }
+          ],
+          "answer_status": "UNIQUE_FINITE",
+          "enumeration_digest": "b69e0498b8989459602ef787b40c0a9ef905f0b0d206a8150dffea6d8e928e77"
+        }
+      }
+    }
+  },
+  {
+    "fixture_id": "C10",
+    "expected_verdict": "HOLD",
+    "actual_verdict": "HOLD",
+    "reason_code": "EMPIRICAL_TRUTH_NOT_ESTABLISHED",
+    "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+    "witness_ref": [
+      "sha256:53ef66de055eb024a7a5b3ed02c1cefcdf093fbf43abba5080300c92e0f8707f"
+    ],
+    "status": "PASS",
+    "decision": {
+      "schema": "symseq.assurance.decision.v1",
+      "candidate_digest": "a052969322e6281f94b3b20bf86e30c6411b6dd2b68055de433bd39857ac122a",
+      "source_digest": "ea9ac364fd3bd37c797a36c9c3a5c76d6e3d59a8cfedebf30c064409058cb370",
+      "scope_digest": "479a334144aaa209f49258cfc1ff0fafbf7ea243edab078e2219724260fc9e9d",
+      "verifier_id": "assurance001/v1",
+      "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+      "decision": "HOLD",
+      "assurance_status": "HOLD",
+      "claim_kind": "EMPIRICAL_HYPOTHESIS",
+      "check_kind": "NONE",
+      "reason_code": "EMPIRICAL_TRUTH_NOT_ESTABLISHED",
+      "witness_refs": [
+        "sha256:53ef66de055eb024a7a5b3ed02c1cefcdf093fbf43abba5080300c92e0f8707f"
+      ],
+      "dependencies": [
+        "sha256:b63ab6d671e88245ac4f051677d811e9b4163359f0eb557f7e9a383ec7e23cbe"
+      ],
+      "execution_permission": false,
+      "decision_digest": "1932760e58886d711ee037a76f05a68b354ba6679b3264cda3025e9dd2e1e063"
+    },
+    "witnesses": {
+      "sha256:53ef66de055eb024a7a5b3ed02c1cefcdf093fbf43abba5080300c92e0f8707f": {
+        "schema": "symseq.assurance.witness.v1",
+        "kind": "contract_failure",
+        "source_digest": "ea9ac364fd3bd37c797a36c9c3a5c76d6e3d59a8cfedebf30c064409058cb370",
+        "scope_digest": "479a334144aaa209f49258cfc1ff0fafbf7ea243edab078e2219724260fc9e9d",
+        "payload": {
+          "reason": "EMPIRICAL_TRUTH_NOT_ESTABLISHED",
+          "scientific_refutation_claimed": false
+        }
+      }
+    }
+  },
+  {
+    "fixture_id": "O01",
+    "expected_verdict": "CHECKED_FINITE",
+    "actual_verdict": "CHECKED_FINITE",
+    "reason_code": "EXHAUSTIVE_FULL_DECLARED_CLASS",
+    "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+    "witness_ref": [
+      "sha256:a6a88bbaa1b9283cb7dd624ed3e9f307371569948f8831d9231b7f795e58e04c"
+    ],
+    "status": "PASS",
+    "decision": {
+      "schema": "symseq.assurance.decision.v1",
+      "candidate_digest": "7db8581cebf28381e6ac8df1d3c01f8997b39dcbbbd3fcc9eb05104fc098bca3",
+      "source_digest": "fee2278a3fe7bc43105f44b95c8691eec953cb5a355f2c0b6e04473585a74952",
+      "scope_digest": "658e4a0373ac5e77fa9f206676f98c488f8cbfa554e78e1310e0d09c7bdde01b",
+      "verifier_id": "assurance001/v1",
+      "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+      "decision": "ACCEPT",
+      "assurance_status": "CHECKED_FINITE",
+      "claim_kind": "FINITE_PROPOSITION",
+      "check_kind": "FINITE_EXHAUSTIVE",
+      "reason_code": "EXHAUSTIVE_FULL_DECLARED_CLASS",
+      "witness_refs": [
+        "sha256:a6a88bbaa1b9283cb7dd624ed3e9f307371569948f8831d9231b7f795e58e04c"
+      ],
+      "dependencies": [
+        "sha256:dc304e10943168310934c124570a143dd6a3d47b8819c1b268029f1ce1cdd9aa"
+      ],
+      "execution_permission": false,
+      "decision_digest": "6b754a0c67173e82698896485c9cbaaa47cf50cfaf3f569bf524c5480827e38a"
+    },
+    "witnesses": {
+      "sha256:a6a88bbaa1b9283cb7dd624ed3e9f307371569948f8831d9231b7f795e58e04c": {
+        "schema": "symseq.assurance.witness.v1",
+        "kind": "finite_exhaustive",
+        "source_digest": "fee2278a3fe7bc43105f44b95c8691eec953cb5a355f2c0b6e04473585a74952",
+        "scope_digest": "658e4a0373ac5e77fa9f206676f98c488f8cbfa554e78e1310e0d09c7bdde01b",
+        "payload": {
+          "query": {
+            "context_id": "context:1",
+            "actions": [
+              {
+                "kind": "action",
+                "id": "action:read"
+              },
+              {
+                "kind": "action",
+                "id": "action:read"
+              },
+              {
+                "kind": "action",
+                "id": "action:read"
+              }
+            ]
+          },
+          "complete_public_class_size": 192,
+          "posterior_behavior_classes": 119,
+          "distribution": [
+            {
+              "trace": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "count": 119
+            }
+          ],
+          "countermodels": [
+            {
+              "hypothetical_model": {
+                "a": 0,
+                "b": 0,
+                "sensor": 1
+              },
+              "trace": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "class_count": 119,
+              "fits_all_observations": true
+            }
+          ],
+          "answer_status": "UNIQUE_FINITE",
+          "enumeration_digest": "b69e0498b8989459602ef787b40c0a9ef905f0b0d206a8150dffea6d8e928e77"
+        }
+      }
+    }
+  },
+  {
+    "fixture_id": "O02",
+    "expected_verdict": "CHECKED_FINITE",
+    "actual_verdict": "CHECKED_FINITE",
+    "reason_code": "EXHAUSTIVE_FULL_DECLARED_CLASS",
+    "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+    "witness_ref": [
+      "sha256:a6a88bbaa1b9283cb7dd624ed3e9f307371569948f8831d9231b7f795e58e04c"
+    ],
+    "status": "PASS",
+    "decision": {
+      "schema": "symseq.assurance.decision.v1",
+      "candidate_digest": "7db8581cebf28381e6ac8df1d3c01f8997b39dcbbbd3fcc9eb05104fc098bca3",
+      "source_digest": "fee2278a3fe7bc43105f44b95c8691eec953cb5a355f2c0b6e04473585a74952",
+      "scope_digest": "658e4a0373ac5e77fa9f206676f98c488f8cbfa554e78e1310e0d09c7bdde01b",
+      "verifier_id": "assurance001/v1",
+      "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+      "decision": "ACCEPT",
+      "assurance_status": "CHECKED_FINITE",
+      "claim_kind": "FINITE_PROPOSITION",
+      "check_kind": "FINITE_EXHAUSTIVE",
+      "reason_code": "EXHAUSTIVE_FULL_DECLARED_CLASS",
+      "witness_refs": [
+        "sha256:a6a88bbaa1b9283cb7dd624ed3e9f307371569948f8831d9231b7f795e58e04c"
+      ],
+      "dependencies": [
+        "sha256:dc304e10943168310934c124570a143dd6a3d47b8819c1b268029f1ce1cdd9aa"
+      ],
+      "execution_permission": false,
+      "decision_digest": "6b754a0c67173e82698896485c9cbaaa47cf50cfaf3f569bf524c5480827e38a"
+    },
+    "witnesses": {
+      "sha256:a6a88bbaa1b9283cb7dd624ed3e9f307371569948f8831d9231b7f795e58e04c": {
+        "schema": "symseq.assurance.witness.v1",
+        "kind": "finite_exhaustive",
+        "source_digest": "fee2278a3fe7bc43105f44b95c8691eec953cb5a355f2c0b6e04473585a74952",
+        "scope_digest": "658e4a0373ac5e77fa9f206676f98c488f8cbfa554e78e1310e0d09c7bdde01b",
+        "payload": {
+          "query": {
+            "context_id": "context:1",
+            "actions": [
+              {
+                "kind": "action",
+                "id": "action:read"
+              },
+              {
+                "kind": "action",
+                "id": "action:read"
+              },
+              {
+                "kind": "action",
+                "id": "action:read"
+              }
+            ]
+          },
+          "complete_public_class_size": 192,
+          "posterior_behavior_classes": 119,
+          "distribution": [
+            {
+              "trace": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "count": 119
+            }
+          ],
+          "countermodels": [
+            {
+              "hypothetical_model": {
+                "a": 0,
+                "b": 0,
+                "sensor": 1
+              },
+              "trace": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "class_count": 119,
+              "fits_all_observations": true
+            }
+          ],
+          "answer_status": "UNIQUE_FINITE",
+          "enumeration_digest": "b69e0498b8989459602ef787b40c0a9ef905f0b0d206a8150dffea6d8e928e77"
+        }
+      }
+    }
+  },
+  {
+    "fixture_id": "O03",
+    "expected_verdict": "CHECKED_FINITE",
+    "actual_verdict": "CHECKED_FINITE",
+    "reason_code": "EXHAUSTIVE_FULL_DECLARED_CLASS",
+    "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+    "witness_ref": [
+      "sha256:a6a88bbaa1b9283cb7dd624ed3e9f307371569948f8831d9231b7f795e58e04c"
+    ],
+    "status": "PASS",
+    "decision": {
+      "schema": "symseq.assurance.decision.v1",
+      "candidate_digest": "7db8581cebf28381e6ac8df1d3c01f8997b39dcbbbd3fcc9eb05104fc098bca3",
+      "source_digest": "fee2278a3fe7bc43105f44b95c8691eec953cb5a355f2c0b6e04473585a74952",
+      "scope_digest": "658e4a0373ac5e77fa9f206676f98c488f8cbfa554e78e1310e0d09c7bdde01b",
+      "verifier_id": "assurance001/v1",
+      "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+      "decision": "ACCEPT",
+      "assurance_status": "CHECKED_FINITE",
+      "claim_kind": "FINITE_PROPOSITION",
+      "check_kind": "FINITE_EXHAUSTIVE",
+      "reason_code": "EXHAUSTIVE_FULL_DECLARED_CLASS",
+      "witness_refs": [
+        "sha256:a6a88bbaa1b9283cb7dd624ed3e9f307371569948f8831d9231b7f795e58e04c"
+      ],
+      "dependencies": [
+        "sha256:dc304e10943168310934c124570a143dd6a3d47b8819c1b268029f1ce1cdd9aa"
+      ],
+      "execution_permission": false,
+      "decision_digest": "6b754a0c67173e82698896485c9cbaaa47cf50cfaf3f569bf524c5480827e38a"
+    },
+    "witnesses": {
+      "sha256:a6a88bbaa1b9283cb7dd624ed3e9f307371569948f8831d9231b7f795e58e04c": {
+        "schema": "symseq.assurance.witness.v1",
+        "kind": "finite_exhaustive",
+        "source_digest": "fee2278a3fe7bc43105f44b95c8691eec953cb5a355f2c0b6e04473585a74952",
+        "scope_digest": "658e4a0373ac5e77fa9f206676f98c488f8cbfa554e78e1310e0d09c7bdde01b",
+        "payload": {
+          "query": {
+            "context_id": "context:1",
+            "actions": [
+              {
+                "kind": "action",
+                "id": "action:read"
+              },
+              {
+                "kind": "action",
+                "id": "action:read"
+              },
+              {
+                "kind": "action",
+                "id": "action:read"
+              }
+            ]
+          },
+          "complete_public_class_size": 192,
+          "posterior_behavior_classes": 119,
+          "distribution": [
+            {
+              "trace": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "count": 119
+            }
+          ],
+          "countermodels": [
+            {
+              "hypothetical_model": {
+                "a": 0,
+                "b": 0,
+                "sensor": 1
+              },
+              "trace": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "class_count": 119,
+              "fits_all_observations": true
+            }
+          ],
+          "answer_status": "UNIQUE_FINITE",
+          "enumeration_digest": "b69e0498b8989459602ef787b40c0a9ef905f0b0d206a8150dffea6d8e928e77"
+        }
+      }
+    }
+  },
+  {
+    "fixture_id": "O04",
+    "expected_verdict": "REJECTED",
+    "actual_verdict": "REJECTED",
+    "reason_code": "SOURCE_SHA_MISMATCH",
+    "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+    "witness_ref": [
+      "sha256:fb9eaafed48d4fb6feb6b3e5fdeccfeb4d4f114915230b11d850bbc2122a72bc"
+    ],
+    "status": "PASS",
+    "decision": {
+      "schema": "symseq.assurance.decision.v1",
+      "candidate_digest": "691b47e35a34f171ebaa6214403149c475c88eb0cc08d28cff984828b6b38dab",
+      "source_digest": "fee2278a3fe7bc43105f44b95c8691eec953cb5a355f2c0b6e04473585a74952",
+      "scope_digest": "658e4a0373ac5e77fa9f206676f98c488f8cbfa554e78e1310e0d09c7bdde01b",
+      "verifier_id": "assurance001/v1",
+      "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+      "decision": "REJECT",
+      "assurance_status": "REJECTED",
+      "claim_kind": "FINITE_PROPOSITION",
+      "check_kind": "NONE",
+      "reason_code": "SOURCE_SHA_MISMATCH",
+      "witness_refs": [
+        "sha256:fb9eaafed48d4fb6feb6b3e5fdeccfeb4d4f114915230b11d850bbc2122a72bc"
+      ],
+      "dependencies": [
+        "sha256:dc304e10943168310934c124570a143dd6a3d47b8819c1b268029f1ce1cdd9aa"
+      ],
+      "execution_permission": false,
+      "decision_digest": "c8442a89c126906a1c03630e70184c83e114170c386f9294da814ef8f76e3920"
+    },
+    "witnesses": {
+      "sha256:fb9eaafed48d4fb6feb6b3e5fdeccfeb4d4f114915230b11d850bbc2122a72bc": {
+        "schema": "symseq.assurance.witness.v1",
+        "kind": "contract_failure",
+        "source_digest": "fee2278a3fe7bc43105f44b95c8691eec953cb5a355f2c0b6e04473585a74952",
+        "scope_digest": "658e4a0373ac5e77fa9f206676f98c488f8cbfa554e78e1310e0d09c7bdde01b",
+        "payload": {
+          "reason": "SOURCE_SHA_MISMATCH",
+          "scientific_refutation_claimed": false
+        }
+      }
+    }
+  },
+  {
+    "fixture_id": "O05",
+    "expected_verdict": "HOLD",
+    "actual_verdict": "HOLD",
+    "reason_code": "REPLAY_DEPENDENCY_MISSING",
+    "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+    "witness_ref": [
+      "sha256:bc3851f556ac88e3bf96d9237aa55ae5efd57b288ed0097d558137bb39661f68"
+    ],
+    "status": "PASS",
+    "decision": {
+      "schema": "symseq.assurance.decision.v1",
+      "candidate_digest": "85484d7f89ebdf33825f4b7035409980ce2659aa5e6ad08b2d55377a8fc52e35",
+      "source_digest": "dacb6c921dd14f52d085dfa6a32182fe81914d37239420c01f38ef156c80a593",
+      "scope_digest": "44ad2dd6dceb5335b7c7ebb91868a5cc9287c66c90b5c51e499742d274518e86",
+      "verifier_id": "assurance001/v1",
+      "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+      "decision": "HOLD",
+      "assurance_status": "HOLD",
+      "claim_kind": "FINITE_PROPOSITION",
+      "check_kind": "NONE",
+      "reason_code": "REPLAY_DEPENDENCY_MISSING",
+      "witness_refs": [
+        "sha256:bc3851f556ac88e3bf96d9237aa55ae5efd57b288ed0097d558137bb39661f68"
+      ],
+      "dependencies": [
+        "sha256:41c91b0daa3f17d708841c231560c0f2d734d91ad3a7d94e45d7e0e3e93c516a"
+      ],
+      "execution_permission": false,
+      "decision_digest": "74ff3ac997c744d32679529cc8a1948022e5683e13b893c6d57ebc0fc4389256"
+    },
+    "witnesses": {
+      "sha256:bc3851f556ac88e3bf96d9237aa55ae5efd57b288ed0097d558137bb39661f68": {
+        "schema": "symseq.assurance.witness.v1",
+        "kind": "contract_failure",
+        "source_digest": "dacb6c921dd14f52d085dfa6a32182fe81914d37239420c01f38ef156c80a593",
+        "scope_digest": "44ad2dd6dceb5335b7c7ebb91868a5cc9287c66c90b5c51e499742d274518e86",
+        "payload": {
+          "reason": "REPLAY_DEPENDENCY_MISSING",
+          "scientific_refutation_claimed": false
+        }
+      }
+    }
+  }
+]

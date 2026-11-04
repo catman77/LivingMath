@@ -1,0 +1,305 @@
+{
+  "F1": {
+    "task_id": "F1",
+    "claim_kind": "FINITE_PROPOSITION",
+    "source_ids": [
+      "finite:F1"
+    ],
+    "assumptions": [
+      "Only the declared immutable source and bounded contract apply.",
+      "Source attestation does not establish real-world truth."
+    ],
+    "primary_source": "finite:F1",
+    "query": {
+      "context_id": "context:0",
+      "actions": [
+        {
+          "kind": "action",
+          "id": "action:a"
+        },
+        {
+          "kind": "action",
+          "id": "action:b"
+        },
+        {
+          "kind": "action",
+          "id": "action:b"
+        },
+        {
+          "kind": "action",
+          "id": "action:a"
+        },
+        {
+          "kind": "action",
+          "id": "action:b"
+        }
+      ]
+    },
+    "allowed_predicates": [
+      "trace_equals"
+    ],
+    "question": "Propose a full-trace forecast with an honest assurance status under the complete public class. Do not confuse likelihood with entailment.",
+    "scope": {
+      "task_id": "F1",
+      "source_snapshots": {
+        "finite:F1": "6147629c03ffe5b62fde38182b23328b44383e5b21ab59cca1e390752ed57383"
+      },
+      "scope_version": 1,
+      "execution_permission": false,
+      "max_actions": 5,
+      "action_namespace": [
+        "action:a",
+        "action:b",
+        "action:read"
+      ],
+      "reset": "x=context_bit;y=0",
+      "public_class": "complete_affine_memory_class/1"
+    }
+  },
+  "F2": {
+    "task_id": "F2",
+    "claim_kind": "FINITE_PROPOSITION",
+    "source_ids": [
+      "finite:F2"
+    ],
+    "assumptions": [
+      "Only the declared immutable source and bounded contract apply.",
+      "Source attestation does not establish real-world truth."
+    ],
+    "primary_source": "finite:F2",
+    "query": {
+      "context_id": "context:1",
+      "actions": [
+        {
+          "kind": "action",
+          "id": "action:read"
+        },
+        {
+          "kind": "action",
+          "id": "action:read"
+        },
+        {
+          "kind": "action",
+          "id": "action:read"
+        }
+      ]
+    },
+    "allowed_predicates": [
+      "trace_equals"
+    ],
+    "question": "Determine the full trace of three identity read operations from context 1 for every publicly admissible model.",
+    "scope": {
+      "task_id": "F2",
+      "source_snapshots": {
+        "finite:F2": "dc304e10943168310934c124570a143dd6a3d47b8819c1b268029f1ce1cdd9aa"
+      },
+      "scope_version": 1,
+      "execution_permission": false,
+      "max_actions": 5,
+      "action_namespace": [
+        "action:a",
+        "action:b",
+        "action:read"
+      ],
+      "reset": "x=context_bit;y=0",
+      "public_class": "complete_affine_memory_class/1"
+    }
+  },
+  "S1": {
+    "task_id": "S1",
+    "claim_kind": "SOURCE_CLAIM",
+    "source_ids": [
+      "P1-001:record:0",
+      "P1-001:record:1",
+      "P1-001:schema"
+    ],
+    "assumptions": [
+      "Only the declared immutable source and bounded contract apply.",
+      "Source attestation does not establish real-world truth."
+    ],
+    "record_ids": [
+      "P1-001:record:0",
+      "P1-001:record:1"
+    ],
+    "projected_fields": [
+      "visibility"
+    ],
+    "required_fields": [
+      "visibility",
+      "transfer_status"
+    ],
+    "allowed_predicates": [
+      "projection_relation",
+      "field_equals",
+      "permission_granted"
+    ],
+    "question": "Does equality of the projected fields preserve every declared required field? Distinguish schema-admissible source flags from permission.",
+    "scope": {
+      "task_id": "S1",
+      "source_snapshots": {
+        "P1-001:record:0": "5238d83dc9a36127adda7114c57ace594272a915447c5abfd77ee86db29d16ac",
+        "P1-001:record:1": "0d2bd23cd5462d63c4c5aa7c4ad3fe331acf6a4392b7f276c87ecf14a46641ad",
+        "P1-001:schema": "5e9f2610cf40a1ecd61c5f9eb24eb4c4428854414116d7467045486d415c94b0"
+      },
+      "scope_version": 1,
+      "execution_permission": false,
+      "projected_fields": [
+        "visibility"
+      ],
+      "required_fields": [
+        "visibility",
+        "transfer_status"
+      ]
+    }
+  },
+  "S2": {
+    "task_id": "S2",
+    "claim_kind": "SOURCE_CLAIM",
+    "source_ids": [
+      "P1-002:record:0",
+      "P1-002:record:1",
+      "P1-002:schema"
+    ],
+    "assumptions": [
+      "Only the declared immutable source and bounded contract apply.",
+      "Source attestation does not establish real-world truth."
+    ],
+    "record_ids": [
+      "P1-002:record:0",
+      "P1-002:record:1"
+    ],
+    "projected_fields": [
+      "external_transfer"
+    ],
+    "required_fields": [
+      "external_transfer",
+      "decision"
+    ],
+    "allowed_predicates": [
+      "projection_relation",
+      "field_equals",
+      "permission_granted"
+    ],
+    "question": "Does equality of the projected fields preserve every declared required field? Distinguish schema-admissible source flags from permission.",
+    "scope": {
+      "task_id": "S2",
+      "source_snapshots": {
+        "P1-002:record:0": "803217781c1055dc70ea8d62e87eb3918fb20de490317eba4e237aa49a67627f",
+        "P1-002:record:1": "9e0939c3c6b486591c84c895426fcb1154ffc2235b4d3b85aecf7ba810f701a7",
+        "P1-002:schema": "d2ed51d7e09ea47bc7d9db556e7dc12642be4431d78a20083c360d87ceedd2fc"
+      },
+      "scope_version": 1,
+      "execution_permission": false,
+      "projected_fields": [
+        "external_transfer"
+      ],
+      "required_fields": [
+        "external_transfer",
+        "decision"
+      ]
+    }
+  },
+  "C1": {
+    "task_id": "C1",
+    "claim_kind": "EXECUTABLE_BOUNDED",
+    "source_ids": [
+      "program:C1"
+    ],
+    "assumptions": [
+      "Only the declared immutable source and bounded contract apply.",
+      "Source attestation does not establish real-world truth."
+    ],
+    "primary_source": "program:C1",
+    "allowed_predicates": [
+      "preserves_popcount",
+      "preserves_value"
+    ],
+    "question": "For all 16 four-bit inputs, does the given rotate_left program preserve popcount? Restrict the statement to the declared domain; do not claim unbounded correctness.",
+    "scope": {
+      "task_id": "C1",
+      "source_snapshots": {
+        "program:C1": "b15add58e459052d3603e71599147c44f8c510dab26e03ac289a211fe1557244"
+      },
+      "scope_version": 1,
+      "execution_permission": false,
+      "input_domain": [
+        0,
+        15
+      ]
+    }
+  },
+  "U1": {
+    "task_id": "U1",
+    "claim_kind": "EMPIRICAL_HYPOTHESIS",
+    "source_ids": [
+      "empirical:U1"
+    ],
+    "assumptions": [
+      "Only the declared immutable source and bounded contract apply.",
+      "Source attestation does not establish real-world truth."
+    ],
+    "primary_source": "empirical:U1",
+    "allowed_predicates": [
+      "hypothesis",
+      "observation"
+    ],
+    "question": "Can a physical improvement or causal mechanism be established from this source? Preserve uncertainty; do not invent measurements.",
+    "scope": {
+      "task_id": "U1",
+      "source_snapshots": {
+        "empirical:U1": "b63ab6d671e88245ac4f051677d811e9b4163359f0eb557f7e9a383ec7e23cbe"
+      },
+      "scope_version": 1,
+      "execution_permission": false
+    }
+  },
+  "N1": {
+    "task_id": "N1",
+    "claim_kind": "FINITE_PROPOSITION",
+    "source_ids": [
+      "finite:N1"
+    ],
+    "assumptions": [
+      "Only the declared immutable source and bounded contract apply.",
+      "Source attestation does not establish real-world truth."
+    ],
+    "primary_source": "finite:N1",
+    "query": {
+      "context_id": "context:0",
+      "actions": [
+        {
+          "kind": "action",
+          "id": "action:a"
+        },
+        {
+          "kind": "action",
+          "id": "action:a"
+        },
+        {
+          "kind": "action",
+          "id": "action:a"
+        }
+      ]
+    },
+    "allowed_predicates": [
+      "trace_equals"
+    ],
+    "question": "Predict the full trace including initial t0 for the unobserved continuation of the non-identity action query, under every publicly admissible model. State an honest assurance strength.",
+    "scope": {
+      "task_id": "N1",
+      "source_snapshots": {
+        "finite:N1": "5e43bf75d60300b050d31b3f983c4cf2b76de4098395d67491b5aa16f0d78b6c"
+      },
+      "scope_version": 1,
+      "execution_permission": false,
+      "max_actions": 5,
+      "action_namespace": [
+        "action:a",
+        "action:b",
+        "action:read"
+      ],
+      "reset": "x=context_bit;y=0",
+      "public_class": "complete_affine_memory_class/1"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "$id": "lm-suti.assurance.witness/0.1",
+  "properties": {
+    "schema": {
+      "const": "lm-suti.assurance.witness/0.1"
+    },
+    "ref": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "value": {
+      "type": "object",
+      "required": [
+        "schema",
+        "kind",
+        "source_digest",
+        "scope_digest",
+        "payload"
+      ],
+      "properties": {
+        "schema": {
+          "const": "symseq.assurance.witness.v1"
+        },
+        "kind": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "scope_digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "payload": {
+          "type": "object"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schema",
+    "ref",
+    "value"
+  ]
+}

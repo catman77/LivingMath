@@ -1,0 +1,77 @@
+{
+  "status": "PREVIEW_DEPLOYED_FINAL_RELEASE_GATE_PENDING",
+  "generated_utc": "2026-11-04T18:02:10.061967+00:00",
+  "gates": {
+    "R0": "PASS",
+    "R1": "PASS",
+    "R2": "PASS",
+    "R3": "PENDING_TWO_EXTERNAL_TECHNICAL_TESTERS",
+    "R4_technical": "PASS",
+    "R4_final_release": "PENDING_R3"
+  },
+  "checks": {
+    "new_tests_Python313": {
+      "passed": 116,
+      "failed": 0
+    },
+    "new_tests_Python314": {
+      "passed": 116,
+      "failed": 0
+    },
+    "historical_unit_tests": {
+      "passed": 50,
+      "failed": 0
+    },
+    "legacy_server_tests": {
+      "passed": 1066,
+      "skipped": 20,
+      "failed": 0
+    },
+    "historic_fixture_cases": 80,
+    "original_model_call_replay_records": 76,
+    "new_model_calls": 0,
+    "staging_real_HTTPS_OAuth": {
+      "passed": 38,
+      "failed": 0
+    },
+    "production_real_HTTPS_OAuth": {
+      "passed": 38,
+      "failed": 0
+    },
+    "final_six_candidate_export_replay": "PASS",
+    "integrity": "PASS",
+    "clean_install": "PASS",
+    "offline_wheelhouse_install": "PASS"
+  },
+  "production": {
+    "version": "v0.1.0-developer-preview",
+    "legacy_layer": "1.2.0rc3-observer012",
+    "deployment_id": "release-v01-20261104T175622Z",
+    "origin": "https://fares-september-rebel-board.trycloudflare.com",
+    "endpoint": "https://fares-september-rebel-board.trycloudflare.com/mcp",
+    "release_manifest_sha256": "e8f2f14306f7515ed301b391f08847b940b3c5f053b8b893300027dc10f9ca40",
+    "event_count": 2058,
+    "typed_event_count": 2072,
+    "audit": {
+      "ok": true,
+      "entries": 4817,
+      "last_hash": "c9c0048be5cc2e782cb2f2377da524e5ad04303d86b65792ef1d503b8c1c3d50"
+    },
+    "startup_retired_moves": [],
+    "original_store_inodes_preserved": true
+  },
+  "input_archive_sha256": "a89e3a15bac1b1b7e378667a6647355759d051b58dccc173ca2856b0e8d79b11",
+  "wheel_sha256": "3bab873efff49d5cd6c8782d9c354e09e307fac1d4edb6cd256b0bc165c73a76",
+  "external_human_testers": {
+    "completed": 0,
+    "status": "PENDING",
+    "form": "docs/release-v01/EXTERNAL_PILOT_FORM.md"
+  },
+  "GitHub": {
+    "repository": "R-Commons/LivingMath",
+    "remote_empty_confirmed": true,
+    "publication": "NOT_PERFORMED_IN_THIS_TASK"
+  },
+  "verified_or_formal_status_assigned": false,
+  "scope_note": "Automated QA is not external-human acceptance or scientific truth."
+}
