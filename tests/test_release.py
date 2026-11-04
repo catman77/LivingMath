@@ -272,3 +272,15 @@ def test_bundle_core_tamper_cannot_redefine_checker(setup,recompute_manifest):
     with zipfile.ZipFile(out,'w') as z:
         for name,data in files.items():z.writestr(name,data)
     with pytest.raises(AssuranceError,match='FROZEN_CORE_INTEGRITY_FAILURE' if recompute_manifest else 'MANIFEST_SHA_MISMATCH'):replay(out.getvalue())
+
+
+def test_report_publishes_actual_valid_typed_artifacts(setup):
+    from lm_suti_assurance.report import report
+    s,p,a=setup;c=s.candidate(p,a,'c');checked=s.check(p,c['candidate_ref'],'direct','check')
+    stored=s.workspace(p).get(checked['check_ref']);view=report(s.workspace(p))['records'][0]
+    decision=validate('decision',view['decision_artifact'])
+    assert decision['value']==stored['decision'] and decision['candidate_ref']==c['candidate_ref']
+    for witness in view['witness_artifacts']:
+        validate('witness',witness)
+        assert digest(witness['value'])==witness['ref'].removeprefix('sha256:')
+        assert stored['witnesses'][witness['ref']]==witness['value']

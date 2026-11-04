@@ -6,18 +6,18 @@
 
 | Проверка | Результат |
 |---|---|
-| Новые тесты Python3.13 /3.14 |116/116 PASS на каждом|
+| Новые тесты Python3.13 /3.14 |117/117 PASS на каждом|
 | Старые assurance unit-тесты |50 PASS|
 | Старый серверный набор |1066 PASS,20 SKIP,0 FAIL|
 | Исторические фикстуры / полный003 replay |80 случаев /76 записей, прежние digest|
 | Чистая установка и установка из offline wheelhouse |PASS|
-| Реальный публичный HTTPS/OAuth MCP: staging /production |38/38 PASS на каждом|
+| Реальный публичный HTTPS/OAuth MCP: staging /production |39/39 PASS на каждом|
 | Прежние44 входные схемы + новые11 инструментов |сохранены /доступны, всего55|
 | Экспорт последних6 кандидатов, включая новые HOLD |PASS, оба evaluator совпали|
 | Сохранность исходных canonical/typed/DAV строк и inode |PASS|
 | Два внешних технических replay |PENDING, получено0 отчётов|
 
-Production: `v0.1.0-developer-preview`; deployment `release-v01-20261104T175622Z`. Manifest `e8f2f14306f7515ed301b391f08847b940b3c5f053b8b893300027dc10f9ca40`. Endpoint:
+Production: `v0.1.0-developer-preview`; deployment `release-v01-20261104T181130Z`. Manifest `18dc44612d34488cc5a2e40919b54ddd37984bdef1c8d501a1285ff21d9419fc`. Endpoint:
 
 https://fares-september-rebel-board.trycloudflare.com/mcp
 

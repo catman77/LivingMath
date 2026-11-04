@@ -87,6 +87,11 @@ async def run(args):
                     check(tid+'_RETRY_CONFLICT',altered.get('reason_code')=='REQUEST_KEY_CONFLICT')
                     refs.append(d)
                 report=await call('assurance_report',{'project':p});check('ALL_FOUR_RESULTS_RETAINED',len(report['records'])==4)
+                from lm_suti_assurance.validation import validate
+                for record in report['records']:
+                    validate('decision',record['decision_artifact'])
+                    for witness_artifact in record['witness_artifacts']:validate('witness',witness_artifact)
+                check('PUBLISHED_TYPED_ARTIFACTS_VALIDATE_ACTUAL_REPORT',True)
                 finite=next(r for r in report['records'] if r['claim_kind']=='FINITE_PROPOSITION')
                 witness=next(iter(finite['witnesses_and_countermodels'].values()))['payload']
                 check('ACTUAL_23_1_TWO_COUNTERMODELS',len(witness['countermodels'])==2 and [d['count'] for d in witness['distribution']]==[23,1])

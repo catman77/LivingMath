@@ -1,6 +1,6 @@
 {
   "status": "PREVIEW_DEPLOYED_FINAL_RELEASE_GATE_PENDING",
-  "generated_utc": "2026-11-04T18:02:10.061967+00:00",
+  "generated_utc": "2026-11-04T18:13:09.347778+00:00",
   "gates": {
     "R0": "PASS",
     "R1": "PASS",
@@ -11,11 +11,11 @@
   },
   "checks": {
     "new_tests_Python313": {
-      "passed": 116,
+      "passed": 117,
       "failed": 0
     },
     "new_tests_Python314": {
-      "passed": 116,
+      "passed": 117,
       "failed": 0
     },
     "historical_unit_tests": {
@@ -31,11 +31,11 @@
     "original_model_call_replay_records": 76,
     "new_model_calls": 0,
     "staging_real_HTTPS_OAuth": {
-      "passed": 38,
+      "passed": 39,
       "failed": 0
     },
     "production_real_HTTPS_OAuth": {
-      "passed": 38,
+      "passed": 39,
       "failed": 0
     },
     "final_six_candidate_export_replay": "PASS",
@@ -46,10 +46,10 @@
   "production": {
     "version": "v0.1.0-developer-preview",
     "legacy_layer": "1.2.0rc3-observer012",
-    "deployment_id": "release-v01-20261104T175622Z",
+    "deployment_id": "release-v01-20261104T181130Z",
     "origin": "https://fares-september-rebel-board.trycloudflare.com",
     "endpoint": "https://fares-september-rebel-board.trycloudflare.com/mcp",
-    "release_manifest_sha256": "e8f2f14306f7515ed301b391f08847b940b3c5f053b8b893300027dc10f9ca40",
+    "release_manifest_sha256": "18dc44612d34488cc5a2e40919b54ddd37984bdef1c8d501a1285ff21d9419fc",
     "event_count": 2058,
     "typed_event_count": 2072,
     "audit": {
@@ -61,7 +61,7 @@
     "original_store_inodes_preserved": true
   },
   "input_archive_sha256": "a89e3a15bac1b1b7e378667a6647355759d051b58dccc173ca2856b0e8d79b11",
-  "wheel_sha256": "3bab873efff49d5cd6c8782d9c354e09e307fac1d4edb6cd256b0bc165c73a76",
+  "wheel_sha256": "d037af759630bfd43ffa8d5df31c6e53c6be412fa5c3a84b5a746c72c000c144",
   "external_human_testers": {
     "completed": 0,
     "status": "PENDING",
