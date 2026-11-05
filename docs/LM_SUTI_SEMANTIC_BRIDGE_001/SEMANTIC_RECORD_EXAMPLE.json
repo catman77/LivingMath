@@ -1,0 +1,28 @@
+{
+  "schema": "lm-suti.semantic-frame.proposed-v1",
+  "_notice": "EXAMPLE_ONLY_NOT_A_LIVE_SERVER_SCHEMA_OR_GOLD_LITERARY_TRUTH",
+  "project_id": "private_poetry_demo",
+  "poem_ref": "blok_night_1960@source-sha-placeholder",
+  "frame_id": "example_frame_blok_reading_1",
+  "revision_index": 1,
+  "parent_frame_ids": [],
+  "generation_mode": "FIXTURE",
+  "model_version_or_unknown": "NOT_APPLICABLE",
+  "claim_atoms": [
+    {
+      "id": "c1",
+      "kind": "INTERPRETATION",
+      "text": "Повторение образов может поддерживать циклическое прочтение; численная идентичность мира не установлена.",
+      "source_anchor_refs": ["PLACEHOLDER_PINNED_BEGINNING", "PLACEHOLDER_PINNED_END"],
+      "premises": ["manual image/motif comparison"],
+      "epistemic_status": "UNKNOWN",
+      "alternatives": ["спиральное повторение с различием деталей"]
+    }
+  ],
+  "temporal_reading": "ambiguous",
+  "assumptions": ["All source anchors must be verified before use"],
+  "limitations": ["Interpretive reading, not a formal theorem"],
+  "open_questions": ["Какие различения исчезнут при проекции на набор образов?"],
+  "status": "PROPOSED",
+  "execution_permission": false
+}

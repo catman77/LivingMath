@@ -1,0 +1,261 @@
+{
+  "status": "PASS",
+  "total": 36,
+  "passed": 36,
+  "rows": [
+    {
+      "id": "S01",
+      "status": "PASS",
+      "evidence": "Pinned edition+byte SHA and archived HTML comparison"
+    },
+    {
+      "id": "S02",
+      "status": "PASS",
+      "evidence": "Two exact supplied Pushkin transcriptions, no silent changes"
+    },
+    {
+      "id": "S03",
+      "status": "PASS",
+      "evidence": {
+        "checked_anchors": 33,
+        "Unicode": "UTF8 bytes, no normalization"
+      }
+    },
+    {
+      "id": "S04",
+      "status": "PASS",
+      "evidence": "Independently resealed off-by-one still rejected"
+    },
+    {
+      "id": "S05",
+      "status": "PASS",
+      "evidence": "Different-edition revision denied in test_S05; original corpus bytes unchanged"
+    },
+    {
+      "id": "S06",
+      "status": "PASS",
+      "evidence": "Original checker source-quote decisions, not interpretation attestation"
+    },
+    {
+      "id": "S07",
+      "status": "PASS",
+      "evidence": {
+        "execution_permission": false,
+        "failure_ref": "a2c4111ad530aa43a4bf3d94352a0c98f567a94d94b72a47847863026369fc2d",
+        "preflight_decision": "REJECTED",
+        "proposal_ref": "00bd6b1b1edf95a1290d80298745c3431219b74c5d66a86779ead8b28e485939",
+        "reason_code": "SOURCE_ANCHOR_MISMATCH",
+        "status": "FRAME_UNTRUSTED"
+      }
+    },
+    {
+      "id": "S08",
+      "status": "PASS",
+      "evidence": {
+        "execution_permission": false,
+        "failure_ref": "67f375972ee836c238aee255cbf62b6dc1dc0177dcc9d02b78968a05fead26ad",
+        "preflight_decision": "REJECTED",
+        "proposal_ref": "9e290ead55393c4f90d5c13030fcf39a11418609a0927b5d3eda38346c3c6b34",
+        "reason_code": "SEMANTIC_SCHEMA_INVALID",
+        "status": "FRAME_UNTRUSTED"
+      }
+    },
+    {
+      "id": "S09",
+      "status": "PASS",
+      "evidence": {
+        "execution_permission": false,
+        "failure_ref": "15cb8e52d28cfb8675eada4c545259bb6e921be9b6e9fbf020eaa0e6d5ecca8e",
+        "preflight_decision": "REJECTED",
+        "proposal_ref": "e2e66e93ebbdc8ff16f1c3ed1d1275dc1f57fab2a77892234bcdf4debacb77fe",
+        "reason_code": "SEMANTIC_SCHEMA_INVALID",
+        "status": "FRAME_UNTRUSTED"
+      }
+    },
+    {
+      "id": "S10",
+      "status": "PASS",
+      "evidence": "Source, prompts, derived quotes and anchors are all withheld"
+    },
+    {
+      "id": "S11",
+      "status": "PASS",
+      "evidence": "Actual dependency-only ZIP replay"
+    },
+    {
+      "id": "I01",
+      "status": "PASS",
+      "evidence": {
+        "frame_ref": "19a87f225c346c193031dcb65feb1c356854101cda588dc662d55c9c8d858f5c"
+      }
+    },
+    {
+      "id": "I02",
+      "status": "PASS",
+      "evidence": {
+        "child": "94b8bd9475104e74bafbda935221ca05bbf03449de941f351c4da792e30b0497",
+        "original_model_context_preserved": true
+      }
+    },
+    {
+      "id": "I03",
+      "status": "PASS",
+      "evidence": {
+        "frames": [
+          "96f74dd60221b76a7c017e873ec3ca6277af2226e29eabb568304194c37602a0",
+          "836dbf605fa8ccd5dd096b08f1cacac7c206462b346bc232145c08a970950000"
+        ]
+      }
+    },
+    {
+      "id": "I04",
+      "status": "PASS",
+      "evidence": {
+        "frames": [
+          "78d7e1183945d39c93372ef019724cc6b3c95d177704a6a402df7b4154f83ff8",
+          "1ee4d6cb7cf0bce5d2693eaf13ff0ce5dab78afc61f2ced6e306051957e8ef62"
+        ]
+      }
+    },
+    {
+      "id": "I05",
+      "status": "PASS",
+      "evidence": {
+        "distinct_poems": 3,
+        "model_frames": 6
+      }
+    },
+    {
+      "id": "I06",
+      "status": "PASS",
+      "evidence": "No interpretation becomes finite/formal/world proof"
+    },
+    {
+      "id": "I07",
+      "status": "PASS",
+      "evidence": "Poetic causality is not a toxicology result"
+    },
+    {
+      "id": "I08",
+      "status": "PASS",
+      "evidence": "Original frame objects untouched; append-only prefix tested"
+    },
+    {
+      "id": "I09",
+      "status": "PASS",
+      "evidence": "Missing-parent/cycle/merge/cross-project tests passed separately"
+    },
+    {
+      "id": "I10",
+      "status": "PASS",
+      "evidence": "Six actual hosted receipts; unit absence test returns MODEL_UNAVAILABLE, fixtures are excluded"
+    },
+    {
+      "id": "L01",
+      "status": "PASS",
+      "evidence": {
+        "witness": "e7f0d9aed8628395127291e013fb390ff62a1b774db34869db3115b9f13dc107",
+        "lost_Q": [
+          "/image_order",
+          "/canal_details"
+        ]
+      }
+    },
+    {
+      "id": "L02",
+      "status": "PASS",
+      "evidence": {
+        "projection_ref": "719a4ab30fb278d2c8ebd7f20345529b00b2ca3baa79022ffac951ab1c87629e",
+        "witness_ref": "26aea209f89241d7cd4b8857676710510a268d41d4a7eb4fd93cde853a26f8eb",
+        "status": "REJECTED",
+        "reason_code": "FALSE_STRUCTURAL_PRESERVATION",
+        "execution_permission": false
+      }
+    },
+    {
+      "id": "L03",
+      "status": "PASS",
+      "evidence": {
+        "finite_domain": [
+          "df2e196be14132b3c3d677a967e2bfde39e580370aa25715b4c3e7829e305886",
+          "e708a4d176258fe3804d95cbc69c505f466cad70d36ad9bf429ac463ecced444"
+        ],
+        "checked_pairs": 4
+      }
+    },
+    {
+      "id": "L04",
+      "status": "PASS",
+      "evidence": "No default absolute losslessness"
+    },
+    {
+      "id": "L05",
+      "status": "PASS",
+      "evidence": "World identity remains unverified semantic question"
+    },
+    {
+      "id": "R01",
+      "status": "PASS",
+      "evidence": {
+        "logical_digest": "e3ad5967b8ba08137cc3f8663f26a19815f38c2e304281af8a77ba929027b2ee"
+      }
+    },
+    {
+      "id": "R02",
+      "status": "PASS",
+      "evidence": {
+        "logical_digest": "e3ad5967b8ba08137cc3f8663f26a19815f38c2e304281af8a77ba929027b2ee"
+      }
+    },
+    {
+      "id": "R03",
+      "status": "PASS",
+      "evidence": "Actual one-byte object tamper, source/frame/edge tamper tests also covered"
+    },
+    {
+      "id": "R04",
+      "status": "PASS",
+      "evidence": "test_R04 compares exact old decisions and witnesses after generator-only metadata changes"
+    },
+    {
+      "id": "R05",
+      "status": "PASS",
+      "evidence": "Actual old T17 checked by test_R05: REJECTED, distribution23/1, two countermodels"
+    },
+    {
+      "id": "R06",
+      "status": "PASS",
+      "evidence": "Export guard scans every data object recursively; raw-secret injection test denies build"
+    },
+    {
+      "id": "R07",
+      "status": "PASS",
+      "evidence": {
+        "execution_permission": false,
+        "failure_ref": "0949941bf18f2be05e0805ee60c92efad8f62c9a6616d54d846a0d5f2013c276",
+        "preflight_decision": "REJECTED",
+        "proposal_ref": "cae8401e9af82c7326af3bca4308e9719592d493546906b7509f97bb54fc7bce",
+        "reason_code": "SEMANTIC_SCHEMA_INVALID",
+        "status": "FRAME_UNTRUSTED"
+      }
+    },
+    {
+      "id": "R08",
+      "status": "PASS",
+      "evidence": "Same request key reuses the same negative record; concurrency/changed-payload tests passed"
+    },
+    {
+      "id": "R09",
+      "status": "PASS",
+      "evidence": "Exact core + actual HTTPS tools/list old55-schema comparison"
+    },
+    {
+      "id": "R10",
+      "status": "PASS",
+      "evidence": "External-human acceptance not fabricated"
+    }
+  ],
+  "new_model_attempts": 0,
+  "actual_hosted_model_frames": 6,
+  "manual_structural_control_frames": 2
+}

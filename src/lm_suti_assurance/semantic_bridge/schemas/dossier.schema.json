@@ -1,0 +1,153 @@
+{
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "lm-suti.semantic.dossier/1"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "project_id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+    },
+    "source_snapshot_digest": {
+      "oneOf": [
+        {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "origin_kind": {
+      "enum": [
+        "TRUSTED_CONTEXT",
+        "DERIVED",
+        "HOSTED_MODEL",
+        "MANUAL",
+        "FIXTURE"
+      ]
+    },
+    "producer_ref": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "created_by": {
+      "type": "string",
+      "minLength": 1
+    },
+    "parent_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "minItems": 0
+    },
+    "content_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "execution_permission": {
+      "const": false
+    },
+    "frame_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "minItems": 0
+    },
+    "edition_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "minItems": 0
+    },
+    "revision_edge_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "minItems": 0
+    },
+    "comparison_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "minItems": 0
+    },
+    "assurance_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "minItems": 0
+    },
+    "raw_proposal_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "minItems": 0
+    },
+    "receipt_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "minItems": 0
+    },
+    "source_snapshot_digests": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "minItems": 0
+    },
+    "R3": {
+      "const": "PENDING"
+    },
+    "boundary": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "schema",
+    "schema_version",
+    "project_id",
+    "source_snapshot_digest",
+    "origin_kind",
+    "producer_ref",
+    "created_by",
+    "parent_refs",
+    "content_digest",
+    "execution_permission",
+    "frame_refs",
+    "edition_refs",
+    "revision_edge_refs",
+    "comparison_refs",
+    "assurance_refs",
+    "raw_proposal_refs",
+    "receipt_refs",
+    "source_snapshot_digests",
+    "R3",
+    "boundary"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

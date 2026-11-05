@@ -1,0 +1,61 @@
+{
+  "release": "v0.2.0-developer-preview",
+  "deployment_id": "semantic001-20261105T015444Z",
+  "tools": 64,
+  "previous_input_schemas_preserved": 55,
+  "new_tools": [
+    "semantic_contract",
+    "semantic_source",
+    "semantic_draft",
+    "semantic_revise",
+    "semantic_compare",
+    "semantic_report",
+    "semantic_withdraw",
+    "semantic_export",
+    "semantic_replay"
+  ],
+  "registered_schemas": [
+    "assurance.schema.json",
+    "dossier.schema.json",
+    "failure.schema.json",
+    "frame.schema.json",
+    "loss-witness.schema.json",
+    "package.schema.json",
+    "projection.schema.json",
+    "proposal-record.schema.json",
+    "proposal.schema.json",
+    "revision-edge.schema.json",
+    "source-anchor.schema.json",
+    "source-edition.schema.json",
+    "withdrawal.schema.json"
+  ],
+  "actual_model_frames": 6,
+  "manual_control_frames": 2,
+  "model_revision_edges": 3,
+  "source_anchors": 33,
+  "assurance_claim_counts_including_manual_controls": {
+    "SOURCE_ATTESTED": 29,
+    "UNKNOWN": 22,
+    "HOLD": 4
+  },
+  "one_hosted_generator": "gpt-6.1-sol via existing Codex ChatGPT login",
+  "application_digest": "d60be0643fd0d915f2476dc3cf60a18f09b85258468b4af17f105c2693646e4a",
+  "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+  "binder_digest": "8c760eeaa960cc4a2eb227ee1669d004f82db8e6e51ce871caaaa1b79c39105a",
+  "workflow": [
+    "FRAME_UNTRUSTED",
+    "FRAME_VALIDATED",
+    "FRAME_REVISED",
+    "FRAME_WITHDRAWN"
+  ],
+  "interpretation_assurance": "UNKNOWN/HOLD",
+  "literal_assurance": "EXACT_QUOTE_ENVELOPE_BYTES_ONLY",
+  "structural_scope": "Exhaustive finite pair domain and explicitly declared Q",
+  "offline_direct": "PASS",
+  "offline_compiled": "PASS",
+  "native_SUTI": "NOT_EXECUTED",
+  "formal_adapter": "UNAVAILABLE_NOT_REGISTERED",
+  "R3": "PENDING",
+  "external_human_reports": 0,
+  "execution_permission": false
+}

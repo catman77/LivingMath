@@ -1,0 +1,86 @@
+{
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "lm-suti.semantic.assurance/1"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "project_id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+    },
+    "source_snapshot_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "origin_kind": {
+      "enum": [
+        "TRUSTED_CONTEXT",
+        "DERIVED",
+        "HOSTED_MODEL",
+        "MANUAL",
+        "FIXTURE"
+      ]
+    },
+    "producer_ref": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "created_by": {
+      "type": "string",
+      "minLength": 1
+    },
+    "parent_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "minItems": 0
+    },
+    "content_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "execution_permission": {
+      "const": false
+    },
+    "frame_ref": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "minItems": 0
+    },
+    "epistemic_status": {
+      "const": "UNKNOWN"
+    },
+    "source_prose_truth_verified": {
+      "const": false
+    }
+  },
+  "required": [
+    "schema",
+    "schema_version",
+    "project_id",
+    "source_snapshot_digest",
+    "origin_kind",
+    "producer_ref",
+    "created_by",
+    "parent_refs",
+    "content_digest",
+    "execution_permission",
+    "frame_ref",
+    "claims",
+    "epistemic_status",
+    "source_prose_truth_verified"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

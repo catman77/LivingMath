@@ -1,0 +1,42 @@
+{
+  "schema": "lm-suti.semantic-fixtures/1",
+  "status": "QA_ONLY_UNVERIFIED_EDITION",
+  "source_records": [
+    {
+      "id": "blok_night_1960",
+      "author": "Александр Блок",
+      "title": "Ночь, улица, фонарь, аптека",
+      "declared_edition": "Собрание сочинений в 8 томах, т. 3, 1960, с. 37",
+      "declared_source_url": "https://ru.wikisource.org/wiki/Ночь,_улица,_фонарь,_аптека_(Блок)/1960_(СО)",
+      "raw_text_utf8": "Ночь, улица, фонарь, аптека,\nБессмысленный и тусклый свет.\nЖиви еще хоть четверть века —\nВсё будет так. Исхода нет.\nУмрешь — начнешь опять сначала,\nИ повторится всё, как встарь:\nНочь, ледяная рябь канала,\nАптека, улица, фонарь.",
+      "raw_text_sha256": "6e74c0e3cffd04019678c8af84ce5e0540097698c29acc9f3cbb935620aa8bf4",
+      "byte_length": 406,
+      "edition_status": "WORKING_TRANSCRIPTION_REQUIRES_PRE_FREEZE_EDITION_VERIFICATION",
+      "legal_status": "AUTHOR_PUBLIC_DOMAIN; DIGITAL_EDITORIAL_RIGHTS_NOT_INDEPENDENTLY_AUDITED"
+    },
+    {
+      "id": "pushkin_anchar_1956",
+      "author": "Александр Пушкин",
+      "title": "Анчар",
+      "declared_edition": "РВБ, издание 1956 (версия, использованная в предыдущем пилоте, требует сверки)",
+      "declared_source_url": "https://ru.wikisource.org/wiki/Анчар_(Пушкин)",
+      "raw_text_utf8": "В пустыне чахлой и скупой,\nНа почве, зноем раскаленной,\nАнчар, как грозный часовой,\nСтоит — один во всей вселенной.\nПрирода жаждущих степей\nЕго в день гнева породила,\nИ зелень мертвую ветвей\nИ корни ядом напоила.\nЯд каплет сквозь его кору,\nК полудню растопясь от зною,\nИ застывает ввечеру\nГустой прозрачною смолою.\nК нему и птица не летит,\nИ тигр нейдет: лишь вихорь черный\nНа древо смерти набежит —\nИ мчится прочь, уже тлетворный.\nИ если туча оросит,\nБлуждая, лист его дремучий,\nС его ветвей, уж ядовит,\nСтекает дождь в песок горючий.\nНо человека человек\nПослал к анчару властным взглядом,\nИ тот послушно в путь потек\nИ к утру возвратился с ядом.\nПринес он смертную смолу\nДа ветвь с увядшими листами,\nИ пот по бледному челу\nСтруился хладными ручьями;\nПринес — и ослабел и лег\nПод сводом шалаша на лыки,\nИ умер бедный раб у ног\nНепобедимого владыки.\nА царь тем ядом напитал\nСвои послушливые стрелы\nИ с ними гибель разослал\nК соседям в чуждые пределы.",
+      "raw_text_sha256": "82a4e68679e406e7912f85b0f5d942accbf8e3f82b44c562e013d1eb3ddfbe51",
+      "byte_length": 1711,
+      "edition_status": "WORKING_TRANSCRIPTION_REQUIRES_PRE_FREEZE_EDITION_VERIFICATION",
+      "legal_status": "AUTHOR_PUBLIC_DOMAIN; DIGITAL_EDITORIAL_RIGHTS_NOT_INDEPENDENTLY_AUDITED"
+    },
+    {
+      "id": "pushkin_loved_1948",
+      "author": "Александр Пушкин",
+      "title": "Я вас любил: любовь ещё, быть может",
+      "declared_edition": "ФЭБ (1948), версия Викитеки; требуется сверка",
+      "declared_source_url": "https://ru.wikisource.org/wiki/Я_вас_любил:_любовь_ещё,_быть_может..._(Пушкин)",
+      "raw_text_utf8": "Я вас любил: любовь ещё, быть может,\nВ душе моей угасла не совсем;\nНо пусть она вас больше не тревожит;\nЯ не хочу печалить вас ничем.\nЯ вас любил безмолвно, безнадежно,\nТо робостью, то ревностью томим;\nЯ вас любил так искренно, так нежно,\nКак дай вам Бог любимой быть другим.",
+      "raw_text_sha256": "b080367f358735feb4513fae1842ef562ba77351c2956939fa83fd5b84d22142",
+      "byte_length": 488,
+      "edition_status": "WORKING_TRANSCRIPTION_REQUIRES_PRE_FREEZE_EDITION_VERIFICATION",
+      "legal_status": "AUTHOR_PUBLIC_DOMAIN; DIGITAL_EDITORIAL_RIGHTS_NOT_INDEPENDENTLY_AUDITED"
+    }
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "lm-suti.semantic.proposal/1"
+    },
+    "literal_observations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "quote": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "text",
+          "quote"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 2
+    },
+    "interpretations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "kind": {
+            "enum": [
+              "INTERPRETATION",
+              "FORMAL_STRUCTURE",
+              "UNRESOLVED"
+            ]
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 0
+          },
+          "premises": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 0
+          },
+          "alternatives": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 0
+          }
+        },
+        "required": [
+          "id",
+          "kind",
+          "text",
+          "evidence",
+          "premises",
+          "alternatives"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 2
+    },
+    "motifs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1
+          }
+        },
+        "required": [
+          "label",
+          "evidence"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 2
+    },
+    "relations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "kind": {
+            "enum": [
+              "PRECEDES",
+              "REPEATS_MOTIF",
+              "CONTRASTS",
+              "CHANGES_SPEAKER_ROLE",
+              "CAUSES_IN_NARRATIVE"
+            ]
+          },
+          "from_claim": {
+            "type": "string",
+            "minLength": 1
+          },
+          "to_claim": {
+            "type": "string",
+            "minLength": 1
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1
+          }
+        },
+        "required": [
+          "id",
+          "kind",
+          "from_claim",
+          "to_claim",
+          "text",
+          "evidence"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 2
+    },
+    "temporal_reading": {
+      "enum": [
+        "cyclic",
+        "spiral",
+        "linear",
+        "ambiguous",
+        "unspecified"
+      ]
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 0
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    },
+    "open_questions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    },
+    "counterreadings": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    },
+    "observables": {
+      "type": "object",
+      "properties": {
+        "image_set": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "image_order": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "canal_details": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 0
+        },
+        "speaker_roles": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "image_set",
+        "image_order",
+        "canal_details",
+        "speaker_roles"
+      ],
+      "additionalProperties": false
+    },
+    "revision_rationale": {
+      "type": "string",
+      "minLength": 1
+    },
+    "claimed_invariants": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 0
+    }
+  },
+  "required": [
+    "schema",
+    "literal_observations",
+    "interpretations",
+    "motifs",
+    "relations",
+    "temporal_reading",
+    "assumptions",
+    "limitations",
+    "open_questions",
+    "counterreadings",
+    "observables",
+    "revision_rationale",
+    "claimed_invariants"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

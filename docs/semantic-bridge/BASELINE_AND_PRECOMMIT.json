@@ -1,0 +1,88 @@
+{
+  "experiment": "LM-SUTI-SEMANTIC-BRIDGE-001",
+  "frozen_utc": "2026-11-05T01:00:46.078167+00:00",
+  "base_commit": "2365da1956b03a12d9e1d74bb496b2b28747b82e",
+  "installed_version": "v0.1.0-developer-preview",
+  "deployment_id": "release-v01-20261104T181130Z",
+  "core": {
+    "verifier_digest": "a035303149c1307126ff26e4bf60725daf3b104598be8a04a958e14388a61f08",
+    "binder_digest": "8c760eeaa960cc4a2eb227ee1669d004f82db8e6e51ce871caaaa1b79c39105a"
+  },
+  "production_endpoint": "https://fares-september-rebel-board.trycloudflare.com/mcp",
+  "tool_count": 55,
+  "scope": "private source-byte and structural-annotation checks; interpretation remains UNKNOWN; no native SUTI/formal/math-truth admission",
+  "sources": [
+    {
+      "id": "blok_night_1960",
+      "raw_text_sha256": "6e74c0e3cffd04019678c8af84ce5e0540097698c29acc9f3cbb935620aa8bf4",
+      "byte_length": 406,
+      "edition_status": "PUBLIC_TRANSCRIPTION_LINE_MATCH",
+      "verification_url": "https://ru.wikisource.org/wiki/Ночь,_улица,_фонарь,_аптека_(Блок)/1960_(СО)",
+      "reference_html_sha256": "eb1a6bed033b8ea1e79eb961709ba4732b505d02ffdd63cd9c93aa2480520bed",
+      "rights": "USER_AUTHORIZED_PRIVATE_ONLY"
+    },
+    {
+      "id": "pushkin_anchar_1956",
+      "raw_text_sha256": "82a4e68679e406e7912f85b0f5d942accbf8e3f82b44c562e013d1eb3ddfbe51",
+      "byte_length": 1711,
+      "edition_status": "PUBLIC_TRANSCRIPTION_LINE_MATCH",
+      "verification_url": "https://ru.wikisource.org/wiki/Анчар_(Пушкин)",
+      "reference_html_sha256": "b1ba1b2527c08d1cfb16911c6f6d34ea6266f5abf4361b6d1c992107aa5efbda",
+      "rights": "USER_AUTHORIZED_PRIVATE_ONLY"
+    },
+    {
+      "id": "pushkin_loved_1948",
+      "raw_text_sha256": "b080367f358735feb4513fae1842ef562ba77351c2956939fa83fd5b84d22142",
+      "byte_length": 488,
+      "edition_status": "PUBLIC_TRANSCRIPTION_LINE_MATCH",
+      "verification_url": "https://ru.wikisource.org/wiki/Я_вас_любил:_любовь_ещё,_быть_может_(Пушкин)",
+      "reference_html_sha256": "7d52f471358c33d5b49636493fb2fd590326d2747b54cf65b2c9f6f7f891bf15",
+      "rights": "USER_AUTHORIZED_PRIVATE_ONLY"
+    }
+  ],
+  "reading_schedule": [
+    {
+      "source_id": "blok_night_1960",
+      "phases": [
+        "initial",
+        "revise"
+      ],
+      "initial_before_challenge": true
+    },
+    {
+      "source_id": "pushkin_anchar_1956",
+      "phases": [
+        "initial",
+        "revise"
+      ],
+      "initial_before_challenge": true
+    },
+    {
+      "source_id": "pushkin_loved_1948",
+      "phases": [
+        "initial",
+        "revise"
+      ],
+      "initial_before_challenge": true
+    }
+  ],
+  "model": {
+    "backend": "existing authenticated Codex CLI",
+    "requested_alias": "gpt-6.1-sol",
+    "provider_revision": "UNKNOWN_NOT_EXPOSED",
+    "CLI_version": "0.166.0",
+    "auth": "EXISTING_CHATGPT_LOGIN_NO_API_KEY",
+    "model_calls_done": 0,
+    "maximum_attempts": 16,
+    "mandatory_content_calls": 6,
+    "money_USD": null,
+    "retry_policy": "transport/configuration errors only; never quality-selection retry",
+    "tools": "disabled",
+    "shutoff": "after 6 readings,16 attempts, policy violation or owner cancellation"
+  },
+  "acceptance_matrix_sha256": "e721185e4ff8a379bf865642e877320734d1f6cd981b8552a593dba701585958",
+  "R3": "PENDING",
+  "production_rollout": "USER_AUTHORIZED_AFTER_SUCCESSFUL_QA; preserve current tunnel and URL; backup before cutover",
+  "unit_regressions": "existing117 + semantic36 matrix and adversarial tests; two Python runtimes; offline replay direct+compiled",
+  "SQLite_mutations": "NONE by experiment; new objects use existing private file-workspace journal"
+}

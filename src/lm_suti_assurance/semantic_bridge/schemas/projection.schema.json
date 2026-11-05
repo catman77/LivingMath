@@ -1,0 +1,147 @@
+{
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "lm-suti.semantic.projection/1"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "project_id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+    },
+    "source_snapshot_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "origin_kind": {
+      "enum": [
+        "TRUSTED_CONTEXT",
+        "DERIVED",
+        "HOSTED_MODEL",
+        "MANUAL",
+        "FIXTURE"
+      ]
+    },
+    "producer_ref": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "created_by": {
+      "type": "string",
+      "minLength": 1
+    },
+    "parent_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "minItems": 0
+    },
+    "content_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "execution_permission": {
+      "const": false
+    },
+    "left_ref": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "right_ref": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "projection_fields": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0
+    },
+    "declared_Q": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "kind": {
+            "enum": [
+              "STRUCTURAL_FIELD",
+              "SEMANTIC_QUESTION"
+            ]
+          },
+          "field": {
+            "type": "string"
+          },
+          "question": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "kind",
+          "field",
+          "question"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0
+    },
+    "Q_complete": {
+      "type": "boolean"
+    },
+    "domain_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "minItems": 1
+    },
+    "expectation": {
+      "enum": [
+        "REPORT",
+        "PRESERVED_FOR_DECLARED_Q",
+        "LOSS_DETECTED"
+      ]
+    },
+    "loss_origin": {
+      "enum": [
+        "DECLARED_ANNOTATION",
+        "SOURCE_TRUNCATION",
+        "PROPOSED_THEORY"
+      ]
+    }
+  },
+  "required": [
+    "schema",
+    "schema_version",
+    "project_id",
+    "source_snapshot_digest",
+    "origin_kind",
+    "producer_ref",
+    "created_by",
+    "parent_refs",
+    "content_digest",
+    "execution_permission",
+    "left_ref",
+    "right_ref",
+    "projection_fields",
+    "declared_Q",
+    "Q_complete",
+    "domain_refs",
+    "expectation",
+    "loss_origin"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

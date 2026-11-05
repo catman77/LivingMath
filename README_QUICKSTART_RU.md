@@ -1,4 +1,4 @@
-# LivingMath × SUTI v0.1 — developer preview
+# LivingMath × SUTI v0.2 — developer preview
 
 Однопользовательский CLI для конечных проверок и проверок исходных документов. Он использует **неизменённые** verifier ASSURANCE-001 и binder ASSURANCE-002 из сохранённой поставки ASSURANCE-003. Модель, API-ключ и подписка для ручного пути и replay не нужны.
 
@@ -13,7 +13,7 @@ python -m pip install .
 lm-suti doctor --smoke
 ```
 
-Из wheel: `python -m pip install dist/lm_suti_assurance-0.1.0.dev0-py3-none-any.whl`.
+Из wheel: `python -m pip install dist/lm_suti_assurance-0.2.0.dev0-py3-none-any.whl`.
 Установка зависимостей может требовать интернет; сам replay сеть не использует. Офлайн-установка: заранее собрать wheelhouse через `python -m pip download --only-binary=:all: -d wheelhouse ./dist/*.whl`, затем `pip install --no-index --find-links wheelhouse lm-suti-assurance`. Бинарные зависимости должны соответствовать Python и платформе получателя.
 
 ## Полный ручной путь
@@ -59,3 +59,9 @@ CHECKED_FINITE относится только к полному объявле�
 ## Внешний пилот
 
 Два внешних технических участника должны независимо установить пакет и воспроизвести `pilot.zip`, не имея исходной модели. Заполните `docs/release-v01/EXTERNAL_PILOT_FORM.md`. Автоматические smoke/MCP-проверки не заменяют этот gate. До появления реальных отчётов R3 остаётся PENDING, финальная готовность не объявляется.
+
+## Текст и версии интерпретаций
+
+[Semantic Bridge: полный путь](docs/semantic-bridge/QUICKSTART_RU.md) добавляет `semantic source/draft/revise/compare/report/withdraw`. В production опубликованы девять `semantic_*` инструментов; прежние 55 input schemas сохранены. Для генерации нужен уже авторизованный Codex CLI с ChatGPT-login; ручной импорт и replay этого не требуют. При недоступности backend возвращается `MODEL_UNAVAILABLE`.
+
+Пакет Python имеет версию `0.2.0.dev0`, основной MCP endpoint — `v0.2.0-developer-preview`. `doctor.release`, `assurance_contract.release` и префикс `lm-suti --version` сохраняют базовую версию assurance v0.1 для совместимости старых контрактов; `semantic_contract.release` показывает v0.2. Frozen verifier/binder не менялись.

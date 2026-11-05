@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "lm-suti.semantic.package/1"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "project": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+    },
+    "audience": {
+      "enum": [
+        "private",
+        "reviewers",
+        "public"
+      ]
+    },
+    "verifier_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "binder_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "application_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "files": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      }
+    },
+    "journal_head": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "source_dependencies": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      }
+    },
+    "include_source_bytes": {
+      "type": "boolean"
+    },
+    "R3": {
+      "const": "PENDING"
+    },
+    "execution_permission": {
+      "const": false
+    }
+  },
+  "required": [
+    "schema",
+    "schema_version",
+    "project",
+    "audience",
+    "verifier_digest",
+    "binder_digest",
+    "application_digest",
+    "files",
+    "journal_head",
+    "source_dependencies",
+    "include_source_bytes",
+    "R3",
+    "execution_permission"
+  ],
+  "additionalProperties": false
+}

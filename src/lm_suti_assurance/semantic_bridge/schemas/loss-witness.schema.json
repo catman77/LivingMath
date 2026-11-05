@@ -1,0 +1,162 @@
+{
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "lm-suti.semantic.loss-witness/1"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "project_id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+    },
+    "source_snapshot_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "origin_kind": {
+      "enum": [
+        "TRUSTED_CONTEXT",
+        "DERIVED",
+        "HOSTED_MODEL",
+        "MANUAL",
+        "FIXTURE"
+      ]
+    },
+    "producer_ref": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "created_by": {
+      "type": "string",
+      "minLength": 1
+    },
+    "parent_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "minItems": 0
+    },
+    "content_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "execution_permission": {
+      "const": false
+    },
+    "projection_ref": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "status": {
+      "enum": [
+        "LOSS_DETECTED",
+        "PRESERVED_FOR_DECLARED_Q",
+        "UNDETERMINED",
+        "NOT_CHECKED",
+        "HYPOTHESIZED_SEMANTIC_LOSS",
+        "REJECTED"
+      ]
+    },
+    "reason_code": {
+      "type": "string",
+      "minLength": 1
+    },
+    "projected_values": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "minItems": 0
+    },
+    "different_fields": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0
+    },
+    "preserved_fields": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0
+    },
+    "lost_queries": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "minItems": 0
+    },
+    "checked_query_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "checked_pair_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "domain_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "minItems": 1
+    },
+    "source_anchor_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "minItems": 0
+    },
+    "uncertainty": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0
+    },
+    "assurance_boundary": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "schema",
+    "schema_version",
+    "project_id",
+    "source_snapshot_digest",
+    "origin_kind",
+    "producer_ref",
+    "created_by",
+    "parent_refs",
+    "content_digest",
+    "execution_permission",
+    "projection_ref",
+    "status",
+    "reason_code",
+    "projected_values",
+    "different_fields",
+    "preserved_fields",
+    "lost_queries",
+    "checked_query_count",
+    "checked_pair_count",
+    "domain_refs",
+    "source_anchor_refs",
+    "uncertainty",
+    "assurance_boundary"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

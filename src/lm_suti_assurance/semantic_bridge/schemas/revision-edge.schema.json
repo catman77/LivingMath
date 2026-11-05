@@ -1,0 +1,188 @@
+{
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "lm-suti.semantic.revision-edge/1"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "project_id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+    },
+    "source_snapshot_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "origin_kind": {
+      "enum": [
+        "TRUSTED_CONTEXT",
+        "DERIVED",
+        "HOSTED_MODEL",
+        "MANUAL",
+        "FIXTURE"
+      ]
+    },
+    "producer_ref": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "created_by": {
+      "type": "string",
+      "minLength": 1
+    },
+    "parent_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "minItems": 0
+    },
+    "content_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "execution_permission": {
+      "const": false
+    },
+    "parent_frames": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "minItems": 1
+    },
+    "child_frame": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "operation": {
+      "enum": [
+        "ADD",
+        "REFINE",
+        "RELABEL",
+        "WITHDRAW",
+        "BRANCH",
+        "MERGE"
+      ]
+    },
+    "rationale": {
+      "type": "string",
+      "minLength": 1
+    },
+    "merge_resolution": {
+      "type": "string"
+    },
+    "new_source_anchor_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "minItems": 0
+    },
+    "added_claims": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0
+    },
+    "withdrawn_claims": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0
+    },
+    "changed_claims": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0
+    },
+    "changed_relations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0
+    },
+    "preserved_claims": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0
+    },
+    "changed_scope": {
+      "type": "boolean"
+    },
+    "claimed_invariants": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 0
+    },
+    "loss_witness_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "minItems": 0
+    },
+    "status_before": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0
+    },
+    "status_after": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "schema",
+    "schema_version",
+    "project_id",
+    "source_snapshot_digest",
+    "origin_kind",
+    "producer_ref",
+    "created_by",
+    "parent_refs",
+    "content_digest",
+    "execution_permission",
+    "parent_frames",
+    "child_frame",
+    "operation",
+    "rationale",
+    "merge_resolution",
+    "new_source_anchor_refs",
+    "added_claims",
+    "withdrawn_claims",
+    "changed_claims",
+    "changed_relations",
+    "preserved_claims",
+    "changed_scope",
+    "claimed_invariants",
+    "loss_witness_refs",
+    "status_before",
+    "status_after"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

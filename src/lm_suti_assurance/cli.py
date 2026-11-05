@@ -41,11 +41,14 @@ def parser():
             elif action == 'review':
                 a.add_argument('--task-ref', required=True); a.add_argument('--actor', required=True)
                 a.add_argument('--reason', required=True)
+    from .semantic_bridge.cli import add_parser as semantic_parser
+    semantic_parser(sub)
     q = sub.add_parser('check');q.add_argument('--project', required=True);q.add_argument('--candidate-ref', required=True)
     q.add_argument('--engine', choices=['direct','compiled'], default='direct');q.add_argument('--request-key', required=True)
     q = sub.add_parser('report');q.add_argument('--project', required=True);q.add_argument('--format', choices=['json','text'], default='text')
     q = sub.add_parser('export');q.add_argument('--project', required=True);q.add_argument('--output', required=True)
     q.add_argument('--audience', choices=['private','reviewers','public'], required=True)
+    q.add_argument('--exclude-source-bytes', action='store_true', help='Semantic dependency-only export; replay reports missing sources')
     q = sub.add_parser('replay');q.add_argument('bundle');q.add_argument('--offline', action='store_true', required=True)
     q.add_argument('--engine', choices=['direct','compiled'], default='direct')
     q = sub.add_parser('doctor');q.add_argument('--smoke', action='store_true')
@@ -74,7 +77,10 @@ def main(argv=None):
     args = parser().parse_args(argv)
     try:
         s = Service(args.state_dir); cmd = args.command
-        if cmd == 'project':
+        if cmd == 'semantic':
+            from .semantic_bridge.cli import run as semantic_run
+            value = semantic_run(args)
+        elif cmd == 'project':
             value = s.new(args.project, args.request_key)
         elif cmd == 'source':
             value = s.source(args.project, read_json(args.snapshot), read_json(args.policy), args.request_key)
@@ -95,7 +101,11 @@ def main(argv=None):
                 print(text_report(value));return 0
         elif cmd == 'export':
             from .bundle import export_bundle
-            raw, manifest = export_bundle(s.workspace(args.project), args.audience)
+            if args.exclude_source_bytes:
+                from .semantic_bridge.bundle import export as semantic_export
+                raw, manifest = semantic_export(s.workspace(args.project), args.audience, False)
+            else:
+                raw, manifest = export_bundle(s.workspace(args.project), args.audience)
             target = Path(args.output)
             if target.exists() and target.read_bytes() != raw:
                 raise AssuranceError('EXPORT_ALREADY_EXISTS')

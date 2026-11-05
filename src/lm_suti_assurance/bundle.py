@@ -19,6 +19,9 @@ def export_bundle(workspace, audience='private'):
     with workspace.locked():
         rows = workspace.history()
         require(bool(rows), 'PROJECT_NOT_FOUND')
+        if any(r['action'].startswith('semantic.') for r in rows):
+            from .semantic_bridge.bundle import export_rows
+            return export_rows(workspace, rows, audience)
         excluded = set()
         for row in rows:
             if row['action'] == 'source.add':
@@ -85,7 +88,11 @@ def replay(raw, engine='direct'):
                             'UNSAFE_ZIP_MEMBER')
                 files = {i.filename: z.read(i) for i in infos}
             require('package_manifest.json' in files, 'MANIFEST_MISSING')
-            manifest = validate('package-manifest', parse(files.pop('package_manifest.json').decode()))
+            manifest_value = parse(files.pop('package_manifest.json').decode())
+            if isinstance(manifest_value, dict) and manifest_value.get('schema') == 'lm-suti.semantic.package/1':
+                from .semantic_bridge.bundle import replay_files
+                return replay_files(files, manifest_value, engine)
+            manifest = validate('package-manifest', manifest_value)
             require(set(files) == set(manifest['files']), 'MANIFEST_FILE_SET_MISMATCH')
             require(all(byte_digest(raw) == manifest['files'][name] for name, raw in files.items()),
                     'MANIFEST_SHA_MISMATCH')
@@ -107,50 +114,7 @@ def replay(raw, engine='direct'):
                     require(name == 'journal.jsonl' or name in expected_core, 'UNKNOWN_BUNDLE_MEMBER')
             refs = {ref for row in rows for ref in row['object_refs']}
             require(refs == set(objects), 'OBJECT_SET_MISMATCH')
-            workspace = MemoryWorkspace(objects)
-            results = []
-            for index, row in enumerate(rows):
-                for ref in row['object_refs']:
-                    require(ref in objects, 'MISSING_OBJECT')
-                result = row['result']; prior = rows[:index]; action = row['action']
-                if action == 'source.add':
-                    a = workspace.get(result['source_ref'])
-                    require(a['project'] == manifest['project'], 'CROSS_PROJECT_REFERENCE')
-                    s = a['snapshot']
-                    safe_source_schema(s)
-                    require(can_publish(s, a['publication_policy'], manifest['audience']), 'PUBLICATION_POLICY_VIOLATION')
-                    require(core.byte_digest(s['content_utf8'].encode()) == s['sha256'] and
-                            digest(s) == result['snapshot_digest'], 'SOURCE_SHA_MISMATCH')
-                elif action == 'task.import':
-                    a = validate('task', workspace.get(result['task_ref']))
-                    require(a['project'] == manifest['project'], 'CROSS_PROJECT_REFERENCE')
-                    Service._sources(workspace, prior, a['task'])
-                elif action == 'task.review':
-                    Service._known(prior, 'task.import', 'task_ref', result['task_ref'])
-                elif action == 'candidate.import':
-                    a = validate('candidate', workspace.get(result['candidate_ref']))
-                    require(a['project'] == manifest['project'], 'CROSS_PROJECT_REFERENCE')
-                    Service._known(prior, 'task.import', 'task_ref', a['task_ref'])
-                    if a.get('supersedes'):
-                        Service._known(prior, 'candidate.import', 'candidate_ref', a['supersedes'])
-                elif action == 'check':
-                    stored = workspace.get(result['check_ref'])
-                    Service._known(prior, 'candidate.import', 'candidate_ref', stored['candidate_ref'])
-                    record = workspace.get(stored['candidate_ref'])
-                    require(any(r['action'] == 'task.review' and r['result']['task_ref'] == record['task_ref']
-                                for r in prior), 'TASK_REVIEW_REQUIRED')
-                    task = workspace.get(record['task_ref'])['task']
-                    sources = Service._sources(workspace, prior, task)
-                    actual = evaluate_record(record, task, sources, engine)
-                    expected = {k: stored[k] for k in actual}
-                    require(canonical(actual) == canonical(expected), 'REPLAY_LOGICAL_MISMATCH')
-                    require(result['status'] == actual['status'] and result['reason_code'] == actual['reason_code'],
-                            'JOURNAL_RESULT_MISMATCH')
-                    results.append({'check_ref': result['check_ref'], 'status': actual['status'],
-                                    'logical_digest': digest(actual),
-                                    'witness_digest': digest(actual['witnesses'])})
-                else:
-                    require(action == 'project.new' and index == 0, 'UNKNOWN_JOURNAL_ACTION')
+            results = replay_rows(rows, objects, manifest['project'], engine, audience=manifest['audience'])
             return {'status': 'PASS', 'project': manifest['project'], 'engine': engine,
                     'checks': results, 'logical_digest': digest(results), **identity,
                     'journal_entries': len(rows), 'journal_head': manifest['journal_head'],
@@ -159,3 +123,54 @@ def replay(raw, engine='direct'):
         raise
     except (OSError, ValueError, KeyError, TypeError, zipfile.BadZipFile, UnicodeError):
         raise AssuranceError('INVALID_BUNDLE') from None
+
+
+def replay_rows(rows, objects, project, engine, semantic=False, audience="private"):
+    workspace = MemoryWorkspace(objects)
+    results = []
+    for index, row in enumerate(rows):
+        for ref in row['object_refs']:
+            require(ref in objects, 'MISSING_OBJECT')
+        result = row['result']; prior = rows[:index]; action = row['action']
+        if action == 'source.add':
+            a = workspace.get(result['source_ref'])
+            require(a['project'] == project, 'CROSS_PROJECT_REFERENCE')
+            s = a['snapshot']
+            safe_source_schema(s)
+            require(can_publish(s, a['publication_policy'], audience), 'PUBLICATION_POLICY_VIOLATION')
+            require(core.byte_digest(s['content_utf8'].encode()) == s['sha256'] and
+                    digest(s) == result['snapshot_digest'], 'SOURCE_SHA_MISMATCH')
+        elif action == 'task.import':
+            a = validate('task', workspace.get(result['task_ref']))
+            require(a['project'] == project, 'CROSS_PROJECT_REFERENCE')
+            Service._sources(workspace, prior, a['task'])
+        elif action == 'task.review':
+            Service._known(prior, 'task.import', 'task_ref', result['task_ref'])
+        elif action == 'candidate.import':
+            a = validate('candidate', workspace.get(result['candidate_ref']))
+            require(a['project'] == project, 'CROSS_PROJECT_REFERENCE')
+            Service._known(prior, 'task.import', 'task_ref', a['task_ref'])
+            if a.get('supersedes'):
+                Service._known(prior, 'candidate.import', 'candidate_ref', a['supersedes'])
+        elif action == 'check':
+            stored = workspace.get(result['check_ref'])
+            Service._known(prior, 'candidate.import', 'candidate_ref', stored['candidate_ref'])
+            record = workspace.get(stored['candidate_ref'])
+            require(any(r['action'] == 'task.review' and r['result']['task_ref'] == record['task_ref']
+                        for r in prior), 'TASK_REVIEW_REQUIRED')
+            task = workspace.get(record['task_ref'])['task']
+            sources = Service._sources(workspace, prior, task)
+            actual = evaluate_record(record, task, sources, engine)
+            expected = {k: stored[k] for k in actual}
+            require(canonical(actual) == canonical(expected), 'REPLAY_LOGICAL_MISMATCH')
+            require(result['status'] == actual['status'] and result['reason_code'] == actual['reason_code'],
+                    'JOURNAL_RESULT_MISMATCH')
+            results.append({'check_ref': result['check_ref'], 'status': actual['status'],
+                            'logical_digest': digest(actual),
+                            'witness_digest': digest(actual['witnesses'])})
+        elif semantic and action.startswith('semantic.'):
+            from .semantic_bridge.replay import verify_action
+            verify_action(workspace, prior, row, project)
+        else:
+            require(action == 'project.new' and index == 0, 'UNKNOWN_JOURNAL_ACTION')
+    return results

@@ -1,0 +1,413 @@
+{
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "lm-suti.semantic.frame/1"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "project_id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+    },
+    "source_snapshot_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "origin_kind": {
+      "enum": [
+        "TRUSTED_CONTEXT",
+        "DERIVED",
+        "HOSTED_MODEL",
+        "MANUAL",
+        "FIXTURE"
+      ]
+    },
+    "producer_ref": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "created_by": {
+      "type": "string",
+      "minLength": 1
+    },
+    "parent_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "minItems": 0
+    },
+    "content_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "execution_permission": {
+      "const": false
+    },
+    "frame_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "poem_ref": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "revision_index": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "parent_frame_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0
+    },
+    "generator_ref": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "generation_mode": {
+      "enum": [
+        "HOSTED_MODEL",
+        "MANUAL",
+        "FIXTURE"
+      ]
+    },
+    "seed_or_unknown": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "model_version_or_unknown": {
+      "type": "string",
+      "minLength": 1
+    },
+    "claim_atoms": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "kind": {
+            "enum": [
+              "LITERAL",
+              "FORMAL_STRUCTURE",
+              "INTERPRETATION",
+              "UNRESOLVED"
+            ]
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_anchor_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "minItems": 0
+          },
+          "premises": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 0
+          },
+          "epistemic_status": {
+            "enum": [
+              "UNKNOWN",
+              "UNSUPPORTED_INTERPRETATION"
+            ]
+          },
+          "alternatives": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 0
+          }
+        },
+        "required": [
+          "id",
+          "kind",
+          "text",
+          "source_anchor_refs",
+          "premises",
+          "epistemic_status",
+          "alternatives"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 4
+    },
+    "motifs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_anchor_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "minItems": 1
+          }
+        },
+        "required": [
+          "label",
+          "source_anchor_refs"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 2
+    },
+    "relations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "kind": {
+            "enum": [
+              "PRECEDES",
+              "REPEATS_MOTIF",
+              "CONTRASTS",
+              "CHANGES_SPEAKER_ROLE",
+              "CAUSES_IN_NARRATIVE"
+            ]
+          },
+          "from_claim": {
+            "type": "string",
+            "minLength": 1
+          },
+          "to_claim": {
+            "type": "string",
+            "minLength": 1
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_anchor_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "minItems": 1
+          },
+          "epistemic_status": {
+            "const": "UNKNOWN"
+          }
+        },
+        "required": [
+          "id",
+          "kind",
+          "from_claim",
+          "to_claim",
+          "text",
+          "source_anchor_refs",
+          "epistemic_status"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 2
+    },
+    "temporal_reading": {
+      "enum": [
+        "cyclic",
+        "spiral",
+        "linear",
+        "ambiguous",
+        "unspecified"
+      ]
+    },
+    "scope": {
+      "type": "string",
+      "minLength": 1
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 0
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    },
+    "open_questions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    },
+    "counterreadings": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    },
+    "declared_observables": {
+      "type": "object",
+      "properties": {
+        "image_set": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "image_order": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "canal_details": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 0
+        },
+        "speaker_roles": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "image_set",
+        "image_order",
+        "canal_details",
+        "speaker_roles"
+      ],
+      "additionalProperties": false
+    },
+    "source_bindings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source_ref": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "snapshot_digest": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "source_sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        },
+        "required": [
+          "source_ref",
+          "snapshot_digest",
+          "source_sha256"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "projection_contract_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "minItems": 0
+    },
+    "status": {
+      "enum": [
+        "PROPOSED",
+        "REVISED",
+        "CHALLENGED",
+        "WITHDRAWN"
+      ]
+    },
+    "raw_proposal_ref": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "claimed_invariants": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 0
+    }
+  },
+  "required": [
+    "schema",
+    "schema_version",
+    "project_id",
+    "source_snapshot_digest",
+    "origin_kind",
+    "producer_ref",
+    "created_by",
+    "parent_refs",
+    "content_digest",
+    "execution_permission",
+    "frame_id",
+    "poem_ref",
+    "revision_index",
+    "parent_frame_ids",
+    "generator_ref",
+    "generation_mode",
+    "seed_or_unknown",
+    "model_version_or_unknown",
+    "claim_atoms",
+    "motifs",
+    "relations",
+    "temporal_reading",
+    "scope",
+    "assumptions",
+    "limitations",
+    "open_questions",
+    "counterreadings",
+    "declared_observables",
+    "source_bindings",
+    "projection_contract_refs",
+    "status",
+    "raw_proposal_ref",
+    "claimed_invariants"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

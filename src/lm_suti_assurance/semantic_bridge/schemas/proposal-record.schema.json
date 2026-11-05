@@ -1,0 +1,126 @@
+{
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "lm-suti.semantic.proposal-record/1"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "project_id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+    },
+    "source_snapshot_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "origin_kind": {
+      "enum": [
+        "TRUSTED_CONTEXT",
+        "DERIVED",
+        "HOSTED_MODEL",
+        "MANUAL",
+        "FIXTURE"
+      ]
+    },
+    "producer_ref": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "created_by": {
+      "type": "string",
+      "minLength": 1
+    },
+    "parent_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "minItems": 0
+    },
+    "content_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "execution_permission": {
+      "const": false
+    },
+    "edition_ref": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "raw_proposal": {
+      "type": "string"
+    },
+    "generation_mode": {
+      "enum": [
+        "HOSTED_MODEL",
+        "MANUAL",
+        "FIXTURE"
+      ]
+    },
+    "model_version_or_unknown": {
+      "type": "string",
+      "minLength": 1
+    },
+    "receipt": {
+      "type": "object"
+    },
+    "registration_state": {
+      "const": "FRAME_UNTRUSTED"
+    },
+    "phase": {
+      "enum": [
+        "initial",
+        "revise"
+      ]
+    },
+    "parent_frames": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "minItems": 0
+    },
+    "operation": {
+      "enum": [
+        "ADD",
+        "REFINE",
+        "RELABEL",
+        "WITHDRAW",
+        "BRANCH",
+        "MERGE"
+      ]
+    },
+    "merge_resolution": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema",
+    "schema_version",
+    "project_id",
+    "source_snapshot_digest",
+    "origin_kind",
+    "producer_ref",
+    "created_by",
+    "parent_refs",
+    "content_digest",
+    "execution_permission",
+    "edition_ref",
+    "raw_proposal",
+    "generation_mode",
+    "model_version_or_unknown",
+    "receipt",
+    "registration_state",
+    "phase",
+    "parent_frames",
+    "operation",
+    "merge_resolution"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

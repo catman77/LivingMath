@@ -109,3 +109,9 @@ backend-stderr.log
 *.egg-info/
 build/
 dist/
+
+# Semantic Bridge request, schemas, code and release evidence.
+!/docs/LM_SUTI_SEMANTIC_BRIDGE_001/
+!/docs/LM_SUTI_SEMANTIC_BRIDGE_001_TZ_PROMPT.zip
+!/docs/LM_SUTI_SEMANTIC_BRIDGE_001_TZ_PROMPT.zip.sha256
+!/docs/semantic-bridge/

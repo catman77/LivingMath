@@ -1,0 +1,70 @@
+# Implementation and changed files
+
+New semantic_bridge package reuses Workspace journal/objects and Service review/check. Independent byte anchors and strict typed records bind untrusted prose; finite field projection supplies exact witnesses. Existing bundle replay dispatches additive semantic format; no bundled code executes. CLI/MCP adapters add9 tools while55 old input schemas remain byte-equivalent. Owner-authenticated proposer lives in an existing isolation-style pipe, outside HTTP credential access.
+
+# Changed files
+
+- `.gitignore`
+- `CLI_REFERENCE.md`
+- `LIMITATIONS.md`
+- `README.md`
+- `README_QUICKSTART_RU.md`
+- `docs/LM_SUTI_SEMANTIC_BRIDGE_001/ACCEPTANCE_MATRIX.md`
+- `docs/LM_SUTI_SEMANTIC_BRIDGE_001/MANIFEST.sha256`
+- `docs/LM_SUTI_SEMANTIC_BRIDGE_001/POETRY_QA_FIXTURES.json`
+- `docs/LM_SUTI_SEMANTIC_BRIDGE_001/PROMPT_CODEX_SEMANTIC_BRIDGE_001.md`
+- `docs/LM_SUTI_SEMANTIC_BRIDGE_001/README.md`
+- `docs/LM_SUTI_SEMANTIC_BRIDGE_001/SEMANTIC_RECORD_EXAMPLE.json`
+- `docs/LM_SUTI_SEMANTIC_BRIDGE_001/TZ_LM_SUTI_SEMANTIC_BRIDGE_V02.md`
+- `docs/LM_SUTI_SEMANTIC_BRIDGE_001/build_fixtures.py`
+- `docs/LM_SUTI_SEMANTIC_BRIDGE_001_TZ_PROMPT.zip`
+- `docs/LM_SUTI_SEMANTIC_BRIDGE_001_TZ_PROMPT.zip.sha256`
+- `docs/semantic-bridge/ACCEPTANCE_RESULTS.json`
+- `docs/semantic-bridge/BASELINE_AND_PRECOMMIT.json`
+- `docs/semantic-bridge/CAPABILITIES.json`
+- `docs/semantic-bridge/CHANGED_FILES.md`
+- `docs/semantic-bridge/IMPLEMENTATION_AND_CHANGED_FILES.md`
+- `docs/semantic-bridge/IMPLEMENTATION_PLAN.md`
+- `docs/semantic-bridge/QUICKSTART_RU.md`
+- `docs/semantic-bridge/RCA.md`
+- `docs/semantic-bridge/USER_REPORT_RU.md`
+- `pyproject.toml`
+- `src/lm_suti_assurance/__init__.py`
+- `src/lm_suti_assurance/bundle.py`
+- `src/lm_suti_assurance/cli.py`
+- `src/lm_suti_assurance/semantic_bridge/__init__.py`
+- `src/lm_suti_assurance/semantic_bridge/anchors.py`
+- `src/lm_suti_assurance/semantic_bridge/assurance.py`
+- `src/lm_suti_assurance/semantic_bridge/binder.py`
+- `src/lm_suti_assurance/semantic_bridge/bundle.py`
+- `src/lm_suti_assurance/semantic_bridge/cli.py`
+- `src/lm_suti_assurance/semantic_bridge/compare.py`
+- `src/lm_suti_assurance/semantic_bridge/mcp.py`
+- `src/lm_suti_assurance/semantic_bridge/owner_pipe.py`
+- `src/lm_suti_assurance/semantic_bridge/proposer.py`
+- `src/lm_suti_assurance/semantic_bridge/records.py`
+- `src/lm_suti_assurance/semantic_bridge/replay.py`
+- `src/lm_suti_assurance/semantic_bridge/report.py`
+- `src/lm_suti_assurance/semantic_bridge/schemas/assurance.schema.json`
+- `src/lm_suti_assurance/semantic_bridge/schemas/dossier.schema.json`
+- `src/lm_suti_assurance/semantic_bridge/schemas/failure.schema.json`
+- `src/lm_suti_assurance/semantic_bridge/schemas/frame.schema.json`
+- `src/lm_suti_assurance/semantic_bridge/schemas/loss-witness.schema.json`
+- `src/lm_suti_assurance/semantic_bridge/schemas/package.schema.json`
+- `src/lm_suti_assurance/semantic_bridge/schemas/projection.schema.json`
+- `src/lm_suti_assurance/semantic_bridge/schemas/proposal-record.schema.json`
+- `src/lm_suti_assurance/semantic_bridge/schemas/proposal.schema.json`
+- `src/lm_suti_assurance/semantic_bridge/schemas/revision-edge.schema.json`
+- `src/lm_suti_assurance/semantic_bridge/schemas/source-anchor.schema.json`
+- `src/lm_suti_assurance/semantic_bridge/schemas/source-edition.schema.json`
+- `src/lm_suti_assurance/semantic_bridge/schemas/withdrawal.schema.json`
+- `src/lm_suti_assurance/semantic_bridge/service.py`
+- `tests/fixtures/semantic_manual_fixture.json`
+- `tests/test_semantic_bridge.py`
+- `tools/release_v01_entry.py`
+- `tools/semantic_bridge_acceptance.py`
+- `tools/semantic_bridge_controls.py`
+- `tools/semantic_bridge_mcp_qa.py`
+- `tools/semantic_bridge_pilot.py`
+
+Frozen core, original schemas, both BASELINE_LOCK files and root AGENTS are unchanged. Production config and backups remain owner-private. No research SQLite migration or rewrite was introduced.
