@@ -1,0 +1,11 @@
+test_alpha_bijection (__main__.GrammarControls.test_alpha_bijection) ... ok
+test_boundaries_matter (__main__.GrammarControls.test_boundaries_matter) ... ok
+test_contradictory_labels_are_detectable (__main__.GrammarControls.test_contradictory_labels_are_detectable) ... ok
+test_history_and_denotation_distinct (__main__.GrammarControls.test_history_and_denotation_distinct) ... ok
+test_sp_inversion_is_not_dyck_equivalence (__main__.GrammarControls.test_sp_inversion_is_not_dyck_equivalence) ... ok
+test_true_counts (__main__.GrammarControls.test_true_counts) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK

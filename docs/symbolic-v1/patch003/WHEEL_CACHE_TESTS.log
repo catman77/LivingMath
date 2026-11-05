@@ -1,0 +1,12 @@
+........................................................................ [ 23%]
+........................................................................ [ 47%]
+........................................................................ [ 71%]
+........................................................................ [ 95%]
+..............                                                           [100%]
+=============================== warnings summary ===============================
+../home/catman/.local/state/livingmath/symbolic-patch003/production-venv/lib/python3.13/site-packages/_pytest/cacheprovider.py:469
+  /home/catman/.local/state/livingmath/symbolic-patch003/production-venv/lib/python3.13/site-packages/_pytest/cacheprovider.py:469: PytestCacheWarning: could not create cache path /dev/.pytest_cache/v/cache/nodeids: [Errno 13] Permission denied: '/dev/pytest-cache-files-twatrcl2'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+302 passed, 1 warning in 24.90s

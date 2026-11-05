@@ -1,0 +1,27 @@
+{
+  "project": "whitestar_dialog_test",
+  "request_key": "observer-grammar-v1",
+  "request": {
+    "schema": "livingmath-symbolic-observer-synthesis-request/1",
+    "task": {
+      "mode": "context_relation_induction",
+      "train_ref": "<private_dataset_hash>",
+      "predict_ref": "<sealed_queries_only_hash>",
+      "holdout_labels_visible": false,
+      "structure_levels": ["word", "line", "quatrain", "century"],
+      "candidate_transformations": ["SWAP_LINES_2_3"]
+    },
+    "feature_policy": {
+      "enabled_builtins": ["literal", "alpha_pattern", "adjacency"],
+      "prohibit_undocumented_builtins": true,
+      "synthesis_origin_required": true,
+      "renaming_scope": "per_variant",
+      "strict_source_boundaries": true
+    },
+    "search": {
+      "seed": 137, "max_composition_depth": 4,
+      "max_proposals": 128, "max_contexts": 256,
+      "max_witnesses": 512, "max_cpu_ms": 4000
+    }
+  }
+}

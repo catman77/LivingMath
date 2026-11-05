@@ -1,0 +1,8 @@
+[
+  {"claim":"SP and PS remove one S and one P", "status":"PROVED_IN_MODEL", "assumptions":["rewrite policy fixed"]},
+  {"claim":"For N=10, beta1 of the 1-skeleton is 1264", "status":"CHECKED_FINITE_INSTANCE", "assumptions":["fixed vertices/edges"]},
+  {"claim":"For N=10 with all local peak 2-cells, H1(F2)=0", "status":"CHECKED_FINITE_INSTANCE", "assumptions":["specified 2cell policy"]},
+  {"claim":"For N=10 the specified complex has trivial pi1", "status":"PROVED_IN_MODEL", "assumptions":["all local peaks filled", "termination", "inductively verified path-coherence proof"]},
+  {"claim":"Nostradamus contains unique universal semantic grammar", "status":"NOT_PROVED", "assumptions":[]},
+  {"claim":"A builtin pair_0_max feature was independently invented", "status":"REJECTED", "assumptions":["existing builtin registered"]}
+]

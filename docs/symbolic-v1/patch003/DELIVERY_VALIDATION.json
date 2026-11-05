@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "files": 277,
+  "all_sha256_and_sizes_match": true,
+  "source_commit": "18919801e44c92402ca386f2733efb785fe394cb",
+  "private_credentials_excluded": true,
+  "extracted_new_tests": "30 PASS",
+  "extracted_SP10_offline_replay": "REPLAY_MATCH",
+  "scope": "Code, wheel and all data/evidence checksummed and tested after extraction; final archive adds these validation records without changing runtime or data."
+}

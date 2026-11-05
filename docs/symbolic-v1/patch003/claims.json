@@ -1,0 +1,54 @@
+[
+  {
+    "claim_id": "P0",
+    "statement": "Exact finite SP2-complex counts, H1(F2)=0 and independently checked path coherence",
+    "status": "CHECKED_FINITE_INSTANCE",
+    "scope": "N2,4,6,8,10, all_local_peaks",
+    "source_ref": "source_bindings_and_hashes.json",
+    "witness_ref": "sp_complex_exact_counts.json",
+    "assumptions": "Explicit finite budgets, frozen input/operator binding; P0 requires all local peaks filled",
+    "verifier_version": "SP-finite-independent-checker/1; observer_synthesis_v1/1-patch003",
+    "check_result": "PASS",
+    "independent_baseline": "Reference GF2/peak oracle; punctuation/length/majority same corpus splits",
+    "open_obligations": "No claim for arbitrary histories or infinite objects"
+  },
+  {
+    "claim_id": "P1-origin",
+    "statement": "Builtin origins, effective ablations, source-bound actual operator derivations",
+    "status": "CHECKED_FINITE_INSTANCE",
+    "scope": "Declared bounded registry and existing ASTs",
+    "source_ref": "source_bindings_and_hashes.json",
+    "witness_ref": "observer_feature_provenance.json",
+    "assumptions": "Explicit finite budgets, frozen input/operator binding; P0 requires all local peaks filled",
+    "verifier_version": "SP-finite-independent-checker/1; observer_synthesis_v1/1-patch003",
+    "check_result": "PASS",
+    "independent_baseline": "Reference GF2/peak oracle; punctuation/length/majority same corpus splits",
+    "open_obligations": "No universal program synthesis or unique grammar"
+  },
+  {
+    "claim_id": "DYCK",
+    "statement": "322/322 heldout predictions from finite train-only model",
+    "status": "EMPIRICAL",
+    "scope": "28 train; balanced length8/10 heldout",
+    "source_ref": "source_bindings_and_hashes.json",
+    "witness_ref": "synthetic_grammar_holdout.json",
+    "assumptions": "Explicit finite budgets, frozen input/operator binding; P0 requires all local peaks filled",
+    "verifier_version": "SP-finite-independent-checker/1; observer_synthesis_v1/1-patch003",
+    "check_result": "PASS",
+    "independent_baseline": "Reference GF2/peak oracle; punctuation/length/majority same corpus splits",
+    "open_obligations": "pair_0_max builtin; grammar UNDERDETERMINED"
+  },
+  {
+    "claim_id": "P2",
+    "statement": "Corpus comparison executed without demonstrated global-alpha transfer",
+    "status": "EMPIRICAL",
+    "scope": "942 mixed-edition French quatrains; train I–VIII, holdout IX–X",
+    "source_ref": "source_bindings_and_hashes.json",
+    "witness_ref": "nostradamus_pairwise_holdout.json",
+    "assumptions": "Explicit finite budgets, frozen input/operator binding; P0 requires all local peaks filled",
+    "verifier_version": "SP-finite-independent-checker/1; observer_synthesis_v1/1-patch003",
+    "check_result": "PASS",
+    "independent_baseline": "Reference GF2/peak oracle; punctuation/length/majority same corpus splits",
+    "open_obligations": "NOT_SUPPORTED; no semantic or historical prediction claim"
+  }
+]

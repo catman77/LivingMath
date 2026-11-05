@@ -1,0 +1,37 @@
+{
+  "source_commit": "18919801e44c92402ca386f2733efb785fe394cb",
+  "code_and_test_files": [
+    "pyproject.toml",
+    "src/lm_suti_assurance/__init__.py",
+    "src/lm_suti_assurance/observer_synthesis/__init__.py",
+    "src/lm_suti_assurance/observer_synthesis/contexts.py",
+    "src/lm_suti_assurance/observer_synthesis/contracts.py",
+    "src/lm_suti_assurance/observer_synthesis/data.py",
+    "src/lm_suti_assurance/observer_synthesis/features.py",
+    "src/lm_suti_assurance/observer_synthesis/learner.py",
+    "src/lm_suti_assurance/symbolic/worker.py",
+    "src/lm_suti_assurance/symbolic_complex/__init__.py",
+    "src/lm_suti_assurance/symbolic_complex/app.py",
+    "src/lm_suti_assurance/symbolic_complex/bundle.py",
+    "src/lm_suti_assurance/symbolic_complex/checker.py",
+    "src/lm_suti_assurance/symbolic_complex/contracts.py",
+    "src/lm_suti_assurance/symbolic_complex/mcp.py",
+    "src/lm_suti_assurance/symbolic_complex/model.py",
+    "src/lm_suti_assurance/symbolic_complex/saved.py",
+    "src/lm_suti_assurance/symbolic_complex/service.py",
+    "tests/test_observer_synthesis.py",
+    "tests/test_symbolic_complex.py",
+    "tools/release_v01_entry.py",
+    "tools/symbolic_patch001_mcp_qa.py",
+    "tools/symbolic_patch003_mcp_qa.py",
+    "tools/symbolic_patch003_replay.py",
+    "tools/symbolic_patch003_research.py"
+  ],
+  "documentation_directory": "docs/symbolic-v1/patch003",
+  "archive_directory": "docs/LIVINGMATH_SYMBOLIC_COMPLEX_OBSERVER_PATCH003",
+  "root_documents": [
+    "README.md",
+    "CHANGELOG.md",
+    "docs/symbolic-v1/QUICKSTART_RU.md"
+  ]
+}

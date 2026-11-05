@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.4.3-developer-preview — 2026-11-06
+
+- Add seven MCP tools for bounded SP 2-complexes, independent path-coherence/GF2 certificates, source-bound datasets, observer synthesis and replay.
+- Audit builtin feature origins and effective ablations; verify actual operator derivations, source contexts and train-only finite models with explicit contradictory/nonidentifiable outcomes.
+- Complete blinded I–VIII / IX–X experiments on942 authentic French quatrains with thirteen declared configurations; transfer hypothesis remains NOT_SUPPORTED.
+- Freeze export snapshots under the project lock and reuse hash-checked chunks across pages.
+- Preserve the75 previous schemas, original symbolic binding, numerical kernels, replay profiles, databases and worker quotas.
+
 ## v0.4.2-developer-preview — 2026-11-05
 
 - Escape local symbolic stagnation through deterministic untried stored-node/operator proposals within existing step, candidate, node and token budgets.

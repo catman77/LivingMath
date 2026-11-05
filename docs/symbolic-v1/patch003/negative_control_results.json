@@ -1,0 +1,75 @@
+{
+  "status": "PASS",
+  "live_checks": [
+    {
+      "check": "sp-none completed",
+      "status": "PASS"
+    },
+    {
+      "check": "none no false pi1",
+      "status": "PASS"
+    },
+    {
+      "check": "sp-bigons_only completed",
+      "status": "PASS"
+    },
+    {
+      "check": "bigons_only no false pi1",
+      "status": "PASS"
+    },
+    {
+      "check": "sp-diamonds_only completed",
+      "status": "PASS"
+    },
+    {
+      "check": "diamonds_only no false pi1",
+      "status": "PASS"
+    },
+    {
+      "check": "tampered proof REJECTED with obligations",
+      "status": "PASS"
+    },
+    {
+      "check": "missing proof NOT_PROVED",
+      "status": "PASS"
+    },
+    {
+      "check": "white_star_symbolic_complex_analyze expected INVALID_INPUT",
+      "status": "PASS"
+    },
+    {
+      "check": "white_star_symbolic_complex_analyze expected BUDGET_EXCEEDED",
+      "status": "PASS"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect expected NOT_FOUND",
+      "status": "PASS"
+    },
+    {
+      "check": "observer idempotency",
+      "status": "PASS"
+    },
+    {
+      "check": "white_star_symbolic_observer_synthesize expected REQUEST_KEY_CONFLICT",
+      "status": "PASS"
+    },
+    {
+      "check": "white_star_symbolic_dataset_store expected HELDOUT_LABEL_LEAKAGE",
+      "status": "PASS"
+    },
+    {
+      "check": "white_star_symbolic_observer_synthesize expected NOT_FOUND",
+      "status": "PASS"
+    }
+  ],
+  "unit_tests": [
+    "test_symbolic_complex.py",
+    "test_observer_synthesis.py"
+  ],
+  "additional_guards": [
+    "zero H1 plus missing proof is NOT_PROVED",
+    "removed redundant face plus recomputed H1 remains NOT_PROVED",
+    "export cache stable after journal append, tamper rejected",
+    "operator-only synthesis does not compute disabled builtin features"
+  ]
+}

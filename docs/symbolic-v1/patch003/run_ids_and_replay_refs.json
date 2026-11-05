@@ -1,0 +1,1196 @@
+{
+  "stage": {
+    "status": "PASS",
+    "checks": 769,
+    "project": "qa-patch003-stage-fixed",
+    "version": "v0.4.3-developer-preview",
+    "deployment_id": "symbolic-patch003-staging",
+    "tool_count": 82,
+    "P0": "ACCEPTED_P0",
+    "P1": "ACCEPTED_P1",
+    "P2": "RESEARCH_COMPLETED_P2",
+    "complex_run_id": "0285c9d13aae36d74c770daf921561c421dd22cf0e3e5fa94db78c1b5bcc101a",
+    "complex_bundle_ref": "81722a707670c178be11c79d25947eed0ffe67a28ea7accd5c3bacfceaa02057",
+    "observer_run_id": "a243e4edf86afb53151e575aadaa566d9ceb8b73e796c0587704c22039b847a3",
+    "observer_bundle_ref": "8aa4f9dedc8f27635ff86cde0cef0688b05f8b92d3fcfdf2b3e2991c6fbd3e05",
+    "old_symbolic_binding": "7ce5c5ba0620b4dad1b3f1b62b2cba3338a1efb4a7852a6e1bf768fe5fd0a0c9",
+    "extension_binding": "d25d2636fea12a3bfec9a267a7332347c1347b16739f0ab957ef7026e0730f28",
+    "endpoint": "http://127.0.0.1:18789/mcp",
+    "public_HTTPS_tested": false,
+    "execution_permission": false
+  },
+  "production": {
+    "status": "PASS",
+    "checks": 769,
+    "project": "qa-patch003-prod",
+    "version": "v0.4.3-developer-preview",
+    "deployment_id": "symbolic-patch003-20261105T230048Z",
+    "tool_count": 82,
+    "P0": "ACCEPTED_P0",
+    "P1": "ACCEPTED_P1",
+    "P2": "RESEARCH_COMPLETED_P2",
+    "complex_run_id": "523b10875988ca0831a6b058ea576f9bbc2907e551946932bb8b5903b6530a5c",
+    "complex_bundle_ref": "4a04a0861d05445fd8f4d6719d9cbe139c4a7b0ab3ef9988dd048eb03d3322bd",
+    "observer_run_id": "b1354bbef234dbe28c3bf9e1a095aa18c6767c85bef16c927bbcc43e787cdc04",
+    "observer_bundle_ref": "1b54d9c4a0b6ebab5348e21af3a66810807dcc97b6cfe1200c7de2db318d147d",
+    "old_symbolic_binding": "7ce5c5ba0620b4dad1b3f1b62b2cba3338a1efb4a7852a6e1bf768fe5fd0a0c9",
+    "extension_binding": "d25d2636fea12a3bfec9a267a7332347c1347b16739f0ab957ef7026e0730f28",
+    "endpoint": "https://fares-september-rebel-board.trycloudflare.com/mcp",
+    "public_HTTPS_tested": true,
+    "execution_permission": false
+  },
+  "previous_interface_production": {
+    "status": "PASS",
+    "checks": 252,
+    "acceptance": {
+      "AC01": "PASS",
+      "AC02": "PASS",
+      "AC07": "PASS",
+      "AC03": "PASS",
+      "AC04": "PASS",
+      "AC05": "PASS",
+      "AC06": "PASS",
+      "AC08": "PASS",
+      "AC09": "PASS",
+      "AC14": "PASS_WITH_UNDERDETERMINED_FAMILY",
+      "AC15": "PASS",
+      "AC10": "PASS",
+      "AC11": "PASS_STRUCTURAL_ONLY",
+      "AC12": "PASS",
+      "AC13": "PASS",
+      "AC16": "PASS_BOUNDED_GATES_NOT_FULL_PENTEST"
+    },
+    "version": "v0.4.3-developer-preview",
+    "deployment_id": "symbolic-patch003-20261105T230048Z",
+    "project": "qa-patch002-p003-prod",
+    "run_id": "6a91acc8cb3dc5f2fcf9f540d36634bc50f66e58ba34728403185f1ffbbb4635",
+    "result_digest": "f266d4dd130a06049f7f54a1f78b60a56aeb25a246954cc4719ebbfc5d001fdb",
+    "bundle_ref": "34e3c5db812bfb6ce8b4ccd196d4fea38f3858efda3cd769ca16e5c124f59f9b",
+    "kernel_binding": "7ce5c5ba0620b4dad1b3f1b62b2cba3338a1efb4a7852a6e1bf768fe5fd0a0c9",
+    "endpoint": "https://fares-september-rebel-board.trycloudflare.com/mcp",
+    "public_HTTPS_tested": true,
+    "execution_permission": false
+  },
+  "runs": {
+    "sp-2": {
+      "engine": "symbolic_complex_v1",
+      "error": null,
+      "execution_permission": false,
+      "kernel_binding": "d25d2636fea12a3bfec9a267a7332347c1347b16739f0ab957ef7026e0730f28",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.002752804,
+        "max_rss_kib": 60228
+      },
+      "project": "qa-patch003-prod",
+      "result_digest": "ea6a98a105c4eea831029f297fc42d5c6f7824263bdc867243c16843e20c2797",
+      "result_ref": "95f35b507554cfe5cf64607795a66db01bc40a5e88d821125319627f617658cc",
+      "run_id": "e350c5df0bd91f41f7aab7a7bfde90364d9ed18830627b873293e5f101ba08c2",
+      "schema": "livingmath-symbolic-extension-run/1",
+      "section_refs": {
+        "cells": "f95b2fdf56c1c5028986471ce43f06860cb80f314ea84d7ea328c1abc94f9227",
+        "checks": "003efbc3a27475b950313f4773907335a4c024aba6e948e34199fd9c11994f8c",
+        "diagnostics": "f95b2fdf56c1c5028986471ce43f06860cb80f314ea84d7ea328c1abc94f9227",
+        "edges": "c698549ba2d2061efdb2a52c0ac97312f7a28ec6ab46a726ccefc7e31aafa8d4",
+        "homology": "b8ef74ddbac1e00deb0c85022af2bb37920c00c08c318a6b4cc05a404a4f077f",
+        "manifest": "667d71b24e59e240f49fcef4bd190c500f6b3b9af4d600e8d68bae67caea8811",
+        "paths": "e12fd9829db05ca37dfa922f2207447e6a58673625181b406411817612306b48",
+        "peaks": "f95b2fdf56c1c5028986471ce43f06860cb80f314ea84d7ea328c1abc94f9227",
+        "vertices": "9166969983e02e390495bc7ab5b4f2c47a55bd78da0b8c4bcec8b1ce25794ac9"
+      },
+      "snapshot_ref": "64ee017bc2f8c8100097bb7691844a9b49ed6b25630a0ee4d4d5387cc6475476",
+      "status": "COMPLETED",
+      "summary": {
+        "assumptions": [
+          "all_local_peaks_filled",
+          "terminating_SP_rewriting"
+        ],
+        "claim_status": "CHECKED_FINITE_INSTANCE",
+        "components": 1,
+        "dim_H1_F2": 0,
+        "edges": 2,
+        "execution_permission": false,
+        "graph_beta1": 0,
+        "graph_pi1_free_rank": 0,
+        "local_peaks": 0,
+        "pi1_basis": "based_at_empty_word",
+        "pi1_status": "PROVED_TRIVIAL_WITH_CERTIFICATE",
+        "rank_d2_F2": 0,
+        "unresolved_peaks": 0,
+        "verified_cells": 0,
+        "vertices": 3
+      }
+    },
+    "sp-4": {
+      "engine": "symbolic_complex_v1",
+      "error": null,
+      "execution_permission": false,
+      "kernel_binding": "d25d2636fea12a3bfec9a267a7332347c1347b16739f0ab957ef7026e0730f28",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.004125867,
+        "max_rss_kib": 59856
+      },
+      "project": "qa-patch003-prod",
+      "result_digest": "b1c170a9f775a234c8f79cae621ad03c74b2f2d1426ce5f26fae7c37972e8f3b",
+      "result_ref": "45fe1412e50ffbb8d8460c90d9ef6728331490ca66071646852dee3e02930aac",
+      "run_id": "f144d8d322532eaa5fe29bb0b8c67c224f4665b39b137edbf8b67bcb9536fddb",
+      "schema": "livingmath-symbolic-extension-run/1",
+      "section_refs": {
+        "cells": "a6d50aa44f10c08391cbf3e08d4dcec8e99013f7d9e324f5eb89a11d726a7324",
+        "checks": "49f37d4ad51cfc7ad7dd0f36a6cd35624ff4f6042d28e1d0b0db2ac59df48bac",
+        "diagnostics": "f95b2fdf56c1c5028986471ce43f06860cb80f314ea84d7ea328c1abc94f9227",
+        "edges": "17ac09351e5cfdd7879ffbdc6078c7018d336c48cb1eb8e21149c64ea19db2b1",
+        "homology": "9c5c714b1d68c1d78364339144ee9f7569f6d515a9add5447942e88d782bc9b9",
+        "manifest": "4ce7d8512032a51696131b6dc67f4a1e74395b1460d5dad97deb601df4c1242e",
+        "paths": "c0971b00436d1b395b9ae5cf63579d26f1c782371e22de715f3c5af1260f24d8",
+        "peaks": "b2e7aac4b4e1de3cafe611373f72aa992838ad21219dcd889ce65d9467aead48",
+        "vertices": "479890e071c8d322cd271897d6c0d0475e615d712837b3f510970db29c15f04f"
+      },
+      "snapshot_ref": "ff836bb6c4e990011a696a2ecb51363925d34cd9ee94e4148654a20a13f73ac6",
+      "status": "COMPLETED",
+      "summary": {
+        "assumptions": [
+          "all_local_peaks_filled",
+          "terminating_SP_rewriting"
+        ],
+        "claim_status": "CHECKED_FINITE_INSTANCE",
+        "components": 1,
+        "dim_H1_F2": 0,
+        "edges": 14,
+        "execution_permission": false,
+        "graph_beta1": 6,
+        "graph_pi1_free_rank": 6,
+        "local_peaks": 8,
+        "pi1_basis": "based_at_empty_word",
+        "pi1_status": "PROVED_TRIVIAL_WITH_CERTIFICATE",
+        "rank_d2_F2": 6,
+        "unresolved_peaks": 0,
+        "verified_cells": 8,
+        "vertices": 9
+      }
+    },
+    "sp-6": {
+      "engine": "symbolic_complex_v1",
+      "error": null,
+      "execution_permission": false,
+      "kernel_binding": "d25d2636fea12a3bfec9a267a7332347c1347b16739f0ab957ef7026e0730f28",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.010919187,
+        "max_rss_kib": 60228
+      },
+      "project": "qa-patch003-prod",
+      "result_digest": "db5f72c9286883327b07012cc0fdc55e30876c38858f8535b649252698c96187",
+      "result_ref": "ecde464c0f8a3fbf11a53387cfe44f77f7fee35930bbccbc66f6e011263cf599",
+      "run_id": "bd60b4b1e1b69f6c8e11b887fa5af7ec1514645f027d2ecaea4356edf15ca709",
+      "schema": "livingmath-symbolic-extension-run/1",
+      "section_refs": {
+        "cells": "aedbc2eda95b1b978c379e15d0bb20860759bf8406a8e1085de2f1f5af92b0fe",
+        "checks": "a8b491c6723b5ff76e6b98a6b6cd3ebae6973825dfae5a6ddcc873fb070188f8",
+        "diagnostics": "f95b2fdf56c1c5028986471ce43f06860cb80f314ea84d7ea328c1abc94f9227",
+        "edges": "c9025b1161e6728a8b03b4cc774e8f069d418d4b101f3c39bb8996d74c2186db",
+        "homology": "d73ff24ec73261be1f7fed06538cf16a45993182ea39b6602c247653864822f6",
+        "manifest": "b080410495575ddbfae3e95c07aec14866ac9b55eb38ae4d9e1e5541725148ec",
+        "paths": "ddb945b71dbe75ee4fb4c3b62ae11e5c046e00213ddaaed75649b93102add0ed",
+        "peaks": "2c4c0029c8ab9a30fb486319656094c7503377e86b6cb3bb4b46a329659a57c7",
+        "vertices": "2cc25f1285ddd3065f7f97e896710a0b5aa8133666a929e1310530a53a6ff344"
+      },
+      "snapshot_ref": "03f6b9c2f0534c20a9bbbb979d094515804af354ef7e7451e123ec9911b39ffa",
+      "status": "COMPLETED",
+      "summary": {
+        "assumptions": [
+          "all_local_peaks_filled",
+          "terminating_SP_rewriting"
+        ],
+        "claim_status": "CHECKED_FINITE_INSTANCE",
+        "components": 1,
+        "dim_H1_F2": 0,
+        "edges": 74,
+        "execution_permission": false,
+        "graph_beta1": 46,
+        "graph_pi1_free_rank": 46,
+        "local_peaks": 80,
+        "pi1_basis": "based_at_empty_word",
+        "pi1_status": "PROVED_TRIVIAL_WITH_CERTIFICATE",
+        "rank_d2_F2": 46,
+        "unresolved_peaks": 0,
+        "verified_cells": 80,
+        "vertices": 29
+      }
+    },
+    "sp-8": {
+      "engine": "symbolic_complex_v1",
+      "error": null,
+      "execution_permission": false,
+      "kernel_binding": "d25d2636fea12a3bfec9a267a7332347c1347b16739f0ab957ef7026e0730f28",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.049913347999999996,
+        "max_rss_kib": 61384
+      },
+      "project": "qa-patch003-prod",
+      "result_digest": "b9cb306800a574395891a49439f76eb62270276d6658c9a15523eab3faea4ea3",
+      "result_ref": "358d2cfbb3e3dc8c418efff5ea7ecdc7e9dfe8a0124ef961c87f2cc741049752",
+      "run_id": "bb2bf58b88be5b828c79755477050deadda6185ab6960e8e6fe495bb6df202be",
+      "schema": "livingmath-symbolic-extension-run/1",
+      "section_refs": {
+        "cells": "7e5da3b671baad0e9db358793479acaafdcf798b7b57bdac54f8ba1d4aa990ea",
+        "checks": "f07f2ce5b5d7c03c2c30ce61fd3d5d4dbc0ff3c0a2ef240bdf4ab911f8fab443",
+        "diagnostics": "f95b2fdf56c1c5028986471ce43f06860cb80f314ea84d7ea328c1abc94f9227",
+        "edges": "ef2c3cc027b700776e767e06a560dc05c1b856c286077ead56fc1fc355054d50",
+        "homology": "15cd0b2b29ed4e39b253dc36d840749faf93f623c5ec5b17c4ecb9f1963d09a3",
+        "manifest": "8aa47733f8f1699736e457f78ba1f432ea960297f3214c4be57b68322b1eb79c",
+        "paths": "2328a3f9533c7a6f10102a63fc6273c5fa928cf0e2cfe0edd57ed0d7b43d164f",
+        "peaks": "8927c5a123dbaf49a214b584697fd61d3b69afe2a3df575815d201b6a7fd3805",
+        "vertices": "6463073d556c61a3abd8afb434a1b498c80c2a240cd9eb07d438b5d92b3e03bb"
+      },
+      "snapshot_ref": "94212e2f249f459ad56b20e74e837319c900e27fb3543f660eace582a3ee97fb",
+      "status": "COMPLETED",
+      "summary": {
+        "assumptions": [
+          "all_local_peaks_filled",
+          "terminating_SP_rewriting"
+        ],
+        "claim_status": "CHECKED_FINITE_INSTANCE",
+        "components": 1,
+        "dim_H1_F2": 0,
+        "edges": 354,
+        "execution_permission": false,
+        "graph_beta1": 256,
+        "graph_pi1_free_rank": 256,
+        "local_peaks": 560,
+        "pi1_basis": "based_at_empty_word",
+        "pi1_status": "PROVED_TRIVIAL_WITH_CERTIFICATE",
+        "rank_d2_F2": 256,
+        "unresolved_peaks": 0,
+        "verified_cells": 560,
+        "vertices": 99
+      }
+    },
+    "sp-10": {
+      "engine": "symbolic_complex_v1",
+      "error": null,
+      "execution_permission": false,
+      "kernel_binding": "d25d2636fea12a3bfec9a267a7332347c1347b16739f0ab957ef7026e0730f28",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.25778146700000004,
+        "max_rss_kib": 78352
+      },
+      "project": "qa-patch003-prod",
+      "result_digest": "ba8aee9806014fe375a47c70d023b87fbff6de73272b695c277a034904ab8b98",
+      "result_ref": "c615b4644014a56046e4451dd6e446680184325618ecaf99e899b498fb4ee7a7",
+      "run_id": "523b10875988ca0831a6b058ea576f9bbc2907e551946932bb8b5903b6530a5c",
+      "schema": "livingmath-symbolic-extension-run/1",
+      "section_refs": {
+        "cells": "e423c2b22ef84f8b807b8b7bf73a9efd1b6d55ac9b3c01b4cda687027a127a3d",
+        "checks": "805a9a50f10d569bb5a7f84d60a04dda4e38fec76b756d15bfb00ab5d902d00a",
+        "diagnostics": "f95b2fdf56c1c5028986471ce43f06860cb80f314ea84d7ea328c1abc94f9227",
+        "edges": "3b53d327bf0f1712f78d290063451453ca623ea648b9eb9dfc054624b83e0d39",
+        "homology": "b80dc3e5824a67902aea12c52a2a5f91e92dfb786a0cb830022f4c078ad8ccf9",
+        "manifest": "77d62d9d04fb58281d71347aaca38d7ed1d244abd8ef1fafe938fa83c0d0edda",
+        "paths": "9401982adaeda1a5909d2f00ca17620c892cfc2d3dbea216076543fc96d2c371",
+        "peaks": "d4fcd572f374639fe5dc5d92433f024271c176ba944cb20762ef4499a3ad7a00",
+        "vertices": "b1dd4e47d7bc1d644f2f592f31c3d91153d332b583d5d74238af016f826a6b1b"
+      },
+      "snapshot_ref": "11e6a85b13030ab180b7c14476d79e18b790aa7fc5c70293fb776b64bc657cec",
+      "status": "COMPLETED",
+      "summary": {
+        "assumptions": [
+          "all_local_peaks_filled",
+          "terminating_SP_rewriting"
+        ],
+        "claim_status": "CHECKED_FINITE_INSTANCE",
+        "components": 1,
+        "dim_H1_F2": 0,
+        "edges": 1614,
+        "execution_permission": false,
+        "graph_beta1": 1264,
+        "graph_pi1_free_rank": 1264,
+        "local_peaks": 3360,
+        "pi1_basis": "based_at_empty_word",
+        "pi1_status": "PROVED_TRIVIAL_WITH_CERTIFICATE",
+        "rank_d2_F2": 1264,
+        "unresolved_peaks": 0,
+        "verified_cells": 3360,
+        "vertices": 351
+      }
+    },
+    "sp-10-replica": {
+      "engine": "symbolic_complex_v1",
+      "error": null,
+      "execution_permission": false,
+      "kernel_binding": "d25d2636fea12a3bfec9a267a7332347c1347b16739f0ab957ef7026e0730f28",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.271667305,
+        "max_rss_kib": 79892
+      },
+      "project": "qa-patch003-prod",
+      "result_digest": "ba8aee9806014fe375a47c70d023b87fbff6de73272b695c277a034904ab8b98",
+      "result_ref": "c615b4644014a56046e4451dd6e446680184325618ecaf99e899b498fb4ee7a7",
+      "run_id": "5371bcab7c941741e910b5996dd6a55e4e12ad3b91d9840f7db21bf4834979c7",
+      "schema": "livingmath-symbolic-extension-run/1",
+      "section_refs": {
+        "cells": "e423c2b22ef84f8b807b8b7bf73a9efd1b6d55ac9b3c01b4cda687027a127a3d",
+        "checks": "805a9a50f10d569bb5a7f84d60a04dda4e38fec76b756d15bfb00ab5d902d00a",
+        "diagnostics": "f95b2fdf56c1c5028986471ce43f06860cb80f314ea84d7ea328c1abc94f9227",
+        "edges": "3b53d327bf0f1712f78d290063451453ca623ea648b9eb9dfc054624b83e0d39",
+        "homology": "b80dc3e5824a67902aea12c52a2a5f91e92dfb786a0cb830022f4c078ad8ccf9",
+        "manifest": "77d62d9d04fb58281d71347aaca38d7ed1d244abd8ef1fafe938fa83c0d0edda",
+        "paths": "9401982adaeda1a5909d2f00ca17620c892cfc2d3dbea216076543fc96d2c371",
+        "peaks": "d4fcd572f374639fe5dc5d92433f024271c176ba944cb20762ef4499a3ad7a00",
+        "vertices": "b1dd4e47d7bc1d644f2f592f31c3d91153d332b583d5d74238af016f826a6b1b"
+      },
+      "snapshot_ref": "11e6a85b13030ab180b7c14476d79e18b790aa7fc5c70293fb776b64bc657cec",
+      "status": "COMPLETED",
+      "summary": {
+        "assumptions": [
+          "all_local_peaks_filled",
+          "terminating_SP_rewriting"
+        ],
+        "claim_status": "CHECKED_FINITE_INSTANCE",
+        "components": 1,
+        "dim_H1_F2": 0,
+        "edges": 1614,
+        "execution_permission": false,
+        "graph_beta1": 1264,
+        "graph_pi1_free_rank": 1264,
+        "local_peaks": 3360,
+        "pi1_basis": "based_at_empty_word",
+        "pi1_status": "PROVED_TRIVIAL_WITH_CERTIFICATE",
+        "rank_d2_F2": 1264,
+        "unresolved_peaks": 0,
+        "verified_cells": 3360,
+        "vertices": 351
+      }
+    },
+    "sp-none": {
+      "engine": "symbolic_complex_v1",
+      "error": null,
+      "execution_permission": false,
+      "kernel_binding": "d25d2636fea12a3bfec9a267a7332347c1347b16739f0ab957ef7026e0730f28",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.092289363,
+        "max_rss_kib": 71552
+      },
+      "project": "qa-patch003-prod",
+      "result_digest": "7b27c5cd7074414a685201bf47db7d04ef9c178209068151b752a5c997cb71c6",
+      "result_ref": "32b93a507b607f92368de4197af3a9b4642ff5a331bdc85deec8e616286fbf19",
+      "run_id": "7e57f824ed6a52adb376f243f3bd8f03d4158b281d289a06eb4a832dcbc16d64",
+      "schema": "livingmath-symbolic-extension-run/1",
+      "section_refs": {
+        "cells": "f95b2fdf56c1c5028986471ce43f06860cb80f314ea84d7ea328c1abc94f9227",
+        "checks": "29bbe995c60999a8a08902faffbbf8ef2eddb45dca75b597ef06f89fe959530d",
+        "diagnostics": "f95b2fdf56c1c5028986471ce43f06860cb80f314ea84d7ea328c1abc94f9227",
+        "edges": "3b53d327bf0f1712f78d290063451453ca623ea648b9eb9dfc054624b83e0d39",
+        "homology": "bc5a1e55a78195acce4c569a798465400ba9639d0cf0037edc3a494aed073833",
+        "manifest": "ff63dd9764bdfce0f15eafbbcf339e72f5e5f7c977e98fc3a4dd79f1caf54253",
+        "paths": "f59d978252fcd8758e4c3fcb04220a98689cf052515003c8aba0c44447989d1f",
+        "peaks": "d4fcd572f374639fe5dc5d92433f024271c176ba944cb20762ef4499a3ad7a00",
+        "vertices": "b1dd4e47d7bc1d644f2f592f31c3d91153d332b583d5d74238af016f826a6b1b"
+      },
+      "snapshot_ref": "411f63ac7bae493d759677560f654596227b4d56f8235985e322a21b79934320",
+      "status": "COMPLETED",
+      "summary": {
+        "assumptions": [
+          "all_local_peaks_filled",
+          "terminating_SP_rewriting"
+        ],
+        "claim_status": "CHECKED_FINITE_INSTANCE",
+        "components": 1,
+        "dim_H1_F2": 1264,
+        "edges": 1614,
+        "execution_permission": false,
+        "graph_beta1": 1264,
+        "graph_pi1_free_rank": 1264,
+        "local_peaks": 3360,
+        "pi1_basis": "based_at_empty_word",
+        "pi1_status": "NOT_PROVED",
+        "rank_d2_F2": 0,
+        "unresolved_peaks": 3360,
+        "verified_cells": 0,
+        "vertices": 351
+      }
+    },
+    "sp-bigons_only": {
+      "engine": "symbolic_complex_v1",
+      "error": null,
+      "execution_permission": false,
+      "kernel_binding": "d25d2636fea12a3bfec9a267a7332347c1347b16739f0ab957ef7026e0730f28",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.144240953,
+        "max_rss_kib": 88256
+      },
+      "project": "qa-patch003-prod",
+      "result_digest": "39983eb0d3586e1a51c7d6cf540b71530471c3baf25bd001f135e532259cbdb6",
+      "result_ref": "691b834181f2375edf2340e7e3fbe06e996961962f5bf5a3d0ba0b4d3c96ae61",
+      "run_id": "be5fd5259c7a10e20a377e84bc27145f82de234616f49c049498a66f77b3915b",
+      "schema": "livingmath-symbolic-extension-run/1",
+      "section_refs": {
+        "cells": "ec0510d7b0f37729e2a0caee3a0ac78e67deef4164c9b507e4f5e5cb1ee7f0d2",
+        "checks": "6e224961a7ab79591a4c4229eb2677acfc053bf739c98bdc38e02cf54670cee6",
+        "diagnostics": "f95b2fdf56c1c5028986471ce43f06860cb80f314ea84d7ea328c1abc94f9227",
+        "edges": "3b53d327bf0f1712f78d290063451453ca623ea648b9eb9dfc054624b83e0d39",
+        "homology": "3ae5196ac89e398159a407fd5ec9f06c979091dd7fd5b768d346345ad3528d31",
+        "manifest": "3c5e6d01f3dcb0e98a6b146b284063324950697c2ea280a54b9e60220ff6d6d7",
+        "paths": "f59d978252fcd8758e4c3fcb04220a98689cf052515003c8aba0c44447989d1f",
+        "peaks": "d4fcd572f374639fe5dc5d92433f024271c176ba944cb20762ef4499a3ad7a00",
+        "vertices": "b1dd4e47d7bc1d644f2f592f31c3d91153d332b583d5d74238af016f826a6b1b"
+      },
+      "snapshot_ref": "0b7e77e3e2dacf0d42af650738fc87641e95ed931de478c586c517e4fa8a05a4",
+      "status": "COMPLETED",
+      "summary": {
+        "assumptions": [
+          "all_local_peaks_filled",
+          "terminating_SP_rewriting"
+        ],
+        "claim_status": "CHECKED_FINITE_INSTANCE",
+        "components": 1,
+        "dim_H1_F2": 556,
+        "edges": 1614,
+        "execution_permission": false,
+        "graph_beta1": 1264,
+        "graph_pi1_free_rank": 1264,
+        "local_peaks": 3360,
+        "pi1_basis": "based_at_empty_word",
+        "pi1_status": "NOT_PROVED",
+        "rank_d2_F2": 708,
+        "unresolved_peaks": 2028,
+        "verified_cells": 1332,
+        "vertices": 351
+      }
+    },
+    "sp-diamonds_only": {
+      "engine": "symbolic_complex_v1",
+      "error": null,
+      "execution_permission": false,
+      "kernel_binding": "d25d2636fea12a3bfec9a267a7332347c1347b16739f0ab957ef7026e0730f28",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.197498063,
+        "max_rss_kib": 84316
+      },
+      "project": "qa-patch003-prod",
+      "result_digest": "0cc053b2a5a2e23286132062868e7f5838824567ef47c2c54c47cad4054e4f94",
+      "result_ref": "bf942189fa121825a7cbb38d2cdfc6181e1634c4a82cf05e7e4fb7ffaeb67ca1",
+      "run_id": "7d72c10b8d8fa33f1cd1a9034eb0e26b7331d4fb56bc3d6fa4eb750db5086934",
+      "schema": "livingmath-symbolic-extension-run/1",
+      "section_refs": {
+        "cells": "a464657890ee4ec68b2eae0e8ba2062c2503f5ccffb8b0eb8edeb9b71cd99e02",
+        "checks": "f952682c913ad112f60160924e5214a215862fabbc9df13b11615be27907c2c8",
+        "diagnostics": "f95b2fdf56c1c5028986471ce43f06860cb80f314ea84d7ea328c1abc94f9227",
+        "edges": "3b53d327bf0f1712f78d290063451453ca623ea648b9eb9dfc054624b83e0d39",
+        "homology": "6bfe8cbd9052001aad47dbb7797cf0cfdb2012a583989a313bb29d6b5a0b1458",
+        "manifest": "adeba456d72d4903a4ad5a986e823c9c9cc46ee50e14df76c8e899886667e986",
+        "paths": "f59d978252fcd8758e4c3fcb04220a98689cf052515003c8aba0c44447989d1f",
+        "peaks": "d4fcd572f374639fe5dc5d92433f024271c176ba944cb20762ef4499a3ad7a00",
+        "vertices": "b1dd4e47d7bc1d644f2f592f31c3d91153d332b583d5d74238af016f826a6b1b"
+      },
+      "snapshot_ref": "03501a725a5a966b7c3cfb47cc1bb5d2095c186c2509d29771693567c103fd3c",
+      "status": "COMPLETED",
+      "summary": {
+        "assumptions": [
+          "all_local_peaks_filled",
+          "terminating_SP_rewriting"
+        ],
+        "claim_status": "CHECKED_FINITE_INSTANCE",
+        "components": 1,
+        "dim_H1_F2": 80,
+        "edges": 1614,
+        "execution_permission": false,
+        "graph_beta1": 1264,
+        "graph_pi1_free_rank": 1264,
+        "local_peaks": 3360,
+        "pi1_basis": "based_at_empty_word",
+        "pi1_status": "NOT_PROVED",
+        "rank_d2_F2": 1184,
+        "unresolved_peaks": 1332,
+        "verified_cells": 2028,
+        "vertices": 351
+      }
+    },
+    "dyck": {
+      "engine": "observer_synthesis_v1",
+      "error": null,
+      "execution_permission": false,
+      "kernel_binding": "d25d2636fea12a3bfec9a267a7332347c1347b16739f0ab957ef7026e0730f28",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.053671842000000004,
+        "max_rss_kib": 96312
+      },
+      "project": "qa-patch003-prod",
+      "result_digest": "275ab08e55deb9285bf7487949a415c59884815d981e63dd79e71f2d49b9f74c",
+      "result_ref": "3a2e86e9ac64c6b2435090cd347b05d34903e8601e407d01337d02ceb70b6af6",
+      "run_id": "b1354bbef234dbe28c3bf9e1a095aa18c6767c85bef16c927bbcc43e787cdc04",
+      "schema": "livingmath-symbolic-extension-run/1",
+      "section_refs": {
+        "candidate_rules": "8cde5edceda4591647bb7092c0cb18df33774ae6a072b5e9393f64ddb3c2df09",
+        "checks": "0c8c32fb0ac210dc7c060085c5e3b70bb89162ad0df5ccdea6d26bc4423972f4",
+        "diagnostics": "19115c0e06edb476362209bad411a3277b109748116bde57d72941ba09192684",
+        "manifest": "792bbf9c492e481f61cd6208bf7ea13af1e642d5ff424f8ed06b02fc62b5d5a5",
+        "model": "2a1328636737bcbd8a26c7524954437543a15a98cc67859d898a4ccad4f6abc5",
+        "observer_provenance": "fda2c7ecf3f2ed13c788b0f4cdf69c86a69ed6dc1bc27811da5cedc4f3fa29a2",
+        "pairwise_eval": "4953ec270c6d375bc544d59189805be049f1ee6eb055aca606f49a9f08496abf"
+      },
+      "snapshot_ref": "c7fb65e6f4ce9206cd9759fba78c12130b2aa3ec5bba4df34f38893f9051a775",
+      "status": "COMPLETED",
+      "summary": {
+        "conditional_exclusion_applied": false,
+        "execution_permission": false,
+        "family_status": "UNDERDETERMINED",
+        "hypothesis_digest": "124826fdcc88c142cc2040816302c271486f2a3ecd7d8b0bd63a54d1a2624380",
+        "pair_counts": {
+          "NOT_IDENTIFIABLE": 0,
+          "PREFERENCE": 0,
+          "TIE": 0,
+          "UNDERDETERMINED": 0
+        },
+        "query_records": 322,
+        "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER",
+        "train_records": 28,
+        "training_status": "CONSISTENT"
+      }
+    },
+    "corpus-global_alpha": {
+      "engine": "observer_synthesis_v1",
+      "error": null,
+      "execution_permission": false,
+      "kernel_binding": "d25d2636fea12a3bfec9a267a7332347c1347b16739f0ab957ef7026e0730f28",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 3.338916915,
+        "max_rss_kib": 131792
+      },
+      "project": "qa-patch003-prod",
+      "result_digest": "efea0f5a6ff4649900a432a7bf574e35293c7e720b1a5f9a51f070ad5e44091a",
+      "result_ref": "664f1fcc895f1b63827f6210149e1464fb67716fb5d74537db28307c171cd902",
+      "run_id": "d39d9747ff7f47fd5e71dc7e5de44dda03542fd3f6586f267a3abaafbbc5214d",
+      "schema": "livingmath-symbolic-extension-run/1",
+      "section_refs": {
+        "candidate_rules": "e853830cc007a7b0c38b12440d9c7f53f4feeb3bdd40658037337d1746dafbb9",
+        "checks": "0c8c32fb0ac210dc7c060085c5e3b70bb89162ad0df5ccdea6d26bc4423972f4",
+        "diagnostics": "569a556bfce93eb1ad7d17b576507a84debec28f76d6e4dc13f867e9a12f53a6",
+        "manifest": "66121910e8ea1a17b3cffb4c02eeb17e3922786796302390164e1a860294bac3",
+        "model": "c7014aa984a19b63c33b476698c310b4445b05a92f512ee09baf9c0f0ebc48d0",
+        "observer_provenance": "bb2c7845b3c059a18013520e1b45fb9f994293c4c5a628aa3109f4e6820065e3",
+        "pairwise_eval": "88b94b3b2a7029e0437dcdb00e30942056ab6f329fb358db6a9cb34d071cfa11"
+      },
+      "snapshot_ref": "214326da9fec90a3add5a73635711b426ce870a94315734560e97b8da9e75b31",
+      "status": "COMPLETED",
+      "summary": {
+        "conditional_exclusion_applied": false,
+        "execution_permission": false,
+        "family_status": "UNDERDETERMINED",
+        "hypothesis_digest": "a0428d00cd1f759c90907202a85729124372878d6bd787e0a82f2ada1c0d0f3b",
+        "pair_counts": {
+          "NOT_IDENTIFIABLE": 16,
+          "PREFERENCE": 1,
+          "TIE": 183,
+          "UNDERDETERMINED": 0
+        },
+        "query_records": 400,
+        "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER",
+        "train_records": 1484,
+        "training_status": "CONTRADICTORY_TRAINING"
+      }
+    },
+    "corpus-local_alpha": {
+      "engine": "observer_synthesis_v1",
+      "error": null,
+      "execution_permission": false,
+      "kernel_binding": "d25d2636fea12a3bfec9a267a7332347c1347b16739f0ab957ef7026e0730f28",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 3.3916235329999997,
+        "max_rss_kib": 169388
+      },
+      "project": "qa-patch003-prod",
+      "result_digest": "a8ea858b69e1aa4961163cbe24cc863355044d457b633c6f7835e8ae59cb8cb1",
+      "result_ref": "8d26960b25743684f2328aa41b0366b8870b4da3ac64dda6da47d22ad4c6a798",
+      "run_id": "66aca6e6ee8f981c2df24d622221b8aeb0e40b82b21f5e93e5217c854395b96a",
+      "schema": "livingmath-symbolic-extension-run/1",
+      "section_refs": {
+        "candidate_rules": "9fb49dd803dcedd6c237894ecc4bb09b0f602ead5c626b488b5cef826868707f",
+        "checks": "0c8c32fb0ac210dc7c060085c5e3b70bb89162ad0df5ccdea6d26bc4423972f4",
+        "diagnostics": "f552dd3fd8833f65f32b5d7ac965e2ec57be8fd777288e336fc9cdab043ac5ad",
+        "manifest": "56386b07e748197f199f8112b0c039df6359e04f5cd408e94c6db47af9b5fa30",
+        "model": "1c37afca2daafcd51bf94c3c1d173ae80b98f376d09bad8fd4c4f82023a8ad5d",
+        "observer_provenance": "bb2c7845b3c059a18013520e1b45fb9f994293c4c5a628aa3109f4e6820065e3",
+        "pairwise_eval": "7f98b38db04be3bda49e98d128d9001335743f9f51724b238f5a40787e4a17b1"
+      },
+      "snapshot_ref": "78cbfe345814dc86347c7fe3548603bce2f21404f8fc4c9b65d0a80467773204",
+      "status": "COMPLETED",
+      "summary": {
+        "conditional_exclusion_applied": false,
+        "execution_permission": false,
+        "family_status": "UNDERDETERMINED",
+        "hypothesis_digest": "dd606336b03611a23f1815cbfb4f22b771e509fe9309c1e97f3dbc77eceeaa0d",
+        "pair_counts": {
+          "NOT_IDENTIFIABLE": 56,
+          "PREFERENCE": 12,
+          "TIE": 132,
+          "UNDERDETERMINED": 0
+        },
+        "query_records": 400,
+        "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER",
+        "train_records": 1484,
+        "training_status": "CONTRADICTORY_TRAINING"
+      }
+    },
+    "corpus-literal": {
+      "engine": "observer_synthesis_v1",
+      "error": null,
+      "execution_permission": false,
+      "kernel_binding": "d25d2636fea12a3bfec9a267a7332347c1347b16739f0ab957ef7026e0730f28",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 3.373047405,
+        "max_rss_kib": 127308
+      },
+      "project": "qa-patch003-prod",
+      "result_digest": "df43466b5413765f428b1e1293ac8fcab1474595a18e89c20abf342cb116e520",
+      "result_ref": "b54ba64f9a768ac6a02cd8f688eba814209c8f73da3af2d0a588696cdf61b283",
+      "run_id": "9d186a3459e0f7ad7a5b280c5641675257b159e3489fcf01a591299832f4e155",
+      "schema": "livingmath-symbolic-extension-run/1",
+      "section_refs": {
+        "candidate_rules": "9fb49dd803dcedd6c237894ecc4bb09b0f602ead5c626b488b5cef826868707f",
+        "checks": "0c8c32fb0ac210dc7c060085c5e3b70bb89162ad0df5ccdea6d26bc4423972f4",
+        "diagnostics": "19115c0e06edb476362209bad411a3277b109748116bde57d72941ba09192684",
+        "manifest": "b32672019b4267cc95dedcf09c65a0f224ffac595e0435f30dd60604901aa68f",
+        "model": "7822b1c2859d3bf516628433781161bf75a462a87b75cc47129d2598d943cfed",
+        "observer_provenance": "bb2c7845b3c059a18013520e1b45fb9f994293c4c5a628aa3109f4e6820065e3",
+        "pairwise_eval": "4e3c7c6ae6b9ec164552faa83ed5d95250861f2997d8d4d7aba792a311847f96"
+      },
+      "snapshot_ref": "9664727a5798482d5fae9cdd84ecef7e3b82e88bcd5003c089517ab974a615d6",
+      "status": "COMPLETED",
+      "summary": {
+        "conditional_exclusion_applied": false,
+        "execution_permission": false,
+        "family_status": "UNDERDETERMINED",
+        "hypothesis_digest": "7b15ac2787c4a9961333727102f57763badad5dc31177fd3b3cfda50c0f11bd7",
+        "pair_counts": {
+          "NOT_IDENTIFIABLE": 0,
+          "PREFERENCE": 12,
+          "TIE": 188,
+          "UNDERDETERMINED": 0
+        },
+        "query_records": 400,
+        "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER",
+        "train_records": 1484,
+        "training_status": "CONSISTENT"
+      }
+    },
+    "corpus-punctuation": {
+      "engine": "observer_synthesis_v1",
+      "error": null,
+      "execution_permission": false,
+      "kernel_binding": "d25d2636fea12a3bfec9a267a7332347c1347b16739f0ab957ef7026e0730f28",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 3.434036299,
+        "max_rss_kib": 167884
+      },
+      "project": "qa-patch003-prod",
+      "result_digest": "930d286b2202034f55a8bc67ec78310e3854998bb2330c4495afff0837e5bbce",
+      "result_ref": "df7cbb9b66659e4f11c6c1b9247f4696f38b22839ea3dc57d53f89df1c6af54b",
+      "run_id": "83141d72a0a91fc1c781ddababd1d52c41ca57ca24b3b31820fea677e0fb2fbc",
+      "schema": "livingmath-symbolic-extension-run/1",
+      "section_refs": {
+        "candidate_rules": "3a2aacfb63d6685ce483413d6614168ca38f276dcbc10cdf532e558a88542933",
+        "checks": "0c8c32fb0ac210dc7c060085c5e3b70bb89162ad0df5ccdea6d26bc4423972f4",
+        "diagnostics": "b0b9252c6cdcc46ae6a5c69545b257f25d72b0024c298bb48c23e6f061e4bd7b",
+        "manifest": "305d0d117897479805903eb82aebde3b5067e74cc6f850fb5269539117bc1b61",
+        "model": "e2efb005d576cb00a4f578b305a998a73bad41dd74ac6fcfa1d434472ef27947",
+        "observer_provenance": "51eb3b545525bdf6d38513517b18f402beaa482785571b2f270d3ed8a73ab33a",
+        "pairwise_eval": "b76f489ccb3ba7834f75ee49dc93b9475324135b53cc245b0ae3b44abe861033"
+      },
+      "snapshot_ref": "67157494b88ec83f7464af805233a614b1d1be6f533ea83918ff443765cbe338",
+      "status": "COMPLETED",
+      "summary": {
+        "conditional_exclusion_applied": false,
+        "execution_permission": false,
+        "family_status": "UNDERDETERMINED",
+        "hypothesis_digest": "4df62dbbfc2abe1914d5bc617a4fb96d096404262252e327f3b950d0633c0807",
+        "pair_counts": {
+          "NOT_IDENTIFIABLE": 95,
+          "PREFERENCE": 105,
+          "TIE": 0,
+          "UNDERDETERMINED": 0
+        },
+        "query_records": 400,
+        "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER",
+        "train_records": 1484,
+        "training_status": "CONTRADICTORY_TRAINING"
+      }
+    },
+    "corpus-length": {
+      "engine": "observer_synthesis_v1",
+      "error": null,
+      "execution_permission": false,
+      "kernel_binding": "d25d2636fea12a3bfec9a267a7332347c1347b16739f0ab957ef7026e0730f28",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 3.617490526,
+        "max_rss_kib": 183124
+      },
+      "project": "qa-patch003-prod",
+      "result_digest": "45e292bdaca416e62ecbaa249a5b3656012489deb4e0477552465cbf89448738",
+      "result_ref": "bb0da70e4e39d4ee3c45325b956732544912b148cc7151b722c04e2f585a3c34",
+      "run_id": "4e18e748c56960106074014bfefe496ceb0bc246f7180f2315a47d2713cf54fc",
+      "schema": "livingmath-symbolic-extension-run/1",
+      "section_refs": {
+        "candidate_rules": "1160ee7e34de9f64090f58b99f05bfd1f741ce468e9e45f7ecf8bd6c7938953d",
+        "checks": "0c8c32fb0ac210dc7c060085c5e3b70bb89162ad0df5ccdea6d26bc4423972f4",
+        "diagnostics": "46b24950ee7361f88371caca7593c7ba883888cff85ad2dbd00930f5b894de18",
+        "manifest": "d1b3d0a6a69e9b909d22f769c8d174e15e00789c7ef15e617f2a29c90321d66e",
+        "model": "1574a480f0ec97d38c1b38b969244d9386659f4412d0ce649121c5e13aa8c398",
+        "observer_provenance": "a94932aae828b8baf527d25d45bf6d63d6ea70b8d97a4e1886b2a941790fa1cc",
+        "pairwise_eval": "cd8949f98ccabd96e80cf17a5034065a161c8de84ed9b54561d988db59584c41"
+      },
+      "snapshot_ref": "d0892fca2ad332ef468ee5aec4fd1bea923e2c943ac50eeabd52a0372b59e1d6",
+      "status": "COMPLETED",
+      "summary": {
+        "conditional_exclusion_applied": false,
+        "execution_permission": false,
+        "family_status": "UNDERDETERMINED",
+        "hypothesis_digest": "6184ed3eae6c33fe37447a76e767dbe07f63d9a1ad31472b9d6af9361dbeaf47",
+        "pair_counts": {
+          "NOT_IDENTIFIABLE": 61,
+          "PREFERENCE": 12,
+          "TIE": 127,
+          "UNDERDETERMINED": 0
+        },
+        "query_records": 400,
+        "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER",
+        "train_records": 1484,
+        "training_status": "CONTRADICTORY_TRAINING"
+      }
+    },
+    "corpus-majority": {
+      "engine": "observer_synthesis_v1",
+      "error": null,
+      "execution_permission": false,
+      "kernel_binding": "d25d2636fea12a3bfec9a267a7332347c1347b16739f0ab957ef7026e0730f28",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 3.035779961,
+        "max_rss_kib": 171692
+      },
+      "project": "qa-patch003-prod",
+      "result_digest": "51638be72f4ecdb83a2776e48b2ca79f2571534c7cb8c957c40b1d25f64ca8e2",
+      "result_ref": "042fe94f8a068f5c1302e54da02182adc5c6dd9f326722df532f3b951247e8a5",
+      "run_id": "05cf2157fa5a042418e05c9c299183755231f97ea4c10d480168d0940cba309c",
+      "schema": "livingmath-symbolic-extension-run/1",
+      "section_refs": {
+        "candidate_rules": "5f88746c88f7618822bd65f850b2f64656ef57265badee5c6142d9d7402dc471",
+        "checks": "0c8c32fb0ac210dc7c060085c5e3b70bb89162ad0df5ccdea6d26bc4423972f4",
+        "diagnostics": "19115c0e06edb476362209bad411a3277b109748116bde57d72941ba09192684",
+        "manifest": "e3ee94d6cf808de2f9f090d8da749a2dc986811715d029ad1e09c823922e7738",
+        "model": "68088d7a703f24d6eae5b38884e581404177dc3641724801926505ddf1a4c06e",
+        "observer_provenance": "a94932aae828b8baf527d25d45bf6d63d6ea70b8d97a4e1886b2a941790fa1cc",
+        "pairwise_eval": "3ccc52c2b311279e807b9331355589ad92123b45ecfb89e24a57f2869f8b1a96"
+      },
+      "snapshot_ref": "6e3bdacc9fcc496837e427d948fae25bd0f372b6aa6144b1e2fb2a8d48860198",
+      "status": "COMPLETED",
+      "summary": {
+        "conditional_exclusion_applied": false,
+        "execution_permission": false,
+        "family_status": "UNDERDETERMINED",
+        "hypothesis_digest": "ff58e6d8fe7d927242fd4ef8aaa9ddb5d69f066ab46a6de7c5af4b25d4751763",
+        "pair_counts": {
+          "NOT_IDENTIFIABLE": 0,
+          "PREFERENCE": 0,
+          "TIE": 200,
+          "UNDERDETERMINED": 0
+        },
+        "query_records": 400,
+        "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER",
+        "train_records": 1484,
+        "training_status": "CONSISTENT"
+      }
+    },
+    "corpus-no_builtin_attempt": {
+      "engine": "observer_synthesis_v1",
+      "error": null,
+      "execution_permission": false,
+      "kernel_binding": "d25d2636fea12a3bfec9a267a7332347c1347b16739f0ab957ef7026e0730f28",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 3.041702835,
+        "max_rss_kib": 160064
+      },
+      "project": "qa-patch003-prod",
+      "result_digest": "07f5b0c73763f0b80a7cef37b632c9563f603255a01163d0e144e64f8c956429",
+      "result_ref": "ac07328ba4b774873e3ed2bcac0fae8721b4b07d4dd11f50204b374ba58210b5",
+      "run_id": "b70f330fbce836ee3aa5de44d8dafc1ae978ab2f273c4063da842bd3f1bdb8e6",
+      "schema": "livingmath-symbolic-extension-run/1",
+      "section_refs": {
+        "candidate_rules": "5f88746c88f7618822bd65f850b2f64656ef57265badee5c6142d9d7402dc471",
+        "checks": "0c8c32fb0ac210dc7c060085c5e3b70bb89162ad0df5ccdea6d26bc4423972f4",
+        "diagnostics": "569a556bfce93eb1ad7d17b576507a84debec28f76d6e4dc13f867e9a12f53a6",
+        "manifest": "f9984122e1ecc1fc2b0cf789bef7e66151f4495c67526b62af4332dcde1fa66d",
+        "model": "2fd1e05df42609ae78989edba4fb2b984a373ff4b8d86681c2b40f66853f2cd0",
+        "observer_provenance": "bb2c7845b3c059a18013520e1b45fb9f994293c4c5a628aa3109f4e6820065e3",
+        "pairwise_eval": "a14ab7b958538cc75711df97c0840eb581013cbf94942e54dfd15a694292a5af"
+      },
+      "snapshot_ref": "69e3113969b906d4cde21b2552771732cd2f7bdfac5e9404abad3371463d7402",
+      "status": "COMPLETED",
+      "summary": {
+        "conditional_exclusion_applied": false,
+        "execution_permission": false,
+        "family_status": "UNDERDETERMINED",
+        "hypothesis_digest": "875cb2ce6f52eb67f44bd3dfd858eb4c5aef3b5d36ffd9f241b89dfe90352f27",
+        "pair_counts": {
+          "NOT_IDENTIFIABLE": 16,
+          "PREFERENCE": 0,
+          "TIE": 184,
+          "UNDERDETERMINED": 0
+        },
+        "query_records": 400,
+        "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER",
+        "train_records": 1484,
+        "training_status": "CONTRADICTORY_TRAINING"
+      }
+    },
+    "corpus-strict_global_alpha": {
+      "engine": "observer_synthesis_v1",
+      "error": null,
+      "execution_permission": false,
+      "kernel_binding": "d25d2636fea12a3bfec9a267a7332347c1347b16739f0ab957ef7026e0730f28",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 3.076784613,
+        "max_rss_kib": 171980
+      },
+      "project": "qa-patch003-prod",
+      "result_digest": "70fe40c716e7bf2634f75d86c8c0ebd34d3b17f03acfaa93a914bc7d969886b7",
+      "result_ref": "05691c00442d9c39d62c19c28968a0dc22684070a8e8d13b69c0cefaf6003729",
+      "run_id": "54b1afdd50741f5675f5df10b97ea8be0b4d05285ed3e393ea8910df81b14106",
+      "schema": "livingmath-symbolic-extension-run/1",
+      "section_refs": {
+        "candidate_rules": "f95b2fdf56c1c5028986471ce43f06860cb80f314ea84d7ea328c1abc94f9227",
+        "checks": "0c8c32fb0ac210dc7c060085c5e3b70bb89162ad0df5ccdea6d26bc4423972f4",
+        "diagnostics": "569a556bfce93eb1ad7d17b576507a84debec28f76d6e4dc13f867e9a12f53a6",
+        "manifest": "04e5e725b0c6eee4cc313ee1dc16dbeb3940ffb8468c558516ce0ff1b5b98d29",
+        "model": "2974f5a79b2eb633fed08c78e4efee4fbfdac45c27033145a6036f8408127c27",
+        "observer_provenance": "bb2c7845b3c059a18013520e1b45fb9f994293c4c5a628aa3109f4e6820065e3",
+        "pairwise_eval": "6d1a09cb37f7272558a32cbb4905717774ca59851b8f7d9310ef912328f54cd5"
+      },
+      "snapshot_ref": "b159ce29f768d6ad8e25732b9c93916fe068a517954635cc35307f01f8d928e3",
+      "status": "COMPLETED",
+      "summary": {
+        "conditional_exclusion_applied": false,
+        "execution_permission": false,
+        "family_status": "UNDERDETERMINED",
+        "hypothesis_digest": "73cc15c9dbc35f298261c7bb7dc5318ec0b131020563a8305567de3463f2ab1c",
+        "pair_counts": {
+          "NOT_IDENTIFIABLE": 16,
+          "PREFERENCE": 0,
+          "TIE": 0,
+          "UNDERDETERMINED": 184
+        },
+        "query_records": 400,
+        "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER",
+        "train_records": 1484,
+        "training_status": "CONTRADICTORY_TRAINING"
+      }
+    },
+    "corpus-conditional_global_alpha": {
+      "engine": "observer_synthesis_v1",
+      "error": null,
+      "execution_permission": false,
+      "kernel_binding": "d25d2636fea12a3bfec9a267a7332347c1347b16739f0ab957ef7026e0730f28",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 3.3017497490000003,
+        "max_rss_kib": 177852
+      },
+      "project": "qa-patch003-prod",
+      "result_digest": "b8c1df616abb6206d49bda9b69e945711c2e91e620991707d3de68ae8de95360",
+      "result_ref": "499c6ae153bdd51f62b04812bdccf6790f5e1db9e4cb0ee66901b5fc76630f63",
+      "run_id": "9e1606757d0cd10f9f73fb337dad621eeb75af3b2971446b3f2d7784cf7f08b9",
+      "schema": "livingmath-symbolic-extension-run/1",
+      "section_refs": {
+        "candidate_rules": "6692b8871dbf870ea8100aea0b329cd92d455c445ea2b01f28f092427f88786e",
+        "checks": "0c8c32fb0ac210dc7c060085c5e3b70bb89162ad0df5ccdea6d26bc4423972f4",
+        "diagnostics": "8fd835db723dca2cfaf8e0c0d61b40a37ca0148ca7230296ff2f6cbe51d8c302",
+        "manifest": "ba7ba96d08a7e89a99827956678ec8f717e8368a91b3c3f718fa9673d51b3759",
+        "model": "24e1e324d880745a4e4f923a7c5900e78155837f01fa8ec2035618c73bf557a8",
+        "observer_provenance": "bb2c7845b3c059a18013520e1b45fb9f994293c4c5a628aa3109f4e6820065e3",
+        "pairwise_eval": "c56bf154604c2724fafabba557b7cda0e27400ae85c84cb0846163a9819162ef"
+      },
+      "snapshot_ref": "9230dcd1d2d2cf99e73c26b17c4f2694539987270387a62c97e0092847d2017e",
+      "status": "COMPLETED",
+      "summary": {
+        "conditional_exclusion_applied": true,
+        "execution_permission": false,
+        "family_status": "UNDERDETERMINED",
+        "hypothesis_digest": "a9f6da8a9fa17f3befe4f4ce9c773ffd16a895c20465fee2917f05fe35afbbb4",
+        "pair_counts": {
+          "NOT_IDENTIFIABLE": 16,
+          "PREFERENCE": 1,
+          "TIE": 183,
+          "UNDERDETERMINED": 0
+        },
+        "query_records": 400,
+        "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER",
+        "train_records": 1484,
+        "training_status": "CONTRADICTORY_TRAINING"
+      }
+    },
+    "corpus-renaming_control": {
+      "engine": "observer_synthesis_v1",
+      "error": null,
+      "execution_permission": false,
+      "kernel_binding": "d25d2636fea12a3bfec9a267a7332347c1347b16739f0ab957ef7026e0730f28",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 3.289437056,
+        "max_rss_kib": 169028
+      },
+      "project": "qa-patch003-prod",
+      "result_digest": "29d0aba8a8445331a4a3976e88ddfaac3eaae502275f1f6f5cad92e10d3b37ef",
+      "result_ref": "4a5b1ea5de3f25dec35397b31decdbea979f0ebd976002260821b6a31758b535",
+      "run_id": "0f73a2d69c2653ff0ad3a6a596fdb12437cd21d99ed950bfebe7f88ca4303c4b",
+      "schema": "livingmath-symbolic-extension-run/1",
+      "section_refs": {
+        "candidate_rules": "e853830cc007a7b0c38b12440d9c7f53f4feeb3bdd40658037337d1746dafbb9",
+        "checks": "0c8c32fb0ac210dc7c060085c5e3b70bb89162ad0df5ccdea6d26bc4423972f4",
+        "diagnostics": "569a556bfce93eb1ad7d17b576507a84debec28f76d6e4dc13f867e9a12f53a6",
+        "manifest": "2eefe74c1cb582dc2aff64c393f7b092fd7dc15acb576362482c1100cb9e93b9",
+        "model": "c7014aa984a19b63c33b476698c310b4445b05a92f512ee09baf9c0f0ebc48d0",
+        "observer_provenance": "bb2c7845b3c059a18013520e1b45fb9f994293c4c5a628aa3109f4e6820065e3",
+        "pairwise_eval": "54992ed13c5ec6cd28e9ad8d6c72278eda8d9eff5003bc590ad45ac3a069f776"
+      },
+      "snapshot_ref": "6c79895dbb9e82cab0552a16a06c9a2283bb6de8323f295483692474030ac544",
+      "status": "COMPLETED",
+      "summary": {
+        "conditional_exclusion_applied": false,
+        "execution_permission": false,
+        "family_status": "UNDERDETERMINED",
+        "hypothesis_digest": "a0428d00cd1f759c90907202a85729124372878d6bd787e0a82f2ada1c0d0f3b",
+        "pair_counts": {
+          "NOT_IDENTIFIABLE": 16,
+          "PREFERENCE": 1,
+          "TIE": 183,
+          "UNDERDETERMINED": 0
+        },
+        "query_records": 400,
+        "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER",
+        "train_records": 1484,
+        "training_status": "CONTRADICTORY_TRAINING"
+      }
+    },
+    "corpus-boundary_control": {
+      "engine": "observer_synthesis_v1",
+      "error": null,
+      "execution_permission": false,
+      "kernel_binding": "d25d2636fea12a3bfec9a267a7332347c1347b16739f0ab957ef7026e0730f28",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 3.3764839920000003,
+        "max_rss_kib": 183004
+      },
+      "project": "qa-patch003-prod",
+      "result_digest": "5b2795c320c94d47ca971b75d070046537ff9785a15303d8ca6b18fbe5df8012",
+      "result_ref": "c8d78e8345b9f9a5ca2c4392fc995df99e45b4ebcef4a073627bb908706f2a08",
+      "run_id": "3f230b60e5c5e624bb5fbec6583c0ac69be135277d92263e60a0beb4f401b53c",
+      "schema": "livingmath-symbolic-extension-run/1",
+      "section_refs": {
+        "candidate_rules": "e853830cc007a7b0c38b12440d9c7f53f4feeb3bdd40658037337d1746dafbb9",
+        "checks": "0c8c32fb0ac210dc7c060085c5e3b70bb89162ad0df5ccdea6d26bc4423972f4",
+        "diagnostics": "569a556bfce93eb1ad7d17b576507a84debec28f76d6e4dc13f867e9a12f53a6",
+        "manifest": "0331cf0725b9ae7824085aadf78b5ff6fad1f97eef33ed4964890f79c9636aa2",
+        "model": "c7014aa984a19b63c33b476698c310b4445b05a92f512ee09baf9c0f0ebc48d0",
+        "observer_provenance": "bb2c7845b3c059a18013520e1b45fb9f994293c4c5a628aa3109f4e6820065e3",
+        "pairwise_eval": "8d59dbdb9d78c9cd73a1b07b2e0351855f1c07c2945f2b216ed53bd8ed3baa70"
+      },
+      "snapshot_ref": "161a83a9417c7077f6e7442211333247ec1d1ea3ef61348e5cbb0e1a69458ede",
+      "status": "COMPLETED",
+      "summary": {
+        "conditional_exclusion_applied": false,
+        "execution_permission": false,
+        "family_status": "UNDERDETERMINED",
+        "hypothesis_digest": "a0428d00cd1f759c90907202a85729124372878d6bd787e0a82f2ada1c0d0f3b",
+        "pair_counts": {
+          "NOT_IDENTIFIABLE": 16,
+          "PREFERENCE": 1,
+          "TIE": 183,
+          "UNDERDETERMINED": 0
+        },
+        "query_records": 400,
+        "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER",
+        "train_records": 1484,
+        "training_status": "CONTRADICTORY_TRAINING"
+      }
+    },
+    "corpus-provenance_control": {
+      "engine": "observer_synthesis_v1",
+      "error": null,
+      "execution_permission": false,
+      "kernel_binding": "d25d2636fea12a3bfec9a267a7332347c1347b16739f0ab957ef7026e0730f28",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 3.177091836,
+        "max_rss_kib": 167820
+      },
+      "project": "qa-patch003-prod",
+      "result_digest": "07d600f95d3034d6567521cb81f51002b2d8066be95140cef505f83721ddb86f",
+      "result_ref": "1153d1e47bab68e28a4c96ae2af797dfa372277421b4981e7ebcb9c99efab451",
+      "run_id": "6a2d11374307827747db0911d232deaaef71b501d7ba5447c33946ecd13d9f37",
+      "schema": "livingmath-symbolic-extension-run/1",
+      "section_refs": {
+        "candidate_rules": "e853830cc007a7b0c38b12440d9c7f53f4feeb3bdd40658037337d1746dafbb9",
+        "checks": "0c8c32fb0ac210dc7c060085c5e3b70bb89162ad0df5ccdea6d26bc4423972f4",
+        "diagnostics": "569a556bfce93eb1ad7d17b576507a84debec28f76d6e4dc13f867e9a12f53a6",
+        "manifest": "5b5d5187d3dc8c5284f816f2655d2c9f83337397745bbe47649a12896195c000",
+        "model": "c7014aa984a19b63c33b476698c310b4445b05a92f512ee09baf9c0f0ebc48d0",
+        "observer_provenance": "bb2c7845b3c059a18013520e1b45fb9f994293c4c5a628aa3109f4e6820065e3",
+        "pairwise_eval": "99671562c432e7abab26e1a7675ba5ab70d8025686bc671bbaaeb3ab45f48053"
+      },
+      "snapshot_ref": "37c2f64665558d4a008772911c665b2e46af3ffa90ee7cf37dc965efe9d368df",
+      "status": "COMPLETED",
+      "summary": {
+        "conditional_exclusion_applied": false,
+        "execution_permission": false,
+        "family_status": "UNDERDETERMINED",
+        "hypothesis_digest": "a0428d00cd1f759c90907202a85729124372878d6bd787e0a82f2ada1c0d0f3b",
+        "pair_counts": {
+          "NOT_IDENTIFIABLE": 16,
+          "PREFERENCE": 1,
+          "TIE": 183,
+          "UNDERDETERMINED": 0
+        },
+        "query_records": 400,
+        "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER",
+        "train_records": 1484,
+        "training_status": "CONTRADICTORY_TRAINING"
+      }
+    },
+    "corpus-seed_control": {
+      "engine": "observer_synthesis_v1",
+      "error": null,
+      "execution_permission": false,
+      "kernel_binding": "d25d2636fea12a3bfec9a267a7332347c1347b16739f0ab957ef7026e0730f28",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 3.385387338,
+        "max_rss_kib": 183108
+      },
+      "project": "qa-patch003-prod",
+      "result_digest": "b6aa220939630986626f378b1f4d12ec031b73972309f12be6da6273b780f70c",
+      "result_ref": "4adafa3e534ced3ec27567e7249696224ea064ceaf49021424b3eb282a1d9826",
+      "run_id": "2593f3b6a4ded36de82b58046bf06b780782d97d1070678370f8f49d0e8ff177",
+      "schema": "livingmath-symbolic-extension-run/1",
+      "section_refs": {
+        "candidate_rules": "3e708448a3280ebaa15c8a752addc7a737db93d905829c4f0dd23c461942c5cf",
+        "checks": "0c8c32fb0ac210dc7c060085c5e3b70bb89162ad0df5ccdea6d26bc4423972f4",
+        "diagnostics": "569a556bfce93eb1ad7d17b576507a84debec28f76d6e4dc13f867e9a12f53a6",
+        "manifest": "808398d6f347e903d5765d75b4badd5c97936a3716371cb282e3e5d80b15a1da",
+        "model": "c11ce93d4170d72fc7c8d936cb018cb1a9e3edf0424a7457411feb96f1bd6ee1",
+        "observer_provenance": "bb2c7845b3c059a18013520e1b45fb9f994293c4c5a628aa3109f4e6820065e3",
+        "pairwise_eval": "5859140b426587184564936d6cc7cb631e01cfca674a544bd0fb9cbb69d5db2a"
+      },
+      "snapshot_ref": "79221fc7a9e7851c665bce8ea0532a318b7ebe34bb719ed3991b557be7379a4f",
+      "status": "COMPLETED",
+      "summary": {
+        "conditional_exclusion_applied": false,
+        "execution_permission": false,
+        "family_status": "UNDERDETERMINED",
+        "hypothesis_digest": "e8ff80d1debda6f7a2d57e52c1488bcb4957796f97b939d0c8bc986a6ef5de70",
+        "pair_counts": {
+          "NOT_IDENTIFIABLE": 16,
+          "PREFERENCE": 19,
+          "TIE": 165,
+          "UNDERDETERMINED": 0
+        },
+        "query_records": 400,
+        "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER",
+        "train_records": 1484,
+        "training_status": "CONTRADICTORY_TRAINING"
+      }
+    }
+  },
+  "offline_replay": {
+    "status": "PASS",
+    "rows": [
+      {
+        "bundle": "sp-10.zip",
+        "network_namespace": "unshare -Urn",
+        "returncode": 0,
+        "result": {
+          "engine": "symbolic_complex_v1",
+          "execution_permission": false,
+          "independent_checks": {
+            "H1_dim": 0,
+            "boundary_squared_zero": true,
+            "components": 1,
+            "execution_permission": false,
+            "failed_obligations": [],
+            "graph_beta1": 1264,
+            "missing_peaks": 0,
+            "pi1_status": "PROVED_TRIVIAL_WITH_CERTIFICATE",
+            "rank_d1": 350,
+            "rank_d2_F2": 1264,
+            "status": "CHECKED_INSTANCE",
+            "verified_cell_count": 3360,
+            "verified_edge_count": 1614,
+            "verifier_digest": "2bdff172f1310c6431b7d133ec2fc3a0df0a9ee6b4fb80e645e696e7c60e4c93",
+            "verifier_version": "SP-finite-independent-checker/1"
+          },
+          "journal_hash_chain": "PASS",
+          "kernel_binding": "d25d2636fea12a3bfec9a267a7332347c1347b16739f0ab957ef7026e0730f28",
+          "result_digest": "ba8aee9806014fe375a47c70d023b87fbff6de73272b695c277a034904ab8b98",
+          "run_id": "0285c9d13aae36d74c770daf921561c421dd22cf0e3e5fa94db78c1b5bcc101a",
+          "status": "REPLAY_MATCH"
+        }
+      },
+      {
+        "bundle": "dyck.zip",
+        "network_namespace": "unshare -Urn",
+        "returncode": 0,
+        "result": {
+          "engine": "observer_synthesis_v1",
+          "execution_permission": false,
+          "independent_checks": {
+            "LLM_calls": 0,
+            "execution_permission": false,
+            "holdout_labels_read": false,
+            "hypothesis_frozen_before_queries": true
+          },
+          "journal_hash_chain": "PASS",
+          "kernel_binding": "d25d2636fea12a3bfec9a267a7332347c1347b16739f0ab957ef7026e0730f28",
+          "result_digest": "275ab08e55deb9285bf7487949a415c59884815d981e63dd79e71f2d49b9f74c",
+          "run_id": "a243e4edf86afb53151e575aadaa566d9ceb8b73e796c0587704c22039b847a3",
+          "status": "REPLAY_MATCH"
+        }
+      },
+      {
+        "bundle": "corpus-global-alpha.zip",
+        "network_namespace": "unshare -Urn",
+        "returncode": 0,
+        "result": {
+          "engine": "observer_synthesis_v1",
+          "execution_permission": false,
+          "independent_checks": {
+            "LLM_calls": 0,
+            "execution_permission": false,
+            "holdout_labels_read": false,
+            "hypothesis_frozen_before_queries": true
+          },
+          "journal_hash_chain": "PASS",
+          "kernel_binding": "d25d2636fea12a3bfec9a267a7332347c1347b16739f0ab957ef7026e0730f28",
+          "result_digest": "efea0f5a6ff4649900a432a7bf574e35293c7e720b1a5f9a51f070ad5e44091a",
+          "run_id": "f5c8ef6e5f82a1e3586e8a794510963533ec43f04ba4817bcdee97df6963c7bc",
+          "status": "REPLAY_MATCH"
+        }
+      }
+    ]
+  },
+  "numeric_and_old_profiles": "Actual HTTPS/OAuth replay of numeric base_v1/cj_v1 and old symbolic profiles; see production-legacy-qa/transcript.json"
+}

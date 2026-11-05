@@ -35,7 +35,7 @@ Production: `v0.4.1-developer-preview`, 75 инструментов. Прежн�
 
 Повтор project/request_key/request возвращает прежний run; изменение payload под тем же ключом даёт REQUEST_CONFLICT. PROJECT_NOT_FOUND требует явной регистрации, после которой можно повторить исходный ключ. Отмена ожидания клиента не отменяет принятый run. Аварийный restart отмечает незавершённый run как INTERRUPTED, сохраняя историю.
 
-Пределы: 48,000 source bytes; 262,144 request bytes; 2,048 tokens/word; 8,192 nodes/observations; 131,072 суммарных сохранённых токенов; 4,096 steps, 16 candidates/step. Два активных job +16 queued, 5 CPU/6 wall секунд, 512 MiB/job, 32 MiB result. Алгоритмический бюджет возвращает halt_reason; жёсткий CPU/wall/memory предел возвращает WORKER_LIMIT с сохранённым failed run. Более длинные тексты требуют явной сегментации/меньшего конечного среза.
+Пределы: 48,000 source bytes; 262,144 request bytes; 2,048 исходных токенов суммарно во всём source carrier (включая все записи); 8,192 nodes/observations; 131,072 суммарных сохранённых токенов; 4,096 steps, 16 candidates/step. Два активных job +16 queued, 5 CPU/6 wall секунд, 512 MiB/job, 32 MiB result. Алгоритмический бюджет возвращает halt_reason; жёсткий CPU/wall/memory предел возвращает WORKER_LIMIT с сохранённым failed run. Более длинные тексты требуют явной сегментации/меньшего конечного среза.
 
 ## CLI и тесты
 
@@ -77,3 +77,7 @@ NO_NOVEL_CANDIDATES означает отсутствие новых путей 
 Передать в `white_star_symbolic_inspect`. Диагностика включает размер фронтира (число пар), непробованные операторы, fallback count/reason, реальные DAG-ссылки и терминальную причину. Summary содержит per-operator proposed/accepted/duplicate/forbidden/resource_limited, revisited nodes и бюджеты. При нулевом числе шагов нет фиктивного saturation certificate.
 
 Точная грамматическая модель PATCH001, математические операции и все 75 MCP-схем сохранены. Старые прогоны читаются в исходном виде и пересчитываются настоящими immutable v0.4.0/v0.4.1 профилями. [Приёмка PATCH002 и ограничения](patch002/PATCH002_IMPLEMENTATION_RU.md). Переподключение требуется лишь при закрытой HTTP-сессии после restart; адрес прежний.
+
+## PATCH003
+
+Доступны 7 дополнительных инструментов; прежние 75 схем сохранены. [Примеры SP-комплексов, датасетов, синтеза и replay](patch003/QUICKSTART_RU.md). Для обновления списка до82 инструментов переподключите LivingMath по прежнему адресу.

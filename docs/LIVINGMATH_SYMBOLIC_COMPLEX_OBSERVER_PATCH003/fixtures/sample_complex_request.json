@@ -1,0 +1,16 @@
+{
+  "project": "whitestar_dialog_test",
+  "request_key": "complex-sp-10-v1",
+  "request": {
+    "schema": "livingmath-symbolic-complex-request/1",
+    "complex_source": {
+      "kind": "sp_balanced_fixture",
+      "max_length": 10,
+      "rewrite_rules": ["SP_TO_EMPTY", "PS_TO_EMPTY"],
+      "edge_identity": "source_position_rule"
+    },
+    "cells": {"policy": "all_local_peaks", "join_depth_limit": 1},
+    "analysis": ["graph_cycles", "homology_F2", "path_coherence", "pi1_certificate"],
+    "budgets": {"max_vertices": 500, "max_edges": 2500, "max_cells": 5000, "max_cpu_ms": 4000}
+  }
+}

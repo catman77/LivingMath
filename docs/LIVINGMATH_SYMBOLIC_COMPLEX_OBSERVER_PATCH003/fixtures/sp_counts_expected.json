@@ -1,0 +1,13 @@
+{
+  "schema": "livingmath-sp-fixture-expected/1",
+  "cell_policy": "all_local_peaks",
+  "interpretation_scope": "finite 2-complex of all balanced S/P words length <= N",
+  "observations": [
+    {"N": 2, "V": 3, "E": 2, "graph_beta1": 0, "cells": 0, "rank_d2_F2": 0, "H1_F2_dim": 0},
+    {"N": 4, "V": 9, "E": 14, "graph_beta1": 6, "cells": 8, "rank_d2_F2": 6, "H1_F2_dim": 0},
+    {"N": 6, "V": 29, "E": 74, "graph_beta1": 46, "cells": 80, "rank_d2_F2": 46, "H1_F2_dim": 0},
+    {"N": 8, "V": 99, "E": 354, "graph_beta1": 256, "cells": 560, "rank_d2_F2": 256, "H1_F2_dim": 0},
+    {"N": 10, "V": 351, "E": 1614, "graph_beta1": 1264, "cells": 3360, "rank_d2_F2": 1264, "H1_F2_dim": 0}
+  ],
+  "pi1_exact_scope": "proof via local-peak 2-cell completeness and well-founded reduction, NOT via H1 alone"
+}

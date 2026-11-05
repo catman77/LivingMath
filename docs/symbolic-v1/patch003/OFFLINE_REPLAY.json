@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "bundle": "sp-10.zip",
+      "network_namespace": "unshare -Urn",
+      "returncode": 0,
+      "result": {
+        "engine": "symbolic_complex_v1",
+        "execution_permission": false,
+        "independent_checks": {
+          "H1_dim": 0,
+          "boundary_squared_zero": true,
+          "components": 1,
+          "execution_permission": false,
+          "failed_obligations": [],
+          "graph_beta1": 1264,
+          "missing_peaks": 0,
+          "pi1_status": "PROVED_TRIVIAL_WITH_CERTIFICATE",
+          "rank_d1": 350,
+          "rank_d2_F2": 1264,
+          "status": "CHECKED_INSTANCE",
+          "verified_cell_count": 3360,
+          "verified_edge_count": 1614,
+          "verifier_digest": "2bdff172f1310c6431b7d133ec2fc3a0df0a9ee6b4fb80e645e696e7c60e4c93",
+          "verifier_version": "SP-finite-independent-checker/1"
+        },
+        "journal_hash_chain": "PASS",
+        "kernel_binding": "d25d2636fea12a3bfec9a267a7332347c1347b16739f0ab957ef7026e0730f28",
+        "result_digest": "ba8aee9806014fe375a47c70d023b87fbff6de73272b695c277a034904ab8b98",
+        "run_id": "0285c9d13aae36d74c770daf921561c421dd22cf0e3e5fa94db78c1b5bcc101a",
+        "status": "REPLAY_MATCH"
+      }
+    },
+    {
+      "bundle": "dyck.zip",
+      "network_namespace": "unshare -Urn",
+      "returncode": 0,
+      "result": {
+        "engine": "observer_synthesis_v1",
+        "execution_permission": false,
+        "independent_checks": {
+          "LLM_calls": 0,
+          "execution_permission": false,
+          "holdout_labels_read": false,
+          "hypothesis_frozen_before_queries": true
+        },
+        "journal_hash_chain": "PASS",
+        "kernel_binding": "d25d2636fea12a3bfec9a267a7332347c1347b16739f0ab957ef7026e0730f28",
+        "result_digest": "275ab08e55deb9285bf7487949a415c59884815d981e63dd79e71f2d49b9f74c",
+        "run_id": "a243e4edf86afb53151e575aadaa566d9ceb8b73e796c0587704c22039b847a3",
+        "status": "REPLAY_MATCH"
+      }
+    },
+    {
+      "bundle": "corpus-global-alpha.zip",
+      "network_namespace": "unshare -Urn",
+      "returncode": 0,
+      "result": {
+        "engine": "observer_synthesis_v1",
+        "execution_permission": false,
+        "independent_checks": {
+          "LLM_calls": 0,
+          "execution_permission": false,
+          "holdout_labels_read": false,
+          "hypothesis_frozen_before_queries": true
+        },
+        "journal_hash_chain": "PASS",
+        "kernel_binding": "d25d2636fea12a3bfec9a267a7332347c1347b16739f0ab957ef7026e0730f28",
+        "result_digest": "efea0f5a6ff4649900a432a7bf574e35293c7e720b1a5f9a51f070ad5e44091a",
+        "run_id": "f5c8ef6e5f82a1e3586e8a794510963533ec43f04ba4817bcdee97df6963c7bc",
+        "status": "REPLAY_MATCH"
+      }
+    }
+  ]
+}
