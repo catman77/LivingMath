@@ -1,0 +1,8 @@
+{
+  "source.py": true,
+  "fast_source.py": true,
+  "native/white_star.cpp": true,
+  "source_primitives/cad.py": true,
+  "source_primitives/divzero_core.py": true,
+  "source_primitives/udav.py": true
+}

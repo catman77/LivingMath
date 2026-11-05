@@ -1,0 +1,10 @@
+test_custom_atlas_matches_reference_choice_and_full_trace (test_bridge.BridgeContract.test_custom_atlas_matches_reference_choice_and_full_trace) ... ok
+test_frames_are_fixed_consecutive_outputs_and_readout_is_exact (test_bridge.BridgeContract.test_frames_are_fixed_consecutive_outputs_and_readout_is_exact) ... ok
+test_input_order_and_opaque_names_do_not_steer_geometry (test_bridge.BridgeContract.test_input_order_and_opaque_names_do_not_steer_geometry) ... ok
+test_source_address_rejects_fabricated_evidence (test_bridge.BridgeContract.test_source_address_rejects_fabricated_evidence) ... ok
+test_witness_equations_and_integer_projection (test_bridge.BridgeContract.test_witness_equations_and_integer_projection) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.015s
+
+OK

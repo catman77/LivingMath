@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "validator": "jsonschema 4.26.0",
+  "checks": [
+    "white_star_request.schema.json: schema valid",
+    "formal_model.schema.json: schema valid",
+    "blok_request.json: instance valid",
+    "original_request.json: instance valid",
+    "white_star_status: input schema valid",
+    "white_star_explore: input schema valid",
+    "white_star_inspect: input schema valid",
+    "white_star_record_interpretation: input schema valid",
+    "white_star_validate_model: input schema valid",
+    "semantic_compare_runs: input schema valid",
+    "MCP Blok tools/call arguments valid",
+    "boolean integer: rejected",
+    "unknown field: rejected",
+    "float coordinates: rejected",
+    "feedback forbidden: rejected"
+  ],
+  "live_MCP_test": false
+}

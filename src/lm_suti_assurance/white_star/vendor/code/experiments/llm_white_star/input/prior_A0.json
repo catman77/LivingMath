@@ -1,0 +1,578 @@
+{
+  "version": "source-relations014/1",
+  "readable_model": "Две конкурирующие гипотезы касаются смысла повторения, а не достоверности изображённого мира. Говорящий — не названный в тексте лирический голос; участник форм «Живи», «Умрешь», «начнешь» — подразумеваемое «ты». Их тождество не установлено. Чужая речь и отдельный наблюдатель не обозначены.\n\nОбозначим A начальную символическую сцену, B — положение после предполагаемого продолжения жизни, D — условную смерть адресата, C — заключительную сцену. Порядок перечислений различается: L(A)=〈ночь, улица, фонарь, аптека〉; L(C)=〈ночь, ледяная рябь канала, аптека, улица, фонарь〉. Общие явно названные элементы образуют K={ночь, улица, фонарь, аптека}, но L(A)≠L(C). Это сопоставление текстовых перечислений, не равенство наблюдений и не доказательство тождества сцен. Канал назван только в C; его отсутствие в A не утверждается. Свет описан одновременно как «Бессмысленный и тусклый»; источник света грамматически не установлен.\n\n«Живи еще хоть четверть века» имеет форму побуждения, допускающую уступительное прочтение: даже если продолжить жить ещё четверть века, «Всё будет так». Ни исполнение побуждения, ни точная дата B не сообщены. «Исхода нет» — прямое отрицательное утверждение голоса о возможности выхода в неуточнённой области, а не установленный факт о любом мире. «Всё» сохраняет универсальность внутри неизвестного контекстного домена Ω, но Ω не следует отождествлять со всеми физическими свойствами.\n\nЧтение R1: голос изображает условный посмертный перезапуск того же адресата: D(ты) ⇒ Restart(ты,C). «И повторится всё, как встарь» распространяет заявленное повторение на весь подразумеваемый домен Ω. RepeatΩ(A,C) не означает A=C и не добавляет обратного перехода C→A. Переход D→C — лишь условная кодировка прямо описанного изменения, не сообщение о его осуществлении. Равенство, повторение и возвращение здесь не отождествляются.\n\nЧтение R2: смерть и новое начало входят в риторическую конструкцию безысходности; заключение возвращает мотивы перечисления, но не утверждает буквально возобновлённую жизнь того же лица. Текстовый порядок D≺text C и Repeatmotifs(A,C) сохраняются; переход между мировыми конфигурациями не выводится. Это не отрицание возможности посмертного существования вообще. В обоих чтениях «Исхода нет» и обещание неизменности остаются содержанием голоса, а не независимой проверкой.\n\nВремя будущих форм относительно речевой позиции неизвестно. «Как встарь» задаёт неопределённое прошлое сравнения, не датированную сессию наблюдения. Начальные условия не заданы: A — начало предъявления текста, не обязательно начало процесса. Наблюдательские профили не вводятся: явного протокола наблюдений и владельца измерительных критериев нет. Ограниченный граф не выражает отдельно побуждение жить, отрицание выхода, все временные оговорки и универсальную область Ω; они сохранены здесь.",
+  "readings": [
+    {
+      "id": "R1",
+      "states": [
+        {
+          "id": "R1_A",
+          "label": "Начальная символическая сцена",
+          "evidence": [
+            {
+              "ref": "source_6e74c0e3cffd04019678c8af:0:49",
+              "quote": "Ночь, улица, фонарь, аптека,"
+            },
+            {
+              "ref": "source_6e74c0e3cffd04019678c8af:50:104",
+              "quote": "Бессмысленный и тусклый свет."
+            }
+          ],
+          "features": [
+            {
+              "feature": "Порядок перечисления: ночь → улица → фонарь → аптека",
+              "evidence": {
+                "ref": "source_6e74c0e3cffd04019678c8af:0:49",
+                "quote": "Ночь, улица, фонарь, аптека,"
+              }
+            },
+            {
+              "feature": "Свет: бессмысленный И тусклый",
+              "evidence": {
+                "ref": "source_6e74c0e3cffd04019678c8af:50:104",
+                "quote": "Бессмысленный и тусклый свет."
+              }
+            }
+          ],
+          "participant": "UNKNOWN",
+          "referent": "Начальная перечисленная сцена",
+          "polarity": "POSITIVE",
+          "tense": "UNKNOWN",
+          "modality": "NARRATED",
+          "quantifier": "NAMED_CASE",
+          "scope": "Начальное описание; не полная конфигурация мира",
+          "level": "WORLD_STATE"
+        },
+        {
+          "id": "R1_B",
+          "label": "Предполагаемое продолжение жизни без изменения положения",
+          "evidence": [
+            {
+              "ref": "source_6e74c0e3cffd04019678c8af:105:159",
+              "quote": "Живи еще хоть четверть века —"
+            },
+            {
+              "ref": "source_6e74c0e3cffd04019678c8af:160:206",
+              "quote": "Всё будет так. Исхода нет."
+            }
+          ],
+          "features": [],
+          "participant": "Подразумеваемое «ты»",
+          "referent": "Положение после предполагаемого продолжения жизни",
+          "polarity": "POSITIVE",
+          "tense": "FUTURE",
+          "modality": "CONDITIONAL",
+          "quantifier": "ALL",
+          "scope": "«Всё» в неизвестном контекстном домене; четверть века — уступительно предложенная длительность",
+          "level": "WORLD_STATE"
+        },
+        {
+          "id": "R1_D",
+          "label": "Условная смерть адресата",
+          "evidence": [
+            {
+              "ref": "source_6e74c0e3cffd04019678c8af:207:265",
+              "quote": "Умрешь"
+            }
+          ],
+          "features": [],
+          "participant": "Подразумеваемое «ты»",
+          "referent": "Условие нового начала",
+          "polarity": "POSITIVE",
+          "tense": "FUTURE",
+          "modality": "CONDITIONAL",
+          "quantifier": "NAMED_CASE",
+          "scope": "Условная конструкция «Умрешь — начнешь»",
+          "level": "WORLD_STATE"
+        },
+        {
+          "id": "R1_C",
+          "label": "Новый цикл с заключительной сценой",
+          "evidence": [
+            {
+              "ref": "source_6e74c0e3cffd04019678c8af:207:265",
+              "quote": "начнешь опять сначала"
+            },
+            {
+              "ref": "source_6e74c0e3cffd04019678c8af:319:366",
+              "quote": "Ночь, ледяная рябь канала,"
+            },
+            {
+              "ref": "source_6e74c0e3cffd04019678c8af:367:406",
+              "quote": "Аптека, улица, фонарь."
+            }
+          ],
+          "features": [
+            {
+              "feature": "Порядок перечисления: ночь → ледяная рябь канала → аптека → улица → фонарь",
+              "evidence": {
+                "ref": "source_6e74c0e3cffd04019678c8af:319:366",
+                "quote": "Ночь, ледяная рябь канала,"
+              }
+            },
+            {
+              "feature": "Заключительная тройка: аптека → улица → фонарь",
+              "evidence": {
+                "ref": "source_6e74c0e3cffd04019678c8af:367:406",
+                "quote": "Аптека, улица, фонарь."
+              }
+            }
+          ],
+          "participant": "Подразумеваемое «ты» как носитель нового начала; присутствие в сцене не описано",
+          "referent": "Заключительная перечисленная сцена",
+          "polarity": "POSITIVE",
+          "tense": "FUTURE",
+          "modality": "CONDITIONAL",
+          "quantifier": "NAMED_CASE",
+          "scope": "Чтение заключительного перечисления как содержания нового цикла",
+          "level": "WORLD_STATE"
+        }
+      ],
+      "relations": [
+        {
+          "id": "R1_same",
+          "kind": "REPEAT",
+          "src": "R1_A",
+          "dst": "R1_B",
+          "evidence": [
+            {
+              "ref": "source_6e74c0e3cffd04019678c8af:160:206",
+              "quote": "Всё будет так."
+            }
+          ],
+          "predicate": "Сохранение прежнего положения при продолжении жизни",
+          "participant": "Подразумеваемое «ты»",
+          "referent": "Контекстное «всё»",
+          "polarity": "POSITIVE",
+          "tense": "FUTURE",
+          "modality": "CONDITIONAL",
+          "quantifier": "ALL",
+          "scope": "Неуточнённый домен «всё»; связь «так» с начальной сценой интерпретативна",
+          "order_kind": "UNKNOWN",
+          "projection": "UNKNOWN",
+          "projection_features": [],
+          "interpretation_note": "Заявленная неизменность, не измеренное равенство полных состояний.",
+          "source_claim": {
+            "mode": "DIRECT",
+            "speaker": "Неназванный лирический голос",
+            "observer_id": null,
+            "stance": "ASSERTS",
+            "connective": "NONE",
+            "evidence": [
+              {
+                "ref": "source_6e74c0e3cffd04019678c8af:160:206",
+                "quote": "Всё будет так."
+              }
+            ],
+            "speaker_evidence": [],
+            "comparison": "EQUALITY",
+            "reported_value": "TRUE",
+            "comparison_scope": "«Всё»; область неизвестна",
+            "comparison_time": null
+          },
+          "interpretation_assumptions": [
+            "SCOPED_SOURCE_READING",
+            "SYMBOLIC_STATES_NOT_PHYSICAL_IDENTITIES"
+          ]
+        },
+        {
+          "id": "R1_restart",
+          "kind": "TRANSITION",
+          "src": "R1_D",
+          "dst": "R1_C",
+          "evidence": [
+            {
+              "ref": "source_6e74c0e3cffd04019678c8af:207:265",
+              "quote": "Умрешь — начнешь опять сначала,"
+            }
+          ],
+          "predicate": "Условное новое начало того же адресата после смерти",
+          "participant": "Подразумеваемое «ты»",
+          "referent": "Жизненный цикл адресата в буквальном чтении",
+          "polarity": "POSITIVE",
+          "tense": "FUTURE",
+          "modality": "CONDITIONAL",
+          "quantifier": "NAMED_CASE",
+          "scope": "Только условное содержание высказывания",
+          "order_kind": "EVENT_ORDER",
+          "projection": "UNKNOWN",
+          "projection_features": [],
+          "interpretation_note": "Буквальная гипотеза перезапуска; ни исполнение, ни физический механизм не установлены.",
+          "source_claim": {
+            "mode": "DIRECT",
+            "speaker": "Неназванный лирический голос",
+            "observer_id": null,
+            "stance": "ASSERTS",
+            "connective": "NONE",
+            "evidence": [
+              {
+                "ref": "source_6e74c0e3cffd04019678c8af:207:265",
+                "quote": "Умрешь — начнешь опять сначала,"
+              }
+            ],
+            "speaker_evidence": [],
+            "comparison": "RETURN",
+            "reported_value": "TRUE",
+            "comparison_scope": "«опять сначала»; содержание начала не уточнено",
+            "comparison_time": null
+          },
+          "interpretation_assumptions": [
+            "CONDITIONAL_EXECUTABLE_CHANGE",
+            "SCOPED_SOURCE_READING",
+            "SYMBOLIC_STATES_NOT_PHYSICAL_IDENTITIES"
+          ]
+        },
+        {
+          "id": "R1_repeat",
+          "kind": "REPEAT",
+          "src": "R1_A",
+          "dst": "R1_C",
+          "evidence": [
+            {
+              "ref": "source_6e74c0e3cffd04019678c8af:266:318",
+              "quote": "И повторится всё, как встарь:"
+            }
+          ],
+          "predicate": "Заявленное повторение всего подразумеваемого содержания",
+          "participant": "UNKNOWN",
+          "referent": "Контекстное «всё»",
+          "polarity": "POSITIVE",
+          "tense": "FUTURE",
+          "modality": "ASSERTED",
+          "quantifier": "ALL",
+          "scope": "Неизвестный домен повторения; прежнее может выходить за пределы A",
+          "order_kind": "UNKNOWN",
+          "projection": "UNKNOWN",
+          "projection_features": [],
+          "interpretation_note": "A представляет доступный прежний образ, но не исчерпывает «встарь». Обратный переход не вводится.",
+          "source_claim": {
+            "mode": "DIRECT",
+            "speaker": "Неназванный лирический голос",
+            "observer_id": null,
+            "stance": "ASSERTS",
+            "connective": "CONJUNCTION",
+            "evidence": [
+              {
+                "ref": "source_6e74c0e3cffd04019678c8af:266:318",
+                "quote": "И повторится всё, как встарь:"
+              }
+            ],
+            "speaker_evidence": [],
+            "comparison": "UNSPECIFIED",
+            "reported_value": "TRUE",
+            "comparison_scope": "«всё»; область неизвестна",
+            "comparison_time": "«как встарь»: неопределённое прошлое сравнения"
+          },
+          "interpretation_assumptions": [
+            "SCOPED_SOURCE_READING",
+            "SYMBOLIC_STATES_NOT_PHYSICAL_IDENTITIES"
+          ]
+        }
+      ],
+      "unknowns": [
+        "Личность голоса и адресата, их возможное совпадение.",
+        "Буквальность посмертного начала; текст не сообщает механизма.",
+        "Области «всё», «так» и «Исхода нет».",
+        "Тождество предметов двух сцен и наличие канала в начальной сцене.",
+        "Нет явной подписи говорящего: speaker_evidence оставлено пустым, а не выдумано."
+      ],
+      "observers": [],
+      "initial_state_ids": []
+    },
+    {
+      "id": "R2",
+      "states": [
+        {
+          "id": "R2_A",
+          "label": "Начальная символическая сцена",
+          "evidence": [
+            {
+              "ref": "source_6e74c0e3cffd04019678c8af:0:49",
+              "quote": "Ночь, улица, фонарь, аптека,"
+            },
+            {
+              "ref": "source_6e74c0e3cffd04019678c8af:50:104",
+              "quote": "Бессмысленный и тусклый свет."
+            }
+          ],
+          "features": [
+            {
+              "feature": "Порядок: ночь → улица → фонарь → аптека",
+              "evidence": {
+                "ref": "source_6e74c0e3cffd04019678c8af:0:49",
+                "quote": "Ночь, улица, фонарь, аптека,"
+              }
+            },
+            {
+              "feature": "Свет: бессмысленный И тусклый",
+              "evidence": {
+                "ref": "source_6e74c0e3cffd04019678c8af:50:104",
+                "quote": "Бессмысленный и тусклый свет."
+              }
+            }
+          ],
+          "participant": "UNKNOWN",
+          "referent": "Начальная перечисленная сцена",
+          "polarity": "POSITIVE",
+          "tense": "UNKNOWN",
+          "modality": "NARRATED",
+          "quantifier": "NAMED_CASE",
+          "scope": "Начальное описание",
+          "level": "WORLD_STATE"
+        },
+        {
+          "id": "R2_U",
+          "label": "Высказывание о смерти и новом начале",
+          "evidence": [
+            {
+              "ref": "source_6e74c0e3cffd04019678c8af:207:265",
+              "quote": "Умрешь — начнешь опять сначала,"
+            }
+          ],
+          "features": [],
+          "participant": "Подразумеваемое «ты» в содержании высказывания",
+          "referent": "Текстовое occurrence условной формулы",
+          "polarity": "POSITIVE",
+          "tense": "UNKNOWN",
+          "modality": "NARRATED",
+          "quantifier": "NAMED_CASE",
+          "scope": "Будущее относится к содержанию фразы, не к датировке её произнесения",
+          "level": "SOURCE_EVENT"
+        },
+        {
+          "id": "R2_C",
+          "label": "Заключительная символическая сцена",
+          "evidence": [
+            {
+              "ref": "source_6e74c0e3cffd04019678c8af:319:366",
+              "quote": "Ночь, ледяная рябь канала,"
+            },
+            {
+              "ref": "source_6e74c0e3cffd04019678c8af:367:406",
+              "quote": "Аптека, улица, фонарь."
+            }
+          ],
+          "features": [
+            {
+              "feature": "Порядок начала перечисления: ночь → ледяная рябь канала",
+              "evidence": {
+                "ref": "source_6e74c0e3cffd04019678c8af:319:366",
+                "quote": "Ночь, ледяная рябь канала,"
+              }
+            },
+            {
+              "feature": "Порядок конца перечисления: аптека → улица → фонарь",
+              "evidence": {
+                "ref": "source_6e74c0e3cffd04019678c8af:367:406",
+                "quote": "Аптека, улица, фонарь."
+              }
+            }
+          ],
+          "participant": "UNKNOWN",
+          "referent": "Заключительная перечисленная сцена",
+          "polarity": "POSITIVE",
+          "tense": "UNKNOWN",
+          "modality": "NARRATED",
+          "quantifier": "NAMED_CASE",
+          "scope": "Риторическое возвращение образов; физическое время неизвестно",
+          "level": "WORLD_STATE"
+        }
+      ],
+      "relations": [
+        {
+          "id": "R2_order",
+          "kind": "SEQUENCE",
+          "src": "R2_U",
+          "dst": "R2_C",
+          "evidence": [
+            {
+              "ref": "source_6e74c0e3cffd04019678c8af:207:265",
+              "quote": "Умрешь — начнешь опять сначала,"
+            },
+            {
+              "ref": "source_6e74c0e3cffd04019678c8af:266:318",
+              "quote": "И повторится всё, как встарь:"
+            },
+            {
+              "ref": "source_6e74c0e3cffd04019678c8af:319:366",
+              "quote": "Ночь, ледяная рябь канала,"
+            }
+          ],
+          "predicate": "После условной формулы предъявляется заключительная сцена",
+          "participant": "UNKNOWN",
+          "referent": "Композиция текста",
+          "polarity": "POSITIVE",
+          "tense": "UNKNOWN",
+          "modality": "NARRATED",
+          "quantifier": "NAMED_CASE",
+          "scope": "Текстовое предъявление, не причинность",
+          "order_kind": "TEXT_ORDER",
+          "projection": "UNKNOWN",
+          "projection_features": [],
+          "interpretation_note": "Узел высказывания не исполняется как команда изменения сцены.",
+          "source_claim": {
+            "mode": "NARRATION",
+            "speaker": "Неназванный лирический голос",
+            "observer_id": null,
+            "stance": "UNKNOWN",
+            "connective": "CONJUNCTION",
+            "evidence": [
+              {
+                "ref": "source_6e74c0e3cffd04019678c8af:266:318",
+                "quote": "И повторится всё, как встарь:"
+              }
+            ],
+            "speaker_evidence": [],
+            "comparison": "UNSPECIFIED",
+            "reported_value": "UNKNOWN",
+            "comparison_scope": null,
+            "comparison_time": null
+          },
+          "interpretation_assumptions": [
+            "SCOPED_SOURCE_READING"
+          ]
+        },
+        {
+          "id": "R2_repeat",
+          "kind": "REPEAT",
+          "src": "R2_A",
+          "dst": "R2_C",
+          "evidence": [
+            {
+              "ref": "source_6e74c0e3cffd04019678c8af:266:318",
+              "quote": "И повторится всё, как встарь:"
+            }
+          ],
+          "predicate": "Повторение образного положения без буквального перезапуска лица",
+          "participant": "UNKNOWN",
+          "referent": "Контекстное «всё» в риторическом прочтении",
+          "polarity": "POSITIVE",
+          "tense": "FUTURE",
+          "modality": "ASSERTED",
+          "quantifier": "ALL",
+          "scope": "Весь подразумеваемый мотивный домен, не все свойства мира",
+          "order_kind": "UNKNOWN",
+          "projection": "UNKNOWN",
+          "projection_features": [],
+          "interpretation_note": "Универсальность «всё» сохранена; альтернативно ограничен её домен, а не заменён квантор.",
+          "source_claim": {
+            "mode": "DIRECT",
+            "speaker": "Неназванный лирический голос",
+            "observer_id": null,
+            "stance": "ASSERTS",
+            "connective": "CONJUNCTION",
+            "evidence": [
+              {
+                "ref": "source_6e74c0e3cffd04019678c8af:266:318",
+                "quote": "И повторится всё, как встарь:"
+              }
+            ],
+            "speaker_evidence": [],
+            "comparison": "UNSPECIFIED",
+            "reported_value": "TRUE",
+            "comparison_scope": "«всё», прочитанное как образное положение",
+            "comparison_time": "«как встарь»: неопределённое прошлое сравнения"
+          },
+          "interpretation_assumptions": [
+            "SCOPED_SOURCE_READING",
+            "SYMBOLIC_STATES_NOT_PHYSICAL_IDENTITIES"
+          ]
+        },
+        {
+          "id": "R2_reordered",
+          "kind": "REORDERED",
+          "src": "R2_A",
+          "dst": "R2_C",
+          "evidence": [
+            {
+              "ref": "source_6e74c0e3cffd04019678c8af:0:49",
+              "quote": "Ночь, улица, фонарь, аптека,"
+            },
+            {
+              "ref": "source_6e74c0e3cffd04019678c8af:367:406",
+              "quote": "Аптека, улица, фонарь."
+            }
+          ],
+          "predicate": "Общие элементы перечисления имеют другой порядок",
+          "participant": "UNKNOWN",
+          "referent": "Слова «улица», «фонарь», «аптека» в двух перечислениях",
+          "polarity": "POSITIVE",
+          "tense": "UNKNOWN",
+          "modality": "NARRATED",
+          "quantifier": "NAMED_CASE",
+          "scope": "Только общая тройка; полное заключительное перечисление содержит также канал",
+          "order_kind": "TEXT_ORDER",
+          "projection": "SEQUENCE",
+          "projection_features": [
+            "Порядок общей тройки: улица → фонарь → аптека",
+            "Порядок общей тройки: аптека → улица → фонарь"
+          ],
+          "interpretation_note": "Аналитическое сопоставление точных перечислений, не отдельное утверждение голоса о перестановке физических объектов.",
+          "source_claim": {
+            "mode": "NARRATION",
+            "speaker": "Неназванный лирический голос",
+            "observer_id": null,
+            "stance": "UNKNOWN",
+            "connective": "NONE",
+            "evidence": [
+              {
+                "ref": "source_6e74c0e3cffd04019678c8af:0:49",
+                "quote": "Ночь, улица, фонарь, аптека,"
+              },
+              {
+                "ref": "source_6e74c0e3cffd04019678c8af:367:406",
+                "quote": "Аптека, улица, фонарь."
+              }
+            ],
+            "speaker_evidence": [],
+            "comparison": "UNSPECIFIED",
+            "reported_value": "UNKNOWN",
+            "comparison_scope": null,
+            "comparison_time": null
+          },
+          "interpretation_assumptions": [
+            "SCOPED_SOURCE_READING"
+          ]
+        }
+      ],
+      "unknowns": [
+        "Риторическое прочтение не доказывает намерение автора исключить буквальный цикл.",
+        "Не установлено, описывает ли заключение другую сцену, ту же сцену или только повтор мотивов.",
+        "Нет явно обозначенных наблюдателей, измерений или сессий записи.",
+        "Будущее содержание речевой формулы не датирует сам речевой акт.",
+        "Отрицание выхода и условная неизменность сохранены в readable_model, но не выделены отдельными узлами."
+      ],
+      "observers": [],
+      "initial_state_ids": []
+    }
+  ],
+  "contrasts": [
+    {
+      "id": "literal_restart",
+      "left_reading": "R1",
+      "right_reading": "R2",
+      "dimension": "predicate",
+      "observable": "Содержит ли «Умрешь — начнешь опять сначала» в данном прочтении буквальное возобновление существования того же адресата после смерти?",
+      "left_prediction": "TRUE",
+      "right_prediction": "FALSE",
+      "differing_assumption": "R1 принимает новое начало за условное событие биографии адресата; R2 — за риторическое выражение повторяемой безысходности. Прогнозы относятся к интерпретируемому содержанию, не к физическому осуществлению.",
+      "evidence": [
+        {
+          "ref": "source_6e74c0e3cffd04019678c8af:207:265",
+          "quote": "Умрешь — начнешь опять сначала,"
+        },
+        {
+          "ref": "source_6e74c0e3cffd04019678c8af:266:318",
+          "quote": "И повторится всё, как встарь:"
+        }
+      ],
+      "witness_needed": "Явное пояснение, что после смерти тот же адресат буквально вновь живёт, либо что формула нового начала употреблена только иносказательно; в данном окне такого пояснения нет."
+    }
+  ],
+  "losses": [
+    "Ограниченный граф не выделяет отдельными отношениями побуждение «Живи», отрицательное утверждение «Исхода нет» и все временные оговорки; они сохранены в читаемой формализации.",
+    "Имена и внешняя биография говорящего не предоставлены; отсутствие speaker_evidence не заменено предположительной цитатой.",
+    "Нет основания для измерительных профилей, числовых значений, полной идентичности сцен или физической причинности.",
+    "Буквальное и риторическое прочтения остаются интерпретативными гипотезами; источник не разрешает их конкуренцию."
+  ]
+}

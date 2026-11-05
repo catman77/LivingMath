@@ -43,6 +43,8 @@ def parser():
                 a.add_argument('--reason', required=True)
     from .semantic_bridge.cli import add_parser as semantic_parser
     semantic_parser(sub)
+    from .white_star.cli import add_parser as white_parser
+    white_parser(sub)
     q = sub.add_parser('check');q.add_argument('--project', required=True);q.add_argument('--candidate-ref', required=True)
     q.add_argument('--engine', choices=['direct','compiled'], default='direct');q.add_argument('--request-key', required=True)
     q = sub.add_parser('report');q.add_argument('--project', required=True);q.add_argument('--format', choices=['json','text'], default='text')
@@ -77,7 +79,10 @@ def main(argv=None):
     args = parser().parse_args(argv)
     try:
         s = Service(args.state_dir); cmd = args.command
-        if cmd == 'semantic':
+        if cmd == 'white-star':
+            from .white_star.cli import run as white_run
+            value = white_run(args)
+        elif cmd == 'semantic':
             from .semantic_bridge.cli import run as semantic_run
             value = semantic_run(args)
         elif cmd == 'project':
@@ -103,7 +108,14 @@ def main(argv=None):
             from .bundle import export_bundle
             if args.exclude_source_bytes:
                 from .semantic_bridge.bundle import export as semantic_export
-                raw, manifest = semantic_export(s.workspace(args.project), args.audience, False)
+                workspace = s.workspace(args.project)
+                with workspace.locked():
+                    rows = workspace.history()
+                    if any(r['action'].startswith('white.') for r in rows):
+                        from .white_star.bundle import export_rows as white_export
+                        raw, manifest = white_export(workspace, rows, args.audience, False)
+                if not any(r['action'].startswith('white.') for r in rows):
+                    raw, manifest = semantic_export(workspace, args.audience, False)
             else:
                 raw, manifest = export_bundle(s.workspace(args.project), args.audience)
             target = Path(args.output)
@@ -116,7 +128,15 @@ def main(argv=None):
             from .bundle import replay, MAX_BUNDLE
             if Path(args.bundle).stat().st_size > MAX_BUNDLE:
                 raise AssuranceError('BUNDLE_SIZE_LIMIT')
-            value = replay(Path(args.bundle).read_bytes(), args.engine)
+            raw = Path(args.bundle).read_bytes()
+            from .white_star.bundle import is_bundle as is_white_bundle
+            if is_white_bundle(raw):
+                import base64
+                from .white_star.pool import Pool
+                pool = Pool()
+                try:value = pool.run({'action':'replay','bundle_base64':base64.b64encode(raw).decode()})['data']
+                finally:pool.close()
+            else:value = replay(raw, args.engine)
         elif cmd == 'doctor':
             import importlib.metadata, platform
             value = {'status':'PASS','release':RELEASE,'python':platform.python_version(),

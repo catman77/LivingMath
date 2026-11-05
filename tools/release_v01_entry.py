@@ -37,7 +37,7 @@ def serve(path):
         p = (layer/name).resolve(strict=True)
         if not p.is_relative_to(layer) or sha(p) != expected:
             raise ValueError('RELEASE_FILE_MISMATCH')
-    if cfg['release'] not in ('v0.1.0-developer-preview','v0.2.0-developer-preview'):
+    if cfg['release'] not in ('v0.1.0-developer-preview','v0.2.0-developer-preview','v0.3.0-developer-preview'):
         raise ValueError('RELEASE_VERSION_MISMATCH')
     expected = {'release':cfg['release'],'release_manifest_sha256':cfg['release_manifest_sha256'],
                 'deployment_id':cfg['deployment_id'],'action':'INSTALL_EXACT_OWNER_AUTHORIZED_PREVIEW'}
@@ -48,6 +48,10 @@ def serve(path):
     sys.path.insert(1, str(legacy_layer))
     from lm_suti_assurance.mcp import register_tools
     active_release = cfg['release']
+    white_pool = None
+    if cfg.get('white_star') == {'enabled':True}:
+        from lm_suti_assurance.white_star.pool import Pool
+        white_pool = Pool()
     provider = None
     if cfg.get('semantic_proposer') is not None:
         settings = cfg['semantic_proposer']
@@ -73,6 +77,8 @@ def serve(path):
         register_tools(server, cfg['assurance_state'])
         from lm_suti_assurance.semantic_bridge.mcp import register_tools as register_semantic
         register_semantic(server, cfg['assurance_state'], provider)
+        from lm_suti_assurance.white_star.mcp import register_tools as register_white
+        register_white(server, cfg['assurance_state'], white_pool, recover=True)
         server._mcp_server.version = active_release
         server._mcp_server.instructions += ' For finite assurance use assurance_contract; manual proposals, exact task review and offline export/replay are separate steps.'
         for name in ('bridge_system_status','service_health','research_contract'):
@@ -119,6 +125,7 @@ def serve(path):
         legacy.serve(legacy_cfg)
     finally:
         if provider is not None:provider.close()
+        if white_pool is not None:white_pool.close()
 
 
 if __name__ == '__main__':

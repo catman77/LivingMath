@@ -1,0 +1,6 @@
+{
+  "llm_white_star_transfer/protocol.json": "142dd94392c2c47728e5f1d527e11a8430973988e3c2895f3f3aab8ade5a8971",
+  "llm_white_star/input/concepts.json": "d5614d9900acf1e7682ac25e43c3f3ab2e886b8846288c2204ddf12ed24607c6",
+  "llm_white_star/results/decoder_response.json": "d6a476b89a0383d6e28bf4c3b74cd49cc097cb9c47e8fd12fca376b1c3f1b7d5",
+  "llm_white_star_transfer/transfer_proposal.json": "24dee5aa47cc5b55b7a0dab63576a180aef24b3c452b97696e44cfe0be9af828"
+}

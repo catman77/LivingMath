@@ -1,0 +1,26 @@
+{
+  "experiment": "NOBS_WHITE_STAR_LLM_001",
+  "input_sha256": "6cdfce8028a9a76c025da3602de6276536c8d500c87ff02fa3dd439e0ea5b1f0",
+  "input_file_sha256": "d5614d9900acf1e7682ac25e43c3f3ab2e886b8846288c2204ddf12ed24607c6",
+  "input_freeze": {
+    "concepts.json": "d5614d9900acf1e7682ac25e43c3f3ab2e886b8846288c2204ddf12ed24607c6",
+    "poem.txt": "6e74c0e3cffd04019678c8af84ce5e0540097698c29acc9f3cbb935620aa8bf4",
+    "prior_A0.json": "47dda695c3f1a5ec78c3bca6b5d590403a292561fe2f1b1f80b74cafe4a61ae7"
+  },
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "unchanged_kernel_files": {
+    "source.py": "0e48848be73d1034d5910f93b04b0df71f031cfc500d64b0a072281dedf06511",
+    "fast_source.py": "2cd3add5ebf2946fcef2fce61a6a5cee06e3e9c9f198543612e4aa2e4f3dcbd7",
+    "native/white_star.cpp": "808e6c17d141f8841a9bc2e278f82f047fba4dfb7027357cabde445d713c4d14",
+    "source_primitives/cad.py": "a891bbeae8383448af084709e31eb8b8ac6e27d74a4483f3b81cc85b064c5186",
+    "source_primitives/divzero_core.py": "27375f565ea4c70fbdaad3a5e60b3301d9de106e6e21cccb514b0d84360e5a45",
+    "source_primitives/udav.py": "21d5231efca026bb7a87531e3a5714b125f8d5af68516f45c2847d37aa4784bd"
+  },
+  "optimizer": "existing native WhiteStar/CAD/UDAV; unchanged",
+  "new_code": "concept-to-atlas compiler and projection-to-concept readout only",
+  "tsp_solver_invoked": false,
+  "llm": "current conversation assistant supplies the input annotation and decodes the fixed first six frames",
+  "external_llm_api_calls": 0,
+  "literary_quality_independently_evaluated": false
+}

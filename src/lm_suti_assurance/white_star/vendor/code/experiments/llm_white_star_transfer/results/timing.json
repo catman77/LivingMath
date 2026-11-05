@@ -1,0 +1,19 @@
+{
+  "median_ms": 3.965162002714351,
+  "repeats": 11,
+  "seconds": [
+    0.00395050500810612,
+    0.0040666760032763705,
+    0.0037210669979685917,
+    0.004058209000504576,
+    0.004016029997728765,
+    0.0038123470003483817,
+    0.003965162002714351,
+    0.003893290995620191,
+    0.005020308992243372,
+    0.004017994011519477,
+    0.0037517449964070693
+  ],
+  "includes": "atlas expansion, native state allocation, 64 source steps, audit materialization and all alias readouts",
+  "excludes": "imports, compilation/load, exact reachability audit, theorem checks, file writing, LLM work"
+}

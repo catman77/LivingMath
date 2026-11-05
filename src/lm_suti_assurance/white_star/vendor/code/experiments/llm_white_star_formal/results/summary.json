@@ -1,0 +1,44 @@
+{
+  "experiment": "NOBS_WHITE_STAR_LLM_002_FORMAL",
+  "reachable": {
+    "ordered_maps": 180,
+    "unordered_pairs": 90,
+    "qualitative_states": 344,
+    "fixed_relation_pairs": 44,
+    "fixed_align": 24,
+    "fixed_tension": 20,
+    "changeable_relation_pairs": 46,
+    "domain": "all nonzero witnesses (a,b) in N^2; t=a/(a+b) rational in [0,1]",
+    "result_status": "EXACT_FOR_FIXED_TWO_COORDINATE_READOUT"
+  },
+  "observed": {
+    "nonzero_observations": 63,
+    "unique_qualitative_states": 58,
+    "reachable_qualitative_states": 344,
+    "reachable_fraction": 0.1686046511627907,
+    "unique_observed_unordered_pairs": 47,
+    "unique_projective_states": 62,
+    "all_frame_sequences_distinct": true,
+    "first_six_motifs_distinct": true,
+    "first_six_unique_pairs": 17,
+    "fresh_arithmetic_repeated_qualitative": 5,
+    "meaning_of_fraction": "coverage of a declared qualitative edge readout, not literary meanings"
+  },
+  "certificate": {
+    "arithmetic_trace": "PASS",
+    "source_addresses": "PASS",
+    "frame_and_relation_bindings": "PASS",
+    "prose_excerpt_addresses": "PASS",
+    "type_separation": "PASS",
+    "semantic_fidelity": "UNASSESSED_BY_CHECKER",
+    "aesthetic_quality": "UNASSESSED_BY_CHECKER",
+    "readings": 6,
+    "bindings": 18
+  },
+  "rejected_faults": 11,
+  "kernel_unchanged": true,
+  "search_algorithm_modified": false,
+  "new_interpretations_generated": false,
+  "scope": "Retrospective formalization and exact reachability of experiment 001",
+  "elapsed_seconds": 0.06262186099775136
+}

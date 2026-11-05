@@ -1,0 +1,155 @@
+{
+  "status": "PASS",
+  "passed": 29,
+  "total": 29,
+  "rows": [
+    {
+      "id": "A01",
+      "status": "PASS",
+      "evidence": "SOURCE_COPY_CHECK.json and original manifests"
+    },
+    {
+      "id": "A02",
+      "status": "PASS",
+      "evidence": "reference/REFERENCE_VERIFICATION.json:5+8+8 tests"
+    },
+    {
+      "id": "A03",
+      "status": "PASS",
+      "evidence": "reference/REFERENCE_VERIFICATION.json:8 adapter tests"
+    },
+    {
+      "id": "A04",
+      "status": "PASS",
+      "evidence": "tests/installed-wheel-tests-final.log:196 PASS; tests/test_white_star.py:exact001 base_v1 trace"
+    },
+    {
+      "id": "A05",
+      "status": "PASS",
+      "evidence": "tests/installed-wheel-tests-final.log:196 PASS; tests/test_white_star.py:exact003 trace and readouts; real MCP64/192/354/360/52"
+    },
+    {
+      "id": "A06",
+      "status": "PASS",
+      "evidence": "tests/installed-wheel-tests-final.log:196 PASS; tests/test_white_star.py:all numeric aliases retained"
+    },
+    {
+      "id": "A07",
+      "status": "PASS",
+      "evidence": "mcp/production/:original text32/96 with only its concepts"
+    },
+    {
+      "id": "A08",
+      "status": "PASS",
+      "evidence": "tests/installed-wheel-tests-final.log:196 PASS; tests/test_white_star.py; actual MCP SOURCE_MISMATCH persisted with run ID"
+    },
+    {
+      "id": "A09",
+      "status": "PASS",
+      "evidence": "tests/installed-wheel-tests-final.log:196 PASS; tests/test_white_star.py; actual MCP bool rejection and strict output schema"
+    },
+    {
+      "id": "A10",
+      "status": "PASS",
+      "evidence": "mcp/production/setup:46 independent concepts ->ATLAS_LIMIT_EXCEEDED"
+    },
+    {
+      "id": "A11",
+      "status": "PASS",
+      "evidence": "mcp/production/setup:completed1step,0frames"
+    },
+    {
+      "id": "A12",
+      "status": "PASS",
+      "evidence": "mcp/production/:same keys return identical refs; native new-production smoke separate"
+    },
+    {
+      "id": "A13",
+      "status": "PASS",
+      "evidence": "mcp/production/setup:REQUEST_CONFLICT"
+    },
+    {
+      "id": "A14",
+      "status": "PASS",
+      "evidence": "tests/installed-wheel-tests-final.log:196 PASS; tests/test_white_star.py:two concurrent projects and cross-project refusals"
+    },
+    {
+      "id": "A15",
+      "status": "PASS",
+      "evidence": "mcp/staging/restart/result.json:actual SIGKILL, RUNNING->INTERRUPTED, completed retained"
+    },
+    {
+      "id": "A16",
+      "status": "PASS",
+      "evidence": "tests/installed-wheel-tests-final.log:196 PASS; tests/test_white_star.py; real whole-record trace/export pages"
+    },
+    {
+      "id": "A17",
+      "status": "PASS",
+      "evidence": "mcp/production/setup-tools-list.json and full wire:72 actual tools"
+    },
+    {
+      "id": "A18",
+      "status": "PASS",
+      "evidence": "legacy-tests.log:1066 PASS20SKIP;64 prior input schemas identical"
+    },
+    {
+      "id": "A19",
+      "status": "PASS",
+      "evidence": "COMPARISON_RESULTS.json and exact native counters; no hot reachability audit"
+    },
+    {
+      "id": "A20",
+      "status": "PASS",
+      "evidence": "COMPARISON_RESULTS.json:two actual backends on both frozen snapshots; existing source-assurance Bridge, not native SUTI"
+    },
+    {
+      "id": "A21",
+      "status": "PASS",
+      "evidence": "mcp/production/unmatched-control.json:same source SHA,changed concept label ->UNMATCHED_INPUT"
+    },
+    {
+      "id": "A22",
+      "status": "PASS",
+      "evidence": "model/DECODER_RESULTS.json:4 actual client calls,22 readings; LLM-only evaluation separate"
+    },
+    {
+      "id": "A23",
+      "status": "PASS",
+      "evidence": "tests/installed-wheel-tests-final.log:196 PASS; tests/test_white_star.py; actual MCP3CHECKED_INSTANCE+3REJECTED and separate generic countermodel regressions"
+    },
+    {
+      "id": "A24",
+      "status": "PASS",
+      "evidence": "mcp/production/finish:unsupported physics normal UNSUPPORTED_MODEL"
+    },
+    {
+      "id": "A25",
+      "status": "PASS",
+      "evidence": "tests/installed-wheel-tests-final.log:196 PASS; tests/test_white_star.py:one-byte tamper rejected; all ZIP/object hashes checked"
+    },
+    {
+      "id": "A26",
+      "status": "PASS",
+      "evidence": "offline/OFFLINE_RESULTS.json:3 complete bundles replayed in kernel network namespaces without LLM/OAuth"
+    },
+    {
+      "id": "A27",
+      "status": "PASS",
+      "evidence": "tests/installed-wheel-tests-final.log:196 PASS; tests/test_white_star.py:actual missing.so and isolated child timeout; main endpoint remains live"
+    },
+    {
+      "id": "A28",
+      "status": "PASS",
+      "evidence": "TIMING.json:6 timing runs; native/serialization/journal/transport/client LLM separately recorded"
+    },
+    {
+      "id": "A29",
+      "status": "PASS",
+      "evidence": "DEPLOYMENT.json; rollback-test/64v02->72v03; production45PASS at same originalURL; PRODUCTION_INTEGRITY.json"
+    }
+  ],
+  "basis": "Actual archived tests, installed-wheel tests, real SDK transcripts, fault/rollback probes and production integrity, referenced separately per row",
+  "R3": "PENDING",
+  "external_human_reports": 0
+}

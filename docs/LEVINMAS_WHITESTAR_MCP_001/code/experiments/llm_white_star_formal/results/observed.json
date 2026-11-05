@@ -1,0 +1,2251 @@
+{
+  "edges": [
+    {
+      "step": 1,
+      "state": [
+        "death",
+        "light",
+        "TENSION",
+        "death"
+      ],
+      "projective_state": [
+        [
+          "death",
+          "light"
+        ],
+        "1",
+        "-2/3"
+      ]
+    },
+    {
+      "step": 2,
+      "state": [
+        "night",
+        "pharmacy",
+        "TENSION",
+        "night"
+      ],
+      "projective_state": [
+        [
+          "night",
+          "pharmacy"
+        ],
+        "1",
+        "-1/3"
+      ]
+    },
+    {
+      "step": 3,
+      "state": [
+        "past",
+        "ripple",
+        "TENSION",
+        "ripple"
+      ],
+      "projective_state": [
+        [
+          "past",
+          "ripple"
+        ],
+        "1",
+        "-2"
+      ]
+    },
+    {
+      "step": 4,
+      "state": [
+        "canal",
+        "street",
+        "ALIGN",
+        "BALANCED"
+      ],
+      "projective_state": [
+        [
+          "canal",
+          "street"
+        ],
+        "1",
+        "1"
+      ]
+    },
+    {
+      "step": 5,
+      "state": [
+        "canal",
+        "street",
+        "ALIGN",
+        "street"
+      ],
+      "projective_state": [
+        [
+          "canal",
+          "street"
+        ],
+        "1",
+        "5/4"
+      ]
+    },
+    {
+      "step": 6,
+      "state": [
+        "death",
+        "repeat",
+        "TENSION",
+        "death"
+      ],
+      "projective_state": [
+        [
+          "death",
+          "repeat"
+        ],
+        "1",
+        "-2/11"
+      ]
+    },
+    {
+      "step": 7,
+      "state": [
+        "light",
+        "pharmacy",
+        "TENSION",
+        "light"
+      ],
+      "projective_state": [
+        [
+          "light",
+          "pharmacy"
+        ],
+        "1",
+        "-1/3"
+      ]
+    },
+    {
+      "step": 8,
+      "state": [
+        "lamp",
+        "pharmacy",
+        "ALIGN",
+        "lamp"
+      ],
+      "projective_state": [
+        [
+          "lamp",
+          "pharmacy"
+        ],
+        "1",
+        "3/4"
+      ]
+    },
+    {
+      "step": 9,
+      "state": [
+        "lamp",
+        "repeat",
+        "TENSION",
+        "lamp"
+      ],
+      "projective_state": [
+        [
+          "lamp",
+          "repeat"
+        ],
+        "1",
+        "-1/2"
+      ]
+    },
+    {
+      "step": 10,
+      "state": [
+        "past",
+        "pharmacy",
+        "ALIGN",
+        "past"
+      ],
+      "projective_state": [
+        [
+          "past",
+          "pharmacy"
+        ],
+        "1",
+        "1/3"
+      ]
+    },
+    {
+      "step": 11,
+      "state": [
+        "canal",
+        "night",
+        "ALIGN",
+        "night"
+      ],
+      "projective_state": [
+        [
+          "canal",
+          "night"
+        ],
+        "1",
+        "6/5"
+      ]
+    },
+    {
+      "step": 12,
+      "state": [
+        "light",
+        "street",
+        "ALIGN",
+        "street"
+      ],
+      "projective_state": [
+        [
+          "light",
+          "street"
+        ],
+        "1",
+        "2"
+      ]
+    },
+    {
+      "step": 13,
+      "state": [
+        "pharmacy",
+        "ripple",
+        "ALIGN",
+        "ripple"
+      ],
+      "projective_state": [
+        [
+          "pharmacy",
+          "ripple"
+        ],
+        "1",
+        "2"
+      ]
+    },
+    {
+      "step": 14,
+      "state": [
+        "lamp",
+        "same",
+        "ALIGN",
+        "same"
+      ],
+      "projective_state": [
+        [
+          "lamp",
+          "same"
+        ],
+        "1",
+        "11/10"
+      ]
+    },
+    {
+      "step": 15,
+      "state": [
+        "night",
+        "same",
+        "TENSION",
+        "night"
+      ],
+      "projective_state": [
+        [
+          "night",
+          "same"
+        ],
+        "1",
+        "-1/3"
+      ]
+    },
+    {
+      "step": 16,
+      "state": [
+        "lamp",
+        "night",
+        "ALIGN",
+        "night"
+      ],
+      "projective_state": [
+        [
+          "lamp",
+          "night"
+        ],
+        "1",
+        "3/2"
+      ]
+    },
+    {
+      "step": 17,
+      "state": [
+        "pharmacy",
+        "street",
+        "TENSION",
+        "street"
+      ],
+      "projective_state": [
+        [
+          "pharmacy",
+          "street"
+        ],
+        "1",
+        "-8"
+      ]
+    },
+    {
+      "step": 18,
+      "state": [
+        "repeat",
+        "restart",
+        "TENSION",
+        "restart"
+      ],
+      "projective_state": [
+        [
+          "repeat",
+          "restart"
+        ],
+        "1",
+        "-17"
+      ]
+    },
+    {
+      "step": 19,
+      "state": [
+        "restart",
+        "same",
+        "TENSION",
+        "restart"
+      ],
+      "projective_state": [
+        [
+          "restart",
+          "same"
+        ],
+        "1",
+        "-5/18"
+      ]
+    },
+    {
+      "step": 20,
+      "state": [
+        "restart",
+        "same",
+        "UNRESOLVED",
+        "restart"
+      ],
+      "projective_state": [
+        [
+          "restart",
+          "same"
+        ],
+        "1",
+        "0"
+      ]
+    },
+    {
+      "step": 21,
+      "state": [
+        "death",
+        "repeat",
+        "ALIGN",
+        "repeat"
+      ],
+      "projective_state": [
+        [
+          "death",
+          "repeat"
+        ],
+        "1",
+        "4/3"
+      ]
+    },
+    {
+      "step": 22,
+      "state": [
+        "death",
+        "lamp",
+        "TENSION",
+        "BALANCED"
+      ],
+      "projective_state": [
+        [
+          "death",
+          "lamp"
+        ],
+        "1",
+        "-1"
+      ]
+    },
+    {
+      "step": 23,
+      "state": [
+        "repeat",
+        "ripple",
+        "TENSION",
+        "ripple"
+      ],
+      "projective_state": [
+        [
+          "repeat",
+          "ripple"
+        ],
+        "1",
+        "-4"
+      ]
+    },
+    {
+      "step": 24,
+      "state": [
+        "past",
+        "repeat",
+        "ALIGN",
+        "past"
+      ],
+      "projective_state": [
+        [
+          "past",
+          "repeat"
+        ],
+        "1",
+        "3/4"
+      ]
+    },
+    {
+      "step": 25,
+      "state": [
+        "restart",
+        "same",
+        "ALIGN",
+        "restart"
+      ],
+      "projective_state": [
+        [
+          "restart",
+          "same"
+        ],
+        "1",
+        "1/23"
+      ]
+    },
+    {
+      "step": 26,
+      "state": [
+        "repeat",
+        "restart",
+        "ALIGN",
+        "restart"
+      ],
+      "projective_state": [
+        [
+          "repeat",
+          "restart"
+        ],
+        "1",
+        "7"
+      ]
+    },
+    {
+      "step": 27,
+      "state": [
+        "repeat",
+        "same",
+        "ALIGN",
+        "same"
+      ],
+      "projective_state": [
+        [
+          "repeat",
+          "same"
+        ],
+        "1",
+        "19/11"
+      ]
+    },
+    {
+      "step": 28,
+      "state": [
+        "canal",
+        "restart",
+        "TENSION",
+        "restart"
+      ],
+      "projective_state": [
+        [
+          "canal",
+          "restart"
+        ],
+        "1",
+        "-26/17"
+      ]
+    },
+    {
+      "step": 29,
+      "state": [
+        "death",
+        "past",
+        "TENSION",
+        "death"
+      ],
+      "projective_state": [
+        [
+          "death",
+          "past"
+        ],
+        "1",
+        "-5/6"
+      ]
+    },
+    {
+      "step": 30,
+      "state": [
+        "duration",
+        "restart",
+        "ALIGN",
+        "restart"
+      ],
+      "projective_state": [
+        [
+          "duration",
+          "restart"
+        ],
+        "1",
+        "24"
+      ]
+    },
+    {
+      "step": 31,
+      "state": [
+        "past",
+        "repeat",
+        "ALIGN",
+        "past"
+      ],
+      "projective_state": [
+        [
+          "past",
+          "repeat"
+        ],
+        "1",
+        "7/24"
+      ]
+    },
+    {
+      "step": 32,
+      "state": [
+        "repeat",
+        "restart",
+        "TENSION",
+        "restart"
+      ],
+      "projective_state": [
+        [
+          "repeat",
+          "restart"
+        ],
+        "1",
+        "-11/7"
+      ]
+    },
+    {
+      "step": 33,
+      "state": [
+        "past",
+        "restart",
+        "TENSION",
+        "past"
+      ],
+      "projective_state": [
+        [
+          "past",
+          "restart"
+        ],
+        "1",
+        "-3/4"
+      ]
+    },
+    {
+      "step": 34,
+      "state": [
+        "duration",
+        "light",
+        "TENSION",
+        "duration"
+      ],
+      "projective_state": [
+        [
+          "duration",
+          "light"
+        ],
+        "1",
+        "-2/3"
+      ]
+    },
+    {
+      "step": 35,
+      "state": [
+        "lamp",
+        "pharmacy",
+        "ALIGN",
+        "lamp"
+      ],
+      "projective_state": [
+        [
+          "lamp",
+          "pharmacy"
+        ],
+        "1",
+        "17/26"
+      ]
+    },
+    {
+      "step": 36,
+      "state": [
+        "pharmacy",
+        "same",
+        "UNRESOLVED",
+        "same"
+      ],
+      "projective_state": [
+        [
+          "pharmacy",
+          "same"
+        ],
+        "0",
+        "1"
+      ]
+    },
+    {
+      "step": 37,
+      "state": [
+        "pharmacy",
+        "same",
+        "TENSION",
+        "same"
+      ],
+      "projective_state": [
+        [
+          "pharmacy",
+          "same"
+        ],
+        "1",
+        "-4"
+      ]
+    },
+    {
+      "step": 38,
+      "state": [
+        "past",
+        "pharmacy",
+        "ALIGN",
+        "pharmacy"
+      ],
+      "projective_state": [
+        [
+          "past",
+          "pharmacy"
+        ],
+        "1",
+        "10/9"
+      ]
+    },
+    {
+      "step": 39,
+      "state": [
+        "no_exit",
+        "same",
+        "ALIGN",
+        "no_exit"
+      ],
+      "projective_state": [
+        [
+          "no_exit",
+          "same"
+        ],
+        "1",
+        "7/17"
+      ]
+    },
+    {
+      "step": 40,
+      "state": [
+        "death",
+        "same",
+        "TENSION",
+        "death"
+      ],
+      "projective_state": [
+        [
+          "death",
+          "same"
+        ],
+        "1",
+        "-17/29"
+      ]
+    },
+    {
+      "step": 41,
+      "state": [
+        "canal",
+        "death",
+        "TENSION",
+        "death"
+      ],
+      "projective_state": [
+        [
+          "canal",
+          "death"
+        ],
+        "1",
+        "-31/10"
+      ]
+    },
+    {
+      "step": 42,
+      "state": [
+        "duration",
+        "no_exit",
+        "TENSION",
+        "duration"
+      ],
+      "projective_state": [
+        [
+          "duration",
+          "no_exit"
+        ],
+        "1",
+        "-1/3"
+      ]
+    },
+    {
+      "step": 43,
+      "state": [
+        "light",
+        "same",
+        "ALIGN",
+        "light"
+      ],
+      "projective_state": [
+        [
+          "light",
+          "same"
+        ],
+        "1",
+        "1/9"
+      ]
+    },
+    {
+      "step": 44,
+      "state": [
+        "death",
+        "duration",
+        "ALIGN",
+        "death"
+      ],
+      "projective_state": [
+        [
+          "death",
+          "duration"
+        ],
+        "1",
+        "1/7"
+      ]
+    },
+    {
+      "step": 45,
+      "state": [
+        "death",
+        "street",
+        "TENSION",
+        "street"
+      ],
+      "projective_state": [
+        [
+          "death",
+          "street"
+        ],
+        "1",
+        "-30/29"
+      ]
+    },
+    {
+      "step": 46,
+      "state": [
+        "lamp",
+        "light",
+        "ALIGN",
+        "lamp"
+      ],
+      "projective_state": [
+        [
+          "lamp",
+          "light"
+        ],
+        "1",
+        "19/34"
+      ]
+    },
+    {
+      "step": 47,
+      "state": [
+        "death",
+        "duration",
+        "ALIGN",
+        "BALANCED"
+      ],
+      "projective_state": [
+        [
+          "death",
+          "duration"
+        ],
+        "1",
+        "1"
+      ]
+    },
+    {
+      "step": 48,
+      "state": [
+        "past",
+        "pharmacy",
+        "TENSION",
+        "past"
+      ],
+      "projective_state": [
+        [
+          "past",
+          "pharmacy"
+        ],
+        "1",
+        "-1/4"
+      ]
+    },
+    {
+      "step": 49,
+      "state": [
+        "light",
+        "no_exit",
+        "ALIGN",
+        "no_exit"
+      ],
+      "projective_state": [
+        [
+          "light",
+          "no_exit"
+        ],
+        "1",
+        "33/26"
+      ]
+    },
+    {
+      "step": 50,
+      "state": [
+        "night",
+        "street",
+        "ALIGN",
+        "night"
+      ],
+      "projective_state": [
+        [
+          "night",
+          "street"
+        ],
+        "1",
+        "5/9"
+      ]
+    },
+    {
+      "step": 51,
+      "state": [
+        "repeat",
+        "ripple",
+        "TENSION",
+        "ripple"
+      ],
+      "projective_state": [
+        [
+          "repeat",
+          "ripple"
+        ],
+        "1",
+        "-4"
+      ]
+    },
+    {
+      "step": 52,
+      "state": [
+        "night",
+        "ripple",
+        "TENSION",
+        "night"
+      ],
+      "projective_state": [
+        [
+          "night",
+          "ripple"
+        ],
+        "1",
+        "-26/27"
+      ]
+    },
+    {
+      "step": 53,
+      "state": [
+        "canal",
+        "pharmacy",
+        "ALIGN",
+        "canal"
+      ],
+      "projective_state": [
+        [
+          "canal",
+          "pharmacy"
+        ],
+        "1",
+        "11/19"
+      ]
+    },
+    {
+      "step": 54,
+      "state": [
+        "ripple",
+        "same",
+        "TENSION",
+        "ripple"
+      ],
+      "projective_state": [
+        [
+          "ripple",
+          "same"
+        ],
+        "1",
+        "-1/5"
+      ]
+    },
+    {
+      "step": 55,
+      "state": [
+        "duration",
+        "street",
+        "ALIGN",
+        "duration"
+      ],
+      "projective_state": [
+        [
+          "duration",
+          "street"
+        ],
+        "1",
+        "13/15"
+      ]
+    },
+    {
+      "step": 56,
+      "state": [
+        "night",
+        "pharmacy",
+        "ALIGN",
+        "night"
+      ],
+      "projective_state": [
+        [
+          "night",
+          "pharmacy"
+        ],
+        "1",
+        "1/15"
+      ]
+    },
+    {
+      "step": 57,
+      "state": [
+        "night",
+        "repeat",
+        "TENSION",
+        "night"
+      ],
+      "projective_state": [
+        [
+          "night",
+          "repeat"
+        ],
+        "1",
+        "-1/6"
+      ]
+    },
+    {
+      "step": 58,
+      "state": [
+        "ripple",
+        "street",
+        "TENSION",
+        "ripple"
+      ],
+      "projective_state": [
+        [
+          "ripple",
+          "street"
+        ],
+        "1",
+        "-31/34"
+      ]
+    },
+    {
+      "step": 59,
+      "state": [
+        "pharmacy",
+        "ripple",
+        "TENSION",
+        "ripple"
+      ],
+      "projective_state": [
+        [
+          "pharmacy",
+          "ripple"
+        ],
+        "1",
+        "-19/13"
+      ]
+    },
+    {
+      "step": 60,
+      "state": [
+        "canal",
+        "duration",
+        "ALIGN",
+        "duration"
+      ],
+      "projective_state": [
+        [
+          "canal",
+          "duration"
+        ],
+        "1",
+        "2"
+      ]
+    },
+    {
+      "step": 61,
+      "state": [
+        "lamp",
+        "street",
+        "ALIGN",
+        "lamp"
+      ],
+      "projective_state": [
+        [
+          "lamp",
+          "street"
+        ],
+        "1",
+        "2/3"
+      ]
+    },
+    {
+      "step": 62,
+      "state": [
+        "canal",
+        "restart",
+        "TENSION",
+        "restart"
+      ],
+      "projective_state": [
+        [
+          "canal",
+          "restart"
+        ],
+        "1",
+        "-17/9"
+      ]
+    },
+    {
+      "step": 63,
+      "state": [
+        "no_exit",
+        "ripple",
+        "TENSION",
+        "ripple"
+      ],
+      "projective_state": [
+        [
+          "no_exit",
+          "ripple"
+        ],
+        "1",
+        "-16/11"
+      ]
+    }
+  ],
+  "frames": [
+    {
+      "id": "F01",
+      "steps": [
+        1,
+        2,
+        3
+      ],
+      "sequence": [
+        [
+          "death",
+          "light",
+          "TENSION",
+          "death"
+        ],
+        [
+          "night",
+          "pharmacy",
+          "TENSION",
+          "night"
+        ],
+        [
+          "past",
+          "ripple",
+          "TENSION",
+          "ripple"
+        ]
+      ],
+      "unordered_multiset": [
+        [
+          "death",
+          "light",
+          "TENSION",
+          "death"
+        ],
+        [
+          "night",
+          "pharmacy",
+          "TENSION",
+          "night"
+        ],
+        [
+          "past",
+          "ripple",
+          "TENSION",
+          "ripple"
+        ]
+      ],
+      "distinct_concept_pairs": 3
+    },
+    {
+      "id": "F02",
+      "steps": [
+        4,
+        5,
+        6
+      ],
+      "sequence": [
+        [
+          "canal",
+          "street",
+          "ALIGN",
+          "BALANCED"
+        ],
+        [
+          "canal",
+          "street",
+          "ALIGN",
+          "street"
+        ],
+        [
+          "death",
+          "repeat",
+          "TENSION",
+          "death"
+        ]
+      ],
+      "unordered_multiset": [
+        [
+          "canal",
+          "street",
+          "ALIGN",
+          "BALANCED"
+        ],
+        [
+          "canal",
+          "street",
+          "ALIGN",
+          "street"
+        ],
+        [
+          "death",
+          "repeat",
+          "TENSION",
+          "death"
+        ]
+      ],
+      "distinct_concept_pairs": 2
+    },
+    {
+      "id": "F03",
+      "steps": [
+        7,
+        8,
+        9
+      ],
+      "sequence": [
+        [
+          "light",
+          "pharmacy",
+          "TENSION",
+          "light"
+        ],
+        [
+          "lamp",
+          "pharmacy",
+          "ALIGN",
+          "lamp"
+        ],
+        [
+          "lamp",
+          "repeat",
+          "TENSION",
+          "lamp"
+        ]
+      ],
+      "unordered_multiset": [
+        [
+          "lamp",
+          "pharmacy",
+          "ALIGN",
+          "lamp"
+        ],
+        [
+          "lamp",
+          "repeat",
+          "TENSION",
+          "lamp"
+        ],
+        [
+          "light",
+          "pharmacy",
+          "TENSION",
+          "light"
+        ]
+      ],
+      "distinct_concept_pairs": 3
+    },
+    {
+      "id": "F04",
+      "steps": [
+        10,
+        11,
+        12
+      ],
+      "sequence": [
+        [
+          "past",
+          "pharmacy",
+          "ALIGN",
+          "past"
+        ],
+        [
+          "canal",
+          "night",
+          "ALIGN",
+          "night"
+        ],
+        [
+          "light",
+          "street",
+          "ALIGN",
+          "street"
+        ]
+      ],
+      "unordered_multiset": [
+        [
+          "canal",
+          "night",
+          "ALIGN",
+          "night"
+        ],
+        [
+          "light",
+          "street",
+          "ALIGN",
+          "street"
+        ],
+        [
+          "past",
+          "pharmacy",
+          "ALIGN",
+          "past"
+        ]
+      ],
+      "distinct_concept_pairs": 3
+    },
+    {
+      "id": "F05",
+      "steps": [
+        13,
+        14,
+        15
+      ],
+      "sequence": [
+        [
+          "pharmacy",
+          "ripple",
+          "ALIGN",
+          "ripple"
+        ],
+        [
+          "lamp",
+          "same",
+          "ALIGN",
+          "same"
+        ],
+        [
+          "night",
+          "same",
+          "TENSION",
+          "night"
+        ]
+      ],
+      "unordered_multiset": [
+        [
+          "lamp",
+          "same",
+          "ALIGN",
+          "same"
+        ],
+        [
+          "night",
+          "same",
+          "TENSION",
+          "night"
+        ],
+        [
+          "pharmacy",
+          "ripple",
+          "ALIGN",
+          "ripple"
+        ]
+      ],
+      "distinct_concept_pairs": 3
+    },
+    {
+      "id": "F06",
+      "steps": [
+        16,
+        17,
+        18
+      ],
+      "sequence": [
+        [
+          "lamp",
+          "night",
+          "ALIGN",
+          "night"
+        ],
+        [
+          "pharmacy",
+          "street",
+          "TENSION",
+          "street"
+        ],
+        [
+          "repeat",
+          "restart",
+          "TENSION",
+          "restart"
+        ]
+      ],
+      "unordered_multiset": [
+        [
+          "lamp",
+          "night",
+          "ALIGN",
+          "night"
+        ],
+        [
+          "pharmacy",
+          "street",
+          "TENSION",
+          "street"
+        ],
+        [
+          "repeat",
+          "restart",
+          "TENSION",
+          "restart"
+        ]
+      ],
+      "distinct_concept_pairs": 3
+    },
+    {
+      "id": "F07",
+      "steps": [
+        19,
+        20,
+        21
+      ],
+      "sequence": [
+        [
+          "restart",
+          "same",
+          "TENSION",
+          "restart"
+        ],
+        [
+          "restart",
+          "same",
+          "UNRESOLVED",
+          "restart"
+        ],
+        [
+          "death",
+          "repeat",
+          "ALIGN",
+          "repeat"
+        ]
+      ],
+      "unordered_multiset": [
+        [
+          "death",
+          "repeat",
+          "ALIGN",
+          "repeat"
+        ],
+        [
+          "restart",
+          "same",
+          "TENSION",
+          "restart"
+        ],
+        [
+          "restart",
+          "same",
+          "UNRESOLVED",
+          "restart"
+        ]
+      ],
+      "distinct_concept_pairs": 2
+    },
+    {
+      "id": "F08",
+      "steps": [
+        22,
+        23,
+        24
+      ],
+      "sequence": [
+        [
+          "death",
+          "lamp",
+          "TENSION",
+          "BALANCED"
+        ],
+        [
+          "repeat",
+          "ripple",
+          "TENSION",
+          "ripple"
+        ],
+        [
+          "past",
+          "repeat",
+          "ALIGN",
+          "past"
+        ]
+      ],
+      "unordered_multiset": [
+        [
+          "death",
+          "lamp",
+          "TENSION",
+          "BALANCED"
+        ],
+        [
+          "past",
+          "repeat",
+          "ALIGN",
+          "past"
+        ],
+        [
+          "repeat",
+          "ripple",
+          "TENSION",
+          "ripple"
+        ]
+      ],
+      "distinct_concept_pairs": 3
+    },
+    {
+      "id": "F09",
+      "steps": [
+        25,
+        26,
+        27
+      ],
+      "sequence": [
+        [
+          "restart",
+          "same",
+          "ALIGN",
+          "restart"
+        ],
+        [
+          "repeat",
+          "restart",
+          "ALIGN",
+          "restart"
+        ],
+        [
+          "repeat",
+          "same",
+          "ALIGN",
+          "same"
+        ]
+      ],
+      "unordered_multiset": [
+        [
+          "repeat",
+          "restart",
+          "ALIGN",
+          "restart"
+        ],
+        [
+          "repeat",
+          "same",
+          "ALIGN",
+          "same"
+        ],
+        [
+          "restart",
+          "same",
+          "ALIGN",
+          "restart"
+        ]
+      ],
+      "distinct_concept_pairs": 3
+    },
+    {
+      "id": "F10",
+      "steps": [
+        28,
+        29,
+        30
+      ],
+      "sequence": [
+        [
+          "canal",
+          "restart",
+          "TENSION",
+          "restart"
+        ],
+        [
+          "death",
+          "past",
+          "TENSION",
+          "death"
+        ],
+        [
+          "duration",
+          "restart",
+          "ALIGN",
+          "restart"
+        ]
+      ],
+      "unordered_multiset": [
+        [
+          "canal",
+          "restart",
+          "TENSION",
+          "restart"
+        ],
+        [
+          "death",
+          "past",
+          "TENSION",
+          "death"
+        ],
+        [
+          "duration",
+          "restart",
+          "ALIGN",
+          "restart"
+        ]
+      ],
+      "distinct_concept_pairs": 3
+    },
+    {
+      "id": "F11",
+      "steps": [
+        31,
+        32,
+        33
+      ],
+      "sequence": [
+        [
+          "past",
+          "repeat",
+          "ALIGN",
+          "past"
+        ],
+        [
+          "repeat",
+          "restart",
+          "TENSION",
+          "restart"
+        ],
+        [
+          "past",
+          "restart",
+          "TENSION",
+          "past"
+        ]
+      ],
+      "unordered_multiset": [
+        [
+          "past",
+          "repeat",
+          "ALIGN",
+          "past"
+        ],
+        [
+          "past",
+          "restart",
+          "TENSION",
+          "past"
+        ],
+        [
+          "repeat",
+          "restart",
+          "TENSION",
+          "restart"
+        ]
+      ],
+      "distinct_concept_pairs": 3
+    },
+    {
+      "id": "F12",
+      "steps": [
+        34,
+        35,
+        36
+      ],
+      "sequence": [
+        [
+          "duration",
+          "light",
+          "TENSION",
+          "duration"
+        ],
+        [
+          "lamp",
+          "pharmacy",
+          "ALIGN",
+          "lamp"
+        ],
+        [
+          "pharmacy",
+          "same",
+          "UNRESOLVED",
+          "same"
+        ]
+      ],
+      "unordered_multiset": [
+        [
+          "duration",
+          "light",
+          "TENSION",
+          "duration"
+        ],
+        [
+          "lamp",
+          "pharmacy",
+          "ALIGN",
+          "lamp"
+        ],
+        [
+          "pharmacy",
+          "same",
+          "UNRESOLVED",
+          "same"
+        ]
+      ],
+      "distinct_concept_pairs": 3
+    },
+    {
+      "id": "F13",
+      "steps": [
+        37,
+        38,
+        39
+      ],
+      "sequence": [
+        [
+          "pharmacy",
+          "same",
+          "TENSION",
+          "same"
+        ],
+        [
+          "past",
+          "pharmacy",
+          "ALIGN",
+          "pharmacy"
+        ],
+        [
+          "no_exit",
+          "same",
+          "ALIGN",
+          "no_exit"
+        ]
+      ],
+      "unordered_multiset": [
+        [
+          "no_exit",
+          "same",
+          "ALIGN",
+          "no_exit"
+        ],
+        [
+          "past",
+          "pharmacy",
+          "ALIGN",
+          "pharmacy"
+        ],
+        [
+          "pharmacy",
+          "same",
+          "TENSION",
+          "same"
+        ]
+      ],
+      "distinct_concept_pairs": 3
+    },
+    {
+      "id": "F14",
+      "steps": [
+        40,
+        41,
+        42
+      ],
+      "sequence": [
+        [
+          "death",
+          "same",
+          "TENSION",
+          "death"
+        ],
+        [
+          "canal",
+          "death",
+          "TENSION",
+          "death"
+        ],
+        [
+          "duration",
+          "no_exit",
+          "TENSION",
+          "duration"
+        ]
+      ],
+      "unordered_multiset": [
+        [
+          "canal",
+          "death",
+          "TENSION",
+          "death"
+        ],
+        [
+          "death",
+          "same",
+          "TENSION",
+          "death"
+        ],
+        [
+          "duration",
+          "no_exit",
+          "TENSION",
+          "duration"
+        ]
+      ],
+      "distinct_concept_pairs": 3
+    },
+    {
+      "id": "F15",
+      "steps": [
+        43,
+        44,
+        45
+      ],
+      "sequence": [
+        [
+          "light",
+          "same",
+          "ALIGN",
+          "light"
+        ],
+        [
+          "death",
+          "duration",
+          "ALIGN",
+          "death"
+        ],
+        [
+          "death",
+          "street",
+          "TENSION",
+          "street"
+        ]
+      ],
+      "unordered_multiset": [
+        [
+          "death",
+          "duration",
+          "ALIGN",
+          "death"
+        ],
+        [
+          "death",
+          "street",
+          "TENSION",
+          "street"
+        ],
+        [
+          "light",
+          "same",
+          "ALIGN",
+          "light"
+        ]
+      ],
+      "distinct_concept_pairs": 3
+    },
+    {
+      "id": "F16",
+      "steps": [
+        46,
+        47,
+        48
+      ],
+      "sequence": [
+        [
+          "lamp",
+          "light",
+          "ALIGN",
+          "lamp"
+        ],
+        [
+          "death",
+          "duration",
+          "ALIGN",
+          "BALANCED"
+        ],
+        [
+          "past",
+          "pharmacy",
+          "TENSION",
+          "past"
+        ]
+      ],
+      "unordered_multiset": [
+        [
+          "death",
+          "duration",
+          "ALIGN",
+          "BALANCED"
+        ],
+        [
+          "lamp",
+          "light",
+          "ALIGN",
+          "lamp"
+        ],
+        [
+          "past",
+          "pharmacy",
+          "TENSION",
+          "past"
+        ]
+      ],
+      "distinct_concept_pairs": 3
+    },
+    {
+      "id": "F17",
+      "steps": [
+        49,
+        50,
+        51
+      ],
+      "sequence": [
+        [
+          "light",
+          "no_exit",
+          "ALIGN",
+          "no_exit"
+        ],
+        [
+          "night",
+          "street",
+          "ALIGN",
+          "night"
+        ],
+        [
+          "repeat",
+          "ripple",
+          "TENSION",
+          "ripple"
+        ]
+      ],
+      "unordered_multiset": [
+        [
+          "light",
+          "no_exit",
+          "ALIGN",
+          "no_exit"
+        ],
+        [
+          "night",
+          "street",
+          "ALIGN",
+          "night"
+        ],
+        [
+          "repeat",
+          "ripple",
+          "TENSION",
+          "ripple"
+        ]
+      ],
+      "distinct_concept_pairs": 3
+    },
+    {
+      "id": "F18",
+      "steps": [
+        52,
+        53,
+        54
+      ],
+      "sequence": [
+        [
+          "night",
+          "ripple",
+          "TENSION",
+          "night"
+        ],
+        [
+          "canal",
+          "pharmacy",
+          "ALIGN",
+          "canal"
+        ],
+        [
+          "ripple",
+          "same",
+          "TENSION",
+          "ripple"
+        ]
+      ],
+      "unordered_multiset": [
+        [
+          "canal",
+          "pharmacy",
+          "ALIGN",
+          "canal"
+        ],
+        [
+          "night",
+          "ripple",
+          "TENSION",
+          "night"
+        ],
+        [
+          "ripple",
+          "same",
+          "TENSION",
+          "ripple"
+        ]
+      ],
+      "distinct_concept_pairs": 3
+    },
+    {
+      "id": "F19",
+      "steps": [
+        55,
+        56,
+        57
+      ],
+      "sequence": [
+        [
+          "duration",
+          "street",
+          "ALIGN",
+          "duration"
+        ],
+        [
+          "night",
+          "pharmacy",
+          "ALIGN",
+          "night"
+        ],
+        [
+          "night",
+          "repeat",
+          "TENSION",
+          "night"
+        ]
+      ],
+      "unordered_multiset": [
+        [
+          "duration",
+          "street",
+          "ALIGN",
+          "duration"
+        ],
+        [
+          "night",
+          "pharmacy",
+          "ALIGN",
+          "night"
+        ],
+        [
+          "night",
+          "repeat",
+          "TENSION",
+          "night"
+        ]
+      ],
+      "distinct_concept_pairs": 3
+    },
+    {
+      "id": "F20",
+      "steps": [
+        58,
+        59,
+        60
+      ],
+      "sequence": [
+        [
+          "ripple",
+          "street",
+          "TENSION",
+          "ripple"
+        ],
+        [
+          "pharmacy",
+          "ripple",
+          "TENSION",
+          "ripple"
+        ],
+        [
+          "canal",
+          "duration",
+          "ALIGN",
+          "duration"
+        ]
+      ],
+      "unordered_multiset": [
+        [
+          "canal",
+          "duration",
+          "ALIGN",
+          "duration"
+        ],
+        [
+          "pharmacy",
+          "ripple",
+          "TENSION",
+          "ripple"
+        ],
+        [
+          "ripple",
+          "street",
+          "TENSION",
+          "ripple"
+        ]
+      ],
+      "distinct_concept_pairs": 3
+    },
+    {
+      "id": "F21",
+      "steps": [
+        61,
+        62,
+        63
+      ],
+      "sequence": [
+        [
+          "lamp",
+          "street",
+          "ALIGN",
+          "lamp"
+        ],
+        [
+          "canal",
+          "restart",
+          "TENSION",
+          "restart"
+        ],
+        [
+          "no_exit",
+          "ripple",
+          "TENSION",
+          "ripple"
+        ]
+      ],
+      "unordered_multiset": [
+        [
+          "canal",
+          "restart",
+          "TENSION",
+          "restart"
+        ],
+        [
+          "lamp",
+          "street",
+          "ALIGN",
+          "lamp"
+        ],
+        [
+          "no_exit",
+          "ripple",
+          "TENSION",
+          "ripple"
+        ]
+      ],
+      "distinct_concept_pairs": 3
+    }
+  ],
+  "arithmetic_new_but_qualitatively_repeated": [
+    {
+      "step": 31,
+      "previous_step": 24,
+      "state": [
+        "past",
+        "repeat",
+        "ALIGN",
+        "past"
+      ],
+      "new_arithmetic_signature": [
+        4,
+        2,
+        1,
+        -1,
+        -1,
+        6
+      ],
+      "previous_arithmetic_signature": [
+        2,
+        2,
+        3,
+        -1,
+        -1,
+        3
+      ]
+    },
+    {
+      "step": 32,
+      "previous_step": 18,
+      "state": [
+        "repeat",
+        "restart",
+        "TENSION",
+        "restart"
+      ],
+      "new_arithmetic_signature": [
+        5,
+        1,
+        2,
+        -1,
+        1,
+        2
+      ],
+      "previous_arithmetic_signature": [
+        1,
+        1,
+        1,
+        1,
+        -1,
+        7
+      ]
+    },
+    {
+      "step": 35,
+      "previous_step": 8,
+      "state": [
+        "lamp",
+        "pharmacy",
+        "ALIGN",
+        "lamp"
+      ],
+      "new_arithmetic_signature": [
+        4,
+        0,
+        1,
+        -1,
+        -1,
+        2
+      ],
+      "previous_arithmetic_signature": [
+        3,
+        2,
+        3,
+        -1,
+        -1,
+        4
+      ]
+    },
+    {
+      "step": 51,
+      "previous_step": 23,
+      "state": [
+        "repeat",
+        "ripple",
+        "TENSION",
+        "ripple"
+      ],
+      "new_arithmetic_signature": [
+        2,
+        0,
+        3,
+        -1,
+        1,
+        1
+      ],
+      "previous_arithmetic_signature": [
+        1,
+        0,
+        3,
+        1,
+        -1,
+        6
+      ]
+    },
+    {
+      "step": 62,
+      "previous_step": 28,
+      "state": [
+        "canal",
+        "restart",
+        "TENSION",
+        "restart"
+      ],
+      "new_arithmetic_signature": [
+        4,
+        2,
+        2,
+        -1,
+        1,
+        2
+      ],
+      "previous_arithmetic_signature": [
+        4,
+        0,
+        1,
+        1,
+        -1,
+        5
+      ]
+    }
+  ],
+  "summary": {
+    "nonzero_observations": 63,
+    "unique_qualitative_states": 58,
+    "reachable_qualitative_states": 344,
+    "reachable_fraction": 0.1686046511627907,
+    "unique_observed_unordered_pairs": 47,
+    "unique_projective_states": 62,
+    "all_frame_sequences_distinct": true,
+    "first_six_motifs_distinct": true,
+    "first_six_unique_pairs": 17,
+    "fresh_arithmetic_repeated_qualitative": 5,
+    "meaning_of_fraction": "coverage of a declared qualitative edge readout, not literary meanings"
+  }
+}

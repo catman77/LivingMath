@@ -1,0 +1,266 @@
+{
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "levinmas-white-star-model/1"
+    },
+    "family": {
+      "enum": [
+        "observation_invariant",
+        "control_invariant",
+        "cyclic_order"
+      ]
+    },
+    "matrices": {
+      "type": "object",
+      "properties": {
+        "A": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "oneOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "string",
+                  "pattern": "^-?(0|[1-9][0-9]*)(/[1-9][0-9]*)?$"
+                }
+              ]
+            },
+            "minItems": 1,
+            "maxItems": 8
+          },
+          "minItems": 1,
+          "maxItems": 8
+        },
+        "B": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "oneOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "string",
+                  "pattern": "^-?(0|[1-9][0-9]*)(/[1-9][0-9]*)?$"
+                }
+              ]
+            },
+            "minItems": 1,
+            "maxItems": 8
+          },
+          "minItems": 1,
+          "maxItems": 8
+        },
+        "C": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "oneOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "string",
+                  "pattern": "^-?(0|[1-9][0-9]*)(/[1-9][0-9]*)?$"
+                }
+              ]
+            },
+            "minItems": 1,
+            "maxItems": 8
+          },
+          "minItems": 1,
+          "maxItems": 8
+        },
+        "w": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "oneOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "string",
+                  "pattern": "^-?(0|[1-9][0-9]*)(/[1-9][0-9]*)?$"
+                }
+              ]
+            },
+            "minItems": 1,
+            "maxItems": 8
+          },
+          "minItems": 1,
+          "maxItems": 8
+        },
+        "x": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "oneOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "string",
+                  "pattern": "^-?(0|[1-9][0-9]*)(/[1-9][0-9]*)?$"
+                }
+              ]
+            },
+            "minItems": 1,
+            "maxItems": 8
+          },
+          "minItems": 1,
+          "maxItems": 8
+        },
+        "u": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "oneOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "string",
+                  "pattern": "^-?(0|[1-9][0-9]*)(/[1-9][0-9]*)?$"
+                }
+              ]
+            },
+            "minItems": 1,
+            "maxItems": 8
+          },
+          "minItems": 1,
+          "maxItems": 8
+        },
+        "U": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "oneOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "string",
+                  "pattern": "^-?(0|[1-9][0-9]*)(/[1-9][0-9]*)?$"
+                }
+              ]
+            },
+            "minItems": 1,
+            "maxItems": 8
+          },
+          "minItems": 1,
+          "maxItems": 8
+        },
+        "L": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "oneOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "string",
+                  "pattern": "^-?(0|[1-9][0-9]*)(/[1-9][0-9]*)?$"
+                }
+              ]
+            },
+            "minItems": 1,
+            "maxItems": 8
+          },
+          "minItems": 1,
+          "maxItems": 8
+        },
+        "P": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "oneOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "string",
+                  "pattern": "^-?(0|[1-9][0-9]*)(/[1-9][0-9]*)?$"
+                }
+              ]
+            },
+            "minItems": 1,
+            "maxItems": 8
+          },
+          "minItems": 1,
+          "maxItems": 8
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    },
+    "claim_ref": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 256
+    },
+    "frame_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 256
+      },
+      "minItems": 1,
+      "maxItems": 64
+    },
+    "mapping_assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 8192
+      },
+      "minItems": 1,
+      "maxItems": 64
+    },
+    "obligations": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "invariant_identity",
+          "hidden_state_change",
+          "partial_improvement",
+          "conjugacy",
+          "different_action",
+          "countermodel"
+        ]
+      },
+      "minItems": 1,
+      "maxItems": 8
+    },
+    "countermodel": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema",
+    "family",
+    "matrices",
+    "claim_ref",
+    "frame_refs",
+    "mapping_assumptions",
+    "obligations"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:levinmas:white-star:model:1"
+}

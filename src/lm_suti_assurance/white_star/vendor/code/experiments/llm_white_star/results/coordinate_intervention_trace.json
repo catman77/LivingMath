@@ -1,0 +1,8723 @@
+{
+  "input_sha256": "24c2826ab849c39dc85f85616ae528cc49e9383ac0077f14ff4f9cddcc24fbcf",
+  "atlas": {
+    "schema": "llm-white-star-atlas/1",
+    "charts": [
+      {
+        "view": 0,
+        "pair": [
+          "night",
+          "street"
+        ],
+        "matrix": [
+          -3,
+          -3,
+          -1,
+          -4
+        ],
+        "determinant": 9,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 1,
+        "pair": [
+          "night",
+          "lamp"
+        ],
+        "matrix": [
+          -3,
+          -3,
+          -2,
+          -4
+        ],
+        "determinant": 6,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 2,
+        "pair": [
+          "night",
+          "pharmacy"
+        ],
+        "matrix": [
+          -3,
+          -3,
+          1,
+          -3
+        ],
+        "determinant": 12,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 3,
+        "pair": [
+          "night",
+          "light"
+        ],
+        "matrix": [
+          -3,
+          -3,
+          -3,
+          -2
+        ],
+        "determinant": -3,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 4,
+        "pair": [
+          "night",
+          "duration"
+        ],
+        "matrix": [
+          -3,
+          -3,
+          -2,
+          3
+        ],
+        "determinant": -15,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 5,
+        "pair": [
+          "night",
+          "same"
+        ],
+        "matrix": [
+          -3,
+          -3,
+          -4,
+          1
+        ],
+        "determinant": -15,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 6,
+        "pair": [
+          "night",
+          "no_exit"
+        ],
+        "matrix": [
+          -3,
+          -3,
+          4,
+          -1
+        ],
+        "determinant": 15,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 7,
+        "pair": [
+          "night",
+          "death"
+        ],
+        "matrix": [
+          -3,
+          -3,
+          4,
+          3
+        ],
+        "determinant": 3,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 8,
+        "pair": [
+          "night",
+          "restart"
+        ],
+        "matrix": [
+          -3,
+          -3,
+          3,
+          4
+        ],
+        "determinant": -3,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 9,
+        "pair": [
+          "night",
+          "repeat"
+        ],
+        "matrix": [
+          -3,
+          -3,
+          -3,
+          4
+        ],
+        "determinant": -21,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 10,
+        "pair": [
+          "night",
+          "past"
+        ],
+        "matrix": [
+          -3,
+          -3,
+          -4,
+          -2
+        ],
+        "determinant": -6,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 11,
+        "pair": [
+          "night",
+          "ripple"
+        ],
+        "matrix": [
+          -3,
+          -3,
+          2,
+          4
+        ],
+        "determinant": -6,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 12,
+        "pair": [
+          "night",
+          "canal"
+        ],
+        "matrix": [
+          -3,
+          -3,
+          -1,
+          -3
+        ],
+        "determinant": 6,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 13,
+        "pair": [
+          "street",
+          "night"
+        ],
+        "matrix": [
+          -1,
+          -4,
+          -3,
+          -3
+        ],
+        "determinant": -9,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 14,
+        "pair": [
+          "street",
+          "lamp"
+        ],
+        "matrix": [
+          -1,
+          -4,
+          -2,
+          -4
+        ],
+        "determinant": -4,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 15,
+        "pair": [
+          "street",
+          "pharmacy"
+        ],
+        "matrix": [
+          -1,
+          -4,
+          1,
+          -3
+        ],
+        "determinant": 7,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 16,
+        "pair": [
+          "street",
+          "light"
+        ],
+        "matrix": [
+          -1,
+          -4,
+          -3,
+          -2
+        ],
+        "determinant": -10,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 17,
+        "pair": [
+          "street",
+          "duration"
+        ],
+        "matrix": [
+          -1,
+          -4,
+          -2,
+          3
+        ],
+        "determinant": -11,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 18,
+        "pair": [
+          "street",
+          "same"
+        ],
+        "matrix": [
+          -1,
+          -4,
+          -4,
+          1
+        ],
+        "determinant": -17,
+        "orthogonal_rows": true
+      },
+      {
+        "view": 19,
+        "pair": [
+          "street",
+          "no_exit"
+        ],
+        "matrix": [
+          -1,
+          -4,
+          4,
+          -1
+        ],
+        "determinant": 17,
+        "orthogonal_rows": true
+      },
+      {
+        "view": 20,
+        "pair": [
+          "street",
+          "death"
+        ],
+        "matrix": [
+          -1,
+          -4,
+          4,
+          3
+        ],
+        "determinant": 13,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 21,
+        "pair": [
+          "street",
+          "restart"
+        ],
+        "matrix": [
+          -1,
+          -4,
+          3,
+          4
+        ],
+        "determinant": 8,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 22,
+        "pair": [
+          "street",
+          "repeat"
+        ],
+        "matrix": [
+          -1,
+          -4,
+          -3,
+          4
+        ],
+        "determinant": -16,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 23,
+        "pair": [
+          "street",
+          "past"
+        ],
+        "matrix": [
+          -1,
+          -4,
+          -4,
+          -2
+        ],
+        "determinant": -14,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 24,
+        "pair": [
+          "street",
+          "ripple"
+        ],
+        "matrix": [
+          -1,
+          -4,
+          2,
+          4
+        ],
+        "determinant": 4,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 25,
+        "pair": [
+          "street",
+          "canal"
+        ],
+        "matrix": [
+          -1,
+          -4,
+          -1,
+          -3
+        ],
+        "determinant": -1,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 26,
+        "pair": [
+          "lamp",
+          "night"
+        ],
+        "matrix": [
+          -2,
+          -4,
+          -3,
+          -3
+        ],
+        "determinant": -6,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 27,
+        "pair": [
+          "lamp",
+          "street"
+        ],
+        "matrix": [
+          -2,
+          -4,
+          -1,
+          -4
+        ],
+        "determinant": 4,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 28,
+        "pair": [
+          "lamp",
+          "pharmacy"
+        ],
+        "matrix": [
+          -2,
+          -4,
+          1,
+          -3
+        ],
+        "determinant": 10,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 29,
+        "pair": [
+          "lamp",
+          "light"
+        ],
+        "matrix": [
+          -2,
+          -4,
+          -3,
+          -2
+        ],
+        "determinant": -8,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 30,
+        "pair": [
+          "lamp",
+          "duration"
+        ],
+        "matrix": [
+          -2,
+          -4,
+          -2,
+          3
+        ],
+        "determinant": -14,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 31,
+        "pair": [
+          "lamp",
+          "same"
+        ],
+        "matrix": [
+          -2,
+          -4,
+          -4,
+          1
+        ],
+        "determinant": -18,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 32,
+        "pair": [
+          "lamp",
+          "no_exit"
+        ],
+        "matrix": [
+          -2,
+          -4,
+          4,
+          -1
+        ],
+        "determinant": 18,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 33,
+        "pair": [
+          "lamp",
+          "death"
+        ],
+        "matrix": [
+          -2,
+          -4,
+          4,
+          3
+        ],
+        "determinant": 10,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 34,
+        "pair": [
+          "lamp",
+          "restart"
+        ],
+        "matrix": [
+          -2,
+          -4,
+          3,
+          4
+        ],
+        "determinant": 4,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 35,
+        "pair": [
+          "lamp",
+          "repeat"
+        ],
+        "matrix": [
+          -2,
+          -4,
+          -3,
+          4
+        ],
+        "determinant": -20,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 36,
+        "pair": [
+          "lamp",
+          "past"
+        ],
+        "matrix": [
+          -2,
+          -4,
+          -4,
+          -2
+        ],
+        "determinant": -12,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 37,
+        "pair": [
+          "lamp",
+          "canal"
+        ],
+        "matrix": [
+          -2,
+          -4,
+          -1,
+          -3
+        ],
+        "determinant": 2,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 38,
+        "pair": [
+          "pharmacy",
+          "night"
+        ],
+        "matrix": [
+          1,
+          -3,
+          -3,
+          -3
+        ],
+        "determinant": -12,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 39,
+        "pair": [
+          "pharmacy",
+          "street"
+        ],
+        "matrix": [
+          1,
+          -3,
+          -1,
+          -4
+        ],
+        "determinant": -7,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 40,
+        "pair": [
+          "pharmacy",
+          "lamp"
+        ],
+        "matrix": [
+          1,
+          -3,
+          -2,
+          -4
+        ],
+        "determinant": -10,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 41,
+        "pair": [
+          "pharmacy",
+          "light"
+        ],
+        "matrix": [
+          1,
+          -3,
+          -3,
+          -2
+        ],
+        "determinant": -11,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 42,
+        "pair": [
+          "pharmacy",
+          "duration"
+        ],
+        "matrix": [
+          1,
+          -3,
+          -2,
+          3
+        ],
+        "determinant": -3,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 43,
+        "pair": [
+          "pharmacy",
+          "same"
+        ],
+        "matrix": [
+          1,
+          -3,
+          -4,
+          1
+        ],
+        "determinant": -11,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 44,
+        "pair": [
+          "pharmacy",
+          "no_exit"
+        ],
+        "matrix": [
+          1,
+          -3,
+          4,
+          -1
+        ],
+        "determinant": 11,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 45,
+        "pair": [
+          "pharmacy",
+          "death"
+        ],
+        "matrix": [
+          1,
+          -3,
+          4,
+          3
+        ],
+        "determinant": 15,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 46,
+        "pair": [
+          "pharmacy",
+          "restart"
+        ],
+        "matrix": [
+          1,
+          -3,
+          3,
+          4
+        ],
+        "determinant": 13,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 47,
+        "pair": [
+          "pharmacy",
+          "repeat"
+        ],
+        "matrix": [
+          1,
+          -3,
+          -3,
+          4
+        ],
+        "determinant": -5,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 48,
+        "pair": [
+          "pharmacy",
+          "past"
+        ],
+        "matrix": [
+          1,
+          -3,
+          -4,
+          -2
+        ],
+        "determinant": -14,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 49,
+        "pair": [
+          "pharmacy",
+          "ripple"
+        ],
+        "matrix": [
+          1,
+          -3,
+          2,
+          4
+        ],
+        "determinant": 10,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 50,
+        "pair": [
+          "pharmacy",
+          "canal"
+        ],
+        "matrix": [
+          1,
+          -3,
+          -1,
+          -3
+        ],
+        "determinant": -6,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 51,
+        "pair": [
+          "light",
+          "night"
+        ],
+        "matrix": [
+          -3,
+          -2,
+          -3,
+          -3
+        ],
+        "determinant": 3,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 52,
+        "pair": [
+          "light",
+          "street"
+        ],
+        "matrix": [
+          -3,
+          -2,
+          -1,
+          -4
+        ],
+        "determinant": 10,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 53,
+        "pair": [
+          "light",
+          "lamp"
+        ],
+        "matrix": [
+          -3,
+          -2,
+          -2,
+          -4
+        ],
+        "determinant": 8,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 54,
+        "pair": [
+          "light",
+          "pharmacy"
+        ],
+        "matrix": [
+          -3,
+          -2,
+          1,
+          -3
+        ],
+        "determinant": 11,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 55,
+        "pair": [
+          "light",
+          "duration"
+        ],
+        "matrix": [
+          -3,
+          -2,
+          -2,
+          3
+        ],
+        "determinant": -13,
+        "orthogonal_rows": true
+      },
+      {
+        "view": 56,
+        "pair": [
+          "light",
+          "same"
+        ],
+        "matrix": [
+          -3,
+          -2,
+          -4,
+          1
+        ],
+        "determinant": -11,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 57,
+        "pair": [
+          "light",
+          "no_exit"
+        ],
+        "matrix": [
+          -3,
+          -2,
+          4,
+          -1
+        ],
+        "determinant": 11,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 58,
+        "pair": [
+          "light",
+          "death"
+        ],
+        "matrix": [
+          -3,
+          -2,
+          4,
+          3
+        ],
+        "determinant": -1,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 59,
+        "pair": [
+          "light",
+          "restart"
+        ],
+        "matrix": [
+          -3,
+          -2,
+          3,
+          4
+        ],
+        "determinant": -6,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 60,
+        "pair": [
+          "light",
+          "repeat"
+        ],
+        "matrix": [
+          -3,
+          -2,
+          -3,
+          4
+        ],
+        "determinant": -18,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 61,
+        "pair": [
+          "light",
+          "past"
+        ],
+        "matrix": [
+          -3,
+          -2,
+          -4,
+          -2
+        ],
+        "determinant": -2,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 62,
+        "pair": [
+          "light",
+          "ripple"
+        ],
+        "matrix": [
+          -3,
+          -2,
+          2,
+          4
+        ],
+        "determinant": -8,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 63,
+        "pair": [
+          "light",
+          "canal"
+        ],
+        "matrix": [
+          -3,
+          -2,
+          -1,
+          -3
+        ],
+        "determinant": 7,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 64,
+        "pair": [
+          "duration",
+          "night"
+        ],
+        "matrix": [
+          -2,
+          3,
+          -3,
+          -3
+        ],
+        "determinant": 15,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 65,
+        "pair": [
+          "duration",
+          "street"
+        ],
+        "matrix": [
+          -2,
+          3,
+          -1,
+          -4
+        ],
+        "determinant": 11,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 66,
+        "pair": [
+          "duration",
+          "lamp"
+        ],
+        "matrix": [
+          -2,
+          3,
+          -2,
+          -4
+        ],
+        "determinant": 14,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 67,
+        "pair": [
+          "duration",
+          "pharmacy"
+        ],
+        "matrix": [
+          -2,
+          3,
+          1,
+          -3
+        ],
+        "determinant": 3,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 68,
+        "pair": [
+          "duration",
+          "light"
+        ],
+        "matrix": [
+          -2,
+          3,
+          -3,
+          -2
+        ],
+        "determinant": 13,
+        "orthogonal_rows": true
+      },
+      {
+        "view": 69,
+        "pair": [
+          "duration",
+          "same"
+        ],
+        "matrix": [
+          -2,
+          3,
+          -4,
+          1
+        ],
+        "determinant": 10,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 70,
+        "pair": [
+          "duration",
+          "no_exit"
+        ],
+        "matrix": [
+          -2,
+          3,
+          4,
+          -1
+        ],
+        "determinant": -10,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 71,
+        "pair": [
+          "duration",
+          "death"
+        ],
+        "matrix": [
+          -2,
+          3,
+          4,
+          3
+        ],
+        "determinant": -18,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 72,
+        "pair": [
+          "duration",
+          "restart"
+        ],
+        "matrix": [
+          -2,
+          3,
+          3,
+          4
+        ],
+        "determinant": -17,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 73,
+        "pair": [
+          "duration",
+          "repeat"
+        ],
+        "matrix": [
+          -2,
+          3,
+          -3,
+          4
+        ],
+        "determinant": 1,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 74,
+        "pair": [
+          "duration",
+          "past"
+        ],
+        "matrix": [
+          -2,
+          3,
+          -4,
+          -2
+        ],
+        "determinant": 16,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 75,
+        "pair": [
+          "duration",
+          "ripple"
+        ],
+        "matrix": [
+          -2,
+          3,
+          2,
+          4
+        ],
+        "determinant": -14,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 76,
+        "pair": [
+          "duration",
+          "canal"
+        ],
+        "matrix": [
+          -2,
+          3,
+          -1,
+          -3
+        ],
+        "determinant": 9,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 77,
+        "pair": [
+          "same",
+          "night"
+        ],
+        "matrix": [
+          -4,
+          1,
+          -3,
+          -3
+        ],
+        "determinant": 15,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 78,
+        "pair": [
+          "same",
+          "street"
+        ],
+        "matrix": [
+          -4,
+          1,
+          -1,
+          -4
+        ],
+        "determinant": 17,
+        "orthogonal_rows": true
+      },
+      {
+        "view": 79,
+        "pair": [
+          "same",
+          "lamp"
+        ],
+        "matrix": [
+          -4,
+          1,
+          -2,
+          -4
+        ],
+        "determinant": 18,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 80,
+        "pair": [
+          "same",
+          "pharmacy"
+        ],
+        "matrix": [
+          -4,
+          1,
+          1,
+          -3
+        ],
+        "determinant": 11,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 81,
+        "pair": [
+          "same",
+          "light"
+        ],
+        "matrix": [
+          -4,
+          1,
+          -3,
+          -2
+        ],
+        "determinant": 11,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 82,
+        "pair": [
+          "same",
+          "duration"
+        ],
+        "matrix": [
+          -4,
+          1,
+          -2,
+          3
+        ],
+        "determinant": -10,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 83,
+        "pair": [
+          "same",
+          "death"
+        ],
+        "matrix": [
+          -4,
+          1,
+          4,
+          3
+        ],
+        "determinant": -16,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 84,
+        "pair": [
+          "same",
+          "restart"
+        ],
+        "matrix": [
+          -4,
+          1,
+          3,
+          4
+        ],
+        "determinant": -19,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 85,
+        "pair": [
+          "same",
+          "repeat"
+        ],
+        "matrix": [
+          -4,
+          1,
+          -3,
+          4
+        ],
+        "determinant": -13,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 86,
+        "pair": [
+          "same",
+          "past"
+        ],
+        "matrix": [
+          -4,
+          1,
+          -4,
+          -2
+        ],
+        "determinant": 12,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 87,
+        "pair": [
+          "same",
+          "ripple"
+        ],
+        "matrix": [
+          -4,
+          1,
+          2,
+          4
+        ],
+        "determinant": -18,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 88,
+        "pair": [
+          "same",
+          "canal"
+        ],
+        "matrix": [
+          -4,
+          1,
+          -1,
+          -3
+        ],
+        "determinant": 13,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 89,
+        "pair": [
+          "no_exit",
+          "night"
+        ],
+        "matrix": [
+          4,
+          -1,
+          -3,
+          -3
+        ],
+        "determinant": -15,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 90,
+        "pair": [
+          "no_exit",
+          "street"
+        ],
+        "matrix": [
+          4,
+          -1,
+          -1,
+          -4
+        ],
+        "determinant": -17,
+        "orthogonal_rows": true
+      },
+      {
+        "view": 91,
+        "pair": [
+          "no_exit",
+          "lamp"
+        ],
+        "matrix": [
+          4,
+          -1,
+          -2,
+          -4
+        ],
+        "determinant": -18,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 92,
+        "pair": [
+          "no_exit",
+          "pharmacy"
+        ],
+        "matrix": [
+          4,
+          -1,
+          1,
+          -3
+        ],
+        "determinant": -11,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 93,
+        "pair": [
+          "no_exit",
+          "light"
+        ],
+        "matrix": [
+          4,
+          -1,
+          -3,
+          -2
+        ],
+        "determinant": -11,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 94,
+        "pair": [
+          "no_exit",
+          "duration"
+        ],
+        "matrix": [
+          4,
+          -1,
+          -2,
+          3
+        ],
+        "determinant": 10,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 95,
+        "pair": [
+          "no_exit",
+          "death"
+        ],
+        "matrix": [
+          4,
+          -1,
+          4,
+          3
+        ],
+        "determinant": 16,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 96,
+        "pair": [
+          "no_exit",
+          "restart"
+        ],
+        "matrix": [
+          4,
+          -1,
+          3,
+          4
+        ],
+        "determinant": 19,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 97,
+        "pair": [
+          "no_exit",
+          "repeat"
+        ],
+        "matrix": [
+          4,
+          -1,
+          -3,
+          4
+        ],
+        "determinant": 13,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 98,
+        "pair": [
+          "no_exit",
+          "past"
+        ],
+        "matrix": [
+          4,
+          -1,
+          -4,
+          -2
+        ],
+        "determinant": -12,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 99,
+        "pair": [
+          "no_exit",
+          "ripple"
+        ],
+        "matrix": [
+          4,
+          -1,
+          2,
+          4
+        ],
+        "determinant": 18,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 100,
+        "pair": [
+          "no_exit",
+          "canal"
+        ],
+        "matrix": [
+          4,
+          -1,
+          -1,
+          -3
+        ],
+        "determinant": -13,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 101,
+        "pair": [
+          "death",
+          "night"
+        ],
+        "matrix": [
+          4,
+          3,
+          -3,
+          -3
+        ],
+        "determinant": -3,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 102,
+        "pair": [
+          "death",
+          "street"
+        ],
+        "matrix": [
+          4,
+          3,
+          -1,
+          -4
+        ],
+        "determinant": -13,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 103,
+        "pair": [
+          "death",
+          "lamp"
+        ],
+        "matrix": [
+          4,
+          3,
+          -2,
+          -4
+        ],
+        "determinant": -10,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 104,
+        "pair": [
+          "death",
+          "pharmacy"
+        ],
+        "matrix": [
+          4,
+          3,
+          1,
+          -3
+        ],
+        "determinant": -15,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 105,
+        "pair": [
+          "death",
+          "light"
+        ],
+        "matrix": [
+          4,
+          3,
+          -3,
+          -2
+        ],
+        "determinant": 1,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 106,
+        "pair": [
+          "death",
+          "duration"
+        ],
+        "matrix": [
+          4,
+          3,
+          -2,
+          3
+        ],
+        "determinant": 18,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 107,
+        "pair": [
+          "death",
+          "same"
+        ],
+        "matrix": [
+          4,
+          3,
+          -4,
+          1
+        ],
+        "determinant": 16,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 108,
+        "pair": [
+          "death",
+          "no_exit"
+        ],
+        "matrix": [
+          4,
+          3,
+          4,
+          -1
+        ],
+        "determinant": -16,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 109,
+        "pair": [
+          "death",
+          "restart"
+        ],
+        "matrix": [
+          4,
+          3,
+          3,
+          4
+        ],
+        "determinant": 7,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 110,
+        "pair": [
+          "death",
+          "repeat"
+        ],
+        "matrix": [
+          4,
+          3,
+          -3,
+          4
+        ],
+        "determinant": 25,
+        "orthogonal_rows": true
+      },
+      {
+        "view": 111,
+        "pair": [
+          "death",
+          "past"
+        ],
+        "matrix": [
+          4,
+          3,
+          -4,
+          -2
+        ],
+        "determinant": 4,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 112,
+        "pair": [
+          "death",
+          "ripple"
+        ],
+        "matrix": [
+          4,
+          3,
+          2,
+          4
+        ],
+        "determinant": 10,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 113,
+        "pair": [
+          "death",
+          "canal"
+        ],
+        "matrix": [
+          4,
+          3,
+          -1,
+          -3
+        ],
+        "determinant": -9,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 114,
+        "pair": [
+          "restart",
+          "night"
+        ],
+        "matrix": [
+          3,
+          4,
+          -3,
+          -3
+        ],
+        "determinant": 3,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 115,
+        "pair": [
+          "restart",
+          "street"
+        ],
+        "matrix": [
+          3,
+          4,
+          -1,
+          -4
+        ],
+        "determinant": -8,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 116,
+        "pair": [
+          "restart",
+          "lamp"
+        ],
+        "matrix": [
+          3,
+          4,
+          -2,
+          -4
+        ],
+        "determinant": -4,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 117,
+        "pair": [
+          "restart",
+          "pharmacy"
+        ],
+        "matrix": [
+          3,
+          4,
+          1,
+          -3
+        ],
+        "determinant": -13,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 118,
+        "pair": [
+          "restart",
+          "light"
+        ],
+        "matrix": [
+          3,
+          4,
+          -3,
+          -2
+        ],
+        "determinant": 6,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 119,
+        "pair": [
+          "restart",
+          "duration"
+        ],
+        "matrix": [
+          3,
+          4,
+          -2,
+          3
+        ],
+        "determinant": 17,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 120,
+        "pair": [
+          "restart",
+          "same"
+        ],
+        "matrix": [
+          3,
+          4,
+          -4,
+          1
+        ],
+        "determinant": 19,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 121,
+        "pair": [
+          "restart",
+          "no_exit"
+        ],
+        "matrix": [
+          3,
+          4,
+          4,
+          -1
+        ],
+        "determinant": -19,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 122,
+        "pair": [
+          "restart",
+          "death"
+        ],
+        "matrix": [
+          3,
+          4,
+          4,
+          3
+        ],
+        "determinant": -7,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 123,
+        "pair": [
+          "restart",
+          "repeat"
+        ],
+        "matrix": [
+          3,
+          4,
+          -3,
+          4
+        ],
+        "determinant": 24,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 124,
+        "pair": [
+          "restart",
+          "past"
+        ],
+        "matrix": [
+          3,
+          4,
+          -4,
+          -2
+        ],
+        "determinant": 10,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 125,
+        "pair": [
+          "restart",
+          "ripple"
+        ],
+        "matrix": [
+          3,
+          4,
+          2,
+          4
+        ],
+        "determinant": 4,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 126,
+        "pair": [
+          "restart",
+          "canal"
+        ],
+        "matrix": [
+          3,
+          4,
+          -1,
+          -3
+        ],
+        "determinant": -5,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 127,
+        "pair": [
+          "repeat",
+          "night"
+        ],
+        "matrix": [
+          -3,
+          4,
+          -3,
+          -3
+        ],
+        "determinant": 21,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 128,
+        "pair": [
+          "repeat",
+          "street"
+        ],
+        "matrix": [
+          -3,
+          4,
+          -1,
+          -4
+        ],
+        "determinant": 16,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 129,
+        "pair": [
+          "repeat",
+          "lamp"
+        ],
+        "matrix": [
+          -3,
+          4,
+          -2,
+          -4
+        ],
+        "determinant": 20,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 130,
+        "pair": [
+          "repeat",
+          "pharmacy"
+        ],
+        "matrix": [
+          -3,
+          4,
+          1,
+          -3
+        ],
+        "determinant": 5,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 131,
+        "pair": [
+          "repeat",
+          "light"
+        ],
+        "matrix": [
+          -3,
+          4,
+          -3,
+          -2
+        ],
+        "determinant": 18,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 132,
+        "pair": [
+          "repeat",
+          "duration"
+        ],
+        "matrix": [
+          -3,
+          4,
+          -2,
+          3
+        ],
+        "determinant": -1,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 133,
+        "pair": [
+          "repeat",
+          "same"
+        ],
+        "matrix": [
+          -3,
+          4,
+          -4,
+          1
+        ],
+        "determinant": 13,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 134,
+        "pair": [
+          "repeat",
+          "no_exit"
+        ],
+        "matrix": [
+          -3,
+          4,
+          4,
+          -1
+        ],
+        "determinant": -13,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 135,
+        "pair": [
+          "repeat",
+          "death"
+        ],
+        "matrix": [
+          -3,
+          4,
+          4,
+          3
+        ],
+        "determinant": -25,
+        "orthogonal_rows": true
+      },
+      {
+        "view": 136,
+        "pair": [
+          "repeat",
+          "restart"
+        ],
+        "matrix": [
+          -3,
+          4,
+          3,
+          4
+        ],
+        "determinant": -24,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 137,
+        "pair": [
+          "repeat",
+          "past"
+        ],
+        "matrix": [
+          -3,
+          4,
+          -4,
+          -2
+        ],
+        "determinant": 22,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 138,
+        "pair": [
+          "repeat",
+          "ripple"
+        ],
+        "matrix": [
+          -3,
+          4,
+          2,
+          4
+        ],
+        "determinant": -20,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 139,
+        "pair": [
+          "repeat",
+          "canal"
+        ],
+        "matrix": [
+          -3,
+          4,
+          -1,
+          -3
+        ],
+        "determinant": 13,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 140,
+        "pair": [
+          "past",
+          "night"
+        ],
+        "matrix": [
+          -4,
+          -2,
+          -3,
+          -3
+        ],
+        "determinant": 6,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 141,
+        "pair": [
+          "past",
+          "street"
+        ],
+        "matrix": [
+          -4,
+          -2,
+          -1,
+          -4
+        ],
+        "determinant": 14,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 142,
+        "pair": [
+          "past",
+          "lamp"
+        ],
+        "matrix": [
+          -4,
+          -2,
+          -2,
+          -4
+        ],
+        "determinant": 12,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 143,
+        "pair": [
+          "past",
+          "pharmacy"
+        ],
+        "matrix": [
+          -4,
+          -2,
+          1,
+          -3
+        ],
+        "determinant": 14,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 144,
+        "pair": [
+          "past",
+          "light"
+        ],
+        "matrix": [
+          -4,
+          -2,
+          -3,
+          -2
+        ],
+        "determinant": 2,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 145,
+        "pair": [
+          "past",
+          "duration"
+        ],
+        "matrix": [
+          -4,
+          -2,
+          -2,
+          3
+        ],
+        "determinant": -16,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 146,
+        "pair": [
+          "past",
+          "same"
+        ],
+        "matrix": [
+          -4,
+          -2,
+          -4,
+          1
+        ],
+        "determinant": -12,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 147,
+        "pair": [
+          "past",
+          "no_exit"
+        ],
+        "matrix": [
+          -4,
+          -2,
+          4,
+          -1
+        ],
+        "determinant": 12,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 148,
+        "pair": [
+          "past",
+          "death"
+        ],
+        "matrix": [
+          -4,
+          -2,
+          4,
+          3
+        ],
+        "determinant": -4,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 149,
+        "pair": [
+          "past",
+          "restart"
+        ],
+        "matrix": [
+          -4,
+          -2,
+          3,
+          4
+        ],
+        "determinant": -10,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 150,
+        "pair": [
+          "past",
+          "repeat"
+        ],
+        "matrix": [
+          -4,
+          -2,
+          -3,
+          4
+        ],
+        "determinant": -22,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 151,
+        "pair": [
+          "past",
+          "ripple"
+        ],
+        "matrix": [
+          -4,
+          -2,
+          2,
+          4
+        ],
+        "determinant": -12,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 152,
+        "pair": [
+          "past",
+          "canal"
+        ],
+        "matrix": [
+          -4,
+          -2,
+          -1,
+          -3
+        ],
+        "determinant": 10,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 153,
+        "pair": [
+          "ripple",
+          "night"
+        ],
+        "matrix": [
+          2,
+          4,
+          -3,
+          -3
+        ],
+        "determinant": 6,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 154,
+        "pair": [
+          "ripple",
+          "street"
+        ],
+        "matrix": [
+          2,
+          4,
+          -1,
+          -4
+        ],
+        "determinant": -4,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 155,
+        "pair": [
+          "ripple",
+          "pharmacy"
+        ],
+        "matrix": [
+          2,
+          4,
+          1,
+          -3
+        ],
+        "determinant": -10,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 156,
+        "pair": [
+          "ripple",
+          "light"
+        ],
+        "matrix": [
+          2,
+          4,
+          -3,
+          -2
+        ],
+        "determinant": 8,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 157,
+        "pair": [
+          "ripple",
+          "duration"
+        ],
+        "matrix": [
+          2,
+          4,
+          -2,
+          3
+        ],
+        "determinant": 14,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 158,
+        "pair": [
+          "ripple",
+          "same"
+        ],
+        "matrix": [
+          2,
+          4,
+          -4,
+          1
+        ],
+        "determinant": 18,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 159,
+        "pair": [
+          "ripple",
+          "no_exit"
+        ],
+        "matrix": [
+          2,
+          4,
+          4,
+          -1
+        ],
+        "determinant": -18,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 160,
+        "pair": [
+          "ripple",
+          "death"
+        ],
+        "matrix": [
+          2,
+          4,
+          4,
+          3
+        ],
+        "determinant": -10,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 161,
+        "pair": [
+          "ripple",
+          "restart"
+        ],
+        "matrix": [
+          2,
+          4,
+          3,
+          4
+        ],
+        "determinant": -4,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 162,
+        "pair": [
+          "ripple",
+          "repeat"
+        ],
+        "matrix": [
+          2,
+          4,
+          -3,
+          4
+        ],
+        "determinant": 20,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 163,
+        "pair": [
+          "ripple",
+          "past"
+        ],
+        "matrix": [
+          2,
+          4,
+          -4,
+          -2
+        ],
+        "determinant": 12,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 164,
+        "pair": [
+          "ripple",
+          "canal"
+        ],
+        "matrix": [
+          2,
+          4,
+          -1,
+          -3
+        ],
+        "determinant": -2,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 165,
+        "pair": [
+          "canal",
+          "night"
+        ],
+        "matrix": [
+          -1,
+          -3,
+          -3,
+          -3
+        ],
+        "determinant": -6,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 166,
+        "pair": [
+          "canal",
+          "street"
+        ],
+        "matrix": [
+          -1,
+          -3,
+          -1,
+          -4
+        ],
+        "determinant": 1,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 167,
+        "pair": [
+          "canal",
+          "lamp"
+        ],
+        "matrix": [
+          -1,
+          -3,
+          -2,
+          -4
+        ],
+        "determinant": -2,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 168,
+        "pair": [
+          "canal",
+          "pharmacy"
+        ],
+        "matrix": [
+          -1,
+          -3,
+          1,
+          -3
+        ],
+        "determinant": 6,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 169,
+        "pair": [
+          "canal",
+          "light"
+        ],
+        "matrix": [
+          -1,
+          -3,
+          -3,
+          -2
+        ],
+        "determinant": -7,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 170,
+        "pair": [
+          "canal",
+          "duration"
+        ],
+        "matrix": [
+          -1,
+          -3,
+          -2,
+          3
+        ],
+        "determinant": -9,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 171,
+        "pair": [
+          "canal",
+          "same"
+        ],
+        "matrix": [
+          -1,
+          -3,
+          -4,
+          1
+        ],
+        "determinant": -13,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 172,
+        "pair": [
+          "canal",
+          "no_exit"
+        ],
+        "matrix": [
+          -1,
+          -3,
+          4,
+          -1
+        ],
+        "determinant": 13,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 173,
+        "pair": [
+          "canal",
+          "death"
+        ],
+        "matrix": [
+          -1,
+          -3,
+          4,
+          3
+        ],
+        "determinant": 9,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 174,
+        "pair": [
+          "canal",
+          "restart"
+        ],
+        "matrix": [
+          -1,
+          -3,
+          3,
+          4
+        ],
+        "determinant": 5,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 175,
+        "pair": [
+          "canal",
+          "repeat"
+        ],
+        "matrix": [
+          -1,
+          -3,
+          -3,
+          4
+        ],
+        "determinant": -13,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 176,
+        "pair": [
+          "canal",
+          "past"
+        ],
+        "matrix": [
+          -1,
+          -3,
+          -4,
+          -2
+        ],
+        "determinant": -10,
+        "orthogonal_rows": false
+      },
+      {
+        "view": 177,
+        "pair": [
+          "canal",
+          "ripple"
+        ],
+        "matrix": [
+          -1,
+          -3,
+          2,
+          4
+        ],
+        "determinant": 2,
+        "orthogonal_rows": false
+      }
+    ],
+    "omitted_collinear_pairs": [
+      [
+        "lamp",
+        "ripple"
+      ],
+      [
+        "same",
+        "no_exit"
+      ],
+      [
+        "no_exit",
+        "same"
+      ],
+      [
+        "ripple",
+        "lamp"
+      ]
+    ],
+    "ordered_pair_count": 182,
+    "semantics": "rows name concepts; matrices act on division witnesses, not on truth values"
+  },
+  "observations": [
+    {
+      "step": 0,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        0,
+        0
+      ],
+      "finite_fibre_layer": 0,
+      "candidate_views": [
+        72,
+        83,
+        94
+      ],
+      "candidate_scores": [
+        [
+          0.46153846153846156,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.46153846153846156,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.46153846153846156,
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      "view": 72,
+      "matrix": [
+        -2,
+        3,
+        3,
+        4
+      ],
+      "coordinates": [
+        0,
+        0
+      ],
+      "direction_defined": false,
+      "euclid_quotients": [],
+      "gcd": 0,
+      "signature": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "state": "WS:unresolved"
+    },
+    {
+      "step": 1,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        0,
+        1
+      ],
+      "finite_fibre_layer": 1,
+      "candidate_views": [
+        107,
+        118,
+        129
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      "view": 107,
+      "matrix": [
+        4,
+        3,
+        -4,
+        1
+      ],
+      "coordinates": [
+        3,
+        1
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        3
+      ],
+      "gcd": 1,
+      "signature": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "state": "WS:E1:A1"
+    },
+    {
+      "step": 2,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        1,
+        0
+      ],
+      "finite_fibre_layer": 1,
+      "candidate_views": [
+        4,
+        15,
+        26
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      "view": 4,
+      "matrix": [
+        -3,
+        -3,
+        -2,
+        3
+      ],
+      "coordinates": [
+        -3,
+        -2
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        1,
+        2
+      ],
+      "gcd": 1,
+      "signature": [
+        2,
+        1,
+        1,
+        -1,
+        -1,
+        2
+      ],
+      "state": "WS:E2:A2"
+    },
+    {
+      "step": 3,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        0,
+        2
+      ],
+      "finite_fibre_layer": 2,
+      "candidate_views": [
+        153,
+        164,
+        175
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      "view": 153,
+      "matrix": [
+        2,
+        4,
+        -3,
+        -3
+      ],
+      "coordinates": [
+        8,
+        -6
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        1,
+        3
+      ],
+      "gcd": 2,
+      "signature": [
+        2,
+        2,
+        2,
+        1,
+        -1,
+        4
+      ],
+      "state": "WS:E2:A4"
+    },
+    {
+      "step": 4,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        2,
+        0
+      ],
+      "finite_fibre_layer": 2,
+      "candidate_views": [
+        168,
+        1,
+        12
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.5,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.5,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.5,
+          1.0
+        ]
+      ],
+      "view": 168,
+      "matrix": [
+        -1,
+        -3,
+        1,
+        -3
+      ],
+      "coordinates": [
+        -2,
+        2
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        1
+      ],
+      "gcd": 2,
+      "signature": [
+        1,
+        1,
+        2,
+        -1,
+        1,
+        4
+      ],
+      "state": "WS:E1:A4"
+    },
+    {
+      "step": 5,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        1,
+        1
+      ],
+      "finite_fibre_layer": 2,
+      "candidate_views": [
+        16,
+        27,
+        38
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.3333333333333333,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      "view": 27,
+      "matrix": [
+        -2,
+        -4,
+        -1,
+        -4
+      ],
+      "coordinates": [
+        -6,
+        -5
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        1,
+        5
+      ],
+      "gcd": 1,
+      "signature": [
+        2,
+        2,
+        1,
+        -1,
+        -1,
+        3
+      ],
+      "state": "WS:E2:A3"
+    },
+    {
+      "step": 6,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        2,
+        1
+      ],
+      "finite_fibre_layer": 3,
+      "candidate_views": [
+        101,
+        112,
+        123
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.3333333333333333,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.5,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      "view": 123,
+      "matrix": [
+        3,
+        4,
+        -3,
+        4
+      ],
+      "coordinates": [
+        10,
+        -2
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        5
+      ],
+      "gcd": 2,
+      "signature": [
+        1,
+        1,
+        2,
+        1,
+        -1,
+        6
+      ],
+      "state": "WS:E1:A6"
+    },
+    {
+      "step": 7,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        3,
+        0
+      ],
+      "finite_fibre_layer": 3,
+      "candidate_views": [
+        43,
+        54,
+        65
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.5,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.5,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.5,
+          1.0
+        ]
+      ],
+      "view": 43,
+      "matrix": [
+        1,
+        -3,
+        -4,
+        1
+      ],
+      "coordinates": [
+        3,
+        -12
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        0,
+        4
+      ],
+      "gcd": 3,
+      "signature": [
+        2,
+        0,
+        3,
+        1,
+        -1,
+        1
+      ],
+      "state": "WS:E2:A1"
+    },
+    {
+      "step": 8,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        0,
+        3
+      ],
+      "finite_fibre_layer": 3,
+      "candidate_views": [
+        42,
+        53,
+        64
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.3333333333333333,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.3333333333333333,
+          1.0
+        ]
+      ],
+      "view": 53,
+      "matrix": [
+        -3,
+        -2,
+        -2,
+        -4
+      ],
+      "coordinates": [
+        -6,
+        -12
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        0,
+        2
+      ],
+      "gcd": 6,
+      "signature": [
+        2,
+        0,
+        3,
+        -1,
+        -1,
+        5
+      ],
+      "state": "WS:E2:A5"
+    },
+    {
+      "step": 9,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        1,
+        2
+      ],
+      "finite_fibre_layer": 3,
+      "candidate_views": [
+        131,
+        142,
+        153
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.5,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.3333333333333333,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.3333333333333333,
+          0.5
+        ]
+      ],
+      "view": 131,
+      "matrix": [
+        -3,
+        4,
+        -3,
+        -2
+      ],
+      "coordinates": [
+        5,
+        -7
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        0,
+        1,
+        2,
+        2
+      ],
+      "gcd": 1,
+      "signature": [
+        4,
+        1,
+        1,
+        1,
+        -1,
+        3
+      ],
+      "state": "WS:E4:A3"
+    },
+    {
+      "step": 10,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        2,
+        2
+      ],
+      "finite_fibre_layer": 4,
+      "candidate_views": [
+        28,
+        39,
+        50
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.3333333333333333,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.5,
+          1.0
+        ],
+        [
+          0.0,
+          0.5,
+          0.5,
+          1.0
+        ]
+      ],
+      "view": 39,
+      "matrix": [
+        1,
+        -3,
+        -1,
+        -4
+      ],
+      "coordinates": [
+        -4,
+        -10
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        0,
+        2,
+        2
+      ],
+      "gcd": 2,
+      "signature": [
+        3,
+        0,
+        2,
+        -1,
+        -1,
+        6
+      ],
+      "state": "WS:E3:A6"
+    },
+    {
+      "step": 11,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        1,
+        3
+      ],
+      "finite_fibre_layer": 4,
+      "candidate_views": [
+        3,
+        14,
+        25
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.3333333333333333,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.3333333333333333,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.3333333333333333,
+          1.0
+        ]
+      ],
+      "view": 3,
+      "matrix": [
+        -3,
+        -3,
+        -3,
+        -2
+      ],
+      "coordinates": [
+        -12,
+        -9
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        1,
+        3
+      ],
+      "gcd": 3,
+      "signature": [
+        2,
+        2,
+        3,
+        -1,
+        -1,
+        3
+      ],
+      "state": "WS:E2:A3"
+    },
+    {
+      "step": 12,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        0,
+        4
+      ],
+      "finite_fibre_layer": 4,
+      "candidate_views": [
+        18,
+        29,
+        40
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.3333333333333333,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.5,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.3333333333333333,
+          1.0
+        ]
+      ],
+      "view": 29,
+      "matrix": [
+        -2,
+        -4,
+        -3,
+        -2
+      ],
+      "coordinates": [
+        -16,
+        -8
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        2
+      ],
+      "gcd": 8,
+      "signature": [
+        1,
+        0,
+        3,
+        -1,
+        -1,
+        2
+      ],
+      "state": "WS:E1:A2"
+    },
+    {
+      "step": 13,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        4,
+        0
+      ],
+      "finite_fibre_layer": 4,
+      "candidate_views": [
+        40,
+        51,
+        62
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.3333333333333333,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.3333333333333333,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.5,
+          1.0
+        ]
+      ],
+      "view": 62,
+      "matrix": [
+        -3,
+        -2,
+        2,
+        4
+      ],
+      "coordinates": [
+        -12,
+        8
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        1,
+        2
+      ],
+      "gcd": 4,
+      "signature": [
+        2,
+        1,
+        3,
+        -1,
+        1,
+        5
+      ],
+      "state": "WS:E2:A5"
+    },
+    {
+      "step": 14,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        3,
+        1
+      ],
+      "finite_fibre_layer": 4,
+      "candidate_views": [
+        11,
+        22,
+        33
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.3333333333333333,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.25,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.3333333333333333,
+          1.0
+        ]
+      ],
+      "view": 11,
+      "matrix": [
+        -3,
+        -3,
+        2,
+        4
+      ],
+      "coordinates": [
+        -12,
+        10
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        1,
+        5
+      ],
+      "gcd": 2,
+      "signature": [
+        2,
+        2,
+        2,
+        -1,
+        1,
+        4
+      ],
+      "state": "WS:E2:A4"
+    },
+    {
+      "step": 15,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        0,
+        5
+      ],
+      "finite_fibre_layer": 5,
+      "candidate_views": [
+        7,
+        18,
+        29
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.25,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.3333333333333333,
+          1.0
+        ],
+        [
+          0.5384615384615384,
+          0.5,
+          0.3333333333333333,
+          0.5
+        ]
+      ],
+      "view": 18,
+      "matrix": [
+        -1,
+        -4,
+        -4,
+        1
+      ],
+      "coordinates": [
+        -20,
+        5
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        4
+      ],
+      "gcd": 5,
+      "signature": [
+        1,
+        0,
+        3,
+        -1,
+        1,
+        6
+      ],
+      "state": "WS:E1:A6"
+    },
+    {
+      "step": 16,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        5,
+        0
+      ],
+      "finite_fibre_layer": 5,
+      "candidate_views": [
+        6,
+        17,
+        28
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.25,
+          1.0
+        ],
+        [
+          0.5384615384615384,
+          0.5,
+          0.3333333333333333,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.3333333333333333,
+          1.0
+        ]
+      ],
+      "view": 28,
+      "matrix": [
+        -2,
+        -4,
+        1,
+        -3
+      ],
+      "coordinates": [
+        -10,
+        5
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        2
+      ],
+      "gcd": 5,
+      "signature": [
+        1,
+        0,
+        3,
+        -1,
+        1,
+        5
+      ],
+      "state": "WS:E1:A5"
+    },
+    {
+      "step": 17,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        4,
+        1
+      ],
+      "finite_fibre_layer": 5,
+      "candidate_views": [
+        41,
+        52,
+        63
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.5,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.3333333333333333,
+          1.0
+        ],
+        [
+          0.5384615384615384,
+          0.5,
+          0.3333333333333333,
+          1.0
+        ]
+      ],
+      "view": 41,
+      "matrix": [
+        1,
+        -3,
+        -3,
+        -2
+      ],
+      "coordinates": [
+        1,
+        -14
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        0,
+        14
+      ],
+      "gcd": 1,
+      "signature": [
+        2,
+        0,
+        1,
+        1,
+        -1,
+        0
+      ],
+      "state": "WS:E2:A0"
+    },
+    {
+      "step": 18,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        3,
+        2
+      ],
+      "finite_fibre_layer": 5,
+      "candidate_views": [
+        116,
+        127,
+        138
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.25,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.3333333333333333,
+          1.0
+        ]
+      ],
+      "view": 127,
+      "matrix": [
+        -3,
+        4,
+        -3,
+        -3
+      ],
+      "coordinates": [
+        -1,
+        -15
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        0,
+        15
+      ],
+      "gcd": 1,
+      "signature": [
+        2,
+        1,
+        1,
+        -1,
+        -1,
+        7
+      ],
+      "state": "WS:E2:A7"
+    },
+    {
+      "step": 19,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        2,
+        3
+      ],
+      "finite_fibre_layer": 5,
+      "candidate_views": [
+        87,
+        98,
+        109
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.3333333333333333,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.3333333333333333,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.25,
+          1.0
+        ]
+      ],
+      "view": 87,
+      "matrix": [
+        -4,
+        1,
+        2,
+        4
+      ],
+      "coordinates": [
+        -5,
+        16
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        0,
+        3,
+        5
+      ],
+      "gcd": 1,
+      "signature": [
+        3,
+        2,
+        1,
+        -1,
+        1,
+        1
+      ],
+      "state": "WS:E3:A1"
+    },
+    {
+      "step": 20,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        1,
+        4
+      ],
+      "finite_fibre_layer": 5,
+      "candidate_views": [
+        102,
+        113,
+        124
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.25,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.25,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.25,
+          1.0
+        ]
+      ],
+      "view": 102,
+      "matrix": [
+        4,
+        3,
+        -1,
+        -4
+      ],
+      "coordinates": [
+        16,
+        -17
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        0,
+        1,
+        16
+      ],
+      "gcd": 1,
+      "signature": [
+        3,
+        1,
+        1,
+        1,
+        -1,
+        3
+      ],
+      "state": "WS:E3:A3"
+    },
+    {
+      "step": 21,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        0,
+        6
+      ],
+      "finite_fibre_layer": 6,
+      "candidate_views": [
+        128,
+        139,
+        150
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.25,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.25,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.3333333333333333,
+          1.0
+        ]
+      ],
+      "view": 150,
+      "matrix": [
+        -4,
+        -2,
+        -3,
+        4
+      ],
+      "coordinates": [
+        -12,
+        24
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        0,
+        2
+      ],
+      "gcd": 12,
+      "signature": [
+        2,
+        0,
+        3,
+        -1,
+        1,
+        2
+      ],
+      "state": "WS:E2:A2"
+    },
+    {
+      "step": 22,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        2,
+        4
+      ],
+      "finite_fibre_layer": 6,
+      "candidate_views": [
+        35,
+        46,
+        57
+      ],
+      "candidate_scores": [
+        [
+          0.5384615384615384,
+          0.5,
+          0.25,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.25,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.25,
+          1.0
+        ]
+      ],
+      "view": 46,
+      "matrix": [
+        1,
+        -3,
+        3,
+        4
+      ],
+      "coordinates": [
+        -10,
+        22
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        0,
+        2,
+        5
+      ],
+      "gcd": 2,
+      "signature": [
+        3,
+        1,
+        2,
+        -1,
+        1,
+        2
+      ],
+      "state": "WS:E3:A2"
+    },
+    {
+      "step": 23,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        4,
+        2
+      ],
+      "finite_fibre_layer": 6,
+      "candidate_views": [
+        155,
+        166,
+        177
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.5,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.25,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.2,
+          1.0
+        ]
+      ],
+      "view": 155,
+      "matrix": [
+        2,
+        4,
+        1,
+        -3
+      ],
+      "coordinates": [
+        16,
+        -2
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        8
+      ],
+      "gcd": 2,
+      "signature": [
+        1,
+        0,
+        2,
+        1,
+        -1,
+        7
+      ],
+      "state": "WS:E1:A7"
+    },
+    {
+      "step": 24,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        6,
+        0
+      ],
+      "finite_fibre_layer": 6,
+      "candidate_views": [
+        154,
+        165,
+        176
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.25,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.25,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.25,
+          1.0
+        ]
+      ],
+      "view": 154,
+      "matrix": [
+        2,
+        4,
+        -1,
+        -4
+      ],
+      "coordinates": [
+        12,
+        -6
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        2
+      ],
+      "gcd": 6,
+      "signature": [
+        1,
+        0,
+        3,
+        1,
+        -1,
+        5
+      ],
+      "state": "WS:E1:A5"
+    },
+    {
+      "step": 25,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        1,
+        5
+      ],
+      "finite_fibre_layer": 6,
+      "candidate_views": [
+        65,
+        76,
+        87
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.2,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.2,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.3333333333333333,
+          0.5
+        ]
+      ],
+      "view": 87,
+      "matrix": [
+        -4,
+        1,
+        2,
+        4
+      ],
+      "coordinates": [
+        1,
+        22
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        0,
+        22
+      ],
+      "gcd": 1,
+      "signature": [
+        2,
+        0,
+        1,
+        1,
+        1,
+        7
+      ],
+      "state": "WS:E2:A7"
+    },
+    {
+      "step": 26,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        3,
+        3
+      ],
+      "finite_fibre_layer": 6,
+      "candidate_views": [
+        140,
+        151,
+        162
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.25,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.25,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.3333333333333333,
+          1.0
+        ]
+      ],
+      "view": 162,
+      "matrix": [
+        2,
+        4,
+        -3,
+        4
+      ],
+      "coordinates": [
+        18,
+        3
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        6
+      ],
+      "gcd": 3,
+      "signature": [
+        1,
+        0,
+        3,
+        1,
+        1,
+        0
+      ],
+      "state": "WS:E1:A0"
+    },
+    {
+      "step": 27,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        5,
+        1
+      ],
+      "finite_fibre_layer": 6,
+      "candidate_views": [
+        115,
+        126,
+        137
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.2,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.2,
+          1.0
+        ],
+        [
+          0.5384615384615384,
+          0.5,
+          0.2,
+          1.0
+        ]
+      ],
+      "view": 115,
+      "matrix": [
+        3,
+        4,
+        -1,
+        -4
+      ],
+      "coordinates": [
+        19,
+        -9
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        2,
+        9
+      ],
+      "gcd": 1,
+      "signature": [
+        2,
+        1,
+        1,
+        1,
+        -1,
+        5
+      ],
+      "state": "WS:E2:A5"
+    },
+    {
+      "step": 28,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        2,
+        5
+      ],
+      "finite_fibre_layer": 7,
+      "candidate_views": [
+        130,
+        141,
+        152
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.25,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.25,
+          1.0
+        ],
+        [
+          0.5384615384615384,
+          0.5,
+          0.2,
+          1.0
+        ]
+      ],
+      "view": 130,
+      "matrix": [
+        -3,
+        4,
+        1,
+        -3
+      ],
+      "coordinates": [
+        14,
+        -13
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        1,
+        13
+      ],
+      "gcd": 1,
+      "signature": [
+        2,
+        2,
+        1,
+        1,
+        -1,
+        4
+      ],
+      "state": "WS:E2:A4"
+    },
+    {
+      "step": 29,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        3,
+        4
+      ],
+      "finite_fibre_layer": 7,
+      "candidate_views": [
+        152,
+        163,
+        174
+      ],
+      "candidate_scores": [
+        [
+          0.5384615384615384,
+          0.5,
+          0.2,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.2,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.2,
+          1.0
+        ]
+      ],
+      "view": 163,
+      "matrix": [
+        2,
+        4,
+        -4,
+        -2
+      ],
+      "coordinates": [
+        22,
+        -20
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        1,
+        10
+      ],
+      "gcd": 2,
+      "signature": [
+        2,
+        1,
+        2,
+        1,
+        -1,
+        4
+      ],
+      "state": "WS:E2:A4"
+    },
+    {
+      "step": 30,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        4,
+        3
+      ],
+      "finite_fibre_layer": 7,
+      "candidate_views": [
+        123,
+        134,
+        145
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.25,
+          0.5
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.25,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.25,
+          1.0
+        ]
+      ],
+      "view": 134,
+      "matrix": [
+        -3,
+        4,
+        4,
+        -1
+      ],
+      "coordinates": [
+        0,
+        13
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        0
+      ],
+      "gcd": 13,
+      "signature": [
+        1,
+        0,
+        3,
+        0,
+        1,
+        0
+      ],
+      "state": "WS:E1:A0"
+    },
+    {
+      "step": 31,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        5,
+        2
+      ],
+      "finite_fibre_layer": 7,
+      "candidate_views": [
+        119,
+        130,
+        141
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.25,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.2,
+          0.5
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.2,
+          1.0
+        ]
+      ],
+      "view": 119,
+      "matrix": [
+        3,
+        4,
+        -2,
+        3
+      ],
+      "coordinates": [
+        23,
+        -4
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        5,
+        1,
+        3
+      ],
+      "gcd": 1,
+      "signature": [
+        3,
+        0,
+        1,
+        1,
+        -1,
+        7
+      ],
+      "state": "WS:E3:A7"
+    },
+    {
+      "step": 32,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        6,
+        1
+      ],
+      "finite_fibre_layer": 7,
+      "candidate_views": [
+        118,
+        129,
+        140
+      ],
+      "candidate_scores": [
+        [
+          0.5384615384615384,
+          0.5,
+          0.16666666666666666,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.16666666666666666,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.2,
+          1.0
+        ]
+      ],
+      "view": 140,
+      "matrix": [
+        -4,
+        -2,
+        -3,
+        -3
+      ],
+      "coordinates": [
+        -26,
+        -21
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        1,
+        4,
+        5
+      ],
+      "gcd": 1,
+      "signature": [
+        3,
+        2,
+        1,
+        -1,
+        -1,
+        3
+      ],
+      "state": "WS:E3:A3"
+    },
+    {
+      "step": 33,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        7,
+        0
+      ],
+      "finite_fibre_layer": 7,
+      "candidate_views": [
+        153,
+        164,
+        175
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.2,
+          0.5
+        ],
+        [
+          0.5384615384615384,
+          0.5,
+          0.16666666666666666,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.25,
+          1.0
+        ]
+      ],
+      "view": 175,
+      "matrix": [
+        -1,
+        -3,
+        -3,
+        4
+      ],
+      "coordinates": [
+        -7,
+        -21
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        0,
+        3
+      ],
+      "gcd": 7,
+      "signature": [
+        2,
+        1,
+        3,
+        -1,
+        -1,
+        6
+      ],
+      "state": "WS:E2:A6"
+    },
+    {
+      "step": 34,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        0,
+        7
+      ],
+      "finite_fibre_layer": 7,
+      "candidate_views": [
+        50,
+        61,
+        72
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.16666666666666666,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.16666666666666666,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.16666666666666666,
+          0.5
+        ]
+      ],
+      "view": 50,
+      "matrix": [
+        1,
+        -3,
+        -1,
+        -3
+      ],
+      "coordinates": [
+        -21,
+        -21
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        1
+      ],
+      "gcd": 21,
+      "signature": [
+        1,
+        1,
+        3,
+        -1,
+        -1,
+        4
+      ],
+      "state": "WS:E1:A4"
+    },
+    {
+      "step": 35,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        1,
+        6
+      ],
+      "finite_fibre_layer": 7,
+      "candidate_views": [
+        21,
+        32,
+        43
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.16666666666666666,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.2,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.2,
+          0.5
+        ]
+      ],
+      "view": 32,
+      "matrix": [
+        -2,
+        -4,
+        4,
+        -1
+      ],
+      "coordinates": [
+        -26,
+        -2
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        13
+      ],
+      "gcd": 2,
+      "signature": [
+        1,
+        1,
+        2,
+        -1,
+        -1,
+        0
+      ],
+      "state": "WS:E1:A0"
+    },
+    {
+      "step": 36,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        6,
+        2
+      ],
+      "finite_fibre_layer": 8,
+      "candidate_views": [
+        36,
+        47,
+        58
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.14285714285714285,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.16666666666666666,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.16666666666666666,
+          1.0
+        ]
+      ],
+      "view": 47,
+      "matrix": [
+        1,
+        -3,
+        -3,
+        4
+      ],
+      "coordinates": [
+        0,
+        -10
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        0
+      ],
+      "gcd": 10,
+      "signature": [
+        1,
+        0,
+        3,
+        0,
+        -1,
+        0
+      ],
+      "state": "WS:E1:A0"
+    },
+    {
+      "step": 37,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        8,
+        0
+      ],
+      "finite_fibre_layer": 8,
+      "candidate_views": [
+        62,
+        73,
+        84
+      ],
+      "candidate_scores": [
+        [
+          0.5384615384615384,
+          0.5,
+          0.16666666666666666,
+          0.5
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.16666666666666666,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.14285714285714285,
+          1.0
+        ]
+      ],
+      "view": 73,
+      "matrix": [
+        -2,
+        3,
+        -3,
+        4
+      ],
+      "coordinates": [
+        -16,
+        -24
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        0,
+        1,
+        2
+      ],
+      "gcd": 8,
+      "signature": [
+        3,
+        1,
+        3,
+        -1,
+        -1,
+        5
+      ],
+      "state": "WS:E3:A5"
+    },
+    {
+      "step": 38,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        1,
+        7
+      ],
+      "finite_fibre_layer": 8,
+      "candidate_views": [
+        147,
+        158,
+        169
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.14285714285714285,
+          1.0
+        ],
+        [
+          0.5384615384615384,
+          0.5,
+          0.14285714285714285,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.16666666666666666,
+          1.0
+        ]
+      ],
+      "view": 169,
+      "matrix": [
+        -1,
+        -3,
+        -3,
+        -2
+      ],
+      "coordinates": [
+        -22,
+        -17
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        1,
+        3,
+        2,
+        2
+      ],
+      "gcd": 1,
+      "signature": [
+        4,
+        2,
+        1,
+        -1,
+        -1,
+        3
+      ],
+      "state": "WS:E4:A3"
+    },
+    {
+      "step": 39,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        3,
+        5
+      ],
+      "finite_fibre_layer": 8,
+      "candidate_views": [
+        89,
+        100,
+        111
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.25,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.25,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.14285714285714285,
+          1.0
+        ]
+      ],
+      "view": 89,
+      "matrix": [
+        4,
+        -1,
+        -3,
+        -3
+      ],
+      "coordinates": [
+        7,
+        -24
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        0,
+        3,
+        2,
+        3
+      ],
+      "gcd": 1,
+      "signature": [
+        4,
+        2,
+        1,
+        1,
+        -1,
+        1
+      ],
+      "state": "WS:E4:A1"
+    },
+    {
+      "step": 40,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        5,
+        3
+      ],
+      "finite_fibre_layer": 8,
+      "candidate_views": [
+        88,
+        99,
+        110
+      ],
+      "candidate_scores": [
+        [
+          0.0,
+          0.5,
+          0.14285714285714285,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.14285714285714285,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.2,
+          1.0
+        ]
+      ],
+      "view": 110,
+      "matrix": [
+        4,
+        3,
+        -3,
+        4
+      ],
+      "coordinates": [
+        29,
+        -3
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        9,
+        1,
+        2
+      ],
+      "gcd": 1,
+      "signature": [
+        3,
+        2,
+        1,
+        1,
+        -1,
+        7
+      ],
+      "state": "WS:E3:A7"
+    },
+    {
+      "step": 41,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        7,
+        1
+      ],
+      "finite_fibre_layer": 8,
+      "candidate_views": [
+        177,
+        10,
+        21
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.2,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.14285714285714285,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.2,
+          1.0
+        ]
+      ],
+      "view": 177,
+      "matrix": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "coordinates": [
+        -10,
+        18
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        0,
+        1,
+        1,
+        4
+      ],
+      "gcd": 2,
+      "signature": [
+        4,
+        2,
+        2,
+        -1,
+        1,
+        2
+      ],
+      "state": "WS:E4:A2"
+    },
+    {
+      "step": 42,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        0,
+        8
+      ],
+      "finite_fibre_layer": 8,
+      "candidate_views": [
+        74,
+        85,
+        96
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.14285714285714285,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.2,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.2,
+          1.0
+        ]
+      ],
+      "view": 85,
+      "matrix": [
+        -4,
+        1,
+        -3,
+        4
+      ],
+      "coordinates": [
+        8,
+        32
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        0,
+        4
+      ],
+      "gcd": 8,
+      "signature": [
+        2,
+        0,
+        3,
+        1,
+        1,
+        6
+      ],
+      "state": "WS:E2:A6"
+    },
+    {
+      "step": 43,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        2,
+        6
+      ],
+      "finite_fibre_layer": 8,
+      "candidate_views": [
+        49,
+        60,
+        71
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.16666666666666666,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.14285714285714285,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.14285714285714285,
+          1.0
+        ]
+      ],
+      "view": 49,
+      "matrix": [
+        1,
+        -3,
+        2,
+        4
+      ],
+      "coordinates": [
+        -16,
+        28
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        0,
+        1,
+        1,
+        3
+      ],
+      "gcd": 4,
+      "signature": [
+        4,
+        0,
+        3,
+        -1,
+        1,
+        2
+      ],
+      "state": "WS:E4:A2"
+    },
+    {
+      "step": 44,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        4,
+        4
+      ],
+      "finite_fibre_layer": 8,
+      "candidate_views": [
+        64,
+        75,
+        86
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.14285714285714285,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.16666666666666666,
+          1.0
+        ],
+        [
+          0.5384615384615384,
+          0.5,
+          0.14285714285714285,
+          1.0
+        ]
+      ],
+      "view": 75,
+      "matrix": [
+        -2,
+        3,
+        2,
+        4
+      ],
+      "coordinates": [
+        4,
+        24
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        0,
+        6
+      ],
+      "gcd": 4,
+      "signature": [
+        2,
+        0,
+        3,
+        1,
+        1,
+        7
+      ],
+      "state": "WS:E2:A7"
+    },
+    {
+      "step": 45,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        2,
+        7
+      ],
+      "finite_fibre_layer": 9,
+      "candidate_views": [
+        86,
+        97,
+        108
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.14285714285714285,
+          1.0
+        ],
+        [
+          0.5384615384615384,
+          0.5,
+          0.14285714285714285,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.14285714285714285,
+          1.0
+        ]
+      ],
+      "view": 86,
+      "matrix": [
+        -4,
+        1,
+        -4,
+        -2
+      ],
+      "coordinates": [
+        -1,
+        -22
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        0,
+        22
+      ],
+      "gcd": 1,
+      "signature": [
+        2,
+        0,
+        1,
+        -1,
+        -1,
+        7
+      ],
+      "state": "WS:E2:A7"
+    },
+    {
+      "step": 46,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        1,
+        8
+      ],
+      "finite_fibre_layer": 9,
+      "candidate_views": [
+        57,
+        68,
+        79
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.2,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.14285714285714285,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.14285714285714285,
+          1.0
+        ]
+      ],
+      "view": 57,
+      "matrix": [
+        -3,
+        -2,
+        4,
+        -1
+      ],
+      "coordinates": [
+        -19,
+        -4
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        4,
+        1,
+        3
+      ],
+      "gcd": 1,
+      "signature": [
+        3,
+        2,
+        1,
+        -1,
+        -1,
+        1
+      ],
+      "state": "WS:E3:A1"
+    },
+    {
+      "step": 47,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        0,
+        9
+      ],
+      "finite_fibre_layer": 9,
+      "candidate_views": [
+        53,
+        64,
+        75
+      ],
+      "candidate_scores": [
+        [
+          0.5384615384615384,
+          0.5,
+          0.14285714285714285,
+          0.5
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.14285714285714285,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.14285714285714285,
+          0.5
+        ]
+      ],
+      "view": 64,
+      "matrix": [
+        -2,
+        3,
+        -3,
+        -3
+      ],
+      "coordinates": [
+        27,
+        -27
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        1
+      ],
+      "gcd": 27,
+      "signature": [
+        1,
+        1,
+        3,
+        1,
+        -1,
+        4
+      ],
+      "state": "WS:E1:A4"
+    },
+    {
+      "step": 48,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        9,
+        0
+      ],
+      "finite_fibre_layer": 9,
+      "candidate_views": [
+        52,
+        63,
+        74
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.16666666666666666,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.16666666666666666,
+          1.0
+        ],
+        [
+          0.5384615384615384,
+          0.5,
+          0.14285714285714285,
+          1.0
+        ]
+      ],
+      "view": 52,
+      "matrix": [
+        -3,
+        -2,
+        -1,
+        -4
+      ],
+      "coordinates": [
+        -27,
+        -9
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        3
+      ],
+      "gcd": 9,
+      "signature": [
+        1,
+        1,
+        3,
+        -1,
+        -1,
+        1
+      ],
+      "state": "WS:E1:A1"
+    },
+    {
+      "step": 49,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        8,
+        1
+      ],
+      "finite_fibre_layer": 9,
+      "candidate_views": [
+        87,
+        98,
+        109
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.14285714285714285,
+          0.3333333333333333
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.14285714285714285,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.14285714285714285,
+          1.0
+        ]
+      ],
+      "view": 98,
+      "matrix": [
+        4,
+        -1,
+        -4,
+        -2
+      ],
+      "coordinates": [
+        31,
+        -34
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        0,
+        1,
+        10,
+        3
+      ],
+      "gcd": 1,
+      "signature": [
+        4,
+        2,
+        1,
+        1,
+        -1,
+        3
+      ],
+      "state": "WS:E4:A3"
+    },
+    {
+      "step": 50,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        7,
+        2
+      ],
+      "finite_fibre_layer": 9,
+      "candidate_views": [
+        162,
+        173,
+        6
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.14285714285714285,
+          0.5
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.14285714285714285,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.125,
+          1.0
+        ]
+      ],
+      "view": 173,
+      "matrix": [
+        -1,
+        -3,
+        4,
+        3
+      ],
+      "coordinates": [
+        -13,
+        34
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        0,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "gcd": 1,
+      "signature": [
+        6,
+        1,
+        1,
+        -1,
+        1,
+        1
+      ],
+      "state": "WS:E4:A1"
+    },
+    {
+      "step": 51,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        6,
+        3
+      ],
+      "finite_fibre_layer": 9,
+      "candidate_views": [
+        133,
+        144,
+        155
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.16666666666666666,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.125,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.125,
+          0.5
+        ]
+      ],
+      "view": 133,
+      "matrix": [
+        -3,
+        4,
+        -4,
+        1
+      ],
+      "coordinates": [
+        -6,
+        -21
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        0,
+        3,
+        2
+      ],
+      "gcd": 3,
+      "signature": [
+        3,
+        1,
+        3,
+        -1,
+        -1,
+        6
+      ],
+      "state": "WS:E3:A6"
+    },
+    {
+      "step": 52,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        5,
+        4
+      ],
+      "finite_fibre_layer": 9,
+      "candidate_views": [
+        148,
+        159,
+        170
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.125,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.14285714285714285,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.125,
+          1.0
+        ]
+      ],
+      "view": 159,
+      "matrix": [
+        2,
+        4,
+        4,
+        -1
+      ],
+      "coordinates": [
+        26,
+        16
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "gcd": 2,
+      "signature": [
+        5,
+        1,
+        2,
+        1,
+        1,
+        2
+      ],
+      "state": "WS:E4:A2"
+    },
+    {
+      "step": 53,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        4,
+        5
+      ],
+      "finite_fibre_layer": 9,
+      "candidate_views": [
+        174,
+        7,
+        18
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.125,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.125,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.125,
+          0.5
+        ]
+      ],
+      "view": 174,
+      "matrix": [
+        -1,
+        -3,
+        3,
+        4
+      ],
+      "coordinates": [
+        -19,
+        32
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        0,
+        1,
+        1,
+        2,
+        6
+      ],
+      "gcd": 1,
+      "signature": [
+        5,
+        2,
+        1,
+        -1,
+        1,
+        2
+      ],
+      "state": "WS:E4:A2"
+    },
+    {
+      "step": 54,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        3,
+        6
+      ],
+      "finite_fibre_layer": 9,
+      "candidate_views": [
+        81,
+        92,
+        103
+      ],
+      "candidate_scores": [
+        [
+          0.5384615384615384,
+          0.5,
+          0.14285714285714285,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.125,
+          1.0
+        ],
+        [
+          0.5384615384615384,
+          0.5,
+          0.125,
+          1.0
+        ]
+      ],
+      "view": 92,
+      "matrix": [
+        4,
+        -1,
+        1,
+        -3
+      ],
+      "coordinates": [
+        6,
+        -15
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        0,
+        2,
+        2
+      ],
+      "gcd": 3,
+      "signature": [
+        3,
+        0,
+        3,
+        1,
+        -1,
+        1
+      ],
+      "state": "WS:E3:A1"
+    },
+    {
+      "step": 55,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        9,
+        1
+      ],
+      "finite_fibre_layer": 10,
+      "candidate_views": [
+        23,
+        34,
+        45
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.14285714285714285,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.125,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.125,
+          1.0
+        ]
+      ],
+      "view": 23,
+      "matrix": [
+        -1,
+        -4,
+        -4,
+        -2
+      ],
+      "coordinates": [
+        -13,
+        -38
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        0,
+        2,
+        1,
+        12
+      ],
+      "gcd": 1,
+      "signature": [
+        4,
+        1,
+        1,
+        -1,
+        -1,
+        6
+      ],
+      "state": "WS:E4:A6"
+    },
+    {
+      "step": 56,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        7,
+        3
+      ],
+      "finite_fibre_layer": 10,
+      "candidate_views": [
+        22,
+        33,
+        44
+      ],
+      "candidate_scores": [
+        [
+          0.5384615384615384,
+          0.5,
+          0.1111111111111111,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.125,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.14285714285714285,
+          1.0
+        ]
+      ],
+      "view": 44,
+      "matrix": [
+        1,
+        -3,
+        4,
+        -1
+      ],
+      "coordinates": [
+        -2,
+        25
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        0,
+        12,
+        2
+      ],
+      "gcd": 1,
+      "signature": [
+        3,
+        0,
+        1,
+        -1,
+        1,
+        0
+      ],
+      "state": "WS:E3:A0"
+    },
+    {
+      "step": 57,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        5,
+        5
+      ],
+      "finite_fibre_layer": 10,
+      "candidate_views": [
+        111,
+        122,
+        133
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.125,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.125,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.1111111111111111,
+          0.5
+        ]
+      ],
+      "view": 111,
+      "matrix": [
+        4,
+        3,
+        -4,
+        -2
+      ],
+      "coordinates": [
+        35,
+        -30
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        1,
+        6
+      ],
+      "gcd": 5,
+      "signature": [
+        2,
+        1,
+        3,
+        1,
+        -1,
+        4
+      ],
+      "state": "WS:E2:A4"
+    },
+    {
+      "step": 58,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        3,
+        7
+      ],
+      "finite_fibre_layer": 10,
+      "candidate_views": [
+        8,
+        19,
+        30
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.125,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.125,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.14285714285714285,
+          1.0
+        ]
+      ],
+      "view": 30,
+      "matrix": [
+        -2,
+        -4,
+        -2,
+        3
+      ],
+      "coordinates": [
+        -34,
+        15
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        2,
+        3,
+        1,
+        3
+      ],
+      "gcd": 1,
+      "signature": [
+        4,
+        0,
+        1,
+        -1,
+        1,
+        5
+      ],
+      "state": "WS:E4:A5"
+    },
+    {
+      "step": 59,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        1,
+        9
+      ],
+      "finite_fibre_layer": 10,
+      "candidate_views": [
+        161,
+        172,
+        5
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.1111111111111111,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.125,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.125,
+          1.0
+        ]
+      ],
+      "view": 172,
+      "matrix": [
+        -1,
+        -3,
+        4,
+        -1
+      ],
+      "coordinates": [
+        -28,
+        -5
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        5,
+        1,
+        1,
+        2
+      ],
+      "gcd": 1,
+      "signature": [
+        4,
+        0,
+        1,
+        -1,
+        -1,
+        0
+      ],
+      "state": "WS:E4:A0"
+    },
+    {
+      "step": 60,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        10,
+        0
+      ],
+      "finite_fibre_layer": 10,
+      "candidate_views": [
+        176,
+        9,
+        20
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.125,
+          1.0
+        ],
+        [
+          0.5384615384615384,
+          0.5,
+          0.1111111111111111,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.1111111111111111,
+          1.0
+        ]
+      ],
+      "view": 176,
+      "matrix": [
+        -1,
+        -3,
+        -4,
+        -2
+      ],
+      "coordinates": [
+        -10,
+        -40
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        0,
+        4
+      ],
+      "gcd": 10,
+      "signature": [
+        2,
+        0,
+        3,
+        -1,
+        -1,
+        6
+      ],
+      "state": "WS:E2:A6"
+    },
+    {
+      "step": 61,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        8,
+        2
+      ],
+      "finite_fibre_layer": 10,
+      "candidate_views": [
+        20,
+        31,
+        42
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.1111111111111111,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.1111111111111111,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.1111111111111111,
+          1.0
+        ]
+      ],
+      "view": 20,
+      "matrix": [
+        -1,
+        -4,
+        4,
+        3
+      ],
+      "coordinates": [
+        -16,
+        38
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        0,
+        2,
+        2,
+        1,
+        2
+      ],
+      "gcd": 2,
+      "signature": [
+        5,
+        1,
+        2,
+        -1,
+        1,
+        2
+      ],
+      "state": "WS:E4:A2"
+    },
+    {
+      "step": 62,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        6,
+        4
+      ],
+      "finite_fibre_layer": 10,
+      "candidate_views": [
+        169,
+        2,
+        13
+      ],
+      "candidate_scores": [
+        [
+          0.6923076923076923,
+          1.0,
+          0.1111111111111111,
+          0.5
+        ],
+        [
+          0.5384615384615384,
+          0.5,
+          0.1111111111111111,
+          1.0
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.1111111111111111,
+          1.0
+        ]
+      ],
+      "view": 13,
+      "matrix": [
+        -1,
+        -4,
+        -3,
+        -3
+      ],
+      "coordinates": [
+        -22,
+        -30
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        0,
+        1,
+        2,
+        1,
+        3
+      ],
+      "gcd": 2,
+      "signature": [
+        5,
+        0,
+        2,
+        -1,
+        -1,
+        4
+      ],
+      "state": "WS:E4:A4"
+    },
+    {
+      "step": 63,
+      "numerator": [
+        0,
+        0
+      ],
+      "denominator": [
+        0,
+        0
+      ],
+      "witness": [
+        4,
+        6
+      ],
+      "finite_fibre_layer": 10,
+      "candidate_views": [
+        165,
+        176,
+        9
+      ],
+      "candidate_scores": [
+        [
+          0.0,
+          0.5,
+          0.1,
+          1.0
+        ],
+        [
+          0.0,
+          0.5,
+          0.1,
+          0.5
+        ],
+        [
+          0.6923076923076923,
+          1.0,
+          0.1111111111111111,
+          1.0
+        ]
+      ],
+      "view": 9,
+      "matrix": [
+        -3,
+        -3,
+        -3,
+        4
+      ],
+      "coordinates": [
+        -30,
+        12
+      ],
+      "direction_defined": true,
+      "euclid_quotients": [
+        2,
+        2
+      ],
+      "gcd": 6,
+      "signature": [
+        2,
+        0,
+        3,
+        -1,
+        1,
+        6
+      ],
+      "state": "WS:E2:A6"
+    }
+  ],
+  "frames": [
+    {
+      "id": "F01",
+      "steps": [
+        1,
+        2,
+        3
+      ],
+      "concepts": [
+        "death",
+        "same",
+        "night",
+        "duration",
+        "ripple"
+      ],
+      "links": [
+        {
+          "step": 1,
+          "view": 107,
+          "concepts": [
+            "death",
+            "same"
+          ],
+          "proposed_relation": "ALIGN",
+          "signed_weights": [
+            3,
+            1
+          ],
+          "dominant": "death",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 2,
+          "view": 4,
+          "concepts": [
+            "night",
+            "duration"
+          ],
+          "proposed_relation": "ALIGN",
+          "signed_weights": [
+            -3,
+            -2
+          ],
+          "dominant": "night",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 3,
+          "view": 153,
+          "concepts": [
+            "ripple",
+            "night"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            4,
+            -3
+          ],
+          "dominant": "ripple",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        }
+      ]
+    },
+    {
+      "id": "F02",
+      "steps": [
+        4,
+        5,
+        6
+      ],
+      "concepts": [
+        "canal",
+        "pharmacy",
+        "lamp",
+        "street",
+        "restart",
+        "repeat"
+      ],
+      "links": [
+        {
+          "step": 4,
+          "view": 168,
+          "concepts": [
+            "canal",
+            "pharmacy"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            -1,
+            1
+          ],
+          "dominant": "BALANCED",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 5,
+          "view": 27,
+          "concepts": [
+            "lamp",
+            "street"
+          ],
+          "proposed_relation": "ALIGN",
+          "signed_weights": [
+            -6,
+            -5
+          ],
+          "dominant": "lamp",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 6,
+          "view": 123,
+          "concepts": [
+            "restart",
+            "repeat"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            5,
+            -1
+          ],
+          "dominant": "restart",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        }
+      ]
+    },
+    {
+      "id": "F03",
+      "steps": [
+        7,
+        8,
+        9
+      ],
+      "concepts": [
+        "pharmacy",
+        "same",
+        "light",
+        "lamp",
+        "repeat"
+      ],
+      "links": [
+        {
+          "step": 7,
+          "view": 43,
+          "concepts": [
+            "pharmacy",
+            "same"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            1,
+            -4
+          ],
+          "dominant": "same",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 8,
+          "view": 53,
+          "concepts": [
+            "light",
+            "lamp"
+          ],
+          "proposed_relation": "ALIGN",
+          "signed_weights": [
+            -1,
+            -2
+          ],
+          "dominant": "lamp",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 9,
+          "view": 131,
+          "concepts": [
+            "repeat",
+            "light"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            5,
+            -7
+          ],
+          "dominant": "light",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        }
+      ]
+    },
+    {
+      "id": "F04",
+      "steps": [
+        10,
+        11,
+        12
+      ],
+      "concepts": [
+        "pharmacy",
+        "street",
+        "night",
+        "light",
+        "lamp"
+      ],
+      "links": [
+        {
+          "step": 10,
+          "view": 39,
+          "concepts": [
+            "pharmacy",
+            "street"
+          ],
+          "proposed_relation": "ALIGN",
+          "signed_weights": [
+            -2,
+            -5
+          ],
+          "dominant": "street",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 11,
+          "view": 3,
+          "concepts": [
+            "night",
+            "light"
+          ],
+          "proposed_relation": "ALIGN",
+          "signed_weights": [
+            -4,
+            -3
+          ],
+          "dominant": "night",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 12,
+          "view": 29,
+          "concepts": [
+            "lamp",
+            "light"
+          ],
+          "proposed_relation": "ALIGN",
+          "signed_weights": [
+            -2,
+            -1
+          ],
+          "dominant": "lamp",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        }
+      ]
+    },
+    {
+      "id": "F05",
+      "steps": [
+        13,
+        14,
+        15
+      ],
+      "concepts": [
+        "light",
+        "ripple",
+        "night",
+        "street",
+        "same"
+      ],
+      "links": [
+        {
+          "step": 13,
+          "view": 62,
+          "concepts": [
+            "light",
+            "ripple"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            -3,
+            2
+          ],
+          "dominant": "light",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 14,
+          "view": 11,
+          "concepts": [
+            "night",
+            "ripple"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            -6,
+            5
+          ],
+          "dominant": "night",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 15,
+          "view": 18,
+          "concepts": [
+            "street",
+            "same"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            -4,
+            1
+          ],
+          "dominant": "street",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        }
+      ]
+    },
+    {
+      "id": "F06",
+      "steps": [
+        16,
+        17,
+        18
+      ],
+      "concepts": [
+        "lamp",
+        "pharmacy",
+        "light",
+        "repeat",
+        "night"
+      ],
+      "links": [
+        {
+          "step": 16,
+          "view": 28,
+          "concepts": [
+            "lamp",
+            "pharmacy"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            -2,
+            1
+          ],
+          "dominant": "lamp",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 17,
+          "view": 41,
+          "concepts": [
+            "pharmacy",
+            "light"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            1,
+            -14
+          ],
+          "dominant": "light",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 18,
+          "view": 127,
+          "concepts": [
+            "repeat",
+            "night"
+          ],
+          "proposed_relation": "ALIGN",
+          "signed_weights": [
+            -1,
+            -15
+          ],
+          "dominant": "night",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        }
+      ]
+    },
+    {
+      "id": "F07",
+      "steps": [
+        19,
+        20,
+        21
+      ],
+      "concepts": [
+        "same",
+        "ripple",
+        "death",
+        "street",
+        "past",
+        "repeat"
+      ],
+      "links": [
+        {
+          "step": 19,
+          "view": 87,
+          "concepts": [
+            "same",
+            "ripple"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            -5,
+            16
+          ],
+          "dominant": "ripple",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 20,
+          "view": 102,
+          "concepts": [
+            "death",
+            "street"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            16,
+            -17
+          ],
+          "dominant": "street",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 21,
+          "view": 150,
+          "concepts": [
+            "past",
+            "repeat"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            -1,
+            2
+          ],
+          "dominant": "repeat",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        }
+      ]
+    },
+    {
+      "id": "F08",
+      "steps": [
+        22,
+        23,
+        24
+      ],
+      "concepts": [
+        "pharmacy",
+        "restart",
+        "ripple",
+        "street"
+      ],
+      "links": [
+        {
+          "step": 22,
+          "view": 46,
+          "concepts": [
+            "pharmacy",
+            "restart"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            -5,
+            11
+          ],
+          "dominant": "restart",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 23,
+          "view": 155,
+          "concepts": [
+            "ripple",
+            "pharmacy"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            8,
+            -1
+          ],
+          "dominant": "ripple",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 24,
+          "view": 154,
+          "concepts": [
+            "ripple",
+            "street"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            2,
+            -1
+          ],
+          "dominant": "ripple",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        }
+      ]
+    },
+    {
+      "id": "F09",
+      "steps": [
+        25,
+        26,
+        27
+      ],
+      "concepts": [
+        "same",
+        "ripple",
+        "repeat",
+        "restart",
+        "street"
+      ],
+      "links": [
+        {
+          "step": 25,
+          "view": 87,
+          "concepts": [
+            "same",
+            "ripple"
+          ],
+          "proposed_relation": "ALIGN",
+          "signed_weights": [
+            1,
+            22
+          ],
+          "dominant": "ripple",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 26,
+          "view": 162,
+          "concepts": [
+            "ripple",
+            "repeat"
+          ],
+          "proposed_relation": "ALIGN",
+          "signed_weights": [
+            6,
+            1
+          ],
+          "dominant": "ripple",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 27,
+          "view": 115,
+          "concepts": [
+            "restart",
+            "street"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            19,
+            -9
+          ],
+          "dominant": "restart",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        }
+      ]
+    },
+    {
+      "id": "F10",
+      "steps": [
+        28,
+        29,
+        30
+      ],
+      "concepts": [
+        "repeat",
+        "pharmacy",
+        "ripple",
+        "past",
+        "no_exit"
+      ],
+      "links": [
+        {
+          "step": 28,
+          "view": 130,
+          "concepts": [
+            "repeat",
+            "pharmacy"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            14,
+            -13
+          ],
+          "dominant": "repeat",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 29,
+          "view": 163,
+          "concepts": [
+            "ripple",
+            "past"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            11,
+            -10
+          ],
+          "dominant": "ripple",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 30,
+          "view": 134,
+          "concepts": [
+            "repeat",
+            "no_exit"
+          ],
+          "proposed_relation": "UNRESOLVED",
+          "signed_weights": [
+            0,
+            1
+          ],
+          "dominant": "no_exit",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        }
+      ]
+    },
+    {
+      "id": "F11",
+      "steps": [
+        31,
+        32,
+        33
+      ],
+      "concepts": [
+        "restart",
+        "duration",
+        "past",
+        "night",
+        "canal",
+        "repeat"
+      ],
+      "links": [
+        {
+          "step": 31,
+          "view": 119,
+          "concepts": [
+            "restart",
+            "duration"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            23,
+            -4
+          ],
+          "dominant": "restart",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 32,
+          "view": 140,
+          "concepts": [
+            "past",
+            "night"
+          ],
+          "proposed_relation": "ALIGN",
+          "signed_weights": [
+            -26,
+            -21
+          ],
+          "dominant": "past",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 33,
+          "view": 175,
+          "concepts": [
+            "canal",
+            "repeat"
+          ],
+          "proposed_relation": "ALIGN",
+          "signed_weights": [
+            -1,
+            -3
+          ],
+          "dominant": "repeat",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        }
+      ]
+    },
+    {
+      "id": "F12",
+      "steps": [
+        34,
+        35,
+        36
+      ],
+      "concepts": [
+        "pharmacy",
+        "canal",
+        "lamp",
+        "no_exit",
+        "repeat"
+      ],
+      "links": [
+        {
+          "step": 34,
+          "view": 50,
+          "concepts": [
+            "pharmacy",
+            "canal"
+          ],
+          "proposed_relation": "ALIGN",
+          "signed_weights": [
+            -1,
+            -1
+          ],
+          "dominant": "BALANCED",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 35,
+          "view": 32,
+          "concepts": [
+            "lamp",
+            "no_exit"
+          ],
+          "proposed_relation": "ALIGN",
+          "signed_weights": [
+            -13,
+            -1
+          ],
+          "dominant": "lamp",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 36,
+          "view": 47,
+          "concepts": [
+            "pharmacy",
+            "repeat"
+          ],
+          "proposed_relation": "UNRESOLVED",
+          "signed_weights": [
+            0,
+            -1
+          ],
+          "dominant": "repeat",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        }
+      ]
+    },
+    {
+      "id": "F13",
+      "steps": [
+        37,
+        38,
+        39
+      ],
+      "concepts": [
+        "duration",
+        "repeat",
+        "canal",
+        "light",
+        "no_exit",
+        "night"
+      ],
+      "links": [
+        {
+          "step": 37,
+          "view": 73,
+          "concepts": [
+            "duration",
+            "repeat"
+          ],
+          "proposed_relation": "ALIGN",
+          "signed_weights": [
+            -2,
+            -3
+          ],
+          "dominant": "repeat",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 38,
+          "view": 169,
+          "concepts": [
+            "canal",
+            "light"
+          ],
+          "proposed_relation": "ALIGN",
+          "signed_weights": [
+            -22,
+            -17
+          ],
+          "dominant": "canal",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 39,
+          "view": 89,
+          "concepts": [
+            "no_exit",
+            "night"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            7,
+            -24
+          ],
+          "dominant": "night",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        }
+      ]
+    },
+    {
+      "id": "F14",
+      "steps": [
+        40,
+        41,
+        42
+      ],
+      "concepts": [
+        "death",
+        "repeat",
+        "canal",
+        "ripple",
+        "same"
+      ],
+      "links": [
+        {
+          "step": 40,
+          "view": 110,
+          "concepts": [
+            "death",
+            "repeat"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            29,
+            -3
+          ],
+          "dominant": "death",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 41,
+          "view": 177,
+          "concepts": [
+            "canal",
+            "ripple"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            -5,
+            9
+          ],
+          "dominant": "ripple",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 42,
+          "view": 85,
+          "concepts": [
+            "same",
+            "repeat"
+          ],
+          "proposed_relation": "ALIGN",
+          "signed_weights": [
+            1,
+            4
+          ],
+          "dominant": "repeat",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        }
+      ]
+    },
+    {
+      "id": "F15",
+      "steps": [
+        43,
+        44,
+        45
+      ],
+      "concepts": [
+        "pharmacy",
+        "ripple",
+        "duration",
+        "same",
+        "past"
+      ],
+      "links": [
+        {
+          "step": 43,
+          "view": 49,
+          "concepts": [
+            "pharmacy",
+            "ripple"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            -4,
+            7
+          ],
+          "dominant": "ripple",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 44,
+          "view": 75,
+          "concepts": [
+            "duration",
+            "ripple"
+          ],
+          "proposed_relation": "ALIGN",
+          "signed_weights": [
+            1,
+            6
+          ],
+          "dominant": "ripple",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 45,
+          "view": 86,
+          "concepts": [
+            "same",
+            "past"
+          ],
+          "proposed_relation": "ALIGN",
+          "signed_weights": [
+            -1,
+            -22
+          ],
+          "dominant": "past",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        }
+      ]
+    },
+    {
+      "id": "F16",
+      "steps": [
+        46,
+        47,
+        48
+      ],
+      "concepts": [
+        "light",
+        "no_exit",
+        "duration",
+        "night",
+        "street"
+      ],
+      "links": [
+        {
+          "step": 46,
+          "view": 57,
+          "concepts": [
+            "light",
+            "no_exit"
+          ],
+          "proposed_relation": "ALIGN",
+          "signed_weights": [
+            -19,
+            -4
+          ],
+          "dominant": "light",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 47,
+          "view": 64,
+          "concepts": [
+            "duration",
+            "night"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            1,
+            -1
+          ],
+          "dominant": "BALANCED",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 48,
+          "view": 52,
+          "concepts": [
+            "light",
+            "street"
+          ],
+          "proposed_relation": "ALIGN",
+          "signed_weights": [
+            -3,
+            -1
+          ],
+          "dominant": "light",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        }
+      ]
+    },
+    {
+      "id": "F17",
+      "steps": [
+        49,
+        50,
+        51
+      ],
+      "concepts": [
+        "no_exit",
+        "past",
+        "canal",
+        "death",
+        "repeat",
+        "same"
+      ],
+      "links": [
+        {
+          "step": 49,
+          "view": 98,
+          "concepts": [
+            "no_exit",
+            "past"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            31,
+            -34
+          ],
+          "dominant": "past",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 50,
+          "view": 173,
+          "concepts": [
+            "canal",
+            "death"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            -13,
+            34
+          ],
+          "dominant": "death",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 51,
+          "view": 133,
+          "concepts": [
+            "repeat",
+            "same"
+          ],
+          "proposed_relation": "ALIGN",
+          "signed_weights": [
+            -2,
+            -7
+          ],
+          "dominant": "same",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        }
+      ]
+    },
+    {
+      "id": "F18",
+      "steps": [
+        52,
+        53,
+        54
+      ],
+      "concepts": [
+        "ripple",
+        "no_exit",
+        "canal",
+        "restart",
+        "pharmacy"
+      ],
+      "links": [
+        {
+          "step": 52,
+          "view": 159,
+          "concepts": [
+            "ripple",
+            "no_exit"
+          ],
+          "proposed_relation": "ALIGN",
+          "signed_weights": [
+            13,
+            8
+          ],
+          "dominant": "ripple",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 53,
+          "view": 174,
+          "concepts": [
+            "canal",
+            "restart"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            -19,
+            32
+          ],
+          "dominant": "restart",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 54,
+          "view": 92,
+          "concepts": [
+            "no_exit",
+            "pharmacy"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            2,
+            -5
+          ],
+          "dominant": "pharmacy",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        }
+      ]
+    },
+    {
+      "id": "F19",
+      "steps": [
+        55,
+        56,
+        57
+      ],
+      "concepts": [
+        "street",
+        "past",
+        "pharmacy",
+        "no_exit",
+        "death"
+      ],
+      "links": [
+        {
+          "step": 55,
+          "view": 23,
+          "concepts": [
+            "street",
+            "past"
+          ],
+          "proposed_relation": "ALIGN",
+          "signed_weights": [
+            -13,
+            -38
+          ],
+          "dominant": "past",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 56,
+          "view": 44,
+          "concepts": [
+            "pharmacy",
+            "no_exit"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            -2,
+            25
+          ],
+          "dominant": "no_exit",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 57,
+          "view": 111,
+          "concepts": [
+            "death",
+            "past"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            7,
+            -6
+          ],
+          "dominant": "death",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        }
+      ]
+    },
+    {
+      "id": "F20",
+      "steps": [
+        58,
+        59,
+        60
+      ],
+      "concepts": [
+        "lamp",
+        "duration",
+        "canal",
+        "no_exit",
+        "past"
+      ],
+      "links": [
+        {
+          "step": 58,
+          "view": 30,
+          "concepts": [
+            "lamp",
+            "duration"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            -34,
+            15
+          ],
+          "dominant": "lamp",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 59,
+          "view": 172,
+          "concepts": [
+            "canal",
+            "no_exit"
+          ],
+          "proposed_relation": "ALIGN",
+          "signed_weights": [
+            -28,
+            -5
+          ],
+          "dominant": "canal",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 60,
+          "view": 176,
+          "concepts": [
+            "canal",
+            "past"
+          ],
+          "proposed_relation": "ALIGN",
+          "signed_weights": [
+            -1,
+            -4
+          ],
+          "dominant": "past",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        }
+      ]
+    },
+    {
+      "id": "F21",
+      "steps": [
+        61,
+        62,
+        63
+      ],
+      "concepts": [
+        "street",
+        "death",
+        "night",
+        "repeat"
+      ],
+      "links": [
+        {
+          "step": 61,
+          "view": 20,
+          "concepts": [
+            "street",
+            "death"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            -8,
+            19
+          ],
+          "dominant": "death",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 62,
+          "view": 13,
+          "concepts": [
+            "street",
+            "night"
+          ],
+          "proposed_relation": "ALIGN",
+          "signed_weights": [
+            -11,
+            -15
+          ],
+          "dominant": "night",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 63,
+          "view": 9,
+          "concepts": [
+            "night",
+            "repeat"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            -5,
+            2
+          ],
+          "dominant": "night",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        }
+      ]
+    }
+  ],
+  "selected_frames": [
+    {
+      "id": "F01",
+      "steps": [
+        1,
+        2,
+        3
+      ],
+      "concepts": [
+        "death",
+        "same",
+        "night",
+        "duration",
+        "ripple"
+      ],
+      "links": [
+        {
+          "step": 1,
+          "view": 107,
+          "concepts": [
+            "death",
+            "same"
+          ],
+          "proposed_relation": "ALIGN",
+          "signed_weights": [
+            3,
+            1
+          ],
+          "dominant": "death",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 2,
+          "view": 4,
+          "concepts": [
+            "night",
+            "duration"
+          ],
+          "proposed_relation": "ALIGN",
+          "signed_weights": [
+            -3,
+            -2
+          ],
+          "dominant": "night",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 3,
+          "view": 153,
+          "concepts": [
+            "ripple",
+            "night"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            4,
+            -3
+          ],
+          "dominant": "ripple",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        }
+      ]
+    },
+    {
+      "id": "F02",
+      "steps": [
+        4,
+        5,
+        6
+      ],
+      "concepts": [
+        "canal",
+        "pharmacy",
+        "lamp",
+        "street",
+        "restart",
+        "repeat"
+      ],
+      "links": [
+        {
+          "step": 4,
+          "view": 168,
+          "concepts": [
+            "canal",
+            "pharmacy"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            -1,
+            1
+          ],
+          "dominant": "BALANCED",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 5,
+          "view": 27,
+          "concepts": [
+            "lamp",
+            "street"
+          ],
+          "proposed_relation": "ALIGN",
+          "signed_weights": [
+            -6,
+            -5
+          ],
+          "dominant": "lamp",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 6,
+          "view": 123,
+          "concepts": [
+            "restart",
+            "repeat"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            5,
+            -1
+          ],
+          "dominant": "restart",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        }
+      ]
+    },
+    {
+      "id": "F03",
+      "steps": [
+        7,
+        8,
+        9
+      ],
+      "concepts": [
+        "pharmacy",
+        "same",
+        "light",
+        "lamp",
+        "repeat"
+      ],
+      "links": [
+        {
+          "step": 7,
+          "view": 43,
+          "concepts": [
+            "pharmacy",
+            "same"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            1,
+            -4
+          ],
+          "dominant": "same",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 8,
+          "view": 53,
+          "concepts": [
+            "light",
+            "lamp"
+          ],
+          "proposed_relation": "ALIGN",
+          "signed_weights": [
+            -1,
+            -2
+          ],
+          "dominant": "lamp",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 9,
+          "view": 131,
+          "concepts": [
+            "repeat",
+            "light"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            5,
+            -7
+          ],
+          "dominant": "light",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        }
+      ]
+    },
+    {
+      "id": "F04",
+      "steps": [
+        10,
+        11,
+        12
+      ],
+      "concepts": [
+        "pharmacy",
+        "street",
+        "night",
+        "light",
+        "lamp"
+      ],
+      "links": [
+        {
+          "step": 10,
+          "view": 39,
+          "concepts": [
+            "pharmacy",
+            "street"
+          ],
+          "proposed_relation": "ALIGN",
+          "signed_weights": [
+            -2,
+            -5
+          ],
+          "dominant": "street",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 11,
+          "view": 3,
+          "concepts": [
+            "night",
+            "light"
+          ],
+          "proposed_relation": "ALIGN",
+          "signed_weights": [
+            -4,
+            -3
+          ],
+          "dominant": "night",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 12,
+          "view": 29,
+          "concepts": [
+            "lamp",
+            "light"
+          ],
+          "proposed_relation": "ALIGN",
+          "signed_weights": [
+            -2,
+            -1
+          ],
+          "dominant": "lamp",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        }
+      ]
+    },
+    {
+      "id": "F05",
+      "steps": [
+        13,
+        14,
+        15
+      ],
+      "concepts": [
+        "light",
+        "ripple",
+        "night",
+        "street",
+        "same"
+      ],
+      "links": [
+        {
+          "step": 13,
+          "view": 62,
+          "concepts": [
+            "light",
+            "ripple"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            -3,
+            2
+          ],
+          "dominant": "light",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 14,
+          "view": 11,
+          "concepts": [
+            "night",
+            "ripple"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            -6,
+            5
+          ],
+          "dominant": "night",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 15,
+          "view": 18,
+          "concepts": [
+            "street",
+            "same"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            -4,
+            1
+          ],
+          "dominant": "street",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        }
+      ]
+    },
+    {
+      "id": "F06",
+      "steps": [
+        16,
+        17,
+        18
+      ],
+      "concepts": [
+        "lamp",
+        "pharmacy",
+        "light",
+        "repeat",
+        "night"
+      ],
+      "links": [
+        {
+          "step": 16,
+          "view": 28,
+          "concepts": [
+            "lamp",
+            "pharmacy"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            -2,
+            1
+          ],
+          "dominant": "lamp",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 17,
+          "view": 41,
+          "concepts": [
+            "pharmacy",
+            "light"
+          ],
+          "proposed_relation": "TENSION",
+          "signed_weights": [
+            1,
+            -14
+          ],
+          "dominant": "light",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        },
+        {
+          "step": 18,
+          "view": 127,
+          "concepts": [
+            "repeat",
+            "night"
+          ],
+          "proposed_relation": "ALIGN",
+          "signed_weights": [
+            -1,
+            -15
+          ],
+          "dominant": "night",
+          "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "steps": 64,
+    "projections": 192,
+    "charts_used": 63,
+    "available_charts": 178,
+    "full_signatures": 64,
+    "observation_vertices": 64,
+    "observation_edges": 63,
+    "beta0": 1,
+    "beta1": 0,
+    "graph_storage_bytes": 2334216,
+    "source_concepts": 14,
+    "charts_nonorthogonal": 170,
+    "omitted_collinear_pairs": 4,
+    "per_witness_atlas_fraction": 0.016853932584269662,
+    "fraction_denominator": "steps * available charts; NOT fraction of interpretations",
+    "frames": 21,
+    "decoded_frames": 6,
+    "concepts_in_all_frames": 14,
+    "concepts_in_decoded_frames": 12,
+    "relation_signatures": 63,
+    "full_interpretations_searched": 0,
+    "literary_quality_scored": false
+  }
+}

@@ -41,3 +41,22 @@ Reports expose actual checked v0.1 `decision_artifact` and `witness_artifacts` e
 Semantic schemas live in `src/lm_suti_assurance/semantic_bridge/schemas/` and are published by `semantic_contract`. MCP uses `edition_ref` for draft and JSON **strings** for `metadata_json`, `proposal_json`, `projection_json`. Omit `proposal_json` for the hosted backend; an imported proposal is MANUAL. `semantic_export` returns both base64 and a project-scoped SHA `bundle_ref`; pass this ref to `semantic_replay` to stay within the existing HTTP request limit. Local `replay BUNDLE --offline` accepts the downloaded ZIP.
 
 Source refs, byte spans, rights and assurance statuses are bound by the application, never assigned by the model. Six model readings and two explicit FIXTURE loss controls are counted separately. No command grants execution or verifies an interpretation. [Examples and installation](docs/semantic-bridge/QUICKSTART_RU.md).
+
+## White Star
+
+`white-star prepare` builds the supplied C++17 library once; no build occurs in a numerical request. Install the `white-star` extra first. Each bounded job owns fresh native state in a fixed isolated worker; the HTTP loop does not import the vendor's bare modules.
+
+| Command | Inputs / result |
+|---|---|
+| `white-star status` | actual native readiness and cold import metrics |
+| `white-star explore` | project/key, `--file` exact supplied request schema; durable run and counters |
+| `white-star frozen` | project/key, `--common-ref`, optional `--slots 6`; actual existing Bridge source assurance, no extraction |
+| `white-star inspect` | project, `--run-id`, `--view`, optional offset/limit/artifact-ref; whole records or explicit artifact fallback |
+| `white-star readings` | project/key/run, `--file` array of untrusted source-bound readings |
+| `white-star model` | project/run, `--file` one registered-claim rational matrix proposal |
+| `white-star export` | project, `--output`; private data-only bundle |
+| `white-star replay BUNDLE --offline` | recomputes completed searches and matrix checks without LLM/network |
+
+Generic `export --audience private` also dispatches White Star projects; generic CLI `replay` dispatches their fixed worker. `--exclude-source-bytes` yields an explicit missing dependency. The old synchronous MCP `assurance_replay` directs this new format to `white_star_replay`; all old formats and64 old input schemas retain their behavior. New tools publish full nested object schemas, `outputSchema`, structuredContent and matching text. Domain errors set isError=true; a valid mathematical counterexample returns normal REJECTED. No JSON-string wrapper is required for the White Star request.
+
+Additional MCP commands: the six specified `white_star_status/explore/inspect/record_interpretation/validate_model`, `semantic_compare_runs`, plus `semantic_run_frozen` and `white_star_replay`. New request/response schemas and examples are published by `white_star_status`; detailed usage and supported limits are in [Quickstart](docs/white-star/QUICKSTART_RU.md).

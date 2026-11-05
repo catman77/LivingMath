@@ -19,6 +19,9 @@ def export_bundle(workspace, audience='private'):
     with workspace.locked():
         rows = workspace.history()
         require(bool(rows), 'PROJECT_NOT_FOUND')
+        if any(r['action'].startswith('white.') for r in rows):
+            from .white_star.bundle import export_rows as white_export
+            return white_export(workspace, rows, audience)
         if any(r['action'].startswith('semantic.') for r in rows):
             from .semantic_bridge.bundle import export_rows
             return export_rows(workspace, rows, audience)
@@ -69,6 +72,10 @@ class MemoryWorkspace:
 def replay(raw, engine='direct'):
     require(engine in ('direct', 'compiled'), 'UNKNOWN_EVALUATOR')
     require(isinstance(raw, bytes) and len(raw) <= MAX_BUNDLE, 'BUNDLE_SIZE_LIMIT')
+    # White Star's native imports live only in its fixed isolated worker.
+    from .white_star.bundle import is_bundle as is_white_bundle
+    if is_white_bundle(raw):
+        raise AssuranceError('WHITE_STAR_REPLAY_WORKER_REQUIRED', details={'tool':'white_star_replay'})
     # Load only installed, SHA-pinned code before entering the offline boundary.
     identity = core.identity()
     core.module('checks')

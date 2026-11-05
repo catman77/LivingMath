@@ -4,7 +4,9 @@
 свидетели и контрпримеры → сохраняемая история исследования. MCP-интерфейс
 объединяет LivingMath, проверку исходных схем SUTI и алхимическую модель ALCH006.
 
-Текущий продукт: **`v0.2.0-developer-preview`**: автономный assurance CLI, Semantic Bridge и 64 MCP-инструмента (55 прежних +9 добавочных). [Установка](README_QUICKSTART_RU.md), [текст, версии прочтений и replay](docs/semantic-bridge/QUICKSTART_RU.md), [CLI](CLI_REFERENCE.md), [границы возможностей](LIMITATIONS.md).
+Текущий продукт: **`v0.3.0-developer-preview`**: assurance CLI, Semantic Bridge и White Star; 72 MCP-инструмента (64 прежних +8 добавочных). [Установка](README_QUICKSTART_RU.md), [White Star и сравнение режимов](docs/white-star/QUICKSTART_RU.md), [Semantic Bridge](docs/semantic-bridge/QUICKSTART_RU.md), [CLI](CLI_REFERENCE.md), [границы возможностей](LIMITATIONS.md).
+
+White Star использует предоставленное неизменённое ядро Белая звезда → CAD → Удав. Один frozen semantic snapshot можно передать ему и действующему Bridge/assurance без повторного extraction. Численные предложения и сохранённые LLM-прочтения разделены; native SUTI не исполняется. [Отчёт, фактическое сравнение и приёмка](docs/white-star/USER_REPORT_RU.md).
 
 Semantic Bridge сохраняет исходные UTF-8-байты, адресные цитаты, конкурирующие прочтения и граф ревизий. Сравнение предъявляет точного свидетеля потери различения только для объявленных полей, вопросов и конечного домена. Интерпретации остаются гипотезами. Через реальный hosted generator получены шесть прочтений трёх стихотворений; приватный исследовательский пакет воспроизводится без модели и сети. [Отчёт и матрица приёмки](docs/semantic-bridge/USER_REPORT_RU.md).
 

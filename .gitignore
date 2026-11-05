@@ -115,3 +115,10 @@ dist/
 !/docs/LM_SUTI_SEMANTIC_BRIDGE_001_TZ_PROMPT.zip
 !/docs/LM_SUTI_SEMANTIC_BRIDGE_001_TZ_PROMPT.zip.sha256
 !/docs/semantic-bridge/
+
+# White Star source request and integration evidence.
+!/docs/LevinMAS_WhiteStar.zip
+!/docs/LevinMAS_WhiteStar.zip.sha256
+!/docs/LEVINMAS_WHITESTAR_MCP_001/
+!/docs/white-star/
+!/docs/LEVINMAS_WHITESTAR_MCP_001/context/LM_SUTI_SEMANTIC_BRIDGE_001_TZ_PROMPT.zip

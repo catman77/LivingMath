@@ -1,0 +1,21 @@
+{
+  "task": "LEVINMAS-WHITESTAR-MCP-001",
+  "utc": "2026-11-05T02:30:20.848874+00:00",
+  "base_commit": "6d07a332d49fa8673011b64dc1809c75c9b60987",
+  "installed_version": "v0.2.0-developer-preview",
+  "deployment": "semantic001-20261105T015444Z",
+  "tools": 64,
+  "same_endpoint": "https://fares-september-rebel-board.trycloudflare.com/mcp",
+  "archive_sha256": "c41df9a56a1c1879b790c932714bd2dbd44d2f70d88dea8671279892cc3576b3",
+  "reference_suites": "21+8 PASS",
+  "kernel": "all75 code files byte-identical; original6 kernel hashes preserved",
+  "comparison_inputs": [
+    "blok_request.json",
+    "original_request.json"
+  ],
+  "protocols": "archived exact seeds/budgets; no reranking/quality retries",
+  "matched_backend": "actual SemanticBridge001 frozen-source assurance, native SUTI NOT_EXECUTED",
+  "decoder": "MCP caller, same hosted Codex model/instruction across4 packets, no new server LLM service",
+  "R3": "PENDING",
+  "rollout": "explicit owner-authorized after QA; backup4SQLite+existingfileworkspace, restart HTTP only"
+}

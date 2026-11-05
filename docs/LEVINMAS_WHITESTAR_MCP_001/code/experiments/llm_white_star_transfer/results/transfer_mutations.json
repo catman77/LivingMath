@@ -1,0 +1,32 @@
+[
+  {
+    "name": "M1_remove_observation_loss",
+    "status": "REJECTED",
+    "reason": "M1 observation is not invariant"
+  },
+  {
+    "name": "M1_erase_hidden_change",
+    "status": "REJECTED",
+    "reason": "M1 has no hidden state change"
+  },
+  {
+    "name": "M2_control_can_change_the_invariant",
+    "status": "REJECTED",
+    "reason": "M2 control acts on the claimed invariant"
+  },
+  {
+    "name": "M2_dynamics_changes_the_invariant",
+    "status": "REJECTED",
+    "reason": "M2 dynamics does not preserve w"
+  },
+  {
+    "name": "M3_no_order_effect",
+    "status": "REJECTED",
+    "reason": "M3 no demonstrated change of action"
+  },
+  {
+    "name": "M3_noninvertible_cyclic_factor",
+    "status": "REJECTED",
+    "reason": "noninvertible operator"
+  }
+]

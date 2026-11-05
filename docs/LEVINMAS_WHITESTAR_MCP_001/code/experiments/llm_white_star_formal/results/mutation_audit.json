@@ -1,0 +1,65 @@
+{
+  "faults": [
+    {
+      "name": "invented_source_quote",
+      "status": "REJECTED",
+      "reason": "source citation mismatch"
+    },
+    {
+      "name": "changed_projection",
+      "status": "REJECTED",
+      "reason": "trace does not equal the frozen reference computation"
+    },
+    {
+      "name": "changed_division_witness",
+      "status": "REJECTED",
+      "reason": "trace does not equal the frozen reference computation"
+    },
+    {
+      "name": "flipped_relation",
+      "status": "REJECTED",
+      "reason": "binding misstates the selected relation or dominance"
+    },
+    {
+      "name": "flipped_dominance",
+      "status": "REJECTED",
+      "reason": "binding misstates the selected relation or dominance"
+    },
+    {
+      "name": "creative_link_promoted_to_source_fact",
+      "status": "REJECTED",
+      "reason": "CAD relation cannot be promoted to source entailment"
+    },
+    {
+      "name": "omitted_selected_link",
+      "status": "REJECTED",
+      "reason": "every selected edge must have one ordered binding"
+    },
+    {
+      "name": "invented_prose_excerpt",
+      "status": "REJECTED",
+      "reason": "excerpt mismatch"
+    },
+    {
+      "name": "self_report_promoted_to_proof",
+      "status": "REJECTED",
+      "reason": "cannot promote a prose annotation to a proved semantic judgement"
+    },
+    {
+      "name": "metaphor_promoted_to_source_fact",
+      "status": "REJECTED",
+      "reason": "added metaphor cannot be promoted to source fact"
+    },
+    {
+      "name": "speaker_no_exit_claim_promoted_to_world_law",
+      "status": "REJECTED",
+      "reason": "source statement alone cannot establish its world truth"
+    }
+  ],
+  "rejected_faults": 11,
+  "contentless_text_control": {
+    "structural_checks_pass": true,
+    "semantic_status": "UNASSESSED_BY_CHECKER",
+    "conclusion": "An addressed self-annotation is not a proof of prose fidelity. This checker does not accept or grade prose semantically."
+  }
+}

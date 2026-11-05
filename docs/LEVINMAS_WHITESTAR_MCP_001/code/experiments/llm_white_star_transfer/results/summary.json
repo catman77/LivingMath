@@ -1,0 +1,209 @@
+{
+  "experiment": "NOBS_WHITE_STAR_LLM_003",
+  "source_concepts": 14,
+  "unique_numeric_maps": 354,
+  "labelled_maps": 360,
+  "geometry_alias_collisions": 6,
+  "exact_field": {
+    "old_modes": 344,
+    "new_modes": 720,
+    "added_modes": 376,
+    "old_modes_preserved": true,
+    "modes_per_pair": 8,
+    "covered_pairs": 90,
+    "fixed_relation_pairs": 0,
+    "both_align_and_tension_for_every_pair": true,
+    "scope": "All allowed (chart,nonzero witness) combinations; not a guarantee that a fixed-budget trajectory visits them all"
+  },
+  "selected_run": {
+    "steps": 64,
+    "projections": 192,
+    "charts_used": 57,
+    "available_charts": 354,
+    "full_signatures": 64,
+    "observation_vertices": 64,
+    "observation_edges": 63,
+    "beta0": 1,
+    "beta1": 0,
+    "graph_storage_bytes": 2334216,
+    "aliases_emitted_are_not_extra_numeric_projections": true
+  },
+  "qualitative_run": {
+    "unique_modes": 52,
+    "newly_possible_modes_visited": 10,
+    "formerly_fixed_pairs_with_new_relation_visited": 4,
+    "unlocked_pairs_observed": [
+      [
+        "death",
+        "street"
+      ],
+      [
+        "lamp",
+        "past"
+      ],
+      [
+        "night",
+        "no_exit"
+      ],
+      [
+        "ripple",
+        "street"
+      ]
+    ],
+    "emitted_alias_records": 63,
+    "ambiguous_numeric_observations": 0,
+    "first_new_mode_examples": [
+      {
+        "step": 5,
+        "view": 194,
+        "alias": {
+          "concepts": [
+            "street",
+            "lamp"
+          ],
+          "orientation": "J",
+          "original_view": 14,
+          "original_matrix": [
+            -1,
+            -4,
+            -2,
+            -4
+          ]
+        },
+        "state": [
+          "lamp",
+          "street",
+          "ALIGN",
+          "street"
+        ]
+      },
+      {
+        "step": 10,
+        "view": 206,
+        "alias": {
+          "concepts": [
+            "lamp",
+            "pharmacy"
+          ],
+          "orientation": "J",
+          "original_view": 28,
+          "original_matrix": [
+            -2,
+            -4,
+            1,
+            -3
+          ]
+        },
+        "state": [
+          "lamp",
+          "pharmacy",
+          "ALIGN",
+          "pharmacy"
+        ]
+      },
+      {
+        "step": 20,
+        "view": 280,
+        "alias": {
+          "concepts": [
+            "death",
+            "street"
+          ],
+          "orientation": "J",
+          "original_view": 104,
+          "original_matrix": [
+            4,
+            3,
+            -1,
+            -4
+          ]
+        },
+        "state": [
+          "death",
+          "street",
+          "UNRESOLVED",
+          "death"
+        ]
+      },
+      {
+        "step": 26,
+        "view": 318,
+        "alias": {
+          "concepts": [
+            "past",
+            "lamp"
+          ],
+          "orientation": "J",
+          "original_view": 144,
+          "original_matrix": [
+            -4,
+            -2,
+            -2,
+            -4
+          ]
+        },
+        "state": [
+          "lamp",
+          "past",
+          "TENSION",
+          "BALANCED"
+        ]
+      },
+      {
+        "step": 27,
+        "view": 293,
+        "alias": {
+          "concepts": [
+            "restart",
+            "street"
+          ],
+          "orientation": "J",
+          "original_view": 117,
+          "original_matrix": [
+            3,
+            4,
+            -1,
+            -4
+          ]
+        },
+        "state": [
+          "restart",
+          "street",
+          "TENSION",
+          "street"
+        ]
+      },
+      {
+        "step": 28,
+        "view": 330,
+        "alias": {
+          "concepts": [
+            "ripple",
+            "street"
+          ],
+          "orientation": "J",
+          "original_view": 156,
+          "original_matrix": [
+            2,
+            4,
+            -1,
+            -4
+          ]
+        },
+        "state": [
+          "ripple",
+          "street",
+          "ALIGN",
+          "street"
+        ]
+      }
+    ],
+    "first_examples_selection": "First occurrence in time; no literary ranking"
+  },
+  "formal_transfers_passed": 3,
+  "rejected_transfer_mutations": 6,
+  "native_reference_equal": true,
+  "kernel_unchanged": true,
+  "search_median_ms": 3.965162002714351,
+  "transfer_inputs": "Three frozen interpretations from experiment 001, not new prose from this expanded run"
+}

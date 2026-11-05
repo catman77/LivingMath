@@ -1,0 +1,130 @@
+{
+  "units": [
+    {
+      "id": "M1",
+      "premises": "PASS",
+      "relational_obligations": "PASS",
+      "counterexample_to_strengthening": "PASS",
+      "x": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "x_next": [
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "observed": [
+        [
+          1
+        ]
+      ],
+      "A_minus_I": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "general_claim_status": "ALGEBRAIC_PROOF_IN_TRANSFER_RU; this code checks the concrete instance"
+    },
+    {
+      "id": "M2",
+      "premises": "PASS",
+      "relational_obligations": "PASS",
+      "counterexample_to_strengthening": "PASS",
+      "x_initial": [
+        [
+          3
+        ],
+        [
+          1
+        ]
+      ],
+      "x_after_control": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "invariant": [
+        [
+          1
+        ]
+      ],
+      "countermodel_final_state": [
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "general_claim_status": "PROVED_BY_ONE_STEP_IDENTITY_AND_INDUCTION_IN_TRANSFER_RU"
+    },
+    {
+      "id": "M3",
+      "premises": "PASS",
+      "relational_obligations": "PASS",
+      "counterexample_to_strengthening": "PASS",
+      "first": [
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "last": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "first_output": [
+        [
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "last_output": [
+        [
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "characteristic_polynomial": [
+        1,
+        -4,
+        2
+      ],
+      "general_claim_status": "PROVED_BY_ASSOCIATIVITY_AND_INVERTIBILITY_IN_TRANSFER_RU"
+    }
+  ],
+  "all_concrete_obligations_pass": true,
+  "translation_fidelity": "LLM_PROPOSED_MAPPING_NOT_INDEPENDENTLY_CERTIFIED",
+  "physical_validity": "NOT_TESTED_NOT_CLAIMED",
+  "mathematical_novelty": "NOT_CLAIMED"
+}

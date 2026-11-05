@@ -1,0 +1,114 @@
+{
+  "schema": "levinmas-white-star-request/1",
+  "atlas_profile": "cj_v1",
+  "encoding": {
+    "schema": "llm-white-star-concepts/1",
+    "source": {
+      "author": "Assistant, original QA fixture",
+      "title": "Ключ и ветер",
+      "text": "Ключ остался на столе.\nДверь открылась от ветра.\nДом впервые стал дорогой.",
+      "sha256": "91488dea018dc4762ca9387012ab43cabcfa3370a65e511ecc3904b8ecb06ad2",
+      "rights": "ORIGINAL_TEST_FIXTURE"
+    },
+    "axes": [
+      {
+        "id": "change",
+        "minus": "сохранение",
+        "plus": "изменение"
+      },
+      {
+        "id": "process",
+        "minus": "предмет",
+        "plus": "действие"
+      }
+    ],
+    "concepts": [
+      {
+        "id": "key",
+        "label": "ключ",
+        "coordinates": [
+          -3,
+          -2
+        ],
+        "encoding_rationale": "Явно назначенная координата тестовой аннотации; не универсальная семантика.",
+        "evidence": [
+          {
+            "line": 1,
+            "byte_start": 0,
+            "byte_end": 8,
+            "quote": "Ключ"
+          }
+        ]
+      },
+      {
+        "id": "door",
+        "label": "дверь",
+        "coordinates": [
+          2,
+          -3
+        ],
+        "encoding_rationale": "Явно назначенная координата тестовой аннотации; не универсальная семантика.",
+        "evidence": [
+          {
+            "line": 2,
+            "byte_start": 41,
+            "byte_end": 51,
+            "quote": "Дверь"
+          }
+        ]
+      },
+      {
+        "id": "wind",
+        "label": "ветер",
+        "coordinates": [
+          3,
+          4
+        ],
+        "encoding_rationale": "Явно назначенная координата тестовой аннотации; не универсальная семантика.",
+        "evidence": [
+          {
+            "line": 2,
+            "byte_start": 76,
+            "byte_end": 86,
+            "quote": "ветра"
+          }
+        ]
+      },
+      {
+        "id": "home",
+        "label": "дом",
+        "coordinates": [
+          -4,
+          -1
+        ],
+        "encoding_rationale": "Явно назначенная координата тестовой аннотации; не универсальная семантика.",
+        "evidence": [
+          {
+            "line": 3,
+            "byte_start": 88,
+            "byte_end": 94,
+            "quote": "Дом"
+          }
+        ]
+      }
+    ],
+    "source_relations": [],
+    "uncertainties": [
+      "Превращение дома в дорогу — предложенная метафора, не физическое событие."
+    ],
+    "provenance": {
+      "encoder": "manual fixture authored for integration QA",
+      "remote_model_call": false
+    },
+    "protocol": {
+      "seed": 42,
+      "steps": 32,
+      "candidates_per_step": 3,
+      "frame_size": 3,
+      "decode_first_frames": 6,
+      "exclude_zero_direction": true,
+      "semantic_reranking": false,
+      "optimizer_feedback": false
+    }
+  }
+}

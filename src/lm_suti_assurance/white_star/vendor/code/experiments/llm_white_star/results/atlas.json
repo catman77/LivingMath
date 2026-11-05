@@ -1,0 +1,2717 @@
+{
+  "schema": "llm-white-star-atlas/1",
+  "charts": [
+    {
+      "view": 0,
+      "pair": [
+        "night",
+        "street"
+      ],
+      "matrix": [
+        -3,
+        -3,
+        -1,
+        -4
+      ],
+      "determinant": 9,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 1,
+      "pair": [
+        "night",
+        "lamp"
+      ],
+      "matrix": [
+        -3,
+        -3,
+        -2,
+        -4
+      ],
+      "determinant": 6,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 2,
+      "pair": [
+        "night",
+        "pharmacy"
+      ],
+      "matrix": [
+        -3,
+        -3,
+        1,
+        -3
+      ],
+      "determinant": 12,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 3,
+      "pair": [
+        "night",
+        "light"
+      ],
+      "matrix": [
+        -3,
+        -3,
+        -3,
+        -2
+      ],
+      "determinant": -3,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 4,
+      "pair": [
+        "night",
+        "duration"
+      ],
+      "matrix": [
+        -3,
+        -3,
+        -2,
+        3
+      ],
+      "determinant": -15,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 5,
+      "pair": [
+        "night",
+        "same"
+      ],
+      "matrix": [
+        -3,
+        -3,
+        -4,
+        1
+      ],
+      "determinant": -15,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 6,
+      "pair": [
+        "night",
+        "no_exit"
+      ],
+      "matrix": [
+        -3,
+        -3,
+        -4,
+        -1
+      ],
+      "determinant": -9,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 7,
+      "pair": [
+        "night",
+        "death"
+      ],
+      "matrix": [
+        -3,
+        -3,
+        4,
+        3
+      ],
+      "determinant": 3,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 8,
+      "pair": [
+        "night",
+        "restart"
+      ],
+      "matrix": [
+        -3,
+        -3,
+        3,
+        4
+      ],
+      "determinant": -3,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 9,
+      "pair": [
+        "night",
+        "repeat"
+      ],
+      "matrix": [
+        -3,
+        -3,
+        -3,
+        4
+      ],
+      "determinant": -21,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 10,
+      "pair": [
+        "night",
+        "past"
+      ],
+      "matrix": [
+        -3,
+        -3,
+        -4,
+        -2
+      ],
+      "determinant": -6,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 11,
+      "pair": [
+        "night",
+        "ripple"
+      ],
+      "matrix": [
+        -3,
+        -3,
+        2,
+        4
+      ],
+      "determinant": -6,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 12,
+      "pair": [
+        "night",
+        "canal"
+      ],
+      "matrix": [
+        -3,
+        -3,
+        -1,
+        -3
+      ],
+      "determinant": 6,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 13,
+      "pair": [
+        "street",
+        "night"
+      ],
+      "matrix": [
+        -1,
+        -4,
+        -3,
+        -3
+      ],
+      "determinant": -9,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 14,
+      "pair": [
+        "street",
+        "lamp"
+      ],
+      "matrix": [
+        -1,
+        -4,
+        -2,
+        -4
+      ],
+      "determinant": -4,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 15,
+      "pair": [
+        "street",
+        "pharmacy"
+      ],
+      "matrix": [
+        -1,
+        -4,
+        1,
+        -3
+      ],
+      "determinant": 7,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 16,
+      "pair": [
+        "street",
+        "light"
+      ],
+      "matrix": [
+        -1,
+        -4,
+        -3,
+        -2
+      ],
+      "determinant": -10,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 17,
+      "pair": [
+        "street",
+        "duration"
+      ],
+      "matrix": [
+        -1,
+        -4,
+        -2,
+        3
+      ],
+      "determinant": -11,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 18,
+      "pair": [
+        "street",
+        "same"
+      ],
+      "matrix": [
+        -1,
+        -4,
+        -4,
+        1
+      ],
+      "determinant": -17,
+      "orthogonal_rows": true
+    },
+    {
+      "view": 19,
+      "pair": [
+        "street",
+        "no_exit"
+      ],
+      "matrix": [
+        -1,
+        -4,
+        -4,
+        -1
+      ],
+      "determinant": -15,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 20,
+      "pair": [
+        "street",
+        "death"
+      ],
+      "matrix": [
+        -1,
+        -4,
+        4,
+        3
+      ],
+      "determinant": 13,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 21,
+      "pair": [
+        "street",
+        "restart"
+      ],
+      "matrix": [
+        -1,
+        -4,
+        3,
+        4
+      ],
+      "determinant": 8,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 22,
+      "pair": [
+        "street",
+        "repeat"
+      ],
+      "matrix": [
+        -1,
+        -4,
+        -3,
+        4
+      ],
+      "determinant": -16,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 23,
+      "pair": [
+        "street",
+        "past"
+      ],
+      "matrix": [
+        -1,
+        -4,
+        -4,
+        -2
+      ],
+      "determinant": -14,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 24,
+      "pair": [
+        "street",
+        "ripple"
+      ],
+      "matrix": [
+        -1,
+        -4,
+        2,
+        4
+      ],
+      "determinant": 4,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 25,
+      "pair": [
+        "street",
+        "canal"
+      ],
+      "matrix": [
+        -1,
+        -4,
+        -1,
+        -3
+      ],
+      "determinant": -1,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 26,
+      "pair": [
+        "lamp",
+        "night"
+      ],
+      "matrix": [
+        -2,
+        -4,
+        -3,
+        -3
+      ],
+      "determinant": -6,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 27,
+      "pair": [
+        "lamp",
+        "street"
+      ],
+      "matrix": [
+        -2,
+        -4,
+        -1,
+        -4
+      ],
+      "determinant": 4,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 28,
+      "pair": [
+        "lamp",
+        "pharmacy"
+      ],
+      "matrix": [
+        -2,
+        -4,
+        1,
+        -3
+      ],
+      "determinant": 10,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 29,
+      "pair": [
+        "lamp",
+        "light"
+      ],
+      "matrix": [
+        -2,
+        -4,
+        -3,
+        -2
+      ],
+      "determinant": -8,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 30,
+      "pair": [
+        "lamp",
+        "duration"
+      ],
+      "matrix": [
+        -2,
+        -4,
+        -2,
+        3
+      ],
+      "determinant": -14,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 31,
+      "pair": [
+        "lamp",
+        "same"
+      ],
+      "matrix": [
+        -2,
+        -4,
+        -4,
+        1
+      ],
+      "determinant": -18,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 32,
+      "pair": [
+        "lamp",
+        "no_exit"
+      ],
+      "matrix": [
+        -2,
+        -4,
+        -4,
+        -1
+      ],
+      "determinant": -14,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 33,
+      "pair": [
+        "lamp",
+        "death"
+      ],
+      "matrix": [
+        -2,
+        -4,
+        4,
+        3
+      ],
+      "determinant": 10,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 34,
+      "pair": [
+        "lamp",
+        "restart"
+      ],
+      "matrix": [
+        -2,
+        -4,
+        3,
+        4
+      ],
+      "determinant": 4,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 35,
+      "pair": [
+        "lamp",
+        "repeat"
+      ],
+      "matrix": [
+        -2,
+        -4,
+        -3,
+        4
+      ],
+      "determinant": -20,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 36,
+      "pair": [
+        "lamp",
+        "past"
+      ],
+      "matrix": [
+        -2,
+        -4,
+        -4,
+        -2
+      ],
+      "determinant": -12,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 37,
+      "pair": [
+        "lamp",
+        "canal"
+      ],
+      "matrix": [
+        -2,
+        -4,
+        -1,
+        -3
+      ],
+      "determinant": 2,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 38,
+      "pair": [
+        "pharmacy",
+        "night"
+      ],
+      "matrix": [
+        1,
+        -3,
+        -3,
+        -3
+      ],
+      "determinant": -12,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 39,
+      "pair": [
+        "pharmacy",
+        "street"
+      ],
+      "matrix": [
+        1,
+        -3,
+        -1,
+        -4
+      ],
+      "determinant": -7,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 40,
+      "pair": [
+        "pharmacy",
+        "lamp"
+      ],
+      "matrix": [
+        1,
+        -3,
+        -2,
+        -4
+      ],
+      "determinant": -10,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 41,
+      "pair": [
+        "pharmacy",
+        "light"
+      ],
+      "matrix": [
+        1,
+        -3,
+        -3,
+        -2
+      ],
+      "determinant": -11,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 42,
+      "pair": [
+        "pharmacy",
+        "duration"
+      ],
+      "matrix": [
+        1,
+        -3,
+        -2,
+        3
+      ],
+      "determinant": -3,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 43,
+      "pair": [
+        "pharmacy",
+        "same"
+      ],
+      "matrix": [
+        1,
+        -3,
+        -4,
+        1
+      ],
+      "determinant": -11,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 44,
+      "pair": [
+        "pharmacy",
+        "no_exit"
+      ],
+      "matrix": [
+        1,
+        -3,
+        -4,
+        -1
+      ],
+      "determinant": -13,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 45,
+      "pair": [
+        "pharmacy",
+        "death"
+      ],
+      "matrix": [
+        1,
+        -3,
+        4,
+        3
+      ],
+      "determinant": 15,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 46,
+      "pair": [
+        "pharmacy",
+        "restart"
+      ],
+      "matrix": [
+        1,
+        -3,
+        3,
+        4
+      ],
+      "determinant": 13,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 47,
+      "pair": [
+        "pharmacy",
+        "repeat"
+      ],
+      "matrix": [
+        1,
+        -3,
+        -3,
+        4
+      ],
+      "determinant": -5,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 48,
+      "pair": [
+        "pharmacy",
+        "past"
+      ],
+      "matrix": [
+        1,
+        -3,
+        -4,
+        -2
+      ],
+      "determinant": -14,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 49,
+      "pair": [
+        "pharmacy",
+        "ripple"
+      ],
+      "matrix": [
+        1,
+        -3,
+        2,
+        4
+      ],
+      "determinant": 10,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 50,
+      "pair": [
+        "pharmacy",
+        "canal"
+      ],
+      "matrix": [
+        1,
+        -3,
+        -1,
+        -3
+      ],
+      "determinant": -6,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 51,
+      "pair": [
+        "light",
+        "night"
+      ],
+      "matrix": [
+        -3,
+        -2,
+        -3,
+        -3
+      ],
+      "determinant": 3,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 52,
+      "pair": [
+        "light",
+        "street"
+      ],
+      "matrix": [
+        -3,
+        -2,
+        -1,
+        -4
+      ],
+      "determinant": 10,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 53,
+      "pair": [
+        "light",
+        "lamp"
+      ],
+      "matrix": [
+        -3,
+        -2,
+        -2,
+        -4
+      ],
+      "determinant": 8,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 54,
+      "pair": [
+        "light",
+        "pharmacy"
+      ],
+      "matrix": [
+        -3,
+        -2,
+        1,
+        -3
+      ],
+      "determinant": 11,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 55,
+      "pair": [
+        "light",
+        "duration"
+      ],
+      "matrix": [
+        -3,
+        -2,
+        -2,
+        3
+      ],
+      "determinant": -13,
+      "orthogonal_rows": true
+    },
+    {
+      "view": 56,
+      "pair": [
+        "light",
+        "same"
+      ],
+      "matrix": [
+        -3,
+        -2,
+        -4,
+        1
+      ],
+      "determinant": -11,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 57,
+      "pair": [
+        "light",
+        "no_exit"
+      ],
+      "matrix": [
+        -3,
+        -2,
+        -4,
+        -1
+      ],
+      "determinant": -5,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 58,
+      "pair": [
+        "light",
+        "death"
+      ],
+      "matrix": [
+        -3,
+        -2,
+        4,
+        3
+      ],
+      "determinant": -1,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 59,
+      "pair": [
+        "light",
+        "restart"
+      ],
+      "matrix": [
+        -3,
+        -2,
+        3,
+        4
+      ],
+      "determinant": -6,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 60,
+      "pair": [
+        "light",
+        "repeat"
+      ],
+      "matrix": [
+        -3,
+        -2,
+        -3,
+        4
+      ],
+      "determinant": -18,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 61,
+      "pair": [
+        "light",
+        "past"
+      ],
+      "matrix": [
+        -3,
+        -2,
+        -4,
+        -2
+      ],
+      "determinant": -2,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 62,
+      "pair": [
+        "light",
+        "ripple"
+      ],
+      "matrix": [
+        -3,
+        -2,
+        2,
+        4
+      ],
+      "determinant": -8,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 63,
+      "pair": [
+        "light",
+        "canal"
+      ],
+      "matrix": [
+        -3,
+        -2,
+        -1,
+        -3
+      ],
+      "determinant": 7,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 64,
+      "pair": [
+        "duration",
+        "night"
+      ],
+      "matrix": [
+        -2,
+        3,
+        -3,
+        -3
+      ],
+      "determinant": 15,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 65,
+      "pair": [
+        "duration",
+        "street"
+      ],
+      "matrix": [
+        -2,
+        3,
+        -1,
+        -4
+      ],
+      "determinant": 11,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 66,
+      "pair": [
+        "duration",
+        "lamp"
+      ],
+      "matrix": [
+        -2,
+        3,
+        -2,
+        -4
+      ],
+      "determinant": 14,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 67,
+      "pair": [
+        "duration",
+        "pharmacy"
+      ],
+      "matrix": [
+        -2,
+        3,
+        1,
+        -3
+      ],
+      "determinant": 3,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 68,
+      "pair": [
+        "duration",
+        "light"
+      ],
+      "matrix": [
+        -2,
+        3,
+        -3,
+        -2
+      ],
+      "determinant": 13,
+      "orthogonal_rows": true
+    },
+    {
+      "view": 69,
+      "pair": [
+        "duration",
+        "same"
+      ],
+      "matrix": [
+        -2,
+        3,
+        -4,
+        1
+      ],
+      "determinant": 10,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 70,
+      "pair": [
+        "duration",
+        "no_exit"
+      ],
+      "matrix": [
+        -2,
+        3,
+        -4,
+        -1
+      ],
+      "determinant": 14,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 71,
+      "pair": [
+        "duration",
+        "death"
+      ],
+      "matrix": [
+        -2,
+        3,
+        4,
+        3
+      ],
+      "determinant": -18,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 72,
+      "pair": [
+        "duration",
+        "restart"
+      ],
+      "matrix": [
+        -2,
+        3,
+        3,
+        4
+      ],
+      "determinant": -17,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 73,
+      "pair": [
+        "duration",
+        "repeat"
+      ],
+      "matrix": [
+        -2,
+        3,
+        -3,
+        4
+      ],
+      "determinant": 1,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 74,
+      "pair": [
+        "duration",
+        "past"
+      ],
+      "matrix": [
+        -2,
+        3,
+        -4,
+        -2
+      ],
+      "determinant": 16,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 75,
+      "pair": [
+        "duration",
+        "ripple"
+      ],
+      "matrix": [
+        -2,
+        3,
+        2,
+        4
+      ],
+      "determinant": -14,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 76,
+      "pair": [
+        "duration",
+        "canal"
+      ],
+      "matrix": [
+        -2,
+        3,
+        -1,
+        -3
+      ],
+      "determinant": 9,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 77,
+      "pair": [
+        "same",
+        "night"
+      ],
+      "matrix": [
+        -4,
+        1,
+        -3,
+        -3
+      ],
+      "determinant": 15,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 78,
+      "pair": [
+        "same",
+        "street"
+      ],
+      "matrix": [
+        -4,
+        1,
+        -1,
+        -4
+      ],
+      "determinant": 17,
+      "orthogonal_rows": true
+    },
+    {
+      "view": 79,
+      "pair": [
+        "same",
+        "lamp"
+      ],
+      "matrix": [
+        -4,
+        1,
+        -2,
+        -4
+      ],
+      "determinant": 18,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 80,
+      "pair": [
+        "same",
+        "pharmacy"
+      ],
+      "matrix": [
+        -4,
+        1,
+        1,
+        -3
+      ],
+      "determinant": 11,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 81,
+      "pair": [
+        "same",
+        "light"
+      ],
+      "matrix": [
+        -4,
+        1,
+        -3,
+        -2
+      ],
+      "determinant": 11,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 82,
+      "pair": [
+        "same",
+        "duration"
+      ],
+      "matrix": [
+        -4,
+        1,
+        -2,
+        3
+      ],
+      "determinant": -10,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 83,
+      "pair": [
+        "same",
+        "no_exit"
+      ],
+      "matrix": [
+        -4,
+        1,
+        -4,
+        -1
+      ],
+      "determinant": 8,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 84,
+      "pair": [
+        "same",
+        "death"
+      ],
+      "matrix": [
+        -4,
+        1,
+        4,
+        3
+      ],
+      "determinant": -16,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 85,
+      "pair": [
+        "same",
+        "restart"
+      ],
+      "matrix": [
+        -4,
+        1,
+        3,
+        4
+      ],
+      "determinant": -19,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 86,
+      "pair": [
+        "same",
+        "repeat"
+      ],
+      "matrix": [
+        -4,
+        1,
+        -3,
+        4
+      ],
+      "determinant": -13,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 87,
+      "pair": [
+        "same",
+        "past"
+      ],
+      "matrix": [
+        -4,
+        1,
+        -4,
+        -2
+      ],
+      "determinant": 12,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 88,
+      "pair": [
+        "same",
+        "ripple"
+      ],
+      "matrix": [
+        -4,
+        1,
+        2,
+        4
+      ],
+      "determinant": -18,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 89,
+      "pair": [
+        "same",
+        "canal"
+      ],
+      "matrix": [
+        -4,
+        1,
+        -1,
+        -3
+      ],
+      "determinant": 13,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 90,
+      "pair": [
+        "no_exit",
+        "night"
+      ],
+      "matrix": [
+        -4,
+        -1,
+        -3,
+        -3
+      ],
+      "determinant": 9,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 91,
+      "pair": [
+        "no_exit",
+        "street"
+      ],
+      "matrix": [
+        -4,
+        -1,
+        -1,
+        -4
+      ],
+      "determinant": 15,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 92,
+      "pair": [
+        "no_exit",
+        "lamp"
+      ],
+      "matrix": [
+        -4,
+        -1,
+        -2,
+        -4
+      ],
+      "determinant": 14,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 93,
+      "pair": [
+        "no_exit",
+        "pharmacy"
+      ],
+      "matrix": [
+        -4,
+        -1,
+        1,
+        -3
+      ],
+      "determinant": 13,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 94,
+      "pair": [
+        "no_exit",
+        "light"
+      ],
+      "matrix": [
+        -4,
+        -1,
+        -3,
+        -2
+      ],
+      "determinant": 5,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 95,
+      "pair": [
+        "no_exit",
+        "duration"
+      ],
+      "matrix": [
+        -4,
+        -1,
+        -2,
+        3
+      ],
+      "determinant": -14,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 96,
+      "pair": [
+        "no_exit",
+        "same"
+      ],
+      "matrix": [
+        -4,
+        -1,
+        -4,
+        1
+      ],
+      "determinant": -8,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 97,
+      "pair": [
+        "no_exit",
+        "death"
+      ],
+      "matrix": [
+        -4,
+        -1,
+        4,
+        3
+      ],
+      "determinant": -8,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 98,
+      "pair": [
+        "no_exit",
+        "restart"
+      ],
+      "matrix": [
+        -4,
+        -1,
+        3,
+        4
+      ],
+      "determinant": -13,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 99,
+      "pair": [
+        "no_exit",
+        "repeat"
+      ],
+      "matrix": [
+        -4,
+        -1,
+        -3,
+        4
+      ],
+      "determinant": -19,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 100,
+      "pair": [
+        "no_exit",
+        "past"
+      ],
+      "matrix": [
+        -4,
+        -1,
+        -4,
+        -2
+      ],
+      "determinant": 4,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 101,
+      "pair": [
+        "no_exit",
+        "ripple"
+      ],
+      "matrix": [
+        -4,
+        -1,
+        2,
+        4
+      ],
+      "determinant": -14,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 102,
+      "pair": [
+        "no_exit",
+        "canal"
+      ],
+      "matrix": [
+        -4,
+        -1,
+        -1,
+        -3
+      ],
+      "determinant": 11,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 103,
+      "pair": [
+        "death",
+        "night"
+      ],
+      "matrix": [
+        4,
+        3,
+        -3,
+        -3
+      ],
+      "determinant": -3,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 104,
+      "pair": [
+        "death",
+        "street"
+      ],
+      "matrix": [
+        4,
+        3,
+        -1,
+        -4
+      ],
+      "determinant": -13,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 105,
+      "pair": [
+        "death",
+        "lamp"
+      ],
+      "matrix": [
+        4,
+        3,
+        -2,
+        -4
+      ],
+      "determinant": -10,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 106,
+      "pair": [
+        "death",
+        "pharmacy"
+      ],
+      "matrix": [
+        4,
+        3,
+        1,
+        -3
+      ],
+      "determinant": -15,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 107,
+      "pair": [
+        "death",
+        "light"
+      ],
+      "matrix": [
+        4,
+        3,
+        -3,
+        -2
+      ],
+      "determinant": 1,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 108,
+      "pair": [
+        "death",
+        "duration"
+      ],
+      "matrix": [
+        4,
+        3,
+        -2,
+        3
+      ],
+      "determinant": 18,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 109,
+      "pair": [
+        "death",
+        "same"
+      ],
+      "matrix": [
+        4,
+        3,
+        -4,
+        1
+      ],
+      "determinant": 16,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 110,
+      "pair": [
+        "death",
+        "no_exit"
+      ],
+      "matrix": [
+        4,
+        3,
+        -4,
+        -1
+      ],
+      "determinant": 8,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 111,
+      "pair": [
+        "death",
+        "restart"
+      ],
+      "matrix": [
+        4,
+        3,
+        3,
+        4
+      ],
+      "determinant": 7,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 112,
+      "pair": [
+        "death",
+        "repeat"
+      ],
+      "matrix": [
+        4,
+        3,
+        -3,
+        4
+      ],
+      "determinant": 25,
+      "orthogonal_rows": true
+    },
+    {
+      "view": 113,
+      "pair": [
+        "death",
+        "past"
+      ],
+      "matrix": [
+        4,
+        3,
+        -4,
+        -2
+      ],
+      "determinant": 4,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 114,
+      "pair": [
+        "death",
+        "ripple"
+      ],
+      "matrix": [
+        4,
+        3,
+        2,
+        4
+      ],
+      "determinant": 10,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 115,
+      "pair": [
+        "death",
+        "canal"
+      ],
+      "matrix": [
+        4,
+        3,
+        -1,
+        -3
+      ],
+      "determinant": -9,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 116,
+      "pair": [
+        "restart",
+        "night"
+      ],
+      "matrix": [
+        3,
+        4,
+        -3,
+        -3
+      ],
+      "determinant": 3,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 117,
+      "pair": [
+        "restart",
+        "street"
+      ],
+      "matrix": [
+        3,
+        4,
+        -1,
+        -4
+      ],
+      "determinant": -8,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 118,
+      "pair": [
+        "restart",
+        "lamp"
+      ],
+      "matrix": [
+        3,
+        4,
+        -2,
+        -4
+      ],
+      "determinant": -4,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 119,
+      "pair": [
+        "restart",
+        "pharmacy"
+      ],
+      "matrix": [
+        3,
+        4,
+        1,
+        -3
+      ],
+      "determinant": -13,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 120,
+      "pair": [
+        "restart",
+        "light"
+      ],
+      "matrix": [
+        3,
+        4,
+        -3,
+        -2
+      ],
+      "determinant": 6,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 121,
+      "pair": [
+        "restart",
+        "duration"
+      ],
+      "matrix": [
+        3,
+        4,
+        -2,
+        3
+      ],
+      "determinant": 17,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 122,
+      "pair": [
+        "restart",
+        "same"
+      ],
+      "matrix": [
+        3,
+        4,
+        -4,
+        1
+      ],
+      "determinant": 19,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 123,
+      "pair": [
+        "restart",
+        "no_exit"
+      ],
+      "matrix": [
+        3,
+        4,
+        -4,
+        -1
+      ],
+      "determinant": 13,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 124,
+      "pair": [
+        "restart",
+        "death"
+      ],
+      "matrix": [
+        3,
+        4,
+        4,
+        3
+      ],
+      "determinant": -7,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 125,
+      "pair": [
+        "restart",
+        "repeat"
+      ],
+      "matrix": [
+        3,
+        4,
+        -3,
+        4
+      ],
+      "determinant": 24,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 126,
+      "pair": [
+        "restart",
+        "past"
+      ],
+      "matrix": [
+        3,
+        4,
+        -4,
+        -2
+      ],
+      "determinant": 10,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 127,
+      "pair": [
+        "restart",
+        "ripple"
+      ],
+      "matrix": [
+        3,
+        4,
+        2,
+        4
+      ],
+      "determinant": 4,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 128,
+      "pair": [
+        "restart",
+        "canal"
+      ],
+      "matrix": [
+        3,
+        4,
+        -1,
+        -3
+      ],
+      "determinant": -5,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 129,
+      "pair": [
+        "repeat",
+        "night"
+      ],
+      "matrix": [
+        -3,
+        4,
+        -3,
+        -3
+      ],
+      "determinant": 21,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 130,
+      "pair": [
+        "repeat",
+        "street"
+      ],
+      "matrix": [
+        -3,
+        4,
+        -1,
+        -4
+      ],
+      "determinant": 16,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 131,
+      "pair": [
+        "repeat",
+        "lamp"
+      ],
+      "matrix": [
+        -3,
+        4,
+        -2,
+        -4
+      ],
+      "determinant": 20,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 132,
+      "pair": [
+        "repeat",
+        "pharmacy"
+      ],
+      "matrix": [
+        -3,
+        4,
+        1,
+        -3
+      ],
+      "determinant": 5,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 133,
+      "pair": [
+        "repeat",
+        "light"
+      ],
+      "matrix": [
+        -3,
+        4,
+        -3,
+        -2
+      ],
+      "determinant": 18,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 134,
+      "pair": [
+        "repeat",
+        "duration"
+      ],
+      "matrix": [
+        -3,
+        4,
+        -2,
+        3
+      ],
+      "determinant": -1,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 135,
+      "pair": [
+        "repeat",
+        "same"
+      ],
+      "matrix": [
+        -3,
+        4,
+        -4,
+        1
+      ],
+      "determinant": 13,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 136,
+      "pair": [
+        "repeat",
+        "no_exit"
+      ],
+      "matrix": [
+        -3,
+        4,
+        -4,
+        -1
+      ],
+      "determinant": 19,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 137,
+      "pair": [
+        "repeat",
+        "death"
+      ],
+      "matrix": [
+        -3,
+        4,
+        4,
+        3
+      ],
+      "determinant": -25,
+      "orthogonal_rows": true
+    },
+    {
+      "view": 138,
+      "pair": [
+        "repeat",
+        "restart"
+      ],
+      "matrix": [
+        -3,
+        4,
+        3,
+        4
+      ],
+      "determinant": -24,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 139,
+      "pair": [
+        "repeat",
+        "past"
+      ],
+      "matrix": [
+        -3,
+        4,
+        -4,
+        -2
+      ],
+      "determinant": 22,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 140,
+      "pair": [
+        "repeat",
+        "ripple"
+      ],
+      "matrix": [
+        -3,
+        4,
+        2,
+        4
+      ],
+      "determinant": -20,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 141,
+      "pair": [
+        "repeat",
+        "canal"
+      ],
+      "matrix": [
+        -3,
+        4,
+        -1,
+        -3
+      ],
+      "determinant": 13,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 142,
+      "pair": [
+        "past",
+        "night"
+      ],
+      "matrix": [
+        -4,
+        -2,
+        -3,
+        -3
+      ],
+      "determinant": 6,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 143,
+      "pair": [
+        "past",
+        "street"
+      ],
+      "matrix": [
+        -4,
+        -2,
+        -1,
+        -4
+      ],
+      "determinant": 14,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 144,
+      "pair": [
+        "past",
+        "lamp"
+      ],
+      "matrix": [
+        -4,
+        -2,
+        -2,
+        -4
+      ],
+      "determinant": 12,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 145,
+      "pair": [
+        "past",
+        "pharmacy"
+      ],
+      "matrix": [
+        -4,
+        -2,
+        1,
+        -3
+      ],
+      "determinant": 14,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 146,
+      "pair": [
+        "past",
+        "light"
+      ],
+      "matrix": [
+        -4,
+        -2,
+        -3,
+        -2
+      ],
+      "determinant": 2,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 147,
+      "pair": [
+        "past",
+        "duration"
+      ],
+      "matrix": [
+        -4,
+        -2,
+        -2,
+        3
+      ],
+      "determinant": -16,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 148,
+      "pair": [
+        "past",
+        "same"
+      ],
+      "matrix": [
+        -4,
+        -2,
+        -4,
+        1
+      ],
+      "determinant": -12,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 149,
+      "pair": [
+        "past",
+        "no_exit"
+      ],
+      "matrix": [
+        -4,
+        -2,
+        -4,
+        -1
+      ],
+      "determinant": -4,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 150,
+      "pair": [
+        "past",
+        "death"
+      ],
+      "matrix": [
+        -4,
+        -2,
+        4,
+        3
+      ],
+      "determinant": -4,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 151,
+      "pair": [
+        "past",
+        "restart"
+      ],
+      "matrix": [
+        -4,
+        -2,
+        3,
+        4
+      ],
+      "determinant": -10,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 152,
+      "pair": [
+        "past",
+        "repeat"
+      ],
+      "matrix": [
+        -4,
+        -2,
+        -3,
+        4
+      ],
+      "determinant": -22,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 153,
+      "pair": [
+        "past",
+        "ripple"
+      ],
+      "matrix": [
+        -4,
+        -2,
+        2,
+        4
+      ],
+      "determinant": -12,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 154,
+      "pair": [
+        "past",
+        "canal"
+      ],
+      "matrix": [
+        -4,
+        -2,
+        -1,
+        -3
+      ],
+      "determinant": 10,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 155,
+      "pair": [
+        "ripple",
+        "night"
+      ],
+      "matrix": [
+        2,
+        4,
+        -3,
+        -3
+      ],
+      "determinant": 6,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 156,
+      "pair": [
+        "ripple",
+        "street"
+      ],
+      "matrix": [
+        2,
+        4,
+        -1,
+        -4
+      ],
+      "determinant": -4,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 157,
+      "pair": [
+        "ripple",
+        "pharmacy"
+      ],
+      "matrix": [
+        2,
+        4,
+        1,
+        -3
+      ],
+      "determinant": -10,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 158,
+      "pair": [
+        "ripple",
+        "light"
+      ],
+      "matrix": [
+        2,
+        4,
+        -3,
+        -2
+      ],
+      "determinant": 8,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 159,
+      "pair": [
+        "ripple",
+        "duration"
+      ],
+      "matrix": [
+        2,
+        4,
+        -2,
+        3
+      ],
+      "determinant": 14,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 160,
+      "pair": [
+        "ripple",
+        "same"
+      ],
+      "matrix": [
+        2,
+        4,
+        -4,
+        1
+      ],
+      "determinant": 18,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 161,
+      "pair": [
+        "ripple",
+        "no_exit"
+      ],
+      "matrix": [
+        2,
+        4,
+        -4,
+        -1
+      ],
+      "determinant": 14,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 162,
+      "pair": [
+        "ripple",
+        "death"
+      ],
+      "matrix": [
+        2,
+        4,
+        4,
+        3
+      ],
+      "determinant": -10,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 163,
+      "pair": [
+        "ripple",
+        "restart"
+      ],
+      "matrix": [
+        2,
+        4,
+        3,
+        4
+      ],
+      "determinant": -4,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 164,
+      "pair": [
+        "ripple",
+        "repeat"
+      ],
+      "matrix": [
+        2,
+        4,
+        -3,
+        4
+      ],
+      "determinant": 20,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 165,
+      "pair": [
+        "ripple",
+        "past"
+      ],
+      "matrix": [
+        2,
+        4,
+        -4,
+        -2
+      ],
+      "determinant": 12,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 166,
+      "pair": [
+        "ripple",
+        "canal"
+      ],
+      "matrix": [
+        2,
+        4,
+        -1,
+        -3
+      ],
+      "determinant": -2,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 167,
+      "pair": [
+        "canal",
+        "night"
+      ],
+      "matrix": [
+        -1,
+        -3,
+        -3,
+        -3
+      ],
+      "determinant": -6,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 168,
+      "pair": [
+        "canal",
+        "street"
+      ],
+      "matrix": [
+        -1,
+        -3,
+        -1,
+        -4
+      ],
+      "determinant": 1,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 169,
+      "pair": [
+        "canal",
+        "lamp"
+      ],
+      "matrix": [
+        -1,
+        -3,
+        -2,
+        -4
+      ],
+      "determinant": -2,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 170,
+      "pair": [
+        "canal",
+        "pharmacy"
+      ],
+      "matrix": [
+        -1,
+        -3,
+        1,
+        -3
+      ],
+      "determinant": 6,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 171,
+      "pair": [
+        "canal",
+        "light"
+      ],
+      "matrix": [
+        -1,
+        -3,
+        -3,
+        -2
+      ],
+      "determinant": -7,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 172,
+      "pair": [
+        "canal",
+        "duration"
+      ],
+      "matrix": [
+        -1,
+        -3,
+        -2,
+        3
+      ],
+      "determinant": -9,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 173,
+      "pair": [
+        "canal",
+        "same"
+      ],
+      "matrix": [
+        -1,
+        -3,
+        -4,
+        1
+      ],
+      "determinant": -13,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 174,
+      "pair": [
+        "canal",
+        "no_exit"
+      ],
+      "matrix": [
+        -1,
+        -3,
+        -4,
+        -1
+      ],
+      "determinant": -11,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 175,
+      "pair": [
+        "canal",
+        "death"
+      ],
+      "matrix": [
+        -1,
+        -3,
+        4,
+        3
+      ],
+      "determinant": 9,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 176,
+      "pair": [
+        "canal",
+        "restart"
+      ],
+      "matrix": [
+        -1,
+        -3,
+        3,
+        4
+      ],
+      "determinant": 5,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 177,
+      "pair": [
+        "canal",
+        "repeat"
+      ],
+      "matrix": [
+        -1,
+        -3,
+        -3,
+        4
+      ],
+      "determinant": -13,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 178,
+      "pair": [
+        "canal",
+        "past"
+      ],
+      "matrix": [
+        -1,
+        -3,
+        -4,
+        -2
+      ],
+      "determinant": -10,
+      "orthogonal_rows": false
+    },
+    {
+      "view": 179,
+      "pair": [
+        "canal",
+        "ripple"
+      ],
+      "matrix": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "determinant": 2,
+      "orthogonal_rows": false
+    }
+  ],
+  "omitted_collinear_pairs": [
+    [
+      "lamp",
+      "ripple"
+    ],
+    [
+      "ripple",
+      "lamp"
+    ]
+  ],
+  "ordered_pair_count": 182,
+  "semantics": "rows name concepts; matrices act on division witnesses, not on truth values"
+}

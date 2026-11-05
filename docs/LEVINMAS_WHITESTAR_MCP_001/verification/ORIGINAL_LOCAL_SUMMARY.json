@@ -1,0 +1,38 @@
+{
+  "schema": "levinmas-white-star-local-result/1",
+  "engine": "white_star",
+  "atlas_profile": "cj_v1",
+  "input_sha256": "fe07ba95b2b8c91addb90dfe5731d122f6f8841b8b40c93f12aaa1917dcd7705",
+  "common_snapshot_sha256": "5666af7978b5ed5b664806f63f8587a6cb31146193eed85da30440891de35138",
+  "encoding_sha256": "1a0a163538940942aea74d0ccf52aa79c0bf07498a557af1e11ba8c47fff3ca7",
+  "source_sha256": "91488dea018dc4762ca9387012ab43cabcfa3370a65e511ecc3904b8ecb06ad2",
+  "artifact_sha256": "3a61b058d754647ac4f2bd3bf36afe3a43546ac114f8b97a89c1d70d25e47d14",
+  "summary": {
+    "steps": 32,
+    "projections": 96,
+    "charts_used": 21,
+    "available_charts": 24,
+    "full_signatures": 32,
+    "observation_vertices": 32,
+    "observation_edges": 31,
+    "beta0": 1,
+    "beta1": 0,
+    "graph_storage_bytes": 2334216,
+    "unique_numeric_maps": 24,
+    "labelled_maps": 24,
+    "unique_qualitative_modes": 18,
+    "nonzero_observations": 31,
+    "frames": 10,
+    "decoded_frame_slots": 6,
+    "tail_observations": 1,
+    "semantic_aliases_are_not_extra_numeric_projections": true
+  },
+  "status": {
+    "numeric_run": "COMPUTED",
+    "source_bytes": "MATCHED",
+    "semantic_fidelity": "UNASSESSED",
+    "prose": "NOT_GENERATED",
+    "formal_model": "NOT_REQUESTED",
+    "physical_validity": "NOT_CLAIMED"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "arithmetic_trace": "PASS",
+  "source_addresses": "PASS",
+  "frame_and_relation_bindings": "PASS",
+  "prose_excerpt_addresses": "PASS",
+  "type_separation": "PASS",
+  "semantic_fidelity": "UNASSESSED_BY_CHECKER",
+  "aesthetic_quality": "UNASSESSED_BY_CHECKER",
+  "readings": 6,
+  "bindings": 18
+}

@@ -46,3 +46,7 @@ ALCH006 с собственным source/provenance, неизвестными с
 ссылки и хеши. Публичная доступность API не объявлена лицензией на ML-использование;
 текущая source policy блокирует дальнейший сбор. Синтетические fixtures явно
 отделены от Roblox-данных.
+
+## White Star MCP001 supplied source
+
+The repository owner supplied `LevinMAS_WhiteStar.zip` (SHA256 `c41df9a56a1c1879b790c932714bd2dbd44d2f70d88dea8671279892cc3576b3`). Its75 code files are preserved byte-for-byte under `src/lm_suti_assurance/white_star/vendor/code/`; the complete original request/archive is retained in docs. Upstream manifests and historical001/002/003 results retain their original provenance. New integration wrappers, MCP receipts and QA results are identified separately in docs/white-star. This integration does not claim execution of a native SUTI runtime or convert declared source rights into legal certification.

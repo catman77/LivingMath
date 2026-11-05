@@ -1,0 +1,10 @@
+{
+  "input/concepts.json": "d5614d9900acf1e7682ac25e43c3f3ab2e886b8846288c2204ddf12ed24607c6",
+  "input/freeze.json": "c590713c97acd2674a199a7b70252117747280402b70f62c4253682cb486ffe1",
+  "input/prior_A0.json": "47dda695c3f1a5ec78c3bca6b5d590403a292561fe2f1b1f80b74cafe4a61ae7",
+  "input/poem.txt": "6e74c0e3cffd04019678c8af84ce5e0540097698c29acc9f3cbb935620aa8bf4",
+  "results/trace.jsonl": "51d43f97df41a6a31aa5a7db2bd1c1ee8f851dbc579e59ac85b1cb6ed3b1aec6",
+  "results/frames.json": "d91f4adec519829016bc0496a0ca098a60cc73843d09fdc1cc757401da82f0df",
+  "results/decoder_response.json": "d6a476b89a0383d6e28bf4c3b74cd49cc097cb9c47e8fd12fca376b1c3f1b7d5",
+  "results/manifest.json": "e80dd5d028e1efe1d0ff510c414faa302d2642b69ae0db3291b553bffe733fc6"
+}

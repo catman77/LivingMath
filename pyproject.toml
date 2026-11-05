@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "lm-suti-assurance"
-version = "0.2.0.dev0"
+version = "0.3.0.dev0"
 description = "Single-owner finite assurance CLI and immutable offline research bundles"
 requires-python = ">=3.13"
 dependencies = ["jsonschema==4.26.0"]
@@ -12,6 +12,7 @@ dependencies = ["jsonschema==4.26.0"]
 [project.optional-dependencies]
 test = ["pytest>=8,<10"]
 mcp = ["mcp==1.30.0"]
+white-star = ["numpy==2.3.5", "pandas==2.2.3"]
 
 [project.scripts]
 lm-suti = "lm_suti_assurance.cli:main"
@@ -21,8 +22,11 @@ where = ["src"]
 namespaces = false
 
 [tool.setuptools.package-data]
-lm_suti_assurance = ["BASELINE_LOCK.json", "schemas/*.json", "semantic_bridge/schemas/*.json", "examples/*.json", "_frozen/*.py", "_frozen/*.json", "_frozen/checker001/*.py", "_frozen/checker001/*.json"]
+lm_suti_assurance = ["BASELINE_LOCK.json", "schemas/*.json", "semantic_bridge/schemas/*.json", "white_star/vendor/**/*", "examples/*.json", "_frozen/*.py", "_frozen/*.json", "_frozen/checker001/*.py", "_frozen/checker001/*.json"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["src"]
+
+[tool.setuptools.exclude-package-data]
+lm_suti_assurance = ["white_star/vendor/**/__pycache__/*", "white_star/vendor/**/native/build/*"]

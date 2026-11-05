@@ -1,0 +1,21 @@
+{
+  "package": "LEVINMAS_WHITESTAR_MCP_001",
+  "date": "2026-11-05",
+  "core_source": {
+    "filename": "NOBS_WhiteStar_LLM_003_Transfer.zip",
+    "sha256": "103221874fd86b4530dcb0c0d18db7d47cdf6e2f4d6f11d65c88c1400dc885d4",
+    "library_file_id": "libfile_5d872482ad908191abbcae137f8a97ad",
+    "extraction": "exact archive contents beneath original top-level directory, relocated to code/"
+  },
+  "new_in_this_package": [
+    "integration/",
+    "fixtures/original_request.json",
+    "contracts/",
+    "docs/",
+    "scripts/",
+    "TZ_RU.md",
+    "PROMPT_CODEX_RU.md"
+  ],
+  "live_actions": "read-only system status/catalog; no production writes",
+  "scope": "integration handoff, not a deployed MCP server"
+}

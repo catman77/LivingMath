@@ -1,0 +1,22 @@
+{
+  "deterministic_replay": true,
+  "json_order_invariant": true,
+  "concept_id_renaming_invariant": true,
+  "coordinate_intervention": {
+    "concept": "no_exit",
+    "before": [
+      -4,
+      -1
+    ],
+    "after": [
+      4,
+      -1
+    ],
+    "purpose": "Causal adapter check, not an alternate reading or quality baseline",
+    "different_selected_matrices": 63,
+    "steps": 64,
+    "observed_change": true,
+    "baseline_fingerprint": "3b69ad4a2b7bce8a6758818b007dc5b59bd5c0c2fc6a046801ee5b55d1fdc68e",
+    "changed_fingerprint": "40ff07592f62a98191d77f057203d2b6d4747085fb244bc2618f95f5466e994e"
+  }
+}

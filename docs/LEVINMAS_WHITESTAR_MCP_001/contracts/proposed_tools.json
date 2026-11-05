@@ -1,0 +1,963 @@
+{
+  "status": "DESIGN_FOR_IMPLEMENTATION_NOT_INSTALLED",
+  "based_on_server": "release-v01-20261104T181130Z",
+  "note": "Register these in the existing server. Implement outputSchema and domain error union described in TZ; this file contains proposed input schemas.",
+  "tools": [
+    {
+      "name": "white_star_status",
+      "description": "Inspect White Star readiness, exact limits, frozen kernel hashes and actual SUTI backend.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "white_star_explore",
+      "description": "Run the unchanged White Star/CAD/UDAV core once on frozen concept encoding. Persist trace and all aliases; return frames for client LLM.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "project": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "request_key": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "request": {
+            "type": "object",
+            "properties": {
+              "schema": {
+                "const": "levinmas-white-star-request/1"
+              },
+              "encoding": {
+                "type": "object",
+                "properties": {
+                  "schema": {
+                    "const": "llm-white-star-concepts/1"
+                  },
+                  "source": {
+                    "type": "object",
+                    "properties": {
+                      "author": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 4096
+                      },
+                      "title": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 4096
+                      },
+                      "text": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 48000
+                      },
+                      "sha256": {
+                        "type": "string",
+                        "pattern": "^[0-9a-f]{64}$"
+                      },
+                      "rights": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 4096
+                      }
+                    },
+                    "required": [
+                      "author",
+                      "title",
+                      "text",
+                      "sha256",
+                      "rights"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "axes": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 128
+                        },
+                        "minus": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 1024
+                        },
+                        "plus": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 1024
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "minus",
+                        "plus"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "minItems": 2,
+                    "maxItems": 2
+                  },
+                  "concepts": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 128
+                        },
+                        "label": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 1024
+                        },
+                        "evidence": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "line": {
+                                "type": "integer",
+                                "minimum": 1,
+                                "maximum": 48000
+                              },
+                              "byte_start": {
+                                "type": "integer",
+                                "minimum": 0,
+                                "maximum": 48000
+                              },
+                              "byte_end": {
+                                "type": "integer",
+                                "minimum": 1,
+                                "maximum": 48000
+                              },
+                              "quote": {
+                                "type": "string",
+                                "minLength": 1,
+                                "maxLength": 48000
+                              }
+                            },
+                            "required": [
+                              "line",
+                              "byte_start",
+                              "byte_end",
+                              "quote"
+                            ],
+                            "additionalProperties": false
+                          },
+                          "minItems": 1,
+                          "maxItems": 256
+                        },
+                        "coordinates": {
+                          "type": "array",
+                          "items": {
+                            "type": "integer",
+                            "minimum": -1000000,
+                            "maximum": 1000000
+                          },
+                          "minItems": 2,
+                          "maxItems": 2
+                        },
+                        "encoding_rationale": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 8192
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "label",
+                        "evidence",
+                        "coordinates",
+                        "encoding_rationale"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "minItems": 3,
+                    "maxItems": 64
+                  },
+                  "source_relations": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 128
+                        },
+                        "concepts": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 128
+                          },
+                          "minItems": 1,
+                          "maxItems": 64
+                        },
+                        "kind": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 128
+                        },
+                        "note": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 8192
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "concepts",
+                        "kind",
+                        "note"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "minItems": 0,
+                    "maxItems": 512
+                  },
+                  "uncertainties": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 8192
+                    },
+                    "minItems": 0,
+                    "maxItems": 128
+                  },
+                  "protocol": {
+                    "type": "object",
+                    "properties": {
+                      "seed": {
+                        "type": "integer",
+                        "minimum": -2147483648,
+                        "maximum": 2147483647
+                      },
+                      "steps": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 4096
+                      },
+                      "candidates_per_step": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 16
+                      },
+                      "frame_size": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 4096
+                      },
+                      "decode_first_frames": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 64
+                      },
+                      "exclude_zero_direction": {
+                        "const": true
+                      },
+                      "semantic_reranking": {
+                        "const": false
+                      },
+                      "optimizer_feedback": {
+                        "const": false
+                      },
+                      "selection": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 4096
+                      },
+                      "output_selection": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 4096
+                      },
+                      "objective": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 4096
+                      }
+                    },
+                    "required": [
+                      "seed",
+                      "steps",
+                      "candidates_per_step",
+                      "frame_size",
+                      "decode_first_frames"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "provenance": {
+                    "type": "object"
+                  },
+                  "coordinate_status": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 4096
+                  }
+                },
+                "required": [
+                  "schema",
+                  "source",
+                  "axes",
+                  "concepts",
+                  "source_relations",
+                  "uncertainties",
+                  "protocol"
+                ],
+                "additionalProperties": false
+              },
+              "atlas_profile": {
+                "enum": [
+                  "base_v1",
+                  "cj_v1"
+                ],
+                "default": "cj_v1"
+              }
+            },
+            "required": [
+              "schema",
+              "encoding"
+            ],
+            "additionalProperties": false,
+            "$schema": "https://json-schema.org/draft/2020-12/schema",
+            "$id": "urn:levinmas:white-star:request:1",
+            "title": "Proposed White Star request; semantic and byte-limit checks are additionally required"
+          }
+        },
+        "required": [
+          "project",
+          "request_key",
+          "request"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "white_star_inspect",
+      "description": "Read one immutable run and paginated traces; never rerun search.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "project": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "run_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "view": {
+            "enum": [
+              "summary",
+              "input",
+              "atlas",
+              "trace",
+              "frames",
+              "decoder",
+              "report",
+              "export"
+            ],
+            "default": "summary"
+          },
+          "offset": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 2147483647
+          },
+          "limit": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 128
+          }
+        },
+        "required": [
+          "project",
+          "run_id"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "white_star_record_interpretation",
+      "description": "Store client LLM readings with validated source anchors and frame refs. No inference call; semantic truth remains unverified.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "project": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "run_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "request_key": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "readings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "frame_id": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 256
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 32000
+                },
+                "evidence": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "line": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 48000
+                      },
+                      "byte_start": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 48000
+                      },
+                      "byte_end": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 48000
+                      },
+                      "quote": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 48000
+                      }
+                    },
+                    "required": [
+                      "line",
+                      "byte_start",
+                      "byte_end",
+                      "quote"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "maxItems": 256
+                },
+                "added_assumptions": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 8192
+                  },
+                  "maxItems": 64
+                },
+                "uncertainties": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 8192
+                  },
+                  "maxItems": 64
+                },
+                "alternatives": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 8192
+                  },
+                  "maxItems": 64
+                },
+                "claim_atoms": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "local_id": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 128
+                      },
+                      "text": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 8192
+                      },
+                      "kind": {
+                        "const": "INTERPRETATION"
+                      }
+                    },
+                    "required": [
+                      "local_id",
+                      "text",
+                      "kind"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "maxItems": 64
+                }
+              },
+              "required": [
+                "frame_id",
+                "text",
+                "evidence",
+                "added_assumptions",
+                "uncertainties",
+                "alternatives",
+                "claim_atoms"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 1,
+            "maxItems": 64
+          }
+        },
+        "required": [
+          "project",
+          "run_id",
+          "request_key",
+          "readings"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "white_star_validate_model",
+      "description": "Check a declared rational linear model and store its receipt. Instance validation does not prove the literary interpretation.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "project": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "run_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "proposal": {
+            "type": "object",
+            "properties": {
+              "schema": {
+                "const": "levinmas-white-star-model/1"
+              },
+              "family": {
+                "enum": [
+                  "observation_invariant",
+                  "control_invariant",
+                  "cyclic_order"
+                ]
+              },
+              "matrices": {
+                "type": "object",
+                "properties": {
+                  "A": {
+                    "type": "array",
+                    "items": {
+                      "type": "array",
+                      "items": {
+                        "oneOf": [
+                          {
+                            "type": "integer"
+                          },
+                          {
+                            "type": "string",
+                            "pattern": "^-?(0|[1-9][0-9]*)(/[1-9][0-9]*)?$"
+                          }
+                        ]
+                      },
+                      "minItems": 1,
+                      "maxItems": 8
+                    },
+                    "minItems": 1,
+                    "maxItems": 8
+                  },
+                  "B": {
+                    "type": "array",
+                    "items": {
+                      "type": "array",
+                      "items": {
+                        "oneOf": [
+                          {
+                            "type": "integer"
+                          },
+                          {
+                            "type": "string",
+                            "pattern": "^-?(0|[1-9][0-9]*)(/[1-9][0-9]*)?$"
+                          }
+                        ]
+                      },
+                      "minItems": 1,
+                      "maxItems": 8
+                    },
+                    "minItems": 1,
+                    "maxItems": 8
+                  },
+                  "C": {
+                    "type": "array",
+                    "items": {
+                      "type": "array",
+                      "items": {
+                        "oneOf": [
+                          {
+                            "type": "integer"
+                          },
+                          {
+                            "type": "string",
+                            "pattern": "^-?(0|[1-9][0-9]*)(/[1-9][0-9]*)?$"
+                          }
+                        ]
+                      },
+                      "minItems": 1,
+                      "maxItems": 8
+                    },
+                    "minItems": 1,
+                    "maxItems": 8
+                  },
+                  "w": {
+                    "type": "array",
+                    "items": {
+                      "type": "array",
+                      "items": {
+                        "oneOf": [
+                          {
+                            "type": "integer"
+                          },
+                          {
+                            "type": "string",
+                            "pattern": "^-?(0|[1-9][0-9]*)(/[1-9][0-9]*)?$"
+                          }
+                        ]
+                      },
+                      "minItems": 1,
+                      "maxItems": 8
+                    },
+                    "minItems": 1,
+                    "maxItems": 8
+                  },
+                  "x": {
+                    "type": "array",
+                    "items": {
+                      "type": "array",
+                      "items": {
+                        "oneOf": [
+                          {
+                            "type": "integer"
+                          },
+                          {
+                            "type": "string",
+                            "pattern": "^-?(0|[1-9][0-9]*)(/[1-9][0-9]*)?$"
+                          }
+                        ]
+                      },
+                      "minItems": 1,
+                      "maxItems": 8
+                    },
+                    "minItems": 1,
+                    "maxItems": 8
+                  },
+                  "u": {
+                    "type": "array",
+                    "items": {
+                      "type": "array",
+                      "items": {
+                        "oneOf": [
+                          {
+                            "type": "integer"
+                          },
+                          {
+                            "type": "string",
+                            "pattern": "^-?(0|[1-9][0-9]*)(/[1-9][0-9]*)?$"
+                          }
+                        ]
+                      },
+                      "minItems": 1,
+                      "maxItems": 8
+                    },
+                    "minItems": 1,
+                    "maxItems": 8
+                  },
+                  "U": {
+                    "type": "array",
+                    "items": {
+                      "type": "array",
+                      "items": {
+                        "oneOf": [
+                          {
+                            "type": "integer"
+                          },
+                          {
+                            "type": "string",
+                            "pattern": "^-?(0|[1-9][0-9]*)(/[1-9][0-9]*)?$"
+                          }
+                        ]
+                      },
+                      "minItems": 1,
+                      "maxItems": 8
+                    },
+                    "minItems": 1,
+                    "maxItems": 8
+                  },
+                  "L": {
+                    "type": "array",
+                    "items": {
+                      "type": "array",
+                      "items": {
+                        "oneOf": [
+                          {
+                            "type": "integer"
+                          },
+                          {
+                            "type": "string",
+                            "pattern": "^-?(0|[1-9][0-9]*)(/[1-9][0-9]*)?$"
+                          }
+                        ]
+                      },
+                      "minItems": 1,
+                      "maxItems": 8
+                    },
+                    "minItems": 1,
+                    "maxItems": 8
+                  },
+                  "P": {
+                    "type": "array",
+                    "items": {
+                      "type": "array",
+                      "items": {
+                        "oneOf": [
+                          {
+                            "type": "integer"
+                          },
+                          {
+                            "type": "string",
+                            "pattern": "^-?(0|[1-9][0-9]*)(/[1-9][0-9]*)?$"
+                          }
+                        ]
+                      },
+                      "minItems": 1,
+                      "maxItems": 8
+                    },
+                    "minItems": 1,
+                    "maxItems": 8
+                  }
+                },
+                "required": [],
+                "additionalProperties": false
+              },
+              "claim_ref": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 256
+              },
+              "frame_refs": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 256
+                },
+                "minItems": 1,
+                "maxItems": 64
+              },
+              "mapping_assumptions": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 8192
+                },
+                "minItems": 1,
+                "maxItems": 64
+              },
+              "obligations": {
+                "type": "array",
+                "items": {
+                  "enum": [
+                    "invariant_identity",
+                    "hidden_state_change",
+                    "partial_improvement",
+                    "conjugacy",
+                    "different_action",
+                    "countermodel"
+                  ]
+                },
+                "minItems": 1,
+                "maxItems": 8
+              },
+              "countermodel": {
+                "type": "object"
+              }
+            },
+            "required": [
+              "schema",
+              "family",
+              "matrices",
+              "claim_ref",
+              "frame_refs",
+              "mapping_assumptions",
+              "obligations"
+            ],
+            "additionalProperties": false,
+            "$schema": "https://json-schema.org/draft/2020-12/schema",
+            "$id": "urn:levinmas:white-star:model:1"
+          }
+        },
+        "required": [
+          "project",
+          "run_id",
+          "proposal"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "semantic_compare_runs",
+      "description": "Compare saved results and common-input hashes. No hidden model calls or reruns; report unmatched inputs honestly.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "project": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "left": {
+            "type": "object",
+            "properties": {
+              "engine": {
+                "enum": [
+                  "suti",
+                  "white_star"
+                ]
+              },
+              "run_id": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 256
+              }
+            },
+            "required": [
+              "engine",
+              "run_id"
+            ],
+            "additionalProperties": false
+          },
+          "right": {
+            "type": "object",
+            "properties": {
+              "engine": {
+                "enum": [
+                  "suti",
+                  "white_star"
+                ]
+              },
+              "run_id": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 256
+              }
+            },
+            "required": [
+              "engine",
+              "run_id"
+            ],
+            "additionalProperties": false
+          },
+          "protocol": {
+            "type": "object",
+            "properties": {
+              "mode": {
+                "enum": [
+                  "MATCHED_INPUT",
+                  "END_TO_END"
+                ]
+              },
+              "decoder_protocol_id": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 256
+              }
+            },
+            "required": [
+              "mode",
+              "decoder_protocol_id"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "project",
+          "left",
+          "right",
+          "protocol"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    }
+  ]
+}

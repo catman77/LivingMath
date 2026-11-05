@@ -1,0 +1,13 @@
+{
+  "baseline": "NOBS_WhiteStar_Source_20261105.zip version 1",
+  "baseline_library_id": "libfile_f982ec8e5e5c8191a512ba65d01e47ad",
+  "checks": {
+    "source.py": true,
+    "fast_source.py": true,
+    "native/white_star.cpp": true,
+    "source_primitives/cad.py": true,
+    "source_primitives/divzero_core.py": true,
+    "source_primitives/udav.py": true
+  },
+  "all_unchanged": true
+}

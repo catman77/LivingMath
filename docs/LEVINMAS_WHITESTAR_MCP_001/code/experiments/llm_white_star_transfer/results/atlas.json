@@ -1,0 +1,8950 @@
+{
+  "charts": [
+    {
+      "view": 0,
+      "matrix": [
+        -3,
+        -3,
+        -1,
+        -4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "night",
+            "street"
+          ],
+          "orientation": "I",
+          "original_view": 0,
+          "original_matrix": [
+            -3,
+            -3,
+            -1,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 1,
+      "matrix": [
+        -3,
+        -3,
+        -2,
+        -4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "night",
+            "lamp"
+          ],
+          "orientation": "I",
+          "original_view": 1,
+          "original_matrix": [
+            -3,
+            -3,
+            -2,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 2,
+      "matrix": [
+        -3,
+        -3,
+        1,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "night",
+            "pharmacy"
+          ],
+          "orientation": "I",
+          "original_view": 2,
+          "original_matrix": [
+            -3,
+            -3,
+            1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 3,
+      "matrix": [
+        -3,
+        -3,
+        -3,
+        -2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "night",
+            "light"
+          ],
+          "orientation": "I",
+          "original_view": 3,
+          "original_matrix": [
+            -3,
+            -3,
+            -3,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 4,
+      "matrix": [
+        -3,
+        -3,
+        -2,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "night",
+            "duration"
+          ],
+          "orientation": "I",
+          "original_view": 4,
+          "original_matrix": [
+            -3,
+            -3,
+            -2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 5,
+      "matrix": [
+        -3,
+        -3,
+        -4,
+        1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "night",
+            "same"
+          ],
+          "orientation": "I",
+          "original_view": 5,
+          "original_matrix": [
+            -3,
+            -3,
+            -4,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 6,
+      "matrix": [
+        -3,
+        -3,
+        -4,
+        -1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "night",
+            "no_exit"
+          ],
+          "orientation": "I",
+          "original_view": 6,
+          "original_matrix": [
+            -3,
+            -3,
+            -4,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 7,
+      "matrix": [
+        -3,
+        -3,
+        4,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "night",
+            "death"
+          ],
+          "orientation": "I",
+          "original_view": 7,
+          "original_matrix": [
+            -3,
+            -3,
+            4,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 8,
+      "matrix": [
+        -3,
+        -3,
+        3,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "night",
+            "restart"
+          ],
+          "orientation": "I",
+          "original_view": 8,
+          "original_matrix": [
+            -3,
+            -3,
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 9,
+      "matrix": [
+        -3,
+        -3,
+        -3,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "night",
+            "repeat"
+          ],
+          "orientation": "I",
+          "original_view": 9,
+          "original_matrix": [
+            -3,
+            -3,
+            -3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 10,
+      "matrix": [
+        -3,
+        -3,
+        -4,
+        -2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "night",
+            "past"
+          ],
+          "orientation": "I",
+          "original_view": 10,
+          "original_matrix": [
+            -3,
+            -3,
+            -4,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 11,
+      "matrix": [
+        -3,
+        -3,
+        2,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "night",
+            "ripple"
+          ],
+          "orientation": "I",
+          "original_view": 11,
+          "original_matrix": [
+            -3,
+            -3,
+            2,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 12,
+      "matrix": [
+        -3,
+        -3,
+        -1,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "night",
+            "canal"
+          ],
+          "orientation": "I",
+          "original_view": 12,
+          "original_matrix": [
+            -3,
+            -3,
+            -1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 13,
+      "matrix": [
+        -1,
+        -4,
+        -3,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "street",
+            "night"
+          ],
+          "orientation": "I",
+          "original_view": 13,
+          "original_matrix": [
+            -1,
+            -4,
+            -3,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 14,
+      "matrix": [
+        -1,
+        -4,
+        -2,
+        -4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "street",
+            "lamp"
+          ],
+          "orientation": "I",
+          "original_view": 14,
+          "original_matrix": [
+            -1,
+            -4,
+            -2,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 15,
+      "matrix": [
+        -1,
+        -4,
+        1,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "street",
+            "pharmacy"
+          ],
+          "orientation": "I",
+          "original_view": 15,
+          "original_matrix": [
+            -1,
+            -4,
+            1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 16,
+      "matrix": [
+        -1,
+        -4,
+        -3,
+        -2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "street",
+            "light"
+          ],
+          "orientation": "I",
+          "original_view": 16,
+          "original_matrix": [
+            -1,
+            -4,
+            -3,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 17,
+      "matrix": [
+        -1,
+        -4,
+        -2,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "street",
+            "duration"
+          ],
+          "orientation": "I",
+          "original_view": 17,
+          "original_matrix": [
+            -1,
+            -4,
+            -2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 18,
+      "matrix": [
+        -1,
+        -4,
+        -4,
+        1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "street",
+            "same"
+          ],
+          "orientation": "I",
+          "original_view": 18,
+          "original_matrix": [
+            -1,
+            -4,
+            -4,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 19,
+      "matrix": [
+        -1,
+        -4,
+        -4,
+        -1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "street",
+            "no_exit"
+          ],
+          "orientation": "I",
+          "original_view": 19,
+          "original_matrix": [
+            -1,
+            -4,
+            -4,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 20,
+      "matrix": [
+        -1,
+        -4,
+        4,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "street",
+            "death"
+          ],
+          "orientation": "I",
+          "original_view": 20,
+          "original_matrix": [
+            -1,
+            -4,
+            4,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 21,
+      "matrix": [
+        -1,
+        -4,
+        3,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "street",
+            "restart"
+          ],
+          "orientation": "I",
+          "original_view": 21,
+          "original_matrix": [
+            -1,
+            -4,
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 22,
+      "matrix": [
+        -1,
+        -4,
+        -3,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "street",
+            "repeat"
+          ],
+          "orientation": "I",
+          "original_view": 22,
+          "original_matrix": [
+            -1,
+            -4,
+            -3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 23,
+      "matrix": [
+        -1,
+        -4,
+        -4,
+        -2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "street",
+            "past"
+          ],
+          "orientation": "I",
+          "original_view": 23,
+          "original_matrix": [
+            -1,
+            -4,
+            -4,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 24,
+      "matrix": [
+        -1,
+        -4,
+        2,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "street",
+            "ripple"
+          ],
+          "orientation": "I",
+          "original_view": 24,
+          "original_matrix": [
+            -1,
+            -4,
+            2,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 25,
+      "matrix": [
+        -1,
+        -4,
+        -1,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "street",
+            "canal"
+          ],
+          "orientation": "I",
+          "original_view": 25,
+          "original_matrix": [
+            -1,
+            -4,
+            -1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 26,
+      "matrix": [
+        -2,
+        -4,
+        -3,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "lamp",
+            "night"
+          ],
+          "orientation": "I",
+          "original_view": 26,
+          "original_matrix": [
+            -2,
+            -4,
+            -3,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 27,
+      "matrix": [
+        -2,
+        -4,
+        -1,
+        -4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "lamp",
+            "street"
+          ],
+          "orientation": "I",
+          "original_view": 27,
+          "original_matrix": [
+            -2,
+            -4,
+            -1,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 28,
+      "matrix": [
+        -2,
+        -4,
+        1,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "lamp",
+            "pharmacy"
+          ],
+          "orientation": "I",
+          "original_view": 28,
+          "original_matrix": [
+            -2,
+            -4,
+            1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 29,
+      "matrix": [
+        -2,
+        -4,
+        -3,
+        -2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "lamp",
+            "light"
+          ],
+          "orientation": "I",
+          "original_view": 29,
+          "original_matrix": [
+            -2,
+            -4,
+            -3,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 30,
+      "matrix": [
+        -2,
+        -4,
+        -2,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "lamp",
+            "duration"
+          ],
+          "orientation": "I",
+          "original_view": 30,
+          "original_matrix": [
+            -2,
+            -4,
+            -2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 31,
+      "matrix": [
+        -2,
+        -4,
+        -4,
+        1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "lamp",
+            "same"
+          ],
+          "orientation": "I",
+          "original_view": 31,
+          "original_matrix": [
+            -2,
+            -4,
+            -4,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 32,
+      "matrix": [
+        -2,
+        -4,
+        -4,
+        -1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "lamp",
+            "no_exit"
+          ],
+          "orientation": "I",
+          "original_view": 32,
+          "original_matrix": [
+            -2,
+            -4,
+            -4,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 33,
+      "matrix": [
+        -2,
+        -4,
+        4,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "lamp",
+            "death"
+          ],
+          "orientation": "I",
+          "original_view": 33,
+          "original_matrix": [
+            -2,
+            -4,
+            4,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 34,
+      "matrix": [
+        -2,
+        -4,
+        3,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "lamp",
+            "restart"
+          ],
+          "orientation": "I",
+          "original_view": 34,
+          "original_matrix": [
+            -2,
+            -4,
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 35,
+      "matrix": [
+        -2,
+        -4,
+        -3,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "lamp",
+            "repeat"
+          ],
+          "orientation": "I",
+          "original_view": 35,
+          "original_matrix": [
+            -2,
+            -4,
+            -3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 36,
+      "matrix": [
+        -2,
+        -4,
+        -4,
+        -2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "lamp",
+            "past"
+          ],
+          "orientation": "I",
+          "original_view": 36,
+          "original_matrix": [
+            -2,
+            -4,
+            -4,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 37,
+      "matrix": [
+        -2,
+        -4,
+        -1,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "lamp",
+            "canal"
+          ],
+          "orientation": "I",
+          "original_view": 37,
+          "original_matrix": [
+            -2,
+            -4,
+            -1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 38,
+      "matrix": [
+        1,
+        -3,
+        -3,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "pharmacy",
+            "night"
+          ],
+          "orientation": "I",
+          "original_view": 38,
+          "original_matrix": [
+            1,
+            -3,
+            -3,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 39,
+      "matrix": [
+        1,
+        -3,
+        -1,
+        -4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "pharmacy",
+            "street"
+          ],
+          "orientation": "I",
+          "original_view": 39,
+          "original_matrix": [
+            1,
+            -3,
+            -1,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 40,
+      "matrix": [
+        1,
+        -3,
+        -2,
+        -4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "pharmacy",
+            "lamp"
+          ],
+          "orientation": "I",
+          "original_view": 40,
+          "original_matrix": [
+            1,
+            -3,
+            -2,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 41,
+      "matrix": [
+        1,
+        -3,
+        -3,
+        -2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "pharmacy",
+            "light"
+          ],
+          "orientation": "I",
+          "original_view": 41,
+          "original_matrix": [
+            1,
+            -3,
+            -3,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 42,
+      "matrix": [
+        1,
+        -3,
+        -2,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "pharmacy",
+            "duration"
+          ],
+          "orientation": "I",
+          "original_view": 42,
+          "original_matrix": [
+            1,
+            -3,
+            -2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 43,
+      "matrix": [
+        1,
+        -3,
+        -4,
+        1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "pharmacy",
+            "same"
+          ],
+          "orientation": "I",
+          "original_view": 43,
+          "original_matrix": [
+            1,
+            -3,
+            -4,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 44,
+      "matrix": [
+        1,
+        -3,
+        -4,
+        -1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "pharmacy",
+            "no_exit"
+          ],
+          "orientation": "I",
+          "original_view": 44,
+          "original_matrix": [
+            1,
+            -3,
+            -4,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 45,
+      "matrix": [
+        1,
+        -3,
+        4,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "pharmacy",
+            "death"
+          ],
+          "orientation": "I",
+          "original_view": 45,
+          "original_matrix": [
+            1,
+            -3,
+            4,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 46,
+      "matrix": [
+        1,
+        -3,
+        3,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "pharmacy",
+            "restart"
+          ],
+          "orientation": "I",
+          "original_view": 46,
+          "original_matrix": [
+            1,
+            -3,
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 47,
+      "matrix": [
+        1,
+        -3,
+        -3,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "pharmacy",
+            "repeat"
+          ],
+          "orientation": "I",
+          "original_view": 47,
+          "original_matrix": [
+            1,
+            -3,
+            -3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 48,
+      "matrix": [
+        1,
+        -3,
+        -4,
+        -2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "pharmacy",
+            "past"
+          ],
+          "orientation": "I",
+          "original_view": 48,
+          "original_matrix": [
+            1,
+            -3,
+            -4,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 49,
+      "matrix": [
+        1,
+        -3,
+        2,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "pharmacy",
+            "ripple"
+          ],
+          "orientation": "I",
+          "original_view": 49,
+          "original_matrix": [
+            1,
+            -3,
+            2,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 50,
+      "matrix": [
+        1,
+        -3,
+        -1,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "pharmacy",
+            "canal"
+          ],
+          "orientation": "I",
+          "original_view": 50,
+          "original_matrix": [
+            1,
+            -3,
+            -1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 51,
+      "matrix": [
+        -3,
+        -2,
+        -3,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "light",
+            "night"
+          ],
+          "orientation": "I",
+          "original_view": 51,
+          "original_matrix": [
+            -3,
+            -2,
+            -3,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 52,
+      "matrix": [
+        -3,
+        -2,
+        -1,
+        -4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "light",
+            "street"
+          ],
+          "orientation": "I",
+          "original_view": 52,
+          "original_matrix": [
+            -3,
+            -2,
+            -1,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 53,
+      "matrix": [
+        -3,
+        -2,
+        -2,
+        -4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "light",
+            "lamp"
+          ],
+          "orientation": "I",
+          "original_view": 53,
+          "original_matrix": [
+            -3,
+            -2,
+            -2,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 54,
+      "matrix": [
+        -3,
+        -2,
+        1,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "light",
+            "pharmacy"
+          ],
+          "orientation": "I",
+          "original_view": 54,
+          "original_matrix": [
+            -3,
+            -2,
+            1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 55,
+      "matrix": [
+        -3,
+        -2,
+        -2,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "light",
+            "duration"
+          ],
+          "orientation": "I",
+          "original_view": 55,
+          "original_matrix": [
+            -3,
+            -2,
+            -2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 56,
+      "matrix": [
+        -3,
+        -2,
+        -4,
+        1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "light",
+            "same"
+          ],
+          "orientation": "I",
+          "original_view": 56,
+          "original_matrix": [
+            -3,
+            -2,
+            -4,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 57,
+      "matrix": [
+        -3,
+        -2,
+        -4,
+        -1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "light",
+            "no_exit"
+          ],
+          "orientation": "I",
+          "original_view": 57,
+          "original_matrix": [
+            -3,
+            -2,
+            -4,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 58,
+      "matrix": [
+        -3,
+        -2,
+        4,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "light",
+            "death"
+          ],
+          "orientation": "I",
+          "original_view": 58,
+          "original_matrix": [
+            -3,
+            -2,
+            4,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 59,
+      "matrix": [
+        -3,
+        -2,
+        3,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "light",
+            "restart"
+          ],
+          "orientation": "I",
+          "original_view": 59,
+          "original_matrix": [
+            -3,
+            -2,
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 60,
+      "matrix": [
+        -3,
+        -2,
+        -3,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "light",
+            "repeat"
+          ],
+          "orientation": "I",
+          "original_view": 60,
+          "original_matrix": [
+            -3,
+            -2,
+            -3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 61,
+      "matrix": [
+        -3,
+        -2,
+        -4,
+        -2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "light",
+            "past"
+          ],
+          "orientation": "I",
+          "original_view": 61,
+          "original_matrix": [
+            -3,
+            -2,
+            -4,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 62,
+      "matrix": [
+        -3,
+        -2,
+        2,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "light",
+            "ripple"
+          ],
+          "orientation": "I",
+          "original_view": 62,
+          "original_matrix": [
+            -3,
+            -2,
+            2,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 63,
+      "matrix": [
+        -3,
+        -2,
+        -1,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "light",
+            "canal"
+          ],
+          "orientation": "I",
+          "original_view": 63,
+          "original_matrix": [
+            -3,
+            -2,
+            -1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 64,
+      "matrix": [
+        -2,
+        3,
+        -3,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "duration",
+            "night"
+          ],
+          "orientation": "I",
+          "original_view": 64,
+          "original_matrix": [
+            -2,
+            3,
+            -3,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 65,
+      "matrix": [
+        -2,
+        3,
+        -1,
+        -4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "duration",
+            "street"
+          ],
+          "orientation": "I",
+          "original_view": 65,
+          "original_matrix": [
+            -2,
+            3,
+            -1,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 66,
+      "matrix": [
+        -2,
+        3,
+        -2,
+        -4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "duration",
+            "lamp"
+          ],
+          "orientation": "I",
+          "original_view": 66,
+          "original_matrix": [
+            -2,
+            3,
+            -2,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 67,
+      "matrix": [
+        -2,
+        3,
+        1,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "duration",
+            "pharmacy"
+          ],
+          "orientation": "I",
+          "original_view": 67,
+          "original_matrix": [
+            -2,
+            3,
+            1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 68,
+      "matrix": [
+        -2,
+        3,
+        -3,
+        -2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "duration",
+            "light"
+          ],
+          "orientation": "I",
+          "original_view": 68,
+          "original_matrix": [
+            -2,
+            3,
+            -3,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 69,
+      "matrix": [
+        -2,
+        3,
+        -4,
+        1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "duration",
+            "same"
+          ],
+          "orientation": "I",
+          "original_view": 69,
+          "original_matrix": [
+            -2,
+            3,
+            -4,
+            1
+          ]
+        },
+        {
+          "concepts": [
+            "light",
+            "street"
+          ],
+          "orientation": "J",
+          "original_view": 52,
+          "original_matrix": [
+            -3,
+            -2,
+            -1,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 70,
+      "matrix": [
+        -2,
+        3,
+        -4,
+        -1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "duration",
+            "no_exit"
+          ],
+          "orientation": "I",
+          "original_view": 70,
+          "original_matrix": [
+            -2,
+            3,
+            -4,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 71,
+      "matrix": [
+        -2,
+        3,
+        4,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "duration",
+            "death"
+          ],
+          "orientation": "I",
+          "original_view": 71,
+          "original_matrix": [
+            -2,
+            3,
+            4,
+            3
+          ]
+        },
+        {
+          "concepts": [
+            "light",
+            "repeat"
+          ],
+          "orientation": "J",
+          "original_view": 60,
+          "original_matrix": [
+            -3,
+            -2,
+            -3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 72,
+      "matrix": [
+        -2,
+        3,
+        3,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "duration",
+            "restart"
+          ],
+          "orientation": "I",
+          "original_view": 72,
+          "original_matrix": [
+            -2,
+            3,
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 73,
+      "matrix": [
+        -2,
+        3,
+        -3,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "duration",
+            "repeat"
+          ],
+          "orientation": "I",
+          "original_view": 73,
+          "original_matrix": [
+            -2,
+            3,
+            -3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 74,
+      "matrix": [
+        -2,
+        3,
+        -4,
+        -2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "duration",
+            "past"
+          ],
+          "orientation": "I",
+          "original_view": 74,
+          "original_matrix": [
+            -2,
+            3,
+            -4,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 75,
+      "matrix": [
+        -2,
+        3,
+        2,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "duration",
+            "ripple"
+          ],
+          "orientation": "I",
+          "original_view": 75,
+          "original_matrix": [
+            -2,
+            3,
+            2,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 76,
+      "matrix": [
+        -2,
+        3,
+        -1,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "duration",
+            "canal"
+          ],
+          "orientation": "I",
+          "original_view": 76,
+          "original_matrix": [
+            -2,
+            3,
+            -1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 77,
+      "matrix": [
+        -4,
+        1,
+        -3,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "same",
+            "night"
+          ],
+          "orientation": "I",
+          "original_view": 77,
+          "original_matrix": [
+            -4,
+            1,
+            -3,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 78,
+      "matrix": [
+        -4,
+        1,
+        -1,
+        -4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "same",
+            "street"
+          ],
+          "orientation": "I",
+          "original_view": 78,
+          "original_matrix": [
+            -4,
+            1,
+            -1,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 79,
+      "matrix": [
+        -4,
+        1,
+        -2,
+        -4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "same",
+            "lamp"
+          ],
+          "orientation": "I",
+          "original_view": 79,
+          "original_matrix": [
+            -4,
+            1,
+            -2,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 80,
+      "matrix": [
+        -4,
+        1,
+        1,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "same",
+            "pharmacy"
+          ],
+          "orientation": "I",
+          "original_view": 80,
+          "original_matrix": [
+            -4,
+            1,
+            1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 81,
+      "matrix": [
+        -4,
+        1,
+        -3,
+        -2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "same",
+            "light"
+          ],
+          "orientation": "I",
+          "original_view": 81,
+          "original_matrix": [
+            -4,
+            1,
+            -3,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 82,
+      "matrix": [
+        -4,
+        1,
+        -2,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "same",
+            "duration"
+          ],
+          "orientation": "I",
+          "original_view": 82,
+          "original_matrix": [
+            -4,
+            1,
+            -2,
+            3
+          ]
+        },
+        {
+          "concepts": [
+            "street",
+            "light"
+          ],
+          "orientation": "J",
+          "original_view": 16,
+          "original_matrix": [
+            -1,
+            -4,
+            -3,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 83,
+      "matrix": [
+        -4,
+        1,
+        -4,
+        -1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "same",
+            "no_exit"
+          ],
+          "orientation": "I",
+          "original_view": 83,
+          "original_matrix": [
+            -4,
+            1,
+            -4,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 84,
+      "matrix": [
+        -4,
+        1,
+        4,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "same",
+            "death"
+          ],
+          "orientation": "I",
+          "original_view": 84,
+          "original_matrix": [
+            -4,
+            1,
+            4,
+            3
+          ]
+        },
+        {
+          "concepts": [
+            "street",
+            "repeat"
+          ],
+          "orientation": "J",
+          "original_view": 22,
+          "original_matrix": [
+            -1,
+            -4,
+            -3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 85,
+      "matrix": [
+        -4,
+        1,
+        3,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "same",
+            "restart"
+          ],
+          "orientation": "I",
+          "original_view": 85,
+          "original_matrix": [
+            -4,
+            1,
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 86,
+      "matrix": [
+        -4,
+        1,
+        -3,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "same",
+            "repeat"
+          ],
+          "orientation": "I",
+          "original_view": 86,
+          "original_matrix": [
+            -4,
+            1,
+            -3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 87,
+      "matrix": [
+        -4,
+        1,
+        -4,
+        -2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "same",
+            "past"
+          ],
+          "orientation": "I",
+          "original_view": 87,
+          "original_matrix": [
+            -4,
+            1,
+            -4,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 88,
+      "matrix": [
+        -4,
+        1,
+        2,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "same",
+            "ripple"
+          ],
+          "orientation": "I",
+          "original_view": 88,
+          "original_matrix": [
+            -4,
+            1,
+            2,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 89,
+      "matrix": [
+        -4,
+        1,
+        -1,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "same",
+            "canal"
+          ],
+          "orientation": "I",
+          "original_view": 89,
+          "original_matrix": [
+            -4,
+            1,
+            -1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 90,
+      "matrix": [
+        -4,
+        -1,
+        -3,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "no_exit",
+            "night"
+          ],
+          "orientation": "I",
+          "original_view": 90,
+          "original_matrix": [
+            -4,
+            -1,
+            -3,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 91,
+      "matrix": [
+        -4,
+        -1,
+        -1,
+        -4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "no_exit",
+            "street"
+          ],
+          "orientation": "I",
+          "original_view": 91,
+          "original_matrix": [
+            -4,
+            -1,
+            -1,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 92,
+      "matrix": [
+        -4,
+        -1,
+        -2,
+        -4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "no_exit",
+            "lamp"
+          ],
+          "orientation": "I",
+          "original_view": 92,
+          "original_matrix": [
+            -4,
+            -1,
+            -2,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 93,
+      "matrix": [
+        -4,
+        -1,
+        1,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "no_exit",
+            "pharmacy"
+          ],
+          "orientation": "I",
+          "original_view": 93,
+          "original_matrix": [
+            -4,
+            -1,
+            1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 94,
+      "matrix": [
+        -4,
+        -1,
+        -3,
+        -2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "no_exit",
+            "light"
+          ],
+          "orientation": "I",
+          "original_view": 94,
+          "original_matrix": [
+            -4,
+            -1,
+            -3,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 95,
+      "matrix": [
+        -4,
+        -1,
+        -2,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "no_exit",
+            "duration"
+          ],
+          "orientation": "I",
+          "original_view": 95,
+          "original_matrix": [
+            -4,
+            -1,
+            -2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 96,
+      "matrix": [
+        -4,
+        -1,
+        -4,
+        1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "no_exit",
+            "same"
+          ],
+          "orientation": "I",
+          "original_view": 96,
+          "original_matrix": [
+            -4,
+            -1,
+            -4,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 97,
+      "matrix": [
+        -4,
+        -1,
+        4,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "no_exit",
+            "death"
+          ],
+          "orientation": "I",
+          "original_view": 97,
+          "original_matrix": [
+            -4,
+            -1,
+            4,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 98,
+      "matrix": [
+        -4,
+        -1,
+        3,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "no_exit",
+            "restart"
+          ],
+          "orientation": "I",
+          "original_view": 98,
+          "original_matrix": [
+            -4,
+            -1,
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 99,
+      "matrix": [
+        -4,
+        -1,
+        -3,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "no_exit",
+            "repeat"
+          ],
+          "orientation": "I",
+          "original_view": 99,
+          "original_matrix": [
+            -4,
+            -1,
+            -3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 100,
+      "matrix": [
+        -4,
+        -1,
+        -4,
+        -2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "no_exit",
+            "past"
+          ],
+          "orientation": "I",
+          "original_view": 100,
+          "original_matrix": [
+            -4,
+            -1,
+            -4,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 101,
+      "matrix": [
+        -4,
+        -1,
+        2,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "no_exit",
+            "ripple"
+          ],
+          "orientation": "I",
+          "original_view": 101,
+          "original_matrix": [
+            -4,
+            -1,
+            2,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 102,
+      "matrix": [
+        -4,
+        -1,
+        -1,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "no_exit",
+            "canal"
+          ],
+          "orientation": "I",
+          "original_view": 102,
+          "original_matrix": [
+            -4,
+            -1,
+            -1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 103,
+      "matrix": [
+        4,
+        3,
+        -3,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "death",
+            "night"
+          ],
+          "orientation": "I",
+          "original_view": 103,
+          "original_matrix": [
+            4,
+            3,
+            -3,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 104,
+      "matrix": [
+        4,
+        3,
+        -1,
+        -4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "death",
+            "street"
+          ],
+          "orientation": "I",
+          "original_view": 104,
+          "original_matrix": [
+            4,
+            3,
+            -1,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 105,
+      "matrix": [
+        4,
+        3,
+        -2,
+        -4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "death",
+            "lamp"
+          ],
+          "orientation": "I",
+          "original_view": 105,
+          "original_matrix": [
+            4,
+            3,
+            -2,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 106,
+      "matrix": [
+        4,
+        3,
+        1,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "death",
+            "pharmacy"
+          ],
+          "orientation": "I",
+          "original_view": 106,
+          "original_matrix": [
+            4,
+            3,
+            1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 107,
+      "matrix": [
+        4,
+        3,
+        -3,
+        -2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "death",
+            "light"
+          ],
+          "orientation": "I",
+          "original_view": 107,
+          "original_matrix": [
+            4,
+            3,
+            -3,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 108,
+      "matrix": [
+        4,
+        3,
+        -2,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "death",
+            "duration"
+          ],
+          "orientation": "I",
+          "original_view": 108,
+          "original_matrix": [
+            4,
+            3,
+            -2,
+            3
+          ]
+        },
+        {
+          "concepts": [
+            "repeat",
+            "light"
+          ],
+          "orientation": "J",
+          "original_view": 133,
+          "original_matrix": [
+            -3,
+            4,
+            -3,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 109,
+      "matrix": [
+        4,
+        3,
+        -4,
+        1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "death",
+            "same"
+          ],
+          "orientation": "I",
+          "original_view": 109,
+          "original_matrix": [
+            4,
+            3,
+            -4,
+            1
+          ]
+        },
+        {
+          "concepts": [
+            "repeat",
+            "street"
+          ],
+          "orientation": "J",
+          "original_view": 130,
+          "original_matrix": [
+            -3,
+            4,
+            -1,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 110,
+      "matrix": [
+        4,
+        3,
+        -4,
+        -1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "death",
+            "no_exit"
+          ],
+          "orientation": "I",
+          "original_view": 110,
+          "original_matrix": [
+            4,
+            3,
+            -4,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 111,
+      "matrix": [
+        4,
+        3,
+        3,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "death",
+            "restart"
+          ],
+          "orientation": "I",
+          "original_view": 111,
+          "original_matrix": [
+            4,
+            3,
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 112,
+      "matrix": [
+        4,
+        3,
+        -3,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "death",
+            "repeat"
+          ],
+          "orientation": "I",
+          "original_view": 112,
+          "original_matrix": [
+            4,
+            3,
+            -3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 113,
+      "matrix": [
+        4,
+        3,
+        -4,
+        -2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "death",
+            "past"
+          ],
+          "orientation": "I",
+          "original_view": 113,
+          "original_matrix": [
+            4,
+            3,
+            -4,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 114,
+      "matrix": [
+        4,
+        3,
+        2,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "death",
+            "ripple"
+          ],
+          "orientation": "I",
+          "original_view": 114,
+          "original_matrix": [
+            4,
+            3,
+            2,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 115,
+      "matrix": [
+        4,
+        3,
+        -1,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "death",
+            "canal"
+          ],
+          "orientation": "I",
+          "original_view": 115,
+          "original_matrix": [
+            4,
+            3,
+            -1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 116,
+      "matrix": [
+        3,
+        4,
+        -3,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "restart",
+            "night"
+          ],
+          "orientation": "I",
+          "original_view": 116,
+          "original_matrix": [
+            3,
+            4,
+            -3,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 117,
+      "matrix": [
+        3,
+        4,
+        -1,
+        -4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "restart",
+            "street"
+          ],
+          "orientation": "I",
+          "original_view": 117,
+          "original_matrix": [
+            3,
+            4,
+            -1,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 118,
+      "matrix": [
+        3,
+        4,
+        -2,
+        -4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "restart",
+            "lamp"
+          ],
+          "orientation": "I",
+          "original_view": 118,
+          "original_matrix": [
+            3,
+            4,
+            -2,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 119,
+      "matrix": [
+        3,
+        4,
+        1,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "restart",
+            "pharmacy"
+          ],
+          "orientation": "I",
+          "original_view": 119,
+          "original_matrix": [
+            3,
+            4,
+            1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 120,
+      "matrix": [
+        3,
+        4,
+        -3,
+        -2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "restart",
+            "light"
+          ],
+          "orientation": "I",
+          "original_view": 120,
+          "original_matrix": [
+            3,
+            4,
+            -3,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 121,
+      "matrix": [
+        3,
+        4,
+        -2,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "restart",
+            "duration"
+          ],
+          "orientation": "I",
+          "original_view": 121,
+          "original_matrix": [
+            3,
+            4,
+            -2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 122,
+      "matrix": [
+        3,
+        4,
+        -4,
+        1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "restart",
+            "same"
+          ],
+          "orientation": "I",
+          "original_view": 122,
+          "original_matrix": [
+            3,
+            4,
+            -4,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 123,
+      "matrix": [
+        3,
+        4,
+        -4,
+        -1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "restart",
+            "no_exit"
+          ],
+          "orientation": "I",
+          "original_view": 123,
+          "original_matrix": [
+            3,
+            4,
+            -4,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 124,
+      "matrix": [
+        3,
+        4,
+        4,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "restart",
+            "death"
+          ],
+          "orientation": "I",
+          "original_view": 124,
+          "original_matrix": [
+            3,
+            4,
+            4,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 125,
+      "matrix": [
+        3,
+        4,
+        -3,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "restart",
+            "repeat"
+          ],
+          "orientation": "I",
+          "original_view": 125,
+          "original_matrix": [
+            3,
+            4,
+            -3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 126,
+      "matrix": [
+        3,
+        4,
+        -4,
+        -2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "restart",
+            "past"
+          ],
+          "orientation": "I",
+          "original_view": 126,
+          "original_matrix": [
+            3,
+            4,
+            -4,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 127,
+      "matrix": [
+        3,
+        4,
+        2,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "restart",
+            "ripple"
+          ],
+          "orientation": "I",
+          "original_view": 127,
+          "original_matrix": [
+            3,
+            4,
+            2,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 128,
+      "matrix": [
+        3,
+        4,
+        -1,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "restart",
+            "canal"
+          ],
+          "orientation": "I",
+          "original_view": 128,
+          "original_matrix": [
+            3,
+            4,
+            -1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 129,
+      "matrix": [
+        -3,
+        4,
+        -3,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "repeat",
+            "night"
+          ],
+          "orientation": "I",
+          "original_view": 129,
+          "original_matrix": [
+            -3,
+            4,
+            -3,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 130,
+      "matrix": [
+        -3,
+        4,
+        -1,
+        -4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "repeat",
+            "street"
+          ],
+          "orientation": "I",
+          "original_view": 130,
+          "original_matrix": [
+            -3,
+            4,
+            -1,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 131,
+      "matrix": [
+        -3,
+        4,
+        -2,
+        -4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "repeat",
+            "lamp"
+          ],
+          "orientation": "I",
+          "original_view": 131,
+          "original_matrix": [
+            -3,
+            4,
+            -2,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 132,
+      "matrix": [
+        -3,
+        4,
+        1,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "repeat",
+            "pharmacy"
+          ],
+          "orientation": "I",
+          "original_view": 132,
+          "original_matrix": [
+            -3,
+            4,
+            1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 133,
+      "matrix": [
+        -3,
+        4,
+        -3,
+        -2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "repeat",
+            "light"
+          ],
+          "orientation": "I",
+          "original_view": 133,
+          "original_matrix": [
+            -3,
+            4,
+            -3,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 134,
+      "matrix": [
+        -3,
+        4,
+        -2,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "repeat",
+            "duration"
+          ],
+          "orientation": "I",
+          "original_view": 134,
+          "original_matrix": [
+            -3,
+            4,
+            -2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 135,
+      "matrix": [
+        -3,
+        4,
+        -4,
+        1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "repeat",
+            "same"
+          ],
+          "orientation": "I",
+          "original_view": 135,
+          "original_matrix": [
+            -3,
+            4,
+            -4,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 136,
+      "matrix": [
+        -3,
+        4,
+        -4,
+        -1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "repeat",
+            "no_exit"
+          ],
+          "orientation": "I",
+          "original_view": 136,
+          "original_matrix": [
+            -3,
+            4,
+            -4,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 137,
+      "matrix": [
+        -3,
+        4,
+        4,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "repeat",
+            "death"
+          ],
+          "orientation": "I",
+          "original_view": 137,
+          "original_matrix": [
+            -3,
+            4,
+            4,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 138,
+      "matrix": [
+        -3,
+        4,
+        3,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "repeat",
+            "restart"
+          ],
+          "orientation": "I",
+          "original_view": 138,
+          "original_matrix": [
+            -3,
+            4,
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 139,
+      "matrix": [
+        -3,
+        4,
+        -4,
+        -2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "repeat",
+            "past"
+          ],
+          "orientation": "I",
+          "original_view": 139,
+          "original_matrix": [
+            -3,
+            4,
+            -4,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 140,
+      "matrix": [
+        -3,
+        4,
+        2,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "repeat",
+            "ripple"
+          ],
+          "orientation": "I",
+          "original_view": 140,
+          "original_matrix": [
+            -3,
+            4,
+            2,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 141,
+      "matrix": [
+        -3,
+        4,
+        -1,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "repeat",
+            "canal"
+          ],
+          "orientation": "I",
+          "original_view": 141,
+          "original_matrix": [
+            -3,
+            4,
+            -1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 142,
+      "matrix": [
+        -4,
+        -2,
+        -3,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "past",
+            "night"
+          ],
+          "orientation": "I",
+          "original_view": 142,
+          "original_matrix": [
+            -4,
+            -2,
+            -3,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 143,
+      "matrix": [
+        -4,
+        -2,
+        -1,
+        -4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "past",
+            "street"
+          ],
+          "orientation": "I",
+          "original_view": 143,
+          "original_matrix": [
+            -4,
+            -2,
+            -1,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 144,
+      "matrix": [
+        -4,
+        -2,
+        -2,
+        -4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "past",
+            "lamp"
+          ],
+          "orientation": "I",
+          "original_view": 144,
+          "original_matrix": [
+            -4,
+            -2,
+            -2,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 145,
+      "matrix": [
+        -4,
+        -2,
+        1,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "past",
+            "pharmacy"
+          ],
+          "orientation": "I",
+          "original_view": 145,
+          "original_matrix": [
+            -4,
+            -2,
+            1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 146,
+      "matrix": [
+        -4,
+        -2,
+        -3,
+        -2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "past",
+            "light"
+          ],
+          "orientation": "I",
+          "original_view": 146,
+          "original_matrix": [
+            -4,
+            -2,
+            -3,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 147,
+      "matrix": [
+        -4,
+        -2,
+        -2,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "past",
+            "duration"
+          ],
+          "orientation": "I",
+          "original_view": 147,
+          "original_matrix": [
+            -4,
+            -2,
+            -2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 148,
+      "matrix": [
+        -4,
+        -2,
+        -4,
+        1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "past",
+            "same"
+          ],
+          "orientation": "I",
+          "original_view": 148,
+          "original_matrix": [
+            -4,
+            -2,
+            -4,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 149,
+      "matrix": [
+        -4,
+        -2,
+        -4,
+        -1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "past",
+            "no_exit"
+          ],
+          "orientation": "I",
+          "original_view": 149,
+          "original_matrix": [
+            -4,
+            -2,
+            -4,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 150,
+      "matrix": [
+        -4,
+        -2,
+        4,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "past",
+            "death"
+          ],
+          "orientation": "I",
+          "original_view": 150,
+          "original_matrix": [
+            -4,
+            -2,
+            4,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 151,
+      "matrix": [
+        -4,
+        -2,
+        3,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "past",
+            "restart"
+          ],
+          "orientation": "I",
+          "original_view": 151,
+          "original_matrix": [
+            -4,
+            -2,
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 152,
+      "matrix": [
+        -4,
+        -2,
+        -3,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "past",
+            "repeat"
+          ],
+          "orientation": "I",
+          "original_view": 152,
+          "original_matrix": [
+            -4,
+            -2,
+            -3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 153,
+      "matrix": [
+        -4,
+        -2,
+        2,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "past",
+            "ripple"
+          ],
+          "orientation": "I",
+          "original_view": 153,
+          "original_matrix": [
+            -4,
+            -2,
+            2,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 154,
+      "matrix": [
+        -4,
+        -2,
+        -1,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "past",
+            "canal"
+          ],
+          "orientation": "I",
+          "original_view": 154,
+          "original_matrix": [
+            -4,
+            -2,
+            -1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 155,
+      "matrix": [
+        2,
+        4,
+        -3,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "ripple",
+            "night"
+          ],
+          "orientation": "I",
+          "original_view": 155,
+          "original_matrix": [
+            2,
+            4,
+            -3,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 156,
+      "matrix": [
+        2,
+        4,
+        -1,
+        -4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "ripple",
+            "street"
+          ],
+          "orientation": "I",
+          "original_view": 156,
+          "original_matrix": [
+            2,
+            4,
+            -1,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 157,
+      "matrix": [
+        2,
+        4,
+        1,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "ripple",
+            "pharmacy"
+          ],
+          "orientation": "I",
+          "original_view": 157,
+          "original_matrix": [
+            2,
+            4,
+            1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 158,
+      "matrix": [
+        2,
+        4,
+        -3,
+        -2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "ripple",
+            "light"
+          ],
+          "orientation": "I",
+          "original_view": 158,
+          "original_matrix": [
+            2,
+            4,
+            -3,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 159,
+      "matrix": [
+        2,
+        4,
+        -2,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "ripple",
+            "duration"
+          ],
+          "orientation": "I",
+          "original_view": 159,
+          "original_matrix": [
+            2,
+            4,
+            -2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 160,
+      "matrix": [
+        2,
+        4,
+        -4,
+        1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "ripple",
+            "same"
+          ],
+          "orientation": "I",
+          "original_view": 160,
+          "original_matrix": [
+            2,
+            4,
+            -4,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 161,
+      "matrix": [
+        2,
+        4,
+        -4,
+        -1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "ripple",
+            "no_exit"
+          ],
+          "orientation": "I",
+          "original_view": 161,
+          "original_matrix": [
+            2,
+            4,
+            -4,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 162,
+      "matrix": [
+        2,
+        4,
+        4,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "ripple",
+            "death"
+          ],
+          "orientation": "I",
+          "original_view": 162,
+          "original_matrix": [
+            2,
+            4,
+            4,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 163,
+      "matrix": [
+        2,
+        4,
+        3,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "ripple",
+            "restart"
+          ],
+          "orientation": "I",
+          "original_view": 163,
+          "original_matrix": [
+            2,
+            4,
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 164,
+      "matrix": [
+        2,
+        4,
+        -3,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "ripple",
+            "repeat"
+          ],
+          "orientation": "I",
+          "original_view": 164,
+          "original_matrix": [
+            2,
+            4,
+            -3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 165,
+      "matrix": [
+        2,
+        4,
+        -4,
+        -2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "ripple",
+            "past"
+          ],
+          "orientation": "I",
+          "original_view": 165,
+          "original_matrix": [
+            2,
+            4,
+            -4,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 166,
+      "matrix": [
+        2,
+        4,
+        -1,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "ripple",
+            "canal"
+          ],
+          "orientation": "I",
+          "original_view": 166,
+          "original_matrix": [
+            2,
+            4,
+            -1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 167,
+      "matrix": [
+        -1,
+        -3,
+        -3,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "canal",
+            "night"
+          ],
+          "orientation": "I",
+          "original_view": 167,
+          "original_matrix": [
+            -1,
+            -3,
+            -3,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 168,
+      "matrix": [
+        -1,
+        -3,
+        -1,
+        -4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "canal",
+            "street"
+          ],
+          "orientation": "I",
+          "original_view": 168,
+          "original_matrix": [
+            -1,
+            -3,
+            -1,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 169,
+      "matrix": [
+        -1,
+        -3,
+        -2,
+        -4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "canal",
+            "lamp"
+          ],
+          "orientation": "I",
+          "original_view": 169,
+          "original_matrix": [
+            -1,
+            -3,
+            -2,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 170,
+      "matrix": [
+        -1,
+        -3,
+        1,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "canal",
+            "pharmacy"
+          ],
+          "orientation": "I",
+          "original_view": 170,
+          "original_matrix": [
+            -1,
+            -3,
+            1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 171,
+      "matrix": [
+        -1,
+        -3,
+        -3,
+        -2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "canal",
+            "light"
+          ],
+          "orientation": "I",
+          "original_view": 171,
+          "original_matrix": [
+            -1,
+            -3,
+            -3,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 172,
+      "matrix": [
+        -1,
+        -3,
+        -2,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "canal",
+            "duration"
+          ],
+          "orientation": "I",
+          "original_view": 172,
+          "original_matrix": [
+            -1,
+            -3,
+            -2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 173,
+      "matrix": [
+        -1,
+        -3,
+        -4,
+        1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "canal",
+            "same"
+          ],
+          "orientation": "I",
+          "original_view": 173,
+          "original_matrix": [
+            -1,
+            -3,
+            -4,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 174,
+      "matrix": [
+        -1,
+        -3,
+        -4,
+        -1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "canal",
+            "no_exit"
+          ],
+          "orientation": "I",
+          "original_view": 174,
+          "original_matrix": [
+            -1,
+            -3,
+            -4,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 175,
+      "matrix": [
+        -1,
+        -3,
+        4,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "canal",
+            "death"
+          ],
+          "orientation": "I",
+          "original_view": 175,
+          "original_matrix": [
+            -1,
+            -3,
+            4,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 176,
+      "matrix": [
+        -1,
+        -3,
+        3,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "canal",
+            "restart"
+          ],
+          "orientation": "I",
+          "original_view": 176,
+          "original_matrix": [
+            -1,
+            -3,
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 177,
+      "matrix": [
+        -1,
+        -3,
+        -3,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "canal",
+            "repeat"
+          ],
+          "orientation": "I",
+          "original_view": 177,
+          "original_matrix": [
+            -1,
+            -3,
+            -3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 178,
+      "matrix": [
+        -1,
+        -3,
+        -4,
+        -2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "canal",
+            "past"
+          ],
+          "orientation": "I",
+          "original_view": 178,
+          "original_matrix": [
+            -1,
+            -3,
+            -4,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 179,
+      "matrix": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "canal",
+            "ripple"
+          ],
+          "orientation": "I",
+          "original_view": 179,
+          "original_matrix": [
+            -1,
+            -3,
+            2,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 180,
+      "matrix": [
+        -3,
+        3,
+        -4,
+        1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "night",
+            "street"
+          ],
+          "orientation": "J",
+          "original_view": 0,
+          "original_matrix": [
+            -3,
+            -3,
+            -1,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 181,
+      "matrix": [
+        -3,
+        3,
+        -4,
+        2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "night",
+            "lamp"
+          ],
+          "orientation": "J",
+          "original_view": 1,
+          "original_matrix": [
+            -3,
+            -3,
+            -2,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 182,
+      "matrix": [
+        -3,
+        3,
+        -3,
+        -1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "night",
+            "pharmacy"
+          ],
+          "orientation": "J",
+          "original_view": 2,
+          "original_matrix": [
+            -3,
+            -3,
+            1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 183,
+      "matrix": [
+        -3,
+        3,
+        -2,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "night",
+            "light"
+          ],
+          "orientation": "J",
+          "original_view": 3,
+          "original_matrix": [
+            -3,
+            -3,
+            -3,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 184,
+      "matrix": [
+        -3,
+        3,
+        3,
+        2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "night",
+            "duration"
+          ],
+          "orientation": "J",
+          "original_view": 4,
+          "original_matrix": [
+            -3,
+            -3,
+            -2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 185,
+      "matrix": [
+        -3,
+        3,
+        1,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "night",
+            "same"
+          ],
+          "orientation": "J",
+          "original_view": 5,
+          "original_matrix": [
+            -3,
+            -3,
+            -4,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 186,
+      "matrix": [
+        -3,
+        3,
+        -1,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "night",
+            "no_exit"
+          ],
+          "orientation": "J",
+          "original_view": 6,
+          "original_matrix": [
+            -3,
+            -3,
+            -4,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 187,
+      "matrix": [
+        -3,
+        3,
+        3,
+        -4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "night",
+            "death"
+          ],
+          "orientation": "J",
+          "original_view": 7,
+          "original_matrix": [
+            -3,
+            -3,
+            4,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 188,
+      "matrix": [
+        -3,
+        3,
+        4,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "night",
+            "restart"
+          ],
+          "orientation": "J",
+          "original_view": 8,
+          "original_matrix": [
+            -3,
+            -3,
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 189,
+      "matrix": [
+        -3,
+        3,
+        4,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "night",
+            "repeat"
+          ],
+          "orientation": "J",
+          "original_view": 9,
+          "original_matrix": [
+            -3,
+            -3,
+            -3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 190,
+      "matrix": [
+        -3,
+        3,
+        -2,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "night",
+            "past"
+          ],
+          "orientation": "J",
+          "original_view": 10,
+          "original_matrix": [
+            -3,
+            -3,
+            -4,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 191,
+      "matrix": [
+        -3,
+        3,
+        4,
+        -2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "night",
+            "ripple"
+          ],
+          "orientation": "J",
+          "original_view": 11,
+          "original_matrix": [
+            -3,
+            -3,
+            2,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 192,
+      "matrix": [
+        -3,
+        3,
+        -3,
+        1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "night",
+            "canal"
+          ],
+          "orientation": "J",
+          "original_view": 12,
+          "original_matrix": [
+            -3,
+            -3,
+            -1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 193,
+      "matrix": [
+        -4,
+        1,
+        -3,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "street",
+            "night"
+          ],
+          "orientation": "J",
+          "original_view": 13,
+          "original_matrix": [
+            -1,
+            -4,
+            -3,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 194,
+      "matrix": [
+        -4,
+        1,
+        -4,
+        2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "street",
+            "lamp"
+          ],
+          "orientation": "J",
+          "original_view": 14,
+          "original_matrix": [
+            -1,
+            -4,
+            -2,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 195,
+      "matrix": [
+        -4,
+        1,
+        -3,
+        -1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "street",
+            "pharmacy"
+          ],
+          "orientation": "J",
+          "original_view": 15,
+          "original_matrix": [
+            -1,
+            -4,
+            1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 196,
+      "matrix": [
+        -4,
+        1,
+        3,
+        2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "street",
+            "duration"
+          ],
+          "orientation": "J",
+          "original_view": 17,
+          "original_matrix": [
+            -1,
+            -4,
+            -2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 197,
+      "matrix": [
+        -4,
+        1,
+        1,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "street",
+            "same"
+          ],
+          "orientation": "J",
+          "original_view": 18,
+          "original_matrix": [
+            -1,
+            -4,
+            -4,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 198,
+      "matrix": [
+        -4,
+        1,
+        -1,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "street",
+            "no_exit"
+          ],
+          "orientation": "J",
+          "original_view": 19,
+          "original_matrix": [
+            -1,
+            -4,
+            -4,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 199,
+      "matrix": [
+        -4,
+        1,
+        3,
+        -4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "street",
+            "death"
+          ],
+          "orientation": "J",
+          "original_view": 20,
+          "original_matrix": [
+            -1,
+            -4,
+            4,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 200,
+      "matrix": [
+        -4,
+        1,
+        4,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "street",
+            "restart"
+          ],
+          "orientation": "J",
+          "original_view": 21,
+          "original_matrix": [
+            -1,
+            -4,
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 201,
+      "matrix": [
+        -4,
+        1,
+        -2,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "street",
+            "past"
+          ],
+          "orientation": "J",
+          "original_view": 23,
+          "original_matrix": [
+            -1,
+            -4,
+            -4,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 202,
+      "matrix": [
+        -4,
+        1,
+        4,
+        -2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "street",
+            "ripple"
+          ],
+          "orientation": "J",
+          "original_view": 24,
+          "original_matrix": [
+            -1,
+            -4,
+            2,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 203,
+      "matrix": [
+        -4,
+        1,
+        -3,
+        1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "street",
+            "canal"
+          ],
+          "orientation": "J",
+          "original_view": 25,
+          "original_matrix": [
+            -1,
+            -4,
+            -1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 204,
+      "matrix": [
+        -4,
+        2,
+        -3,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "lamp",
+            "night"
+          ],
+          "orientation": "J",
+          "original_view": 26,
+          "original_matrix": [
+            -2,
+            -4,
+            -3,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 205,
+      "matrix": [
+        -4,
+        2,
+        -4,
+        1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "lamp",
+            "street"
+          ],
+          "orientation": "J",
+          "original_view": 27,
+          "original_matrix": [
+            -2,
+            -4,
+            -1,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 206,
+      "matrix": [
+        -4,
+        2,
+        -3,
+        -1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "lamp",
+            "pharmacy"
+          ],
+          "orientation": "J",
+          "original_view": 28,
+          "original_matrix": [
+            -2,
+            -4,
+            1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 207,
+      "matrix": [
+        -4,
+        2,
+        -2,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "lamp",
+            "light"
+          ],
+          "orientation": "J",
+          "original_view": 29,
+          "original_matrix": [
+            -2,
+            -4,
+            -3,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 208,
+      "matrix": [
+        -4,
+        2,
+        3,
+        2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "lamp",
+            "duration"
+          ],
+          "orientation": "J",
+          "original_view": 30,
+          "original_matrix": [
+            -2,
+            -4,
+            -2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 209,
+      "matrix": [
+        -4,
+        2,
+        1,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "lamp",
+            "same"
+          ],
+          "orientation": "J",
+          "original_view": 31,
+          "original_matrix": [
+            -2,
+            -4,
+            -4,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 210,
+      "matrix": [
+        -4,
+        2,
+        -1,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "lamp",
+            "no_exit"
+          ],
+          "orientation": "J",
+          "original_view": 32,
+          "original_matrix": [
+            -2,
+            -4,
+            -4,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 211,
+      "matrix": [
+        -4,
+        2,
+        3,
+        -4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "lamp",
+            "death"
+          ],
+          "orientation": "J",
+          "original_view": 33,
+          "original_matrix": [
+            -2,
+            -4,
+            4,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 212,
+      "matrix": [
+        -4,
+        2,
+        4,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "lamp",
+            "restart"
+          ],
+          "orientation": "J",
+          "original_view": 34,
+          "original_matrix": [
+            -2,
+            -4,
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 213,
+      "matrix": [
+        -4,
+        2,
+        4,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "lamp",
+            "repeat"
+          ],
+          "orientation": "J",
+          "original_view": 35,
+          "original_matrix": [
+            -2,
+            -4,
+            -3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 214,
+      "matrix": [
+        -4,
+        2,
+        -2,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "lamp",
+            "past"
+          ],
+          "orientation": "J",
+          "original_view": 36,
+          "original_matrix": [
+            -2,
+            -4,
+            -4,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 215,
+      "matrix": [
+        -4,
+        2,
+        -3,
+        1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "lamp",
+            "canal"
+          ],
+          "orientation": "J",
+          "original_view": 37,
+          "original_matrix": [
+            -2,
+            -4,
+            -1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 216,
+      "matrix": [
+        -3,
+        -1,
+        -3,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "pharmacy",
+            "night"
+          ],
+          "orientation": "J",
+          "original_view": 38,
+          "original_matrix": [
+            1,
+            -3,
+            -3,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 217,
+      "matrix": [
+        -3,
+        -1,
+        -4,
+        1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "pharmacy",
+            "street"
+          ],
+          "orientation": "J",
+          "original_view": 39,
+          "original_matrix": [
+            1,
+            -3,
+            -1,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 218,
+      "matrix": [
+        -3,
+        -1,
+        -4,
+        2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "pharmacy",
+            "lamp"
+          ],
+          "orientation": "J",
+          "original_view": 40,
+          "original_matrix": [
+            1,
+            -3,
+            -2,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 219,
+      "matrix": [
+        -3,
+        -1,
+        -2,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "pharmacy",
+            "light"
+          ],
+          "orientation": "J",
+          "original_view": 41,
+          "original_matrix": [
+            1,
+            -3,
+            -3,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 220,
+      "matrix": [
+        -3,
+        -1,
+        3,
+        2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "pharmacy",
+            "duration"
+          ],
+          "orientation": "J",
+          "original_view": 42,
+          "original_matrix": [
+            1,
+            -3,
+            -2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 221,
+      "matrix": [
+        -3,
+        -1,
+        1,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "pharmacy",
+            "same"
+          ],
+          "orientation": "J",
+          "original_view": 43,
+          "original_matrix": [
+            1,
+            -3,
+            -4,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 222,
+      "matrix": [
+        -3,
+        -1,
+        -1,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "pharmacy",
+            "no_exit"
+          ],
+          "orientation": "J",
+          "original_view": 44,
+          "original_matrix": [
+            1,
+            -3,
+            -4,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 223,
+      "matrix": [
+        -3,
+        -1,
+        3,
+        -4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "pharmacy",
+            "death"
+          ],
+          "orientation": "J",
+          "original_view": 45,
+          "original_matrix": [
+            1,
+            -3,
+            4,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 224,
+      "matrix": [
+        -3,
+        -1,
+        4,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "pharmacy",
+            "restart"
+          ],
+          "orientation": "J",
+          "original_view": 46,
+          "original_matrix": [
+            1,
+            -3,
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 225,
+      "matrix": [
+        -3,
+        -1,
+        4,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "pharmacy",
+            "repeat"
+          ],
+          "orientation": "J",
+          "original_view": 47,
+          "original_matrix": [
+            1,
+            -3,
+            -3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 226,
+      "matrix": [
+        -3,
+        -1,
+        -2,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "pharmacy",
+            "past"
+          ],
+          "orientation": "J",
+          "original_view": 48,
+          "original_matrix": [
+            1,
+            -3,
+            -4,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 227,
+      "matrix": [
+        -3,
+        -1,
+        4,
+        -2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "pharmacy",
+            "ripple"
+          ],
+          "orientation": "J",
+          "original_view": 49,
+          "original_matrix": [
+            1,
+            -3,
+            2,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 228,
+      "matrix": [
+        -3,
+        -1,
+        -3,
+        1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "pharmacy",
+            "canal"
+          ],
+          "orientation": "J",
+          "original_view": 50,
+          "original_matrix": [
+            1,
+            -3,
+            -1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 229,
+      "matrix": [
+        -2,
+        3,
+        -3,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "light",
+            "night"
+          ],
+          "orientation": "J",
+          "original_view": 51,
+          "original_matrix": [
+            -3,
+            -2,
+            -3,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 230,
+      "matrix": [
+        -2,
+        3,
+        -4,
+        2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "light",
+            "lamp"
+          ],
+          "orientation": "J",
+          "original_view": 53,
+          "original_matrix": [
+            -3,
+            -2,
+            -2,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 231,
+      "matrix": [
+        -2,
+        3,
+        -3,
+        -1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "light",
+            "pharmacy"
+          ],
+          "orientation": "J",
+          "original_view": 54,
+          "original_matrix": [
+            -3,
+            -2,
+            1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 232,
+      "matrix": [
+        -2,
+        3,
+        3,
+        2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "light",
+            "duration"
+          ],
+          "orientation": "J",
+          "original_view": 55,
+          "original_matrix": [
+            -3,
+            -2,
+            -2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 233,
+      "matrix": [
+        -2,
+        3,
+        1,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "light",
+            "same"
+          ],
+          "orientation": "J",
+          "original_view": 56,
+          "original_matrix": [
+            -3,
+            -2,
+            -4,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 234,
+      "matrix": [
+        -2,
+        3,
+        -1,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "light",
+            "no_exit"
+          ],
+          "orientation": "J",
+          "original_view": 57,
+          "original_matrix": [
+            -3,
+            -2,
+            -4,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 235,
+      "matrix": [
+        -2,
+        3,
+        3,
+        -4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "light",
+            "death"
+          ],
+          "orientation": "J",
+          "original_view": 58,
+          "original_matrix": [
+            -3,
+            -2,
+            4,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 236,
+      "matrix": [
+        -2,
+        3,
+        4,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "light",
+            "restart"
+          ],
+          "orientation": "J",
+          "original_view": 59,
+          "original_matrix": [
+            -3,
+            -2,
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 237,
+      "matrix": [
+        -2,
+        3,
+        -2,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "light",
+            "past"
+          ],
+          "orientation": "J",
+          "original_view": 61,
+          "original_matrix": [
+            -3,
+            -2,
+            -4,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 238,
+      "matrix": [
+        -2,
+        3,
+        4,
+        -2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "light",
+            "ripple"
+          ],
+          "orientation": "J",
+          "original_view": 62,
+          "original_matrix": [
+            -3,
+            -2,
+            2,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 239,
+      "matrix": [
+        -2,
+        3,
+        -3,
+        1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "light",
+            "canal"
+          ],
+          "orientation": "J",
+          "original_view": 63,
+          "original_matrix": [
+            -3,
+            -2,
+            -1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 240,
+      "matrix": [
+        3,
+        2,
+        -3,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "duration",
+            "night"
+          ],
+          "orientation": "J",
+          "original_view": 64,
+          "original_matrix": [
+            -2,
+            3,
+            -3,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 241,
+      "matrix": [
+        3,
+        2,
+        -4,
+        1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "duration",
+            "street"
+          ],
+          "orientation": "J",
+          "original_view": 65,
+          "original_matrix": [
+            -2,
+            3,
+            -1,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 242,
+      "matrix": [
+        3,
+        2,
+        -4,
+        2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "duration",
+            "lamp"
+          ],
+          "orientation": "J",
+          "original_view": 66,
+          "original_matrix": [
+            -2,
+            3,
+            -2,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 243,
+      "matrix": [
+        3,
+        2,
+        -3,
+        -1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "duration",
+            "pharmacy"
+          ],
+          "orientation": "J",
+          "original_view": 67,
+          "original_matrix": [
+            -2,
+            3,
+            1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 244,
+      "matrix": [
+        3,
+        2,
+        -2,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "duration",
+            "light"
+          ],
+          "orientation": "J",
+          "original_view": 68,
+          "original_matrix": [
+            -2,
+            3,
+            -3,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 245,
+      "matrix": [
+        3,
+        2,
+        1,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "duration",
+            "same"
+          ],
+          "orientation": "J",
+          "original_view": 69,
+          "original_matrix": [
+            -2,
+            3,
+            -4,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 246,
+      "matrix": [
+        3,
+        2,
+        -1,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "duration",
+            "no_exit"
+          ],
+          "orientation": "J",
+          "original_view": 70,
+          "original_matrix": [
+            -2,
+            3,
+            -4,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 247,
+      "matrix": [
+        3,
+        2,
+        3,
+        -4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "duration",
+            "death"
+          ],
+          "orientation": "J",
+          "original_view": 71,
+          "original_matrix": [
+            -2,
+            3,
+            4,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 248,
+      "matrix": [
+        3,
+        2,
+        4,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "duration",
+            "restart"
+          ],
+          "orientation": "J",
+          "original_view": 72,
+          "original_matrix": [
+            -2,
+            3,
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 249,
+      "matrix": [
+        3,
+        2,
+        4,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "duration",
+            "repeat"
+          ],
+          "orientation": "J",
+          "original_view": 73,
+          "original_matrix": [
+            -2,
+            3,
+            -3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 250,
+      "matrix": [
+        3,
+        2,
+        -2,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "duration",
+            "past"
+          ],
+          "orientation": "J",
+          "original_view": 74,
+          "original_matrix": [
+            -2,
+            3,
+            -4,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 251,
+      "matrix": [
+        3,
+        2,
+        4,
+        -2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "duration",
+            "ripple"
+          ],
+          "orientation": "J",
+          "original_view": 75,
+          "original_matrix": [
+            -2,
+            3,
+            2,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 252,
+      "matrix": [
+        3,
+        2,
+        -3,
+        1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "duration",
+            "canal"
+          ],
+          "orientation": "J",
+          "original_view": 76,
+          "original_matrix": [
+            -2,
+            3,
+            -1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 253,
+      "matrix": [
+        1,
+        4,
+        -3,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "same",
+            "night"
+          ],
+          "orientation": "J",
+          "original_view": 77,
+          "original_matrix": [
+            -4,
+            1,
+            -3,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 254,
+      "matrix": [
+        1,
+        4,
+        -4,
+        1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "same",
+            "street"
+          ],
+          "orientation": "J",
+          "original_view": 78,
+          "original_matrix": [
+            -4,
+            1,
+            -1,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 255,
+      "matrix": [
+        1,
+        4,
+        -4,
+        2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "same",
+            "lamp"
+          ],
+          "orientation": "J",
+          "original_view": 79,
+          "original_matrix": [
+            -4,
+            1,
+            -2,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 256,
+      "matrix": [
+        1,
+        4,
+        -3,
+        -1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "same",
+            "pharmacy"
+          ],
+          "orientation": "J",
+          "original_view": 80,
+          "original_matrix": [
+            -4,
+            1,
+            1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 257,
+      "matrix": [
+        1,
+        4,
+        -2,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "same",
+            "light"
+          ],
+          "orientation": "J",
+          "original_view": 81,
+          "original_matrix": [
+            -4,
+            1,
+            -3,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 258,
+      "matrix": [
+        1,
+        4,
+        3,
+        2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "same",
+            "duration"
+          ],
+          "orientation": "J",
+          "original_view": 82,
+          "original_matrix": [
+            -4,
+            1,
+            -2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 259,
+      "matrix": [
+        1,
+        4,
+        -1,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "same",
+            "no_exit"
+          ],
+          "orientation": "J",
+          "original_view": 83,
+          "original_matrix": [
+            -4,
+            1,
+            -4,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 260,
+      "matrix": [
+        1,
+        4,
+        3,
+        -4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "same",
+            "death"
+          ],
+          "orientation": "J",
+          "original_view": 84,
+          "original_matrix": [
+            -4,
+            1,
+            4,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 261,
+      "matrix": [
+        1,
+        4,
+        4,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "same",
+            "restart"
+          ],
+          "orientation": "J",
+          "original_view": 85,
+          "original_matrix": [
+            -4,
+            1,
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 262,
+      "matrix": [
+        1,
+        4,
+        4,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "same",
+            "repeat"
+          ],
+          "orientation": "J",
+          "original_view": 86,
+          "original_matrix": [
+            -4,
+            1,
+            -3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 263,
+      "matrix": [
+        1,
+        4,
+        -2,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "same",
+            "past"
+          ],
+          "orientation": "J",
+          "original_view": 87,
+          "original_matrix": [
+            -4,
+            1,
+            -4,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 264,
+      "matrix": [
+        1,
+        4,
+        4,
+        -2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "same",
+            "ripple"
+          ],
+          "orientation": "J",
+          "original_view": 88,
+          "original_matrix": [
+            -4,
+            1,
+            2,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 265,
+      "matrix": [
+        1,
+        4,
+        -3,
+        1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "same",
+            "canal"
+          ],
+          "orientation": "J",
+          "original_view": 89,
+          "original_matrix": [
+            -4,
+            1,
+            -1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 266,
+      "matrix": [
+        -1,
+        4,
+        -3,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "no_exit",
+            "night"
+          ],
+          "orientation": "J",
+          "original_view": 90,
+          "original_matrix": [
+            -4,
+            -1,
+            -3,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 267,
+      "matrix": [
+        -1,
+        4,
+        -4,
+        1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "no_exit",
+            "street"
+          ],
+          "orientation": "J",
+          "original_view": 91,
+          "original_matrix": [
+            -4,
+            -1,
+            -1,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 268,
+      "matrix": [
+        -1,
+        4,
+        -4,
+        2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "no_exit",
+            "lamp"
+          ],
+          "orientation": "J",
+          "original_view": 92,
+          "original_matrix": [
+            -4,
+            -1,
+            -2,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 269,
+      "matrix": [
+        -1,
+        4,
+        -3,
+        -1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "no_exit",
+            "pharmacy"
+          ],
+          "orientation": "J",
+          "original_view": 93,
+          "original_matrix": [
+            -4,
+            -1,
+            1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 270,
+      "matrix": [
+        -1,
+        4,
+        -2,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "no_exit",
+            "light"
+          ],
+          "orientation": "J",
+          "original_view": 94,
+          "original_matrix": [
+            -4,
+            -1,
+            -3,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 271,
+      "matrix": [
+        -1,
+        4,
+        3,
+        2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "no_exit",
+            "duration"
+          ],
+          "orientation": "J",
+          "original_view": 95,
+          "original_matrix": [
+            -4,
+            -1,
+            -2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 272,
+      "matrix": [
+        -1,
+        4,
+        1,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "no_exit",
+            "same"
+          ],
+          "orientation": "J",
+          "original_view": 96,
+          "original_matrix": [
+            -4,
+            -1,
+            -4,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 273,
+      "matrix": [
+        -1,
+        4,
+        3,
+        -4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "no_exit",
+            "death"
+          ],
+          "orientation": "J",
+          "original_view": 97,
+          "original_matrix": [
+            -4,
+            -1,
+            4,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 274,
+      "matrix": [
+        -1,
+        4,
+        4,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "no_exit",
+            "restart"
+          ],
+          "orientation": "J",
+          "original_view": 98,
+          "original_matrix": [
+            -4,
+            -1,
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 275,
+      "matrix": [
+        -1,
+        4,
+        4,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "no_exit",
+            "repeat"
+          ],
+          "orientation": "J",
+          "original_view": 99,
+          "original_matrix": [
+            -4,
+            -1,
+            -3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 276,
+      "matrix": [
+        -1,
+        4,
+        -2,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "no_exit",
+            "past"
+          ],
+          "orientation": "J",
+          "original_view": 100,
+          "original_matrix": [
+            -4,
+            -1,
+            -4,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 277,
+      "matrix": [
+        -1,
+        4,
+        4,
+        -2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "no_exit",
+            "ripple"
+          ],
+          "orientation": "J",
+          "original_view": 101,
+          "original_matrix": [
+            -4,
+            -1,
+            2,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 278,
+      "matrix": [
+        -1,
+        4,
+        -3,
+        1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "no_exit",
+            "canal"
+          ],
+          "orientation": "J",
+          "original_view": 102,
+          "original_matrix": [
+            -4,
+            -1,
+            -1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 279,
+      "matrix": [
+        3,
+        -4,
+        -3,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "death",
+            "night"
+          ],
+          "orientation": "J",
+          "original_view": 103,
+          "original_matrix": [
+            4,
+            3,
+            -3,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 280,
+      "matrix": [
+        3,
+        -4,
+        -4,
+        1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "death",
+            "street"
+          ],
+          "orientation": "J",
+          "original_view": 104,
+          "original_matrix": [
+            4,
+            3,
+            -1,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 281,
+      "matrix": [
+        3,
+        -4,
+        -4,
+        2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "death",
+            "lamp"
+          ],
+          "orientation": "J",
+          "original_view": 105,
+          "original_matrix": [
+            4,
+            3,
+            -2,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 282,
+      "matrix": [
+        3,
+        -4,
+        -3,
+        -1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "death",
+            "pharmacy"
+          ],
+          "orientation": "J",
+          "original_view": 106,
+          "original_matrix": [
+            4,
+            3,
+            1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 283,
+      "matrix": [
+        3,
+        -4,
+        -2,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "death",
+            "light"
+          ],
+          "orientation": "J",
+          "original_view": 107,
+          "original_matrix": [
+            4,
+            3,
+            -3,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 284,
+      "matrix": [
+        3,
+        -4,
+        3,
+        2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "death",
+            "duration"
+          ],
+          "orientation": "J",
+          "original_view": 108,
+          "original_matrix": [
+            4,
+            3,
+            -2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 285,
+      "matrix": [
+        3,
+        -4,
+        1,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "death",
+            "same"
+          ],
+          "orientation": "J",
+          "original_view": 109,
+          "original_matrix": [
+            4,
+            3,
+            -4,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 286,
+      "matrix": [
+        3,
+        -4,
+        -1,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "death",
+            "no_exit"
+          ],
+          "orientation": "J",
+          "original_view": 110,
+          "original_matrix": [
+            4,
+            3,
+            -4,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 287,
+      "matrix": [
+        3,
+        -4,
+        4,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "death",
+            "restart"
+          ],
+          "orientation": "J",
+          "original_view": 111,
+          "original_matrix": [
+            4,
+            3,
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 288,
+      "matrix": [
+        3,
+        -4,
+        4,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "death",
+            "repeat"
+          ],
+          "orientation": "J",
+          "original_view": 112,
+          "original_matrix": [
+            4,
+            3,
+            -3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 289,
+      "matrix": [
+        3,
+        -4,
+        -2,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "death",
+            "past"
+          ],
+          "orientation": "J",
+          "original_view": 113,
+          "original_matrix": [
+            4,
+            3,
+            -4,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 290,
+      "matrix": [
+        3,
+        -4,
+        4,
+        -2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "death",
+            "ripple"
+          ],
+          "orientation": "J",
+          "original_view": 114,
+          "original_matrix": [
+            4,
+            3,
+            2,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 291,
+      "matrix": [
+        3,
+        -4,
+        -3,
+        1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "death",
+            "canal"
+          ],
+          "orientation": "J",
+          "original_view": 115,
+          "original_matrix": [
+            4,
+            3,
+            -1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 292,
+      "matrix": [
+        4,
+        -3,
+        -3,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "restart",
+            "night"
+          ],
+          "orientation": "J",
+          "original_view": 116,
+          "original_matrix": [
+            3,
+            4,
+            -3,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 293,
+      "matrix": [
+        4,
+        -3,
+        -4,
+        1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "restart",
+            "street"
+          ],
+          "orientation": "J",
+          "original_view": 117,
+          "original_matrix": [
+            3,
+            4,
+            -1,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 294,
+      "matrix": [
+        4,
+        -3,
+        -4,
+        2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "restart",
+            "lamp"
+          ],
+          "orientation": "J",
+          "original_view": 118,
+          "original_matrix": [
+            3,
+            4,
+            -2,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 295,
+      "matrix": [
+        4,
+        -3,
+        -3,
+        -1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "restart",
+            "pharmacy"
+          ],
+          "orientation": "J",
+          "original_view": 119,
+          "original_matrix": [
+            3,
+            4,
+            1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 296,
+      "matrix": [
+        4,
+        -3,
+        -2,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "restart",
+            "light"
+          ],
+          "orientation": "J",
+          "original_view": 120,
+          "original_matrix": [
+            3,
+            4,
+            -3,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 297,
+      "matrix": [
+        4,
+        -3,
+        3,
+        2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "restart",
+            "duration"
+          ],
+          "orientation": "J",
+          "original_view": 121,
+          "original_matrix": [
+            3,
+            4,
+            -2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 298,
+      "matrix": [
+        4,
+        -3,
+        1,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "restart",
+            "same"
+          ],
+          "orientation": "J",
+          "original_view": 122,
+          "original_matrix": [
+            3,
+            4,
+            -4,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 299,
+      "matrix": [
+        4,
+        -3,
+        -1,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "restart",
+            "no_exit"
+          ],
+          "orientation": "J",
+          "original_view": 123,
+          "original_matrix": [
+            3,
+            4,
+            -4,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 300,
+      "matrix": [
+        4,
+        -3,
+        3,
+        -4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "restart",
+            "death"
+          ],
+          "orientation": "J",
+          "original_view": 124,
+          "original_matrix": [
+            3,
+            4,
+            4,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 301,
+      "matrix": [
+        4,
+        -3,
+        4,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "restart",
+            "repeat"
+          ],
+          "orientation": "J",
+          "original_view": 125,
+          "original_matrix": [
+            3,
+            4,
+            -3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 302,
+      "matrix": [
+        4,
+        -3,
+        -2,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "restart",
+            "past"
+          ],
+          "orientation": "J",
+          "original_view": 126,
+          "original_matrix": [
+            3,
+            4,
+            -4,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 303,
+      "matrix": [
+        4,
+        -3,
+        4,
+        -2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "restart",
+            "ripple"
+          ],
+          "orientation": "J",
+          "original_view": 127,
+          "original_matrix": [
+            3,
+            4,
+            2,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 304,
+      "matrix": [
+        4,
+        -3,
+        -3,
+        1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "restart",
+            "canal"
+          ],
+          "orientation": "J",
+          "original_view": 128,
+          "original_matrix": [
+            3,
+            4,
+            -1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 305,
+      "matrix": [
+        4,
+        3,
+        -3,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "repeat",
+            "night"
+          ],
+          "orientation": "J",
+          "original_view": 129,
+          "original_matrix": [
+            -3,
+            4,
+            -3,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 306,
+      "matrix": [
+        4,
+        3,
+        -4,
+        2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "repeat",
+            "lamp"
+          ],
+          "orientation": "J",
+          "original_view": 131,
+          "original_matrix": [
+            -3,
+            4,
+            -2,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 307,
+      "matrix": [
+        4,
+        3,
+        -3,
+        -1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "repeat",
+            "pharmacy"
+          ],
+          "orientation": "J",
+          "original_view": 132,
+          "original_matrix": [
+            -3,
+            4,
+            1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 308,
+      "matrix": [
+        4,
+        3,
+        3,
+        2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "repeat",
+            "duration"
+          ],
+          "orientation": "J",
+          "original_view": 134,
+          "original_matrix": [
+            -3,
+            4,
+            -2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 309,
+      "matrix": [
+        4,
+        3,
+        1,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "repeat",
+            "same"
+          ],
+          "orientation": "J",
+          "original_view": 135,
+          "original_matrix": [
+            -3,
+            4,
+            -4,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 310,
+      "matrix": [
+        4,
+        3,
+        -1,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "repeat",
+            "no_exit"
+          ],
+          "orientation": "J",
+          "original_view": 136,
+          "original_matrix": [
+            -3,
+            4,
+            -4,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 311,
+      "matrix": [
+        4,
+        3,
+        3,
+        -4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "repeat",
+            "death"
+          ],
+          "orientation": "J",
+          "original_view": 137,
+          "original_matrix": [
+            -3,
+            4,
+            4,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 312,
+      "matrix": [
+        4,
+        3,
+        4,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "repeat",
+            "restart"
+          ],
+          "orientation": "J",
+          "original_view": 138,
+          "original_matrix": [
+            -3,
+            4,
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 313,
+      "matrix": [
+        4,
+        3,
+        -2,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "repeat",
+            "past"
+          ],
+          "orientation": "J",
+          "original_view": 139,
+          "original_matrix": [
+            -3,
+            4,
+            -4,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 314,
+      "matrix": [
+        4,
+        3,
+        4,
+        -2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "repeat",
+            "ripple"
+          ],
+          "orientation": "J",
+          "original_view": 140,
+          "original_matrix": [
+            -3,
+            4,
+            2,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 315,
+      "matrix": [
+        4,
+        3,
+        -3,
+        1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "repeat",
+            "canal"
+          ],
+          "orientation": "J",
+          "original_view": 141,
+          "original_matrix": [
+            -3,
+            4,
+            -1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 316,
+      "matrix": [
+        -2,
+        4,
+        -3,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "past",
+            "night"
+          ],
+          "orientation": "J",
+          "original_view": 142,
+          "original_matrix": [
+            -4,
+            -2,
+            -3,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 317,
+      "matrix": [
+        -2,
+        4,
+        -4,
+        1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "past",
+            "street"
+          ],
+          "orientation": "J",
+          "original_view": 143,
+          "original_matrix": [
+            -4,
+            -2,
+            -1,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 318,
+      "matrix": [
+        -2,
+        4,
+        -4,
+        2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "past",
+            "lamp"
+          ],
+          "orientation": "J",
+          "original_view": 144,
+          "original_matrix": [
+            -4,
+            -2,
+            -2,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 319,
+      "matrix": [
+        -2,
+        4,
+        -3,
+        -1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "past",
+            "pharmacy"
+          ],
+          "orientation": "J",
+          "original_view": 145,
+          "original_matrix": [
+            -4,
+            -2,
+            1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 320,
+      "matrix": [
+        -2,
+        4,
+        -2,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "past",
+            "light"
+          ],
+          "orientation": "J",
+          "original_view": 146,
+          "original_matrix": [
+            -4,
+            -2,
+            -3,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 321,
+      "matrix": [
+        -2,
+        4,
+        3,
+        2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "past",
+            "duration"
+          ],
+          "orientation": "J",
+          "original_view": 147,
+          "original_matrix": [
+            -4,
+            -2,
+            -2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 322,
+      "matrix": [
+        -2,
+        4,
+        1,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "past",
+            "same"
+          ],
+          "orientation": "J",
+          "original_view": 148,
+          "original_matrix": [
+            -4,
+            -2,
+            -4,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 323,
+      "matrix": [
+        -2,
+        4,
+        -1,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "past",
+            "no_exit"
+          ],
+          "orientation": "J",
+          "original_view": 149,
+          "original_matrix": [
+            -4,
+            -2,
+            -4,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 324,
+      "matrix": [
+        -2,
+        4,
+        3,
+        -4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "past",
+            "death"
+          ],
+          "orientation": "J",
+          "original_view": 150,
+          "original_matrix": [
+            -4,
+            -2,
+            4,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 325,
+      "matrix": [
+        -2,
+        4,
+        4,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "past",
+            "restart"
+          ],
+          "orientation": "J",
+          "original_view": 151,
+          "original_matrix": [
+            -4,
+            -2,
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 326,
+      "matrix": [
+        -2,
+        4,
+        4,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "past",
+            "repeat"
+          ],
+          "orientation": "J",
+          "original_view": 152,
+          "original_matrix": [
+            -4,
+            -2,
+            -3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 327,
+      "matrix": [
+        -2,
+        4,
+        4,
+        -2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "past",
+            "ripple"
+          ],
+          "orientation": "J",
+          "original_view": 153,
+          "original_matrix": [
+            -4,
+            -2,
+            2,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 328,
+      "matrix": [
+        -2,
+        4,
+        -3,
+        1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "past",
+            "canal"
+          ],
+          "orientation": "J",
+          "original_view": 154,
+          "original_matrix": [
+            -4,
+            -2,
+            -1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 329,
+      "matrix": [
+        4,
+        -2,
+        -3,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "ripple",
+            "night"
+          ],
+          "orientation": "J",
+          "original_view": 155,
+          "original_matrix": [
+            2,
+            4,
+            -3,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 330,
+      "matrix": [
+        4,
+        -2,
+        -4,
+        1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "ripple",
+            "street"
+          ],
+          "orientation": "J",
+          "original_view": 156,
+          "original_matrix": [
+            2,
+            4,
+            -1,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 331,
+      "matrix": [
+        4,
+        -2,
+        -3,
+        -1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "ripple",
+            "pharmacy"
+          ],
+          "orientation": "J",
+          "original_view": 157,
+          "original_matrix": [
+            2,
+            4,
+            1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 332,
+      "matrix": [
+        4,
+        -2,
+        -2,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "ripple",
+            "light"
+          ],
+          "orientation": "J",
+          "original_view": 158,
+          "original_matrix": [
+            2,
+            4,
+            -3,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 333,
+      "matrix": [
+        4,
+        -2,
+        3,
+        2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "ripple",
+            "duration"
+          ],
+          "orientation": "J",
+          "original_view": 159,
+          "original_matrix": [
+            2,
+            4,
+            -2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 334,
+      "matrix": [
+        4,
+        -2,
+        1,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "ripple",
+            "same"
+          ],
+          "orientation": "J",
+          "original_view": 160,
+          "original_matrix": [
+            2,
+            4,
+            -4,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 335,
+      "matrix": [
+        4,
+        -2,
+        -1,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "ripple",
+            "no_exit"
+          ],
+          "orientation": "J",
+          "original_view": 161,
+          "original_matrix": [
+            2,
+            4,
+            -4,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 336,
+      "matrix": [
+        4,
+        -2,
+        3,
+        -4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "ripple",
+            "death"
+          ],
+          "orientation": "J",
+          "original_view": 162,
+          "original_matrix": [
+            2,
+            4,
+            4,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 337,
+      "matrix": [
+        4,
+        -2,
+        4,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "ripple",
+            "restart"
+          ],
+          "orientation": "J",
+          "original_view": 163,
+          "original_matrix": [
+            2,
+            4,
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 338,
+      "matrix": [
+        4,
+        -2,
+        4,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "ripple",
+            "repeat"
+          ],
+          "orientation": "J",
+          "original_view": 164,
+          "original_matrix": [
+            2,
+            4,
+            -3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 339,
+      "matrix": [
+        4,
+        -2,
+        -2,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "ripple",
+            "past"
+          ],
+          "orientation": "J",
+          "original_view": 165,
+          "original_matrix": [
+            2,
+            4,
+            -4,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 340,
+      "matrix": [
+        4,
+        -2,
+        -3,
+        1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "ripple",
+            "canal"
+          ],
+          "orientation": "J",
+          "original_view": 166,
+          "original_matrix": [
+            2,
+            4,
+            -1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 341,
+      "matrix": [
+        -3,
+        1,
+        -3,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "canal",
+            "night"
+          ],
+          "orientation": "J",
+          "original_view": 167,
+          "original_matrix": [
+            -1,
+            -3,
+            -3,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 342,
+      "matrix": [
+        -3,
+        1,
+        -4,
+        1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "canal",
+            "street"
+          ],
+          "orientation": "J",
+          "original_view": 168,
+          "original_matrix": [
+            -1,
+            -3,
+            -1,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 343,
+      "matrix": [
+        -3,
+        1,
+        -4,
+        2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "canal",
+            "lamp"
+          ],
+          "orientation": "J",
+          "original_view": 169,
+          "original_matrix": [
+            -1,
+            -3,
+            -2,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 344,
+      "matrix": [
+        -3,
+        1,
+        -3,
+        -1
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "canal",
+            "pharmacy"
+          ],
+          "orientation": "J",
+          "original_view": 170,
+          "original_matrix": [
+            -1,
+            -3,
+            1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 345,
+      "matrix": [
+        -3,
+        1,
+        -2,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "canal",
+            "light"
+          ],
+          "orientation": "J",
+          "original_view": 171,
+          "original_matrix": [
+            -1,
+            -3,
+            -3,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 346,
+      "matrix": [
+        -3,
+        1,
+        3,
+        2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "canal",
+            "duration"
+          ],
+          "orientation": "J",
+          "original_view": 172,
+          "original_matrix": [
+            -1,
+            -3,
+            -2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 347,
+      "matrix": [
+        -3,
+        1,
+        1,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "canal",
+            "same"
+          ],
+          "orientation": "J",
+          "original_view": 173,
+          "original_matrix": [
+            -1,
+            -3,
+            -4,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 348,
+      "matrix": [
+        -3,
+        1,
+        -1,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "canal",
+            "no_exit"
+          ],
+          "orientation": "J",
+          "original_view": 174,
+          "original_matrix": [
+            -1,
+            -3,
+            -4,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "view": 349,
+      "matrix": [
+        -3,
+        1,
+        3,
+        -4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "canal",
+            "death"
+          ],
+          "orientation": "J",
+          "original_view": 175,
+          "original_matrix": [
+            -1,
+            -3,
+            4,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "view": 350,
+      "matrix": [
+        -3,
+        1,
+        4,
+        -3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "canal",
+            "restart"
+          ],
+          "orientation": "J",
+          "original_view": 176,
+          "original_matrix": [
+            -1,
+            -3,
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 351,
+      "matrix": [
+        -3,
+        1,
+        4,
+        3
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "canal",
+            "repeat"
+          ],
+          "orientation": "J",
+          "original_view": 177,
+          "original_matrix": [
+            -1,
+            -3,
+            -3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "view": 352,
+      "matrix": [
+        -3,
+        1,
+        -2,
+        4
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "canal",
+            "past"
+          ],
+          "orientation": "J",
+          "original_view": 178,
+          "original_matrix": [
+            -1,
+            -3,
+            -4,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "view": 353,
+      "matrix": [
+        -3,
+        1,
+        4,
+        -2
+      ],
+      "aliases": [
+        {
+          "concepts": [
+            "canal",
+            "ripple"
+          ],
+          "orientation": "J",
+          "original_view": 179,
+          "original_matrix": [
+            -1,
+            -3,
+            2,
+            4
+          ]
+        }
+      ]
+    }
+  ],
+  "semantic_maps": 360,
+  "old_maps": 180,
+  "omitted_collinear_pairs": [
+    [
+      "lamp",
+      "ripple"
+    ],
+    [
+      "ripple",
+      "lamp"
+    ]
+  ]
+}

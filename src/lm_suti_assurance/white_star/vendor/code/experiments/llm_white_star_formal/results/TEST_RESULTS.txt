@@ -1,0 +1,13 @@
+test_closed_form_boundary_example (test_formal.FormalContract.test_closed_form_boundary_example) ... ok
+test_complete_partition_has_exact_realisable_witnesses (test_formal.FormalContract.test_complete_partition_has_exact_realisable_witnesses) ... ok
+test_exact_common_scale_and_row_permutation_invariance (test_formal.FormalContract.test_exact_common_scale_and_row_permutation_invariance) ... ok
+test_faults_are_rejected_but_meaning_is_not_falsely_certified (test_formal.FormalContract.test_faults_are_rejected_but_meaning_is_not_falsely_certified) ... ok
+test_frame_substitution_and_scope_omission_rejected (test_formal.FormalContract.test_frame_substitution_and_scope_omission_rejected) ... ok
+test_full_pipeline_replay_and_annotated_certificate (test_formal.FormalContract.test_full_pipeline_replay_and_annotated_certificate) ... ok
+test_observed_claims_use_the_declared_quotient (test_formal.FormalContract.test_observed_claims_use_the_declared_quotient) ... ok
+test_sign_triangle_balance_and_fixed_relations (test_formal.FormalContract.test_sign_triangle_balance_and_fixed_relations) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.067s
+
+OK

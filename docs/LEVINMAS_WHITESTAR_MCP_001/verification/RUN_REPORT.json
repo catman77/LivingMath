@@ -1,0 +1,75 @@
+{
+  "integrity_failures": [],
+  "checks": [
+    {
+      "path": "code/experiments/llm_white_star",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "code/experiments/llm_white_star",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_custom_atlas_matches_reference_choice_and_full_trace (test_bridge.BridgeContract.test_custom_atlas_matches_reference_choice_and_full_trace) ... ok\ntest_frames_are_fixed_consecutive_outputs_and_readout_is_exact (test_bridge.BridgeContract.test_frames_are_fixed_consecutive_outputs_and_readout_is_exact) ... ok\ntest_input_order_and_opaque_names_do_not_steer_geometry (test_bridge.BridgeContract.test_input_order_and_opaque_names_do_not_steer_geometry) ... ok\ntest_source_address_rejects_fabricated_evidence (test_bridge.BridgeContract.test_source_address_rejects_fabricated_evidence) ... ok\ntest_witness_equations_and_integer_projection (test_bridge.BridgeContract.test_witness_equations_and_integer_projection) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.022s\n\nOK\n"
+    },
+    {
+      "path": "code/experiments/llm_white_star_formal",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "code/experiments/llm_white_star_formal",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_closed_form_boundary_example (test_formal.FormalContract.test_closed_form_boundary_example) ... ok\ntest_complete_partition_has_exact_realisable_witnesses (test_formal.FormalContract.test_complete_partition_has_exact_realisable_witnesses) ... ok\ntest_exact_common_scale_and_row_permutation_invariance (test_formal.FormalContract.test_exact_common_scale_and_row_permutation_invariance) ... ok\ntest_faults_are_rejected_but_meaning_is_not_falsely_certified (test_formal.FormalContract.test_faults_are_rejected_but_meaning_is_not_falsely_certified) ... ok\ntest_frame_substitution_and_scope_omission_rejected (test_formal.FormalContract.test_frame_substitution_and_scope_omission_rejected) ... ok\ntest_full_pipeline_replay_and_annotated_certificate (test_formal.FormalContract.test_full_pipeline_replay_and_annotated_certificate) ... ok\ntest_observed_claims_use_the_declared_quotient (test_formal.FormalContract.test_observed_claims_use_the_declared_quotient) ... ok\ntest_sign_triangle_balance_and_fixed_relations (test_formal.FormalContract.test_sign_triangle_balance_and_fixed_relations) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.069s\n\nOK\n"
+    },
+    {
+      "path": "code/experiments/llm_white_star_transfer",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "code/experiments/llm_white_star_transfer",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_budget_tradeoff_is_reported_not_hidden (test_transfer.TransferContract.test_budget_tradeoff_is_reported_not_hidden) ... ok\ntest_complete_mode_extension_and_old_modes_retained (test_transfer.TransferContract.test_complete_mode_extension_and_old_modes_retained) ... ok\ntest_false_source_attribution_and_wrong_order_rejected (test_transfer.TransferContract.test_false_source_attribution_and_wrong_order_rejected) ... ok\ntest_independent_constructive_inverse_for_every_pair_and_mode (test_transfer.TransferContract.test_independent_constructive_inverse_for_every_pair_and_mode) ... ok\ntest_invalid_target_models_rejected (test_transfer.TransferContract.test_invalid_target_models_rejected) ... ok\ntest_native_matches_unchanged_reference_under_same_budget (test_transfer.TransferContract.test_native_matches_unchanged_reference_under_same_budget) ... ok\ntest_numeric_duplicates_keep_all_semantic_aliases (test_transfer.TransferContract.test_numeric_duplicates_keep_all_semantic_aliases) ... ok\ntest_three_formal_models_with_concrete_counterexamples (test_transfer.TransferContract.test_three_formal_models_with_concrete_counterexamples) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.077s\n\nOK\n"
+    },
+    {
+      "path": "integration",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "integration",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_base_profile_matches_001_trace (test_adapter.AdapterContract.test_base_profile_matches_001_trace) ... ok\ntest_common_input_hash_changes_only_with_common_input (test_adapter.AdapterContract.test_common_input_hash_changes_only_with_common_input) ... ok\ntest_exact_003_trace_and_all_alias_readouts (test_adapter.AdapterContract.test_exact_003_trace_and_all_alias_readouts) ... ok\ntest_expanded_atlas_limit_is_checked_before_native_run (test_adapter.AdapterContract.test_expanded_atlas_limit_is_checked_before_native_run) ... ok\ntest_input_mutations_rejected (test_adapter.AdapterContract.test_input_mutations_rejected) ... ok\ntest_replay_and_request_immutability (test_adapter.AdapterContract.test_replay_and_request_immutability) ... ok\ntest_second_text_no_blok_names_or_model_calls (test_adapter.AdapterContract.test_second_text_no_blok_names_or_model_calls) ... ok\ntest_tiny_budget_returns_partial_frame_count (test_adapter.AdapterContract.test_tiny_budget_returns_partial_frame_count) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.065s\n\nOK\n"
+    }
+  ],
+  "passed": true,
+  "scope": "offline numeric/reference/adapter checks; not live MCP integration"
+}

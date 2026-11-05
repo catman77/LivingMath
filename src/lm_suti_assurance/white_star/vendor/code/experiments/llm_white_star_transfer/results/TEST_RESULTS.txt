@@ -1,0 +1,13 @@
+test_budget_tradeoff_is_reported_not_hidden (test_transfer.TransferContract.test_budget_tradeoff_is_reported_not_hidden) ... ok
+test_complete_mode_extension_and_old_modes_retained (test_transfer.TransferContract.test_complete_mode_extension_and_old_modes_retained) ... ok
+test_false_source_attribution_and_wrong_order_rejected (test_transfer.TransferContract.test_false_source_attribution_and_wrong_order_rejected) ... ok
+test_independent_constructive_inverse_for_every_pair_and_mode (test_transfer.TransferContract.test_independent_constructive_inverse_for_every_pair_and_mode) ... ok
+test_invalid_target_models_rejected (test_transfer.TransferContract.test_invalid_target_models_rejected) ... ok
+test_native_matches_unchanged_reference_under_same_budget (test_transfer.TransferContract.test_native_matches_unchanged_reference_under_same_budget) ... ok
+test_numeric_duplicates_keep_all_semantic_aliases (test_transfer.TransferContract.test_numeric_duplicates_keep_all_semantic_aliases) ... ok
+test_three_formal_models_with_concrete_counterexamples (test_transfer.TransferContract.test_three_formal_models_with_concrete_counterexamples) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.077s
+
+OK

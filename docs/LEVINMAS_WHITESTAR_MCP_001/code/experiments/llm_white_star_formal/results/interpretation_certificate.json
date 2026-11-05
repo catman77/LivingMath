@@ -1,0 +1,960 @@
+{
+  "readings": [
+    {
+      "additions": [
+        {
+          "description": "смерть как обрыв фразы",
+          "status": "LLM_CREATIVE_EXTENSION"
+        },
+        {
+          "description": "ночь как болезнь",
+          "status": "LLM_CREATIVE_EXTENSION"
+        },
+        {
+          "description": "вода как фотография",
+          "status": "LLM_CREATIVE_EXTENSION"
+        },
+        {
+          "description": "язык как клетка",
+          "status": "LLM_CREATIVE_EXTENSION"
+        }
+      ],
+      "bindings": [
+        {
+          "explanation": "определённость смерти против бессмысленного света",
+          "interpretation_status": "LLM_SELF_ANNOTATION",
+          "prose_excerpt": {
+            "byte_end": 169,
+            "byte_start": 0,
+            "quote": "У смерти здесь больше определённости, чем у тусклого света: она хотя бы умеет оборвать фразу."
+          },
+          "semantic_judge": "same assistant; no independent judge",
+          "source_anchors": {
+            "death": [
+              {
+                "byte_end": 219,
+                "byte_start": 207,
+                "line": 5,
+                "quote": "Умрешь"
+              }
+            ],
+            "light": [
+              {
+                "byte_end": 103,
+                "byte_start": 50,
+                "line": 2,
+                "quote": "Бессмысленный и тусклый свет"
+              }
+            ]
+          },
+          "state": [
+            "death",
+            "light",
+            "TENSION",
+            "death"
+          ],
+          "status": "CREATIVE_RELATION_PROPOSAL",
+          "step": 1
+        },
+        {
+          "explanation": "ночь сильнее обещания лечения",
+          "interpretation_status": "LLM_SELF_ANNOTATION",
+          "prose_excerpt": {
+            "byte_end": 307,
+            "byte_start": 170,
+            "quote": "Ночь обступает аптеку, как болезнь, для которой ещё не придумали лекарства."
+          },
+          "semantic_judge": "same assistant; no independent judge",
+          "source_anchors": {
+            "night": [
+              {
+                "byte_end": 8,
+                "byte_start": 0,
+                "line": 1,
+                "quote": "Ночь"
+              },
+              {
+                "byte_end": 327,
+                "byte_start": 319,
+                "line": 7,
+                "quote": "Ночь"
+              }
+            ],
+            "pharmacy": [
+              {
+                "byte_end": 48,
+                "byte_start": 36,
+                "line": 1,
+                "quote": "аптека"
+              },
+              {
+                "byte_end": 379,
+                "byte_start": 367,
+                "line": 8,
+                "quote": "Аптека"
+              }
+            ]
+          },
+          "state": [
+            "night",
+            "pharmacy",
+            "TENSION",
+            "night"
+          ],
+          "status": "CREATIVE_RELATION_PROPOSAL",
+          "step": 2
+        },
+        {
+          "explanation": "новый рисунок ряби сопротивляется прежнему",
+          "interpretation_status": "LLM_SELF_ANNOTATION",
+          "prose_excerpt": {
+            "byte_end": 488,
+            "byte_start": 308,
+            "quote": "Но ледяная рябь не соглашается быть «как встарь»: каждый её излом заново портит старую фотографию."
+          },
+          "semantic_judge": "same assistant; no independent judge",
+          "source_anchors": {
+            "past": [
+              {
+                "byte_end": 317,
+                "byte_start": 298,
+                "line": 6,
+                "quote": "как встарь"
+              }
+            ],
+            "ripple": [
+              {
+                "byte_end": 352,
+                "byte_start": 329,
+                "line": 7,
+                "quote": "ледяная рябь"
+              }
+            ]
+          },
+          "state": [
+            "past",
+            "ripple",
+            "TENSION",
+            "ripple"
+          ],
+          "status": "CREATIVE_RELATION_PROPOSAL",
+          "step": 3
+        }
+      ],
+      "frame_id": "F01",
+      "status": "CREATIVE_READING_NOT_SOURCE_FACT",
+      "text": "У смерти здесь больше определённости, чем у тусклого света: она хотя бы умеет оборвать фразу. Ночь обступает аптеку, как болезнь, для которой ещё не придумали лекарства. Но ледяная рябь не соглашается быть «как встарь»: каждый её излом заново портит старую фотографию. Клеткой оказывается язык: он всякую новую воду упорно называет прежней.",
+      "text_sha256": "4450a281743a31e3254af4347b99e4edae49d6c331565d69b7c52ec0680a2664",
+      "title": "Клетка из прежних слов"
+    },
+    {
+      "additions": [
+        {
+          "description": "улица как русло ходьбы",
+          "status": "LLM_CREATIVE_EXTENSION"
+        },
+        {
+          "description": "замена одного прохожего другим",
+          "status": "LLM_CREATIVE_EXTENSION"
+        },
+        {
+          "description": "имя, переносимое местоимением",
+          "status": "LLM_CREATIVE_EXTENSION"
+        }
+      ],
+      "bindings": [
+        {
+          "explanation": "улица и канал как два русла",
+          "interpretation_status": "LLM_SELF_ANNOTATION",
+          "prose_excerpt": {
+            "byte_end": 72,
+            "byte_start": 0,
+            "quote": "По улице течёт ходьба, по каналу — вода."
+          },
+          "semantic_judge": "same assistant; no independent judge",
+          "source_anchors": {
+            "canal": [
+              {
+                "byte_end": 365,
+                "byte_start": 353,
+                "line": 7,
+                "quote": "канала"
+              }
+            ],
+            "street": [
+              {
+                "byte_end": 20,
+                "byte_start": 10,
+                "line": 1,
+                "quote": "улица"
+              },
+              {
+                "byte_end": 391,
+                "byte_start": 381,
+                "line": 8,
+                "quote": "улица"
+              }
+            ]
+          },
+          "state": [
+            "canal",
+            "street",
+            "ALIGN",
+            "BALANCED"
+          ],
+          "status": "CREATIVE_RELATION_PROPOSAL",
+          "step": 4
+        },
+        {
+          "explanation": "обратное сопоставление: русло воды и русло ходьбы",
+          "interpretation_status": "LLM_SELF_ANNOTATION",
+          "prose_excerpt": {
+            "byte_end": 72,
+            "byte_start": 0,
+            "quote": "По улице течёт ходьба, по каналу — вода."
+          },
+          "semantic_judge": "same assistant; no independent judge",
+          "source_anchors": {
+            "canal": [
+              {
+                "byte_end": 365,
+                "byte_start": 353,
+                "line": 7,
+                "quote": "канала"
+              }
+            ],
+            "street": [
+              {
+                "byte_end": 20,
+                "byte_start": 10,
+                "line": 1,
+                "quote": "улица"
+              },
+              {
+                "byte_end": 391,
+                "byte_start": 381,
+                "line": 8,
+                "quote": "улица"
+              }
+            ]
+          },
+          "state": [
+            "canal",
+            "street",
+            "ALIGN",
+            "street"
+          ],
+          "status": "CREATIVE_RELATION_PROPOSAL",
+          "step": 5
+        },
+        {
+          "explanation": "смерть прерывает повторение отдельного лица",
+          "interpretation_status": "LLM_SELF_ANNOTATION",
+          "prose_excerpt": {
+            "byte_end": 414,
+            "byte_start": 205,
+            "quote": "Смерть вынимает из этой схемы одного человека; повторению остаётся пустое место, которое оно заполняет следующим."
+          },
+          "semantic_judge": "same assistant; no independent judge",
+          "source_anchors": {
+            "death": [
+              {
+                "byte_end": 219,
+                "byte_start": 207,
+                "line": 5,
+                "quote": "Умрешь"
+              }
+            ],
+            "repeat": [
+              {
+                "byte_end": 296,
+                "byte_start": 269,
+                "line": 6,
+                "quote": "повторится всё"
+              }
+            ]
+          },
+          "state": [
+            "death",
+            "repeat",
+            "TENSION",
+            "death"
+          ],
+          "status": "CREATIVE_RELATION_PROPOSAL",
+          "step": 6
+        }
+      ],
+      "frame_id": "F02",
+      "status": "CREATIVE_READING_NOT_SOURCE_FACT",
+      "text": "По улице течёт ходьба, по каналу — вода. Город хранит обе колеи и способен повторять их без конкретного путника. Смерть вынимает из этой схемы одного человека; повторению остаётся пустое место, которое оно заполняет следующим. В таком прочтении в финале возвращается город, а местоимение «ты» приклеивает к новому прохожему старое имя.",
+      "text_sha256": "6624be1f116710c0640ab2d1a3cb98cf140fe7c6723b0f7be4762587b192b2fd",
+      "title": "Город переживает местоимение"
+    },
+    {
+      "additions": [
+        {
+          "description": "аптека дежурит",
+          "status": "LLM_CREATIVE_EXTENSION"
+        },
+        {
+          "description": "больница размером с улицу",
+          "status": "LLM_CREATIVE_EXTENSION"
+        },
+        {
+          "description": "жизнь как диагноз",
+          "status": "LLM_CREATIVE_EXTENSION"
+        },
+        {
+          "description": "лечение отдельных болей",
+          "status": "LLM_CREATIVE_EXTENSION"
+        }
+      ],
+      "bindings": [
+        {
+          "explanation": "обещание исцеления против бессмысленного света",
+          "interpretation_status": "LLM_SELF_ANNOTATION",
+          "prose_excerpt": {
+            "byte_end": 177,
+            "byte_start": 75,
+            "quote": "тусклый свет ничего не обещает о возможности исцеления."
+          },
+          "semantic_judge": "same assistant; no independent judge",
+          "source_anchors": {
+            "light": [
+              {
+                "byte_end": 103,
+                "byte_start": 50,
+                "line": 2,
+                "quote": "Бессмысленный и тусклый свет"
+              }
+            ],
+            "pharmacy": [
+              {
+                "byte_end": 48,
+                "byte_start": 36,
+                "line": 1,
+                "quote": "аптека"
+              },
+              {
+                "byte_end": 379,
+                "byte_start": 367,
+                "line": 8,
+                "quote": "Аптека"
+              }
+            ]
+          },
+          "state": [
+            "light",
+            "pharmacy",
+            "TENSION",
+            "light"
+          ],
+          "status": "CREATIVE_RELATION_PROPOSAL",
+          "step": 7
+        },
+        {
+          "explanation": "фонарь и аптека вместе обозначают дежурство",
+          "interpretation_status": "LLM_SELF_ANNOTATION",
+          "prose_excerpt": {
+            "byte_end": 74,
+            "byte_start": 0,
+            "quote": "Фонарь подтверждает, что аптека дежурит;"
+          },
+          "semantic_judge": "same assistant; no independent judge",
+          "source_anchors": {
+            "lamp": [
+              {
+                "byte_end": 34,
+                "byte_start": 22,
+                "line": 1,
+                "quote": "фонарь"
+              },
+              {
+                "byte_end": 405,
+                "byte_start": 393,
+                "line": 8,
+                "quote": "фонарь"
+              }
+            ],
+            "pharmacy": [
+              {
+                "byte_end": 48,
+                "byte_start": 36,
+                "line": 1,
+                "quote": "аптека"
+              },
+              {
+                "byte_end": 379,
+                "byte_start": 367,
+                "line": 8,
+                "quote": "Аптека"
+              }
+            ]
+          },
+          "state": [
+            "lamp",
+            "pharmacy",
+            "ALIGN",
+            "lamp"
+          ],
+          "status": "CREATIVE_RELATION_PROPOSAL",
+          "step": 8
+        },
+        {
+          "explanation": "неподвижный фонарь безразличен к повторным приходам",
+          "interpretation_status": "LLM_SELF_ANNOTATION",
+          "prose_excerpt": {
+            "byte_end": 350,
+            "byte_start": 178,
+            "quote": "Можно снова и снова приходить к этой двери, но неподвижный фонарь не ведёт счёта возвращениям."
+          },
+          "semantic_judge": "same assistant; no independent judge",
+          "source_anchors": {
+            "lamp": [
+              {
+                "byte_end": 34,
+                "byte_start": 22,
+                "line": 1,
+                "quote": "фонарь"
+              },
+              {
+                "byte_end": 405,
+                "byte_start": 393,
+                "line": 8,
+                "quote": "фонарь"
+              }
+            ],
+            "repeat": [
+              {
+                "byte_end": 296,
+                "byte_start": 269,
+                "line": 6,
+                "quote": "повторится всё"
+              }
+            ]
+          },
+          "state": [
+            "lamp",
+            "repeat",
+            "TENSION",
+            "lamp"
+          ],
+          "status": "CREATIVE_RELATION_PROPOSAL",
+          "step": 9
+        }
+      ],
+      "frame_id": "F03",
+      "status": "CREATIVE_READING_NOT_SOURCE_FACT",
+      "text": "Фонарь подтверждает, что аптека дежурит; тусклый свет ничего не обещает о возможности исцеления. Можно снова и снова приходить к этой двери, но неподвижный фонарь не ведёт счёта возвращениям. Получается больница размером с улицу: обслуживание продолжается, а диагнозом остаётся сама жизнь. Аптека лечит отдельные боли; тусклый свет делает видимой общую беспомощность.",
+      "text_sha256": "dc5727b73a4701c8ed9a9850434166f38911202332990897902e5105a0949820",
+      "title": "Бессрочное дежурство"
+    },
+    {
+      "additions": [
+        {
+          "description": "консерванты прошлого",
+          "status": "LLM_CREATIVE_EXTENSION"
+        },
+        {
+          "description": "ночь как лак",
+          "status": "LLM_CREATIVE_EXTENSION"
+        },
+        {
+          "description": "отсутствие как сохраняемый предмет",
+          "status": "LLM_CREATIVE_EXTENSION"
+        },
+        {
+          "description": "музей и хранитель",
+          "status": "LLM_CREATIVE_EXTENSION"
+        }
+      ],
+      "bindings": [
+        {
+          "explanation": "аптека сохраняет прошлое",
+          "interpretation_status": "LLM_SELF_ANNOTATION",
+          "prose_excerpt": {
+            "byte_end": 92,
+            "byte_start": 0,
+            "quote": "Аптека кажется складом консервантов для прошлого."
+          },
+          "semantic_judge": "same assistant; no independent judge",
+          "source_anchors": {
+            "past": [
+              {
+                "byte_end": 317,
+                "byte_start": 298,
+                "line": 6,
+                "quote": "как встарь"
+              }
+            ],
+            "pharmacy": [
+              {
+                "byte_end": 48,
+                "byte_start": 36,
+                "line": 1,
+                "quote": "аптека"
+              },
+              {
+                "byte_end": 379,
+                "byte_start": 367,
+                "line": 8,
+                "quote": "Аптека"
+              }
+            ]
+          },
+          "state": [
+            "past",
+            "pharmacy",
+            "ALIGN",
+            "past"
+          ],
+          "status": "CREATIVE_RELATION_PROPOSAL",
+          "step": 10
+        },
+        {
+          "explanation": "ночь и канал образуют единый тёмный слой",
+          "interpretation_status": "LLM_SELF_ANNOTATION",
+          "prose_excerpt": {
+            "byte_end": 153,
+            "byte_start": 93,
+            "quote": "Ночь лежит в канале тёмным лаком;"
+          },
+          "semantic_judge": "same assistant; no independent judge",
+          "source_anchors": {
+            "canal": [
+              {
+                "byte_end": 365,
+                "byte_start": 353,
+                "line": 7,
+                "quote": "канала"
+              }
+            ],
+            "night": [
+              {
+                "byte_end": 8,
+                "byte_start": 0,
+                "line": 1,
+                "quote": "Ночь"
+              },
+              {
+                "byte_end": 327,
+                "byte_start": 319,
+                "line": 7,
+                "quote": "Ночь"
+              }
+            ]
+          },
+          "state": [
+            "canal",
+            "night",
+            "ALIGN",
+            "night"
+          ],
+          "status": "CREATIVE_RELATION_PROPOSAL",
+          "step": 11
+        },
+        {
+          "explanation": "улица и свет вместе удерживают сцену",
+          "interpretation_status": "LLM_SELF_ANNOTATION",
+          "prose_excerpt": {
+            "byte_end": 250,
+            "byte_start": 154,
+            "quote": "улица и тусклый свет вместе удерживают старую сцену."
+          },
+          "semantic_judge": "same assistant; no independent judge",
+          "source_anchors": {
+            "light": [
+              {
+                "byte_end": 103,
+                "byte_start": 50,
+                "line": 2,
+                "quote": "Бессмысленный и тусклый свет"
+              }
+            ],
+            "street": [
+              {
+                "byte_end": 20,
+                "byte_start": 10,
+                "line": 1,
+                "quote": "улица"
+              },
+              {
+                "byte_end": 391,
+                "byte_start": 381,
+                "line": 8,
+                "quote": "улица"
+              }
+            ]
+          },
+          "state": [
+            "light",
+            "street",
+            "ALIGN",
+            "street"
+          ],
+          "status": "CREATIVE_RELATION_PROPOSAL",
+          "step": 12
+        }
+      ],
+      "frame_id": "F04",
+      "status": "CREATIVE_READING_NOT_SOURCE_FACT",
+      "text": "Аптека кажется складом консервантов для прошлого. Ночь лежит в канале тёмным лаком; улица и тусклый свет вместе удерживают старую сцену. Всё здесь заботливо сохранено: можно вернуться через четверть века и застать собственное отсутствие на прежнем месте. Стихотворение превращается в музей, где хранитель перепутал сохранность экспоната с бессмертием его владельца.",
+      "text_sha256": "58e149c4dae09b6f17aabc31e1609c05f902ede39d5ba56402f1ebdfbbc341b1",
+      "title": "Музей собственного отсутствия"
+    },
+    {
+      "additions": [
+        {
+          "description": "отражение аптеки в воде",
+          "status": "LLM_CREATIVE_EXTENSION"
+        },
+        {
+          "description": "лекарство как растворитель изображения",
+          "status": "LLM_CREATIVE_EXTENSION"
+        },
+        {
+          "description": "фонарь как удостоверяющий чиновник",
+          "status": "LLM_CREATIVE_EXTENSION"
+        },
+        {
+          "description": "граница освещённого как граница знания",
+          "status": "LLM_CREATIVE_EXTENSION"
+        }
+      ],
+      "bindings": [
+        {
+          "explanation": "аптека включена в подвижную рябь",
+          "interpretation_status": "LLM_SELF_ANNOTATION",
+          "prose_excerpt": {
+            "byte_end": 133,
+            "byte_start": 0,
+            "quote": "Аптека распускается в ледяной ряби, будто сама растворяется в лекарстве."
+          },
+          "semantic_judge": "same assistant; no independent judge",
+          "source_anchors": {
+            "pharmacy": [
+              {
+                "byte_end": 48,
+                "byte_start": 36,
+                "line": 1,
+                "quote": "аптека"
+              },
+              {
+                "byte_end": 379,
+                "byte_start": 367,
+                "line": 8,
+                "quote": "Аптека"
+              }
+            ],
+            "ripple": [
+              {
+                "byte_end": 352,
+                "byte_start": 329,
+                "line": 7,
+                "quote": "ледяная рябь"
+              }
+            ]
+          },
+          "state": [
+            "pharmacy",
+            "ripple",
+            "ALIGN",
+            "ripple"
+          ],
+          "status": "CREATIVE_RELATION_PROPOSAL",
+          "step": 13
+        },
+        {
+          "explanation": "фонарь служит утверждению неизменности",
+          "interpretation_status": "LLM_SELF_ANNOTATION",
+          "prose_excerpt": {
+            "byte_end": 245,
+            "byte_start": 134,
+            "quote": "Фонарь тем временем штампует удостоверения: «Всё будет так»."
+          },
+          "semantic_judge": "same assistant; no independent judge",
+          "source_anchors": {
+            "lamp": [
+              {
+                "byte_end": 34,
+                "byte_start": 22,
+                "line": 1,
+                "quote": "фонарь"
+              },
+              {
+                "byte_end": 405,
+                "byte_start": 393,
+                "line": 8,
+                "quote": "фонарь"
+              }
+            ],
+            "same": [
+              {
+                "byte_end": 184,
+                "byte_start": 160,
+                "line": 4,
+                "quote": "Всё будет так"
+              }
+            ]
+          },
+          "state": [
+            "lamp",
+            "same",
+            "ALIGN",
+            "same"
+          ],
+          "status": "CREATIVE_RELATION_PROPOSAL",
+          "step": 14
+        },
+        {
+          "explanation": "ночь сопротивляется распространению этого утверждения на всё",
+          "interpretation_status": "LLM_SELF_ANNOTATION",
+          "prose_excerpt": {
+            "byte_end": 375,
+            "byte_start": 246,
+            "quote": "Но ночь шире освещённого участка и не обязана соблюдать этот приговор."
+          },
+          "semantic_judge": "same assistant; no independent judge",
+          "source_anchors": {
+            "night": [
+              {
+                "byte_end": 8,
+                "byte_start": 0,
+                "line": 1,
+                "quote": "Ночь"
+              },
+              {
+                "byte_end": 327,
+                "byte_start": 319,
+                "line": 7,
+                "quote": "Ночь"
+              }
+            ],
+            "same": [
+              {
+                "byte_end": 184,
+                "byte_start": 160,
+                "line": 4,
+                "quote": "Всё будет так"
+              }
+            ]
+          },
+          "state": [
+            "night",
+            "same",
+            "TENSION",
+            "night"
+          ],
+          "status": "CREATIVE_RELATION_PROPOSAL",
+          "step": 15
+        }
+      ],
+      "frame_id": "F05",
+      "status": "CREATIVE_READING_NOT_SOURCE_FACT",
+      "text": "Аптека распускается в ледяной ряби, будто сама растворяется в лекарстве. Фонарь тем временем штампует удостоверения: «Всё будет так». Но ночь шире освещённого участка и не обязана соблюдать этот приговор. В таком прочтении повторяется маленькая удостоверенная картинка, а за её границей остаётся неопределённость: мы ещё не знаем, что там успело измениться.",
+      "text_sha256": "8df56a33624eebc822986c13f9dcd38deacaa5754d98b26013f6faff4a1a26a4",
+      "title": "Фонарь выдаёт справку о мире"
+    },
+    {
+      "additions": [
+        {
+          "description": "аптека как спасительная дверь",
+          "status": "LLM_CREATIVE_EXTENSION"
+        },
+        {
+          "description": "движущийся взгляд",
+          "status": "LLM_CREATIVE_EXTENSION"
+        },
+        {
+          "description": "новое чтение как новый акт сборки сцены",
+          "status": "LLM_CREATIVE_EXTENSION"
+        }
+      ],
+      "bindings": [
+        {
+          "explanation": "фонарь включён в ночную сцену",
+          "interpretation_status": "LLM_SELF_ANNOTATION",
+          "prose_excerpt": {
+            "byte_end": 118,
+            "byte_start": 0,
+            "quote": "Фонарь служит ночи: отмечает её границы, не рассеивая её целиком."
+          },
+          "semantic_judge": "same assistant; no independent judge",
+          "source_anchors": {
+            "lamp": [
+              {
+                "byte_end": 34,
+                "byte_start": 22,
+                "line": 1,
+                "quote": "фонарь"
+              },
+              {
+                "byte_end": 405,
+                "byte_start": 393,
+                "line": 8,
+                "quote": "фонарь"
+              }
+            ],
+            "night": [
+              {
+                "byte_end": 8,
+                "byte_start": 0,
+                "line": 1,
+                "quote": "Ночь"
+              },
+              {
+                "byte_end": 327,
+                "byte_start": 319,
+                "line": 7,
+                "quote": "Ночь"
+              }
+            ]
+          },
+          "state": [
+            "lamp",
+            "night",
+            "ALIGN",
+            "night"
+          ],
+          "status": "CREATIVE_RELATION_PROPOSAL",
+          "step": 16
+        },
+        {
+          "explanation": "остановка у аптеки против движения по улице",
+          "interpretation_status": "LLM_SELF_ANNOTATION",
+          "prose_excerpt": {
+            "byte_end": 255,
+            "byte_start": 119,
+            "quote": "Аптека предлагает остановиться у спасительной двери, улица уводит дальше."
+          },
+          "semantic_judge": "same assistant; no independent judge",
+          "source_anchors": {
+            "pharmacy": [
+              {
+                "byte_end": 48,
+                "byte_start": 36,
+                "line": 1,
+                "quote": "аптека"
+              },
+              {
+                "byte_end": 379,
+                "byte_start": 367,
+                "line": 8,
+                "quote": "Аптека"
+              }
+            ],
+            "street": [
+              {
+                "byte_end": 20,
+                "byte_start": 10,
+                "line": 1,
+                "quote": "улица"
+              },
+              {
+                "byte_end": 391,
+                "byte_start": 381,
+                "line": 8,
+                "quote": "улица"
+              }
+            ]
+          },
+          "state": [
+            "pharmacy",
+            "street",
+            "TENSION",
+            "street"
+          ],
+          "status": "CREATIVE_RELATION_PROPOSAL",
+          "step": 17
+        },
+        {
+          "explanation": "новое начало превосходит буквальное воспроизведение",
+          "interpretation_status": "LLM_SELF_ANNOTATION",
+          "prose_excerpt": {
+            "byte_end": 536,
+            "byte_start": 256,
+            "quote": "«Начнёшь опять сначала» здесь можно услышать как перевес начала над повтором: знакомые предметы ещё на месте, но взгляд уже собирает их в другом порядке."
+          },
+          "semantic_judge": "same assistant; no independent judge",
+          "source_anchors": {
+            "repeat": [
+              {
+                "byte_end": 296,
+                "byte_start": 269,
+                "line": 6,
+                "quote": "повторится всё"
+              }
+            ],
+            "restart": [
+              {
+                "byte_end": 264,
+                "byte_start": 224,
+                "line": 5,
+                "quote": "начнешь опять сначала"
+              }
+            ]
+          },
+          "state": [
+            "repeat",
+            "restart",
+            "TENSION",
+            "restart"
+          ],
+          "status": "CREATIVE_RELATION_PROPOSAL",
+          "step": 18
+        }
+      ],
+      "frame_id": "F06",
+      "status": "CREATIVE_READING_NOT_SOURCE_FACT",
+      "text": "Фонарь служит ночи: отмечает её границы, не рассеивая её целиком. Аптека предлагает остановиться у спасительной двери, улица уводит дальше. «Начнёшь опять сначала» здесь можно услышать как перевес начала над повтором: знакомые предметы ещё на месте, но взгляд уже собирает их в другом порядке. Свобода возникает в самом акте нового чтения — сцену ещё предстоит связать, даже когда её слова давно известны.",
+      "text_sha256": "3776490497db4c9e06bc0544b22b06a2c096fde1b561d24e40644ad0907e8d5a",
+      "title": "Начало сильнее повтора"
+    }
+  ],
+  "schema": "white-star-interpretation-certificate/1",
+  "semantic_fidelity": "LLM_ANNOTATED_NOT_INDEPENDENTLY_VERIFIED",
+  "source_assertions": [
+    {
+      "classification_status": "SOURCE_MODEL_ANNOTATION",
+      "epistemic_type": "ATTRIBUTED_TO_LYRICAL_VOICE",
+      "source_excerpt": {
+        "byte_end": 185,
+        "byte_start": 160,
+        "quote": "Всё будет так."
+      },
+      "world_truth": "UNDETERMINED"
+    },
+    {
+      "classification_status": "SOURCE_MODEL_ANNOTATION",
+      "epistemic_type": "ATTRIBUTED_TO_LYRICAL_VOICE",
+      "source_excerpt": {
+        "byte_end": 206,
+        "byte_start": 186,
+        "quote": "Исхода нет."
+      },
+      "world_truth": "UNDETERMINED"
+    },
+    {
+      "classification_status": "SOURCE_MODEL_ANNOTATION",
+      "epistemic_type": "ATTRIBUTED_TO_LYRICAL_VOICE",
+      "source_excerpt": {
+        "byte_end": 265,
+        "byte_start": 207,
+        "quote": "Умрешь — начнешь опять сначала,"
+      },
+      "world_truth": "UNDETERMINED"
+    },
+    {
+      "classification_status": "SOURCE_MODEL_ANNOTATION",
+      "epistemic_type": "ATTRIBUTED_TO_LYRICAL_VOICE",
+      "source_excerpt": {
+        "byte_end": 318,
+        "byte_start": 266,
+        "quote": "И повторится всё, как встарь:"
+      },
+      "world_truth": "UNDETERMINED"
+    }
+  ],
+  "source_sha256": "6e74c0e3cffd04019678c8af84ce5e0540097698c29acc9f3cbb935620aa8bf4",
+  "timing": "retrospective formalization of experiment 001; no new prose generated"
+}

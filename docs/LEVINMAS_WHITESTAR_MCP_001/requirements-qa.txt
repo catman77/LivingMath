@@ -1,0 +1,2 @@
+# Optional contract validation only; not an added dependency of the numeric core.
+jsonschema==4.26.0

@@ -1,0 +1,1302 @@
+[
+  {
+    "id": "F01",
+    "steps": [
+      1,
+      2,
+      3
+    ],
+    "concepts": [
+      "death",
+      "light",
+      "night",
+      "pharmacy",
+      "past",
+      "ripple"
+    ],
+    "links": [
+      {
+        "step": 1,
+        "view": 107,
+        "concepts": [
+          "death",
+          "light"
+        ],
+        "proposed_relation": "TENSION",
+        "signed_weights": [
+          3,
+          -2
+        ],
+        "dominant": "death",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      },
+      {
+        "step": 2,
+        "view": 2,
+        "concepts": [
+          "night",
+          "pharmacy"
+        ],
+        "proposed_relation": "TENSION",
+        "signed_weights": [
+          -3,
+          1
+        ],
+        "dominant": "night",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      },
+      {
+        "step": 3,
+        "view": 153,
+        "concepts": [
+          "past",
+          "ripple"
+        ],
+        "proposed_relation": "TENSION",
+        "signed_weights": [
+          -1,
+          2
+        ],
+        "dominant": "ripple",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      }
+    ]
+  },
+  {
+    "id": "F02",
+    "steps": [
+      4,
+      5,
+      6
+    ],
+    "concepts": [
+      "canal",
+      "street",
+      "death",
+      "repeat"
+    ],
+    "links": [
+      {
+        "step": 4,
+        "view": 168,
+        "concepts": [
+          "canal",
+          "street"
+        ],
+        "proposed_relation": "ALIGN",
+        "signed_weights": [
+          -1,
+          -1
+        ],
+        "dominant": "BALANCED",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      },
+      {
+        "step": 5,
+        "view": 25,
+        "concepts": [
+          "street",
+          "canal"
+        ],
+        "proposed_relation": "ALIGN",
+        "signed_weights": [
+          -5,
+          -4
+        ],
+        "dominant": "street",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      },
+      {
+        "step": 6,
+        "view": 112,
+        "concepts": [
+          "death",
+          "repeat"
+        ],
+        "proposed_relation": "TENSION",
+        "signed_weights": [
+          11,
+          -2
+        ],
+        "dominant": "death",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      }
+    ]
+  },
+  {
+    "id": "F03",
+    "steps": [
+      7,
+      8,
+      9
+    ],
+    "concepts": [
+      "pharmacy",
+      "light",
+      "lamp",
+      "repeat"
+    ],
+    "links": [
+      {
+        "step": 7,
+        "view": 41,
+        "concepts": [
+          "pharmacy",
+          "light"
+        ],
+        "proposed_relation": "TENSION",
+        "signed_weights": [
+          1,
+          -3
+        ],
+        "dominant": "light",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      },
+      {
+        "step": 8,
+        "view": 40,
+        "concepts": [
+          "pharmacy",
+          "lamp"
+        ],
+        "proposed_relation": "ALIGN",
+        "signed_weights": [
+          -3,
+          -4
+        ],
+        "dominant": "lamp",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      },
+      {
+        "step": 9,
+        "view": 131,
+        "concepts": [
+          "repeat",
+          "lamp"
+        ],
+        "proposed_relation": "TENSION",
+        "signed_weights": [
+          1,
+          -2
+        ],
+        "dominant": "lamp",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      }
+    ]
+  },
+  {
+    "id": "F04",
+    "steps": [
+      10,
+      11,
+      12
+    ],
+    "concepts": [
+      "pharmacy",
+      "past",
+      "night",
+      "canal",
+      "street",
+      "light"
+    ],
+    "links": [
+      {
+        "step": 10,
+        "view": 48,
+        "concepts": [
+          "pharmacy",
+          "past"
+        ],
+        "proposed_relation": "ALIGN",
+        "signed_weights": [
+          -1,
+          -3
+        ],
+        "dominant": "past",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      },
+      {
+        "step": 11,
+        "view": 12,
+        "concepts": [
+          "night",
+          "canal"
+        ],
+        "proposed_relation": "ALIGN",
+        "signed_weights": [
+          -6,
+          -5
+        ],
+        "dominant": "night",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      },
+      {
+        "step": 12,
+        "view": 16,
+        "concepts": [
+          "street",
+          "light"
+        ],
+        "proposed_relation": "ALIGN",
+        "signed_weights": [
+          -2,
+          -1
+        ],
+        "dominant": "street",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      }
+    ]
+  },
+  {
+    "id": "F05",
+    "steps": [
+      13,
+      14,
+      15
+    ],
+    "concepts": [
+      "pharmacy",
+      "ripple",
+      "lamp",
+      "same",
+      "night"
+    ],
+    "links": [
+      {
+        "step": 13,
+        "view": 49,
+        "concepts": [
+          "pharmacy",
+          "ripple"
+        ],
+        "proposed_relation": "ALIGN",
+        "signed_weights": [
+          1,
+          2
+        ],
+        "dominant": "ripple",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      },
+      {
+        "step": 14,
+        "view": 31,
+        "concepts": [
+          "lamp",
+          "same"
+        ],
+        "proposed_relation": "ALIGN",
+        "signed_weights": [
+          -10,
+          -11
+        ],
+        "dominant": "same",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      },
+      {
+        "step": 15,
+        "view": 5,
+        "concepts": [
+          "night",
+          "same"
+        ],
+        "proposed_relation": "TENSION",
+        "signed_weights": [
+          -3,
+          1
+        ],
+        "dominant": "night",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      }
+    ]
+  },
+  {
+    "id": "F06",
+    "steps": [
+      16,
+      17,
+      18
+    ],
+    "concepts": [
+      "lamp",
+      "night",
+      "pharmacy",
+      "street",
+      "restart",
+      "repeat"
+    ],
+    "links": [
+      {
+        "step": 16,
+        "view": 26,
+        "concepts": [
+          "lamp",
+          "night"
+        ],
+        "proposed_relation": "ALIGN",
+        "signed_weights": [
+          -2,
+          -3
+        ],
+        "dominant": "night",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      },
+      {
+        "step": 17,
+        "view": 39,
+        "concepts": [
+          "pharmacy",
+          "street"
+        ],
+        "proposed_relation": "TENSION",
+        "signed_weights": [
+          1,
+          -8
+        ],
+        "dominant": "street",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      },
+      {
+        "step": 18,
+        "view": 125,
+        "concepts": [
+          "restart",
+          "repeat"
+        ],
+        "proposed_relation": "TENSION",
+        "signed_weights": [
+          17,
+          -1
+        ],
+        "dominant": "restart",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      }
+    ]
+  },
+  {
+    "id": "F07",
+    "steps": [
+      19,
+      20,
+      21
+    ],
+    "concepts": [
+      "same",
+      "restart",
+      "repeat",
+      "death"
+    ],
+    "links": [
+      {
+        "step": 19,
+        "view": 85,
+        "concepts": [
+          "same",
+          "restart"
+        ],
+        "proposed_relation": "TENSION",
+        "signed_weights": [
+          -5,
+          18
+        ],
+        "dominant": "restart",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      },
+      {
+        "step": 20,
+        "view": 122,
+        "concepts": [
+          "restart",
+          "same"
+        ],
+        "proposed_relation": "UNRESOLVED",
+        "signed_weights": [
+          1,
+          0
+        ],
+        "dominant": "restart",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      },
+      {
+        "step": 21,
+        "view": 137,
+        "concepts": [
+          "repeat",
+          "death"
+        ],
+        "proposed_relation": "ALIGN",
+        "signed_weights": [
+          4,
+          3
+        ],
+        "dominant": "repeat",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      }
+    ]
+  },
+  {
+    "id": "F08",
+    "steps": [
+      22,
+      23,
+      24
+    ],
+    "concepts": [
+      "lamp",
+      "death",
+      "ripple",
+      "repeat",
+      "past"
+    ],
+    "links": [
+      {
+        "step": 22,
+        "view": 33,
+        "concepts": [
+          "lamp",
+          "death"
+        ],
+        "proposed_relation": "TENSION",
+        "signed_weights": [
+          -1,
+          1
+        ],
+        "dominant": "BALANCED",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      },
+      {
+        "step": 23,
+        "view": 164,
+        "concepts": [
+          "ripple",
+          "repeat"
+        ],
+        "proposed_relation": "TENSION",
+        "signed_weights": [
+          4,
+          -1
+        ],
+        "dominant": "ripple",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      },
+      {
+        "step": 24,
+        "view": 152,
+        "concepts": [
+          "past",
+          "repeat"
+        ],
+        "proposed_relation": "ALIGN",
+        "signed_weights": [
+          -4,
+          -3
+        ],
+        "dominant": "past",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      }
+    ]
+  },
+  {
+    "id": "F09",
+    "steps": [
+      25,
+      26,
+      27
+    ],
+    "concepts": [
+      "same",
+      "restart",
+      "repeat"
+    ],
+    "links": [
+      {
+        "step": 25,
+        "view": 85,
+        "concepts": [
+          "same",
+          "restart"
+        ],
+        "proposed_relation": "ALIGN",
+        "signed_weights": [
+          1,
+          23
+        ],
+        "dominant": "restart",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      },
+      {
+        "step": 26,
+        "view": 138,
+        "concepts": [
+          "repeat",
+          "restart"
+        ],
+        "proposed_relation": "ALIGN",
+        "signed_weights": [
+          1,
+          7
+        ],
+        "dominant": "restart",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      },
+      {
+        "step": 27,
+        "view": 135,
+        "concepts": [
+          "repeat",
+          "same"
+        ],
+        "proposed_relation": "ALIGN",
+        "signed_weights": [
+          -11,
+          -19
+        ],
+        "dominant": "same",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      }
+    ]
+  },
+  {
+    "id": "F10",
+    "steps": [
+      28,
+      29,
+      30
+    ],
+    "concepts": [
+      "restart",
+      "canal",
+      "past",
+      "death",
+      "duration"
+    ],
+    "links": [
+      {
+        "step": 28,
+        "view": 128,
+        "concepts": [
+          "restart",
+          "canal"
+        ],
+        "proposed_relation": "TENSION",
+        "signed_weights": [
+          26,
+          -17
+        ],
+        "dominant": "restart",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      },
+      {
+        "step": 29,
+        "view": 150,
+        "concepts": [
+          "past",
+          "death"
+        ],
+        "proposed_relation": "TENSION",
+        "signed_weights": [
+          -5,
+          6
+        ],
+        "dominant": "death",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      },
+      {
+        "step": 30,
+        "view": 121,
+        "concepts": [
+          "restart",
+          "duration"
+        ],
+        "proposed_relation": "ALIGN",
+        "signed_weights": [
+          24,
+          1
+        ],
+        "dominant": "restart",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      }
+    ]
+  },
+  {
+    "id": "F11",
+    "steps": [
+      31,
+      32,
+      33
+    ],
+    "concepts": [
+      "repeat",
+      "past",
+      "restart"
+    ],
+    "links": [
+      {
+        "step": 31,
+        "view": 139,
+        "concepts": [
+          "repeat",
+          "past"
+        ],
+        "proposed_relation": "ALIGN",
+        "signed_weights": [
+          -7,
+          -24
+        ],
+        "dominant": "past",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      },
+      {
+        "step": 32,
+        "view": 138,
+        "concepts": [
+          "repeat",
+          "restart"
+        ],
+        "proposed_relation": "TENSION",
+        "signed_weights": [
+          -7,
+          11
+        ],
+        "dominant": "restart",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      },
+      {
+        "step": 33,
+        "view": 151,
+        "concepts": [
+          "past",
+          "restart"
+        ],
+        "proposed_relation": "TENSION",
+        "signed_weights": [
+          -4,
+          3
+        ],
+        "dominant": "past",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      }
+    ]
+  },
+  {
+    "id": "F12",
+    "steps": [
+      34,
+      35,
+      36
+    ],
+    "concepts": [
+      "duration",
+      "light",
+      "lamp",
+      "pharmacy",
+      "same"
+    ],
+    "links": [
+      {
+        "step": 34,
+        "view": 68,
+        "concepts": [
+          "duration",
+          "light"
+        ],
+        "proposed_relation": "TENSION",
+        "signed_weights": [
+          3,
+          -2
+        ],
+        "dominant": "duration",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      },
+      {
+        "step": 35,
+        "view": 28,
+        "concepts": [
+          "lamp",
+          "pharmacy"
+        ],
+        "proposed_relation": "ALIGN",
+        "signed_weights": [
+          -26,
+          -17
+        ],
+        "dominant": "lamp",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      },
+      {
+        "step": 36,
+        "view": 43,
+        "concepts": [
+          "pharmacy",
+          "same"
+        ],
+        "proposed_relation": "UNRESOLVED",
+        "signed_weights": [
+          0,
+          -1
+        ],
+        "dominant": "same",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      }
+    ]
+  },
+  {
+    "id": "F13",
+    "steps": [
+      37,
+      38,
+      39
+    ],
+    "concepts": [
+      "same",
+      "pharmacy",
+      "past",
+      "no_exit"
+    ],
+    "links": [
+      {
+        "step": 37,
+        "view": 80,
+        "concepts": [
+          "same",
+          "pharmacy"
+        ],
+        "proposed_relation": "TENSION",
+        "signed_weights": [
+          -4,
+          1
+        ],
+        "dominant": "same",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      },
+      {
+        "step": 38,
+        "view": 145,
+        "concepts": [
+          "past",
+          "pharmacy"
+        ],
+        "proposed_relation": "ALIGN",
+        "signed_weights": [
+          -9,
+          -10
+        ],
+        "dominant": "pharmacy",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      },
+      {
+        "step": 39,
+        "view": 96,
+        "concepts": [
+          "no_exit",
+          "same"
+        ],
+        "proposed_relation": "ALIGN",
+        "signed_weights": [
+          -17,
+          -7
+        ],
+        "dominant": "no_exit",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      }
+    ]
+  },
+  {
+    "id": "F14",
+    "steps": [
+      40,
+      41,
+      42
+    ],
+    "concepts": [
+      "same",
+      "death",
+      "canal",
+      "duration",
+      "no_exit"
+    ],
+    "links": [
+      {
+        "step": 40,
+        "view": 84,
+        "concepts": [
+          "same",
+          "death"
+        ],
+        "proposed_relation": "TENSION",
+        "signed_weights": [
+          -17,
+          29
+        ],
+        "dominant": "death",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      },
+      {
+        "step": 41,
+        "view": 175,
+        "concepts": [
+          "canal",
+          "death"
+        ],
+        "proposed_relation": "TENSION",
+        "signed_weights": [
+          -10,
+          31
+        ],
+        "dominant": "death",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      },
+      {
+        "step": 42,
+        "view": 70,
+        "concepts": [
+          "duration",
+          "no_exit"
+        ],
+        "proposed_relation": "TENSION",
+        "signed_weights": [
+          3,
+          -1
+        ],
+        "dominant": "duration",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      }
+    ]
+  },
+  {
+    "id": "F15",
+    "steps": [
+      43,
+      44,
+      45
+    ],
+    "concepts": [
+      "light",
+      "same",
+      "duration",
+      "death",
+      "street"
+    ],
+    "links": [
+      {
+        "step": 43,
+        "view": 56,
+        "concepts": [
+          "light",
+          "same"
+        ],
+        "proposed_relation": "ALIGN",
+        "signed_weights": [
+          -9,
+          -1
+        ],
+        "dominant": "light",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      },
+      {
+        "step": 44,
+        "view": 71,
+        "concepts": [
+          "duration",
+          "death"
+        ],
+        "proposed_relation": "ALIGN",
+        "signed_weights": [
+          1,
+          7
+        ],
+        "dominant": "death",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      },
+      {
+        "step": 45,
+        "view": 104,
+        "concepts": [
+          "death",
+          "street"
+        ],
+        "proposed_relation": "TENSION",
+        "signed_weights": [
+          29,
+          -30
+        ],
+        "dominant": "street",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      }
+    ]
+  },
+  {
+    "id": "F16",
+    "steps": [
+      46,
+      47,
+      48
+    ],
+    "concepts": [
+      "light",
+      "lamp",
+      "duration",
+      "death",
+      "pharmacy",
+      "past"
+    ],
+    "links": [
+      {
+        "step": 46,
+        "view": 53,
+        "concepts": [
+          "light",
+          "lamp"
+        ],
+        "proposed_relation": "ALIGN",
+        "signed_weights": [
+          -19,
+          -34
+        ],
+        "dominant": "lamp",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      },
+      {
+        "step": 47,
+        "view": 71,
+        "concepts": [
+          "duration",
+          "death"
+        ],
+        "proposed_relation": "ALIGN",
+        "signed_weights": [
+          1,
+          1
+        ],
+        "dominant": "BALANCED",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      },
+      {
+        "step": 48,
+        "view": 48,
+        "concepts": [
+          "pharmacy",
+          "past"
+        ],
+        "proposed_relation": "TENSION",
+        "signed_weights": [
+          1,
+          -4
+        ],
+        "dominant": "past",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      }
+    ]
+  },
+  {
+    "id": "F17",
+    "steps": [
+      49,
+      50,
+      51
+    ],
+    "concepts": [
+      "no_exit",
+      "light",
+      "night",
+      "street",
+      "repeat",
+      "ripple"
+    ],
+    "links": [
+      {
+        "step": 49,
+        "view": 94,
+        "concepts": [
+          "no_exit",
+          "light"
+        ],
+        "proposed_relation": "ALIGN",
+        "signed_weights": [
+          -33,
+          -26
+        ],
+        "dominant": "no_exit",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      },
+      {
+        "step": 50,
+        "view": 0,
+        "concepts": [
+          "night",
+          "street"
+        ],
+        "proposed_relation": "ALIGN",
+        "signed_weights": [
+          -9,
+          -5
+        ],
+        "dominant": "night",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      },
+      {
+        "step": 51,
+        "view": 140,
+        "concepts": [
+          "repeat",
+          "ripple"
+        ],
+        "proposed_relation": "TENSION",
+        "signed_weights": [
+          -1,
+          4
+        ],
+        "dominant": "ripple",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      }
+    ]
+  },
+  {
+    "id": "F18",
+    "steps": [
+      52,
+      53,
+      54
+    ],
+    "concepts": [
+      "ripple",
+      "night",
+      "canal",
+      "pharmacy",
+      "same"
+    ],
+    "links": [
+      {
+        "step": 52,
+        "view": 155,
+        "concepts": [
+          "ripple",
+          "night"
+        ],
+        "proposed_relation": "TENSION",
+        "signed_weights": [
+          26,
+          -27
+        ],
+        "dominant": "night",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      },
+      {
+        "step": 53,
+        "view": 170,
+        "concepts": [
+          "canal",
+          "pharmacy"
+        ],
+        "proposed_relation": "ALIGN",
+        "signed_weights": [
+          -19,
+          -11
+        ],
+        "dominant": "canal",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      },
+      {
+        "step": 54,
+        "view": 88,
+        "concepts": [
+          "same",
+          "ripple"
+        ],
+        "proposed_relation": "TENSION",
+        "signed_weights": [
+          -1,
+          5
+        ],
+        "dominant": "ripple",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      }
+    ]
+  },
+  {
+    "id": "F19",
+    "steps": [
+      55,
+      56,
+      57
+    ],
+    "concepts": [
+      "street",
+      "duration",
+      "pharmacy",
+      "night",
+      "repeat"
+    ],
+    "links": [
+      {
+        "step": 55,
+        "view": 17,
+        "concepts": [
+          "street",
+          "duration"
+        ],
+        "proposed_relation": "ALIGN",
+        "signed_weights": [
+          -13,
+          -15
+        ],
+        "dominant": "duration",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      },
+      {
+        "step": 56,
+        "view": 38,
+        "concepts": [
+          "pharmacy",
+          "night"
+        ],
+        "proposed_relation": "ALIGN",
+        "signed_weights": [
+          -1,
+          -15
+        ],
+        "dominant": "night",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      },
+      {
+        "step": 57,
+        "view": 129,
+        "concepts": [
+          "repeat",
+          "night"
+        ],
+        "proposed_relation": "TENSION",
+        "signed_weights": [
+          1,
+          -6
+        ],
+        "dominant": "night",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      }
+    ]
+  },
+  {
+    "id": "F20",
+    "steps": [
+      58,
+      59,
+      60
+    ],
+    "concepts": [
+      "street",
+      "ripple",
+      "pharmacy",
+      "canal",
+      "duration"
+    ],
+    "links": [
+      {
+        "step": 58,
+        "view": 24,
+        "concepts": [
+          "street",
+          "ripple"
+        ],
+        "proposed_relation": "TENSION",
+        "signed_weights": [
+          -31,
+          34
+        ],
+        "dominant": "ripple",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      },
+      {
+        "step": 59,
+        "view": 157,
+        "concepts": [
+          "ripple",
+          "pharmacy"
+        ],
+        "proposed_relation": "TENSION",
+        "signed_weights": [
+          19,
+          -13
+        ],
+        "dominant": "ripple",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      },
+      {
+        "step": 60,
+        "view": 172,
+        "concepts": [
+          "canal",
+          "duration"
+        ],
+        "proposed_relation": "ALIGN",
+        "signed_weights": [
+          -1,
+          -2
+        ],
+        "dominant": "duration",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      }
+    ]
+  },
+  {
+    "id": "F21",
+    "steps": [
+      61,
+      62,
+      63
+    ],
+    "concepts": [
+      "street",
+      "lamp",
+      "canal",
+      "restart",
+      "ripple",
+      "no_exit"
+    ],
+    "links": [
+      {
+        "step": 61,
+        "view": 14,
+        "concepts": [
+          "street",
+          "lamp"
+        ],
+        "proposed_relation": "ALIGN",
+        "signed_weights": [
+          -2,
+          -3
+        ],
+        "dominant": "lamp",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      },
+      {
+        "step": 62,
+        "view": 176,
+        "concepts": [
+          "canal",
+          "restart"
+        ],
+        "proposed_relation": "TENSION",
+        "signed_weights": [
+          -9,
+          17
+        ],
+        "dominant": "restart",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      },
+      {
+        "step": 63,
+        "view": 161,
+        "concepts": [
+          "ripple",
+          "no_exit"
+        ],
+        "proposed_relation": "TENSION",
+        "signed_weights": [
+          16,
+          -11
+        ],
+        "dominant": "ripple",
+        "status": "CREATIVE_RELATION_PROPOSAL_NOT_SOURCE_ENTAILMENT"
+      }
+    ]
+  }
+]

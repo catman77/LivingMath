@@ -1,0 +1,46 @@
+{
+  "sources": [
+    {
+      "source_id": "P1-001",
+      "kind": "SUTI_SOURCE_SCHEMA",
+      "archive": "SUTI.uni.zip",
+      "member": "SUTI.uni/templates/learning-crystal.v1.schema.json",
+      "source_sha256": "8038431a0c13868dfb0427256f5ee9b32929635d5414c7f2db41652036045ba3",
+      "observer": {
+        "kind": "data_property_projection",
+        "fields": [
+          "visibility"
+        ]
+      },
+      "hidden_distinction": "transfer_status"
+    },
+    {
+      "source_id": "P1-002",
+      "kind": "SUTI_SOURCE_SCHEMA",
+      "archive": "SUTI.uni.zip",
+      "member": "SUTI.uni/SUTI.studium/schemas/study-session.v1.schema.json",
+      "source_sha256": "fda1ee197c3a740f274b6142aae981b8dc4f59c867ff0e8dfbf49ef3dcbf8b74",
+      "observer": {
+        "kind": "data_property_projection",
+        "fields": [
+          "external_transfer"
+        ]
+      },
+      "hidden_distinction": "decision"
+    },
+    {
+      "source_id": "ALCH006",
+      "kind": "PUBLIC_ALCHEMICAL_RESEARCH_MODEL",
+      "source_sha256": "02414a3c38f0dfa6541176ac62b5fb4c26555cb02f65d0ced171588b238aa3f9",
+      "title": "The compound of alchymy. Or The ancient hidden art of archemie",
+      "source_fragments": 76,
+      "unknown_records": 60
+    }
+  ],
+  "total": 3,
+  "next_offset": null,
+  "proof_status": "unverified",
+  "execution_permission": {
+    "allowed": false
+  }
+}

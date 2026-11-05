@@ -1,0 +1,8 @@
+{
+  "decoder_packet_sha256": "60b0807cb6e6dc2913a26eeb504d6fcea375432c4d14792f9cf93b3ba98f089b",
+  "decoder_response_sha256": "d6a476b89a0383d6e28bf4c3b74cd49cc097cb9c47e8fd12fca376b1c3f1b7d5",
+  "frame_ids_match": true,
+  "step_references_match": true,
+  "semantic_fidelity_independently_verified": false,
+  "human_or_independent_llm_judges": 0
+}

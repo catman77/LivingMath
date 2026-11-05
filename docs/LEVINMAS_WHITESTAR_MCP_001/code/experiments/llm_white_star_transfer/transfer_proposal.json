@@ -1,0 +1,256 @@
+{
+  "schema": "white-star-formal-transfer/1",
+  "target": "rational linear systems",
+  "translation_status": "LLM_PROPOSED_PARTIAL_MODELS; formal premises and examples checked separately",
+  "units": [
+    {
+      "id": "M1",
+      "source": {
+        "frame_id": "F05",
+        "reading_title": "Фонарь выдаёт справку о мире",
+        "reading_sha256": "8df56a33624eebc822986c13f9dcd38deacaa5754d98b26013f6faff4a1a26a4",
+        "excerpt": {
+          "byte_start": 376,
+          "byte_end": 656,
+          "quote": "В таком прочтении повторяется маленькая удостоверенная картинка, а за её границей остаётся неопределённость: мы ещё не знаем, что там успело измениться."
+        },
+        "poem_sha256": "6e74c0e3cffd04019678c8af84ce5e0540097698c29acc9f3cbb935620aa8bf4",
+        "source_status": "LLM_INTERPRETATION_NOT_ENTAILED_WORLD_FACT"
+      },
+      "claim": "Неизменная наблюдаемая картинка допускает изменение полного состояния.",
+      "roles": {
+        "освещённая картинка": "y=Cx",
+        "полная сцена": "x",
+        "изменение сцены": "x_next=A x",
+        "неразличимое": "ker(C)"
+      },
+      "added_assumptions": [
+        "rational vector state",
+        "linear time-invariant observation and dynamics",
+        "same C used before and after"
+      ],
+      "not_transferred": [
+        "pharmacy dissolving in medication",
+        "night as a literary image",
+        "any claim about physical light"
+      ],
+      "obligation": "C A=C and exists x: A x != x",
+      "theorem": "C A=C iff image(A-I) is a subset of kernel(C); then C A^t=C for all integer t>=0. If kernel(C)={0}, C A=C implies A=I.",
+      "false_strengthening": "C A=C implies A=I without requiring C to be injective.",
+      "model": {
+        "A": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "C": [
+          [
+            1,
+            0
+          ]
+        ],
+        "x": [
+          [
+            1
+          ],
+          [
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "id": "M2",
+      "source": {
+        "frame_id": "F03",
+        "reading_title": "Бессрочное дежурство",
+        "reading_sha256": "dc5727b73a4701c8ed9a9850434166f38911202332990897902e5105a0949820",
+        "excerpt": {
+          "byte_start": 532,
+          "byte_end": 675,
+          "quote": "Аптека лечит отдельные боли; тусклый свет делает видимой общую беспомощность."
+        },
+        "poem_sha256": "6e74c0e3cffd04019678c8af84ce5e0540097698c29acc9f3cbb935620aa8bf4",
+        "source_status": "LLM_INTERPRETATION_NOT_ENTAILED_WORLD_FACT"
+      },
+      "claim": "Доступное воздействие устраняет одну компоненту, сохраняя недоступную ему компоненту.",
+      "roles": {
+        "аптека / воздействие": "control u through B",
+        "отдельная боль": "C x",
+        "неустранённое ограничение": "w x",
+        "повторные обращения": "arbitrary finite control sequence"
+      },
+      "added_assumptions": [
+        "x_next=A x+B u",
+        "w A=w",
+        "w B=0",
+        "w x_initial !=0"
+      ],
+      "not_transferred": [
+        "medical effectiveness",
+        "life as diagnosis",
+        "pharmacological claims"
+      ],
+      "obligation": "exists u eliminating C x_next while nonzero w x is invariant under every control sequence",
+      "theorem": "If w A=w and w B=0, then w x_t=w x_0 for every t and every control sequence. If w x_0!=0, x_t=0 is unreachable.",
+      "false_strengthening": "Every intervention is powerless, including when it can act on the previously invariant component.",
+      "model": {
+        "A": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "B": [
+          [
+            1
+          ],
+          [
+            0
+          ]
+        ],
+        "C": [
+          [
+            1,
+            0
+          ]
+        ],
+        "w": [
+          [
+            0,
+            1
+          ]
+        ],
+        "x": [
+          [
+            3
+          ],
+          [
+            1
+          ]
+        ],
+        "u": [
+          [
+            -3
+          ]
+        ]
+      },
+      "countermodel": {
+        "B": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "u": [
+          [
+            -3
+          ],
+          [
+            -1
+          ]
+        ]
+      }
+    },
+    {
+      "id": "M3",
+      "source": {
+        "frame_id": "F06",
+        "reading_title": "Начало сильнее повтора",
+        "reading_sha256": "3776490497db4c9e06bc0544b22b06a2c096fde1b561d24e40644ad0907e8d5a",
+        "excerpt": {
+          "byte_start": 400,
+          "byte_end": 536,
+          "quote": "знакомые предметы ещё на месте, но взгляд уже собирает их в другом порядке."
+        },
+        "poem_sha256": "6e74c0e3cffd04019678c8af84ce5e0540097698c29acc9f3cbb935620aa8bf4",
+        "source_status": "LLM_INTERPRETATION_NOT_ENTAILED_WORLD_FACT"
+      },
+      "claim": "Перестановка прежних элементов может сохранить часть инвариантов и изменить результат действия.",
+      "roles": {
+        "улица": "U",
+        "фонарь": "L",
+        "аптека": "P",
+        "порядок перечисления": "order of application",
+        "новая сборка": "different composite operator"
+      },
+      "added_assumptions": [
+        "common triple only, not the whole poem",
+        "objects represented as operators",
+        "P invertible",
+        "chronological order composes right-to-left"
+      ],
+      "not_transferred": [
+        "night and additional canal imagery",
+        "any evidence that objects literally act as these matrices"
+      ],
+      "source_order_scope": "Общая тройка: улица-фонарь-аптека -> аптека-улица-фонарь; полные перечисления не считаются тождественными.",
+      "first_order": [
+        "street",
+        "lamp",
+        "pharmacy"
+      ],
+      "last_order": [
+        "pharmacy",
+        "street",
+        "lamp"
+      ],
+      "obligation": "same operator multiset; changed order; P^-1 M_first P=M_last; M_first x != M_last x in this model",
+      "theorem": "For M_first=P L U and M_last=L U P with invertible P, M_last=P^-1 M_first P. Equal characteristic polynomials do not require equal operators or equal outputs on a fixed x.",
+      "false_strengthening": "The same multiset of elements guarantees the same composite action.",
+      "model": {
+        "U": [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "L": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "P": [
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "x": [
+          [
+            1
+          ],
+          [
+            0
+          ]
+        ]
+      }
+    }
+  ]
+}
