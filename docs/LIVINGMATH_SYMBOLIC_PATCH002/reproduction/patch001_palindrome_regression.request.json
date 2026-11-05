@@ -1,0 +1,198 @@
+{
+  "algebra": {
+    "allow_reduce": false,
+    "kind": "FREE",
+    "preserve_history": true
+  },
+  "observers": [
+    "alpha_pattern",
+    "adjacency",
+    "substring_contexts",
+    "composition"
+  ],
+  "operators": [
+    "CONCAT",
+    "SPLIT",
+    "RENAME",
+    "REVERSE"
+  ],
+  "schema": "levinmas-white-star-symbolic-request/1",
+  "search": {
+    "history_identity": "word",
+    "max_candidates_per_step": 4,
+    "max_nodes": 128,
+    "max_steps": 32,
+    "max_word_tokens": 64,
+    "seed": 101,
+    "strategy": "local_structural_novelty"
+  },
+  "segmentation": {
+    "record_boundaries": "lines",
+    "renaming_scope": "global",
+    "unit": "codepoint"
+  },
+  "source": {
+    "alphabet": [
+      "A",
+      "B",
+      "C"
+    ],
+    "rights": "Synthetic fixture",
+    "sha256": "49a01817d3b3ac027b218faf2b2b03175ee9d4aae63577e6d959b319d0dcfe9b",
+    "text": "ABAB\nBABA\nABBA\nBAAB"
+  },
+  "task": {
+    "max_rules": 8,
+    "mode": "predictive",
+    "predict": [
+      [
+        "A",
+        "B",
+        "C",
+        "C",
+        "B",
+        "A"
+      ],
+      [
+        "A",
+        "B",
+        "C",
+        "B",
+        "C",
+        "A"
+      ],
+      [
+        "A",
+        "B",
+        "C",
+        "A",
+        "B",
+        "C"
+      ],
+      [
+        "A",
+        "B",
+        "B",
+        "A",
+        "A",
+        "B",
+        "B",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "B",
+        "B",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "B",
+        "A",
+        "B",
+        "B",
+        "A"
+      ],
+      [
+        "B",
+        "A",
+        "A",
+        "B",
+        "A",
+        "B"
+      ],
+      [
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "B",
+        "A",
+        "B",
+        "A",
+        "B"
+      ]
+    ],
+    "train": [
+      {
+        "accepted": true,
+        "tokens": [
+          "A",
+          "B",
+          "B",
+          "A"
+        ]
+      },
+      {
+        "accepted": true,
+        "tokens": [
+          "B",
+          "A",
+          "A",
+          "B"
+        ]
+      },
+      {
+        "accepted": false,
+        "tokens": [
+          "A",
+          "A",
+          "B",
+          "B"
+        ]
+      },
+      {
+        "accepted": false,
+        "tokens": [
+          "B",
+          "B",
+          "A",
+          "A"
+        ]
+      },
+      {
+        "accepted": false,
+        "tokens": [
+          "A",
+          "B",
+          "A",
+          "B"
+        ]
+      },
+      {
+        "accepted": false,
+        "tokens": [
+          "B",
+          "A",
+          "B",
+          "A"
+        ]
+      },
+      {
+        "accepted": true,
+        "tokens": [
+          "A",
+          "A",
+          "A",
+          "A"
+        ]
+      },
+      {
+        "accepted": true,
+        "tokens": [
+          "B",
+          "B",
+          "B",
+          "B"
+        ]
+      }
+    ]
+  }
+}

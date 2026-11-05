@@ -136,11 +136,11 @@ def run(request, clock_factory):
     }
     manifest = {
         "schema": "livingmath-symbolic-artifact-manifest/1",
-        "symbolic_version": "symbolic_v1/1-patch001",
+        "symbolic_version": "symbolic_v1/1-patch002",
         "kernel_binding": binding(),
         "numeric_kernel_binding": digest(numeric),
         "numeric_kernel_files": numeric,
-        "udav_clock": "actual supplied ReversibleUDAV.step; local set-inclusion controller symbolic-local-pareto/1",
+        "udav_clock": "actual supplied ReversibleUDAV.step; local set-inclusion controller with bounded stored-node/operator fallback symbolic-local-pareto-frontier/2",
         "request_digest": digest(request),
         "artifact_digests": {k: digest(v) for k, v in output.items()},
         "limits": LIMITS,

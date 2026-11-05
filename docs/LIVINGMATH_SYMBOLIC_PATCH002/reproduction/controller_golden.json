@@ -1,0 +1,22 @@
+{
+  "nostradamus_first_5_trace_digest": "5b6c621d9544b6b3defea5eed1c616b99ee0e0b067aa5828a270a1d8ef5cf5ba",
+  "nostradamus_source_map_digest": "5e3eb58d01cff1959e8ea1690be1ddec96ea60847bb522be705e05cba59b53da",
+  "historical_result_digest": "b134c3684e546b3ffa60ebf049f8393db9fc17beab45f118ef3007cfe1d529d8",
+  "historical_summary": {
+    "attempted_candidates": 20,
+    "distinct_alpha_classes": 10,
+    "empirical_claims": 0,
+    "halt_reason": "NO_NOVEL_CANDIDATES",
+    "history_identity": "word",
+    "nodes": 18,
+    "observations": 18,
+    "proved_claims": 56,
+    "saturation_certificate_digest": "8f2abd412601140415fdeb0fcf049a6ad9b8c9203b9ee4aee1be743f89ec15b7",
+    "stagnation_window": 16,
+    "steps": 5,
+    "total_stored_tokens": 153,
+    "underdetermined_claims": 1,
+    "unique_literal_words": 18,
+    "witness_count": 85
+  }
+}

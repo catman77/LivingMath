@@ -132,10 +132,14 @@ def request(text="SSPPSPSP", identity="word"):
 def test_local_saturation_certificate_does_not_claim_full_operator_closure(executor):
     value = executor.run({"action": "explore", "request": request()})["data"]
     assert (
-        value["summary"]["halt_reason"] == "NO_NOVEL_CANDIDATES"
-        and value["summary"]["steps"] < 128
+        value["summary"]["halt_reason"]
+        in ("MAX_STEPS", "MAX_NODES", "MAX_TOTAL_TOKENS")
+        and value["summary"]["fallback_count"] > 0
     )
     cert = value["search_diagnostics"][0]
+    # PATCH002 retains the same local certificate, then spends only the
+    # remaining original budget on untried stored-node/operator proposals.
+    assert cert["status"] == "LOCAL_STAGNATION"
     assert not cert["global_exhaustion_proved"] and cert["unseen_variants_may_exist"]
     assert (
         cert["tested_variants"] and "INSERT_CANCEL_PAIR" in cert["unproposed_operators"]

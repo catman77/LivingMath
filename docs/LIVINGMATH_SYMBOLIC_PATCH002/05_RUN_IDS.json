@@ -1,0 +1,23 @@
+{
+  "release": "v0.4.1-developer-preview",
+  "deployment_id": "symbolic-patch001-20261105T070936Z",
+  "project": "whitestar_dialog_test",
+  "cases": {
+    "patch001_palindrome_regression": "13e94b18d2c966c931246f4e99753b96b51069686a7ea3d589e7367a371329c3",
+    "mallarme_original": "6428431a4708adda01d807a840cb20a38e240d711f58b7be5327d1d62a541760",
+    "mallarme_reverse": "69042e69b43cf6a3b569928c3c23d603bb201f7a459b82941e01c37f6c9e933d",
+    "nostradamus_original_local_word": "61c5af7aa611ed03e914ec72848a0ec84c608a785b44cab4c286696ec6001475",
+    "nostradamus_reverse_local_word": "9cfdecf46cbf9cfae7226d88c5e8d08ad0f6d1988a715bde9d9402d3a084dc4a",
+    "nostradamus_original_local_provenance_extended_ops": "2dd8d078ab50a63baa0fc8624b407986dcc7d451759c8b0b5b2eaf8fd8816bb7",
+    "nostradamus_original_random_word_extended_ops": "dd3dbb4611aeaa1606f4b5a5005bc299c326157462ec462350d4fa1ee123f44a"
+  },
+  "source_sha256": {
+    "nostradamus_no_trailing_newline": "1855b60a8a93c5054ba1f851db6d1bd5bce95d9325db2faadb420d1a5f3b3638",
+    "mallarme_selected_linearized": "fa7e64241104d5b195e9542f568a329937d11eb6a590f3af12870db63172c91a"
+  },
+  "notes": [
+    "Results are server-side artifacts. Run IDs and digests refer to actual MCP calls.",
+    "Nostradamus fixture file contains a trailing LF; strip this LF when computing the SHA of the actual request text.",
+    "Different Nostradamus run configurations do not isolate a single causal factor."
+  ]
+}

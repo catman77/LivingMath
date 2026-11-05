@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.4.2-developer-preview — 2026-11-05
+
+- Escape local symbolic stagnation through deterministic untried stored-node/operator proposals within existing step, candidate, node and token budgets.
+- Preserve local UDAV selection, word/provenance identity, mathematical operations, source spans and the entire PATCH001 grammar model.
+- Record fallback provenance, bounded frontier coverage, every candidate attempt and final resource diagnostics; make no global exhaustion or semantic-discovery claim.
+- Retain immutable v0.4.0/v0.4.1 replay profiles under the shared worker quota; preserve existing SQLite rows, objects and journal prefixes.
+- Pass 272 source and installed-wheel tests, 1066 legacy tests (20 skipped), 38 controlled checks and 248 real production HTTPS/OAuth MCP checks; all 75 tool schemas unchanged.
+
 ## v0.4.1-developer-preview — 2026-11-05
 
 - Derive bounded relational compositions from concrete training witnesses; retain competing hypotheses and explicit active queries instead of implying a unique grammar.

@@ -1,0 +1,48 @@
+{
+  "algebra": {
+    "allow_reduce": false,
+    "kind": "FREE",
+    "preserve_history": true
+  },
+  "normalization": "none",
+  "observers": [
+    "literal",
+    "alpha_pattern",
+    "adjacency",
+    "substring_contexts",
+    "composition",
+    "hierarchy"
+  ],
+  "operators": [
+    "CONCAT",
+    "SPLIT",
+    "RENAME",
+    "REVERSE"
+  ],
+  "schema": "levinmas-white-star-symbolic-request/1",
+  "search": {
+    "history_identity": "word",
+    "max_candidates_per_step": 4,
+    "max_nodes": 640,
+    "max_steps": 160,
+    "max_word_tokens": 128,
+    "seed": 119,
+    "strategy": "local_structural_novelty"
+  },
+  "segmentation": {
+    "record_boundaries": "lines",
+    "renaming_scope": "global",
+    "unit": "whitespace"
+  },
+  "source": {
+    "author": "Stéphane Mallarmé",
+    "language": "fr",
+    "rights": "Public-domain original excerpts; normalized linear selection",
+    "sha256": "fa7e64241104d5b195e9542f568a329937d11eb6a590f3af12870db63172c91a",
+    "text": "UN COUP DE DÉS\nJAMAIS\nN’ABOLIRA\nLE HASARD\nQUAND BIEN MÊME LANCÉ DANS DES CIRCONSTANCES ÉTERNELLES\nDU FOND D’UN NAUFRAGE\nSOIT\nLE MAÎTRE\nRIEN\nN’AURA EU LIEU\nQUE LE LIEU\nEXCEPTÉ\nPEUT-ÊTRE\nUNE CONSTELLATION\nToute Pensée émet un Coup de Dés",
+    "title": "Mallarmé — excerpts, linearized"
+  },
+  "task": {
+    "mode": "descriptive"
+  }
+}

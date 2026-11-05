@@ -65,3 +65,15 @@ Grammar: candidate_status=EMPIRICAL не означает identifiability_status
 NO_NOVEL_CANDIDATES означает отсутствие новых путей в фактически обследованном local proposal cycle/window; не глобальную замкнутость операций. Provenance-paths не сворачиваются в word quotient. Текущие и старые replay profiles делят2 active/16 queued; все прежние CPU/RAM quotas сохранены. Старый bundle выбирает operator-approved immutable profile по binding, без кода из ZIP. При неизвестном binding — явный отказ.
 
 Кеширующему клиенту нужно обновить schema инспектора, переподключив LivingMath по прежнему адресу. Число инструментов остаётся75. [Точные примеры и отчёт](patch001/PATCH001_IMPLEMENTATION_RU.md).
+
+## PATCH002: выход из локальной стагнации
+
+В `v0.4.2-developer-preview` локальный сертификат `LOCAL_STAGNATION` больше не завершает весь поиск при наличии неиспытанных сохранённых пар узел/оператор. `FRONTIER_FALLBACK` выбирает такую пару детерминированно и расходует обычный кандидатный слот следующего шага. `ACTUAL_LOCAL_EXHAUSTION` относится только к обследованному фронтиру с одной sampled вариацией аргументов, не ко всей алгебре. `MAX_STEPS`, `MAX_NODES`, `MAX_TOTAL_TOKENS`, `MAX_OBSERVATIONS` сохраняют прежние лимиты. `WORKER_LIMIT` остаётся отказом изолированного supervisor; частичные несохранённые данные не считаются результатом.
+
+```json
+{"project":"qa-patch002-prod","run_id":"3daf7ecc87ac6c7bb63ac7de5d330e851bdf817965a1cca664d3a13055ae6109","view":"diagnostics"}
+```
+
+Передать в `white_star_symbolic_inspect`. Диагностика включает размер фронтира (число пар), непробованные операторы, fallback count/reason, реальные DAG-ссылки и терминальную причину. Summary содержит per-operator proposed/accepted/duplicate/forbidden/resource_limited, revisited nodes и бюджеты. При нулевом числе шагов нет фиктивного saturation certificate.
+
+Точная грамматическая модель PATCH001, математические операции и все 75 MCP-схем сохранены. Старые прогоны читаются в исходном виде и пересчитываются настоящими immutable v0.4.0/v0.4.1 профилями. [Приёмка PATCH002 и ограничения](patch002/PATCH002_IMPLEMENTATION_RU.md). Переподключение требуется лишь при закрытой HTTP-сессии после restart; адрес прежний.

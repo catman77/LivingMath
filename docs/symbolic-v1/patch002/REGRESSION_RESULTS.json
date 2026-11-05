@@ -1,0 +1,714 @@
+{
+  "status": "PASS_WITH_EXPLICIT_BOUNDED_SCOPE",
+  "release": "v0.4.2-developer-preview",
+  "symbolic_version": "symbolic_v1/1-patch002",
+  "deployment_id": "symbolic-patch002-20261105T075501Z",
+  "endpoint": "https://fares-september-rebel-board.trycloudflare.com/mcp",
+  "source_base_commit": "587b4fcdd99d9675f80b6377ea70cdfd66b0530f",
+  "source_archive_sha256": "549dfd97c61023b42bb26021d79b43eca6f4087faeaa909902e1450ec06c7834",
+  "kernel_binding": "7ce5c5ba0620b4dad1b3f1b62b2cba3338a1efb4a7852a6e1bf768fe5fd0a0c9",
+  "release_manifest_sha256": "5fa06ce35facedd8f6247126dbf430deb5fc35aa6010091434b143ca119cf0ac",
+  "baseline_pytest": 261,
+  "patched_pytest": 272,
+  "installed_wheel_pytest": 272,
+  "legacy_pytest": {
+    "passed": 1066,
+    "skipped": 20,
+    "failed": 0
+  },
+  "controlled_checks": 38,
+  "staging_MCP_checks": 247,
+  "production_MCP_checks": 248,
+  "all75_MCP_schemas_unchanged": true,
+  "acceptance": {
+    "T01": "PASS_FROM_GOLDEN_GRAMMAR_CHECKS",
+    "T02": "PASS",
+    "T03": "PASS",
+    "T04": "PASS_FROM_EXACT_SP_ALPHA_AND_SOURCE_WITNESSES",
+    "T05": "PASS",
+    "T06": "PASS_STRUCTURAL_ONLY",
+    "T07": "PASS",
+    "T08": "PASS"
+  },
+  "PATCH001_gates": {
+    "AC01": "PASS",
+    "AC02": "PASS",
+    "AC07": "PASS",
+    "AC03": "PASS",
+    "AC04": "PASS",
+    "AC05": "PASS",
+    "AC06": "PASS",
+    "AC08": "PASS",
+    "AC09": "PASS",
+    "AC14": "PASS_WITH_UNDERDETERMINED_FAMILY",
+    "AC15": "PASS",
+    "AC10": "PASS",
+    "AC11": "PASS_STRUCTURAL_ONLY",
+    "AC12": "PASS",
+    "AC13": "PASS",
+    "AC16": "PASS_BOUNDED_GATES_NOT_FULL_PENTEST"
+  },
+  "controlled_cases": [
+    {
+      "case": "nostradamus_original_local_word",
+      "request_digest": "3c95e0d13d90e21b4fa557eaaead17ed0bd70f41e9cfc2c41a016ea3ac108dd2",
+      "source_sha256": "1855b60a8a93c5054ba1f851db6d1bd5bce95d9325db2faadb420d1a5f3b3638",
+      "budgets": {
+        "history_identity": "word",
+        "max_candidates_per_step": 4,
+        "max_nodes": 384,
+        "max_steps": 128,
+        "max_word_tokens": 96,
+        "seed": 119,
+        "strategy": "local_structural_novelty"
+      },
+      "before": {
+        "attempted_candidates": 20,
+        "distinct_alpha_classes": 10,
+        "empirical_claims": 0,
+        "halt_reason": "NO_NOVEL_CANDIDATES",
+        "history_identity": "word",
+        "nodes": 18,
+        "observations": 18,
+        "proved_claims": 56,
+        "saturation_certificate_digest": "8f2abd412601140415fdeb0fcf049a6ad9b8c9203b9ee4aee1be743f89ec15b7",
+        "stagnation_window": 16,
+        "steps": 5,
+        "total_stored_tokens": 153,
+        "underdetermined_claims": 1,
+        "unique_literal_words": 18,
+        "witness_count": 85
+      },
+      "after": {
+        "attempted_candidates": 396,
+        "budgets": {
+          "history_identity": "word",
+          "max_candidates_per_step": 4,
+          "max_nodes": 384,
+          "max_observations": 8192,
+          "max_steps": 128,
+          "max_total_tokens": 131072,
+          "max_word_tokens": 96,
+          "seed": 119,
+          "strategy": "local_structural_novelty"
+        },
+        "candidate_attempts": 396,
+        "distinct_alpha_classes": 331,
+        "distinct_provenance_traces": 383,
+        "empirical_claims": 0,
+        "fallback_count": 1,
+        "frontier_size": 1247,
+        "frontier_unit": "untried stored-node/operator pairs",
+        "global_exhaustion_proved": false,
+        "halt_reason": "MAX_NODES",
+        "history_identity": "word",
+        "nodes": 383,
+        "observations": 383,
+        "operation_coverage": {
+          "CONCAT": {
+            "accepted": 119,
+            "duplicate": 4,
+            "forbidden": 25,
+            "proposed": 148,
+            "resource_limited": 0
+          },
+          "RENAME": {
+            "accepted": 1,
+            "duplicate": 0,
+            "forbidden": 0,
+            "proposed": 1,
+            "resource_limited": 0
+          },
+          "REVERSE": {
+            "accepted": 50,
+            "duplicate": 45,
+            "forbidden": 0,
+            "proposed": 95,
+            "resource_limited": 0
+          },
+          "SPLIT": {
+            "accepted": 136,
+            "duplicate": 15,
+            "forbidden": 0,
+            "proposed": 152,
+            "resource_limited": 1
+          }
+        },
+        "policy": "symbolic-local-pareto-frontier/2",
+        "proved_claims": 56,
+        "provenance_trace_unit": "content-addressed DAG nodes, including source records",
+        "revisit_count": 4,
+        "revisited_nodes": 3,
+        "saturation_certificate_digest": "2b77a5605bd0e558db4074e9804e7067ba1dfc0b896a5945c59b2e375a0da1e0",
+        "stagnation_window": 16,
+        "steps": 99,
+        "termination_diagnostic_digest": "f62abb60fa9c6f5614c1bc41a3374a4aaad70950747b73249a3bb62409ee58a8",
+        "total_stored_tokens": 15739,
+        "underdetermined_claims": 1,
+        "unique_literal_words": 383,
+        "untried_allowed_operators": [
+          "CONCAT",
+          "SPLIT",
+          "RENAME",
+          "REVERSE"
+        ],
+        "witness_count": 1867
+      },
+      "before_result_digest": "b134c3684e546b3ffa60ebf049f8393db9fc17beab45f118ef3007cfe1d529d8",
+      "after_result_digest": "bf12e54911e4103011efc4f0d811d1d4405371b53bbda38cdbe4f5f59266cdd8",
+      "before_coverage": {
+        "per_operator": {
+          "CONCAT": {
+            "proposed": 6,
+            "accepted": 2,
+            "duplicate": 4,
+            "forbidden": 0,
+            "resource_limited": 0
+          },
+          "SPLIT": {
+            "proposed": 11,
+            "accepted": 3,
+            "duplicate": 8,
+            "forbidden": 0,
+            "resource_limited": 0
+          },
+          "RENAME": {
+            "proposed": 0,
+            "accepted": 0,
+            "duplicate": 0,
+            "forbidden": 0,
+            "resource_limited": 0
+          },
+          "REVERSE": {
+            "proposed": 3,
+            "accepted": 2,
+            "duplicate": 1,
+            "forbidden": 0,
+            "resource_limited": 0
+          }
+        },
+        "unrecorded_candidate_attempts": 0
+      },
+      "after_coverage": {
+        "per_operator": {
+          "CONCAT": {
+            "proposed": 148,
+            "accepted": 119,
+            "duplicate": 4,
+            "forbidden": 25,
+            "resource_limited": 0
+          },
+          "SPLIT": {
+            "proposed": 152,
+            "accepted": 136,
+            "duplicate": 15,
+            "forbidden": 0,
+            "resource_limited": 1
+          },
+          "RENAME": {
+            "proposed": 1,
+            "accepted": 1,
+            "duplicate": 0,
+            "forbidden": 0,
+            "resource_limited": 0
+          },
+          "REVERSE": {
+            "proposed": 95,
+            "accepted": 50,
+            "duplicate": 45,
+            "forbidden": 0,
+            "resource_limited": 0
+          }
+        },
+        "unrecorded_candidate_attempts": 0
+      }
+    },
+    {
+      "case": "mallarme_original",
+      "request_digest": "7d5fbaa4f771099451f42c8edb7d4882b94fa092c56cd441d09a5628fe24a92c",
+      "source_sha256": "fa7e64241104d5b195e9542f568a329937d11eb6a590f3af12870db63172c91a",
+      "budgets": {
+        "history_identity": "word",
+        "max_candidates_per_step": 4,
+        "max_nodes": 640,
+        "max_steps": 160,
+        "max_word_tokens": 128,
+        "seed": 119,
+        "strategy": "local_structural_novelty"
+      },
+      "before": {
+        "attempted_candidates": 563,
+        "distinct_alpha_classes": 588,
+        "empirical_claims": 0,
+        "halt_reason": "MAX_NODES",
+        "history_identity": "word",
+        "nodes": 640,
+        "observations": 640,
+        "proved_claims": 210,
+        "saturation_certificate_digest": null,
+        "stagnation_window": 16,
+        "steps": 141,
+        "total_stored_tokens": 36799,
+        "underdetermined_claims": 1,
+        "unique_literal_words": 640,
+        "witness_count": 3154
+      },
+      "after": {
+        "attempted_candidates": 563,
+        "budgets": {
+          "history_identity": "word",
+          "max_candidates_per_step": 4,
+          "max_nodes": 640,
+          "max_observations": 8192,
+          "max_steps": 160,
+          "max_total_tokens": 131072,
+          "max_word_tokens": 128,
+          "seed": 119,
+          "strategy": "local_structural_novelty"
+        },
+        "candidate_attempts": 563,
+        "distinct_alpha_classes": 588,
+        "distinct_provenance_traces": 640,
+        "empirical_claims": 0,
+        "fallback_count": 0,
+        "frontier_size": 2208,
+        "frontier_unit": "untried stored-node/operator pairs",
+        "global_exhaustion_proved": false,
+        "halt_reason": "MAX_NODES",
+        "history_identity": "word",
+        "nodes": 640,
+        "observations": 640,
+        "operation_coverage": {
+          "CONCAT": {
+            "accepted": 135,
+            "duplicate": 0,
+            "forbidden": 5,
+            "proposed": 140,
+            "resource_limited": 0
+          },
+          "RENAME": {
+            "accepted": 0,
+            "duplicate": 0,
+            "forbidden": 0,
+            "proposed": 0,
+            "resource_limited": 0
+          },
+          "REVERSE": {
+            "accepted": 71,
+            "duplicate": 70,
+            "forbidden": 0,
+            "proposed": 141,
+            "resource_limited": 0
+          },
+          "SPLIT": {
+            "accepted": 275,
+            "duplicate": 6,
+            "forbidden": 0,
+            "proposed": 282,
+            "resource_limited": 1
+          }
+        },
+        "policy": "symbolic-local-pareto-frontier/2",
+        "proved_claims": 210,
+        "provenance_trace_unit": "content-addressed DAG nodes, including source records",
+        "revisit_count": 0,
+        "revisited_nodes": 0,
+        "saturation_certificate_digest": null,
+        "stagnation_window": 16,
+        "steps": 141,
+        "termination_diagnostic_digest": "235586960942acebb7beaf9e61d7a76774d8d3f5842e7cc083f6f9b2386eab23",
+        "total_stored_tokens": 36799,
+        "underdetermined_claims": 1,
+        "unique_literal_words": 640,
+        "untried_allowed_operators": [
+          "CONCAT",
+          "SPLIT",
+          "RENAME",
+          "REVERSE"
+        ],
+        "witness_count": 3154
+      },
+      "before_result_digest": "b63b2a425a160917aecd01033593f956d6e6c5152be72b19bbd57e5ed4d3e95a",
+      "after_result_digest": "f86596c94d30ff0eea5e741b7b37c9eee4ffd7fadeae6118457fa26e5c5fcdb1",
+      "before_coverage": {
+        "per_operator": {
+          "CONCAT": {
+            "proposed": 140,
+            "accepted": 135,
+            "duplicate": 0,
+            "forbidden": 5,
+            "resource_limited": 0
+          },
+          "SPLIT": {
+            "proposed": 281,
+            "accepted": 275,
+            "duplicate": 6,
+            "forbidden": 0,
+            "resource_limited": 0
+          },
+          "RENAME": {
+            "proposed": 0,
+            "accepted": 0,
+            "duplicate": 0,
+            "forbidden": 0,
+            "resource_limited": 0
+          },
+          "REVERSE": {
+            "proposed": 141,
+            "accepted": 71,
+            "duplicate": 70,
+            "forbidden": 0,
+            "resource_limited": 0
+          }
+        },
+        "unrecorded_candidate_attempts": 1
+      },
+      "after_coverage": {
+        "per_operator": {
+          "CONCAT": {
+            "proposed": 140,
+            "accepted": 135,
+            "duplicate": 0,
+            "forbidden": 5,
+            "resource_limited": 0
+          },
+          "SPLIT": {
+            "proposed": 282,
+            "accepted": 275,
+            "duplicate": 6,
+            "forbidden": 0,
+            "resource_limited": 1
+          },
+          "RENAME": {
+            "proposed": 0,
+            "accepted": 0,
+            "duplicate": 0,
+            "forbidden": 0,
+            "resource_limited": 0
+          },
+          "REVERSE": {
+            "proposed": 141,
+            "accepted": 71,
+            "duplicate": 70,
+            "forbidden": 0,
+            "resource_limited": 0
+          }
+        },
+        "unrecorded_candidate_attempts": 0
+      }
+    },
+    {
+      "case": "mallarme_reverse",
+      "request_digest": "625ec4c12643d2e1bc5e47a124d75a661125a8284029c7f912b9303e3ba71cd1",
+      "source_sha256": "d26af9792f2e48d4183c927d044a0a643fc9e351e2f4b107f589d9d4202fd6cd",
+      "budgets": {
+        "history_identity": "word",
+        "max_candidates_per_step": 4,
+        "max_nodes": 640,
+        "max_steps": 160,
+        "max_word_tokens": 128,
+        "seed": 119,
+        "strategy": "local_structural_novelty"
+      },
+      "before": {
+        "attempted_candidates": 48,
+        "distinct_alpha_classes": 21,
+        "empirical_claims": 0,
+        "halt_reason": "NO_NOVEL_CANDIDATES",
+        "history_identity": "word",
+        "nodes": 60,
+        "observations": 60,
+        "proved_claims": 210,
+        "saturation_certificate_digest": "a5966491be2fc8ebbcdb8d2f7f0e7eb39e072b44f84164a54b3fa62f03e4699d",
+        "stagnation_window": 16,
+        "steps": 12,
+        "total_stored_tokens": 406,
+        "underdetermined_claims": 1,
+        "unique_literal_words": 60,
+        "witness_count": 258
+      },
+      "after": {
+        "attempted_candidates": 640,
+        "budgets": {
+          "history_identity": "word",
+          "max_candidates_per_step": 4,
+          "max_nodes": 640,
+          "max_observations": 8192,
+          "max_steps": 160,
+          "max_total_tokens": 131072,
+          "max_word_tokens": 128,
+          "seed": 119,
+          "strategy": "local_structural_novelty"
+        },
+        "candidate_attempts": 640,
+        "distinct_alpha_classes": 202,
+        "distinct_provenance_traces": 466,
+        "empirical_claims": 0,
+        "fallback_count": 2,
+        "frontier_size": 1478,
+        "frontier_unit": "untried stored-node/operator pairs",
+        "global_exhaustion_proved": false,
+        "halt_reason": "MAX_STEPS",
+        "history_identity": "word",
+        "nodes": 466,
+        "observations": 466,
+        "operation_coverage": {
+          "CONCAT": {
+            "accepted": 152,
+            "duplicate": 16,
+            "forbidden": 0,
+            "proposed": 168,
+            "resource_limited": 0
+          },
+          "RENAME": {
+            "accepted": 0,
+            "duplicate": 0,
+            "forbidden": 0,
+            "proposed": 0,
+            "resource_limited": 0
+          },
+          "REVERSE": {
+            "accepted": 106,
+            "duplicate": 46,
+            "forbidden": 0,
+            "proposed": 152,
+            "resource_limited": 0
+          },
+          "SPLIT": {
+            "accepted": 151,
+            "duplicate": 169,
+            "forbidden": 0,
+            "proposed": 320,
+            "resource_limited": 0
+          }
+        },
+        "policy": "symbolic-local-pareto-frontier/2",
+        "proved_claims": 210,
+        "provenance_trace_unit": "content-addressed DAG nodes, including source records",
+        "revisit_count": 6,
+        "revisited_nodes": 4,
+        "saturation_certificate_digest": "a4887d9d2a8a5eb8f048ce3ffabe59ef750932c278bc6c67ed74bc85cfdc95b8",
+        "stagnation_window": 16,
+        "steps": 160,
+        "termination_diagnostic_digest": "4f5ada76881dabb8041871a9855ed42e211dab897f380b083b50a6975828a356",
+        "total_stored_tokens": 2584,
+        "underdetermined_claims": 1,
+        "unique_literal_words": 466,
+        "untried_allowed_operators": [
+          "CONCAT",
+          "SPLIT",
+          "RENAME",
+          "REVERSE"
+        ],
+        "witness_count": 1914
+      },
+      "before_result_digest": "ed5155e74b641dff20e554f251f9be7c61bbce231e0f535b9e6f2bba0564f3c4",
+      "after_result_digest": "4ffd47a4d765b388e856978b85bd43328d45b7e6d4cf852dc92c19076468de45",
+      "before_coverage": {
+        "per_operator": {
+          "CONCAT": {
+            "proposed": 14,
+            "accepted": 8,
+            "duplicate": 6,
+            "forbidden": 0,
+            "resource_limited": 0
+          },
+          "SPLIT": {
+            "proposed": 24,
+            "accepted": 17,
+            "duplicate": 7,
+            "forbidden": 0,
+            "resource_limited": 0
+          },
+          "RENAME": {
+            "proposed": 0,
+            "accepted": 0,
+            "duplicate": 0,
+            "forbidden": 0,
+            "resource_limited": 0
+          },
+          "REVERSE": {
+            "proposed": 10,
+            "accepted": 6,
+            "duplicate": 4,
+            "forbidden": 0,
+            "resource_limited": 0
+          }
+        },
+        "unrecorded_candidate_attempts": 0
+      },
+      "after_coverage": {
+        "per_operator": {
+          "CONCAT": {
+            "proposed": 168,
+            "accepted": 152,
+            "duplicate": 16,
+            "forbidden": 0,
+            "resource_limited": 0
+          },
+          "SPLIT": {
+            "proposed": 320,
+            "accepted": 151,
+            "duplicate": 169,
+            "forbidden": 0,
+            "resource_limited": 0
+          },
+          "RENAME": {
+            "proposed": 0,
+            "accepted": 0,
+            "duplicate": 0,
+            "forbidden": 0,
+            "resource_limited": 0
+          },
+          "REVERSE": {
+            "proposed": 152,
+            "accepted": 106,
+            "duplicate": 46,
+            "forbidden": 0,
+            "resource_limited": 0
+          }
+        },
+        "unrecorded_candidate_attempts": 0
+      }
+    }
+  ],
+  "run_ids": {
+    "nostradamus_original_local_word": "3daf7ecc87ac6c7bb63ac7de5d330e851bdf817965a1cca664d3a13055ae6109",
+    "mallarme_original": "2bdcf9c668b534c973362c05a3d9a55550a8efed46b9287c84a03f860b8146b9",
+    "mallarme_reverse": "0803fbfc5981f11ae84042caa066d26414e2a8929b87d58a78af56534e3e92fd"
+  },
+  "nostradamus_export": {
+    "bundle_ref": "11b1b7b462618afa2ccdba48c236a1b08385a561f8b3544b2b12b08b6f5e2f14",
+    "run_id": "3daf7ecc87ac6c7bb63ac7de5d330e851bdf817965a1cca664d3a13055ae6109"
+  },
+  "offline_replay": {
+    "patch002": {
+      "execution_permission": false,
+      "journal_hash_chain": "PASS",
+      "kernel_binding": "7ce5c5ba0620b4dad1b3f1b62b2cba3338a1efb4a7852a6e1bf768fe5fd0a0c9",
+      "result_digest": "bf12e54911e4103011efc4f0d811d1d4405371b53bbda38cdbe4f5f59266cdd8",
+      "run_id": "3daf7ecc87ac6c7bb63ac7de5d330e851bdf817965a1cca664d3a13055ae6109",
+      "status": "REPLAY_MATCH",
+      "structural_recomputed": true,
+      "unrelated_legacy_operations": "NOT_REEXECUTED"
+    },
+    "patch001": {
+      "execution_permission": false,
+      "journal_hash_chain": "PASS",
+      "kernel_binding": "ea8df7eaa0f9e32e78cc86e7907606d7d9b7b5f857a8ca5fa73733062fd716fa",
+      "result_digest": "b134c3684e546b3ffa60ebf049f8393db9fc17beab45f118ef3007cfe1d529d8",
+      "run_id": "61c5af7aa611ed03e914ec72848a0ec84c608a785b44cab4c286696ec6001475",
+      "status": "REPLAY_MATCH",
+      "structural_recomputed": true,
+      "unrelated_legacy_operations": "NOT_REEXECUTED"
+    },
+    "v040": {
+      "execution_permission": false,
+      "journal_hash_chain": "PASS",
+      "kernel_binding": "404d9d2612633ee1f673dfdfeaa22dc8365ec59efb3902e70470497c69093cc7",
+      "result_digest": "f17aa98dd5695692c9efd31b46256d4ef1ec44025f12cad2b742db47b15cb62f",
+      "run_id": "bae7ef85b5678bfb4d4690702cec380eee732551c258ed27e7b0fada9f00e704",
+      "status": "REPLAY_MATCH",
+      "structural_recomputed": true,
+      "unrelated_legacy_operations": "NOT_REEXECUTED"
+    }
+  },
+  "SQLite": "4/4 integrity_check ok; original research rows preserved",
+  "workspace_snapshots": {
+    "backup-before": {
+      "original_files": 2272,
+      "byte_identical": 2271,
+      "valid_append_only_extensions": [
+        {
+          "file": "whitestar_dialog_test/journal.jsonl",
+          "original_bytes": 150594,
+          "current_bytes": 231295,
+          "original_prefix_preserved": true
+        }
+      ],
+      "all_original_bytes_preserved": true
+    },
+    "backup-cutover": {
+      "original_files": 3391,
+      "byte_identical": 3391,
+      "valid_append_only_extensions": [],
+      "all_original_bytes_preserved": true
+    }
+  },
+  "canonical_audit": {
+    "before": {
+      "ok": true,
+      "entries": 4817,
+      "last_hash": "c9c0048be5cc2e782cb2f2377da524e5ad04303d86b65792ef1d503b8c1c3d50"
+    },
+    "after": {
+      "ok": true,
+      "entries": 4817,
+      "last_hash": "c9c0048be5cc2e782cb2f2377da524e5ad04303d86b65792ef1d503b8c1c3d50"
+    },
+    "unchanged": true,
+    "prefix_preserved_by_original_SQLite_rows": true
+  },
+  "historical_summaries": {
+    "PATCH001": 17,
+    "PATCH002": 7,
+    "identical": true
+  },
+  "valid_journals": 19,
+  "protected_files": {
+    "AGENTS.md": {
+      "sha256": "968331ddc809f60cdbe7499abf212ddbfe52fca1d91bda425688d7dca4a7559b",
+      "unchanged": true
+    },
+    "src/lm_suti_assurance/symbolic/state.py": {
+      "sha256": "cfc311b77c2d7b5c3fbe49f6b6cd161abba7f3b4b245caf8fa003ade7ed01f93",
+      "unchanged": true
+    },
+    "src/lm_suti_assurance/symbolic/observers.py": {
+      "sha256": "d33c27f160eb84536d4bf0ad37e39e5510ad1b8e07e1b5973818ebae510f97fa",
+      "unchanged": true
+    },
+    "src/lm_suti_assurance/symbolic/contracts.py": {
+      "sha256": "25ad379f2ab6f954c9d9d857f14c69f3d6caf0ea2517fb8181e4a391d71e39ec",
+      "unchanged": true
+    },
+    "src/lm_suti_assurance/symbolic/grammar.py": {
+      "sha256": "8dd00c44c091a5d1ae5ac83bb831b70c4a0c74d7cd83c8d02a334e76f2ed8c6a",
+      "unchanged": true
+    },
+    "src/lm_suti_assurance/symbolic/worker.py": {
+      "sha256": "5b66c3bccafa924c252b02a1ee8fa6fe4f7e07388b71a0c4542ef3017ed01e45",
+      "unchanged": true
+    },
+    "src/lm_suti_assurance/symbolic/bundle.py": {
+      "sha256": "0e3d2a7c35c7c6b25988c37a3fde0dea3506feb0929f6cc19ecf4b1426a6cf63",
+      "unchanged": true
+    },
+    "src/lm_suti_assurance/symbolic/executor.py": {
+      "sha256": "e7aa0e03576ccaa5e1de60f473cc7639c46360af03d1a94529bd008cb760aa8b",
+      "unchanged": true
+    },
+    "src/lm_suti_assurance/symbolic/service.py": {
+      "sha256": "eaad561c8193f470d42acf350888c9d82b2c1c0c91f8cdf38e2f4ce250ff1fdc",
+      "unchanged": true
+    }
+  },
+  "golden_grammar_digest": "7d59f2be44baec063ab37f74c4eb80b623bedd3319142fa87a2324fdd9393469",
+  "worker_quotas_unchanged": {
+    "CPU_s": 5,
+    "wall_s": 6,
+    "RAM_bytes": 536870912,
+    "active_symbolic_jobs_all_profiles": 2,
+    "queue": 16
+  },
+  "limitations": [
+    "Only stored-node/operator pairs; one clock-sampled argument variant per pair, not exhaustive variants/algebra.",
+    "Node counts indicate structural coverage, not semantic discovery.",
+    "Grammar family remains UNDERDETERMINED; finite9/9 is not a theorem.",
+    "Full independent pentest, hosted CI and overnight load not run."
+  ],
+  "global_exhaustion_proved": false,
+  "execution_permission": false,
+  "native_SUTI": "NOT_EXECUTED",
+  "R3": "PENDING"
+}

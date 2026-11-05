@@ -1,0 +1,48 @@
+{
+  "algebra": {
+    "allow_reduce": false,
+    "kind": "FREE",
+    "preserve_history": true
+  },
+  "normalization": "none",
+  "observers": [
+    "literal",
+    "alpha_pattern",
+    "adjacency",
+    "substring_contexts",
+    "composition",
+    "hierarchy"
+  ],
+  "operators": [
+    "CONCAT",
+    "SPLIT",
+    "RENAME",
+    "REVERSE"
+  ],
+  "schema": "levinmas-white-star-symbolic-request/1",
+  "search": {
+    "history_identity": "word",
+    "max_candidates_per_step": 4,
+    "max_nodes": 384,
+    "max_steps": 128,
+    "max_word_tokens": 96,
+    "seed": 119,
+    "strategy": "local_structural_novelty"
+  },
+  "segmentation": {
+    "record_boundaries": "lines",
+    "renaming_scope": "global",
+    "unit": "whitespace"
+  },
+  "source": {
+    "author": "Michel de Nostredame",
+    "language": "fr",
+    "rights": "Public domain original poem; transcription from Sacred Texts Archive",
+    "sha256": "1855b60a8a93c5054ba1f851db6d1bd5bce95d9325db2faadb420d1a5f3b3638",
+    "text": "Estant assis de nuict secret estude,\nSeul reposé fus la selle d'airain;\nFlambe exigue sortant de solitude\nFeit proferer qui n'est à croire en vain.\nLa verge en main mise au milieu des branches,\nDe l'onde il moulle le limbe & le pied,\nVn peur & voix fremissent par les manches,\nSplendeur diuine, le diuin pres s'assied.",
+    "title": "Nostradamus, Centurie I:1–2, original"
+  },
+  "task": {
+    "mode": "descriptive"
+  }
+}

@@ -1,0 +1,43 @@
+# PATCH002 — изменённые файлы
+
+- `CHANGELOG.md`
+- `README.md`
+- `docs/LIVINGMATH_SYMBOLIC_PATCH002/01_ACCEPTANCE_RU.md`
+- `docs/LIVINGMATH_SYMBOLIC_PATCH002/02_TZ_PATCH002_RU.md`
+- `docs/LIVINGMATH_SYMBOLIC_PATCH002/03_PROMPT_CODE_AGENT_RU.md`
+- `docs/LIVINGMATH_SYMBOLIC_PATCH002/04_TEST_MATRIX_RU.md`
+- `docs/LIVINGMATH_SYMBOLIC_PATCH002/05_RUN_IDS.json`
+- `docs/LIVINGMATH_SYMBOLIC_PATCH002/06_FIXTURE_NOSTRADAMUS.txt`
+- `docs/LIVINGMATH_SYMBOLIC_PATCH002/README_RU.md`
+- `docs/LIVINGMATH_SYMBOLIC_PATCH002/reproduction/controller_golden.json`
+- `docs/LIVINGMATH_SYMBOLIC_PATCH002/reproduction/grammar_golden.json`
+- `docs/LIVINGMATH_SYMBOLIC_PATCH002/reproduction/mallarme_original.request.json`
+- `docs/LIVINGMATH_SYMBOLIC_PATCH002/reproduction/mallarme_reverse.request.json`
+- `docs/LIVINGMATH_SYMBOLIC_PATCH002/reproduction/nostradamus_original_local_word.request.json`
+- `docs/LIVINGMATH_SYMBOLIC_PATCH002/reproduction/patch001_palindrome_regression.request.json`
+- `docs/LIVINGMATH_SYMBOLIC_PATCH002_ACCEPTANCE_REAL_TESTS_20261105.zip`
+- `docs/superpowers/plans/2026-11-05-symbolic-patch002.md`
+- `docs/symbolic-v1/QUICKSTART_RU.md`
+- `docs/symbolic-v1/patch002/ACCEPTANCE_MATRIX.json`
+- `docs/symbolic-v1/patch002/BEFORE_AFTER.json`
+- `docs/symbolic-v1/patch002/BENCHMARK_REPORT_RU.md`
+- `docs/symbolic-v1/patch002/CHANGED_FILES.md`
+- `docs/symbolic-v1/patch002/INTEGRITY.json`
+- `docs/symbolic-v1/patch002/PATCH002_IMPLEMENTATION_RU.md`
+- `docs/symbolic-v1/patch002/PROTECTED_FILES.json`
+- `docs/symbolic-v1/patch002/RCA_RU.md`
+- `docs/symbolic-v1/patch002/REGRESSION_RESULTS.json`
+- `docs/symbolic-v1/patch002/USER_REPORT_RU.md`
+- `docs/symbolic-v1/patch002/release_manifest.json`
+- `pyproject.toml`
+- `src/lm_suti_assurance/__init__.py`
+- `src/lm_suti_assurance/symbolic/kernel.py`
+- `src/lm_suti_assurance/symbolic/mcp.py`
+- `src/lm_suti_assurance/symbolic/search.py`
+- `tests/test_symbolic_patch001.py`
+- `tests/test_symbolic_patch002.py`
+- `tools/release_v01_entry.py`
+- `tools/symbolic_patch001_mcp_qa.py`
+- `tools/symbolic_patch002_acceptance.py`
+
+Runtime: ровно5 файлов accepted manifest из178. Mathematical state/observers/contracts/grammar, isolated worker, service/bundle/executor, frozen ядро,75 White Star источников и AGENTS.md не изменены. Остальное — тесты, dev QA tools, исходный архив/fixtures и документация.

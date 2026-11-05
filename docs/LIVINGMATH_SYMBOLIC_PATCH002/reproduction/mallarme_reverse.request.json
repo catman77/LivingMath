@@ -1,0 +1,46 @@
+{
+  "algebra": {
+    "allow_reduce": false,
+    "kind": "FREE",
+    "preserve_history": true
+  },
+  "observers": [
+    "literal",
+    "alpha_pattern",
+    "adjacency",
+    "substring_contexts",
+    "composition",
+    "hierarchy"
+  ],
+  "operators": [
+    "CONCAT",
+    "SPLIT",
+    "RENAME",
+    "REVERSE"
+  ],
+  "schema": "levinmas-white-star-symbolic-request/1",
+  "search": {
+    "history_identity": "word",
+    "max_candidates_per_step": 4,
+    "max_nodes": 640,
+    "max_steps": 160,
+    "max_word_tokens": 128,
+    "seed": 119,
+    "strategy": "local_structural_novelty"
+  },
+  "segmentation": {
+    "record_boundaries": "lines",
+    "renaming_scope": "global",
+    "unit": "whitespace"
+  },
+  "source": {
+    "language": "fr",
+    "rights": "Public domain selected lines, control transformation",
+    "sha256": "d26af9792f2e48d4183c927d044a0a643fc9e351e2f4b107f589d9d4202fd6cd",
+    "text": "Toute Pensée émet un Coup de Dés\nUNE CONSTELLATION\nPEUT-ÊTRE\nEXCEPTÉ\nQUE LE LIEU\nN’AURA EU LIEU\nRIEN\nLE MAÎTRE\nSOIT\nDU FOND D’UN NAUFRAGE\nQUAND BIEN MÊME LANCÉ DANS DES CIRCONSTANCES ÉTERNELLES\nLE HASARD\nN’ABOLIRA\nJAMAIS\nUN COUP DE DÉS",
+    "title": "Mallarme reversed line order"
+  },
+  "task": {
+    "mode": "descriptive"
+  }
+}

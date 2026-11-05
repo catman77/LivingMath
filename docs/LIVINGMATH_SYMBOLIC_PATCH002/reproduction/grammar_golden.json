@@ -1,0 +1,1994 @@
+{
+  "grammar_sha256": "7d59f2be44baec063ab37f74c4eb80b623bedd3319142fa87a2324fdd9393469",
+  "grammar_hypotheses": [
+    {
+      "alphabet_roles": [
+        "A",
+        "B"
+      ],
+      "candidate_derivation_trace": [
+        {
+          "ast": {
+            "base_max_tokens": 1,
+            "composition": "aligned_token_equality",
+            "expected_equal": true,
+            "left_operations": [
+              "SPLIT"
+            ],
+            "offset": 0,
+            "right_operations": [
+              "REVERSE",
+              "SPLIT"
+            ]
+          },
+          "ast_digest": "5c523c5a10c4e4aa4f1cfa06e2b1878d2133c0bac5891e02ce35e9da3495f135",
+          "counterexample_train_ids": [],
+          "status": "TRAIN_COMPATIBLE",
+          "tested_train_samples": 8
+        },
+        {
+          "ast": {
+            "base_max_tokens": 3,
+            "composition": "aligned_token_equality",
+            "expected_equal": true,
+            "left_operations": [
+              "SPLIT"
+            ],
+            "offset": 1,
+            "right_operations": [
+              "REVERSE",
+              "SPLIT"
+            ]
+          },
+          "ast_digest": "216159a6476fd2d9dad6d2bbe6b834bc5bc3a693ead4c4a01358e27c3941625e",
+          "counterexample_train_ids": [],
+          "status": "TRAIN_COMPATIBLE",
+          "tested_train_samples": 8
+        },
+        {
+          "ast": {
+            "base_max_tokens": 1,
+            "composition": "iterate_on_inner_fragment",
+            "fragment_operations": [
+              "SPLIT",
+              "SPLIT"
+            ],
+            "relation": {
+              "base_max_tokens": 1,
+              "composition": "aligned_token_equality",
+              "expected_equal": true,
+              "left_operations": [
+                "SPLIT"
+              ],
+              "offset": 0,
+              "right_operations": [
+                "REVERSE",
+                "SPLIT"
+              ]
+            },
+            "trim_left": 1,
+            "trim_right": 1
+          },
+          "ast_digest": "b5c20366e2902983352e88b017f458f7244c16145cde7d502ace9757b5c4170f",
+          "counterexample_train_ids": [],
+          "status": "TRAIN_COMPATIBLE",
+          "tested_train_samples": 8
+        },
+        {
+          "ast_digest": "4b92894b50b248782f97acbd49b3300590098362b94a2e9aeb6fc83029eccf4c",
+          "reason": "MAX_RULES",
+          "required_nodes": 9
+        }
+      ],
+      "candidate_status": "EMPIRICAL",
+      "competing_train_compatible_models": [
+        {
+          "accepted_words": [
+            [
+              "A",
+              "A",
+              "A",
+              "A"
+            ],
+            [
+              "A",
+              "B",
+              "B",
+              "A"
+            ],
+            [
+              "B",
+              "B",
+              "B",
+              "B"
+            ],
+            [
+              "B",
+              "A",
+              "A",
+              "B"
+            ]
+          ],
+          "formalism": "finite_membership_set"
+        },
+        {
+          "accepted_words": [
+            [
+              "A",
+              "A",
+              "A",
+              "A"
+            ],
+            [
+              "A",
+              "B",
+              "B",
+              "A"
+            ],
+            [
+              "B",
+              "B",
+              "B",
+              "B"
+            ],
+            [
+              "B",
+              "A",
+              "A",
+              "B"
+            ],
+            [
+              "A"
+            ]
+          ],
+          "formalism": "finite_membership_set"
+        }
+      ],
+      "context_relations": [
+        {
+          "K": 8,
+          "counterexamples": [],
+          "kind": "empirical",
+          "left": "A",
+          "relation": "finite_context_compatibility",
+          "right": "B",
+          "status": "COMPATIBLE_ON_OBSERVED_K",
+          "support": [
+            {
+              "context": [
+                [],
+                [
+                  "A",
+                  "A"
+                ]
+              ],
+              "left_train": [
+                [
+                  2,
+                  true
+                ]
+              ],
+              "right_train": [
+                [
+                  6,
+                  true
+                ]
+              ]
+            },
+            {
+              "context": [
+                [],
+                [
+                  "A",
+                  "B"
+                ]
+              ],
+              "left_train": [
+                [
+                  7,
+                  false
+                ]
+              ],
+              "right_train": [
+                [
+                  0,
+                  false
+                ]
+              ]
+            },
+            {
+              "context": [
+                [],
+                [
+                  "B",
+                  "A"
+                ]
+              ],
+              "left_train": [
+                [
+                  5,
+                  false
+                ]
+              ],
+              "right_train": [
+                [
+                  1,
+                  false
+                ]
+              ]
+            },
+            {
+              "context": [
+                [],
+                [
+                  "B",
+                  "B"
+                ]
+              ],
+              "left_train": [
+                [
+                  3,
+                  true
+                ]
+              ],
+              "right_train": [
+                [
+                  4,
+                  true
+                ]
+              ]
+            },
+            {
+              "context": [
+                [
+                  "A",
+                  "A"
+                ],
+                []
+              ],
+              "left_train": [
+                [
+                  2,
+                  true
+                ]
+              ],
+              "right_train": [
+                [
+                  6,
+                  true
+                ]
+              ]
+            },
+            {
+              "context": [
+                [
+                  "A",
+                  "B"
+                ],
+                []
+              ],
+              "left_train": [
+                [
+                  0,
+                  false
+                ]
+              ],
+              "right_train": [
+                [
+                  7,
+                  false
+                ]
+              ]
+            },
+            {
+              "context": [
+                [
+                  "B",
+                  "A"
+                ],
+                []
+              ],
+              "left_train": [
+                [
+                  1,
+                  false
+                ]
+              ],
+              "right_train": [
+                [
+                  5,
+                  false
+                ]
+              ]
+            },
+            {
+              "context": [
+                [
+                  "B",
+                  "B"
+                ],
+                []
+              ],
+              "left_train": [
+                [
+                  3,
+                  true
+                ]
+              ],
+              "right_train": [
+                [
+                  4,
+                  true
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "counterexample_candidates": [
+        {
+          "candidate_predictions": {
+            "216159a6476fd2d9dad6d2bbe6b834bc5bc3a693ead4c4a01358e27c3941625e": false,
+            "5c523c5a10c4e4aa4f1cfa06e2b1878d2133c0bac5891e02ce35e9da3495f135": true,
+            "639df77c470781c48f92f61739e0b2dfffe37e06b0c669b2646efe3fdfbd51f9": true,
+            "b5c20366e2902983352e88b017f458f7244c16145cde7d502ace9757b5c4170f": false
+          },
+          "derivation": {
+            "operations": [
+              "SPLIT",
+              "SUBSTITUTE",
+              "CONCAT"
+            ],
+            "position": 0,
+            "replacement": "A"
+          },
+          "kind": "membership_query",
+          "label": "REQUIRED_FROM_EXTERNAL_HOLDER",
+          "scope": "separates retained train-compatible candidates, not every possible grammar",
+          "source_train_id": 0,
+          "tokens": [
+            "A",
+            "A",
+            "B",
+            "A"
+          ]
+        },
+        {
+          "candidate_predictions": {
+            "216159a6476fd2d9dad6d2bbe6b834bc5bc3a693ead4c4a01358e27c3941625e": true,
+            "5c523c5a10c4e4aa4f1cfa06e2b1878d2133c0bac5891e02ce35e9da3495f135": false,
+            "639df77c470781c48f92f61739e0b2dfffe37e06b0c669b2646efe3fdfbd51f9": false,
+            "b5c20366e2902983352e88b017f458f7244c16145cde7d502ace9757b5c4170f": false
+          },
+          "derivation": {
+            "operations": [
+              "SPLIT",
+              "SUBSTITUTE",
+              "CONCAT"
+            ],
+            "position": 2,
+            "replacement": "A"
+          },
+          "kind": "membership_query",
+          "label": "REQUIRED_FROM_EXTERNAL_HOLDER",
+          "scope": "separates retained train-compatible candidates, not every possible grammar",
+          "source_train_id": 0,
+          "tokens": [
+            "B",
+            "A",
+            "A",
+            "A"
+          ]
+        },
+        {
+          "candidate_predictions": {
+            "216159a6476fd2d9dad6d2bbe6b834bc5bc3a693ead4c4a01358e27c3941625e": false,
+            "5c523c5a10c4e4aa4f1cfa06e2b1878d2133c0bac5891e02ce35e9da3495f135": true,
+            "639df77c470781c48f92f61739e0b2dfffe37e06b0c669b2646efe3fdfbd51f9": true,
+            "b5c20366e2902983352e88b017f458f7244c16145cde7d502ace9757b5c4170f": false
+          },
+          "derivation": {
+            "operations": [
+              "SPLIT",
+              "SUBSTITUTE",
+              "CONCAT"
+            ],
+            "position": 3,
+            "replacement": "B"
+          },
+          "kind": "membership_query",
+          "label": "REQUIRED_FROM_EXTERNAL_HOLDER",
+          "scope": "separates retained train-compatible candidates, not every possible grammar",
+          "source_train_id": 0,
+          "tokens": [
+            "B",
+            "A",
+            "B",
+            "B"
+          ]
+        },
+        {
+          "candidate_predictions": {
+            "216159a6476fd2d9dad6d2bbe6b834bc5bc3a693ead4c4a01358e27c3941625e": false,
+            "5c523c5a10c4e4aa4f1cfa06e2b1878d2133c0bac5891e02ce35e9da3495f135": true,
+            "639df77c470781c48f92f61739e0b2dfffe37e06b0c669b2646efe3fdfbd51f9": true,
+            "b5c20366e2902983352e88b017f458f7244c16145cde7d502ace9757b5c4170f": false
+          },
+          "derivation": {
+            "operations": [
+              "SPLIT",
+              "SUBSTITUTE",
+              "CONCAT"
+            ],
+            "position": 0,
+            "replacement": "A"
+          },
+          "kind": "membership_query",
+          "label": "REQUIRED_FROM_EXTERNAL_HOLDER",
+          "scope": "separates retained train-compatible candidates, not every possible grammar",
+          "source_train_id": 1,
+          "tokens": [
+            "A",
+            "B",
+            "A",
+            "A"
+          ]
+        },
+        {
+          "candidate_predictions": {
+            "216159a6476fd2d9dad6d2bbe6b834bc5bc3a693ead4c4a01358e27c3941625e": true,
+            "5c523c5a10c4e4aa4f1cfa06e2b1878d2133c0bac5891e02ce35e9da3495f135": false,
+            "639df77c470781c48f92f61739e0b2dfffe37e06b0c669b2646efe3fdfbd51f9": false,
+            "b5c20366e2902983352e88b017f458f7244c16145cde7d502ace9757b5c4170f": false
+          },
+          "derivation": {
+            "operations": [
+              "SPLIT",
+              "SUBSTITUTE",
+              "CONCAT"
+            ],
+            "position": 2,
+            "replacement": "B"
+          },
+          "kind": "membership_query",
+          "label": "REQUIRED_FROM_EXTERNAL_HOLDER",
+          "scope": "separates retained train-compatible candidates, not every possible grammar",
+          "source_train_id": 1,
+          "tokens": [
+            "B",
+            "B",
+            "B",
+            "A"
+          ]
+        },
+        {
+          "candidate_predictions": {
+            "216159a6476fd2d9dad6d2bbe6b834bc5bc3a693ead4c4a01358e27c3941625e": false,
+            "5c523c5a10c4e4aa4f1cfa06e2b1878d2133c0bac5891e02ce35e9da3495f135": true,
+            "639df77c470781c48f92f61739e0b2dfffe37e06b0c669b2646efe3fdfbd51f9": true,
+            "b5c20366e2902983352e88b017f458f7244c16145cde7d502ace9757b5c4170f": false
+          },
+          "derivation": {
+            "operations": [
+              "SPLIT",
+              "SUBSTITUTE",
+              "CONCAT"
+            ],
+            "position": 3,
+            "replacement": "B"
+          },
+          "kind": "membership_query",
+          "label": "REQUIRED_FROM_EXTERNAL_HOLDER",
+          "scope": "separates retained train-compatible candidates, not every possible grammar",
+          "source_train_id": 1,
+          "tokens": [
+            "B",
+            "B",
+            "A",
+            "B"
+          ]
+        },
+        {
+          "candidate_predictions": {
+            "216159a6476fd2d9dad6d2bbe6b834bc5bc3a693ead4c4a01358e27c3941625e": true,
+            "5c523c5a10c4e4aa4f1cfa06e2b1878d2133c0bac5891e02ce35e9da3495f135": false,
+            "639df77c470781c48f92f61739e0b2dfffe37e06b0c669b2646efe3fdfbd51f9": false,
+            "b5c20366e2902983352e88b017f458f7244c16145cde7d502ace9757b5c4170f": false
+          },
+          "derivation": {
+            "operations": [
+              "SPLIT",
+              "SUBSTITUTE",
+              "CONCAT"
+            ],
+            "position": 3,
+            "replacement": "B"
+          },
+          "kind": "membership_query",
+          "label": "REQUIRED_FROM_EXTERNAL_HOLDER",
+          "scope": "separates retained train-compatible candidates, not every possible grammar",
+          "source_train_id": 2,
+          "tokens": [
+            "A",
+            "A",
+            "A",
+            "B"
+          ]
+        },
+        {
+          "candidate_predictions": {
+            "216159a6476fd2d9dad6d2bbe6b834bc5bc3a693ead4c4a01358e27c3941625e": true,
+            "5c523c5a10c4e4aa4f1cfa06e2b1878d2133c0bac5891e02ce35e9da3495f135": true,
+            "639df77c470781c48f92f61739e0b2dfffe37e06b0c669b2646efe3fdfbd51f9": true,
+            "b5c20366e2902983352e88b017f458f7244c16145cde7d502ace9757b5c4170f": false
+          },
+          "derivation": {
+            "inserted_observed_atoms": [
+              "B",
+              "A"
+            ],
+            "operations": [
+              "SPLIT",
+              "CONCAT",
+              "CONCAT"
+            ],
+            "position": 2
+          },
+          "kind": "membership_query",
+          "label": "REQUIRED_FROM_EXTERNAL_HOLDER",
+          "scope": "separates retained train-compatible candidates, not every possible grammar",
+          "source_train_id": 2,
+          "tokens": [
+            "A",
+            "A",
+            "B",
+            "A",
+            "A",
+            "A"
+          ]
+        }
+      ],
+      "distinguishing_predictions": [
+        false,
+        true
+      ],
+      "distinguishing_word": [
+        "A"
+      ],
+      "execution_permission": false,
+      "family_status": "UNDERDETERMINED",
+      "feature_mode": "structural",
+      "formalism": "bounded_observed_relation_tree",
+      "hypothesis_complexity": {
+        "ast_depth": 4,
+        "ast_nodes": 8
+      },
+      "hypothesis_digest": "731aa25b9aed099e13ce4fa35960e990a979f8e9b387d9ff8ab5305a7ceb44c9",
+      "identifiability": "FINITE_TRAIN_DOES_NOT_IDENTIFY_UNIQUE_GRAMMAR",
+      "identifiability_status": "UNDERDETERMINED",
+      "max_rules": 8,
+      "observers": [
+        "alpha_pattern",
+        "adjacency",
+        "substring_contexts",
+        "composition"
+      ],
+      "probability_semantics": "Laplace score for selected empirical candidate, not posterior confidence in a unique grammar",
+      "relational_rule_ast": {
+        "base_max_tokens": 1,
+        "composition": "iterate_on_inner_fragment",
+        "fragment_operations": [
+          "SPLIT",
+          "SPLIT"
+        ],
+        "relation": {
+          "base_max_tokens": 1,
+          "composition": "aligned_token_equality",
+          "expected_equal": true,
+          "left_operations": [
+            "SPLIT"
+          ],
+          "offset": 0,
+          "right_operations": [
+            "REVERSE",
+            "SPLIT"
+          ]
+        },
+        "trim_left": 1,
+        "trim_right": 1
+      },
+      "rule_witnesses": [
+        {
+          "input_pointer": "/grammar_hypotheses/0/train_samples/0/tokens",
+          "operator_decision": false,
+          "positions": [
+            {
+              "expected_equal": true,
+              "fragment_range": [
+                0,
+                4
+              ],
+              "left_position": 0,
+              "left_token": "B",
+              "matches": false,
+              "operations": [
+                "REVERSE",
+                "SPLIT",
+                "token_equality"
+              ],
+              "right_position": 3,
+              "right_token": "A"
+            }
+          ],
+          "supplied_membership": false,
+          "tokens": [
+            "B",
+            "A",
+            "B",
+            "A"
+          ],
+          "train_id": 0,
+          "train_sample_digest": "17145980108b3885b9b982c85894fe57a908edb16ce577c97f8008214d1e5f1f"
+        },
+        {
+          "input_pointer": "/grammar_hypotheses/0/train_samples/1/tokens",
+          "operator_decision": false,
+          "positions": [
+            {
+              "expected_equal": true,
+              "fragment_range": [
+                0,
+                4
+              ],
+              "left_position": 0,
+              "left_token": "B",
+              "matches": false,
+              "operations": [
+                "REVERSE",
+                "SPLIT",
+                "token_equality"
+              ],
+              "right_position": 3,
+              "right_token": "A"
+            }
+          ],
+          "supplied_membership": false,
+          "tokens": [
+            "B",
+            "B",
+            "A",
+            "A"
+          ],
+          "train_id": 1,
+          "train_sample_digest": "1a1fbff0838a1c65561439815546e0b7cc97a6198cd46569c3222a49bf15b596"
+        },
+        {
+          "input_pointer": "/grammar_hypotheses/0/train_samples/2/tokens",
+          "operator_decision": true,
+          "positions": [
+            {
+              "expected_equal": true,
+              "fragment_range": [
+                0,
+                4
+              ],
+              "left_position": 0,
+              "left_token": "A",
+              "matches": true,
+              "operations": [
+                "REVERSE",
+                "SPLIT",
+                "token_equality"
+              ],
+              "right_position": 3,
+              "right_token": "A"
+            },
+            {
+              "expected_equal": true,
+              "fragment_range": [
+                1,
+                3
+              ],
+              "left_position": 1,
+              "left_token": "A",
+              "matches": true,
+              "operations": [
+                "REVERSE",
+                "SPLIT",
+                "token_equality"
+              ],
+              "right_position": 2,
+              "right_token": "A"
+            }
+          ],
+          "supplied_membership": true,
+          "tokens": [
+            "A",
+            "A",
+            "A",
+            "A"
+          ],
+          "train_id": 2,
+          "train_sample_digest": "3e931b1883df77b62517968c7b64a6d75a155c4165b08251e63278239f39c050"
+        },
+        {
+          "input_pointer": "/grammar_hypotheses/0/train_samples/3/tokens",
+          "operator_decision": true,
+          "positions": [
+            {
+              "expected_equal": true,
+              "fragment_range": [
+                0,
+                4
+              ],
+              "left_position": 0,
+              "left_token": "A",
+              "matches": true,
+              "operations": [
+                "REVERSE",
+                "SPLIT",
+                "token_equality"
+              ],
+              "right_position": 3,
+              "right_token": "A"
+            },
+            {
+              "expected_equal": true,
+              "fragment_range": [
+                1,
+                3
+              ],
+              "left_position": 1,
+              "left_token": "B",
+              "matches": true,
+              "operations": [
+                "REVERSE",
+                "SPLIT",
+                "token_equality"
+              ],
+              "right_position": 2,
+              "right_token": "B"
+            }
+          ],
+          "supplied_membership": true,
+          "tokens": [
+            "A",
+            "B",
+            "B",
+            "A"
+          ],
+          "train_id": 3,
+          "train_sample_digest": "95c439e54023349968bec46288238913ea4ca723e67abb13fbf826d0faf1ae0c"
+        },
+        {
+          "input_pointer": "/grammar_hypotheses/0/train_samples/4/tokens",
+          "operator_decision": true,
+          "positions": [
+            {
+              "expected_equal": true,
+              "fragment_range": [
+                0,
+                4
+              ],
+              "left_position": 0,
+              "left_token": "B",
+              "matches": true,
+              "operations": [
+                "REVERSE",
+                "SPLIT",
+                "token_equality"
+              ],
+              "right_position": 3,
+              "right_token": "B"
+            },
+            {
+              "expected_equal": true,
+              "fragment_range": [
+                1,
+                3
+              ],
+              "left_position": 1,
+              "left_token": "B",
+              "matches": true,
+              "operations": [
+                "REVERSE",
+                "SPLIT",
+                "token_equality"
+              ],
+              "right_position": 2,
+              "right_token": "B"
+            }
+          ],
+          "supplied_membership": true,
+          "tokens": [
+            "B",
+            "B",
+            "B",
+            "B"
+          ],
+          "train_id": 4,
+          "train_sample_digest": "b2f728f834e4e2774f8965bda868c0ad88455719b803602e215484503e4306ab"
+        },
+        {
+          "input_pointer": "/grammar_hypotheses/0/train_samples/5/tokens",
+          "operator_decision": false,
+          "positions": [
+            {
+              "expected_equal": true,
+              "fragment_range": [
+                0,
+                4
+              ],
+              "left_position": 0,
+              "left_token": "A",
+              "matches": false,
+              "operations": [
+                "REVERSE",
+                "SPLIT",
+                "token_equality"
+              ],
+              "right_position": 3,
+              "right_token": "B"
+            }
+          ],
+          "supplied_membership": false,
+          "tokens": [
+            "A",
+            "B",
+            "A",
+            "B"
+          ],
+          "train_id": 5,
+          "train_sample_digest": "c2c207b7261f91de83d09a2b3e67b728bb9689391f0453610922cbb35d7d813c"
+        },
+        {
+          "input_pointer": "/grammar_hypotheses/0/train_samples/6/tokens",
+          "operator_decision": true,
+          "positions": [
+            {
+              "expected_equal": true,
+              "fragment_range": [
+                0,
+                4
+              ],
+              "left_position": 0,
+              "left_token": "B",
+              "matches": true,
+              "operations": [
+                "REVERSE",
+                "SPLIT",
+                "token_equality"
+              ],
+              "right_position": 3,
+              "right_token": "B"
+            },
+            {
+              "expected_equal": true,
+              "fragment_range": [
+                1,
+                3
+              ],
+              "left_position": 1,
+              "left_token": "A",
+              "matches": true,
+              "operations": [
+                "REVERSE",
+                "SPLIT",
+                "token_equality"
+              ],
+              "right_position": 2,
+              "right_token": "A"
+            }
+          ],
+          "supplied_membership": true,
+          "tokens": [
+            "B",
+            "A",
+            "A",
+            "B"
+          ],
+          "train_id": 6,
+          "train_sample_digest": "c54fb5973cc70129dcc6e97c7867639e3e70853730b0bc6666c618e9917d1555"
+        },
+        {
+          "input_pointer": "/grammar_hypotheses/0/train_samples/7/tokens",
+          "operator_decision": false,
+          "positions": [
+            {
+              "expected_equal": true,
+              "fragment_range": [
+                0,
+                4
+              ],
+              "left_position": 0,
+              "left_token": "A",
+              "matches": false,
+              "operations": [
+                "REVERSE",
+                "SPLIT",
+                "token_equality"
+              ],
+              "right_position": 3,
+              "right_token": "B"
+            }
+          ],
+          "supplied_membership": false,
+          "tokens": [
+            "A",
+            "A",
+            "B",
+            "B"
+          ],
+          "train_id": 7,
+          "train_sample_digest": "e747ad04840fba1c9a2818e20c60dccbbb1b3581aa73cdeb602d8a9b8c12a5a4"
+        }
+      ],
+      "schema": "livingmath-symbolic-grammar/1",
+      "scope": {
+        "max_candidate_derivations": 32,
+        "max_prediction_tokens": 512,
+        "max_probe_derivations": 64,
+        "max_rules": 8,
+        "reason": "finite observed alignments cannot identify a unique language",
+        "relation_scope": "within each word; arbitrary atom names",
+        "renaming_scope": "global",
+        "train_lengths": [
+          4
+        ],
+        "training_index_namespace": "frozen grammar_hypotheses[0].train_samples; match input members by sample digest"
+      },
+      "selected_candidate_id": "b5c20366e2902983352e88b017f458f7244c16145cde7d502ace9757b5c4170f",
+      "selected_formalism": "observed_relation_composition",
+      "status": "UNDERDETERMINED",
+      "train_compatible_candidates": [
+        {
+          "ast": {
+            "base_max_tokens": 1,
+            "composition": "aligned_token_equality",
+            "expected_equal": true,
+            "left_operations": [
+              "SPLIT"
+            ],
+            "offset": 0,
+            "right_operations": [
+              "REVERSE",
+              "SPLIT"
+            ]
+          },
+          "candidate_id": "5c523c5a10c4e4aa4f1cfa06e2b1878d2133c0bac5891e02ce35e9da3495f135",
+          "candidate_status": "EMPIRICAL",
+          "formalism": "observed_relation_composition",
+          "hypothesis_complexity": {
+            "ast_depth": 3,
+            "ast_nodes": 4
+          },
+          "relation_coverage": 1,
+          "rule_witnesses": [
+            {
+              "input_pointer": "/grammar_hypotheses/0/train_samples/0/tokens",
+              "operator_decision": false,
+              "positions": [
+                {
+                  "expected_equal": true,
+                  "fragment_range": [
+                    0,
+                    4
+                  ],
+                  "left_position": 0,
+                  "left_token": "B",
+                  "matches": false,
+                  "operations": [
+                    "REVERSE",
+                    "SPLIT",
+                    "token_equality"
+                  ],
+                  "right_position": 3,
+                  "right_token": "A"
+                }
+              ],
+              "supplied_membership": false,
+              "tokens": [
+                "B",
+                "A",
+                "B",
+                "A"
+              ],
+              "train_id": 0,
+              "train_sample_digest": "17145980108b3885b9b982c85894fe57a908edb16ce577c97f8008214d1e5f1f"
+            },
+            {
+              "input_pointer": "/grammar_hypotheses/0/train_samples/1/tokens",
+              "operator_decision": false,
+              "positions": [
+                {
+                  "expected_equal": true,
+                  "fragment_range": [
+                    0,
+                    4
+                  ],
+                  "left_position": 0,
+                  "left_token": "B",
+                  "matches": false,
+                  "operations": [
+                    "REVERSE",
+                    "SPLIT",
+                    "token_equality"
+                  ],
+                  "right_position": 3,
+                  "right_token": "A"
+                }
+              ],
+              "supplied_membership": false,
+              "tokens": [
+                "B",
+                "B",
+                "A",
+                "A"
+              ],
+              "train_id": 1,
+              "train_sample_digest": "1a1fbff0838a1c65561439815546e0b7cc97a6198cd46569c3222a49bf15b596"
+            },
+            {
+              "input_pointer": "/grammar_hypotheses/0/train_samples/2/tokens",
+              "operator_decision": true,
+              "positions": [
+                {
+                  "expected_equal": true,
+                  "fragment_range": [
+                    0,
+                    4
+                  ],
+                  "left_position": 0,
+                  "left_token": "A",
+                  "matches": true,
+                  "operations": [
+                    "REVERSE",
+                    "SPLIT",
+                    "token_equality"
+                  ],
+                  "right_position": 3,
+                  "right_token": "A"
+                }
+              ],
+              "supplied_membership": true,
+              "tokens": [
+                "A",
+                "A",
+                "A",
+                "A"
+              ],
+              "train_id": 2,
+              "train_sample_digest": "3e931b1883df77b62517968c7b64a6d75a155c4165b08251e63278239f39c050"
+            },
+            {
+              "input_pointer": "/grammar_hypotheses/0/train_samples/3/tokens",
+              "operator_decision": true,
+              "positions": [
+                {
+                  "expected_equal": true,
+                  "fragment_range": [
+                    0,
+                    4
+                  ],
+                  "left_position": 0,
+                  "left_token": "A",
+                  "matches": true,
+                  "operations": [
+                    "REVERSE",
+                    "SPLIT",
+                    "token_equality"
+                  ],
+                  "right_position": 3,
+                  "right_token": "A"
+                }
+              ],
+              "supplied_membership": true,
+              "tokens": [
+                "A",
+                "B",
+                "B",
+                "A"
+              ],
+              "train_id": 3,
+              "train_sample_digest": "95c439e54023349968bec46288238913ea4ca723e67abb13fbf826d0faf1ae0c"
+            },
+            {
+              "input_pointer": "/grammar_hypotheses/0/train_samples/4/tokens",
+              "operator_decision": true,
+              "positions": [
+                {
+                  "expected_equal": true,
+                  "fragment_range": [
+                    0,
+                    4
+                  ],
+                  "left_position": 0,
+                  "left_token": "B",
+                  "matches": true,
+                  "operations": [
+                    "REVERSE",
+                    "SPLIT",
+                    "token_equality"
+                  ],
+                  "right_position": 3,
+                  "right_token": "B"
+                }
+              ],
+              "supplied_membership": true,
+              "tokens": [
+                "B",
+                "B",
+                "B",
+                "B"
+              ],
+              "train_id": 4,
+              "train_sample_digest": "b2f728f834e4e2774f8965bda868c0ad88455719b803602e215484503e4306ab"
+            },
+            {
+              "input_pointer": "/grammar_hypotheses/0/train_samples/5/tokens",
+              "operator_decision": false,
+              "positions": [
+                {
+                  "expected_equal": true,
+                  "fragment_range": [
+                    0,
+                    4
+                  ],
+                  "left_position": 0,
+                  "left_token": "A",
+                  "matches": false,
+                  "operations": [
+                    "REVERSE",
+                    "SPLIT",
+                    "token_equality"
+                  ],
+                  "right_position": 3,
+                  "right_token": "B"
+                }
+              ],
+              "supplied_membership": false,
+              "tokens": [
+                "A",
+                "B",
+                "A",
+                "B"
+              ],
+              "train_id": 5,
+              "train_sample_digest": "c2c207b7261f91de83d09a2b3e67b728bb9689391f0453610922cbb35d7d813c"
+            },
+            {
+              "input_pointer": "/grammar_hypotheses/0/train_samples/6/tokens",
+              "operator_decision": true,
+              "positions": [
+                {
+                  "expected_equal": true,
+                  "fragment_range": [
+                    0,
+                    4
+                  ],
+                  "left_position": 0,
+                  "left_token": "B",
+                  "matches": true,
+                  "operations": [
+                    "REVERSE",
+                    "SPLIT",
+                    "token_equality"
+                  ],
+                  "right_position": 3,
+                  "right_token": "B"
+                }
+              ],
+              "supplied_membership": true,
+              "tokens": [
+                "B",
+                "A",
+                "A",
+                "B"
+              ],
+              "train_id": 6,
+              "train_sample_digest": "c54fb5973cc70129dcc6e97c7867639e3e70853730b0bc6666c618e9917d1555"
+            },
+            {
+              "input_pointer": "/grammar_hypotheses/0/train_samples/7/tokens",
+              "operator_decision": false,
+              "positions": [
+                {
+                  "expected_equal": true,
+                  "fragment_range": [
+                    0,
+                    4
+                  ],
+                  "left_position": 0,
+                  "left_token": "A",
+                  "matches": false,
+                  "operations": [
+                    "REVERSE",
+                    "SPLIT",
+                    "token_equality"
+                  ],
+                  "right_position": 3,
+                  "right_token": "B"
+                }
+              ],
+              "supplied_membership": false,
+              "tokens": [
+                "A",
+                "A",
+                "B",
+                "B"
+              ],
+              "train_id": 7,
+              "train_sample_digest": "e747ad04840fba1c9a2818e20c60dccbbb1b3581aa73cdeb602d8a9b8c12a5a4"
+            }
+          ],
+          "training_errors": 0
+        },
+        {
+          "ast": {
+            "base_max_tokens": 3,
+            "composition": "aligned_token_equality",
+            "expected_equal": true,
+            "left_operations": [
+              "SPLIT"
+            ],
+            "offset": 1,
+            "right_operations": [
+              "REVERSE",
+              "SPLIT"
+            ]
+          },
+          "candidate_id": "216159a6476fd2d9dad6d2bbe6b834bc5bc3a693ead4c4a01358e27c3941625e",
+          "candidate_status": "EMPIRICAL",
+          "formalism": "observed_relation_composition",
+          "hypothesis_complexity": {
+            "ast_depth": 3,
+            "ast_nodes": 4
+          },
+          "relation_coverage": 1,
+          "rule_witnesses": [
+            {
+              "input_pointer": "/grammar_hypotheses/0/train_samples/0/tokens",
+              "operator_decision": false,
+              "positions": [
+                {
+                  "expected_equal": true,
+                  "fragment_range": [
+                    0,
+                    4
+                  ],
+                  "left_position": 1,
+                  "left_token": "A",
+                  "matches": false,
+                  "operations": [
+                    "REVERSE",
+                    "SPLIT",
+                    "token_equality"
+                  ],
+                  "right_position": 2,
+                  "right_token": "B"
+                }
+              ],
+              "supplied_membership": false,
+              "tokens": [
+                "B",
+                "A",
+                "B",
+                "A"
+              ],
+              "train_id": 0,
+              "train_sample_digest": "17145980108b3885b9b982c85894fe57a908edb16ce577c97f8008214d1e5f1f"
+            },
+            {
+              "input_pointer": "/grammar_hypotheses/0/train_samples/1/tokens",
+              "operator_decision": false,
+              "positions": [
+                {
+                  "expected_equal": true,
+                  "fragment_range": [
+                    0,
+                    4
+                  ],
+                  "left_position": 1,
+                  "left_token": "B",
+                  "matches": false,
+                  "operations": [
+                    "REVERSE",
+                    "SPLIT",
+                    "token_equality"
+                  ],
+                  "right_position": 2,
+                  "right_token": "A"
+                }
+              ],
+              "supplied_membership": false,
+              "tokens": [
+                "B",
+                "B",
+                "A",
+                "A"
+              ],
+              "train_id": 1,
+              "train_sample_digest": "1a1fbff0838a1c65561439815546e0b7cc97a6198cd46569c3222a49bf15b596"
+            },
+            {
+              "input_pointer": "/grammar_hypotheses/0/train_samples/2/tokens",
+              "operator_decision": true,
+              "positions": [
+                {
+                  "expected_equal": true,
+                  "fragment_range": [
+                    0,
+                    4
+                  ],
+                  "left_position": 1,
+                  "left_token": "A",
+                  "matches": true,
+                  "operations": [
+                    "REVERSE",
+                    "SPLIT",
+                    "token_equality"
+                  ],
+                  "right_position": 2,
+                  "right_token": "A"
+                }
+              ],
+              "supplied_membership": true,
+              "tokens": [
+                "A",
+                "A",
+                "A",
+                "A"
+              ],
+              "train_id": 2,
+              "train_sample_digest": "3e931b1883df77b62517968c7b64a6d75a155c4165b08251e63278239f39c050"
+            },
+            {
+              "input_pointer": "/grammar_hypotheses/0/train_samples/3/tokens",
+              "operator_decision": true,
+              "positions": [
+                {
+                  "expected_equal": true,
+                  "fragment_range": [
+                    0,
+                    4
+                  ],
+                  "left_position": 1,
+                  "left_token": "B",
+                  "matches": true,
+                  "operations": [
+                    "REVERSE",
+                    "SPLIT",
+                    "token_equality"
+                  ],
+                  "right_position": 2,
+                  "right_token": "B"
+                }
+              ],
+              "supplied_membership": true,
+              "tokens": [
+                "A",
+                "B",
+                "B",
+                "A"
+              ],
+              "train_id": 3,
+              "train_sample_digest": "95c439e54023349968bec46288238913ea4ca723e67abb13fbf826d0faf1ae0c"
+            },
+            {
+              "input_pointer": "/grammar_hypotheses/0/train_samples/4/tokens",
+              "operator_decision": true,
+              "positions": [
+                {
+                  "expected_equal": true,
+                  "fragment_range": [
+                    0,
+                    4
+                  ],
+                  "left_position": 1,
+                  "left_token": "B",
+                  "matches": true,
+                  "operations": [
+                    "REVERSE",
+                    "SPLIT",
+                    "token_equality"
+                  ],
+                  "right_position": 2,
+                  "right_token": "B"
+                }
+              ],
+              "supplied_membership": true,
+              "tokens": [
+                "B",
+                "B",
+                "B",
+                "B"
+              ],
+              "train_id": 4,
+              "train_sample_digest": "b2f728f834e4e2774f8965bda868c0ad88455719b803602e215484503e4306ab"
+            },
+            {
+              "input_pointer": "/grammar_hypotheses/0/train_samples/5/tokens",
+              "operator_decision": false,
+              "positions": [
+                {
+                  "expected_equal": true,
+                  "fragment_range": [
+                    0,
+                    4
+                  ],
+                  "left_position": 1,
+                  "left_token": "B",
+                  "matches": false,
+                  "operations": [
+                    "REVERSE",
+                    "SPLIT",
+                    "token_equality"
+                  ],
+                  "right_position": 2,
+                  "right_token": "A"
+                }
+              ],
+              "supplied_membership": false,
+              "tokens": [
+                "A",
+                "B",
+                "A",
+                "B"
+              ],
+              "train_id": 5,
+              "train_sample_digest": "c2c207b7261f91de83d09a2b3e67b728bb9689391f0453610922cbb35d7d813c"
+            },
+            {
+              "input_pointer": "/grammar_hypotheses/0/train_samples/6/tokens",
+              "operator_decision": true,
+              "positions": [
+                {
+                  "expected_equal": true,
+                  "fragment_range": [
+                    0,
+                    4
+                  ],
+                  "left_position": 1,
+                  "left_token": "A",
+                  "matches": true,
+                  "operations": [
+                    "REVERSE",
+                    "SPLIT",
+                    "token_equality"
+                  ],
+                  "right_position": 2,
+                  "right_token": "A"
+                }
+              ],
+              "supplied_membership": true,
+              "tokens": [
+                "B",
+                "A",
+                "A",
+                "B"
+              ],
+              "train_id": 6,
+              "train_sample_digest": "c54fb5973cc70129dcc6e97c7867639e3e70853730b0bc6666c618e9917d1555"
+            },
+            {
+              "input_pointer": "/grammar_hypotheses/0/train_samples/7/tokens",
+              "operator_decision": false,
+              "positions": [
+                {
+                  "expected_equal": true,
+                  "fragment_range": [
+                    0,
+                    4
+                  ],
+                  "left_position": 1,
+                  "left_token": "A",
+                  "matches": false,
+                  "operations": [
+                    "REVERSE",
+                    "SPLIT",
+                    "token_equality"
+                  ],
+                  "right_position": 2,
+                  "right_token": "B"
+                }
+              ],
+              "supplied_membership": false,
+              "tokens": [
+                "A",
+                "A",
+                "B",
+                "B"
+              ],
+              "train_id": 7,
+              "train_sample_digest": "e747ad04840fba1c9a2818e20c60dccbbb1b3581aa73cdeb602d8a9b8c12a5a4"
+            }
+          ],
+          "training_errors": 0
+        },
+        {
+          "ast": {
+            "base_max_tokens": 1,
+            "composition": "iterate_on_inner_fragment",
+            "fragment_operations": [
+              "SPLIT",
+              "SPLIT"
+            ],
+            "relation": {
+              "base_max_tokens": 1,
+              "composition": "aligned_token_equality",
+              "expected_equal": true,
+              "left_operations": [
+                "SPLIT"
+              ],
+              "offset": 0,
+              "right_operations": [
+                "REVERSE",
+                "SPLIT"
+              ]
+            },
+            "trim_left": 1,
+            "trim_right": 1
+          },
+          "candidate_id": "b5c20366e2902983352e88b017f458f7244c16145cde7d502ace9757b5c4170f",
+          "candidate_status": "EMPIRICAL",
+          "formalism": "observed_relation_composition",
+          "hypothesis_complexity": {
+            "ast_depth": 4,
+            "ast_nodes": 8
+          },
+          "relation_coverage": 2,
+          "rule_witnesses": [
+            {
+              "input_pointer": "/grammar_hypotheses/0/train_samples/0/tokens",
+              "operator_decision": false,
+              "positions": [
+                {
+                  "expected_equal": true,
+                  "fragment_range": [
+                    0,
+                    4
+                  ],
+                  "left_position": 0,
+                  "left_token": "B",
+                  "matches": false,
+                  "operations": [
+                    "REVERSE",
+                    "SPLIT",
+                    "token_equality"
+                  ],
+                  "right_position": 3,
+                  "right_token": "A"
+                }
+              ],
+              "supplied_membership": false,
+              "tokens": [
+                "B",
+                "A",
+                "B",
+                "A"
+              ],
+              "train_id": 0,
+              "train_sample_digest": "17145980108b3885b9b982c85894fe57a908edb16ce577c97f8008214d1e5f1f"
+            },
+            {
+              "input_pointer": "/grammar_hypotheses/0/train_samples/1/tokens",
+              "operator_decision": false,
+              "positions": [
+                {
+                  "expected_equal": true,
+                  "fragment_range": [
+                    0,
+                    4
+                  ],
+                  "left_position": 0,
+                  "left_token": "B",
+                  "matches": false,
+                  "operations": [
+                    "REVERSE",
+                    "SPLIT",
+                    "token_equality"
+                  ],
+                  "right_position": 3,
+                  "right_token": "A"
+                }
+              ],
+              "supplied_membership": false,
+              "tokens": [
+                "B",
+                "B",
+                "A",
+                "A"
+              ],
+              "train_id": 1,
+              "train_sample_digest": "1a1fbff0838a1c65561439815546e0b7cc97a6198cd46569c3222a49bf15b596"
+            },
+            {
+              "input_pointer": "/grammar_hypotheses/0/train_samples/2/tokens",
+              "operator_decision": true,
+              "positions": [
+                {
+                  "expected_equal": true,
+                  "fragment_range": [
+                    0,
+                    4
+                  ],
+                  "left_position": 0,
+                  "left_token": "A",
+                  "matches": true,
+                  "operations": [
+                    "REVERSE",
+                    "SPLIT",
+                    "token_equality"
+                  ],
+                  "right_position": 3,
+                  "right_token": "A"
+                },
+                {
+                  "expected_equal": true,
+                  "fragment_range": [
+                    1,
+                    3
+                  ],
+                  "left_position": 1,
+                  "left_token": "A",
+                  "matches": true,
+                  "operations": [
+                    "REVERSE",
+                    "SPLIT",
+                    "token_equality"
+                  ],
+                  "right_position": 2,
+                  "right_token": "A"
+                }
+              ],
+              "supplied_membership": true,
+              "tokens": [
+                "A",
+                "A",
+                "A",
+                "A"
+              ],
+              "train_id": 2,
+              "train_sample_digest": "3e931b1883df77b62517968c7b64a6d75a155c4165b08251e63278239f39c050"
+            },
+            {
+              "input_pointer": "/grammar_hypotheses/0/train_samples/3/tokens",
+              "operator_decision": true,
+              "positions": [
+                {
+                  "expected_equal": true,
+                  "fragment_range": [
+                    0,
+                    4
+                  ],
+                  "left_position": 0,
+                  "left_token": "A",
+                  "matches": true,
+                  "operations": [
+                    "REVERSE",
+                    "SPLIT",
+                    "token_equality"
+                  ],
+                  "right_position": 3,
+                  "right_token": "A"
+                },
+                {
+                  "expected_equal": true,
+                  "fragment_range": [
+                    1,
+                    3
+                  ],
+                  "left_position": 1,
+                  "left_token": "B",
+                  "matches": true,
+                  "operations": [
+                    "REVERSE",
+                    "SPLIT",
+                    "token_equality"
+                  ],
+                  "right_position": 2,
+                  "right_token": "B"
+                }
+              ],
+              "supplied_membership": true,
+              "tokens": [
+                "A",
+                "B",
+                "B",
+                "A"
+              ],
+              "train_id": 3,
+              "train_sample_digest": "95c439e54023349968bec46288238913ea4ca723e67abb13fbf826d0faf1ae0c"
+            },
+            {
+              "input_pointer": "/grammar_hypotheses/0/train_samples/4/tokens",
+              "operator_decision": true,
+              "positions": [
+                {
+                  "expected_equal": true,
+                  "fragment_range": [
+                    0,
+                    4
+                  ],
+                  "left_position": 0,
+                  "left_token": "B",
+                  "matches": true,
+                  "operations": [
+                    "REVERSE",
+                    "SPLIT",
+                    "token_equality"
+                  ],
+                  "right_position": 3,
+                  "right_token": "B"
+                },
+                {
+                  "expected_equal": true,
+                  "fragment_range": [
+                    1,
+                    3
+                  ],
+                  "left_position": 1,
+                  "left_token": "B",
+                  "matches": true,
+                  "operations": [
+                    "REVERSE",
+                    "SPLIT",
+                    "token_equality"
+                  ],
+                  "right_position": 2,
+                  "right_token": "B"
+                }
+              ],
+              "supplied_membership": true,
+              "tokens": [
+                "B",
+                "B",
+                "B",
+                "B"
+              ],
+              "train_id": 4,
+              "train_sample_digest": "b2f728f834e4e2774f8965bda868c0ad88455719b803602e215484503e4306ab"
+            },
+            {
+              "input_pointer": "/grammar_hypotheses/0/train_samples/5/tokens",
+              "operator_decision": false,
+              "positions": [
+                {
+                  "expected_equal": true,
+                  "fragment_range": [
+                    0,
+                    4
+                  ],
+                  "left_position": 0,
+                  "left_token": "A",
+                  "matches": false,
+                  "operations": [
+                    "REVERSE",
+                    "SPLIT",
+                    "token_equality"
+                  ],
+                  "right_position": 3,
+                  "right_token": "B"
+                }
+              ],
+              "supplied_membership": false,
+              "tokens": [
+                "A",
+                "B",
+                "A",
+                "B"
+              ],
+              "train_id": 5,
+              "train_sample_digest": "c2c207b7261f91de83d09a2b3e67b728bb9689391f0453610922cbb35d7d813c"
+            },
+            {
+              "input_pointer": "/grammar_hypotheses/0/train_samples/6/tokens",
+              "operator_decision": true,
+              "positions": [
+                {
+                  "expected_equal": true,
+                  "fragment_range": [
+                    0,
+                    4
+                  ],
+                  "left_position": 0,
+                  "left_token": "B",
+                  "matches": true,
+                  "operations": [
+                    "REVERSE",
+                    "SPLIT",
+                    "token_equality"
+                  ],
+                  "right_position": 3,
+                  "right_token": "B"
+                },
+                {
+                  "expected_equal": true,
+                  "fragment_range": [
+                    1,
+                    3
+                  ],
+                  "left_position": 1,
+                  "left_token": "A",
+                  "matches": true,
+                  "operations": [
+                    "REVERSE",
+                    "SPLIT",
+                    "token_equality"
+                  ],
+                  "right_position": 2,
+                  "right_token": "A"
+                }
+              ],
+              "supplied_membership": true,
+              "tokens": [
+                "B",
+                "A",
+                "A",
+                "B"
+              ],
+              "train_id": 6,
+              "train_sample_digest": "c54fb5973cc70129dcc6e97c7867639e3e70853730b0bc6666c618e9917d1555"
+            },
+            {
+              "input_pointer": "/grammar_hypotheses/0/train_samples/7/tokens",
+              "operator_decision": false,
+              "positions": [
+                {
+                  "expected_equal": true,
+                  "fragment_range": [
+                    0,
+                    4
+                  ],
+                  "left_position": 0,
+                  "left_token": "A",
+                  "matches": false,
+                  "operations": [
+                    "REVERSE",
+                    "SPLIT",
+                    "token_equality"
+                  ],
+                  "right_position": 3,
+                  "right_token": "B"
+                }
+              ],
+              "supplied_membership": false,
+              "tokens": [
+                "A",
+                "A",
+                "B",
+                "B"
+              ],
+              "train_id": 7,
+              "train_sample_digest": "e747ad04840fba1c9a2818e20c60dccbbb1b3581aa73cdeb602d8a9b8c12a5a4"
+            }
+          ],
+          "training_errors": 0
+        },
+        {
+          "candidate_id": "639df77c470781c48f92f61739e0b2dfffe37e06b0c669b2646efe3fdfbd51f9",
+          "candidate_status": "EMPIRICAL",
+          "formalism": "bounded_observed_relation_tree",
+          "hypothesis_complexity": {
+            "ast_nodes": 3,
+            "node_budget": 8
+          },
+          "relation_coverage": 1,
+          "training_errors": 0
+        }
+      ],
+      "train_digest": "5adfca30c8f15bbbe7f3e534aaecb058090751c2646cc3965fccb066d8f360d7",
+      "train_samples": [
+        {
+          "accepted": false,
+          "tokens": [
+            "B",
+            "A",
+            "B",
+            "A"
+          ]
+        },
+        {
+          "accepted": false,
+          "tokens": [
+            "B",
+            "B",
+            "A",
+            "A"
+          ]
+        },
+        {
+          "accepted": true,
+          "tokens": [
+            "A",
+            "A",
+            "A",
+            "A"
+          ]
+        },
+        {
+          "accepted": true,
+          "tokens": [
+            "A",
+            "B",
+            "B",
+            "A"
+          ]
+        },
+        {
+          "accepted": true,
+          "tokens": [
+            "B",
+            "B",
+            "B",
+            "B"
+          ]
+        },
+        {
+          "accepted": false,
+          "tokens": [
+            "A",
+            "B",
+            "A",
+            "B"
+          ]
+        },
+        {
+          "accepted": true,
+          "tokens": [
+            "B",
+            "A",
+            "A",
+            "B"
+          ]
+        },
+        {
+          "accepted": false,
+          "tokens": [
+            "A",
+            "A",
+            "B",
+            "B"
+          ]
+        }
+      ],
+      "tree": {
+        "kind": "empirical",
+        "left": {
+          "accepted": false,
+          "kind": "empirical",
+          "probability": 0.16666666666666666,
+          "support_train_ids": [
+            0,
+            1,
+            5,
+            7
+          ]
+        },
+        "predicate": "endpoint_equal",
+        "right": {
+          "accepted": true,
+          "kind": "empirical",
+          "probability": 0.8333333333333334,
+          "support_train_ids": [
+            2,
+            3,
+            4,
+            6
+          ]
+        },
+        "support_train_ids": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "threshold": 0
+      }
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-"""Bounded real MCP acceptance for PATCH001; historical requests remain read-only."""
+"""Bounded real MCP acceptance for PATCH001/002; historical runs stay immutable."""
 
 import argparse, asyncio, base64, copy, hashlib, json, sys
 from collections import Counter
@@ -37,7 +37,7 @@ async def run(args):
             / "docs/LIVINGMATH_SYMBOLIC_V1_ACCEPTANCE_PATCH001/fixtures/acceptance_runs.json"
         ).read_text()
     )
-    project = "qa-patch001-" + args.tag
+    project = ("qa-patch002-" if args.patch002 else "qa-patch001-") + args.tag
 
     def check(name, ok):
         checks.append({"check": name, "status": "PASS" if ok else "FAIL"})
@@ -76,21 +76,43 @@ async def run(args):
                     )
                 ]
                 check(
-                    "74 schemas unchanged",
-                    len(unchanged) == 74
-                    and "white_star_symbolic_inspect" not in unchanged,
+                    (
+                        "all75 schemas unchanged"
+                        if args.patch002
+                        else "74 schemas unchanged"
+                    ),
+                    (
+                        (len(unchanged) == 75)
+                        if args.patch002
+                        else (
+                            len(unchanged) == 74
+                            and "white_star_symbolic_inspect" not in unchanged
+                        )
+                    ),
                 )
                 old = before["white_star_symbolic_inspect"]["inputSchema"]
                 new = after["white_star_symbolic_inspect"]["inputSchema"]
                 check(
-                    "inspect extension additive",
-                    old["required"] == new["required"]
-                    and set(old["properties"]["view"]["enum"])
-                    <= set(new["properties"]["view"]["enum"])
-                    and set(new["properties"]) - set(old["properties"])
-                    == {"compare_run_id"}
-                    and before["white_star_symbolic_inspect"].get("outputSchema")
-                    == after["white_star_symbolic_inspect"].get("outputSchema"),
+                    (
+                        "inspect schema unchanged"
+                        if args.patch002
+                        else "inspect extension additive"
+                    ),
+                    (
+                        (old == new)
+                        if args.patch002
+                        else (
+                            old["required"] == new["required"]
+                            and set(old["properties"]["view"]["enum"])
+                            <= set(new["properties"]["view"]["enum"])
+                            and set(new["properties"]) - set(old["properties"])
+                            == {"compare_run_id"}
+                            and before["white_star_symbolic_inspect"].get(
+                                "outputSchema"
+                            )
+                            == after["white_star_symbolic_inspect"].get("outputSchema")
+                        )
+                    ),
                 )
 
                 async def call(name, arguments, error=None):
@@ -186,7 +208,8 @@ async def run(args):
                 check(
                     "patch READY and historical profile approved",
                     status["symbolic_v1"]["status"] == "READY"
-                    and "patch001" in status["symbolic_v1"]["version"]
+                    and ("patch002" if args.patch002 else "patch001")
+                    in status["symbolic_v1"]["version"]
                     and fixture["server"]["kernel_binding"]
                     in status["symbolic_v1"]["historical_replay_bindings"],
                 )
@@ -312,11 +335,18 @@ async def run(args):
                     await view(fixture["compositions"]["ab"], "input", history_project)
                 )[0]
                 sat = await explore(old_ab, "saturation")
-                diagnostics = (await view(sat["run_id"], "diagnostics"))[0]
+                all_diagnostics = await view(sat["run_id"], "diagnostics")
+                diagnostics = all_diagnostics[0]
                 check(
                     "local saturated with unproposed insertion",
-                    sat["summary"]["halt_reason"] == "NO_NOVEL_CANDIDATES"
-                    and sat["summary"]["steps"] < 128
+                    (
+                        sat["summary"]["fallback_count"] > 0
+                        if args.patch002
+                        else (
+                            sat["summary"]["halt_reason"] == "NO_NOVEL_CANDIDATES"
+                            and sat["summary"]["steps"] < 128
+                        )
+                    )
                     and diagnostics["global_exhaustion_proved"] is False
                     and "INSERT_CANCEL_PAIR" in diagnostics["unproposed_operators"],
                 )
@@ -324,9 +354,17 @@ async def run(args):
                     fixture["compositions"]["ab"], "operations", history_project
                 )
                 new_trace = await view(sat["run_id"], "operations")
+                prefix = next(
+                    (
+                        d["step"]
+                        for d in all_diagnostics
+                        if d.get("status") == "FRONTIER_FALLBACK"
+                    ),
+                    len(new_trace),
+                )
                 check(
                     "UDAV unchanged exact trace prefix",
-                    new_trace == old_trace[: len(new_trace)],
+                    new_trace[:prefix] == old_trace[:prefix],
                 )
                 provenance = copy.deepcopy(old_ab)
                 provenance["search"]["history_identity"] = "provenance"
@@ -567,6 +605,13 @@ async def run(args):
                     and caps["queue"] == 16,
                 )
                 matrix["AC16"] = "PASS_BOUNDED_GATES_NOT_FULL_PENTEST"
+                if args.patch002:
+                    from symbolic_patch002_acceptance import live_checks
+
+                    patch002 = await live_checks(
+                        explore, view, call, check, save, compare, project
+                    )
+                    save("PATCH002_ACCEPTANCE.json", patch002)
                 health = await call("service_health", {})
                 doctor = await call("assurance_doctor", {})
                 save("health.json", health)
@@ -606,6 +651,7 @@ if __name__ == "__main__":
     p.add_argument("--output", type=Path, required=True)
     p.add_argument("--tag", required=True)
     p.add_argument("--expected-version", default="v0.4.1-developer-preview")
+    p.add_argument("--patch002", action="store_true")
     p.add_argument("--loopback-port", type=int)
     p.add_argument(
         "--password",

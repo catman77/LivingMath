@@ -58,13 +58,15 @@ TOOLS = {
 
 def capabilities(executor=None, replay_profiles=None):
     return {
-        "version": "symbolic_v1/1-patch001",
+        "version": "symbolic_v1/1-patch002",
         "historical_replay_bindings": sorted(replay_profiles or {}),
         "engine": "symbolic_v1",
         "status": (
             "READY" if executor and executor.status()["ready"] else "ENGINE_UNAVAILABLE"
         ),
         "kernel_binding": binding(),
+        "search_policy": "symbolic-local-pareto-frontier/2",
+        "fallback_scope": "Untried stored-node/operator pairs; one clock-sampled argument variant per pair, within original budgets. No global exhaustion claim.",
         "limits": LIMITS,
         "request_schema": REQUEST,
         "response_schema": RESPONSE,
