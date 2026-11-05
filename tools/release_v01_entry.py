@@ -37,7 +37,7 @@ def serve(path):
         p = (layer/name).resolve(strict=True)
         if not p.is_relative_to(layer) or sha(p) != expected:
             raise ValueError('RELEASE_FILE_MISMATCH')
-    if cfg['release'] not in ('v0.1.0-developer-preview','v0.2.0-developer-preview','v0.3.0-developer-preview','v0.4.0-developer-preview','v0.4.1-developer-preview','v0.4.2-developer-preview'):
+    if cfg['release'] not in ('v0.1.0-developer-preview','v0.2.0-developer-preview','v0.3.0-developer-preview','v0.4.0-developer-preview','v0.4.1-developer-preview','v0.4.2-developer-preview','v0.4.3-developer-preview'):
         raise ValueError('RELEASE_VERSION_MISMATCH')
     expected = {'release':cfg['release'],'release_manifest_sha256':cfg['release_manifest_sha256'],
                 'deployment_id':cfg['deployment_id'],'action':'INSTALL_EXACT_OWNER_AUTHORIZED_PREVIEW'}
@@ -106,6 +106,8 @@ def serve(path):
         register_white(server, cfg['assurance_state'], white_pool, recover=True)
         from lm_suti_assurance.symbolic.mcp import register_tools as register_symbolic
         register_symbolic(server, cfg['assurance_state'], symbolic_pool, recover=True, replay_profiles=replay_profiles)
+        from lm_suti_assurance.symbolic_complex.mcp import register_tools as register_extensions
+        register_extensions(server, cfg['assurance_state'], symbolic_pool, recover=True)
         server._mcp_server.version = active_release
         server._mcp_server.instructions += ' For finite assurance use assurance_contract; manual proposals, exact task review and offline export/replay are separate steps.'
         for name in ('bridge_system_status','service_health','research_contract'):
@@ -120,6 +122,8 @@ def serve(path):
                     if tool_name == 'bridge_system_status':
                         from lm_suti_assurance.symbolic.mcp import capabilities
                         value['symbolic_v1'] = capabilities(symbolic_pool, replay_profiles)
+                        from lm_suti_assurance.symbolic_complex.mcp import capabilities as extension_capabilities
+                        value.update(extension_capabilities(symbolic_pool))
                     value['legacy_protocol_version'] = value.get('version')
                     value['version'] = active_release
                     value['deployment_id'] = cfg['deployment_id']

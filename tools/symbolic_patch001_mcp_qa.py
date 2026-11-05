@@ -60,7 +60,7 @@ async def run(args):
                 save("tools.json", listing.model_dump(mode="json"))
                 check(
                     "75 tools and actual version",
-                    len(listing.tools) == 75
+                    len(listing.tools) == args.expected_tool_count
                     and init.serverInfo.version == args.expected_version,
                 )
                 before = {
@@ -652,6 +652,7 @@ if __name__ == "__main__":
     p.add_argument("--tag", required=True)
     p.add_argument("--expected-version", default="v0.4.1-developer-preview")
     p.add_argument("--patch002", action="store_true")
+    p.add_argument("--expected-tool-count", type=int, default=75)
     p.add_argument("--loopback-port", type=int)
     p.add_argument(
         "--password",

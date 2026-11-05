@@ -29,6 +29,14 @@ def bounded(packet, clock):
                     from lm_suti_assurance.symbolic.bundle import replay
 
                     data = replay(packet["bundle_base64"], clock)
+                elif packet["action"] in (
+                    "extension_run",
+                    "complex_verify",
+                    "extension_replay",
+                ):
+                    from lm_suti_assurance.symbolic_complex.app import dispatch
+
+                    data = dispatch(packet)
                 else:
                     raise AssuranceError("INVALID_INPUT")
             value = {
@@ -134,6 +142,13 @@ def main():
         from lm_suti_assurance.symbolic import (
             bundle,
         )  # preload ZIP dependencies before isolation
+
+        # Preload the additive engines before the same existing audit boundary.
+        from lm_suti_assurance.symbolic_complex import (
+            app as extension_app,
+            bundle as extension_bundle,
+        )
+        from lm_suti_assurance.symbolic_complex import saved as saved_complex
         from lm_suti_assurance.white_star.isolation import restrict
 
         isolation = restrict()
