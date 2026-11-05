@@ -8,7 +8,7 @@ from .contracts import validate, LIMITS
 from .state import History, source_states, alpha
 from .observers import CADObserver, compare
 from .search import search
-from .grammar import fit, probability
+from .grammar import fit, probability, prediction
 
 
 def binding():
@@ -53,7 +53,12 @@ def run(request, clock_factory):
     grammar = []
     predictions = []
     if task.get("train"):
-        hypothesis = fit(task["train"], task.get("max_rules", 15), request["observers"])
+        hypothesis = fit(
+            task["train"],
+            task.get("max_rules", 15),
+            request["observers"],
+            renaming_scope=request["segmentation"]["renaming_scope"],
+        )
         grammar = [hypothesis]
         # Freeze before the prediction interface ever receives queries.
         frozen = hypothesis["hypothesis_digest"]
@@ -61,6 +66,7 @@ def run(request, clock_factory):
             {
                 "tokens": word,
                 "membership_probability": probability(hypothesis, word),
+                "decision": prediction(hypothesis, word),
                 "kind": "empirical",
                 "hypothesis_digest": frozen,
             }
@@ -108,6 +114,7 @@ def run(request, clock_factory):
         "states": states,
         "history": nodes,
         "ops_trace": found["ops_trace"],
+        "search_diagnostics": found["search_diagnostics"],
         "structural_observations": found["structural_observations"],
         "equivalence_claims": claims,
         "grammar_hypotheses": grammar,
@@ -129,7 +136,7 @@ def run(request, clock_factory):
     }
     manifest = {
         "schema": "livingmath-symbolic-artifact-manifest/1",
-        "symbolic_version": "symbolic_v1/1",
+        "symbolic_version": "symbolic_v1/1-patch001",
         "kernel_binding": binding(),
         "numeric_kernel_binding": digest(numeric),
         "numeric_kernel_files": numeric,

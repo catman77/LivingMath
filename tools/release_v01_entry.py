@@ -37,7 +37,7 @@ def serve(path):
         p = (layer/name).resolve(strict=True)
         if not p.is_relative_to(layer) or sha(p) != expected:
             raise ValueError('RELEASE_FILE_MISMATCH')
-    if cfg['release'] not in ('v0.1.0-developer-preview','v0.2.0-developer-preview','v0.3.0-developer-preview','v0.4.0-developer-preview'):
+    if cfg['release'] not in ('v0.1.0-developer-preview','v0.2.0-developer-preview','v0.3.0-developer-preview','v0.4.0-developer-preview','v0.4.1-developer-preview'):
         raise ValueError('RELEASE_VERSION_MISMATCH')
     expected = {'release':cfg['release'],'release_manifest_sha256':cfg['release_manifest_sha256'],
                 'deployment_id':cfg['deployment_id'],'action':'INSTALL_EXACT_OWNER_AUTHORIZED_PREVIEW'}
@@ -52,8 +52,31 @@ def serve(path):
     if cfg.get('white_star') == {'enabled':True}:
         from lm_suti_assurance.white_star.pool import Pool
         white_pool = Pool()
-    from lm_suti_assurance.symbolic.executor import Executor as SymbolicExecutor
-    symbolic_pool = SymbolicExecutor()
+    from lm_suti_assurance.symbolic.executor import Executor as SymbolicExecutor, SharedBudget
+    shared_symbolic_budget = SharedBudget()
+    symbolic_pool = SymbolicExecutor(shared_budget=shared_symbolic_budget)
+    replay_profiles = {}
+    # Profiles are owner-configured installed immutable layers, never client paths.
+    from lm_suti_assurance.core import digest
+    for expected_binding, settings in cfg.get('symbolic_replay_profiles', {}).items():
+        old_layer = Path(settings['release_layer']).resolve(strict=True)
+        if not old_layer.is_relative_to(Path.home()/'.local/state/livingmath'):
+            raise ValueError('INSTALLED_HISTORICAL_PROFILE_REQUIRED')
+        old_manifest = old_layer/'release_manifest.json'
+        if sha(old_manifest) != settings['release_manifest_sha256']:
+            raise ValueError('HISTORICAL_PROFILE_MANIFEST_MISMATCH')
+        for name, checksum in json.loads(old_manifest.read_text()).items():
+            target = (old_layer/name).resolve(strict=True)
+            if not target.is_relative_to(old_layer) or sha(target) != checksum:
+                raise ValueError('HISTORICAL_PROFILE_FILE_MISMATCH')
+        historical_root = old_layer/'src/lm_suti_assurance/symbolic'
+        if digest({n:sha(historical_root/n) for n in ('state.py','observers.py','search.py','grammar.py','kernel.py','contracts.py')}) != expected_binding:
+            raise ValueError('HISTORICAL_PROFILE_BINDING_MISMATCH')
+        profile = SymbolicExecutor(historical_root/'worker.py', shared_budget=shared_symbolic_budget)
+        if not profile.status()['ready']:
+            profile.close()
+            raise ValueError('HISTORICAL_PROFILE_UNAVAILABLE')
+        replay_profiles[expected_binding] = profile
     provider = None
     if cfg.get('semantic_proposer') is not None:
         settings = cfg['semantic_proposer']
@@ -82,7 +105,7 @@ def serve(path):
         from lm_suti_assurance.white_star.mcp import register_tools as register_white
         register_white(server, cfg['assurance_state'], white_pool, recover=True)
         from lm_suti_assurance.symbolic.mcp import register_tools as register_symbolic
-        register_symbolic(server, cfg['assurance_state'], symbolic_pool, recover=True)
+        register_symbolic(server, cfg['assurance_state'], symbolic_pool, recover=True, replay_profiles=replay_profiles)
         server._mcp_server.version = active_release
         server._mcp_server.instructions += ' For finite assurance use assurance_contract; manual proposals, exact task review and offline export/replay are separate steps.'
         for name in ('bridge_system_status','service_health','research_contract'):
@@ -96,7 +119,7 @@ def serve(path):
                     value = fn(*a, **kw)
                     if tool_name == 'bridge_system_status':
                         from lm_suti_assurance.symbolic.mcp import capabilities
-                        value['symbolic_v1'] = capabilities(symbolic_pool)
+                        value['symbolic_v1'] = capabilities(symbolic_pool, replay_profiles)
                     value['legacy_protocol_version'] = value.get('version')
                     value['version'] = active_release
                     value['deployment_id'] = cfg['deployment_id']
@@ -134,6 +157,7 @@ def serve(path):
         if provider is not None:provider.close()
         if white_pool is not None:white_pool.close()
         symbolic_pool.close()
+        for profile in replay_profiles.values(): profile.close()
 
 
 if __name__ == '__main__':

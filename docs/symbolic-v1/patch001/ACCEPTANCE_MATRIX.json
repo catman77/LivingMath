@@ -1,0 +1,18 @@
+{
+  "AC01": "PASS",
+  "AC02": "PASS",
+  "AC07": "PASS",
+  "AC03": "PASS",
+  "AC04": "PASS",
+  "AC05": "PASS",
+  "AC06": "PASS",
+  "AC08": "PASS",
+  "AC09": "PASS",
+  "AC14": "PASS_WITH_UNDERDETERMINED_FAMILY",
+  "AC15": "PASS",
+  "AC10": "PASS",
+  "AC11": "PASS_STRUCTURAL_ONLY",
+  "AC12": "PASS",
+  "AC13": "PASS",
+  "AC16": "PASS_BOUNDED_GATES_NOT_FULL_PENTEST"
+}

@@ -171,3 +171,31 @@ def replay(encoded, clock):
         if isinstance(exc, AssuranceError):
             raise
         require(False, "INVALID_BUNDLE")
+
+
+def bundle_binding(raw: bytes) -> str:
+    """Read only bounded metadata to select an operator-approved installed profile."""
+    require(len(raw) <= MAX, "BUNDLE_SIZE_LIMIT")
+    try:
+        with zipfile.ZipFile(io.BytesIO(raw)) as z:
+            entries = z.infolist()
+            require(
+                len(entries) <= 1024 and sum(i.file_size for i in entries) <= MAX,
+                "INVALID_BUNDLE",
+            )
+            matches = [i for i in entries if i.filename == "manifest.json"]
+            require(
+                len(matches) == 1 and matches[0].file_size <= 65536, "INVALID_BUNDLE"
+            )
+            value = strict_json(z.read(matches[0]).decode())
+            require(
+                value.get("schema") == "livingmath-symbolic-package/1", "INVALID_BUNDLE"
+            )
+            bound = value.get("kernel_binding")
+            require(
+                isinstance(bound, str) and re.fullmatch(r"[0-9a-f]{64}", bound),
+                "INVALID_BUNDLE",
+            )
+            return bound
+    except (zipfile.BadZipFile, KeyError, UnicodeError, ValueError):
+        require(False, "INVALID_BUNDLE")

@@ -33,7 +33,8 @@ def test_train_only_freeze_order_and_generic_distant_relation():
         for middle in ("ABAB", "BABA", "AABB", "BBAA")
     ]
     g = fit(train)
-    assert g["status"] == "EMPIRICAL"
+    assert g["candidate_status"] == "EMPIRICAL"
+    assert g["identifiability_status"] == g["status"] == "UNDERDETERMINED"
     frozen = copy.deepcopy(g)
     for a in "AB":
         for b in "AB":

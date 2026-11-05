@@ -1,0 +1,60 @@
+{
+  "server": {
+    "version": "v0.4.0-developer-preview",
+    "deployment": "symbolic-v1-20261105T055049Z",
+    "engine": "symbolic_v1/1",
+    "kernel_binding": "404d9d2612633ee1f673dfdfeaa22dc8365ec59efb3902e70470497c69093cc7"
+  },
+  "sp_exact": "7a6fdd346cc5719f9445d48e0c7fbe8df9dfe07b09423752a126f98f44c257a1",
+  "replay": {
+    "reference": "bae7ef85b5678bfb4d4690702cec380eee732551c258ed27e7b0fada9f00e704",
+    "replicate": "0257f25fa4b1311689211ad1a15ae8c97fcadfd8f398e18b49d562250d1a723e",
+    "result_digest": "f17aa98dd5695692c9efd31b46256d4ef1ec44025f12cad2b742db47b15cb62f",
+    "bundle_ref": "72ea61b27eb0e293762890bde78c9dfbe0b9b290c8558f33a414f385f209c1bc",
+    "status": "REPLAY_MATCH"
+  },
+  "identity_word": "f1a710f7d0e6307a123d5aa989ea350bc52ead36997938322e2d7109f14e5e9e",
+  "free_rename": [
+    "d82651113ef5dcc3783c59a4fca03d4acb6dc54e921ec1437486f4f58f701012",
+    "88dec3d5e1473a4a668e03b500ee5b770004322f7ee68be023ccb727ef7eff72"
+  ],
+  "free_permutation": [
+    "6a0f070fbe7ff5fc4708667000bc318135c8f8805da79153d8de893604d58eeb",
+    "759e3bfd29d31ee1d286ef122089abdc28c551ffa5c5e60258cc30fed202adf0"
+  ],
+  "compositions": {
+    "ab": "08364544515958047f6e218c7138c9145933e288091233dc94d5b0bcb1fd0ec7",
+    "ba": "c3f166427666370250805924cf7bc223394a1cb0df361b519ce48cd178791d27",
+    "cd": "4074acd5614321cb4fee1d6c55e8fafd57792bc6c980a6883fd481f98ab8a67d",
+    "dc": "ab6ba16f202232e4077c89cdbfde682ad8b42e2564c7cd3731308f67207162cb"
+  },
+  "grammar_palindrome": {
+    "run_id": "209907950b828417079e023acaa23e4c8bacf5397c4f7c36439e69bcac825be6",
+    "hypothesis_digest": "915a64072a4aacaf881ec20e4821a5137f0ebcde3ed84bb2a3e146b715998081",
+    "rule": "endpoint_equal",
+    "unique_heldout_correct": 6,
+    "unique_heldout_total": 9
+  },
+  "heldout_isolation": {
+    "run_ids": [
+      "14165ab7b97b3fdbb2221f626334f5879372cd30d0ffa67c99fc6e1ff23179ff",
+      "9812af253d5bf2fae75b084d135418113922d808d6bbf961096ca4353953eb1b"
+    ],
+    "matching_hypothesis_digest": "5c845b54a26c890ff7b5a7ca950ddcc645947a1fcc28d5acfed5809c6d1d3893"
+  },
+  "unicode": "9cc747fb2ecd40b3d733924dd5ac6b4f6cde3a5b9c2c45655f2c690374a70242",
+  "mallarme": "cfeb5486fe0e0f62e809a70957e8e002aef41bc6a647e7e405a07b15492ba007",
+  "legacy": "3004eb38670117d5a452b1a6afa439e009e3e2db72b6a980fb24e45a7c1f4f70",
+  "negative_sha256": {
+    "code": "SOURCE_MISMATCH",
+    "field_path": "/source/sha256"
+  },
+  "limits": {
+    "cpu_s": 5,
+    "wall_s": 6,
+    "memory_MiB": 512,
+    "max_steps": 4096,
+    "max_nodes": 8192
+  },
+  "assurance_scope": "live functional/semantic acceptance, not exhaustive security or code audit"
+}

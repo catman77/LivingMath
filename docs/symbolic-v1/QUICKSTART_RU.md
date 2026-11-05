@@ -1,6 +1,6 @@
 # Symbolic V1 — запуск и проверка
 
-Production: `v0.4.0-developer-preview`, 75 инструментов. Прежний HTTPS/OAuth адрес сохранён. Новый режим использует полные токены и их происхождение; численный `white_star_explore` с 2D-координатами остаётся отдельным инструментом.
+Production: `v0.4.1-developer-preview`, 75 инструментов. Прежний HTTPS/OAuth адрес сохранён. Новый режим использует полные токены и их происхождение; численный `white_star_explore` с 2D-координатами остаётся отдельным инструментом.
 
 ## Первый MCP-запрос
 
@@ -55,3 +55,13 @@ python tools/symbolic_v1_experiments.py --output /tmp/symbolic-experiments-new
 Для symbolic-проектов общий assurance_export сообщает SYMBOLIC_EXPORT_REQUIRES_RUN_ID: используйте новый explicit run export. Прежние проекты и numerical bundles сохраняют старый контракт. После публикации новых инструментов обновите список инструментов MCP-клиента; если ChatGPT продолжает видеть72, переподключите LivingMath по прежнему адресу.
 
 [Измерения и приёмка](IMPLEMENTATION_REPORT_RU.md) · [RCA и ограничения](RCA_RU.md) · [машинные результаты](RESULTS.json).
+
+## PATCH001
+
+`white_star_symbolic_inspect` теперь поддерживает `view="comparison"` с optional `compare_run_id` того же проекта. Ответ различает same_literal, same_alpha, same_sp_normal_form, same_history, same_op_trace, same_observer_signature и содержит точные source-span/reduction witnesses. `view="diagnostics"` читает local saturation certificate; у старых профилей явно NOT_RECORDED_IN_HISTORICAL_PROFILE.
+
+Grammar: candidate_status=EMPIRICAL не означает identifiability_status=UNDERDETERMINED. При расхождении retained candidates прогноз имеет family_verdict=INCONCLUSIVE. counterexample_candidates — membership queries к внешнему держателю меток, не полученные истины. Верхний grammar.status теперь отражает UNDERDETERMINED семейства; выбранный кандидат оценивается отдельно. max_rules ограничивает AST, проб не больше64.
+
+NO_NOVEL_CANDIDATES означает отсутствие новых путей в фактически обследованном local proposal cycle/window; не глобальную замкнутость операций. Provenance-paths не сворачиваются в word quotient. Текущие и старые replay profiles делят2 active/16 queued; все прежние CPU/RAM quotas сохранены. Старый bundle выбирает operator-approved immutable profile по binding, без кода из ZIP. При неизвестном binding — явный отказ.
+
+Кеширующему клиенту нужно обновить schema инспектора, переподключив LivingMath по прежнему адресу. Число инструментов остаётся75. [Точные примеры и отчёт](patch001/PATCH001_IMPLEMENTATION_RU.md).

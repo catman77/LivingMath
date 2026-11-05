@@ -39,11 +39,14 @@ TOOLS = {
                     "report",
                     "export",
                     "artifact",
+                    "comparison",
+                    "diagnostics",
                 ]
             },
             "offset": integer(0, 1000000),
             "limit": integer(1, 128),
             "artifact_ref": REF,
+            "compare_run_id": REF,
         },
         ["project", "run_id"],
     ),
@@ -53,9 +56,10 @@ TOOLS = {
 }
 
 
-def capabilities(executor=None):
+def capabilities(executor=None, replay_profiles=None):
     return {
-        "version": "symbolic_v1/1",
+        "version": "symbolic_v1/1-patch001",
+        "historical_replay_bindings": sorted(replay_profiles or {}),
         "engine": "symbolic_v1",
         "status": (
             "READY" if executor and executor.status()["ready"] else "ENGINE_UNAVAILABLE"
@@ -96,7 +100,7 @@ def result(data=None, error=None):
     )
 
 
-def register_tools(server, root, executor=None, recover=False):
+def register_tools(server, root, executor=None, recover=False, replay_profiles=None):
     service = SymbolicService(Path(root), executor)
     if recover:
         service.recover()
@@ -118,10 +122,23 @@ def register_tools(server, root, executor=None, recover=False):
                 raw = target.read_bytes()
                 if hashlib.sha256(raw).hexdigest() != args["bundle_ref"]:
                     raise AssuranceError("EXPORT_INTEGRITY_FAILURE")
-                if executor is None:
-                    raise AssuranceError("ENGINE_UNAVAILABLE")
+                from .bundle import bundle_binding
+
+                requested_binding = bundle_binding(raw)
+                selected_executor = (
+                    executor
+                    if requested_binding == binding()
+                    else (replay_profiles or {}).get(requested_binding)
+                )
+                if selected_executor is None:
+                    raise AssuranceError(
+                        "KERNEL_BINDING_UNAVAILABLE",
+                        details={
+                            "message": "No approved installed profile for this exact binding"
+                        },
+                    )
                 reply = await asyncio.to_thread(
-                    executor.run,
+                    selected_executor.run,
                     {
                         "action": "replay",
                         "bundle_base64": base64.b64encode(raw).decode(),
@@ -153,7 +170,7 @@ def register_tools(server, root, executor=None, recover=False):
 
     descriptions = {
         "white_star_symbolic_explore": "Register project with assurance_project_new first. Execute symbolic_v1 full token histories, exact SP/alpha witnesses, bounded local UDAV/CAD search. No 2D encoder, server LLM or verification. See bridge_system_status.symbolic_v1 for exact schema and limits.",
-        "white_star_symbolic_inspect": "Read immutable symbolic run pages and exact source spans. Views: operations, observations, claims, grammar, evaluation, history, states, source, report, manifest, checks, input, summary. Private export returns ordered base64 chunks. Large records explicitly require artifact chunks.",
+        "white_star_symbolic_inspect": "Read immutable symbolic run pages and exact source spans. comparison requires compare_run_id in the same project; diagnostics exposes bounded local saturation. Views: operations, observations, claims, grammar, evaluation, history, states, source, report, manifest, checks, input, summary. Private export returns ordered base64 chunks. Large records explicitly require artifact chunks.",
         "white_star_symbolic_replay": "Recompute one private symbolic data-only bundle by SHA in its own project. Exact installed operation binding, complete source/DAG audit, bounded isolated worker. No LLM/network or code execution from ZIP.",
     }
     for name, schema in TOOLS.items():

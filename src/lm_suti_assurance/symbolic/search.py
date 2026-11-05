@@ -24,6 +24,10 @@ def search(request, history, roots, observer, clock_factory):
     trace = []
     halt = "MAX_STEPS"
     attempts = 0
+    stale_steps = 0
+    stale_clocks = {}
+    diagnostics = []
+    window = max(8, min(32, len(operators) * 4))
     for step in range(budget["max_steps"]):
         candidates = []
         stop = None
@@ -149,11 +153,63 @@ def search(request, history, roots, observer, clock_factory):
         if stop:
             halt = stop
             break
+        grew = any(c.get("new_outputs") for c in candidates)
+        if grew:
+            stale_steps = 0
+            stale_clocks.clear()
+        else:
+            stale_steps += 1
+            clock_state = [getattr(clock, "a", None), getattr(clock, "b", None)]
+            signature = (
+                digest([current, clock_state]) if None not in clock_state else None
+            )
+            cycle = signature is not None and signature in stale_clocks
+            if signature is not None:
+                stale_clocks.setdefault(signature, step)
+            if cycle or stale_steps >= window:
+                start = step - stale_steps + 1
+                actual = {}
+                for entry in trace[start:]:
+                    for c in entry["candidates"]:
+                        actual.setdefault(digest(c), c)
+                sampled = sorted({c["operator"] for c in actual.values()})
+                diagnostics.append(
+                    {
+                        "kind": "observed",
+                        "halt_reason": "NO_NOVEL_CANDIDATES",
+                        "scope": (
+                            "actual deterministic proposal cycle"
+                            if cycle
+                            else "bounded sampled local candidate window"
+                        ),
+                        "global_exhaustion_proved": False,
+                        "unseen_variants_may_exist": True,
+                        "current_node_id": current,
+                        "current_word_hash": history.states[current].word_hash,
+                        "history_identity": budget.get("history_identity", "word"),
+                        "allowed_operators": operators,
+                        "sampled_operators": sampled,
+                        "unproposed_operators": [
+                            o for o in operators if o not in sampled
+                        ],
+                        "steps_without_new_paths": stale_steps,
+                        "window_step_range": [start, step],
+                        "clock_state": clock_state,
+                        "repeated_clock_first_step": (
+                            stale_clocks.get(signature) if cycle else None
+                        ),
+                        "tested_variants": list(actual.values()),
+                        "boundary": "No new accepted path in this actual bounded proposal set; not closure of the full operation algebra.",
+                    }
+                )
+                halt = "NO_NOVEL_CANDIDATES"
+                break
     return {
         "ops_trace": trace,
         "structural_observations": [
             {"node_id": i, **o} for i, o in observations.items()
         ],
+        "search_diagnostics": diagnostics,
         "search_summary": {
             "steps": len(trace),
             "attempted_candidates": attempts,
@@ -164,6 +220,10 @@ def search(request, history, roots, observer, clock_factory):
             "unique_literal_words": len({s.word_hash for s in history.states.values()}),
             "witness_count": len(seen),
             "history_identity": budget.get("history_identity", "word"),
+            "stagnation_window": window,
+            "saturation_certificate_digest": (
+                digest(diagnostics[0]) if diagnostics else None
+            ),
         },
         "final_node_id": current,
     }

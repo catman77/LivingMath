@@ -8,9 +8,14 @@ from .contracts import LIMITS
 
 
 class Worker(Transport):
-    def __init__(self):
+    def __init__(self, worker_path: Path | None = None):
         self.process = subprocess.Popen(
-            [sys.executable, "-I", "-B", str(Path(__file__).with_name("worker.py"))],
+            [
+                sys.executable,
+                "-I",
+                "-B",
+                str(worker_path or Path(__file__).with_name("worker.py")),
+            ],
             stdin=subprocess.PIPE,
             stdout=subprocess.PIPE,
             stderr=subprocess.DEVNULL,
@@ -28,7 +33,8 @@ class Worker(Transport):
 
 
 class Executor(NumericalPool):
-    def __init__(self):
+    def __init__(self, worker_path: Path | None = None, shared_budget=None):
+        self.shared_budget = shared_budget
         self.slots = threading.BoundedSemaphore(
             LIMITS["concurrent_jobs"] + LIMITS["queue"]
         )
@@ -37,9 +43,36 @@ class Executor(NumericalPool):
         self.error = None
         try:
             for _ in range(LIMITS["concurrent_jobs"]):
-                w = Worker()
+                w = Worker(worker_path)
                 self.workers.append(w)
                 self.queue.put(w)
         except (AssuranceError, ValueError, OSError) as exc:
             self.error = {"code": "ENGINE_UNAVAILABLE", "message": str(exc)}
             self.close()
+
+    def run(self, packet: dict) -> dict:
+        if self.shared_budget is None:
+            return super().run(packet)
+        return self.shared_budget.call(lambda: super(Executor, self).run(packet))
+
+
+class SharedBudget:
+    """The original2 active/16 queued quota covers current and historical profiles."""
+
+    def __init__(self):
+        self.slots = threading.BoundedSemaphore(
+            LIMITS["concurrent_jobs"] + LIMITS["queue"]
+        )
+        self.active = threading.BoundedSemaphore(LIMITS["concurrent_jobs"])
+
+    def call(self, operation):
+        if not self.slots.acquire(blocking=False):
+            raise AssuranceError(
+                "WORKER_LIMIT",
+                details={"message": "Shared symbolic profile quota:2 active,16 queued"},
+            )
+        try:
+            with self.active:
+                return operation()
+        finally:
+            self.slots.release()

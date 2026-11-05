@@ -1,0 +1,157 @@
+{
+  "status": "PASS_WITH_EXPLICIT_RESEARCH_LIMITS",
+  "installed_release": "v0.4.1-developer-preview",
+  "deployment_id": "symbolic-patch001-20261105T070936Z",
+  "endpoint": "https://fares-september-rebel-board.trycloudflare.com/mcp",
+  "kernel_binding": "ea8df7eaa0f9e32e78cc86e7907606d7d9b7b5f857a8ca5fa73733062fd716fa",
+  "release_manifest_sha256": "89f1779ce7cb29767d5dedfd08553d417fb9b95f49df2339963d695c1fac233f",
+  "source_archive_sha256": "64b08e60cae9e5592b75b7a7da2eff88a48ffb406a6a47e8d0b538405dc534f2",
+  "baseline_pytest": 252,
+  "patched_pytest": 261,
+  "installed_wheel_pytest": 261,
+  "legacy_pytest": {
+    "passed": 1066,
+    "skipped": 20,
+    "failed": 0
+  },
+  "staging_MCP_checks": 129,
+  "production_MCP_checks": 129,
+  "acceptance": {
+    "AC01": "PASS",
+    "AC02": "PASS",
+    "AC07": "PASS",
+    "AC03": "PASS",
+    "AC04": "PASS",
+    "AC05": "PASS",
+    "AC06": "PASS",
+    "AC08": "PASS",
+    "AC09": "PASS",
+    "AC14": "PASS_WITH_UNDERDETERMINED_FAMILY",
+    "AC15": "PASS",
+    "AC10": "PASS",
+    "AC11": "PASS_STRUCTURAL_ONLY",
+    "AC12": "PASS",
+    "AC13": "PASS",
+    "AC16": "PASS_BOUNDED_GATES_NOT_FULL_PENTEST"
+  },
+  "benchmark": {
+    "status": "PASS",
+    "fixed_unique": {
+      "correct": 9,
+      "total": 9,
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "false_positive_rate": 0.0,
+      "false_positive_words": []
+    },
+    "old_fixed_unique": {
+      "correct": 6,
+      "total": 9,
+      "accuracy": 0.6666666666666666,
+      "balanced_accuracy": 0.7,
+      "false_positive_rate": 0.6,
+      "false_positive_words": [
+        "ABCBCA",
+        "ABABBA",
+        "BAABAB"
+      ]
+    },
+    "randomized_test_cases": 1200,
+    "mean_accuracy": {
+      "current": 1.0,
+      "old_endpoint": 0.5,
+      "unigram": 0.5,
+      "bigram": 0.48583333333333334,
+      "simple_context": 0.5291666666666667
+    },
+    "seeds": 20,
+    "family_status": "UNDERDETERMINED",
+    "LLM_calls": 0,
+    "execution_permission": false
+  },
+  "family_fixed_holdout": {
+    "consensus": 5,
+    "inconclusive": 4
+  },
+  "saturation": {
+    "attempted_candidates": 72,
+    "distinct_alpha_classes": 4,
+    "empirical_claims": 0,
+    "halt_reason": "NO_NOVEL_CANDIDATES",
+    "history_identity": "word",
+    "nodes": 9,
+    "observations": 9,
+    "proved_claims": 0,
+    "saturation_certificate_digest": "336d29c7c59a2b53a6aa460d045bee9177cd9e604e9c1e66428f8353685a3e09",
+    "stagnation_window": 28,
+    "steps": 18,
+    "total_stored_tokens": 56,
+    "underdetermined_claims": 1,
+    "unique_literal_words": 8,
+    "witness_count": 32
+  },
+  "historical_run_ids_preserved": 17,
+  "old_workspace_files_preserved": 1604,
+  "SQLite_integrity": "4/4 ok",
+  "canonical_audit": {
+    "before": {
+      "ok": true,
+      "entries": 4817,
+      "last_hash": "c9c0048be5cc2e782cb2f2377da524e5ad04303d86b65792ef1d503b8c1c3d50"
+    },
+    "after": {
+      "ok": true,
+      "entries": 4817,
+      "last_hash": "c9c0048be5cc2e782cb2f2377da524e5ad04303d86b65792ef1d503b8c1c3d50"
+    },
+    "unchanged": true
+  },
+  "old_profile_replay": {
+    "execution_permission": false,
+    "journal_hash_chain": "PASS",
+    "kernel_binding": "404d9d2612633ee1f673dfdfeaa22dc8365ec59efb3902e70470497c69093cc7",
+    "result_digest": "f17aa98dd5695692c9efd31b46256d4ef1ec44025f12cad2b742db47b15cb62f",
+    "run_id": "bae7ef85b5678bfb4d4690702cec380eee732551c258ed27e7b0fada9f00e704",
+    "status": "REPLAY_MATCH",
+    "structural_recomputed": true,
+    "unrelated_legacy_operations": "NOT_REEXECUTED"
+  },
+  "new_profile_replay": {
+    "execution_permission": false,
+    "journal_hash_chain": "PASS",
+    "kernel_binding": "ea8df7eaa0f9e32e78cc86e7907606d7d9b7b5f857a8ca5fa73733062fd716fa",
+    "result_digest": "4f4a4e48e7f1adcca240934bbbb5d9b8e4efc423e6504452f10ac0487f5bf6d6",
+    "run_id": "2b3b790e7cf523296d01af4c7128df8d4af89520ba2f2227c2a8a75ee8463afd",
+    "status": "REPLAY_MATCH",
+    "structural_recomputed": true,
+    "unrelated_legacy_operations": "NOT_REEXECUTED"
+  },
+  "CI": {
+    "local": "PASS",
+    "hosted": "NOT_RUN"
+  },
+  "execution_permission": false,
+  "R3": "PENDING",
+  "native_SUTI": "NOT_EXECUTED",
+  "run_ids": {
+    "zero": "2b3b790e7cf523296d01af4c7128df8d4af89520ba2f2227c2a8a75ee8463afd",
+    "zero-copy": "a9a4f21dd037c3729a27fb8ff7d447508a9f572fae4cf91c2177deea190b4d98",
+    "alpha-a": "20e6d31bab0f48986ac4e858dd2171719cc0840ef236cf175352e2028bad03d6",
+    "alpha-b": "6dc3646313cc5f3e8515b1ecf8e2232bb3b6080029e3d5e87499d4b6fcd6d034",
+    "order-a": "1e8c1bd9bffdc0049aaa6b3c9185e6876dc79278230bb0a9bdc130ee13b9b8f4",
+    "order-b": "297ecc465f9f5deb32fde052b2f5926e7f7ae20bc77154cfd04743b6b8e8532e",
+    "ab": "d4ce400041b05bb28b44a3633aa8aa0536df041d4dbc8163f7c882fd066fb1f8",
+    "ba": "38a474a46482414423423aade0adec34e1729c5211ee7819dd0e26c962002a15",
+    "cd": "c155bdd15b8734ecfe359e72d4248254b02829937da534455c9f488eedee7bfd",
+    "dc": "15f9caef2a0e07a428843db3e3fa9b1b5c5d3f9a6473371ebee90e7bfb513a8f",
+    "saturation": "b8ef4c89f7197227755b616e4a108b29c6421cba16f0d2ae82b62d36ed721fd9",
+    "paths": "0e9f23b5abd5162702a1419724782532923e5fc6e65c2c777c79e6662d11f910",
+    "relations": "435451dad06e4f653946779b89b9c4c916e8fb1616c433fd7a8acadcca0cad9b",
+    "mask": "809599e2ce13c746b6c656ab9d91a7e3817e8292142787b8c8bb15616b78aa8c",
+    "active-query": "48e36cd6527c4540b4abf734366d48e3f094c3ea604bd2ff08c7e0cc75f136a3",
+    "unicode": "451fa6c35fec173ff5edc0a8996d81ce0e7a7bf455d8ba2812e9b51cb4e8678c",
+    "mallarme-original": "6e29ffcc9935d35004f8f5942e4ec67a919dfeac629c346d8f35ffe8ad2b4a13",
+    "mallarme-permuted": "0a0e08356fde1cf1a485fee0be3a291f479f9c4bcb6d763ca148b94491c1447d",
+    "mallarme-renamed": "3e0505246e73c91670dac7e1eb8b2ed837b5d418a8f0430bb00b7db5402ef67d"
+  }
+}

@@ -22,6 +22,7 @@ VIEWS = {
     "manifest": "manifest",
     "source": "source_map",
     "checks": "checks",
+    "diagnostics": "search_diagnostics",
 }
 
 
@@ -232,11 +233,27 @@ class SymbolicService:
         return recovered
 
     def inspect(
-        self, project, run_id, view="summary", offset=0, limit=32, artifact_ref=None
+        self,
+        project,
+        run_id,
+        view="summary",
+        offset=0,
+        limit=32,
+        artifact_ref=None,
+        compare_run_id=None,
     ):
         w, record = self.load(project, run_id)
         require(0 <= offset and 1 <= limit <= 128)
-        if view == "summary":
+        if view == "comparison":
+            require(
+                compare_run_id is not None, "COMPARE_RUN_ID_REQUIRED", "/compare_run_id"
+            )
+            compared = self.compare(project, run_id, compare_run_id)
+            require(
+                len(canonical(compared).encode()) <= 112 * 1024, "COMPARISON_TOO_LARGE"
+            )
+            items = [compared]
+        elif view == "summary":
             items = [record]
         elif view == "export":
             from .bundle import export
@@ -283,7 +300,15 @@ class SymbolicService:
                 ]
             else:
                 require(view in VIEWS, "INVALID_VIEW")
-                v = value[VIEWS[view]]
+                v = value.get(
+                    VIEWS[view],
+                    [
+                        {
+                            "status": "NOT_RECORDED_IN_HISTORICAL_PROFILE",
+                            "kind": "observed",
+                        }
+                    ],
+                )
                 items = v if isinstance(v, list) else [v]
         out = []
         size = 0
@@ -316,3 +341,154 @@ class SymbolicService:
             ),
             "execution_permission": False,
         }
+
+    def compare(self, project: str, left_id: str, right_id: str) -> dict:
+        """Compare actual saved roots/paths, never their aggregate summary counts."""
+        from .state import alpha_corpus, reduce_sp
+
+        lw, lr = self.load(project, left_id)
+        rw, rr = self.load(project, right_id)
+        require(lr["status"] == rr["status"] == "COMPLETED", "RUN_NOT_COMPLETED")
+        left = blobs.get(lw, lr["result_ref"])
+        right = blobs.get(rw, rr["result_ref"])
+        ls = next(s for s in left["states"] if s["node_id"] == left["root_node_id"])
+        rs = next(s for s in right["states"] if s["node_id"] == right["root_node_id"])
+        a, b = ls["tokens"], rs["tokens"]
+
+        def topology(s):
+            return sorted({(p, k) for p, k, _ in s["boundaries"]})
+
+        scope = left["input"]["segmentation"]["renaming_scope"]
+        require(
+            scope == right["input"]["segmentation"]["renaming_scope"],
+            "COMPARISON_SCOPE_MISMATCH",
+        )
+
+        def pattern(s):
+            cuts = sorted(
+                {0, len(s["tokens"])}
+                | {p for p, k, _ in s["boundaries"] if k == "record_start"}
+            )
+            words = (
+                [s["tokens"][x:y] for x, y in zip(cuts, cuts[1:])]
+                if scope == "local"
+                else [s["tokens"]]
+            )
+            return {"pattern": alpha_corpus(words, scope), "boundaries": topology(s)}
+
+        changed = next(
+            (
+                i
+                for i in range(max(len(a), len(b)))
+                if i >= len(a) or i >= len(b) or a[i] != b[i]
+            ),
+            None,
+        )
+
+        def at(s, i):
+            return {
+                "position": i,
+                "token": (
+                    s["tokens"][i] if i is not None and i < len(s["tokens"]) else None
+                ),
+                "original_byte_spans": (
+                    s["source_spans"][i]
+                    if i is not None and i < len(s["tokens"])
+                    else []
+                ),
+            }
+
+        sp = None
+        sp_witness = {
+            "applicable": False,
+            "reason": "SP algebra must be declared in both runs",
+        }
+        if (
+            left["input"]["algebra"]["kind"]
+            == right["input"]["algebra"]["kind"]
+            == "SP"
+        ):
+            an, ae = reduce_sp(a)
+            bn, be = reduce_sp(b)
+            aq = a.count("S") - a.count("P")
+            bq = b.count("S") - b.count("P")
+            sp = an == bn
+            sp_witness = {
+                "applicable": True,
+                "q_left": aq,
+                "q_right": bq,
+                "same_zero_status": (aq == 0) == (bq == 0),
+                "left_normal_form": list(an),
+                "right_normal_form": list(bn),
+                "left_reduction_route": ae,
+                "right_reduction_route": be,
+                "sign_duality_holds": bq == -aq,
+                "scope": "SP/PS cancellation; zero status and q-sign are distinct properties",
+            }
+        same_index = left["input"]["observers"] == right["input"]["observers"]
+        lo = [o["observers"] for o in left["structural_observations"]]
+        ro = [o["observers"] for o in right["structural_observations"]]
+        compared = {
+            "schema": "livingmath-symbolic-comparison/1",
+            "project": project,
+            "left_run_id": left_id,
+            "right_run_id": right_id,
+            "same_literal": a == b and topology(ls) == topology(rs),
+            "same_alpha": pattern(ls) == pattern(rs),
+            "same_sp_normal_form": sp,
+            "same_history": left["history"] == right["history"],
+            "same_op_trace": left["ops_trace"] == right["ops_trace"],
+            "same_observer_signature": lo == ro if same_index else None,
+            "source_sha256_equal": lr["source_sha256"] == rr["source_sha256"],
+            "literal_witness": {
+                "first_different_token": changed,
+                "left": at(ls, changed),
+                "right": at(rs, changed),
+                "left_word_hash": ls["word_hash"],
+                "right_word_hash": rs["word_hash"],
+                "left_boundaries": topology(ls),
+                "right_boundaries": topology(rs),
+            },
+            "alpha_witness": {
+                "scope": scope,
+                "left": pattern(ls),
+                "right": pattern(rs),
+            },
+            "composition_witness": {
+                "left_declared_segments": left["source_map"]["declared_hierarchy"],
+                "right_declared_segments": right["source_map"]["declared_hierarchy"],
+                "left_concat_nodes": [
+                    n["node_id"] for n in left["history"] if n["op"] == "CONCAT"
+                ],
+                "right_concat_nodes": [
+                    n["node_id"] for n in right["history"] if n["op"] == "CONCAT"
+                ],
+                "boundary": "Only supplied segments and actually saved operations; no inferred semantic syntax",
+            },
+            "sp_witness": sp_witness,
+            "history_witness": {
+                "left_digest": digest(left["history"]),
+                "right_digest": digest(right["history"]),
+                "left_trace_digest": digest(left["ops_trace"]),
+                "right_trace_digest": digest(right["ops_trace"]),
+            },
+            "observer_witness": {
+                "same_index": same_index,
+                "left_index": left["input"]["observers"],
+                "right_index": right["input"]["observers"],
+                "left_digest": digest(lo),
+                "right_digest": digest(ro),
+                "scope": "finite saved observations, not universal indistinguishability",
+            },
+            "kind": "observed",
+            "non_claims": [
+                "semantic_equivalence",
+                "universal_invariant",
+                "verified_truth",
+            ],
+            "execution_permission": False,
+        }
+
+        from ..core import strict_json
+
+        return strict_json(canonical(compared))
