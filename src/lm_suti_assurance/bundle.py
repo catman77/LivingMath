@@ -19,6 +19,8 @@ def export_bundle(workspace, audience='private'):
     with workspace.locked():
         rows = workspace.history()
         require(bool(rows), 'PROJECT_NOT_FOUND')
+        if any(r['action'].startswith('symbolic.') for r in rows):
+            raise AssuranceError('SYMBOLIC_EXPORT_REQUIRES_RUN_ID', details={'tool':'white_star_symbolic_inspect','view':'export'})
         if any(r['action'].startswith('white.') for r in rows):
             from .white_star.bundle import export_rows as white_export
             return white_export(workspace, rows, audience)

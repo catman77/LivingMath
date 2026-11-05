@@ -1,0 +1,27 @@
+{
+  "schema": "livingmath-symbolic-fixtures/1",
+  "description": "Pure mathematical acceptance cases; all text is synthetic and non-semantic",
+  "zero_words": ["", "SP", "PS", "SSPP", "SPSP", "PPSS", "PSPS"],
+  "zero_history_examples": ["SSPP", "SPSP", "PPSS", "PSPS"],
+  "alpha_single_word_pairs": [
+    {"left": "ABBA", "right": "BAAB", "equivalent": true},
+    {"left": "ABAB", "right": "AABB", "equivalent": false},
+    {"left": "SSPP", "right": "PPSS", "equivalent": true},
+    {"left": "SSPP", "right": "SPSP", "equivalent": false}
+  ],
+  "alpha_corpus_pairs": [
+    {"left": ["AB", "AB"], "right": ["AB", "CD"], "local_equivalent": true, "global_equivalent": false},
+    {"left": ["ABBA", "ABBA"], "right": ["ABBA", "BAAB"], "local_equivalent": true, "global_equivalent": false},
+    {"left": ["AB", "AB"], "right": ["XY", "XY"], "local_equivalent": true, "global_equivalent": true}
+  ],
+  "composition_pairs": [
+    {"a": "SSPP", "b": "SPSP", "ab": "SSPPSPSP", "ba": "SPSPSSPP", "fold": 0},
+    {"a": "SPPS", "b": "PSSP", "ab": "SPPSPSSP", "ba": "PSSPSPPS", "fold": 0}
+  ],
+  "nonstrivial_q": [
+    {"w": "SSP", "q": 1}, {"w": "PPSSS", "q": 1},
+    {"w": "PSS", "q": 1}, {"w": "PPPS", "q": -2}
+  ],
+  "underdetermined_training_examples": ["AB", "AABB"],
+  "blind_grammar_families": ["periodic_AB", "matching_endpoints", "dyck_one", "underdetermined"]
+}

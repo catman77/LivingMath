@@ -1,0 +1,44 @@
+{
+  "name": "LIVINGMATH_SYMBOLIC_V1_PATCH_001",
+  "created_date": "2026-11-05",
+  "type": "implementation specification and agent handoff, not implemented production code",
+  "format": "zip of UTF-8 Markdown + JSON + Python checker",
+  "files": {
+    "01_TZ_SYMBOLIC_V1_RU.md": {
+      "sha256": "16bc597df5bc962a4de384c28ce735b49ef92a92d9aecead962453561dd8a69f",
+      "bytes": 23053
+    },
+    "02_PROMPT_CODE_AGENT_RU.md": {
+      "sha256": "3118324477d994f7521e7c5bf9a830063e3167634bc0233921865d0c707a5ba7",
+      "bytes": 8850
+    },
+    "03_API_AND_SEMANTICS_RU.md": {
+      "sha256": "45640a114cf6d7f497e75c0aa907605c129d12d1f2a8a0a6bf14557096a16344",
+      "bytes": 13336
+    },
+    "04_ACCEPTANCE_TESTS_RU.md": {
+      "sha256": "06a33d14495ec78f51b739c6d5b097d755878545431619ab9273baecc5614ae6",
+      "bytes": 11527
+    },
+    "05_BASELINES_AND_SOURCES_RU.md": {
+      "sha256": "f6ab8b4891c5100eef4140466dcf74ce9d652c696d11174e7f73858087722711",
+      "bytes": 7554
+    },
+    "README_RU.md": {
+      "sha256": "367d6499e2974178dcb9501c8f8f64e79f6e869c051f9ba8d28301969d8881f3",
+      "bytes": 4921
+    },
+    "checks/check_fixtures.py": {
+      "sha256": "ebe4624faee212ed29bdb0dafb23ac0603e131ebd7e12d81a48112fa7eff085d",
+      "bytes": 3160
+    },
+    "fixtures/mcp_request_example.json": {
+      "sha256": "c4723632ce12c517d2fe852d748f471411c8fa4c59ac0f724693e65152475f48",
+      "bytes": 949
+    },
+    "fixtures/symbolic_cases.json": {
+      "sha256": "9d5275e75c9d96801a77562ee682f42f5f2f13bef5dff3ed5dba84843daa4ac6",
+      "bytes": 1361
+    }
+  }
+}

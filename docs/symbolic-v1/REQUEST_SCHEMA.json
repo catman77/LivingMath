@@ -1,0 +1,365 @@
+{
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "levinmas-white-star-symbolic-request/1"
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "maxLength": 48000
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "title": {
+          "type": "string",
+          "maxLength": 48000
+        },
+        "author": {
+          "type": "string",
+          "maxLength": 48000
+        },
+        "edition": {
+          "type": "string",
+          "maxLength": 48000
+        },
+        "language": {
+          "type": "string",
+          "maxLength": 48000
+        },
+        "url": {
+          "type": "string",
+          "maxLength": 48000
+        },
+        "rights": {
+          "type": "string",
+          "maxLength": 48000
+        },
+        "alphabet": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1024
+          },
+          "maxItems": 256,
+          "minItems": 1
+        },
+        "segments": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "maxLength": 48000
+              },
+              "parent_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "kind": {
+                "type": "string",
+                "maxLength": 48000
+              },
+              "byte_start": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 48000
+              },
+              "byte_end": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 48000
+              }
+            },
+            "required": [
+              "id",
+              "kind",
+              "byte_start",
+              "byte_end"
+            ],
+            "additionalProperties": false
+          },
+          "maxItems": 256,
+          "minItems": 0
+        },
+        "layout": {
+          "type": "object",
+          "maxProperties": 256
+        }
+      },
+      "required": [
+        "text",
+        "sha256"
+      ],
+      "additionalProperties": false
+    },
+    "normalization": {
+      "enum": [
+        "none",
+        "NFC"
+      ]
+    },
+    "segmentation": {
+      "type": "object",
+      "properties": {
+        "unit": {
+          "enum": [
+            "codepoint",
+            "literal_token",
+            "whitespace",
+            "line"
+          ]
+        },
+        "record_boundaries": {
+          "enum": [
+            "lines",
+            "whole"
+          ]
+        },
+        "renaming_scope": {
+          "enum": [
+            "global",
+            "local"
+          ]
+        },
+        "tokens": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "token": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1024
+              },
+              "byte_start": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 48000
+              },
+              "byte_end": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 48000
+              }
+            },
+            "required": [
+              "token",
+              "byte_start",
+              "byte_end"
+            ],
+            "additionalProperties": false
+          },
+          "maxItems": 2048,
+          "minItems": 0
+        }
+      },
+      "required": [
+        "unit",
+        "record_boundaries",
+        "renaming_scope"
+      ],
+      "additionalProperties": false
+    },
+    "algebra": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "enum": [
+            "SP",
+            "FREE"
+          ]
+        },
+        "allow_reduce": {
+          "type": "boolean"
+        },
+        "preserve_history": {
+          "const": true
+        }
+      },
+      "required": [
+        "kind",
+        "allow_reduce",
+        "preserve_history"
+      ],
+      "additionalProperties": false
+    },
+    "observers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "literal",
+          "alpha_pattern",
+          "adjacency",
+          "substring_contexts",
+          "composition",
+          "sp_reduce",
+          "hierarchy"
+        ]
+      },
+      "maxItems": 7,
+      "minItems": 1
+    },
+    "operators": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "CONCAT",
+          "SPLIT",
+          "RENAME",
+          "SUBSTITUTE",
+          "REVERSE",
+          "SP_INV",
+          "REDUCE_SP",
+          "INSERT_CANCEL_PAIR"
+        ]
+      },
+      "maxItems": 8,
+      "minItems": 1
+    },
+    "search": {
+      "type": "object",
+      "properties": {
+        "seed": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967295
+        },
+        "max_steps": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4096
+        },
+        "max_candidates_per_step": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 16
+        },
+        "max_word_tokens": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 2048
+        },
+        "max_nodes": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 8192
+        },
+        "max_observations": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 8192
+        },
+        "max_total_tokens": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 131072
+        },
+        "strategy": {
+          "enum": [
+            "local_structural_novelty",
+            "random_local"
+          ]
+        },
+        "history_identity": {
+          "enum": [
+            "word",
+            "provenance"
+          ]
+        }
+      },
+      "required": [
+        "seed",
+        "max_steps",
+        "max_candidates_per_step",
+        "max_word_tokens",
+        "max_nodes",
+        "strategy"
+      ],
+      "additionalProperties": false
+    },
+    "task": {
+      "type": "object",
+      "properties": {
+        "mode": {
+          "enum": [
+            "discover_relations",
+            "descriptive",
+            "predictive"
+          ]
+        },
+        "train": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "tokens": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 1024
+                },
+                "maxItems": 512,
+                "minItems": 0
+              },
+              "accepted": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "tokens",
+              "accepted"
+            ],
+            "additionalProperties": false
+          },
+          "maxItems": 256,
+          "minItems": 0
+        },
+        "predict": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1024
+            },
+            "maxItems": 512,
+            "minItems": 0
+          },
+          "maxItems": 256,
+          "minItems": 0
+        },
+        "max_rules": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 15
+        }
+      },
+      "required": [
+        "mode"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schema",
+    "source",
+    "segmentation",
+    "algebra",
+    "observers",
+    "operators",
+    "search",
+    "task"
+  ],
+  "additionalProperties": false
+}

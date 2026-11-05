@@ -45,6 +45,8 @@ def parser():
     semantic_parser(sub)
     from .white_star.cli import add_parser as white_parser
     white_parser(sub)
+    from .symbolic.cli import add_parser as symbolic_parser
+    symbolic_parser(sub)
     q = sub.add_parser('check');q.add_argument('--project', required=True);q.add_argument('--candidate-ref', required=True)
     q.add_argument('--engine', choices=['direct','compiled'], default='direct');q.add_argument('--request-key', required=True)
     q = sub.add_parser('report');q.add_argument('--project', required=True);q.add_argument('--format', choices=['json','text'], default='text')
@@ -79,7 +81,10 @@ def main(argv=None):
     args = parser().parse_args(argv)
     try:
         s = Service(args.state_dir); cmd = args.command
-        if cmd == 'white-star':
+        if cmd == 'symbolic':
+            from .symbolic.cli import run as symbolic_run
+            value = symbolic_run(args)
+        elif cmd == 'white-star':
             from .white_star.cli import run as white_run
             value = white_run(args)
         elif cmd == 'semantic':

@@ -1,0 +1,25 @@
+{
+  "project": "symbolic_validation",
+  "request_key": "sp-first-001",
+  "request": {
+    "schema": "levinmas-white-star-symbolic-request/1",
+    "source": {
+      "title": "Four zero histories",
+      "text": "SSPP\nSPSP\nPPSS\nPSPS",
+      "sha256": "18f70958b95e3fa22424fb0b325de48f2bbbb1262e87df5361c7671374484bc6"
+    },
+    "segmentation": {"unit": "codepoint", "record_boundaries": "lines", "renaming_scope": "global"},
+    "algebra": {"kind": "SP", "allow_reduce": true, "preserve_history": true},
+    "observers": ["literal", "alpha_pattern", "adjacency", "composition", "sp_reduce"],
+    "operators": ["CONCAT", "SPLIT", "RENAME", "REVERSE", "SP_INV", "REDUCE_SP", "INSERT_CANCEL_PAIR"],
+    "search": {
+      "seed": 119,
+      "max_steps": 256,
+      "max_candidates_per_step": 4,
+      "max_word_tokens": 512,
+      "max_nodes": 8192,
+      "strategy": "local_structural_novelty"
+    },
+    "task": {"mode": "discover_relations"}
+  }
+}

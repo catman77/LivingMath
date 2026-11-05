@@ -1,0 +1,76 @@
+{
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "levinmas-white-star-symbolic-response/1"
+    },
+    "ok": {
+      "type": "boolean"
+    },
+    "status": {
+      "type": "string"
+    },
+    "execution_permission": {
+      "const": false
+    },
+    "data": {
+      "type": "object"
+    },
+    "error": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "message": {
+          "type": "string"
+        },
+        "field_path": {
+          "type": "string"
+        },
+        "run_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "code",
+        "message",
+        "field_path",
+        "run_id"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schema",
+    "ok",
+    "status",
+    "execution_permission"
+  ],
+  "additionalProperties": false,
+  "oneOf": [
+    {
+      "required": [
+        "data"
+      ],
+      "properties": {
+        "ok": {
+          "const": true
+        }
+      }
+    },
+    {
+      "required": [
+        "error"
+      ],
+      "properties": {
+        "ok": {
+          "const": false
+        }
+      }
+    }
+  ]
+}

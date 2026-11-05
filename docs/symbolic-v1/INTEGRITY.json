@@ -1,0 +1,788 @@
+{
+  "status": "PASS",
+  "stores": {
+    "canonical": {
+      "original_path_inode": true,
+      "integrity": true,
+      "tables": {
+        "backup-before:policies": {
+          "original_rows": 6,
+          "current_rows": 6,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:events": {
+          "original_rows": 2058,
+          "current_rows": 2058,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:policy_requests": {
+          "original_rows": 0,
+          "current_rows": 0,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:reviews": {
+          "original_rows": 0,
+          "current_rows": 0,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:operations": {
+          "original_rows": 4817,
+          "current_rows": 4817,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:request_keys": {
+          "original_rows": 2058,
+          "current_rows": 2058,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:event_fingerprints": {
+          "original_rows": 2058,
+          "current_rows": 2058,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:research_obligations": {
+          "original_rows": 769,
+          "current_rows": 769,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:research_obligation_versions": {
+          "original_rows": 1156,
+          "current_rows": 1156,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:research_moves": {
+          "original_rows": 184,
+          "current_rows": 184,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:transformation_contracts": {
+          "original_rows": 1,
+          "current_rows": 1,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:frontier_constraints": {
+          "original_rows": 207,
+          "current_rows": 207,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:frontier_imports": {
+          "original_rows": 197,
+          "current_rows": 197,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:research_move_bindings": {
+          "original_rows": 184,
+          "current_rows": 184,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:research_move_keys": {
+          "original_rows": 184,
+          "current_rows": 184,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:research_move_request_keys": {
+          "original_rows": 725,
+          "current_rows": 725,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:research_move_audits": {
+          "original_rows": 383,
+          "current_rows": 383,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:research_move_status_history": {
+          "original_rows": 983,
+          "current_rows": 983,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:adverse_evidence_reviews": {
+          "original_rows": 32,
+          "current_rows": 32,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:policies": {
+          "original_rows": 6,
+          "current_rows": 6,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:events": {
+          "original_rows": 2058,
+          "current_rows": 2058,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:policy_requests": {
+          "original_rows": 0,
+          "current_rows": 0,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:reviews": {
+          "original_rows": 0,
+          "current_rows": 0,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:operations": {
+          "original_rows": 4817,
+          "current_rows": 4817,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:request_keys": {
+          "original_rows": 2058,
+          "current_rows": 2058,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:event_fingerprints": {
+          "original_rows": 2058,
+          "current_rows": 2058,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:research_obligations": {
+          "original_rows": 769,
+          "current_rows": 769,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:research_obligation_versions": {
+          "original_rows": 1156,
+          "current_rows": 1156,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:research_moves": {
+          "original_rows": 184,
+          "current_rows": 184,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:transformation_contracts": {
+          "original_rows": 1,
+          "current_rows": 1,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:frontier_constraints": {
+          "original_rows": 207,
+          "current_rows": 207,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:frontier_imports": {
+          "original_rows": 197,
+          "current_rows": 197,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:research_move_bindings": {
+          "original_rows": 184,
+          "current_rows": 184,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:research_move_keys": {
+          "original_rows": 184,
+          "current_rows": 184,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:research_move_request_keys": {
+          "original_rows": 725,
+          "current_rows": 725,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:research_move_audits": {
+          "original_rows": 383,
+          "current_rows": 383,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:research_move_status_history": {
+          "original_rows": 983,
+          "current_rows": 983,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:adverse_evidence_reviews": {
+          "original_rows": 32,
+          "current_rows": 32,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        }
+      }
+    },
+    "typed": {
+      "original_path_inode": true,
+      "integrity": true,
+      "tables": {
+        "backup-before:policies": {
+          "original_rows": 6,
+          "current_rows": 6,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:events": {
+          "original_rows": 2072,
+          "current_rows": 2072,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:policy_requests": {
+          "original_rows": 0,
+          "current_rows": 0,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:reviews": {
+          "original_rows": 0,
+          "current_rows": 0,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:operations": {
+          "original_rows": 4863,
+          "current_rows": 4863,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:request_keys": {
+          "original_rows": 2072,
+          "current_rows": 2072,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:event_fingerprints": {
+          "original_rows": 2072,
+          "current_rows": 2072,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:research_obligations": {
+          "original_rows": 770,
+          "current_rows": 770,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:research_obligation_versions": {
+          "original_rows": 1158,
+          "current_rows": 1158,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:research_moves": {
+          "original_rows": 186,
+          "current_rows": 186,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:transformation_contracts": {
+          "original_rows": 1,
+          "current_rows": 1,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:frontier_constraints": {
+          "original_rows": 209,
+          "current_rows": 209,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:frontier_imports": {
+          "original_rows": 199,
+          "current_rows": 199,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:research_move_bindings": {
+          "original_rows": 186,
+          "current_rows": 186,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:research_move_keys": {
+          "original_rows": 186,
+          "current_rows": 186,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:research_move_request_keys": {
+          "original_rows": 729,
+          "current_rows": 729,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:research_move_audits": {
+          "original_rows": 387,
+          "current_rows": 387,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:research_move_status_history": {
+          "original_rows": 993,
+          "current_rows": 993,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:adverse_evidence_reviews": {
+          "original_rows": 32,
+          "current_rows": 32,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:typed011_configuration": {
+          "original_rows": 1,
+          "current_rows": 1,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:typed011_scopes": {
+          "original_rows": 2,
+          "current_rows": 2,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:typed011_precommits": {
+          "original_rows": 2,
+          "current_rows": 2,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:typed011_moves": {
+          "original_rows": 2,
+          "current_rows": 2,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:typed011_activations": {
+          "original_rows": 2,
+          "current_rows": 2,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:typed011_executions": {
+          "original_rows": 2,
+          "current_rows": 2,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:typed011_receipts": {
+          "original_rows": 2,
+          "current_rows": 2,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:typed011_journal": {
+          "original_rows": 2,
+          "current_rows": 2,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:engine017_sources": {
+          "original_rows": 1,
+          "current_rows": 1,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:engine017_requests": {
+          "original_rows": 1,
+          "current_rows": 1,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:engine017_projections": {
+          "original_rows": 1,
+          "current_rows": 1,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:deploy018_leases": {
+          "original_rows": 1,
+          "current_rows": 1,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:deploy018_attempts": {
+          "original_rows": 1,
+          "current_rows": 1,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:deploy018_attestations": {
+          "original_rows": 1,
+          "current_rows": 1,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:deploy018_consumptions": {
+          "original_rows": 1,
+          "current_rows": 1,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:deploy018_revocations": {
+          "original_rows": 0,
+          "current_rows": 0,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:policies": {
+          "original_rows": 6,
+          "current_rows": 6,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:events": {
+          "original_rows": 2072,
+          "current_rows": 2072,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:policy_requests": {
+          "original_rows": 0,
+          "current_rows": 0,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:reviews": {
+          "original_rows": 0,
+          "current_rows": 0,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:operations": {
+          "original_rows": 4863,
+          "current_rows": 4863,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:request_keys": {
+          "original_rows": 2072,
+          "current_rows": 2072,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:event_fingerprints": {
+          "original_rows": 2072,
+          "current_rows": 2072,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:research_obligations": {
+          "original_rows": 770,
+          "current_rows": 770,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:research_obligation_versions": {
+          "original_rows": 1158,
+          "current_rows": 1158,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:research_moves": {
+          "original_rows": 186,
+          "current_rows": 186,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:transformation_contracts": {
+          "original_rows": 1,
+          "current_rows": 1,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:frontier_constraints": {
+          "original_rows": 209,
+          "current_rows": 209,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:frontier_imports": {
+          "original_rows": 199,
+          "current_rows": 199,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:research_move_bindings": {
+          "original_rows": 186,
+          "current_rows": 186,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:research_move_keys": {
+          "original_rows": 186,
+          "current_rows": 186,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:research_move_request_keys": {
+          "original_rows": 729,
+          "current_rows": 729,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:research_move_audits": {
+          "original_rows": 387,
+          "current_rows": 387,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:research_move_status_history": {
+          "original_rows": 993,
+          "current_rows": 993,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:adverse_evidence_reviews": {
+          "original_rows": 32,
+          "current_rows": 32,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:typed011_configuration": {
+          "original_rows": 1,
+          "current_rows": 1,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:typed011_scopes": {
+          "original_rows": 2,
+          "current_rows": 2,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:typed011_precommits": {
+          "original_rows": 2,
+          "current_rows": 2,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:typed011_moves": {
+          "original_rows": 2,
+          "current_rows": 2,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:typed011_activations": {
+          "original_rows": 2,
+          "current_rows": 2,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:typed011_executions": {
+          "original_rows": 2,
+          "current_rows": 2,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:typed011_receipts": {
+          "original_rows": 2,
+          "current_rows": 2,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:typed011_journal": {
+          "original_rows": 2,
+          "current_rows": 2,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:engine017_sources": {
+          "original_rows": 1,
+          "current_rows": 1,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:engine017_requests": {
+          "original_rows": 1,
+          "current_rows": 1,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:engine017_projections": {
+          "original_rows": 1,
+          "current_rows": 1,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:deploy018_leases": {
+          "original_rows": 1,
+          "current_rows": 1,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:deploy018_attempts": {
+          "original_rows": 1,
+          "current_rows": 1,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:deploy018_attestations": {
+          "original_rows": 1,
+          "current_rows": 1,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:deploy018_consumptions": {
+          "original_rows": 1,
+          "current_rows": 1,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:deploy018_revocations": {
+          "original_rows": 0,
+          "current_rows": 0,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        }
+      }
+    },
+    "oauth": {
+      "original_path_inode": true,
+      "integrity": true,
+      "tables": {},
+      "row_preservation": "EXPIRING_AUTH_ONLY; new owner QA session added, backups retained"
+    },
+    "dav": {
+      "original_path_inode": true,
+      "integrity": true,
+      "tables": {
+        "backup-before:dav_records": {
+          "original_rows": 4615,
+          "current_rows": 4615,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:dav_records": {
+          "original_rows": 4615,
+          "current_rows": 4615,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        }
+      }
+    }
+  },
+  "all_existing_workspace_files": {
+    "count": 1105,
+    "changed_or_missing": []
+  },
+  "journals": {
+    "mallarme_whitestar": {
+      "entries": 3,
+      "head": "da485933118d509bc429e5d1b1ac075868d459caabdb7d75f8ca5e147a1e33c7"
+    },
+    "poetry_replay_v01_20261105": {
+      "entries": 15,
+      "head": "b754015c324022a5436d4675443b8b3c0e8d5537476be974052052f115465e2f"
+    },
+    "poetry_v01_20261105": {
+      "entries": 44,
+      "head": "62c03b90574e63dc45b10d923cf57d4400aad94b1e7f158b4ed4e8f6f40b98d2"
+    },
+    "qa-symbolic-v1-prod": {
+      "entries": 19,
+      "head": "696004127d8cf68332652716855e0669847bd67e5347c1996b811b54d83d2f6a"
+    },
+    "qa-symbolic-v1-prod-other": {
+      "entries": 1,
+      "head": "8b45e261681a5f37bdca5b12f5b9943319cf1a732386e160d848e88a0d334b6e"
+    },
+    "qa-whitestar-blok": {
+      "entries": 73,
+      "head": "4ccb12aba2c555c81fb8d0dbab88961516780db023a615d95d9b10adc7a80325"
+    },
+    "qa-whitestar-negative": {
+      "entries": 9,
+      "head": "cc4276d8153b95fa46f6c31d93dca274d4d02408d39946ae7f661c70ad51b3f7"
+    },
+    "qa-whitestar-original": {
+      "entries": 28,
+      "head": "36ff7c89db1d46addfdbd00c9eb3253d7942540e43640fd93899761e6cf4cf52"
+    },
+    "qa-ws-onboarding-20261105": {
+      "entries": 4,
+      "head": "7154c00a30730dc71bbbf3de825df0b45df571ea834fe424c3436b3a197e63ec"
+    },
+    "release-v01-qa-production": {
+      "entries": 27,
+      "head": "4084a50135ce0eea06e45bec0954dc3d2c238abc64e232b51ef5b3536adee7e3"
+    },
+    "release-v01-qa-production-other": {
+      "entries": 1,
+      "head": "62639a3448fd67e8bd1b78b6e7621d33e983bb058e2d88d1055435ca7fd05d6d"
+    },
+    "release-v01-qa-typed": {
+      "entries": 27,
+      "head": "f626d307635e7c66e4e24723cd5dba505885a3b05de2f428620b726f016174cb"
+    },
+    "release-v01-qa-typed-other": {
+      "entries": 1,
+      "head": "7b9978c945289c8c8a2eba7d18203d25dbd32a34429f7c7a6e2e664787000aec"
+    },
+    "semantic-poetry-001": {
+      "entries": 229,
+      "head": "ff8859b6ffb2d0fb15a2e714fadaf64e21ec12413f5a175c655307a6f6ec69d2"
+    },
+    "semantic_live_blok_20261105": {
+      "entries": 2,
+      "head": "403fb1cf31e027dcaf7cd28583aef650e916957b585d1f7fb20a101b2b4f19e6"
+    },
+    "trip_report_whitestar": {
+      "entries": 3,
+      "head": "a4198b72fae8e0827355d3339d8936a8a10d96339a96889c66b835308949a979"
+    },
+    "whitestar_dialog_test": {
+      "entries": 53,
+      "head": "135546395b577b777c2d323dc3353d3776e3d23b9d40afb6c5f2e525dd57578f"
+    }
+  },
+  "QA_idempotency": {
+    "primary_symbolic_start_count": 1,
+    "all_QA_runs_terminated": true,
+    "active_permissions": false,
+    "PASS": true
+  },
+  "canonical_audit": {
+    "before": {
+      "ok": true,
+      "entries": 4817,
+      "last_hash": "c9c0048be5cc2e782cb2f2377da524e5ad04303d86b65792ef1d503b8c1c3d50"
+    },
+    "after": {
+      "ok": true,
+      "entries": 4817,
+      "last_hash": "c9c0048be5cc2e782cb2f2377da524e5ad04303d86b65792ef1d503b8c1c3d50"
+    },
+    "unchanged": true
+  },
+  "vendor_originals": 75,
+  "endpoint": {
+    "url": "https://fares-september-rebel-board.trycloudflare.com/mcp",
+    "tunnel_pid": 1801300,
+    "unchanged": true
+  }
+}

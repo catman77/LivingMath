@@ -1,0 +1,94 @@
+[
+  {
+    "path": "src/lm_suti_assurance/symbolic/state.py",
+    "role": "Immutable token tuples, original spans/NFC maps, exact operations and hashed acyclic DAG",
+    "sha256": "cfc311b77c2d7b5c3fbe49f6b6cd161abba7f3b4b245caf8fa003ade7ed01f93",
+    "change": "ADDED"
+  },
+  {
+    "path": "src/lm_suti_assurance/symbolic/observers.py",
+    "role": "Non-destructive structural CAD records and four explicitly separate relations",
+    "sha256": "d33c27f160eb84536d4bf0ad37e39e5510ad1b8e07e1b5973818ebae510f97fa",
+    "change": "ADDED"
+  },
+  {
+    "path": "src/lm_suti_assurance/symbolic/search.py",
+    "role": "Bounded local candidates, Pareto witness-set comparison and seeded UDAV tie-break",
+    "sha256": "585eae33699b9417778b4a51b6c7447dc4082c9d68dec54c0ed3466207d2fb16",
+    "change": "ADDED"
+  },
+  {
+    "path": "src/lm_suti_assurance/symbolic/grammar.py",
+    "role": "Train-only finite predicate/rule induction, competing models, prediction and baselines",
+    "sha256": "e4e599b4c37137b829492bd5df01c6537c81a4fcc719cebd1973ec7fd022af5d",
+    "change": "ADDED"
+  },
+  {
+    "path": "src/lm_suti_assurance/symbolic/kernel.py",
+    "role": "Deterministic artifact assembly, finite certificates and version/code bindings",
+    "sha256": "c150d30797b560cae4c85654aa9a867099f4d8d533b0dd1ac2571bc5a05528e3",
+    "change": "ADDED"
+  },
+  {
+    "path": "src/lm_suti_assurance/symbolic/contracts.py",
+    "role": "Closed request schema, strict integer/domain checks and all quotas",
+    "sha256": "25ad379f2ab6f954c9d9d857f14c69f3d6caf0ea2517fb8181e4a391d71e39ec",
+    "change": "ADDED"
+  },
+  {
+    "path": "src/lm_suti_assurance/symbolic/executor.py",
+    "role": "Reuse existing bounded transport/pool with independent symbolic supervisors",
+    "sha256": "f271525587f54efbd9f6fa0355da5692ac69d52cff92bc732d0629960fc9e731",
+    "change": "ADDED"
+  },
+  {
+    "path": "src/lm_suti_assurance/symbolic/worker.py",
+    "role": "Fresh isolated fork, actual supplied ReversibleUDAV, resource limits and no external I/O",
+    "sha256": "5b66c3bccafa924c252b02a1ee8fa6fe4f7e07388b71a0c4542ef3017ed01e45",
+    "change": "ADDED"
+  },
+  {
+    "path": "src/lm_suti_assurance/symbolic/service.py",
+    "role": "Existing Workspace/blob storage, idempotency, shielding, recovery and paginated inspect",
+    "sha256": "514b9fb2ccc54a9d427b6e810202750e5f564827f2f813e638296ebaac04f186",
+    "change": "ADDED"
+  },
+  {
+    "path": "src/lm_suti_assurance/symbolic/bundle.py",
+    "role": "Private data-only ZIP, manifest validation and structural recomputation",
+    "sha256": "869a849df60544314c8a167009fd4b86ca82163833318ebf12f252189aaa032d",
+    "change": "ADDED"
+  },
+  {
+    "path": "src/lm_suti_assurance/symbolic/mcp.py",
+    "role": "Three additive strict tools and root status capabilities",
+    "sha256": "146615a32dae25c76aac126ce02fcdad5b8c307fbaae37c82ead342180dc8d5e",
+    "change": "ADDED"
+  },
+  {
+    "path": "src/lm_suti_assurance/symbolic/cli.py",
+    "role": "Standalone explore/inspect/export/replay",
+    "sha256": "bf970fdbd91691c4b2616d72887de361e75fa68de9e8f05b4738c0fc0415e64a",
+    "change": "ADDED"
+  },
+  {
+    "path": "src/lm_suti_assurance/white_star/**",
+    "role": "Existing numerical White Star, worker, schemas and historical replay",
+    "change": "UNCHANGED"
+  },
+  {
+    "path": "src/lm_suti_assurance/_frozen/** and BASELINE_LOCK",
+    "role": "Existing exact assurance core",
+    "change": "UNCHANGED"
+  },
+  {
+    "path": "src/lm_suti_assurance/{cli,bundle,__init__}.py",
+    "role": "Add CLI, explicit symbolic export routing, package0.4",
+    "change": "ADDITIVE"
+  },
+  {
+    "path": "tools/release_v01_entry.py",
+    "role": "Register three new tools, isolated pool and root symbolic status",
+    "change": "ADDITIVE"
+  }
+]

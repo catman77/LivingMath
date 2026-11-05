@@ -4,9 +4,11 @@
 свидетели и контрпримеры → сохраняемая история исследования. MCP-интерфейс
 объединяет LivingMath, проверку исходных схем SUTI и алхимическую модель ALCH006.
 
-Текущий продукт: **`v0.3.0-developer-preview`**: assurance CLI, Semantic Bridge и White Star; 72 MCP-инструмента (64 прежних +8 добавочных). [Установка](README_QUICKSTART_RU.md), [White Star и сравнение режимов](docs/white-star/QUICKSTART_RU.md), [Semantic Bridge](docs/semantic-bridge/QUICKSTART_RU.md), [CLI](CLI_REFERENCE.md), [границы возможностей](LIMITATIONS.md).
+Текущий продукт: **`v0.4.0-developer-preview`**: assurance CLI, Semantic Bridge, численная White Star и Symbolic V1; 75 MCP-инструментов (72 прежних +3 символьных). [Установка](README_QUICKSTART_RU.md), [White Star и сравнение режимов](docs/white-star/QUICKSTART_RU.md), [Semantic Bridge](docs/semantic-bridge/QUICKSTART_RU.md), [CLI](CLI_REFERENCE.md), [границы возможностей](LIMITATIONS.md).
 
 White Star использует предоставленное неизменённое ядро Белая звезда → CAD → Удав. Один frozen semantic snapshot можно передать ему и действующему Bridge/assurance без повторного extraction. Численные предложения и сохранённые LLM-прочтения разделены; native SUTI не исполняется. [Отчёт, фактическое сравнение и приёмка](docs/white-star/USER_REPORT_RU.md).
+
+Symbolic V1 сохраняет полные токенные истории, UTF-8 spans и DAG операций. Новый `white_star_symbolic_explore` исследует буквальные/α/S/P-отношения без 2D semantic encoding; грамматические гипотезы проверяются на замороженном отложенном наборе. Это конечные структурные эксперименты, не доказательство найденной семантики. [Запуск и точный пример MCP](docs/symbolic-v1/QUICKSTART_RU.md), [измерения и ограничения](docs/symbolic-v1/IMPLEMENTATION_REPORT_RU.md).
 
 Semantic Bridge сохраняет исходные UTF-8-байты, адресные цитаты, конкурирующие прочтения и граф ревизий. Сравнение предъявляет точного свидетеля потери различения только для объявленных полей, вопросов и конечного домена. Интерпретации остаются гипотезами. Через реальный hosted generator получены шесть прочтений трёх стихотворений; приватный исследовательский пакет воспроизводится без модели и сети. [Отчёт и матрица приёмки](docs/semantic-bridge/USER_REPORT_RU.md).
 

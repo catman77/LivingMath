@@ -1,0 +1,488 @@
+{
+  "schema": "livingmath-symbolic-acceptance/1",
+  "status": "PASS_ENGINEERING_P0_P1",
+  "server_version": "v0.4.0-developer-preview",
+  "deployment_id": "symbolic-v1-20261105T055049Z",
+  "endpoint": "https://fares-september-rebel-board.trycloudflare.com/mcp",
+  "engine": "symbolic_v1",
+  "symbolic_kernel_binding": "404d9d2612633ee1f673dfdfeaa22dc8365ec59efb3902e70470497c69093cc7",
+  "run_id": "9b3ca97f6a977968df20444fc3d960931f9a3150b6b9c94ea9d3b4789437550b",
+  "project": "qa-symbolic-v1-prod",
+  "result_digest": "c25f92a0628f2321742b4dcdd8479a3cbff389c9b8f15b1cbc1494d92a5fa341",
+  "bundle_ref": "e4e51523398d0992c9d960d003681c4b3ca7ee6cf62753ee4e4d0294cfc47811",
+  "archive_sha256": "efdd4bb9c1422a09fb1070f2326fed9e6f551f5579b1ce5685a02b5cb816b2bd",
+  "tests": {
+    "fixture_exact_assertions": 6024,
+    "source_checkout_pytest": {
+      "passed": 252,
+      "failed": 0
+    },
+    "installed_wheel_pytest": {
+      "passed": 252,
+      "failed": 0
+    },
+    "legacy_pytest": {
+      "passed": 1066,
+      "skipped": 20,
+      "failed": 0
+    },
+    "staging_real_OAuth_MCP_checks": 138,
+    "production_HTTPS_OAuth_MCP_checks": 138,
+    "network_namespace_replay": {
+      "execution_permission": false,
+      "journal_hash_chain": "PASS",
+      "kernel_binding": "404d9d2612633ee1f673dfdfeaa22dc8365ec59efb3902e70470497c69093cc7",
+      "result_digest": "c25f92a0628f2321742b4dcdd8479a3cbff389c9b8f15b1cbc1494d92a5fa341",
+      "run_id": "9b3ca97f6a977968df20444fc3d960931f9a3150b6b9c94ea9d3b4789437550b",
+      "status": "REPLAY_MATCH",
+      "structural_recomputed": true,
+      "unrelated_legacy_operations": "NOT_REEXECUTED"
+    }
+  },
+  "CI": {
+    "local": "PASS",
+    "hosted": "NOT_RUN"
+  },
+  "blind_grammars": {
+    "periodic": {
+      "seeds": 20,
+      "mean_balanced_accuracy": {
+        "structural": 1.0,
+        "unigram": 0.5,
+        "bigram": 0.5,
+        "simple_context": 0.999609375,
+        "2d": 1.0,
+        "q": 0.5,
+        "adjacency": 1.0,
+        "without_alpha": 1.0
+      },
+      "std_balanced_accuracy": {
+        "structural": 0.0,
+        "unigram": 0.0,
+        "bigram": 0.0,
+        "simple_context": 0.0017469281074217107,
+        "2d": 0.0,
+        "q": 0.0,
+        "adjacency": 0.0,
+        "without_alpha": 0.0
+      },
+      "best_simple_baseline": "simple_context",
+      "paired_gain": 0.000390625,
+      "paired_bootstrap_95_CI": [
+        0.0,
+        0.001171875
+      ],
+      "predictive_gain": "NO_EVIDENCE_OF_GAIN"
+    },
+    "matching_endpoints": {
+      "seeds": 20,
+      "mean_balanced_accuracy": {
+        "structural": 1.0,
+        "unigram": 0.5,
+        "bigram": 0.503125,
+        "simple_context": 0.9171875,
+        "2d": 0.517578125,
+        "q": 0.5,
+        "adjacency": 0.517578125,
+        "without_alpha": 0.517578125
+      },
+      "std_balanced_accuracy": {
+        "structural": 0.0,
+        "unigram": 0.0,
+        "bigram": 0.05361375403486055,
+        "simple_context": 0.03515853428251435,
+        "2d": 0.01790068630842125,
+        "q": 0.0,
+        "adjacency": 0.01790068630842125,
+        "without_alpha": 0.01790068630842125
+      },
+      "best_simple_baseline": "simple_context",
+      "paired_gain": 0.0828125,
+      "paired_bootstrap_95_CI": [
+        0.068359375,
+        0.0984375
+      ],
+      "predictive_gain": "EVIDENCE_OF_FINITE_STRUCTURAL_GAIN"
+    },
+    "balanced_prefixes": {
+      "seeds": 20,
+      "mean_balanced_accuracy": {
+        "structural": 1.0,
+        "unigram": 0.5,
+        "bigram": 0.896484375,
+        "simple_context": 0.7828125,
+        "2d": 0.50703125,
+        "q": 0.5,
+        "adjacency": 0.512890625,
+        "without_alpha": 0.50703125
+      },
+      "std_balanced_accuracy": {
+        "structural": 0.0,
+        "unigram": 0.0,
+        "bigram": 0.029654478692040947,
+        "simple_context": 0.05693795315840236,
+        "2d": 0.02389896582352907,
+        "q": 0.0,
+        "adjacency": 0.01884484645932829,
+        "without_alpha": 0.02389896582352907
+      },
+      "best_simple_baseline": "bigram",
+      "paired_gain": 0.103515625,
+      "paired_bootstrap_95_CI": [
+        0.09140625,
+        0.116796875
+      ],
+      "predictive_gain": "EVIDENCE_OF_FINITE_STRUCTURAL_GAIN"
+    }
+  },
+  "blind_protocol": {
+    "schema": "livingmath-symbolic-sealed-protocol/1",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "families": [
+      "periodic",
+      "matching_endpoints",
+      "balanced_prefixes"
+    ],
+    "samples": {
+      "train": 128,
+      "validation": 64,
+      "test": 128
+    },
+    "max_rules": 15,
+    "max_features": 64,
+    "max_thresholds_per_feature": 16,
+    "decision_depth": 4,
+    "lengths": {
+      "periodic": [
+        [
+          4,
+          12
+        ],
+        [
+          14,
+          18
+        ],
+        [
+          20,
+          32
+        ]
+      ],
+      "matching_endpoints": [
+        [
+          6,
+          12
+        ],
+        [
+          14,
+          18
+        ],
+        [
+          20,
+          32
+        ]
+      ],
+      "balanced_prefixes": [
+        [
+          6,
+          14
+        ],
+        [
+          16,
+          20
+        ],
+        [
+          22,
+          32
+        ]
+      ]
+    },
+    "member_threshold": 0.5,
+    "all_models_observe": "same raw opaque token train samples and labels; no test labels or generator",
+    "test_rename": "periodic only: completely unseen bijective symbol IDs",
+    "semantic_axes": false,
+    "LLM_calls": 0,
+    "upper_budget_per_fit": {
+      "train_samples": 256,
+      "features": 64,
+      "rules": 15,
+      "predicate_thresholds": 16
+    },
+    "note": "Budgets are equal upper quotas and observation access, not identical measured CPU time. Baselines use fewer parameters; no padding computation.",
+    "harness_sha256": "f5eae5323af74ddc654c55475046f80b4c767e4b1aefd4e5c6a94cb680da09f5"
+  },
+  "blind_train_validation_test_per_seed": [
+    128,
+    64,
+    128
+  ],
+  "repeated_run_models_data_predictions": "60/60 identical; no test retuning",
+  "all_72_old_schemas_preserved": true,
+  "all_75_supplied_files_preserved": true,
+  "numerical_application_bytes_preserved": true,
+  "UDAV_vs_random_local": "NO_EVIDENCE_OF_GAIN; same selected-node sequence and counts in this control",
+  "poetry": [
+    {
+      "author": "mallarme",
+      "source_sha256": "7c98bf4349cb2b9ace1f75936c1981a845703927eaf7dbfe17b50389fe136619",
+      "edition": "Vers et Prose, Perrin et Cie, 1893, pp.19–20",
+      "url": "https://fr.wikisource.org/w/index.php?title=Vers_et_Prose_(Mallarm%C3%A9)/Brise_marine&oldid=14106920",
+      "layout_status": "UNAVAILABLE",
+      "result_digest": "7eb4eef949c01c1ebadfc2c453f36c0be8aa7d64d9a35cd7b5ba2e1a76c13622",
+      "summary": {
+        "attempted_candidates": 128,
+        "distinct_alpha_classes": 59,
+        "empirical_claims": 0,
+        "halt_reason": "MAX_STEPS",
+        "history_identity": "word",
+        "nodes": 120,
+        "observations": 120,
+        "proved_claims": 56,
+        "steps": 32,
+        "total_stored_tokens": 1841,
+        "underdetermined_claims": 1,
+        "unique_literal_words": 120,
+        "witness_count": 542
+      },
+      "train_lines": [
+        1,
+        4
+      ],
+      "heldout_lines": [
+        5,
+        8
+      ],
+      "hypothesis_digest": "645445fae6d36721bcdd802e8264d14fbf1bc03b9d8052a3800a2752398bd1fb",
+      "grammar_status": "UNDERDETERMINED",
+      "heldout_membership_predictions": [
+        0.8333333333333334,
+        0.8333333333333334,
+        0.8333333333333334,
+        0.8333333333333334
+      ],
+      "membership_accuracy": "NOT_ASSESSED_NO_NATURAL_GRAMMAR_ORACLE",
+      "heldout_next_token_nll": {
+        "1": 3.097981224496867,
+        "2": 3.244890708705554,
+        "3": 3.521936132330487
+      },
+      "LLM_calls": 0,
+      "source_extraction": "French edition transcription; footnote markers omitted, inline drop cap Estant joined; no spelling variants substituted; UTF-8 text/hash frozen separately"
+    },
+    {
+      "author": "nostradamus",
+      "source_sha256": "4f86fe9e962e96d6c76cfef8babe2a633ed7a745e2882da179e730a061b25dfd",
+      "edition": "Les oracles, édition 1867, fac-similé page30; retained edition variants, not asserted to be the 1555 original",
+      "url": "https://fr.wikisource.org/w/index.php?title=Page:Nostradamus_-_Les_oracles_-1867.djvu/30&oldid=13566813",
+      "layout_status": "UNAVAILABLE",
+      "result_digest": "50df51c6ce1bc56519590dac25b610cd35e3eac78e0b6636bf7f06d8dd572bbe",
+      "summary": {
+        "attempted_candidates": 128,
+        "distinct_alpha_classes": 10,
+        "empirical_claims": 0,
+        "halt_reason": "MAX_STEPS",
+        "history_identity": "word",
+        "nodes": 17,
+        "observations": 17,
+        "proved_claims": 56,
+        "steps": 32,
+        "total_stored_tokens": 167,
+        "underdetermined_claims": 1,
+        "unique_literal_words": 17,
+        "witness_count": 80
+      },
+      "train_lines": [
+        1,
+        4
+      ],
+      "heldout_lines": [
+        5,
+        8
+      ],
+      "hypothesis_digest": "b9d3942150bcf6c758e8bae919cfd21830e49acad8b19fb8ec19fa395dc545e9",
+      "grammar_status": "UNDERDETERMINED",
+      "heldout_membership_predictions": [
+        0.8333333333333334,
+        0.8333333333333334,
+        0.8333333333333334,
+        0.8333333333333334
+      ],
+      "membership_accuracy": "NOT_ASSESSED_NO_NATURAL_GRAMMAR_ORACLE",
+      "heldout_next_token_nll": {
+        "1": 3.089015264113149,
+        "2": 3.206171484332628,
+        "3": 3.4028953607886407
+      },
+      "LLM_calls": 0,
+      "source_extraction": "French edition transcription; footnote markers omitted, inline drop cap Estant joined; no spelling variants substituted; UTF-8 text/hash frozen separately"
+    }
+  ],
+  "production_integrity": "PASS",
+  "canonical_events": 2058,
+  "typed_events": 2072,
+  "old_workspace_files_unchanged": 1105,
+  "canonical_audit": {
+    "before": {
+      "ok": true,
+      "entries": 4817,
+      "last_hash": "c9c0048be5cc2e782cb2f2377da524e5ad04303d86b65792ef1d503b8c1c3d50"
+    },
+    "after": {
+      "ok": true,
+      "entries": 4817,
+      "last_hash": "c9c0048be5cc2e782cb2f2377da524e5ad04303d86b65792ef1d503b8c1c3d50"
+    },
+    "unchanged": true
+  },
+  "execution_permission": false,
+  "native_SUTI": "NOT_EXECUTED",
+  "R3": "PENDING",
+  "non_claims": [
+    "universal grammar recovery",
+    "semantic discovery",
+    "verified research truth",
+    "physical effects",
+    "statistically supported UDAV search advantage"
+  ],
+  "primary_run_summary": {
+    "attempted_candidates": 1024,
+    "distinct_alpha_classes": 207,
+    "empirical_claims": 0,
+    "halt_reason": "MAX_STEPS",
+    "history_identity": "word",
+    "nodes": 477,
+    "observations": 477,
+    "proved_claims": 18,
+    "steps": 256,
+    "total_stored_tokens": 7164,
+    "underdetermined_claims": 1,
+    "unique_literal_words": 477,
+    "witness_count": 1909
+  },
+  "UDAV_selection_diagnostic": {
+    "status": "PASS",
+    "interpretation": "No observed benefit of set-hash Pareto selection over random-local; all candidates incomparable in this control.",
+    "records": [
+      {
+        "seed": 0,
+        "every_pareto_frontier_equals_usable_candidates": true,
+        "same_chosen_node_sequence": true
+      },
+      {
+        "seed": 1,
+        "every_pareto_frontier_equals_usable_candidates": true,
+        "same_chosen_node_sequence": true
+      },
+      {
+        "seed": 2,
+        "every_pareto_frontier_equals_usable_candidates": true,
+        "same_chosen_node_sequence": true
+      },
+      {
+        "seed": 3,
+        "every_pareto_frontier_equals_usable_candidates": true,
+        "same_chosen_node_sequence": true
+      },
+      {
+        "seed": 4,
+        "every_pareto_frontier_equals_usable_candidates": true,
+        "same_chosen_node_sequence": true
+      },
+      {
+        "seed": 5,
+        "every_pareto_frontier_equals_usable_candidates": true,
+        "same_chosen_node_sequence": true
+      },
+      {
+        "seed": 6,
+        "every_pareto_frontier_equals_usable_candidates": true,
+        "same_chosen_node_sequence": true
+      },
+      {
+        "seed": 7,
+        "every_pareto_frontier_equals_usable_candidates": true,
+        "same_chosen_node_sequence": true
+      },
+      {
+        "seed": 8,
+        "every_pareto_frontier_equals_usable_candidates": true,
+        "same_chosen_node_sequence": true
+      },
+      {
+        "seed": 9,
+        "every_pareto_frontier_equals_usable_candidates": true,
+        "same_chosen_node_sequence": true
+      },
+      {
+        "seed": 10,
+        "every_pareto_frontier_equals_usable_candidates": true,
+        "same_chosen_node_sequence": true
+      },
+      {
+        "seed": 11,
+        "every_pareto_frontier_equals_usable_candidates": true,
+        "same_chosen_node_sequence": true
+      },
+      {
+        "seed": 12,
+        "every_pareto_frontier_equals_usable_candidates": true,
+        "same_chosen_node_sequence": true
+      },
+      {
+        "seed": 13,
+        "every_pareto_frontier_equals_usable_candidates": true,
+        "same_chosen_node_sequence": true
+      },
+      {
+        "seed": 14,
+        "every_pareto_frontier_equals_usable_candidates": true,
+        "same_chosen_node_sequence": true
+      },
+      {
+        "seed": 15,
+        "every_pareto_frontier_equals_usable_candidates": true,
+        "same_chosen_node_sequence": true
+      },
+      {
+        "seed": 16,
+        "every_pareto_frontier_equals_usable_candidates": true,
+        "same_chosen_node_sequence": true
+      },
+      {
+        "seed": 17,
+        "every_pareto_frontier_equals_usable_candidates": true,
+        "same_chosen_node_sequence": true
+      },
+      {
+        "seed": 18,
+        "every_pareto_frontier_equals_usable_candidates": true,
+        "same_chosen_node_sequence": true
+      },
+      {
+        "seed": 19,
+        "every_pareto_frontier_equals_usable_candidates": true,
+        "same_chosen_node_sequence": true
+      }
+    ]
+  }
+}
