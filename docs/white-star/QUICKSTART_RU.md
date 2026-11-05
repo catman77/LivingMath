@@ -1,12 +1,32 @@
 # White Star — проверка через MCP и CLI
 
-Production: **v0.3.0-developer-preview**, deployment `whitestar001-20261105T032516Z`,72 инструмента. Адрес прежний: `https://fares-september-rebel-board.trycloudflare.com/mcp`. Обновите подключение приложения, если ChatGPT ещё видит64 инструмента. Сам туннель при обновлении не перезапускался.
+Production: **v0.3.0-developer-preview**, deployment `whitestar-onboarding-20261105T041833Z`,72 инструмента. Адрес прежний: `https://fares-september-rebel-board.trycloudflare.com/mcp`. Обновите подключение приложения, если ChatGPT ещё видит64 инструмента. Сам туннель при обновлении не перезапускался.
 
 ## Проверка действующего сервера
 
 Первый read-only вызов — `white_star_status({})`: он публикует полные input/output schemas, реальные readiness/limits и SHA75 исходных файлов. `SUTI_native_runtime=NOT_EXECUTED` остаётся видимым.
 
 Сохранённый пример: `white_star_inspect(project="qa-whitestar-blok", run_id=RUN_ID, view="summary")`. RUN_ID находится в отчёте/COMPARISON_RESULTS.json приватной поставки. Для нового опыта сначала создайте свой проект через `assurance_project_new(project, request_key)`.
+
+[Отчёт об исправлении регистрации и реальный запуск 64 шагов](ONBOARDING_FIX_REPORT_RU.md).
+
+### Обязательная регистрация проекта
+
+Готовность `READY` не регистрирует исследовательский проект. Для первого запуска выполните **два отдельных вызова MCP**. Сначала:
+
+```json
+{
+  "name": "assurance_project_new",
+  "arguments": {
+    "project": "my-white-star-project",
+    "request_key": "project-init-v1"
+  }
+}
+```
+
+Затем вызовите `white_star_explore` с тем же `project`, отдельным `request_key` (например, `experiment-1`) и полным объектом `request` из [валидного примера](../LEVINMAS_WHITESTAR_MCP_001/fixtures/original_request.json). Это поля MCP `tools/call`, а не поля самого `request`. Регистрация использует тот же namespace, что White Star; регистрация одноимённого legacy research-проекта не заменяет этот шаг.
+
+Если получен `PROJECT_NOT_FOUND`, поле `/project` и сообщение содержат точный вызов регистрации для указанного проекта. Зарегистрируйте его и повторите исходный explore **без изменения request_key и request**: отказ не создаёт run и не занимает ключ. Повтор принятого explore с тем же содержимым возвращает прежний run_id без повторного вычисления. Обычный `NOT_FOUND` для отсутствующего run_id — другая ошибка. В `white_star_status.data.workflow` опубликованы порядок действий и шаблон регистрации.
 
 1. LLM-клиент формирует `request` по [полному валидному примеру](../LEVINMAS_WHITESTAR_MCP_001/fixtures/original_request.json). Готовый JSON-RPC пример — [mcp_blok_call.json](../LEVINMAS_WHITESTAR_MCP_001/fixtures/mcp_blok_call.json). Замените только project/request_key и свой явный encoding; не подставляйте имена Блока в другой текст.
 2. Вызовите `white_star_explore(project, request_key, request)` с объектом request. Укажите точный текст, SHA256 его UTF-8 байтов и полуинтервальные byte spans. Line начинается с1. Никакой нормализации ё/тире/переводов строк. Каждое понятие имеет label, evidence, ненулевые отличные целые coordinates и encoding_rationale. Protocol задаётся явно; рекомендуемый пример — seed42,steps64,k3,frame_size3,decode_first_frames6. Оси/координаты — дополнительные предпосылки, не свойства текста.

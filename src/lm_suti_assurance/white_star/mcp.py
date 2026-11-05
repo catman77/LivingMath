@@ -78,6 +78,26 @@ def register_tools(server, root, pool=None, recover=False):
                     "kernel_hashes": integrity(),
                     "tools": TOOLS,
                     "outputSchema": RESPONSE,
+                    "workflow": {
+                        "project_registration": {
+                            "tool": "assurance_project_new",
+                            "arguments": {
+                                "project": "my-white-star-project",
+                                "request_key": "project-init-v1",
+                            },
+                        },
+                        "sequence": [
+                            "assurance_project_new",
+                            "white_star_explore",
+                            "white_star_inspect (frames and decoder)",
+                            "white_star_record_interpretation",
+                        ],
+                        "missing_project_retry": (
+                            "Register the same project explicitly, then retry explore "
+                            "with the same request_key and request. PROJECT_NOT_FOUND "
+                            "creates no run and does not consume the request key."
+                        ),
+                    },
                     "modes": {
                         "white_star": "UNCHANGED_NATIVE_WHITE_STAR_CAD_UDAV",
                         "suti": "SemanticBridge001/source-assurance-frozen-ingress/1",
@@ -143,21 +163,33 @@ def register_tools(server, root, pool=None, recover=False):
         except AssuranceError as e:
             details = e.details or {}
             code = {
-                "PROJECT_NOT_FOUND": "NOT_FOUND",
                 "REFERENCE_NOT_IN_PROJECT": "NOT_FOUND",
             }.get(e.code, e.code)
+            field = e.field or ""
+            message = details.get("message", code)
+            if e.code == "PROJECT_NOT_FOUND":
+                field = "/project"
+                registration = canonical(
+                    {"project": args["project"], "request_key": "project-init-v1"}
+                )
+                message = (
+                    f"Project {args['project']!r} is not registered. First call "
+                    f"assurance_project_new with {registration}, then retry the "
+                    "original call with the same request_key and payload. "
+                    "No run was created; the request key was not consumed."
+                )
             return result(
                 error={
                     "code": code,
-                    "message": details.get("message", code),
-                    "field_path": e.field or "",
+                    "message": message,
+                    "field_path": field,
                     "run_id": details.get("run_id", args.get("run_id")),
                 }
             )
 
     descriptions = {
-        "white_star_status": "Read exact schemas, readiness/limits, frozen kernel hashes and actual Bridge backend. Native SUTI is NOT_EXECUTED.",
-        "white_star_explore": "Белая звезда: сохраните UTF-8 текст и явную LLM-разметку concepts/coordinates/evidence; выполните один bounded поиск. Затем inspect decoder и record_interpretation. Исходный алгоритм, без reranking.",
+        "white_star_status": "Read exact schemas, project-registration workflow, readiness/limits, frozen kernel hashes and actual Bridge backend. Native SUTI is NOT_EXECUTED.",
+        "white_star_explore": "Сначала зарегистрируйте project через assurance_project_new(project, request_key). Белая звезда: сохраните UTF-8 текст и явную LLM-разметку concepts/coordinates/evidence; выполните один bounded поиск. Затем inspect decoder и record_interpretation. При PROJECT_NOT_FOUND зарегистрируйте тот же project и повторите исходный request_key/request. Исходный алгоритм, без reranking.",
         "white_star_inspect": "Read immutable run pages (default64,max128). decoder may require artifact chunks. export returns private ZIP base64 chunks; concatenate in order. No new search.",
         "white_star_record_interpretation": "Save the calling LLM’s readings with actual frame IDs, exact source evidence, added assumptions, alternatives and INTERPRETATION claim atoms. No server LLM or verification.",
         "white_star_validate_model": "Check one registered reading/claim mapping within3 supported exact rational matrix families. CHECKED_INSTANCE certifies only the concrete algebra; counterexamples return REJECTED. Other families UNSUPPORTED_MODEL.",

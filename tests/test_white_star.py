@@ -304,6 +304,71 @@ def test_A17_A18_MCP_strict_metadata_and_old_schemas(setup):
     asyncio.run(run())
 
 
+def test_project_onboarding_error_and_real_MCP_retry(tmp_path, pool, monkeypatch):
+    from mcp.server.fastmcp import FastMCP
+    from lm_suti_assurance.mcp import register_tools as old
+    from lm_suti_assurance.white_star.mcp import register_tools
+
+    server = FastMCP("onboarding")
+    old(server, tmp_path)
+    service = register_tools(server, tmp_path, pool)
+    jobs = []
+    native = pool.run
+
+    def counted(request):
+        jobs.append(request["action"])
+        return native(request)
+
+    monkeypatch.setattr(pool, "run", counted)
+    args = {"project": "new-dialog", "request_key": "first", "request": fixture()}
+
+    async def call(name, arguments):
+        return await server._tool_manager.call_tool(name, arguments)
+
+    async def run():
+        failed = await call("white_star_explore", args)
+        error = failed.structuredContent["error"]
+        assert failed.isError and error["code"] == "PROJECT_NOT_FOUND"
+        assert error["field_path"] == "/project" and error["run_id"] is None
+        assert "assurance_project_new" in error["message"]
+        assert '"project":"new-dialog"' in error["message"]
+        assert not service.workspace("new-dialog").history() and not jobs
+
+        status = (await call("white_star_status", {})).structuredContent["data"]
+        registration = copy.deepcopy(status["workflow"]["project_registration"])
+        assert registration["tool"] == "assurance_project_new"
+        registration["arguments"]["project"] = args["project"]
+        await call(registration["tool"], registration["arguments"])
+        registered = service.workspace("new-dialog").history()
+        assert len(registered) == 1 and registered[0]["action"] == "project.new"
+
+        reply = await call("white_star_explore", args)
+        data = reply.structuredContent["data"]
+        assert not reply.isError and data["status"] == "COMPLETED"
+        assert data["run_id"] and jobs == ["explore"]
+        count = len(service.workspace("new-dialog").history())
+        repeated = await call("white_star_explore", args)
+        assert repeated.structuredContent["data"]["run_id"] == data["run_id"]
+        assert len(service.workspace("new-dialog").history()) == count
+        assert jobs == ["explore"]
+        for view in ("frames", "decoder"):
+            page = await call(
+                "white_star_inspect",
+                {"project": args["project"], "run_id": data["run_id"], "view": view},
+            )
+            assert not page.isError and page.structuredContent["data"]["items"]
+
+        missing = await call(
+            "white_star_inspect", {"project": args["project"], "run_id": "0" * 64}
+        )
+        assert (
+            missing.isError
+            and missing.structuredContent["error"]["code"] == "NOT_FOUND"
+        )
+
+    asyncio.run(run())
+
+
 def test_A20_A21_real_bridge_common_snapshot_and_mismatch(setup):
     s, p = setup
     w = explore(s, p)
