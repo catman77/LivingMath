@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "sha256": "9fcb0334f6ea8f72a8e43d37fab9e3cb1325886f3947100350000488e45062e5",
+  "files_checked": 248,
+  "source_git_blobs_exact": 1378,
+  "runtime_Python_files_exact": 110,
+  "credentials_excluded": true,
+  "source_commit": "54071e5e6114187fcdf643f3c340b8e6d12c0957"
+}

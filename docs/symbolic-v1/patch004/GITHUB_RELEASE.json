@@ -1,0 +1,15 @@
+{
+  "release_id": 436171584,
+  "html_url": "https://github.com/catman77/LivingMath/releases/tag/v0.4.6-developer-preview",
+  "tag_name": "v0.4.6-developer-preview",
+  "target_commitish": "main",
+  "prerelease": true,
+  "draft": false,
+  "asset_id": 716146818,
+  "asset_url": "https://github.com/catman77/LivingMath/releases/download/v0.4.6-developer-preview/LIVINGMATH_PATCH004_DELIVERY_20261106.zip",
+  "asset_bytes": 154364857,
+  "sha256": "9fcb0334f6ea8f72a8e43d37fab9e3cb1325886f3947100350000488e45062e5",
+  "GitHub_asset_digest_matches": true,
+  "published_at": "2026-11-06T06:24:46Z",
+  "upload_response_timeout_recovered_by_existing_asset_id_and_digest": true
+}

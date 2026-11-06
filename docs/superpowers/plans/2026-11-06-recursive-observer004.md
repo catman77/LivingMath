@@ -31,4 +31,4 @@
 - [x] Freeze unchanged fixture inputs and isolated scorer; complete P0/P1 controls and short P2 Dyck representation test, obey roadmap stop criteria for corpus.
 - [x] Run all source/installed-wheel/legacy regressions and real staged/public MCP A01-A25/B01-B06; source old numeric/SP/Symbolic/FIX-B2 regressions retained.
 - [x] Review exact code, build0.4.6 wheel, back up at quiescent cutover, restart HTTP only, validate83 tools and production data prefixes; keep URL/tunnel.
-- [ ] Deliver one checksummed ZIP with source patch/code, commits, fixtures, external scorer, full MCP traces and RCA_RU/CHANGELOG_RU/ACCEPTANCE_RU; GitHub prerelease and sources after positive public acceptance.
+- [x] Deliver one checksummed ZIP with source patch/code, commits, fixtures, external scorer, full MCP traces and RCA_RU/CHANGELOG_RU/ACCEPTANCE_RU; GitHub prerelease and sources after positive public acceptance.
