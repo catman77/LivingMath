@@ -54,7 +54,7 @@ def execute(engine, request, resolved):
             validate_record(record, "train")
             budget.check()
         # Full query validation happens after fitting; no fit parameter can see queries.
-        model = fit(train, request)
+        model = fit(train, request, resolved.get("source_candidates"))
         seal = model["hypothesis_digest"]
         for record in queries:
             validate_record(record, "queries")
@@ -74,6 +74,7 @@ def execute(engine, request, resolved):
             "diagnostics": [
                 {
                     "status": model["training_status"],
+                    **model.get("composition_diagnostics",{}),
                     "promotion": model.get("promotion_statistics", {}),
                     "training_conflicts": len(model["training_conflicts"]),
                     "conditional_exclusion_applied": model[

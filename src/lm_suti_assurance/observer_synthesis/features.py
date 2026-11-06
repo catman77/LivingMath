@@ -139,7 +139,7 @@ def admitted(feature, policy):
     )
 
 
-def vector(encoded, alphabet, policy, features):
+def vector(encoded, alphabet, policy, features, record=None, evidence=None):
     builtin = [f for f in features if f["origin"] == "BUILTIN"]
     groups = sorted({g for f in builtin for g in f["required_observers"]})
     values = (
@@ -163,6 +163,18 @@ def vector(encoded, alphabet, policy, features):
                 raise AssuranceError("MISSING_FEATURE_DEPENDENCY", "/features")
 
     def observation(feature):
+        if feature.get("template_origin") == "COMPOSITIONAL_AST_PROMOTION":
+            from .composition_ast import execute as execute_composition, value, DomainLimit
+            if record is None:
+                result = value(feature["operator_ast"],encoded["tokens"],feature["known_invariance_scope"])
+            else:
+                from .contexts import record_state
+                try:
+                    result,trace,states=execute_composition(feature["operator_ast"],record_state(record),feature["known_invariance_scope"],certify=True)
+                    if evidence is not None:evidence.append({"feature_id":feature["feature_id"],"source_sha256":record["source"]["sha256"],"execution_witness_digest":digest({"trace":trace,"states":states}),"decision":result})
+                except DomainLimit:
+                    result=None
+            return int(result) if result is not None else None
         result = operator_value(feature["operator_ast"], encoded["tokens"])
         return int(result) if result is not None else None
 
@@ -176,9 +188,17 @@ def vector(encoded, alphabet, policy, features):
     }
 
 
-def derive(samples, policy, search, budget, contexts=None):
+def derive(samples, policy, search, budget, contexts=None, promotion_policy=None, source=None):
     if not policy.get("derive_relations", True):
         return [], []
+    mode=(promotion_policy or {}).get("mode","literal_context_only")
+    if mode in ("compositional_ast","auto"):
+        from .compositional import promote as promote_composition
+        promoted,composition_log=promote_composition(samples,policy,search,promotion_policy,admitted,source)
+        if mode=="compositional_ast" or promoted:
+            return promoted,composition_log
+    else:
+        composition_log=[]
     members = [
         {"tokens": s["encoded"]["tokens"], "accepted": s["record"]["accepted"]}
         for s in samples
@@ -256,7 +276,7 @@ def derive(samples, policy, search, budget, contexts=None):
         samples, contexts or [], policy, available, budget, admitted
     )
     out += promoted
-    log += promotion_log
+    log += composition_log + promotion_log
     return out, log
 
 

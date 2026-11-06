@@ -63,6 +63,9 @@ def valid_ast(ast, depth=0):
 
 
 def verify(feature, samples):
+    if feature.get("template_origin") == "COMPOSITIONAL_AST_PROMOTION":
+        from .composition_checker import verify as verify_composition
+        return verify_composition(feature,samples)
     if isinstance(feature.get("operator_ast"), dict) and feature["operator_ast"].get(
         "composition"
     ) in ("observed_word_equality", "observed_context_scan"):

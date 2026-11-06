@@ -99,10 +99,25 @@ SEARCH = obj(
         "max_cpu_ms",
     ],
 )
+PROMOTION = obj(
+    {
+        "mode": {"enum": ["literal_context_only", "compositional_ast", "auto"]},
+        "candidate_sources": {"type":"array", "items":{"enum":["derivation_trace","source_run_id"]}, "minItems":1, "maxItems":2, "uniqueItems":True},
+        "max_ast_nodes": integer(1,32),
+        "max_ast_depth": integer(1,8),
+        "max_recursion_steps": integer(1,8),
+        "max_tokens": integer(1,8),
+        "max_train_witnesses": integer(1,256),
+        "max_runtime_ms": integer(1,4000),
+        "require_independent_checker": {"const":True},
+    }
+)
+
 REQUEST = obj(
     {
         "schema": {"const": "livingmath-symbolic-observer-synthesis-request/1"},
         "source_run_id": REF,
+        "promotion_policy": PROMOTION,
         "task": obj(
             {
                 "mode": {"const": "context_relation_induction"},

@@ -14,7 +14,8 @@ from .app import binding
 
 
 class ExtensionService:
-    def __init__(self, root, executor):
+    def __init__(self, root, executor, replay_profiles=None):
+        self.replay_profiles=replay_profiles or {}
         self.base = Service(Path(root))
         self.executor = executor
         self.active = set()
@@ -119,11 +120,14 @@ class ExtensionService:
                 "queries": self.records(w, request["task"]["predict_ref"], "queries"),
             }
             if request.get("source_run_id"):
-                _, r = SymbolicService(self.base.root, None).load(
-                    project, request["source_run_id"]
-                )
-                require(r["status"] == "COMPLETED", "SOURCE_NOT_COMPLETED")
-                result["source_result_digest"] = r["result_digest"]
+                options=request.get("promotion_policy") or {}
+                require(options.get("mode","literal_context_only") in ("compositional_ast","auto"),"SOURCE_CANDIDATE_ROUTE_NOT_ENABLED","/promotion_policy")
+                require("source_run_id" in options.get("candidate_sources",["derivation_trace","source_run_id"]),"SOURCE_CANDIDATE_ROUTE_NOT_ENABLED","/promotion_policy/candidate_sources")
+                from ..observer_synthesis.source_bridge import resolve
+                result["source_candidates"]=resolve(self.base.root,project,request["source_run_id"],result["train"])
+                result["source_result_digest"]=result["source_candidates"]["binding"]["source_result_digest"]
+            elif (request.get("promotion_policy") or {}).get("candidate_sources")==["source_run_id"]:
+                require(False,"SOURCE_RUN_REQUIRED","/source_run_id")
             return result
         if request["complex_source"]["kind"] == "saved_symbolic_history":
             source = request["complex_source"]
@@ -142,6 +146,15 @@ class ExtensionService:
     def reserve(self, project, key, engine, request):
         w = self.workspace(project)
         fresh = []
+        # Existing keys must return their immutable historical run before new
+        # resolver semantics are considered. Do not rewrite the Workspace chain.
+        namespaced_key="extension.start:"+digest([engine,key])
+        payload={"engine":engine,"request":request}
+        with w.locked():
+            previous=next((r for r in w.history() if r["request_key"]==namespaced_key),None)
+            if previous is not None:
+                require(previous["action"]=="extension.start" and previous["payload_digest"]==digest({"action":"extension.start","payload":payload}),"REQUEST_KEY_CONFLICT","/request_key")
+                return w,w.get(previous["result"]["start_ref"]),False
         resolved = self.resolve(project, engine, request)
 
         def commit(rows):
@@ -491,7 +504,8 @@ class ExtensionService:
             and record["status"] == "COMPLETED",
             "INVALID_OBSERVER_RUN",
         )
-        require(record["kernel_binding"] == binding(), "KERNEL_BINDING_MISMATCH")
+        selected_executor=self.executor if record["kernel_binding"]==binding() else self.replay_profiles.get(record["kernel_binding"])
+        require(selected_executor is not None,"KERNEL_BINDING_MISMATCH")
         model = await asyncio.to_thread(blobs.get, w, record["section_refs"]["model"])
         feature = next(
             (f for f in model["feature_registry"] if f["feature_id"] == feature_id),
@@ -499,6 +513,10 @@ class ExtensionService:
         )
         require(feature is not None, "NOT_FOUND", "/feature_id")
         if certificate is not None:
+            if feature.get("template_origin")=="COMPOSITIONAL_AST_PROMOTION":
+                for field in ["template_origin","feature_version","candidate_provenance","operator_ast_digest","known_invariance_scope"]:
+                    if certificate.get(field)!=feature.get(field):
+                        return {"status":"REJECTED","field_path":"/"+field,"reason":"Registered composition binding cannot be changed","execution_permission":False}
             if certificate.get("origin") != feature["origin"]:
                 return {
                     "status": "REJECTED",
@@ -524,7 +542,7 @@ class ExtensionService:
         ]
         return (
             await asyncio.to_thread(
-                self.executor.run,
+                selected_executor.run,
                 {"action": "observer_verify", "feature": feature, "samples": samples},
             )
         )["data"]

@@ -109,9 +109,10 @@ def capabilities(executor, replay_profiles=None):
             "execution_permission": False,
         },
         "observer_synthesis_v1": {
-            "version": "observer_synthesis_v1/2-context-promotion",
+            "version": "observer_synthesis_v1/3-compositional-promotion",
             "status": "READY" if ready else "ENGINE_UNAVAILABLE",
             "kernel_binding": binding(),
+            "composition_promotion": {"default":"literal_context_only","max_tokens":8,"max_train_witnesses":256,"source_run":"same-project immutable symbolic AST, exact input/train/kernel binding"},
             "request_schema": OBSERVER_REQUEST,
             "limits": {
                 "train_records": 2048,
@@ -133,7 +134,7 @@ def capabilities(executor, replay_profiles=None):
 
 
 def register_tools(server, root, executor, recover=False, replay_profiles=None):
-    service = ExtensionService(root, executor)
+    service = ExtensionService(root, executor, replay_profiles)
     if recover:
         service.recover()
 

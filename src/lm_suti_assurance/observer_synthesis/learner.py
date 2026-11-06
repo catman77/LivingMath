@@ -19,7 +19,7 @@ def probability(tree, values):
     raise ValueError("INVALID_TREE")
 
 
-def fit(records, request):
+def fit(records, request, source=None):
     search = request["search"]
     policy = request["feature_policy"]
     budget = Budget(search)
@@ -73,7 +73,7 @@ def fit(records, request):
         use, policy, search, budget, request["task"]["candidate_transformations"]
     )
     derived, derivation_log = (
-        derive(use, policy, search, budget, contexts)
+        derive(use, policy, search, budget, contexts, request.get("promotion_policy"), source)
         if use and (not bad or conditional or empirical)
         else ([], [])
     )
@@ -209,7 +209,7 @@ def fit(records, request):
                 bool(r.get("executed_rule")) for r in derivation_log
             ),
             "registered_promoted_features": sum(
-                f.get("template_origin") == "LABELLED_CONTEXT_PROMOTION"
+                f.get("template_origin") in ("LABELLED_CONTEXT_PROMOTION","COMPOSITIONAL_AST_PROMOTION")
                 for f in derived
             ),
             "failed_obligations": [
@@ -250,6 +250,23 @@ def fit(records, request):
         "predicate_attempts": search["max_proposals"] - remaining[0],
         "execution_permission": False,
     }
+    if request.get("promotion_policy") is not None:
+        from .composition_ast import settings as composition_settings
+        model["promotion_policy"]=request["promotion_policy"]
+        model["composition_diagnostics"]={
+            "candidate_generation":{"seen":sum(r.get("phase")=="composition_discovery" for r in derivation_log),"train_compatible":sum(r.get("phase")=="composition_discovery" and r.get("status")=="TRAIN_COMPATIBLE" for r in derivation_log)},
+            "promoted_features":[f["feature_id"] for f in derived if f.get("template_origin")=="COMPOSITIONAL_AST_PROMOTION"],
+            "composition_promotion":{
+                "attempted":sum(r.get("phase")=="composition_promotion" and ("feature_id" in r or r.get("status")=="PROMOTED_OPERATOR_COMPOSITION") for r in derivation_log),
+                "promoted":sum(f.get("template_origin")=="COMPOSITIONAL_AST_PROMOTION" for f in derived),
+                "rejected":[r for r in derivation_log if r.get("phase")=="composition_promotion" and r.get("failed_obligation")],
+            },
+            "context_promotion":{"status":"NOT_APPLICABLE" if request["promotion_policy"].get("mode")=="compositional_ast" else "SEPARATE_LITERAL_CONTEXT_ROUTE"},
+            "limits_used":composition_settings(request["promotion_policy"]),
+            "rejected":[r for r in derivation_log if r.get("failed_obligation")],
+            "hypothesis_frozen_before_queries":True,
+            "claim_boundary":"Finite checked execution and train compatibility; no unique grammar or universal theorem",
+        }
     model["hypothesis_digest"] = digest(model)
     return model
 
@@ -268,7 +285,8 @@ def predict(model, queries, budget=None):
             budget.check()
         require("accepted" not in record, "HELDOUT_LABEL_LEAKAGE", "/queries")
         encoded = encode(record, policy.get("representation", "literal"))
-        values = vector(encoded, model["alphabet"], policy, features)
+        evidence=[]
+        values = vector(encoded, model["alphabet"], policy, features, record, evidence)
         out_of_scope = any(
             values.get(name) is None for name in model["used_feature_ids"]
         )
@@ -292,6 +310,8 @@ def predict(model, queries, budget=None):
             "kind": "empirical",
             "hypothesis_digest": model["hypothesis_digest"],
         }
+        if any(f.get("template_origin")=="COMPOSITIONAL_AST_PROMOTION" for f in features):
+            item["operator_evidence"]=evidence
         predictions.append(item)
         if record.get("pair_id"):
             grouped[record["pair_id"]].append((record, item, encoded))
