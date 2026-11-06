@@ -342,12 +342,15 @@ async def run(a):
                             "request_key": "runtime-bound",
                             "request": q,
                         },
+                        "BUDGET_EXCEEDED",
                     )
+                    failed = (await section(limited["error"]["run_id"], "summary"))[0]
                     check(
                         "runtime exhausted is FAILED without false prediction",
-                        limited["status"] == "FAILED"
-                        and limited["error"]["code"] == "BUDGET_EXCEEDED"
-                        and "result_ref" not in limited,
+                        failed["status"] == "FAILED"
+                        and failed["error"]["code"] == "BUDGET_EXCEEDED"
+                        and "result_ref" not in failed
+                        and not limited["execution_permission"],
                     )
                     # Immutable existing0.4.6 source records route through the approved old profile.
                     historical = {}

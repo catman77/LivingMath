@@ -174,7 +174,7 @@ async def run(a):
                 )
                 for name, old in before.items():
                     changed = copy.deepcopy(after[name]["inputSchema"])
-                    if name == "white_star_symbolic_observer_synthesize":
+                    if name == "white_star_symbolic_observer_synthesize" and "promotion_policy" not in old["inputSchema"]["properties"]["request"]["properties"]:
                         added = changed["properties"]["request"]["properties"].pop(
                             "promotion_policy", None
                         )

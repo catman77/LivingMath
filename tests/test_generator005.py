@@ -1,12 +1,48 @@
 """Mixed-length candidate completeness; independent finite labels are external to fit."""
 
-import copy
+import copy, hashlib, json
+from pathlib import Path
 from collections import Counter
 from itertools import product
 import pytest
-from test_compositional_promotion import record, rows, request
 from lm_suti_assurance.core import digest
 from lm_suti_assurance.observer_synthesis.learner import fit, predict
+
+
+def request():
+    return json.loads(
+        (Path(__file__).parent / "fixtures/generator005_request.json").read_text()
+    )
+
+
+def record(word, label=None, ident=None):
+    text = " ".join(word)
+    r = {
+        "id": ident or digest(text),
+        "tokens": list(word),
+        "source": {
+            "text": text,
+            "sha256": hashlib.sha256(text.encode()).hexdigest(),
+            "rights": "ORIGINAL_TEST_FIXTURE",
+            "edition": "PATCH005 independent/1",
+        },
+    }
+    if label is not None:
+        r["accepted"] = label
+    return r
+
+
+def rows(kind, lengths):
+    return [
+        record(
+            w,
+            w == w[::-1]
+            if kind == "mirror"
+            else n % 2 == 0 and w[: n // 2] == w[n // 2 :],
+        )
+        for n in lengths
+        for w in product("SP", repeat=n)
+    ]
 
 
 def selected(model):
