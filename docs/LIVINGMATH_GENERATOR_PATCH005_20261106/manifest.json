@@ -1,0 +1,27 @@
+{
+  "artifact": "LIVINGMATH_GENERATOR_PATCH005_20261106",
+  "created": "2026-11-06",
+  "status": "research + development assignment; not installed",
+  "base": {
+    "version": "v0.4.6-developer-preview",
+    "deployment": "recursive004-20261106T060730Z",
+    "observer": "observer_synthesis_v1/3-compositional-promotion"
+  },
+  "central_result": "positive len2 SS or PP destroys discovery of length4-recursive PAL; negative SP or PS does not",
+  "run_ids": {
+    "PAL4_base": "4efaad26f1718abb790188f3c078606d3e86b92bf9c00f24389a5d6e39137278",
+    "PAL4_plus_SS": "af80a3bea49b57ee49a141b078ec4534641d487dbbdef91bc12f82c9466846f0",
+    "PAL4_plus_PP": "b17c627c5a6fe9f33377128919ac502255dd39960a6405e96694f1dc4c04142f",
+    "PAL4_plus_SP": "d57ee659547df54876352f9ebde6d9baefb9267a5f787bc2430a549d4806bb0b",
+    "PAL4_plus_PS": "3019b940f764993de7d687569f1f0ee5c9ce4674a18790a343a725bae8e77c3",
+    "PAL_even24": "2266e46365d2f2b3d626d65b8ee80fd849803d53801b62d5f0123423ae35b7ee",
+    "PAL_odd13": "f415d41cdf0a87651321ec98a1adaf3905186637daafd4b099026104ad03a5f4",
+    "PAL_mix1234": "5d9c362cbbb17d77ddd17de9f2226397f0f7b0e87cd5b1bfb2fa250fa3e19249",
+    "PAL_odd135": "54aa8e7b3d24730f85cd9cb3bd7431155776f9cf40a8c8a89c52a7fa8878c351",
+    "PAL_even246": "d0e0d5d02e280eb6ef8515a5fba9c99b710a0d8e4ac34e5566d59d64aa2cfa22",
+    "COPY_52": "3d0eab0c8a3f0c48cb4c4dd5f4bba6808aaef63aa211d47af8229ec2b69de5b2"
+  },
+  "test_command": "python3 -m unittest discover -s reference -p test_*.py -v",
+  "claimed_tests": 17,
+  "proof_boundary": "independent finite reference; no unique grammar discovery proved"
+}

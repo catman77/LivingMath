@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "base_commit": "9ce8fc2bc9101a70e0204363fe05c04aade0054b",
+  "protected_file_count": 131,
+  "byte_identical_groups": [
+    "symbolic_v1",
+    "numeric_white_star",
+    "frozen_core",
+    "composition_evaluator",
+    "independent_composition_checker",
+    "SP_model_and_checker",
+    "workspace",
+    "source_bridge"
+  ],
+  "feature_identity_formula": "unchanged AST+domain+operator bindings"
+}

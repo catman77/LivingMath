@@ -3,7 +3,7 @@
 Целевой репозиторий: **[catman77/LivingMath](https://github.com/catman77/LivingMath)**.
 По GitHub metadata на 2026-11-06 он **public**. Видимость, настройки доступа и
 production данные этой публикацией не меняются. Публикуется исходный код
-**v0.4.6-developer-preview / 0.4.6.dev0**, уже прошедший production приёмку.
+**v0.4.7-developer-preview / 0.4.7.dev0**, уже прошедший production приёмку.
 
 ## Состав
 
@@ -43,11 +43,11 @@ virtualenvs и неопубликованные полные исследова�
 
 ## Подтверждённые проверки
 
-Последний runtime release: **366 PASS** source tests, **366 PASS** установленного
+Последний runtime release: **385 PASS** source tests, **385 PASS** установленного
 wheel, **1066 PASS / 20 SKIPPED** legacy. Полная MCP-приёмка и31 обязательный gate
-содержатся в [отчёте PATCH004](symbolic-v1/patch004/USER_REPORT_RU.md),
-[матрице](symbolic-v1/patch004/acceptance_matrix.json) и
-[манифесте runtime](symbolic-v1/patch004/release_manifest.json).
+содержатся в [отчёте PATCH005](symbolic-v1/patch005/USER_REPORT_RU.md),
+[матрице](symbolic-v1/patch005/acceptance_matrix.json) и
+[манифесте runtime](symbolic-v1/patch005/release_manifest.json).
 Это разные проверки с указанной областью, а не суммарное число уникальных тестов.
 
 Перед публикацией проверяются соответствие отслеживаемого кода этому runtime
@@ -68,7 +68,7 @@ GitHub Actions проверяется отдельно: исторический
 и файлы. Приватные approvals и рабочие источниковые адреса не превращаются в
 разрешения у получателя clone.
 
-Поставка PATCH004 включает отдельное обновление production HTTP-сервиса после
+Поставка PATCH005 включает отдельное обновление production HTTP-сервиса после
 backup и staged QA; текущий адрес и tunnel сохраняются. GitHub публикация сама
 по себе не перезапускает установленный сервер. Конечные инженерные PASS не означают
 универсальную грамматику или подтверждённый semantic transfer. Native SUTI

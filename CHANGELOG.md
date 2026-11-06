@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.4.7-developer-preview — 2026-11-06
+
+- Generate bounded typed recursive skeletons before full mixed-length train validation; remove the shortest-positive/two-observation prerequisite from the opt-in path.
+- Preserve COPY/whole-word comparisons and add exact generation/type/train/promotion diagnostics with counterexamples, alternatives and explicit bounded-search incompleteness.
+- Keep evaluator/checker, feature identity, numerical/Symbolic/SP kernels, schema83, worker limits and historical replay unchanged; validate mixed PAL trains20/30/42/84/126, COPY20/52 and short-positive controls with external scoring.
+- Preserve the finite ambiguity of odd1/3 training and its endpoint-only counterexample; plan further oriented-relation research separately.
+
+
 ## v0.4.6-developer-preview — 2026-11-06
 
 - Promote four closed typed operator AST forms, including strictly decreasing inner-fragment recursion, through real SPLIT/REVERSE and full-word equality traces.

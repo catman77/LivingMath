@@ -1,7 +1,7 @@
-# MCP-интерфейс LivingMath v0.4.6
+# MCP-интерфейс LivingMath v0.4.7
 
 Актуальная production-композиция: **83 инструмента**, версия сервера
-`v0.4.6-developer-preview`, пакет `0.4.6.dev0`. [Архитектура](../ARCHITECTURE.md),
+`v0.4.7-developer-preview`, пакет `0.4.7.dev0`. [Архитектура](../ARCHITECTURE.md),
 [установка и различия 44/83](INSTALL.md), [исходный текст и rights](USAGE.md).
 
 ## Транспорт и обнаружение
@@ -34,7 +34,7 @@ MCP `initialize`, `notifications/initialized`, затем `tools/list` и `tools
 не доказывает эффективность исследования.
 
 Полные input/output schemas, описания и annotations всех методов:
-[MCP_TOOL_SCHEMAS.json](symbolic-v1/patch004/MCP_TOOL_SCHEMAS.json).
+[MCP_TOOL_SCHEMAS.json](symbolic-v1/patch005/MCP_TOOL_SCHEMAS.json).
 Это неизменённый ответ настоящего production `tools/list` из последней приёмки,
 не схема, восстановленная из описания. Для конкретного подключения приоритет
 имеет его текущий `tools/list`. При закешированном старом наборе обновите
@@ -313,3 +313,16 @@ Schema выше; список обязательных полей не заме�
 `CHECKED_INSTANCE` — результат конечной проверки. Подделка JSON-типов, origin,
 spans, хешей, witnesses и универсальных притязаний отклоняется.
 Экспорт/replay остаётся через существующие inspect/extension_replay методы.
+
+## PATCH005: стадии candidate_generation
+
+83 input/output schemas и annotations сохранены. Новый внутренний diagnostic
+`grammar_version=mixed_length_typed_composition/1` возвращается через existing
+observer inspect(model/diagnostics), с bounded artifact export для большого ответа.
+`seen`/`train_compatible` и composition_promotion/failed_obligations сохранены.
+Стадии generation, type/termination, full-train и promotion разделены; actual
+counterexamples содержат sample_id, record_ref, expected и observed. Усечение
+выдаёт BOUNDED_SEARCH_INCOMPLETE, runtime failure — прежний BUDGET_EXCEEDED с
+сохранённым FAILED run. Проверенный feature claim — CHECKED_FINITE_INSTANCE,
+результат независимого checker — CHECKED_INSTANCE; это не mathematical verified.
+[Полная схема diagnostic](symbolic-v1/patch005/CANDIDATE_GENERATION_SCHEMA.json).

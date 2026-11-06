@@ -1,0 +1,22 @@
+test_ast_is_typed_template_not_hardcoded_answer (test_pal_copy_oracle.TestFiniteOracle.test_ast_is_typed_template_not_hardcoded_answer) ... ok
+test_copy_all_lengths_0_to_8 (test_pal_copy_oracle.TestFiniteOracle.test_copy_all_lengths_0_to_8) ... ok
+test_minimal_negative_control (test_pal_copy_oracle.TestFiniteOracle.test_minimal_negative_control) ... ok
+test_minimal_positive_conflict_is_not_mathematical (test_pal_copy_oracle.TestFiniteOracle.test_minimal_positive_conflict_is_not_mathematical) ... ok
+test_mixed_lengths_pal_consistent (test_pal_copy_oracle.TestFiniteOracle.test_mixed_lengths_pal_consistent) ... ok
+test_no_endpoint_shortcut (test_pal_copy_oracle.TestFiniteOracle.test_no_endpoint_shortcut) ... ok
+test_out_of_scope_unknown (test_pal_copy_oracle.TestFiniteOracle.test_out_of_scope_unknown) ... ok
+test_pal_all_lengths_0_to_8 (test_pal_copy_oracle.TestFiniteOracle.test_pal_all_lengths_0_to_8) ... ok
+test_pal_holdout_6_counts (test_pal_copy_oracle.TestFiniteOracle.test_pal_holdout_6_counts) ... ok
+test_pal_holdout_8_counts (test_pal_copy_oracle.TestFiniteOracle.test_pal_holdout_8_counts) ... ok
+test_rename_invariance (test_pal_copy_oracle.TestFiniteOracle.test_rename_invariance) ... ok
+test_tampered_recurrence_decision_rejected (test_pal_copy_oracle.TestFiniteOracle.test_tampered_recurrence_decision_rejected) ... ok
+test_tampered_trace_rejected (test_pal_copy_oracle.TestFiniteOracle.test_tampered_trace_rejected) ... ok
+test_train_1_to_4_counts (test_pal_copy_oracle.TestFiniteOracle.test_train_1_to_4_counts) ... ok
+test_train_2_plus_4_counts (test_pal_copy_oracle.TestFiniteOracle.test_train_2_plus_4_counts) ... ok
+test_train_4_counts (test_pal_copy_oracle.TestFiniteOracle.test_train_4_counts) ... ok
+test_wrong_label_is_detected (test_pal_copy_oracle.TestFiniteOracle.test_wrong_label_is_detected) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.004s
+
+OK

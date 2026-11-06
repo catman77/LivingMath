@@ -1,6 +1,6 @@
 # Архитектура MCP-сервера LivingMath
 
-Срез архитектуры: **v0.4.6-developer-preview**, пакет Python `0.4.6.dev0`.
+Срез архитектуры: **v0.4.7-developer-preview**, пакет Python `0.4.7.dev0`.
 Production объединяет **83 MCP-инструмента** в одном authenticated Streamable HTTP
 endpoint `/mcp`. [Справочник интерфейса](docs/MCP_INTERFACE.md),
 [установка](docs/INSTALL.md), [примеры запросов](docs/USAGE.md).
@@ -118,6 +118,28 @@ worker CPU5s/wall6s/RAM512MiB сохранены. Все current/historical си
 профили делят один лимит 2 active / 16 queued; численные workers — отдельный pool.
 Архивные профили 0.4.3/0.4.4/0.4.5 проверяются по owner-approved manifests
 и используются для прежних replay/verification, не переобучают старые runs.
+
+## Генератор смешанных длин PATCH005
+
+`observer_synthesis/compositional.py:typed_skeletons` предлагает literal alignment
+и его строго убывающее рекурсивное замыкание для наблюдаемых координат независимо
+от самого короткого положительного слова. Затем добавляет ограниченные AND
+refinements положительных наблюдений и прежние whole-fragment comparisons.
+Catalog конечен (до29 shapes в данной области), не перечисляет все программы.
+Каждый кандидат проходит отдельные type/termination, scope и full-train стадии.
+
+`generation_diagnostics` сохраняет grammar version, train-length histogram,
+AST digests, counts, sample IDs/expected/observed для фактических ошибок,
+отдельные generation/train/promotion статусы. Усечение max_proposals или
+AST/recursion bound означает BOUNDED_SEARCH_INCOMPLETE, не невозможность грамматики.
+Сводка компактна; подробности находятся в existing model/diagnostics sections с
+pagination/artifact chunks. `learner.py` фиксирует модель до queries.
+
+Существующие composition_ast.py/composition_checker.py и feature-id formula
+побайтно сохранены. Утверждённый generator provenance ID прежний, новый source
+SHA связывает новые constructors. Исторические runs направляются прежним
+approved0.4.6 worker, разделяя общую квоту; Symbolic V1 grammar не меняется.
+[Контракты диагностики](docs/symbolic-v1/patch005/QUICKSTART_RU.md).
 
 ## Данные и происхождение
 

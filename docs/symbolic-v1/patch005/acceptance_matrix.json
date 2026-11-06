@@ -1,0 +1,232 @@
+{
+  "status": "PASS_FINITE_PATCH005",
+  "new_checks": 916,
+  "new_MCP_calls": 600,
+  "old_checks": 943,
+  "old31_gates": {
+    "A01": {
+      "status": "PASS",
+      "evidence": "1b9205c9ab8e512c16fd1ccd5e40145a86d8bdf7d657d6babaca21e23c188142"
+    },
+    "A02": {
+      "status": "PASS",
+      "evidence": "derived_ee42a6c799ce3ba3a777"
+    },
+    "A03": {
+      "status": "PASS",
+      "evidence": "pal-n6-verification.json"
+    },
+    "A04": {
+      "status": "PASS",
+      "evidence": "pal-n6"
+    },
+    "A05": {
+      "status": "PASS",
+      "evidence": "pal-n8"
+    },
+    "B02": {
+      "status": "PASS",
+      "evidence": "copy-n6"
+    },
+    "B03": {
+      "status": "PASS",
+      "evidence": "copy-n8"
+    },
+    "A07": {
+      "status": "PASS",
+      "evidence": [
+        "pal-seed42",
+        "copy-seed42"
+      ]
+    },
+    "A08": {
+      "status": "PASS",
+      "evidence": "scores.json"
+    },
+    "A09": {
+      "status": "PASS",
+      "evidence": "scores.json"
+    },
+    "A10": {
+      "status": "PASS",
+      "evidence": "models.json / queries"
+    },
+    "B01": {
+      "status": "PASS",
+      "evidence": "79e07319c00c45a760a03b284e94c89d5fd9f2079f12c6dd88832515daf5ee23"
+    },
+    "B05": {
+      "status": "PASS",
+      "evidence": "derived_cf773c00dc649edfb1cb"
+    },
+    "A06": {
+      "status": "PASS",
+      "evidence": {
+        "source": "c795ae46a6e09ad4100f00e68499473bb11999b21f274e395f15585701c83fde",
+        "derived": "b0b52e993dedda1439e48467c4b6308c5b504526fa66123d83ea88bcb3be8292",
+        "origin": "SOURCE_SUPPLIED"
+      }
+    },
+    "A12": {
+      "status": "PASS",
+      "evidence": "foreign source/dataset/run requests rejected"
+    },
+    "A13": {
+      "status": "PASS",
+      "evidence": "output_hash"
+    },
+    "A14": {
+      "status": "PASS",
+      "evidence": "position"
+    },
+    "A15": {
+      "status": "PASS",
+      "evidence": "missing"
+    },
+    "A17": {
+      "status": "PASS",
+      "evidence": "operator"
+    },
+    "A18": {
+      "status": "PASS",
+      "evidence": "origin"
+    },
+    "A19": {
+      "status": "PASS",
+      "evidence": "universal"
+    },
+    "TYPE_BOOL": {
+      "status": "PASS",
+      "evidence": "position_bool"
+    },
+    "TYPE_INT": {
+      "status": "PASS",
+      "evidence": "readout_integer"
+    },
+    "OUTER_DIGEST": {
+      "status": "PASS",
+      "evidence": "outer_digest"
+    },
+    "A16": {
+      "status": "PASS",
+      "evidence": "actual Cyrillic source spans"
+    },
+    "A20": {
+      "status": "PASS",
+      "evidence": "fd7b56e8658ad5ead09d5856de9abb5afaeacfd2d33005d9f7c0affeda52b484"
+    },
+    "A21": {
+      "status": "PASS",
+      "evidence": "fresh key deterministic digest / old key immutable"
+    },
+    "A22": {
+      "status": "PASS",
+      "evidence": {
+        "engine": "observer_synthesis_v1",
+        "execution_permission": false,
+        "independent_checks": {
+          "LLM_calls": 0,
+          "execution_permission": false,
+          "holdout_labels_read": false,
+          "hypothesis_frozen_before_queries": true
+        },
+        "journal_hash_chain": "PASS",
+        "kernel_binding": "5b5ec1450f1fdd4c03da4fa126252f2ed3b5ce046f1e54f568ff67ffa91d8cca",
+        "result_digest": "c41be204eb39ecf856593f15d8cdf5e1d56d84257624dc67ddcc79843c9888c7",
+        "run_id": "1b9205c9ab8e512c16fd1ccd5e40145a86d8bdf7d657d6babaca21e23c188142",
+        "status": "REPLAY_MATCH"
+      }
+    },
+    "A23": {
+      "status": "PASS",
+      "evidence": {
+        "SP": {
+          "TP": 57,
+          "TN": 7,
+          "FP": 0,
+          "FN": 0,
+          "UNKNOWN": 0,
+          "total": 64,
+          "accuracy": 1.0,
+          "sensitivity": 1.0,
+          "specificity": 1.0,
+          "balanced_accuracy": 1.0,
+          "coverage": 1.0,
+          "majority_accuracy": 0.890625
+        },
+        "PS": {
+          "TP": 57,
+          "TN": 7,
+          "FP": 0,
+          "FN": 0,
+          "UNKNOWN": 0,
+          "total": 64,
+          "accuracy": 1.0,
+          "sensitivity": 1.0,
+          "specificity": 1.0,
+          "balanced_accuracy": 1.0,
+          "coverage": 1.0,
+          "majority_accuracy": 0.890625
+        },
+        "SS": {
+          "TP": 43,
+          "TN": 21,
+          "FP": 0,
+          "FN": 0,
+          "UNKNOWN": 0,
+          "total": 64,
+          "accuracy": 1.0,
+          "sensitivity": 1.0,
+          "specificity": 1.0,
+          "balanced_accuracy": 1.0,
+          "coverage": 1.0,
+          "majority_accuracy": 0.671875
+        }
+      }
+    },
+    "A24": {
+      "status": "PASS",
+      "evidence": "SP2/4/6/8/10 exact counts, real checker and partial-cell negatives"
+    },
+    "A11": {
+      "status": "PASS",
+      "evidence": "historical-runs.json + original key replay"
+    },
+    "A25": {
+      "status": "PASS",
+      "evidence": "numeric profiles and old immutable symbolic/observer replay"
+    },
+    "B04": {
+      "status": "PASS",
+      "evidence": "3ab8d84036d62c79d4734133768a666140b1955a55095acfaef44d93567734d1"
+    },
+    "B06": {
+      "status": "PASS",
+      "evidence": {
+        "local_evaluator_control": [
+          {
+            "n": 6,
+            "witnesses": 64,
+            "origin": "MANUALLY_SUPPLIED_EVALUATOR_CONTROL",
+            "discovery_claimed": false
+          },
+          {
+            "n": 8,
+            "witnesses": 256,
+            "origin": "MANUALLY_SUPPLIED_EVALUATOR_CONTROL",
+            "discovery_claimed": false
+          }
+        ],
+        "MCP_source_origin_forgery": "REJECTED",
+        "not_counted_as_discovery": true
+      }
+    }
+  },
+  "source_tests": 385,
+  "installed_wheel_tests": 385,
+  "legacy_pass": 1066,
+  "legacy_skipped": 20,
+  "reference_tests": 17,
+  "ambiguity_control": "odd13 remains48FP with a retained recursive rival; not a positive transfer claim",
+  "COPY52_n6_overlap": "32 words already in train; n8 is fully unseen"
+}

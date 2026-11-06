@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "actual_MCP_models": 34,
+  "schema": "CANDIDATE_GENERATION_SCHEMA.json",
+  "public_tools_schemas_unchanged": 83
+}

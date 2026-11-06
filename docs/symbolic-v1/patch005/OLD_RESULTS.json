@@ -1,0 +1,127 @@
+{
+  "PAL4_base": {
+    "status": "MATCH",
+    "run_id": "4efaad26f1718abb790188f3c078606d3e86b92bf9c00f24389a5d6e39137278",
+    "original_result_digest": "a90de2d7454c502e52b436947bd8d17f19564065e470145a0a59ad1ab7b6817d",
+    "recomputed_result_digest": "a90de2d7454c502e52b436947bd8d17f19564065e470145a0a59ad1ab7b6817d",
+    "candidate_generation": {
+      "seen": 14,
+      "train_compatible": 2
+    },
+    "train": 16,
+    "synthesis_status": "VERIFIABLE_OPERATOR_COMPOSITION_FOUND"
+  },
+  "PAL4_plus_SS": {
+    "status": "MATCH",
+    "run_id": "af80a3bea49b57ee49a141b078ec4534641d487dbbdef91bc12f82c9466846f0",
+    "original_result_digest": "3673ed168cde051c2544bb9ee25f960294d32cc52bf0eff3a5e19af430ad3c51",
+    "recomputed_result_digest": "3673ed168cde051c2544bb9ee25f960294d32cc52bf0eff3a5e19af430ad3c51",
+    "candidate_generation": {
+      "seen": 7,
+      "train_compatible": 0
+    },
+    "train": 17,
+    "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER"
+  },
+  "PAL4_plus_PP": {
+    "status": "MATCH",
+    "run_id": "b17c627c5a6fe9f33377128919ac502255dd39960a6405e96694f1dc4c04142f",
+    "original_result_digest": "cd56eb3954157ff494057132ea34a8800047ba61ba789f3a66f2718a5ce3997a",
+    "recomputed_result_digest": "cd56eb3954157ff494057132ea34a8800047ba61ba789f3a66f2718a5ce3997a",
+    "candidate_generation": {
+      "seen": 7,
+      "train_compatible": 0
+    },
+    "train": 17,
+    "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER"
+  },
+  "PAL4_plus_SP": {
+    "status": "MATCH",
+    "run_id": "d57ee659547df54876352f9ebde6d9baefb9267a5f787bc2430a549d4806bb0b",
+    "original_result_digest": "7ff342d9596be0ac3deb0b75c5153537d5da6dc5804e0c5c01fa5655fc82f265",
+    "recomputed_result_digest": "7ff342d9596be0ac3deb0b75c5153537d5da6dc5804e0c5c01fa5655fc82f265",
+    "candidate_generation": {
+      "seen": 10,
+      "train_compatible": 2
+    },
+    "train": 17,
+    "synthesis_status": "VERIFIABLE_OPERATOR_COMPOSITION_FOUND"
+  },
+  "PAL4_plus_PS": {
+    "status": "SUPPLIED_RUN_ID_NOT_FOUND",
+    "run_id": "3019b940f764993de7d687569f1f0ee5c9ce4674a18790a343a725bae8e77c3",
+    "reason": "Real endpoint also returned NOT_FOUND; keep supplied manifest immutable and run a new causal control"
+  },
+  "PAL_even24": {
+    "status": "MATCH",
+    "run_id": "2266e46365d2f2b3d626d65b8ee80fd849803d53801b62d5f0123423ae35b7ee",
+    "original_result_digest": "75c03c4b88b875e4f8f15457cc267e0bf6faef498b5b399af03aadd27ece8c2d",
+    "recomputed_result_digest": "75c03c4b88b875e4f8f15457cc267e0bf6faef498b5b399af03aadd27ece8c2d",
+    "candidate_generation": {
+      "seen": 7,
+      "train_compatible": 0
+    },
+    "train": 20,
+    "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER"
+  },
+  "PAL_odd13": {
+    "status": "MATCH",
+    "run_id": "f415d41cdf0a87651321ec98a1adaf3905186637daafd4b099026104ad03a5f4",
+    "original_result_digest": "e67dd4b5a438469c146edab6aee6f2c9791920b25f87b8d6483e7a4091a8ff1d",
+    "recomputed_result_digest": "e67dd4b5a438469c146edab6aee6f2c9791920b25f87b8d6483e7a4091a8ff1d",
+    "candidate_generation": {
+      "seen": 5,
+      "train_compatible": 1
+    },
+    "train": 10,
+    "synthesis_status": "VERIFIABLE_OPERATOR_COMPOSITION_FOUND"
+  },
+  "PAL_mix1234": {
+    "status": "MATCH",
+    "run_id": "5d9c362cbbb17d77ddd17de9f2226397f0f7b0e87cd5b1bfb2fa250fa3e19249",
+    "original_result_digest": "c2cfa3e6910cd23bb54b3534c980c81de162af264fa5656e7aeb477b916f8c12",
+    "recomputed_result_digest": "c2cfa3e6910cd23bb54b3534c980c81de162af264fa5656e7aeb477b916f8c12",
+    "candidate_generation": {
+      "seen": 5,
+      "train_compatible": 0
+    },
+    "train": 30,
+    "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER"
+  },
+  "PAL_odd135": {
+    "status": "MATCH",
+    "run_id": "54aa8e7b3d24730f85cd9cb3bd7431155776f9cf40a8c8a89c52a7fa8878c351",
+    "original_result_digest": "c5f166856255b9066231335bd377c89f61945fe137dd9c0b398a5b1f9376f2db",
+    "recomputed_result_digest": "c5f166856255b9066231335bd377c89f61945fe137dd9c0b398a5b1f9376f2db",
+    "candidate_generation": {
+      "seen": 5,
+      "train_compatible": 0
+    },
+    "train": 42,
+    "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER"
+  },
+  "PAL_even246": {
+    "status": "MATCH",
+    "run_id": "d0e0d5d02e280eb6ef8515a5fba9c99b710a0d8e4ac34e5566d59d64aa2cfa22",
+    "original_result_digest": "c7c6287e9d90745e8d4ecab8c400ba26d7594edd42a6fae8940e075a37407825",
+    "recomputed_result_digest": "c7c6287e9d90745e8d4ecab8c400ba26d7594edd42a6fae8940e075a37407825",
+    "candidate_generation": {
+      "seen": 7,
+      "train_compatible": 0
+    },
+    "train": 84,
+    "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER"
+  },
+  "COPY_52": {
+    "status": "MATCH",
+    "run_id": "3d0eab0c8a3f0c48cb4c4dd5f4bba6808aaef63aa211d47af8229ec2b69de5b2",
+    "original_result_digest": "a8ebfedad885e8536ecbaf3e3e389a011cf891f5b229be792f0700fc0de349b5",
+    "recomputed_result_digest": "a8ebfedad885e8536ecbaf3e3e389a011cf891f5b229be792f0700fc0de349b5",
+    "candidate_generation": {
+      "seen": 6,
+      "train_compatible": 1
+    },
+    "train": 52,
+    "synthesis_status": "VERIFIABLE_OPERATOR_COMPOSITION_FOUND"
+  }
+}

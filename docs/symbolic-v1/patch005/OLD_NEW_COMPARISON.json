@@ -1,0 +1,1150 @@
+[
+  {
+    "case": "B-s137-n6",
+    "old": {
+      "status": "MATCH",
+      "run_id": "4efaad26f1718abb790188f3c078606d3e86b92bf9c00f24389a5d6e39137278",
+      "original_result_digest": "a90de2d7454c502e52b436947bd8d17f19564065e470145a0a59ad1ab7b6817d",
+      "recomputed_result_digest": "a90de2d7454c502e52b436947bd8d17f19564065e470145a0a59ad1ab7b6817d",
+      "candidate_generation": {
+        "seen": 14,
+        "train_compatible": 2
+      },
+      "train": 16,
+      "synthesis_status": "VERIFIABLE_OPERATOR_COMPOSITION_FOUND"
+    },
+    "new_run_id": "58523e8b3795e9b9bf40cdaf019de923316d6787a6a1d9936a046fa6aeef3036",
+    "new_result_digest": "7f85935d36190adf61e5617f5a03ff34f1efce40076efa1b27b40816d6e77052",
+    "new_candidate_generation": {
+      "seen": 19,
+      "train_compatible": 2
+    },
+    "scores": {
+      "TP": 8,
+      "TN": 56,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0,
+      "total": 64,
+      "accuracy": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "coverage": 1.0,
+      "majority_accuracy": 0.875,
+      "train_word_overlap": 0
+    }
+  },
+  {
+    "case": "B-s137-n8",
+    "old": {
+      "status": "MATCH",
+      "run_id": "4efaad26f1718abb790188f3c078606d3e86b92bf9c00f24389a5d6e39137278",
+      "original_result_digest": "a90de2d7454c502e52b436947bd8d17f19564065e470145a0a59ad1ab7b6817d",
+      "recomputed_result_digest": "a90de2d7454c502e52b436947bd8d17f19564065e470145a0a59ad1ab7b6817d",
+      "candidate_generation": {
+        "seen": 14,
+        "train_compatible": 2
+      },
+      "train": 16,
+      "synthesis_status": "VERIFIABLE_OPERATOR_COMPOSITION_FOUND"
+    },
+    "new_run_id": "979952ad0cf586a852d33795b67bb74085854bffa3bd4eaae7ed7b6752bf3384",
+    "new_result_digest": "6c9394892e081826d66e8fd4086608623ac0050e7a047fad60b93fefe2e06bdf",
+    "new_candidate_generation": {
+      "seen": 19,
+      "train_compatible": 2
+    },
+    "scores": {
+      "TP": 16,
+      "TN": 240,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0,
+      "total": 256,
+      "accuracy": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "coverage": 1.0,
+      "majority_accuracy": 0.9375,
+      "train_word_overlap": 0
+    }
+  },
+  {
+    "case": "B-s42-n6",
+    "old": {
+      "status": "MATCH",
+      "run_id": "4efaad26f1718abb790188f3c078606d3e86b92bf9c00f24389a5d6e39137278",
+      "original_result_digest": "a90de2d7454c502e52b436947bd8d17f19564065e470145a0a59ad1ab7b6817d",
+      "recomputed_result_digest": "a90de2d7454c502e52b436947bd8d17f19564065e470145a0a59ad1ab7b6817d",
+      "candidate_generation": {
+        "seen": 14,
+        "train_compatible": 2
+      },
+      "train": 16,
+      "synthesis_status": "VERIFIABLE_OPERATOR_COMPOSITION_FOUND"
+    },
+    "new_run_id": "07416e11b6422ee8544d218e3cc2cf91b032f2771e2a59e896b849d440780439",
+    "new_result_digest": "a52434c2aa203c229a8163ca8d40014ef3821da6f7076f241adb80bed7764074",
+    "new_candidate_generation": {
+      "seen": 19,
+      "train_compatible": 2
+    },
+    "scores": {
+      "TP": 8,
+      "TN": 56,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0,
+      "total": 64,
+      "accuracy": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "coverage": 1.0,
+      "majority_accuracy": 0.875,
+      "train_word_overlap": 0
+    }
+  },
+  {
+    "case": "B_SS-s137-n6",
+    "old": {
+      "status": "MATCH",
+      "run_id": "af80a3bea49b57ee49a141b078ec4534641d487dbbdef91bc12f82c9466846f0",
+      "original_result_digest": "3673ed168cde051c2544bb9ee25f960294d32cc52bf0eff3a5e19af430ad3c51",
+      "recomputed_result_digest": "3673ed168cde051c2544bb9ee25f960294d32cc52bf0eff3a5e19af430ad3c51",
+      "candidate_generation": {
+        "seen": 7,
+        "train_compatible": 0
+      },
+      "train": 17,
+      "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER"
+    },
+    "new_run_id": "ef2a4bed9f0594f1ae5f79e09ad009c522935ce77d6bcae065d202f5b93c4e4c",
+    "new_result_digest": "8411da6ac210a8185717f964206f8399c6160a8112e58a7bd58afece79f8f7c2",
+    "new_candidate_generation": {
+      "seen": 15,
+      "train_compatible": 2
+    },
+    "scores": {
+      "TP": 8,
+      "TN": 56,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0,
+      "total": 64,
+      "accuracy": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "coverage": 1.0,
+      "majority_accuracy": 0.875,
+      "train_word_overlap": 0
+    }
+  },
+  {
+    "case": "B_SS-s137-n8",
+    "old": {
+      "status": "MATCH",
+      "run_id": "af80a3bea49b57ee49a141b078ec4534641d487dbbdef91bc12f82c9466846f0",
+      "original_result_digest": "3673ed168cde051c2544bb9ee25f960294d32cc52bf0eff3a5e19af430ad3c51",
+      "recomputed_result_digest": "3673ed168cde051c2544bb9ee25f960294d32cc52bf0eff3a5e19af430ad3c51",
+      "candidate_generation": {
+        "seen": 7,
+        "train_compatible": 0
+      },
+      "train": 17,
+      "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER"
+    },
+    "new_run_id": "893c23708cc093a3b588ab00ba2d830b9017a5f109deda80a7bf0c13ade59a8d",
+    "new_result_digest": "ffee97f601122436669f6c0c3e4aff0e5bc9941ff982c6222873f1e0b8146e29",
+    "new_candidate_generation": {
+      "seen": 15,
+      "train_compatible": 2
+    },
+    "scores": {
+      "TP": 16,
+      "TN": 240,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0,
+      "total": 256,
+      "accuracy": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "coverage": 1.0,
+      "majority_accuracy": 0.9375,
+      "train_word_overlap": 0
+    }
+  },
+  {
+    "case": "B_SS-s42-n6",
+    "old": {
+      "status": "MATCH",
+      "run_id": "af80a3bea49b57ee49a141b078ec4534641d487dbbdef91bc12f82c9466846f0",
+      "original_result_digest": "3673ed168cde051c2544bb9ee25f960294d32cc52bf0eff3a5e19af430ad3c51",
+      "recomputed_result_digest": "3673ed168cde051c2544bb9ee25f960294d32cc52bf0eff3a5e19af430ad3c51",
+      "candidate_generation": {
+        "seen": 7,
+        "train_compatible": 0
+      },
+      "train": 17,
+      "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER"
+    },
+    "new_run_id": "8b8fb5e95485f67c418b7cd37e8a849644cba86c038d0e1f9deddd134316b99b",
+    "new_result_digest": "8761da3067b5deee7411d8b13d0ed6f46944276e0ade1b1ab3cb7e9a22315faa",
+    "new_candidate_generation": {
+      "seen": 15,
+      "train_compatible": 2
+    },
+    "scores": {
+      "TP": 8,
+      "TN": 56,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0,
+      "total": 64,
+      "accuracy": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "coverage": 1.0,
+      "majority_accuracy": 0.875,
+      "train_word_overlap": 0
+    }
+  },
+  {
+    "case": "B_PP-s137-n6",
+    "old": {
+      "status": "MATCH",
+      "run_id": "b17c627c5a6fe9f33377128919ac502255dd39960a6405e96694f1dc4c04142f",
+      "original_result_digest": "cd56eb3954157ff494057132ea34a8800047ba61ba789f3a66f2718a5ce3997a",
+      "recomputed_result_digest": "cd56eb3954157ff494057132ea34a8800047ba61ba789f3a66f2718a5ce3997a",
+      "candidate_generation": {
+        "seen": 7,
+        "train_compatible": 0
+      },
+      "train": 17,
+      "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER"
+    },
+    "new_run_id": "9137a5216c0cd90aeaab7312991d2977e5505954cad08fafc0d0e375e2c0d801",
+    "new_result_digest": "88b3ff8c09d778ea035cabb12d2f31422d667a9b6794f2bf700ebff8d7d27ad7",
+    "new_candidate_generation": {
+      "seen": 15,
+      "train_compatible": 2
+    },
+    "scores": {
+      "TP": 8,
+      "TN": 56,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0,
+      "total": 64,
+      "accuracy": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "coverage": 1.0,
+      "majority_accuracy": 0.875,
+      "train_word_overlap": 0
+    }
+  },
+  {
+    "case": "B_PP-s137-n8",
+    "old": {
+      "status": "MATCH",
+      "run_id": "b17c627c5a6fe9f33377128919ac502255dd39960a6405e96694f1dc4c04142f",
+      "original_result_digest": "cd56eb3954157ff494057132ea34a8800047ba61ba789f3a66f2718a5ce3997a",
+      "recomputed_result_digest": "cd56eb3954157ff494057132ea34a8800047ba61ba789f3a66f2718a5ce3997a",
+      "candidate_generation": {
+        "seen": 7,
+        "train_compatible": 0
+      },
+      "train": 17,
+      "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER"
+    },
+    "new_run_id": "843a4c6b35e323b4024737b410be4163998868b1af03a3f42c55a70f3fe36586",
+    "new_result_digest": "a48f810dddf7406dfa1711eb5a55702762cf004263686e5c0edd58e4367f30a6",
+    "new_candidate_generation": {
+      "seen": 15,
+      "train_compatible": 2
+    },
+    "scores": {
+      "TP": 16,
+      "TN": 240,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0,
+      "total": 256,
+      "accuracy": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "coverage": 1.0,
+      "majority_accuracy": 0.9375,
+      "train_word_overlap": 0
+    }
+  },
+  {
+    "case": "B_PP-s42-n6",
+    "old": {
+      "status": "MATCH",
+      "run_id": "b17c627c5a6fe9f33377128919ac502255dd39960a6405e96694f1dc4c04142f",
+      "original_result_digest": "cd56eb3954157ff494057132ea34a8800047ba61ba789f3a66f2718a5ce3997a",
+      "recomputed_result_digest": "cd56eb3954157ff494057132ea34a8800047ba61ba789f3a66f2718a5ce3997a",
+      "candidate_generation": {
+        "seen": 7,
+        "train_compatible": 0
+      },
+      "train": 17,
+      "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER"
+    },
+    "new_run_id": "6170940b3d9c190d3b7b8eccb95f66359dabf3e3faae367aac728ebdc67f434e",
+    "new_result_digest": "c23d7c9a82b6ba71bbc74ccdcbfe57e6288b23c18fd690328caf2a217975df6c",
+    "new_candidate_generation": {
+      "seen": 15,
+      "train_compatible": 2
+    },
+    "scores": {
+      "TP": 8,
+      "TN": 56,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0,
+      "total": 64,
+      "accuracy": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "coverage": 1.0,
+      "majority_accuracy": 0.875,
+      "train_word_overlap": 0
+    }
+  },
+  {
+    "case": "B_SP-s137-n6",
+    "old": {
+      "status": "MATCH",
+      "run_id": "d57ee659547df54876352f9ebde6d9baefb9267a5f787bc2430a549d4806bb0b",
+      "original_result_digest": "7ff342d9596be0ac3deb0b75c5153537d5da6dc5804e0c5c01fa5655fc82f265",
+      "recomputed_result_digest": "7ff342d9596be0ac3deb0b75c5153537d5da6dc5804e0c5c01fa5655fc82f265",
+      "candidate_generation": {
+        "seen": 10,
+        "train_compatible": 2
+      },
+      "train": 17,
+      "synthesis_status": "VERIFIABLE_OPERATOR_COMPOSITION_FOUND"
+    },
+    "new_run_id": "daa76bb6fc14e9e226f91a607af3fc7c99298c95adc3c59892bacb487ac30a44",
+    "new_result_digest": "7cf4b4d0970a7c84d9221b11ca45ad3ce3d07be51b4fc7ce0ce15ca8d76428fa",
+    "new_candidate_generation": {
+      "seen": 15,
+      "train_compatible": 2
+    },
+    "scores": {
+      "TP": 8,
+      "TN": 56,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0,
+      "total": 64,
+      "accuracy": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "coverage": 1.0,
+      "majority_accuracy": 0.875,
+      "train_word_overlap": 0
+    }
+  },
+  {
+    "case": "B_SP-s137-n8",
+    "old": {
+      "status": "MATCH",
+      "run_id": "d57ee659547df54876352f9ebde6d9baefb9267a5f787bc2430a549d4806bb0b",
+      "original_result_digest": "7ff342d9596be0ac3deb0b75c5153537d5da6dc5804e0c5c01fa5655fc82f265",
+      "recomputed_result_digest": "7ff342d9596be0ac3deb0b75c5153537d5da6dc5804e0c5c01fa5655fc82f265",
+      "candidate_generation": {
+        "seen": 10,
+        "train_compatible": 2
+      },
+      "train": 17,
+      "synthesis_status": "VERIFIABLE_OPERATOR_COMPOSITION_FOUND"
+    },
+    "new_run_id": "60c48b6057fe748abac71efe3daac60074c208237f8ae95fef4cbc3b51f0b49f",
+    "new_result_digest": "6564d2e3440ee583f73c556d3370b81e012d58620693a6ce230eac35b072c331",
+    "new_candidate_generation": {
+      "seen": 15,
+      "train_compatible": 2
+    },
+    "scores": {
+      "TP": 16,
+      "TN": 240,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0,
+      "total": 256,
+      "accuracy": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "coverage": 1.0,
+      "majority_accuracy": 0.9375,
+      "train_word_overlap": 0
+    }
+  },
+  {
+    "case": "B_SP-s42-n6",
+    "old": {
+      "status": "MATCH",
+      "run_id": "d57ee659547df54876352f9ebde6d9baefb9267a5f787bc2430a549d4806bb0b",
+      "original_result_digest": "7ff342d9596be0ac3deb0b75c5153537d5da6dc5804e0c5c01fa5655fc82f265",
+      "recomputed_result_digest": "7ff342d9596be0ac3deb0b75c5153537d5da6dc5804e0c5c01fa5655fc82f265",
+      "candidate_generation": {
+        "seen": 10,
+        "train_compatible": 2
+      },
+      "train": 17,
+      "synthesis_status": "VERIFIABLE_OPERATOR_COMPOSITION_FOUND"
+    },
+    "new_run_id": "87261cc894de7fad529d41f09de5510f4cf9a68c3316ea98bac8fcc9042efd9e",
+    "new_result_digest": "71e698e819469c595abdde5fe535592b6dfb3d105578ecfec9438c35096be480",
+    "new_candidate_generation": {
+      "seen": 15,
+      "train_compatible": 2
+    },
+    "scores": {
+      "TP": 8,
+      "TN": 56,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0,
+      "total": 64,
+      "accuracy": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "coverage": 1.0,
+      "majority_accuracy": 0.875,
+      "train_word_overlap": 0
+    }
+  },
+  {
+    "case": "B_PS-s137-n6",
+    "old": {
+      "status": "SUPPLIED_RUN_ID_NOT_FOUND",
+      "run_id": "3019b940f764993de7d687569f1f0ee5c9ce4674a18790a343a725bae8e77c3",
+      "reason": "Real endpoint also returned NOT_FOUND; keep supplied manifest immutable and run a new causal control"
+    },
+    "new_run_id": "6a1f883a82e03464d9904f39d7e3ffb47fe01ea4d393035db167a860294d1e9c",
+    "new_result_digest": "3a572c767c9668804018a3d84c78aa2d23ef05d37d6d01d9454dabe69e308f2b",
+    "new_candidate_generation": {
+      "seen": 15,
+      "train_compatible": 2
+    },
+    "scores": {
+      "TP": 8,
+      "TN": 56,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0,
+      "total": 64,
+      "accuracy": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "coverage": 1.0,
+      "majority_accuracy": 0.875,
+      "train_word_overlap": 0
+    }
+  },
+  {
+    "case": "B_PS-s137-n8",
+    "old": {
+      "status": "SUPPLIED_RUN_ID_NOT_FOUND",
+      "run_id": "3019b940f764993de7d687569f1f0ee5c9ce4674a18790a343a725bae8e77c3",
+      "reason": "Real endpoint also returned NOT_FOUND; keep supplied manifest immutable and run a new causal control"
+    },
+    "new_run_id": "a137feb921de1d2de9e8e62ac4c296640b71ed9a056d3711b614ff08bbb6699e",
+    "new_result_digest": "03d920273b7c1b0c9a34edfeae947f7465bb98095941dc6ae3545db3ea6dca8d",
+    "new_candidate_generation": {
+      "seen": 15,
+      "train_compatible": 2
+    },
+    "scores": {
+      "TP": 16,
+      "TN": 240,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0,
+      "total": 256,
+      "accuracy": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "coverage": 1.0,
+      "majority_accuracy": 0.9375,
+      "train_word_overlap": 0
+    }
+  },
+  {
+    "case": "B_PS-s42-n6",
+    "old": {
+      "status": "SUPPLIED_RUN_ID_NOT_FOUND",
+      "run_id": "3019b940f764993de7d687569f1f0ee5c9ce4674a18790a343a725bae8e77c3",
+      "reason": "Real endpoint also returned NOT_FOUND; keep supplied manifest immutable and run a new causal control"
+    },
+    "new_run_id": "e5edba0e80cccf64704c16641ac02cfcaed9562e74d2028684105e7ed594808d",
+    "new_result_digest": "55b10001ecdffdf061489d7f99e86a1a45c08872b902e9b0c03bcc97964bc2ec",
+    "new_candidate_generation": {
+      "seen": 15,
+      "train_compatible": 2
+    },
+    "scores": {
+      "TP": 8,
+      "TN": 56,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0,
+      "total": 64,
+      "accuracy": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "coverage": 1.0,
+      "majority_accuracy": 0.875,
+      "train_word_overlap": 0
+    }
+  },
+  {
+    "case": "even24-s137-n6",
+    "old": {
+      "status": "MATCH",
+      "run_id": "2266e46365d2f2b3d626d65b8ee80fd849803d53801b62d5f0123423ae35b7ee",
+      "original_result_digest": "75c03c4b88b875e4f8f15457cc267e0bf6faef498b5b399af03aadd27ece8c2d",
+      "recomputed_result_digest": "75c03c4b88b875e4f8f15457cc267e0bf6faef498b5b399af03aadd27ece8c2d",
+      "candidate_generation": {
+        "seen": 7,
+        "train_compatible": 0
+      },
+      "train": 20,
+      "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER"
+    },
+    "new_run_id": "e4a3e4237dca9d9cba462103f8d37ed25d8c49885e255e5723cf1f1ab83d8413",
+    "new_result_digest": "51416b7e940f0485d4bb325f07e90ec782fd6595fdc55f3b59f6eb8c46f6e710",
+    "new_candidate_generation": {
+      "seen": 15,
+      "train_compatible": 2
+    },
+    "scores": {
+      "TP": 8,
+      "TN": 56,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0,
+      "total": 64,
+      "accuracy": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "coverage": 1.0,
+      "majority_accuracy": 0.875,
+      "train_word_overlap": 0
+    }
+  },
+  {
+    "case": "even24-s137-n8",
+    "old": {
+      "status": "MATCH",
+      "run_id": "2266e46365d2f2b3d626d65b8ee80fd849803d53801b62d5f0123423ae35b7ee",
+      "original_result_digest": "75c03c4b88b875e4f8f15457cc267e0bf6faef498b5b399af03aadd27ece8c2d",
+      "recomputed_result_digest": "75c03c4b88b875e4f8f15457cc267e0bf6faef498b5b399af03aadd27ece8c2d",
+      "candidate_generation": {
+        "seen": 7,
+        "train_compatible": 0
+      },
+      "train": 20,
+      "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER"
+    },
+    "new_run_id": "4fd1d1b4e3efe6f1a96038aaa5119b1497b4ae4edb728d6cb4b643c24dafd293",
+    "new_result_digest": "42eb9fd34f52f96ccda3f8bb0a5a45bb1fddfceb88b3bd08d42a7d61673a2161",
+    "new_candidate_generation": {
+      "seen": 15,
+      "train_compatible": 2
+    },
+    "scores": {
+      "TP": 16,
+      "TN": 240,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0,
+      "total": 256,
+      "accuracy": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "coverage": 1.0,
+      "majority_accuracy": 0.9375,
+      "train_word_overlap": 0
+    }
+  },
+  {
+    "case": "even24-s42-n6",
+    "old": {
+      "status": "MATCH",
+      "run_id": "2266e46365d2f2b3d626d65b8ee80fd849803d53801b62d5f0123423ae35b7ee",
+      "original_result_digest": "75c03c4b88b875e4f8f15457cc267e0bf6faef498b5b399af03aadd27ece8c2d",
+      "recomputed_result_digest": "75c03c4b88b875e4f8f15457cc267e0bf6faef498b5b399af03aadd27ece8c2d",
+      "candidate_generation": {
+        "seen": 7,
+        "train_compatible": 0
+      },
+      "train": 20,
+      "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER"
+    },
+    "new_run_id": "a4a10ccc8c43ce49c2cade2b8d757bd95a2125673a0acf5177d2f0d488ef5b1c",
+    "new_result_digest": "c548c3846e3828925bb86604d937b65dd2b048165fc74f07171a3be15b64953d",
+    "new_candidate_generation": {
+      "seen": 15,
+      "train_compatible": 2
+    },
+    "scores": {
+      "TP": 8,
+      "TN": 56,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0,
+      "total": 64,
+      "accuracy": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "coverage": 1.0,
+      "majority_accuracy": 0.875,
+      "train_word_overlap": 0
+    }
+  },
+  {
+    "case": "mix1234-s137-n7",
+    "old": {
+      "status": "MATCH",
+      "run_id": "5d9c362cbbb17d77ddd17de9f2226397f0f7b0e87cd5b1bfb2fa250fa3e19249",
+      "original_result_digest": "c2cfa3e6910cd23bb54b3534c980c81de162af264fa5656e7aeb477b916f8c12",
+      "recomputed_result_digest": "c2cfa3e6910cd23bb54b3534c980c81de162af264fa5656e7aeb477b916f8c12",
+      "candidate_generation": {
+        "seen": 5,
+        "train_compatible": 0
+      },
+      "train": 30,
+      "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER"
+    },
+    "new_run_id": "35438fbe59b77f8c9f5e0516b59a495ca3a74d1e4d77d43f37a15e09dd12d27d",
+    "new_result_digest": "5c79470ad400ac7a0824f7c4383b1a6b8328fd3c3e7dfd390825f05fa6fbee0c",
+    "new_candidate_generation": {
+      "seen": 13,
+      "train_compatible": 2
+    },
+    "scores": {
+      "TP": 16,
+      "TN": 112,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0,
+      "total": 128,
+      "accuracy": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "coverage": 1.0,
+      "majority_accuracy": 0.875,
+      "train_word_overlap": 0
+    }
+  },
+  {
+    "case": "mix1234-s42-n7",
+    "old": {
+      "status": "MATCH",
+      "run_id": "5d9c362cbbb17d77ddd17de9f2226397f0f7b0e87cd5b1bfb2fa250fa3e19249",
+      "original_result_digest": "c2cfa3e6910cd23bb54b3534c980c81de162af264fa5656e7aeb477b916f8c12",
+      "recomputed_result_digest": "c2cfa3e6910cd23bb54b3534c980c81de162af264fa5656e7aeb477b916f8c12",
+      "candidate_generation": {
+        "seen": 5,
+        "train_compatible": 0
+      },
+      "train": 30,
+      "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER"
+    },
+    "new_run_id": "f71639183ea1b15c95a7068ac6c15144d5f80ad2405477d0a648edd2608deee7",
+    "new_result_digest": "5a28bfb1db56014e7978009b2e100f2f3529433039dd21530f412ce8e65b5ab0",
+    "new_candidate_generation": {
+      "seen": 13,
+      "train_compatible": 2
+    },
+    "scores": {
+      "TP": 16,
+      "TN": 112,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0,
+      "total": 128,
+      "accuracy": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "coverage": 1.0,
+      "majority_accuracy": 0.875,
+      "train_word_overlap": 0
+    }
+  },
+  {
+    "case": "odd135-s137-n7",
+    "old": {
+      "status": "MATCH",
+      "run_id": "54aa8e7b3d24730f85cd9cb3bd7431155776f9cf40a8c8a89c52a7fa8878c351",
+      "original_result_digest": "c5f166856255b9066231335bd377c89f61945fe137dd9c0b398a5b1f9376f2db",
+      "recomputed_result_digest": "c5f166856255b9066231335bd377c89f61945fe137dd9c0b398a5b1f9376f2db",
+      "candidate_generation": {
+        "seen": 5,
+        "train_compatible": 0
+      },
+      "train": 42,
+      "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER"
+    },
+    "new_run_id": "39e87507c77fa5d5e9962d8567730909bedb5a938f653389339298d6d19f0c3c",
+    "new_result_digest": "c8829b077a9251cce6ac64147ceccf99a66ce5aefdf1ad747cc017f47ad5dcf1",
+    "new_candidate_generation": {
+      "seen": 13,
+      "train_compatible": 2
+    },
+    "scores": {
+      "TP": 16,
+      "TN": 112,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0,
+      "total": 128,
+      "accuracy": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "coverage": 1.0,
+      "majority_accuracy": 0.875,
+      "train_word_overlap": 0
+    }
+  },
+  {
+    "case": "odd135-s42-n7",
+    "old": {
+      "status": "MATCH",
+      "run_id": "54aa8e7b3d24730f85cd9cb3bd7431155776f9cf40a8c8a89c52a7fa8878c351",
+      "original_result_digest": "c5f166856255b9066231335bd377c89f61945fe137dd9c0b398a5b1f9376f2db",
+      "recomputed_result_digest": "c5f166856255b9066231335bd377c89f61945fe137dd9c0b398a5b1f9376f2db",
+      "candidate_generation": {
+        "seen": 5,
+        "train_compatible": 0
+      },
+      "train": 42,
+      "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER"
+    },
+    "new_run_id": "f39553d53dd625baf3afd1d29fdd6a6d8da0603d8b236306e2e06a30aa2780ec",
+    "new_result_digest": "601ddb1575bb6937536bfb85549ba8027b83333d10ea343f50e92b156acb564b",
+    "new_candidate_generation": {
+      "seen": 13,
+      "train_compatible": 2
+    },
+    "scores": {
+      "TP": 16,
+      "TN": 112,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0,
+      "total": 128,
+      "accuracy": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "coverage": 1.0,
+      "majority_accuracy": 0.875,
+      "train_word_overlap": 0
+    }
+  },
+  {
+    "case": "even246-s137-n8",
+    "old": {
+      "status": "MATCH",
+      "run_id": "d0e0d5d02e280eb6ef8515a5fba9c99b710a0d8e4ac34e5566d59d64aa2cfa22",
+      "original_result_digest": "c7c6287e9d90745e8d4ecab8c400ba26d7594edd42a6fae8940e075a37407825",
+      "recomputed_result_digest": "c7c6287e9d90745e8d4ecab8c400ba26d7594edd42a6fae8940e075a37407825",
+      "candidate_generation": {
+        "seen": 7,
+        "train_compatible": 0
+      },
+      "train": 84,
+      "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER"
+    },
+    "new_run_id": "084acf7ed6780da7a562ff62312ca822cf2758665ecf6559e76c7ab805e29a06",
+    "new_result_digest": "fa3baf88a3d9f72c93be57b9f546764a5c124488266cd2c9c8bee1331f2fa981",
+    "new_candidate_generation": {
+      "seen": 20,
+      "train_compatible": 2
+    },
+    "scores": {
+      "TP": 16,
+      "TN": 240,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0,
+      "total": 256,
+      "accuracy": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "coverage": 1.0,
+      "majority_accuracy": 0.9375,
+      "train_word_overlap": 0
+    }
+  },
+  {
+    "case": "even246-s42-n8",
+    "old": {
+      "status": "MATCH",
+      "run_id": "d0e0d5d02e280eb6ef8515a5fba9c99b710a0d8e4ac34e5566d59d64aa2cfa22",
+      "original_result_digest": "c7c6287e9d90745e8d4ecab8c400ba26d7594edd42a6fae8940e075a37407825",
+      "recomputed_result_digest": "c7c6287e9d90745e8d4ecab8c400ba26d7594edd42a6fae8940e075a37407825",
+      "candidate_generation": {
+        "seen": 7,
+        "train_compatible": 0
+      },
+      "train": 84,
+      "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER"
+    },
+    "new_run_id": "73187b9e6b42dc9f81d7ab5cd1560c166f5a4b1cf1d29abfaf3dbb8d8e6287e0",
+    "new_result_digest": "d2424bed2799f91e64ca85df29fe36afdf0e41b42f348d4ab6ed7bc93b385163",
+    "new_candidate_generation": {
+      "seen": 20,
+      "train_compatible": 2
+    },
+    "scores": {
+      "TP": 16,
+      "TN": 240,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0,
+      "total": 256,
+      "accuracy": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "coverage": 1.0,
+      "majority_accuracy": 0.9375,
+      "train_word_overlap": 0
+    }
+  },
+  {
+    "case": "odd13-s137-n7",
+    "old": {
+      "status": "MATCH",
+      "run_id": "f415d41cdf0a87651321ec98a1adaf3905186637daafd4b099026104ad03a5f4",
+      "original_result_digest": "e67dd4b5a438469c146edab6aee6f2c9791920b25f87b8d6483e7a4091a8ff1d",
+      "recomputed_result_digest": "e67dd4b5a438469c146edab6aee6f2c9791920b25f87b8d6483e7a4091a8ff1d",
+      "candidate_generation": {
+        "seen": 5,
+        "train_compatible": 1
+      },
+      "train": 10,
+      "synthesis_status": "VERIFIABLE_OPERATOR_COMPOSITION_FOUND"
+    },
+    "new_run_id": "a44612981f8a9ad909b922fd175af95cad5dba0b3d49c3766520451402a47209",
+    "new_result_digest": "41674e9425623b0ab7adcb5355c0fc32c3e9b734e08662614e318f3cfa9d2e68",
+    "new_candidate_generation": {
+      "seen": 8,
+      "train_compatible": 2
+    },
+    "scores": {
+      "TP": 16,
+      "TN": 64,
+      "FP": 48,
+      "FN": 0,
+      "UNKNOWN": 0,
+      "total": 128,
+      "accuracy": 0.625,
+      "sensitivity": 1.0,
+      "specificity": 0.5714285714285714,
+      "balanced_accuracy": 0.7857142857142857,
+      "coverage": 1.0,
+      "majority_accuracy": 0.875,
+      "train_word_overlap": 0
+    }
+  },
+  {
+    "case": "odd13-s42-n7",
+    "old": {
+      "status": "MATCH",
+      "run_id": "f415d41cdf0a87651321ec98a1adaf3905186637daafd4b099026104ad03a5f4",
+      "original_result_digest": "e67dd4b5a438469c146edab6aee6f2c9791920b25f87b8d6483e7a4091a8ff1d",
+      "recomputed_result_digest": "e67dd4b5a438469c146edab6aee6f2c9791920b25f87b8d6483e7a4091a8ff1d",
+      "candidate_generation": {
+        "seen": 5,
+        "train_compatible": 1
+      },
+      "train": 10,
+      "synthesis_status": "VERIFIABLE_OPERATOR_COMPOSITION_FOUND"
+    },
+    "new_run_id": "5826a2c0bf22532906dd8ef66ff48c597e26ec811c582884c2e227d3907bfcf5",
+    "new_result_digest": "6b697a1e343a01d91056636d074683c2474206616bdff092e98a2d6237a7a972",
+    "new_candidate_generation": {
+      "seen": 8,
+      "train_compatible": 2
+    },
+    "scores": {
+      "TP": 16,
+      "TN": 64,
+      "FP": 48,
+      "FN": 0,
+      "UNKNOWN": 0,
+      "total": 128,
+      "accuracy": 0.625,
+      "sensitivity": 1.0,
+      "specificity": 0.5714285714285714,
+      "balanced_accuracy": 0.7857142857142857,
+      "coverage": 1.0,
+      "majority_accuracy": 0.875,
+      "train_word_overlap": 0
+    }
+  },
+  {
+    "case": "copy52-s137-n6",
+    "old": {
+      "status": "MATCH",
+      "run_id": "3d0eab0c8a3f0c48cb4c4dd5f4bba6808aaef63aa211d47af8229ec2b69de5b2",
+      "original_result_digest": "a8ebfedad885e8536ecbaf3e3e389a011cf891f5b229be792f0700fc0de349b5",
+      "recomputed_result_digest": "a8ebfedad885e8536ecbaf3e3e389a011cf891f5b229be792f0700fc0de349b5",
+      "candidate_generation": {
+        "seen": 6,
+        "train_compatible": 1
+      },
+      "train": 52,
+      "synthesis_status": "VERIFIABLE_OPERATOR_COMPOSITION_FOUND"
+    },
+    "new_run_id": "eacc1f27f4d72564e00dcd38e61869487228339425bf2cb06b1d47bd0176b499",
+    "new_result_digest": "d652f82ad427a9cbe18b0d159fcda5978673686dbcd806ff5de863d6a6562bf8",
+    "new_candidate_generation": {
+      "seen": 18,
+      "train_compatible": 1
+    },
+    "scores": {
+      "TP": 8,
+      "TN": 56,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0,
+      "total": 64,
+      "accuracy": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "coverage": 1.0,
+      "majority_accuracy": 0.875,
+      "train_word_overlap": 32
+    }
+  },
+  {
+    "case": "copy52-s137-n8",
+    "old": {
+      "status": "MATCH",
+      "run_id": "3d0eab0c8a3f0c48cb4c4dd5f4bba6808aaef63aa211d47af8229ec2b69de5b2",
+      "original_result_digest": "a8ebfedad885e8536ecbaf3e3e389a011cf891f5b229be792f0700fc0de349b5",
+      "recomputed_result_digest": "a8ebfedad885e8536ecbaf3e3e389a011cf891f5b229be792f0700fc0de349b5",
+      "candidate_generation": {
+        "seen": 6,
+        "train_compatible": 1
+      },
+      "train": 52,
+      "synthesis_status": "VERIFIABLE_OPERATOR_COMPOSITION_FOUND"
+    },
+    "new_run_id": "4eb65fdbd0fee10254654e62c2e0eab823fa6a1c272757e2a81439db0dacac0f",
+    "new_result_digest": "23bcd1d9303d44a2e9fd4eacae9ba3ed7e35784246e9a6f2669985fb89e64825",
+    "new_candidate_generation": {
+      "seen": 18,
+      "train_compatible": 1
+    },
+    "scores": {
+      "TP": 16,
+      "TN": 240,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0,
+      "total": 256,
+      "accuracy": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "coverage": 1.0,
+      "majority_accuracy": 0.9375,
+      "train_word_overlap": 0
+    }
+  },
+  {
+    "case": "copy52-s42-n6",
+    "old": {
+      "status": "MATCH",
+      "run_id": "3d0eab0c8a3f0c48cb4c4dd5f4bba6808aaef63aa211d47af8229ec2b69de5b2",
+      "original_result_digest": "a8ebfedad885e8536ecbaf3e3e389a011cf891f5b229be792f0700fc0de349b5",
+      "recomputed_result_digest": "a8ebfedad885e8536ecbaf3e3e389a011cf891f5b229be792f0700fc0de349b5",
+      "candidate_generation": {
+        "seen": 6,
+        "train_compatible": 1
+      },
+      "train": 52,
+      "synthesis_status": "VERIFIABLE_OPERATOR_COMPOSITION_FOUND"
+    },
+    "new_run_id": "8d409182325658df07af3a5db78d5d6fc360c8512872b401a607e33f1b375150",
+    "new_result_digest": "0e3f0469fcdee36bfb826a469f5af59fc4825c6aa56942367ccbfad71e67c028",
+    "new_candidate_generation": {
+      "seen": 18,
+      "train_compatible": 1
+    },
+    "scores": {
+      "TP": 8,
+      "TN": 56,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0,
+      "total": 64,
+      "accuracy": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "coverage": 1.0,
+      "majority_accuracy": 0.875,
+      "train_word_overlap": 32
+    }
+  },
+  {
+    "case": "copy20-s137-n6",
+    "old": {},
+    "new_run_id": "52a6dfac54a46003d513bc85718678c6eecb413105ef6b9a79b0841ef5392843",
+    "new_result_digest": "46dcc5582967741979614c1585953816bc17469b5fddf69013233e0391cfb9b9",
+    "new_candidate_generation": {
+      "seen": 14,
+      "train_compatible": 1
+    },
+    "scores": {
+      "TP": 8,
+      "TN": 56,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0,
+      "total": 64,
+      "accuracy": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "coverage": 1.0,
+      "majority_accuracy": 0.875,
+      "train_word_overlap": 0
+    }
+  },
+  {
+    "case": "copy20-s137-n8",
+    "old": {},
+    "new_run_id": "f7403d8d392dd685bbea41d4eb2fb30d8696eb78292fe38e752edd1c25042796",
+    "new_result_digest": "01c50d4544ec8f49daf4e546a84d333980ddf284aef71062868acc4a1375bb59",
+    "new_candidate_generation": {
+      "seen": 14,
+      "train_compatible": 1
+    },
+    "scores": {
+      "TP": 16,
+      "TN": 240,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0,
+      "total": 256,
+      "accuracy": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "coverage": 1.0,
+      "majority_accuracy": 0.9375,
+      "train_word_overlap": 0
+    }
+  },
+  {
+    "case": "copy20-s42-n6",
+    "old": {},
+    "new_run_id": "3cde3c20a90897660b8710f9c603c2d781d2cd2d9eef4124e0e50913b6573c43",
+    "new_result_digest": "5dca77cf3401433e527e4030c108ee4c8fc8482094a25a115bf1979e146d229a",
+    "new_candidate_generation": {
+      "seen": 14,
+      "train_compatible": 1
+    },
+    "scores": {
+      "TP": 8,
+      "TN": 56,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0,
+      "total": 64,
+      "accuracy": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "coverage": 1.0,
+      "majority_accuracy": 0.875,
+      "train_word_overlap": 0
+    }
+  },
+  {
+    "case": "mix126-s137-n8",
+    "old": {},
+    "new_run_id": "27ac9cc710592c62ce95fa828305b9b867020b2935e8e3fa2dc5e2fba0e02ee0",
+    "new_result_digest": "2e71ea1c862afb840093fb040af37e7e363b333ed3be1d156259af4d37e752e8",
+    "new_candidate_generation": {
+      "seen": 18,
+      "train_compatible": 2
+    },
+    "scores": {
+      "TP": 16,
+      "TN": 240,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0,
+      "total": 256,
+      "accuracy": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "coverage": 1.0,
+      "majority_accuracy": 0.9375,
+      "train_word_overlap": 0
+    }
+  },
+  {
+    "case": "mix126-s42-n8",
+    "old": {},
+    "new_run_id": "265c40a347041042306626e79733ddc4abac583f933a0aefc042eeb33d483b1a",
+    "new_result_digest": "194c367ecd66ade8d4b8cc458a7d7ac428b8b7ee056da9fed684834ab651fb7a",
+    "new_candidate_generation": {
+      "seen": 18,
+      "train_compatible": 2
+    },
+    "scores": {
+      "TP": 16,
+      "TN": 240,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0,
+      "total": 256,
+      "accuracy": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "coverage": 1.0,
+      "majority_accuracy": 0.9375,
+      "train_word_overlap": 0
+    }
+  }
+]

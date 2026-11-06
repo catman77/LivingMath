@@ -1,6 +1,6 @@
 # Тестирование
 
-## Актуальный пакет v0.4.6
+## Актуальный пакет v0.4.7
 
 Из корня checkout после установки `python -m pip install '.[white-star,mcp,test]'`:
 
@@ -16,16 +16,17 @@ train/query isolation, независимый observer verifier, поддель�
 идемпотентность и ablation реальных родителей. Один только `.[test,mcp]`
 не устанавливает NumPy/pandas для численных тестов.
 
-Для PATCH004 сохранены **366 PASS** source tests, **366 PASS** установленного
-wheel вне checkout и **1066 PASS / 20 SKIPPED** legacy, а также 16 PASS независимого
-поставленного reference. [Реальная MCP-приёмка и точные границы](symbolic-v1/patch004/USER_REPORT_RU.md),
-[машиночитаемые gates](symbolic-v1/patch004/acceptance_matrix.json).
-`tools/recursive_observer_experiment.py` исполняет 17 замороженных worker jobs
-(PAL/COPY, два seed, no-derive/deny, 256 witnesses); gold загружается внешним
-scorer после всех предсказаний. `tools/recursive_observer_mcp_qa.py` проверяет
-A01–A25/B01–B06 через SDK/OAuth; source-supplied AST отмечен отдельным локальным
-контролем evaluator, не объявляется MCP-discovery.
-GitHub Actions оценивается отдельно: локальные PASS не заменяют CI run.
+Для PATCH005: **385 source PASS,385 installed-wheel PASS**,1066 legacy PASS/20 SKIP,
+17 independent reference PASS. Staged/public:916 новых проверок плюс943 regression
+проверки, включая все31 прежний A/B gate. [Результаты и границы](symbolic-v1/patch005/USER_REPORT_RU.md),
+[матрица](symbolic-v1/patch005/acceptance_matrix.json).
+`tools/generator005_mcp_qa.py` исполняет mixed-length PAL/COPY и ресурсные контроли
+через настоящий SDK/OAuth. Frozen gold читается после inference; odd13/48FP и
+COPY52/n6 train overlap показаны отдельно. `tests/test_generator005.py` содержит
+короткие positive, parity, strict base cases, budgets, exact counterexamples,
+Unicode, rivals и126-witness контролы. Защитные тесты PATCH004 сохранены.
+Отдельный installed-wheel запуск не импортирует checkout source/tests helpers.
+GitHub CI оценивается отдельно от локальной/реальной MCP приёмки.
 
 ## Legacy тесты
 

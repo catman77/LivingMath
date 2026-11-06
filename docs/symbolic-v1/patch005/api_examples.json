@@ -1,0 +1,590 @@
+{
+  "actual_production_calls": [
+    {
+      "tool": "assurance_project_new",
+      "arguments": {
+        "project": "qa-generator005-prod",
+        "request_key": "init"
+      },
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\n  \"project\": \"qa-generator005-prod\",\n  \"release\": \"v0.1.0-developer-preview\",\n  \"status\": \"CREATED\",\n  \"execution_permission\": false\n}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false
+      }
+    },
+    {
+      "tool": "white_star_symbolic_dataset_store",
+      "arguments": {
+        "project": "qa-generator005-prod",
+        "request_key": "train-B",
+        "dataset": {
+          "schema": "livingmath-observer-dataset/1",
+          "kind": "train",
+          "records": [
+            {
+              "accepted": true,
+              "id": "X000",
+              "source": {
+                "edition": "pal-mixed-minimal-r005",
+                "rights": "Synthetic benchmark",
+                "sha256": "6a8cdedf80a9ee6fbd9a97d14feee420c1621dda57697e0dceb7c906a9e72a93",
+                "text": "S S S S"
+              },
+              "tokens": [
+                "S",
+                "S",
+                "S",
+                "S"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "X001",
+              "source": {
+                "edition": "pal-mixed-minimal-r005",
+                "rights": "Synthetic benchmark",
+                "sha256": "9533bc33cb30d6b91777b3bbe6911989b0d676c1b519953bb7375d05d0a9891c",
+                "text": "S S S P"
+              },
+              "tokens": [
+                "S",
+                "S",
+                "S",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "X002",
+              "source": {
+                "edition": "pal-mixed-minimal-r005",
+                "rights": "Synthetic benchmark",
+                "sha256": "c1f7ee075b3a6d8e5c731b57b6540c80bcc7f84072ec5bac1295835266059a35",
+                "text": "S S P S"
+              },
+              "tokens": [
+                "S",
+                "S",
+                "P",
+                "S"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "X003",
+              "source": {
+                "edition": "pal-mixed-minimal-r005",
+                "rights": "Synthetic benchmark",
+                "sha256": "78b82ce28367be0d7d14ed3c3e4189ca94f69bd1c885f834d52e97fdee9a019c",
+                "text": "S S P P"
+              },
+              "tokens": [
+                "S",
+                "S",
+                "P",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "X004",
+              "source": {
+                "edition": "pal-mixed-minimal-r005",
+                "rights": "Synthetic benchmark",
+                "sha256": "c02125bf89a64964405b07258552a70e5f20d7ea4b77e3de40fcd2f715e6aa50",
+                "text": "S P S S"
+              },
+              "tokens": [
+                "S",
+                "P",
+                "S",
+                "S"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "X005",
+              "source": {
+                "edition": "pal-mixed-minimal-r005",
+                "rights": "Synthetic benchmark",
+                "sha256": "835728e53aecfa674ccb56a8237f72e14bce3ef9c65f2c14fa2038ff8fc6d367",
+                "text": "S P S P"
+              },
+              "tokens": [
+                "S",
+                "P",
+                "S",
+                "P"
+              ]
+            },
+            {
+              "accepted": true,
+              "id": "X006",
+              "source": {
+                "edition": "pal-mixed-minimal-r005",
+                "rights": "Synthetic benchmark",
+                "sha256": "b1707da15c8d9cb5f750128a63ab62eeaf8f372fd6d1e36f6b8ec93062d9c106",
+                "text": "S P P S"
+              },
+              "tokens": [
+                "S",
+                "P",
+                "P",
+                "S"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "X007",
+              "source": {
+                "edition": "pal-mixed-minimal-r005",
+                "rights": "Synthetic benchmark",
+                "sha256": "be390ed74c9a73826ddbc2764ec39d11093cb3c7f1d35de0d1bc0db030014636",
+                "text": "S P P P"
+              },
+              "tokens": [
+                "S",
+                "P",
+                "P",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "X008",
+              "source": {
+                "edition": "pal-mixed-minimal-r005",
+                "rights": "Synthetic benchmark",
+                "sha256": "fe8dcc92f94ffaab02e1df8616d07ce422e9ad0dc647e0ad2d5338ec2a4051a4",
+                "text": "P S S S"
+              },
+              "tokens": [
+                "P",
+                "S",
+                "S",
+                "S"
+              ]
+            },
+            {
+              "accepted": true,
+              "id": "X009",
+              "source": {
+                "edition": "pal-mixed-minimal-r005",
+                "rights": "Synthetic benchmark",
+                "sha256": "4e033458c100b1047e73d4ab35aeedbc4b33a8d3adbeb40970beab12cb4622b6",
+                "text": "P S S P"
+              },
+              "tokens": [
+                "P",
+                "S",
+                "S",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "X010",
+              "source": {
+                "edition": "pal-mixed-minimal-r005",
+                "rights": "Synthetic benchmark",
+                "sha256": "cc3c64690310f36a52daafe0db3cb495a61d6e7395866b7e5132eba30ce58546",
+                "text": "P S P S"
+              },
+              "tokens": [
+                "P",
+                "S",
+                "P",
+                "S"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "X011",
+              "source": {
+                "edition": "pal-mixed-minimal-r005",
+                "rights": "Synthetic benchmark",
+                "sha256": "cc2f22c31937e42ecf4d64086767fdc1018080a28643bb9837b00016c736aab6",
+                "text": "P S P P"
+              },
+              "tokens": [
+                "P",
+                "S",
+                "P",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "X012",
+              "source": {
+                "edition": "pal-mixed-minimal-r005",
+                "rights": "Synthetic benchmark",
+                "sha256": "8fcae3e31af21a843084739033ebeea726fe76b94d77497574db992fca90641a",
+                "text": "P P S S"
+              },
+              "tokens": [
+                "P",
+                "P",
+                "S",
+                "S"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "X013",
+              "source": {
+                "edition": "pal-mixed-minimal-r005",
+                "rights": "Synthetic benchmark",
+                "sha256": "2b44eba4233be4562d232f64d3d8ac4611887f9b56489f6a3b2c150715424475",
+                "text": "P P S P"
+              },
+              "tokens": [
+                "P",
+                "P",
+                "S",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "X014",
+              "source": {
+                "edition": "pal-mixed-minimal-r005",
+                "rights": "Synthetic benchmark",
+                "sha256": "6748f7a869c35adce62de4fc4620ea2582e31346d9a00a2c48f13503e2ab87b1",
+                "text": "P P P S"
+              },
+              "tokens": [
+                "P",
+                "P",
+                "P",
+                "S"
+              ]
+            },
+            {
+              "accepted": true,
+              "id": "X015",
+              "source": {
+                "edition": "pal-mixed-minimal-r005",
+                "rights": "Synthetic benchmark",
+                "sha256": "25839a61baa59b62c36373be6a4b454d947bf8467d7266c4c09bdd7363a66f29",
+                "text": "P P P P"
+              },
+              "tokens": [
+                "P",
+                "P",
+                "P",
+                "P"
+              ]
+            }
+          ],
+          "sha256": "3cbf1e496d83ee789e60d282fa5265843ea2a82ec698cc8e3b7c079176074c00"
+        }
+      },
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"data\":{\"dataset_ref\":\"cd08ae3d1df86f061971aeecc3e4d27a1845fc19af4a1920f5295692d2c47450\",\"execution_permission\":false,\"kind\":\"train\",\"record_count\":16,\"sha256\":\"3cbf1e496d83ee789e60d282fa5265843ea2a82ec698cc8e3b7c079176074c00\"},\"execution_permission\":false,\"ok\":true,\"schema\":\"livingmath-symbolic-extension-response/1\",\"status\":\"OK\"}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structuredContent": {
+          "schema": "livingmath-symbolic-extension-response/1",
+          "ok": true,
+          "status": "OK",
+          "execution_permission": false,
+          "data": {
+            "dataset_ref": "cd08ae3d1df86f061971aeecc3e4d27a1845fc19af4a1920f5295692d2c47450",
+            "kind": "train",
+            "sha256": "3cbf1e496d83ee789e60d282fa5265843ea2a82ec698cc8e3b7c079176074c00",
+            "record_count": 16,
+            "execution_permission": false
+          }
+        },
+        "isError": false
+      }
+    },
+    {
+      "tool": "white_star_symbolic_observer_synthesize",
+      "arguments": {
+        "project": "qa-generator005-prod",
+        "request_key": "B-s137-n6",
+        "request": {
+          "schema": "livingmath-symbolic-observer-synthesis-request/1",
+          "task": {
+            "mode": "context_relation_induction",
+            "train_ref": "cd08ae3d1df86f061971aeecc3e4d27a1845fc19af4a1920f5295692d2c47450",
+            "predict_ref": "5ecda0c3982bb5c175ca998a9d7fc114fc3a5e7cc1a523b697f1dba1bd567cfa",
+            "holdout_labels_visible": false,
+            "structure_levels": [
+              "word"
+            ],
+            "candidate_transformations": [
+              "REVERSE",
+              "RENAME"
+            ]
+          },
+          "feature_policy": {
+            "enabled_builtins": [],
+            "feature_denylist": [
+              "pair_0_max",
+              "pair_0_min",
+              "pair_0_final"
+            ],
+            "derive_relations": true,
+            "prohibit_undocumented_builtins": true,
+            "synthesis_origin_required": true,
+            "renaming_scope": "per_variant",
+            "strict_source_boundaries": true
+          },
+          "search": {
+            "seed": 137,
+            "max_composition_depth": 4,
+            "max_proposals": 128,
+            "max_contexts": 128,
+            "max_witnesses": 512,
+            "max_cpu_ms": 4000
+          },
+          "promotion_policy": {
+            "mode": "compositional_ast",
+            "candidate_sources": [
+              "derivation_trace"
+            ],
+            "max_ast_nodes": 32,
+            "max_ast_depth": 8,
+            "max_recursion_steps": 8,
+            "max_tokens": 8,
+            "max_train_witnesses": 256,
+            "require_independent_checker": true
+          }
+        }
+      },
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"data\":{\"engine\":\"observer_synthesis_v1\",\"error\":null,\"execution_permission\":false,\"kernel_binding\":\"5b5ec1450f1fdd4c03da4fa126252f2ed3b5ce046f1e54f568ff67ffa91d8cca\",\"metrics\":{\"LLM_calls\":0,\"job_cpu_s\":0.112124099,\"max_rss_kib\":61816},\"project\":\"qa-generator005-prod\",\"result_digest\":\"7f85935d36190adf61e5617f5a03ff34f1efce40076efa1b27b40816d6e77052\",\"result_ref\":\"9df4967d0903780209fbc183e867f558d8b46f7b5607922c74035da389b151ce\",\"run_id\":\"58523e8b3795e9b9bf40cdaf019de923316d6787a6a1d9936a046fa6aeef3036\",\"schema\":\"livingmath-symbolic-extension-run/1\",\"section_refs\":{\"candidate_rules\":\"b513348cd10c08df85531c017ccaf7d1787ffb124500751019db3216b296b5fe\",\"checks\":\"0c8c32fb0ac210dc7c060085c5e3b70bb89162ad0df5ccdea6d26bc4423972f4\",\"diagnostics\":\"30c60267c2e25fcfe76cc080dbfba00f6f53b30a64e443392435a2527125dddc\",\"manifest\":\"375a9405a0c296c27b9ee52dbc10b385f08ccd507d7e78d737f21bb5e28c4c7f\",\"model\":\"3705fc823442af0a3c1830f2b08a7758da0ae3d766251ef8d72e7582c0f0a3a2\",\"observer_provenance\":\"891d41f3c86a9d699750f605b74afd9de8e2c867f367ab0b36fc16f186cc1202\",\"pairwise_eval\":\"d70aba6b1e909fa715dd7b6ddd57701534b0db4e12c4e838ae03aea16e121f44\"},\"snapshot_ref\":\"c61243ce661042e99eeee4be867471e0da406f9e572a4be554ec69489d1fbae9\",\"status\":\"COMPLETED\",\"summary\":{\"conditional_exclusion_applied\":false,\"execution_permission\":false,\"family_status\":\"UNDERDETERMINED\",\"hypothesis_digest\":\"7381c2608e58ab116fd7724752d0a98145e8eb2dec9645eec1a3b51ef3c7f7b2\",\"pair_counts\":{\"NOT_IDENTIFIABLE\":0,\"PREFERENCE\":0,\"TIE\":0,\"UNDERDETERMINED\":0},\"query_records\":64,\"synthesis_status\":\"VERIFIABLE_OPERATOR_COMPOSITION_FOUND\",\"train_records\":16,\"training_status\":\"CONSISTENT\"}},\"execution_permission\":false,\"ok\":true,\"schema\":\"livingmath-symbolic-extension-response/1\",\"status\":\"COMPLETED\"}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structuredContent": {
+          "schema": "livingmath-symbolic-extension-response/1",
+          "ok": true,
+          "status": "COMPLETED",
+          "execution_permission": false,
+          "data": {
+            "engine": "observer_synthesis_v1",
+            "error": null,
+            "execution_permission": false,
+            "kernel_binding": "5b5ec1450f1fdd4c03da4fa126252f2ed3b5ce046f1e54f568ff67ffa91d8cca",
+            "metrics": {
+              "LLM_calls": 0,
+              "job_cpu_s": 0.112124099,
+              "max_rss_kib": 61816
+            },
+            "project": "qa-generator005-prod",
+            "result_digest": "7f85935d36190adf61e5617f5a03ff34f1efce40076efa1b27b40816d6e77052",
+            "result_ref": "9df4967d0903780209fbc183e867f558d8b46f7b5607922c74035da389b151ce",
+            "run_id": "58523e8b3795e9b9bf40cdaf019de923316d6787a6a1d9936a046fa6aeef3036",
+            "schema": "livingmath-symbolic-extension-run/1",
+            "section_refs": {
+              "candidate_rules": "b513348cd10c08df85531c017ccaf7d1787ffb124500751019db3216b296b5fe",
+              "checks": "0c8c32fb0ac210dc7c060085c5e3b70bb89162ad0df5ccdea6d26bc4423972f4",
+              "diagnostics": "30c60267c2e25fcfe76cc080dbfba00f6f53b30a64e443392435a2527125dddc",
+              "manifest": "375a9405a0c296c27b9ee52dbc10b385f08ccd507d7e78d737f21bb5e28c4c7f",
+              "model": "3705fc823442af0a3c1830f2b08a7758da0ae3d766251ef8d72e7582c0f0a3a2",
+              "observer_provenance": "891d41f3c86a9d699750f605b74afd9de8e2c867f367ab0b36fc16f186cc1202",
+              "pairwise_eval": "d70aba6b1e909fa715dd7b6ddd57701534b0db4e12c4e838ae03aea16e121f44"
+            },
+            "snapshot_ref": "c61243ce661042e99eeee4be867471e0da406f9e572a4be554ec69489d1fbae9",
+            "status": "COMPLETED",
+            "summary": {
+              "conditional_exclusion_applied": false,
+              "execution_permission": false,
+              "family_status": "UNDERDETERMINED",
+              "hypothesis_digest": "7381c2608e58ab116fd7724752d0a98145e8eb2dec9645eec1a3b51ef3c7f7b2",
+              "pair_counts": {
+                "NOT_IDENTIFIABLE": 0,
+                "PREFERENCE": 0,
+                "TIE": 0,
+                "UNDERDETERMINED": 0
+              },
+              "query_records": 64,
+              "synthesis_status": "VERIFIABLE_OPERATOR_COMPOSITION_FOUND",
+              "train_records": 16,
+              "training_status": "CONSISTENT"
+            }
+          }
+        },
+        "isError": false
+      }
+    },
+    {
+      "tool": "white_star_symbolic_observer_verify",
+      "arguments": {
+        "project": "qa-generator005-prod",
+        "run_id": "58523e8b3795e9b9bf40cdaf019de923316d6787a6a1d9936a046fa6aeef3036",
+        "feature_id": "derived_ee42a6c799ce3ba3a777"
+      },
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"data\":{\"ast_digest\":\"b5c20366e2902983352e88b017f458f7244c16145cde7d502ace9757b5c4170f\",\"execution_permission\":false,\"status\":\"CHECKED_INSTANCE\",\"training_compatibility\":true,\"universal_invariant\":false,\"verified_witnesses\":16,\"verifier_digest\":\"e7ff923030724e8648b80c4203022271d9df4870708ebdc37c5b028b07b907fd\",\"verifier_version\":\"bounded-composition-independent-checker/1\"},\"execution_permission\":false,\"ok\":true,\"schema\":\"livingmath-symbolic-extension-response/1\",\"status\":\"CHECKED_INSTANCE\"}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structuredContent": {
+          "schema": "livingmath-symbolic-extension-response/1",
+          "ok": true,
+          "status": "CHECKED_INSTANCE",
+          "execution_permission": false,
+          "data": {
+            "ast_digest": "b5c20366e2902983352e88b017f458f7244c16145cde7d502ace9757b5c4170f",
+            "execution_permission": false,
+            "status": "CHECKED_INSTANCE",
+            "training_compatibility": true,
+            "universal_invariant": false,
+            "verified_witnesses": 16,
+            "verifier_digest": "e7ff923030724e8648b80c4203022271d9df4870708ebdc37c5b028b07b907fd",
+            "verifier_version": "bounded-composition-independent-checker/1"
+          }
+        },
+        "isError": false
+      }
+    },
+    {
+      "tool": "white_star_symbolic_observer_synthesize",
+      "arguments": {
+        "project": "qa-generator005-prod",
+        "request_key": "mix1234-s137-n7",
+        "request": {
+          "schema": "livingmath-symbolic-observer-synthesis-request/1",
+          "task": {
+            "mode": "context_relation_induction",
+            "train_ref": "40930ecd4b1ab5276bf9a350475efaef6f4f5e3f35e78cf910370e75bfd14350",
+            "predict_ref": "f6ff7edcf996068edcac6e54d6c5e2054e0904045c40c9477279ec31b78f4e8c",
+            "holdout_labels_visible": false,
+            "structure_levels": [
+              "word"
+            ],
+            "candidate_transformations": [
+              "REVERSE",
+              "RENAME"
+            ]
+          },
+          "feature_policy": {
+            "enabled_builtins": [],
+            "feature_denylist": [
+              "pair_0_max",
+              "pair_0_min",
+              "pair_0_final"
+            ],
+            "derive_relations": true,
+            "prohibit_undocumented_builtins": true,
+            "synthesis_origin_required": true,
+            "renaming_scope": "per_variant",
+            "strict_source_boundaries": true
+          },
+          "search": {
+            "seed": 137,
+            "max_composition_depth": 4,
+            "max_proposals": 128,
+            "max_contexts": 128,
+            "max_witnesses": 512,
+            "max_cpu_ms": 4000
+          },
+          "promotion_policy": {
+            "mode": "compositional_ast",
+            "candidate_sources": [
+              "derivation_trace"
+            ],
+            "max_ast_nodes": 32,
+            "max_ast_depth": 8,
+            "max_recursion_steps": 8,
+            "max_tokens": 8,
+            "max_train_witnesses": 256,
+            "require_independent_checker": true
+          }
+        }
+      },
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"data\":{\"engine\":\"observer_synthesis_v1\",\"error\":null,\"execution_permission\":false,\"kernel_binding\":\"5b5ec1450f1fdd4c03da4fa126252f2ed3b5ce046f1e54f568ff67ffa91d8cca\",\"metrics\":{\"LLM_calls\":0,\"job_cpu_s\":0.19303135300000002,\"max_rss_kib\":84380},\"project\":\"qa-generator005-prod\",\"result_digest\":\"5c79470ad400ac7a0824f7c4383b1a6b8328fd3c3e7dfd390825f05fa6fbee0c\",\"result_ref\":\"d08af811aaad0aa2f343e2650ed76368ece9f575410103ae0f635c6d69189dc9\",\"run_id\":\"35438fbe59b77f8c9f5e0516b59a495ca3a74d1e4d77d43f37a15e09dd12d27d\",\"schema\":\"livingmath-symbolic-extension-run/1\",\"section_refs\":{\"candidate_rules\":\"f37d34432ad04ef5181b0f8cabeebc98d0fd64b6e3ba578282f7fecc2a76baa8\",\"checks\":\"0c8c32fb0ac210dc7c060085c5e3b70bb89162ad0df5ccdea6d26bc4423972f4\",\"diagnostics\":\"df23b3c6ae323623896ac0d93a082c880e5e213e7e2d6fd905d2a89769a9800b\",\"manifest\":\"3c31b585a42ddba0d76300cb42ad7863698fb80d1dd2dcd3228c50908a3e0076\",\"model\":\"5084a3406d1b731abcec6d5996475de6234ed1d2a77b0e1a4eeabe766e482320\",\"observer_provenance\":\"e42034a32855ed25a353eaa27ef680b46a191e10e9d1709521bcb8914c576796\",\"pairwise_eval\":\"f5189a5bf8d6c225ed21630554b2e8528771dcb5ee3974c9d5df5b0a6f9de94b\"},\"snapshot_ref\":\"e142d7c76d419697fde7110b059c69f08a72b7468996af94b1a3f2720cbb71b2\",\"status\":\"COMPLETED\",\"summary\":{\"conditional_exclusion_applied\":false,\"execution_permission\":false,\"family_status\":\"UNDERDETERMINED\",\"hypothesis_digest\":\"a045d7f9289ae866c925ec6d7a87b531cb13ea0f32e97fb02e68e797f2044109\",\"pair_counts\":{\"NOT_IDENTIFIABLE\":0,\"PREFERENCE\":0,\"TIE\":0,\"UNDERDETERMINED\":0},\"query_records\":128,\"synthesis_status\":\"VERIFIABLE_OPERATOR_COMPOSITION_FOUND\",\"train_records\":30,\"training_status\":\"CONSISTENT\"}},\"execution_permission\":false,\"ok\":true,\"schema\":\"livingmath-symbolic-extension-response/1\",\"status\":\"COMPLETED\"}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structuredContent": {
+          "schema": "livingmath-symbolic-extension-response/1",
+          "ok": true,
+          "status": "COMPLETED",
+          "execution_permission": false,
+          "data": {
+            "engine": "observer_synthesis_v1",
+            "error": null,
+            "execution_permission": false,
+            "kernel_binding": "5b5ec1450f1fdd4c03da4fa126252f2ed3b5ce046f1e54f568ff67ffa91d8cca",
+            "metrics": {
+              "LLM_calls": 0,
+              "job_cpu_s": 0.19303135300000002,
+              "max_rss_kib": 84380
+            },
+            "project": "qa-generator005-prod",
+            "result_digest": "5c79470ad400ac7a0824f7c4383b1a6b8328fd3c3e7dfd390825f05fa6fbee0c",
+            "result_ref": "d08af811aaad0aa2f343e2650ed76368ece9f575410103ae0f635c6d69189dc9",
+            "run_id": "35438fbe59b77f8c9f5e0516b59a495ca3a74d1e4d77d43f37a15e09dd12d27d",
+            "schema": "livingmath-symbolic-extension-run/1",
+            "section_refs": {
+              "candidate_rules": "f37d34432ad04ef5181b0f8cabeebc98d0fd64b6e3ba578282f7fecc2a76baa8",
+              "checks": "0c8c32fb0ac210dc7c060085c5e3b70bb89162ad0df5ccdea6d26bc4423972f4",
+              "diagnostics": "df23b3c6ae323623896ac0d93a082c880e5e213e7e2d6fd905d2a89769a9800b",
+              "manifest": "3c31b585a42ddba0d76300cb42ad7863698fb80d1dd2dcd3228c50908a3e0076",
+              "model": "5084a3406d1b731abcec6d5996475de6234ed1d2a77b0e1a4eeabe766e482320",
+              "observer_provenance": "e42034a32855ed25a353eaa27ef680b46a191e10e9d1709521bcb8914c576796",
+              "pairwise_eval": "f5189a5bf8d6c225ed21630554b2e8528771dcb5ee3974c9d5df5b0a6f9de94b"
+            },
+            "snapshot_ref": "e142d7c76d419697fde7110b059c69f08a72b7468996af94b1a3f2720cbb71b2",
+            "status": "COMPLETED",
+            "summary": {
+              "conditional_exclusion_applied": false,
+              "execution_permission": false,
+              "family_status": "UNDERDETERMINED",
+              "hypothesis_digest": "a045d7f9289ae866c925ec6d7a87b531cb13ea0f32e97fb02e68e797f2044109",
+              "pair_counts": {
+                "NOT_IDENTIFIABLE": 0,
+                "PREFERENCE": 0,
+                "TIE": 0,
+                "UNDERDETERMINED": 0
+              },
+              "query_records": 128,
+              "synthesis_status": "VERIFIABLE_OPERATOR_COMPOSITION_FOUND",
+              "train_records": 30,
+              "training_status": "CONSISTENT"
+            }
+          }
+        },
+        "isError": false
+      }
+    }
+  ],
+  "note": "New project and actual dataset refs required; historical request key returns immutable old run."
+}

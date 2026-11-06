@@ -4,7 +4,7 @@
 свидетели и контрпримеры → сохраняемая история исследования. MCP-интерфейс
 объединяет LivingMath, проверку исходных схем SUTI и алхимическую модель ALCH006.
 
-Текущий продукт: **`v0.4.6-developer-preview`**: assurance CLI, Semantic Bridge, численная White Star и Symbolic V1; 83 MCP-инструмента (82 прежних + независимый verifier наблюдателя). [Установка](README_QUICKSTART_RU.md), [White Star и сравнение режимов](docs/white-star/QUICKSTART_RU.md), [Semantic Bridge](docs/semantic-bridge/QUICKSTART_RU.md), [CLI](CLI_REFERENCE.md), [границы возможностей](LIMITATIONS.md).
+Текущий продукт: **`v0.4.7-developer-preview`**: assurance CLI, Semantic Bridge, численная White Star и Symbolic V1; 83 MCP-инструмента (82 прежних + независимый verifier наблюдателя). [Установка](README_QUICKSTART_RU.md), [White Star и сравнение режимов](docs/white-star/QUICKSTART_RU.md), [Semantic Bridge](docs/semantic-bridge/QUICKSTART_RU.md), [CLI](CLI_REFERENCE.md), [границы возможностей](LIMITATIONS.md).
 
 Основной репозиторий: **[catman77/LivingMath](https://github.com/catman77/LivingMath)**.
 [Архитектура сервера и назначение модулей](ARCHITECTURE.md) ·
@@ -24,6 +24,8 @@ PATCH003 добавляет конечные SP 2-комплексы с неза
 FIX-B2 соединяет размеченные операторные контексты с promotion в first-class feature registry. На исходном contains-SP контроле новый независимо проверенный предиктор дал 16/16 и 32/32 на новых словах длины 5; parent ablation даёт 5/16 и 6/32. Это конечный empirical результат, не универсальная грамматика. [Повторная приёмка и точный новый run](docs/symbolic-v1/v044-reacceptance/USER_REPORT_RU.md), [MCP-запросы](docs/symbolic-v1/v044-reacceptance/api_examples.json).
 
 PATCH004 превращает типизированные рекурсивные композиции существующих SPLIT/REVERSE и равенства слов в независимо проверяемые наблюдатели. На закрытых PAL/COPY задачах — 64/64 и 256/256; модель заморожена до queries, builtins отключены. Новый путь включается явно через `promotion_policy`; прежний literal-context default сохранён. Это ограниченное вычисление, не универсальная грамматика и не подтверждение смысла произвольного текста. [Отчёт и реальные MCP-трассы](docs/symbolic-v1/patch004/USER_REPORT_RU.md), [точный контракт и воспроизведение](docs/symbolic-v1/patch004/QUICKSTART_RU.md), [GitHub release и поставка](docs/symbolic-v1/patch004/DELIVERY_RU.md).
+
+PATCH005 устраняет преждевременное отбрасывание рекурсивного кандидата при коротком положительном примере. Генерация typed skeletons отделена от полной проверки train всех длин; диагностика показывает реальные контрпримеры и неполный поиск при ограничении бюджета. Старые вычислительные kernels/checker и feature identity сохранены. [Отчёт и старые/новые run IDs](docs/symbolic-v1/patch005/USER_REPORT_RU.md), [диагностика и воспроизведение](docs/symbolic-v1/patch005/QUICKSTART_RU.md).
 
 Semantic Bridge сохраняет исходные UTF-8-байты, адресные цитаты, конкурирующие прочтения и граф ревизий. Сравнение предъявляет точного свидетеля потери различения только для объявленных полей, вопросов и конечного домена. Интерпретации остаются гипотезами. Через реальный hosted generator получены шесть прочтений трёх стихотворений; приватный исследовательский пакет воспроизводится без модели и сети. [Отчёт и матрица приёмки](docs/semantic-bridge/USER_REPORT_RU.md).
 

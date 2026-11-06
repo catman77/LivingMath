@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "grammar_version",
+    "seen",
+    "generated_count",
+    "type_checked_count",
+    "train_compatible",
+    "train_compatible_count",
+    "search_budget",
+    "train_length_histogram",
+    "generated_by_ast_kind",
+    "candidate_records",
+    "bounded_search_complete",
+    "bounded_search_reason",
+    "candidate_budget_exhausted",
+    "search_status",
+    "no_unique_grammar_claim"
+  ],
+  "properties": {
+    "grammar_version": {
+      "const": "mixed_length_typed_composition/1"
+    },
+    "seen": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "generated_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "type_checked_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "train_compatible": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "train_compatible_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "search_budget": {
+      "type": "object"
+    },
+    "train_length_histogram": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "integer",
+        "minimum": 0
+      }
+    },
+    "generated_by_ast_kind": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "integer",
+        "minimum": 0
+      }
+    },
+    "candidate_records": {
+      "type": "array",
+      "maxItems": 128,
+      "items": {
+        "type": "object",
+        "required": [
+          "ast_digest",
+          "kind",
+          "generation_status",
+          "type_status",
+          "train_status",
+          "promotion_status",
+          "counterexamples"
+        ],
+        "properties": {
+          "ast_digest": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "generation_status": {
+            "enum": [
+              "GENERATED",
+              "NOT_GENERATED"
+            ]
+          },
+          "counterexamples": {
+            "type": "array",
+            "maxItems": 256,
+            "items": {
+              "type": "object",
+              "required": [
+                "sample_id",
+                "record_ref",
+                "expected",
+                "observed"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "bounded_search_complete": {
+      "type": "boolean"
+    },
+    "bounded_search_reason": {
+      "type": "string"
+    },
+    "candidate_budget_exhausted": {
+      "type": "boolean"
+    },
+    "search_status": {
+      "enum": [
+        "BOUNDED_SEARCH_INCOMPLETE",
+        "BOUNDED_CATALOG_CHECKED",
+        "NOT_GENERATED"
+      ]
+    },
+    "no_unique_grammar_claim": {
+      "const": true
+    }
+  },
+  "additionalProperties": false
+}
