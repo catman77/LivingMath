@@ -153,6 +153,11 @@ async def run(a):
                     t["name"]: t for t in json.loads(a.baseline.read_text())["tools"]
                 }
                 after = {t.name: t.model_dump(mode="json") for t in listing.tools}
+                if a.allow_role_api:
+                    schema=after["white_star_symbolic_observer_synthesize"]["inputSchema"]["properties"]["request"]["properties"]["promotion_policy"]["properties"]
+                    schema["mode"]["enum"].remove("role_branching_ast")
+                    for key in ["role_max_tokens","role_max_cells","role_max_split_trials"]:schema.pop(key)
+                    after["white_star_symbolic_observer_verify"]["inputSchema"]["properties"].pop("query_id")
                 check(
                     "83 input output annotation schemas unchanged",
                     len(after) == len(before) == 83
@@ -488,6 +493,7 @@ async def run(a):
 
 if __name__ == "__main__":
     p = argparse.ArgumentParser()
+    p.add_argument("--allow-role-api",action="store_true")
     p.add_argument("--origin", required=True)
     p.add_argument("--endpoint", required=True)
     p.add_argument("--loopback-port", type=int)

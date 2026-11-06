@@ -495,7 +495,7 @@ class ExtensionService:
             )
         )["data"]
 
-    async def verify_observer(self, project, run_id, feature_id, certificate=None):
+    async def verify_observer(self, project, run_id, feature_id, certificate=None, query_id=None):
         from ..observer_synthesis.features import encode
 
         w, record = self.load(project, run_id)
@@ -512,8 +512,15 @@ class ExtensionService:
             None,
         )
         require(feature is not None, "NOT_FOUND", "/feature_id")
+        if query_id is not None:
+            require(feature.get("template_origin")=="ROLE_BRANCHING_PROMOTION","ROLE_QUERY_FEATURE_REQUIRED","/query_id")
+            snapshot=await asyncio.to_thread(blobs.get,w,record["snapshot_ref"])
+            candidates=[r for r in snapshot["resolved"]["queries"] if r["id"]==query_id]
+            require(len(candidates)==1,"NOT_FOUND","/query_id")
+            return (await asyncio.to_thread(selected_executor.run,{"action":"observer_verify","feature":feature,"query_record":candidates[0],"certificate":certificate}))["data"]
         if certificate is not None:
-            if feature.get("template_origin")=="COMPOSITIONAL_AST_PROMOTION":
+            if feature.get("template_origin") in ("COMPOSITIONAL_AST_PROMOTION","ROLE_BRANCHING_PROMOTION"):
+
                 for field in ["template_origin","feature_version","candidate_provenance","operator_ast_digest","known_invariance_scope"]:
                     if certificate.get(field)!=feature.get(field):
                         return {"status":"REJECTED","field_path":"/"+field,"reason":"Registered composition binding cannot be changed","execution_permission":False}

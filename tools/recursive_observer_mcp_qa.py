@@ -172,6 +172,11 @@ async def run(a):
                     init.serverInfo.version == a.expected_version
                     and len(after) == len(before) == 83,
                 )
+                if a.allow_role_api:
+                    schema=after["white_star_symbolic_observer_synthesize"]["inputSchema"]["properties"]["request"]["properties"]["promotion_policy"]["properties"]
+                    schema["mode"]["enum"].remove("role_branching_ast")
+                    for key in ["role_max_tokens","role_max_cells","role_max_split_trials"]:schema.pop(key)
+                    after["white_star_symbolic_observer_verify"]["inputSchema"]["properties"].pop("query_id")
                 for name, old in before.items():
                     changed = copy.deepcopy(after[name]["inputSchema"])
                     if name == "white_star_symbolic_observer_synthesize" and "promotion_policy" not in old["inputSchema"]["properties"]["request"]["properties"]:
@@ -1240,6 +1245,7 @@ if __name__ == "__main__":
     p = argparse.ArgumentParser()
     p.add_argument("--expected-version", default="v0.4.6-developer-preview")
     p.add_argument("--expected-observer-version", default="observer_synthesis_v1/3-compositional-promotion")
+    p.add_argument("--allow-role-api",action="store_true")
     p.add_argument("--origin", required=True)
     p.add_argument("--endpoint", required=True)
     p.add_argument("--output", type=Path, required=True)

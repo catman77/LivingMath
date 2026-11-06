@@ -101,8 +101,11 @@ SEARCH = obj(
 )
 PROMOTION = obj(
     {
-        "mode": {"enum": ["literal_context_only", "compositional_ast", "auto"]},
+        "mode": {"enum": ["literal_context_only", "compositional_ast", "auto", "role_branching_ast"]},
         "candidate_sources": {"type":"array", "items":{"enum":["derivation_trace","source_run_id"]}, "minItems":1, "maxItems":2, "uniqueItems":True},
+        "role_max_tokens": integer(1,12),
+        "role_max_cells": integer(1,91),
+        "role_max_split_trials": integer(1,512),
         "max_ast_nodes": integer(1,32),
         "max_ast_depth": integer(1,8),
         "max_recursion_steps": integer(1,8),

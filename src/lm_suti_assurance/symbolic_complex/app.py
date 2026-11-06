@@ -76,6 +76,7 @@ def execute(engine, request, resolved):
                     "status": model["training_status"],
                     **model.get("composition_diagnostics",{}),
                     "promotion": model.get("promotion_statistics", {}),
+                    **({"role_branching":model["role_diagnostics"]} if model.get("role_diagnostics") else {}),
                     "training_conflicts": len(model["training_conflicts"]),
                     "conditional_exclusion_applied": model[
                         "conditional_exclusion_applied"
@@ -129,6 +130,14 @@ def dispatch(packet):
         return execute(packet["engine"], packet["request"], packet.get("resolved", {}))
     if action == "complex_verify":
         return verify(packet["artifact"])
+    if action == "observer_verify" and "query_record" in packet:
+        from ..observer_synthesis.role_ast import execute as execute_role
+        from ..observer_synthesis.role_checker import verify_proof
+        feature=packet["feature"];record=packet["query_record"]
+        proof=packet.get("certificate")
+        if proof is None:_,proof=execute_role(feature["operator_ast"],record,feature["known_invariance_scope"])
+        checked=verify_proof(feature["operator_ast"],record,feature["known_invariance_scope"],proof)
+        return {"status":checked["status"],"verification":checked,"certificate":proof,"record_id":record["id"],"execution_permission":False}
     if action == "observer_verify":
         from ..observer_synthesis.independent_verifier import verify as verify_observer
 

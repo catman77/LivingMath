@@ -163,6 +163,18 @@ def vector(encoded, alphabet, policy, features, record=None, evidence=None):
                 raise AssuranceError("MISSING_FEATURE_DEPENDENCY", "/features")
 
     def observation(feature):
+        if feature.get("template_origin") == "ROLE_BRANCHING_PROMOTION":
+            from .role_ast import execute
+            from .role_checker import verify_proof
+            if record is None:return None
+            result,proof=execute(feature["operator_ast"],record,feature["known_invariance_scope"])
+            checked=verify_proof(feature["operator_ast"],record,feature["known_invariance_scope"],proof)
+            if checked["status"]=="REJECTED":
+                from ..errors import AssuranceError
+                raise AssuranceError("ROLE_QUERY_PROOF_REJECTED")
+            result=checked.get("decision") if checked["status"]=="CHECKED_INSTANCE" else None
+            if evidence is not None:evidence.append({"feature_id":feature["feature_id"],"source_sha256":record["source"]["sha256"],"execution_witness_digest":digest(proof),"decision":result,"independent_status":checked["status"]})
+            return int(result) if result is not None else None
         if feature.get("template_origin") == "COMPOSITIONAL_AST_PROMOTION":
             from .composition_ast import execute as execute_composition, value, DomainLimit
             if record is None:
@@ -192,11 +204,19 @@ def derive(samples, policy, search, budget, contexts=None, promotion_policy=None
     if not policy.get("derive_relations", True):
         return [], []
     mode=(promotion_policy or {}).get("mode","literal_context_only")
+    if mode=="role_branching_ast":
+        from .role_promotion import promote as promote_roles
+        return promote_roles(samples,policy,search,promotion_policy,admitted)
     if mode in ("compositional_ast","auto"):
         from .compositional import promote as promote_composition
         promoted,composition_log=promote_composition(samples,policy,search,promotion_policy,admitted,source)
         if mode=="compositional_ast" or promoted:
             return promoted,composition_log
+        if source is None:
+            from .role_promotion import promote as promote_roles
+            role_features,role_log=promote_roles(samples,policy,search,promotion_policy or {},admitted)
+            if role_features:return role_features,composition_log+role_log
+            composition_log+=role_log
     else:
         composition_log=[]
     members = [

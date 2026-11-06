@@ -63,6 +63,9 @@ def valid_ast(ast, depth=0):
 
 
 def verify(feature, samples):
+    if feature.get("template_origin")=="ROLE_BRANCHING_PROMOTION":
+        from .role_checker import verify as verify_role
+        return verify_role(feature,samples)
     if feature.get("template_origin") == "COMPOSITIONAL_AST_PROMOTION":
         from .composition_checker import verify as verify_composition
         return verify_composition(feature,samples)

@@ -83,6 +83,7 @@ TOOLS = {
             "run_id": REF,
             "feature_id": {"type": "string", "maxLength": 128},
             "certificate": {"type": "object"},
+            "query_id": {"type":"string","maxLength":1024},
         },
         ["project", "run_id", "feature_id"],
     ),
@@ -109,9 +110,10 @@ def capabilities(executor, replay_profiles=None):
             "execution_permission": False,
         },
         "observer_synthesis_v1": {
-            "version": "observer_synthesis_v1/4-mixed-length-typed-generation",
+            "version": "observer_synthesis_v1/5-role-branching",
             "status": "READY" if ready else "ENGINE_UNAVAILABLE",
             "kernel_binding": binding(),
+            "role_branching": {"mode":"role_branching_ast","role_max_tokens":12,"max_interval_cells":91,"max_split_trials":512,"proof":"full intervals + actual SPLIT/CONCAT branches; no NF invariance"},
             "composition_promotion": {"default":"literal_context_only","max_tokens":8,"max_train_witnesses":256,"source_run":"same-project immutable symbolic AST, exact input/train/kernel binding"},
             "request_schema": OBSERVER_REQUEST,
             "limits": {

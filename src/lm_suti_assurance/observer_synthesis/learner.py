@@ -80,7 +80,7 @@ def fit(records, request, source=None):
     features += derived
     for feature in base + derived:
         feature["digest"] = digest(feature)
-    vectors = [vector(r["encoded"], alphabet, policy, features) for r in use]
+    vectors = [vector(r["encoded"], alphabet, policy, features, r["record"] if any(f.get("template_origin")=="ROLE_BRANCHING_PROMOTION" for f in features) else None) for r in use]
     names = sorted(f["feature_id"] for f in features)
     remaining = [search["max_proposals"]]
     trace = []
@@ -209,7 +209,7 @@ def fit(records, request, source=None):
                 bool(r.get("executed_rule")) for r in derivation_log
             ),
             "registered_promoted_features": sum(
-                f.get("template_origin") in ("LABELLED_CONTEXT_PROMOTION","COMPOSITIONAL_AST_PROMOTION")
+                f.get("template_origin") in ("LABELLED_CONTEXT_PROMOTION","COMPOSITIONAL_AST_PROMOTION","ROLE_BRANCHING_PROMOTION")
                 for f in derived
             ),
             "failed_obligations": [
@@ -254,6 +254,10 @@ def fit(records, request, source=None):
         from .composition_ast import settings as composition_settings
         from .compositional import generation_diagnostics
         model["promotion_policy"]=request["promotion_policy"]
+        role_log=[r for r in derivation_log if r.get("phase","").startswith("role_")]
+        role_diagnostics={"catalog":next((r for r in role_log if r.get("phase")=="role_catalog"),None),"candidates":[r for r in role_log if r.get("phase")=="role_discovery"],"promotions":[r for r in role_log if r.get("phase")=="role_promotion"],"invariance_contract":"LITERAL_ROLE_SENSITIVE; covariance requires simultaneous atom AND role renaming; NF_INVARIANT=false"} if role_log else None
+        if role_log:model["role_diagnostics"]=role_diagnostics
+
         model["composition_diagnostics"]={
             "candidate_generation": generation_diagnostics(derivation_log, [r["record"] for r in use], search),
             "promoted_features":[f["feature_id"] for f in derived if f.get("template_origin")=="COMPOSITIONAL_AST_PROMOTION"],
@@ -311,7 +315,7 @@ def predict(model, queries, budget=None):
             "kind": "empirical",
             "hypothesis_digest": model["hypothesis_digest"],
         }
-        if any(f.get("template_origin")=="COMPOSITIONAL_AST_PROMOTION" for f in features):
+        if any(f.get("template_origin") in ("COMPOSITIONAL_AST_PROMOTION","ROLE_BRANCHING_PROMOTION") for f in features):
             item["operator_evidence"]=evidence
         predictions.append(item)
         if record.get("pair_id"):
