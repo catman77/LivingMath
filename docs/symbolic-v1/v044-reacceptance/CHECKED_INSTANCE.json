@@ -1,0 +1,11 @@
+{
+  "claim_status": "CHECKED_FINITE_INSTANCE",
+  "execution_permission": false,
+  "operator_ast_digest": "2aadef27f9235974c974c42059e60d6cf7eb1e94da919a71344ff013655dca60",
+  "status": "CHECKED_INSTANCE",
+  "training_compatibility": true,
+  "universal_invariant": false,
+  "verified_witnesses": 14,
+  "verifier_digest": "def2677a7601b7ee2dc3723fa4395ab899b21951843cda15424e12cd293d9e41",
+  "verifier_version": "context-promotion-independent-checker/1"
+}

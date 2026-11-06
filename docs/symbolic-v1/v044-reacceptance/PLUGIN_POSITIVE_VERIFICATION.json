@@ -1,0 +1,33 @@
+{
+  "request": {
+    "project": "qa-fixb2-prod",
+    "run_id": "e1a9e5b090f6a3d0491f7d640a91b6fbbe548de61432e05a61c54350f681f718",
+    "feature_id": "derived_2aadef27f9235974c974"
+  },
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"data\":{\"claim_status\":\"CHECKED_FINITE_INSTANCE\",\"execution_permission\":false,\"operator_ast_digest\":\"2aadef27f9235974c974c42059e60d6cf7eb1e94da919a71344ff013655dca60\",\"status\":\"CHECKED_INSTANCE\",\"training_compatibility\":true,\"universal_invariant\":false,\"verified_witnesses\":14,\"verifier_digest\":\"def2677a7601b7ee2dc3723fa4395ab899b21951843cda15424e12cd293d9e41\",\"verifier_version\":\"context-promotion-independent-checker/1\"},\"execution_permission\":false,\"ok\":true,\"schema\":\"livingmath-symbolic-extension-response/1\",\"status\":\"CHECKED_INSTANCE\"}"
+      }
+    ],
+    "structuredContent": {
+      "schema": "livingmath-symbolic-extension-response/1",
+      "ok": true,
+      "status": "CHECKED_INSTANCE",
+      "execution_permission": false,
+      "data": {
+        "claim_status": "CHECKED_FINITE_INSTANCE",
+        "execution_permission": false,
+        "operator_ast_digest": "2aadef27f9235974c974c42059e60d6cf7eb1e94da919a71344ff013655dca60",
+        "status": "CHECKED_INSTANCE",
+        "training_compatibility": true,
+        "universal_invariant": false,
+        "verified_witnesses": 14,
+        "verifier_digest": "def2677a7601b7ee2dc3723fa4395ab899b21951843cda15424e12cd293d9e41",
+        "verifier_version": "context-promotion-independent-checker/1"
+      }
+    },
+    "isError": false
+  }
+}

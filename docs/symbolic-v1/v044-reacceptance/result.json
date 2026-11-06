@@ -1,0 +1,197 @@
+{
+  "status": "PASS_FINITE_FIX_B2",
+  "version": "v0.4.5-developer-preview",
+  "deployment_id": "fix-b2-20261106T025708Z",
+  "project": "qa-fixb2-prod",
+  "checks": 196,
+  "tool_count": 83,
+  "original16_runs_preserved": true,
+  "feature_id": "derived_2aadef27f9235974c974",
+  "parent_feature_id": "derived_eff97b656fe7e4625166",
+  "positive_run_id": "e1a9e5b090f6a3d0491f7d640a91b6fbbe548de61432e05a61c54350f681f718",
+  "hypothesis_digest": "778bda0380ce56cd70523b598345f42a8be52a020a7c778305d1887d035deb21",
+  "verification_status": "CHECKED_INSTANCE",
+  "bundle_ref": "684aeaeaf4136273ce9ae14fd97ecfe98cee88d1aa446ed161aa165efb827acf",
+  "old_v044_bundle_ref": "c2f661590301d1975d58a1f3b59e06024d0b71f6989374b8f5cc08a629fdd026",
+  "kernel_binding": "3b3925d9672d841ee5708aad492437c55a313c6b2df6abaa7dc26f85c90cceaa",
+  "scores": {
+    "promoted": {
+      "4": {
+        "TP": 11,
+        "TN": 5,
+        "FP": 0,
+        "FN": 0,
+        "abstain": 0,
+        "total": 16,
+        "correct": 16,
+        "accuracy": 1.0,
+        "coverage": 1.0
+      },
+      "5": {
+        "TP": 26,
+        "TN": 6,
+        "FP": 0,
+        "FN": 0,
+        "abstain": 0,
+        "total": 32,
+        "correct": 32,
+        "accuracy": 1.0,
+        "coverage": 1.0
+      }
+    },
+    "no_derivation": {
+      "4": {
+        "TP": 0,
+        "TN": 5,
+        "FP": 0,
+        "FN": 11,
+        "abstain": 0,
+        "total": 16,
+        "correct": 5,
+        "accuracy": 0.3125,
+        "coverage": 1.0
+      },
+      "5": {
+        "TP": 0,
+        "TN": 6,
+        "FP": 0,
+        "FN": 26,
+        "abstain": 0,
+        "total": 32,
+        "correct": 6,
+        "accuracy": 0.1875,
+        "coverage": 1.0
+      }
+    },
+    "literal_only": {
+      "4": {
+        "TP": 0,
+        "TN": 5,
+        "FP": 0,
+        "FN": 11,
+        "abstain": 0,
+        "total": 16,
+        "correct": 5,
+        "accuracy": 0.3125,
+        "coverage": 1.0
+      },
+      "5": {
+        "TP": 26,
+        "TN": 0,
+        "FP": 6,
+        "FN": 0,
+        "abstain": 0,
+        "total": 32,
+        "correct": 26,
+        "accuracy": 0.8125,
+        "coverage": 1.0
+      }
+    },
+    "builtin_only": {
+      "4": {
+        "TP": 11,
+        "TN": 2,
+        "FP": 3,
+        "FN": 0,
+        "abstain": 0,
+        "total": 16,
+        "correct": 13,
+        "accuracy": 0.8125,
+        "coverage": 1.0
+      },
+      "5": {
+        "TP": 26,
+        "TN": 2,
+        "FP": 4,
+        "FN": 0,
+        "abstain": 0,
+        "total": 32,
+        "correct": 28,
+        "accuracy": 0.875,
+        "coverage": 1.0
+      }
+    },
+    "majority": {
+      "4": {
+        "TP": 0,
+        "TN": 5,
+        "FP": 0,
+        "FN": 11,
+        "abstain": 0,
+        "total": 16,
+        "correct": 5,
+        "accuracy": 0.3125,
+        "coverage": 1.0
+      },
+      "5": {
+        "TP": 0,
+        "TN": 6,
+        "FP": 0,
+        "FN": 26,
+        "abstain": 0,
+        "total": 32,
+        "correct": 6,
+        "accuracy": 0.1875,
+        "coverage": 1.0
+      }
+    },
+    "builtin_all": {
+      "4": {
+        "TP": 8,
+        "TN": 5,
+        "FP": 0,
+        "FN": 3,
+        "abstain": 0,
+        "total": 16,
+        "correct": 13,
+        "accuracy": 0.8125,
+        "coverage": 1.0
+      },
+      "5": {
+        "TP": 14,
+        "TN": 6,
+        "FP": 0,
+        "FN": 12,
+        "abstain": 0,
+        "total": 32,
+        "correct": 20,
+        "accuracy": 0.625,
+        "coverage": 1.0
+      }
+    },
+    "parent_disabled": {
+      "4": {
+        "TP": 0,
+        "TN": 5,
+        "FP": 0,
+        "FN": 11,
+        "abstain": 0,
+        "total": 16,
+        "correct": 5,
+        "accuracy": 0.3125,
+        "coverage": 1.0
+      },
+      "5": {
+        "TP": 0,
+        "TN": 6,
+        "FP": 0,
+        "FN": 26,
+        "abstain": 0,
+        "total": 32,
+        "correct": 6,
+        "accuracy": 0.1875,
+        "coverage": 1.0
+      }
+    }
+  },
+  "promotion_statistics": {
+    "context_witnesses": 14,
+    "executed_promotion_rules": 1,
+    "failed_obligations": [],
+    "registered_promoted_features": 2
+  },
+  "endpoint": "https://fares-september-rebel-board.trycloudflare.com/mcp",
+  "public_HTTPS_tested": true,
+  "execution_permission": false,
+  "universal_invariant": false
+}

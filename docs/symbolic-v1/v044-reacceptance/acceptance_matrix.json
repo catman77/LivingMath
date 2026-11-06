@@ -1,0 +1,3303 @@
+{
+  "status": "PASS_FINITE_FIX_B2",
+  "positive_class": "literal observed-fragment contexts, the original contains-SP fixture",
+  "reference_tests": 12,
+  "baseline_tests": 320,
+  "source_tests": 337,
+  "wheel_tests": 337,
+  "legacy_tests": 1066,
+  "legacy_skipped": 20,
+  "public_MCP_checks": 656,
+  "all_checks": [
+    {
+      "check": "white_star_symbolic_complex_inspect 1",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "immutable original SP2",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 2",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "immutable original SP4",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 3",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "immutable original SP6",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 4",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "immutable original SP8",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 5",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "immutable original SP10",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 6",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "immutable original none10",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 7",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "immutable original bigons6",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 8",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "immutable original diamonds6",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 9",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "immutable original dyck_builtin_ban",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 10",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "immutable original dyck_no_derivation",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 11",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "immutable original dyck_no_builtins",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 12",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "immutable original contains_SP_no_builtins_derived",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 13",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "immutable original contains_SP_no_builtins_no_derivation",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 14",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "immutable original contains_SP_with_builtins",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 15",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "immutable original nostradamus_alpha",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 16",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "immutable original nostradamus_punctuation",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "actual version/83 tools",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "all83 schemas and annotations unchanged",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "assurance_project_new 17",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "assurance_project_new 18",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "frozen disjoint labels-free input",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_dataset_store 19",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_dataset_store 20",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_synthesize 21",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "completed promoted",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 22",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 23",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 24",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 25",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 26",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 27",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "artifact SHA",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 28",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "exact offline seal/predictions promoted",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_synthesize 29",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "completed no_derivation",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 30",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 31",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "exact offline seal/predictions no_derivation",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_synthesize 32",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "completed literal_only",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 33",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 34",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "exact offline seal/predictions literal_only",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_synthesize 35",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "completed builtin_only",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 36",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 37",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "exact offline seal/predictions builtin_only",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_synthesize 38",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "completed majority",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 39",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 40",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "exact offline seal/predictions majority",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_synthesize 41",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "completed builtin_all",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 42",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 43",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "exact offline seal/predictions builtin_all",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "registered derived actually used",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_synthesize 44",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 45",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 46",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "parent disable really blocks feature",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_verify 47",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "independent CHECKED_INSTANCE",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_verify 48",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "REJECTED intermediate_output_hash",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_verify 49",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "REJECTED source_span",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_verify 50",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "REJECTED operator",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_verify 51",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "REJECTED origin",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_verify 52",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "REJECTED hidden_labels",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_verify 53",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "REJECTED parent",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_verify 54",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_dataset_store 55",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_synthesize 56",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "idempotency",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_synthesize 57",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_dataset_store 58",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_dataset_store 59",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_synthesize 60",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "mirror completed dyck_builtin_ban",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 61",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 62",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "no false universal grammar dyck_builtin_ban",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_dataset_store 63",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_dataset_store 64",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_synthesize 65",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "mirror completed dyck_no_derivation",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 66",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 67",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_dataset_store 68",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_dataset_store 69",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_synthesize 70",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "mirror completed dyck_no_builtins",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 71",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 72",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "no false universal grammar dyck_no_builtins",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_dataset_store 73",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_dataset_store 74",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_synthesize 75",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "mirror completed contains_SP_no_builtins_derived",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 76",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 77",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 78",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 79",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 80",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 81",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "artifact SHA",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 82",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_dataset_store 83",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_dataset_store 84",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_synthesize 85",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "mirror completed contains_SP_no_builtins_no_derivation",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 86",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 87",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_dataset_store 88",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_dataset_store 89",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_synthesize 90",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "mirror completed contains_SP_with_builtins",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 91",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 92",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 93",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 94",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 95",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 96",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "artifact SHA",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 97",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_dataset_store 98",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_dataset_store 99",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_synthesize 100",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "mirror completed nostradamus_alpha",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 101",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 102",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_dataset_store 103",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_dataset_store 104",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_synthesize 105",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "mirror completed nostradamus_punctuation",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 106",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 107",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "sealed label digest",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "48/48 versus effective ablation",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 108",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 109",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 110",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 111",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 112",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 113",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "artifact SHA",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "verification cannot mutate frozen rule",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 114",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 115",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 116",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 117",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 118",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 119",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 120",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "promoted-observer export SHA",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_extension_replay 121",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "promoted-observer replay",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 122",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 123",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 124",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 125",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 126",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 127",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 128",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 129",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 130",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "old-v044-observer export SHA",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "white_star_symbolic_extension_replay 131",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "old-v044-observer replay",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "service_health 132",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "assurance_doctor 133",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "SQLite/audit/no execution grants",
+      "status": "PASS",
+      "suite": "production-b2-qa"
+    },
+    {
+      "check": "actual tool count/version",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "all75 previous input/output schemas and annotations exact",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "bridge_system_status 1",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "new true READY capabilities",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "old symbolic binding unchanged",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "assurance_project_new 2",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_analyze 3",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "sp-2 completed",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "SP2C counts N2",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_verify 4",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "SP independent proof N2",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_analyze 5",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "sp-4 completed",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "SP2C counts N4",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_verify 6",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "SP independent proof N4",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_analyze 7",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "sp-6 completed",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "SP2C counts N6",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_verify 8",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "SP independent proof N6",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_analyze 9",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "sp-8 completed",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "SP2C counts N8",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_verify 10",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "SP independent proof N8",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_analyze 11",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "sp-10 completed",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "SP2C counts N10",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_verify 12",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "SP independent proof N10",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_analyze 13",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "sp-10 completed",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "same request key returns exact row",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_analyze 14",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "sp-10-replica completed",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "distinct key same result digest",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_analyze 15",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "sp-none completed",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "none no false pi1",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "graph pi1 free rank1264",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_analyze 16",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "sp-bigons_only completed",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "bigons_only no false pi1",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_analyze 17",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "sp-diamonds_only completed",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "diamonds_only no false pi1",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 18",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_verify 19",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "tampered proof REJECTED with obligations",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_verify 20",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "missing proof NOT_PROVED",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 21",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_verify 22",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "bad position rejected",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_analyze expected INVALID_INPUT",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_analyze expected BUDGET_EXCEEDED",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "assurance_project_new 25",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect expected NOT_FOUND",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 27",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 28",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 29",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 30",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 31",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 32",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 33",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 34",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 35",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 36",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 37",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 38",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 39",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 40",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 41",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 42",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 43",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 44",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 45",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 46",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 47",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 48",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 49",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 50",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 51",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 52",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 53",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 54",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 55",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 56",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 57",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 58",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 59",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 60",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 61",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 62",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 63",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 64",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 65",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 66",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 67",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 68",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 69",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 70",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 71",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 72",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 73",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 74",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 75",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 76",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 77",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 78",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 79",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 80",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 81",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 82",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 83",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 84",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 85",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 86",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 87",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 88",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 89",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 90",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 91",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 92",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 93",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 94",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 95",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 96",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 97",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 98",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 99",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 100",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 101",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 102",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 103",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 104",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 105",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 106",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 107",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 108",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 109",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 110",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 111",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 112",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 113",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 114",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 115",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_complex_inspect 116",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "sp-10 actual export SHA",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_extension_replay 117",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "sp-10 real replay",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_dataset_store 118",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_dataset_store 119",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_dataset_store 120",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_dataset_store 121",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "dyck-queries all records registered",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_synthesize 122",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "Dyck full train28 test322",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 123",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 124",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 125",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 126",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 127",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "70+252 blind decisions exact",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "pair_0_max honestly BUILTIN",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "grammar remains underdetermined",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_synthesize 128",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "observer idempotency",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_synthesize expected REQUEST_KEY_CONFLICT",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_dataset_store expected HELDOUT_LABEL_LEAKAGE",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_synthesize expected NOT_FOUND",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_synthesize 132",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 133",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 134",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 135",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 136",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 137",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "literal no hidden pair features",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_synthesize 138",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 139",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 140",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 141",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 142",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 143",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "alpha_pattern no hidden pair features",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_synthesize 144",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 145",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 146",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 147",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 148",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 149",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "adjacency no hidden pair features",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 150",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 151",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 152",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 153",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 154",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_observer_inspect 155",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "dyck actual export SHA",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "white_star_symbolic_extension_replay 156",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "dyck real replay",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "service_health 157",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "assurance_doctor 158",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "SQLite and canonical audit healthy",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "no approval escalation",
+      "status": "PASS",
+      "suite": "production-sp-qa"
+    },
+    {
+      "check": "75 tools and actual version",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "all75 schemas unchanged",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "inspect schema unchanged",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "bridge_system_status 1",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "patch READY and historical profile approved",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "assurance_project_new 2",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_explore 3",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "completed zero",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 4",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "literal zero histories stay different",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "zero normal forms equal",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_explore 5",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "completed zero",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "idempotent run exact",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_explore 6",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "completed zero-copy",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "different keys same structural digest",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_explore 7",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "completed alpha-a",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_explore 8",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "completed alpha-b",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 9",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "global alpha exact witness",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_explore 10",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "completed order-a",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_explore 11",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "completed order-b",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 12",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "record order explicit",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_explore 13",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "completed ab",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_explore 14",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "completed ba",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_explore 15",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "completed cd",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_explore 16",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "completed dc",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 17",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "ab/ba explicit SP/order/route witnesses",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 18",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "cd/dc explicit SP/order/route witnesses",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 19",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_explore 20",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "completed saturation",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 21",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "local saturated with unproposed insertion",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 22",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 23",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 24",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 25",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 26",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 27",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 28",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 29",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "UDAV unchanged exact trace prefix",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_explore 30",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "completed paths",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 31",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 32",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 33",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 34",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 35",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 36",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 37",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 38",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "provenance paths retained",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 39",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "private export hash exact",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_replay 40",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "new structural replay",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_replay 41",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "historical v040 exact replay",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 42",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_explore 43",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "completed relations",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 44",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 45",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "selected relation9/9 without duplicate",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "explicit candidate versus family status",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "old false positives show disagreement",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_explore 46",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "completed mask",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 47",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "queries do not choose hypothesis",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_explore 48",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "completed active-query",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 49",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "external active query cycle",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_explore 50",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "completed unicode",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 51",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "NFC and source-byte map retained",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 52",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "exact accepted Mallarme source",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_explore 53",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "completed mallarme-original",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_explore 54",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "completed mallarme-permuted",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 55",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "Mallarme line-order witness",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_explore 56",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "completed mallarme-renamed",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 57",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "Mallarme equal-frequency renaming witness",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_status 58",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "native ready2profiles75hashes",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_inspect 59",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_replay 60",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "numerical replay actually recomputed",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "typed SOURCE_MISMATCH 61",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "SHA error has precise path",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 62",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 63",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 64",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 65",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 66",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 67",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 68",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 69",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 70",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 71",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 72",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 73",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 74",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 75",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 76",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 77",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 78",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "limits unchanged CPU RAM queue",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 79",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 80",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 81",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 82",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 83",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 84",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 85",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 86",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_explore 87",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "completed patch002-nostradamus_original_local_word",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 88",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "nostradamus_original_local_word identical input/budgets and bounded result",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 89",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 90",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "nostradamus_original_local_word immutable source spans",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 91",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "nostradamus_original_local_word diagnostics retained at terminal limit",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "nostradamus_original_local_word fallback escapes recorded local stagnation",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "nostradamus_original_local_word explicit frontier provenance",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 92",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 93",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 94",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 95",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "nostradamus_original_local_word all candidate attempts counted",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 96",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "T02 first5 local UDAV steps unchanged",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_explore 97",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "completed patch002-nostradamus_original_local_word",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "T02 idempotent request exact",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_explore 98",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "completed patch002-nostradamus-replica",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "T05 same request distinct key deterministic result",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 99",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 100",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 101",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 102",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 103",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 104",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 105",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 106",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 107",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 108",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 109",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 110",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 111",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 112",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 113",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 114",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 115",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 116",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "T05 export byte hash",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_replay 117",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "T05 fallback path replay matches",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 118",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 119",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 120",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 121",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 122",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 123",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 124",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 125",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 126",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_replay 127",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "T08 PATCH001 actual original digest replay",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 128",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_explore 129",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "completed patch002-mallarme_original",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 130",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "mallarme_original identical input/budgets and bounded result",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 131",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 132",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "mallarme_original immutable source spans",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 133",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "mallarme_original diagnostics retained at terminal limit",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 134",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 135",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 136",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 137",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 138",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "mallarme_original all candidate attempts counted",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 139",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_explore 140",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "completed patch002-mallarme_reverse",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 141",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "mallarme_reverse identical input/budgets and bounded result",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 142",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 143",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "mallarme_reverse immutable source spans",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 144",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "mallarme_reverse diagnostics retained at terminal limit",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "mallarme_reverse fallback escapes recorded local stagnation",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "mallarme_reverse explicit frontier provenance",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 145",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 146",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 147",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 148",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 149",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "mallarme_reverse all candidate attempts counted",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 150",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "T06 Mallarme order has actual source-span witness",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_explore 151",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "completed patch002-budget-zero",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 152",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "T03 zero exact diagnostic counters",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "T07 zero steps no invented saturation",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_explore 153",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "completed patch002-budget-nodes",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 154",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "T03 nodes exact diagnostic counters",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_explore 155",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "completed patch002-budget-tokens",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 156",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "T03 tokens exact diagnostic counters",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_explore 157",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "completed patch002-budget-nodes-after-fallback",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 158",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "T03 nodes-after-fallback exact diagnostic counters",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "T07 MAX_NODES preserves fallback evidence",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_explore 159",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "completed patch002-budget-observations",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "white_star_symbolic_inspect 160",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "T03 observations exact diagnostic counters",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "service_health 161",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "assurance_doctor 162",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    },
+    {
+      "check": "SQLite audit and independent approval intact",
+      "status": "PASS",
+      "suite": "production-legacy-qa"
+    }
+  ],
+  "candidate_statistics": {
+    "context_witnesses": 14,
+    "executed_promotion_rules": 1,
+    "failed_obligations": [],
+    "registered_promoted_features": 2
+  },
+  "no_universal_grammar_claim": true,
+  "global_semantic_transfer": "NOT_DEMONSTRATED",
+  "native_SUTI": "NOT_EXECUTED",
+  "execution_permission": false
+}

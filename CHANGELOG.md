@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.4.5-developer-preview — 2026-11-06
+
+- Promote labelled short-word operator contexts into a source-bound equality predicate and a dependent bounded context scan; require all-train compatibility and independently checked source/state traces.
+- Support genuine operator-only synthesis with no builtin features, effective parent ablation, explicit failed promotion obligations and UNKNOWN beyond the declared scope.
+- Reject forged origin, intermediate outputs, source spans, operators, hidden labels and parent certificates while preserving all 83 prior tool schemas.
+- Reaccept the original contains-SP fixture and new sealed length5 queries against no-derivation, literal, builtin and majority controls; retain negative Dyck/literary outcomes.
+- Preserve numeric/Symbolic/SP code, databases, historical extension replay and worker quotas; reuse an existing owner OAuth client for QA when registration capacity is full.
+
 ## v0.4.4-developer-preview — 2026-11-06
 
 - Report all_local_peaks_filled only after the checker confirms zero unresolved peaks; expose selected cell policy and partial attachment.

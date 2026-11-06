@@ -1,0 +1,23 @@
+{
+  "source_commit": "8ef1293a308e8243951d312c9e5e4d0b68b3c1cf",
+  "files": [
+    "live_math_mcp_prod/unified_client_qa.py",
+    "pyproject.toml",
+    "src/lm_suti_assurance/__init__.py",
+    "src/lm_suti_assurance/observer_synthesis/features.py",
+    "src/lm_suti_assurance/observer_synthesis/independent_verifier.py",
+    "src/lm_suti_assurance/observer_synthesis/learner.py",
+    "src/lm_suti_assurance/observer_synthesis/operator_execution.py",
+    "src/lm_suti_assurance/observer_synthesis/promotion.py",
+    "src/lm_suti_assurance/observer_synthesis/promotion_verifier.py",
+    "src/lm_suti_assurance/symbolic_complex/app.py",
+    "src/lm_suti_assurance/symbolic_complex/mcp.py",
+    "src/lm_suti_assurance/symbolic_complex/service.py",
+    "tests/test_context_promotion.py",
+    "tools/context_promotion_experiment.py",
+    "tools/context_promotion_mcp_qa.py",
+    "tools/release_v01_entry.py"
+  ],
+  "docs": "docs/symbolic-v1/v044-reacceptance",
+  "archive": "docs/LIVINGMATH_V044_REACCEPTANCE_20261106.zip"
+}

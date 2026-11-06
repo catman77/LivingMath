@@ -1,0 +1,61 @@
+[
+  {
+    "attack": "intermediate_output_hash",
+    "response": {
+      "execution_permission": false,
+      "field_path": "/promotion_certificate",
+      "reason": "Origin, AST, train-only label contract, source lineage, parent or operator trace failed",
+      "status": "REJECTED",
+      "verifier_version": "context-promotion-independent-checker/1"
+    }
+  },
+  {
+    "attack": "source_span",
+    "response": {
+      "execution_permission": false,
+      "field_path": "/promotion_certificate",
+      "reason": "Origin, AST, train-only label contract, source lineage, parent or operator trace failed",
+      "status": "REJECTED",
+      "verifier_version": "context-promotion-independent-checker/1"
+    }
+  },
+  {
+    "attack": "operator",
+    "response": {
+      "execution_permission": false,
+      "field_path": "/promotion_certificate",
+      "reason": "Origin, AST, train-only label contract, source lineage, parent or operator trace failed",
+      "status": "REJECTED",
+      "verifier_version": "context-promotion-independent-checker/1"
+    }
+  },
+  {
+    "attack": "origin",
+    "response": {
+      "status": "REJECTED",
+      "field_path": "/origin",
+      "reason": "Registered origin cannot be changed",
+      "execution_permission": false
+    }
+  },
+  {
+    "attack": "hidden_labels",
+    "response": {
+      "execution_permission": false,
+      "field_path": "/promotion_certificate",
+      "reason": "Origin, AST, train-only label contract, source lineage, parent or operator trace failed",
+      "status": "REJECTED",
+      "verifier_version": "context-promotion-independent-checker/1"
+    }
+  },
+  {
+    "attack": "parent",
+    "response": {
+      "execution_permission": false,
+      "field_path": "/promotion_certificate",
+      "reason": "Origin, AST, train-only label contract, source lineage, parent or operator trace failed",
+      "status": "REJECTED",
+      "verifier_version": "context-promotion-independent-checker/1"
+    }
+  }
+]

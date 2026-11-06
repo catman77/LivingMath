@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "archive_sha256": "f82e0ee9633d545c14ede5c1bee6168d16b27d64a1022ba0c08fee60051ee946",
+  "manifest_files_verified": 207,
+  "standalone_test_cases": 17,
+  "checks": {
+    "standalone-tests": {
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "DELIVERY-standalone-tests.log"
+    },
+    "experiment": {
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "DELIVERY-experiment.log"
+    },
+    "frozen_control_scores": {
+      "status": "PASS",
+      "compared_modes": [
+        "promoted",
+        "no_derivation",
+        "literal_only",
+        "builtin_only",
+        "majority",
+        "builtin_all",
+        "parent_disabled"
+      ]
+    },
+    "observer-replay": {
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "DELIVERY-observer-replay.log"
+    },
+    "sp-replay": {
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "DELIVERY-sp-replay.log"
+    }
+  },
+  "test_runtime": "installed wheel 0.4.5.dev0 outside checkout",
+  "network_offline_replay": "unshare -Urn",
+  "secrets": "75 exact values checked; private files excluded"
+}

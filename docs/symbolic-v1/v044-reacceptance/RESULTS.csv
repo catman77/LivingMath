@@ -1,0 +1,15 @@
+variant,holdout_length,TP,TN,FP,FN,abstain,correct,total
+promoted,4,11,5,0,0,0,16,16
+promoted,5,26,6,0,0,0,32,32
+no_derivation,4,0,5,0,11,0,5,16
+no_derivation,5,0,6,0,26,0,6,32
+literal_only,4,0,5,0,11,0,5,16
+literal_only,5,26,0,6,0,0,26,32
+builtin_only,4,11,2,3,0,0,13,16
+builtin_only,5,26,2,4,0,0,28,32
+majority,4,0,5,0,11,0,5,16
+majority,5,0,6,0,26,0,6,32
+builtin_all,4,8,5,0,3,0,13,16
+builtin_all,5,14,6,0,12,0,20,32
+parent_disabled,4,0,5,0,11,0,5,16
+parent_disabled,5,0,6,0,26,0,6,32

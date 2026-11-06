@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "bundle": "promoted-observer.zip",
+      "source": "production-b2-qa",
+      "network_namespace": "unshare -Urn",
+      "result": {
+        "engine": "observer_synthesis_v1",
+        "execution_permission": false,
+        "independent_checks": {
+          "LLM_calls": 0,
+          "execution_permission": false,
+          "holdout_labels_read": false,
+          "hypothesis_frozen_before_queries": true
+        },
+        "journal_hash_chain": "PASS",
+        "kernel_binding": "3b3925d9672d841ee5708aad492437c55a313c6b2df6abaa7dc26f85c90cceaa",
+        "result_digest": "c6799286b099c288909a27911ddf11d405731c38e3179e43086011ed05884d6e",
+        "run_id": "e1a9e5b090f6a3d0491f7d640a91b6fbbe548de61432e05a61c54350f681f718",
+        "status": "REPLAY_MATCH"
+      }
+    },
+    {
+      "bundle": "sp-10.zip",
+      "source": "production-sp-qa",
+      "network_namespace": "unshare -Urn",
+      "result": {
+        "engine": "symbolic_complex_v1",
+        "execution_permission": false,
+        "independent_checks": {
+          "H1_dim": 0,
+          "boundary_squared_zero": true,
+          "components": 1,
+          "execution_permission": false,
+          "failed_obligations": [],
+          "graph_beta1": 1264,
+          "missing_peaks": 0,
+          "pi1_status": "PROVED_TRIVIAL_WITH_CERTIFICATE",
+          "rank_d1": 350,
+          "rank_d2_F2": 1264,
+          "status": "CHECKED_INSTANCE",
+          "verified_cell_count": 3360,
+          "verified_edge_count": 1614,
+          "verifier_digest": "2bdff172f1310c6431b7d133ec2fc3a0df0a9ee6b4fb80e645e696e7c60e4c93",
+          "verifier_version": "SP-finite-independent-checker/1"
+        },
+        "journal_hash_chain": "PASS",
+        "kernel_binding": "3b3925d9672d841ee5708aad492437c55a313c6b2df6abaa7dc26f85c90cceaa",
+        "result_digest": "2451396afb6599f3741ac3adc828bd8ec9c902a4b1be4bc9ec03497ee85f329e",
+        "run_id": "905044a380c796b2f8456ca861ced6dcad60ff537590d87abd0e9ffde10af41f",
+        "status": "REPLAY_MATCH"
+      }
+    }
+  ]
+}

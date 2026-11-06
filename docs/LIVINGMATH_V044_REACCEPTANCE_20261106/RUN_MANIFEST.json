@@ -1,0 +1,44 @@
+{
+  "date": "2026-11-06",
+  "release": "v0.4.4-developer-preview",
+  "deployment": "symbolic-patch003-acceptance-20261106T010226Z",
+  "project": "whitestar_dialog_test",
+  "result": "CONDITIONAL_PASS_P0_PASS_P1_NOT_DEMONSTRATED",
+  "complex": {
+    "SP2": "d9a495958f216b3dec625630652315a6614f31970682d0e963e705f2c346b425",
+    "SP4": "8c77e31d0229dbc5902233e877afb3d63cf1a077ad5e0217ae08fd5a53165ad1",
+    "SP6": "84d903297363e128185ce1da0c85582ff56f88aae4a129a501dc1537676eff8e",
+    "SP8": "6d775d6c7b006d01f547edc0c851e065236ba8e5d9ff00d74cf3ce0b088aca24",
+    "SP10": "74fd0089d5dbcef4d6b862e9d3ff29309b07aeaa55eae83049b7a8685d0c0a30",
+    "none10": "6240edae719886269a54e29f32cf1a150ec60b88c7e3855a31e7f75f73537dfd",
+    "bigons6": "2e2529172f2b093d95a62c470f0b8371203133a1a1ab43df09f23e85c2325df9",
+    "diamonds6": "07525ad1667fe0ad1d8007c71f5ad7cca7910b0584733cff471dffff154aa045"
+  },
+  "observer": {
+    "dyck_builtin_ban": "85093f853f765d5005aaeeee8f9a51523c8e7a8ef9cc2a8e1f7f220a137fd294",
+    "dyck_no_derivation": "874b53d9f9823c8c246ae683daff96c20b124aa8b15833ea3d3769a556f4a931",
+    "dyck_no_builtins": "f1e35162c61bc4fe0eb17f60f675f132de92b134cfe4ce79b2ccf8fc2ee71c8f",
+    "contains_SP_no_builtins_derived": "6072bffc230336370bc92d1785f1f97b54339e43a2ce19c357fe39eaf1e9c5a9",
+    "contains_SP_no_builtins_no_derivation": "0bccf24bfec80ad7f9d33bbacfc6c656bad5d305479cfdec0324918359f44f54",
+    "contains_SP_with_builtins": "b86d7c89e466888a4c00cc16bc59fa95c663940e2cdfec42cc46d13caa1068e6",
+    "nostradamus_alpha": "4298c4f1bff5054f955d26a0a8630323f7f447dcca214044b45170ec6d7e0a5c",
+    "nostradamus_punctuation": "fe6aaeb1571c016389dfd7d87ad5c13a616cdcb4028d0c9b74d0598b37a13876"
+  },
+  "verified": {
+    "ref_python_tests": 12,
+    "complex_verifier_all_N": "CHECKED_INSTANCE",
+    "tampered_edge": "REJECTED/UNVERIFIED_EDGE",
+    "no_cells": "NOT_PROVED",
+    "legacy_replay": "REPLAY_MATCH",
+    "extension_replay": "REPLAY_MATCH",
+    "observer_replay": "REPLAY_MATCH",
+    "holdout_leak": "HELDOUT_LABEL_LEAKAGE",
+    "cross_project": "NOT_FOUND",
+    "idempotency": true
+  },
+  "limits": [
+    "Not a source-code or infra audit",
+    "No registered verifiable new observer demonstrated",
+    "Nostradamus only a small split"
+  ]
+}

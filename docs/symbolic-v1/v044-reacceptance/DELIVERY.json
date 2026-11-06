@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "sha256": "f82e0ee9633d545c14ede5c1bee6168d16b27d64a1022ba0c08fee60051ee946",
+  "bytes": 43956662,
+  "files": 207,
+  "secret_scan": "PASS",
+  "secret_values_checked": 75
+}
