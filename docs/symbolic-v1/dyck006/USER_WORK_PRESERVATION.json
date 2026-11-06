@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "pre_existing_user_changes": 87,
+  "all_file_bytes_symlink_targets_missing_states_and_modes_preserved": true,
+  "AGENTS_and_user_gitignore_unchanged": true,
+  "root_main_fast_forward": "62cc7b6f520bf7699ccb1ba3d31bffd007df007e"
+}

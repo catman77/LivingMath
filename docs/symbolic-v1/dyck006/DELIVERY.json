@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "source_commit": "62cc7b6f520bf7699ccb1ba3d31bffd007df007e",
+  "base_commit": "9d3062a8fb81687a67eb0ad8acf1b10425e76277",
+  "sha256": "7bf66bfbe68d062fc57e71d3d6b5234d7c667977acab75fce2a5a150d4b13f3a",
+  "bytes": 339467166,
+  "files": 408,
+  "secret_scan": "PASS",
+  "known_secret_values_checked": 130
+}

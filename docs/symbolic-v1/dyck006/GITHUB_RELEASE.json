@@ -1,0 +1,11 @@
+{
+  "release_id": 437115026,
+  "html_url": "https://github.com/catman77/LivingMath/releases/tag/v0.4.8-developer-preview",
+  "tag_name": "v0.4.8-developer-preview",
+  "target_commitish": "main",
+  "prerelease": true,
+  "asset_id": 718739815,
+  "asset_url": "https://github.com/catman77/LivingMath/releases/download/v0.4.8-developer-preview/LIVINGMATH_DYCK006_DELIVERY_20261107.zip",
+  "asset_bytes": 339467166,
+  "sha256": "7bf66bfbe68d062fc57e71d3d6b5234d7c667977acab75fce2a5a150d4b13f3a"
+}

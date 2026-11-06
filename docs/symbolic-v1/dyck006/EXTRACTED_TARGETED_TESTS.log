@@ -1,0 +1,30 @@
+.....................F..                                                 [100%]
+=================================== FAILURES ===================================
+__________ test_query_proof_crosses_actual_immutable_worker_whitelist __________
+
+    def test_query_proof_crosses_actual_immutable_worker_whitelist():
+     from lm_suti_assurance.symbolic.executor import Executor
+     _,_,f=fitted();pool=Executor()
+     try:
+>     value=pool.run({'action':'observer_verify','feature':f,'query_record':rec(list('SSPPSP')),'certificate':None})['data']
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+/home/catman/.local/state/livingmath/dyck006/extracted-delivery/checkout/tests/test_role006.py:264: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/home/catman/.local/state/livingmath/dyck006/extracted-delivery/checkout/src/lm_suti_assurance/symbolic/executor.py:55: in run
+    return super().run(packet)
+           ^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <lm_suti_assurance.symbolic.executor.Executor object at 0x7fdd2c57bcb0>
+packet = {'action': 'observer_verify', 'feature': {'feature_id': 'derived_b0bae4245d3417323658', 'feature_version': '3', 'seman...e23c95ead95c97078e438ce5ef357df5416', 'rights': 'ORIGINAL_TEST_FIXTURE', 'edition': 'ROLE006/1'}}, 'certificate': None}
+
+    def run(self, packet: dict) -> dict:
+        if self.error is not None or not self.workers:
+>           raise AssuranceError("ENGINE_UNAVAILABLE")
+E           lm_suti_assurance.errors.AssuranceError: ENGINE_UNAVAILABLE
+
+/home/catman/.local/state/livingmath/dyck006/extracted-delivery/checkout/src/lm_suti_assurance/white_star/pool.py:125: AssuranceError
+=========================== short test summary info ============================
+FAILED ../home/catman/.local/state/livingmath/dyck006/extracted-delivery/checkout/tests/test_role006.py::test_query_proof_crosses_actual_immutable_worker_whitelist
+1 failed, 23 passed in 13.18s

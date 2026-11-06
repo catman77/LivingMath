@@ -29,4 +29,4 @@
 - [x] Validate minimal SP/PS, SSPPSP,84→256, rename/NF/bounds/negative proofs; full existing source/legacy/MCP regressions.
 - [x] Freeze P1 scope12 model, query every needed concatenated word via real MCP in bounded batches, build actual right-context sets and witnesses for N1..6 (N+2 classes).
 - [x] Review, build/install0.4.8, staged and public HTTPS/OAuth acceptance after quiescent backup; same URL/tunnel/DB inodes and old-profile replay.
-- [ ] Deliver source/code schemas/full traces/results/RCA/README ZIP; GitHub publication and public download/source readback, preserving unrelated user work.
+- [x] Deliver source/code schemas/full traces/results/RCA/README ZIP; GitHub publication and public download/source readback, preserving unrelated user work.
