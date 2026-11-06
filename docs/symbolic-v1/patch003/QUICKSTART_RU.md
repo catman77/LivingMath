@@ -1,6 +1,6 @@
 # PATCH003: конечные комплексы и наблюдатели
 
-Версия сервера `v0.4.3-developer-preview`, пакет `0.4.3.dev0`. Через существующий HTTPS/OAuth endpoint публикуются82 инструмента. Если ChatGPT показывает75, переподключите LivingMath по прежнему адресу, чтобы перечитать `tools/list`. Адрес указан в локальном `~/.local/state/livingmath/mcp-url`.
+Текущая версия после приёмочного исправления: `v0.4.4-developer-preview`, пакет `0.4.4.dev0`. Через существующий HTTPS/OAuth endpoint публикуются83 инструмента. Если ChatGPT показывает75 или82, переподключите LivingMath по прежнему адресу, чтобы перечитать `tools/list`. Адрес указан в локальном `~/.local/state/livingmath/mcp-url`.
 
 ## Первый SP-комплекс
 
@@ -56,3 +56,5 @@ python tools/symbolic_patch003_research.py run --frozen /path/to/corpus-freeze -
 ```
 
 Внешние holdout-метки читает только оценщик после всех inference jobs. Общая квота остаётся2 активных воркера,16 в очереди,5 CPU/6 wall секунд и512 MiB на job. Нет дополнительных LLM, сети или исполнения кода из ZIP. `execution_permission=false`; новый аудит не присваивает математический `verified`. Старые run IDs и профили replay продолжают работать.
+
+Приёмочный follow-up: `white_star_symbolic_observer_verify(project,run_id,feature_id)` проверяет зарегистрированный DERIVED observer и его полные source witnesses независимо от генератора трасс. Optional certificate позволяет проверить повреждённый вариант без изменения модели. [Отчёт и точные принятые запросы](../patch003-acceptance/USER_REPORT_RU.md).

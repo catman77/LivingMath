@@ -1,0 +1,24 @@
+{
+  "source_commit": "cb0dcb01732fac274ee881d60948911ec5903288",
+  "code_tests_tools": [
+    "pyproject.toml",
+    "src/lm_suti_assurance/__init__.py",
+    "src/lm_suti_assurance/observer_synthesis/features.py",
+    "src/lm_suti_assurance/observer_synthesis/independent_verifier.py",
+    "src/lm_suti_assurance/observer_synthesis/operator_execution.py",
+    "src/lm_suti_assurance/symbolic/worker.py",
+    "src/lm_suti_assurance/symbolic_complex/app.py",
+    "src/lm_suti_assurance/symbolic_complex/bundle.py",
+    "src/lm_suti_assurance/symbolic_complex/contracts.py",
+    "src/lm_suti_assurance/symbolic_complex/mcp.py",
+    "src/lm_suti_assurance/symbolic_complex/model.py",
+    "src/lm_suti_assurance/symbolic_complex/service.py",
+    "tests/test_patch003_acceptance.py",
+    "tools/release_v01_entry.py",
+    "tools/symbolic_patch003_acceptance_qa.py",
+    "tools/symbolic_patch003_corpus_audit.py",
+    "tools/symbolic_patch003_mcp_qa.py"
+  ],
+  "documentation": "docs/symbolic-v1/patch003-acceptance",
+  "provided_archive": "docs/LIVINGMATH_PATCH003_ACCEPTANCE_20261106.zip"
+}

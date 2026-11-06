@@ -4,7 +4,7 @@
 свидетели и контрпримеры → сохраняемая история исследования. MCP-интерфейс
 объединяет LivingMath, проверку исходных схем SUTI и алхимическую модель ALCH006.
 
-Текущий продукт: **`v0.4.3-developer-preview`**: assurance CLI, Semantic Bridge, численная White Star и Symbolic V1; 82 MCP-инструмента (75 прежних +7 инструментов PATCH003). [Установка](README_QUICKSTART_RU.md), [White Star и сравнение режимов](docs/white-star/QUICKSTART_RU.md), [Semantic Bridge](docs/semantic-bridge/QUICKSTART_RU.md), [CLI](CLI_REFERENCE.md), [границы возможностей](LIMITATIONS.md).
+Текущий продукт: **`v0.4.4-developer-preview`**: assurance CLI, Semantic Bridge, численная White Star и Symbolic V1; 83 MCP-инструмента (82 прежних + независимый verifier наблюдателя). [Установка](README_QUICKSTART_RU.md), [White Star и сравнение режимов](docs/white-star/QUICKSTART_RU.md), [Semantic Bridge](docs/semantic-bridge/QUICKSTART_RU.md), [CLI](CLI_REFERENCE.md), [границы возможностей](LIMITATIONS.md).
 
 White Star использует предоставленное неизменённое ядро Белая звезда → CAD → Удав. Один frozen semantic snapshot можно передать ему и действующему Bridge/assurance без повторного extraction. Численные предложения и сохранённые LLM-прочтения разделены; native SUTI не исполняется. [Отчёт, фактическое сравнение и приёмка](docs/white-star/USER_REPORT_RU.md).
 
@@ -13,6 +13,8 @@ Symbolic V1 сохраняет полные токенные истории, UTF
 PATCH002 добавляет ограниченный детерминированный переход к сохранённому фронтиру после локальной стагнации. На том же запросе Нострадамуса: 383 узла / 99 шагов вместо 18 / 5, в прежних бюджетах; это охват структур, не свидетельство найденного смысла. Грамматическая модель и 75 MCP-схем сохранены. [Отчёт PATCH002](docs/symbolic-v1/patch002/USER_REPORT_RU.md), [RCA и воспроизведение](docs/symbolic-v1/patch002/PATCH002_IMPLEMENTATION_RU.md).
 
 PATCH003 добавляет конечные SP 2-комплексы с независимой проверкой путевой согласованности, аудит происхождения наблюдателей и слепое сравнение на 942 французских катренах. Положительная инженерная приёмка не означает положительного переноса: global-alpha модель не улучшила baseline; пунктуационный контроль оказался сильнее. [Точные вызовы MCP](docs/symbolic-v1/patch003/QUICKSTART_RU.md), [полный отчёт и ограничения](docs/symbolic-v1/patch003/USER_REPORT_RU.md), [критерии выпуска](docs/symbolic-v1/patch003/release-gates.md).
+
+Приёмочный follow-up исправляет предпосылки частичных SP-комплексов и демонстрирует реально используемый operator-derived observer на фиксированной задаче:256/256 heldout против128/256 при его отключении. Это конечная композиция существующего AST, не универсальный invariant. Полная иерархия всех942 катренов проверена отдельным source-bound harness. [Отчёт исправлений](docs/symbolic-v1/patch003-acceptance/USER_REPORT_RU.md), [точные вызовы](docs/symbolic-v1/patch003-acceptance/api_examples.json).
 
 Semantic Bridge сохраняет исходные UTF-8-байты, адресные цитаты, конкурирующие прочтения и граф ревизий. Сравнение предъявляет точного свидетеля потери различения только для объявленных полей, вопросов и конечного домена. Интерпретации остаются гипотезами. Через реальный hosted generator получены шесть прочтений трёх стихотворений; приватный исследовательский пакет воспроизводится без модели и сети. [Отчёт и матрица приёмки](docs/semantic-bridge/USER_REPORT_RU.md).
 

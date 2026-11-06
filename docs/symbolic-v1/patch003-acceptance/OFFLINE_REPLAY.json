@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "source": "production-followup-qa",
+      "bundle": "FIX-B-positive.zip",
+      "network_namespace": "unshare -Urn",
+      "result": {
+        "engine": "observer_synthesis_v1",
+        "execution_permission": false,
+        "independent_checks": {
+          "LLM_calls": 0,
+          "execution_permission": false,
+          "holdout_labels_read": false,
+          "hypothesis_frozen_before_queries": true
+        },
+        "journal_hash_chain": "PASS",
+        "kernel_binding": "d83508d18d7ba5758d99729b7610441fc0627de135fce5919ef4eac3fdeab178",
+        "result_digest": "4813918092fe00819a853209cef50a12558d7dfafd950a75dc1680d6e819d766",
+        "run_id": "a4d403f96546d5de65c83cda7f8877ef42b9028d256d560a96699de0fa3f4811",
+        "status": "REPLAY_MATCH"
+      }
+    },
+    {
+      "source": "staging-qa-final",
+      "bundle": "sp-10.zip",
+      "network_namespace": "unshare -Urn",
+      "result": {
+        "engine": "symbolic_complex_v1",
+        "execution_permission": false,
+        "independent_checks": {
+          "H1_dim": 0,
+          "boundary_squared_zero": true,
+          "components": 1,
+          "execution_permission": false,
+          "failed_obligations": [],
+          "graph_beta1": 1264,
+          "missing_peaks": 0,
+          "pi1_status": "PROVED_TRIVIAL_WITH_CERTIFICATE",
+          "rank_d1": 350,
+          "rank_d2_F2": 1264,
+          "status": "CHECKED_INSTANCE",
+          "verified_cell_count": 3360,
+          "verified_edge_count": 1614,
+          "verifier_digest": "2bdff172f1310c6431b7d133ec2fc3a0df0a9ee6b4fb80e645e696e7c60e4c93",
+          "verifier_version": "SP-finite-independent-checker/1"
+        },
+        "journal_hash_chain": "PASS",
+        "kernel_binding": "d83508d18d7ba5758d99729b7610441fc0627de135fce5919ef4eac3fdeab178",
+        "result_digest": "0ce83f184a135d3273b292b16207f0aedd7db5a452d3660ea39da28309e20957",
+        "run_id": "c5fbaabc9b5171a091ac1e54898eae3e1ba8a7feb5cdf361f2f1f7d462e442a7",
+        "status": "REPLAY_MATCH"
+      }
+    },
+    {
+      "source": "staging-qa-final",
+      "bundle": "corpus-global-alpha.zip",
+      "network_namespace": "unshare -Urn",
+      "result": {
+        "engine": "observer_synthesis_v1",
+        "execution_permission": false,
+        "independent_checks": {
+          "LLM_calls": 0,
+          "execution_permission": false,
+          "holdout_labels_read": false,
+          "hypothesis_frozen_before_queries": true
+        },
+        "journal_hash_chain": "PASS",
+        "kernel_binding": "d83508d18d7ba5758d99729b7610441fc0627de135fce5919ef4eac3fdeab178",
+        "result_digest": "5efdb65583ece1a8b1dce0693a5003999754fac567ed4a96e6777c5e0a597e32",
+        "run_id": "f3ea426a6972d0934bd20158aee6c3534b06a39603a80bc92340791036778538",
+        "status": "REPLAY_MATCH"
+      }
+    }
+  ]
+}

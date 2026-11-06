@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.4.4-developer-preview — 2026-11-06
+
+- Report all_local_peaks_filled only after the checker confirms zero unresolved peaks; expose selected cell policy and partial attachment.
+- Execute existing operator-observer ASTs through real symbolic primitives and verify full source/state traces independently; keep checks active under Python -O.
+- Declare builtin registry names without calculating disabled features; demonstrate a train-derived observer on64 training and256 heldout words with a matched ablation.
+- Add white_star_symbolic_observer_verify while preserving all82 prior schemas, immutable runs and hash-bound historical extension replay under the shared quota.
+- Audit all942 corpus pairs against original byte slices and a full century/quatrain/line/word source tree; retain the negative global-alpha transfer result.
+
 ## v0.4.3-developer-preview — 2026-11-06
 
 - Add seven MCP tools for bounded SP 2-complexes, independent path-coherence/GF2 certificates, source-bound datasets, observer synthesis and replay.

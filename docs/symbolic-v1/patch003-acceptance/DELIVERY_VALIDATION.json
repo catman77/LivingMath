@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "archive_sha256": "7f405ef3beb567339680ae692b0e6889eaf0991010dbba0ad33a9709e5cb144f",
+  "files": 225,
+  "all_file_hashes_match": true,
+  "extracted_tests": "18 PASS",
+  "extracted_offline_replay": {
+    "engine": "observer_synthesis_v1",
+    "execution_permission": false,
+    "independent_checks": {
+      "LLM_calls": 0,
+      "execution_permission": false,
+      "holdout_labels_read": false,
+      "hypothesis_frozen_before_queries": true
+    },
+    "journal_hash_chain": "PASS",
+    "kernel_binding": "d83508d18d7ba5758d99729b7610441fc0627de135fce5919ef4eac3fdeab178",
+    "result_digest": "4813918092fe00819a853209cef50a12558d7dfafd950a75dc1680d6e819d766",
+    "run_id": "a4d403f96546d5de65c83cda7f8877ef42b9028d256d560a96699de0fa3f4811",
+    "status": "REPLAY_MATCH"
+  },
+  "secret_scan": "PASS",
+  "secret_values_checked": 56
+}

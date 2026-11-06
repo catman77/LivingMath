@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "tracked_source_files_matching_production": 194,
+  "runtime_files": 195,
+  "generated_native_files": 1,
+  "runtime_manifest_sha256": "8ac9d64f3d50ce480a5cae44f8e469a64cdac32de181f5e0dd3a37dcbb36bd0e"
+}

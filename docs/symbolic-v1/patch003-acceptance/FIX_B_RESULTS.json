@@ -1,0 +1,44 @@
+{
+  "primary": {
+    "status": "PASS",
+    "version": "v0.4.4-developer-preview",
+    "deployment_id": "symbolic-patch003-acceptance-20261106T010226Z",
+    "project": "qa-p003accept-prod",
+    "checks": 149,
+    "FIX_A": "PASS",
+    "FIX_B": "PASS_FINITE_CONSTRUCTIVE_DEMONSTRATION",
+    "task": "second/penultimate token equality",
+    "positive_confusion": {
+      "TP": 128,
+      "TN": 128,
+      "FP": 0,
+      "FN": 0
+    },
+    "ablation_confusion": {
+      "TP": 128,
+      "TN": 0,
+      "FP": 128,
+      "FN": 0
+    },
+    "heldout_records": 256,
+    "positive_run_id": "a4d403f96546d5de65c83cda7f8877ef42b9028d256d560a96699de0fa3f4811",
+    "ablation_run_id": "90d0b05c7e14686deeedf502e13a80684f0eea6d3be57d5dbab3b757cc96066d",
+    "feature_id": "derived_216159a6476fd2d9dad6",
+    "hypothesis_digest": "72d905307a99afe100330b73ebd1e23225691d305274617e4bf86adb1f2ed220",
+    "extension_binding": "d83508d18d7ba5758d99729b7610441fc0627de135fce5919ef4eac3fdeab178",
+    "positive_bundle_ref": "c0e073ff1d20efd08dc39f59ada92f350a70415a38dc25cf4a1514b6eeb9d8e9",
+    "old_profile_bundles": {
+      "SP4": "d63df241630b4d81ebc032fea23d7cb1a19a12ae6a2615ee65d8f1f26abe30fb",
+      "Dyck": "ad7b0361f09551c9898a73415c35a60acf1d4b6c5aee43bbce73cd8aec0d14c1"
+    },
+    "all19_historical_records_unchanged": true,
+    "endpoint": "https://fares-september-rebel-board.trycloudflare.com/mcp",
+    "public_HTTPS_tested": true,
+    "execution_permission": false,
+    "universal_invariant": "NOT_CLAIMED"
+  },
+  "holdout_labels_entered_server": false,
+  "actual_predicate": "existing aligned_token_equality AST; offset1 and expected_equal inferred from train",
+  "candidate_template_origin": "BUILTIN_COMPOSITION_TEMPLATE_TRAIN_DERIVED_PARAMETERS",
+  "novelty_scope": "new registered finite observer, not a new primitive or open-ended learner"
+}

@@ -1,0 +1,3729 @@
+{
+  "scope": "Real accepted public HTTPS/OAuth calls; dataset refs/run IDs belong to qa-p003accept-prod. Register datasets in your project and substitute their returned refs.",
+  "calls": [
+    {
+      "tool": "assurance_project_new",
+      "arguments": {
+        "project": "qa-p003accept-prod",
+        "request_key": "init"
+      },
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\n  \"project\": \"qa-p003accept-prod\",\n  \"release\": \"v0.1.0-developer-preview\",\n  \"status\": \"CREATED\",\n  \"execution_permission\": false\n}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false
+      }
+    },
+    {
+      "tool": "white_star_symbolic_dataset_store",
+      "arguments": {
+        "project": "qa-p003accept-prod",
+        "request_key": "train",
+        "dataset": {
+          "schema": "livingmath-observer-dataset/1",
+          "kind": "train",
+          "records": [
+            {
+              "id": "8b71b6d5bc5af2080819d348f447e7a1c16a5cac64089deedcb02295d386feb3",
+              "tokens": [
+                "A",
+                "A",
+                "A",
+                "A",
+                "A",
+                "A"
+              ],
+              "source": {
+                "text": "A A A A A A",
+                "sha256": "2345ce910960793dcc0feeb4cef0307f4e1d01dad2801ef2ccc4d4078eb94e73",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": true
+            },
+            {
+              "id": "6f2ebaffa2bf1a9667b8b6e1935551577550aa0c928ad2e67ec9a330db9e5d50",
+              "tokens": [
+                "A",
+                "A",
+                "A",
+                "A",
+                "A",
+                "B"
+              ],
+              "source": {
+                "text": "A A A A A B",
+                "sha256": "80eb657907c13a0d2f141a0e58545d15eb6aee0eedfd0a192472bdbeb404823e",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": true
+            },
+            {
+              "id": "7e54a58e84faf4885daf8f0d0aa39f0c5039618259b2d8a7719cec24c13b8180",
+              "tokens": [
+                "A",
+                "A",
+                "A",
+                "A",
+                "B",
+                "A"
+              ],
+              "source": {
+                "text": "A A A A B A",
+                "sha256": "1882f85cc9127e2e9533ca61b023c155d1eb3ee341fa49bd00f494546b9c7878",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": false
+            },
+            {
+              "id": "74bf92a83e112081f9c2efb7cdab704e84d4fe9d192836e66eba3c8e7d4294e3",
+              "tokens": [
+                "A",
+                "A",
+                "A",
+                "A",
+                "B",
+                "B"
+              ],
+              "source": {
+                "text": "A A A A B B",
+                "sha256": "16609a2ddb1ceb55f9d7dac6507be40a374f69672f276036bc10daf1b2521650",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": false
+            },
+            {
+              "id": "793c26e3023f53472030cf73fc43dc9bdd133721da05334c5d2574123bf18394",
+              "tokens": [
+                "A",
+                "A",
+                "A",
+                "B",
+                "A",
+                "A"
+              ],
+              "source": {
+                "text": "A A A B A A",
+                "sha256": "4c5004596fc4d5c6629beb881eb247bf0c595796327b883389a4956e2e12e130",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": true
+            },
+            {
+              "id": "4b5cd0e162d8ec1a7ffb868d547d81ada5e05cc3bceb4a7611983f0eedda0a58",
+              "tokens": [
+                "A",
+                "A",
+                "A",
+                "B",
+                "A",
+                "B"
+              ],
+              "source": {
+                "text": "A A A B A B",
+                "sha256": "f7ea18a206a048a591c215d303c3164ae24e96166ee4947c8349f0af90eecd32",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": true
+            },
+            {
+              "id": "5a177d5c8dd9041a427161cc0c684e011c42bf5dd916cd3c058372b4524ee280",
+              "tokens": [
+                "A",
+                "A",
+                "A",
+                "B",
+                "B",
+                "A"
+              ],
+              "source": {
+                "text": "A A A B B A",
+                "sha256": "38206fc3c234e682975fdefcf0b16df51c034c399d76c471290b158a8418b39e",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": false
+            },
+            {
+              "id": "bbecd241e420579f5f13d970fccbadf0ed19898f49ed753f860ddd5e7774c7fa",
+              "tokens": [
+                "A",
+                "A",
+                "A",
+                "B",
+                "B",
+                "B"
+              ],
+              "source": {
+                "text": "A A A B B B",
+                "sha256": "d03b2f6f55896d9470db11198e2d18b083d5599c5ab1a3ed1da9fe779cc19067",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": false
+            },
+            {
+              "id": "d1b54d3cf25cc6f8c44ae076d1f96a30950437b6eb23a307f2c583a70927278f",
+              "tokens": [
+                "A",
+                "A",
+                "B",
+                "A",
+                "A",
+                "A"
+              ],
+              "source": {
+                "text": "A A B A A A",
+                "sha256": "5cde85402a9aa8ac31c42898fc84daadf0102c4d09c9193c76a8f029d9ad8bb1",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": true
+            },
+            {
+              "id": "81facb2b91bfbea06242dcd36f4aa913f6d16f04511d60d82cd06299f2189eee",
+              "tokens": [
+                "A",
+                "A",
+                "B",
+                "A",
+                "A",
+                "B"
+              ],
+              "source": {
+                "text": "A A B A A B",
+                "sha256": "9ca6d6e2d31ce2023d8a139dcba1b392d75331d75e17af826604a8c0ddff0be1",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": true
+            },
+            {
+              "id": "722b128bd1e1ce9f6cb1fad22fe6edb3501c470d9d13e488770131ca1b40c302",
+              "tokens": [
+                "A",
+                "A",
+                "B",
+                "A",
+                "B",
+                "A"
+              ],
+              "source": {
+                "text": "A A B A B A",
+                "sha256": "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": false
+            },
+            {
+              "id": "6bae059e6eed614a20eb4748647a459c82ee224a8c023cbc0aa4e6d2987b0f3c",
+              "tokens": [
+                "A",
+                "A",
+                "B",
+                "A",
+                "B",
+                "B"
+              ],
+              "source": {
+                "text": "A A B A B B",
+                "sha256": "a776b78d9f0af76aa3af6a9bae4e78674c3843f43e7a09746d06b08dc5acc6b5",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": false
+            },
+            {
+              "id": "9a9a2968a24ecef1a4135270f4df126af1a862d9796e8813a6312a24a6de1d93",
+              "tokens": [
+                "A",
+                "A",
+                "B",
+                "B",
+                "A",
+                "A"
+              ],
+              "source": {
+                "text": "A A B B A A",
+                "sha256": "2b583c7587ad59f1e694938b21b3bd469a68380804b5fec0756f1c77a3ac0b55",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": true
+            },
+            {
+              "id": "e3341ce5c91f9ad7b95f6abf2c824f67107fc49185de6ce36752d483c8bba682",
+              "tokens": [
+                "A",
+                "A",
+                "B",
+                "B",
+                "A",
+                "B"
+              ],
+              "source": {
+                "text": "A A B B A B",
+                "sha256": "a12bf4ac1ee2efa9c8cac76c337c27963b22471a7d52566d33ebea2c7783f9d0",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": true
+            },
+            {
+              "id": "f55529388a2a57eb32066086b12786eec7869fdc914b173df00aa19d3f9d8066",
+              "tokens": [
+                "A",
+                "A",
+                "B",
+                "B",
+                "B",
+                "A"
+              ],
+              "source": {
+                "text": "A A B B B A",
+                "sha256": "26403d5cbc89f8f8f929d537ed73deb6776417a773c71e32f9f8ac29635033a4",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": false
+            },
+            {
+              "id": "2115439747e7946a072ac926eece8810d58ffa1f789ec24ca8950932c0f57361",
+              "tokens": [
+                "A",
+                "A",
+                "B",
+                "B",
+                "B",
+                "B"
+              ],
+              "source": {
+                "text": "A A B B B B",
+                "sha256": "fe9e72d2aa826c3f3fa6b20407cf24cec90dc4fdcf09ec820cb1f0ab2ee7eeb6",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": false
+            },
+            {
+              "id": "7dadaebacb66fcfc73ec85101580f72983fcaabfca3386b33a55d4155bd79787",
+              "tokens": [
+                "A",
+                "B",
+                "A",
+                "A",
+                "A",
+                "A"
+              ],
+              "source": {
+                "text": "A B A A A A",
+                "sha256": "6fccb0e4cd5e1d37058556e5dd6d4ce54c35a73897c7bf3b8da8fe29ceb4f1a5",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": false
+            },
+            {
+              "id": "1758927b46dcb8c0542167f9ee24623ab83220c1d4d8ac1e9d5ca7e9233857a2",
+              "tokens": [
+                "A",
+                "B",
+                "A",
+                "A",
+                "A",
+                "B"
+              ],
+              "source": {
+                "text": "A B A A A B",
+                "sha256": "3d75e907939872f89517102d1c30b97ecf5e1c6353372157ca181814c458e826",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": false
+            },
+            {
+              "id": "a11c64465d4e9a5102ae6b01ad0ad59266f2b9a5c234dc3f1cf83c120296402c",
+              "tokens": [
+                "A",
+                "B",
+                "A",
+                "A",
+                "B",
+                "A"
+              ],
+              "source": {
+                "text": "A B A A B A",
+                "sha256": "615a78711ff9d4653ad5e5081c057bb751c075fd73b50e4a98b57b9354cf0b6d",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": true
+            },
+            {
+              "id": "2f5903f74db9f7c37dfaa31328cb60ad8e76738405eb707593752622a49c6334",
+              "tokens": [
+                "A",
+                "B",
+                "A",
+                "A",
+                "B",
+                "B"
+              ],
+              "source": {
+                "text": "A B A A B B",
+                "sha256": "c698bea2876b02f05434cf07ee39521fcdac318b645cace7b8c9a04cb4acef92",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": true
+            },
+            {
+              "id": "63167918110c9debb7a8caa4c03fb7be7c2b6d1ed49489171c356f29248e7c47",
+              "tokens": [
+                "A",
+                "B",
+                "A",
+                "B",
+                "A",
+                "A"
+              ],
+              "source": {
+                "text": "A B A B A A",
+                "sha256": "f96040104da5acc9c11fb837f5cf479913c73b377f3c925951fc9a09bd5ce707",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": false
+            },
+            {
+              "id": "6ef4febaeb1c259eef6a1698f3016a32fabc1dc76f5e826745929ed2bdd449ec",
+              "tokens": [
+                "A",
+                "B",
+                "A",
+                "B",
+                "A",
+                "B"
+              ],
+              "source": {
+                "text": "A B A B A B",
+                "sha256": "143148c55ee5fd130007ea0339825c6ab4ecfc18a8363bb6a4b7079c387612ef",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": false
+            },
+            {
+              "id": "d130e5bc7d991b0389630199c3c8374abb25e3f311d99e717c6eb30b98a9d9a9",
+              "tokens": [
+                "A",
+                "B",
+                "A",
+                "B",
+                "B",
+                "A"
+              ],
+              "source": {
+                "text": "A B A B B A",
+                "sha256": "6c4120a8091c5c2c9ea464ff9b1691f6b9961bfa1f2e496e0a022e35eaf3cf71",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": true
+            },
+            {
+              "id": "743aa587d545e2da179e419f2a2909436af52839371dcaa76977c4eaa8171354",
+              "tokens": [
+                "A",
+                "B",
+                "A",
+                "B",
+                "B",
+                "B"
+              ],
+              "source": {
+                "text": "A B A B B B",
+                "sha256": "bf426873e1fb0d0e60d0d7daed62c94c409ac6d769dabdedc3a4e6dd001c8f2a",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": true
+            },
+            {
+              "id": "4b3088d0f4de2b36120ae4875bdcd5cf3ea46b3e4acb372218332f31a99a32cd",
+              "tokens": [
+                "A",
+                "B",
+                "B",
+                "A",
+                "A",
+                "A"
+              ],
+              "source": {
+                "text": "A B B A A A",
+                "sha256": "eaa93a905502d57ea466407c25335d46a7e239e304e9ed9fd810b2001833d146",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": false
+            },
+            {
+              "id": "bef8cdf58da6153f6b7952fedb989d01daa69b7e203a86546ff573957456b92e",
+              "tokens": [
+                "A",
+                "B",
+                "B",
+                "A",
+                "A",
+                "B"
+              ],
+              "source": {
+                "text": "A B B A A B",
+                "sha256": "d51f27a2d7e5f0f5faa13b4ce06744280e7097184edea4fc10f55af57fc82c81",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": false
+            },
+            {
+              "id": "998aaf3d7de35bdc2b481d30d1bc26e619240d25688ca68e59d8639bff21d355",
+              "tokens": [
+                "A",
+                "B",
+                "B",
+                "A",
+                "B",
+                "A"
+              ],
+              "source": {
+                "text": "A B B A B A",
+                "sha256": "7929b0da454b7652361c82e2839480c3254e905bc54639be5efe88020cb7109e",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": true
+            },
+            {
+              "id": "de9c17a5d753d0ce0c82d9d6dec5a2813e35883f9b98cd6f83c7cc2f190b9c8f",
+              "tokens": [
+                "A",
+                "B",
+                "B",
+                "A",
+                "B",
+                "B"
+              ],
+              "source": {
+                "text": "A B B A B B",
+                "sha256": "93d41968c764d2f66fa55520ec1e2645f6f9be108a6ec1eee4faae94704b3769",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": true
+            },
+            {
+              "id": "ed6d0fed7f75baa100f306af9463b2a4b07f5b07c73ecdde54f4dcc07801dfe8",
+              "tokens": [
+                "A",
+                "B",
+                "B",
+                "B",
+                "A",
+                "A"
+              ],
+              "source": {
+                "text": "A B B B A A",
+                "sha256": "f2b12a314bf0835897cc155e7250f9586d595f662b14490a4f86dfd03f2e5506",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": false
+            },
+            {
+              "id": "54d8993d90ab5326e20b136fa4e213e29e3e4bd93d91a389455e11f746da9213",
+              "tokens": [
+                "A",
+                "B",
+                "B",
+                "B",
+                "A",
+                "B"
+              ],
+              "source": {
+                "text": "A B B B A B",
+                "sha256": "48b7ffdd0fe2d1a81fd675d3e57a0e4ba7c35ada691c47035db31299694a8221",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": false
+            },
+            {
+              "id": "62721311e45d2a05cd2bc36645aafa425feff4c713c227c82667e465b372118a",
+              "tokens": [
+                "A",
+                "B",
+                "B",
+                "B",
+                "B",
+                "A"
+              ],
+              "source": {
+                "text": "A B B B B A",
+                "sha256": "3da802aa02b3b48d3d176f9f67a91ec0f87af2b54ad1f0eb82a26edb68dc0d56",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": true
+            },
+            {
+              "id": "2896bc372d84c11f548be3997dd92cd4588093e2c6260215e1d090972883923b",
+              "tokens": [
+                "A",
+                "B",
+                "B",
+                "B",
+                "B",
+                "B"
+              ],
+              "source": {
+                "text": "A B B B B B",
+                "sha256": "fcc146f59ff0f9dd1de7a9abc50339b8519a928786571a30637b73b323b67de3",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": true
+            },
+            {
+              "id": "45374b6f412e892f811e2192e6984e1d65bc89df79dac342dfe586a5b773532a",
+              "tokens": [
+                "B",
+                "A",
+                "A",
+                "A",
+                "A",
+                "A"
+              ],
+              "source": {
+                "text": "B A A A A A",
+                "sha256": "fe73554f8a66c4c13b81ac195f23fd20a9d2d7a1d697ab7fd6229f1a3e1d46a8",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": true
+            },
+            {
+              "id": "510e2fabadae05cefde0c217d0a4261fb8515ef7de486d48e1c1d347d691d0bf",
+              "tokens": [
+                "B",
+                "A",
+                "A",
+                "A",
+                "A",
+                "B"
+              ],
+              "source": {
+                "text": "B A A A A B",
+                "sha256": "1509cf9920763a8b4444436e5ffc51b33c341712a52f0f5837895779bea4fcb2",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": true
+            },
+            {
+              "id": "17c6932de0f2719ddb176400ac44ec82e1bb498f52432f73fb30fc6309a73f26",
+              "tokens": [
+                "B",
+                "A",
+                "A",
+                "A",
+                "B",
+                "A"
+              ],
+              "source": {
+                "text": "B A A A B A",
+                "sha256": "cc83113705d244fdd3df63df6d87f220305b0f1eae4b4b42ebd260ae157f3247",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": false
+            },
+            {
+              "id": "45158d8fd39a008099841f8e990b8f4e30a643bfd10f385eae3de838e9f077f4",
+              "tokens": [
+                "B",
+                "A",
+                "A",
+                "A",
+                "B",
+                "B"
+              ],
+              "source": {
+                "text": "B A A A B B",
+                "sha256": "cec27cf3636abc265882f84c33497d5f60c7100c4e4a54748833167e35a66c35",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": false
+            },
+            {
+              "id": "267ca6168b3e964ee0b470bf8457bfd70da3f3cd74a65d5df23d52bcd6d96f92",
+              "tokens": [
+                "B",
+                "A",
+                "A",
+                "B",
+                "A",
+                "A"
+              ],
+              "source": {
+                "text": "B A A B A A",
+                "sha256": "6293cfdd721918d336dca60f0e672bb83ccca2748d39275693780fc036998a7e",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": true
+            },
+            {
+              "id": "04921922453ea9fc823d562cfc89a591068d77eb1d9cb313cd53bc77d2112a4f",
+              "tokens": [
+                "B",
+                "A",
+                "A",
+                "B",
+                "A",
+                "B"
+              ],
+              "source": {
+                "text": "B A A B A B",
+                "sha256": "069755e1d195c7d593f6c0c65c8fe628f4f6bd094dbc532e79722388d8dcde58",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": true
+            },
+            {
+              "id": "7c98e14f5444e616200fb60cdea3cba2f11da2f08cd04a469eb4f6e60da5b9e4",
+              "tokens": [
+                "B",
+                "A",
+                "A",
+                "B",
+                "B",
+                "A"
+              ],
+              "source": {
+                "text": "B A A B B A",
+                "sha256": "74920ddbad781fb2af58025396920a769cadfb9849cf5f34cd986339d4979972",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": false
+            },
+            {
+              "id": "a82c9f322929ef0b8327f26eb60ae535ea48b87726ec57baa21892669f0b1bee",
+              "tokens": [
+                "B",
+                "A",
+                "A",
+                "B",
+                "B",
+                "B"
+              ],
+              "source": {
+                "text": "B A A B B B",
+                "sha256": "d0d81d54659bab256a8ef1053aaf1dd64dd7788ad8be33988f95fe21cb619c8e",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": false
+            },
+            {
+              "id": "05353fad63e980f9b6ce61bbca79bb8d7c6a8540529f24693151e05dae9d5367",
+              "tokens": [
+                "B",
+                "A",
+                "B",
+                "A",
+                "A",
+                "A"
+              ],
+              "source": {
+                "text": "B A B A A A",
+                "sha256": "d8df5998c1a5cd51da1fb221fee45c3aec96f8e81405164b80ec19d9003f947b",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": true
+            },
+            {
+              "id": "3ff45663c6a327df593c87065b651bd81e40fd0c7a6981163f256f1495710695",
+              "tokens": [
+                "B",
+                "A",
+                "B",
+                "A",
+                "A",
+                "B"
+              ],
+              "source": {
+                "text": "B A B A A B",
+                "sha256": "7633bdacdcdc2f9972fa1bdb033b20f878f8940c90873ebb7d4c3665a5adf18c",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": true
+            },
+            {
+              "id": "ff3a2639eb79420d9426b6ba9b614b8c028d399f01c786b4acea613c009959dc",
+              "tokens": [
+                "B",
+                "A",
+                "B",
+                "A",
+                "B",
+                "A"
+              ],
+              "source": {
+                "text": "B A B A B A",
+                "sha256": "a76a94fa078382e85b278f515ac11a99e37f4b3718e085ee8a217c702bd60410",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": false
+            },
+            {
+              "id": "2922c869443ed97a576855601c1663bdbc6f7b0bbe5cc2f3456b2009cee6aabb",
+              "tokens": [
+                "B",
+                "A",
+                "B",
+                "A",
+                "B",
+                "B"
+              ],
+              "source": {
+                "text": "B A B A B B",
+                "sha256": "0220bcf39e4a8ddcb85e5eaab15000277c796819425fca330f3b5d0d3c34cfba",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": false
+            },
+            {
+              "id": "00ad89ccdfebfca0665c61ba2e093b3b4bc5a6d3b1c0cb13774deb84ef7bd3d5",
+              "tokens": [
+                "B",
+                "A",
+                "B",
+                "B",
+                "A",
+                "A"
+              ],
+              "source": {
+                "text": "B A B B A A",
+                "sha256": "827777aad4a5fd27b325f38266919b54349a2d63f3ebbc0a8f70dd5ff5c7ce93",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": true
+            },
+            {
+              "id": "b2c1579c677b4892aeb96e04600a4f4d004c39baf18dc98aee18239ab85f2c1f",
+              "tokens": [
+                "B",
+                "A",
+                "B",
+                "B",
+                "A",
+                "B"
+              ],
+              "source": {
+                "text": "B A B B A B",
+                "sha256": "f19a03133100550e713c2ab2a760ad8a29a1531cfc3ad6c95913664a6ec5fc15",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": true
+            },
+            {
+              "id": "cd7d3996aefb34a4d0ebecef5cc248543db04fd06105c737bd5598d367f793b7",
+              "tokens": [
+                "B",
+                "A",
+                "B",
+                "B",
+                "B",
+                "A"
+              ],
+              "source": {
+                "text": "B A B B B A",
+                "sha256": "ee35fa295b670189cf80adbd41ada89e815683b289a3b7bdb517fe7119a55095",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": false
+            },
+            {
+              "id": "8101977d1eac8d0177a1b761a1f130035e9b66b796813448e11345644b6ec29b",
+              "tokens": [
+                "B",
+                "A",
+                "B",
+                "B",
+                "B",
+                "B"
+              ],
+              "source": {
+                "text": "B A B B B B",
+                "sha256": "4d438369221ed7aed35d309feb810715b7476a3cca0603f444baa6ef43a9c9b7",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": false
+            },
+            {
+              "id": "07d49cfc9455e66ba8209a2900e4c6c25f2169c7a2cd48866d4f12b1d48ac592",
+              "tokens": [
+                "B",
+                "B",
+                "A",
+                "A",
+                "A",
+                "A"
+              ],
+              "source": {
+                "text": "B B A A A A",
+                "sha256": "9b8441ae893b9044338c7e637df8cd41a42423632cb1cc0f0f9b4ccbbc702241",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": false
+            },
+            {
+              "id": "6b75fd5053034669af0980e8ea69cc01432893e046392c307882352b7e06809f",
+              "tokens": [
+                "B",
+                "B",
+                "A",
+                "A",
+                "A",
+                "B"
+              ],
+              "source": {
+                "text": "B B A A A B",
+                "sha256": "a748a84ed756def453bbecba6ff7b7286f24b18621a4abe31a51984c137ee2ff",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": false
+            },
+            {
+              "id": "6c7724b95c23d452ab3faa681fcdee3c89d5e0c95cefac66d6757f835a9cbdb1",
+              "tokens": [
+                "B",
+                "B",
+                "A",
+                "A",
+                "B",
+                "A"
+              ],
+              "source": {
+                "text": "B B A A B A",
+                "sha256": "4b2147fe0099141afa8716478cd8222f38b28d86f65a3223767ce91fc373e727",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": true
+            },
+            {
+              "id": "39a3f01b9e18ad939a514b73dd2843d35603acbdc56e53fe68ac66fcd9293eb3",
+              "tokens": [
+                "B",
+                "B",
+                "A",
+                "A",
+                "B",
+                "B"
+              ],
+              "source": {
+                "text": "B B A A B B",
+                "sha256": "b0dca82e3fb204bc98a0a9f269794bb08bd7cfb6014c0f1f2761e3d32d46bf45",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": true
+            },
+            {
+              "id": "4f8d0117150c4e54c829f0a1b2ed332f77fffb2761cf0c3e2650ae16e72d1356",
+              "tokens": [
+                "B",
+                "B",
+                "A",
+                "B",
+                "A",
+                "A"
+              ],
+              "source": {
+                "text": "B B A B A A",
+                "sha256": "4af3696f2b68fe75b3ef35303edb62d5fb470160931c368736cbdeeed3da30de",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": false
+            },
+            {
+              "id": "6cc517994b9d5c665c57253d3bf706dbdec0c8d617a9db9a1f2fa4f5421375be",
+              "tokens": [
+                "B",
+                "B",
+                "A",
+                "B",
+                "A",
+                "B"
+              ],
+              "source": {
+                "text": "B B A B A B",
+                "sha256": "9b15d9b6e74402eb3ecbef73b1d7f6559c5ebc61097293b55cd4efd47f750694",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": false
+            },
+            {
+              "id": "d16d974ba1bbfe5e6b312c4e5617160a022df41005ec55c1f73f668d4d1c81f7",
+              "tokens": [
+                "B",
+                "B",
+                "A",
+                "B",
+                "B",
+                "A"
+              ],
+              "source": {
+                "text": "B B A B B A",
+                "sha256": "e5091cbae59e3acdcc4a131e67d709b7ce46cbba2be4a7ea01b721089f58ede8",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": true
+            },
+            {
+              "id": "9303801d57fbdab0c537acce3983f2a15ca8aea05d29e1858c967145ee50e2fc",
+              "tokens": [
+                "B",
+                "B",
+                "A",
+                "B",
+                "B",
+                "B"
+              ],
+              "source": {
+                "text": "B B A B B B",
+                "sha256": "899b9350f56f46ac8ea4b929390e65643de9876f24e8e75ba4c899528a49b120",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": true
+            },
+            {
+              "id": "69be65dc7707e67e2967d747014241a656343c6e2d9d4c36e8ef4e0a33810cc8",
+              "tokens": [
+                "B",
+                "B",
+                "B",
+                "A",
+                "A",
+                "A"
+              ],
+              "source": {
+                "text": "B B B A A A",
+                "sha256": "b5b784d390e1153bacc8c4ba9a11e962fa464c9a08468a9c5916c50e1f5cfd5d",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": false
+            },
+            {
+              "id": "6b8bf00ccb54eea9f00b0ee01f4638dbdae5f9ac5a09338f6883a2bc23b710e4",
+              "tokens": [
+                "B",
+                "B",
+                "B",
+                "A",
+                "A",
+                "B"
+              ],
+              "source": {
+                "text": "B B B A A B",
+                "sha256": "c3e40b43add74d1134da497cd76e21e9cd0403397e6a74c2df480cb83af4c826",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": false
+            },
+            {
+              "id": "77f38d828685c9e2e70b2b93c57230419793b39d8cf514d7eee43ff2a5b4e996",
+              "tokens": [
+                "B",
+                "B",
+                "B",
+                "A",
+                "B",
+                "A"
+              ],
+              "source": {
+                "text": "B B B A B A",
+                "sha256": "84bcc52922f9e095b6384d0878084830b6c5a5c3e59efd8d93811b0948b6c325",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": true
+            },
+            {
+              "id": "2a2d991a6f990fca4d7e89eebe090c8d37c15b85b5e8a2c49745909f2c92bbf9",
+              "tokens": [
+                "B",
+                "B",
+                "B",
+                "A",
+                "B",
+                "B"
+              ],
+              "source": {
+                "text": "B B B A B B",
+                "sha256": "18174d420d8fb0d758ec52c96aa86737a274027a271fb481f9ae32cc20bcc368",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": true
+            },
+            {
+              "id": "14bf1e05502ad3889a24701316637cb1c4e647a62792a81c7cd781f0cff7b8f8",
+              "tokens": [
+                "B",
+                "B",
+                "B",
+                "B",
+                "A",
+                "A"
+              ],
+              "source": {
+                "text": "B B B B A A",
+                "sha256": "1928b9550d4af477be9bfe4725edf1fec98f12235e4e013fb30a27b5ca33ea2f",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": false
+            },
+            {
+              "id": "782541488dd244f493215bc85bb639ba4e712095c876b2e62651e91fa77cdfdc",
+              "tokens": [
+                "B",
+                "B",
+                "B",
+                "B",
+                "A",
+                "B"
+              ],
+              "source": {
+                "text": "B B B B A B",
+                "sha256": "37d6d187781cb81613a64cdba27fd1a7897e4f0719a7b933447388174327fe69",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": false
+            },
+            {
+              "id": "f09c8b26368ca814551667c270ac8ea67a822edf5c228784a3b8926395a55ac9",
+              "tokens": [
+                "B",
+                "B",
+                "B",
+                "B",
+                "B",
+                "A"
+              ],
+              "source": {
+                "text": "B B B B B A",
+                "sha256": "96336dddb8296972e32e64fe0539832954b36eaf50446a90d37265750360630d",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": true
+            },
+            {
+              "id": "20cf14d21d3fa36826c75d3845d26663c159d078390630e5aa493e0dab179184",
+              "tokens": [
+                "B",
+                "B",
+                "B",
+                "B",
+                "B",
+                "B"
+              ],
+              "source": {
+                "text": "B B B B B B",
+                "sha256": "7a52e022cc882166718c9a033580cf79b70ddb234e6e326fba3dc64cea859f15",
+                "rights": "generated finite equality experiment",
+                "edition": "fixed-binary-words/1"
+              },
+              "accepted": true
+            }
+          ],
+          "sha256": "636338c983d73b86018f07ec5a3f6701f81b7a60c611a9f27113e142c14b1d5a"
+        }
+      },
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"data\":{\"dataset_ref\":\"50b8b36ab1588829309ad7114260ed702c367f63ea78ee5bc260503638eee992\",\"execution_permission\":false,\"kind\":\"train\",\"record_count\":64,\"sha256\":\"636338c983d73b86018f07ec5a3f6701f81b7a60c611a9f27113e142c14b1d5a\"},\"execution_permission\":false,\"ok\":true,\"schema\":\"livingmath-symbolic-extension-response/1\",\"status\":\"OK\"}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structuredContent": {
+          "schema": "livingmath-symbolic-extension-response/1",
+          "ok": true,
+          "status": "OK",
+          "execution_permission": false,
+          "data": {
+            "dataset_ref": "50b8b36ab1588829309ad7114260ed702c367f63ea78ee5bc260503638eee992",
+            "kind": "train",
+            "sha256": "636338c983d73b86018f07ec5a3f6701f81b7a60c611a9f27113e142c14b1d5a",
+            "record_count": 64,
+            "execution_permission": false
+          }
+        },
+        "isError": false
+      }
+    },
+    {
+      "tool": "white_star_symbolic_observer_synthesize",
+      "arguments": {
+        "project": "qa-p003accept-prod",
+        "request_key": "positive",
+        "request": {
+          "schema": "livingmath-symbolic-observer-synthesis-request/1",
+          "task": {
+            "mode": "context_relation_induction",
+            "train_ref": "50b8b36ab1588829309ad7114260ed702c367f63ea78ee5bc260503638eee992",
+            "predict_ref": "f33ea133289789b31c4dd894ca18c0df3d73099d9cdb1ba9f9e8caad8e7b5113",
+            "holdout_labels_visible": false,
+            "structure_levels": [
+              "word"
+            ],
+            "candidate_transformations": [
+              "REVERSE"
+            ]
+          },
+          "feature_policy": {
+            "enabled_builtins": [
+              "alpha_pattern",
+              "composition"
+            ],
+            "feature_allowlist": [
+              "derived:*"
+            ],
+            "feature_denylist": [
+              "pair_0_max",
+              "pair_0_min",
+              "pair_0_final"
+            ],
+            "prohibit_undocumented_builtins": true,
+            "synthesis_origin_required": true,
+            "renaming_scope": "per_variant",
+            "strict_source_boundaries": true,
+            "representation": "literal",
+            "derive_relations": true
+          },
+          "search": {
+            "seed": 137,
+            "max_composition_depth": 4,
+            "max_proposals": 128,
+            "max_contexts": 64,
+            "max_witnesses": 128,
+            "max_cpu_ms": 4000
+          }
+        }
+      },
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"data\":{\"engine\":\"observer_synthesis_v1\",\"error\":null,\"execution_permission\":false,\"kernel_binding\":\"d83508d18d7ba5758d99729b7610441fc0627de135fce5919ef4eac3fdeab178\",\"metrics\":{\"LLM_calls\":0,\"job_cpu_s\":0.168562612,\"max_rss_kib\":71112},\"project\":\"qa-p003accept-prod\",\"result_digest\":\"4813918092fe00819a853209cef50a12558d7dfafd950a75dc1680d6e819d766\",\"result_ref\":\"b701315da601737420dc57936aac823490efe7661d8bfcb785cead600ecc541d\",\"run_id\":\"a4d403f96546d5de65c83cda7f8877ef42b9028d256d560a96699de0fa3f4811\",\"schema\":\"livingmath-symbolic-extension-run/1\",\"section_refs\":{\"candidate_rules\":\"1a41af68a4f9a7115cf06e722b7e833a6637913b256249f70db0bdce28105a8a\",\"checks\":\"0c8c32fb0ac210dc7c060085c5e3b70bb89162ad0df5ccdea6d26bc4423972f4\",\"diagnostics\":\"19115c0e06edb476362209bad411a3277b109748116bde57d72941ba09192684\",\"manifest\":\"383612f33e173eda08758d97a61a4def71315374f0f9b1841b1d3c8781721501\",\"model\":\"e6b3bb6558ed3b2914bfe89b2ba32780736427e6b886160fb21e594ecd16674b\",\"observer_provenance\":\"4e8d4f153103acc441ecad980e43da236f26f8a7b9672baccb7fbccec3e7a909\",\"pairwise_eval\":\"94f88ca609e02a1fc8508ef73fc1f6c26ef0d4fe5219f9b177936d66ea825055\"},\"snapshot_ref\":\"a5e28abb9ac2bdc83c2d5bb033e7aac5b8c07851401e8cb9355093636af2206b\",\"status\":\"COMPLETED\",\"summary\":{\"conditional_exclusion_applied\":false,\"execution_permission\":false,\"family_status\":\"UNDERDETERMINED\",\"hypothesis_digest\":\"72d905307a99afe100330b73ebd1e23225691d305274617e4bf86adb1f2ed220\",\"pair_counts\":{\"NOT_IDENTIFIABLE\":0,\"PREFERENCE\":0,\"TIE\":0,\"UNDERDETERMINED\":0},\"query_records\":256,\"synthesis_status\":\"VERIFIABLE_OPERATOR_COMPOSITION_FOUND\",\"train_records\":64,\"training_status\":\"CONSISTENT\"}},\"execution_permission\":false,\"ok\":true,\"schema\":\"livingmath-symbolic-extension-response/1\",\"status\":\"COMPLETED\"}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structuredContent": {
+          "schema": "livingmath-symbolic-extension-response/1",
+          "ok": true,
+          "status": "COMPLETED",
+          "execution_permission": false,
+          "data": {
+            "engine": "observer_synthesis_v1",
+            "error": null,
+            "execution_permission": false,
+            "kernel_binding": "d83508d18d7ba5758d99729b7610441fc0627de135fce5919ef4eac3fdeab178",
+            "metrics": {
+              "LLM_calls": 0,
+              "job_cpu_s": 0.168562612,
+              "max_rss_kib": 71112
+            },
+            "project": "qa-p003accept-prod",
+            "result_digest": "4813918092fe00819a853209cef50a12558d7dfafd950a75dc1680d6e819d766",
+            "result_ref": "b701315da601737420dc57936aac823490efe7661d8bfcb785cead600ecc541d",
+            "run_id": "a4d403f96546d5de65c83cda7f8877ef42b9028d256d560a96699de0fa3f4811",
+            "schema": "livingmath-symbolic-extension-run/1",
+            "section_refs": {
+              "candidate_rules": "1a41af68a4f9a7115cf06e722b7e833a6637913b256249f70db0bdce28105a8a",
+              "checks": "0c8c32fb0ac210dc7c060085c5e3b70bb89162ad0df5ccdea6d26bc4423972f4",
+              "diagnostics": "19115c0e06edb476362209bad411a3277b109748116bde57d72941ba09192684",
+              "manifest": "383612f33e173eda08758d97a61a4def71315374f0f9b1841b1d3c8781721501",
+              "model": "e6b3bb6558ed3b2914bfe89b2ba32780736427e6b886160fb21e594ecd16674b",
+              "observer_provenance": "4e8d4f153103acc441ecad980e43da236f26f8a7b9672baccb7fbccec3e7a909",
+              "pairwise_eval": "94f88ca609e02a1fc8508ef73fc1f6c26ef0d4fe5219f9b177936d66ea825055"
+            },
+            "snapshot_ref": "a5e28abb9ac2bdc83c2d5bb033e7aac5b8c07851401e8cb9355093636af2206b",
+            "status": "COMPLETED",
+            "summary": {
+              "conditional_exclusion_applied": false,
+              "execution_permission": false,
+              "family_status": "UNDERDETERMINED",
+              "hypothesis_digest": "72d905307a99afe100330b73ebd1e23225691d305274617e4bf86adb1f2ed220",
+              "pair_counts": {
+                "NOT_IDENTIFIABLE": 0,
+                "PREFERENCE": 0,
+                "TIE": 0,
+                "UNDERDETERMINED": 0
+              },
+              "query_records": 256,
+              "synthesis_status": "VERIFIABLE_OPERATOR_COMPOSITION_FOUND",
+              "train_records": 64,
+              "training_status": "CONSISTENT"
+            }
+          }
+        },
+        "isError": false
+      }
+    },
+    {
+      "tool": "white_star_symbolic_observer_verify",
+      "arguments": {
+        "project": "qa-p003accept-prod",
+        "run_id": "a4d403f96546d5de65c83cda7f8877ef42b9028d256d560a96699de0fa3f4811",
+        "feature_id": "derived_216159a6476fd2d9dad6"
+      },
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"data\":{\"execution_permission\":false,\"operator_ast_digest\":\"216159a6476fd2d9dad6d2bbe6b834bc5bc3a693ead4c4a01358e27c3941625e\",\"status\":\"CHECKED_FINITE_INSTANCE\",\"verified_witnesses\":64,\"verifier_digest\":\"271950aea578dc621ad42fb725098aed371a6c497016464ab852ba2610e35e63\",\"verifier_version\":\"operator-observer-independent-checker/1\"},\"execution_permission\":false,\"ok\":true,\"schema\":\"livingmath-symbolic-extension-response/1\",\"status\":\"CHECKED_FINITE_INSTANCE\"}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structuredContent": {
+          "schema": "livingmath-symbolic-extension-response/1",
+          "ok": true,
+          "status": "CHECKED_FINITE_INSTANCE",
+          "execution_permission": false,
+          "data": {
+            "execution_permission": false,
+            "operator_ast_digest": "216159a6476fd2d9dad6d2bbe6b834bc5bc3a693ead4c4a01358e27c3941625e",
+            "status": "CHECKED_FINITE_INSTANCE",
+            "verified_witnesses": 64,
+            "verifier_digest": "271950aea578dc621ad42fb725098aed371a6c497016464ab852ba2610e35e63",
+            "verifier_version": "operator-observer-independent-checker/1"
+          }
+        },
+        "isError": false
+      }
+    },
+    {
+      "tool": "white_star_symbolic_observer_verify",
+      "arguments": {
+        "project": "qa-p003accept-prod",
+        "run_id": "a4d403f96546d5de65c83cda7f8877ef42b9028d256d560a96699de0fa3f4811",
+        "feature_id": "derived_216159a6476fd2d9dad6",
+        "certificate": {
+          "construction_trace": [
+            {
+              "decision": false,
+              "input_state_ref": "cc32b7035398470e4a78870f0c07eb31090f8656119243366f322fef8ae1f614",
+              "operator_trace": [
+                {
+                  "args": {},
+                  "input_state_ref": "cc32b7035398470e4a78870f0c07eb31090f8656119243366f322fef8ae1f614",
+                  "input_word_hash": "191883ae112e8c3f315d6b89493e79a801fc2d865edfb5e1c48dfd8a1f69f369",
+                  "operator": "REVERSE",
+                  "output_state_refs": [
+                    "e0a23a11aea401d45ea5a15c0ac597fdeb2087910fe6b2250c73874da9fb9e05"
+                  ],
+                  "output_word_hashes": [
+                    "07b8016c816023a1b530a87235bfaeae448b0ee626596befd456776111bb40ab"
+                  ]
+                },
+                {
+                  "args": {
+                    "position": 1
+                  },
+                  "input_state_ref": "cc32b7035398470e4a78870f0c07eb31090f8656119243366f322fef8ae1f614",
+                  "input_word_hash": "191883ae112e8c3f315d6b89493e79a801fc2d865edfb5e1c48dfd8a1f69f369",
+                  "operator": "SPLIT",
+                  "output_state_refs": [
+                    "690d80a81b351427a3968e2eb31854e542f29a63b4db94fc3a6a58e31a395cd0",
+                    "df129c151871571cef335bf39ac74b343acbc7c79d8a0ac3c89d9dbefa821981"
+                  ],
+                  "output_word_hashes": [
+                    "1cd89ef629aeab268f17f3cbb661e31ed5473ba146f097e005d4e8b9b6760b2f",
+                    "742d2307d5ad4fd154ff66b3475a6b33a7362d2fdd91d520a0ca40b55ca99d90"
+                  ]
+                },
+                {
+                  "args": {
+                    "position": 1
+                  },
+                  "input_state_ref": "df129c151871571cef335bf39ac74b343acbc7c79d8a0ac3c89d9dbefa821981",
+                  "input_word_hash": "742d2307d5ad4fd154ff66b3475a6b33a7362d2fdd91d520a0ca40b55ca99d90",
+                  "operator": "SPLIT",
+                  "output_state_refs": [
+                    "640a2c7214b8378c07be1acc60d1154e1105ab5094c8e7b9cdf63a4b77a2ef10",
+                    "125fb2947b88ccd4feb328487647c1a207088ecf01add70baf58cb9d54eb9f49"
+                  ],
+                  "output_word_hashes": [
+                    "c2d4ac584495716bea8cb45a5e24bcd536029c76df95cf9aad959b905060ea09",
+                    "5c25960fe718c098ba2a1a4400f81955f4fd713c96e4f6abf608723493c16ba7"
+                  ]
+                },
+                {
+                  "args": {
+                    "position": 1
+                  },
+                  "input_state_ref": "e0a23a11aea401d45ea5a15c0ac597fdeb2087910fe6b2250c73874da9fb9e05",
+                  "input_word_hash": "07b8016c816023a1b530a87235bfaeae448b0ee626596befd456776111bb40ab",
+                  "operator": "SPLIT",
+                  "output_state_refs": [
+                    "c8877d347d228c80f8d8764f91e767dc93ea942576140bdbb0ef7be116d427b0",
+                    "1e1ecd50856d025ca9ad5ea9b134a444f18c58b1410abaac98b9e8195d42df16"
+                  ],
+                  "output_word_hashes": [
+                    "85d2be03941550cabad72969f46f7d36a6d08930822b40bce468bac5ec96bf27",
+                    "eb11abda2576f9b2bcadcb24e3075d62cf3bf158e8f720af46ff432e2d3c51f0"
+                  ]
+                },
+                {
+                  "args": {
+                    "position": 1
+                  },
+                  "input_state_ref": "1e1ecd50856d025ca9ad5ea9b134a444f18c58b1410abaac98b9e8195d42df16",
+                  "input_word_hash": "eb11abda2576f9b2bcadcb24e3075d62cf3bf158e8f720af46ff432e2d3c51f0",
+                  "operator": "SPLIT",
+                  "output_state_refs": [
+                    "685d2d20afebcd3c303fbf36d91e5f0d06db35bb1cbe93834a0e29d27f651984",
+                    "091d089fe34d7b880c8ff3fb828b6fcd7e7749fff7b459b61e0800eb7569f711"
+                  ],
+                  "output_word_hashes": [
+                    "404dcc520da326c03ba184f11fde0b0aada97b4327c3ba5c58a414f08c648292",
+                    "0004f1debc60f8a570fe2cbe704690703e3ad6662e930e78e8929865a37c06a2"
+                  ]
+                },
+                {
+                  "expected_equal": true,
+                  "operand_state_refs": [
+                    "640a2c7214b8378c07be1acc60d1154e1105ab5094c8e7b9cdf63a4b77a2ef10",
+                    "685d2d20afebcd3c303fbf36d91e5f0d06db35bb1cbe93834a0e29d27f651984"
+                  ],
+                  "operands": [
+                    [
+                      "A"
+                    ],
+                    [
+                      "B"
+                    ]
+                  ],
+                  "operation": "literal_token_equality",
+                  "record_ref": "0489a74d9568a092d51b8fd588e5e8ff4181197fcccaee06086f2a694ff79fdd",
+                  "value": false
+                }
+              ],
+              "record_ref": "0489a74d9568a092d51b8fd588e5e8ff4181197fcccaee06086f2a694ff79fdd",
+              "source_sha256": "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+              "states": {
+                "091d089fe34d7b880c8ff3fb828b6fcd7e7749fff7b459b61e0800eb7569f711": {
+                  "boundaries": [
+                    [
+                      4,
+                      "record_start",
+                      "0"
+                    ]
+                  ],
+                  "source_spans": [
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        6,
+                        7
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        4,
+                        5
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        2,
+                        3
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        0,
+                        1
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "A",
+                    "B",
+                    "A",
+                    "A"
+                  ],
+                  "word_hash": "0004f1debc60f8a570fe2cbe704690703e3ad6662e930e78e8929865a37c06a2"
+                },
+                "125fb2947b88ccd4feb328487647c1a207088ecf01add70baf58cb9d54eb9f49": {
+                  "boundaries": [
+                    [
+                      4,
+                      "record_end",
+                      "0"
+                    ]
+                  ],
+                  "source_spans": [
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        4,
+                        5
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        6,
+                        7
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        8,
+                        9
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        10,
+                        11
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "B",
+                    "A",
+                    "B",
+                    "A"
+                  ],
+                  "word_hash": "5c25960fe718c098ba2a1a4400f81955f4fd713c96e4f6abf608723493c16ba7"
+                },
+                "1e1ecd50856d025ca9ad5ea9b134a444f18c58b1410abaac98b9e8195d42df16": {
+                  "boundaries": [
+                    [
+                      5,
+                      "record_start",
+                      "0"
+                    ]
+                  ],
+                  "source_spans": [
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        8,
+                        9
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        6,
+                        7
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        4,
+                        5
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        2,
+                        3
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        0,
+                        1
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "B",
+                    "A",
+                    "B",
+                    "A",
+                    "A"
+                  ],
+                  "word_hash": "eb11abda2576f9b2bcadcb24e3075d62cf3bf158e8f720af46ff432e2d3c51f0"
+                },
+                "640a2c7214b8378c07be1acc60d1154e1105ab5094c8e7b9cdf63a4b77a2ef10": {
+                  "boundaries": [],
+                  "source_spans": [
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        2,
+                        3
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "A"
+                  ],
+                  "word_hash": "c2d4ac584495716bea8cb45a5e24bcd536029c76df95cf9aad959b905060ea09"
+                },
+                "685d2d20afebcd3c303fbf36d91e5f0d06db35bb1cbe93834a0e29d27f651984": {
+                  "boundaries": [],
+                  "source_spans": [
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        8,
+                        9
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "B"
+                  ],
+                  "word_hash": "404dcc520da326c03ba184f11fde0b0aada97b4327c3ba5c58a414f08c648292"
+                },
+                "690d80a81b351427a3968e2eb31854e542f29a63b4db94fc3a6a58e31a395cd0": {
+                  "boundaries": [
+                    [
+                      0,
+                      "record_start",
+                      "0"
+                    ]
+                  ],
+                  "source_spans": [
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        0,
+                        1
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "A"
+                  ],
+                  "word_hash": "1cd89ef629aeab268f17f3cbb661e31ed5473ba146f097e005d4e8b9b6760b2f"
+                },
+                "c8877d347d228c80f8d8764f91e767dc93ea942576140bdbb0ef7be116d427b0": {
+                  "boundaries": [
+                    [
+                      0,
+                      "record_end",
+                      "0"
+                    ]
+                  ],
+                  "source_spans": [
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        10,
+                        11
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "A"
+                  ],
+                  "word_hash": "85d2be03941550cabad72969f46f7d36a6d08930822b40bce468bac5ec96bf27"
+                },
+                "cc32b7035398470e4a78870f0c07eb31090f8656119243366f322fef8ae1f614": {
+                  "boundaries": [
+                    [
+                      0,
+                      "record_start",
+                      "0"
+                    ],
+                    [
+                      6,
+                      "record_end",
+                      "0"
+                    ]
+                  ],
+                  "source_spans": [
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        0,
+                        1
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        2,
+                        3
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        4,
+                        5
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        6,
+                        7
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        8,
+                        9
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        10,
+                        11
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "A",
+                    "A",
+                    "B",
+                    "A",
+                    "B",
+                    "A"
+                  ],
+                  "word_hash": "191883ae112e8c3f315d6b89493e79a801fc2d865edfb5e1c48dfd8a1f69f369"
+                },
+                "df129c151871571cef335bf39ac74b343acbc7c79d8a0ac3c89d9dbefa821981": {
+                  "boundaries": [
+                    [
+                      5,
+                      "record_end",
+                      "0"
+                    ]
+                  ],
+                  "source_spans": [
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        2,
+                        3
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        4,
+                        5
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        6,
+                        7
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        8,
+                        9
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        10,
+                        11
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "A",
+                    "B",
+                    "A",
+                    "B",
+                    "A"
+                  ],
+                  "word_hash": "742d2307d5ad4fd154ff66b3475a6b33a7362d2fdd91d520a0ca40b55ca99d90"
+                },
+                "e0a23a11aea401d45ea5a15c0ac597fdeb2087910fe6b2250c73874da9fb9e05": {
+                  "boundaries": [
+                    [
+                      0,
+                      "record_end",
+                      "0"
+                    ],
+                    [
+                      6,
+                      "record_start",
+                      "0"
+                    ]
+                  ],
+                  "source_spans": [
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        10,
+                        11
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        8,
+                        9
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        6,
+                        7
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        4,
+                        5
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        2,
+                        3
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        0,
+                        1
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "A",
+                    "B",
+                    "A",
+                    "B",
+                    "A",
+                    "A"
+                  ],
+                  "word_hash": "07b8016c816023a1b530a87235bfaeae448b0ee626596befd456776111bb40ab"
+                }
+              }
+            }
+          ],
+          "derived_claim_allowed": true,
+          "digest": "6976dc3a0584e6502d79d0b7c53ed3b005313c640244dbb0fad8c9e3f1c6c2aa",
+          "execution_verified": true,
+          "feature_id": "derived_216159a6476fd2d9dad6",
+          "feature_version": "1",
+          "known_invariance_scope": "finite train and declared within-word contexts; not a universal congruence",
+          "novelty": "Composition of existing primitives; reconstruction of a known relation is not a newly discovered primitive",
+          "operator_ast": {
+            "base_max_tokens": 3,
+            "composition": "aligned_token_equality",
+            "expected_equal": true,
+            "left_operations": [
+              "REVERSE"
+            ],
+            "offset": 1,
+            "right_operations": [
+              "REVERSE",
+              "SPLIT"
+            ]
+          },
+          "origin": "DERIVED_FROM_OPERATORS",
+          "parent_feature_refs": [
+            "operator:SPLIT",
+            "operator:REVERSE",
+            "primitive:literal_token_equality"
+          ],
+          "required_observers": [
+            "alpha_pattern",
+            "composition"
+          ],
+          "semantic_alias_of": null,
+          "semantic_type": "finite_context_relation",
+          "source_code_binding_sha256": "8dd00c44c091a5d1ae5ac83bb831b70c4a0c74d7cd83c8d02a334e76f2ed8c6a",
+          "template_origin": "BUILTIN_COMPOSITION_TEMPLATE_TRAIN_DERIVED_PARAMETERS",
+          "verifier_result": {
+            "execution_permission": false,
+            "operator_ast_digest": "216159a6476fd2d9dad6d2bbe6b834bc5bc3a693ead4c4a01358e27c3941625e",
+            "status": "CHECKED_FINITE_INSTANCE",
+            "verified_witnesses": 64,
+            "verifier_digest": "271950aea578dc621ad42fb725098aed371a6c497016464ab852ba2610e35e63",
+            "verifier_version": "operator-observer-independent-checker/1"
+          }
+        }
+      },
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"data\":{\"field_path\":\"/operator_ast\",\"reason\":\"Unsupported or altered existing relation AST\",\"status\":\"REJECTED\",\"verifier_version\":\"operator-observer-independent-checker/1\"},\"execution_permission\":false,\"ok\":true,\"schema\":\"livingmath-symbolic-extension-response/1\",\"status\":\"REJECTED\"}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structuredContent": {
+          "schema": "livingmath-symbolic-extension-response/1",
+          "ok": true,
+          "status": "REJECTED",
+          "execution_permission": false,
+          "data": {
+            "field_path": "/operator_ast",
+            "reason": "Unsupported or altered existing relation AST",
+            "status": "REJECTED",
+            "verifier_version": "operator-observer-independent-checker/1"
+          }
+        },
+        "isError": false
+      }
+    },
+    {
+      "tool": "white_star_symbolic_observer_verify",
+      "arguments": {
+        "project": "qa-p003accept-prod",
+        "run_id": "a4d403f96546d5de65c83cda7f8877ef42b9028d256d560a96699de0fa3f4811",
+        "feature_id": "derived_216159a6476fd2d9dad6",
+        "certificate": {
+          "construction_trace": [
+            {
+              "decision": false,
+              "input_state_ref": "cc32b7035398470e4a78870f0c07eb31090f8656119243366f322fef8ae1f614",
+              "operator_trace": [
+                {
+                  "args": {},
+                  "input_state_ref": "cc32b7035398470e4a78870f0c07eb31090f8656119243366f322fef8ae1f614",
+                  "input_word_hash": "191883ae112e8c3f315d6b89493e79a801fc2d865edfb5e1c48dfd8a1f69f369",
+                  "operator": "REVERSE",
+                  "output_state_refs": [
+                    "e0a23a11aea401d45ea5a15c0ac597fdeb2087910fe6b2250c73874da9fb9e05"
+                  ],
+                  "output_word_hashes": [
+                    "0000000000000000000000000000000000000000000000000000000000000000"
+                  ]
+                },
+                {
+                  "args": {
+                    "position": 1
+                  },
+                  "input_state_ref": "cc32b7035398470e4a78870f0c07eb31090f8656119243366f322fef8ae1f614",
+                  "input_word_hash": "191883ae112e8c3f315d6b89493e79a801fc2d865edfb5e1c48dfd8a1f69f369",
+                  "operator": "SPLIT",
+                  "output_state_refs": [
+                    "690d80a81b351427a3968e2eb31854e542f29a63b4db94fc3a6a58e31a395cd0",
+                    "df129c151871571cef335bf39ac74b343acbc7c79d8a0ac3c89d9dbefa821981"
+                  ],
+                  "output_word_hashes": [
+                    "1cd89ef629aeab268f17f3cbb661e31ed5473ba146f097e005d4e8b9b6760b2f",
+                    "742d2307d5ad4fd154ff66b3475a6b33a7362d2fdd91d520a0ca40b55ca99d90"
+                  ]
+                },
+                {
+                  "args": {
+                    "position": 1
+                  },
+                  "input_state_ref": "df129c151871571cef335bf39ac74b343acbc7c79d8a0ac3c89d9dbefa821981",
+                  "input_word_hash": "742d2307d5ad4fd154ff66b3475a6b33a7362d2fdd91d520a0ca40b55ca99d90",
+                  "operator": "SPLIT",
+                  "output_state_refs": [
+                    "640a2c7214b8378c07be1acc60d1154e1105ab5094c8e7b9cdf63a4b77a2ef10",
+                    "125fb2947b88ccd4feb328487647c1a207088ecf01add70baf58cb9d54eb9f49"
+                  ],
+                  "output_word_hashes": [
+                    "c2d4ac584495716bea8cb45a5e24bcd536029c76df95cf9aad959b905060ea09",
+                    "5c25960fe718c098ba2a1a4400f81955f4fd713c96e4f6abf608723493c16ba7"
+                  ]
+                },
+                {
+                  "args": {
+                    "position": 1
+                  },
+                  "input_state_ref": "e0a23a11aea401d45ea5a15c0ac597fdeb2087910fe6b2250c73874da9fb9e05",
+                  "input_word_hash": "07b8016c816023a1b530a87235bfaeae448b0ee626596befd456776111bb40ab",
+                  "operator": "SPLIT",
+                  "output_state_refs": [
+                    "c8877d347d228c80f8d8764f91e767dc93ea942576140bdbb0ef7be116d427b0",
+                    "1e1ecd50856d025ca9ad5ea9b134a444f18c58b1410abaac98b9e8195d42df16"
+                  ],
+                  "output_word_hashes": [
+                    "85d2be03941550cabad72969f46f7d36a6d08930822b40bce468bac5ec96bf27",
+                    "eb11abda2576f9b2bcadcb24e3075d62cf3bf158e8f720af46ff432e2d3c51f0"
+                  ]
+                },
+                {
+                  "args": {
+                    "position": 1
+                  },
+                  "input_state_ref": "1e1ecd50856d025ca9ad5ea9b134a444f18c58b1410abaac98b9e8195d42df16",
+                  "input_word_hash": "eb11abda2576f9b2bcadcb24e3075d62cf3bf158e8f720af46ff432e2d3c51f0",
+                  "operator": "SPLIT",
+                  "output_state_refs": [
+                    "685d2d20afebcd3c303fbf36d91e5f0d06db35bb1cbe93834a0e29d27f651984",
+                    "091d089fe34d7b880c8ff3fb828b6fcd7e7749fff7b459b61e0800eb7569f711"
+                  ],
+                  "output_word_hashes": [
+                    "404dcc520da326c03ba184f11fde0b0aada97b4327c3ba5c58a414f08c648292",
+                    "0004f1debc60f8a570fe2cbe704690703e3ad6662e930e78e8929865a37c06a2"
+                  ]
+                },
+                {
+                  "expected_equal": true,
+                  "operand_state_refs": [
+                    "640a2c7214b8378c07be1acc60d1154e1105ab5094c8e7b9cdf63a4b77a2ef10",
+                    "685d2d20afebcd3c303fbf36d91e5f0d06db35bb1cbe93834a0e29d27f651984"
+                  ],
+                  "operands": [
+                    [
+                      "A"
+                    ],
+                    [
+                      "B"
+                    ]
+                  ],
+                  "operation": "literal_token_equality",
+                  "record_ref": "0489a74d9568a092d51b8fd588e5e8ff4181197fcccaee06086f2a694ff79fdd",
+                  "value": false
+                }
+              ],
+              "record_ref": "0489a74d9568a092d51b8fd588e5e8ff4181197fcccaee06086f2a694ff79fdd",
+              "source_sha256": "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+              "states": {
+                "091d089fe34d7b880c8ff3fb828b6fcd7e7749fff7b459b61e0800eb7569f711": {
+                  "boundaries": [
+                    [
+                      4,
+                      "record_start",
+                      "0"
+                    ]
+                  ],
+                  "source_spans": [
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        6,
+                        7
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        4,
+                        5
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        2,
+                        3
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        0,
+                        1
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "A",
+                    "B",
+                    "A",
+                    "A"
+                  ],
+                  "word_hash": "0004f1debc60f8a570fe2cbe704690703e3ad6662e930e78e8929865a37c06a2"
+                },
+                "125fb2947b88ccd4feb328487647c1a207088ecf01add70baf58cb9d54eb9f49": {
+                  "boundaries": [
+                    [
+                      4,
+                      "record_end",
+                      "0"
+                    ]
+                  ],
+                  "source_spans": [
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        4,
+                        5
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        6,
+                        7
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        8,
+                        9
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        10,
+                        11
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "B",
+                    "A",
+                    "B",
+                    "A"
+                  ],
+                  "word_hash": "5c25960fe718c098ba2a1a4400f81955f4fd713c96e4f6abf608723493c16ba7"
+                },
+                "1e1ecd50856d025ca9ad5ea9b134a444f18c58b1410abaac98b9e8195d42df16": {
+                  "boundaries": [
+                    [
+                      5,
+                      "record_start",
+                      "0"
+                    ]
+                  ],
+                  "source_spans": [
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        8,
+                        9
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        6,
+                        7
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        4,
+                        5
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        2,
+                        3
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        0,
+                        1
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "B",
+                    "A",
+                    "B",
+                    "A",
+                    "A"
+                  ],
+                  "word_hash": "eb11abda2576f9b2bcadcb24e3075d62cf3bf158e8f720af46ff432e2d3c51f0"
+                },
+                "640a2c7214b8378c07be1acc60d1154e1105ab5094c8e7b9cdf63a4b77a2ef10": {
+                  "boundaries": [],
+                  "source_spans": [
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        2,
+                        3
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "A"
+                  ],
+                  "word_hash": "c2d4ac584495716bea8cb45a5e24bcd536029c76df95cf9aad959b905060ea09"
+                },
+                "685d2d20afebcd3c303fbf36d91e5f0d06db35bb1cbe93834a0e29d27f651984": {
+                  "boundaries": [],
+                  "source_spans": [
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        8,
+                        9
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "B"
+                  ],
+                  "word_hash": "404dcc520da326c03ba184f11fde0b0aada97b4327c3ba5c58a414f08c648292"
+                },
+                "690d80a81b351427a3968e2eb31854e542f29a63b4db94fc3a6a58e31a395cd0": {
+                  "boundaries": [
+                    [
+                      0,
+                      "record_start",
+                      "0"
+                    ]
+                  ],
+                  "source_spans": [
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        0,
+                        1
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "A"
+                  ],
+                  "word_hash": "1cd89ef629aeab268f17f3cbb661e31ed5473ba146f097e005d4e8b9b6760b2f"
+                },
+                "c8877d347d228c80f8d8764f91e767dc93ea942576140bdbb0ef7be116d427b0": {
+                  "boundaries": [
+                    [
+                      0,
+                      "record_end",
+                      "0"
+                    ]
+                  ],
+                  "source_spans": [
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        10,
+                        11
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "A"
+                  ],
+                  "word_hash": "85d2be03941550cabad72969f46f7d36a6d08930822b40bce468bac5ec96bf27"
+                },
+                "cc32b7035398470e4a78870f0c07eb31090f8656119243366f322fef8ae1f614": {
+                  "boundaries": [
+                    [
+                      0,
+                      "record_start",
+                      "0"
+                    ],
+                    [
+                      6,
+                      "record_end",
+                      "0"
+                    ]
+                  ],
+                  "source_spans": [
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        0,
+                        1
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        2,
+                        3
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        4,
+                        5
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        6,
+                        7
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        8,
+                        9
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        10,
+                        11
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "A",
+                    "A",
+                    "B",
+                    "A",
+                    "B",
+                    "A"
+                  ],
+                  "word_hash": "191883ae112e8c3f315d6b89493e79a801fc2d865edfb5e1c48dfd8a1f69f369"
+                },
+                "df129c151871571cef335bf39ac74b343acbc7c79d8a0ac3c89d9dbefa821981": {
+                  "boundaries": [
+                    [
+                      5,
+                      "record_end",
+                      "0"
+                    ]
+                  ],
+                  "source_spans": [
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        2,
+                        3
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        4,
+                        5
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        6,
+                        7
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        8,
+                        9
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        10,
+                        11
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "A",
+                    "B",
+                    "A",
+                    "B",
+                    "A"
+                  ],
+                  "word_hash": "742d2307d5ad4fd154ff66b3475a6b33a7362d2fdd91d520a0ca40b55ca99d90"
+                },
+                "e0a23a11aea401d45ea5a15c0ac597fdeb2087910fe6b2250c73874da9fb9e05": {
+                  "boundaries": [
+                    [
+                      0,
+                      "record_end",
+                      "0"
+                    ],
+                    [
+                      6,
+                      "record_start",
+                      "0"
+                    ]
+                  ],
+                  "source_spans": [
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        10,
+                        11
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        8,
+                        9
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        6,
+                        7
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        4,
+                        5
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        2,
+                        3
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        0,
+                        1
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "A",
+                    "B",
+                    "A",
+                    "B",
+                    "A",
+                    "A"
+                  ],
+                  "word_hash": "07b8016c816023a1b530a87235bfaeae448b0ee626596befd456776111bb40ab"
+                }
+              }
+            }
+          ],
+          "derived_claim_allowed": true,
+          "digest": "6976dc3a0584e6502d79d0b7c53ed3b005313c640244dbb0fad8c9e3f1c6c2aa",
+          "execution_verified": true,
+          "feature_id": "derived_216159a6476fd2d9dad6",
+          "feature_version": "1",
+          "known_invariance_scope": "finite train and declared within-word contexts; not a universal congruence",
+          "novelty": "Composition of existing primitives; reconstruction of a known relation is not a newly discovered primitive",
+          "operator_ast": {
+            "base_max_tokens": 3,
+            "composition": "aligned_token_equality",
+            "expected_equal": true,
+            "left_operations": [
+              "SPLIT"
+            ],
+            "offset": 1,
+            "right_operations": [
+              "REVERSE",
+              "SPLIT"
+            ]
+          },
+          "origin": "DERIVED_FROM_OPERATORS",
+          "parent_feature_refs": [
+            "operator:SPLIT",
+            "operator:REVERSE",
+            "primitive:literal_token_equality"
+          ],
+          "required_observers": [
+            "alpha_pattern",
+            "composition"
+          ],
+          "semantic_alias_of": null,
+          "semantic_type": "finite_context_relation",
+          "source_code_binding_sha256": "8dd00c44c091a5d1ae5ac83bb831b70c4a0c74d7cd83c8d02a334e76f2ed8c6a",
+          "template_origin": "BUILTIN_COMPOSITION_TEMPLATE_TRAIN_DERIVED_PARAMETERS",
+          "verifier_result": {
+            "execution_permission": false,
+            "operator_ast_digest": "216159a6476fd2d9dad6d2bbe6b834bc5bc3a693ead4c4a01358e27c3941625e",
+            "status": "CHECKED_FINITE_INSTANCE",
+            "verified_witnesses": 64,
+            "verifier_digest": "271950aea578dc621ad42fb725098aed371a6c497016464ab852ba2610e35e63",
+            "verifier_version": "operator-observer-independent-checker/1"
+          }
+        }
+      },
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"data\":{\"field_path\":\"/construction_trace/0\",\"reason\":\"AST, output, source lineage or primitive step does not match\",\"status\":\"REJECTED\",\"verifier_version\":\"operator-observer-independent-checker/1\"},\"execution_permission\":false,\"ok\":true,\"schema\":\"livingmath-symbolic-extension-response/1\",\"status\":\"REJECTED\"}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structuredContent": {
+          "schema": "livingmath-symbolic-extension-response/1",
+          "ok": true,
+          "status": "REJECTED",
+          "execution_permission": false,
+          "data": {
+            "field_path": "/construction_trace/0",
+            "reason": "AST, output, source lineage or primitive step does not match",
+            "status": "REJECTED",
+            "verifier_version": "operator-observer-independent-checker/1"
+          }
+        },
+        "isError": false
+      }
+    },
+    {
+      "tool": "white_star_symbolic_observer_verify",
+      "arguments": {
+        "project": "qa-p003accept-prod",
+        "run_id": "a4d403f96546d5de65c83cda7f8877ef42b9028d256d560a96699de0fa3f4811",
+        "feature_id": "derived_216159a6476fd2d9dad6",
+        "certificate": {
+          "construction_trace": [
+            {
+              "decision": false,
+              "input_state_ref": "cc32b7035398470e4a78870f0c07eb31090f8656119243366f322fef8ae1f614",
+              "operator_trace": [
+                {
+                  "args": {},
+                  "input_state_ref": "cc32b7035398470e4a78870f0c07eb31090f8656119243366f322fef8ae1f614",
+                  "input_word_hash": "191883ae112e8c3f315d6b89493e79a801fc2d865edfb5e1c48dfd8a1f69f369",
+                  "operator": "EVAL",
+                  "output_state_refs": [
+                    "e0a23a11aea401d45ea5a15c0ac597fdeb2087910fe6b2250c73874da9fb9e05"
+                  ],
+                  "output_word_hashes": [
+                    "07b8016c816023a1b530a87235bfaeae448b0ee626596befd456776111bb40ab"
+                  ]
+                },
+                {
+                  "args": {
+                    "position": 1
+                  },
+                  "input_state_ref": "cc32b7035398470e4a78870f0c07eb31090f8656119243366f322fef8ae1f614",
+                  "input_word_hash": "191883ae112e8c3f315d6b89493e79a801fc2d865edfb5e1c48dfd8a1f69f369",
+                  "operator": "SPLIT",
+                  "output_state_refs": [
+                    "690d80a81b351427a3968e2eb31854e542f29a63b4db94fc3a6a58e31a395cd0",
+                    "df129c151871571cef335bf39ac74b343acbc7c79d8a0ac3c89d9dbefa821981"
+                  ],
+                  "output_word_hashes": [
+                    "1cd89ef629aeab268f17f3cbb661e31ed5473ba146f097e005d4e8b9b6760b2f",
+                    "742d2307d5ad4fd154ff66b3475a6b33a7362d2fdd91d520a0ca40b55ca99d90"
+                  ]
+                },
+                {
+                  "args": {
+                    "position": 1
+                  },
+                  "input_state_ref": "df129c151871571cef335bf39ac74b343acbc7c79d8a0ac3c89d9dbefa821981",
+                  "input_word_hash": "742d2307d5ad4fd154ff66b3475a6b33a7362d2fdd91d520a0ca40b55ca99d90",
+                  "operator": "SPLIT",
+                  "output_state_refs": [
+                    "640a2c7214b8378c07be1acc60d1154e1105ab5094c8e7b9cdf63a4b77a2ef10",
+                    "125fb2947b88ccd4feb328487647c1a207088ecf01add70baf58cb9d54eb9f49"
+                  ],
+                  "output_word_hashes": [
+                    "c2d4ac584495716bea8cb45a5e24bcd536029c76df95cf9aad959b905060ea09",
+                    "5c25960fe718c098ba2a1a4400f81955f4fd713c96e4f6abf608723493c16ba7"
+                  ]
+                },
+                {
+                  "args": {
+                    "position": 1
+                  },
+                  "input_state_ref": "e0a23a11aea401d45ea5a15c0ac597fdeb2087910fe6b2250c73874da9fb9e05",
+                  "input_word_hash": "07b8016c816023a1b530a87235bfaeae448b0ee626596befd456776111bb40ab",
+                  "operator": "SPLIT",
+                  "output_state_refs": [
+                    "c8877d347d228c80f8d8764f91e767dc93ea942576140bdbb0ef7be116d427b0",
+                    "1e1ecd50856d025ca9ad5ea9b134a444f18c58b1410abaac98b9e8195d42df16"
+                  ],
+                  "output_word_hashes": [
+                    "85d2be03941550cabad72969f46f7d36a6d08930822b40bce468bac5ec96bf27",
+                    "eb11abda2576f9b2bcadcb24e3075d62cf3bf158e8f720af46ff432e2d3c51f0"
+                  ]
+                },
+                {
+                  "args": {
+                    "position": 1
+                  },
+                  "input_state_ref": "1e1ecd50856d025ca9ad5ea9b134a444f18c58b1410abaac98b9e8195d42df16",
+                  "input_word_hash": "eb11abda2576f9b2bcadcb24e3075d62cf3bf158e8f720af46ff432e2d3c51f0",
+                  "operator": "SPLIT",
+                  "output_state_refs": [
+                    "685d2d20afebcd3c303fbf36d91e5f0d06db35bb1cbe93834a0e29d27f651984",
+                    "091d089fe34d7b880c8ff3fb828b6fcd7e7749fff7b459b61e0800eb7569f711"
+                  ],
+                  "output_word_hashes": [
+                    "404dcc520da326c03ba184f11fde0b0aada97b4327c3ba5c58a414f08c648292",
+                    "0004f1debc60f8a570fe2cbe704690703e3ad6662e930e78e8929865a37c06a2"
+                  ]
+                },
+                {
+                  "expected_equal": true,
+                  "operand_state_refs": [
+                    "640a2c7214b8378c07be1acc60d1154e1105ab5094c8e7b9cdf63a4b77a2ef10",
+                    "685d2d20afebcd3c303fbf36d91e5f0d06db35bb1cbe93834a0e29d27f651984"
+                  ],
+                  "operands": [
+                    [
+                      "A"
+                    ],
+                    [
+                      "B"
+                    ]
+                  ],
+                  "operation": "literal_token_equality",
+                  "record_ref": "0489a74d9568a092d51b8fd588e5e8ff4181197fcccaee06086f2a694ff79fdd",
+                  "value": false
+                }
+              ],
+              "record_ref": "0489a74d9568a092d51b8fd588e5e8ff4181197fcccaee06086f2a694ff79fdd",
+              "source_sha256": "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+              "states": {
+                "091d089fe34d7b880c8ff3fb828b6fcd7e7749fff7b459b61e0800eb7569f711": {
+                  "boundaries": [
+                    [
+                      4,
+                      "record_start",
+                      "0"
+                    ]
+                  ],
+                  "source_spans": [
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        6,
+                        7
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        4,
+                        5
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        2,
+                        3
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        0,
+                        1
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "A",
+                    "B",
+                    "A",
+                    "A"
+                  ],
+                  "word_hash": "0004f1debc60f8a570fe2cbe704690703e3ad6662e930e78e8929865a37c06a2"
+                },
+                "125fb2947b88ccd4feb328487647c1a207088ecf01add70baf58cb9d54eb9f49": {
+                  "boundaries": [
+                    [
+                      4,
+                      "record_end",
+                      "0"
+                    ]
+                  ],
+                  "source_spans": [
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        4,
+                        5
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        6,
+                        7
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        8,
+                        9
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        10,
+                        11
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "B",
+                    "A",
+                    "B",
+                    "A"
+                  ],
+                  "word_hash": "5c25960fe718c098ba2a1a4400f81955f4fd713c96e4f6abf608723493c16ba7"
+                },
+                "1e1ecd50856d025ca9ad5ea9b134a444f18c58b1410abaac98b9e8195d42df16": {
+                  "boundaries": [
+                    [
+                      5,
+                      "record_start",
+                      "0"
+                    ]
+                  ],
+                  "source_spans": [
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        8,
+                        9
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        6,
+                        7
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        4,
+                        5
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        2,
+                        3
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        0,
+                        1
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "B",
+                    "A",
+                    "B",
+                    "A",
+                    "A"
+                  ],
+                  "word_hash": "eb11abda2576f9b2bcadcb24e3075d62cf3bf158e8f720af46ff432e2d3c51f0"
+                },
+                "640a2c7214b8378c07be1acc60d1154e1105ab5094c8e7b9cdf63a4b77a2ef10": {
+                  "boundaries": [],
+                  "source_spans": [
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        2,
+                        3
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "A"
+                  ],
+                  "word_hash": "c2d4ac584495716bea8cb45a5e24bcd536029c76df95cf9aad959b905060ea09"
+                },
+                "685d2d20afebcd3c303fbf36d91e5f0d06db35bb1cbe93834a0e29d27f651984": {
+                  "boundaries": [],
+                  "source_spans": [
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        8,
+                        9
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "B"
+                  ],
+                  "word_hash": "404dcc520da326c03ba184f11fde0b0aada97b4327c3ba5c58a414f08c648292"
+                },
+                "690d80a81b351427a3968e2eb31854e542f29a63b4db94fc3a6a58e31a395cd0": {
+                  "boundaries": [
+                    [
+                      0,
+                      "record_start",
+                      "0"
+                    ]
+                  ],
+                  "source_spans": [
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        0,
+                        1
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "A"
+                  ],
+                  "word_hash": "1cd89ef629aeab268f17f3cbb661e31ed5473ba146f097e005d4e8b9b6760b2f"
+                },
+                "c8877d347d228c80f8d8764f91e767dc93ea942576140bdbb0ef7be116d427b0": {
+                  "boundaries": [
+                    [
+                      0,
+                      "record_end",
+                      "0"
+                    ]
+                  ],
+                  "source_spans": [
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        10,
+                        11
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "A"
+                  ],
+                  "word_hash": "85d2be03941550cabad72969f46f7d36a6d08930822b40bce468bac5ec96bf27"
+                },
+                "cc32b7035398470e4a78870f0c07eb31090f8656119243366f322fef8ae1f614": {
+                  "boundaries": [
+                    [
+                      0,
+                      "record_start",
+                      "0"
+                    ],
+                    [
+                      6,
+                      "record_end",
+                      "0"
+                    ]
+                  ],
+                  "source_spans": [
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        0,
+                        1
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        2,
+                        3
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        4,
+                        5
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        6,
+                        7
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        8,
+                        9
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        10,
+                        11
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "A",
+                    "A",
+                    "B",
+                    "A",
+                    "B",
+                    "A"
+                  ],
+                  "word_hash": "191883ae112e8c3f315d6b89493e79a801fc2d865edfb5e1c48dfd8a1f69f369"
+                },
+                "df129c151871571cef335bf39ac74b343acbc7c79d8a0ac3c89d9dbefa821981": {
+                  "boundaries": [
+                    [
+                      5,
+                      "record_end",
+                      "0"
+                    ]
+                  ],
+                  "source_spans": [
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        2,
+                        3
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        4,
+                        5
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        6,
+                        7
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        8,
+                        9
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        10,
+                        11
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "A",
+                    "B",
+                    "A",
+                    "B",
+                    "A"
+                  ],
+                  "word_hash": "742d2307d5ad4fd154ff66b3475a6b33a7362d2fdd91d520a0ca40b55ca99d90"
+                },
+                "e0a23a11aea401d45ea5a15c0ac597fdeb2087910fe6b2250c73874da9fb9e05": {
+                  "boundaries": [
+                    [
+                      0,
+                      "record_end",
+                      "0"
+                    ],
+                    [
+                      6,
+                      "record_start",
+                      "0"
+                    ]
+                  ],
+                  "source_spans": [
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        10,
+                        11
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        8,
+                        9
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        6,
+                        7
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        4,
+                        5
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        2,
+                        3
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        0,
+                        1
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "A",
+                    "B",
+                    "A",
+                    "B",
+                    "A",
+                    "A"
+                  ],
+                  "word_hash": "07b8016c816023a1b530a87235bfaeae448b0ee626596befd456776111bb40ab"
+                }
+              }
+            }
+          ],
+          "derived_claim_allowed": true,
+          "digest": "6976dc3a0584e6502d79d0b7c53ed3b005313c640244dbb0fad8c9e3f1c6c2aa",
+          "execution_verified": true,
+          "feature_id": "derived_216159a6476fd2d9dad6",
+          "feature_version": "1",
+          "known_invariance_scope": "finite train and declared within-word contexts; not a universal congruence",
+          "novelty": "Composition of existing primitives; reconstruction of a known relation is not a newly discovered primitive",
+          "operator_ast": {
+            "base_max_tokens": 3,
+            "composition": "aligned_token_equality",
+            "expected_equal": true,
+            "left_operations": [
+              "SPLIT"
+            ],
+            "offset": 1,
+            "right_operations": [
+              "REVERSE",
+              "SPLIT"
+            ]
+          },
+          "origin": "DERIVED_FROM_OPERATORS",
+          "parent_feature_refs": [
+            "operator:SPLIT",
+            "operator:REVERSE",
+            "primitive:literal_token_equality"
+          ],
+          "required_observers": [
+            "alpha_pattern",
+            "composition"
+          ],
+          "semantic_alias_of": null,
+          "semantic_type": "finite_context_relation",
+          "source_code_binding_sha256": "8dd00c44c091a5d1ae5ac83bb831b70c4a0c74d7cd83c8d02a334e76f2ed8c6a",
+          "template_origin": "BUILTIN_COMPOSITION_TEMPLATE_TRAIN_DERIVED_PARAMETERS",
+          "verifier_result": {
+            "execution_permission": false,
+            "operator_ast_digest": "216159a6476fd2d9dad6d2bbe6b834bc5bc3a693ead4c4a01358e27c3941625e",
+            "status": "CHECKED_FINITE_INSTANCE",
+            "verified_witnesses": 64,
+            "verifier_digest": "271950aea578dc621ad42fb725098aed371a6c497016464ab852ba2610e35e63",
+            "verifier_version": "operator-observer-independent-checker/1"
+          }
+        }
+      },
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"data\":{\"field_path\":\"/construction_trace/0\",\"reason\":\"AST, output, source lineage or primitive step does not match\",\"status\":\"REJECTED\",\"verifier_version\":\"operator-observer-independent-checker/1\"},\"execution_permission\":false,\"ok\":true,\"schema\":\"livingmath-symbolic-extension-response/1\",\"status\":\"REJECTED\"}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structuredContent": {
+          "schema": "livingmath-symbolic-extension-response/1",
+          "ok": true,
+          "status": "REJECTED",
+          "execution_permission": false,
+          "data": {
+            "field_path": "/construction_trace/0",
+            "reason": "AST, output, source lineage or primitive step does not match",
+            "status": "REJECTED",
+            "verifier_version": "operator-observer-independent-checker/1"
+          }
+        },
+        "isError": false
+      }
+    },
+    {
+      "tool": "white_star_symbolic_observer_verify",
+      "arguments": {
+        "project": "qa-p003accept-prod",
+        "run_id": "a4d403f96546d5de65c83cda7f8877ef42b9028d256d560a96699de0fa3f4811",
+        "feature_id": "derived_216159a6476fd2d9dad6",
+        "certificate": {
+          "construction_trace": [
+            {
+              "decision": false,
+              "input_state_ref": "cc32b7035398470e4a78870f0c07eb31090f8656119243366f322fef8ae1f614",
+              "operator_trace": [
+                {
+                  "args": {},
+                  "input_state_ref": "cc32b7035398470e4a78870f0c07eb31090f8656119243366f322fef8ae1f614",
+                  "input_word_hash": "191883ae112e8c3f315d6b89493e79a801fc2d865edfb5e1c48dfd8a1f69f369",
+                  "operator": "REVERSE",
+                  "output_state_refs": [
+                    "e0a23a11aea401d45ea5a15c0ac597fdeb2087910fe6b2250c73874da9fb9e05"
+                  ],
+                  "output_word_hashes": [
+                    "07b8016c816023a1b530a87235bfaeae448b0ee626596befd456776111bb40ab"
+                  ]
+                },
+                {
+                  "args": {
+                    "position": 1
+                  },
+                  "input_state_ref": "cc32b7035398470e4a78870f0c07eb31090f8656119243366f322fef8ae1f614",
+                  "input_word_hash": "191883ae112e8c3f315d6b89493e79a801fc2d865edfb5e1c48dfd8a1f69f369",
+                  "operator": "SPLIT",
+                  "output_state_refs": [
+                    "690d80a81b351427a3968e2eb31854e542f29a63b4db94fc3a6a58e31a395cd0",
+                    "df129c151871571cef335bf39ac74b343acbc7c79d8a0ac3c89d9dbefa821981"
+                  ],
+                  "output_word_hashes": [
+                    "1cd89ef629aeab268f17f3cbb661e31ed5473ba146f097e005d4e8b9b6760b2f",
+                    "742d2307d5ad4fd154ff66b3475a6b33a7362d2fdd91d520a0ca40b55ca99d90"
+                  ]
+                },
+                {
+                  "args": {
+                    "position": 1
+                  },
+                  "input_state_ref": "df129c151871571cef335bf39ac74b343acbc7c79d8a0ac3c89d9dbefa821981",
+                  "input_word_hash": "742d2307d5ad4fd154ff66b3475a6b33a7362d2fdd91d520a0ca40b55ca99d90",
+                  "operator": "SPLIT",
+                  "output_state_refs": [
+                    "640a2c7214b8378c07be1acc60d1154e1105ab5094c8e7b9cdf63a4b77a2ef10",
+                    "125fb2947b88ccd4feb328487647c1a207088ecf01add70baf58cb9d54eb9f49"
+                  ],
+                  "output_word_hashes": [
+                    "c2d4ac584495716bea8cb45a5e24bcd536029c76df95cf9aad959b905060ea09",
+                    "5c25960fe718c098ba2a1a4400f81955f4fd713c96e4f6abf608723493c16ba7"
+                  ]
+                },
+                {
+                  "args": {
+                    "position": 1
+                  },
+                  "input_state_ref": "e0a23a11aea401d45ea5a15c0ac597fdeb2087910fe6b2250c73874da9fb9e05",
+                  "input_word_hash": "07b8016c816023a1b530a87235bfaeae448b0ee626596befd456776111bb40ab",
+                  "operator": "SPLIT",
+                  "output_state_refs": [
+                    "c8877d347d228c80f8d8764f91e767dc93ea942576140bdbb0ef7be116d427b0",
+                    "1e1ecd50856d025ca9ad5ea9b134a444f18c58b1410abaac98b9e8195d42df16"
+                  ],
+                  "output_word_hashes": [
+                    "85d2be03941550cabad72969f46f7d36a6d08930822b40bce468bac5ec96bf27",
+                    "eb11abda2576f9b2bcadcb24e3075d62cf3bf158e8f720af46ff432e2d3c51f0"
+                  ]
+                },
+                {
+                  "args": {
+                    "position": 1
+                  },
+                  "input_state_ref": "1e1ecd50856d025ca9ad5ea9b134a444f18c58b1410abaac98b9e8195d42df16",
+                  "input_word_hash": "eb11abda2576f9b2bcadcb24e3075d62cf3bf158e8f720af46ff432e2d3c51f0",
+                  "operator": "SPLIT",
+                  "output_state_refs": [
+                    "685d2d20afebcd3c303fbf36d91e5f0d06db35bb1cbe93834a0e29d27f651984",
+                    "091d089fe34d7b880c8ff3fb828b6fcd7e7749fff7b459b61e0800eb7569f711"
+                  ],
+                  "output_word_hashes": [
+                    "404dcc520da326c03ba184f11fde0b0aada97b4327c3ba5c58a414f08c648292",
+                    "0004f1debc60f8a570fe2cbe704690703e3ad6662e930e78e8929865a37c06a2"
+                  ]
+                },
+                {
+                  "expected_equal": true,
+                  "operand_state_refs": [
+                    "640a2c7214b8378c07be1acc60d1154e1105ab5094c8e7b9cdf63a4b77a2ef10",
+                    "685d2d20afebcd3c303fbf36d91e5f0d06db35bb1cbe93834a0e29d27f651984"
+                  ],
+                  "operands": [
+                    [
+                      "A"
+                    ],
+                    [
+                      "B"
+                    ]
+                  ],
+                  "operation": "literal_token_equality",
+                  "record_ref": "0489a74d9568a092d51b8fd588e5e8ff4181197fcccaee06086f2a694ff79fdd",
+                  "value": false
+                }
+              ],
+              "record_ref": "0489a74d9568a092d51b8fd588e5e8ff4181197fcccaee06086f2a694ff79fdd",
+              "source_sha256": "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+              "states": {
+                "091d089fe34d7b880c8ff3fb828b6fcd7e7749fff7b459b61e0800eb7569f711": {
+                  "boundaries": [
+                    [
+                      4,
+                      "record_start",
+                      "0"
+                    ]
+                  ],
+                  "source_spans": [
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        7,
+                        7
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        4,
+                        5
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        2,
+                        3
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        0,
+                        1
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "A",
+                    "B",
+                    "A",
+                    "A"
+                  ],
+                  "word_hash": "0004f1debc60f8a570fe2cbe704690703e3ad6662e930e78e8929865a37c06a2"
+                },
+                "125fb2947b88ccd4feb328487647c1a207088ecf01add70baf58cb9d54eb9f49": {
+                  "boundaries": [
+                    [
+                      4,
+                      "record_end",
+                      "0"
+                    ]
+                  ],
+                  "source_spans": [
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        4,
+                        5
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        6,
+                        7
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        8,
+                        9
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        10,
+                        11
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "B",
+                    "A",
+                    "B",
+                    "A"
+                  ],
+                  "word_hash": "5c25960fe718c098ba2a1a4400f81955f4fd713c96e4f6abf608723493c16ba7"
+                },
+                "1e1ecd50856d025ca9ad5ea9b134a444f18c58b1410abaac98b9e8195d42df16": {
+                  "boundaries": [
+                    [
+                      5,
+                      "record_start",
+                      "0"
+                    ]
+                  ],
+                  "source_spans": [
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        8,
+                        9
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        6,
+                        7
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        4,
+                        5
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        2,
+                        3
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        0,
+                        1
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "B",
+                    "A",
+                    "B",
+                    "A",
+                    "A"
+                  ],
+                  "word_hash": "eb11abda2576f9b2bcadcb24e3075d62cf3bf158e8f720af46ff432e2d3c51f0"
+                },
+                "640a2c7214b8378c07be1acc60d1154e1105ab5094c8e7b9cdf63a4b77a2ef10": {
+                  "boundaries": [],
+                  "source_spans": [
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        2,
+                        3
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "A"
+                  ],
+                  "word_hash": "c2d4ac584495716bea8cb45a5e24bcd536029c76df95cf9aad959b905060ea09"
+                },
+                "685d2d20afebcd3c303fbf36d91e5f0d06db35bb1cbe93834a0e29d27f651984": {
+                  "boundaries": [],
+                  "source_spans": [
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        8,
+                        9
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "B"
+                  ],
+                  "word_hash": "404dcc520da326c03ba184f11fde0b0aada97b4327c3ba5c58a414f08c648292"
+                },
+                "690d80a81b351427a3968e2eb31854e542f29a63b4db94fc3a6a58e31a395cd0": {
+                  "boundaries": [
+                    [
+                      0,
+                      "record_start",
+                      "0"
+                    ]
+                  ],
+                  "source_spans": [
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        0,
+                        1
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "A"
+                  ],
+                  "word_hash": "1cd89ef629aeab268f17f3cbb661e31ed5473ba146f097e005d4e8b9b6760b2f"
+                },
+                "c8877d347d228c80f8d8764f91e767dc93ea942576140bdbb0ef7be116d427b0": {
+                  "boundaries": [
+                    [
+                      0,
+                      "record_end",
+                      "0"
+                    ]
+                  ],
+                  "source_spans": [
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        10,
+                        11
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "A"
+                  ],
+                  "word_hash": "85d2be03941550cabad72969f46f7d36a6d08930822b40bce468bac5ec96bf27"
+                },
+                "cc32b7035398470e4a78870f0c07eb31090f8656119243366f322fef8ae1f614": {
+                  "boundaries": [
+                    [
+                      0,
+                      "record_start",
+                      "0"
+                    ],
+                    [
+                      6,
+                      "record_end",
+                      "0"
+                    ]
+                  ],
+                  "source_spans": [
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        0,
+                        1
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        2,
+                        3
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        4,
+                        5
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        6,
+                        7
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        8,
+                        9
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        10,
+                        11
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "A",
+                    "A",
+                    "B",
+                    "A",
+                    "B",
+                    "A"
+                  ],
+                  "word_hash": "191883ae112e8c3f315d6b89493e79a801fc2d865edfb5e1c48dfd8a1f69f369"
+                },
+                "df129c151871571cef335bf39ac74b343acbc7c79d8a0ac3c89d9dbefa821981": {
+                  "boundaries": [
+                    [
+                      5,
+                      "record_end",
+                      "0"
+                    ]
+                  ],
+                  "source_spans": [
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        2,
+                        3
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        4,
+                        5
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        6,
+                        7
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        8,
+                        9
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        10,
+                        11
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "A",
+                    "B",
+                    "A",
+                    "B",
+                    "A"
+                  ],
+                  "word_hash": "742d2307d5ad4fd154ff66b3475a6b33a7362d2fdd91d520a0ca40b55ca99d90"
+                },
+                "e0a23a11aea401d45ea5a15c0ac597fdeb2087910fe6b2250c73874da9fb9e05": {
+                  "boundaries": [
+                    [
+                      0,
+                      "record_end",
+                      "0"
+                    ],
+                    [
+                      6,
+                      "record_start",
+                      "0"
+                    ]
+                  ],
+                  "source_spans": [
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        10,
+                        11
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        8,
+                        9
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        6,
+                        7
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        4,
+                        5
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        2,
+                        3
+                      ]
+                    ],
+                    [
+                      [
+                        "77a5a12d78ca71f802537f29e477699cb51ddedcfa34ea3e66d05c5c465f6828",
+                        0,
+                        1
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "A",
+                    "B",
+                    "A",
+                    "B",
+                    "A",
+                    "A"
+                  ],
+                  "word_hash": "07b8016c816023a1b530a87235bfaeae448b0ee626596befd456776111bb40ab"
+                }
+              }
+            }
+          ],
+          "derived_claim_allowed": true,
+          "digest": "6976dc3a0584e6502d79d0b7c53ed3b005313c640244dbb0fad8c9e3f1c6c2aa",
+          "execution_verified": true,
+          "feature_id": "derived_216159a6476fd2d9dad6",
+          "feature_version": "1",
+          "known_invariance_scope": "finite train and declared within-word contexts; not a universal congruence",
+          "novelty": "Composition of existing primitives; reconstruction of a known relation is not a newly discovered primitive",
+          "operator_ast": {
+            "base_max_tokens": 3,
+            "composition": "aligned_token_equality",
+            "expected_equal": true,
+            "left_operations": [
+              "SPLIT"
+            ],
+            "offset": 1,
+            "right_operations": [
+              "REVERSE",
+              "SPLIT"
+            ]
+          },
+          "origin": "DERIVED_FROM_OPERATORS",
+          "parent_feature_refs": [
+            "operator:SPLIT",
+            "operator:REVERSE",
+            "primitive:literal_token_equality"
+          ],
+          "required_observers": [
+            "alpha_pattern",
+            "composition"
+          ],
+          "semantic_alias_of": null,
+          "semantic_type": "finite_context_relation",
+          "source_code_binding_sha256": "8dd00c44c091a5d1ae5ac83bb831b70c4a0c74d7cd83c8d02a334e76f2ed8c6a",
+          "template_origin": "BUILTIN_COMPOSITION_TEMPLATE_TRAIN_DERIVED_PARAMETERS",
+          "verifier_result": {
+            "execution_permission": false,
+            "operator_ast_digest": "216159a6476fd2d9dad6d2bbe6b834bc5bc3a693ead4c4a01358e27c3941625e",
+            "status": "CHECKED_FINITE_INSTANCE",
+            "verified_witnesses": 64,
+            "verifier_digest": "271950aea578dc621ad42fb725098aed371a6c497016464ab852ba2610e35e63",
+            "verifier_version": "operator-observer-independent-checker/1"
+          }
+        }
+      },
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"data\":{\"field_path\":\"/construction_trace/0\",\"reason\":\"AST, output, source lineage or primitive step does not match\",\"status\":\"REJECTED\",\"verifier_version\":\"operator-observer-independent-checker/1\"},\"execution_permission\":false,\"ok\":true,\"schema\":\"livingmath-symbolic-extension-response/1\",\"status\":\"REJECTED\"}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structuredContent": {
+          "schema": "livingmath-symbolic-extension-response/1",
+          "ok": true,
+          "status": "REJECTED",
+          "execution_permission": false,
+          "data": {
+            "field_path": "/construction_trace/0",
+            "reason": "AST, output, source lineage or primitive step does not match",
+            "status": "REJECTED",
+            "verifier_version": "operator-observer-independent-checker/1"
+          }
+        },
+        "isError": false
+      }
+    }
+  ]
+}

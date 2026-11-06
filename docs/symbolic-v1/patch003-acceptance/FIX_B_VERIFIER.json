@@ -1,0 +1,8 @@
+{
+  "execution_permission": false,
+  "operator_ast_digest": "216159a6476fd2d9dad6d2bbe6b834bc5bc3a693ead4c4a01358e27c3941625e",
+  "status": "CHECKED_FINITE_INSTANCE",
+  "verified_witnesses": 64,
+  "verifier_digest": "271950aea578dc621ad42fb725098aed371a6c497016464ab852ba2610e35e63",
+  "verifier_version": "operator-observer-independent-checker/1"
+}

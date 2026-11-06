@@ -1,0 +1,152 @@
+{
+  "bigons_only": {
+    "engine": "symbolic_complex_v1",
+    "error": null,
+    "execution_permission": false,
+    "kernel_binding": "d83508d18d7ba5758d99729b7610441fc0627de135fce5919ef4eac3fdeab178",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.008896563,
+      "max_rss_kib": 63296
+    },
+    "project": "qa-p003accept-prod",
+    "result_digest": "110784f2062300d8b65b020b8bb6e352af0f8fc6eed633d658f7b2759b703350",
+    "result_ref": "0a6a23aca033d904515fd440adc6a1b83eeab31945c3f5925b5adfceb77ecfa3",
+    "run_id": "616498ea5034e6603233675a7fe302ea239ce80b9903ad539e8da2139209bafd",
+    "schema": "livingmath-symbolic-extension-run/1",
+    "section_refs": {
+      "cells": "70ddacd1acaffcd9cfa84a0b1ac1952ee0cfba1d5e09e88a88507c064ada2516",
+      "checks": "cb5fb3f1c26a153949c1538a6b08c3f823563cd758d170ed0872b87a541e39f6",
+      "diagnostics": "f95b2fdf56c1c5028986471ce43f06860cb80f314ea84d7ea328c1abc94f9227",
+      "edges": "c9025b1161e6728a8b03b4cc774e8f069d418d4b101f3c39bb8996d74c2186db",
+      "homology": "77d7686227d36d653511b10ad848681dfcfaa2ba1e55acbf4fb523ec6a73f46b",
+      "manifest": "47977886208d36b8de1f8eec7d7b3e4bb9c389f1cc37ea6d1b100eee7dc66fda",
+      "paths": "f59d978252fcd8758e4c3fcb04220a98689cf052515003c8aba0c44447989d1f",
+      "peaks": "2c4c0029c8ab9a30fb486319656094c7503377e86b6cb3bb4b46a329659a57c7",
+      "vertices": "2cc25f1285ddd3065f7f97e896710a0b5aa8133666a929e1310530a53a6ff344"
+    },
+    "snapshot_ref": "187b13c62d0f557b4d08e62a0c4e7eaac9e3ce66d9d10986927d1b6c238f8ba4",
+    "status": "COMPLETED",
+    "summary": {
+      "assumptions": [
+        "terminating_SP_rewriting"
+      ],
+      "claim_status": "CHECKED_FINITE_INSTANCE",
+      "components": 1,
+      "dim_H1_F2": 18,
+      "edges": 74,
+      "execution_permission": false,
+      "graph_beta1": 46,
+      "graph_pi1_free_rank": 46,
+      "local_peaks": 80,
+      "partial_attachment": true,
+      "pi1_basis": "based_at_empty_word",
+      "pi1_status": "NOT_PROVED",
+      "rank_d2_F2": 28,
+      "selected_cells_policy": "bigons_only",
+      "unresolved_peaks": 32,
+      "verified_cells": 48,
+      "vertices": 29
+    }
+  },
+  "diamonds_only": {
+    "engine": "symbolic_complex_v1",
+    "error": null,
+    "execution_permission": false,
+    "kernel_binding": "d83508d18d7ba5758d99729b7610441fc0627de135fce5919ef4eac3fdeab178",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.008447332,
+      "max_rss_kib": 65732
+    },
+    "project": "qa-p003accept-prod",
+    "result_digest": "fe7f7ff6fa982b911c21e7a2740670427faf144cdc82be353ebfdb4296d9f473",
+    "result_ref": "7e6c02ebe2b85390f2bd488aefadf06f1ca1d5bb70a00a409999bbec455ee58b",
+    "run_id": "9be88ac1788d091694a049b46249a7e8a5e52273062c4cf429a78252082404a7",
+    "schema": "livingmath-symbolic-extension-run/1",
+    "section_refs": {
+      "cells": "dfd37482a0f02d0ec4d6f64a278b7b3c91b8b57334bb7ed1053e2254d6d305da",
+      "checks": "58b7a4645303cb62deb1f8a4a8f096327f5b98d14e0fd01f7bb741ff3ca99866",
+      "diagnostics": "f95b2fdf56c1c5028986471ce43f06860cb80f314ea84d7ea328c1abc94f9227",
+      "edges": "c9025b1161e6728a8b03b4cc774e8f069d418d4b101f3c39bb8996d74c2186db",
+      "homology": "a49fc6abe5bdb67608f62d5f9cb0e5bd620b52e24a4c04e7f19f5ad13d4c0da9",
+      "manifest": "0b97b9ce227c9c820796cd9822ff008b601c7c02a086a14e700ca99d81f76257",
+      "paths": "f59d978252fcd8758e4c3fcb04220a98689cf052515003c8aba0c44447989d1f",
+      "peaks": "2c4c0029c8ab9a30fb486319656094c7503377e86b6cb3bb4b46a329659a57c7",
+      "vertices": "2cc25f1285ddd3065f7f97e896710a0b5aa8133666a929e1310530a53a6ff344"
+    },
+    "snapshot_ref": "6124cfe4af15a886db7d5487c8469c4fd5d0c1dbd703211b87afa3caf49ed01d",
+    "status": "COMPLETED",
+    "summary": {
+      "assumptions": [
+        "terminating_SP_rewriting"
+      ],
+      "claim_status": "CHECKED_FINITE_INSTANCE",
+      "components": 1,
+      "dim_H1_F2": 16,
+      "edges": 74,
+      "execution_permission": false,
+      "graph_beta1": 46,
+      "graph_pi1_free_rank": 46,
+      "local_peaks": 80,
+      "partial_attachment": true,
+      "pi1_basis": "based_at_empty_word",
+      "pi1_status": "NOT_PROVED",
+      "rank_d2_F2": 30,
+      "selected_cells_policy": "diamonds_only",
+      "unresolved_peaks": 48,
+      "verified_cells": 32,
+      "vertices": 29
+    }
+  },
+  "none": {
+    "engine": "symbolic_complex_v1",
+    "error": null,
+    "execution_permission": false,
+    "kernel_binding": "d83508d18d7ba5758d99729b7610441fc0627de135fce5919ef4eac3fdeab178",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.09787883,
+      "max_rss_kib": 66768
+    },
+    "project": "qa-p003accept-prod",
+    "result_digest": "876f266649fae6bb8e0f152103f85ac6f8299d313b1cd5b2f4cafc36da042c6d",
+    "result_ref": "8dd0e06792783bfba2957852d456d0942127e3f524f0de636cf33763088dcb5a",
+    "run_id": "f3c855c41fcceedd4fa6419e11681e0bc4e0b1b1a807c51dc6edf1c66fb4a026",
+    "schema": "livingmath-symbolic-extension-run/1",
+    "section_refs": {
+      "cells": "f95b2fdf56c1c5028986471ce43f06860cb80f314ea84d7ea328c1abc94f9227",
+      "checks": "29bbe995c60999a8a08902faffbbf8ef2eddb45dca75b597ef06f89fe959530d",
+      "diagnostics": "f95b2fdf56c1c5028986471ce43f06860cb80f314ea84d7ea328c1abc94f9227",
+      "edges": "3b53d327bf0f1712f78d290063451453ca623ea648b9eb9dfc054624b83e0d39",
+      "homology": "bc5a1e55a78195acce4c569a798465400ba9639d0cf0037edc3a494aed073833",
+      "manifest": "c55cacd07532be64a9e4de5f701e866bb97e33a0b9f0acde5ae8aa9040b37e55",
+      "paths": "f59d978252fcd8758e4c3fcb04220a98689cf052515003c8aba0c44447989d1f",
+      "peaks": "d4fcd572f374639fe5dc5d92433f024271c176ba944cb20762ef4499a3ad7a00",
+      "vertices": "b1dd4e47d7bc1d644f2f592f31c3d91153d332b583d5d74238af016f826a6b1b"
+    },
+    "snapshot_ref": "411f63ac7bae493d759677560f654596227b4d56f8235985e322a21b79934320",
+    "status": "COMPLETED",
+    "summary": {
+      "assumptions": [
+        "terminating_SP_rewriting"
+      ],
+      "claim_status": "CHECKED_FINITE_INSTANCE",
+      "components": 1,
+      "dim_H1_F2": 1264,
+      "edges": 1614,
+      "execution_permission": false,
+      "graph_beta1": 1264,
+      "graph_pi1_free_rank": 1264,
+      "local_peaks": 3360,
+      "partial_attachment": true,
+      "pi1_basis": "based_at_empty_word",
+      "pi1_status": "NOT_PROVED",
+      "rank_d2_F2": 0,
+      "selected_cells_policy": "none",
+      "unresolved_peaks": 3360,
+      "verified_cells": 0,
+      "vertices": 351
+    }
+  }
+}

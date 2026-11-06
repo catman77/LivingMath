@@ -1,0 +1,38 @@
+[
+  {
+    "mutation": "AST",
+    "response": {
+      "field_path": "/operator_ast",
+      "reason": "Unsupported or altered existing relation AST",
+      "status": "REJECTED",
+      "verifier_version": "operator-observer-independent-checker/1"
+    }
+  },
+  {
+    "mutation": "output_hash",
+    "response": {
+      "field_path": "/construction_trace/0",
+      "reason": "AST, output, source lineage or primitive step does not match",
+      "status": "REJECTED",
+      "verifier_version": "operator-observer-independent-checker/1"
+    }
+  },
+  {
+    "mutation": "unsupported_operator",
+    "response": {
+      "field_path": "/construction_trace/0",
+      "reason": "AST, output, source lineage or primitive step does not match",
+      "status": "REJECTED",
+      "verifier_version": "operator-observer-independent-checker/1"
+    }
+  },
+  {
+    "mutation": "source_span",
+    "response": {
+      "field_path": "/construction_trace/0",
+      "reason": "AST, output, source lineage or primitive step does not match",
+      "status": "REJECTED",
+      "verifier_version": "operator-observer-independent-checker/1"
+    }
+  }
+]

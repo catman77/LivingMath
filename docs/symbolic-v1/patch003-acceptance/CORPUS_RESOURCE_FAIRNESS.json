@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "primary": [
+    "global_alpha",
+    "local_alpha",
+    "punctuation",
+    "length",
+    "majority"
+  ],
+  "common_search": {
+    "seed": 137,
+    "max_composition_depth": 4,
+    "max_proposals": 128,
+    "max_contexts": 256,
+    "max_witnesses": 128,
+    "max_cpu_ms": 4000
+  },
+  "same_resolved_input_digest": "96e82770d4eb4b60f74d51c3fc510abd66f6142569ffa38a4136837b019ee335",
+  "record_counts": {
+    "global_alpha": {
+      "train_records": 1484,
+      "query_records": 400
+    },
+    "local_alpha": {
+      "train_records": 1484,
+      "query_records": 400
+    },
+    "punctuation": {
+      "train_records": 1484,
+      "query_records": 400
+    },
+    "length": {
+      "train_records": 1484,
+      "query_records": 400
+    },
+    "majority": {
+      "train_records": 1484,
+      "query_records": 400
+    }
+  },
+  "no_primary_exclusions": true,
+  "source_tree_uses_no_holdout_labels": true
+}

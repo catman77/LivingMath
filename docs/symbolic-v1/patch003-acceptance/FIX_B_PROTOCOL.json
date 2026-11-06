@@ -1,0 +1,41 @@
+{
+  "schema": "patch003-followup-preregistered-task/1",
+  "task": "second and penultimate token literal equality",
+  "target": "tokens[1] == tokens[-2]",
+  "train": {
+    "alphabet": [
+      "A",
+      "B"
+    ],
+    "length": 6,
+    "selection": "all binary words",
+    "records": 64
+  },
+  "heldout": {
+    "alphabet": [
+      "A",
+      "B"
+    ],
+    "length": 8,
+    "selection": "all binary words",
+    "records": 256
+  },
+  "features": {
+    "allowlist": [
+      "derived:*"
+    ],
+    "denylist": [
+      "pair_0_max",
+      "pair_0_min",
+      "pair_0_final"
+    ],
+    "enabled_groups": [
+      "alpha_pattern",
+      "composition"
+    ]
+  },
+  "ablation": "identical input,seed,budgets with derive_relations=false",
+  "metric": "fixed-threshold binary accuracy and confusion; all256 records, no exclusions",
+  "expected_scope": "finite empirical candidate, no universal invariant",
+  "frozen_before_first_inference": true
+}

@@ -1,0 +1,14 @@
+variant,wins,losses,ties,not_identifiable,underdetermined
+global_alpha,0,1,183,16,0
+local_alpha,8,4,132,56,0
+literal,8,4,188,0,0
+punctuation,77,28,0,95,0
+length,8,4,127,61,0
+majority,0,0,200,0,0
+no_builtin_attempt,0,0,184,16,0
+strict_global_alpha,0,0,0,16,184
+conditional_global_alpha,0,1,183,16,0
+renaming_control,0,1,183,16,0
+boundary_control,0,1,183,16,0
+provenance_control,0,1,183,16,0
+seed_control,9,10,165,16,0

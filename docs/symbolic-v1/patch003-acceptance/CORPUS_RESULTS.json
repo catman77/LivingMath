@@ -1,0 +1,405 @@
+{
+  "global_alpha": {
+    "status": "SCORED",
+    "hypothesis_digest": "7f2b6dbbcb7d5ab6dd3628cb463587bc527bdc9475dcbcf2cc0bc51f4147d340",
+    "training_status": "CONTRADICTORY_TRAINING",
+    "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER",
+    "conflicting_encoding_groups": 75,
+    "conditional_excluded_records": 0,
+    "result_digest": "eac15ffdd425b991d7d109a3a1ac581dd2d4b85fb29b2277364d7cf10b64cfdf",
+    "scores": {
+      "pairs": 200,
+      "wins": 0,
+      "losses": 1,
+      "ties": 183,
+      "not_identifiable": 16,
+      "underdetermined": 0,
+      "decided_accuracy": 0.0,
+      "expected_random_tie_credit_accuracy": 0.4975,
+      "abstention_pair_coverage": 0.995,
+      "binary_confusion_on_scored_records": {
+        "TP": 0,
+        "TN": 183,
+        "FP": 1,
+        "FN": 184,
+        "unscored": 32
+      },
+      "balanced_accuracy_on_scored_records": 0.49728260869565216,
+      "MCC": -0.05219957509718806,
+      "ordinary_accuracy_on_scored_records": 0.49728260869565216,
+      "confidence": "No inferential interval claimed; one fixed historical corpus and synthetic permutation task."
+    }
+  },
+  "local_alpha": {
+    "status": "SCORED",
+    "hypothesis_digest": "14ad224198b74293faaff94084a18f3f614aa5731f617c1d246f48e8ac42bc4c",
+    "training_status": "CONTRADICTORY_TRAINING",
+    "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER",
+    "conflicting_encoding_groups": 190,
+    "conditional_excluded_records": 0,
+    "result_digest": "52d2d390dc7a16e491126d6fc6c55a1c9ee223050b4c93a63acf17bdebcdc94f",
+    "scores": {
+      "pairs": 200,
+      "wins": 8,
+      "losses": 4,
+      "ties": 132,
+      "not_identifiable": 56,
+      "underdetermined": 0,
+      "decided_accuracy": 0.6666666666666666,
+      "expected_random_tie_credit_accuracy": 0.51,
+      "abstention_pair_coverage": 0.94,
+      "binary_confusion_on_scored_records": {
+        "TP": 140,
+        "TN": 8,
+        "FP": 136,
+        "FN": 4,
+        "unscored": 112
+      },
+      "balanced_accuracy_on_scored_records": 0.5138888888888888,
+      "MCC": 0.06950480468569159,
+      "ordinary_accuracy_on_scored_records": 0.5138888888888888,
+      "confidence": "No inferential interval claimed; one fixed historical corpus and synthetic permutation task."
+    }
+  },
+  "literal": {
+    "status": "SCORED",
+    "hypothesis_digest": "5a6875898e41a64fcd1c256780e1ec27c0363514e242c54a8423c744cdc0bcb1",
+    "training_status": "CONSISTENT",
+    "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER",
+    "conflicting_encoding_groups": 0,
+    "conditional_excluded_records": 0,
+    "result_digest": "b8b3eb2f4be9004e6f88ce23ac4dfe725dfd9a000c31b90701fc20681ded7675",
+    "scores": {
+      "pairs": 200,
+      "wins": 8,
+      "losses": 4,
+      "ties": 188,
+      "not_identifiable": 0,
+      "underdetermined": 0,
+      "decided_accuracy": 0.6666666666666666,
+      "expected_random_tie_credit_accuracy": 0.51,
+      "abstention_pair_coverage": 0.94,
+      "binary_confusion_on_scored_records": {
+        "TP": 196,
+        "TN": 8,
+        "FP": 192,
+        "FN": 4,
+        "unscored": 0
+      },
+      "balanced_accuracy_on_scored_records": 0.51,
+      "MCC": 0.05862103817605492,
+      "ordinary_accuracy_on_scored_records": 0.51,
+      "confidence": "No inferential interval claimed; one fixed historical corpus and synthetic permutation task."
+    }
+  },
+  "punctuation": {
+    "status": "SCORED",
+    "hypothesis_digest": "2f0ba2697ddc22ab6c8ab8b1f7175b2a12b7e20f72b19814e23eab0c8a5d75ae",
+    "training_status": "CONTRADICTORY_TRAINING",
+    "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER",
+    "conflicting_encoding_groups": 46,
+    "conditional_excluded_records": 0,
+    "result_digest": "4516ce1c0ee4185e0e38cc06e56db42a37a122287e26a059649793eb02ad4e9e",
+    "scores": {
+      "pairs": 200,
+      "wins": 77,
+      "losses": 28,
+      "ties": 0,
+      "not_identifiable": 95,
+      "underdetermined": 0,
+      "decided_accuracy": 0.7333333333333333,
+      "expected_random_tie_credit_accuracy": 0.6225,
+      "abstention_pair_coverage": 0.475,
+      "binary_confusion_on_scored_records": {
+        "TP": 77,
+        "TN": 78,
+        "FP": 27,
+        "FN": 28,
+        "unscored": 190
+      },
+      "balanced_accuracy_on_scored_records": 0.7380952380952381,
+      "MCC": 0.4762120735996621,
+      "ordinary_accuracy_on_scored_records": 0.7380952380952381,
+      "confidence": "No inferential interval claimed; one fixed historical corpus and synthetic permutation task."
+    }
+  },
+  "length": {
+    "status": "SCORED",
+    "hypothesis_digest": "e954aa1a6866c78e0b95068b3db65e4880787537bd8711cc548bab31d4372518",
+    "training_status": "CONTRADICTORY_TRAINING",
+    "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER",
+    "conflicting_encoding_groups": 215,
+    "conditional_excluded_records": 0,
+    "result_digest": "3d04750036bfd91f9b1932a7ec421a68f8765fdaa63a6cd4293bb7ffb941dfe1",
+    "scores": {
+      "pairs": 200,
+      "wins": 8,
+      "losses": 4,
+      "ties": 127,
+      "not_identifiable": 61,
+      "underdetermined": 0,
+      "decided_accuracy": 0.6666666666666666,
+      "expected_random_tie_credit_accuracy": 0.51,
+      "abstention_pair_coverage": 0.94,
+      "binary_confusion_on_scored_records": {
+        "TP": 135,
+        "TN": 8,
+        "FP": 131,
+        "FN": 4,
+        "unscored": 122
+      },
+      "balanced_accuracy_on_scored_records": 0.5143884892086331,
+      "MCC": 0.07079923254047887,
+      "ordinary_accuracy_on_scored_records": 0.5143884892086331,
+      "confidence": "No inferential interval claimed; one fixed historical corpus and synthetic permutation task."
+    }
+  },
+  "majority": {
+    "status": "SCORED",
+    "hypothesis_digest": "92ab3c8978180919b41d1182a80dcd5a16b08cbf0d717d24e52490d0fed8eae6",
+    "training_status": "CONSISTENT",
+    "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER",
+    "conflicting_encoding_groups": 0,
+    "conditional_excluded_records": 0,
+    "result_digest": "b9f2894de5e35e0774005bd307d31ccd41978d8c5a79935da5da7c6bbc106ca6",
+    "scores": {
+      "pairs": 200,
+      "wins": 0,
+      "losses": 0,
+      "ties": 200,
+      "not_identifiable": 0,
+      "underdetermined": 0,
+      "decided_accuracy": null,
+      "expected_random_tie_credit_accuracy": 0.5,
+      "abstention_pair_coverage": 1.0,
+      "binary_confusion_on_scored_records": {
+        "TP": 200,
+        "TN": 0,
+        "FP": 200,
+        "FN": 0,
+        "unscored": 0
+      },
+      "balanced_accuracy_on_scored_records": 0.5,
+      "MCC": null,
+      "ordinary_accuracy_on_scored_records": 0.5,
+      "confidence": "No inferential interval claimed; one fixed historical corpus and synthetic permutation task."
+    }
+  },
+  "no_builtin_attempt": {
+    "status": "SCORED",
+    "hypothesis_digest": "0d79813074b8fcced2865ea84b435c4be2d4c3271278fbac3140e5f86f0271c2",
+    "training_status": "CONTRADICTORY_TRAINING",
+    "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER",
+    "conflicting_encoding_groups": 75,
+    "conditional_excluded_records": 0,
+    "result_digest": "2e649ab5427d130bf7c84b18c1f0423aa5b9cb21723f20bd6f29f262a6fd893d",
+    "scores": {
+      "pairs": 200,
+      "wins": 0,
+      "losses": 0,
+      "ties": 184,
+      "not_identifiable": 16,
+      "underdetermined": 0,
+      "decided_accuracy": null,
+      "expected_random_tie_credit_accuracy": 0.5,
+      "abstention_pair_coverage": 1.0,
+      "binary_confusion_on_scored_records": {
+        "TP": 184,
+        "TN": 0,
+        "FP": 184,
+        "FN": 0,
+        "unscored": 32
+      },
+      "balanced_accuracy_on_scored_records": 0.5,
+      "MCC": null,
+      "ordinary_accuracy_on_scored_records": 0.5,
+      "confidence": "No inferential interval claimed; one fixed historical corpus and synthetic permutation task."
+    }
+  },
+  "strict_global_alpha": {
+    "status": "SCORED",
+    "hypothesis_digest": "b03eff9d9ae8c151174e5c95c238b4efb5221a7b8493e9ca04f0ed35a0e18710",
+    "training_status": "CONTRADICTORY_TRAINING",
+    "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER",
+    "conflicting_encoding_groups": 75,
+    "conditional_excluded_records": 0,
+    "result_digest": "be581f7c2f0ce3f4d125d1a64add64fc83cd37fba2ff59a551b495c93fe0587a",
+    "scores": {
+      "pairs": 200,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "not_identifiable": 16,
+      "underdetermined": 184,
+      "decided_accuracy": null,
+      "expected_random_tie_credit_accuracy": 0.5,
+      "abstention_pair_coverage": 1.0,
+      "binary_confusion_on_scored_records": {
+        "TP": 0,
+        "TN": 0,
+        "FP": 0,
+        "FN": 0,
+        "unscored": 400
+      },
+      "balanced_accuracy_on_scored_records": null,
+      "MCC": null,
+      "ordinary_accuracy_on_scored_records": null,
+      "confidence": "No inferential interval claimed; one fixed historical corpus and synthetic permutation task."
+    }
+  },
+  "conditional_global_alpha": {
+    "status": "SCORED",
+    "hypothesis_digest": "fd55ee0c929a715f114a5a50c18c91d2c8103b9b7296cb6c67b4968f0f52f1c7",
+    "training_status": "CONTRADICTORY_TRAINING",
+    "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER",
+    "conflicting_encoding_groups": 75,
+    "conditional_excluded_records": 228,
+    "result_digest": "da242cfc177dd972d2006825438af2342a30aeddd84253a0cc5b5bcd15955d6e",
+    "scores": {
+      "pairs": 200,
+      "wins": 0,
+      "losses": 1,
+      "ties": 183,
+      "not_identifiable": 16,
+      "underdetermined": 0,
+      "decided_accuracy": 0.0,
+      "expected_random_tie_credit_accuracy": 0.4975,
+      "abstention_pair_coverage": 0.995,
+      "binary_confusion_on_scored_records": {
+        "TP": 0,
+        "TN": 183,
+        "FP": 1,
+        "FN": 184,
+        "unscored": 32
+      },
+      "balanced_accuracy_on_scored_records": 0.49728260869565216,
+      "MCC": -0.05219957509718806,
+      "ordinary_accuracy_on_scored_records": 0.49728260869565216,
+      "confidence": "No inferential interval claimed; one fixed historical corpus and synthetic permutation task."
+    }
+  },
+  "renaming_control": {
+    "status": "SCORED",
+    "hypothesis_digest": "7f2b6dbbcb7d5ab6dd3628cb463587bc527bdc9475dcbcf2cc0bc51f4147d340",
+    "training_status": "CONTRADICTORY_TRAINING",
+    "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER",
+    "conflicting_encoding_groups": 75,
+    "conditional_excluded_records": 0,
+    "result_digest": "55c11781c5f70c0f2431a3d1695c39dbf9150622db54ac70ee71d3d0d1be9e5a",
+    "scores": {
+      "pairs": 200,
+      "wins": 0,
+      "losses": 1,
+      "ties": 183,
+      "not_identifiable": 16,
+      "underdetermined": 0,
+      "decided_accuracy": 0.0,
+      "expected_random_tie_credit_accuracy": 0.4975,
+      "abstention_pair_coverage": 0.995,
+      "binary_confusion_on_scored_records": {
+        "TP": 0,
+        "TN": 183,
+        "FP": 1,
+        "FN": 184,
+        "unscored": 32
+      },
+      "balanced_accuracy_on_scored_records": 0.49728260869565216,
+      "MCC": -0.05219957509718806,
+      "ordinary_accuracy_on_scored_records": 0.49728260869565216,
+      "confidence": "No inferential interval claimed; one fixed historical corpus and synthetic permutation task."
+    }
+  },
+  "boundary_control": {
+    "status": "SCORED",
+    "hypothesis_digest": "7f2b6dbbcb7d5ab6dd3628cb463587bc527bdc9475dcbcf2cc0bc51f4147d340",
+    "training_status": "CONTRADICTORY_TRAINING",
+    "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER",
+    "conflicting_encoding_groups": 75,
+    "conditional_excluded_records": 0,
+    "result_digest": "10acfcfc75ad5436faa3d27b50887c7a1e6bdc45db051db8ae0b208893259940",
+    "scores": {
+      "pairs": 200,
+      "wins": 0,
+      "losses": 1,
+      "ties": 183,
+      "not_identifiable": 16,
+      "underdetermined": 0,
+      "decided_accuracy": 0.0,
+      "expected_random_tie_credit_accuracy": 0.4975,
+      "abstention_pair_coverage": 0.995,
+      "binary_confusion_on_scored_records": {
+        "TP": 0,
+        "TN": 183,
+        "FP": 1,
+        "FN": 184,
+        "unscored": 32
+      },
+      "balanced_accuracy_on_scored_records": 0.49728260869565216,
+      "MCC": -0.05219957509718806,
+      "ordinary_accuracy_on_scored_records": 0.49728260869565216,
+      "confidence": "No inferential interval claimed; one fixed historical corpus and synthetic permutation task."
+    }
+  },
+  "provenance_control": {
+    "status": "SCORED",
+    "hypothesis_digest": "7f2b6dbbcb7d5ab6dd3628cb463587bc527bdc9475dcbcf2cc0bc51f4147d340",
+    "training_status": "CONTRADICTORY_TRAINING",
+    "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER",
+    "conflicting_encoding_groups": 75,
+    "conditional_excluded_records": 0,
+    "result_digest": "3c136f78f4b7cd0a181e35a47b416be899f09b42655c4ed525488bc26c4526ab",
+    "scores": {
+      "pairs": 200,
+      "wins": 0,
+      "losses": 1,
+      "ties": 183,
+      "not_identifiable": 16,
+      "underdetermined": 0,
+      "decided_accuracy": 0.0,
+      "expected_random_tie_credit_accuracy": 0.4975,
+      "abstention_pair_coverage": 0.995,
+      "binary_confusion_on_scored_records": {
+        "TP": 0,
+        "TN": 183,
+        "FP": 1,
+        "FN": 184,
+        "unscored": 32
+      },
+      "balanced_accuracy_on_scored_records": 0.49728260869565216,
+      "MCC": -0.05219957509718806,
+      "ordinary_accuracy_on_scored_records": 0.49728260869565216,
+      "confidence": "No inferential interval claimed; one fixed historical corpus and synthetic permutation task."
+    }
+  },
+  "seed_control": {
+    "status": "SCORED",
+    "hypothesis_digest": "6b24ba2933fc8d7b2484c86ac1dbbdb555cca55429ae98d0719d874ee1dff491",
+    "training_status": "CONTRADICTORY_TRAINING",
+    "synthesis_status": "NO_VERIFIABLE_NEW_OBSERVER",
+    "conflicting_encoding_groups": 75,
+    "conditional_excluded_records": 0,
+    "result_digest": "f4f5c2d1bf534fbdfaafce9f1c35ddb5eb75d33771924f07c7a5f38ee07a262e",
+    "scores": {
+      "pairs": 200,
+      "wins": 9,
+      "losses": 10,
+      "ties": 165,
+      "not_identifiable": 16,
+      "underdetermined": 0,
+      "decided_accuracy": 0.47368421052631576,
+      "expected_random_tie_credit_accuracy": 0.4975,
+      "abstention_pair_coverage": 0.905,
+      "binary_confusion_on_scored_records": {
+        "TP": 10,
+        "TN": 173,
+        "FP": 11,
+        "FN": 174,
+        "unscored": 32
+      },
+      "balanced_accuracy_on_scored_records": 0.49728260869565216,
+      "MCC": -0.011714550131401422,
+      "ordinary_accuracy_on_scored_records": 0.49728260869565216,
+      "confidence": "No inferential interval claimed; one fixed historical corpus and synthetic permutation task."
+    }
+  }
+}

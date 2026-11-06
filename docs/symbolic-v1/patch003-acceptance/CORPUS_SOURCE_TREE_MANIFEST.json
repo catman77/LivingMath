@@ -1,0 +1,7678 @@
+{
+  "status": "PASS",
+  "file_in_delivery": "evidence/CORPUS_HIERARCHY.json",
+  "sha256": "ee0532d6154a811ea52d325ab75cbb482a13712b8f0282ebc3268a946994ef06",
+  "bytes": 31888215,
+  "summary": {
+    "status": "PASS",
+    "schema": "patch003-source-bound-corpus-audit/1",
+    "quatrains": 942,
+    "pairs": 942,
+    "variants": 1884,
+    "source_chunks": 19,
+    "train_records": 1484,
+    "query_records": 400,
+    "external_labels_read": false,
+    "century_counts": {
+      "1": 100,
+      "2": 100,
+      "3": 100,
+      "4": 100,
+      "5": 100,
+      "6": 100,
+      "7": 42,
+      "8": 100,
+      "9": 100,
+      "10": 100
+    },
+    "global_alpha_identical_pairs": 78,
+    "record_segments_scope": "century is a record-local projection; this global tree supplies the full actual source-chunk ancestry",
+    "edition_policy": "All original mixed-edition bytes and anomalies retained; no critical-edition claim",
+    "frozen_protocol_digest": "3c5f491d6380e52d2be965e564e204f37089103fd04bbcb8c73abe34443ea4fe"
+  },
+  "anomalies": [
+    {
+      "century": 1,
+      "quatrain": 1,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 2,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 3,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 4,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 5,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+009C"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 6,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+009C"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 7,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 8,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 9,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+009C"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 10,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 11,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+009C"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 12,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 13,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 14,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 15,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 16,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 17,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 18,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 19,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 20,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 21,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 22,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 23,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+009C"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 24,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 25,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 26,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 27,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+009C"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 28,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 29,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 30,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 31,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 32,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 33,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 34,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 35,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 36,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 37,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 38,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 39,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 40,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 41,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 42,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 43,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 44,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 45,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 46,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 47,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 48,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 49,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 50,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 51,
+      "known_editorial_anomaly": true,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 52,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 53,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 54,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 55,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 56,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 57,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 58,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 59,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 60,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 61,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 62,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 63,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 64,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 65,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 66,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 67,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 68,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 69,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 70,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 71,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 72,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 73,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 74,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 75,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 76,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083",
+        "U+009C"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 77,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 78,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083",
+        "U+009C"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 79,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 80,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 81,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 82,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 83,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 84,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 85,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 86,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 87,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 88,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 89,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 90,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 91,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 92,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 93,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 94,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 95,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 96,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 97,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 98,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+009C"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 99,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 1,
+      "quatrain": 100,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 1,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 2,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 3,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 4,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 5,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 6,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 7,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 8,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 9,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 10,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 11,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 12,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 13,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 14,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 15,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 16,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 17,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 18,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 19,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 20,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083",
+        "U+009C"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 21,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 22,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 23,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 24,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 25,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 26,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 27,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 28,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 29,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 30,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 31,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 32,
+      "known_editorial_anomaly": true,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 33,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 34,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 35,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 36,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 37,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 38,
+      "known_editorial_anomaly": true,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 39,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 40,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 41,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 42,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 43,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 44,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 45,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 46,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 47,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 48,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 49,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 50,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 51,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 52,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 53,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 54,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 55,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 56,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 57,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 58,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 59,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 60,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 61,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 62,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 63,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 64,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 65,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 66,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 67,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 68,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 69,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 70,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 71,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 72,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 73,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 74,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 75,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 76,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 77,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 78,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 79,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 80,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 81,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 82,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 83,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 84,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 85,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 86,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 87,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 88,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 89,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 90,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 91,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 92,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 93,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 94,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 95,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 96,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 97,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 98,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 99,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 2,
+      "quatrain": 100,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 1,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 2,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 3,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 4,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 5,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 6,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+009C"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 7,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 8,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 9,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 10,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 11,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 12,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 13,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 14,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 15,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+009C"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 16,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+009C"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 17,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 18,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 19,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 20,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 21,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 22,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 23,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 24,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 25,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 26,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 27,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 28,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 29,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 30,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 31,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 32,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 33,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 34,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 35,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 36,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 37,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 38,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 39,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 40,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 41,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+009C"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 42,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 43,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 44,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 45,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 46,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 47,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 48,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 49,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+009C"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 50,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 51,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 52,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 53,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 54,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 55,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083",
+        "U+009C"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 56,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 57,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 58,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 59,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 60,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 61,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 62,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 63,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 64,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 65,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 66,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 67,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 68,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 69,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 70,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 71,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 72,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 73,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 74,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 75,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 76,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083",
+        "U+009C"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 77,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 78,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 79,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 80,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 81,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 82,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 83,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 84,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 85,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 86,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 87,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 88,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 89,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 90,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 91,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 92,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+009C"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 93,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 94,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 95,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 96,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 97,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 98,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 99,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 3,
+      "quatrain": 100,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 1,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 2,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 3,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 4,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 5,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083",
+        "U+009C"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 6,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 7,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 8,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 9,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 10,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 11,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 12,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 13,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 14,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 15,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+009C"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 16,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 17,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 18,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 19,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 20,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 21,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+009C"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 22,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 23,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 24,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 25,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+009C"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 26,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 27,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 28,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 29,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 30,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 31,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 32,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 33,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 34,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 35,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 36,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 37,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 38,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 39,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 40,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 41,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 42,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 43,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 44,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 45,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 46,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 47,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 48,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 49,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 50,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 51,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 52,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 53,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 54,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 55,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 56,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 57,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 58,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 59,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 60,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 61,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 62,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 63,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 64,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 65,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 66,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 67,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 68,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 69,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 70,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 71,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 72,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 73,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+009C"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 74,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 75,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 76,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 77,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 78,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 79,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 80,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 81,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 82,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 83,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 84,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 85,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 86,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 87,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 88,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 89,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 90,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 91,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 92,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 93,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 94,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 95,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 96,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+009C"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 97,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 98,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 99,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 4,
+      "quatrain": 100,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 1,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+009C"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 2,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 3,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 4,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 5,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 6,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 7,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 8,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 9,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 10,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 11,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 12,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 13,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 14,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 15,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 16,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 17,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 18,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 19,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 20,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 21,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 22,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 23,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 24,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 25,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 26,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 27,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 28,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 29,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 30,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 31,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 32,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 33,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 34,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 35,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 36,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+009C"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 37,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 38,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 39,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 40,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 41,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 42,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 43,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 44,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 45,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 46,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 47,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 48,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 49,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 50,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 51,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 52,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 53,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 54,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 55,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 56,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 57,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 58,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 59,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 60,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 61,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 62,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 63,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 64,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 65,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 66,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 67,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 68,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 69,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 70,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 71,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 72,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 73,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 74,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+009C"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 75,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 76,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 77,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 78,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 79,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 80,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 81,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 82,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 83,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 84,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 85,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 86,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 87,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 88,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 89,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 90,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 91,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 92,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 93,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 94,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 95,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 96,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 97,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 98,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 99,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 5,
+      "quatrain": 100,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 1,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 2,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 3,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 4,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 5,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 6,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 7,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 8,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 9,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 10,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 11,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 12,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 13,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 14,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 15,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 16,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 17,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 18,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 19,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+009C"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 20,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 21,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 22,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 23,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 24,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 25,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 26,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 27,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 28,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 29,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 30,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 31,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 32,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 33,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 34,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 35,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 36,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 37,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+009C"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 38,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 39,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 40,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 41,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 42,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 43,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 44,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 45,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 46,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 47,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 48,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 49,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 50,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 51,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 52,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 53,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 54,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 55,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 56,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 57,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 58,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 59,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 60,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 61,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 62,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 63,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 64,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 65,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 66,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 67,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 68,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 69,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 70,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 71,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 72,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 73,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 74,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 75,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 76,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 77,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 78,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 79,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 80,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 81,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+009C"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 82,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 83,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 84,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 85,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 86,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 87,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 88,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 89,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 90,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 91,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 92,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 93,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 94,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 95,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 96,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 97,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 98,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 99,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+009C"
+      ]
+    },
+    {
+      "century": 6,
+      "quatrain": 100,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 7,
+      "quatrain": 1,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 7,
+      "quatrain": 2,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 7,
+      "quatrain": 3,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 7,
+      "quatrain": 4,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 7,
+      "quatrain": 5,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 7,
+      "quatrain": 6,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 7,
+      "quatrain": 7,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 7,
+      "quatrain": 8,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 7,
+      "quatrain": 9,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 7,
+      "quatrain": 10,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 7,
+      "quatrain": 11,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 7,
+      "quatrain": 12,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 7,
+      "quatrain": 13,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 7,
+      "quatrain": 14,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 7,
+      "quatrain": 15,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 7,
+      "quatrain": 16,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 7,
+      "quatrain": 17,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 7,
+      "quatrain": 18,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 7,
+      "quatrain": 19,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 7,
+      "quatrain": 20,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 7,
+      "quatrain": 21,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 7,
+      "quatrain": 22,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 7,
+      "quatrain": 23,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 7,
+      "quatrain": 24,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+009C"
+      ]
+    },
+    {
+      "century": 7,
+      "quatrain": 25,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 7,
+      "quatrain": 26,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 7,
+      "quatrain": 27,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 7,
+      "quatrain": 28,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 7,
+      "quatrain": 29,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 7,
+      "quatrain": 30,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 7,
+      "quatrain": 31,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 7,
+      "quatrain": 32,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 7,
+      "quatrain": 33,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 7,
+      "quatrain": 34,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+009C"
+      ]
+    },
+    {
+      "century": 7,
+      "quatrain": 35,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 7,
+      "quatrain": 36,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 7,
+      "quatrain": 37,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 7,
+      "quatrain": 38,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 7,
+      "quatrain": 39,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 7,
+      "quatrain": 40,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 7,
+      "quatrain": 41,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 7,
+      "quatrain": 42,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 1,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 2,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 3,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 4,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 5,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 6,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 7,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 8,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 9,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 10,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 11,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 12,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 13,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 14,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 15,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 16,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 17,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 18,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 19,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 20,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 21,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 22,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 23,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 24,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 25,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+009C"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 26,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 27,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 28,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 29,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 30,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 31,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 32,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+009C"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 33,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 34,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 35,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 36,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+009C"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 37,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 38,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 39,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 40,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 41,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 42,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 43,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 44,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 45,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 46,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 47,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 48,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 49,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 50,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 51,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 52,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 53,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 54,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 55,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 56,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 57,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 58,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 59,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 60,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 61,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 62,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 63,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 64,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 65,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 66,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 67,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 68,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 69,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 70,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 71,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 72,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 73,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 74,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 75,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 76,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 77,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 78,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 79,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 80,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 81,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 82,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 83,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 84,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 85,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 86,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 87,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 88,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 89,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 90,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+009C"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 91,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 92,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 93,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 94,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 95,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 96,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 97,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 98,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 99,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 8,
+      "quatrain": 100,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 1,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 2,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 3,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 4,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 5,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 6,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 7,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 8,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 9,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 10,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 11,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 12,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 13,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 14,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 15,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 16,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 17,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 18,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 19,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 20,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 21,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 22,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 23,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 24,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 25,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 26,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 27,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 28,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 29,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 30,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 31,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 32,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 33,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 34,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 35,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 36,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 37,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 38,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 39,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 40,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 41,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 42,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 43,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 44,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 45,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 46,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 47,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 48,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 49,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 50,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 51,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 52,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 53,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 54,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 55,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 56,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 57,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 58,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 59,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 60,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 61,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 62,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 63,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 64,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 65,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 66,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 67,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 68,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 69,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 70,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 71,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 72,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 73,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+009C"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 74,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 75,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 76,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 77,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 78,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 79,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 80,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 81,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 82,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 83,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 84,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 85,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 86,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 87,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 88,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 89,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 90,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 91,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 92,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 93,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 94,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 95,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 96,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 97,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 98,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 99,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 9,
+      "quatrain": 100,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 1,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 2,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 3,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 4,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 5,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 6,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 7,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 8,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 9,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 10,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 11,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 12,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 13,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 14,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 15,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 16,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 17,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 18,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 19,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 20,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 21,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 22,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 23,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 24,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 25,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 26,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 27,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 28,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 29,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 30,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 31,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 32,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 33,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 34,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 35,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 36,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 37,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 38,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 39,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 40,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 41,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 42,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 43,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 44,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 45,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 46,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 47,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 48,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 49,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 50,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 51,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 52,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 53,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 54,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 55,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 56,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 57,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 58,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 59,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+0083"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 60,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 61,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 62,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 63,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 64,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 65,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 66,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 67,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+009C"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 68,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 69,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 70,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+009C"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 71,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 72,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 73,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 74,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 75,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 76,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 77,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 78,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 79,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 80,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 81,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 82,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 83,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 84,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 85,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 86,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 87,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 88,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 89,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 90,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 91,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 92,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 93,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 94,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 95,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 96,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 97,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 98,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 99,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A",
+        "U+009C"
+      ]
+    },
+    {
+      "century": 10,
+      "quatrain": 100,
+      "known_editorial_anomaly": false,
+      "control_codepoints_preserved": [
+        "U+000A"
+      ]
+    }
+  ]
+}
