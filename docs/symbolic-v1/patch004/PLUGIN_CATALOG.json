@@ -1,0 +1,10 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"sources\": [\n    {\n      \"source_id\": \"P1-001\",\n      \"kind\": \"SUTI_SOURCE_SCHEMA\",\n      \"archive\": \"SUTI.uni.zip\",\n      \"member\": \"SUTI.uni/templates/learning-crystal.v1.schema.json\",\n      \"source_sha256\": \"8038431a0c13868dfb0427256f5ee9b32929635d5414c7f2db41652036045ba3\",\n      \"observer\": {\n        \"kind\": \"data_property_projection\",\n        \"fields\": [\n          \"visibility\"\n        ]\n      },\n      \"hidden_distinction\": \"transfer_status\"\n    },\n    {\n      \"source_id\": \"P1-002\",\n      \"kind\": \"SUTI_SOURCE_SCHEMA\",\n      \"archive\": \"SUTI.uni.zip\",\n      \"member\": \"SUTI.uni/SUTI.studium/schemas/study-session.v1.schema.json\",\n      \"source_sha256\": \"fda1ee197c3a740f274b6142aae981b8dc4f59c867ff0e8dfbf49ef3dcbf8b74\",\n      \"observer\": {\n        \"kind\": \"data_property_projection\",\n        \"fields\": [\n          \"external_transfer\"\n        ]\n      },\n      \"hidden_distinction\": \"decision\"\n    },\n    {\n      \"source_id\": \"ALCH006\",\n      \"kind\": \"PUBLIC_ALCHEMICAL_RESEARCH_MODEL\",\n      \"source_sha256\": \"02414a3c38f0dfa6541176ac62b5fb4c26555cb02f65d0ced171588b238aa3f9\",\n      \"title\": \"The compound of alchymy. Or The ancient hidden art of archemie\",\n      \"source_fragments\": 76,\n      \"unknown_records\": 60\n    }\n  ],\n  \"total\": 3,\n  \"next_offset\": null,\n  \"proof_status\": \"unverified\",\n  \"execution_permission\": {\n    \"allowed\": false\n  }\n}"
+    }
+  ],
+  "structuredContent": null,
+  "isError": false
+}

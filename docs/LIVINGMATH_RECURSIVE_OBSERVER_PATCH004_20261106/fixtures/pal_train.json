@@ -1,0 +1,519 @@
+{
+  "schema": "local-typed-grammar-fixture/1",
+  "kind": "train",
+  "task": "PAL",
+  "records": [
+    {
+      "id": "PAL-train-000",
+      "tokens": [
+        "S",
+        "S",
+        "S",
+        "S"
+      ],
+      "accepted": true,
+      "source": {
+        "text": "S S S S",
+        "sha256": "6a8cdedf80a9ee6fbd9a97d14feee420c1621dda57697e0dceb7c906a9e72a93",
+        "spans": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "id": "PAL-train-001",
+      "tokens": [
+        "S",
+        "S",
+        "S",
+        "P"
+      ],
+      "accepted": false,
+      "source": {
+        "text": "S S S P",
+        "sha256": "9533bc33cb30d6b91777b3bbe6911989b0d676c1b519953bb7375d05d0a9891c",
+        "spans": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "id": "PAL-train-002",
+      "tokens": [
+        "S",
+        "S",
+        "P",
+        "S"
+      ],
+      "accepted": false,
+      "source": {
+        "text": "S S P S",
+        "sha256": "c1f7ee075b3a6d8e5c731b57b6540c80bcc7f84072ec5bac1295835266059a35",
+        "spans": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "id": "PAL-train-003",
+      "tokens": [
+        "S",
+        "S",
+        "P",
+        "P"
+      ],
+      "accepted": false,
+      "source": {
+        "text": "S S P P",
+        "sha256": "78b82ce28367be0d7d14ed3c3e4189ca94f69bd1c885f834d52e97fdee9a019c",
+        "spans": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "id": "PAL-train-004",
+      "tokens": [
+        "S",
+        "P",
+        "S",
+        "S"
+      ],
+      "accepted": false,
+      "source": {
+        "text": "S P S S",
+        "sha256": "c02125bf89a64964405b07258552a70e5f20d7ea4b77e3de40fcd2f715e6aa50",
+        "spans": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "id": "PAL-train-005",
+      "tokens": [
+        "S",
+        "P",
+        "S",
+        "P"
+      ],
+      "accepted": false,
+      "source": {
+        "text": "S P S P",
+        "sha256": "835728e53aecfa674ccb56a8237f72e14bce3ef9c65f2c14fa2038ff8fc6d367",
+        "spans": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "id": "PAL-train-006",
+      "tokens": [
+        "S",
+        "P",
+        "P",
+        "S"
+      ],
+      "accepted": true,
+      "source": {
+        "text": "S P P S",
+        "sha256": "b1707da15c8d9cb5f750128a63ab62eeaf8f372fd6d1e36f6b8ec93062d9c106",
+        "spans": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "id": "PAL-train-007",
+      "tokens": [
+        "S",
+        "P",
+        "P",
+        "P"
+      ],
+      "accepted": false,
+      "source": {
+        "text": "S P P P",
+        "sha256": "be390ed74c9a73826ddbc2764ec39d11093cb3c7f1d35de0d1bc0db030014636",
+        "spans": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "id": "PAL-train-008",
+      "tokens": [
+        "P",
+        "S",
+        "S",
+        "S"
+      ],
+      "accepted": false,
+      "source": {
+        "text": "P S S S",
+        "sha256": "fe8dcc92f94ffaab02e1df8616d07ce422e9ad0dc647e0ad2d5338ec2a4051a4",
+        "spans": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "id": "PAL-train-009",
+      "tokens": [
+        "P",
+        "S",
+        "S",
+        "P"
+      ],
+      "accepted": true,
+      "source": {
+        "text": "P S S P",
+        "sha256": "4e033458c100b1047e73d4ab35aeedbc4b33a8d3adbeb40970beab12cb4622b6",
+        "spans": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "id": "PAL-train-010",
+      "tokens": [
+        "P",
+        "S",
+        "P",
+        "S"
+      ],
+      "accepted": false,
+      "source": {
+        "text": "P S P S",
+        "sha256": "cc3c64690310f36a52daafe0db3cb495a61d6e7395866b7e5132eba30ce58546",
+        "spans": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "id": "PAL-train-011",
+      "tokens": [
+        "P",
+        "S",
+        "P",
+        "P"
+      ],
+      "accepted": false,
+      "source": {
+        "text": "P S P P",
+        "sha256": "cc2f22c31937e42ecf4d64086767fdc1018080a28643bb9837b00016c736aab6",
+        "spans": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "id": "PAL-train-012",
+      "tokens": [
+        "P",
+        "P",
+        "S",
+        "S"
+      ],
+      "accepted": false,
+      "source": {
+        "text": "P P S S",
+        "sha256": "8fcae3e31af21a843084739033ebeea726fe76b94d77497574db992fca90641a",
+        "spans": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "id": "PAL-train-013",
+      "tokens": [
+        "P",
+        "P",
+        "S",
+        "P"
+      ],
+      "accepted": false,
+      "source": {
+        "text": "P P S P",
+        "sha256": "2b44eba4233be4562d232f64d3d8ac4611887f9b56489f6a3b2c150715424475",
+        "spans": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "id": "PAL-train-014",
+      "tokens": [
+        "P",
+        "P",
+        "P",
+        "S"
+      ],
+      "accepted": false,
+      "source": {
+        "text": "P P P S",
+        "sha256": "6748f7a869c35adce62de4fc4620ea2582e31346d9a00a2c48f13503e2ab87b1",
+        "spans": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "id": "PAL-train-015",
+      "tokens": [
+        "P",
+        "P",
+        "P",
+        "P"
+      ],
+      "accepted": true,
+      "source": {
+        "text": "P P P P",
+        "sha256": "25839a61baa59b62c36373be6a4b454d947bf8467d7266c4c09bdd7363a66f29",
+        "spans": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ]
+        ]
+      }
+    }
+  ]
+}

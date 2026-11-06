@@ -1,8 +1,8 @@
 # Symbolic V1 — запуск и проверка
 
-Текущий production: **v0.4.5-developer-preview**, 83 инструмента; HTTPS/OAuth адрес
+Текущий production: **v0.4.6-developer-preview**, 83 инструмента; HTTPS/OAuth адрес
 сохранён. [Полный MCP-интерфейс](../MCP_INTERFACE.md) и
-[последняя приёмка FIX-B2](v044-reacceptance/USER_REPORT_RU.md).
+[приёмка PATCH004](patch004/USER_REPORT_RU.md), [новый opt-in](patch004/QUICKSTART_RU.md).
 Symbolic использует полные токены и их происхождение; численный
 `white_star_explore` с 2D-координатами остаётся отдельным инструментом.
 Числа 75/82 и версии в исторических разделах PATCH001–003 ниже относятся к

@@ -1,0 +1,25 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"data\":{\"ast_digest\":\"b5c20366e2902983352e88b017f458f7244c16145cde7d502ace9757b5c4170f\",\"execution_permission\":false,\"status\":\"CHECKED_INSTANCE\",\"training_compatibility\":true,\"universal_invariant\":false,\"verified_witnesses\":16,\"verifier_digest\":\"e7ff923030724e8648b80c4203022271d9df4870708ebdc37c5b028b07b907fd\",\"verifier_version\":\"bounded-composition-independent-checker/1\"},\"execution_permission\":false,\"ok\":true,\"schema\":\"livingmath-symbolic-extension-response/1\",\"status\":\"CHECKED_INSTANCE\"}"
+    }
+  ],
+  "structuredContent": {
+    "schema": "livingmath-symbolic-extension-response/1",
+    "ok": true,
+    "status": "CHECKED_INSTANCE",
+    "execution_permission": false,
+    "data": {
+      "ast_digest": "b5c20366e2902983352e88b017f458f7244c16145cde7d502ace9757b5c4170f",
+      "execution_permission": false,
+      "status": "CHECKED_INSTANCE",
+      "training_compatibility": true,
+      "universal_invariant": false,
+      "verified_witnesses": 16,
+      "verifier_digest": "e7ff923030724e8648b80c4203022271d9df4870708ebdc37c5b028b07b907fd",
+      "verifier_version": "bounded-composition-independent-checker/1"
+    }
+  },
+  "isError": false
+}

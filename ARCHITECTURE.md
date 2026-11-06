@@ -1,6 +1,6 @@
 # Архитектура MCP-сервера LivingMath
 
-Срез архитектуры: **v0.4.5-developer-preview**, пакет Python `0.4.5.dev0`.
+Срез архитектуры: **v0.4.6-developer-preview**, пакет Python `0.4.6.dev0`.
 Production объединяет **83 MCP-инструмента** в одном authenticated Streamable HTTP
 endpoint `/mcp`. [Справочник интерфейса](docs/MCP_INTERFACE.md),
 [установка](docs/INSTALL.md), [примеры запросов](docs/USAGE.md).
@@ -91,6 +91,33 @@ source spans, родителя, scope и train coverage; он не вызыва�
 scope возможен `UNKNOWN`, при недостатке данных — `UNDERDETERMINED` или
 `NO_VERIFIABLE_NEW_OBSERVER`. Заданный контекст сам по себе не новый инвариант.
 [Положительный конечный результат и отрицательные контроли](docs/symbolic-v1/v044-reacceptance/USER_REPORT_RU.md).
+
+## Рекурсивный наблюдатель PATCH004
+
+Дополнительный `request.promotion_policy` выбирает композиционный путь; без него
+работает прежнее продвижение буквальных контекстов. Это четыре закрытые формы
+существующего AST, без пользовательского языка исполнения.
+
+| Модуль `observer_synthesis/` | Назначение |
+|---|---|
+| `composition_ast.py` | Проверка формы/типов/убывания, исполнение существующих SPLIT/REVERSE, полное равенство слов и source-state trace |
+| `compositional.py` | Train-only генерация структурных разрезов/сравнений, сохранение совместимых альтернатив и отклонённых контрпримеров; admission только после checker |
+| `composition_checker.py` | Независимая реконструкция UTF-8 источника и повтор каждого primitive step; строгие JSON-типы, полный train coverage, происхождение и scope |
+| `source_bridge.py` | Чтение настоящего сохранённого Symbolic V1 run того же проекта, проверка input/result/kernel/AST и train-семантики |
+
+Источник старой грамматики связывается по буквальным токенам и меткам train;
+этого недостаточно для тождества изданий источника. Новый certificate отдельно
+связывает полные записи нового train, исходные UTF-8 байты и spans.
+Генератор использует train и structural tie-break; queries не участвуют в fit.
+`feature_id` связывает AST, область и исполняемые операторы. Проверка не даёт
+execution grant; family остаётся `UNDERDETERMINED`, вне scope — `UNKNOWN`.
+
+Область композиционного preview: максимум 8 токенов, 32 узла AST, глубина 8,
+8 рекурсивных шагов, 256 train witnesses. Прежний контекстный предел 64 и
+worker CPU5s/wall6s/RAM512MiB сохранены. Все current/historical символьные
+профили делят один лимит 2 active / 16 queued; численные workers — отдельный pool.
+Архивные профили 0.4.3/0.4.4/0.4.5 проверяются по owner-approved manifests
+и используются для прежних replay/verification, не переобучают старые runs.
 
 ## Данные и происхождение
 

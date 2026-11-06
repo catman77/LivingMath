@@ -1,0 +1,592 @@
+{
+  "actual_production_calls": [
+    {
+      "tool": "assurance_project_new",
+      "arguments": {
+        "project": "qa-recursive004-prod",
+        "request_key": "init"
+      },
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\n  \"project\": \"qa-recursive004-prod\",\n  \"release\": \"v0.1.0-developer-preview\",\n  \"status\": \"CREATED\",\n  \"execution_permission\": false\n}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false
+      }
+    },
+    {
+      "tool": "white_star_symbolic_dataset_store",
+      "arguments": {
+        "project": "qa-recursive004-prod",
+        "request_key": "train-pal",
+        "dataset": {
+          "schema": "livingmath-observer-dataset/1",
+          "kind": "train",
+          "records": [
+            {
+              "id": "PAL-train-000",
+              "tokens": [
+                "S",
+                "S",
+                "S",
+                "S"
+              ],
+              "accepted": true,
+              "source": {
+                "text": "S S S S",
+                "sha256": "6a8cdedf80a9ee6fbd9a97d14feee420c1621dda57697e0dceb7c906a9e72a93",
+                "rights": "ORIGINAL_TEST_FIXTURE supplied PATCH004",
+                "edition": "PATCH004 sealed fixture/1"
+              }
+            },
+            {
+              "id": "PAL-train-001",
+              "tokens": [
+                "S",
+                "S",
+                "S",
+                "P"
+              ],
+              "accepted": false,
+              "source": {
+                "text": "S S S P",
+                "sha256": "9533bc33cb30d6b91777b3bbe6911989b0d676c1b519953bb7375d05d0a9891c",
+                "rights": "ORIGINAL_TEST_FIXTURE supplied PATCH004",
+                "edition": "PATCH004 sealed fixture/1"
+              }
+            },
+            {
+              "id": "PAL-train-002",
+              "tokens": [
+                "S",
+                "S",
+                "P",
+                "S"
+              ],
+              "accepted": false,
+              "source": {
+                "text": "S S P S",
+                "sha256": "c1f7ee075b3a6d8e5c731b57b6540c80bcc7f84072ec5bac1295835266059a35",
+                "rights": "ORIGINAL_TEST_FIXTURE supplied PATCH004",
+                "edition": "PATCH004 sealed fixture/1"
+              }
+            },
+            {
+              "id": "PAL-train-003",
+              "tokens": [
+                "S",
+                "S",
+                "P",
+                "P"
+              ],
+              "accepted": false,
+              "source": {
+                "text": "S S P P",
+                "sha256": "78b82ce28367be0d7d14ed3c3e4189ca94f69bd1c885f834d52e97fdee9a019c",
+                "rights": "ORIGINAL_TEST_FIXTURE supplied PATCH004",
+                "edition": "PATCH004 sealed fixture/1"
+              }
+            },
+            {
+              "id": "PAL-train-004",
+              "tokens": [
+                "S",
+                "P",
+                "S",
+                "S"
+              ],
+              "accepted": false,
+              "source": {
+                "text": "S P S S",
+                "sha256": "c02125bf89a64964405b07258552a70e5f20d7ea4b77e3de40fcd2f715e6aa50",
+                "rights": "ORIGINAL_TEST_FIXTURE supplied PATCH004",
+                "edition": "PATCH004 sealed fixture/1"
+              }
+            },
+            {
+              "id": "PAL-train-005",
+              "tokens": [
+                "S",
+                "P",
+                "S",
+                "P"
+              ],
+              "accepted": false,
+              "source": {
+                "text": "S P S P",
+                "sha256": "835728e53aecfa674ccb56a8237f72e14bce3ef9c65f2c14fa2038ff8fc6d367",
+                "rights": "ORIGINAL_TEST_FIXTURE supplied PATCH004",
+                "edition": "PATCH004 sealed fixture/1"
+              }
+            },
+            {
+              "id": "PAL-train-006",
+              "tokens": [
+                "S",
+                "P",
+                "P",
+                "S"
+              ],
+              "accepted": true,
+              "source": {
+                "text": "S P P S",
+                "sha256": "b1707da15c8d9cb5f750128a63ab62eeaf8f372fd6d1e36f6b8ec93062d9c106",
+                "rights": "ORIGINAL_TEST_FIXTURE supplied PATCH004",
+                "edition": "PATCH004 sealed fixture/1"
+              }
+            },
+            {
+              "id": "PAL-train-007",
+              "tokens": [
+                "S",
+                "P",
+                "P",
+                "P"
+              ],
+              "accepted": false,
+              "source": {
+                "text": "S P P P",
+                "sha256": "be390ed74c9a73826ddbc2764ec39d11093cb3c7f1d35de0d1bc0db030014636",
+                "rights": "ORIGINAL_TEST_FIXTURE supplied PATCH004",
+                "edition": "PATCH004 sealed fixture/1"
+              }
+            },
+            {
+              "id": "PAL-train-008",
+              "tokens": [
+                "P",
+                "S",
+                "S",
+                "S"
+              ],
+              "accepted": false,
+              "source": {
+                "text": "P S S S",
+                "sha256": "fe8dcc92f94ffaab02e1df8616d07ce422e9ad0dc647e0ad2d5338ec2a4051a4",
+                "rights": "ORIGINAL_TEST_FIXTURE supplied PATCH004",
+                "edition": "PATCH004 sealed fixture/1"
+              }
+            },
+            {
+              "id": "PAL-train-009",
+              "tokens": [
+                "P",
+                "S",
+                "S",
+                "P"
+              ],
+              "accepted": true,
+              "source": {
+                "text": "P S S P",
+                "sha256": "4e033458c100b1047e73d4ab35aeedbc4b33a8d3adbeb40970beab12cb4622b6",
+                "rights": "ORIGINAL_TEST_FIXTURE supplied PATCH004",
+                "edition": "PATCH004 sealed fixture/1"
+              }
+            },
+            {
+              "id": "PAL-train-010",
+              "tokens": [
+                "P",
+                "S",
+                "P",
+                "S"
+              ],
+              "accepted": false,
+              "source": {
+                "text": "P S P S",
+                "sha256": "cc3c64690310f36a52daafe0db3cb495a61d6e7395866b7e5132eba30ce58546",
+                "rights": "ORIGINAL_TEST_FIXTURE supplied PATCH004",
+                "edition": "PATCH004 sealed fixture/1"
+              }
+            },
+            {
+              "id": "PAL-train-011",
+              "tokens": [
+                "P",
+                "S",
+                "P",
+                "P"
+              ],
+              "accepted": false,
+              "source": {
+                "text": "P S P P",
+                "sha256": "cc2f22c31937e42ecf4d64086767fdc1018080a28643bb9837b00016c736aab6",
+                "rights": "ORIGINAL_TEST_FIXTURE supplied PATCH004",
+                "edition": "PATCH004 sealed fixture/1"
+              }
+            },
+            {
+              "id": "PAL-train-012",
+              "tokens": [
+                "P",
+                "P",
+                "S",
+                "S"
+              ],
+              "accepted": false,
+              "source": {
+                "text": "P P S S",
+                "sha256": "8fcae3e31af21a843084739033ebeea726fe76b94d77497574db992fca90641a",
+                "rights": "ORIGINAL_TEST_FIXTURE supplied PATCH004",
+                "edition": "PATCH004 sealed fixture/1"
+              }
+            },
+            {
+              "id": "PAL-train-013",
+              "tokens": [
+                "P",
+                "P",
+                "S",
+                "P"
+              ],
+              "accepted": false,
+              "source": {
+                "text": "P P S P",
+                "sha256": "2b44eba4233be4562d232f64d3d8ac4611887f9b56489f6a3b2c150715424475",
+                "rights": "ORIGINAL_TEST_FIXTURE supplied PATCH004",
+                "edition": "PATCH004 sealed fixture/1"
+              }
+            },
+            {
+              "id": "PAL-train-014",
+              "tokens": [
+                "P",
+                "P",
+                "P",
+                "S"
+              ],
+              "accepted": false,
+              "source": {
+                "text": "P P P S",
+                "sha256": "6748f7a869c35adce62de4fc4620ea2582e31346d9a00a2c48f13503e2ab87b1",
+                "rights": "ORIGINAL_TEST_FIXTURE supplied PATCH004",
+                "edition": "PATCH004 sealed fixture/1"
+              }
+            },
+            {
+              "id": "PAL-train-015",
+              "tokens": [
+                "P",
+                "P",
+                "P",
+                "P"
+              ],
+              "accepted": true,
+              "source": {
+                "text": "P P P P",
+                "sha256": "25839a61baa59b62c36373be6a4b454d947bf8467d7266c4c09bdd7363a66f29",
+                "rights": "ORIGINAL_TEST_FIXTURE supplied PATCH004",
+                "edition": "PATCH004 sealed fixture/1"
+              }
+            }
+          ],
+          "sha256": "f4c98862250f8a34803373b292fa17a9f41f46e6eb7c2ec08b4290a8d892556e"
+        }
+      },
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"data\":{\"dataset_ref\":\"38637850797e11225206f7abd7add99cea798614e8dce433f059ec25229800e2\",\"execution_permission\":false,\"kind\":\"train\",\"record_count\":16,\"sha256\":\"f4c98862250f8a34803373b292fa17a9f41f46e6eb7c2ec08b4290a8d892556e\"},\"execution_permission\":false,\"ok\":true,\"schema\":\"livingmath-symbolic-extension-response/1\",\"status\":\"OK\"}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structuredContent": {
+          "schema": "livingmath-symbolic-extension-response/1",
+          "ok": true,
+          "status": "OK",
+          "execution_permission": false,
+          "data": {
+            "dataset_ref": "38637850797e11225206f7abd7add99cea798614e8dce433f059ec25229800e2",
+            "kind": "train",
+            "sha256": "f4c98862250f8a34803373b292fa17a9f41f46e6eb7c2ec08b4290a8d892556e",
+            "record_count": 16,
+            "execution_permission": false
+          }
+        },
+        "isError": false
+      }
+    },
+    {
+      "tool": "white_star_symbolic_observer_synthesize",
+      "arguments": {
+        "project": "qa-recursive004-prod",
+        "request_key": "pal-n6",
+        "request": {
+          "schema": "livingmath-symbolic-observer-synthesis-request/1",
+          "task": {
+            "mode": "context_relation_induction",
+            "train_ref": "38637850797e11225206f7abd7add99cea798614e8dce433f059ec25229800e2",
+            "predict_ref": "976ac7d093de1b924187c65d9b34bbba16094f5ad394d83a7dea54ec445a348b",
+            "holdout_labels_visible": false,
+            "structure_levels": [
+              "word"
+            ],
+            "candidate_transformations": [
+              "REVERSE",
+              "RENAME"
+            ]
+          },
+          "feature_policy": {
+            "enabled_builtins": [],
+            "feature_denylist": [
+              "pair_0_max",
+              "pair_0_min",
+              "pair_0_final"
+            ],
+            "derive_relations": true,
+            "prohibit_undocumented_builtins": true,
+            "synthesis_origin_required": true,
+            "renaming_scope": "per_variant",
+            "strict_source_boundaries": true
+          },
+          "search": {
+            "seed": 137,
+            "max_composition_depth": 4,
+            "max_proposals": 128,
+            "max_contexts": 128,
+            "max_witnesses": 512,
+            "max_cpu_ms": 4000
+          },
+          "promotion_policy": {
+            "mode": "compositional_ast",
+            "candidate_sources": [
+              "derivation_trace",
+              "source_run_id"
+            ],
+            "max_ast_nodes": 32,
+            "max_ast_depth": 8,
+            "max_recursion_steps": 8,
+            "max_tokens": 8,
+            "max_train_witnesses": 256,
+            "require_independent_checker": true
+          }
+        }
+      },
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"data\":{\"engine\":\"observer_synthesis_v1\",\"error\":null,\"execution_permission\":false,\"kernel_binding\":\"2a84ffeb20db666e46fe6cb423bef39a19622f448c74cefe599ade5d7699d5d2\",\"metrics\":{\"LLM_calls\":0,\"job_cpu_s\":0.104431792,\"max_rss_kib\":61356},\"project\":\"qa-recursive004-prod\",\"result_digest\":\"e2d9eebc3d482e25a02dc5e6b5f774eb1b059ae3a30f7ac3d877e093196d7336\",\"result_ref\":\"f250faaff4326e5be06ac099ecc4d489aaf1ef2b4398920e703ed076bc9be9b0\",\"run_id\":\"f0c868a221731ca4247a6b49f4a1a1f4c715ac407b774d61529f4ce6b47471ab\",\"schema\":\"livingmath-symbolic-extension-run/1\",\"section_refs\":{\"candidate_rules\":\"57f259f412a6c7e5621127a90b2aeb747a9ccf381933dd019430289bbaeebfa5\",\"checks\":\"0c8c32fb0ac210dc7c060085c5e3b70bb89162ad0df5ccdea6d26bc4423972f4\",\"diagnostics\":\"aed2cf08983ac5c754becaf2727b492b7856b0f9ee6753db56335b9197670bec\",\"manifest\":\"d00d0b7990ec2bf57a670ab48a0bbac05ebfa5b1e5f2f460e480ff982721d162\",\"model\":\"b4270c01582fb8aa682bf3d2db1f9a289cc4a3bb405403c471a38eeeeb8a0ef0\",\"observer_provenance\":\"6998f17103a9985cabbc8ed9f91d59b8d96c986cbb991759c3211a4ebba57941\",\"pairwise_eval\":\"585a40f0452819dd2aee354accc881f9d0840696303a02a8e74db1f3dbcd2483\"},\"snapshot_ref\":\"5c4d5292d0bfde25316555ecb258c0fa3cdf9504d2da4d6d8e29427d2d5ebbb4\",\"status\":\"COMPLETED\",\"summary\":{\"conditional_exclusion_applied\":false,\"execution_permission\":false,\"family_status\":\"UNDERDETERMINED\",\"hypothesis_digest\":\"4ea11c9214784dc48ffeb7e64f57c2a4a7a035535090bb1ed228a6f189059ce8\",\"pair_counts\":{\"NOT_IDENTIFIABLE\":0,\"PREFERENCE\":0,\"TIE\":0,\"UNDERDETERMINED\":0},\"query_records\":64,\"synthesis_status\":\"VERIFIABLE_OPERATOR_COMPOSITION_FOUND\",\"train_records\":16,\"training_status\":\"CONSISTENT\"}},\"execution_permission\":false,\"ok\":true,\"schema\":\"livingmath-symbolic-extension-response/1\",\"status\":\"COMPLETED\"}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structuredContent": {
+          "schema": "livingmath-symbolic-extension-response/1",
+          "ok": true,
+          "status": "COMPLETED",
+          "execution_permission": false,
+          "data": {
+            "engine": "observer_synthesis_v1",
+            "error": null,
+            "execution_permission": false,
+            "kernel_binding": "2a84ffeb20db666e46fe6cb423bef39a19622f448c74cefe599ade5d7699d5d2",
+            "metrics": {
+              "LLM_calls": 0,
+              "job_cpu_s": 0.104431792,
+              "max_rss_kib": 61356
+            },
+            "project": "qa-recursive004-prod",
+            "result_digest": "e2d9eebc3d482e25a02dc5e6b5f774eb1b059ae3a30f7ac3d877e093196d7336",
+            "result_ref": "f250faaff4326e5be06ac099ecc4d489aaf1ef2b4398920e703ed076bc9be9b0",
+            "run_id": "f0c868a221731ca4247a6b49f4a1a1f4c715ac407b774d61529f4ce6b47471ab",
+            "schema": "livingmath-symbolic-extension-run/1",
+            "section_refs": {
+              "candidate_rules": "57f259f412a6c7e5621127a90b2aeb747a9ccf381933dd019430289bbaeebfa5",
+              "checks": "0c8c32fb0ac210dc7c060085c5e3b70bb89162ad0df5ccdea6d26bc4423972f4",
+              "diagnostics": "aed2cf08983ac5c754becaf2727b492b7856b0f9ee6753db56335b9197670bec",
+              "manifest": "d00d0b7990ec2bf57a670ab48a0bbac05ebfa5b1e5f2f460e480ff982721d162",
+              "model": "b4270c01582fb8aa682bf3d2db1f9a289cc4a3bb405403c471a38eeeeb8a0ef0",
+              "observer_provenance": "6998f17103a9985cabbc8ed9f91d59b8d96c986cbb991759c3211a4ebba57941",
+              "pairwise_eval": "585a40f0452819dd2aee354accc881f9d0840696303a02a8e74db1f3dbcd2483"
+            },
+            "snapshot_ref": "5c4d5292d0bfde25316555ecb258c0fa3cdf9504d2da4d6d8e29427d2d5ebbb4",
+            "status": "COMPLETED",
+            "summary": {
+              "conditional_exclusion_applied": false,
+              "execution_permission": false,
+              "family_status": "UNDERDETERMINED",
+              "hypothesis_digest": "4ea11c9214784dc48ffeb7e64f57c2a4a7a035535090bb1ed228a6f189059ce8",
+              "pair_counts": {
+                "NOT_IDENTIFIABLE": 0,
+                "PREFERENCE": 0,
+                "TIE": 0,
+                "UNDERDETERMINED": 0
+              },
+              "query_records": 64,
+              "synthesis_status": "VERIFIABLE_OPERATOR_COMPOSITION_FOUND",
+              "train_records": 16,
+              "training_status": "CONSISTENT"
+            }
+          }
+        },
+        "isError": false
+      }
+    },
+    {
+      "tool": "white_star_symbolic_observer_verify",
+      "arguments": {
+        "project": "qa-recursive004-prod",
+        "run_id": "f0c868a221731ca4247a6b49f4a1a1f4c715ac407b774d61529f4ce6b47471ab",
+        "feature_id": "derived_ee42a6c799ce3ba3a777"
+      },
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"data\":{\"ast_digest\":\"b5c20366e2902983352e88b017f458f7244c16145cde7d502ace9757b5c4170f\",\"execution_permission\":false,\"status\":\"CHECKED_INSTANCE\",\"training_compatibility\":true,\"universal_invariant\":false,\"verified_witnesses\":16,\"verifier_digest\":\"e7ff923030724e8648b80c4203022271d9df4870708ebdc37c5b028b07b907fd\",\"verifier_version\":\"bounded-composition-independent-checker/1\"},\"execution_permission\":false,\"ok\":true,\"schema\":\"livingmath-symbolic-extension-response/1\",\"status\":\"CHECKED_INSTANCE\"}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structuredContent": {
+          "schema": "livingmath-symbolic-extension-response/1",
+          "ok": true,
+          "status": "CHECKED_INSTANCE",
+          "execution_permission": false,
+          "data": {
+            "ast_digest": "b5c20366e2902983352e88b017f458f7244c16145cde7d502ace9757b5c4170f",
+            "execution_permission": false,
+            "status": "CHECKED_INSTANCE",
+            "training_compatibility": true,
+            "universal_invariant": false,
+            "verified_witnesses": 16,
+            "verifier_digest": "e7ff923030724e8648b80c4203022271d9df4870708ebdc37c5b028b07b907fd",
+            "verifier_version": "bounded-composition-independent-checker/1"
+          }
+        },
+        "isError": false
+      }
+    },
+    {
+      "tool": "white_star_symbolic_observer_synthesize",
+      "arguments": {
+        "project": "whitestar_dialog_test",
+        "request_key": "PATCH004-existing-source-prod",
+        "request": {
+          "schema": "livingmath-symbolic-observer-synthesis-request/1",
+          "task": {
+            "mode": "context_relation_induction",
+            "train_ref": "f7502b97fbb2c101cbd061b68e7036dd07038d862cb4df015ab6b1160005e452",
+            "predict_ref": "0c79f9fa14e9ce1d38570f9dc83368a1d42881a9cc251866056a4c976cda4ae1",
+            "holdout_labels_visible": false,
+            "structure_levels": [
+              "word"
+            ],
+            "candidate_transformations": [
+              "REVERSE",
+              "RENAME"
+            ]
+          },
+          "feature_policy": {
+            "enabled_builtins": [],
+            "feature_denylist": [
+              "pair_0_max",
+              "pair_0_min",
+              "pair_0_final"
+            ],
+            "derive_relations": true,
+            "prohibit_undocumented_builtins": true,
+            "synthesis_origin_required": true,
+            "renaming_scope": "per_variant",
+            "strict_source_boundaries": true
+          },
+          "search": {
+            "seed": 137,
+            "max_composition_depth": 4,
+            "max_proposals": 128,
+            "max_contexts": 128,
+            "max_witnesses": 512,
+            "max_cpu_ms": 4000
+          },
+          "promotion_policy": {
+            "mode": "compositional_ast",
+            "candidate_sources": [
+              "source_run_id"
+            ],
+            "max_ast_nodes": 32,
+            "max_ast_depth": 8,
+            "max_recursion_steps": 8,
+            "max_tokens": 8,
+            "max_train_witnesses": 256,
+            "require_independent_checker": true
+          },
+          "source_run_id": "80457c8536c12fb4e18e302c14542ca4568e9c83cb650def98af3fb49cd92baa"
+        }
+      },
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"data\":{\"engine\":\"observer_synthesis_v1\",\"error\":null,\"execution_permission\":false,\"kernel_binding\":\"2a84ffeb20db666e46fe6cb423bef39a19622f448c74cefe599ade5d7699d5d2\",\"metrics\":{\"LLM_calls\":0,\"job_cpu_s\":0.091783073,\"max_rss_kib\":62312},\"project\":\"whitestar_dialog_test\",\"result_digest\":\"a05031070757c223bddbd3190c7c1e694f5c075136a7113a02ee54deeef0dfc5\",\"result_ref\":\"1001c988adf1052f70b8cc5cf0b4e0804ce0e38f1c3c474a9a70652b629a3588\",\"run_id\":\"77fb4e40fa6be36ce7fc90acb6757d23ae65de0344127f3a553585ed8e12d837\",\"schema\":\"livingmath-symbolic-extension-run/1\",\"section_refs\":{\"candidate_rules\":\"d7a8ca1afd15ee1fcf5c54411b9554d11f84f0bb9c24ef1ddc9a60e1221e2c27\",\"checks\":\"0c8c32fb0ac210dc7c060085c5e3b70bb89162ad0df5ccdea6d26bc4423972f4\",\"diagnostics\":\"f74e7ddb43ff614dde430d65cab84db031fbe9a68522480dd48c55d8dbc8cae6\",\"manifest\":\"fad3c5e657b1ba968e6bbe28948395722985c64f275e8288b66a9f24b250d5d3\",\"model\":\"085ed160ffa5387431a7b9e4d2f378500ec16ef073e96b0529b79a1c5ce856bf\",\"observer_provenance\":\"6d7b549383b5d7d499da21c8f005ab6c6591addc9ebfde532296e7b0b8eca537\",\"pairwise_eval\":\"f2f2e79d574ee2f73b17844ab5ed8883b69a97b81be798d9b75f98f208ff0240\"},\"snapshot_ref\":\"d8e594412a91ff3ed229a99b12594a991c6d192652077f89b267beb702a66773\",\"status\":\"COMPLETED\",\"summary\":{\"conditional_exclusion_applied\":false,\"execution_permission\":false,\"family_status\":\"UNDERDETERMINED\",\"hypothesis_digest\":\"7b0a59406ef4e8ac9d293ed2a207c7848158d50c043a4219e2d9907823f90012\",\"pair_counts\":{\"NOT_IDENTIFIABLE\":0,\"PREFERENCE\":0,\"TIE\":0,\"UNDERDETERMINED\":0},\"query_records\":64,\"synthesis_status\":\"VERIFIABLE_OPERATOR_COMPOSITION_FOUND\",\"train_records\":16,\"training_status\":\"CONSISTENT\"}},\"execution_permission\":false,\"ok\":true,\"schema\":\"livingmath-symbolic-extension-response/1\",\"status\":\"COMPLETED\"}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structuredContent": {
+          "schema": "livingmath-symbolic-extension-response/1",
+          "ok": true,
+          "status": "COMPLETED",
+          "execution_permission": false,
+          "data": {
+            "engine": "observer_synthesis_v1",
+            "error": null,
+            "execution_permission": false,
+            "kernel_binding": "2a84ffeb20db666e46fe6cb423bef39a19622f448c74cefe599ade5d7699d5d2",
+            "metrics": {
+              "LLM_calls": 0,
+              "job_cpu_s": 0.091783073,
+              "max_rss_kib": 62312
+            },
+            "project": "whitestar_dialog_test",
+            "result_digest": "a05031070757c223bddbd3190c7c1e694f5c075136a7113a02ee54deeef0dfc5",
+            "result_ref": "1001c988adf1052f70b8cc5cf0b4e0804ce0e38f1c3c474a9a70652b629a3588",
+            "run_id": "77fb4e40fa6be36ce7fc90acb6757d23ae65de0344127f3a553585ed8e12d837",
+            "schema": "livingmath-symbolic-extension-run/1",
+            "section_refs": {
+              "candidate_rules": "d7a8ca1afd15ee1fcf5c54411b9554d11f84f0bb9c24ef1ddc9a60e1221e2c27",
+              "checks": "0c8c32fb0ac210dc7c060085c5e3b70bb89162ad0df5ccdea6d26bc4423972f4",
+              "diagnostics": "f74e7ddb43ff614dde430d65cab84db031fbe9a68522480dd48c55d8dbc8cae6",
+              "manifest": "fad3c5e657b1ba968e6bbe28948395722985c64f275e8288b66a9f24b250d5d3",
+              "model": "085ed160ffa5387431a7b9e4d2f378500ec16ef073e96b0529b79a1c5ce856bf",
+              "observer_provenance": "6d7b549383b5d7d499da21c8f005ab6c6591addc9ebfde532296e7b0b8eca537",
+              "pairwise_eval": "f2f2e79d574ee2f73b17844ab5ed8883b69a97b81be798d9b75f98f208ff0240"
+            },
+            "snapshot_ref": "d8e594412a91ff3ed229a99b12594a991c6d192652077f89b267beb702a66773",
+            "status": "COMPLETED",
+            "summary": {
+              "conditional_exclusion_applied": false,
+              "execution_permission": false,
+              "family_status": "UNDERDETERMINED",
+              "hypothesis_digest": "7b0a59406ef4e8ac9d293ed2a207c7848158d50c043a4219e2d9907823f90012",
+              "pair_counts": {
+                "NOT_IDENTIFIABLE": 0,
+                "PREFERENCE": 0,
+                "TIE": 0,
+                "UNDERDETERMINED": 0
+              },
+              "query_records": 64,
+              "synthesis_status": "VERIFIABLE_OPERATOR_COMPOSITION_FOUND",
+              "train_records": 16,
+              "training_status": "CONSISTENT"
+            }
+          }
+        },
+        "isError": false
+      }
+    }
+  ],
+  "note": "Use your own registered project and dataset refs. Fresh request_key for new computation; old key returns immutable old run."
+}

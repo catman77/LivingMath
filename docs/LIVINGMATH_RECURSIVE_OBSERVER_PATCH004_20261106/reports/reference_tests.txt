@@ -1,0 +1,21 @@
+test_copy_complete_n4_n6_n8 (__main__.TestTypedComposition.test_copy_complete_n4_n6_n8) ... ok
+test_distinguish_endpoint_from_pal (__main__.TestTypedComposition.test_distinguish_endpoint_from_pal) ... ok
+test_dyck_not_same_as_balanced (__main__.TestTypedComposition.test_dyck_not_same_as_balanced) ... ok
+test_no_destruction_of_token_order (__main__.TestTypedComposition.test_no_destruction_of_token_order) ... ok
+test_odd (__main__.TestTypedComposition.test_odd) ... ok
+test_pal_complete_n4_n6_n8 (__main__.TestTypedComposition.test_pal_complete_n4_n6_n8) ... ok
+test_reject_false_universal_claim (__main__.TestTypedComposition.test_reject_false_universal_claim) ... ok
+test_reject_malformed_ast_mutation (__main__.TestTypedComposition.test_reject_malformed_ast_mutation) ... ok
+test_reject_missing_witness (__main__.TestTypedComposition.test_reject_missing_witness) ... ok
+test_reject_tampered_result (__main__.TestTypedComposition.test_reject_tampered_result) ... ok
+test_reject_tampered_source_hash (__main__.TestTypedComposition.test_reject_tampered_source_hash) ... ok
+test_reject_tampered_trace_even_with_rehash (__main__.TestTypedComposition.test_reject_tampered_trace_even_with_rehash) ... ok
+test_reject_tampered_utf8_span (__main__.TestTypedComposition.test_reject_tampered_utf8_span) ... ok
+test_reject_unsupported_ast (__main__.TestTypedComposition.test_reject_unsupported_ast) ... ok
+test_scope_guard (__main__.TestTypedComposition.test_scope_guard) ... ok
+test_unicode_source_spans (__main__.TestTypedComposition.test_unicode_source_spans) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.096s
+
+OK

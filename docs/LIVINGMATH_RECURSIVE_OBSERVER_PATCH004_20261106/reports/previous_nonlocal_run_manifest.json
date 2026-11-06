@@ -1,0 +1,47 @@
+{
+  "schema": "livingmath-research-manifest/1",
+  "date": "2026-11-06",
+  "server": {
+    "version": "v0.4.5-developer-preview",
+    "deployment": "fix-b2-20261106T025708Z",
+    "observer_module": "observer_synthesis_v1/2-context-promotion",
+    "project": "whitestar_dialog_test"
+  },
+  "dataset_refs": {
+    "pal_train_1_to_4_30": "40930ecd4b1ab5276bf9a350475efaef6f4f5e3f35e78cf910370e75bfd14350",
+    "pal_train_only_4_16": "f7502b97fbb2c101cbd061b68e7036dd07038d862cb4df015ab6b1160005e452",
+    "pal_train_1_to_5_62": "2cca39ee5db7f39631e114e062d7b1a625d9abbcf8d8576dcea935cc53b316b9",
+    "pal_train_1_to_6_126": "3bdefa0af70fa180cafcad8f61211ae56ce3737d05668b6ecd489a93598060d9",
+    "copy_train_2_and_4_20": "a2a8e8c548a93b8509e9b8782ff6b7cb8374f5573468f86ab65c69310b926e73",
+    "copy_train_52": "6bd6da55a1c05877e10916d8b388db7bf3a8a7165d88076ae70f0f53d451fd68",
+    "copy_train_2_4_6_84": "d22351561ec85dc122a0b0c57db4dc2fd35e2fba976c451c0e09a66074dd7a38",
+    "queries_all_6_64": "0c79f9fa14e9ce1d38570f9dc83368a1d42881a9cc251866056a4c976cda4ae1",
+    "queries_all_8_256": "4b0817caf2bdf5bb3ae509d4e7374e2f3abfd7dd27e15f1dda0c16ed27c22b66"
+  },
+  "experiments": [
+    {"name":"NEW_PAL30_TO6_NO_BUILTINS","engine":"observer_synthesis_v1","run_id":"77fafb0e5992dbb58ade20586c701c3f62a3368fab8a4e69c445d9496d3cacb1","tp":0,"tn":56,"fp":0,"fn":8,"synthesis":"NO_VERIFIABLE_NEW_OBSERVER"},
+    {"name":"NEW_PAL30_TO6_ALL_BUILTINS","engine":"observer_synthesis_v1","run_id":"83e602147d9d4367747fb287199bd7dad83174368248b7dcd3a3e904324bcc94","tp":3,"tn":52,"fp":4,"fn":5,"synthesis":"NO_VERIFIABLE_NEW_OBSERVER"},
+    {"name":"OLD_PAL30_TO6","engine":"symbolic_v1","run_id":"96d80a377c63b7598712493e59ec8ab8efc639e45b620bda318ab3758609d197","tp":8,"tn":40,"fp":16,"fn":0,"selected":"endpoint_equal"},
+    {"name":"NEW_PAL16_TO6","engine":"observer_synthesis_v1","run_id":"71789a2a5df43acb07888a875263db1ab20cb6e2b4d16fd00a295dcc5ec1daf4","tp":0,"tn":56,"fp":0,"fn":8,"synthesis":"NO_VERIFIABLE_NEW_OBSERVER","train_compatible_ast":"b5c20366e2902983352e88b017f458f7244c16145cde7d502ace9757b5c4170f","failed_obligation":"NO_LABELLED_DISTINGUISHING_CONTEXT"},
+    {"name":"NEW_PAL16_WITH_OLD_SOURCE_RUN","engine":"observer_synthesis_v1","run_id":"fe7e9d7cc5d6f79c9c914bdb5f241d2c187108c503ffe748910f09ac2a314f14","tp":0,"tn":56,"fp":0,"fn":8,"synthesis":"NO_VERIFIABLE_NEW_OBSERVER"},
+    {"name":"OLD_PAL16_TO6","engine":"symbolic_v1","run_id":"80457c8536c12fb4e18e302c14542ca4568e9c83cb650def98af3fb49cd92baa","tp":8,"tn":56,"fp":0,"fn":0,"selected":"iterate_on_inner_fragment"},
+    {"name":"OLD_PAL16_TO8_BATCH0","engine":"symbolic_v1","run_id":"4621e37f5acef445df2d8b4a76e73453fd36bd6f6dc4b7be5a52db3e378e2112","tp":4,"tn":60,"fp":0,"fn":0},
+    {"name":"OLD_PAL16_TO8_BATCH1","engine":"symbolic_v1","run_id":"a29c6264824f5c0d3219393dc16fb6e4e21fc73c6f015573c53f42d4b8c08939","tp":4,"tn":60,"fp":0,"fn":0},
+    {"name":"OLD_PAL16_TO8_BATCH2","engine":"symbolic_v1","run_id":"4ba4cb4ea2ef19034ad744e4ee39b450df93f56744d385c9bfc4435425079702","tp":4,"tn":60,"fp":0,"fn":0},
+    {"name":"OLD_PAL16_TO8_BATCH3","engine":"symbolic_v1","run_id":"0ffa9d65d47fa221a9428750c0a0444cc48e5c87ba290120666122f0fcf5d6c0","tp":4,"tn":60,"fp":0,"fn":0},
+    {"name":"NEW_COPY20_TO6_NO_BUILTINS","engine":"observer_synthesis_v1","run_id":"00b20acbc7b4931b9f76a4f8a290f197748eff1b50836f3d61f9e3f10af1e435","tp":0,"tn":56,"fp":0,"fn":8,"synthesis":"NO_VERIFIABLE_NEW_OBSERVER"},
+    {"name":"NEW_COPY20_TO6_ALL_BUILTINS","engine":"observer_synthesis_v1","run_id":"a6a3bee3754b137e214d1d3962a64d304a5f9b84c33f3cf32447ea05e2811797","tp":8,"tn":30,"fp":26,"fn":0,"synthesis":"NO_VERIFIABLE_NEW_OBSERVER"},
+    {"name":"OLD_COPY20_TO6","engine":"symbolic_v1","run_id":"8e6529e51736aab92b53f73e901f18113f2c324516a23a4b5e09c07b5310b4dd","tp":2,"tn":54,"fp":2,"fn":6,"selected":"lag_2_mismatches"},
+    {"name":"NEW_PAL62_TO6","engine":"observer_synthesis_v1","run_id":"a35a1c5926b8aeaa33caca88314ca7bf63b3a4f056fe3132310b8dc7101390c6","synthesis":"NO_VERIFIABLE_NEW_OBSERVER","failed_obligation":"NO_LABELLED_DISTINGUISHING_CONTEXT"},
+    {"name":"NEW_COPY52_TO8","engine":"observer_synthesis_v1","run_id":"5ff0d0514d0dd6265ed67a09d4bee1030a8f3ddbf5e6a43c2099f16912016f72","synthesis":"NO_VERIFIABLE_NEW_OBSERVER","failed_obligation":"NO_LABELLED_DISTINGUISHING_CONTEXT"},
+    {"name":"NEW_PAL126_TO8","engine":"observer_synthesis_v1","run_id":"98e3bd842c69d48884f1d1dee14a2aeaf79cab9d087ac992e3a5b92b74889763","synthesis":"NO_VERIFIABLE_NEW_OBSERVER","failed_obligation":"FINITE_SHORT_WORD_SCOPE_REQUIRED","max_train_records":64},
+    {"name":"NEW_COPY84_TO8","engine":"observer_synthesis_v1","run_id":"345060000e23556bf509edf20dd963987eab42d230ac82b8cf9b62dbed73c3e5","synthesis":"NO_VERIFIABLE_NEW_OBSERVER","failed_obligation":"FINITE_SHORT_WORD_SCOPE_REQUIRED","max_train_records":64}
+  ],
+  "protocol": {
+    "training": "exhaustive finite labelled words",
+    "holdout": "exhaustive independent words; queries-only, no accepted labels",
+    "selection": "frozen server hypothesis before query scoring",
+    "repeat_request_key_policy": "new unique request_key for reruns; historical request_key is idempotent",
+    "claim_boundary": "finite train compatibility and heldout scores, not universal grammar uniqueness"
+  }
+}

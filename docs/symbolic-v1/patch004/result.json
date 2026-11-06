@@ -1,0 +1,411 @@
+{
+  "status": "PASS_P0_P1_FINITE",
+  "checks": 910,
+  "gates": {
+    "A01": {
+      "status": "PASS",
+      "evidence": "f0c868a221731ca4247a6b49f4a1a1f4c715ac407b774d61529f4ce6b47471ab"
+    },
+    "A02": {
+      "status": "PASS",
+      "evidence": "derived_ee42a6c799ce3ba3a777"
+    },
+    "A03": {
+      "status": "PASS",
+      "evidence": "pal-n6-verification.json"
+    },
+    "A04": {
+      "status": "PASS",
+      "evidence": "pal-n6"
+    },
+    "A05": {
+      "status": "PASS",
+      "evidence": "pal-n8"
+    },
+    "B02": {
+      "status": "PASS",
+      "evidence": "copy-n6"
+    },
+    "B03": {
+      "status": "PASS",
+      "evidence": "copy-n8"
+    },
+    "A07": {
+      "status": "PASS",
+      "evidence": [
+        "pal-seed42",
+        "copy-seed42"
+      ]
+    },
+    "A08": {
+      "status": "PASS",
+      "evidence": "scores.json"
+    },
+    "A09": {
+      "status": "PASS",
+      "evidence": "scores.json"
+    },
+    "A10": {
+      "status": "PASS",
+      "evidence": "models.json / queries"
+    },
+    "B01": {
+      "status": "PASS",
+      "evidence": "ccba2f29f2c5492ae4d5bc4c503054e8ce3aed05317d3e3c3da81fc01b18fb13"
+    },
+    "B05": {
+      "status": "PASS",
+      "evidence": "derived_cf773c00dc649edfb1cb"
+    },
+    "A06": {
+      "status": "PASS",
+      "evidence": {
+        "source": "648f0387ca62307b4131996500ac9664ae69e503f4559c5832af16c5f610b850",
+        "derived": "1942b9fdd9013d68dbd53511972ec43af71960c855e4c093267596b01ed09cdb",
+        "origin": "SOURCE_SUPPLIED"
+      }
+    },
+    "A12": {
+      "status": "PASS",
+      "evidence": "foreign source/dataset/run requests rejected"
+    },
+    "A13": {
+      "status": "PASS",
+      "evidence": "output_hash"
+    },
+    "A14": {
+      "status": "PASS",
+      "evidence": "position"
+    },
+    "A15": {
+      "status": "PASS",
+      "evidence": "missing"
+    },
+    "A17": {
+      "status": "PASS",
+      "evidence": "operator"
+    },
+    "A18": {
+      "status": "PASS",
+      "evidence": "origin"
+    },
+    "A19": {
+      "status": "PASS",
+      "evidence": "universal"
+    },
+    "TYPE_BOOL": {
+      "status": "PASS",
+      "evidence": "position_bool"
+    },
+    "TYPE_INT": {
+      "status": "PASS",
+      "evidence": "readout_integer"
+    },
+    "OUTER_DIGEST": {
+      "status": "PASS",
+      "evidence": "outer_digest"
+    },
+    "A16": {
+      "status": "PASS",
+      "evidence": "actual Cyrillic source spans"
+    },
+    "A20": {
+      "status": "PASS",
+      "evidence": "4440826604ef63b1425b960eab21819ea857d3487f2abfba3a9461c42e248437"
+    },
+    "A21": {
+      "status": "PASS",
+      "evidence": "fresh key deterministic digest / old key immutable"
+    },
+    "A22": {
+      "status": "PASS",
+      "evidence": {
+        "engine": "observer_synthesis_v1",
+        "execution_permission": false,
+        "independent_checks": {
+          "LLM_calls": 0,
+          "execution_permission": false,
+          "holdout_labels_read": false,
+          "hypothesis_frozen_before_queries": true
+        },
+        "journal_hash_chain": "PASS",
+        "kernel_binding": "2a84ffeb20db666e46fe6cb423bef39a19622f448c74cefe599ade5d7699d5d2",
+        "result_digest": "e2d9eebc3d482e25a02dc5e6b5f774eb1b059ae3a30f7ac3d877e093196d7336",
+        "run_id": "f0c868a221731ca4247a6b49f4a1a1f4c715ac407b774d61529f4ce6b47471ab",
+        "status": "REPLAY_MATCH"
+      }
+    },
+    "A23": {
+      "status": "PASS",
+      "evidence": {
+        "SP": {
+          "TP": 57,
+          "TN": 7,
+          "FP": 0,
+          "FN": 0,
+          "UNKNOWN": 0,
+          "total": 64,
+          "accuracy": 1.0,
+          "sensitivity": 1.0,
+          "specificity": 1.0,
+          "balanced_accuracy": 1.0,
+          "coverage": 1.0,
+          "majority_accuracy": 0.890625
+        },
+        "PS": {
+          "TP": 57,
+          "TN": 7,
+          "FP": 0,
+          "FN": 0,
+          "UNKNOWN": 0,
+          "total": 64,
+          "accuracy": 1.0,
+          "sensitivity": 1.0,
+          "specificity": 1.0,
+          "balanced_accuracy": 1.0,
+          "coverage": 1.0,
+          "majority_accuracy": 0.890625
+        },
+        "SS": {
+          "TP": 43,
+          "TN": 21,
+          "FP": 0,
+          "FN": 0,
+          "UNKNOWN": 0,
+          "total": 64,
+          "accuracy": 1.0,
+          "sensitivity": 1.0,
+          "specificity": 1.0,
+          "balanced_accuracy": 1.0,
+          "coverage": 1.0,
+          "majority_accuracy": 0.671875
+        }
+      }
+    },
+    "A24": {
+      "status": "PASS",
+      "evidence": "SP2/4/6/8/10 exact counts, real checker and partial-cell negatives"
+    },
+    "A11": {
+      "status": "PASS",
+      "evidence": "historical-runs.json + original key replay"
+    },
+    "A25": {
+      "status": "PASS",
+      "evidence": "numeric profiles and old immutable symbolic/observer replay"
+    },
+    "B04": {
+      "status": "PASS",
+      "evidence": "3bbdaa83947de4d806a232328187b5723f12a3dabe6d23dee3d5fe7f6e8e773a"
+    },
+    "B06": {
+      "status": "PASS",
+      "evidence": {
+        "local_evaluator_control": [
+          {
+            "n": 6,
+            "witnesses": 64,
+            "origin": "MANUALLY_SUPPLIED_EVALUATOR_CONTROL",
+            "discovery_claimed": false
+          },
+          {
+            "n": 8,
+            "witnesses": 256,
+            "origin": "MANUALLY_SUPPLIED_EVALUATOR_CONTROL",
+            "discovery_claimed": false
+          }
+        ],
+        "MCP_source_origin_forgery": "REJECTED",
+        "not_counted_as_discovery": true
+      }
+    }
+  },
+  "P2": {
+    "C01": {
+      "status": "MEASURED_NO_NEW_COMPOSITION",
+      "run_id": "83f4d3cce563da014ed317da43405543867e0019162b007b25a643c4212b37bd",
+      "model_status": "NO_VERIFIABLE_NEW_OBSERVER",
+      "orientation_counterexample": {
+        "same_equality_pattern": [
+          "SP",
+          "PS"
+        ],
+        "labels": [
+          true,
+          false
+        ]
+      }
+    },
+    "C02": {
+      "status": "NOT_RUN_STOP_CRITERION",
+      "reason": "No new short Dyck composition; roadmap forbids next large corpus stage"
+    },
+    "C03": {
+      "status": "NOT_RUN_WITH_C02",
+      "reason": "No cross-century semantic-transfer claim"
+    }
+  },
+  "project": "qa-recursive004-prod",
+  "version": "v0.4.6-developer-preview",
+  "endpoint": "https://fares-september-rebel-board.trycloudflare.com/mcp",
+  "public_HTTPS_tested": true,
+  "execution_permission": false,
+  "run_ids": {
+    "pal-n6": "f0c868a221731ca4247a6b49f4a1a1f4c715ac407b774d61529f4ce6b47471ab",
+    "pal-n8": "099d9047122e0ce87dadbf067f7e0dde14f57c373c54ab6b6e1bc047feab59bf",
+    "pal-seed42": "6b5f63ffdd34ca94772edc721696b3eac0af23f412515837b7a64ce112d1f2ce",
+    "pal-no-derive": "5a4a7dbe235d1a2bbd30654d1e337fe59eaeb3233d1ffd2daaa7a23d689b8a71",
+    "pal-denied": "1d4a876d6e17ef12e0b3a8c1cbe6a2b666d282ad857db2f2f85752ac6b803710",
+    "copy-n6": "ccba2f29f2c5492ae4d5bc4c503054e8ce3aed05317d3e3c3da81fc01b18fb13",
+    "copy-n8": "93f65b2836e89e79e969f04f8ed88e58f64bcf0a1de23cc7e5eab4c9737278bd",
+    "copy-seed42": "a0c9cd015a86833d67a0aa177e2aef29187804630eae0ade9644f03d414f0725",
+    "copy-no-derive": "479b08b7c2e823fa7364abab22378d40206719f544342b3f21c0e92e2497de74",
+    "copy-denied": "898466fc43174a5f92cb435bae608b3eae8dc161cf87861114f416faa8176b71",
+    "parent-operator-REVERSE": "ee8e88eca6e0c1534ea9022d3d83ba1c7807ecd97e9169af2d4bc119085e265c",
+    "parent-operator-SPLIT": "fb4b937e53361fec7b142b70b545e40aa2a4df3cf5c8ec6df161c39732d7c26a",
+    "parent-primitive-literal_word_equality": "db4e52549225d1cc08c7580d58715e20076c99457a460a0462b20e3e4d1a7a8f",
+    "source-supplied": "1942b9fdd9013d68dbd53511972ec43af71960c855e4c093267596b01ed09cdb"
+  },
+  "scores": {
+    "pal-n6": {
+      "TP": 8,
+      "TN": 56,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0,
+      "total": 64,
+      "accuracy": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "coverage": 1.0,
+      "majority_accuracy": 0.875
+    },
+    "pal-n8": {
+      "TP": 16,
+      "TN": 240,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0,
+      "total": 256,
+      "accuracy": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "coverage": 1.0,
+      "majority_accuracy": 0.9375
+    },
+    "pal-seed42": {
+      "TP": 8,
+      "TN": 56,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0,
+      "total": 64,
+      "accuracy": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "coverage": 1.0,
+      "majority_accuracy": 0.875
+    },
+    "pal-no-derive": {
+      "TP": 0,
+      "TN": 56,
+      "FP": 0,
+      "FN": 8,
+      "UNKNOWN": 0,
+      "total": 64,
+      "accuracy": 0.875,
+      "sensitivity": 0.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 0.5,
+      "coverage": 1.0,
+      "majority_accuracy": 0.875
+    },
+    "pal-denied": {
+      "TP": 0,
+      "TN": 56,
+      "FP": 0,
+      "FN": 8,
+      "UNKNOWN": 0,
+      "total": 64,
+      "accuracy": 0.875,
+      "sensitivity": 0.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 0.5,
+      "coverage": 1.0,
+      "majority_accuracy": 0.875
+    },
+    "copy-n6": {
+      "TP": 8,
+      "TN": 56,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0,
+      "total": 64,
+      "accuracy": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "coverage": 1.0,
+      "majority_accuracy": 0.875
+    },
+    "copy-n8": {
+      "TP": 16,
+      "TN": 240,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0,
+      "total": 256,
+      "accuracy": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "coverage": 1.0,
+      "majority_accuracy": 0.9375
+    },
+    "copy-seed42": {
+      "TP": 8,
+      "TN": 56,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0,
+      "total": 64,
+      "accuracy": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "coverage": 1.0,
+      "majority_accuracy": 0.875
+    },
+    "copy-no-derive": {
+      "TP": 0,
+      "TN": 56,
+      "FP": 0,
+      "FN": 8,
+      "UNKNOWN": 0,
+      "total": 64,
+      "accuracy": 0.875,
+      "sensitivity": 0.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 0.5,
+      "coverage": 1.0,
+      "majority_accuracy": 0.875
+    },
+    "copy-denied": {
+      "TP": 0,
+      "TN": 56,
+      "FP": 0,
+      "FN": 8,
+      "UNKNOWN": 0,
+      "total": 64,
+      "accuracy": 0.875,
+      "sensitivity": 0.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 0.5,
+      "coverage": 1.0,
+      "majority_accuracy": 0.875
+    }
+  }
+}

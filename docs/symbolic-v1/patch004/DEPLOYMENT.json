@@ -1,0 +1,17 @@
+{
+  "status": "ACCEPTED_HTTPS_OAUTH_MCP",
+  "release": "v0.4.6-developer-preview",
+  "deployment_id": "recursive004-20261106T060730Z",
+  "release_manifest_sha256": "c4e5cd04b2cf688e08cedeecc260576b8277bc020de6b29d83b5d3c1a1466ea3",
+  "url": "https://fares-september-rebel-board.trycloudflare.com/mcp",
+  "HTTP_only_restarted": true,
+  "tunnel_pid_unchanged": true,
+  "tunnel_pid": 1801300,
+  "backup_integrity": "4/4 ok",
+  "existing_workspace_files": 35601,
+  "new_QA_projects_only": [],
+  "R3": "PENDING",
+  "execution_permission": false,
+  "checks": 910,
+  "integrity": "PASS"
+}

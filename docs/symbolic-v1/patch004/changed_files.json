@@ -1,0 +1,24 @@
+{
+  "code_and_QA_files": [
+    "pyproject.toml",
+    "src/lm_suti_assurance/__init__.py",
+    "src/lm_suti_assurance/observer_synthesis/composition_ast.py",
+    "src/lm_suti_assurance/observer_synthesis/composition_checker.py",
+    "src/lm_suti_assurance/observer_synthesis/compositional.py",
+    "src/lm_suti_assurance/observer_synthesis/contracts.py",
+    "src/lm_suti_assurance/observer_synthesis/features.py",
+    "src/lm_suti_assurance/observer_synthesis/independent_verifier.py",
+    "src/lm_suti_assurance/observer_synthesis/learner.py",
+    "src/lm_suti_assurance/observer_synthesis/source_bridge.py",
+    "src/lm_suti_assurance/symbolic_complex/app.py",
+    "src/lm_suti_assurance/symbolic_complex/mcp.py",
+    "src/lm_suti_assurance/symbolic_complex/service.py",
+    "tests/fixtures/composition_source_request.json",
+    "tests/test_compositional_promotion.py",
+    "tools/recursive_observer_experiment.py",
+    "tools/recursive_observer_mcp_qa.py",
+    "tools/release_v01_entry.py"
+  ],
+  "documentation_root": "docs/symbolic-v1/patch004",
+  "archive": "docs/LIVINGMATH_RECURSIVE_OBSERVER_PATCH004_20261106.zip"
+}

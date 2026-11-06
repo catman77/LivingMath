@@ -11,3 +11,16 @@ Automated clean-room and HTTPS/OAuth acceptance cannot substitute two external t
 White Star coordinates and axes are explicit encoding assumptions. The supplied unchanged algorithm explores only k candidates per step, preserves all aliases and excludes zero-direction readings; numerical novelty is not literary value. The comparison's `suti` engine identifies the actual frozen-input Bridge/assurance facade, not a native SUTI runtime or the entire legacy DAV pipeline. It checks declared annotation bytes and presents the first K declared concepts for the caller's interpretation. All common concepts/relations remain in the decoder packet; alternative frame selection is a separate declared projection choice.
 
 The three rational model families check concrete1..8 dimensional instances (cyclic_order2x2 only). A good matrix does not certify the literary mapping, a general theorem or a physical model. Historical interruption/limit receipts are retained; replay regenerates completed computations, not elapsed historical failures. Run input/protocol and actual summary expose requested/effective budgets; no silent budget reduction is performed. Caller model provenance and evaluation are declarations, not provider-signed or independent human certification.
+
+
+## PATCH004 bounded compositions
+
+The opt-in compositional route evaluates four closed AST shapes, not arbitrary
+programs or a universal grammar. Its preview scope is at most8 tokens,32 AST
+nodes, depth8,8 decreasing recursive steps and256 training witnesses. Outside
+scope returns UNKNOWN, not a negative prediction. Canonical training compatibility
+and structural tie-break do not prove a unique grammar. PAL/COPY finite tests pass;
+short Dyck has no admissible new composition and the subsequent literary stage is
+not run under the supplied roadmap stop criterion. General semantic transfer and
+independent R3 acceptance remain unconfirmed. A legacy grammar source is matched
+by literal train labels, not by an invented identity of different source editions.

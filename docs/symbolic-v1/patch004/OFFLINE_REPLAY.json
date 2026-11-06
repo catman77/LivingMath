@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "network_namespace": "unshare -Urn",
+  "results": {
+    "pal-operator": {
+      "engine": "observer_synthesis_v1",
+      "execution_permission": false,
+      "independent_checks": {
+        "LLM_calls": 0,
+        "execution_permission": false,
+        "holdout_labels_read": false,
+        "hypothesis_frozen_before_queries": true
+      },
+      "journal_hash_chain": "PASS",
+      "kernel_binding": "2a84ffeb20db666e46fe6cb423bef39a19622f448c74cefe599ade5d7699d5d2",
+      "result_digest": "e2d9eebc3d482e25a02dc5e6b5f774eb1b059ae3a30f7ac3d877e093196d7336",
+      "run_id": "81c0b2beaf0fdc3d3ff96c77882eeb8bad73f58465ae89d37afa9ea708ba7f91",
+      "status": "REPLAY_MATCH"
+    },
+    "copy-operator": {
+      "engine": "observer_synthesis_v1",
+      "execution_permission": false,
+      "independent_checks": {
+        "LLM_calls": 0,
+        "execution_permission": false,
+        "holdout_labels_read": false,
+        "hypothesis_frozen_before_queries": true
+      },
+      "journal_hash_chain": "PASS",
+      "kernel_binding": "2a84ffeb20db666e46fe6cb423bef39a19622f448c74cefe599ade5d7699d5d2",
+      "result_digest": "3d643c0855f129d123b0164ddf98e290203d72aace9e6e587fc3769c89f79e61",
+      "run_id": "96106b23013fbd0cb69e2dc7341ff9c80df904936affb38071438999909cba00",
+      "status": "REPLAY_MATCH"
+    },
+    "sp10": {
+      "engine": "symbolic_complex_v1",
+      "execution_permission": false,
+      "independent_checks": {
+        "H1_dim": 0,
+        "boundary_squared_zero": true,
+        "components": 1,
+        "execution_permission": false,
+        "failed_obligations": [],
+        "graph_beta1": 1264,
+        "missing_peaks": 0,
+        "pi1_status": "PROVED_TRIVIAL_WITH_CERTIFICATE",
+        "rank_d1": 350,
+        "rank_d2_F2": 1264,
+        "status": "CHECKED_INSTANCE",
+        "verified_cell_count": 3360,
+        "verified_edge_count": 1614,
+        "verifier_digest": "2bdff172f1310c6431b7d133ec2fc3a0df0a9ee6b4fb80e645e696e7c60e4c93",
+        "verifier_version": "SP-finite-independent-checker/1"
+      },
+      "journal_hash_chain": "PASS",
+      "kernel_binding": "2a84ffeb20db666e46fe6cb423bef39a19622f448c74cefe599ade5d7699d5d2",
+      "result_digest": "be82d2e2097f2ec87639bb7e342d9a1de857c260e6d50ca65fb54f2986d47742",
+      "run_id": "c974e00f59fda5b1b3dbfb189642228227ea94e0eb770446116441ef54605a99",
+      "status": "REPLAY_MATCH"
+    }
+  }
+}

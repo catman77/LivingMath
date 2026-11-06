@@ -1,6 +1,6 @@
 # Установка SUTI–Bridge–LivingMath
 
-Актуальный код: **v0.4.5-developer-preview** / пакет `0.4.5.dev0`.
+Актуальный код: **v0.4.6-developer-preview** / пакет `0.4.6.dev0`.
 Исходники: [catman77/LivingMath](https://github.com/catman77/LivingMath).
 Есть три отдельных пути запуска:
 

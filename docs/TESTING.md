@@ -1,6 +1,6 @@
 # Тестирование
 
-## Актуальный пакет v0.4.5
+## Актуальный пакет v0.4.6
 
 Из корня checkout после установки `python -m pip install '.[white-star,mcp,test]'`:
 
@@ -16,14 +16,16 @@ train/query isolation, независимый observer verifier, поддель�
 идемпотентность и ablation реальных родителей. Один только `.[test,mcp]`
 не устанавливает NumPy/pandas для численных тестов.
 
-Для последнего установленного кода сохранены **337 PASS** source tests,
-те же **337 PASS** установленного wheel вне checkout и
-**1066 PASS / 20 SKIPPED** legacy. Реальная HTTPS/OAuth приёмка содержит
-**196 FIX-B2 + 206 SP/replay + 254 legacy = 656 PASS**.
-[Полные результаты и точные границы](symbolic-v1/v044-reacceptance/USER_REPORT_RU.md),
-[машиночитаемая матрица](symbolic-v1/v044-reacceptance/acceptance_matrix.json).
-Это сохранённые результаты конкретного SHA-bound кода, не утверждение о новом
-успешном GitHub Actions run.
+Для PATCH004 сохранены **366 PASS** source tests, **366 PASS** установленного
+wheel вне checkout и **1066 PASS / 20 SKIPPED** legacy, а также 16 PASS независимого
+поставленного reference. [Реальная MCP-приёмка и точные границы](symbolic-v1/patch004/USER_REPORT_RU.md),
+[машиночитаемые gates](symbolic-v1/patch004/acceptance_matrix.json).
+`tools/recursive_observer_experiment.py` исполняет 17 замороженных worker jobs
+(PAL/COPY, два seed, no-derive/deny, 256 witnesses); gold загружается внешним
+scorer после всех предсказаний. `tools/recursive_observer_mcp_qa.py` проверяет
+A01–A25/B01–B06 через SDK/OAuth; source-supplied AST отмечен отдельным локальным
+контролем evaluator, не объявляется MCP-discovery.
+GitHub Actions оценивается отдельно: локальные PASS не заменяют CI run.
 
 ## Legacy тесты
 

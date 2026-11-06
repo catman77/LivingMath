@@ -1,0 +1,41 @@
+{
+  "schema": "livingmath-compositional-promotion-research/1",
+  "date": "2026-11-06",
+  "endpoint": {
+    "version": "v0.4.5-developer-preview",
+    "deployment": "fix-b2-20261106T025708Z",
+    "project": "whitestar_dialog_test"
+  },
+  "fresh_live_runs": [
+    {
+      "case": "PAL16 observer new unique key",
+      "request_key": "RECURSIVE-PATCH004-RESEARCH-fresh-pal16-20261106",
+      "run_id": "bb66f9832dd207712845b9ec95a67f61626e46dde231b1f11caa30a7a6624679",
+      "status": "NO_VERIFIABLE_NEW_OBSERVER",
+      "candidate": "iterate_on_inner_fragment TRAIN_COMPATIBLE",
+      "failed_obligation": "NO_LABELLED_DISTINGUISHING_CONTEXT"
+    },
+    {
+      "case": "PAL16 observer with old successful source_run_id",
+      "request_key": "RECURSIVE-PATCH004-RESEARCH-fresh-with-source-20261106",
+      "run_id": "85883b39f9d74f2a111cae3067df87bbd9e931b445c854fe9b424e0904652253",
+      "source_run_id": "80457c8536c12fb4e18e302c14542ca4568e9c83cb650def98af3fb49cd92baa",
+      "status": "NO_VERIFIABLE_NEW_OBSERVER",
+      "candidate": "iterate_on_inner_fragment TRAIN_COMPATIBLE",
+      "failed_obligation": "NO_LABELLED_DISTINGUISHING_CONTEXT"
+    }
+  ],
+  "reference": {
+    "test_count": 16,
+    "test_status": "PASS",
+    "executor": "reference/typed_ast_reference.py",
+    "checker": "reference/independent_checker.py",
+    "not_integrated_into_server": true
+  },
+  "status_boundaries": {
+    "server_state": "BEFORE_PATCH",
+    "reference_state": "EXECUTABLE_LOCAL_ONLY",
+    "proof_claim": "FINITE_EXECUTION_NOT_UNIQUE_GRAMMAR"
+  },
+  "next_acceptance": "New request_key required; existing refs remain immutable historical results"
+}

@@ -1,0 +1,10 @@
+{
+  "ast_digest": "d4eb15cc1f5b69ad630dcded5a587ab9dbdc9629de2c2e6e0b9969588afce2b8",
+  "execution_permission": false,
+  "status": "CHECKED_INSTANCE",
+  "training_compatibility": true,
+  "universal_invariant": false,
+  "verified_witnesses": 20,
+  "verifier_digest": "e7ff923030724e8648b80c4203022271d9df4870708ebdc37c5b028b07b907fd",
+  "verifier_version": "bounded-composition-independent-checker/1"
+}

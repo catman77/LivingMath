@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.4.6-developer-preview — 2026-11-06
+
+- Promote four closed typed operator AST forms, including strictly decreasing inner-fragment recursion, through real SPLIT/REVERSE and full-word equality traces.
+- Generate bounded structural midpoint comparisons from training data; retain alternatives/counterexamples, freeze the model before queries and enforce feature/parent ablations.
+- Add an independent source-reconstruction checker with strict JSON types, complete witnesses, scope, primitive hashes and UTF-8 lineage validation; reject forged provenance and proof claims.
+- Resolve actual same-project Symbolic V1 source runs, bind immutable input/result/kernel/AST/train semantics, reject incompatible references, preserve historical request-key results and approved0.4.5 replay.
+- Add optional promotion_policy while retaining83 methods, all prior required fields, output schemas and annotations. Keep the literal-context default and original worker quotas.
+- Reaccept finite PAL/COPY holdouts through real OAuth MCP and external scoring; preserve negative Dyck results and stop the subsequent literary stage as prescribed. No universal grammar, mathematical verified, semantic-transfer or execution-grant claim.
+
+
 ## v0.4.5-developer-preview — 2026-11-06
 
 - Publish current server sources to catman77/LivingMath with an architecture/module map, the complete 83-tool MCP reference, and corrected installation paths and version boundaries.

@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "protected_prefixes": [
+    "src/lm_suti_assurance/_frozen/",
+    "src/lm_suti_assurance/symbolic/",
+    "src/lm_suti_assurance/white_star/",
+    "src/lm_suti_assurance/workspace.py",
+    "src/lm_suti_assurance/symbolic_complex/model.py",
+    "src/lm_suti_assurance/symbolic_complex/checker.py"
+  ],
+  "changed_tracked": [
+    "pyproject.toml",
+    "src/lm_suti_assurance/__init__.py",
+    "src/lm_suti_assurance/observer_synthesis/contracts.py",
+    "src/lm_suti_assurance/observer_synthesis/features.py",
+    "src/lm_suti_assurance/observer_synthesis/independent_verifier.py",
+    "src/lm_suti_assurance/observer_synthesis/learner.py",
+    "src/lm_suti_assurance/symbolic_complex/app.py",
+    "src/lm_suti_assurance/symbolic_complex/mcp.py",
+    "src/lm_suti_assurance/symbolic_complex/service.py",
+    "tools/release_v01_entry.py"
+  ]
+}

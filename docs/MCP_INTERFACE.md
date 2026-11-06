@@ -1,7 +1,7 @@
-# MCP-интерфейс LivingMath v0.4.5
+# MCP-интерфейс LivingMath v0.4.6
 
 Актуальная production-композиция: **83 инструмента**, версия сервера
-`v0.4.5-developer-preview`, пакет `0.4.5.dev0`. [Архитектура](../ARCHITECTURE.md),
+`v0.4.6-developer-preview`, пакет `0.4.6.dev0`. [Архитектура](../ARCHITECTURE.md),
 [установка и различия 44/83](INSTALL.md), [исходный текст и rights](USAGE.md).
 
 ## Транспорт и обнаружение
@@ -34,7 +34,7 @@ MCP `initialize`, `notifications/initialized`, затем `tools/list` и `tools
 не доказывает эффективность исследования.
 
 Полные input/output schemas, описания и annotations всех методов:
-[MCP_TOOL_SCHEMAS.json](symbolic-v1/v044-reacceptance/MCP_TOOL_SCHEMAS.json).
+[MCP_TOOL_SCHEMAS.json](symbolic-v1/patch004/MCP_TOOL_SCHEMAS.json).
 Это неизменённый ответ настоящего production `tools/list` из последней приёмки,
 не схема, восстановленная из описания. Для конкретного подключения приоритет
 имеет его текущий `tools/list`. При закешированном старом наборе обновите
@@ -293,3 +293,23 @@ Schema выше; список обязательных полей не заме�
 | `white_star_symbolic_observer_inspect` | `project`, `run_id` |
 | `white_star_symbolic_observer_verify` | `project`, `run_id`, `feature_id` |
 | `white_star_symbolic_extension_replay` | `project`, `bundle_ref` |
+
+## Композиционный observer: дополнительный вход PATCH004
+
+У `white_star_symbolic_observer_synthesize` добавлен только необязательный
+`request.promotion_policy`; число инструментов осталось 83, прежние required
+поля, output schemas и annotations сохранены. [Полный пример](symbolic-v1/patch004/QUICKSTART_RU.md).
+
+Режим по умолчанию — `literal_context_only`. Для нового пути используйте
+`compositional_ast` и `candidate_sources=["derivation_trace","source_run_id"]`.
+`source_run_id` обозначает настоящий завершённый Symbolic V1 run этого же
+проекта с совместимыми literal train labels и kernel binding. Новый запрос
+с source без явного композиционного opt-in получает
+`SOURCE_CANDIDATE_ROUTE_NOT_ENABLED`; ранее сохранённый идентичный request key
+возвращает старую запись. Чужая ссылка получает `NOT_FOUND`, несовместимый train
+отклоняется. Source-ссылка не является вручную поставленным AST или разрешением.
+
+`white_star_symbolic_observer_verify` повторяет source-bound primitive traces;
+`CHECKED_INSTANCE` — результат конечной проверки. Подделка JSON-типов, origin,
+spans, хешей, witnesses и универсальных притязаний отклоняется.
+Экспорт/replay остаётся через существующие inspect/extension_replay методы.

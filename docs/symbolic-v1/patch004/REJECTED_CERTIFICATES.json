@@ -1,0 +1,70 @@
+{
+  "output_hash": {
+    "execution_permission": false,
+    "field_path": "/construction_trace/0/operator_trace",
+    "reason": "STEP_REEXECUTION_MISMATCH",
+    "status": "REJECTED",
+    "verifier_version": "bounded-composition-independent-checker/1"
+  },
+  "position": {
+    "execution_permission": false,
+    "field_path": "/construction_trace/0/operator_trace",
+    "reason": "STEP_REEXECUTION_MISMATCH",
+    "status": "REJECTED",
+    "verifier_version": "bounded-composition-independent-checker/1"
+  },
+  "missing": {
+    "execution_permission": false,
+    "field_path": "/construction_trace",
+    "reason": "MISSING_TRAIN_WITNESS",
+    "status": "REJECTED",
+    "verifier_version": "bounded-composition-independent-checker/1"
+  },
+  "operator": {
+    "execution_permission": false,
+    "field_path": "/construction_trace/0/operator_trace",
+    "reason": "STEP_REEXECUTION_MISMATCH",
+    "status": "REJECTED",
+    "verifier_version": "bounded-composition-independent-checker/1"
+  },
+  "origin": {
+    "status": "REJECTED",
+    "field_path": "/origin",
+    "reason": "Registered origin cannot be changed",
+    "execution_permission": false
+  },
+  "universal": {
+    "execution_permission": false,
+    "field_path": "/construction_trace/0/operator_trace",
+    "reason": "WITNESS_FIELDS",
+    "status": "REJECTED",
+    "verifier_version": "bounded-composition-independent-checker/1"
+  },
+  "position_bool": {
+    "execution_permission": false,
+    "field_path": "/construction_trace/0/operator_trace",
+    "reason": "STEP_REEXECUTION_MISMATCH",
+    "status": "REJECTED",
+    "verifier_version": "bounded-composition-independent-checker/1"
+  },
+  "readout_integer": {
+    "execution_permission": false,
+    "field_path": "/construction_trace/0/operator_trace",
+    "reason": "STEP_REEXECUTION_MISMATCH",
+    "status": "REJECTED",
+    "verifier_version": "bounded-composition-independent-checker/1"
+  },
+  "outer_digest": {
+    "execution_permission": false,
+    "field_path": "/digest",
+    "reason": "CERTIFICATE_DIGEST_MISMATCH",
+    "status": "REJECTED",
+    "verifier_version": "bounded-composition-independent-checker/1"
+  },
+  "provenance": {
+    "status": "REJECTED",
+    "field_path": "/candidate_provenance",
+    "reason": "Registered composition binding cannot be changed",
+    "execution_permission": false
+  }
+}

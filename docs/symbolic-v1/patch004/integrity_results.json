@@ -1,0 +1,911 @@
+{
+  "status": "PASS",
+  "stores": {
+    "canonical": {
+      "original_path_inode": true,
+      "tables": {
+        "backup-before:policies": {
+          "original_rows": 6,
+          "current_rows": 6,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:events": {
+          "original_rows": 2058,
+          "current_rows": 2058,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:policy_requests": {
+          "original_rows": 0,
+          "current_rows": 0,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:reviews": {
+          "original_rows": 0,
+          "current_rows": 0,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:operations": {
+          "original_rows": 4817,
+          "current_rows": 4817,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:request_keys": {
+          "original_rows": 2058,
+          "current_rows": 2058,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:event_fingerprints": {
+          "original_rows": 2058,
+          "current_rows": 2058,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:research_obligations": {
+          "original_rows": 769,
+          "current_rows": 769,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:research_obligation_versions": {
+          "original_rows": 1156,
+          "current_rows": 1156,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:research_moves": {
+          "original_rows": 184,
+          "current_rows": 184,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:transformation_contracts": {
+          "original_rows": 1,
+          "current_rows": 1,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:frontier_constraints": {
+          "original_rows": 207,
+          "current_rows": 207,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:frontier_imports": {
+          "original_rows": 197,
+          "current_rows": 197,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:research_move_bindings": {
+          "original_rows": 184,
+          "current_rows": 184,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:research_move_keys": {
+          "original_rows": 184,
+          "current_rows": 184,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:research_move_request_keys": {
+          "original_rows": 725,
+          "current_rows": 725,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:research_move_audits": {
+          "original_rows": 383,
+          "current_rows": 383,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:research_move_status_history": {
+          "original_rows": 983,
+          "current_rows": 983,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:adverse_evidence_reviews": {
+          "original_rows": 32,
+          "current_rows": 32,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:policies": {
+          "original_rows": 6,
+          "current_rows": 6,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:events": {
+          "original_rows": 2058,
+          "current_rows": 2058,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:policy_requests": {
+          "original_rows": 0,
+          "current_rows": 0,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:reviews": {
+          "original_rows": 0,
+          "current_rows": 0,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:operations": {
+          "original_rows": 4817,
+          "current_rows": 4817,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:request_keys": {
+          "original_rows": 2058,
+          "current_rows": 2058,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:event_fingerprints": {
+          "original_rows": 2058,
+          "current_rows": 2058,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:research_obligations": {
+          "original_rows": 769,
+          "current_rows": 769,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:research_obligation_versions": {
+          "original_rows": 1156,
+          "current_rows": 1156,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:research_moves": {
+          "original_rows": 184,
+          "current_rows": 184,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:transformation_contracts": {
+          "original_rows": 1,
+          "current_rows": 1,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:frontier_constraints": {
+          "original_rows": 207,
+          "current_rows": 207,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:frontier_imports": {
+          "original_rows": 197,
+          "current_rows": 197,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:research_move_bindings": {
+          "original_rows": 184,
+          "current_rows": 184,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:research_move_keys": {
+          "original_rows": 184,
+          "current_rows": 184,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:research_move_request_keys": {
+          "original_rows": 725,
+          "current_rows": 725,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:research_move_audits": {
+          "original_rows": 383,
+          "current_rows": 383,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:research_move_status_history": {
+          "original_rows": 983,
+          "current_rows": 983,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:adverse_evidence_reviews": {
+          "original_rows": 32,
+          "current_rows": 32,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        }
+      },
+      "integrity": true
+    },
+    "typed": {
+      "original_path_inode": true,
+      "tables": {
+        "backup-before:policies": {
+          "original_rows": 6,
+          "current_rows": 6,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:events": {
+          "original_rows": 2072,
+          "current_rows": 2072,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:policy_requests": {
+          "original_rows": 0,
+          "current_rows": 0,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:reviews": {
+          "original_rows": 0,
+          "current_rows": 0,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:operations": {
+          "original_rows": 4863,
+          "current_rows": 4863,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:request_keys": {
+          "original_rows": 2072,
+          "current_rows": 2072,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:event_fingerprints": {
+          "original_rows": 2072,
+          "current_rows": 2072,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:research_obligations": {
+          "original_rows": 770,
+          "current_rows": 770,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:research_obligation_versions": {
+          "original_rows": 1158,
+          "current_rows": 1158,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:research_moves": {
+          "original_rows": 186,
+          "current_rows": 186,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:transformation_contracts": {
+          "original_rows": 1,
+          "current_rows": 1,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:frontier_constraints": {
+          "original_rows": 209,
+          "current_rows": 209,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:frontier_imports": {
+          "original_rows": 199,
+          "current_rows": 199,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:research_move_bindings": {
+          "original_rows": 186,
+          "current_rows": 186,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:research_move_keys": {
+          "original_rows": 186,
+          "current_rows": 186,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:research_move_request_keys": {
+          "original_rows": 729,
+          "current_rows": 729,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:research_move_audits": {
+          "original_rows": 387,
+          "current_rows": 387,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:research_move_status_history": {
+          "original_rows": 993,
+          "current_rows": 993,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:adverse_evidence_reviews": {
+          "original_rows": 32,
+          "current_rows": 32,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:typed011_configuration": {
+          "original_rows": 1,
+          "current_rows": 1,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:typed011_scopes": {
+          "original_rows": 2,
+          "current_rows": 2,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:typed011_precommits": {
+          "original_rows": 2,
+          "current_rows": 2,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:typed011_moves": {
+          "original_rows": 2,
+          "current_rows": 2,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:typed011_activations": {
+          "original_rows": 2,
+          "current_rows": 2,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:typed011_executions": {
+          "original_rows": 2,
+          "current_rows": 2,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:typed011_receipts": {
+          "original_rows": 2,
+          "current_rows": 2,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:typed011_journal": {
+          "original_rows": 2,
+          "current_rows": 2,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:engine017_sources": {
+          "original_rows": 1,
+          "current_rows": 1,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:engine017_requests": {
+          "original_rows": 1,
+          "current_rows": 1,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:engine017_projections": {
+          "original_rows": 1,
+          "current_rows": 1,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:deploy018_leases": {
+          "original_rows": 1,
+          "current_rows": 1,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:deploy018_attempts": {
+          "original_rows": 1,
+          "current_rows": 1,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:deploy018_attestations": {
+          "original_rows": 1,
+          "current_rows": 1,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:deploy018_consumptions": {
+          "original_rows": 1,
+          "current_rows": 1,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-before:deploy018_revocations": {
+          "original_rows": 0,
+          "current_rows": 0,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:policies": {
+          "original_rows": 6,
+          "current_rows": 6,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:events": {
+          "original_rows": 2072,
+          "current_rows": 2072,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:policy_requests": {
+          "original_rows": 0,
+          "current_rows": 0,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:reviews": {
+          "original_rows": 0,
+          "current_rows": 0,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:operations": {
+          "original_rows": 4863,
+          "current_rows": 4863,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:request_keys": {
+          "original_rows": 2072,
+          "current_rows": 2072,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:event_fingerprints": {
+          "original_rows": 2072,
+          "current_rows": 2072,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:research_obligations": {
+          "original_rows": 770,
+          "current_rows": 770,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:research_obligation_versions": {
+          "original_rows": 1158,
+          "current_rows": 1158,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:research_moves": {
+          "original_rows": 186,
+          "current_rows": 186,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:transformation_contracts": {
+          "original_rows": 1,
+          "current_rows": 1,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:frontier_constraints": {
+          "original_rows": 209,
+          "current_rows": 209,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:frontier_imports": {
+          "original_rows": 199,
+          "current_rows": 199,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:research_move_bindings": {
+          "original_rows": 186,
+          "current_rows": 186,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:research_move_keys": {
+          "original_rows": 186,
+          "current_rows": 186,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:research_move_request_keys": {
+          "original_rows": 729,
+          "current_rows": 729,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:research_move_audits": {
+          "original_rows": 387,
+          "current_rows": 387,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:research_move_status_history": {
+          "original_rows": 993,
+          "current_rows": 993,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:adverse_evidence_reviews": {
+          "original_rows": 32,
+          "current_rows": 32,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:typed011_configuration": {
+          "original_rows": 1,
+          "current_rows": 1,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:typed011_scopes": {
+          "original_rows": 2,
+          "current_rows": 2,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:typed011_precommits": {
+          "original_rows": 2,
+          "current_rows": 2,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:typed011_moves": {
+          "original_rows": 2,
+          "current_rows": 2,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:typed011_activations": {
+          "original_rows": 2,
+          "current_rows": 2,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:typed011_executions": {
+          "original_rows": 2,
+          "current_rows": 2,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:typed011_receipts": {
+          "original_rows": 2,
+          "current_rows": 2,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:typed011_journal": {
+          "original_rows": 2,
+          "current_rows": 2,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:engine017_sources": {
+          "original_rows": 1,
+          "current_rows": 1,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:engine017_requests": {
+          "original_rows": 1,
+          "current_rows": 1,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:engine017_projections": {
+          "original_rows": 1,
+          "current_rows": 1,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:deploy018_leases": {
+          "original_rows": 1,
+          "current_rows": 1,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:deploy018_attempts": {
+          "original_rows": 1,
+          "current_rows": 1,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:deploy018_attestations": {
+          "original_rows": 1,
+          "current_rows": 1,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:deploy018_consumptions": {
+          "original_rows": 1,
+          "current_rows": 1,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:deploy018_revocations": {
+          "original_rows": 0,
+          "current_rows": 0,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        }
+      },
+      "integrity": true
+    },
+    "oauth": {
+      "original_path_inode": true,
+      "tables": {},
+      "integrity": true,
+      "row_preservation": "EXPIRING_AUTH_ONLY; normal token/session changes; backups retained"
+    },
+    "dav": {
+      "original_path_inode": true,
+      "tables": {
+        "backup-before:dav_records": {
+          "original_rows": 4615,
+          "current_rows": 4615,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        },
+        "backup-cutover:dav_records": {
+          "original_rows": 4615,
+          "current_rows": 4615,
+          "missing_or_modified_original_rows": 0,
+          "identical": true
+        }
+      },
+      "integrity": true
+    }
+  },
+  "workspace_snapshots": {
+    "backup-before": {
+      "original_files": 26876,
+      "byte_identical": 26875,
+      "valid_append_only_extensions": [
+        {
+          "file": "whitestar_dialog_test/journal.jsonl",
+          "original_bytes": 994452,
+          "current_bytes": 997958,
+          "original_prefix_preserved": true
+        }
+      ],
+      "all_original_bytes_preserved": true
+    },
+    "backup-cutover": {
+      "original_files": 35601,
+      "byte_identical": 35600,
+      "valid_append_only_extensions": [
+        {
+          "file": "whitestar_dialog_test/journal.jsonl",
+          "original_bytes": 994452,
+          "current_bytes": 997958,
+          "original_prefix_preserved": true
+        }
+      ],
+      "all_original_bytes_preserved": true
+    }
+  },
+  "journals": {
+    "58720d4305fbc178543188e2e80a139515afa4702d048f86471b32820735c0cc": {
+      "entries": 9,
+      "head": "0ce568f872de54c94d944332b3cc916758cae58822f872186183352791140f59"
+    },
+    "9b4721e29b9cb4dbabd05ab1308c724d6809efa764377181d4c75418f0b62232": {
+      "entries": 3,
+      "head": "da485933118d509bc429e5d1b1ac075868d459caabdb7d75f8ca5e147a1e33c7"
+    },
+    "b51bf3d0b81d30a0bccc5c02534076954ecccf6fa275f3321778b3f1f88440a7": {
+      "entries": 15,
+      "head": "b754015c324022a5436d4675443b8b3c0e8d5537476be974052052f115465e2f"
+    },
+    "b667093ff61ca1566eaae8f5c7efb1b39bc47053ebf26b47d055c1cc1a5a9f91": {
+      "entries": 44,
+      "head": "62c03b90574e63dc45b10d923cf57d4400aad94b1e7f158b4ed4e8f6f40b98d2"
+    },
+    "408f8d7f8c19c7ab54b4cc5a29fa2354860b11974a227611fef6589885d9394e": {
+      "entries": 49,
+      "head": "1bbd76c0d5a8519c350bc03b35eca8c46754402254fa3687b1d475c59cdcea22"
+    },
+    "09081311dd5a4dd016086064d922bc7845be7763c697bb42a8d0775bcd1c8594": {
+      "entries": 1,
+      "head": "b758eec081e9149c6284ac2a7fb0dd80ea372d68fe8fc63ff190cf445986fa55"
+    },
+    "527b8a648ee9a715286c19ea170bf787f7ce88718e9532a67f476241806a5052": {
+      "entries": 13,
+      "head": "6ff9c84377003d2b19e5241f0483967d16c0a27c25e5cad43a829a2e5a45964d"
+    },
+    "104afdb1849a39d92f30a9d11fcea94cf5a13ec1d8880f1f4d2a4796869926ee": {
+      "entries": 1,
+      "head": "1eb951090b2f5df9d37389446de8717d2f7e5d7bce267c44ee12f4c9b5d67aba"
+    },
+    "567c3101973f04c0d5895a9723f0647741161e222333dc8f563e4de49924c217": {
+      "entries": 41,
+      "head": "062074a54d209f091bbbd6f91f1567479ec347c8d562059fe946e35c8bca5751"
+    },
+    "a79952c4439bf73fd7646bd1e29de84470c85901d03727fdad2e5bc0980df337": {
+      "entries": 59,
+      "head": "2248191d483fd1fdb8bb2996e06f52d282726e55b0fd8b98707ddc24b4bb8c72"
+    },
+    "e33acdda59afac908c9f414b5b7df972e58f086bf98b77a360d7921fc960af21": {
+      "entries": 59,
+      "head": "897851390322e4eadd395c918336c1aa257b56387ebe21f1bdc72dee3ada40db"
+    },
+    "29f1d55e31bce66e256d632fd584b792c3d718445752c09d5286871b84ae44c3": {
+      "entries": 59,
+      "head": "1c614f810b948a59f873fe9f0e17bbe3f02f84ec2b07c4b6e8fd29515f37944b"
+    },
+    "23f0cf85f29cb044d01ac458561ae9dec020437c9a6d79702f6ab55b1eb3031e": {
+      "entries": 59,
+      "head": "9d34ce533435762dd3cf091c981e8ff726cb948b42d6b48c30418f1d67527de0"
+    },
+    "2ee9e10ed90431b301d3171398e6a12512239b8f01299175f4bd52a9c5689e72": {
+      "entries": 59,
+      "head": "fcd956b446769fafd58b0784a7428e8a93dd8cfd6dc49f7716956da3ffb705bb"
+    },
+    "ea80c1471cc06a77ea536ca683b68d8a18838d6d5808a8e6518159e5c113dbd3": {
+      "entries": 59,
+      "head": "2959a574387a37f26a27b8db9ced94b54b8dcc2474ae48b7d879f11e032c5095"
+    },
+    "0cf07d3be05e54fe7feee49466c159522fa4d14086bbf552cd7b09d7c7159df1": {
+      "entries": 33,
+      "head": "a9402b9ef2bd023cfe8a940eee52e5ab087f39488843dd3c74f57877de249a72"
+    },
+    "99d35c0b086efcb6df86e057ae8e20f36db72850bde8c407a5901705fbd04ac2": {
+      "entries": 1,
+      "head": "f6c83d8ddd29a026a61227e3ff6507f09de7936e81ebcfd30b66139ab93554f4"
+    },
+    "b95517438b200141e27dd705c29d255b3045c4cd1f675537448403c98c9382a8": {
+      "entries": 120,
+      "head": "50d3cb49cf4865a651903807cf064953f3154cfb76e0aa7292ed70ab7135638c"
+    },
+    "438c14287f79f76eeddecbed48d523a2c2e7356aa1a4b272ce077784246a65f4": {
+      "entries": 1,
+      "head": "1145ca62876ef4010f1328eca3b0544c16a9062633f587c10e07bd590f48968d"
+    },
+    "d7f5da59fd42db41009b871b14717ee1811d54a0768a81d30bfbd8625e6ef108": {
+      "entries": 120,
+      "head": "1aa4c8beb52ebea7cb92ae78715efc24c24ff6b2191e6ef3553f7c0f87e260c0"
+    },
+    "40ecc3650e7ca0a7ebcde8108aa019124bb6b1a0e401d7aa81aa0625e530e098": {
+      "entries": 1,
+      "head": "0d63352e00b48aeedddf9eb0861af0d524d22d32be1e5f40f9205c9e40550ddb"
+    },
+    "635710032783cd9bfcaa4ed261acaada1fc6f4fb2051a5596ba5f6b284a3776f": {
+      "entries": 93,
+      "head": "0dc4da2fe26ee23b5e411c6c21ede2615a0467ab926333e59c8d0cc4c51aa93d"
+    },
+    "762e8f7d9f4faa92acf1882cec3bbfe9880961d64d9c052168712fcaebc46a0c": {
+      "entries": 5,
+      "head": "604bf250afba3150e1d17c4df712fdc002713c669a84d7a70bc9f21c2ec5f4f6"
+    },
+    "581c6c48a092cfe168453fce52e6edde2fe417f7db2fc3075f50f6fcdf91df24": {
+      "entries": 3,
+      "head": "1691e0b902762c36705b94c9a67719a193816f2fbafbbac64bb0456a3955729c"
+    },
+    "14dcd757f9c7bd81e8a30a13d2b927a61921213cf843a07afcb1ad2d0a448892": {
+      "entries": 19,
+      "head": "696004127d8cf68332652716855e0669847bd67e5347c1996b811b54d83d2f6a"
+    },
+    "439d915b18f25505679ee85dc52fa70cb70913af9a93e3b4ce701102a52fe8b2": {
+      "entries": 1,
+      "head": "8b45e261681a5f37bdca5b12f5b9943319cf1a732386e160d848e88a0d334b6e"
+    },
+    "bd21b6e4a8a0620fb130b4f01a03693fccaaab9e7f21c5f041edfe5777ecbac7": {
+      "entries": 73,
+      "head": "4ccb12aba2c555c81fb8d0dbab88961516780db023a615d95d9b10adc7a80325"
+    },
+    "07ac183bf7e0e4f1cc6c6f8c428fd1f293c0aad26cd341b25dd55cf00a14aa40": {
+      "entries": 9,
+      "head": "cc4276d8153b95fa46f6c31d93dca274d4d02408d39946ae7f661c70ad51b3f7"
+    },
+    "9d7141c8d902e22504fb037ad922ee42e4844a6b4f2b4e2bc4f482d40304cbb4": {
+      "entries": 28,
+      "head": "36ff7c89db1d46addfdbd00c9eb3253d7942540e43640fd93899761e6cf4cf52"
+    },
+    "0acce76594c9cdc84a78226ee3747392dae88447fc8c16c0055f876f75c6eada": {
+      "entries": 4,
+      "head": "7154c00a30730dc71bbbf3de825df0b45df571ea834fe424c3436b3a197e63ec"
+    },
+    "61d031575e34ca16d6ad8bf786272b97a3e64f9aa48ec65bb9659bc662d6ea35": {
+      "entries": 27,
+      "head": "4084a50135ce0eea06e45bec0954dc3d2c238abc64e232b51ef5b3536adee7e3"
+    },
+    "85b6f7a17b5995dc69898ef5e8731baab0935fc8c61807c346e007e4b7c18ddc": {
+      "entries": 1,
+      "head": "62639a3448fd67e8bd1b78b6e7621d33e983bb058e2d88d1055435ca7fd05d6d"
+    },
+    "8dd47172b231e05bda25da25ebbb5b29306b640c5ec799a412d320e68594c903": {
+      "entries": 27,
+      "head": "f626d307635e7c66e4e24723cd5dba505885a3b05de2f428620b726f016174cb"
+    },
+    "3087714b81c144d398c11b9547179fc33b0349dfe7c84adf21c57bc1b37eb171": {
+      "entries": 1,
+      "head": "7b9978c945289c8c8a2eba7d18203d25dbd32a34429f7c7a6e2e664787000aec"
+    },
+    "ded3c41eaaf3fbd06cbb14308df36b844a8fd658f247adb93d03cdfe5c53451e": {
+      "entries": 1003,
+      "head": "e1eca803f5d553a88b8ef70b548aeb775efb462c60edeea2e1548361576d1ac1"
+    },
+    "c6ede5d05fad44ce85677b59a926cacffc9f7aa487749c47431791da51d47be4": {
+      "entries": 229,
+      "head": "ff8859b6ffb2d0fb15a2e714fadaf64e21ec12413f5a175c655307a6f6ec69d2"
+    },
+    "239ab04d2e58922f742608b0ed54fa240aad7b719961cdf5966a42eac6cab7e7": {
+      "entries": 2,
+      "head": "403fb1cf31e027dcaf7cd28583aef650e916957b585d1f7fb20a101b2b4f19e6"
+    },
+    "70fb484f0419db752dae8d741e0c24b7ed9b6548b4b7a50e55ce78bdff173b51": {
+      "entries": 3,
+      "head": "a4198b72fae8e0827355d3339d8936a8a10d96339a96889c66b835308949a979"
+    },
+    "a34f03b4f036a5375b9e2080bb666f822ac67aad42b60fd1ca3d8e09b4d98907": {
+      "entries": 448,
+      "head": "5517f799fe759b5fa1b005f043a7e38621b3e4a383a465c8e93ddfee791a195c"
+    }
+  },
+  "QA": {
+    "project": "qa-recursive004-prod",
+    "all_runs_terminated": true,
+    "unique_start_finish": true,
+    "runs": 35,
+    "checks": 910,
+    "active_execution_permissions": false,
+    "all31_gates_PASS": true
+  },
+  "canonical_audit": {
+    "before": {
+      "ok": true,
+      "entries": 4817,
+      "last_hash": "c9c0048be5cc2e782cb2f2377da524e5ad04303d86b65792ef1d503b8c1c3d50"
+    },
+    "after": {
+      "ok": true,
+      "entries": 4817,
+      "last_hash": "c9c0048be5cc2e782cb2f2377da524e5ad04303d86b65792ef1d503b8c1c3d50"
+    },
+    "unchanged": true
+  },
+  "all19_original_runs_identical": true,
+  "vendor_originals": 75,
+  "runtime_manifest": {
+    "files": 201,
+    "sha256": "c4e5cd04b2cf688e08cedeecc260576b8277bc020de6b29d83b5d3c1a1466ea3",
+    "all_match": true
+  },
+  "endpoint": {
+    "url": "https://fares-september-rebel-board.trycloudflare.com/mcp",
+    "tunnel_pid": 1801300,
+    "unchanged": true
+  },
+  "offline_vs_public_primary_scores_identical": true,
+  "journal_project_names": "SHA256 pseudonyms; all project histories checked"
+}
