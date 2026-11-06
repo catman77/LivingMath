@@ -128,7 +128,7 @@ def admitted(feature, policy):
         or (
             "derived:*" in allow
             and feature["origin"] == "DERIVED_FROM_OPERATORS"
-            and not computational_parents
+            and all(p.startswith("derived_") for p in computational_parents)
         )
     )
     return (
@@ -154,9 +154,21 @@ def vector(encoded, alphabet, policy, features):
         values["line_" + str(i) + "_terminal_codepoint"] = (
             ord(line[-1][-1]) if line else 0
         )
+    ids = {f["feature_id"] for f in features}
+    for feature in features:
+        for parent in feature.get("parent_feature_refs", []):
+            if parent.startswith("derived_") and parent not in ids:
+                from ..errors import AssuranceError
+
+                raise AssuranceError("MISSING_FEATURE_DEPENDENCY", "/features")
+
+    def observation(feature):
+        result = operator_value(feature["operator_ast"], encoded["tokens"])
+        return int(result) if result is not None else None
+
     return {
         f["feature_id"]: (
-            int(operator_value(f["operator_ast"], encoded["tokens"]))
+            observation(f)
             if f["origin"] == "DERIVED_FROM_OPERATORS"
             else values.get(f["feature_id"], 0)
         )
@@ -164,7 +176,7 @@ def vector(encoded, alphabet, policy, features):
     }
 
 
-def derive(samples, policy, search, budget):
+def derive(samples, policy, search, budget, contexts=None):
     if not policy.get("derive_relations", True):
         return [], []
     members = [
@@ -235,6 +247,16 @@ def derive(samples, policy, search, budget):
         feature["verifier_result"] = check
         if feature["execution_verified"]:
             out.append(feature)
+    from .promotion import promote
+
+    available = dict(search)
+    available["max_witnesses"] = max(0, search["max_witnesses"] - used)
+    available["max_proposals"] = max(0, search["max_proposals"] - len(log))
+    promoted, promotion_log = promote(
+        samples, contexts or [], policy, available, budget, admitted
+    )
+    out += promoted
+    log += promotion_log
     return out, log
 
 

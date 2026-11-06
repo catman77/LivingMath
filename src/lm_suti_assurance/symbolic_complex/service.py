@@ -499,6 +499,13 @@ class ExtensionService:
         )
         require(feature is not None, "NOT_FOUND", "/feature_id")
         if certificate is not None:
+            if certificate.get("origin") != feature["origin"]:
+                return {
+                    "status": "REJECTED",
+                    "field_path": "/origin",
+                    "reason": "Registered origin cannot be changed",
+                    "execution_permission": False,
+                }
             require(
                 certificate.get("feature_id") == feature_id,
                 "SOURCE_MISMATCH",

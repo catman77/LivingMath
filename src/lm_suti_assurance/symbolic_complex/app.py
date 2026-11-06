@@ -74,6 +74,7 @@ def execute(engine, request, resolved):
             "diagnostics": [
                 {
                     "status": model["training_status"],
+                    "promotion": model.get("promotion_statistics", {}),
                     "training_conflicts": len(model["training_conflicts"]),
                     "conditional_exclusion_applied": model[
                         "conditional_exclusion_applied"

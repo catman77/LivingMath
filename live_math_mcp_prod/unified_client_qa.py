@@ -4,6 +4,8 @@ import asyncio
 import base64
 import hashlib
 import json
+import os
+import stat
 from pathlib import Path
 import secrets
 import time
@@ -22,11 +24,21 @@ def authenticate(origin: str, password_file: Path, token_path: Path, loopback_po
     transport=LoopbackTransport(loopback_port) if loopback_port else None
     with httpx.Client(base_url=origin,transport=transport,timeout=30,follow_redirects=False) as client:
         callback='https://chatgpt.com/connector/oauth/livingmath-unified-qa'
-        r=client.post('/register',json={'client_name':'Owner unified MCP QA','redirect_uris':[callback],
-            'grant_types':['authorization_code','refresh_token'],'response_types':['code'],
-            'token_endpoint_auth_method':'client_secret_post','scope':'research'})
-        if r.status_code!=201:raise RuntimeError('QA_OAUTH_REGISTRATION_FAILED:'+str(r.status_code))
-        registration=r.json();verifier=secrets.token_urlsafe(48)
+        existing=os.environ.get('LIVINGMATH_QA_CLIENT_FILE')
+        if existing:
+            credential=Path(existing);info=credential.stat()
+            if credential.is_symlink() or info.st_uid!=os.getuid() or stat.S_IMODE(info.st_mode)&0o077:
+                raise ValueError('OWNER_ONLY_QA_CLIENT_REQUIRED')
+            registration=json.loads(credential.read_text())['client']
+            if callback not in registration['redirect_uris']:
+                raise ValueError('QA_CLIENT_CALLBACK_MISMATCH')
+        else:
+            r=client.post('/register',json={'client_name':'Owner unified MCP QA','redirect_uris':[callback],
+                'grant_types':['authorization_code','refresh_token'],'response_types':['code'],
+                'token_endpoint_auth_method':'client_secret_post','scope':'research'})
+            if r.status_code!=201:raise RuntimeError('QA_OAUTH_REGISTRATION_FAILED:'+str(r.status_code))
+            registration=r.json()
+        verifier=secrets.token_urlsafe(48)
         challenge=base64.urlsafe_b64encode(hashlib.sha256(verifier.encode()).digest()).decode().rstrip('=')
         r=client.get('/authorize',params={'client_id':registration['client_id'],'redirect_uri':callback,
             'response_type':'code','code_challenge':challenge,'code_challenge_method':'S256','scope':'research',

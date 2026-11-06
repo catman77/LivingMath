@@ -67,8 +67,13 @@ def fit(records, request):
         [r["encoded"] for r in use] or [{"tokens": [], "lines": [[]]}], policy, alphabet
     )
     features = [f for f in base if admitted(f, policy)]
+    from .contexts import observed_contexts
+
+    contexts = observed_contexts(
+        use, policy, search, budget, request["task"]["candidate_transformations"]
+    )
     derived, derivation_log = (
-        derive(use, policy, search, budget)
+        derive(use, policy, search, budget, contexts)
         if use and (not bad or conditional or empirical)
         else ([], [])
     )
@@ -163,11 +168,6 @@ def fit(records, request):
         if use
         else ["unobserved"]
     )
-    from .contexts import observed_contexts
-
-    contexts = observed_contexts(
-        use, policy, search, budget, request["task"]["candidate_transformations"]
-    )
     model = {
         "schema": "livingmath-observer-hypothesis/1",
         "status": (
@@ -176,7 +176,9 @@ def fit(records, request):
             else (
                 "UNDERDETERMINED"
                 if tree
-                else "CONTRADICTORY_TRAINING" if bad else "NO_VERIFIABLE_NEW_OBSERVER"
+                else "CONTRADICTORY_TRAINING"
+                if bad
+                else "NO_VERIFIABLE_NEW_OBSERVER"
             )
         ),
         "candidate_status": "EMPIRICAL",
@@ -201,6 +203,19 @@ def fit(records, request):
         "tree": tree,
         "candidate_trace": trace,
         "derivation_trace": derivation_log,
+        "promotion_statistics": {
+            "context_witnesses": len(contexts),
+            "executed_promotion_rules": sum(
+                bool(r.get("executed_rule")) for r in derivation_log
+            ),
+            "registered_promoted_features": sum(
+                f.get("template_origin") == "LABELLED_CONTEXT_PROMOTION"
+                for f in derived
+            ),
+            "failed_obligations": [
+                r for r in derivation_log if r.get("failed_obligation")
+            ],
+        },
         "competing_train_compatible_models": (
             []
             if bad and not conditional
@@ -254,7 +269,14 @@ def predict(model, queries, budget=None):
         require("accepted" not in record, "HELDOUT_LABEL_LEAKAGE", "/queries")
         encoded = encode(record, policy.get("representation", "literal"))
         values = vector(encoded, model["alphabet"], policy, features)
-        p = probability(model["tree"], values) if model["tree"] else None
+        out_of_scope = any(
+            values.get(name) is None for name in model["used_feature_ids"]
+        )
+        p = (
+            probability(model["tree"], values)
+            if model["tree"] and not out_of_scope
+            else None
+        )
         item = {
             "record_id": record["id"],
             "pair_id": record.get("pair_id"),
@@ -262,7 +284,11 @@ def predict(model, queries, budget=None):
             "encoding_digest": encoded["signature"],
             "feature_vector_digest": digest(values),
             "score": p,
-            "status": "PREDICTION" if p is not None else "UNDERDETERMINED",
+            "status": "PREDICTION"
+            if p is not None
+            else "UNKNOWN"
+            if out_of_scope
+            else "UNDERDETERMINED",
             "kind": "empirical",
             "hypothesis_digest": model["hypothesis_digest"],
         }
@@ -280,7 +306,9 @@ def predict(model, queries, budget=None):
             else (
                 "UNDERDETERMINED"
                 if a[1]["score"] is None or b[1]["score"] is None
-                else "TIE" if a[1]["score"] == b[1]["score"] else "PREFERENCE"
+                else "TIE"
+                if a[1]["score"] == b[1]["score"]
+                else "PREFERENCE"
             )
         )
         preferred = (

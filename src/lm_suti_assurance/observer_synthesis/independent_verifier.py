@@ -63,6 +63,13 @@ def valid_ast(ast, depth=0):
 
 
 def verify(feature, samples):
+    if isinstance(feature.get("operator_ast"), dict) and feature["operator_ast"].get(
+        "composition"
+    ) in ("observed_word_equality", "observed_context_scan"):
+        from .promotion_verifier import verify as verify_promoted
+
+        return verify_promoted(feature, samples)
+
     def rejected(path, reason):
         return {
             "status": "REJECTED",

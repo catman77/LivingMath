@@ -109,7 +109,7 @@ def capabilities(executor, replay_profiles=None):
             "execution_permission": False,
         },
         "observer_synthesis_v1": {
-            "version": "observer_synthesis_v1/1-patch003-acceptance1",
+            "version": "observer_synthesis_v1/2-context-promotion",
             "status": "READY" if ready else "ENGINE_UNAVAILABLE",
             "kernel_binding": binding(),
             "request_schema": OBSERVER_REQUEST,

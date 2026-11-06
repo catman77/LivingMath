@@ -5,6 +5,10 @@ from ..symbolic.state import Atom, SymbolicState, apply
 
 
 def evaluate(ast, state, record_ref=None, certify=False):
+    if ast.get("composition") in ("observed_word_equality", "observed_context_scan"):
+        from .promotion import execute
+
+        return execute(ast, state, record_ref, certify)
     trace = []
     states = {}
 
