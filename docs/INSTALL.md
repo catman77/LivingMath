@@ -1,8 +1,70 @@
-# v0.1 assurance CLI
-
-For the independent finite assurance package use [README_QUICKSTART_RU.md](../README_QUICKSTART_RU.md). The following installation instructions cover the retained legacy system.
-
 # Установка SUTI–Bridge–LivingMath
+
+Актуальный код: **v0.4.5-developer-preview** / пакет `0.4.5.dev0`.
+Исходники: [catman77/LivingMath](https://github.com/catman77/LivingMath).
+Есть три отдельных пути запуска:
+
+| Путь | Результат |
+|---|---|
+| Пакет `lm-suti-assurance` из корня | Текущий CLI и вычислительные модули; сам по себе не поднимает HTTP |
+| `unified_system.local` из `live_math_mcp_prod/` | Новый изолированный legacy HTTPS/OAuth стенд с 44 инструментами |
+| `tools/release_v01_entry.py --config ...` | Полная production-композиция на 83 инструмента; требует приватный установленный legacy слой и owner approvals |
+
+## Актуальный пакет и вычислительные модули
+
+```bash
+git clone https://github.com/catman77/LivingMath.git
+cd LivingMath
+python3.13 -m venv .venv
+. .venv/bin/activate
+python -m pip install '.[white-star,mcp,test]'
+lm-suti doctor --smoke
+lm-suti white-star prepare
+python -m pytest -q tests
+```
+
+`prepare` компилирует поставленное native ядро до запуска запросов. Для обычного
+assurance CLI достаточно `python -m pip install .`; White Star extras требуют
+Linux с Landlock ABI≥3 и C++17. Ручные proposals и offline replay модели не
+используют. [Пример полного CLI-цикла](../README_QUICKSTART_RU.md).
+
+## Полный установленный сервер: 83 инструмента
+
+Точка входа совпадает с production:
+
+```bash
+python tools/release_v01_entry.py --config /absolute/private/release-config.json
+```
+
+Путь в примере заменяет оператор. Конфигурация должна быть owner-only и содержать
+реальные `release_layer`, `release_manifest_sha256`, `legacy_layer`,
+`legacy_config`, `owner_authorization`, `assurance_state`, `origin`, `port`,
+`deployment_id`, `startup_record`, `release`, `release_gate` и
+`external_human_replays`. Численная White Star включается
+`"white_star":{"enabled":true}`. Опциональные `semantic_proposer`,
+`symbolic_replay_profiles` и `extension_replay_profiles` описывают только заранее
+установленные operator-пути; клиент MCP их задавать не может.
+
+Entry проверяет SHA `release_manifest.json` и каждого файла, точное разрешение
+владельца на этот release/deployment, затем сохранённую legacy-конфигурацию с её
+собственными проверками. Простая подстановка путей в неполный JSON не является
+установкой. Приватный config и approvals не входят в Git. Автоматического
+установщика полного нового production экземпляра в репозитории пока нет;
+`unified_system.local prepare` его не заменяет. Для разработчика доступны CLI,
+тесты, новый legacy стенд ниже и опубликованный контракт всех 83 методов.
+
+Сборка package wheel не включает `live_math_mcp_prod/` и `tools/`: полный сервер
+публикуется **весь checkout**, а wheel — библиотека/CLI. Перед обновлением рабочего
+экземпляра нужны backups, SHA-bound installation и live MCP acceptance. Эта
+инструкция публикации не меняет действующий сервер.
+
+[Архитектура и назначение модулей](../ARCHITECTURE.md) ·
+[Интерфейс, схемы и проверка tools/list](MCP_INTERFACE.md).
+
+## Новый legacy стенд: 44 инструмента
+
+Следующие разделы относятся к сохранённому локальному launcher. Его окружение
+отдельно от root `.venv`; Python 3.12 относится только к этому старому lock-файлу.
 
 ## Поддерживаемое окружение
 

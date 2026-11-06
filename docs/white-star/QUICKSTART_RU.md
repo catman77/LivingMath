@@ -1,6 +1,11 @@
 # White Star — проверка через MCP и CLI
 
-Production: **v0.3.0-developer-preview**, deployment `whitestar-onboarding-20261105T041833Z`,72 инструмента. Адрес прежний: `https://fares-september-rebel-board.trycloudflare.com/mcp`. Обновите подключение приложения, если ChatGPT ещё видит64 инструмента. Сам туннель при обновлении не перезапускался.
+Текущий production: **v0.4.5-developer-preview**, 83 инструмента. Версию всего
+сервера проверяйте через `bridge_system_status`; `white_star_status.release`
+сохраняет версию численного контракта v0.3. Адрес установленного сервера:
+`https://fares-september-rebel-board.trycloudflare.com/mcp`. Если список методов
+закеширован, обновите подключение по тому же адресу.
+[Архитектура](../../ARCHITECTURE.md) · [Полный MCP-интерфейс](../MCP_INTERFACE.md).
 
 ## Проверка действующего сервера
 
@@ -68,6 +73,6 @@ lm-suti --state-dir ./private-state export --project demo --audience private --o
 lm-suti replay demo.zip --offline
 ```
 
-Замените RUN_ID/COMMON_REF адресами из реального explore. Build только через prepare, затем библиотека проверяется до ready; отсутствие .so даёт ENGINE_UNAVAILABLE. Исходники всех75 файлов сохраняются побайтно. Пакет standalone CLI не требует production OAuth. QA-runner запускается из полного репозитория с существующими legacy client helpers;72-tool HTTP endpoint использует установленный release entry и owner-private config. [Запуск/обновление/откат текущего хоста](ROLLBACK.md).
+Замените RUN_ID/COMMON_REF адресами из реального explore. Build только через prepare, затем библиотека проверяется до ready; отсутствие .so даёт ENGINE_UNAVAILABLE. Исходники всех 75 vendor-файлов сохраняются побайтно. Пакет standalone CLI не требует production OAuth. QA-runner запускается из полного репозитория с существующими legacy client helpers; полный 83-tool HTTP endpoint использует установленный release entry и owner-private config. [Запуск/обновление/откат текущего хоста](ROLLBACK.md).
 
 В приватной поставке предусмотрены wheelhouse и `replay_offline.sh`. Сначала установите wheel без сети, выполните prepare с локальным C++17, затем скрипт. Реальная проверка этой поставки проведена также в kernel network namespace (`unshare -Urn`), без OAuth/LLM. R3 двух внешних людей остаётся PENDING.

@@ -2,6 +2,8 @@
 
 ## v0.4.5-developer-preview — 2026-11-06
 
+- Publish current server sources to catman77/LivingMath with an architecture/module map, the complete 83-tool MCP reference, and corrected installation paths and version boundaries.
+- Install numerical dependencies for the full Python 3.13 CI suite, retain a separate Python 3.14 assurance/Semantic compatibility lane, and expose legacy source imports to subprocess tests.
 - Promote labelled short-word operator contexts into a source-bound equality predicate and a dependent bounded context scan; require all-train compatibility and independently checked source/state traces.
 - Support genuine operator-only synthesis with no builtin features, effective parent ablation, explicit failed promotion obligations and UNKNOWN beyond the declared scope.
 - Reject forged origin, intermediate outputs, source spans, operators, hidden labels and parent certificates while preserving all 83 prior tool schemas.

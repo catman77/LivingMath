@@ -1,0 +1,258 @@
+{
+  "schema": "livingmath-publication-checks/1",
+  "checked_at_utc": "2026-11-06T03:59:46.292728+00:00",
+  "checks_status": "PASS",
+  "publication_status": "READY_FOR_PUSH",
+  "repository": "https://github.com/catman77/LivingMath",
+  "branch": "main",
+  "visibility_observed": "public",
+  "package_version": "0.4.5.dev0",
+  "live_runtime_comparison": {
+    "status": "PASS",
+    "release": "v0.4.5-developer-preview",
+    "deployment_id": "fix-b2-20261106T025708Z",
+    "manifest_files_checked": 197,
+    "published_source_files_matched": 196,
+    "manifest_sha256": "c34dd91fc28b8bf07f2d89671f06c8792fe90f555872f272ce553d9d6c577fa1",
+    "production_services": "active",
+    "server_restart_performed": false,
+    "code_changed": false
+  },
+  "documentation": {
+    "status": "PASS",
+    "files_reviewed": [
+      {
+        "file": ".github/workflows/assurance-v01.yml",
+        "sha256": "c0c54b699c67cd56674c8b11ffc10be58a41a7e226690a42eb6bc0351ce1dba8"
+      },
+      {
+        "file": ".github/workflows/test.yml",
+        "sha256": "c677ddc4d63cc5c416e0ce8c3a1e8366a39acbb0bb253a202eb1c3513c0135c3"
+      },
+      {
+        "file": "CONTRIBUTING.md",
+        "sha256": "78b8c8ffbdf25afc67f703ba04d000459a3977b2621335b7c243b01b6f2c0216"
+      },
+      {
+        "file": "ARCHITECTURE.md",
+        "sha256": "e115de47f37801e5e60d8a22c732668afa9700c5d6a3a451eb54c781df732116"
+      },
+      {
+        "file": "README.md",
+        "sha256": "a4141931f969b4cdf7e652e013beffcfd1b3af5dfdcd49f86e0c343b72d70abe"
+      },
+      {
+        "file": "README_QUICKSTART_RU.md",
+        "sha256": "b5dcb734bb19a7eb33c851fca3903d38b4807b5ccfc215b7d100fe4089a37cd8"
+      },
+      {
+        "file": "CHANGELOG.md",
+        "sha256": "d4128625db80ca297ee146dc9c4a41a702988295fc1934a3118969bdcf59a7ab"
+      },
+      {
+        "file": "docs/MCP_INTERFACE.md",
+        "sha256": "0f32c6596c97a2bedff8b1d98a98191478aa3049d8190bad805adabe904591dc"
+      },
+      {
+        "file": "docs/INSTALL.md",
+        "sha256": "e388d654da00a64bb0a17f945e8bf69a253a5657841e7b4c3d3cfdb04ec28ca6"
+      },
+      {
+        "file": "docs/TESTING.md",
+        "sha256": "8881893c4a1b256f05dfcf6eccc163b6a96a7026cc9f05b6e8b16ce228596fe6"
+      },
+      {
+        "file": "docs/USAGE.md",
+        "sha256": "14f9964dad2a1c82fc86e600d4453c7252e5a5972c4b3d6ab8a72cc661d9f467"
+      },
+      {
+        "file": "docs/PUBLICATION.md",
+        "sha256": "9afb71202bd2ef10f592961211680336078ff443bfe8598c8c82e0ad7c2e5e0c"
+      },
+      {
+        "file": "docs/white-star/QUICKSTART_RU.md",
+        "sha256": "891a39cfa6d41cfc182a7b6c61b9e531e038aa64ceac71ff5d7c42adfa7c1b5a"
+      },
+      {
+        "file": "docs/symbolic-v1/QUICKSTART_RU.md",
+        "sha256": "2388ff19db607cd92e706cdaf72d2c18d04cfc7b70b93d45a8b21b3c094de0f1"
+      },
+      {
+        "file": "docs/semantic-bridge/QUICKSTART_RU.md",
+        "sha256": "cf2ea0d9444f134c72f2741ad8f3d181122bde7b0f4ad65fd49ef540a8ce76f8"
+      }
+    ],
+    "links": "PASS",
+    "tool_schemas": 83,
+    "documented_JSON_calls": 9,
+    "examples": [
+      {
+        "file": "docs/MCP_INTERFACE.md",
+        "tool": "bridge_system_status",
+        "arguments": {}
+      },
+      {
+        "file": "docs/MCP_INTERFACE.md",
+        "tool": "assurance_project_new",
+        "arguments": {
+          "project": "my-symbolic-qa",
+          "request_key": "project-init-1"
+        }
+      },
+      {
+        "file": "docs/MCP_INTERFACE.md",
+        "tool": "white_star_symbolic_complex_analyze",
+        "arguments": {
+          "project": "my-symbolic-qa",
+          "request_key": "sp2-first-1",
+          "request": {
+            "schema": "livingmath-symbolic-complex-request/1",
+            "complex_source": {
+              "kind": "sp_balanced_fixture",
+              "max_length": 2,
+              "rewrite_rules": [
+                "SP_TO_EMPTY",
+                "PS_TO_EMPTY"
+              ],
+              "edge_identity": "source_position_rule"
+            },
+            "cells": {
+              "policy": "all_local_peaks",
+              "join_depth_limit": 1
+            },
+            "analysis": [
+              "graph_cycles",
+              "homology_F2",
+              "path_coherence",
+              "pi1_certificate"
+            ],
+            "budgets": {
+              "max_vertices": 16,
+              "max_edges": 32,
+              "max_cells": 32,
+              "max_cpu_ms": 4000
+            }
+          }
+        }
+      },
+      {
+        "file": "docs/white-star/QUICKSTART_RU.md",
+        "tool": "assurance_project_new",
+        "arguments": {
+          "project": "my-white-star-project",
+          "request_key": "project-init-v1"
+        }
+      },
+      {
+        "file": "docs/semantic-bridge/QUICKSTART_RU.md",
+        "tool": "semantic_contract",
+        "arguments": {}
+      },
+      {
+        "file": "docs/semantic-bridge/QUICKSTART_RU.md",
+        "tool": "semantic_report",
+        "arguments": {
+          "project": "semantic-poetry-001"
+        }
+      },
+      {
+        "file": "docs/semantic-bridge/QUICKSTART_RU.md",
+        "tool": "semantic_export",
+        "arguments": {
+          "project": "semantic-poetry-001",
+          "audience": "private",
+          "include_source_bytes": true
+        }
+      },
+      {
+        "file": "docs/examples/research_autonomy_ingest.observer012-public-domain.json",
+        "tool": "research_autonomy_ingest",
+        "validation": "PASS"
+      },
+      {
+        "file": "docs/examples/research_autonomy_ingest.artifact.json",
+        "tool": "research_autonomy_ingest",
+        "validation": "PASS"
+      }
+    ],
+    "runtime_source_files_checked": 196,
+    "runtime_code": "UNCHANGED_FROM_INSTALLED_v0.4.5",
+    "documented_SP2_independent_check": {
+      "status": "CHECKED_INSTANCE",
+      "pi1_status": "PROVED_TRIVIAL_WITH_CERTIFICATE",
+      "components": 1,
+      "graph_beta1": 0,
+      "rank_d1": 2,
+      "rank_d2_F2": 0,
+      "H1_dim": 0,
+      "boundary_squared_zero": true,
+      "missing_peaks": 0,
+      "verifier_version": "SP-finite-independent-checker/1",
+      "verified_edge_count": 2,
+      "verified_cell_count": 0,
+      "failed_obligations": [],
+      "execution_permission": false,
+      "verifier_digest": "c91d071a9ca971d6b02bdfd9a682af1643c2a1b7d5dea197554cf9a455e668fd"
+    }
+  },
+  "independent_review": {
+    "status": "NO_FINDINGS",
+    "scope": "source-bound architecture, 83 method names and required arguments, JSON examples, links, final documentation and CI diff",
+    "corrected_findings": [
+      "request_key differs by exact tool schema; validate_model uses internal digest",
+      "legacy HTTP activation/completion is operator-only",
+      "numeric workers have separate pool from symbolic SharedBudget",
+      "full numerical CI requires white-star extra"
+    ]
+  },
+  "fresh_checks": {
+    "full_package_Python313": {
+      "status": "PASS",
+      "passed": 337,
+      "command": "python -m pytest -q tests"
+    },
+    "assurance_semantic_Python314": {
+      "status": "PASS",
+      "passed": 155,
+      "command": "python -m pytest -q tests/test_release.py tests/test_semantic_bridge.py",
+      "full_numerical_314_claimed": false
+    },
+    "doctor_smoke_Python313": "PASS",
+    "doctor_smoke_Python314": "PASS",
+    "documented_SP2": "CHECKED_INSTANCE"
+  },
+  "historical_same_runtime_checks": {
+    "source_tests": 337,
+    "installed_wheel_tests": 337,
+    "legacy_passed": 1066,
+    "legacy_skipped": 20,
+    "real_HTTPS_OAuth_MCP_checks": 656,
+    "evidence": "symbolic-v1/v044-reacceptance/acceptance_matrix.json"
+  },
+  "publication_scan": {
+    "status": "PASS",
+    "git_history_blobs_checked": 1346,
+    "nested_archive_members_checked": 2102,
+    "known_private_values_checked": 75,
+    "credential_patterns_checked": 4,
+    "max_blob": {
+      "bytes": 8607360,
+      "path": "alch006/final-model.json"
+    },
+    "private_database_or_secret_files_tracked": [],
+    "findings": [],
+    "source_head": "01d30ca9ef82c11313ceb219d5a39c1e5cf31af7",
+    "scope": "HEAD reachable history and selected tracked working files; no online credential verification"
+  },
+  "CI_changes": [
+    "full required337 test suite on Python3.13 with pinned numerical extras",
+    "separate155-test assurance/Semantic compatibility job for Python3.14",
+    "legacy PYTHONPATH provided to subprocesses; full suite retained"
+  ],
+  "github_actions_run": "CHECK_SEPARATELY_AFTER_PUSH; local PASS is not GitHub CI PASS",
+  "production_restarted": false,
+  "production_dependencies_changed": false,
+  "production_data_published": false,
+  "native_SUTI": "NOT_EXECUTED",
+  "external_R3": "PENDING"
+}

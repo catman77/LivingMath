@@ -26,4 +26,6 @@ jobs:
           python -m pip install 'z3-solver>=4.13,<6'
       - name: Unit and integration tests (no model calls)
         working-directory: live_math_mcp_prod
+        env:
+          PYTHONPATH: .:../src
         run: python -m pytest -q

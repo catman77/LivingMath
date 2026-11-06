@@ -1,75 +1,75 @@
-# Состав публикации GitHub
+# Публикация актуального MCP-сервера
 
-Целевой репозиторий: `catman77/LivingMath`, существующая приватная видимость
-сохраняется. Это первая публикация исходников текущей экспериментальной версии,
-не новый научный результат и не обновление работающей установки.
+Целевой репозиторий: **[catman77/LivingMath](https://github.com/catman77/LivingMath)**.
+По GitHub metadata на 2026-11-06 он **public**. Видимость, настройки доступа и
+production данные этой публикацией не меняются. Публикуется исходный код
+**v0.4.5-developer-preview / 0.4.5.dev0**, уже прошедший production приёмку.
 
-## Включено
+## Состав
 
-- Полный текущий `live_math_mcp_prod/`: runtime, модули Bridge/DAV/autonomy,
-  ledger, операторские команды, миграции, схемы, зависимости и тесты.
-- Новый локальный launcher, использующий существующие initializer и HTTPS/OAuth
-  приложение; математическое ядро не меняется.
-- Проверенные по SHA схемы SUTI/модель ALCH006 в `assets/unified/`; для015/016
-  тестов — четыре точных исходных файла вместо большого исторического ZIP.
-- README, установка, использование, точные JSON/Rights, тестирование,
-  contributor guide, third-party notices и workflow pytest.
-- Все четыре карточки `suti_author_proposals/`, их материалы и выбранные
-  отчёты/исходники Bridge, на которые ссылаются предложения.
-- Отчёт, RCA и метрики Meaning014 с сохранённым отрицательным выводом.
-- Точные исторические fixture-входы существующих тестов, перечисленные в
-  `assets/test-fixtures.manifest.json`: определения миров, QA snapshots,
-  source packets и один исходный `baseline002.zip`. Последний необходим
-  неизменённому SourceVault, который проверяет весь первоначальный freeze.
-  Выбранные архивные trace/report материалы сохраняются как fixtures;
-  они не являются актуальными разрешениями или журналом работающего сервера.
+- `src/lm_suti_assurance/`: текущий Python-пакет, frozen checker/binder, Semantic
+  Bridge, White Star с исходниками поставленного ядра, Symbolic V1, конечные
+  SP-комплексы и независимая проверка синтезированных наблюдателей.
+- `tools/`: действующий `release_v01_entry.py`, изоляция, реальные MCP QA-runner,
+  воспроизводимые эксперименты и offline replay.
+- `live_math_mcp_prod/`: полный сохранённый legacy runtime — HTTPS/OAuth,
+  SQLite ledger, исследовательские обязательства/lifecycle, DAV, автоматический
+  цикл, artifact/source pipeline, Bridge и операторские утилиты.
+- `assets/unified/`, схемы и тесты. Полный сервер использует весь checkout;
+  package wheel содержит библиотеку/CLI, а не legacy host и deployment tools.
+- [Архитектура](../ARCHITECTURE.md), [интерфейс всех 83 методов](MCP_INTERFACE.md),
+  [установка](INSTALL.md), [использование](USAGE.md), [тестирование](TESTING.md),
+  contributor guide и third-party notices.
+- `suti_author_proposals/`: пять предложений автору SUTI, их основания и варианты
+  решения. Они остаются предложениями, а не принятыми изменениями SUTI.
+- Выбранные неизменённые архивы ТЗ, source fixtures и проверенные acceptance
+  артефакты в `docs/`. Исторические fixtures перечислены в
+  `assets/test-fixtures.manifest.json`; новые release-отчёты имеют свои source
+  bindings и manifests. Рабочие источники редактируются в распакованных модулях.
 
-## Остаётся локально
+## Что остаётся приватным
 
-Живые SQLite и backup, OAuth/login secrets, TLS private keys, model spool,
-новые сырые LLM/MCP трассы, `.codex-attachments/`, окружения, исторические release
-ZIP, архивы исходных ТЗ и целые авторские рабочие архивы. Исключение — явно
-перечисленные immutable test fixtures выше. Остальные файлы не удаляются;
-они исключены из Git явным перечнем `.gitignore`.
+Живые SQLite и backups, OAuth tokens/client secrets, owner login password,
+TLS private keys, production config/approvals, model spool, `.codex-attachments/`,
+virtualenvs и неопубликованные полные исследовательские трассы остаются локально.
+Существующие пользовательские изменения и неотслеживаемые эксперименты не
+добавляются автоматически. Наличие данных в локальном каталоге не означает их
+включение в Git.
 
-Дополнение ROBLOX-PRED-001: по отдельному запросу пользователя включены небольшой
-исходный архив ТЗ `docs/ROBLOX_PRED_001_STARTER.zip`, его два Markdown-документа,
-изолированный пакет `roblox-pred-001/` и карточка предложения005. Сырые Roblox/MCP
-ответы, данные, БД и полные логи нового пилота остаются приватными. Этот локальный
-коммит не означает push или обновление production. Инженерная приёмка и
-заблокированный data gate описаны в [отчёте пилота](../roblox-pred-001/STAGE0_STAGE1_REPORT_RU.md).
+Большой `LIVINGMATH_FIX_B2_DELIVERY_20261106.zip` хранится локально и не входит в
+историю Git; опубликованы его checksum/результат проверки, код воспроизведения,
+положительный feature, rejected variants, frozen predictions и schemas. Полные
+локальные MCP-трассы и резервные копии доступны владельцу отдельно.
 
-Публикуемые bundle сохраняют точные источниковые хеши и адреса. Числовые события
-в исследовательской provenance — архивные ссылки, не действующие разрешения.
-Операционные базы и права не переносятся на GitHub.
+## Подтверждённые проверки
 
-## Проверка воспроизводимости
+Последний runtime release прошёл **337 PASS** source tests, **337 PASS** wheel
+вне checkout, **1066 PASS / 20 SKIPPED** legacy и **656 PASS** настоящего
+HTTPS/OAuth MCP. [Матрица](symbolic-v1/v044-reacceptance/acceptance_matrix.json),
+[отчёт](symbolic-v1/v044-reacceptance/USER_REPORT_RU.md),
+[манифест установленного слоя](symbolic-v1/v044-reacceptance/release_manifest.json).
+Это разные проверки с указанной областью, а не суммарное число уникальных тестов.
 
-Перед первым push проверена чистая копия выбранных файлов и новый venv из
-hash-locked dependencies. Итог: **1074 passed,12 skipped,1 существующее
-Starlette deprecation warning**. Отдельно Ruff/mypy новых installation-модулей PASS.
+Перед публикацией проверяются соответствие отслеживаемого кода этому runtime
+манифесту, актуальные версии и schemas, примеры JSON, внутренние ссылки и
+публикуемые Git-объекты. Результаты этой отдельной проверки сохраняются в
+[publication-v045-checks.json](publication-v045-checks.json).
+GitHub Actions проверяется отдельно: исторический `startup_failure` с jobs=0
+не является PASS или падением pytest; [исходные факты CI](CI_STATUS.md).
 
-Настоящий localhost HTTPS/OAuth MCP-клиент обнаружил44 инструмента, опубликованный
-`meaning014` и успешно передал JSON-пример. Повтор request key и повтор после
-перезапуска вернули прежние case/snapshot IDs. Все четыре SQLite исправны,
-цепочки ledger/DAV корректны, QA activations0. Модельный backend в этом прогоне
-отключён: это проверка установки/контракта, не новый inference эксперимент.
+Первоначальный checkout smoke на 44 инструмента и исходные 1074 PASS/12 SKIP
+сохранены как исторические данные в `publication-checks.json`; они не подменяют
+приёмку актуального сервера на 83 инструмента. Архивные записи не переписываются.
 
-Первый чистый прогон выявил неупакованные fixture-зависимости. Они сохранены
-точными исходными bytes; защитные проверки SourceVault не ослаблены. Старый
-report exporter теперь явно отличает прочитанные оригиналы от сохранённых SHA
-ссылок, поэтому публикация не требует выгружать старые model_outputs.
-Начальные неуспешные логи сохранены локально.
+## Публикация и эксплуатация
 
-Scanner секретов запущен с отключённой сетевой проверкой кандидатов; совпадения
-хешей, исходниковых ID и явных тестовых паролей разобраны отдельно. Исторический
-fixture ZIP также распакован для проверки. Production credentials/базы не
-публикуются. Машиночитаемый итог: [publication-checks.json](publication-checks.json).
+Публикация выполняется обычным fast-forward push в `main` без force-push,
+с сохранением существующей Git-истории. После push проверяются удалённый commit
+и файлы. Приватные approvals и рабочие источниковые адреса не превращаются в
+разрешения у получателя clone.
 
-Научный итог Meaning014 остаётся `FAIL_NO_GAIN_OVER_B_PLUS`, независимо от
-инженерного PASS. Production не развёртывался; видимость GitHub остаётся private.
-
-После push обратное клонирование подтвердило все621 исходных SHA. GitHub
-Actions вернул `startup_failure` до создания jobs, в том числе при явном
-workflow_dispatch. CI не объявлен прошедшим; [факты, границы RCA и действие
-владельца](CI_STATUS.md) сохранены отдельно.
+Эта операция обновляет GitHub. Уже установленный production код не меняется и
+не перезапускается из-за документации. Конечные инженерные PASS не означают
+универсальную грамматику или подтверждённый semantic transfer. Native SUTI
+остаётся `NOT_EXECUTED`, внешний R3 — `PENDING`; отрицательные научные результаты
+Meaning014 и литературного контроля сохранены.

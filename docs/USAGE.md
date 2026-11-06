@@ -3,7 +3,10 @@
 ## Первое знакомство
 
 После подключения вызовите `bridge_system_status`, затем `bridge_catalog`.
-Текущий объединённый сервер предоставляет 44 инструмента. `mcp_server.py stdio`
+Текущий production `v0.4.5-developer-preview` предоставляет **83 инструмента**.
+Новый локальный legacy стенд `unified_system.local` предоставляет 44.
+[Полный интерфейс, схемы, модули и запуск вычислений](MCP_INTERFACE.md).
+`mcp_server.py stdio`
 остаётся отдельным старым ledger-интерфейсом; он не заменяет объединённый сервер.
 
 Примеры arguments для инструментов:
@@ -19,7 +22,7 @@
 
 ## Загрузка исходного текста
 
-Для работающего `1.2.0rc3-observer012` передайте в `research_autonomy_ingest`
+Для сохранённого в актуальном production профиля `observer012` передайте в `research_autonomy_ingest`
 arguments из [проверенного запроса с фрагментом «Эха»](examples/research_autonomy_ingest.observer012-public-domain.json).
 Этот точный запрос принят действующим MCP 2026-11-02: проект
 `BRIDGE_QA_RIGHTS_CONTRACT_20261102`, case `4575`, source snapshot `4573`.
@@ -28,8 +31,9 @@ arguments из [проверенного запроса с фрагментом 
 
 Сначала прочитайте `bridge_system_status`: выбирайте interpretation, объявленную
 установленным сервером. Следующий пример Meaning014 относится к более новому
-коду репозитория. В `1.2.0rc3-observer012` используйте `"interpretation":"observer012"`;
-`observer013` и `meaning014` в этой установленной версии отсутствуют.
+коду репозитория. В production v0.4.5 legacy профиль остаётся observer012:
+используйте `"interpretation":"observer012"`; наличие observer013/meaning014 в
+исходниках не означает их активацию на endpoint.
 [Отдельный пример Meaning014](examples/research_autonomy_ingest.meaning014.json):
 
 ```json

@@ -6,6 +6,11 @@
 
 Текущий продукт: **`v0.4.5-developer-preview`**: assurance CLI, Semantic Bridge, численная White Star и Symbolic V1; 83 MCP-инструмента (82 прежних + независимый verifier наблюдателя). [Установка](README_QUICKSTART_RU.md), [White Star и сравнение режимов](docs/white-star/QUICKSTART_RU.md), [Semantic Bridge](docs/semantic-bridge/QUICKSTART_RU.md), [CLI](CLI_REFERENCE.md), [границы возможностей](LIMITATIONS.md).
 
+Основной репозиторий: **[catman77/LivingMath](https://github.com/catman77/LivingMath)**.
+[Архитектура сервера и назначение модулей](ARCHITECTURE.md) ·
+[MCP-интерфейс: транспорт, 83 инструмента, схемы и примеры](docs/MCP_INTERFACE.md) ·
+[Установка CLI, legacy и полного production entry](docs/INSTALL.md).
+
 White Star использует предоставленное неизменённое ядро Белая звезда → CAD → Удав. Один frozen semantic snapshot можно передать ему и действующему Bridge/assurance без повторного extraction. Численные предложения и сохранённые LLM-прочтения разделены; native SUTI не исполняется. [Отчёт, фактическое сравнение и приёмка](docs/white-star/USER_REPORT_RU.md).
 
 Symbolic V1 сохраняет полные токенные истории, UTF-8 spans и DAG операций. Новый `white_star_symbolic_explore` исследует буквальные/α/S/P-отношения без 2D semantic encoding; грамматические гипотезы проверяются на замороженном отложенном наборе. Это конечные структурные эксперименты, не доказательство найденной семантики. [Запуск и точный пример MCP](docs/symbolic-v1/QUICKSTART_RU.md), [измерения и ограничения](docs/symbolic-v1/IMPLEMENTATION_REPORT_RU.md). PATCH001 добавляет композиционные гипотезы, явный UNDERDETERMINED/active probe, локальный saturation certificate и comparison-view. [Приёмка PATCH001](docs/symbolic-v1/patch001/PATCH001_IMPLEMENTATION_RU.md).
@@ -24,32 +29,31 @@ Semantic Bridge сохраняет исходные UTF-8-байты, адрес
 
 ## Установка и первый запуск
 
-Нужны Linux x86_64 с Landlock, Python 3.12/3.13, Git и доступ к сети для
-зависимостей и первоначальной загрузки публичного словаря токенизатора.
+Для актуального пакета нужны Python 3.13+ и Git. Для изолированных White Star
+workers дополнительно нужны Linux x86_64 с Landlock ABI≥3 и C++17.
+Из корня репозитория:
 
 ```bash
-git clone https://github.com/R-Commons/LivingMath.git
-cd LivingMath/live_math_mcp_prod
+git clone https://github.com/catman77/LivingMath.git
+cd LivingMath
 python3.13 -m venv .venv
 . .venv/bin/activate
-python -m pip install --require-hashes -r requirements-019.lock
-python -m unified_system.local prepare --instance development
-python -m unified_system.local serve --instance development
+python -m pip install '.[white-star,mcp,test]'
+lm-suti doctor --smoke
+lm-suti white-star prepare
+python -m pytest -q tests
 ```
 
-В другом терминале, из того же каталога и окружения:
-
-```bash
-python -m unified_system.local smoke --instance development
-```
-
-Это настоящий HTTPS/OAuth MCP-клиент. Он проверяет обнаружение 44 инструментов
-и выполняет read-only вызовы без запуска LLM. Приватные данные экземпляра
-создаются в `~/.local/state/livingmath/checkouts/development/`.
+Это установка текущего кода и локальная проверка; HTTP автоматически не запускается.
+Действующий полный сервер запускается через `tools/release_v01_entry.py` с
+приватной owner-конфигурацией и публикует **83** инструмента. Отдельный
+`unified_system.local prepare/serve/smoke` создаёт новый legacy стенд с **44**
+инструментами; он не является установщиком полного production release.
 
 Подробно: [установка, запуск и подключение ChatGPT](docs/INSTALL.md),
 [использование и точные JSON-запросы](docs/USAGE.md), [тестирование](docs/TESTING.md).
-GitHub Actions пока завершается до запуска jobs: [данные и RCA](docs/CI_STATUS.md).
+Исторический отказ запуска GitHub Actions от 2026-11-01 и его RCA сохранены
+в [CI_STATUS.md](docs/CI_STATUS.md); актуальный CI оценивается по run конкретного commit.
 Для LLM-формализации требуется отдельно включить существующий Codex backend;
 инструкции описывают вход через ChatGPT без API-ключа.
 
@@ -57,7 +61,10 @@ GitHub Actions пока завершается до запуска jobs: [дан
 
 | Путь | Назначение |
 |---|---|
-| `live_math_mcp_prod/` | Исполняемый Python-код, ledger, DAV, автономный цикл, MCP, операторские утилиты и тесты |
+| `src/lm_suti_assurance/` | Актуальный пакет: assurance, Semantic Bridge, численная White Star, Symbolic V1, SP-комплексы и синтез наблюдателей |
+| `tools/` | Production entry, изоляция, реальные MCP QA, воспроизводимые эксперименты и offline replay |
+| `live_math_mcp_prod/` | Сохранённый runtime: HTTP/OAuth, ledger, DAV, автономный цикл, Bridge, операторские утилиты и legacy тесты |
+| `tests/` | Тесты актуального Python-пакета, независимых checker и worker boundaries |
 | `assets/unified/` | Проверяемые по SHA-256 снимки исходных схем Bridge и исследовательской модели ALCH006 |
 | `docs/` | Инструкции, примеры и границы исследовательских результатов |
 | `suti_author_proposals/` | Предложения автору SUTI и материалы обсуждения |
@@ -65,11 +72,11 @@ GitHub Actions пока завершается до запуска jobs: [дан
 | `meaning_pivot014/` | Отчёт, RCA и измеренные метрики последнего эксперимента |
 | `roblox-pred-001/` | Изолированный коммерческий пилот Roblox: аудит, перспективный протокол и M0/M1 toolkit |
 
-Живые базы, пароли, OAuth-токены, исходные вложения, рабочие архивы и полные
-локальные журналы моделей в Git не включаются. По запросу пользователя в `docs/`
-также сохранён исходный небольшой архив ТЗ ROBLOX-PRED-001. Отдельно сохранены минимальные
-исторические test fixtures, включая один ZIP, обязательный для исходного freeze
-контракта. Их состав и SHA перечислены в `assets/test-fixtures.manifest.json`.
+Живые базы, пароли, OAuth-токены, TLS private keys, `.codex-attachments/` и
+приватные журналы моделей в Git не включаются. Выбранные исходные архивы ТЗ и
+обезличенные acceptance-артефакты сохранены в `docs/`; исторические test fixtures
+перечислены в `assets/test-fixtures.manifest.json`. Публикация исходников не
+переносит рабочие данные, разрешения или секреты установленного сервера.
 Источниковые адреса сохраняются. [Точный состав публикации](docs/PUBLICATION.md).
 
 ## Что предлагаем автору SUTI

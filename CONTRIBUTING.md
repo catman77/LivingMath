@@ -2,7 +2,11 @@
 
 Начните с [установки](docs/INSTALL.md), [тестов](docs/TESTING.md) и
 [границ исследовательских утверждений](docs/RESEARCH_STATUS.md).
-Исполняемый код и основные тесты находятся в `live_math_mcp_prod/`.
+Актуальный пакет и его тесты находятся в `src/lm_suti_assurance/` и `tests/`;
+сохранённый HTTP/OAuth/ledger/DAV runtime и его тесты — в `live_math_mcp_prod/`.
+Production-композиция находится в `tools/release_v01_entry.py`.
+Перед изменением MCP прочитайте [архитектуру](ARCHITECTURE.md) и
+[контракт интерфейса](docs/MCP_INTERFACE.md).
 
 Используйте четыре пробела, `snake_case` для функций, `PascalCase` для классов,
 верхний регистр для констант и type hints на публичных интерфейсах.

@@ -1,28 +1,44 @@
 # Semantic Bridge — установка и проверка
 
-Проверены Linux, Python 3.13 и 3.14. Установите текущий пакет из корня репозитория:
+Полный численный набор проверен на Linux/Python 3.13; assurance/Semantic CLI
+также проверяется отдельно на 3.14. Установите текущий пакет из корня репозитория:
 
 ```bash
 python3.13 -m venv .venv
 . .venv/bin/activate
-python -m pip install '.[mcp,test]'
+python -m pip install '.[white-star,mcp,test]'
 lm-suti doctor --smoke
+lm-suti white-star prepare
 python -m pytest -q
 ```
 
-В приватной поставке есть `dist/`, wheelhouse для Python 3.13 и `replay_offline.sh`. Для установки без сети:
+Для установки текущего пакета без сети сначала соберите wheelhouse на машине
+с тем же Python/платформой и доступом к зависимостям:
+
+```bash
+python -m pip wheel '.[white-star,mcp]' -w wheelhouse
+```
+
+Скопируйте wheelhouse на целевую машину:
 
 ```bash
 python3.13 -m venv .venv
-.venv/bin/python -m pip install --no-index --find-links wheelhouse lm-suti-assurance==0.2.0.dev0
-PYTHON=.venv/bin/python ./replay_offline.sh
+.venv/bin/python -m pip install --no-index --find-links wheelhouse 'lm-suti-assurance[white-star,mcp]==0.4.5.dev0'
 ```
 
-Оба движка должны вернуть PASS и одинаковый logical_digest. Replay не вызывает модель, OAuth или сеть; исходные версии не регенерируются. Пакет содержит приватно разрешённые тексты и prompts; не публикуйте его автоматически.
+Сохранённые semantic bundles проверяйте через `lm-suti replay BUNDLE.zip --offline`
+с `--engine direct`, затем `--engine compiled`: оба должны вернуть одинаковый
+logical_digest. Replay не вызывает модель, OAuth или сеть. Приватные bundles с
+текстами/prompts не входят в публичный GitHub checkout.
 
 ## Проверка через ChatGPT / MCP
 
-Адрес production сохранён: `https://fares-september-rebel-board.trycloudflare.com/mcp`. Основная версия — `v0.2.0-developer-preview`, deployment `semantic001-20261105T015444Z`. Если ChatGPT показывает старые 55 инструментов, обновите подключение приложения в настройках, чтобы перечитать `tools/list`; менять адрес не требуется. Это существующий временный Cloudflare tunnel: его перезапуск может изменить URL.
+Адрес production сохранён: `https://fares-september-rebel-board.trycloudflare.com/mcp`.
+Основная версия — **v0.4.5-developer-preview**, 83 инструмента;
+`semantic_contract.release` сохраняет версию semantic-контракта v0.2.
+Обновите подключение, если клиент использует старый `tools/list`.
+[Полный MCP-интерфейс](../MCP_INTERFACE.md). Это временный Cloudflare tunnel:
+его перезапуск может изменить URL.
 
 Начните с read-only вызовов:
 
