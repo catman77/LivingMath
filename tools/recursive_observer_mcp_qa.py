@@ -169,7 +169,7 @@ async def run(a):
                 after = {t.name: t.model_dump(mode="json") for t in listing.tools}
                 check(
                     "actual v046/83 tools",
-                    init.serverInfo.version == "v0.4.6-developer-preview"
+                    init.serverInfo.version == a.expected_version
                     and len(after) == len(before) == 83,
                 )
                 for name, old in before.items():
@@ -196,7 +196,7 @@ async def run(a):
                     "new capabilities READY and old symbolic binding",
                     status["observer_synthesis_v1"]["status"] == "READY"
                     and status["observer_synthesis_v1"]["version"]
-                    == "observer_synthesis_v1/3-compositional-promotion"
+                    == a.expected_observer_version
                     and status["symbolic_v1"]["kernel_binding"]
                     == "7ce5c5ba0620b4dad1b3f1b62b2cba3338a1efb4a7852a6e1bf768fe5fd0a0c9",
                 )
@@ -1238,6 +1238,8 @@ async def run(a):
 
 if __name__ == "__main__":
     p = argparse.ArgumentParser()
+    p.add_argument("--expected-version", default="v0.4.6-developer-preview")
+    p.add_argument("--expected-observer-version", default="observer_synthesis_v1/3-compositional-promotion")
     p.add_argument("--origin", required=True)
     p.add_argument("--endpoint", required=True)
     p.add_argument("--output", type=Path, required=True)

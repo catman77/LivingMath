@@ -252,9 +252,10 @@ def fit(records, request, source=None):
     }
     if request.get("promotion_policy") is not None:
         from .composition_ast import settings as composition_settings
+        from .compositional import generation_diagnostics
         model["promotion_policy"]=request["promotion_policy"]
         model["composition_diagnostics"]={
-            "candidate_generation":{"seen":sum(r.get("phase")=="composition_discovery" for r in derivation_log),"train_compatible":sum(r.get("phase")=="composition_discovery" and r.get("status")=="TRAIN_COMPATIBLE" for r in derivation_log)},
+            "candidate_generation": generation_diagnostics(derivation_log, [r["record"] for r in use], search),
             "promoted_features":[f["feature_id"] for f in derived if f.get("template_origin")=="COMPOSITIONAL_AST_PROMOTION"],
             "composition_promotion":{
                 "attempted":sum(r.get("phase")=="composition_promotion" and ("feature_id" in r or r.get("status")=="PROMOTED_OPERATOR_COMPOSITION") for r in derivation_log),

@@ -17,6 +17,81 @@ from .composition_checker import verify
 from .contexts import record_state
 
 
+def typed_skeletons(records):
+    """Finite structural constructors, not filters on the shortest positive.
+
+    Every observed coordinate proposes a literal comparison and its strictly
+    decreasing closure, before membership validation. Additional conjunctions
+    refine positive-safe observations; they never control recursive generation.
+    """
+    coordinates = min(4, max(1, max(len(r["tokens"]) for r in records) // 2))
+    guards = []
+    for offset in range(coordinates):
+        for expected in [True, False]:
+            guard = {
+                "composition": "aligned_token_equality",
+                "offset": offset,
+                "expected_equal": expected,
+                "left_operations": ["SPLIT"],
+                "right_operations": ["REVERSE", "SPLIT"],
+                "base_max_tokens": 2 * offset + 1,
+            }
+            guards.append(guard)
+            yield guard
+            yield {
+                "composition": "iterate_on_inner_fragment",
+                "relation": guard,
+                "trim_left": 1,
+                "trim_right": 1,
+                "fragment_operations": ["SPLIT", "SPLIT"],
+                "base_max_tokens": 1,
+            }
+    positives = [r for r in records if r["accepted"]]
+    safe = [
+        g
+        for g in guards
+        if positives and all(grammar.relation_value(g, r["tokens"]) for r in positives)
+    ]
+    for count in range(2, min(4, len(safe)) + 1):
+        yield {"composition": "all_observed_relations", "relations": safe[:count]}
+
+
+def generation_diagnostics(log, records, search):
+    from collections import Counter
+
+    candidates = [r for r in log if r.get("phase") == "composition_discovery"]
+    generated = [r for r in candidates if r["generation_status"] == "GENERATED"]
+    catalog = next((r for r in log if r.get("phase") == "composition_catalog"), {})
+    return {
+        "grammar_version": "mixed_length_typed_composition/1",
+        "search_budget": {**search, **catalog.get("construction_bounds", {})},
+        "train_length_histogram": dict(
+            sorted(Counter(str(len(r["tokens"])) for r in records).items())
+        ),
+        "generated_by_ast_kind": dict(Counter(r["kind"] for r in generated)),
+        "seen": len(generated),
+        "generated_count": len(generated),
+        "type_checked_count": sum(r["type_status"] == "TYPED" for r in generated),
+        "train_compatible": sum(
+            r["train_status"] == "TRAIN_COMPATIBLE" for r in generated
+        ),
+        "train_compatible_count": sum(
+            r["train_status"] == "TRAIN_COMPATIBLE" for r in generated
+        ),
+        "candidate_records": [
+            {k: v for k, v in r.items() if k not in ("ast", "predicted_train_labels")}
+            for r in candidates
+        ],
+        "bounded_search_complete": catalog.get("bounded_search_complete", False),
+        "bounded_search_reason": catalog.get(
+            "bounded_search_reason", "GENERATION_NOT_APPLICABLE"
+        ),
+        "candidate_budget_exhausted": catalog.get("candidate_budget_exhausted", False),
+        "search_status": catalog.get("search_status", "NOT_GENERATED"),
+        "no_unique_grammar_claim": True,
+    }
+
+
 def promote(
     samples: list[dict],
     policy: dict,
@@ -73,23 +148,16 @@ def promote(
         for supplied in source["candidates"]:
             candidate(supplied["ast"], "source_run_id", source["binding"])
     if "derivation_trace" in sources:
-        _, discovered = grammar.relational_candidates(
-            members, min(15, search["max_proposals"]), None
-        )
-        for row in discovered:
-            if "ast" in row:
-                candidate(
-                    row["ast"],
-                    "derivation_trace",
-                    {
-                        "generator": "symbolic.grammar.relational_candidates",
-                        "generator_source_sha256": hashlib.sha256(
-                            Path(grammar.__file__).read_bytes()
-                        ).hexdigest(),
-                    },
-                )
-        # Generic typed constructor: structural split coordinates composed with
-        # equality or inequality of two complete Words. No named target class.
+        provenance = {
+            # Retain the approved closed generator identity; its exact source
+            # hash now binds both structural cut and recursive constructors.
+            "generator": "bounded_structural_cut_x_literal_word_comparison",
+            "generator_source_sha256": hashlib.sha256(
+                Path(__file__).read_bytes()
+            ).hexdigest(),
+        }
+        for ast in typed_skeletons(records):
+            candidate(ast, "derivation_trace", provenance)
         shortest = min(len(r["tokens"]) for r in records)
         for position in ["MIDPOINT_EXACT_EVEN", *range(1, min(4, shortest) + 1)]:
             for expected in [True, False]:
@@ -101,51 +169,126 @@ def promote(
                         "expected_equal": expected,
                     },
                     "derivation_trace",
-                    {
-                        "generator": "bounded_structural_cut_x_literal_word_comparison",
-                        "generator_source_sha256": hashlib.sha256(
-                            Path(__file__).read_bytes()
-                        ).hexdigest(),
-                    },
+                    provenance,
                 )
     compatible = []
-    for ast, route, provenance in candidates[: search["max_proposals"]]:
-        budget.check()
+    incomplete = len(candidates) > search["max_proposals"]
+    for index, (ast, route, provenance) in enumerate(candidates):
         entry = {
             "phase": "composition_discovery",
             "ast": ast,
             "ast_digest": digest(ast),
+            "kind": ast["composition"],
             "route": route,
             "origin": "SOURCE_SUPPLIED"
             if route == "source_run_id"
             else "AUTO_DISCOVERED",
             "train_coverage": len(records),
+            "generation_status": "GENERATED",
+            "type_status": "NOT_CHECKED",
+            "train_status": "NOT_CHECKED",
+            "promotion_status": "NOT_APPLICABLE",
+            "counterexamples": [],
         }
+        if index >= search["max_proposals"]:
+            entry.update(
+                generation_status="NOT_GENERATED",
+                status="NOT_GENERATED",
+                pruning_reason="max_proposals",
+            )
+            log.append(entry)
+            continue
+        budget.check()
         try:
             nodes, depth = ast_metrics(ast)
+            entry.update(
+                type_status="TYPED", complexity={"ast_nodes": nodes, "ast_depth": depth}
+            )
+        except (ValueError, KeyError, TypeError) as exc:
+            termination = "RECURSION" in str(exc)
+            entry.update(
+                status="GENERATED_REJECTED_BY_TERMINATION"
+                if termination
+                else "GENERATED_REJECTED_BY_TYPE",
+                type_status="TERMINATION_REJECTED" if termination else "TYPE_REJECTED",
+                pruning_reason=str(exc),
+            )
+            log.append(entry)
+            continue
+        try:
             if nodes > config["max_ast_nodes"] or depth > config["max_ast_depth"]:
                 raise DomainLimit("AST_SCOPE_EXCEEDED")
             predictions = [
                 execute(ast, record_state(r), domain, budget=budget)[0] for r in records
             ]
             failures = [
-                digest(r) for r, d in zip(records, predictions) if d != r["accepted"]
+                {
+                    "sample_id": r["id"],
+                    "record_ref": digest(r),
+                    "length": len(r["tokens"]),
+                    "expected": r["accepted"],
+                    "observed": d,
+                }
+                for r, d in zip(records, predictions)
+                if d != r["accepted"]
             ]
             entry.update(
-                complexity={"ast_nodes": nodes, "ast_depth": depth},
                 predicted_train_labels=predictions,
-                counterexample_train_refs=failures,
+                counterexample_train_refs=[x["record_ref"] for x in failures],
+                counterexamples=failures,
+                train_status="TRAIN_COMPATIBLE"
+                if not failures
+                else "GENERATED_REJECTED_BY_TRAIN",
                 status="TRAIN_COMPATIBLE" if not failures else "REJECTED_BY_TRAIN",
+                pruning_reason="TRAIN_COUNTEREXAMPLE" if failures else None,
             )
             if not failures:
+                entry["promotion_status"] = "TRAIN_COMPATIBLE_NOT_PROMOTED"
                 compatible.append((nodes, depth, digest(ast), ast, route, provenance))
         except AssuranceError:
             raise
-        except (ValueError, KeyError, TypeError) as exc:
-            entry.update(status="NOT_PROMOTED", failed_obligation=str(exc))
+        except DomainLimit as exc:
+            incomplete = True
+            entry.update(
+                status="GENERATED_REJECTED_BY_BOUND",
+                train_status="NOT_CHECKED_RESOURCE_BOUND",
+                pruning_reason=str(exc),
+            )
         log.append(entry)
+    log.append(
+        {
+            "phase": "composition_catalog",
+            "construction_bounds": {
+                k: config[k]
+                for k in (
+                    "max_ast_nodes",
+                    "max_ast_depth",
+                    "max_recursion_steps",
+                    "max_tokens",
+                    "max_runtime_ms",
+                )
+            },
+            "grammar_version": "mixed_length_typed_composition/1",
+            "catalog_size": len(candidates),
+            "bounded_search_complete": not incomplete,
+            "candidate_budget_exhausted": len(candidates) > search["max_proposals"],
+            "search_status": "BOUNDED_SEARCH_INCOMPLETE"
+            if incomplete
+            else "BOUNDED_CATALOG_CHECKED",
+            "bounded_search_reason": "max_proposals"
+            if len(candidates) > search["max_proposals"]
+            else "declared_AST_or_recursion_bound"
+            if incomplete
+            else "all_declared_candidates_checked",
+            "scope": "Declared finite typed skeleton catalog only; not completeness over all programs",
+        }
+    )
     if not compatible:
-        return reject("NO_TRAIN_COMPATIBLE_TYPED_COMPOSITION")
+        return reject(
+            "BOUNDED_SEARCH_INCOMPLETE"
+            if incomplete
+            else "NO_TRAIN_COMPATIBLE_TYPED_COMPOSITION"
+        )
     # All fully covered candidates have equal empirical coverage. Minimize the
     # explicit AST construction size/depth, then canonical hash; never query score.
     selected = min(compatible, key=lambda x: x[:3])
@@ -235,6 +378,11 @@ def promote(
     feature["execution_verified"] = checked["status"] == "CHECKED_INSTANCE"
     if not feature["execution_verified"]:
         return reject("INDEPENDENT_COMPOSITION_CHECK_FAILED", verifier_result=checked)
+    for row in log:
+        if row.get("phase") == "composition_discovery" and row["ast_digest"] == digest(
+            ast
+        ):
+            row["promotion_status"] = "PROMOTED_VERIFIED"
     log.append(
         {
             "phase": "composition_promotion",

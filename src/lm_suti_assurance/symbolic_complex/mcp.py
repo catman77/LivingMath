@@ -109,7 +109,7 @@ def capabilities(executor, replay_profiles=None):
             "execution_permission": False,
         },
         "observer_synthesis_v1": {
-            "version": "observer_synthesis_v1/3-compositional-promotion",
+            "version": "observer_synthesis_v1/4-mixed-length-typed-generation",
             "status": "READY" if ready else "ENGINE_UNAVAILABLE",
             "kernel_binding": binding(),
             "composition_promotion": {"default":"literal_context_only","max_tokens":8,"max_train_witnesses":256,"source_run":"same-project immutable symbolic AST, exact input/train/kernel binding"},

@@ -332,6 +332,10 @@ def test_source_bridge_real_symbolic_run_binding_and_project_isolation(tmp_path)
 def test_explicit_scope_bounds_never_turn_resource_failures_into_false(bound, limit):
     q = request()
     q["promotion_policy"][bound] = limit
+    if bound == "max_recursion_steps":
+        # Full higher-offset conjunctions are now legitimately generated. This
+        # case specifically isolates bounded recursion by excluding larger ANDs.
+        q["promotion_policy"]["max_ast_nodes"] = 10
     m = fit(rows("mirror", [6] if bound == "max_recursion_steps" else [4]), q)
     assert (
         not m["used_feature_ids"]
