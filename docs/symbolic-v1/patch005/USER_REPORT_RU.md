@@ -3,7 +3,7 @@
 Установлен **v0.4.7-developer-preview**, deployment `generator005-20261106T113245Z`.
 Адрес сохранён: https://fares-september-rebel-board.trycloudflare.com/mcp. Через публичный HTTPS/OAuth MCP:
 **916 PATCH005 + 943 регрессионных проверок PASS**;
-все прежние31 A/B gate PASS. Новый suite содержит **600 настоящих tools/call**,
+все прежние31 A/B gate PASS. Из943 regression checks320 — отдельный локальный supplied-AST control, не MCP-discovery. Новый suite содержит **600 настоящих tools/call**,
 34 свежих inference runs с seed137/42. Staged/public models, scores и result_digest
 совпадают. Полные трассы и frozen inputs входят в delivery ZIP.
 

@@ -1,0 +1,18 @@
+{
+  "finite_runs": 34,
+  "job_cpu_s": {
+    "min": 0.062022241,
+    "median": 0.12512425600000002,
+    "max": 0.656411813
+  },
+  "max_rss_kib": {
+    "min": 61816,
+    "max": 87996
+  },
+  "worker_limits_unchanged": {
+    "cpu_s": 5,
+    "wall_s": 6,
+    "RAM_MiB": 512
+  },
+  "explicit_fit_cpu_ms": 4000
+}

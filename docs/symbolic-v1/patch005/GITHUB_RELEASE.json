@@ -1,0 +1,11 @@
+{
+  "release_id": 436440842,
+  "html_url": "https://github.com/catman77/LivingMath/releases/tag/v0.4.7-developer-preview",
+  "tag_name": "v0.4.7-developer-preview",
+  "target_commitish": "main",
+  "prerelease": true,
+  "asset_id": 716997743,
+  "asset_url": "https://github.com/catman77/LivingMath/releases/download/v0.4.7-developer-preview/LIVINGMATH_PATCH005_DELIVERY_20261106.zip",
+  "asset_bytes": 249056073,
+  "sha256": "6b9b9da999e8a12492c14802d2d646755b9500b0eb24faaae5ce3efbf9f6cbce"
+}
