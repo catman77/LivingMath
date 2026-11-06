@@ -50,6 +50,10 @@ async def run(a):
     project = "qa-recursive004-" + a.tag
     other = project + "-other"
     async with httpx.AsyncClient(headers=headers, timeout=120) as http:
+        if a.retry_resource_busy:
+            from mcp_retry_transport import install
+
+            install(http, out / "HTTP_RETRIES.jsonl")
         async with streamable_http_client(a.endpoint, http_client=http) as (
             read,
             write,
@@ -173,13 +177,28 @@ async def run(a):
                     and len(after) == len(before) == 83,
                 )
                 if a.allow_role_api:
-                    schema=after["white_star_symbolic_observer_synthesize"]["inputSchema"]["properties"]["request"]["properties"]["promotion_policy"]["properties"]
+                    schema = after["white_star_symbolic_observer_synthesize"][
+                        "inputSchema"
+                    ]["properties"]["request"]["properties"]["promotion_policy"][
+                        "properties"
+                    ]
                     schema["mode"]["enum"].remove("role_branching_ast")
-                    for key in ["role_max_tokens","role_max_cells","role_max_split_trials"]:schema.pop(key)
-                    after["white_star_symbolic_observer_verify"]["inputSchema"]["properties"].pop("query_id")
+                    for key in [
+                        "role_max_tokens",
+                        "role_max_cells",
+                        "role_max_split_trials",
+                    ]:
+                        schema.pop(key)
+                    after["white_star_symbolic_observer_verify"]["inputSchema"][
+                        "properties"
+                    ].pop("query_id")
                 for name, old in before.items():
                     changed = copy.deepcopy(after[name]["inputSchema"])
-                    if name == "white_star_symbolic_observer_synthesize" and "promotion_policy" not in old["inputSchema"]["properties"]["request"]["properties"]:
+                    if (
+                        name == "white_star_symbolic_observer_synthesize"
+                        and "promotion_policy"
+                        not in old["inputSchema"]["properties"]["request"]["properties"]
+                    ):
                         added = changed["properties"]["request"]["properties"].pop(
                             "promotion_policy", None
                         )
@@ -1244,8 +1263,12 @@ async def run(a):
 if __name__ == "__main__":
     p = argparse.ArgumentParser()
     p.add_argument("--expected-version", default="v0.4.6-developer-preview")
-    p.add_argument("--expected-observer-version", default="observer_synthesis_v1/3-compositional-promotion")
-    p.add_argument("--allow-role-api",action="store_true")
+    p.add_argument(
+        "--expected-observer-version",
+        default="observer_synthesis_v1/3-compositional-promotion",
+    )
+    p.add_argument("--allow-role-api", action="store_true")
+    p.add_argument("--retry-resource-busy", action="store_true")
     p.add_argument("--origin", required=True)
     p.add_argument("--endpoint", required=True)
     p.add_argument("--output", type=Path, required=True)

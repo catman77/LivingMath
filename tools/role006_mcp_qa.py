@@ -61,6 +61,9 @@ async def run(a):
         headers["Host"] = "livingmath.example"
     project = "qa-role006-" + a.tag
     async with httpx.AsyncClient(headers=headers, timeout=120) as http:
+        from mcp_retry_transport import install
+
+        install(http, out / "HTTP_RETRIES.jsonl")
         async with streamable_http_client(a.endpoint, http_client=http) as (
             read,
             write,
@@ -533,6 +536,20 @@ async def run(a):
                         and v["journal_hash_chain"] == "PASS",
                     )
                     save("REPLAY.json", v)
+                elif a.phase=="edges":
+                    conflicting=[record(list("SP"),True,"first"),record(list("SP"),False,"second")]
+                    ct=await store("train",conflicting,"conflicting")
+                    _,m,p=await synth("conflicting",config(ct,probe))
+                    check("conflicting labels are not classified",m["training_status"]=="CONTRADICTORY_TRAINING" and not m["used_feature_ids"] and all(x["score"] is None for x in p))
+                    empty={"schema":"livingmath-observer-dataset/1","kind":"train","records":[]};empty["sha256"]=digest(empty)
+                    await call("white_star_symbolic_dataset_store",{"project":project,"request_key":"empty","dataset":empty},"INVALID_INPUT")
+                    oversized=[record(list("S"*13))];ref=await store("queries",oversized,"outside12")
+                    q=config(tr,ref);q["promotion_policy"]["role_max_tokens"]=12
+                    _,m,p=await synth("outside12",q);f=feature(m)
+                    check("outside role12 is UNKNOWN not false",p[0]["score"] is None and p[0]["status"]=="UNKNOWN")
+                    v=await verify("outside12",f,oversized[0]["id"])
+                    check("outside proof not checked",v["status"]=="UNKNOWN" and v["verification"]["reason"]=="OUT_OF_SCOPE")
+                    save("OUT_OF_SCOPE.json",v)
                 else:
                     # Same training/configuration for every block. All8191 concatenations are measured.
                     seals = []
@@ -643,7 +660,7 @@ async def run(a):
                             for v in decisions.values()
                         ),
                     )
-                else:
+                elif a.phase!="edges":
                     for key in (
                         ["old84"]
                         if a.phase == "baseline"
@@ -740,7 +757,7 @@ if __name__ == "__main__":
     p.add_argument("--version", required=True)
     p.add_argument("--loopback-port", type=int)
     p.add_argument(
-        "--phase", choices=["baseline", "accept", "continuations"], required=True
+        "--phase", choices=["baseline", "accept", "continuations", "edges"], required=True
     )
     p.add_argument("--tag", required=True)
     p.add_argument("--output", type=Path, required=True)
