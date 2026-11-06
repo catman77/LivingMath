@@ -2,7 +2,7 @@
   "schema": "livingmath-publication-checks/1",
   "checked_at_utc": "2026-11-06T03:59:46.292728+00:00",
   "checks_status": "PASS",
-  "publication_status": "READY_FOR_PUSH",
+  "publication_status": "PUBLISHED_AND_NETWORK_CLONE_VERIFIED",
   "repository": "https://github.com/catman77/LivingMath",
   "branch": "main",
   "visibility_observed": "public",
@@ -231,7 +231,7 @@
   },
   "publication_scan": {
     "status": "PASS",
-    "git_history_blobs_checked": 1346,
+    "git_history_blobs_checked": 1362,
     "nested_archive_members_checked": 2102,
     "known_private_values_checked": 75,
     "credential_patterns_checked": 4,
@@ -241,7 +241,7 @@
     },
     "private_database_or_secret_files_tracked": [],
     "findings": [],
-    "source_head": "01d30ca9ef82c11313ceb219d5a39c1e5cf31af7",
+    "source_head": "5f7ebe0a5c57be2d48251e09950917f2706f8328",
     "scope": "HEAD reachable history and selected tracked working files; no online credential verification"
   },
   "CI_changes": [
@@ -249,10 +249,47 @@
     "separate155-test assurance/Semantic compatibility job for Python3.14",
     "legacy PYTHONPATH provided to subprocesses; full suite retained"
   ],
-  "github_actions_run": "CHECK_SEPARATELY_AFTER_PUSH; local PASS is not GitHub CI PASS",
+  "github_actions_run": {
+    "status": "NOT_RUN_ACCOUNT_BILLING_LOCK",
+    "checked_commit": "5f7ebe0a5c57be2d48251e09950917f2706f8328",
+    "runs": [
+      {
+        "id": 42159891067,
+        "name": "Python checks",
+        "conclusion": "failure",
+        "html_url": "https://github.com/catman77/LivingMath/actions/runs/42159891067"
+      },
+      {
+        "id": 42159890742,
+        "name": "Current package and assurance compatibility",
+        "conclusion": "failure",
+        "html_url": "https://github.com/catman77/LivingMath/actions/runs/42159890742"
+      }
+    ],
+    "job_ids": [
+      127702799170,
+      127702798967,
+      127702799958
+    ],
+    "steps_executed": 0,
+    "annotation": "The job was not started because your account is locked due to a billing issue.",
+    "local_PASS_is_not_GitHub_CI_PASS": true
+  },
   "production_restarted": false,
   "production_dependencies_changed": false,
   "production_data_published": false,
   "native_SUTI": "NOT_EXECUTED",
-  "external_R3": "PENDING"
+  "external_R3": "PENDING",
+  "remote_verification": {
+    "status": "PASS",
+    "published_commit": "5f7ebe0a5c57be2d48251e09950917f2706f8328",
+    "target": "https://github.com/catman77/LivingMath",
+    "branch": "main",
+    "fresh_network_clone": true,
+    "all_committed_file_SHA256_equal": true,
+    "files_checked": 1312,
+    "user_uncommitted_gitignore_preserved_and_not_published": true,
+    "production_restart": false
+  },
+  "post_push_checked_at_utc": "2026-11-06T04:02:53.341035+00:00"
 }

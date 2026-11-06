@@ -1,5 +1,35 @@
 # GitHub Actions: запуск пока заблокирован
 
+## Подтверждённая причина на 2026-11-06
+
+Код v0.4.5 опубликован в `main`, commit
+`5f7ebe0a5c57be2d48251e09950917f2706f8328`. Обратное сетевое клонирование
+подтвердило SHA-256 всех **1312** отслеживаемых файлов. Локально заново прошли
+**337** тестов полного пакета на Python 3.13 и **155** assurance/Semantic тестов
+на Python 3.14, плюс doctor smoke в обоих окружениях.
+
+| Workflow | Run | Наблюдение |
+|---|---|---|
+| Current package and assurance compatibility | [42159890742](https://github.com/catman77/LivingMath/actions/runs/42159890742) | Два job созданы, оба `failure`, `steps=[]`, runner не назначен |
+| Python checks | [42159891067](https://github.com/catman77/LivingMath/actions/runs/42159891067) | Один job создан, `failure`, `steps=[]`, runner не назначен |
+
+Checks annotations трёх job (`127702799170`, `127702798967`, `127702799958`)
+содержат одинаковую конкретную причину:
+
+> The job was not started because your account is locked due to a billing issue.
+
+Это **подтверждённая блокировка запуска на стороне GitHub**, а не падение pytest:
+checkout, установка зависимостей и тесты не выполнялись. Загрузка логов для
+не начавшегося job вернула `404 BlobNotFound`. Статус CI —
+`NOT_RUN_ACCOUNT_BILLING_LOCK`, не PASS.
+
+Владельцу аккаунта нужно устранить блокировку в GitHub billing, после чего
+повторить workflow. Платёжные настройки и лимиты этой публикацией не менялись.
+Новые CI jobs сохраняют полный обязательный suite на Python 3.13 с численными
+зависимостями и отдельно обозначают compatibility scope на 3.14.
+
+## Архивная проверка 2026-11-01
+
 Проверено 2026-11-01 после публикации commit
 `ea52cd304a3544eee8a5d511c85c747ada2c0f0d` в `catman77/LivingMath`.
 Локальная чистая установка:1074 PASS,12 прежних SKIP; реальный HTTPS/OAuth MCP
