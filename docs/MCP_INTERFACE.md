@@ -1,7 +1,7 @@
-# MCP-интерфейс LivingMath v0.4.7
+# MCP-интерфейс LivingMath v0.4.8
 
 Актуальная production-композиция: **83 инструмента**, версия сервера
-`v0.4.7-developer-preview`, пакет `0.4.7.dev0`. [Архитектура](../ARCHITECTURE.md),
+`v0.4.8-developer-preview`, пакет `0.4.8.dev0`. [Архитектура](../ARCHITECTURE.md),
 [установка и различия 44/83](INSTALL.md), [исходный текст и rights](USAGE.md).
 
 ## Транспорт и обнаружение
@@ -326,3 +326,26 @@ counterexamples содержат sample_id, record_ref, expected и observed. У
 сохранённым FAILED run. Проверенный feature claim — CHECKED_FINITE_INSTANCE,
 результат независимого checker — CHECKED_INSTANCE; это не mathematical verified.
 [Полная схема diagnostic](symbolic-v1/patch005/CANDIDATE_GENERATION_SCHEMA.json).
+
+## DYCK006: роль, две ветви и независимая проверка query
+
+Число инструментов остаётся83. В `white_star_symbolic_observer_synthesize`
+`request.promotion_policy.mode` дополнен значением `role_branching_ast`, а policy —
+необязательными `role_max_tokens` (1…12), `role_max_cells` (1…91),
+`role_max_split_trials` (1…512). Роли выводятся из train, готовый AST клиентом
+не передаётся. Старые обязательные поля, output schemas и annotations сохранены.
+
+`white_star_symbolic_observer_verify(project,run_id,feature_id,certificate?,query_id?)`
+без query_id проверяет train как прежде. С query_id проверяет исходный query того
+же run; без certificate производит и независимо проверяет свидетельство, с ним
+проверяет недоверенный сертификат по registered AST и настоящему источнику.
+`data.certificate` содержит обе ветви с реальными primitive steps для positive,
+полный interval DP для negative, либо явный UNKNOWN. Никакого execution grant.
+
+[Полные настоящие запросы](symbolic-v1/dyck006/api_examples.json),
+[все83 опубликованные схемы](symbolic-v1/dyck006/MCP_TOOL_SCHEMAS.json),
+[RoleProgram JSON Schema](symbolic-v1/dyck006/ROLE_PROGRAM.schema.json),
+[RoleCertificate JSON Schema](symbolic-v1/dyck006/ROLE_CERTIFICATE.schema.json),
+[TypeScript типы](symbolic-v1/dyck006/types.ts).
+Schemas проверены на1650 действительных программ/сертификатов ответа, включая
+UNKNOWN за пределами scope; семантическая проверка выполняется отдельно.

@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "base_commit": "9d3062a8fb81687a67eb0ad8acf1b10425e76277",
+  "byte_identical_files": 132,
+  "groups": [
+    "Symbolic V1 including worker whitelist",
+    "numerical75-file kernel",
+    "frozen core",
+    "old composition evaluator/checker",
+    "promotion checker",
+    "SP model/checker",
+    "workspace/source bridge"
+  ],
+  "old_independent_verifier": "Only additive dispatch before unchanged legacy checker body"
+}

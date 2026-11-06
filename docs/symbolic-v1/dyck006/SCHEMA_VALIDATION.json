@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "actual_programs_and_certificates_validated": 1650,
+  "statuses": [
+    "DECIDED",
+    "UNKNOWN"
+  ],
+  "validation": "Published syntactic JSON Schema over actual HTTPS MCP outputs; semantic checks are separate"
+}

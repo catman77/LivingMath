@@ -1,0 +1,35 @@
+{
+  "status": "PASS_BASELINE_NO_ROLE_EXPRESSIVITY",
+  "phase": "baseline",
+  "project": "qa-role006-baseline",
+  "version": "v0.4.7-developer-preview",
+  "endpoint": "https://fares-september-rebel-board.trycloudflare.com/mcp",
+  "public_HTTPS_tested": true,
+  "checks": 49,
+  "MCP_calls": 34,
+  "runs": {
+    "old84": "bcec4342455f947f2169a4e8b4a2389d5ab86d15e5819dcfe58d2ced789c94db",
+    "old-minimal-7": "bdf616cc7b9170de732f0a3ef8673f9b60fe35aac713389663aa3b9151216e55",
+    "old-minimal-137": "fe0d5353fd2c7a5723ab4860fd2f728166d270f54020e00132252cfb3a29f19e",
+    "old-minimal-991": "f791c74a70930ee6be10476d2444f49049fe15e79dc9a0019f784526de75d441"
+  },
+  "scores": {
+    "old84": {
+      "TP": 0,
+      "TN": 242,
+      "FP": 0,
+      "FN": 14,
+      "UNKNOWN": 0,
+      "total": 256,
+      "accuracy": 0.9453125,
+      "sensitivity": 0.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 0.5,
+      "coverage": 1.0,
+      "majority_accuracy": 0.9453125
+    }
+  },
+  "external_gold_loaded_after_inference": true,
+  "execution_permission": false,
+  "UNIVERSAL_INVARIANT": false
+}

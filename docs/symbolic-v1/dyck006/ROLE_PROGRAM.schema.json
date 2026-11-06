@@ -1,0 +1,103 @@
+{
+  "type": "object",
+  "properties": {
+    "composition": {
+      "const": "finite_role_branching"
+    },
+    "base": {
+      "enum": [
+        "EPS",
+        "NONE"
+      ]
+    },
+    "roles": {
+      "type": "object",
+      "properties": {
+        "OPEN": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1024
+        },
+        "CLOSE": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1024
+        }
+      },
+      "required": [
+        "OPEN",
+        "CLOSE"
+      ],
+      "additionalProperties": false
+    },
+    "sequence": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 4,
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "properties": {
+              "op": {
+                "const": "ATOM_ROLE"
+              },
+              "role": {
+                "enum": [
+                  "OPEN",
+                  "CLOSE"
+                ]
+              }
+            },
+            "required": [
+              "op",
+              "role"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "op": {
+                "const": "RECURSE"
+              },
+              "branch": {
+                "enum": [
+                  "b0",
+                  "b1"
+                ]
+              }
+            },
+            "required": [
+              "op",
+              "branch"
+            ],
+            "additionalProperties": false
+          }
+        ]
+      }
+    },
+    "quantifier": {
+      "const": "FINITE_EXISTS"
+    },
+    "combine": {
+      "const": "BRANCH_AND"
+    },
+    "reconstruction": {
+      "const": "CONCAT"
+    }
+  },
+  "required": [
+    "composition",
+    "base",
+    "roles",
+    "sequence",
+    "quantifier",
+    "combine",
+    "reconstruction"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "livingmath-role-program/1",
+  "description": "Syntactic schema only. Exactly two ordered roles, unique branch IDs, strict length decrease, source ownership, full-train fit and budgets require the independent semantic checker."
+}

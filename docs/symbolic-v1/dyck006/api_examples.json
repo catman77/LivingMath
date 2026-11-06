@@ -1,0 +1,3118 @@
+{
+  "actual_HTTPS_OAuth_requests_responses": [
+    {
+      "tool": "assurance_project_new",
+      "arguments": {
+        "project": "qa-role006-prod",
+        "request_key": "init"
+      },
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\n  \"project\": \"qa-role006-prod\",\n  \"release\": \"v0.1.0-developer-preview\",\n  \"status\": \"CREATED\",\n  \"execution_permission\": false\n}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structuredContent": null,
+        "isError": false
+      }
+    },
+    {
+      "tool": "white_star_symbolic_dataset_store",
+      "arguments": {
+        "project": "qa-role006-prod",
+        "request_key": "train84",
+        "dataset": {
+          "schema": "livingmath-observer-dataset/1",
+          "kind": "train",
+          "records": [
+            {
+              "accepted": false,
+              "id": "DYCK_000",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "33255918fa574a561dcc468cae3be6668a0d2e67da5b833daf56d9746e68f656",
+                "text": "S S"
+              },
+              "tokens": [
+                "S",
+                "S"
+              ]
+            },
+            {
+              "accepted": true,
+              "id": "DYCK_001",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "b25a047ab80cedb5780b43c195bc4b04aa53e34554a2391ee5fd28699620feea",
+                "text": "S P"
+              },
+              "tokens": [
+                "S",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_002",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "9c37ad84342ef2c3a3c88d58ca328de187719a6811f552336471f4da4c101020",
+                "text": "P S"
+              },
+              "tokens": [
+                "P",
+                "S"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_003",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "b5b79f8cc31fe9342e04348f6ae065f5f282ee721c17fbf47a81b37e963f215e",
+                "text": "P P"
+              },
+              "tokens": [
+                "P",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_004",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "6a8cdedf80a9ee6fbd9a97d14feee420c1621dda57697e0dceb7c906a9e72a93",
+                "text": "S S S S"
+              },
+              "tokens": [
+                "S",
+                "S",
+                "S",
+                "S"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_005",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "9533bc33cb30d6b91777b3bbe6911989b0d676c1b519953bb7375d05d0a9891c",
+                "text": "S S S P"
+              },
+              "tokens": [
+                "S",
+                "S",
+                "S",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_006",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "c1f7ee075b3a6d8e5c731b57b6540c80bcc7f84072ec5bac1295835266059a35",
+                "text": "S S P S"
+              },
+              "tokens": [
+                "S",
+                "S",
+                "P",
+                "S"
+              ]
+            },
+            {
+              "accepted": true,
+              "id": "DYCK_007",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "78b82ce28367be0d7d14ed3c3e4189ca94f69bd1c885f834d52e97fdee9a019c",
+                "text": "S S P P"
+              },
+              "tokens": [
+                "S",
+                "S",
+                "P",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_008",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "c02125bf89a64964405b07258552a70e5f20d7ea4b77e3de40fcd2f715e6aa50",
+                "text": "S P S S"
+              },
+              "tokens": [
+                "S",
+                "P",
+                "S",
+                "S"
+              ]
+            },
+            {
+              "accepted": true,
+              "id": "DYCK_009",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "835728e53aecfa674ccb56a8237f72e14bce3ef9c65f2c14fa2038ff8fc6d367",
+                "text": "S P S P"
+              },
+              "tokens": [
+                "S",
+                "P",
+                "S",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_010",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "b1707da15c8d9cb5f750128a63ab62eeaf8f372fd6d1e36f6b8ec93062d9c106",
+                "text": "S P P S"
+              },
+              "tokens": [
+                "S",
+                "P",
+                "P",
+                "S"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_011",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "be390ed74c9a73826ddbc2764ec39d11093cb3c7f1d35de0d1bc0db030014636",
+                "text": "S P P P"
+              },
+              "tokens": [
+                "S",
+                "P",
+                "P",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_012",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "fe8dcc92f94ffaab02e1df8616d07ce422e9ad0dc647e0ad2d5338ec2a4051a4",
+                "text": "P S S S"
+              },
+              "tokens": [
+                "P",
+                "S",
+                "S",
+                "S"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_013",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "4e033458c100b1047e73d4ab35aeedbc4b33a8d3adbeb40970beab12cb4622b6",
+                "text": "P S S P"
+              },
+              "tokens": [
+                "P",
+                "S",
+                "S",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_014",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "cc3c64690310f36a52daafe0db3cb495a61d6e7395866b7e5132eba30ce58546",
+                "text": "P S P S"
+              },
+              "tokens": [
+                "P",
+                "S",
+                "P",
+                "S"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_015",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "cc2f22c31937e42ecf4d64086767fdc1018080a28643bb9837b00016c736aab6",
+                "text": "P S P P"
+              },
+              "tokens": [
+                "P",
+                "S",
+                "P",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_016",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "8fcae3e31af21a843084739033ebeea726fe76b94d77497574db992fca90641a",
+                "text": "P P S S"
+              },
+              "tokens": [
+                "P",
+                "P",
+                "S",
+                "S"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_017",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "2b44eba4233be4562d232f64d3d8ac4611887f9b56489f6a3b2c150715424475",
+                "text": "P P S P"
+              },
+              "tokens": [
+                "P",
+                "P",
+                "S",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_018",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "6748f7a869c35adce62de4fc4620ea2582e31346d9a00a2c48f13503e2ab87b1",
+                "text": "P P P S"
+              },
+              "tokens": [
+                "P",
+                "P",
+                "P",
+                "S"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_019",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "25839a61baa59b62c36373be6a4b454d947bf8467d7266c4c09bdd7363a66f29",
+                "text": "P P P P"
+              },
+              "tokens": [
+                "P",
+                "P",
+                "P",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_020",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "1077b129a940482bbf3414d35195c9b69c5e8eaf860ed1a46755f508ec53a3aa",
+                "text": "S S S S S S"
+              },
+              "tokens": [
+                "S",
+                "S",
+                "S",
+                "S",
+                "S",
+                "S"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_021",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "33a2b481f4f915dc8172796f7702e9839035372ed34180bfc63181a81a198818",
+                "text": "S S S S S P"
+              },
+              "tokens": [
+                "S",
+                "S",
+                "S",
+                "S",
+                "S",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_022",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "f367277992b13139642a2673f0744816dd64bccfa3864dceb73d50832f87f6eb",
+                "text": "S S S S P S"
+              },
+              "tokens": [
+                "S",
+                "S",
+                "S",
+                "S",
+                "P",
+                "S"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_023",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "04d4744e5b5569a41b8939936871d183ee42a224ac936c278221017a42f36c2b",
+                "text": "S S S S P P"
+              },
+              "tokens": [
+                "S",
+                "S",
+                "S",
+                "S",
+                "P",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_024",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "ebcf7ee0afcfdbe917d7b7d59fc72d1e5b23ed05f480ed3afe851e50caa14412",
+                "text": "S S S P S S"
+              },
+              "tokens": [
+                "S",
+                "S",
+                "S",
+                "P",
+                "S",
+                "S"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_025",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "4c51352e1d51ba7355189baa1a200168b4a24c5b26340bff9fbbe9f58084fecc",
+                "text": "S S S P S P"
+              },
+              "tokens": [
+                "S",
+                "S",
+                "S",
+                "P",
+                "S",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_026",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "6d60449dc392dbf75cfc61b8c316f8199b98d706e445c2c5e5e2a672c8fd4d29",
+                "text": "S S S P P S"
+              },
+              "tokens": [
+                "S",
+                "S",
+                "S",
+                "P",
+                "P",
+                "S"
+              ]
+            },
+            {
+              "accepted": true,
+              "id": "DYCK_027",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "54be5a3c53960e2abdefa9a88cf34b24b9f697809b336c4e228e4353a5456c63",
+                "text": "S S S P P P"
+              },
+              "tokens": [
+                "S",
+                "S",
+                "S",
+                "P",
+                "P",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_028",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "84fa135ad52a972c05ae96d0572ba79953a0bf365ab2ae1885ba67c6e6100e73",
+                "text": "S S P S S S"
+              },
+              "tokens": [
+                "S",
+                "S",
+                "P",
+                "S",
+                "S",
+                "S"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_029",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "4eb742f37293885dcddbdb8152dbd21370e65c12d140ffb28de7bf27e3a2cca4",
+                "text": "S S P S S P"
+              },
+              "tokens": [
+                "S",
+                "S",
+                "P",
+                "S",
+                "S",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_030",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "7cd5a4da4ba3d51e9ae293413e2937a62fdeeb513c046bddd4b93063a843f9e7",
+                "text": "S S P S P S"
+              },
+              "tokens": [
+                "S",
+                "S",
+                "P",
+                "S",
+                "P",
+                "S"
+              ]
+            },
+            {
+              "accepted": true,
+              "id": "DYCK_031",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "77b378ec070d1e6f018a3e5cebebbf08a8013f84699959ceb45560f0c8a1c420",
+                "text": "S S P S P P"
+              },
+              "tokens": [
+                "S",
+                "S",
+                "P",
+                "S",
+                "P",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_032",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "2eae7625dac8edb0c312601a9a5ce73dd07adf6b658652e184fea8fec64fbf53",
+                "text": "S S P P S S"
+              },
+              "tokens": [
+                "S",
+                "S",
+                "P",
+                "P",
+                "S",
+                "S"
+              ]
+            },
+            {
+              "accepted": true,
+              "id": "DYCK_033",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416",
+                "text": "S S P P S P"
+              },
+              "tokens": [
+                "S",
+                "S",
+                "P",
+                "P",
+                "S",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_034",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "f1eb44997981d4f317b5f8151358fd663848f355d7a001ba9bced59f5e339b76",
+                "text": "S S P P P S"
+              },
+              "tokens": [
+                "S",
+                "S",
+                "P",
+                "P",
+                "P",
+                "S"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_035",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "2e51c2f2f092ab776b7aaf826d811687ef3e48c493bef9c9084cb0c47ef89770",
+                "text": "S S P P P P"
+              },
+              "tokens": [
+                "S",
+                "S",
+                "P",
+                "P",
+                "P",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_036",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "187cf49cb043346466af87937d2bce00b27cf6156e1e26783edcdef4dca9b58b",
+                "text": "S P S S S S"
+              },
+              "tokens": [
+                "S",
+                "P",
+                "S",
+                "S",
+                "S",
+                "S"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_037",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "b4f75ff7ec7325b83501fb8ea36bf01b31e415f3cb6eea3094623243640a4071",
+                "text": "S P S S S P"
+              },
+              "tokens": [
+                "S",
+                "P",
+                "S",
+                "S",
+                "S",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_038",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "26bfeb3e2bdba2ae8d970ee0fdc948021dc02d572b545fb553046caedc59485e",
+                "text": "S P S S P S"
+              },
+              "tokens": [
+                "S",
+                "P",
+                "S",
+                "S",
+                "P",
+                "S"
+              ]
+            },
+            {
+              "accepted": true,
+              "id": "DYCK_039",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "64b44ec0c8cdf676dcf54edf1211e424d6802ac201d4c04a102a8399caba98c5",
+                "text": "S P S S P P"
+              },
+              "tokens": [
+                "S",
+                "P",
+                "S",
+                "S",
+                "P",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_040",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "ac1c38d75cf44836bebe04bbbdd2b367a7e34ebc5552d5520280fae1199bcc45",
+                "text": "S P S P S S"
+              },
+              "tokens": [
+                "S",
+                "P",
+                "S",
+                "P",
+                "S",
+                "S"
+              ]
+            },
+            {
+              "accepted": true,
+              "id": "DYCK_041",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "34fdc743bd7eae4d2cc4f99ba4518f887dc45a5eaddb226a9656d35bcd137ef2",
+                "text": "S P S P S P"
+              },
+              "tokens": [
+                "S",
+                "P",
+                "S",
+                "P",
+                "S",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_042",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "56dacba1ed8a81c6988ba8f741643f91d9f8d3d775bd8784e42df661a6c1a950",
+                "text": "S P S P P S"
+              },
+              "tokens": [
+                "S",
+                "P",
+                "S",
+                "P",
+                "P",
+                "S"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_043",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "338d097638bfcb8141c1df6cfbf7b94fdde658da4c2c429885c337e11cd01aca",
+                "text": "S P S P P P"
+              },
+              "tokens": [
+                "S",
+                "P",
+                "S",
+                "P",
+                "P",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_044",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "558b700887666b9d51d068ebac1246761c94ebb02174b328ae9f64e1461fdbad",
+                "text": "S P P S S S"
+              },
+              "tokens": [
+                "S",
+                "P",
+                "P",
+                "S",
+                "S",
+                "S"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_045",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "7cb17da0bad8fb2d824f8f8cae04beadd21b3b0f34aebc299965841b10b46446",
+                "text": "S P P S S P"
+              },
+              "tokens": [
+                "S",
+                "P",
+                "P",
+                "S",
+                "S",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_046",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "345263fd227b5076482775309e5c67ec4d0a56e9736e959650924ad015ac55a8",
+                "text": "S P P S P S"
+              },
+              "tokens": [
+                "S",
+                "P",
+                "P",
+                "S",
+                "P",
+                "S"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_047",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "abbaebbc0cae71d540855ac7177c4de5b4348cc0d01aee7f1c4047b87b2ca62f",
+                "text": "S P P S P P"
+              },
+              "tokens": [
+                "S",
+                "P",
+                "P",
+                "S",
+                "P",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_048",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "54a4354445c3dfbf85c6587dc8c369e5dfa2f75c87791efa0e647e4fb5666ee2",
+                "text": "S P P P S S"
+              },
+              "tokens": [
+                "S",
+                "P",
+                "P",
+                "P",
+                "S",
+                "S"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_049",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "bd68043d7331580a23d98cae49b9d1f9e6dec739582f44bb2368e054111116f9",
+                "text": "S P P P S P"
+              },
+              "tokens": [
+                "S",
+                "P",
+                "P",
+                "P",
+                "S",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_050",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "e7c38f616c851980fd249841cb327f0d8639af754a3751ac37db8815a7bc6a0e",
+                "text": "S P P P P S"
+              },
+              "tokens": [
+                "S",
+                "P",
+                "P",
+                "P",
+                "P",
+                "S"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_051",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "d6fcde49357d302315acfd7bc91e106f1fd4a6c448427289c922f5f3bc2a2a5f",
+                "text": "S P P P P P"
+              },
+              "tokens": [
+                "S",
+                "P",
+                "P",
+                "P",
+                "P",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_052",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "b16c9d5d6b5e25e8a6f3fd525ca15646af37469ec9f9658e3ea44bf689c77b1b",
+                "text": "P S S S S S"
+              },
+              "tokens": [
+                "P",
+                "S",
+                "S",
+                "S",
+                "S",
+                "S"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_053",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "c9e8af3a2beaa5eb4420560bd9320c2ef60002e9147667070ebfcd718b7f25ac",
+                "text": "P S S S S P"
+              },
+              "tokens": [
+                "P",
+                "S",
+                "S",
+                "S",
+                "S",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_054",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "94ecc03eeeb9d0b10e9ed6a53778d3455c445be8d4a675cfc7c4fc1af6700bda",
+                "text": "P S S S P S"
+              },
+              "tokens": [
+                "P",
+                "S",
+                "S",
+                "S",
+                "P",
+                "S"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_055",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "d86c19f2d91b4b4f709521ee335304a6b338ea6efaaa974078b09c2fa806c8e2",
+                "text": "P S S S P P"
+              },
+              "tokens": [
+                "P",
+                "S",
+                "S",
+                "S",
+                "P",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_056",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "4c9c1af52c4ff08c929f19990ddad1c0b55893e35facbd2281a1e177b8356edb",
+                "text": "P S S P S S"
+              },
+              "tokens": [
+                "P",
+                "S",
+                "S",
+                "P",
+                "S",
+                "S"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_057",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "9e0d834b26efbf507ed7cb508179cc36834ca8f5ceca90dd29aa33b850d01781",
+                "text": "P S S P S P"
+              },
+              "tokens": [
+                "P",
+                "S",
+                "S",
+                "P",
+                "S",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_058",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "c18b0e9153ae1dd9fa8c01cd6c75e276c92bd6ea7be565cb961001cf52bba148",
+                "text": "P S S P P S"
+              },
+              "tokens": [
+                "P",
+                "S",
+                "S",
+                "P",
+                "P",
+                "S"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_059",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "34681304e940422ddfdcc55cb2acd48c6ee2d7196d778a63d0d05ab1f1534a97",
+                "text": "P S S P P P"
+              },
+              "tokens": [
+                "P",
+                "S",
+                "S",
+                "P",
+                "P",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_060",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "051e6395f420701c3424b2f6a7b4a0c0ada3d4506106a211407aac5a99d9cac4",
+                "text": "P S P S S S"
+              },
+              "tokens": [
+                "P",
+                "S",
+                "P",
+                "S",
+                "S",
+                "S"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_061",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "fb2d7216ecd4050ce2aa8ea91552d0ae8f2da664d0cecad551f650be81ab2ddb",
+                "text": "P S P S S P"
+              },
+              "tokens": [
+                "P",
+                "S",
+                "P",
+                "S",
+                "S",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_062",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "464aa94fc66b92627ee246f626ba531961fec3f991c4de3271e0f1924c92b186",
+                "text": "P S P S P S"
+              },
+              "tokens": [
+                "P",
+                "S",
+                "P",
+                "S",
+                "P",
+                "S"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_063",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "ca24c127a39388136bc3c53eed33cc8ba801edbb7fe2122e5d93dfe3d0cbd065",
+                "text": "P S P S P P"
+              },
+              "tokens": [
+                "P",
+                "S",
+                "P",
+                "S",
+                "P",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_064",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "9e6cecc27533b4f92e7825b8b7c5c4048f0cf2fd62d7311165c4186a6b7aab8c",
+                "text": "P S P P S S"
+              },
+              "tokens": [
+                "P",
+                "S",
+                "P",
+                "P",
+                "S",
+                "S"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_065",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "6201d8946527a1384e5ebb70b10629d7aa0106d3c3476107d41ce85eb8d8f16a",
+                "text": "P S P P S P"
+              },
+              "tokens": [
+                "P",
+                "S",
+                "P",
+                "P",
+                "S",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_066",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "2f7aad9dab324b8651f825862b50e2fb9bf60e1484a4df77ecae427dcaa118fc",
+                "text": "P S P P P S"
+              },
+              "tokens": [
+                "P",
+                "S",
+                "P",
+                "P",
+                "P",
+                "S"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_067",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "d7020adc261c4310ac0084afb2a5d46a41d74b37e48b329d60f0307b08db8b55",
+                "text": "P S P P P P"
+              },
+              "tokens": [
+                "P",
+                "S",
+                "P",
+                "P",
+                "P",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_068",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "1726e85730ccbbdf9fbb4e556b67190a86dc373e46f51933f1e5808180cbb032",
+                "text": "P P S S S S"
+              },
+              "tokens": [
+                "P",
+                "P",
+                "S",
+                "S",
+                "S",
+                "S"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_069",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "a38216620ada9759e686259a268b3b44875c51e7e515862b4fe1617f42235b80",
+                "text": "P P S S S P"
+              },
+              "tokens": [
+                "P",
+                "P",
+                "S",
+                "S",
+                "S",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_070",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "b7e6ec22e727f51a58c026dc8a077aac767d8b465395d35bb30dd139bccde9e8",
+                "text": "P P S S P S"
+              },
+              "tokens": [
+                "P",
+                "P",
+                "S",
+                "S",
+                "P",
+                "S"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_071",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "6d36d369589c6d6407c5a281a7ed16fc649d2c2395db70add544b598dbccec29",
+                "text": "P P S S P P"
+              },
+              "tokens": [
+                "P",
+                "P",
+                "S",
+                "S",
+                "P",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_072",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "67a91b6324a79e1967e7c72f372084cd50a68ea11d1888624049d6a4b82830f3",
+                "text": "P P S P S S"
+              },
+              "tokens": [
+                "P",
+                "P",
+                "S",
+                "P",
+                "S",
+                "S"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_073",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "8f611b97f1d880e47050206f71bd57e9ad9b991d33c001fbc6bc7795406c8553",
+                "text": "P P S P S P"
+              },
+              "tokens": [
+                "P",
+                "P",
+                "S",
+                "P",
+                "S",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_074",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "93d1bb847ec608dd1ffda6ac017130b9a8c51852757921d5be841589832d8d62",
+                "text": "P P S P P S"
+              },
+              "tokens": [
+                "P",
+                "P",
+                "S",
+                "P",
+                "P",
+                "S"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_075",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "0c948278637cb9231b2182f8802975f8811bc36e61e07f146faeae17fe33796e",
+                "text": "P P S P P P"
+              },
+              "tokens": [
+                "P",
+                "P",
+                "S",
+                "P",
+                "P",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_076",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "b4f744f0618ac6af3341b6150bc8bc2290c95851d940ade1384db756d693903e",
+                "text": "P P P S S S"
+              },
+              "tokens": [
+                "P",
+                "P",
+                "P",
+                "S",
+                "S",
+                "S"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_077",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "37b1b50a7a7f483dad1ad68de3d86f460317ef21c4b76acee7d4019d5267c9d2",
+                "text": "P P P S S P"
+              },
+              "tokens": [
+                "P",
+                "P",
+                "P",
+                "S",
+                "S",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_078",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "280cff3653fb2452a1ca574e3016d2a63eb934260b4ee9c5d7748c3dd1ec2aa5",
+                "text": "P P P S P S"
+              },
+              "tokens": [
+                "P",
+                "P",
+                "P",
+                "S",
+                "P",
+                "S"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_079",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "933d91086aa48199bee0f07d615e68225bdc696cb61c98819ce1b26619a5aaaf",
+                "text": "P P P S P P"
+              },
+              "tokens": [
+                "P",
+                "P",
+                "P",
+                "S",
+                "P",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_080",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "8e714c413a3c20a7561b9d250e422a49bfd4cc5159a09620293a2662b584a9c8",
+                "text": "P P P P S S"
+              },
+              "tokens": [
+                "P",
+                "P",
+                "P",
+                "P",
+                "S",
+                "S"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_081",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "b9c525567ad1e00f3162461d3296d6af3b7cee11c9fda250c46d3ce936655bdf",
+                "text": "P P P P S P"
+              },
+              "tokens": [
+                "P",
+                "P",
+                "P",
+                "P",
+                "S",
+                "P"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_082",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "53d07380c4155ae594a17b51a0217113d392b643dc0ce7a2ae6154a8bc760658",
+                "text": "P P P P P S"
+              },
+              "tokens": [
+                "P",
+                "P",
+                "P",
+                "P",
+                "P",
+                "S"
+              ]
+            },
+            {
+              "accepted": false,
+              "id": "DYCK_083",
+              "source": {
+                "edition": "dyck-full-parity-20261106",
+                "rights": "Synthetic",
+                "sha256": "c3a0fcadf5fd62d1b1ebab1ddd6f6815cc657161547be8617ee5c02f916ad2f1",
+                "text": "P P P P P P"
+              },
+              "tokens": [
+                "P",
+                "P",
+                "P",
+                "P",
+                "P",
+                "P"
+              ]
+            }
+          ],
+          "sha256": "07f82074e792b6fe4c586e9a0f5aa11e1df23568be1c19b620e9725a17927960"
+        }
+      },
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"data\":{\"dataset_ref\":\"596fa9621ae7cd197ce0c999a6d03ac406b313ffa351a1107f9807d709f3434e\",\"execution_permission\":false,\"kind\":\"train\",\"record_count\":84,\"sha256\":\"07f82074e792b6fe4c586e9a0f5aa11e1df23568be1c19b620e9725a17927960\"},\"execution_permission\":false,\"ok\":true,\"schema\":\"livingmath-symbolic-extension-response/1\",\"status\":\"OK\"}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structuredContent": {
+          "schema": "livingmath-symbolic-extension-response/1",
+          "ok": true,
+          "status": "OK",
+          "execution_permission": false,
+          "data": {
+            "dataset_ref": "596fa9621ae7cd197ce0c999a6d03ac406b313ffa351a1107f9807d709f3434e",
+            "kind": "train",
+            "sha256": "07f82074e792b6fe4c586e9a0f5aa11e1df23568be1c19b620e9725a17927960",
+            "record_count": 84,
+            "execution_permission": false
+          }
+        },
+        "isError": false
+      }
+    },
+    {
+      "tool": "white_star_symbolic_observer_synthesize",
+      "arguments": {
+        "project": "qa-role006-prod",
+        "request_key": "minimal-7",
+        "request": {
+          "schema": "livingmath-symbolic-observer-synthesis-request/1",
+          "task": {
+            "mode": "context_relation_induction",
+            "train_ref": "ff61b9d709e16fccb1035ad80225c5903d4d969f7caf7acc7f5f3d95636e5152",
+            "predict_ref": "14614d9af5c4d9f5bd35b9e81570f96f2e3de1d1961b7913785bb2647c8d6319",
+            "holdout_labels_visible": false,
+            "structure_levels": [
+              "word"
+            ],
+            "candidate_transformations": [
+              "REVERSE",
+              "RENAME"
+            ]
+          },
+          "feature_policy": {
+            "enabled_builtins": [],
+            "feature_denylist": [
+              "pair_0_max",
+              "pair_0_min",
+              "pair_0_final"
+            ],
+            "derive_relations": true,
+            "prohibit_undocumented_builtins": true,
+            "synthesis_origin_required": true,
+            "renaming_scope": "per_variant",
+            "strict_source_boundaries": true
+          },
+          "search": {
+            "seed": 7,
+            "max_composition_depth": 4,
+            "max_proposals": 128,
+            "max_contexts": 128,
+            "max_witnesses": 512,
+            "max_cpu_ms": 4000
+          },
+          "promotion_policy": {
+            "mode": "role_branching_ast",
+            "candidate_sources": [
+              "derivation_trace"
+            ],
+            "max_ast_nodes": 32,
+            "max_ast_depth": 8,
+            "max_recursion_steps": 8,
+            "max_tokens": 8,
+            "max_train_witnesses": 256,
+            "require_independent_checker": true
+          }
+        }
+      },
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"data\":{\"engine\":\"observer_synthesis_v1\",\"error\":null,\"execution_permission\":false,\"kernel_binding\":\"81fe95f44b6a193922679d877940f87dc2b42ded4a83b79f69c8a0dfc35416f8\",\"metrics\":{\"LLM_calls\":0,\"job_cpu_s\":0.031021784,\"max_rss_kib\":60800},\"project\":\"qa-role006-prod\",\"result_digest\":\"47d256ddf1b7a5dcb577d797addd720712d6a0c4594c77a1e876f6cb61a4392b\",\"result_ref\":\"b8f12ace2aaa81ebd33363401badc70d25a476a2ef1a41a2bb0514b6742c7d7b\",\"run_id\":\"16a9e17a071f7dfde1556184e31e2fec563985458d5c8be66d064eee44777393\",\"schema\":\"livingmath-symbolic-extension-run/1\",\"section_refs\":{\"candidate_rules\":\"016c5f0604f2751bfb062990d36939caf759608cd67759eaa7c422188b13a308\",\"checks\":\"0c8c32fb0ac210dc7c060085c5e3b70bb89162ad0df5ccdea6d26bc4423972f4\",\"diagnostics\":\"187acf378e8540d2f14fb6af73ca250a9fed598a87d266dd8e004d6839e1dda7\",\"manifest\":\"f5853f8e7ede8f6f0c2b2586f034930488b671ede1b72c19acf939b8dee26a5c\",\"model\":\"336d873e87a8a9c3cf04db8c5b7cecc17f95ad91830cf8a22eb131dc142ce52e\",\"observer_provenance\":\"eea1f8b8a082ab863f933ec133dc3e10fc7247104ab3df383a1812d866159cf4\",\"pairwise_eval\":\"e0a9757c45e20e3871a2775dfad07bbb19b79f036ae68abd317761c80184ecee\"},\"snapshot_ref\":\"4457e0aa74a604c1516f1c2f4494712f55648b76d4dda54dc5f2506359e24abe\",\"status\":\"COMPLETED\",\"summary\":{\"conditional_exclusion_applied\":false,\"execution_permission\":false,\"family_status\":\"UNDERDETERMINED\",\"hypothesis_digest\":\"196d4cff48712f30b674f4768e90c6ac624c0950cb46e3e82dd57fce6683f78b\",\"pair_counts\":{\"NOT_IDENTIFIABLE\":0,\"PREFERENCE\":0,\"TIE\":0,\"UNDERDETERMINED\":0},\"query_records\":5,\"synthesis_status\":\"VERIFIABLE_OPERATOR_COMPOSITION_FOUND\",\"train_records\":2,\"training_status\":\"CONSISTENT\"}},\"execution_permission\":false,\"ok\":true,\"schema\":\"livingmath-symbolic-extension-response/1\",\"status\":\"COMPLETED\"}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structuredContent": {
+          "schema": "livingmath-symbolic-extension-response/1",
+          "ok": true,
+          "status": "COMPLETED",
+          "execution_permission": false,
+          "data": {
+            "engine": "observer_synthesis_v1",
+            "error": null,
+            "execution_permission": false,
+            "kernel_binding": "81fe95f44b6a193922679d877940f87dc2b42ded4a83b79f69c8a0dfc35416f8",
+            "metrics": {
+              "LLM_calls": 0,
+              "job_cpu_s": 0.031021784,
+              "max_rss_kib": 60800
+            },
+            "project": "qa-role006-prod",
+            "result_digest": "47d256ddf1b7a5dcb577d797addd720712d6a0c4594c77a1e876f6cb61a4392b",
+            "result_ref": "b8f12ace2aaa81ebd33363401badc70d25a476a2ef1a41a2bb0514b6742c7d7b",
+            "run_id": "16a9e17a071f7dfde1556184e31e2fec563985458d5c8be66d064eee44777393",
+            "schema": "livingmath-symbolic-extension-run/1",
+            "section_refs": {
+              "candidate_rules": "016c5f0604f2751bfb062990d36939caf759608cd67759eaa7c422188b13a308",
+              "checks": "0c8c32fb0ac210dc7c060085c5e3b70bb89162ad0df5ccdea6d26bc4423972f4",
+              "diagnostics": "187acf378e8540d2f14fb6af73ca250a9fed598a87d266dd8e004d6839e1dda7",
+              "manifest": "f5853f8e7ede8f6f0c2b2586f034930488b671ede1b72c19acf939b8dee26a5c",
+              "model": "336d873e87a8a9c3cf04db8c5b7cecc17f95ad91830cf8a22eb131dc142ce52e",
+              "observer_provenance": "eea1f8b8a082ab863f933ec133dc3e10fc7247104ab3df383a1812d866159cf4",
+              "pairwise_eval": "e0a9757c45e20e3871a2775dfad07bbb19b79f036ae68abd317761c80184ecee"
+            },
+            "snapshot_ref": "4457e0aa74a604c1516f1c2f4494712f55648b76d4dda54dc5f2506359e24abe",
+            "status": "COMPLETED",
+            "summary": {
+              "conditional_exclusion_applied": false,
+              "execution_permission": false,
+              "family_status": "UNDERDETERMINED",
+              "hypothesis_digest": "196d4cff48712f30b674f4768e90c6ac624c0950cb46e3e82dd57fce6683f78b",
+              "pair_counts": {
+                "NOT_IDENTIFIABLE": 0,
+                "PREFERENCE": 0,
+                "TIE": 0,
+                "UNDERDETERMINED": 0
+              },
+              "query_records": 5,
+              "synthesis_status": "VERIFIABLE_OPERATOR_COMPOSITION_FOUND",
+              "train_records": 2,
+              "training_status": "CONSISTENT"
+            }
+          }
+        },
+        "isError": false
+      }
+    },
+    {
+      "tool": "white_star_symbolic_observer_verify",
+      "arguments": {
+        "project": "qa-role006-prod",
+        "run_id": "16a9e17a071f7dfde1556184e31e2fec563985458d5c8be66d064eee44777393",
+        "feature_id": "derived_24c98c1ef0f12081733e"
+      },
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"data\":{\"ast_digest\":\"c7e0448753b5584e74eac32286e203f41cb46b3a82c8935146293782ed09da0c\",\"execution_permission\":false,\"status\":\"CHECKED_INSTANCE\",\"training_compatibility\":true,\"universal_invariant\":false,\"verified_witnesses\":2,\"verifier_digest\":\"847654bb8cf5d69a76da8bfa22864eb15722181bfe3070870cd9088ae1ec6da3\",\"verifier_version\":\"role-branch-independent-checker/1\"},\"execution_permission\":false,\"ok\":true,\"schema\":\"livingmath-symbolic-extension-response/1\",\"status\":\"CHECKED_INSTANCE\"}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structuredContent": {
+          "schema": "livingmath-symbolic-extension-response/1",
+          "ok": true,
+          "status": "CHECKED_INSTANCE",
+          "execution_permission": false,
+          "data": {
+            "ast_digest": "c7e0448753b5584e74eac32286e203f41cb46b3a82c8935146293782ed09da0c",
+            "execution_permission": false,
+            "status": "CHECKED_INSTANCE",
+            "training_compatibility": true,
+            "universal_invariant": false,
+            "verified_witnesses": 2,
+            "verifier_digest": "847654bb8cf5d69a76da8bfa22864eb15722181bfe3070870cd9088ae1ec6da3",
+            "verifier_version": "role-branch-independent-checker/1"
+          }
+        },
+        "isError": false
+      }
+    },
+    {
+      "tool": "white_star_symbolic_observer_synthesize",
+      "arguments": {
+        "project": "qa-role006-prod",
+        "request_key": "full-137",
+        "request": {
+          "schema": "livingmath-symbolic-observer-synthesis-request/1",
+          "task": {
+            "mode": "context_relation_induction",
+            "train_ref": "596fa9621ae7cd197ce0c999a6d03ac406b313ffa351a1107f9807d709f3434e",
+            "predict_ref": "e956883b11ac2b73162fb9f55874f2918f7d6aa8d5755dadbe5bcf58e3bb1073",
+            "holdout_labels_visible": false,
+            "structure_levels": [
+              "word"
+            ],
+            "candidate_transformations": [
+              "REVERSE",
+              "RENAME"
+            ]
+          },
+          "feature_policy": {
+            "enabled_builtins": [],
+            "feature_denylist": [
+              "pair_0_max",
+              "pair_0_min",
+              "pair_0_final"
+            ],
+            "derive_relations": true,
+            "prohibit_undocumented_builtins": true,
+            "synthesis_origin_required": true,
+            "renaming_scope": "per_variant",
+            "strict_source_boundaries": true
+          },
+          "search": {
+            "seed": 137,
+            "max_composition_depth": 4,
+            "max_proposals": 128,
+            "max_contexts": 128,
+            "max_witnesses": 512,
+            "max_cpu_ms": 4000
+          },
+          "promotion_policy": {
+            "mode": "role_branching_ast",
+            "candidate_sources": [
+              "derivation_trace"
+            ],
+            "max_ast_nodes": 32,
+            "max_ast_depth": 8,
+            "max_recursion_steps": 8,
+            "max_tokens": 8,
+            "max_train_witnesses": 256,
+            "require_independent_checker": true
+          }
+        }
+      },
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"data\":{\"engine\":\"observer_synthesis_v1\",\"error\":null,\"execution_permission\":false,\"kernel_binding\":\"81fe95f44b6a193922679d877940f87dc2b42ded4a83b79f69c8a0dfc35416f8\",\"metrics\":{\"LLM_calls\":0,\"job_cpu_s\":0.790470259,\"max_rss_kib\":64228},\"project\":\"qa-role006-prod\",\"result_digest\":\"12153964910f04075b97c2cc7b4c099bf29f5351d0d1142b3f7b292b67bf2f02\",\"result_ref\":\"41bd1aedda66ee4ce597e7727b5473db834dbb39dbb54799d91de389e1061a99\",\"run_id\":\"dd20db27ae45440edbc56dd4ce45bee541940d50939d0234c7683a3a9440ba33\",\"schema\":\"livingmath-symbolic-extension-run/1\",\"section_refs\":{\"candidate_rules\":\"e6ceabcbe92a621402d0b68d8b4584a71b5edfddc8b49bfe317a0efc60c7183b\",\"checks\":\"0c8c32fb0ac210dc7c060085c5e3b70bb89162ad0df5ccdea6d26bc4423972f4\",\"diagnostics\":\"bf877968a03ef9c124cdeeb1b2cc3bc0f6babaf4f396ed86b62584227ecbe05c\",\"manifest\":\"a2cae59987fcdf0dd4106dbf6a26e9b8b555ef562848254cdeeee7af16517f57\",\"model\":\"5a686abd789d64f4d1c5f89d1301c1b855449ad85e39663f5df7cb050d0508fe\",\"observer_provenance\":\"b9bb2961deefaa4392f09b25a1d71b657448fbf570aa805c5a96f04044f7c6df\",\"pairwise_eval\":\"49fc3f6bffbe4f63493a28797f72615cd09b31799a2a885949bba887aa5c56b5\"},\"snapshot_ref\":\"90b97e9a60545e21123b281fb518f8b5ef3a91ceb87a92ad6fa9c672b822107e\",\"status\":\"COMPLETED\",\"summary\":{\"conditional_exclusion_applied\":false,\"execution_permission\":false,\"family_status\":\"UNDERDETERMINED\",\"hypothesis_digest\":\"75d3cccae233016b7bdcfc786345b24b7f44cb790b76f1383a1546f3128f1db8\",\"pair_counts\":{\"NOT_IDENTIFIABLE\":0,\"PREFERENCE\":0,\"TIE\":0,\"UNDERDETERMINED\":0},\"query_records\":256,\"synthesis_status\":\"VERIFIABLE_OPERATOR_COMPOSITION_FOUND\",\"train_records\":84,\"training_status\":\"CONSISTENT\"}},\"execution_permission\":false,\"ok\":true,\"schema\":\"livingmath-symbolic-extension-response/1\",\"status\":\"COMPLETED\"}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structuredContent": {
+          "schema": "livingmath-symbolic-extension-response/1",
+          "ok": true,
+          "status": "COMPLETED",
+          "execution_permission": false,
+          "data": {
+            "engine": "observer_synthesis_v1",
+            "error": null,
+            "execution_permission": false,
+            "kernel_binding": "81fe95f44b6a193922679d877940f87dc2b42ded4a83b79f69c8a0dfc35416f8",
+            "metrics": {
+              "LLM_calls": 0,
+              "job_cpu_s": 0.790470259,
+              "max_rss_kib": 64228
+            },
+            "project": "qa-role006-prod",
+            "result_digest": "12153964910f04075b97c2cc7b4c099bf29f5351d0d1142b3f7b292b67bf2f02",
+            "result_ref": "41bd1aedda66ee4ce597e7727b5473db834dbb39dbb54799d91de389e1061a99",
+            "run_id": "dd20db27ae45440edbc56dd4ce45bee541940d50939d0234c7683a3a9440ba33",
+            "schema": "livingmath-symbolic-extension-run/1",
+            "section_refs": {
+              "candidate_rules": "e6ceabcbe92a621402d0b68d8b4584a71b5edfddc8b49bfe317a0efc60c7183b",
+              "checks": "0c8c32fb0ac210dc7c060085c5e3b70bb89162ad0df5ccdea6d26bc4423972f4",
+              "diagnostics": "bf877968a03ef9c124cdeeb1b2cc3bc0f6babaf4f396ed86b62584227ecbe05c",
+              "manifest": "a2cae59987fcdf0dd4106dbf6a26e9b8b555ef562848254cdeeee7af16517f57",
+              "model": "5a686abd789d64f4d1c5f89d1301c1b855449ad85e39663f5df7cb050d0508fe",
+              "observer_provenance": "b9bb2961deefaa4392f09b25a1d71b657448fbf570aa805c5a96f04044f7c6df",
+              "pairwise_eval": "49fc3f6bffbe4f63493a28797f72615cd09b31799a2a885949bba887aa5c56b5"
+            },
+            "snapshot_ref": "90b97e9a60545e21123b281fb518f8b5ef3a91ceb87a92ad6fa9c672b822107e",
+            "status": "COMPLETED",
+            "summary": {
+              "conditional_exclusion_applied": false,
+              "execution_permission": false,
+              "family_status": "UNDERDETERMINED",
+              "hypothesis_digest": "75d3cccae233016b7bdcfc786345b24b7f44cb790b76f1383a1546f3128f1db8",
+              "pair_counts": {
+                "NOT_IDENTIFIABLE": 0,
+                "PREFERENCE": 0,
+                "TIE": 0,
+                "UNDERDETERMINED": 0
+              },
+              "query_records": 256,
+              "synthesis_status": "VERIFIABLE_OPERATOR_COMPOSITION_FOUND",
+              "train_records": 84,
+              "training_status": "CONSISTENT"
+            }
+          }
+        },
+        "isError": false
+      }
+    },
+    {
+      "tool": "white_star_symbolic_observer_verify",
+      "arguments": {
+        "project": "qa-role006-prod",
+        "run_id": "3ccce854beacf1d9de799223cf93e771023fd114270df2c256e40dcc3c689b15",
+        "feature_id": "derived_b0bae4245d3417323658",
+        "query_id": "q-5f530a2666f6bdb35b6a"
+      },
+      "response": {
+        "meta": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"data\":{\"certificate\":{\"cells\":[{\"allocation\":[],\"range\":[0,0],\"value\":true},{\"allocation\":[],\"range\":[1,1],\"value\":true},{\"allocation\":[],\"range\":[2,2],\"value\":true},{\"allocation\":[],\"range\":[3,3],\"value\":true},{\"allocation\":[],\"range\":[4,4],\"value\":true},{\"allocation\":[],\"range\":[5,5],\"value\":true},{\"allocation\":[],\"range\":[6,6],\"value\":true},{\"allocation\":null,\"range\":[0,1],\"value\":false},{\"allocation\":null,\"range\":[1,2],\"value\":false},{\"allocation\":null,\"range\":[2,3],\"value\":false},{\"allocation\":null,\"range\":[3,4],\"value\":false},{\"allocation\":null,\"range\":[4,5],\"value\":false},{\"allocation\":null,\"range\":[5,6],\"value\":false},{\"allocation\":null,\"range\":[0,2],\"value\":false},{\"allocation\":[0,0],\"range\":[1,3],\"value\":true},{\"allocation\":null,\"range\":[2,4],\"value\":false},{\"allocation\":null,\"range\":[3,5],\"value\":false},{\"allocation\":[0,0],\"range\":[4,6],\"value\":true},{\"allocation\":null,\"range\":[0,3],\"value\":false},{\"allocation\":null,\"range\":[1,4],\"value\":false},{\"allocation\":null,\"range\":[2,5],\"value\":false},{\"allocation\":null,\"range\":[3,6],\"value\":false},{\"allocation\":[2,0],\"range\":[0,4],\"value\":true},{\"allocation\":null,\"range\":[1,5],\"value\":false},{\"allocation\":null,\"range\":[2,6],\"value\":false},{\"allocation\":null,\"range\":[0,5],\"value\":false},{\"allocation\":null,\"range\":[1,6],\"value\":false},{\"allocation\":[2,2],\"range\":[0,6],\"value\":true}],\"decision\":true,\"input_state\":{\"boundaries\":[[0,\"record_start\",\"0\"],[6,\"record_end\",\"0\"]],\"source_spans\":[[[\"fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416\",0,1]],[[\"fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416\",2,3]],[[\"fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416\",4,5]],[[\"fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416\",6,7]],[[\"fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416\",8,9]],[[\"fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416\",10,11]]],\"tokens\":[\"S\",\"S\",\"P\",\"P\",\"S\",\"P\"],\"word_hash\":\"894047bd1102912327ee393abdef5d865e1359e8617815304ba444b51f1cf5c2\"},\"program_digest\":\"d7614e8d77a8e3a41cce43109bb406be1c0982bba5005d134162c5e0b7afc4cc\",\"record_ref\":\"9ec7306fe5489922138437b6aef108101313f1a866556f8012c16fd629f99e48\",\"schema\":\"finite-role-certificate/1\",\"scope_digest\":\"3f90bfc176b26a9ba98063821e34b648b2c206e82f1b81bfaf0ed71c26974ce6\",\"source_sha256\":\"fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416\",\"states\":{\"01b317e816f1399eb02c114a73c84510221867cee5b98140e4558f6fe147d40e\":{\"boundaries\":[],\"source_spans\":[[[\"fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416\",4,5]]],\"tokens\":[\"P\"],\"word_hash\":\"f9bff5736fa62e0dcde7a62c2abba90e3b45f4a7dc9164faca6e807044415b7c\"},\"0d21fe3e8e36262999f6a44a4ba3afabab9ae74cb254886f7e72afda2057b722\":{\"boundaries\":[[1,\"record_end\",\"0\"]],\"source_spans\":[[[\"fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416\",10,11]]],\"tokens\":[\"P\"],\"word_hash\":\"ff40a23d8c35f6570916a3b55bc6d08a94a70b87b8f06039c9afa5926d7b127e\"},\"19eac6ac619387e943576b18442dff39ea9c2dccb6061f16fdead1111b02eda2\":{\"boundaries\":[[0,\"record_start\",\"0\"]],\"source_spans\":[[[\"fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416\",0,1]],[[\"fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416\",2,3]],[[\"fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416\",4,5]]],\"tokens\":[\"S\",\"S\",\"P\"],\"word_hash\":\"9cfcba212d607835d33d8397f13029b413ba542a24c6d2ad353e9b68021ca615\"},\"2ebc4f13275052843af0d39226de801d7aece8efc63e349c6751e50437436485\":{\"boundaries\":[[0,\"record_end\",\"0\"]],\"source_spans\":[],\"tokens\":[],\"word_hash\":\"9d846c0d21469f95d51f5512f58c14db3335d2c9028ed5a0913d29ef87134b16\"},\"3ea56a2bf2dbc042662ad45872a32fa03cbb53f1f45e766a948a1d0c9b075e06\":{\"boundaries\":[],\"source_spans\":[[[\"fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416\",2,3]]],\"tokens\":[\"S\"],\"word_hash\":\"a2134f11b0f21d2e272b9258cedafeccd8a7c7a7ead743cb77f9ec543a8f1884\"},\"45561d83adc44e6752e0d8fe132670929f7b882bbff4b42f8f63cfb9de25ff11\":{\"boundaries\":[],\"source_spans\":[[[\"fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416\",8,9]]],\"tokens\":[\"S\"],\"word_hash\":\"a2134f11b0f21d2e272b9258cedafeccd8a7c7a7ead743cb77f9ec543a8f1884\"},\"4b93f1bf492e22fadd37c14c650bf40d35bceabac9504106206b6b278de441ff\":{\"boundaries\":[[0,\"record_start\",\"0\"],[6,\"record_end\",\"0\"]],\"source_spans\":[[[\"fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416\",0,1]],[[\"fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416\",2,3]],[[\"fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416\",4,5]],[[\"fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416\",6,7]],[[\"fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416\",8,9]],[[\"fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416\",10,11]]],\"tokens\":[\"S\",\"S\",\"P\",\"P\",\"S\",\"P\"],\"word_hash\":\"894047bd1102912327ee393abdef5d865e1359e8617815304ba444b51f1cf5c2\"},\"4c4f51af17d1ec0b6b39b3e62e595685054ba1366cd2bcc22af77680c3a6a1d6\":{\"boundaries\":[],\"source_spans\":[[[\"fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416\",2,3]],[[\"fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416\",4,5]]],\"tokens\":[\"S\",\"P\"],\"word_hash\":\"39cec74929b1f989a67023840c6e92889adcbdc326459c3195ac63c1960d58b9\"},\"52a45037325a1dce6585419dc57afabcc62cf8c36e6bfcae0caaa0797e35066a\":{\"boundaries\":[],\"source_spans\":[[[\"fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416\",6,7]]],\"tokens\":[\"P\"],\"word_hash\":\"f9bff5736fa62e0dcde7a62c2abba90e3b45f4a7dc9164faca6e807044415b7c\"},\"80a2d2a50fe4fc80468e9b9c74ad0bce0565fe7e9c53679b7cefe9e2417fe02e\":{\"boundaries\":[[5,\"record_end\",\"0\"]],\"source_spans\":[[[\"fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416\",2,3]],[[\"fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416\",4,5]],[[\"fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416\",6,7]],[[\"fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416\",8,9]],[[\"fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416\",10,11]]],\"tokens\":[\"S\",\"P\",\"P\",\"S\",\"P\"],\"word_hash\":\"19453588da0c9ba03f698181d735e569a4856421524f2c79ffe5c3686292e918\"},\"8d6ddc826e070a51c0739ef7133dc3c803a85516a2e30780e5ebdf0f8a52c1a9\":{\"boundaries\":[[0,\"record_start\",\"0\"]],\"source_spans\":[[[\"fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416\",0,1]],[[\"fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416\",2,3]],[[\"fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416\",4,5]],[[\"fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416\",6,7]]],\"tokens\":[\"S\",\"S\",\"P\",\"P\"],\"word_hash\":\"acdded0c6c379cfca7c0bdb6b49519d6ff8760ab98e9f15f231722100c19cbaa\"},\"b61c8cf3f09562fde1718597fca2ba7ff30be9ac94d379fee606988617d7e08c\":{\"boundaries\":[[2,\"record_end\",\"0\"]],\"source_spans\":[[[\"fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416\",8,9]],[[\"fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416\",10,11]]],\"tokens\":[\"S\",\"P\"],\"word_hash\":\"3155e0bf18326164a66bd197596032c9533083f4f0ab8157cb000ad605f627a2\"},\"cea12aedd31fd80d26e425d4d73b00c1d479e61ad9e56cea6061bb325600a5d8\":{\"boundaries\":[[0,\"record_start\",\"0\"]],\"source_spans\":[[[\"fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416\",0,1]]],\"tokens\":[\"S\"],\"word_hash\":\"85cdce8965dd4e8670307c2cbcf9b6688eac8b020b3ff7c3dd56ee38720157a4\"},\"f30bab53bbba82c6c00ad7b93cc76ff32fac7456ddac84b10eb6cd4152b6903d\":{\"boundaries\":[[3,\"record_end\",\"0\"]],\"source_spans\":[[[\"fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416\",6,7]],[[\"fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416\",8,9]],[[\"fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416\",10,11]]],\"tokens\":[\"P\",\"S\",\"P\"],\"word_hash\":\"206b71daef1c166f90a425217ad89fd1454df6fc5f0feaf1338dd85d82cf4d97\"},\"fa9724df39d01918bffc9e39b6a0ee8775fbb1038c3d1fe2e9e5f22954b8dd42\":{\"boundaries\":[],\"source_spans\":[],\"tokens\":[],\"word_hash\":\"4e403c6665dc9f605fda920e24937a0feccfcea7c2893af61528d5042c728c83\"}},\"status\":\"DECIDED\",\"tree\":{\"allocation\":[2,2],\"children\":[{\"allocation\":[0,0],\"children\":[{\"allocation\":[],\"children\":[],\"input_state_ref\":\"fa9724df39d01918bffc9e39b6a0ee8775fbb1038c3d1fe2e9e5f22954b8dd42\",\"kind\":\"EPS_BASE\",\"measure\":{\"children\":[],\"parent\":0},\"range\":[2,2],\"reconstructed_tokens\":[],\"roles\":[],\"tokens\":[],\"trace\":[]},{\"allocation\":[],\"children\":[],\"input_state_ref\":\"fa9724df39d01918bffc9e39b6a0ee8775fbb1038c3d1fe2e9e5f22954b8dd42\",\"kind\":\"EPS_BASE\",\"measure\":{\"children\":[],\"parent\":0},\"range\":[3,3],\"reconstructed_tokens\":[],\"roles\":[],\"tokens\":[],\"trace\":[]}],\"input_state_ref\":\"4c4f51af17d1ec0b6b39b3e62e595685054ba1366cd2bcc22af77680c3a6a1d6\",\"kind\":\"RULE\",\"measure\":{\"children\":[0,0],\"parent\":2},\"range\":[1,3],\"reconstructed_tokens\":[\"S\",\"P\"],\"roles\":[{\"position\":1,\"role\":\"OPEN\",\"state_ref\":\"3ea56a2bf2dbc042662ad45872a32fa03cbb53f1f45e766a948a1d0c9b075e06\",\"token\":\"S\"},{\"position\":2,\"role\":\"CLOSE\",\"state_ref\":\"01b317e816f1399eb02c114a73c84510221867cee5b98140e4558f6fe147d40e\",\"token\":\"P\"}],\"tokens\":[\"S\",\"P\"],\"trace\":[{\"args\":{\"position\":1},\"input_state_ref\":\"4c4f51af17d1ec0b6b39b3e62e595685054ba1366cd2bcc22af77680c3a6a1d6\",\"input_word_hash\":\"39cec74929b1f989a67023840c6e92889adcbdc326459c3195ac63c1960d58b9\",\"operator\":\"SPLIT\",\"other_state_ref\":null,\"output_state_refs\":[\"3ea56a2bf2dbc042662ad45872a32fa03cbb53f1f45e766a948a1d0c9b075e06\",\"01b317e816f1399eb02c114a73c84510221867cee5b98140e4558f6fe147d40e\"],\"output_word_hashes\":[\"a2134f11b0f21d2e272b9258cedafeccd8a7c7a7ead743cb77f9ec543a8f1884\",\"f9bff5736fa62e0dcde7a62c2abba90e3b45f4a7dc9164faca6e807044415b7c\"]},{\"args\":{\"position\":0},\"input_state_ref\":\"01b317e816f1399eb02c114a73c84510221867cee5b98140e4558f6fe147d40e\",\"input_word_hash\":\"f9bff5736fa62e0dcde7a62c2abba90e3b45f4a7dc9164faca6e807044415b7c\",\"operator\":\"SPLIT\",\"other_state_ref\":null,\"output_state_refs\":[\"fa9724df39d01918bffc9e39b6a0ee8775fbb1038c3d1fe2e9e5f22954b8dd42\",\"01b317e816f1399eb02c114a73c84510221867cee5b98140e4558f6fe147d40e\"],\"output_word_hashes\":[\"4e403c6665dc9f605fda920e24937a0feccfcea7c2893af61528d5042c728c83\",\"f9bff5736fa62e0dcde7a62c2abba90e3b45f4a7dc9164faca6e807044415b7c\"]},{\"args\":{\"position\":1},\"input_state_ref\":\"01b317e816f1399eb02c114a73c84510221867cee5b98140e4558f6fe147d40e\",\"input_word_hash\":\"f9bff5736fa62e0dcde7a62c2abba90e3b45f4a7dc9164faca6e807044415b7c\",\"operator\":\"SPLIT\",\"other_state_ref\":null,\"output_state_refs\":[\"01b317e816f1399eb02c114a73c84510221867cee5b98140e4558f6fe147d40e\",\"fa9724df39d01918bffc9e39b6a0ee8775fbb1038c3d1fe2e9e5f22954b8dd42\"],\"output_word_hashes\":[\"f9bff5736fa62e0dcde7a62c2abba90e3b45f4a7dc9164faca6e807044415b7c\",\"4e403c6665dc9f605fda920e24937a0feccfcea7c2893af61528d5042c728c83\"]},{\"args\":{\"position\":0},\"input_state_ref\":\"fa9724df39d01918bffc9e39b6a0ee8775fbb1038c3d1fe2e9e5f22954b8dd42\",\"input_word_hash\":\"4e403c6665dc9f605fda920e24937a0feccfcea7c2893af61528d5042c728c83\",\"operator\":\"SPLIT\",\"other_state_ref\":null,\"output_state_refs\":[\"fa9724df39d01918bffc9e39b6a0ee8775fbb1038c3d1fe2e9e5f22954b8dd42\",\"fa9724df39d01918bffc9e39b6a0ee8775fbb1038c3d1fe2e9e5f22954b8dd42\"],\"output_word_hashes\":[\"4e403c6665dc9f605fda920e24937a0feccfcea7c2893af61528d5042c728c83\",\"4e403c6665dc9f605fda920e24937a0feccfcea7c2893af61528d5042c728c83\"]},{\"args\":{},\"input_state_ref\":\"3ea56a2bf2dbc042662ad45872a32fa03cbb53f1f45e766a948a1d0c9b075e06\",\"input_word_hash\":\"a2134f11b0f21d2e272b9258cedafeccd8a7c7a7ead743cb77f9ec543a8f1884\",\"operator\":\"CONCAT\",\"other_state_ref\":\"fa9724df39d01918bffc9e39b6a0ee8775fbb1038c3d1fe2e9e5f22954b8dd42\",\"output_state_refs\":[\"3ea56a2bf2dbc042662ad45872a32fa03cbb53f1f45e766a948a1d0c9b075e06\"],\"output_word_hashes\":[\"a2134f11b0f21d2e272b9258cedafeccd8a7c7a7ead743cb77f9ec543a8f1884\"]},{\"args\":{},\"input_state_ref\":\"3ea56a2bf2dbc042662ad45872a32fa03cbb53f1f45e766a948a1d0c9b075e06\",\"input_word_hash\":\"a2134f11b0f21d2e272b9258cedafeccd8a7c7a7ead743cb77f9ec543a8f1884\",\"operator\":\"CONCAT\",\"other_state_ref\":\"01b317e816f1399eb02c114a73c84510221867cee5b98140e4558f6fe147d40e\",\"output_state_refs\":[\"4c4f51af17d1ec0b6b39b3e62e595685054ba1366cd2bcc22af77680c3a6a1d6\"],\"output_word_hashes\":[\"39cec74929b1f989a67023840c6e92889adcbdc326459c3195ac63c1960d58b9\"]},{\"args\":{},\"input_state_ref\":\"4c4f51af17d1ec0b6b39b3e62e595685054ba1366cd2bcc22af77680c3a6a1d6\",\"input_word_hash\":\"39cec74929b1f989a67023840c6e92889adcbdc326459c3195ac63c1960d58b9\",\"operator\":\"CONCAT\",\"other_state_ref\":\"fa9724df39d01918bffc9e39b6a0ee8775fbb1038c3d1fe2e9e5f22954b8dd42\",\"output_state_refs\":[\"4c4f51af17d1ec0b6b39b3e62e595685054ba1366cd2bcc22af77680c3a6a1d6\"],\"output_word_hashes\":[\"39cec74929b1f989a67023840c6e92889adcbdc326459c3195ac63c1960d58b9\"]}]},{\"allocation\":[0,0],\"children\":[{\"allocation\":[],\"children\":[],\"input_state_ref\":\"fa9724df39d01918bffc9e39b6a0ee8775fbb1038c3d1fe2e9e5f22954b8dd42\",\"kind\":\"EPS_BASE\",\"measure\":{\"children\":[],\"parent\":0},\"range\":[5,5],\"reconstructed_tokens\":[],\"roles\":[],\"tokens\":[],\"trace\":[]},{\"allocation\":[],\"children\":[],\"input_state_ref\":\"2ebc4f13275052843af0d39226de801d7aece8efc63e349c6751e50437436485\",\"kind\":\"EPS_BASE\",\"measure\":{\"children\":[],\"parent\":0},\"range\":[6,6],\"reconstructed_tokens\":[],\"roles\":[],\"tokens\":[],\"trace\":[]}],\"input_state_ref\":\"b61c8cf3f09562fde1718597fca2ba7ff30be9ac94d379fee606988617d7e08c\",\"kind\":\"RULE\",\"measure\":{\"children\":[0,0],\"parent\":2},\"range\":[4,6],\"reconstructed_tokens\":[\"S\",\"P\"],\"roles\":[{\"position\":4,\"role\":\"OPEN\",\"state_ref\":\"45561d83adc44e6752e0d8fe132670929f7b882bbff4b42f8f63cfb9de25ff11\",\"token\":\"S\"},{\"position\":5,\"role\":\"CLOSE\",\"state_ref\":\"0d21fe3e8e36262999f6a44a4ba3afabab9ae74cb254886f7e72afda2057b722\",\"token\":\"P\"}],\"tokens\":[\"S\",\"P\"],\"trace\":[{\"args\":{\"position\":1},\"input_state_ref\":\"b61c8cf3f09562fde1718597fca2ba7ff30be9ac94d379fee606988617d7e08c\",\"input_word_hash\":\"3155e0bf18326164a66bd197596032c9533083f4f0ab8157cb000ad605f627a2\",\"operator\":\"SPLIT\",\"other_state_ref\":null,\"output_state_refs\":[\"45561d83adc44e6752e0d8fe132670929f7b882bbff4b42f8f63cfb9de25ff11\",\"0d21fe3e8e36262999f6a44a4ba3afabab9ae74cb254886f7e72afda2057b722\"],\"output_word_hashes\":[\"a2134f11b0f21d2e272b9258cedafeccd8a7c7a7ead743cb77f9ec543a8f1884\",\"ff40a23d8c35f6570916a3b55bc6d08a94a70b87b8f06039c9afa5926d7b127e\"]},{\"args\":{\"position\":0},\"input_state_ref\":\"0d21fe3e8e36262999f6a44a4ba3afabab9ae74cb254886f7e72afda2057b722\",\"input_word_hash\":\"ff40a23d8c35f6570916a3b55bc6d08a94a70b87b8f06039c9afa5926d7b127e\",\"operator\":\"SPLIT\",\"other_state_ref\":null,\"output_state_refs\":[\"fa9724df39d01918bffc9e39b6a0ee8775fbb1038c3d1fe2e9e5f22954b8dd42\",\"0d21fe3e8e36262999f6a44a4ba3afabab9ae74cb254886f7e72afda2057b722\"],\"output_word_hashes\":[\"4e403c6665dc9f605fda920e24937a0feccfcea7c2893af61528d5042c728c83\",\"ff40a23d8c35f6570916a3b55bc6d08a94a70b87b8f06039c9afa5926d7b127e\"]},{\"args\":{\"position\":1},\"input_state_ref\":\"0d21fe3e8e36262999f6a44a4ba3afabab9ae74cb254886f7e72afda2057b722\",\"input_word_hash\":\"ff40a23d8c35f6570916a3b55bc6d08a94a70b87b8f06039c9afa5926d7b127e\",\"operator\":\"SPLIT\",\"other_state_ref\":null,\"output_state_refs\":[\"0d21fe3e8e36262999f6a44a4ba3afabab9ae74cb254886f7e72afda2057b722\",\"2ebc4f13275052843af0d39226de801d7aece8efc63e349c6751e50437436485\"],\"output_word_hashes\":[\"ff40a23d8c35f6570916a3b55bc6d08a94a70b87b8f06039c9afa5926d7b127e\",\"9d846c0d21469f95d51f5512f58c14db3335d2c9028ed5a0913d29ef87134b16\"]},{\"args\":{\"position\":0},\"input_state_ref\":\"2ebc4f13275052843af0d39226de801d7aece8efc63e349c6751e50437436485\",\"input_word_hash\":\"9d846c0d21469f95d51f5512f58c14db3335d2c9028ed5a0913d29ef87134b16\",\"operator\":\"SPLIT\",\"other_state_ref\":null,\"output_state_refs\":[\"2ebc4f13275052843af0d39226de801d7aece8efc63e349c6751e50437436485\",\"2ebc4f13275052843af0d39226de801d7aece8efc63e349c6751e50437436485\"],\"output_word_hashes\":[\"9d846c0d21469f95d51f5512f58c14db3335d2c9028ed5a0913d29ef87134b16\",\"9d846c0d21469f95d51f5512f58c14db3335d2c9028ed5a0913d29ef87134b16\"]},{\"args\":{},\"input_state_ref\":\"45561d83adc44e6752e0d8fe132670929f7b882bbff4b42f8f63cfb9de25ff11\",\"input_word_hash\":\"a2134f11b0f21d2e272b9258cedafeccd8a7c7a7ead743cb77f9ec543a8f1884\",\"operator\":\"CONCAT\",\"other_state_ref\":\"fa9724df39d01918bffc9e39b6a0ee8775fbb1038c3d1fe2e9e5f22954b8dd42\",\"output_state_refs\":[\"45561d83adc44e6752e0d8fe132670929f7b882bbff4b42f8f63cfb9de25ff11\"],\"output_word_hashes\":[\"a2134f11b0f21d2e272b9258cedafeccd8a7c7a7ead743cb77f9ec543a8f1884\"]},{\"args\":{},\"input_state_ref\":\"45561d83adc44e6752e0d8fe132670929f7b882bbff4b42f8f63cfb9de25ff11\",\"input_word_hash\":\"a2134f11b0f21d2e272b9258cedafeccd8a7c7a7ead743cb77f9ec543a8f1884\",\"operator\":\"CONCAT\",\"other_state_ref\":\"0d21fe3e8e36262999f6a44a4ba3afabab9ae74cb254886f7e72afda2057b722\",\"output_state_refs\":[\"b61c8cf3f09562fde1718597fca2ba7ff30be9ac94d379fee606988617d7e08c\"],\"output_word_hashes\":[\"3155e0bf18326164a66bd197596032c9533083f4f0ab8157cb000ad605f627a2\"]},{\"args\":{},\"input_state_ref\":\"b61c8cf3f09562fde1718597fca2ba7ff30be9ac94d379fee606988617d7e08c\",\"input_word_hash\":\"3155e0bf18326164a66bd197596032c9533083f4f0ab8157cb000ad605f627a2\",\"operator\":\"CONCAT\",\"other_state_ref\":\"2ebc4f13275052843af0d39226de801d7aece8efc63e349c6751e50437436485\",\"output_state_refs\":[\"b61c8cf3f09562fde1718597fca2ba7ff30be9ac94d379fee606988617d7e08c\"],\"output_word_hashes\":[\"3155e0bf18326164a66bd197596032c9533083f4f0ab8157cb000ad605f627a2\"]}]}],\"input_state_ref\":\"4b93f1bf492e22fadd37c14c650bf40d35bceabac9504106206b6b278de441ff\",\"kind\":\"RULE\",\"measure\":{\"children\":[2,2],\"parent\":6},\"range\":[0,6],\"reconstructed_tokens\":[\"S\",\"S\",\"P\",\"P\",\"S\",\"P\"],\"roles\":[{\"position\":0,\"role\":\"OPEN\",\"state_ref\":\"cea12aedd31fd80d26e425d4d73b00c1d479e61ad9e56cea6061bb325600a5d8\",\"token\":\"S\"},{\"position\":3,\"role\":\"CLOSE\",\"state_ref\":\"52a45037325a1dce6585419dc57afabcc62cf8c36e6bfcae0caaa0797e35066a\",\"token\":\"P\"}],\"tokens\":[\"S\",\"S\",\"P\",\"P\",\"S\",\"P\"],\"trace\":[{\"args\":{\"position\":1},\"input_state_ref\":\"4b93f1bf492e22fadd37c14c650bf40d35bceabac9504106206b6b278de441ff\",\"input_word_hash\":\"894047bd1102912327ee393abdef5d865e1359e8617815304ba444b51f1cf5c2\",\"operator\":\"SPLIT\",\"other_state_ref\":null,\"output_state_refs\":[\"cea12aedd31fd80d26e425d4d73b00c1d479e61ad9e56cea6061bb325600a5d8\",\"80a2d2a50fe4fc80468e9b9c74ad0bce0565fe7e9c53679b7cefe9e2417fe02e\"],\"output_word_hashes\":[\"85cdce8965dd4e8670307c2cbcf9b6688eac8b020b3ff7c3dd56ee38720157a4\",\"19453588da0c9ba03f698181d735e569a4856421524f2c79ffe5c3686292e918\"]},{\"args\":{\"position\":2},\"input_state_ref\":\"80a2d2a50fe4fc80468e9b9c74ad0bce0565fe7e9c53679b7cefe9e2417fe02e\",\"input_word_hash\":\"19453588da0c9ba03f698181d735e569a4856421524f2c79ffe5c3686292e918\",\"operator\":\"SPLIT\",\"other_state_ref\":null,\"output_state_refs\":[\"4c4f51af17d1ec0b6b39b3e62e595685054ba1366cd2bcc22af77680c3a6a1d6\",\"f30bab53bbba82c6c00ad7b93cc76ff32fac7456ddac84b10eb6cd4152b6903d\"],\"output_word_hashes\":[\"39cec74929b1f989a67023840c6e92889adcbdc326459c3195ac63c1960d58b9\",\"206b71daef1c166f90a425217ad89fd1454df6fc5f0feaf1338dd85d82cf4d97\"]},{\"args\":{\"position\":1},\"input_state_ref\":\"f30bab53bbba82c6c00ad7b93cc76ff32fac7456ddac84b10eb6cd4152b6903d\",\"input_word_hash\":\"206b71daef1c166f90a425217ad89fd1454df6fc5f0feaf1338dd85d82cf4d97\",\"operator\":\"SPLIT\",\"other_state_ref\":null,\"output_state_refs\":[\"52a45037325a1dce6585419dc57afabcc62cf8c36e6bfcae0caaa0797e35066a\",\"b61c8cf3f09562fde1718597fca2ba7ff30be9ac94d379fee606988617d7e08c\"],\"output_word_hashes\":[\"f9bff5736fa62e0dcde7a62c2abba90e3b45f4a7dc9164faca6e807044415b7c\",\"3155e0bf18326164a66bd197596032c9533083f4f0ab8157cb000ad605f627a2\"]},{\"args\":{\"position\":2},\"input_state_ref\":\"b61c8cf3f09562fde1718597fca2ba7ff30be9ac94d379fee606988617d7e08c\",\"input_word_hash\":\"3155e0bf18326164a66bd197596032c9533083f4f0ab8157cb000ad605f627a2\",\"operator\":\"SPLIT\",\"other_state_ref\":null,\"output_state_refs\":[\"b61c8cf3f09562fde1718597fca2ba7ff30be9ac94d379fee606988617d7e08c\",\"2ebc4f13275052843af0d39226de801d7aece8efc63e349c6751e50437436485\"],\"output_word_hashes\":[\"3155e0bf18326164a66bd197596032c9533083f4f0ab8157cb000ad605f627a2\",\"9d846c0d21469f95d51f5512f58c14db3335d2c9028ed5a0913d29ef87134b16\"]},{\"args\":{},\"input_state_ref\":\"cea12aedd31fd80d26e425d4d73b00c1d479e61ad9e56cea6061bb325600a5d8\",\"input_word_hash\":\"85cdce8965dd4e8670307c2cbcf9b6688eac8b020b3ff7c3dd56ee38720157a4\",\"operator\":\"CONCAT\",\"other_state_ref\":\"4c4f51af17d1ec0b6b39b3e62e595685054ba1366cd2bcc22af77680c3a6a1d6\",\"output_state_refs\":[\"19eac6ac619387e943576b18442dff39ea9c2dccb6061f16fdead1111b02eda2\"],\"output_word_hashes\":[\"9cfcba212d607835d33d8397f13029b413ba542a24c6d2ad353e9b68021ca615\"]},{\"args\":{},\"input_state_ref\":\"19eac6ac619387e943576b18442dff39ea9c2dccb6061f16fdead1111b02eda2\",\"input_word_hash\":\"9cfcba212d607835d33d8397f13029b413ba542a24c6d2ad353e9b68021ca615\",\"operator\":\"CONCAT\",\"other_state_ref\":\"52a45037325a1dce6585419dc57afabcc62cf8c36e6bfcae0caaa0797e35066a\",\"output_state_refs\":[\"8d6ddc826e070a51c0739ef7133dc3c803a85516a2e30780e5ebdf0f8a52c1a9\"],\"output_word_hashes\":[\"acdded0c6c379cfca7c0bdb6b49519d6ff8760ab98e9f15f231722100c19cbaa\"]},{\"args\":{},\"input_state_ref\":\"8d6ddc826e070a51c0739ef7133dc3c803a85516a2e30780e5ebdf0f8a52c1a9\",\"input_word_hash\":\"acdded0c6c379cfca7c0bdb6b49519d6ff8760ab98e9f15f231722100c19cbaa\",\"operator\":\"CONCAT\",\"other_state_ref\":\"b61c8cf3f09562fde1718597fca2ba7ff30be9ac94d379fee606988617d7e08c\",\"output_state_refs\":[\"4b93f1bf492e22fadd37c14c650bf40d35bceabac9504106206b6b278de441ff\"],\"output_word_hashes\":[\"894047bd1102912327ee393abdef5d865e1359e8617815304ba444b51f1cf5c2\"]}]},\"work\":{\"cells\":28,\"split_trials\":35}},\"execution_permission\":false,\"record_id\":\"q-5f530a2666f6bdb35b6a\",\"status\":\"CHECKED_INSTANCE\",\"verification\":{\"decision\":true,\"execution_permission\":false,\"program_digest\":\"d7614e8d77a8e3a41cce43109bb406be1c0982bba5005d134162c5e0b7afc4cc\",\"proof_digest\":\"ea225c6a101e09abac5fa80b14fdb55e8523bb71b5dd72c713c4bebc204700f6\",\"status\":\"CHECKED_INSTANCE\",\"universal_invariant\":false,\"verifier_version\":\"role-branch-independent-checker/1\"}},\"execution_permission\":false,\"ok\":true,\"schema\":\"livingmath-symbolic-extension-response/1\",\"status\":\"CHECKED_INSTANCE\"}",
+            "annotations": null,
+            "meta": null
+          }
+        ],
+        "structuredContent": {
+          "schema": "livingmath-symbolic-extension-response/1",
+          "ok": true,
+          "status": "CHECKED_INSTANCE",
+          "execution_permission": false,
+          "data": {
+            "certificate": {
+              "cells": [
+                {
+                  "allocation": [],
+                  "range": [
+                    0,
+                    0
+                  ],
+                  "value": true
+                },
+                {
+                  "allocation": [],
+                  "range": [
+                    1,
+                    1
+                  ],
+                  "value": true
+                },
+                {
+                  "allocation": [],
+                  "range": [
+                    2,
+                    2
+                  ],
+                  "value": true
+                },
+                {
+                  "allocation": [],
+                  "range": [
+                    3,
+                    3
+                  ],
+                  "value": true
+                },
+                {
+                  "allocation": [],
+                  "range": [
+                    4,
+                    4
+                  ],
+                  "value": true
+                },
+                {
+                  "allocation": [],
+                  "range": [
+                    5,
+                    5
+                  ],
+                  "value": true
+                },
+                {
+                  "allocation": [],
+                  "range": [
+                    6,
+                    6
+                  ],
+                  "value": true
+                },
+                {
+                  "allocation": null,
+                  "range": [
+                    0,
+                    1
+                  ],
+                  "value": false
+                },
+                {
+                  "allocation": null,
+                  "range": [
+                    1,
+                    2
+                  ],
+                  "value": false
+                },
+                {
+                  "allocation": null,
+                  "range": [
+                    2,
+                    3
+                  ],
+                  "value": false
+                },
+                {
+                  "allocation": null,
+                  "range": [
+                    3,
+                    4
+                  ],
+                  "value": false
+                },
+                {
+                  "allocation": null,
+                  "range": [
+                    4,
+                    5
+                  ],
+                  "value": false
+                },
+                {
+                  "allocation": null,
+                  "range": [
+                    5,
+                    6
+                  ],
+                  "value": false
+                },
+                {
+                  "allocation": null,
+                  "range": [
+                    0,
+                    2
+                  ],
+                  "value": false
+                },
+                {
+                  "allocation": [
+                    0,
+                    0
+                  ],
+                  "range": [
+                    1,
+                    3
+                  ],
+                  "value": true
+                },
+                {
+                  "allocation": null,
+                  "range": [
+                    2,
+                    4
+                  ],
+                  "value": false
+                },
+                {
+                  "allocation": null,
+                  "range": [
+                    3,
+                    5
+                  ],
+                  "value": false
+                },
+                {
+                  "allocation": [
+                    0,
+                    0
+                  ],
+                  "range": [
+                    4,
+                    6
+                  ],
+                  "value": true
+                },
+                {
+                  "allocation": null,
+                  "range": [
+                    0,
+                    3
+                  ],
+                  "value": false
+                },
+                {
+                  "allocation": null,
+                  "range": [
+                    1,
+                    4
+                  ],
+                  "value": false
+                },
+                {
+                  "allocation": null,
+                  "range": [
+                    2,
+                    5
+                  ],
+                  "value": false
+                },
+                {
+                  "allocation": null,
+                  "range": [
+                    3,
+                    6
+                  ],
+                  "value": false
+                },
+                {
+                  "allocation": [
+                    2,
+                    0
+                  ],
+                  "range": [
+                    0,
+                    4
+                  ],
+                  "value": true
+                },
+                {
+                  "allocation": null,
+                  "range": [
+                    1,
+                    5
+                  ],
+                  "value": false
+                },
+                {
+                  "allocation": null,
+                  "range": [
+                    2,
+                    6
+                  ],
+                  "value": false
+                },
+                {
+                  "allocation": null,
+                  "range": [
+                    0,
+                    5
+                  ],
+                  "value": false
+                },
+                {
+                  "allocation": null,
+                  "range": [
+                    1,
+                    6
+                  ],
+                  "value": false
+                },
+                {
+                  "allocation": [
+                    2,
+                    2
+                  ],
+                  "range": [
+                    0,
+                    6
+                  ],
+                  "value": true
+                }
+              ],
+              "decision": true,
+              "input_state": {
+                "boundaries": [
+                  [
+                    0,
+                    "record_start",
+                    "0"
+                  ],
+                  [
+                    6,
+                    "record_end",
+                    "0"
+                  ]
+                ],
+                "source_spans": [
+                  [
+                    [
+                      "fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416",
+                      0,
+                      1
+                    ]
+                  ],
+                  [
+                    [
+                      "fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416",
+                      2,
+                      3
+                    ]
+                  ],
+                  [
+                    [
+                      "fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416",
+                      4,
+                      5
+                    ]
+                  ],
+                  [
+                    [
+                      "fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416",
+                      6,
+                      7
+                    ]
+                  ],
+                  [
+                    [
+                      "fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416",
+                      8,
+                      9
+                    ]
+                  ],
+                  [
+                    [
+                      "fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416",
+                      10,
+                      11
+                    ]
+                  ]
+                ],
+                "tokens": [
+                  "S",
+                  "S",
+                  "P",
+                  "P",
+                  "S",
+                  "P"
+                ],
+                "word_hash": "894047bd1102912327ee393abdef5d865e1359e8617815304ba444b51f1cf5c2"
+              },
+              "program_digest": "d7614e8d77a8e3a41cce43109bb406be1c0982bba5005d134162c5e0b7afc4cc",
+              "record_ref": "9ec7306fe5489922138437b6aef108101313f1a866556f8012c16fd629f99e48",
+              "schema": "finite-role-certificate/1",
+              "scope_digest": "3f90bfc176b26a9ba98063821e34b648b2c206e82f1b81bfaf0ed71c26974ce6",
+              "source_sha256": "fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416",
+              "states": {
+                "01b317e816f1399eb02c114a73c84510221867cee5b98140e4558f6fe147d40e": {
+                  "boundaries": [],
+                  "source_spans": [
+                    [
+                      [
+                        "fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416",
+                        4,
+                        5
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "P"
+                  ],
+                  "word_hash": "f9bff5736fa62e0dcde7a62c2abba90e3b45f4a7dc9164faca6e807044415b7c"
+                },
+                "0d21fe3e8e36262999f6a44a4ba3afabab9ae74cb254886f7e72afda2057b722": {
+                  "boundaries": [
+                    [
+                      1,
+                      "record_end",
+                      "0"
+                    ]
+                  ],
+                  "source_spans": [
+                    [
+                      [
+                        "fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416",
+                        10,
+                        11
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "P"
+                  ],
+                  "word_hash": "ff40a23d8c35f6570916a3b55bc6d08a94a70b87b8f06039c9afa5926d7b127e"
+                },
+                "19eac6ac619387e943576b18442dff39ea9c2dccb6061f16fdead1111b02eda2": {
+                  "boundaries": [
+                    [
+                      0,
+                      "record_start",
+                      "0"
+                    ]
+                  ],
+                  "source_spans": [
+                    [
+                      [
+                        "fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416",
+                        0,
+                        1
+                      ]
+                    ],
+                    [
+                      [
+                        "fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416",
+                        2,
+                        3
+                      ]
+                    ],
+                    [
+                      [
+                        "fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416",
+                        4,
+                        5
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "S",
+                    "S",
+                    "P"
+                  ],
+                  "word_hash": "9cfcba212d607835d33d8397f13029b413ba542a24c6d2ad353e9b68021ca615"
+                },
+                "2ebc4f13275052843af0d39226de801d7aece8efc63e349c6751e50437436485": {
+                  "boundaries": [
+                    [
+                      0,
+                      "record_end",
+                      "0"
+                    ]
+                  ],
+                  "source_spans": [],
+                  "tokens": [],
+                  "word_hash": "9d846c0d21469f95d51f5512f58c14db3335d2c9028ed5a0913d29ef87134b16"
+                },
+                "3ea56a2bf2dbc042662ad45872a32fa03cbb53f1f45e766a948a1d0c9b075e06": {
+                  "boundaries": [],
+                  "source_spans": [
+                    [
+                      [
+                        "fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416",
+                        2,
+                        3
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "S"
+                  ],
+                  "word_hash": "a2134f11b0f21d2e272b9258cedafeccd8a7c7a7ead743cb77f9ec543a8f1884"
+                },
+                "45561d83adc44e6752e0d8fe132670929f7b882bbff4b42f8f63cfb9de25ff11": {
+                  "boundaries": [],
+                  "source_spans": [
+                    [
+                      [
+                        "fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416",
+                        8,
+                        9
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "S"
+                  ],
+                  "word_hash": "a2134f11b0f21d2e272b9258cedafeccd8a7c7a7ead743cb77f9ec543a8f1884"
+                },
+                "4b93f1bf492e22fadd37c14c650bf40d35bceabac9504106206b6b278de441ff": {
+                  "boundaries": [
+                    [
+                      0,
+                      "record_start",
+                      "0"
+                    ],
+                    [
+                      6,
+                      "record_end",
+                      "0"
+                    ]
+                  ],
+                  "source_spans": [
+                    [
+                      [
+                        "fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416",
+                        0,
+                        1
+                      ]
+                    ],
+                    [
+                      [
+                        "fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416",
+                        2,
+                        3
+                      ]
+                    ],
+                    [
+                      [
+                        "fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416",
+                        4,
+                        5
+                      ]
+                    ],
+                    [
+                      [
+                        "fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416",
+                        6,
+                        7
+                      ]
+                    ],
+                    [
+                      [
+                        "fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416",
+                        8,
+                        9
+                      ]
+                    ],
+                    [
+                      [
+                        "fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416",
+                        10,
+                        11
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "S",
+                    "S",
+                    "P",
+                    "P",
+                    "S",
+                    "P"
+                  ],
+                  "word_hash": "894047bd1102912327ee393abdef5d865e1359e8617815304ba444b51f1cf5c2"
+                },
+                "4c4f51af17d1ec0b6b39b3e62e595685054ba1366cd2bcc22af77680c3a6a1d6": {
+                  "boundaries": [],
+                  "source_spans": [
+                    [
+                      [
+                        "fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416",
+                        2,
+                        3
+                      ]
+                    ],
+                    [
+                      [
+                        "fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416",
+                        4,
+                        5
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "S",
+                    "P"
+                  ],
+                  "word_hash": "39cec74929b1f989a67023840c6e92889adcbdc326459c3195ac63c1960d58b9"
+                },
+                "52a45037325a1dce6585419dc57afabcc62cf8c36e6bfcae0caaa0797e35066a": {
+                  "boundaries": [],
+                  "source_spans": [
+                    [
+                      [
+                        "fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416",
+                        6,
+                        7
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "P"
+                  ],
+                  "word_hash": "f9bff5736fa62e0dcde7a62c2abba90e3b45f4a7dc9164faca6e807044415b7c"
+                },
+                "80a2d2a50fe4fc80468e9b9c74ad0bce0565fe7e9c53679b7cefe9e2417fe02e": {
+                  "boundaries": [
+                    [
+                      5,
+                      "record_end",
+                      "0"
+                    ]
+                  ],
+                  "source_spans": [
+                    [
+                      [
+                        "fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416",
+                        2,
+                        3
+                      ]
+                    ],
+                    [
+                      [
+                        "fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416",
+                        4,
+                        5
+                      ]
+                    ],
+                    [
+                      [
+                        "fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416",
+                        6,
+                        7
+                      ]
+                    ],
+                    [
+                      [
+                        "fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416",
+                        8,
+                        9
+                      ]
+                    ],
+                    [
+                      [
+                        "fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416",
+                        10,
+                        11
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "S",
+                    "P",
+                    "P",
+                    "S",
+                    "P"
+                  ],
+                  "word_hash": "19453588da0c9ba03f698181d735e569a4856421524f2c79ffe5c3686292e918"
+                },
+                "8d6ddc826e070a51c0739ef7133dc3c803a85516a2e30780e5ebdf0f8a52c1a9": {
+                  "boundaries": [
+                    [
+                      0,
+                      "record_start",
+                      "0"
+                    ]
+                  ],
+                  "source_spans": [
+                    [
+                      [
+                        "fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416",
+                        0,
+                        1
+                      ]
+                    ],
+                    [
+                      [
+                        "fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416",
+                        2,
+                        3
+                      ]
+                    ],
+                    [
+                      [
+                        "fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416",
+                        4,
+                        5
+                      ]
+                    ],
+                    [
+                      [
+                        "fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416",
+                        6,
+                        7
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "S",
+                    "S",
+                    "P",
+                    "P"
+                  ],
+                  "word_hash": "acdded0c6c379cfca7c0bdb6b49519d6ff8760ab98e9f15f231722100c19cbaa"
+                },
+                "b61c8cf3f09562fde1718597fca2ba7ff30be9ac94d379fee606988617d7e08c": {
+                  "boundaries": [
+                    [
+                      2,
+                      "record_end",
+                      "0"
+                    ]
+                  ],
+                  "source_spans": [
+                    [
+                      [
+                        "fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416",
+                        8,
+                        9
+                      ]
+                    ],
+                    [
+                      [
+                        "fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416",
+                        10,
+                        11
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "S",
+                    "P"
+                  ],
+                  "word_hash": "3155e0bf18326164a66bd197596032c9533083f4f0ab8157cb000ad605f627a2"
+                },
+                "cea12aedd31fd80d26e425d4d73b00c1d479e61ad9e56cea6061bb325600a5d8": {
+                  "boundaries": [
+                    [
+                      0,
+                      "record_start",
+                      "0"
+                    ]
+                  ],
+                  "source_spans": [
+                    [
+                      [
+                        "fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416",
+                        0,
+                        1
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "S"
+                  ],
+                  "word_hash": "85cdce8965dd4e8670307c2cbcf9b6688eac8b020b3ff7c3dd56ee38720157a4"
+                },
+                "f30bab53bbba82c6c00ad7b93cc76ff32fac7456ddac84b10eb6cd4152b6903d": {
+                  "boundaries": [
+                    [
+                      3,
+                      "record_end",
+                      "0"
+                    ]
+                  ],
+                  "source_spans": [
+                    [
+                      [
+                        "fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416",
+                        6,
+                        7
+                      ]
+                    ],
+                    [
+                      [
+                        "fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416",
+                        8,
+                        9
+                      ]
+                    ],
+                    [
+                      [
+                        "fdbe1c052324f6ec93b9a4f63b8c4e23c95ead95c97078e438ce5ef357df5416",
+                        10,
+                        11
+                      ]
+                    ]
+                  ],
+                  "tokens": [
+                    "P",
+                    "S",
+                    "P"
+                  ],
+                  "word_hash": "206b71daef1c166f90a425217ad89fd1454df6fc5f0feaf1338dd85d82cf4d97"
+                },
+                "fa9724df39d01918bffc9e39b6a0ee8775fbb1038c3d1fe2e9e5f22954b8dd42": {
+                  "boundaries": [],
+                  "source_spans": [],
+                  "tokens": [],
+                  "word_hash": "4e403c6665dc9f605fda920e24937a0feccfcea7c2893af61528d5042c728c83"
+                }
+              },
+              "status": "DECIDED",
+              "tree": {
+                "allocation": [
+                  2,
+                  2
+                ],
+                "children": [
+                  {
+                    "allocation": [
+                      0,
+                      0
+                    ],
+                    "children": [
+                      {
+                        "allocation": [],
+                        "children": [],
+                        "input_state_ref": "fa9724df39d01918bffc9e39b6a0ee8775fbb1038c3d1fe2e9e5f22954b8dd42",
+                        "kind": "EPS_BASE",
+                        "measure": {
+                          "children": [],
+                          "parent": 0
+                        },
+                        "range": [
+                          2,
+                          2
+                        ],
+                        "reconstructed_tokens": [],
+                        "roles": [],
+                        "tokens": [],
+                        "trace": []
+                      },
+                      {
+                        "allocation": [],
+                        "children": [],
+                        "input_state_ref": "fa9724df39d01918bffc9e39b6a0ee8775fbb1038c3d1fe2e9e5f22954b8dd42",
+                        "kind": "EPS_BASE",
+                        "measure": {
+                          "children": [],
+                          "parent": 0
+                        },
+                        "range": [
+                          3,
+                          3
+                        ],
+                        "reconstructed_tokens": [],
+                        "roles": [],
+                        "tokens": [],
+                        "trace": []
+                      }
+                    ],
+                    "input_state_ref": "4c4f51af17d1ec0b6b39b3e62e595685054ba1366cd2bcc22af77680c3a6a1d6",
+                    "kind": "RULE",
+                    "measure": {
+                      "children": [
+                        0,
+                        0
+                      ],
+                      "parent": 2
+                    },
+                    "range": [
+                      1,
+                      3
+                    ],
+                    "reconstructed_tokens": [
+                      "S",
+                      "P"
+                    ],
+                    "roles": [
+                      {
+                        "position": 1,
+                        "role": "OPEN",
+                        "state_ref": "3ea56a2bf2dbc042662ad45872a32fa03cbb53f1f45e766a948a1d0c9b075e06",
+                        "token": "S"
+                      },
+                      {
+                        "position": 2,
+                        "role": "CLOSE",
+                        "state_ref": "01b317e816f1399eb02c114a73c84510221867cee5b98140e4558f6fe147d40e",
+                        "token": "P"
+                      }
+                    ],
+                    "tokens": [
+                      "S",
+                      "P"
+                    ],
+                    "trace": [
+                      {
+                        "args": {
+                          "position": 1
+                        },
+                        "input_state_ref": "4c4f51af17d1ec0b6b39b3e62e595685054ba1366cd2bcc22af77680c3a6a1d6",
+                        "input_word_hash": "39cec74929b1f989a67023840c6e92889adcbdc326459c3195ac63c1960d58b9",
+                        "operator": "SPLIT",
+                        "other_state_ref": null,
+                        "output_state_refs": [
+                          "3ea56a2bf2dbc042662ad45872a32fa03cbb53f1f45e766a948a1d0c9b075e06",
+                          "01b317e816f1399eb02c114a73c84510221867cee5b98140e4558f6fe147d40e"
+                        ],
+                        "output_word_hashes": [
+                          "a2134f11b0f21d2e272b9258cedafeccd8a7c7a7ead743cb77f9ec543a8f1884",
+                          "f9bff5736fa62e0dcde7a62c2abba90e3b45f4a7dc9164faca6e807044415b7c"
+                        ]
+                      },
+                      {
+                        "args": {
+                          "position": 0
+                        },
+                        "input_state_ref": "01b317e816f1399eb02c114a73c84510221867cee5b98140e4558f6fe147d40e",
+                        "input_word_hash": "f9bff5736fa62e0dcde7a62c2abba90e3b45f4a7dc9164faca6e807044415b7c",
+                        "operator": "SPLIT",
+                        "other_state_ref": null,
+                        "output_state_refs": [
+                          "fa9724df39d01918bffc9e39b6a0ee8775fbb1038c3d1fe2e9e5f22954b8dd42",
+                          "01b317e816f1399eb02c114a73c84510221867cee5b98140e4558f6fe147d40e"
+                        ],
+                        "output_word_hashes": [
+                          "4e403c6665dc9f605fda920e24937a0feccfcea7c2893af61528d5042c728c83",
+                          "f9bff5736fa62e0dcde7a62c2abba90e3b45f4a7dc9164faca6e807044415b7c"
+                        ]
+                      },
+                      {
+                        "args": {
+                          "position": 1
+                        },
+                        "input_state_ref": "01b317e816f1399eb02c114a73c84510221867cee5b98140e4558f6fe147d40e",
+                        "input_word_hash": "f9bff5736fa62e0dcde7a62c2abba90e3b45f4a7dc9164faca6e807044415b7c",
+                        "operator": "SPLIT",
+                        "other_state_ref": null,
+                        "output_state_refs": [
+                          "01b317e816f1399eb02c114a73c84510221867cee5b98140e4558f6fe147d40e",
+                          "fa9724df39d01918bffc9e39b6a0ee8775fbb1038c3d1fe2e9e5f22954b8dd42"
+                        ],
+                        "output_word_hashes": [
+                          "f9bff5736fa62e0dcde7a62c2abba90e3b45f4a7dc9164faca6e807044415b7c",
+                          "4e403c6665dc9f605fda920e24937a0feccfcea7c2893af61528d5042c728c83"
+                        ]
+                      },
+                      {
+                        "args": {
+                          "position": 0
+                        },
+                        "input_state_ref": "fa9724df39d01918bffc9e39b6a0ee8775fbb1038c3d1fe2e9e5f22954b8dd42",
+                        "input_word_hash": "4e403c6665dc9f605fda920e24937a0feccfcea7c2893af61528d5042c728c83",
+                        "operator": "SPLIT",
+                        "other_state_ref": null,
+                        "output_state_refs": [
+                          "fa9724df39d01918bffc9e39b6a0ee8775fbb1038c3d1fe2e9e5f22954b8dd42",
+                          "fa9724df39d01918bffc9e39b6a0ee8775fbb1038c3d1fe2e9e5f22954b8dd42"
+                        ],
+                        "output_word_hashes": [
+                          "4e403c6665dc9f605fda920e24937a0feccfcea7c2893af61528d5042c728c83",
+                          "4e403c6665dc9f605fda920e24937a0feccfcea7c2893af61528d5042c728c83"
+                        ]
+                      },
+                      {
+                        "args": {},
+                        "input_state_ref": "3ea56a2bf2dbc042662ad45872a32fa03cbb53f1f45e766a948a1d0c9b075e06",
+                        "input_word_hash": "a2134f11b0f21d2e272b9258cedafeccd8a7c7a7ead743cb77f9ec543a8f1884",
+                        "operator": "CONCAT",
+                        "other_state_ref": "fa9724df39d01918bffc9e39b6a0ee8775fbb1038c3d1fe2e9e5f22954b8dd42",
+                        "output_state_refs": [
+                          "3ea56a2bf2dbc042662ad45872a32fa03cbb53f1f45e766a948a1d0c9b075e06"
+                        ],
+                        "output_word_hashes": [
+                          "a2134f11b0f21d2e272b9258cedafeccd8a7c7a7ead743cb77f9ec543a8f1884"
+                        ]
+                      },
+                      {
+                        "args": {},
+                        "input_state_ref": "3ea56a2bf2dbc042662ad45872a32fa03cbb53f1f45e766a948a1d0c9b075e06",
+                        "input_word_hash": "a2134f11b0f21d2e272b9258cedafeccd8a7c7a7ead743cb77f9ec543a8f1884",
+                        "operator": "CONCAT",
+                        "other_state_ref": "01b317e816f1399eb02c114a73c84510221867cee5b98140e4558f6fe147d40e",
+                        "output_state_refs": [
+                          "4c4f51af17d1ec0b6b39b3e62e595685054ba1366cd2bcc22af77680c3a6a1d6"
+                        ],
+                        "output_word_hashes": [
+                          "39cec74929b1f989a67023840c6e92889adcbdc326459c3195ac63c1960d58b9"
+                        ]
+                      },
+                      {
+                        "args": {},
+                        "input_state_ref": "4c4f51af17d1ec0b6b39b3e62e595685054ba1366cd2bcc22af77680c3a6a1d6",
+                        "input_word_hash": "39cec74929b1f989a67023840c6e92889adcbdc326459c3195ac63c1960d58b9",
+                        "operator": "CONCAT",
+                        "other_state_ref": "fa9724df39d01918bffc9e39b6a0ee8775fbb1038c3d1fe2e9e5f22954b8dd42",
+                        "output_state_refs": [
+                          "4c4f51af17d1ec0b6b39b3e62e595685054ba1366cd2bcc22af77680c3a6a1d6"
+                        ],
+                        "output_word_hashes": [
+                          "39cec74929b1f989a67023840c6e92889adcbdc326459c3195ac63c1960d58b9"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "allocation": [
+                      0,
+                      0
+                    ],
+                    "children": [
+                      {
+                        "allocation": [],
+                        "children": [],
+                        "input_state_ref": "fa9724df39d01918bffc9e39b6a0ee8775fbb1038c3d1fe2e9e5f22954b8dd42",
+                        "kind": "EPS_BASE",
+                        "measure": {
+                          "children": [],
+                          "parent": 0
+                        },
+                        "range": [
+                          5,
+                          5
+                        ],
+                        "reconstructed_tokens": [],
+                        "roles": [],
+                        "tokens": [],
+                        "trace": []
+                      },
+                      {
+                        "allocation": [],
+                        "children": [],
+                        "input_state_ref": "2ebc4f13275052843af0d39226de801d7aece8efc63e349c6751e50437436485",
+                        "kind": "EPS_BASE",
+                        "measure": {
+                          "children": [],
+                          "parent": 0
+                        },
+                        "range": [
+                          6,
+                          6
+                        ],
+                        "reconstructed_tokens": [],
+                        "roles": [],
+                        "tokens": [],
+                        "trace": []
+                      }
+                    ],
+                    "input_state_ref": "b61c8cf3f09562fde1718597fca2ba7ff30be9ac94d379fee606988617d7e08c",
+                    "kind": "RULE",
+                    "measure": {
+                      "children": [
+                        0,
+                        0
+                      ],
+                      "parent": 2
+                    },
+                    "range": [
+                      4,
+                      6
+                    ],
+                    "reconstructed_tokens": [
+                      "S",
+                      "P"
+                    ],
+                    "roles": [
+                      {
+                        "position": 4,
+                        "role": "OPEN",
+                        "state_ref": "45561d83adc44e6752e0d8fe132670929f7b882bbff4b42f8f63cfb9de25ff11",
+                        "token": "S"
+                      },
+                      {
+                        "position": 5,
+                        "role": "CLOSE",
+                        "state_ref": "0d21fe3e8e36262999f6a44a4ba3afabab9ae74cb254886f7e72afda2057b722",
+                        "token": "P"
+                      }
+                    ],
+                    "tokens": [
+                      "S",
+                      "P"
+                    ],
+                    "trace": [
+                      {
+                        "args": {
+                          "position": 1
+                        },
+                        "input_state_ref": "b61c8cf3f09562fde1718597fca2ba7ff30be9ac94d379fee606988617d7e08c",
+                        "input_word_hash": "3155e0bf18326164a66bd197596032c9533083f4f0ab8157cb000ad605f627a2",
+                        "operator": "SPLIT",
+                        "other_state_ref": null,
+                        "output_state_refs": [
+                          "45561d83adc44e6752e0d8fe132670929f7b882bbff4b42f8f63cfb9de25ff11",
+                          "0d21fe3e8e36262999f6a44a4ba3afabab9ae74cb254886f7e72afda2057b722"
+                        ],
+                        "output_word_hashes": [
+                          "a2134f11b0f21d2e272b9258cedafeccd8a7c7a7ead743cb77f9ec543a8f1884",
+                          "ff40a23d8c35f6570916a3b55bc6d08a94a70b87b8f06039c9afa5926d7b127e"
+                        ]
+                      },
+                      {
+                        "args": {
+                          "position": 0
+                        },
+                        "input_state_ref": "0d21fe3e8e36262999f6a44a4ba3afabab9ae74cb254886f7e72afda2057b722",
+                        "input_word_hash": "ff40a23d8c35f6570916a3b55bc6d08a94a70b87b8f06039c9afa5926d7b127e",
+                        "operator": "SPLIT",
+                        "other_state_ref": null,
+                        "output_state_refs": [
+                          "fa9724df39d01918bffc9e39b6a0ee8775fbb1038c3d1fe2e9e5f22954b8dd42",
+                          "0d21fe3e8e36262999f6a44a4ba3afabab9ae74cb254886f7e72afda2057b722"
+                        ],
+                        "output_word_hashes": [
+                          "4e403c6665dc9f605fda920e24937a0feccfcea7c2893af61528d5042c728c83",
+                          "ff40a23d8c35f6570916a3b55bc6d08a94a70b87b8f06039c9afa5926d7b127e"
+                        ]
+                      },
+                      {
+                        "args": {
+                          "position": 1
+                        },
+                        "input_state_ref": "0d21fe3e8e36262999f6a44a4ba3afabab9ae74cb254886f7e72afda2057b722",
+                        "input_word_hash": "ff40a23d8c35f6570916a3b55bc6d08a94a70b87b8f06039c9afa5926d7b127e",
+                        "operator": "SPLIT",
+                        "other_state_ref": null,
+                        "output_state_refs": [
+                          "0d21fe3e8e36262999f6a44a4ba3afabab9ae74cb254886f7e72afda2057b722",
+                          "2ebc4f13275052843af0d39226de801d7aece8efc63e349c6751e50437436485"
+                        ],
+                        "output_word_hashes": [
+                          "ff40a23d8c35f6570916a3b55bc6d08a94a70b87b8f06039c9afa5926d7b127e",
+                          "9d846c0d21469f95d51f5512f58c14db3335d2c9028ed5a0913d29ef87134b16"
+                        ]
+                      },
+                      {
+                        "args": {
+                          "position": 0
+                        },
+                        "input_state_ref": "2ebc4f13275052843af0d39226de801d7aece8efc63e349c6751e50437436485",
+                        "input_word_hash": "9d846c0d21469f95d51f5512f58c14db3335d2c9028ed5a0913d29ef87134b16",
+                        "operator": "SPLIT",
+                        "other_state_ref": null,
+                        "output_state_refs": [
+                          "2ebc4f13275052843af0d39226de801d7aece8efc63e349c6751e50437436485",
+                          "2ebc4f13275052843af0d39226de801d7aece8efc63e349c6751e50437436485"
+                        ],
+                        "output_word_hashes": [
+                          "9d846c0d21469f95d51f5512f58c14db3335d2c9028ed5a0913d29ef87134b16",
+                          "9d846c0d21469f95d51f5512f58c14db3335d2c9028ed5a0913d29ef87134b16"
+                        ]
+                      },
+                      {
+                        "args": {},
+                        "input_state_ref": "45561d83adc44e6752e0d8fe132670929f7b882bbff4b42f8f63cfb9de25ff11",
+                        "input_word_hash": "a2134f11b0f21d2e272b9258cedafeccd8a7c7a7ead743cb77f9ec543a8f1884",
+                        "operator": "CONCAT",
+                        "other_state_ref": "fa9724df39d01918bffc9e39b6a0ee8775fbb1038c3d1fe2e9e5f22954b8dd42",
+                        "output_state_refs": [
+                          "45561d83adc44e6752e0d8fe132670929f7b882bbff4b42f8f63cfb9de25ff11"
+                        ],
+                        "output_word_hashes": [
+                          "a2134f11b0f21d2e272b9258cedafeccd8a7c7a7ead743cb77f9ec543a8f1884"
+                        ]
+                      },
+                      {
+                        "args": {},
+                        "input_state_ref": "45561d83adc44e6752e0d8fe132670929f7b882bbff4b42f8f63cfb9de25ff11",
+                        "input_word_hash": "a2134f11b0f21d2e272b9258cedafeccd8a7c7a7ead743cb77f9ec543a8f1884",
+                        "operator": "CONCAT",
+                        "other_state_ref": "0d21fe3e8e36262999f6a44a4ba3afabab9ae74cb254886f7e72afda2057b722",
+                        "output_state_refs": [
+                          "b61c8cf3f09562fde1718597fca2ba7ff30be9ac94d379fee606988617d7e08c"
+                        ],
+                        "output_word_hashes": [
+                          "3155e0bf18326164a66bd197596032c9533083f4f0ab8157cb000ad605f627a2"
+                        ]
+                      },
+                      {
+                        "args": {},
+                        "input_state_ref": "b61c8cf3f09562fde1718597fca2ba7ff30be9ac94d379fee606988617d7e08c",
+                        "input_word_hash": "3155e0bf18326164a66bd197596032c9533083f4f0ab8157cb000ad605f627a2",
+                        "operator": "CONCAT",
+                        "other_state_ref": "2ebc4f13275052843af0d39226de801d7aece8efc63e349c6751e50437436485",
+                        "output_state_refs": [
+                          "b61c8cf3f09562fde1718597fca2ba7ff30be9ac94d379fee606988617d7e08c"
+                        ],
+                        "output_word_hashes": [
+                          "3155e0bf18326164a66bd197596032c9533083f4f0ab8157cb000ad605f627a2"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "input_state_ref": "4b93f1bf492e22fadd37c14c650bf40d35bceabac9504106206b6b278de441ff",
+                "kind": "RULE",
+                "measure": {
+                  "children": [
+                    2,
+                    2
+                  ],
+                  "parent": 6
+                },
+                "range": [
+                  0,
+                  6
+                ],
+                "reconstructed_tokens": [
+                  "S",
+                  "S",
+                  "P",
+                  "P",
+                  "S",
+                  "P"
+                ],
+                "roles": [
+                  {
+                    "position": 0,
+                    "role": "OPEN",
+                    "state_ref": "cea12aedd31fd80d26e425d4d73b00c1d479e61ad9e56cea6061bb325600a5d8",
+                    "token": "S"
+                  },
+                  {
+                    "position": 3,
+                    "role": "CLOSE",
+                    "state_ref": "52a45037325a1dce6585419dc57afabcc62cf8c36e6bfcae0caaa0797e35066a",
+                    "token": "P"
+                  }
+                ],
+                "tokens": [
+                  "S",
+                  "S",
+                  "P",
+                  "P",
+                  "S",
+                  "P"
+                ],
+                "trace": [
+                  {
+                    "args": {
+                      "position": 1
+                    },
+                    "input_state_ref": "4b93f1bf492e22fadd37c14c650bf40d35bceabac9504106206b6b278de441ff",
+                    "input_word_hash": "894047bd1102912327ee393abdef5d865e1359e8617815304ba444b51f1cf5c2",
+                    "operator": "SPLIT",
+                    "other_state_ref": null,
+                    "output_state_refs": [
+                      "cea12aedd31fd80d26e425d4d73b00c1d479e61ad9e56cea6061bb325600a5d8",
+                      "80a2d2a50fe4fc80468e9b9c74ad0bce0565fe7e9c53679b7cefe9e2417fe02e"
+                    ],
+                    "output_word_hashes": [
+                      "85cdce8965dd4e8670307c2cbcf9b6688eac8b020b3ff7c3dd56ee38720157a4",
+                      "19453588da0c9ba03f698181d735e569a4856421524f2c79ffe5c3686292e918"
+                    ]
+                  },
+                  {
+                    "args": {
+                      "position": 2
+                    },
+                    "input_state_ref": "80a2d2a50fe4fc80468e9b9c74ad0bce0565fe7e9c53679b7cefe9e2417fe02e",
+                    "input_word_hash": "19453588da0c9ba03f698181d735e569a4856421524f2c79ffe5c3686292e918",
+                    "operator": "SPLIT",
+                    "other_state_ref": null,
+                    "output_state_refs": [
+                      "4c4f51af17d1ec0b6b39b3e62e595685054ba1366cd2bcc22af77680c3a6a1d6",
+                      "f30bab53bbba82c6c00ad7b93cc76ff32fac7456ddac84b10eb6cd4152b6903d"
+                    ],
+                    "output_word_hashes": [
+                      "39cec74929b1f989a67023840c6e92889adcbdc326459c3195ac63c1960d58b9",
+                      "206b71daef1c166f90a425217ad89fd1454df6fc5f0feaf1338dd85d82cf4d97"
+                    ]
+                  },
+                  {
+                    "args": {
+                      "position": 1
+                    },
+                    "input_state_ref": "f30bab53bbba82c6c00ad7b93cc76ff32fac7456ddac84b10eb6cd4152b6903d",
+                    "input_word_hash": "206b71daef1c166f90a425217ad89fd1454df6fc5f0feaf1338dd85d82cf4d97",
+                    "operator": "SPLIT",
+                    "other_state_ref": null,
+                    "output_state_refs": [
+                      "52a45037325a1dce6585419dc57afabcc62cf8c36e6bfcae0caaa0797e35066a",
+                      "b61c8cf3f09562fde1718597fca2ba7ff30be9ac94d379fee606988617d7e08c"
+                    ],
+                    "output_word_hashes": [
+                      "f9bff5736fa62e0dcde7a62c2abba90e3b45f4a7dc9164faca6e807044415b7c",
+                      "3155e0bf18326164a66bd197596032c9533083f4f0ab8157cb000ad605f627a2"
+                    ]
+                  },
+                  {
+                    "args": {
+                      "position": 2
+                    },
+                    "input_state_ref": "b61c8cf3f09562fde1718597fca2ba7ff30be9ac94d379fee606988617d7e08c",
+                    "input_word_hash": "3155e0bf18326164a66bd197596032c9533083f4f0ab8157cb000ad605f627a2",
+                    "operator": "SPLIT",
+                    "other_state_ref": null,
+                    "output_state_refs": [
+                      "b61c8cf3f09562fde1718597fca2ba7ff30be9ac94d379fee606988617d7e08c",
+                      "2ebc4f13275052843af0d39226de801d7aece8efc63e349c6751e50437436485"
+                    ],
+                    "output_word_hashes": [
+                      "3155e0bf18326164a66bd197596032c9533083f4f0ab8157cb000ad605f627a2",
+                      "9d846c0d21469f95d51f5512f58c14db3335d2c9028ed5a0913d29ef87134b16"
+                    ]
+                  },
+                  {
+                    "args": {},
+                    "input_state_ref": "cea12aedd31fd80d26e425d4d73b00c1d479e61ad9e56cea6061bb325600a5d8",
+                    "input_word_hash": "85cdce8965dd4e8670307c2cbcf9b6688eac8b020b3ff7c3dd56ee38720157a4",
+                    "operator": "CONCAT",
+                    "other_state_ref": "4c4f51af17d1ec0b6b39b3e62e595685054ba1366cd2bcc22af77680c3a6a1d6",
+                    "output_state_refs": [
+                      "19eac6ac619387e943576b18442dff39ea9c2dccb6061f16fdead1111b02eda2"
+                    ],
+                    "output_word_hashes": [
+                      "9cfcba212d607835d33d8397f13029b413ba542a24c6d2ad353e9b68021ca615"
+                    ]
+                  },
+                  {
+                    "args": {},
+                    "input_state_ref": "19eac6ac619387e943576b18442dff39ea9c2dccb6061f16fdead1111b02eda2",
+                    "input_word_hash": "9cfcba212d607835d33d8397f13029b413ba542a24c6d2ad353e9b68021ca615",
+                    "operator": "CONCAT",
+                    "other_state_ref": "52a45037325a1dce6585419dc57afabcc62cf8c36e6bfcae0caaa0797e35066a",
+                    "output_state_refs": [
+                      "8d6ddc826e070a51c0739ef7133dc3c803a85516a2e30780e5ebdf0f8a52c1a9"
+                    ],
+                    "output_word_hashes": [
+                      "acdded0c6c379cfca7c0bdb6b49519d6ff8760ab98e9f15f231722100c19cbaa"
+                    ]
+                  },
+                  {
+                    "args": {},
+                    "input_state_ref": "8d6ddc826e070a51c0739ef7133dc3c803a85516a2e30780e5ebdf0f8a52c1a9",
+                    "input_word_hash": "acdded0c6c379cfca7c0bdb6b49519d6ff8760ab98e9f15f231722100c19cbaa",
+                    "operator": "CONCAT",
+                    "other_state_ref": "b61c8cf3f09562fde1718597fca2ba7ff30be9ac94d379fee606988617d7e08c",
+                    "output_state_refs": [
+                      "4b93f1bf492e22fadd37c14c650bf40d35bceabac9504106206b6b278de441ff"
+                    ],
+                    "output_word_hashes": [
+                      "894047bd1102912327ee393abdef5d865e1359e8617815304ba444b51f1cf5c2"
+                    ]
+                  }
+                ]
+              },
+              "work": {
+                "cells": 28,
+                "split_trials": 35
+              }
+            },
+            "execution_permission": false,
+            "record_id": "q-5f530a2666f6bdb35b6a",
+            "status": "CHECKED_INSTANCE",
+            "verification": {
+              "decision": true,
+              "execution_permission": false,
+              "program_digest": "d7614e8d77a8e3a41cce43109bb406be1c0982bba5005d134162c5e0b7afc4cc",
+              "proof_digest": "ea225c6a101e09abac5fa80b14fdb55e8523bb71b5dd72c713c4bebc204700f6",
+              "status": "CHECKED_INSTANCE",
+              "universal_invariant": false,
+              "verifier_version": "role-branch-independent-checker/1"
+            }
+          }
+        },
+        "isError": false
+      }
+    }
+  ],
+  "reuse": "Create your project, store actual datasets and replace project/refs/request keys. Existing keys are immutable historical runs."
+}

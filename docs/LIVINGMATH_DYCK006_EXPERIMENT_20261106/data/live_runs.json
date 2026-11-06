@@ -1,0 +1,118 @@
+{
+  "server": {
+    "version": "v0.4.7-developer-preview",
+    "deployment": "generator005-20261106T113245Z",
+    "observer_version": "observer_synthesis_v1/4-mixed-length-typed-generation"
+  },
+  "datasets": {
+    "dyck_train84": "596fa9621ae7cd197ce0c999a6d03ac406b313ffa351a1107f9807d709f3434e",
+    "dyck_holdout256": "e956883b11ac2b73162fb9f55874f2918f7d6aa8d5755dadbe5bcf58e3bb1073",
+    "role_pair_SP_positive_PS_negative": "7493140bf9c1523a966701eeb34eaa31cf6c8a8594f529ddb417bc5d1025d077",
+    "minimal_hitting_set_PS_negative_SSPPSP_positive": "532f70969b8d4ddf1863d91d1cc19f6b6fdba095e8a4b3b029159afcc1d8bbcf",
+    "mixed4": "cb440c43dbb4132133d13d484d857a86096400e4f31b4811bd6c0407deeadf38"
+  },
+  "observer_synthesis": {
+    "bare_84to256": {
+      "run_id": "50e14a4fc99d7686813c9b5151372ea47ef822df8740ab0e66ef4b6f448a6c89",
+      "status": "NO_VERIFIABLE_NEW_OBSERVER",
+      "catalog_candidates": 18,
+      "catalog_train_compatible": 0,
+      "catalog_ast_kinds": {
+        "aligned_token_equality": 6,
+        "compare_fragments": 6,
+        "iterate_on_inner_fragment": 6
+      },
+      "confusion": {
+        "tp": 0,
+        "tn": 242,
+        "fp": 0,
+        "fn": 14
+      }
+    },
+    "no_derivation": {
+      "run_id": "abb9a4708b2e4cf0b886f241b8a3cc4e847aab1901205d39104486005630d53a"
+    },
+    "all_builtins": {
+      "run_id": "9b6a19ef082e2f4059358453990412f63aa65524165d7ff214f26af6af35e9c6",
+      "status": "NO_VERIFIABLE_NEW_OBSERVER",
+      "confusion": {
+        "tp": 0,
+        "tn": 242,
+        "fp": 0,
+        "fn": 14
+      },
+      "selected_builtin_predicate": "lag_4_mismatches"
+    },
+    "composition_only": {
+      "run_id": "b0d6ee68c62bc2dd3a4abd7688f206e3c53177f08df900eb8f64fb7d8f1f0804"
+    },
+    "role_pair_seeds": [
+      {
+        "seed": 7,
+        "run_id": "3b8df842bb4c16fa18d5b60ad3fbf78e76cdee350b328649519b1c030cb98c7c",
+        "candidate_count": 10,
+        "compatible": 0
+      },
+      {
+        "seed": 137,
+        "run_id": "8b765225afb699b8b0782d622af750f6a2dca6fbee6940bf348c86f29fbc3803",
+        "candidate_count": 10,
+        "compatible": 0
+      },
+      {
+        "seed": 991,
+        "run_id": "c7b0b04bc0b5b755b3e9bc93ddee5122596739b46e86bc8acfc9e036f691568c",
+        "candidate_count": 10,
+        "compatible": 0
+      }
+    ],
+    "role_pair_on_full_holdout": {
+      "run_id": "3a4fac4ccd4a4059e9f42db94795b3226fcf170d32081f9033b5d174b5a785c8",
+      "candidate_count": 10,
+      "compatible": 0
+    },
+    "two_word_catalog_hitting_set": {
+      "run_id": "a351a4dcc516594ac6f12def6d6bf1bf0f92de7596b2c9b34f7220d9694d887c",
+      "candidate_count": 20,
+      "compatible": 0
+    },
+    "mixed_four": {
+      "run_id": "bd7dac60dfaa02e8b2bd356d1e42f19a54c852799d187de655a50bad73f47228",
+      "candidate_count": 20,
+      "compatible": 0
+    }
+  },
+  "legacy_symbolic_v1": {
+    "with_composition": {
+      "run_ids": [
+        "a15c589def5bd0932ea2ed11e5396d9199fef122477105d7c5cd05f20be92f2a",
+        "14569084a6c55dd07c2e332c4b20ab5c4c1439c7c2cdf987a6d3057bb5478388",
+        "219f05f6fbc2a5116e25b3f05a23899a54bdf445024b1f959400f7bbf3fe1764",
+        "7b8dc39f5091582eccb26e1fc1f753c6c8fef5ced728d7d49be42b409d5109d4"
+      ],
+      "selected_builtin_predicate": "pair_0_max",
+      "confusion": {
+        "tp": 14,
+        "tn": 242,
+        "fp": 0,
+        "fn": 0
+      }
+    },
+    "without_composition": {
+      "run_ids": [
+        "895f7bac61091e0312c3175cb289cb04772a344a3dde4635d2d8bbb2502e527d",
+        "df3bde33b9e335561b8d725ca7a1b0de0d5b1c3a3c738e2678c108bdbc2d1954",
+        "e29a9dd5af4c44ffe9ef4f3c76ebff6056ebca1d16acba12f0057986a8861a29",
+        "fb70c10c512c9545da6f7c4e85ab2a34d679d3ec5f667ab931ca216503970e75"
+      ],
+      "selected_builtin_predicate": "adjacent_equal",
+      "confusion": {
+        "tp": 1,
+        "tn": 241,
+        "fp": 1,
+        "fn": 13
+      }
+    }
+  },
+  "analysis_scope": "Full finite corpus and literal source refs. No universal grammar discovery claim; negative classifications supplied only by independent reference oracle."
+}

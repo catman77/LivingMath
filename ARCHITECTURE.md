@@ -1,6 +1,6 @@
 # Архитектура MCP-сервера LivingMath
 
-Срез архитектуры: **v0.4.7-developer-preview**, пакет Python `0.4.7.dev0`.
+Срез архитектуры: **v0.4.8-developer-preview**, пакет Python `0.4.8.dev0`.
 Production объединяет **83 MCP-инструмента** в одном authenticated Streamable HTTP
 endpoint `/mcp`. [Справочник интерфейса](docs/MCP_INTERFACE.md),
 [установка](docs/INSTALL.md), [примеры запросов](docs/USAGE.md).
@@ -140,6 +140,41 @@ pagination/artifact chunks. `learner.py` фиксирует модель до qu
 SHA связывает новые constructors. Исторические runs направляются прежним
 approved0.4.6 worker, разделяя общую квоту; Symbolic V1 grammar не меняется.
 [Контракты диагностики](docs/symbolic-v1/patch005/QUICKSTART_RU.md).
+
+## Ролевые ветвящиеся программы DYCK006
+
+Этот additive opt-in путь выбирается `promotion_policy.mode=role_branching_ast`;
+`auto` использует его, когда прежняя equality promotion не дала наблюдателя.
+Два ATOM_ROLE связываются с различными атомами train; генератор перечисляет их
+перемежения с0/1/2 строго убывающими RECURSE и EPS/NONE базами. Для бинарного
+алфавита проверяются40 программ. Это конечный типизированный catalog, без
+встроенного распознавателя Dyck, высотного признака или готового reference AST.
+
+| Модуль `observer_synthesis/` | Назначение |
+|---|---|
+| `role_ast.py` | Исполнение конечной программы, interval DP, source-bound дерево с обеими ветвями и фактическими SPLIT/CONCAT |
+| `role_checker.py` | Отдельный парсер источника и recurrence, полное покрытие интервалов/разрезов, обе ветви, роли, UTF-8 spans и буквальная реконструкция |
+| `role_promotion.py` | Генерация bindings/кандидатов только из train, контрпримеры, rivals, scope и admission после independent checker |
+
+`features.py` использует решение checker, а не scalar answer producer.
+`independent_verifier.py` добавляет dispatch, не меняя старый checker.
+`symbolic_complex/app.py` переиспользует существующий worker action observer_verify;
+`service.py` связывает optional query_id с реальной записью того же проекта/run.
+Worker whitelist, старые composition evaluator/checker и Symbolic V1 сохранены.
+
+Пределы role: по умолчанию8 tokens, явно до12,91 interval cells,512 split trials,
+32 AST nodes, глубина/recursion8. Старые8-token equality bounds не расширяются.
+CPU5s/wall6s/RAM512MiB и общая historical/current квота2 active/16 queued прежние.
+Выход за scope даёт UNKNOWN; negative certificate доказывает только конечный
+отрицательный ответ полным DP, не отсутствием найденного положительного дерева.
+Роли буквальны: переименование токенов вместе с bindings ковариантно;
+переименование при фиксированных ролях и NF факторизация — иные операции.
+
+P1 harness фиксирует один hypothesis_digest для32 inference batches, получает
+8191 настоящих query decisions, строит множества суффиксов и различающие witnesses.
+Он не группирует по высоте. HTTP429 retry находится только в QA transport,
+срабатывает только на явный pre-execution018_RESOURCE_BUSY, сохраняет request key.
+[Схемы и контракт](docs/symbolic-v1/dyck006/QUICKSTART_RU.md).
 
 ## Данные и происхождение
 

@@ -1,0 +1,177 @@
+{
+  "SP_positive": {
+    "kind": "OPEN_INNER_CLOSE_AFTER",
+    "length": 2,
+    "sha256": "f040c5145282c0ea83c1cfa122ddee58ee33992dd9981ea8356070a94ca3a3e2",
+    "roles": {
+      "open": "S",
+      "close": "P"
+    },
+    "split": {
+      "open_at": 0,
+      "close_at": 1,
+      "inner": [
+        1,
+        1
+      ],
+      "after": [
+        2,
+        2
+      ]
+    },
+    "inner_proof": {
+      "kind": "EPS",
+      "length": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "after_proof": {
+      "kind": "EPS",
+      "length": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    }
+  },
+  "PS_negative": {
+    "schema": "dyck-branch-proof/1",
+    "token_sha256": "f0c5f5cba382b0db326de4804596a4e4a1b9b75ed45ca6248381d2405e0df020",
+    "n": 2,
+    "roles": {
+      "open": "S",
+      "close": "P"
+    },
+    "table": [
+      {
+        "i": 0,
+        "j": 0,
+        "value": true
+      },
+      {
+        "i": 0,
+        "j": 1,
+        "value": false
+      },
+      {
+        "i": 0,
+        "j": 2,
+        "value": false
+      },
+      {
+        "i": 1,
+        "j": 1,
+        "value": true
+      },
+      {
+        "i": 1,
+        "j": 2,
+        "value": false
+      },
+      {
+        "i": 2,
+        "j": 2,
+        "value": true
+      }
+    ]
+  },
+  "SSPPSP_two_branches": {
+    "kind": "OPEN_INNER_CLOSE_AFTER",
+    "length": 6,
+    "sha256": "5f530a2666f6bdb35b6aaf91cad642bd9da3b0ce41872958a111258adfb9e8bc",
+    "roles": {
+      "open": "S",
+      "close": "P"
+    },
+    "split": {
+      "open_at": 0,
+      "close_at": 3,
+      "inner": [
+        1,
+        3
+      ],
+      "after": [
+        4,
+        6
+      ]
+    },
+    "inner_proof": {
+      "kind": "OPEN_INNER_CLOSE_AFTER",
+      "length": 2,
+      "sha256": "f040c5145282c0ea83c1cfa122ddee58ee33992dd9981ea8356070a94ca3a3e2",
+      "roles": {
+        "open": "S",
+        "close": "P"
+      },
+      "split": {
+        "open_at": 0,
+        "close_at": 1,
+        "inner": [
+          1,
+          1
+        ],
+        "after": [
+          2,
+          2
+        ]
+      },
+      "inner_proof": {
+        "kind": "EPS",
+        "length": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "after_proof": {
+        "kind": "EPS",
+        "length": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    },
+    "after_proof": {
+      "kind": "OPEN_INNER_CLOSE_AFTER",
+      "length": 2,
+      "sha256": "f040c5145282c0ea83c1cfa122ddee58ee33992dd9981ea8356070a94ca3a3e2",
+      "roles": {
+        "open": "S",
+        "close": "P"
+      },
+      "split": {
+        "open_at": 0,
+        "close_at": 1,
+        "inner": [
+          1,
+          1
+        ],
+        "after": [
+          2,
+          2
+        ]
+      },
+      "inner_proof": {
+        "kind": "EPS",
+        "length": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "after_proof": {
+        "kind": "EPS",
+        "length": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    }
+  },
+  "minimal_catalog_hitting_set": [
+    {
+      "word": "PS",
+      "label": false
+    },
+    {
+      "word": "SSPPSP",
+      "label": true
+    }
+  ],
+  "literal_role_minimal_train": [
+    {
+      "word": "SP",
+      "label": true
+    },
+    {
+      "word": "PS",
+      "label": false
+    }
+  ]
+}

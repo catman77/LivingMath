@@ -1,0 +1,25 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"data\":{\"ast_digest\":\"d7614e8d77a8e3a41cce43109bb406be1c0982bba5005d134162c5e0b7afc4cc\",\"execution_permission\":false,\"status\":\"CHECKED_INSTANCE\",\"training_compatibility\":true,\"universal_invariant\":false,\"verified_witnesses\":84,\"verifier_digest\":\"847654bb8cf5d69a76da8bfa22864eb15722181bfe3070870cd9088ae1ec6da3\",\"verifier_version\":\"role-branch-independent-checker/1\"},\"execution_permission\":false,\"ok\":true,\"schema\":\"livingmath-symbolic-extension-response/1\",\"status\":\"CHECKED_INSTANCE\"}"
+    }
+  ],
+  "structuredContent": {
+    "schema": "livingmath-symbolic-extension-response/1",
+    "ok": true,
+    "status": "CHECKED_INSTANCE",
+    "execution_permission": false,
+    "data": {
+      "ast_digest": "d7614e8d77a8e3a41cce43109bb406be1c0982bba5005d134162c5e0b7afc4cc",
+      "execution_permission": false,
+      "status": "CHECKED_INSTANCE",
+      "training_compatibility": true,
+      "universal_invariant": false,
+      "verified_witnesses": 84,
+      "verifier_digest": "847654bb8cf5d69a76da8bfa22864eb15722181bfe3070870cd9088ae1ec6da3",
+      "verifier_version": "role-branch-independent-checker/1"
+    }
+  },
+  "isError": false
+}

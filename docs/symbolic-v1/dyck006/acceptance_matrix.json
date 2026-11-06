@@ -1,0 +1,295 @@
+{
+  "status": "PASS_FINITE_ROLE006",
+  "production": {
+    "role": {
+      "status": "PASS_FINITE_ROLE006",
+      "checks": 333,
+      "MCP_calls": 255,
+      "project": "qa-role006-prod"
+    },
+    "edge": {
+      "status": "PASS_FINITE_ROLE006",
+      "checks": 41,
+      "MCP_calls": 31,
+      "project": "qa-role006-prod-edge"
+    },
+    "continuations": {
+      "status": "PASS_FINITE_ROLE006",
+      "checks": 8547,
+      "MCP_calls": 278,
+      "project": "qa-role006-prod-p1"
+    },
+    "regression": {
+      "status": "PASS_P0_P1_FINITE",
+      "checks": 943,
+      "MCP_calls": 388,
+      "project": "qa-recursive004-r006-prod"
+    },
+    "generator": {
+      "status": "PASS_FINITE_PATCH005",
+      "checks": 916,
+      "MCP_calls": 600,
+      "project": "qa-generator005-r006-prod"
+    }
+  },
+  "staged": {
+    "role": {
+      "status": "PASS_FINITE_ROLE006",
+      "checks": 333
+    },
+    "edge": {
+      "status": "PASS_FINITE_ROLE006",
+      "checks": 41
+    },
+    "continuations": {
+      "status": "PASS_FINITE_ROLE006",
+      "checks": 8547
+    },
+    "regression": {
+      "status": "PASS_P0_P1_FINITE",
+      "checks": 943
+    },
+    "generator": {
+      "status": "PASS_FINITE_PATCH005",
+      "checks": 916
+    }
+  },
+  "checks_per_endpoint": 10780,
+  "MCP_tools_call_per_endpoint": 1552,
+  "prior31_gates": {
+    "A01": {
+      "status": "PASS",
+      "evidence": "311b17a00dd9316b48050520747bc502b2e6f240bc1984e8c824e2bb5c82bcab"
+    },
+    "A02": {
+      "status": "PASS",
+      "evidence": "derived_ee42a6c799ce3ba3a777"
+    },
+    "A03": {
+      "status": "PASS",
+      "evidence": "pal-n6-verification.json"
+    },
+    "A04": {
+      "status": "PASS",
+      "evidence": "pal-n6"
+    },
+    "A05": {
+      "status": "PASS",
+      "evidence": "pal-n8"
+    },
+    "B02": {
+      "status": "PASS",
+      "evidence": "copy-n6"
+    },
+    "B03": {
+      "status": "PASS",
+      "evidence": "copy-n8"
+    },
+    "A07": {
+      "status": "PASS",
+      "evidence": [
+        "pal-seed42",
+        "copy-seed42"
+      ]
+    },
+    "A08": {
+      "status": "PASS",
+      "evidence": "scores.json"
+    },
+    "A09": {
+      "status": "PASS",
+      "evidence": "scores.json"
+    },
+    "A10": {
+      "status": "PASS",
+      "evidence": "models.json / queries"
+    },
+    "B01": {
+      "status": "PASS",
+      "evidence": "3e20034adf02b6e851b6550302ae9610e3d9f46872eb66f94ece5c28fff6f969"
+    },
+    "B05": {
+      "status": "PASS",
+      "evidence": "derived_cf773c00dc649edfb1cb"
+    },
+    "A06": {
+      "status": "PASS",
+      "evidence": {
+        "source": "d81778f8b2a1b96305043d0f0469616e2a9ef2a431a11fa097b80055f1601a63",
+        "derived": "a8c185002370ec7857c2a5ec429de679c187c7c2a436ac6876926227fd1c746f",
+        "origin": "SOURCE_SUPPLIED"
+      }
+    },
+    "A12": {
+      "status": "PASS",
+      "evidence": "foreign source/dataset/run requests rejected"
+    },
+    "A13": {
+      "status": "PASS",
+      "evidence": "output_hash"
+    },
+    "A14": {
+      "status": "PASS",
+      "evidence": "position"
+    },
+    "A15": {
+      "status": "PASS",
+      "evidence": "missing"
+    },
+    "A17": {
+      "status": "PASS",
+      "evidence": "operator"
+    },
+    "A18": {
+      "status": "PASS",
+      "evidence": "origin"
+    },
+    "A19": {
+      "status": "PASS",
+      "evidence": "universal"
+    },
+    "TYPE_BOOL": {
+      "status": "PASS",
+      "evidence": "position_bool"
+    },
+    "TYPE_INT": {
+      "status": "PASS",
+      "evidence": "readout_integer"
+    },
+    "OUTER_DIGEST": {
+      "status": "PASS",
+      "evidence": "outer_digest"
+    },
+    "A16": {
+      "status": "PASS",
+      "evidence": "actual Cyrillic source spans"
+    },
+    "A20": {
+      "status": "PASS",
+      "evidence": "5f19ed7da73cc2dac1f18f7417889e61dfb8ffad348be80d37e0a44c8c956c90"
+    },
+    "A21": {
+      "status": "PASS",
+      "evidence": "fresh key deterministic digest / old key immutable"
+    },
+    "A22": {
+      "status": "PASS",
+      "evidence": {
+        "engine": "observer_synthesis_v1",
+        "execution_permission": false,
+        "independent_checks": {
+          "LLM_calls": 0,
+          "execution_permission": false,
+          "holdout_labels_read": false,
+          "hypothesis_frozen_before_queries": true
+        },
+        "journal_hash_chain": "PASS",
+        "kernel_binding": "81fe95f44b6a193922679d877940f87dc2b42ded4a83b79f69c8a0dfc35416f8",
+        "result_digest": "fcce8a102a128e36864d6f88aa200b853db236a8b0bee90891a1315401af72ec",
+        "run_id": "311b17a00dd9316b48050520747bc502b2e6f240bc1984e8c824e2bb5c82bcab",
+        "status": "REPLAY_MATCH"
+      }
+    },
+    "A23": {
+      "status": "PASS",
+      "evidence": {
+        "SP": {
+          "TP": 57,
+          "TN": 7,
+          "FP": 0,
+          "FN": 0,
+          "UNKNOWN": 0,
+          "total": 64,
+          "accuracy": 1.0,
+          "sensitivity": 1.0,
+          "specificity": 1.0,
+          "balanced_accuracy": 1.0,
+          "coverage": 1.0,
+          "majority_accuracy": 0.890625
+        },
+        "PS": {
+          "TP": 57,
+          "TN": 7,
+          "FP": 0,
+          "FN": 0,
+          "UNKNOWN": 0,
+          "total": 64,
+          "accuracy": 1.0,
+          "sensitivity": 1.0,
+          "specificity": 1.0,
+          "balanced_accuracy": 1.0,
+          "coverage": 1.0,
+          "majority_accuracy": 0.890625
+        },
+        "SS": {
+          "TP": 43,
+          "TN": 21,
+          "FP": 0,
+          "FN": 0,
+          "UNKNOWN": 0,
+          "total": 64,
+          "accuracy": 1.0,
+          "sensitivity": 1.0,
+          "specificity": 1.0,
+          "balanced_accuracy": 1.0,
+          "coverage": 1.0,
+          "majority_accuracy": 0.671875
+        }
+      }
+    },
+    "A24": {
+      "status": "PASS",
+      "evidence": "SP2/4/6/8/10 exact counts, real checker and partial-cell negatives"
+    },
+    "A11": {
+      "status": "PASS",
+      "evidence": "historical-runs.json + original key replay"
+    },
+    "A25": {
+      "status": "PASS",
+      "evidence": "numeric profiles and old immutable symbolic/observer replay"
+    },
+    "B04": {
+      "status": "PASS",
+      "evidence": "30e8f6ce9ff8bc84dfae322af4550caf59c1b6b419f1b378251ecbcd6871574e"
+    },
+    "B06": {
+      "status": "PASS",
+      "evidence": {
+        "local_evaluator_control": [
+          {
+            "n": 6,
+            "witnesses": 64,
+            "origin": "MANUALLY_SUPPLIED_EVALUATOR_CONTROL",
+            "discovery_claimed": false
+          },
+          {
+            "n": 8,
+            "witnesses": 256,
+            "origin": "MANUALLY_SUPPLIED_EVALUATOR_CONTROL",
+            "discovery_claimed": false
+          }
+        ],
+        "MCP_source_origin_forgery": "REJECTED",
+        "not_counted_as_discovery": true
+      }
+    }
+  },
+  "regression_local_supplied_AST_controls": 320,
+  "source_PASS": 409,
+  "installed_wheel_PASS": 409,
+  "legacy_PASS": 1066,
+  "legacy_existing_SKIP": 20,
+  "reference_PASS": 24,
+  "independent_review_targeted_PASS": 22,
+  "public_models_equal_staged": true,
+  "schemas_validated": {
+    "status": "PASS",
+    "actual_programs_and_certificates_validated": 1650,
+    "statuses": [
+      "DECIDED",
+      "UNKNOWN"
+    ],
+    "validation": "Published syntactic JSON Schema over actual HTTPS MCP outputs; semantic checks are separate"
+  }
+}

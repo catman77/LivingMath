@@ -1,0 +1,53 @@
+{
+  "project": "qa-role006-prod",
+  "request_key": "ROLE006-CONNECTED-AUTO-1794002505704",
+  "request": {
+    "schema": "livingmath-symbolic-observer-synthesis-request/1",
+    "task": {
+      "mode": "context_relation_induction",
+      "train_ref": "596fa9621ae7cd197ce0c999a6d03ac406b313ffa351a1107f9807d709f3434e",
+      "predict_ref": "e956883b11ac2b73162fb9f55874f2918f7d6aa8d5755dadbe5bcf58e3bb1073",
+      "holdout_labels_visible": false,
+      "structure_levels": [
+        "word"
+      ],
+      "candidate_transformations": [
+        "REVERSE",
+        "RENAME"
+      ]
+    },
+    "feature_policy": {
+      "enabled_builtins": [],
+      "feature_denylist": [
+        "pair_0_max",
+        "pair_0_min",
+        "pair_0_final"
+      ],
+      "derive_relations": true,
+      "prohibit_undocumented_builtins": true,
+      "synthesis_origin_required": true,
+      "renaming_scope": "per_variant",
+      "strict_source_boundaries": true
+    },
+    "search": {
+      "seed": 137,
+      "max_composition_depth": 4,
+      "max_proposals": 128,
+      "max_contexts": 128,
+      "max_witnesses": 512,
+      "max_cpu_ms": 4000
+    },
+    "promotion_policy": {
+      "mode": "auto",
+      "candidate_sources": [
+        "derivation_trace"
+      ],
+      "max_ast_nodes": 32,
+      "max_ast_depth": 8,
+      "max_recursion_steps": 8,
+      "max_tokens": 8,
+      "max_train_witnesses": 256,
+      "require_independent_checker": true
+    }
+  }
+}

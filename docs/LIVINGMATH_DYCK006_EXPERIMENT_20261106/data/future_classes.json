@@ -1,0 +1,32 @@
+[
+  {
+    "max_prefix_len": 1,
+    "prefixes": 3,
+    "distinguishable_future_classes": 3
+  },
+  {
+    "max_prefix_len": 2,
+    "prefixes": 7,
+    "distinguishable_future_classes": 4
+  },
+  {
+    "max_prefix_len": 3,
+    "prefixes": 15,
+    "distinguishable_future_classes": 5
+  },
+  {
+    "max_prefix_len": 4,
+    "prefixes": 31,
+    "distinguishable_future_classes": 6
+  },
+  {
+    "max_prefix_len": 5,
+    "prefixes": 63,
+    "distinguishable_future_classes": 7
+  },
+  {
+    "max_prefix_len": 6,
+    "prefixes": 127,
+    "distinguishable_future_classes": 8
+  }
+]

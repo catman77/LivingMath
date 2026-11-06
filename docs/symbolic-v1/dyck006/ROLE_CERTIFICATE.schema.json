@@ -1,0 +1,529 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "livingmath-finite-role-certificate/1",
+  "$defs": {
+    "tree": {
+      "type": "object",
+      "properties": {
+        "range": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 12
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "tokens": {
+          "type": "array",
+          "maxItems": 12,
+          "items": {
+            "type": "string"
+          }
+        },
+        "input_state_ref": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "kind": {
+          "enum": [
+            "EPS_BASE",
+            "RULE"
+          ]
+        },
+        "roles": {
+          "type": "array",
+          "maxItems": 2,
+          "items": {
+            "type": "object",
+            "properties": {
+              "role": {
+                "enum": [
+                  "OPEN",
+                  "CLOSE"
+                ]
+              },
+              "position": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 12
+              },
+              "token": {
+                "type": "string"
+              },
+              "state_ref": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              }
+            },
+            "required": [
+              "role",
+              "position",
+              "token",
+              "state_ref"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "children": {
+          "type": "array",
+          "maxItems": 2,
+          "items": {
+            "$ref": "#/$defs/tree"
+          }
+        },
+        "trace": {
+          "type": "array",
+          "maxItems": 7,
+          "items": {
+            "type": "object",
+            "properties": {
+              "operator": {
+                "enum": [
+                  "SPLIT",
+                  "CONCAT"
+                ]
+              },
+              "args": {
+                "type": "object"
+              },
+              "input_state_ref": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "other_state_ref": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "output_state_refs": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 2,
+                "items": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                }
+              },
+              "input_word_hash": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "output_word_hashes": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 2,
+                "items": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                }
+              }
+            },
+            "required": [
+              "operator",
+              "args",
+              "input_state_ref",
+              "other_state_ref",
+              "output_state_refs",
+              "input_word_hash",
+              "output_word_hashes"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "allocation": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "maxItems": 2,
+          "items": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 12
+          }
+        },
+        "measure": {
+          "type": "object",
+          "properties": {
+            "parent": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 12
+            },
+            "children": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 11
+              }
+            }
+          },
+          "required": [
+            "parent",
+            "children"
+          ],
+          "additionalProperties": false
+        },
+        "reconstructed_tokens": {
+          "type": "array",
+          "maxItems": 12,
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "range",
+        "tokens",
+        "input_state_ref",
+        "kind",
+        "roles",
+        "children",
+        "trace",
+        "allocation",
+        "measure",
+        "reconstructed_tokens"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "oneOf": [
+    {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "const": "finite-role-certificate/1"
+        },
+        "program_digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "record_ref": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "source_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "scope_digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "input_state": {
+          "type": "object",
+          "properties": {
+            "tokens": {
+              "type": "array",
+              "maxItems": 512,
+              "items": {
+                "type": "string"
+              }
+            },
+            "boundaries": {
+              "type": "array",
+              "items": {
+                "type": "array",
+                "minItems": 3,
+                "maxItems": 3
+              }
+            },
+            "source_spans": {
+              "type": "array",
+              "maxItems": 512,
+              "items": {
+                "type": "array",
+                "items": {
+                  "type": "array",
+                  "prefixItems": [
+                    {
+                      "type": "string",
+                      "pattern": "^[0-9a-f]{64}$"
+                    },
+                    {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    {
+                      "type": "integer",
+                      "minimum": 0
+                    }
+                  ],
+                  "minItems": 3,
+                  "maxItems": 3
+                }
+              }
+            },
+            "word_hash": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          },
+          "required": [
+            "tokens",
+            "boundaries",
+            "source_spans",
+            "word_hash"
+          ],
+          "additionalProperties": false
+        },
+        "status": {
+          "const": "UNKNOWN"
+        },
+        "reason": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "schema",
+        "program_digest",
+        "record_ref",
+        "source_sha256",
+        "scope_digest",
+        "input_state",
+        "status",
+        "reason"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "const": "finite-role-certificate/1"
+        },
+        "program_digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "record_ref": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "source_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "scope_digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "input_state": {
+          "type": "object",
+          "properties": {
+            "tokens": {
+              "type": "array",
+              "maxItems": 512,
+              "items": {
+                "type": "string"
+              }
+            },
+            "boundaries": {
+              "type": "array",
+              "items": {
+                "type": "array",
+                "minItems": 3,
+                "maxItems": 3
+              }
+            },
+            "source_spans": {
+              "type": "array",
+              "maxItems": 512,
+              "items": {
+                "type": "array",
+                "items": {
+                  "type": "array",
+                  "prefixItems": [
+                    {
+                      "type": "string",
+                      "pattern": "^[0-9a-f]{64}$"
+                    },
+                    {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    {
+                      "type": "integer",
+                      "minimum": 0
+                    }
+                  ],
+                  "minItems": 3,
+                  "maxItems": 3
+                }
+              }
+            },
+            "word_hash": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          },
+          "required": [
+            "tokens",
+            "boundaries",
+            "source_spans",
+            "word_hash"
+          ],
+          "additionalProperties": false
+        },
+        "status": {
+          "const": "DECIDED"
+        },
+        "decision": {
+          "type": "boolean"
+        },
+        "cells": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 91,
+          "items": {
+            "type": "object",
+            "properties": {
+              "range": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 12
+                },
+                "minItems": 2,
+                "maxItems": 2
+              },
+              "value": {
+                "type": "boolean"
+              },
+              "allocation": {
+                "type": [
+                  "array",
+                  "null"
+                ],
+                "maxItems": 2,
+                "items": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 12
+                }
+              }
+            },
+            "required": [
+              "range",
+              "value",
+              "allocation"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "tree": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/tree"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "states": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "tokens": {
+                "type": "array",
+                "maxItems": 512,
+                "items": {
+                  "type": "string"
+                }
+              },
+              "boundaries": {
+                "type": "array",
+                "items": {
+                  "type": "array",
+                  "minItems": 3,
+                  "maxItems": 3
+                }
+              },
+              "source_spans": {
+                "type": "array",
+                "maxItems": 512,
+                "items": {
+                  "type": "array",
+                  "items": {
+                    "type": "array",
+                    "prefixItems": [
+                      {
+                        "type": "string",
+                        "pattern": "^[0-9a-f]{64}$"
+                      },
+                      {
+                        "type": "integer",
+                        "minimum": 0
+                      },
+                      {
+                        "type": "integer",
+                        "minimum": 0
+                      }
+                    ],
+                    "minItems": 3,
+                    "maxItems": 3
+                  }
+                }
+              },
+              "word_hash": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              }
+            },
+            "required": [
+              "tokens",
+              "boundaries",
+              "source_spans",
+              "word_hash"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "work": {
+          "type": "object",
+          "properties": {
+            "cells": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 91
+            },
+            "split_trials": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 512
+            }
+          },
+          "required": [
+            "cells",
+            "split_trials"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "schema",
+        "program_digest",
+        "record_ref",
+        "source_sha256",
+        "scope_digest",
+        "input_state",
+        "status",
+        "decision",
+        "cells",
+        "tree",
+        "states",
+        "work"
+      ],
+      "additionalProperties": false
+    }
+  ],
+  "description": "Untrusted certificate input. DECIDED needs exhaustive interval equations, literal reconstruction and both source-bound children. UNKNOWN never certifies a truth value."
+}

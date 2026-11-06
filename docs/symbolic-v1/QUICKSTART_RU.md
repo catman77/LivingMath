@@ -1,6 +1,6 @@
 # Symbolic V1 — запуск и проверка
 
-Текущий production: **v0.4.7-developer-preview**, 83 инструмента; HTTPS/OAuth адрес
+Текущий production: **v0.4.8-developer-preview**, 83 инструмента; HTTPS/OAuth адрес
 сохранён. [Полный MCP-интерфейс](../MCP_INTERFACE.md) и
 [приёмка PATCH005](patch005/USER_REPORT_RU.md), [opt-in generator](patch005/QUICKSTART_RU.md).
 Symbolic использует полные токены и их происхождение; численный
@@ -87,3 +87,8 @@ NO_NOVEL_CANDIDATES означает отсутствие новых путей 
 ## PATCH003
 
 Доступны 7 дополнительных инструментов; прежние 75 схем сохранены. [Примеры SP-комплексов, датасетов, синтеза и replay](patch003/QUICKSTART_RU.md). Для обновления списка до82 инструментов переподключите LivingMath по прежнему адресу.
+
+
+DYCK006: [ролевое ветвление и query certificates](dyck006/QUICKSTART_RU.md),
+[фактические84→256 и continuation sets N≤6](dyck006/USER_REPORT_RU.md).
+Новый режим opt-in; старые literal/compositional запросы сохраняются.

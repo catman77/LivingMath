@@ -1,0 +1,42 @@
+[
+  {
+    "length": 2,
+    "all": 4,
+    "zero": 2,
+    "dyck": 1,
+    "zero_but_not_dyck": 1,
+    "balanced_closed_formula": 2
+  },
+  {
+    "length": 4,
+    "all": 16,
+    "zero": 6,
+    "dyck": 2,
+    "zero_but_not_dyck": 4,
+    "balanced_closed_formula": 6
+  },
+  {
+    "length": 6,
+    "all": 64,
+    "zero": 20,
+    "dyck": 5,
+    "zero_but_not_dyck": 15,
+    "balanced_closed_formula": 20
+  },
+  {
+    "length": 8,
+    "all": 256,
+    "zero": 70,
+    "dyck": 14,
+    "zero_but_not_dyck": 56,
+    "balanced_closed_formula": 70
+  },
+  {
+    "length": 10,
+    "all": 1024,
+    "zero": 252,
+    "dyck": 42,
+    "zero_but_not_dyck": 210,
+    "balanced_closed_formula": 252
+  }
+]

@@ -1,6 +1,6 @@
 # Тестирование
 
-## Актуальный пакет v0.4.7
+## Актуальный пакет v0.4.8
 
 Из корня checkout после установки `python -m pip install '.[white-star,mcp,test]'`:
 
@@ -16,17 +16,23 @@ train/query isolation, независимый observer verifier, поддель�
 идемпотентность и ablation реальных родителей. Один только `.[test,mcp]`
 не устанавливает NumPy/pandas для численных тестов.
 
-Для PATCH005: **385 source PASS,385 installed-wheel PASS**,1066 legacy PASS/20 SKIP,
-17 independent reference PASS. Staged/public:916 новых проверок плюс943 regression
-проверки, включая все31 прежний A/B gate. [Результаты и границы](symbolic-v1/patch005/USER_REPORT_RU.md),
-[матрица](symbolic-v1/patch005/acceptance_matrix.json).
-`tools/generator005_mcp_qa.py` исполняет mixed-length PAL/COPY и ресурсные контроли
-через настоящий SDK/OAuth. Frozen gold читается после inference; odd13/48FP и
-COPY52/n6 train overlap показаны отдельно. `tests/test_generator005.py` содержит
-короткие positive, parity, strict base cases, budgets, exact counterexamples,
-Unicode, rivals и126-witness контролы. Защитные тесты PATCH004 сохранены.
-Отдельный installed-wheel запуск не импортирует checkout source/tests helpers.
-GitHub CI оценивается отдельно от локальной/реальной MCP приёмки.
+Для DYCK006: **409 source PASS,409 installed-wheel PASS**,1066 legacy PASS/20 прежних SKIP,
+24 supplied reference PASS. На стенде и публичном HTTPS/OAuth endpoint прошли
+333 role +41 edge +8547 continuation +943 regression +916 generator checks.
+Всего10780 проверок на каждом endpoint;943 включает320 явно локальных
+supplied-AST controls, не серверное открытие. Все31 прежний A/B gate PASS.
+[Точная матрица и счётчики MCP](symbolic-v1/dyck006/acceptance_matrix.json).
+
+`tests/test_role006.py` проверяет84→256, независимое двухветвевое дерево,
+исчерпывающий отрицательный DP, подделки, роли/Unicode, covariance/NF, UNKNOWN,
+реальный fork worker и недоверие producer scalar. `tools/role006_mcp_qa.py`
+проводит baseline/accept/edges/continuations через настоящий MCP SDK и OAuth.
+Положительные/отрицательные labels golden набора читаются после inference.
+В P1 группируются реальные множества продолжений, не вычисленная высота.
+Прежние `recursive_observer_mcp_qa.py` и `generator005_mcp_qa.py` повторены.
+Клиентский retry018_RESOURCE_BUSY не меняет worker/HTTP caps; другие ошибки
+не маскируются. Полные трассы, исходные RED/failed harness logs и offline
+REPLAY_MATCH входят в ZIP релиза. GitHub CI оценивается отдельно.
 
 ## Legacy тесты
 

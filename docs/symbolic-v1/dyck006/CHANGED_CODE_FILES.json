@@ -1,0 +1,29 @@
+{
+  "runtime_and_QA_commits": [
+    "d6159ac",
+    "39dcbcb"
+  ],
+  "files": [
+    "pyproject.toml",
+    "src/lm_suti_assurance/__init__.py",
+    "src/lm_suti_assurance/observer_synthesis/contracts.py",
+    "src/lm_suti_assurance/observer_synthesis/features.py",
+    "src/lm_suti_assurance/observer_synthesis/independent_verifier.py",
+    "src/lm_suti_assurance/observer_synthesis/learner.py",
+    "src/lm_suti_assurance/observer_synthesis/role_ast.py",
+    "src/lm_suti_assurance/observer_synthesis/role_checker.py",
+    "src/lm_suti_assurance/observer_synthesis/role_promotion.py",
+    "src/lm_suti_assurance/symbolic_complex/app.py",
+    "src/lm_suti_assurance/symbolic_complex/mcp.py",
+    "src/lm_suti_assurance/symbolic_complex/service.py",
+    "tests/test_mcp_retry_transport.py",
+    "tests/test_role006.py",
+    "tools/generator005_mcp_qa.py",
+    "tools/mcp_retry_transport.py",
+    "tools/recursive_observer_mcp_qa.py",
+    "tools/release_v01_entry.py",
+    "tools/role006_fixture.py",
+    "tools/role006_mcp_qa.py"
+  ],
+  "documentation": "Current source commit contains updated architecture/install/interface/report and supplied archive; complete changed path list also in source.patch."
+}

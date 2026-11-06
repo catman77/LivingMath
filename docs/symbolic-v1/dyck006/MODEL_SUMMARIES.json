@@ -1,0 +1,1126 @@
+{
+  "minimal-7": {
+    "run_id": "16a9e17a071f7dfde1556184e31e2fec563985458d5c8be66d064eee44777393",
+    "result_digest": "47d256ddf1b7a5dcb577d797addd720712d6a0c4594c77a1e876f6cb61a4392b",
+    "hypothesis_digest": "196d4cff48712f30b674f4768e90c6ac624c0950cb46e3e82dd57fce6683f78b",
+    "used_feature_ids": [
+      "derived_24c98c1ef0f12081733e"
+    ],
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.031021784,
+      "max_rss_kib": 60800
+    },
+    "role_diagnostics": {
+      "catalog": {
+        "bounds": {
+          "NF_INVARIANT": false,
+          "max_ast_depth": 8,
+          "max_ast_nodes": 32,
+          "max_cells": 91,
+          "max_cpu_ms": 4000,
+          "max_depth": 8,
+          "max_proposals": 128,
+          "max_split_trials": 512,
+          "max_tokens": 8,
+          "renaming_contract": "ATOMS_AND_ROLES_TOGETHER",
+          "representation": "literal",
+          "role_semantics": "LITERAL_ROLE_SENSITIVE",
+          "universal_invariant": false
+        },
+        "candidate_budget_exhausted": false,
+        "compatible": 11,
+        "generated": 40,
+        "grammar_version": "roles_x_nullable_rule_shuffles/1",
+        "no_global_exhaustion_claim": true,
+        "phase": "role_catalog",
+        "retained_compatible_ast_digests": [
+          "f03d3262dd011c8899d89ac0666f5f9af65cb69f595bfb205e5523ab6c7937af",
+          "c7e0448753b5584e74eac32286e203f41cb46b3a82c8935146293782ed09da0c",
+          "e5d6b45f79b0d85cc1e72c914e61f43a03f484dccafa25537d483f5786f06c18",
+          "da68a88c809049edfb58ad428c4ce6c64b9528e07be39778d0bb686b28e99147",
+          "d001b87ca0679b411c0b0030c26ea2548e24556a2ed73013586f6f5ebbd8cc0b",
+          "19a2ea8d91866e08add3a9573cf9af44b121f50f9b4c2c67908ec075e3347dbb",
+          "d7614e8d77a8e3a41cce43109bb406be1c0982bba5005d134162c5e0b7afc4cc",
+          "9438dade7dc95815ab8c0c484c7ab46f093afcfdbafbfddca9560018843fd735",
+          "650a4b762b4f51fd36d9b6c5b004e395ca47dac4157a4387082af8476dde5c8c",
+          "62a86849edbc7a17b32a143ea7c5ed622fb87804d2a445faf4bba32b46c7d320",
+          "3e6193fb18cc270ac564f18e9ee5ec362311f9d1c32a1443a3bd6c72af4c0821"
+        ],
+        "search_status": "BOUNDED_CATALOG_CHECKED",
+        "untried": "none in declared finite catalog",
+        "untried_ast_digests": [],
+        "untried_preview_only": true
+      },
+      "invariance_contract": "LITERAL_ROLE_SENSITIVE; covariance requires simultaneous atom AND role renaming; NF_INVARIANT=false",
+      "promotions": [
+        {
+          "compatible_candidates": 11,
+          "executed_rule": true,
+          "feature_id": "derived_24c98c1ef0f12081733e",
+          "independent_check": {
+            "ast_digest": "c7e0448753b5584e74eac32286e203f41cb46b3a82c8935146293782ed09da0c",
+            "execution_permission": false,
+            "status": "CHECKED_INSTANCE",
+            "training_compatibility": true,
+            "universal_invariant": false,
+            "verified_witnesses": 2,
+            "verifier_digest": "847654bb8cf5d69a76da8bfa22864eb15722181bfe3070870cd9088ae1ec6da3",
+            "verifier_version": "role-branch-independent-checker/1"
+          },
+          "phase": "role_promotion",
+          "scope": {
+            "NF_INVARIANT": false,
+            "max_ast_depth": 8,
+            "max_ast_nodes": 32,
+            "max_cells": 91,
+            "max_depth": 8,
+            "max_split_trials": 512,
+            "max_tokens": 8,
+            "renaming_contract": "ATOMS_AND_ROLES_TOGETHER",
+            "representation": "literal",
+            "role_semantics": "LITERAL_ROLE_SENSITIVE",
+            "universal_invariant": false
+          },
+          "status": "CHECKED_FINITE_INSTANCE"
+        }
+      ]
+    }
+  },
+  "minimal-137": {
+    "run_id": "838d51219b9e452fc8bdd489db34e73eddf8184482e4530e9415c949ae90cf96",
+    "result_digest": "576e6dfaa5e7225a0acd167f1ada3d2dfbf02675bb2cfe735d184824d8bf75b5",
+    "hypothesis_digest": "b4f3ab661fd4b4d136cddcb0986d8f34e5a6f389758fc0eab2ac6ef04419d223",
+    "used_feature_ids": [
+      "derived_24c98c1ef0f12081733e"
+    ],
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.031486361,
+      "max_rss_kib": 60800
+    },
+    "role_diagnostics": {
+      "catalog": {
+        "bounds": {
+          "NF_INVARIANT": false,
+          "max_ast_depth": 8,
+          "max_ast_nodes": 32,
+          "max_cells": 91,
+          "max_cpu_ms": 4000,
+          "max_depth": 8,
+          "max_proposals": 128,
+          "max_split_trials": 512,
+          "max_tokens": 8,
+          "renaming_contract": "ATOMS_AND_ROLES_TOGETHER",
+          "representation": "literal",
+          "role_semantics": "LITERAL_ROLE_SENSITIVE",
+          "universal_invariant": false
+        },
+        "candidate_budget_exhausted": false,
+        "compatible": 11,
+        "generated": 40,
+        "grammar_version": "roles_x_nullable_rule_shuffles/1",
+        "no_global_exhaustion_claim": true,
+        "phase": "role_catalog",
+        "retained_compatible_ast_digests": [
+          "f03d3262dd011c8899d89ac0666f5f9af65cb69f595bfb205e5523ab6c7937af",
+          "c7e0448753b5584e74eac32286e203f41cb46b3a82c8935146293782ed09da0c",
+          "e5d6b45f79b0d85cc1e72c914e61f43a03f484dccafa25537d483f5786f06c18",
+          "da68a88c809049edfb58ad428c4ce6c64b9528e07be39778d0bb686b28e99147",
+          "d001b87ca0679b411c0b0030c26ea2548e24556a2ed73013586f6f5ebbd8cc0b",
+          "19a2ea8d91866e08add3a9573cf9af44b121f50f9b4c2c67908ec075e3347dbb",
+          "d7614e8d77a8e3a41cce43109bb406be1c0982bba5005d134162c5e0b7afc4cc",
+          "9438dade7dc95815ab8c0c484c7ab46f093afcfdbafbfddca9560018843fd735",
+          "650a4b762b4f51fd36d9b6c5b004e395ca47dac4157a4387082af8476dde5c8c",
+          "62a86849edbc7a17b32a143ea7c5ed622fb87804d2a445faf4bba32b46c7d320",
+          "3e6193fb18cc270ac564f18e9ee5ec362311f9d1c32a1443a3bd6c72af4c0821"
+        ],
+        "search_status": "BOUNDED_CATALOG_CHECKED",
+        "untried": "none in declared finite catalog",
+        "untried_ast_digests": [],
+        "untried_preview_only": true
+      },
+      "invariance_contract": "LITERAL_ROLE_SENSITIVE; covariance requires simultaneous atom AND role renaming; NF_INVARIANT=false",
+      "promotions": [
+        {
+          "compatible_candidates": 11,
+          "executed_rule": true,
+          "feature_id": "derived_24c98c1ef0f12081733e",
+          "independent_check": {
+            "ast_digest": "c7e0448753b5584e74eac32286e203f41cb46b3a82c8935146293782ed09da0c",
+            "execution_permission": false,
+            "status": "CHECKED_INSTANCE",
+            "training_compatibility": true,
+            "universal_invariant": false,
+            "verified_witnesses": 2,
+            "verifier_digest": "847654bb8cf5d69a76da8bfa22864eb15722181bfe3070870cd9088ae1ec6da3",
+            "verifier_version": "role-branch-independent-checker/1"
+          },
+          "phase": "role_promotion",
+          "scope": {
+            "NF_INVARIANT": false,
+            "max_ast_depth": 8,
+            "max_ast_nodes": 32,
+            "max_cells": 91,
+            "max_depth": 8,
+            "max_split_trials": 512,
+            "max_tokens": 8,
+            "renaming_contract": "ATOMS_AND_ROLES_TOGETHER",
+            "representation": "literal",
+            "role_semantics": "LITERAL_ROLE_SENSITIVE",
+            "universal_invariant": false
+          },
+          "status": "CHECKED_FINITE_INSTANCE"
+        }
+      ]
+    }
+  },
+  "minimal-991": {
+    "run_id": "b2b6c2c1aeb2dec97fd83fa8165ad2c0b6a92a2669167e999ea4081173a5efef",
+    "result_digest": "625c952900108e2a2cf3ee5c9c2f02af6322e98b8828450ee9c63f1c69295f9d",
+    "hypothesis_digest": "733facd770200001e60c53b1f67e381b7a2bd5f3fc747b91491d210773ee0f37",
+    "used_feature_ids": [
+      "derived_24c98c1ef0f12081733e"
+    ],
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.031367770999999996,
+      "max_rss_kib": 60732
+    },
+    "role_diagnostics": {
+      "catalog": {
+        "bounds": {
+          "NF_INVARIANT": false,
+          "max_ast_depth": 8,
+          "max_ast_nodes": 32,
+          "max_cells": 91,
+          "max_cpu_ms": 4000,
+          "max_depth": 8,
+          "max_proposals": 128,
+          "max_split_trials": 512,
+          "max_tokens": 8,
+          "renaming_contract": "ATOMS_AND_ROLES_TOGETHER",
+          "representation": "literal",
+          "role_semantics": "LITERAL_ROLE_SENSITIVE",
+          "universal_invariant": false
+        },
+        "candidate_budget_exhausted": false,
+        "compatible": 11,
+        "generated": 40,
+        "grammar_version": "roles_x_nullable_rule_shuffles/1",
+        "no_global_exhaustion_claim": true,
+        "phase": "role_catalog",
+        "retained_compatible_ast_digests": [
+          "f03d3262dd011c8899d89ac0666f5f9af65cb69f595bfb205e5523ab6c7937af",
+          "c7e0448753b5584e74eac32286e203f41cb46b3a82c8935146293782ed09da0c",
+          "e5d6b45f79b0d85cc1e72c914e61f43a03f484dccafa25537d483f5786f06c18",
+          "da68a88c809049edfb58ad428c4ce6c64b9528e07be39778d0bb686b28e99147",
+          "d001b87ca0679b411c0b0030c26ea2548e24556a2ed73013586f6f5ebbd8cc0b",
+          "19a2ea8d91866e08add3a9573cf9af44b121f50f9b4c2c67908ec075e3347dbb",
+          "d7614e8d77a8e3a41cce43109bb406be1c0982bba5005d134162c5e0b7afc4cc",
+          "9438dade7dc95815ab8c0c484c7ab46f093afcfdbafbfddca9560018843fd735",
+          "650a4b762b4f51fd36d9b6c5b004e395ca47dac4157a4387082af8476dde5c8c",
+          "62a86849edbc7a17b32a143ea7c5ed622fb87804d2a445faf4bba32b46c7d320",
+          "3e6193fb18cc270ac564f18e9ee5ec362311f9d1c32a1443a3bd6c72af4c0821"
+        ],
+        "search_status": "BOUNDED_CATALOG_CHECKED",
+        "untried": "none in declared finite catalog",
+        "untried_ast_digests": [],
+        "untried_preview_only": true
+      },
+      "invariance_contract": "LITERAL_ROLE_SENSITIVE; covariance requires simultaneous atom AND role renaming; NF_INVARIANT=false",
+      "promotions": [
+        {
+          "compatible_candidates": 11,
+          "executed_rule": true,
+          "feature_id": "derived_24c98c1ef0f12081733e",
+          "independent_check": {
+            "ast_digest": "c7e0448753b5584e74eac32286e203f41cb46b3a82c8935146293782ed09da0c",
+            "execution_permission": false,
+            "status": "CHECKED_INSTANCE",
+            "training_compatibility": true,
+            "universal_invariant": false,
+            "verified_witnesses": 2,
+            "verifier_digest": "847654bb8cf5d69a76da8bfa22864eb15722181bfe3070870cd9088ae1ec6da3",
+            "verifier_version": "role-branch-independent-checker/1"
+          },
+          "phase": "role_promotion",
+          "scope": {
+            "NF_INVARIANT": false,
+            "max_ast_depth": 8,
+            "max_ast_nodes": 32,
+            "max_cells": 91,
+            "max_depth": 8,
+            "max_split_trials": 512,
+            "max_tokens": 8,
+            "renaming_contract": "ATOMS_AND_ROLES_TOGETHER",
+            "representation": "literal",
+            "role_semantics": "LITERAL_ROLE_SENSITIVE",
+            "universal_invariant": false
+          },
+          "status": "CHECKED_FINITE_INSTANCE"
+        }
+      ]
+    }
+  },
+  "branch": {
+    "run_id": "3ccce854beacf1d9de799223cf93e771023fd114270df2c256e40dcc3c689b15",
+    "result_digest": "586be3f81f41120e2d756cc0a1df8c6ce37fff1ac36a2d128b0ea4dbdda18da0",
+    "hypothesis_digest": "3b26db22e9d4a8078d3ee0950e1905fb55e723a0a6d4ee21d4d6afc4beaf2025",
+    "used_feature_ids": [
+      "derived_b0bae4245d3417323658"
+    ],
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.057315884,
+      "max_rss_kib": 61172
+    },
+    "role_diagnostics": {
+      "catalog": {
+        "bounds": {
+          "NF_INVARIANT": false,
+          "max_ast_depth": 8,
+          "max_ast_nodes": 32,
+          "max_cells": 91,
+          "max_cpu_ms": 4000,
+          "max_depth": 8,
+          "max_proposals": 128,
+          "max_split_trials": 512,
+          "max_tokens": 8,
+          "renaming_contract": "ATOMS_AND_ROLES_TOGETHER",
+          "representation": "literal",
+          "role_semantics": "LITERAL_ROLE_SENSITIVE",
+          "universal_invariant": false
+        },
+        "candidate_budget_exhausted": false,
+        "compatible": 2,
+        "generated": 40,
+        "grammar_version": "roles_x_nullable_rule_shuffles/1",
+        "no_global_exhaustion_claim": true,
+        "phase": "role_catalog",
+        "retained_compatible_ast_digests": [
+          "d7614e8d77a8e3a41cce43109bb406be1c0982bba5005d134162c5e0b7afc4cc",
+          "62a86849edbc7a17b32a143ea7c5ed622fb87804d2a445faf4bba32b46c7d320"
+        ],
+        "search_status": "BOUNDED_CATALOG_CHECKED",
+        "untried": "none in declared finite catalog",
+        "untried_ast_digests": [],
+        "untried_preview_only": true
+      },
+      "invariance_contract": "LITERAL_ROLE_SENSITIVE; covariance requires simultaneous atom AND role renaming; NF_INVARIANT=false",
+      "promotions": [
+        {
+          "compatible_candidates": 2,
+          "executed_rule": true,
+          "feature_id": "derived_b0bae4245d3417323658",
+          "independent_check": {
+            "ast_digest": "d7614e8d77a8e3a41cce43109bb406be1c0982bba5005d134162c5e0b7afc4cc",
+            "execution_permission": false,
+            "status": "CHECKED_INSTANCE",
+            "training_compatibility": true,
+            "universal_invariant": false,
+            "verified_witnesses": 2,
+            "verifier_digest": "847654bb8cf5d69a76da8bfa22864eb15722181bfe3070870cd9088ae1ec6da3",
+            "verifier_version": "role-branch-independent-checker/1"
+          },
+          "phase": "role_promotion",
+          "scope": {
+            "NF_INVARIANT": false,
+            "max_ast_depth": 8,
+            "max_ast_nodes": 32,
+            "max_cells": 91,
+            "max_depth": 8,
+            "max_split_trials": 512,
+            "max_tokens": 8,
+            "renaming_contract": "ATOMS_AND_ROLES_TOGETHER",
+            "representation": "literal",
+            "role_semantics": "LITERAL_ROLE_SENSITIVE",
+            "universal_invariant": false
+          },
+          "status": "CHECKED_FINITE_INSTANCE"
+        }
+      ]
+    }
+  },
+  "full-137": {
+    "run_id": "dd20db27ae45440edbc56dd4ce45bee541940d50939d0234c7683a3a9440ba33",
+    "result_digest": "12153964910f04075b97c2cc7b4c099bf29f5351d0d1142b3f7b292b67bf2f02",
+    "hypothesis_digest": "75d3cccae233016b7bdcfc786345b24b7f44cb790b76f1383a1546f3128f1db8",
+    "used_feature_ids": [
+      "derived_b0bae4245d3417323658"
+    ],
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.790470259,
+      "max_rss_kib": 64228
+    },
+    "role_diagnostics": {
+      "catalog": {
+        "bounds": {
+          "NF_INVARIANT": false,
+          "max_ast_depth": 8,
+          "max_ast_nodes": 32,
+          "max_cells": 91,
+          "max_cpu_ms": 4000,
+          "max_depth": 8,
+          "max_proposals": 128,
+          "max_split_trials": 512,
+          "max_tokens": 8,
+          "renaming_contract": "ATOMS_AND_ROLES_TOGETHER",
+          "representation": "literal",
+          "role_semantics": "LITERAL_ROLE_SENSITIVE",
+          "universal_invariant": false
+        },
+        "candidate_budget_exhausted": false,
+        "compatible": 2,
+        "generated": 40,
+        "grammar_version": "roles_x_nullable_rule_shuffles/1",
+        "no_global_exhaustion_claim": true,
+        "phase": "role_catalog",
+        "retained_compatible_ast_digests": [
+          "d7614e8d77a8e3a41cce43109bb406be1c0982bba5005d134162c5e0b7afc4cc",
+          "62a86849edbc7a17b32a143ea7c5ed622fb87804d2a445faf4bba32b46c7d320"
+        ],
+        "search_status": "BOUNDED_CATALOG_CHECKED",
+        "untried": "none in declared finite catalog",
+        "untried_ast_digests": [],
+        "untried_preview_only": true
+      },
+      "invariance_contract": "LITERAL_ROLE_SENSITIVE; covariance requires simultaneous atom AND role renaming; NF_INVARIANT=false",
+      "promotions": [
+        {
+          "compatible_candidates": 2,
+          "executed_rule": true,
+          "feature_id": "derived_b0bae4245d3417323658",
+          "independent_check": {
+            "ast_digest": "d7614e8d77a8e3a41cce43109bb406be1c0982bba5005d134162c5e0b7afc4cc",
+            "execution_permission": false,
+            "status": "CHECKED_INSTANCE",
+            "training_compatibility": true,
+            "universal_invariant": false,
+            "verified_witnesses": 84,
+            "verifier_digest": "847654bb8cf5d69a76da8bfa22864eb15722181bfe3070870cd9088ae1ec6da3",
+            "verifier_version": "role-branch-independent-checker/1"
+          },
+          "phase": "role_promotion",
+          "scope": {
+            "NF_INVARIANT": false,
+            "max_ast_depth": 8,
+            "max_ast_nodes": 32,
+            "max_cells": 91,
+            "max_depth": 8,
+            "max_split_trials": 512,
+            "max_tokens": 8,
+            "renaming_contract": "ATOMS_AND_ROLES_TOGETHER",
+            "representation": "literal",
+            "role_semantics": "LITERAL_ROLE_SENSITIVE",
+            "universal_invariant": false
+          },
+          "status": "CHECKED_FINITE_INSTANCE"
+        }
+      ]
+    }
+  },
+  "full-42": {
+    "run_id": "d1c7b9cab40b3ada1c5b927f919920630c93410ec78f7b9eb310912dbb89854b",
+    "result_digest": "7d935ff321a53c6ea83fc158083935d4e7b5b6970c23ec36f7933f8a53fb55ca",
+    "hypothesis_digest": "536c634580564c4f5429dc6ab80eadc3c1e656759ab5e2cd10303561445e301b",
+    "used_feature_ids": [
+      "derived_b0bae4245d3417323658"
+    ],
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.7572972060000001,
+      "max_rss_kib": 67808
+    },
+    "role_diagnostics": {
+      "catalog": {
+        "bounds": {
+          "NF_INVARIANT": false,
+          "max_ast_depth": 8,
+          "max_ast_nodes": 32,
+          "max_cells": 91,
+          "max_cpu_ms": 4000,
+          "max_depth": 8,
+          "max_proposals": 128,
+          "max_split_trials": 512,
+          "max_tokens": 8,
+          "renaming_contract": "ATOMS_AND_ROLES_TOGETHER",
+          "representation": "literal",
+          "role_semantics": "LITERAL_ROLE_SENSITIVE",
+          "universal_invariant": false
+        },
+        "candidate_budget_exhausted": false,
+        "compatible": 2,
+        "generated": 40,
+        "grammar_version": "roles_x_nullable_rule_shuffles/1",
+        "no_global_exhaustion_claim": true,
+        "phase": "role_catalog",
+        "retained_compatible_ast_digests": [
+          "d7614e8d77a8e3a41cce43109bb406be1c0982bba5005d134162c5e0b7afc4cc",
+          "62a86849edbc7a17b32a143ea7c5ed622fb87804d2a445faf4bba32b46c7d320"
+        ],
+        "search_status": "BOUNDED_CATALOG_CHECKED",
+        "untried": "none in declared finite catalog",
+        "untried_ast_digests": [],
+        "untried_preview_only": true
+      },
+      "invariance_contract": "LITERAL_ROLE_SENSITIVE; covariance requires simultaneous atom AND role renaming; NF_INVARIANT=false",
+      "promotions": [
+        {
+          "compatible_candidates": 2,
+          "executed_rule": true,
+          "feature_id": "derived_b0bae4245d3417323658",
+          "independent_check": {
+            "ast_digest": "d7614e8d77a8e3a41cce43109bb406be1c0982bba5005d134162c5e0b7afc4cc",
+            "execution_permission": false,
+            "status": "CHECKED_INSTANCE",
+            "training_compatibility": true,
+            "universal_invariant": false,
+            "verified_witnesses": 84,
+            "verifier_digest": "847654bb8cf5d69a76da8bfa22864eb15722181bfe3070870cd9088ae1ec6da3",
+            "verifier_version": "role-branch-independent-checker/1"
+          },
+          "phase": "role_promotion",
+          "scope": {
+            "NF_INVARIANT": false,
+            "max_ast_depth": 8,
+            "max_ast_nodes": 32,
+            "max_cells": 91,
+            "max_depth": 8,
+            "max_split_trials": 512,
+            "max_tokens": 8,
+            "renaming_contract": "ATOMS_AND_ROLES_TOGETHER",
+            "representation": "literal",
+            "role_semantics": "LITERAL_ROLE_SENSITIVE",
+            "universal_invariant": false
+          },
+          "status": "CHECKED_FINITE_INSTANCE"
+        }
+      ]
+    }
+  },
+  "full-probes": {
+    "run_id": "35ba1ab6ca579393bac643e0410b976f46f0b72687415eba2dabca8896199388",
+    "result_digest": "291d195c2ad97c7bd8069eb0327373c0952b29ff30f34baad56de482391f91af",
+    "hypothesis_digest": "75d3cccae233016b7bdcfc786345b24b7f44cb790b76f1383a1546f3128f1db8",
+    "used_feature_ids": [
+      "derived_b0bae4245d3417323658"
+    ],
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.487248085,
+      "max_rss_kib": 69864
+    },
+    "role_diagnostics": {
+      "catalog": {
+        "bounds": {
+          "NF_INVARIANT": false,
+          "max_ast_depth": 8,
+          "max_ast_nodes": 32,
+          "max_cells": 91,
+          "max_cpu_ms": 4000,
+          "max_depth": 8,
+          "max_proposals": 128,
+          "max_split_trials": 512,
+          "max_tokens": 8,
+          "renaming_contract": "ATOMS_AND_ROLES_TOGETHER",
+          "representation": "literal",
+          "role_semantics": "LITERAL_ROLE_SENSITIVE",
+          "universal_invariant": false
+        },
+        "candidate_budget_exhausted": false,
+        "compatible": 2,
+        "generated": 40,
+        "grammar_version": "roles_x_nullable_rule_shuffles/1",
+        "no_global_exhaustion_claim": true,
+        "phase": "role_catalog",
+        "retained_compatible_ast_digests": [
+          "d7614e8d77a8e3a41cce43109bb406be1c0982bba5005d134162c5e0b7afc4cc",
+          "62a86849edbc7a17b32a143ea7c5ed622fb87804d2a445faf4bba32b46c7d320"
+        ],
+        "search_status": "BOUNDED_CATALOG_CHECKED",
+        "untried": "none in declared finite catalog",
+        "untried_ast_digests": [],
+        "untried_preview_only": true
+      },
+      "invariance_contract": "LITERAL_ROLE_SENSITIVE; covariance requires simultaneous atom AND role renaming; NF_INVARIANT=false",
+      "promotions": [
+        {
+          "compatible_candidates": 2,
+          "executed_rule": true,
+          "feature_id": "derived_b0bae4245d3417323658",
+          "independent_check": {
+            "ast_digest": "d7614e8d77a8e3a41cce43109bb406be1c0982bba5005d134162c5e0b7afc4cc",
+            "execution_permission": false,
+            "status": "CHECKED_INSTANCE",
+            "training_compatibility": true,
+            "universal_invariant": false,
+            "verified_witnesses": 84,
+            "verifier_digest": "847654bb8cf5d69a76da8bfa22864eb15722181bfe3070870cd9088ae1ec6da3",
+            "verifier_version": "role-branch-independent-checker/1"
+          },
+          "phase": "role_promotion",
+          "scope": {
+            "NF_INVARIANT": false,
+            "max_ast_depth": 8,
+            "max_ast_nodes": 32,
+            "max_cells": 91,
+            "max_depth": 8,
+            "max_split_trials": 512,
+            "max_tokens": 8,
+            "renaming_contract": "ATOMS_AND_ROLES_TOGETHER",
+            "representation": "literal",
+            "role_semantics": "LITERAL_ROLE_SENSITIVE",
+            "universal_invariant": false
+          },
+          "status": "CHECKED_FINITE_INSTANCE"
+        }
+      ]
+    }
+  },
+  "unicode": {
+    "run_id": "8f4aa84318ea36082811fa95f63c340c35428519b94699030a4717fe87d019b3",
+    "result_digest": "60e224b388a6be183f4883dde2c9179ea5f8936a769d2a3dedf31e7e83d578d4",
+    "hypothesis_digest": "842b5641652282e6381e269cf3f4840ee053978acf66b23fa220ef86650f6931",
+    "used_feature_ids": [
+      "derived_cfe5f6087218cc21b83b"
+    ],
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.7924044179999999,
+      "max_rss_kib": 64436
+    },
+    "role_diagnostics": {
+      "catalog": {
+        "bounds": {
+          "NF_INVARIANT": false,
+          "max_ast_depth": 8,
+          "max_ast_nodes": 32,
+          "max_cells": 91,
+          "max_cpu_ms": 4000,
+          "max_depth": 8,
+          "max_proposals": 128,
+          "max_split_trials": 512,
+          "max_tokens": 8,
+          "renaming_contract": "ATOMS_AND_ROLES_TOGETHER",
+          "representation": "literal",
+          "role_semantics": "LITERAL_ROLE_SENSITIVE",
+          "universal_invariant": false
+        },
+        "candidate_budget_exhausted": false,
+        "compatible": 2,
+        "generated": 40,
+        "grammar_version": "roles_x_nullable_rule_shuffles/1",
+        "no_global_exhaustion_claim": true,
+        "phase": "role_catalog",
+        "retained_compatible_ast_digests": [
+          "5135e58cd6ed380586515e9336cb8006751b83d23bbc7f791651b98a68ea64f6",
+          "d5cf94b93e56cfaba937b42a3e079b0338e3826dab208ee53446702c5a210c32"
+        ],
+        "search_status": "BOUNDED_CATALOG_CHECKED",
+        "untried": "none in declared finite catalog",
+        "untried_ast_digests": [],
+        "untried_preview_only": true
+      },
+      "invariance_contract": "LITERAL_ROLE_SENSITIVE; covariance requires simultaneous atom AND role renaming; NF_INVARIANT=false",
+      "promotions": [
+        {
+          "compatible_candidates": 2,
+          "executed_rule": true,
+          "feature_id": "derived_cfe5f6087218cc21b83b",
+          "independent_check": {
+            "ast_digest": "5135e58cd6ed380586515e9336cb8006751b83d23bbc7f791651b98a68ea64f6",
+            "execution_permission": false,
+            "status": "CHECKED_INSTANCE",
+            "training_compatibility": true,
+            "universal_invariant": false,
+            "verified_witnesses": 84,
+            "verifier_digest": "847654bb8cf5d69a76da8bfa22864eb15722181bfe3070870cd9088ae1ec6da3",
+            "verifier_version": "role-branch-independent-checker/1"
+          },
+          "phase": "role_promotion",
+          "scope": {
+            "NF_INVARIANT": false,
+            "max_ast_depth": 8,
+            "max_ast_nodes": 32,
+            "max_cells": 91,
+            "max_depth": 8,
+            "max_split_trials": 512,
+            "max_tokens": 8,
+            "renaming_contract": "ATOMS_AND_ROLES_TOGETHER",
+            "representation": "literal",
+            "role_semantics": "LITERAL_ROLE_SENSITIVE",
+            "universal_invariant": false
+          },
+          "status": "CHECKED_FINITE_INSTANCE"
+        }
+      ]
+    }
+  },
+  "unicode-probes": {
+    "run_id": "2240d70a363cc6c629b6dc112fd75bf648a226411d134b325e41ecc5e041c6eb",
+    "result_digest": "167e1d14f8bb35788994c8a3775e566cd277d0ab3f2bc79c5139cb6f28bffd88",
+    "hypothesis_digest": "842b5641652282e6381e269cf3f4840ee053978acf66b23fa220ef86650f6931",
+    "used_feature_ids": [
+      "derived_cfe5f6087218cc21b83b"
+    ],
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.5124259640000001,
+      "max_rss_kib": 69320
+    },
+    "role_diagnostics": {
+      "catalog": {
+        "bounds": {
+          "NF_INVARIANT": false,
+          "max_ast_depth": 8,
+          "max_ast_nodes": 32,
+          "max_cells": 91,
+          "max_cpu_ms": 4000,
+          "max_depth": 8,
+          "max_proposals": 128,
+          "max_split_trials": 512,
+          "max_tokens": 8,
+          "renaming_contract": "ATOMS_AND_ROLES_TOGETHER",
+          "representation": "literal",
+          "role_semantics": "LITERAL_ROLE_SENSITIVE",
+          "universal_invariant": false
+        },
+        "candidate_budget_exhausted": false,
+        "compatible": 2,
+        "generated": 40,
+        "grammar_version": "roles_x_nullable_rule_shuffles/1",
+        "no_global_exhaustion_claim": true,
+        "phase": "role_catalog",
+        "retained_compatible_ast_digests": [
+          "5135e58cd6ed380586515e9336cb8006751b83d23bbc7f791651b98a68ea64f6",
+          "d5cf94b93e56cfaba937b42a3e079b0338e3826dab208ee53446702c5a210c32"
+        ],
+        "search_status": "BOUNDED_CATALOG_CHECKED",
+        "untried": "none in declared finite catalog",
+        "untried_ast_digests": [],
+        "untried_preview_only": true
+      },
+      "invariance_contract": "LITERAL_ROLE_SENSITIVE; covariance requires simultaneous atom AND role renaming; NF_INVARIANT=false",
+      "promotions": [
+        {
+          "compatible_candidates": 2,
+          "executed_rule": true,
+          "feature_id": "derived_cfe5f6087218cc21b83b",
+          "independent_check": {
+            "ast_digest": "5135e58cd6ed380586515e9336cb8006751b83d23bbc7f791651b98a68ea64f6",
+            "execution_permission": false,
+            "status": "CHECKED_INSTANCE",
+            "training_compatibility": true,
+            "universal_invariant": false,
+            "verified_witnesses": 84,
+            "verifier_digest": "847654bb8cf5d69a76da8bfa22864eb15722181bfe3070870cd9088ae1ec6da3",
+            "verifier_version": "role-branch-independent-checker/1"
+          },
+          "phase": "role_promotion",
+          "scope": {
+            "NF_INVARIANT": false,
+            "max_ast_depth": 8,
+            "max_ast_nodes": 32,
+            "max_cells": 91,
+            "max_depth": 8,
+            "max_split_trials": 512,
+            "max_tokens": 8,
+            "renaming_contract": "ATOMS_AND_ROLES_TOGETHER",
+            "representation": "literal",
+            "role_semantics": "LITERAL_ROLE_SENSITIVE",
+            "universal_invariant": false
+          },
+          "status": "CHECKED_FINITE_INSTANCE"
+        }
+      ]
+    }
+  },
+  "no-derive": {
+    "run_id": "0ce6aba933d96a40cceea57f9bc2f518b28c8350f00ac9adc19eaed20fbf8778",
+    "result_digest": "94bae498f0d05cf3e9275703a47693c9e7dbb2b26b8142676418e9dcd4172367",
+    "hypothesis_digest": "ad2c1863d60845b79d4a291d11e1e76b3870517d804cd1d4c6e7c2ebb8c48e55",
+    "used_feature_ids": [],
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.064086132,
+      "max_rss_kib": 67116
+    },
+    "role_diagnostics": {}
+  },
+  "deny-derived_b0bae4245d3417323658": {
+    "run_id": "859cafe5f2d44cabcfe4ab914b78002e3d5166e4bcb4fb207174b53ea521716e",
+    "result_digest": "9b6a324c1b62787e42be006d13e7a7bd89e55c8ad45d66b03f08ec41515afe50",
+    "hypothesis_digest": "166c0f04355df0ea0aeb2a4d4bdd0a22d9f96de9966f3fb7b118ab0f64cc4e34",
+    "used_feature_ids": [],
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.339014851,
+      "max_rss_kib": 68560
+    },
+    "role_diagnostics": {
+      "catalog": {
+        "bounds": {
+          "NF_INVARIANT": false,
+          "max_ast_depth": 8,
+          "max_ast_nodes": 32,
+          "max_cells": 91,
+          "max_cpu_ms": 4000,
+          "max_depth": 8,
+          "max_proposals": 128,
+          "max_split_trials": 512,
+          "max_tokens": 8,
+          "renaming_contract": "ATOMS_AND_ROLES_TOGETHER",
+          "representation": "literal",
+          "role_semantics": "LITERAL_ROLE_SENSITIVE",
+          "universal_invariant": false
+        },
+        "candidate_budget_exhausted": false,
+        "compatible": 2,
+        "generated": 40,
+        "grammar_version": "roles_x_nullable_rule_shuffles/1",
+        "no_global_exhaustion_claim": true,
+        "phase": "role_catalog",
+        "retained_compatible_ast_digests": [
+          "d7614e8d77a8e3a41cce43109bb406be1c0982bba5005d134162c5e0b7afc4cc",
+          "62a86849edbc7a17b32a143ea7c5ed622fb87804d2a445faf4bba32b46c7d320"
+        ],
+        "search_status": "BOUNDED_CATALOG_CHECKED",
+        "untried": "none in declared finite catalog",
+        "untried_ast_digests": [],
+        "untried_preview_only": true
+      },
+      "invariance_contract": "LITERAL_ROLE_SENSITIVE; covariance requires simultaneous atom AND role renaming; NF_INVARIANT=false",
+      "promotions": [
+        {
+          "failed_obligation": "ROLE_PARENT_OR_FEATURE_DISABLED",
+          "phase": "role_promotion",
+          "status": "NOT_PROMOTED"
+        }
+      ]
+    }
+  },
+  "deny-primitive-ATOM_ROLE": {
+    "run_id": "d75769675514a8afd304ea0345f51ffdd6e6c84f41d2061be1989aca248d447d",
+    "result_digest": "25613f1ff0a5c305f254c2724d3860a072c4ec93159cf06d750c0fbc8b0fff03",
+    "hypothesis_digest": "caeab7045d5c15425910c181f16ba313197318e2a3cf86d7751df454dce9987d",
+    "used_feature_ids": [],
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.337238394,
+      "max_rss_kib": 67640
+    },
+    "role_diagnostics": {
+      "catalog": {
+        "bounds": {
+          "NF_INVARIANT": false,
+          "max_ast_depth": 8,
+          "max_ast_nodes": 32,
+          "max_cells": 91,
+          "max_cpu_ms": 4000,
+          "max_depth": 8,
+          "max_proposals": 128,
+          "max_split_trials": 512,
+          "max_tokens": 8,
+          "renaming_contract": "ATOMS_AND_ROLES_TOGETHER",
+          "representation": "literal",
+          "role_semantics": "LITERAL_ROLE_SENSITIVE",
+          "universal_invariant": false
+        },
+        "candidate_budget_exhausted": false,
+        "compatible": 2,
+        "generated": 40,
+        "grammar_version": "roles_x_nullable_rule_shuffles/1",
+        "no_global_exhaustion_claim": true,
+        "phase": "role_catalog",
+        "retained_compatible_ast_digests": [
+          "d7614e8d77a8e3a41cce43109bb406be1c0982bba5005d134162c5e0b7afc4cc",
+          "62a86849edbc7a17b32a143ea7c5ed622fb87804d2a445faf4bba32b46c7d320"
+        ],
+        "search_status": "BOUNDED_CATALOG_CHECKED",
+        "untried": "none in declared finite catalog",
+        "untried_ast_digests": [],
+        "untried_preview_only": true
+      },
+      "invariance_contract": "LITERAL_ROLE_SENSITIVE; covariance requires simultaneous atom AND role renaming; NF_INVARIANT=false",
+      "promotions": [
+        {
+          "failed_obligation": "ROLE_PARENT_OR_FEATURE_DISABLED",
+          "phase": "role_promotion",
+          "status": "NOT_PROMOTED"
+        }
+      ]
+    }
+  },
+  "deny-primitive-BRANCH_AND": {
+    "run_id": "8d66bad9938c4ca2d1c2134c9065c26ca9ed9cebbf34e662c046d45675dd0da5",
+    "result_digest": "dfe6b32bdf104fc9cbf1ec39604aa916e5e1aea670f7e18375b16a176730270f",
+    "hypothesis_digest": "64729842f091c81d8d0880533101720b18bed3f9a61daa6f03d1dc1cd7c16380",
+    "used_feature_ids": [],
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.335720678,
+      "max_rss_kib": 68560
+    },
+    "role_diagnostics": {
+      "catalog": {
+        "bounds": {
+          "NF_INVARIANT": false,
+          "max_ast_depth": 8,
+          "max_ast_nodes": 32,
+          "max_cells": 91,
+          "max_cpu_ms": 4000,
+          "max_depth": 8,
+          "max_proposals": 128,
+          "max_split_trials": 512,
+          "max_tokens": 8,
+          "renaming_contract": "ATOMS_AND_ROLES_TOGETHER",
+          "representation": "literal",
+          "role_semantics": "LITERAL_ROLE_SENSITIVE",
+          "universal_invariant": false
+        },
+        "candidate_budget_exhausted": false,
+        "compatible": 2,
+        "generated": 40,
+        "grammar_version": "roles_x_nullable_rule_shuffles/1",
+        "no_global_exhaustion_claim": true,
+        "phase": "role_catalog",
+        "retained_compatible_ast_digests": [
+          "d7614e8d77a8e3a41cce43109bb406be1c0982bba5005d134162c5e0b7afc4cc",
+          "62a86849edbc7a17b32a143ea7c5ed622fb87804d2a445faf4bba32b46c7d320"
+        ],
+        "search_status": "BOUNDED_CATALOG_CHECKED",
+        "untried": "none in declared finite catalog",
+        "untried_ast_digests": [],
+        "untried_preview_only": true
+      },
+      "invariance_contract": "LITERAL_ROLE_SENSITIVE; covariance requires simultaneous atom AND role renaming; NF_INVARIANT=false",
+      "promotions": [
+        {
+          "failed_obligation": "ROLE_PARENT_OR_FEATURE_DISABLED",
+          "phase": "role_promotion",
+          "status": "NOT_PROMOTED"
+        }
+      ]
+    }
+  },
+  "cell-bound": {
+    "run_id": "f74b144bdcf4d4c3d6ac163009b0a0e0fae27db8b0234bd3b93553e320d30c96",
+    "result_digest": "8bcc70b575ab617a5c9cbcf92b0412b112e9e56e88672afc302f8d415d8f5056",
+    "hypothesis_digest": "798e694005f0e1e2f8a886a768c34e711f6f57be04c9fff788c0ed2cbbc24195",
+    "used_feature_ids": [
+      "derived_44a242f3aecb318c997f"
+    ],
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.031254824,
+      "max_rss_kib": 67644
+    },
+    "role_diagnostics": {
+      "catalog": {
+        "bounds": {
+          "NF_INVARIANT": false,
+          "max_ast_depth": 8,
+          "max_ast_nodes": 32,
+          "max_cells": 6,
+          "max_cpu_ms": 4000,
+          "max_depth": 8,
+          "max_proposals": 128,
+          "max_split_trials": 512,
+          "max_tokens": 8,
+          "renaming_contract": "ATOMS_AND_ROLES_TOGETHER",
+          "representation": "literal",
+          "role_semantics": "LITERAL_ROLE_SENSITIVE",
+          "universal_invariant": false
+        },
+        "candidate_budget_exhausted": false,
+        "compatible": 11,
+        "generated": 40,
+        "grammar_version": "roles_x_nullable_rule_shuffles/1",
+        "no_global_exhaustion_claim": true,
+        "phase": "role_catalog",
+        "retained_compatible_ast_digests": [
+          "f03d3262dd011c8899d89ac0666f5f9af65cb69f595bfb205e5523ab6c7937af",
+          "c7e0448753b5584e74eac32286e203f41cb46b3a82c8935146293782ed09da0c",
+          "e5d6b45f79b0d85cc1e72c914e61f43a03f484dccafa25537d483f5786f06c18",
+          "da68a88c809049edfb58ad428c4ce6c64b9528e07be39778d0bb686b28e99147",
+          "d001b87ca0679b411c0b0030c26ea2548e24556a2ed73013586f6f5ebbd8cc0b",
+          "19a2ea8d91866e08add3a9573cf9af44b121f50f9b4c2c67908ec075e3347dbb",
+          "d7614e8d77a8e3a41cce43109bb406be1c0982bba5005d134162c5e0b7afc4cc",
+          "9438dade7dc95815ab8c0c484c7ab46f093afcfdbafbfddca9560018843fd735",
+          "650a4b762b4f51fd36d9b6c5b004e395ca47dac4157a4387082af8476dde5c8c",
+          "62a86849edbc7a17b32a143ea7c5ed622fb87804d2a445faf4bba32b46c7d320",
+          "3e6193fb18cc270ac564f18e9ee5ec362311f9d1c32a1443a3bd6c72af4c0821"
+        ],
+        "search_status": "BOUNDED_CATALOG_CHECKED",
+        "untried": "none in declared finite catalog",
+        "untried_ast_digests": [],
+        "untried_preview_only": true
+      },
+      "invariance_contract": "LITERAL_ROLE_SENSITIVE; covariance requires simultaneous atom AND role renaming; NF_INVARIANT=false",
+      "promotions": [
+        {
+          "compatible_candidates": 11,
+          "executed_rule": true,
+          "feature_id": "derived_44a242f3aecb318c997f",
+          "independent_check": {
+            "ast_digest": "c7e0448753b5584e74eac32286e203f41cb46b3a82c8935146293782ed09da0c",
+            "execution_permission": false,
+            "status": "CHECKED_INSTANCE",
+            "training_compatibility": true,
+            "universal_invariant": false,
+            "verified_witnesses": 2,
+            "verifier_digest": "847654bb8cf5d69a76da8bfa22864eb15722181bfe3070870cd9088ae1ec6da3",
+            "verifier_version": "role-branch-independent-checker/1"
+          },
+          "phase": "role_promotion",
+          "scope": {
+            "NF_INVARIANT": false,
+            "max_ast_depth": 8,
+            "max_ast_nodes": 32,
+            "max_cells": 6,
+            "max_depth": 8,
+            "max_split_trials": 512,
+            "max_tokens": 8,
+            "renaming_contract": "ATOMS_AND_ROLES_TOGETHER",
+            "representation": "literal",
+            "role_semantics": "LITERAL_ROLE_SENSITIVE",
+            "universal_invariant": false
+          },
+          "status": "CHECKED_FINITE_INSTANCE"
+        }
+      ]
+    }
+  },
+  "depth-bound": {
+    "run_id": "6b985799725efd4485dfd372b26905ee9d6a540b77456a25e2c72b213a20a8d7",
+    "result_digest": "d7316826f5a6d7015323241e686d6bee755cacb9df723ece95e8a7ee37d64e56",
+    "hypothesis_digest": "a3c1943cf8b4d3bb9b91b2a5f49b87c69869c9a04c3a6e3af78c2a895a3be62f",
+    "used_feature_ids": [
+      "derived_1a5ba742a1cc0ceecc74"
+    ],
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.521888624,
+      "max_rss_kib": 67796
+    },
+    "role_diagnostics": {
+      "catalog": {
+        "bounds": {
+          "NF_INVARIANT": false,
+          "max_ast_depth": 8,
+          "max_ast_nodes": 32,
+          "max_cells": 91,
+          "max_cpu_ms": 4000,
+          "max_depth": 3,
+          "max_proposals": 128,
+          "max_split_trials": 512,
+          "max_tokens": 8,
+          "renaming_contract": "ATOMS_AND_ROLES_TOGETHER",
+          "representation": "literal",
+          "role_semantics": "LITERAL_ROLE_SENSITIVE",
+          "universal_invariant": false
+        },
+        "candidate_budget_exhausted": false,
+        "compatible": 2,
+        "generated": 40,
+        "grammar_version": "roles_x_nullable_rule_shuffles/1",
+        "no_global_exhaustion_claim": true,
+        "phase": "role_catalog",
+        "retained_compatible_ast_digests": [
+          "d7614e8d77a8e3a41cce43109bb406be1c0982bba5005d134162c5e0b7afc4cc",
+          "62a86849edbc7a17b32a143ea7c5ed622fb87804d2a445faf4bba32b46c7d320"
+        ],
+        "search_status": "BOUNDED_CATALOG_CHECKED",
+        "untried": "none in declared finite catalog",
+        "untried_ast_digests": [],
+        "untried_preview_only": true
+      },
+      "invariance_contract": "LITERAL_ROLE_SENSITIVE; covariance requires simultaneous atom AND role renaming; NF_INVARIANT=false",
+      "promotions": [
+        {
+          "compatible_candidates": 2,
+          "executed_rule": true,
+          "feature_id": "derived_1a5ba742a1cc0ceecc74",
+          "independent_check": {
+            "ast_digest": "d7614e8d77a8e3a41cce43109bb406be1c0982bba5005d134162c5e0b7afc4cc",
+            "execution_permission": false,
+            "status": "CHECKED_INSTANCE",
+            "training_compatibility": true,
+            "universal_invariant": false,
+            "verified_witnesses": 84,
+            "verifier_digest": "847654bb8cf5d69a76da8bfa22864eb15722181bfe3070870cd9088ae1ec6da3",
+            "verifier_version": "role-branch-independent-checker/1"
+          },
+          "phase": "role_promotion",
+          "scope": {
+            "NF_INVARIANT": false,
+            "max_ast_depth": 8,
+            "max_ast_nodes": 32,
+            "max_cells": 91,
+            "max_depth": 3,
+            "max_split_trials": 512,
+            "max_tokens": 8,
+            "renaming_contract": "ATOMS_AND_ROLES_TOGETHER",
+            "representation": "literal",
+            "role_semantics": "LITERAL_ROLE_SENSITIVE",
+            "universal_invariant": false
+          },
+          "status": "CHECKED_FINITE_INSTANCE"
+        }
+      ]
+    }
+  },
+  "proposal-bound": {
+    "run_id": "db4ce4248ac41d0097d15d80bce4498859a9f5d742b96b070bb76dc5a40745db",
+    "result_digest": "06e5b54bd720fcf76a5caa63ab7b233d32456928e68976da18356d6adedebc0b",
+    "hypothesis_digest": "332dec0c6cbd74b75566f8c7786cbb043e5fadecf12e3232a7155a51dd7ad9d2",
+    "used_feature_ids": [],
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.078054184,
+      "max_rss_kib": 68560
+    },
+    "role_diagnostics": {
+      "catalog": {
+        "bounds": {
+          "NF_INVARIANT": false,
+          "max_ast_depth": 8,
+          "max_ast_nodes": 32,
+          "max_cells": 91,
+          "max_cpu_ms": 4000,
+          "max_depth": 8,
+          "max_proposals": 1,
+          "max_split_trials": 512,
+          "max_tokens": 8,
+          "renaming_contract": "ATOMS_AND_ROLES_TOGETHER",
+          "representation": "literal",
+          "role_semantics": "LITERAL_ROLE_SENSITIVE",
+          "universal_invariant": false
+        },
+        "candidate_budget_exhausted": true,
+        "compatible": 0,
+        "generated": 1,
+        "grammar_version": "roles_x_nullable_rule_shuffles/1",
+        "no_global_exhaustion_claim": true,
+        "phase": "role_catalog",
+        "retained_compatible_ast_digests": [],
+        "search_status": "BOUNDED_SEARCH_INCOMPLETE",
+        "untried": "remaining alphabet bindings/base/rule shuffles",
+        "untried_ast_digests": [
+          "36a8973a7ed61e52f8bcaa9e35b3e21d0082f59c32f1e1a14336214bbc954d2b"
+        ],
+        "untried_preview_only": true
+      },
+      "invariance_contract": "LITERAL_ROLE_SENSITIVE; covariance requires simultaneous atom AND role renaming; NF_INVARIANT=false",
+      "promotions": [
+        {
+          "failed_obligation": "BOUNDED_SEARCH_INCOMPLETE",
+          "phase": "role_promotion",
+          "status": "NOT_PROMOTED"
+        }
+      ]
+    }
+  }
+}

@@ -4,7 +4,7 @@
 свидетели и контрпримеры → сохраняемая история исследования. MCP-интерфейс
 объединяет LivingMath, проверку исходных схем SUTI и алхимическую модель ALCH006.
 
-Текущий продукт: **`v0.4.7-developer-preview`**: assurance CLI, Semantic Bridge, численная White Star и Symbolic V1; 83 MCP-инструмента (82 прежних + независимый verifier наблюдателя). [Установка](README_QUICKSTART_RU.md), [White Star и сравнение режимов](docs/white-star/QUICKSTART_RU.md), [Semantic Bridge](docs/semantic-bridge/QUICKSTART_RU.md), [CLI](CLI_REFERENCE.md), [границы возможностей](LIMITATIONS.md).
+Текущий продукт: **`v0.4.8-developer-preview`**: assurance CLI, Semantic Bridge, численная White Star и Symbolic V1; 83 MCP-инструмента (82 прежних + независимый verifier наблюдателя). [Установка](README_QUICKSTART_RU.md), [White Star и сравнение режимов](docs/white-star/QUICKSTART_RU.md), [Semantic Bridge](docs/semantic-bridge/QUICKSTART_RU.md), [CLI](CLI_REFERENCE.md), [границы возможностей](LIMITATIONS.md).
 
 Основной репозиторий: **[catman77/LivingMath](https://github.com/catman77/LivingMath)**.
 [Архитектура сервера и назначение модулей](ARCHITECTURE.md) ·
@@ -30,6 +30,17 @@ PATCH005 устраняет преждевременное отбрасыван�
 Semantic Bridge сохраняет исходные UTF-8-байты, адресные цитаты, конкурирующие прочтения и граф ревизий. Сравнение предъявляет точного свидетеля потери различения только для объявленных полей, вопросов и конечного домена. Интерпретации остаются гипотезами. Через реальный hosted generator получены шесть прочтений трёх стихотворений; приватный исследовательский пакет воспроизводится без модели и сети. [Отчёт и матрица приёмки](docs/semantic-bridge/USER_REPORT_RU.md).
 
 Единое assurance-ядро сохраняет точные байты ASSURANCE-003; базовый production слой observer012 сохранён. В каталоге legacy также остаётся experimental meaning014, который эта поставка автоматически не активирует. R3 с двумя внешними техническими участниками пока PENDING: установленный preview не означает финальную готовность или научную состоятельность интерпретаций.
+
+
+DYCK006 добавляет автоматически порождаемые ролевые программы с двумя независимыми
+рекурсивными ветвями и source-bound сертификатами. На84 train примерах получены
+256/256 правильных отложенных ответов; настоящие множества продолжений8191 слов
+дали3…8 классов для N=1…6. Проверены положительные деревья, отрицательные полные
+таблицы разрезов, подмена свидетельств и прежние PAL/COPY/SP задачи. Это конечный
+результат: `UNIVERSAL_INVARIANT=false`, семейство остаётся `UNDERDETERMINED`.
+[Отчёт и результаты](docs/symbolic-v1/dyck006/USER_REPORT_RU.md),
+[точный MCP-контракт и воспроизведение](docs/symbolic-v1/dyck006/QUICKSTART_RU.md),
+[релиз с полной воспроизводимой поставкой](https://github.com/catman77/LivingMath/releases/tag/v0.4.8-developer-preview).
 
 ## Установка и первый запуск
 

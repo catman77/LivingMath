@@ -1,0 +1,29 @@
+test_bad_prefix_is_irreversible (test_dyck_certificates.TestContinuationStructure.test_bad_prefix_is_irreversible) ... ok
+test_continuation_role_swap_requires_swapped_roles (test_dyck_certificates.TestContinuationStructure.test_continuation_role_swap_requires_swapped_roles) ... ok
+test_right_context_classes (test_dyck_certificates.TestContinuationStructure.test_right_context_classes) ... ok
+test_symbolic_closers_distinguish_every_open_depth (test_dyck_certificates.TestContinuationStructure.test_symbolic_closers_distinguish_every_open_depth) ... ok
+test_bad_sha_rejected (test_dyck_certificates.TestFiniteDyck.test_bad_sha_rejected) ... ok
+test_boundary_example (test_dyck_certificates.TestFiniteDyck.test_boundary_example) ... ok
+test_branching_example (test_dyck_certificates.TestFiniteDyck.test_branching_example) ... ok
+test_complete_table_all_words_up_to_8 (test_dyck_certificates.TestFiniteDyck.test_complete_table_all_words_up_to_8) ... ok
+test_exact_census (test_dyck_certificates.TestFiniteDyck.test_exact_census) ... ok
+test_hash_is_deterministic (test_dyck_certificates.TestFiniteDyck.test_hash_is_deterministic) ... ok
+test_missing_branch_rejected (test_dyck_certificates.TestFiniteDyck.test_missing_branch_rejected) ... ok
+test_negative_table_forged_sha_rejected (test_dyck_certificates.TestFiniteDyck.test_negative_table_forged_sha_rejected) ... ok
+test_negative_table_missing_entry_rejected (test_dyck_certificates.TestFiniteDyck.test_negative_table_missing_entry_rejected) ... ok
+test_negative_table_wrong_interior_rejected (test_dyck_certificates.TestFiniteDyck.test_negative_table_wrong_interior_rejected) ... ok
+test_negative_table_wrong_root_rejected (test_dyck_certificates.TestFiniteDyck.test_negative_table_wrong_root_rejected) ... ok
+test_normal_form_never_sufficient_on_balanced_words (test_dyck_certificates.TestFiniteDyck.test_normal_form_never_sufficient_on_balanced_words) ... ok
+test_oriented_branching_not_reducible_to_single_inner (test_dyck_certificates.TestFiniteDyck.test_oriented_branching_not_reducible_to_single_inner) ... ok
+test_renaming_contract_is_role_sensitive (test_dyck_certificates.TestFiniteDyck.test_renaming_contract_is_role_sensitive) ... ok
+test_unknown_atom_rejected (test_dyck_certificates.TestFiniteDyck.test_unknown_atom_rejected) ... ok
+test_valid_positive_witnesses_all_words_up_to_10 (test_dyck_certificates.TestFiniteDyck.test_valid_positive_witnesses_all_words_up_to_10) ... ok
+test_wrong_split_rejected (test_dyck_certificates.TestFiniteDyck.test_wrong_split_rejected) ... ok
+test_utf8_bad_span_rejected_even_if_source_digest_is_good (test_dyck_certificates.TestUtf8Lineage.test_utf8_bad_span_rejected_even_if_source_digest_is_good) ... ok
+test_utf8_byte_positions (test_dyck_certificates.TestUtf8Lineage.test_utf8_byte_positions) ... ok
+test_utf8_fake_word_rejected (test_dyck_certificates.TestUtf8Lineage.test_utf8_fake_word_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.035s
+
+OK

@@ -1,5 +1,18 @@
 # Changelog
 
+## v0.4.8-developer-preview — 2026-11-07
+
+- Add train-generated finite role-sensitive branching programs with two recursive
+  branches, literal SPLIT/CONCAT witnesses and independently checked full negative DP.
+- Add opt-in role_branching_ast, explicit role-only scope up to12 tokens and
+  source-bound optional query_id verification through the existing MCP tool/action.
+- Use checker decisions as authority; retain rivals, counterexamples and UNKNOWN
+  bounds. Preserve old algorithms/checkers, all83 tools and historical replay.
+- Complete actual HTTPS/OAuth84→256 acceptance,8191-word continuation measurements
+  (N1…6:3…8 classes), previous31 gates and generator regressions.
+- Publish409 source/installed-wheel tests,1066 legacy PASS/20 SKIP, schemas,
+  full reproducible traces and integrity/backup evidence. No universal claim.
+
 ## v0.4.7-developer-preview — 2026-11-06
 
 - Generate bounded typed recursive skeletons before full mixed-length train validation; remove the shortest-positive/two-observation prerequisite from the opt-in path.

@@ -1,0 +1,58 @@
+{
+  "full-137": {
+    "TP": 14,
+    "TN": 242,
+    "FP": 0,
+    "FN": 0,
+    "UNKNOWN": 0,
+    "total": 256,
+    "accuracy": 1.0,
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "balanced_accuracy": 1.0,
+    "coverage": 1.0,
+    "majority_accuracy": 0.9453125
+  },
+  "full-42": {
+    "TP": 14,
+    "TN": 242,
+    "FP": 0,
+    "FN": 0,
+    "UNKNOWN": 0,
+    "total": 256,
+    "accuracy": 1.0,
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "balanced_accuracy": 1.0,
+    "coverage": 1.0,
+    "majority_accuracy": 0.9453125
+  },
+  "no-derive": {
+    "TP": 0,
+    "TN": 242,
+    "FP": 0,
+    "FN": 14,
+    "UNKNOWN": 0,
+    "total": 256,
+    "accuracy": 0.9453125,
+    "sensitivity": 0.0,
+    "specificity": 1.0,
+    "balanced_accuracy": 0.5,
+    "coverage": 1.0,
+    "majority_accuracy": 0.9453125
+  },
+  "unicode": {
+    "TP": 14,
+    "TN": 242,
+    "FP": 0,
+    "FN": 0,
+    "UNKNOWN": 0,
+    "total": 256,
+    "accuracy": 1.0,
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "balanced_accuracy": 1.0,
+    "coverage": 1.0,
+    "majority_accuracy": 0.9453125
+  }
+}

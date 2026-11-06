@@ -1,0 +1,114 @@
+{
+  "certificate": {
+    "cells": [
+      {
+        "allocation": [],
+        "range": [
+          0,
+          0
+        ],
+        "value": true
+      },
+      {
+        "allocation": [],
+        "range": [
+          1,
+          1
+        ],
+        "value": true
+      },
+      {
+        "allocation": [],
+        "range": [
+          2,
+          2
+        ],
+        "value": true
+      },
+      {
+        "allocation": null,
+        "range": [
+          0,
+          1
+        ],
+        "value": false
+      },
+      {
+        "allocation": null,
+        "range": [
+          1,
+          2
+        ],
+        "value": false
+      },
+      {
+        "allocation": null,
+        "range": [
+          0,
+          2
+        ],
+        "value": false
+      }
+    ],
+    "decision": false,
+    "input_state": {
+      "boundaries": [
+        [
+          0,
+          "record_start",
+          "0"
+        ],
+        [
+          2,
+          "record_end",
+          "0"
+        ]
+      ],
+      "source_spans": [
+        [
+          [
+            "9c37ad84342ef2c3a3c88d58ca328de187719a6811f552336471f4da4c101020",
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            "9c37ad84342ef2c3a3c88d58ca328de187719a6811f552336471f4da4c101020",
+            2,
+            3
+          ]
+        ]
+      ],
+      "tokens": [
+        "P",
+        "S"
+      ],
+      "word_hash": "76ad063b17891cfd8cc34e5a1acacce071062ff5ed1b5ace173e431e69de6068"
+    },
+    "program_digest": "d7614e8d77a8e3a41cce43109bb406be1c0982bba5005d134162c5e0b7afc4cc",
+    "record_ref": "31e4577f4b994cbe9c96846700714ea436d4baff032ca231f1974bb76b95d046",
+    "schema": "finite-role-certificate/1",
+    "scope_digest": "3f90bfc176b26a9ba98063821e34b648b2c206e82f1b81bfaf0ed71c26974ce6",
+    "source_sha256": "9c37ad84342ef2c3a3c88d58ca328de187719a6811f552336471f4da4c101020",
+    "states": {},
+    "status": "DECIDED",
+    "tree": null,
+    "work": {
+      "cells": 6,
+      "split_trials": 1
+    }
+  },
+  "execution_permission": false,
+  "record_id": "q-f0c5f5cba382b0db326d",
+  "status": "CHECKED_INSTANCE",
+  "verification": {
+    "decision": false,
+    "execution_permission": false,
+    "program_digest": "d7614e8d77a8e3a41cce43109bb406be1c0982bba5005d134162c5e0b7afc4cc",
+    "proof_digest": "a60e09c46ed6352f7c859dcdd516f1873e628f4fefc784a56ec5ce552d0e9c26",
+    "status": "CHECKED_INSTANCE",
+    "universal_invariant": false,
+    "verifier_version": "role-branch-independent-checker/1"
+  }
+}
