@@ -481,3 +481,43 @@ class ExtensionService:
                 self.executor.run, {"action": "complex_verify", "artifact": data}
             )
         )["data"]
+
+    async def verify_observer(self, project, run_id, feature_id, certificate=None):
+        from ..observer_synthesis.features import encode
+
+        w, record = self.load(project, run_id)
+        require(
+            record["engine"] == "observer_synthesis_v1"
+            and record["status"] == "COMPLETED",
+            "INVALID_OBSERVER_RUN",
+        )
+        require(record["kernel_binding"] == binding(), "KERNEL_BINDING_MISMATCH")
+        model = await asyncio.to_thread(blobs.get, w, record["section_refs"]["model"])
+        feature = next(
+            (f for f in model["feature_registry"] if f["feature_id"] == feature_id),
+            None,
+        )
+        require(feature is not None, "NOT_FOUND", "/feature_id")
+        if certificate is not None:
+            require(
+                certificate.get("feature_id") == feature_id,
+                "SOURCE_MISMATCH",
+                "/certificate/feature_id",
+            )
+            feature = certificate
+        snapshot = await asyncio.to_thread(blobs.get, w, record["snapshot_ref"])
+        samples = [
+            {
+                "record": r,
+                "encoded": encode(
+                    r, model["feature_policy"].get("representation", "literal")
+                ),
+            }
+            for r in snapshot["resolved"]["train"]
+        ]
+        return (
+            await asyncio.to_thread(
+                self.executor.run,
+                {"action": "observer_verify", "feature": feature, "samples": samples},
+            )
+        )["data"]

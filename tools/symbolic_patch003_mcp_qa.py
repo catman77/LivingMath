@@ -104,8 +104,8 @@ async def run(args):
                 save("initialize.json", init.model_dump(mode="json"))
                 save("tools.json", listing.model_dump(mode="json"))
                 check(
-                    "actual82 tools/version",
-                    len(listing.tools) == 82
+                    "actual tool count/version",
+                    len(listing.tools) == args.expected_tool_count
                     and init.serverInfo.version == args.expected_version,
                 )
                 before = {
@@ -715,6 +715,7 @@ if __name__ == "__main__":
     p.add_argument("--baseline", type=Path, required=True)
     p.add_argument("--output", type=Path, required=True)
     p.add_argument("--tag", required=True)
+    p.add_argument("--expected-tool-count", type=int, default=82)
     p.add_argument("--expected-version", default="v0.4.3-developer-preview")
     p.add_argument("--loopback-port", type=int)
     p.add_argument("--frozen", type=Path)

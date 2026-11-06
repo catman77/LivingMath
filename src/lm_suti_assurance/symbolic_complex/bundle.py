@@ -157,3 +157,33 @@ def replay(encoded):
         }
     except (ValueError, KeyError, UnicodeError, zipfile.BadZipFile):
         require(False, "INVALID_BUNDLE")
+
+
+def bundle_binding(raw):
+    """Bounded data-only metadata selects an already approved installed worker."""
+    require(len(raw) <= MAX, "BUNDLE_SIZE_LIMIT")
+    try:
+        with zipfile.ZipFile(io.BytesIO(raw)) as archive:
+            entries = archive.infolist()
+            require(
+                len(entries) <= 2048 and sum(i.file_size for i in entries) <= MAX,
+                "INVALID_BUNDLE",
+            )
+            manifests = [i for i in entries if i.filename == "manifest.json"]
+            require(
+                len(manifests) == 1 and manifests[0].file_size <= 512 * 1024,
+                "INVALID_BUNDLE",
+            )
+            value = strict_json(archive.read(manifests[0]).decode())
+            require(
+                value.get("schema") == "livingmath-symbolic-extension-package/1",
+                "INVALID_BUNDLE",
+            )
+            result = value.get("kernel_binding")
+            require(
+                isinstance(result, str) and re.fullmatch(r"[0-9a-f]{64}", result),
+                "INVALID_BUNDLE",
+            )
+            return result
+    except (zipfile.BadZipFile, KeyError, UnicodeError, ValueError):
+        require(False, "INVALID_BUNDLE")

@@ -33,6 +33,7 @@ def bounded(packet, clock):
                     "extension_run",
                     "complex_verify",
                     "extension_replay",
+                    "observer_verify",
                 ):
                     from lm_suti_assurance.symbolic_complex.app import dispatch
 

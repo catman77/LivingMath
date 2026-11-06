@@ -14,7 +14,7 @@ from ..white_star.contracts import check_schema
 from ..core import canonical
 from ..errors import AssuranceError
 
-VERSION = "symbolic_complex_v1/1-patch003"
+VERSION = "symbolic_complex_v1/1-patch003-acceptance1"
 STRING = {"type": "string", "maxLength": 1024}
 SOURCE = obj(
     {

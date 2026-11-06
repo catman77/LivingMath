@@ -1,4 +1,4 @@
-"""Seven real additive tools over the existing authenticated MCP and worker pool."""
+"""Additive real tools over the existing authenticated MCP and worker pool."""
 
 import asyncio, base64, copy, hashlib
 from pathlib import Path
@@ -77,6 +77,15 @@ TOOLS = {
         ["project", "request_key", "request"],
     ),
     "white_star_symbolic_observer_inspect": INSPECT,
+    "white_star_symbolic_observer_verify": obj(
+        {
+            "project": PROJECT,
+            "run_id": REF,
+            "feature_id": {"type": "string", "maxLength": 128},
+            "certificate": {"type": "object"},
+        },
+        ["project", "run_id", "feature_id"],
+    ),
     "white_star_symbolic_extension_replay": obj(
         {"project": PROJECT, "bundle_ref": REF}, ["project", "bundle_ref"]
     ),
@@ -85,9 +94,10 @@ RESPONSE = copy.deepcopy(OLD_RESPONSE)
 RESPONSE["properties"]["schema"] = {"const": "livingmath-symbolic-extension-response/1"}
 
 
-def capabilities(executor):
+def capabilities(executor, replay_profiles=None):
     ready = bool(executor and executor.status()["ready"])
     return {
+        "historical_extension_replay_bindings": sorted(replay_profiles or {}),
         "symbolic_complex_v1": {
             "version": VERSION,
             "status": "READY" if ready else "ENGINE_UNAVAILABLE",
@@ -99,7 +109,7 @@ def capabilities(executor):
             "execution_permission": False,
         },
         "observer_synthesis_v1": {
-            "version": "observer_synthesis_v1/1-patch003",
+            "version": "observer_synthesis_v1/1-patch003-acceptance1",
             "status": "READY" if ready else "ENGINE_UNAVAILABLE",
             "kernel_binding": binding(),
             "request_schema": OBSERVER_REQUEST,
@@ -122,7 +132,7 @@ def capabilities(executor):
     }
 
 
-def register_tools(server, root, executor, recover=False):
+def register_tools(server, root, executor, recover=False, replay_profiles=None):
     service = ExtensionService(root, executor)
     if recover:
         service.recover()
@@ -174,6 +184,8 @@ def register_tools(server, root, executor, recover=False):
                     )
             elif name.endswith("_inspect"):
                 data = await asyncio.to_thread(service.inspect, **args)
+            elif name == "white_star_symbolic_observer_verify":
+                data = await service.verify_observer(**args)
             elif name.endswith("_verify"):
                 data = await service.verify(**args)
             else:
@@ -185,9 +197,18 @@ def register_tools(server, root, executor, recover=False):
                     hashlib.sha256(raw).hexdigest() == args["bundle_ref"],
                     "EXPORT_INTEGRITY_FAILURE",
                 )
+                from .bundle import bundle_binding
+
+                requested_binding = bundle_binding(raw)
+                selected = (
+                    executor
+                    if requested_binding == binding()
+                    else (replay_profiles or {}).get(requested_binding)
+                )
+                require(selected is not None, "KERNEL_BINDING_UNAVAILABLE")
                 data = (
                     await asyncio.to_thread(
-                        executor.run,
+                        selected.run,
                         {
                             "action": "extension_replay",
                             "bundle_base64": base64.b64encode(raw).decode(),
@@ -210,6 +231,7 @@ def register_tools(server, root, executor, recover=False):
         "white_star_symbolic_complex_verify": "Independently check stored finite complex and optional owned certificate_ref/typed replacement. Returns CHECKED_INSTANCE, REJECTED or NOT_PROVED with failed obligations; no execution grant.",
         "white_star_symbolic_dataset_store": "Store a private typed train/query dataset or bounded parts collection with SHA, rights and exact source spans. Queries MUST NOT contain labels; collection parts are same-project issued refs.",
         "white_star_symbolic_observer_synthesize": "Fit on private train_ref, seal, then predict queries-only predict_ref. Audit BUILTIN versus executed operator-derived features, effective ablation, contradictions, context UNKNOWN and pairwise abstentions. No unique grammar/semantic verification.",
+        "white_star_symbolic_observer_verify": "Independently validate one registered operator observer, its existing AST, actual primitive steps, outputs and UTF-8 source lineage. Optional bounded replacement certificate is checked without changing the model. Rejected evidence never grants execution permission.",
         "white_star_symbolic_extension_replay": "Recompute an owned data-only complex/observer export with installed exact binding, source hashes, independent checker and journal chain. No ZIP code, network or arbitrary paths.",
     }
     for name, schema in TOOLS.items():

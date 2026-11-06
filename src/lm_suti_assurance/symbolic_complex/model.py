@@ -264,7 +264,12 @@ def analyze(request, source_artifact=None):
         "dim_H1_F2": checked["H1_dim"],
         "pi1_status": checked["pi1_status"],
         "pi1_basis": "based_at_empty_word",
-        "assumptions": paths["assumptions"],
+        "assumptions": (
+            ["terminating_SP_rewriting"]
+            + (["all_local_peaks_filled"] if checked["missing_peaks"] == 0 else [])
+        ),
+        "selected_cells_policy": request["cells"]["policy"],
+        "partial_attachment": checked["missing_peaks"] > 0,
         "graph_pi1_free_rank": checked["graph_beta1"],
         "unresolved_peaks": checked["missing_peaks"],
         "claim_status": "CHECKED_FINITE_INSTANCE",

@@ -37,7 +37,7 @@ def serve(path):
         p = (layer/name).resolve(strict=True)
         if not p.is_relative_to(layer) or sha(p) != expected:
             raise ValueError('RELEASE_FILE_MISMATCH')
-    if cfg['release'] not in ('v0.1.0-developer-preview','v0.2.0-developer-preview','v0.3.0-developer-preview','v0.4.0-developer-preview','v0.4.1-developer-preview','v0.4.2-developer-preview','v0.4.3-developer-preview'):
+    if cfg['release'] not in ('v0.1.0-developer-preview','v0.2.0-developer-preview','v0.3.0-developer-preview','v0.4.0-developer-preview','v0.4.1-developer-preview','v0.4.2-developer-preview','v0.4.3-developer-preview','v0.4.4-developer-preview'):
         raise ValueError('RELEASE_VERSION_MISMATCH')
     expected = {'release':cfg['release'],'release_manifest_sha256':cfg['release_manifest_sha256'],
                 'deployment_id':cfg['deployment_id'],'action':'INSTALL_EXACT_OWNER_AUTHORIZED_PREVIEW'}
@@ -77,6 +77,28 @@ def serve(path):
             profile.close()
             raise ValueError('HISTORICAL_PROFILE_UNAVAILABLE')
         replay_profiles[expected_binding] = profile
+    extension_replay_profiles = {}
+    for expected_binding, settings in cfg.get('extension_replay_profiles', {}).items():
+        old_layer = Path(settings['release_layer']).resolve(strict=True)
+        if not old_layer.is_relative_to(Path.home()/'.local/state/livingmath'):
+            raise ValueError('INSTALLED_HISTORICAL_EXTENSION_REQUIRED')
+        old_manifest = old_layer/'release_manifest.json'
+        if sha(old_manifest) != settings['release_manifest_sha256']:
+            raise ValueError('HISTORICAL_EXTENSION_MANIFEST_MISMATCH')
+        for name, checksum in json.loads(old_manifest.read_text()).items():
+            target = (old_layer/name).resolve(strict=True)
+            if not target.is_relative_to(old_layer) or sha(target) != checksum:
+                raise ValueError('HISTORICAL_EXTENSION_FILE_MISMATCH')
+        package = old_layer/'src/lm_suti_assurance'
+        symbolic_binding = digest({n:sha(package/'symbolic'/n) for n in ('state.py','observers.py','search.py','grammar.py','kernel.py','contracts.py')})
+        modules = {str(p.relative_to(package)):sha(p) for name in ('symbolic_complex','observer_synthesis') for p in sorted((package/name).glob('*.py'))}
+        if digest({'symbolic_binding':symbolic_binding,'modules':modules}) != expected_binding:
+            raise ValueError('HISTORICAL_EXTENSION_BINDING_MISMATCH')
+        profile = SymbolicExecutor(package/'symbolic/worker.py', shared_budget=shared_symbolic_budget)
+        if not profile.status()['ready']:
+            profile.close()
+            raise ValueError('HISTORICAL_EXTENSION_UNAVAILABLE')
+        extension_replay_profiles[expected_binding] = profile
     provider = None
     if cfg.get('semantic_proposer') is not None:
         settings = cfg['semantic_proposer']
@@ -107,7 +129,7 @@ def serve(path):
         from lm_suti_assurance.symbolic.mcp import register_tools as register_symbolic
         register_symbolic(server, cfg['assurance_state'], symbolic_pool, recover=True, replay_profiles=replay_profiles)
         from lm_suti_assurance.symbolic_complex.mcp import register_tools as register_extensions
-        register_extensions(server, cfg['assurance_state'], symbolic_pool, recover=True)
+        register_extensions(server, cfg['assurance_state'], symbolic_pool, recover=True, replay_profiles=extension_replay_profiles)
         server._mcp_server.version = active_release
         server._mcp_server.instructions += ' For finite assurance use assurance_contract; manual proposals, exact task review and offline export/replay are separate steps.'
         for name in ('bridge_system_status','service_health','research_contract'):
@@ -123,7 +145,7 @@ def serve(path):
                         from lm_suti_assurance.symbolic.mcp import capabilities
                         value['symbolic_v1'] = capabilities(symbolic_pool, replay_profiles)
                         from lm_suti_assurance.symbolic_complex.mcp import capabilities as extension_capabilities
-                        value.update(extension_capabilities(symbolic_pool))
+                        value.update(extension_capabilities(symbolic_pool, extension_replay_profiles))
                     value['legacy_protocol_version'] = value.get('version')
                     value['version'] = active_release
                     value['deployment_id'] = cfg['deployment_id']
@@ -162,6 +184,7 @@ def serve(path):
         if white_pool is not None:white_pool.close()
         symbolic_pool.close()
         for profile in replay_profiles.values(): profile.close()
+        for profile in extension_replay_profiles.values(): profile.close()
 
 
 if __name__ == '__main__':

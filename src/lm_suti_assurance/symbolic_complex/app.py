@@ -127,6 +127,10 @@ def dispatch(packet):
         return execute(packet["engine"], packet["request"], packet.get("resolved", {}))
     if action == "complex_verify":
         return verify(packet["artifact"])
+    if action == "observer_verify":
+        from ..observer_synthesis.independent_verifier import verify as verify_observer
+
+        return verify_observer(packet["feature"], packet["samples"])
     if action == "extension_replay":
         from .bundle import replay
 
