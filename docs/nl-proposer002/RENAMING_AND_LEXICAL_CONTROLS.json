@@ -264,94 +264,114 @@
     {
       "arm": "A",
       "source_ids": [
-        "8262e73a-7043-4b33-8b9f-bcc70e79d1fe",
-        "a6f404de-ea11-4956-ba77-fefd69daadb1"
+        "dev-1",
+        "dev-2"
       ],
-      "same_alpha_pattern": false,
+      "same_alpha_pattern": true,
       "literal_source_SHA_distinct": true,
       "source_refs_distinct": true,
       "typed_predicate_sets": [
-        [],
-        []
+        [
+          "Read"
+        ],
+        [
+          "Lost"
+        ]
       ],
       "declared_predicates": [
         [
-          "Restored"
+          "Read"
         ],
         [
-          "Approved"
+          "Lost"
         ]
       ],
-      "no_semantic_equality_claim": true
+      "no_semantic_equality_claim": true,
+      "source": "Pre-specified E1 Read/Lost control from real public HTTPS/OAuth QA; not a newly blind source"
     },
     {
       "arm": "B",
       "source_ids": [
-        "8262e73a-7043-4b33-8b9f-bcc70e79d1fe",
-        "a6f404de-ea11-4956-ba77-fefd69daadb1"
+        "dev-1",
+        "dev-2"
       ],
-      "same_alpha_pattern": false,
+      "same_alpha_pattern": true,
       "literal_source_SHA_distinct": true,
       "source_refs_distinct": true,
       "typed_predicate_sets": [
-        [],
-        []
+        [
+          "Read"
+        ],
+        [
+          "Lost"
+        ]
       ],
       "declared_predicates": [
         [
-          "Restored"
+          "Read"
         ],
         [
-          "Approved"
+          "Lost"
         ]
       ],
-      "no_semantic_equality_claim": true
+      "no_semantic_equality_claim": true,
+      "source": "Pre-specified E1 Read/Lost control from real public HTTPS/OAuth QA; not a newly blind source"
     },
     {
       "arm": "C",
       "source_ids": [
-        "8262e73a-7043-4b33-8b9f-bcc70e79d1fe",
-        "a6f404de-ea11-4956-ba77-fefd69daadb1"
+        "dev-1",
+        "dev-2"
       ],
-      "same_alpha_pattern": false,
+      "same_alpha_pattern": true,
       "literal_source_SHA_distinct": true,
       "source_refs_distinct": true,
       "typed_predicate_sets": [
-        [],
-        []
+        [
+          "Read"
+        ],
+        [
+          "Lost"
+        ]
       ],
       "declared_predicates": [
         [
-          "Restored"
+          "Read"
         ],
         [
-          "Approved"
+          "Lost"
         ]
       ],
-      "no_semantic_equality_claim": true
+      "no_semantic_equality_claim": true,
+      "source": "Pre-specified E1 Read/Lost control from real public HTTPS/OAuth QA; not a newly blind source"
     },
     {
       "arm": "D",
       "source_ids": [
-        "8262e73a-7043-4b33-8b9f-bcc70e79d1fe",
-        "a6f404de-ea11-4956-ba77-fefd69daadb1"
+        "dev-1",
+        "dev-2"
       ],
-      "same_alpha_pattern": false,
+      "same_alpha_pattern": true,
       "literal_source_SHA_distinct": true,
       "source_refs_distinct": true,
       "typed_predicate_sets": [
-        [],
-        []
+        [
+          "Read"
+        ],
+        [
+          "Lost"
+        ]
       ],
       "declared_predicates": [
         [
-          "Restored"
+          "Read"
         ],
         [
-          "Approved"
+          "Lost"
         ]
       ],
-      "no_semantic_equality_claim": true
+      "no_semantic_equality_claim": true,
+      "source": "Pre-specified E1 Read/Lost control from real public HTTPS/OAuth QA; not a newly blind source"
     }
   ],
   "summary": {

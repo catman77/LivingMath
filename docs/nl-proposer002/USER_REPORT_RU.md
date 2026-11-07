@@ -20,7 +20,9 @@ B дал70 typed кандидатов против49 у A,20 связаны с �
 семь остались UNKNOWN_BOUND при конечной vector проверке. Совпадения с контрольными неэталонными
 чтениями в том же конечном классе: A1/B6/C6/D7. Дополнительные кандидаты
 не означают лучшее понимание. **WHITE_STAR_INCREMENTAL_BENEFIT_NOT_ESTABLISHED**.
-Человеческая оценка не выполнена: **PARTIAL; semantic generalization NOT_EVALUATED**.
+Нейтральные переименования:4/4 пары сохранили alpha-AST набор в каждом плече;
+публичный контроль Read/Lost с одинаковым alpha-pattern сохранил разные source refs
+и разные предикаты. Человеческая оценка не выполнена: **PARTIAL; semantic generalization NOT_EVALUATED**.
 
 Проверки:447 source PASS,447 installed-wheel PASS и447 PASS в отдельном
 production-окружении; legacy1066 PASS/20 прежних SKIP. Прежние31 gates и

@@ -206,7 +206,7 @@
     },
     {
       "path": "docs/nl-proposer002/RCA_RU.md",
-      "sha256": "a7fb5ef1c1fac39e42098eb1efaa351a22fa8f6c3123eeb8a7457c530693ca50"
+      "sha256": "2b580b523a5142fd7175900f5527e4f15c46d2369059c232b95062279de024c9"
     },
     {
       "path": "docs/nl-proposer002/REAL_FILES_CHANGED.json",
@@ -218,7 +218,7 @@
     },
     {
       "path": "docs/nl-proposer002/REGRESSION_REPORT_RU.md",
-      "sha256": "a53ba706b0d2b806aa8e814535df0aae8485509d9512ac4c799d55a923f80f55"
+      "sha256": "c004525a2c9605b557882c26bc34c58619fb469d5150c1bfe3f5a23d75c27cda"
     },
     {
       "path": "docs/nl-proposer002/REGRESSION_RESULTS.json",
@@ -231,6 +231,10 @@
     {
       "path": "docs/nl-proposer002/RELEASE_REVIEW_PROBES.json",
       "sha256": "955ff94a255e34006c470e2c12fae59cbdaa3851bf1668be4329caa2473631c6"
+    },
+    {
+      "path": "docs/nl-proposer002/RENAMING_AND_LEXICAL_CONTROLS.json",
+      "sha256": "ec9e5d9eed25e4655b6c151ec630c2785ac7b14c069ec9b2430ff88230d68fc3"
     },
     {
       "path": "docs/nl-proposer002/RESULTS_B_C_RU.md",
@@ -250,7 +254,7 @@
     },
     {
       "path": "docs/nl-proposer002/USER_REPORT_RU.md",
-      "sha256": "4141f9ee0c69037b5efb6d21d00b1d17fee2ba990940729625626417f40ccc65"
+      "sha256": "264334cc7469428c74c8a967fcb22ccd59b9c50eb01612da3f00a255eaa5df7c"
     },
     {
       "path": "docs/nl-proposer002/fixtures/valid_nl_propose.json",
@@ -319,6 +323,10 @@
     {
       "path": "tools/generator005_mcp_qa.py",
       "sha256": "d94203b41da78eefff05af7f2b38e1d1bc61a957a1df3b73388eeb214bc58319"
+    },
+    {
+      "path": "tools/nl002_controls_analysis.py",
+      "sha256": "0bbfcaea8d1d8185e4047eb978c3c8fe88adae171df8e0d2699b410845945c4b"
     },
     {
       "path": "tools/nl002_controls_qa.py",
