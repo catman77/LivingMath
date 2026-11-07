@@ -18,6 +18,7 @@ flowchart TD
     NL --> Formal[Existing Formal Bridge / typed FOL]
     NL --> Pipe
     NL --> Workspace
+    Formal --> SymbolicWorkers
     Transport --> Symbolic[Symbolic V1 / SP-комплексы / observer synthesis]
     Legacy --> SQLite[Четыре приватных SQLite-хранилища]
     Assurance --> Workspace[Приватные project workspaces / objects / journal]

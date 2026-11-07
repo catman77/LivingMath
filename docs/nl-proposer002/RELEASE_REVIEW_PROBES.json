@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "pending_same_key_single_provider_call",
+      "status": "PASS"
+    },
+    {
+      "name": "pending_same_key_single_start",
+      "status": "PASS"
+    },
+    {
+      "name": "explicit_abstention_completes",
+      "status": "PASS"
+    },
+    {
+      "name": "completed_retry_no_second_provider_call",
+      "status": "PASS"
+    },
+    {
+      "name": "receipt_failure_journaled",
+      "status": "PASS"
+    },
+    {
+      "name": "receipt_failure_retry_immutable",
+      "status": "PASS"
+    },
+    {
+      "name": "budget_failure_journaled",
+      "status": "PASS"
+    },
+    {
+      "name": "budget_failure_retry_immutable",
+      "status": "PASS"
+    },
+    {
+      "name": "large_result_pages_complete_and_hash_bound",
+      "status": "PASS"
+    },
+    {
+      "name": "paged_result_replay_network_free",
+      "status": "PASS"
+    },
+    {
+      "name": "recovery_persistently_fails_interrupted",
+      "status": "PASS"
+    },
+    {
+      "name": "recovery_same_key_does_not_retry_model",
+      "status": "PASS"
+    },
+    {
+      "name": "recovery_idempotent",
+      "status": "PASS"
+    },
+    {
+      "name": "no_provider_no_fabricated_candidate",
+      "status": "PASS"
+    },
+    {
+      "name": "all_lifecycle_events_hash_chain_valid",
+      "status": "PASS"
+    },
+    {
+      "name": "source_token_boundary_256",
+      "status": "PASS"
+    },
+    {
+      "name": "source_token_boundary_257",
+      "status": "PASS"
+    },
+    {
+      "name": "schema_batch_overflow_rejected",
+      "status": "PASS"
+    }
+  ],
+  "provider": "explicit local test double; no model/network calls",
+  "source_commit": "429a53d"
+}

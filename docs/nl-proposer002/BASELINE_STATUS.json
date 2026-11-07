@@ -1,0 +1,10 @@
+{
+  "git_before": "08e936a72045fd7b85bd312a23eeca155a35faa1",
+  "source_commit": "429a53d",
+  "server_version": "v0.4.9-developer-preview",
+  "deployment_id": "formal001-20261107T032742Z",
+  "tools": 91,
+  "live_baseline_capture": "before-transcript.json / tools-before.json",
+  "backup": "SQLite Backup API x4; independent compressed original workspace bytes",
+  "source_archive_sha256": "76beb15016fb4f68451ea3f3461850bb0ee028fd6940d1e33ac06607cc662ba5"
+}

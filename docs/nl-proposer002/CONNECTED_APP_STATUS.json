@@ -1,0 +1,31 @@
+{
+  "version": "v0.4.10-developer-preview",
+  "deployment_id": "nl002-20261107T060243Z",
+  "nl_proposal_bridge": {
+    "version": "NLProposalBridge/1",
+    "status": "READY_OPT_IN",
+    "tools": [
+      "formal_nl_propose",
+      "formal_nl_inspect"
+    ],
+    "origin": "SOURCE_BOUND_CHECKED or TRACE_LINK_CHECKED; neither establishes meaning",
+    "semantic_alignment_status": "PROPOSED",
+    "legacy_formal_interpret_origin": "DECLARED_UNVERIFIED; provider.kind is an unchecked declaration",
+    "human_adjudication": "NOT_EXECUTED",
+    "execution_permission": false,
+    "limits": {
+      "active_jobs": 4,
+      "provider_concurrency": 1,
+      "max_batch": 6,
+      "max_frames_per_source": 4,
+      "max_candidates_per_source": 8,
+      "model_calls_per_job": 1,
+      "CPU_ms_decoder": 4000,
+      "tokens": "post-call checked usage; CLI has no hard generation token ceiling",
+      "sampling": "model revision, seed, temperature not controlled by CLI"
+    }
+  },
+  "tool_count": 93,
+  "transport": "Connected LivingMath app tool bridge_system_status; no loopback",
+  "execution_permission": false
+}

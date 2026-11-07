@@ -1,0 +1,443 @@
+{
+  "status": "PASS",
+  "old_count": 91,
+  "new_count": 93,
+  "all_old_schemas_exact": true,
+  "added": [
+    {
+      "name": "formal_nl_inspect",
+      "title": null,
+      "description": "Read a project-owned immutable NL proposal, full private provenance or offline replay. Large objects use explicit base64 byte pages; no model call on replay.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "project": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+          },
+          "run_ref": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "view": {
+            "enum": [
+              "summary",
+              "result",
+              "bundle",
+              "replay"
+            ]
+          },
+          "expected_ast_sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "offset": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 10000000
+          },
+          "limit": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 48
+          }
+        },
+        "required": [
+          "project",
+          "run_ref"
+        ],
+        "additionalProperties": false
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "schema": {
+            "const": "nl-proposal-response/1"
+          },
+          "ok": {
+            "type": "boolean"
+          },
+          "data": {
+            "type": "object"
+          },
+          "error": {
+            "type": "object"
+          },
+          "execution_permission": {
+            "const": false
+          }
+        },
+        "required": [
+          "schema",
+          "ok",
+          "execution_permission"
+        ],
+        "additionalProperties": false
+      },
+      "icons": null,
+      "annotations": {
+        "title": null,
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "meta": null,
+      "execution": null
+    },
+    {
+      "name": "formal_nl_propose",
+      "title": null,
+      "description": "Opt-in literal-source FOL alternatives. Same-project checked White Star trace optional. Returns RUNNING: poll formal_nl_inspect. Provider/typing/origin/finite truth never establishes source meaning or grants execution. Up to six items share one real model call.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "project": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+          },
+          "request_key": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_.:-]{1,128}$"
+          },
+          "source_ref": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "target_signature": {
+            "type": "object"
+          },
+          "structural_run_refs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "engine": {
+                  "enum": [
+                    "symbolic_v1",
+                    "white_star"
+                  ]
+                },
+                "run_id": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                },
+                "frame_ids": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "maxItems": 4,
+                  "minItems": 1
+                },
+                "node_refs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{64}$"
+                  },
+                  "maxItems": 4,
+                  "minItems": 1
+                },
+                "parent_ids": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{64}$"
+                  },
+                  "maxItems": 4,
+                  "minItems": 0
+                },
+                "input_sha256": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                },
+                "snapshot_sha256": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                }
+              },
+              "required": [
+                "engine",
+                "run_id"
+              ],
+              "additionalProperties": false
+            },
+            "maxItems": 4,
+            "minItems": 0
+          },
+          "expected_source_sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "source_ref": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                },
+                "target_signature": {
+                  "type": "object"
+                },
+                "structural_run_refs": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "engine": {
+                        "enum": [
+                          "symbolic_v1",
+                          "white_star"
+                        ]
+                      },
+                      "run_id": {
+                        "type": "string",
+                        "pattern": "^[0-9a-f]{64}$"
+                      },
+                      "frame_ids": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        },
+                        "maxItems": 4,
+                        "minItems": 1
+                      },
+                      "node_refs": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "pattern": "^[0-9a-f]{64}$"
+                        },
+                        "maxItems": 4,
+                        "minItems": 1
+                      },
+                      "parent_ids": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "pattern": "^[0-9a-f]{64}$"
+                        },
+                        "maxItems": 4,
+                        "minItems": 0
+                      },
+                      "input_sha256": {
+                        "type": "string",
+                        "pattern": "^[0-9a-f]{64}$"
+                      },
+                      "snapshot_sha256": {
+                        "type": "string",
+                        "pattern": "^[0-9a-f]{64}$"
+                      }
+                    },
+                    "required": [
+                      "engine",
+                      "run_id"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "maxItems": 4,
+                  "minItems": 0
+                },
+                "expected_source_sha256": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                }
+              },
+              "required": [
+                "source_ref",
+                "target_signature"
+              ],
+              "additionalProperties": false
+            },
+            "maxItems": 6,
+            "minItems": 1
+          },
+          "normalization": {
+            "enum": [
+              "none",
+              "NFC"
+            ]
+          },
+          "provider": {
+            "type": "object",
+            "properties": {
+              "kind": {
+                "const": "owner_hosted"
+              }
+            },
+            "required": [
+              "kind"
+            ],
+            "additionalProperties": false
+          },
+          "policy": {
+            "type": "object",
+            "properties": {
+              "mode": {
+                "enum": [
+                  "source_only",
+                  "white_star_structural",
+                  "white_star_numeric",
+                  "matched_ablation"
+                ]
+              },
+              "max_candidates": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 8
+              },
+              "max_model_calls": {
+                "const": 1
+              },
+              "max_tokens": {
+                "type": "integer",
+                "minimum": 1000,
+                "maximum": 120000
+              },
+              "max_cpu_ms": {
+                "type": "integer",
+                "minimum": 100,
+                "maximum": 4000
+              },
+              "max_frames": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 4
+              },
+              "seed": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 2147483647
+              }
+            },
+            "required": [
+              "mode",
+              "max_candidates",
+              "max_model_calls",
+              "max_tokens",
+              "max_cpu_ms",
+              "max_frames",
+              "seed"
+            ],
+            "additionalProperties": false
+          },
+          "requirements": {
+            "type": "object",
+            "properties": {
+              "exact_source_bindings": {
+                "const": true
+              },
+              "typed_ast": {
+                "const": true
+              },
+              "independent_checker": {
+                "const": true
+              },
+              "no_gold_labels": {
+                "const": true
+              }
+            },
+            "required": [
+              "exact_source_bindings",
+              "typed_ast",
+              "independent_checker",
+              "no_gold_labels"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "project",
+          "request_key",
+          "provider",
+          "policy",
+          "requirements"
+        ],
+        "additionalProperties": false,
+        "oneOf": [
+          {
+            "required": [
+              "source_ref",
+              "target_signature"
+            ],
+            "not": {
+              "required": [
+                "items"
+              ]
+            }
+          },
+          {
+            "required": [
+              "items"
+            ],
+            "not": {
+              "anyOf": [
+                {
+                  "required": [
+                    "source_ref"
+                  ]
+                },
+                {
+                  "required": [
+                    "target_signature"
+                  ]
+                },
+                {
+                  "required": [
+                    "structural_run_refs"
+                  ]
+                },
+                {
+                  "required": [
+                    "expected_source_sha256"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "schema": {
+            "const": "nl-proposal-response/1"
+          },
+          "ok": {
+            "type": "boolean"
+          },
+          "data": {
+            "type": "object"
+          },
+          "error": {
+            "type": "object"
+          },
+          "execution_permission": {
+            "const": false
+          }
+        },
+        "required": [
+          "schema",
+          "ok",
+          "execution_permission"
+        ],
+        "additionalProperties": false
+      },
+      "icons": null,
+      "annotations": {
+        "title": null,
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "meta": null,
+      "execution": null
+    }
+  ],
+  "removed": [],
+  "changed": []
+}

@@ -1,6 +1,6 @@
 # Symbolic V1 — запуск и проверка
 
-Текущий production: **v0.4.9-developer-preview**, 91 инструмент; HTTPS/OAuth адрес
+Текущий production: **v0.4.10-developer-preview**, 93 инструмента; HTTPS/OAuth адрес
 сохранён. [Полный MCP-интерфейс](../MCP_INTERFACE.md) и
 [приёмка PATCH005](patch005/USER_REPORT_RU.md), [opt-in generator](patch005/QUICKSTART_RU.md).
 Symbolic использует полные токены и их происхождение; численный

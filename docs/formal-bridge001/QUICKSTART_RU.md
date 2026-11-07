@@ -1,6 +1,8 @@
 # Formal Bridge v1: точный MCP-контракт
 
-Сервер0.4.9,91 tools:83 прежних и8 новых. Все formal вызовы используют текущий
+Приёмочный срез Formal001: сервер0.4.9,91 tools:83 прежних и8 новых.
+Текущий сервер0.4.10 содержит93 инструмента; старые91 контракты сохранены.
+[Актуальный tools/list и NLProposalBridge](../nl-proposer002/QUICKSTART_RU.md). Все formal вызовы используют текущий
 HTTPS/OAuth endpoint и существующую авторизацию. Сначала создайте проект через
 assurance_project_new. Полные actual request/response — api_examples.json;
 схемы8 inputs — MCP_FORMAL_INPUT_SCHEMAS.json, все91 — MCP_TOOL_SCHEMAS.json.

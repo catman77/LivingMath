@@ -1,0 +1,12 @@
+{
+  "project": "qa_nl002_demo",
+  "request_key": "source-1",
+  "kind": "source",
+  "data": {
+    "text_utf8": "Каждый исследователь проверил одну гипотезу.",
+    "sha256": "1bfb913518481ba0899018a463ab11fecb272ae1703d9139dc1f0ba27fc07389",
+    "rights": "synthetic-original",
+    "spans": [],
+    "context_refs": []
+  }
+}

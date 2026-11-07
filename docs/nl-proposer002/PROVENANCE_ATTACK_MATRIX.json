@@ -1,0 +1,56 @@
+[
+  {
+    "name": "unknown_run",
+    "status": "PASS",
+    "error": "UNBACKED_ORIGIN",
+    "provider_calls": 0
+  },
+  {
+    "name": "unknown_frame",
+    "status": "PASS",
+    "error": "UNBACKED_ORIGIN",
+    "provider_calls": 0
+  },
+  {
+    "name": "changed_coordinates_input",
+    "status": "PASS",
+    "error": "REJECTED_PROVENANCE",
+    "provider_calls": 0
+  },
+  {
+    "name": "stale_snapshot",
+    "status": "PASS",
+    "error": "REJECTED_PROVENANCE",
+    "provider_calls": 0
+  },
+  {
+    "name": "source_sha",
+    "status": "PASS",
+    "error": "SOURCE_BINDING_MISMATCH",
+    "provider_calls": 0
+  },
+  {
+    "name": "different_real_source",
+    "status": "PASS",
+    "error": "SOURCE_BINDING_MISMATCH",
+    "provider_calls": 0
+  },
+  {
+    "name": "foreign_project_source_ref",
+    "status": "PASS",
+    "error": "NOT_FOUND"
+  },
+  {
+    "name": "forged_ast_sha",
+    "status": "PASS"
+  },
+  {
+    "name": "request_key_payload_substitution",
+    "status": "PASS"
+  },
+  {
+    "name": "legacy_import_declaration_only",
+    "status": "PASS",
+    "run_ref": "87ac47e8a95171f95fba28f0c31ce90d600bbf396cba0b282c8818a320aff455"
+  }
+]

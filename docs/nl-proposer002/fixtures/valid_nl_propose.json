@@ -1,0 +1,35 @@
+{
+  "project": "qa_nl002_demo",
+  "request_key": "proposal-1",
+  "source_ref": "fe7631a5996d7d8de27822346399c7934ca1ee4c251f5a1ef6872e3e801c23a4",
+  "target_signature": {
+    "sorts": [
+      "researcher",
+      "hypothesis"
+    ],
+    "predicates": {
+      "Checked": [
+        "researcher",
+        "hypothesis"
+      ]
+    }
+  },
+  "provider": {
+    "kind": "owner_hosted"
+  },
+  "policy": {
+    "mode": "source_only",
+    "max_candidates": 4,
+    "max_model_calls": 1,
+    "max_tokens": 60000,
+    "max_cpu_ms": 4000,
+    "max_frames": 4,
+    "seed": 2211
+  },
+  "requirements": {
+    "exact_source_bindings": true,
+    "typed_ast": true,
+    "independent_checker": true,
+    "no_gold_labels": true
+  }
+}

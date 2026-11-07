@@ -1,0 +1,11 @@
+{
+  "command": "python -m pytest -q",
+  "cwd": "/home/catman/CatmanCode/LivingMath/.worktrees/nl002/live_math_mcp_prod",
+  "passed": 1066,
+  "skipped": 20,
+  "warnings": 1,
+  "duration_s": 133.8,
+  "observed_exec_session": 62628,
+  "status": "PASS_EXISTING_20_SKIPS",
+  "utc": "2026-11-07T05:25:57.511353+00:00"
+}

@@ -1,0 +1,9 @@
+{
+  "utc": "2026-11-07T06:02:36.726136+00:00",
+  "candidate_freeze_sha256": "9bc3686ddb55d40c944b7207ae8e138794ea38870b3a04acb6337cb657722eed",
+  "gold_sha256": "60e62dd3196f5501d0e2eca745da44744e649b334b1aee31dad4e143367ed995",
+  "sources_sha256": "3a73d232c36ac1f02fd06019cd45758287d3e539894f840c2ed703f872147540",
+  "gold_previously_visible_to_generator": false,
+  "isolation": "Independent agent procedural split, same OS owner; not cryptographic access isolation",
+  "human_adjudication": "NOT_EXECUTED"
+}

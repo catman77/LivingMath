@@ -1,0 +1,25 @@
+{
+  "reference_readings_total": 47,
+  "bounded_vector_comparable": 40,
+  "reference_unknown_within_bound": 7,
+  "vector_class": {
+    "domain_sizes": [
+      1,
+      2
+    ],
+    "maximum_relation_cells": 10,
+    "not_logical_equivalence": true
+  },
+  "arms": {
+    "A": "source_only",
+    "B": "real numeric positional-token-order encoder",
+    "C": "same numeric frames, reversed span-order control",
+    "D": "real alternate encoding reflected second coordinate"
+  },
+  "N_unknown": "Formal contrast UNKNOWN_BOUND operations; distinct from unknown gold-vector references",
+  "N_rejected": "Rejected/undecodable moves, not refutations of natural-language interpretations",
+  "N_source_supported_external": "null: independent humans NOT_EXECUTED",
+  "N_hallucinated_unlicensed": "null: semantic licensing not independently adjudicated",
+  "N_false_equivalence": "Explicit formal engine equivalence claims; zero, not a claim of semantic correctness",
+  "human_semantic_accuracy": "UNKNOWN_NOT_EVALUATED"
+}

@@ -1,0 +1,736 @@
+[
+  {
+    "run_ref": "67520d4029036703443e5efd090a165cbd114dcadbb33f10eb8df0008bb2df59",
+    "status": "PASS",
+    "actual_truth_vector": [
+      true,
+      false
+    ],
+    "claimed_truth_vector": [
+      true,
+      false
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "8f9ae4a18bc5b259a653942ed1b8ecd881acca7d3148f3bd2727456c93f85088",
+    "status": "PASS",
+    "actual_truth_vector": [
+      false,
+      true
+    ],
+    "claimed_truth_vector": [
+      false,
+      true
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "ba4cb6740ab57a74d51e8e77a888194fc400d1a1c520dbe424ce62d7f26f6458",
+    "status": "PASS",
+    "actual_truth_vector": [
+      false,
+      true
+    ],
+    "claimed_truth_vector": [
+      false,
+      true
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "0487efd1eddf477ce504a8f07e04ad35642fa3f0521ba57b77702e102fb0e0e9",
+    "status": "PASS",
+    "actual_truth_vector": [
+      true,
+      false
+    ],
+    "claimed_truth_vector": [
+      true,
+      false
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "fae881c5ee6e3e081b33e1d783c6ecea2c1c375f1308cdda840bc6af6415e9c3",
+    "status": "PASS",
+    "actual_truth_vector": [
+      true,
+      false
+    ],
+    "claimed_truth_vector": [
+      true,
+      false
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "4c1dce9aac632b13bfd546b7fc141a3b9ef3777bef9eee10993f7735cfbd89a7",
+    "status": "PASS",
+    "actual_truth_vector": [
+      true,
+      false
+    ],
+    "claimed_truth_vector": [
+      true,
+      false
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "035ea08f748f144abaab09d1d4a38211884e05e654b102532d34d2c3f8c23dcf",
+    "status": "PASS",
+    "actual_truth_vector": [
+      false,
+      true
+    ],
+    "claimed_truth_vector": [
+      false,
+      true
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "de432b110012e5204bf1093379284fadd49b31219accaf2dde5059ba956758f4",
+    "status": "PASS",
+    "actual_truth_vector": [
+      true,
+      true,
+      false
+    ],
+    "claimed_truth_vector": [
+      true,
+      true,
+      false
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "f618f2684b717023a46fb3785a0889555261b726691997c74017bea50b59540b",
+    "status": "PASS",
+    "actual_truth_vector": [
+      true,
+      false
+    ],
+    "claimed_truth_vector": [
+      true,
+      false
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "507ca3eb0ffedad44b725ffc4a2767092e5de367a5d709f59c604a5da369081e",
+    "status": "PASS",
+    "actual_truth_vector": [
+      true,
+      true,
+      false
+    ],
+    "claimed_truth_vector": [
+      true,
+      true,
+      false
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "543c614656c2d9dfd155b1601b92e0e148e717de2639456fd0bf2249bd23aaac",
+    "status": "PASS",
+    "actual_truth_vector": [
+      true,
+      false
+    ],
+    "claimed_truth_vector": [
+      true,
+      false
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "97c89a61ef00054fc0e2017210350fa0ed1b80493a199f1c713408d8595ba806",
+    "status": "PASS",
+    "actual_truth_vector": [
+      true,
+      false
+    ],
+    "claimed_truth_vector": [
+      true,
+      false
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "e5de930e6391c4061c65c6221e690768f84d737c298fcee39b95256e1767a41f",
+    "status": "PASS",
+    "actual_truth_vector": [
+      false,
+      true
+    ],
+    "claimed_truth_vector": [
+      false,
+      true
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "99078cff8cfbede663dfb907ed3e179f57afcf7c48678b960fa952b6cc36e69b",
+    "status": "PASS",
+    "actual_truth_vector": [
+      true,
+      true,
+      false
+    ],
+    "claimed_truth_vector": [
+      true,
+      true,
+      false
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "2f7da3f5890ec2ffdd5fed29e5405d0df27e1c9c6c81abff7c0f43ed7d13c15c",
+    "status": "PASS",
+    "actual_truth_vector": [
+      false,
+      true
+    ],
+    "claimed_truth_vector": [
+      false,
+      true
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "598d5bb3d862abb3d08f6ee7f863a41561523177c7b11c59754e7d4807293e78",
+    "status": "PASS",
+    "actual_truth_vector": [
+      false,
+      false,
+      true
+    ],
+    "claimed_truth_vector": [
+      false,
+      false,
+      true
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "d3e2037eb0dd17c0071dd23947943ae52013d5e3f3681d5fe4f1267c641158ec",
+    "status": "PASS",
+    "actual_truth_vector": [
+      true,
+      false,
+      false,
+      true
+    ],
+    "claimed_truth_vector": [
+      true,
+      false,
+      false,
+      true
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "0cf62d011a7a0049009d78eb0a48721d299e0d54377e9172756993eaa5acf959",
+    "status": "PASS",
+    "actual_truth_vector": [
+      false,
+      true
+    ],
+    "claimed_truth_vector": [
+      false,
+      true
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "9ca0fb459ebe0ff9aa9d4d5274c4732712364807e821204ef5fcbc2104e6b682",
+    "status": "PASS",
+    "actual_truth_vector": [
+      false,
+      false,
+      true
+    ],
+    "claimed_truth_vector": [
+      false,
+      false,
+      true
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "54d0fe9dc698a328296f769a2f6511f1b6055288ce0b1551c47d6c6aa93a1532",
+    "status": "PASS",
+    "actual_truth_vector": [
+      false,
+      false,
+      true
+    ],
+    "claimed_truth_vector": [
+      false,
+      false,
+      true
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "346c2fae50949a80dcc042808bb6205e5323c9788d00b7d495a2c80e36c111d4",
+    "status": "PASS",
+    "actual_truth_vector": [
+      false,
+      true
+    ],
+    "claimed_truth_vector": [
+      false,
+      true
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "62d7345cab7e81d52a501b3890770811de27621dfa1bcd1d77296e0103c1aaf5",
+    "status": "PASS",
+    "actual_truth_vector": [
+      false,
+      true
+    ],
+    "claimed_truth_vector": [
+      false,
+      true
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "d40e5964611c99e5dd65220ebae5b6102acad39f3fa8c83fb71b5e5da7313d37",
+    "status": "PASS",
+    "actual_truth_vector": [
+      false,
+      true,
+      false
+    ],
+    "claimed_truth_vector": [
+      false,
+      true,
+      false
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "30b5cab68bd1ea410e687374d8b746107fb7f2c2f745a68c01f47931b119a4a9",
+    "status": "PASS",
+    "actual_truth_vector": [
+      true,
+      false
+    ],
+    "claimed_truth_vector": [
+      true,
+      false
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "733418b83c3c097c0d32aa6ea29df748c8fede53dcc8bf629c3d46b85f2a13a8",
+    "status": "PASS",
+    "actual_truth_vector": [
+      true,
+      false,
+      true
+    ],
+    "claimed_truth_vector": [
+      true,
+      false,
+      true
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "996079bd5d1584b7bce6bbc4caf5706a00b971f582b5a022d07f8e86ff218602",
+    "status": "PASS",
+    "actual_truth_vector": [
+      true,
+      false
+    ],
+    "claimed_truth_vector": [
+      true,
+      false
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "6e1cbfd16f0bf1d7811c10ec43020f3fb4d0f353c2c94830c9f9cf809b415850",
+    "status": "PASS",
+    "actual_truth_vector": [
+      true,
+      false
+    ],
+    "claimed_truth_vector": [
+      true,
+      false
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "c286d840af36190f48f84eaafa4d808b6fb17f3c2d5d23d2e11b32e7e40eebe5",
+    "status": "PASS",
+    "actual_truth_vector": [
+      false,
+      true
+    ],
+    "claimed_truth_vector": [
+      false,
+      true
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "36cfc438a329d47faf37694fd53038655cedf80fcb5bf44ee912137f92b83d9a",
+    "status": "PASS",
+    "actual_truth_vector": [
+      true,
+      false,
+      false,
+      true
+    ],
+    "claimed_truth_vector": [
+      true,
+      false,
+      false,
+      true
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "da13ebd4349ee0e7226a0b28d4b92d830079055da54ed3a79f5bea4e974f484a",
+    "status": "PASS",
+    "actual_truth_vector": [
+      false,
+      true
+    ],
+    "claimed_truth_vector": [
+      false,
+      true
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "5d4c24ffc8b7cc6c93d586ae6c9a48b623f45eb6960f5c4a7bc57b28ae33d5eb",
+    "status": "PASS",
+    "actual_truth_vector": [
+      false,
+      true
+    ],
+    "claimed_truth_vector": [
+      false,
+      true
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "c98f6e354f336f3a98e1c5539a1566f7e1928eaa33f0e405b340b90c6d87adb3",
+    "status": "PASS",
+    "actual_truth_vector": [
+      false,
+      true
+    ],
+    "claimed_truth_vector": [
+      false,
+      true
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "95952afe1a4de0b04418942c11daa49e361237d95f6ce873fd8d2f4ea0e18232",
+    "status": "PASS",
+    "actual_truth_vector": [
+      false,
+      true
+    ],
+    "claimed_truth_vector": [
+      false,
+      true
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "0eec1b0b9dbf21cf70fa83f73d3a9d227cd598c85adad91fa634edb7156b605a",
+    "status": "PASS",
+    "actual_truth_vector": [
+      false,
+      true
+    ],
+    "claimed_truth_vector": [
+      false,
+      true
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "347b6f5d549351088442a425dde2f43cd2ced54cb185224d5049ff398d06fdd9",
+    "status": "PASS",
+    "actual_truth_vector": [
+      false,
+      true
+    ],
+    "claimed_truth_vector": [
+      false,
+      true
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "29490ba40d98b271cd708c79903f025754acc54d98b3a499ab5a8f8b865109ea",
+    "status": "PASS",
+    "actual_truth_vector": [
+      false,
+      true
+    ],
+    "claimed_truth_vector": [
+      false,
+      true
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "9c071ddf01f1fbe534a56ddfc489443e86bd65ab7faa1f6e8cb2aed184f8fe21",
+    "status": "PASS",
+    "actual_truth_vector": [
+      true,
+      true,
+      false
+    ],
+    "claimed_truth_vector": [
+      true,
+      true,
+      false
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "3e476bd03a2a0bb78d9f57437a13898cb711382d3c79267bbb61b11457c39caa",
+    "status": "PASS",
+    "actual_truth_vector": [
+      true,
+      false
+    ],
+    "claimed_truth_vector": [
+      true,
+      false
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "3f4f21de1af0d0382f5d9c4f02895f97658043f86ac4a9be0295972ebe22e8d0",
+    "status": "PASS",
+    "actual_truth_vector": [
+      true,
+      false,
+      true
+    ],
+    "claimed_truth_vector": [
+      true,
+      false,
+      true
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "f860f2f152ed9044fb7842b3579e1377c5fa0a31794df1afa5411b1fba2b727a",
+    "status": "PASS",
+    "actual_truth_vector": [
+      true,
+      false
+    ],
+    "claimed_truth_vector": [
+      true,
+      false
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "da73dced08b2994159440ea75850e06e4978555c63ec16e5120487cac1c82da3",
+    "status": "PASS",
+    "actual_truth_vector": [
+      true,
+      false
+    ],
+    "claimed_truth_vector": [
+      true,
+      false
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "ff0bdd387b2825d25b07b4a73c7cc5f49b69fa0004c4d2c8840684011cf5021b",
+    "status": "PASS",
+    "actual_truth_vector": [
+      false,
+      true
+    ],
+    "claimed_truth_vector": [
+      false,
+      true
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "63d345b349b1ac9283e1c543db54bb9d19306935cb188946ad8f3a5f5dcb4118",
+    "status": "PASS",
+    "actual_truth_vector": [
+      true,
+      true,
+      false
+    ],
+    "claimed_truth_vector": [
+      true,
+      true,
+      false
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "a4a66d083b36b52951e04102087884f169cf347e91f60685275d160f0e89e8fa",
+    "status": "PASS",
+    "actual_truth_vector": [
+      false,
+      true
+    ],
+    "claimed_truth_vector": [
+      false,
+      true
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "2696574da849003f2e7e974ce637c1f3079e858e849c4038fa2f88bae993c635",
+    "status": "PASS",
+    "actual_truth_vector": [
+      true,
+      false,
+      true,
+      false
+    ],
+    "claimed_truth_vector": [
+      true,
+      false,
+      true,
+      false
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "d4250a36239f5168353ac11487de9e39d69527808368072bfafc30d4cab44d08",
+    "status": "PASS",
+    "actual_truth_vector": [
+      false,
+      true
+    ],
+    "claimed_truth_vector": [
+      false,
+      true
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "c29bbb1dd7207f7ea607c3b154934f5f9b00c73dcfc01fca8c4a583b8a71dccb",
+    "status": "PASS",
+    "actual_truth_vector": [
+      false,
+      true
+    ],
+    "claimed_truth_vector": [
+      false,
+      true
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "35026358d8040f7bb303415dbac1716882d7b13babb24ef9d9c763ff65f7743e",
+    "status": "PASS",
+    "actual_truth_vector": [
+      false,
+      true
+    ],
+    "claimed_truth_vector": [
+      false,
+      true
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "6a9df3d8cd4cede0832e35a5a89064ef9c9fcb4274ca1ba421246ac53d2a658e",
+    "status": "PASS",
+    "actual_truth_vector": [
+      false,
+      true
+    ],
+    "claimed_truth_vector": [
+      false,
+      true
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  },
+  {
+    "run_ref": "2234e22fa451729da2905f3e075f8976156a60204a56c178d456caf449a3b51c",
+    "status": "PASS",
+    "actual_truth_vector": [
+      false,
+      true
+    ],
+    "claimed_truth_vector": [
+      false,
+      true
+    ],
+    "checker": "tools/nl002_independent_checker.py",
+    "independent_of_production_evaluator": true
+  }
+]

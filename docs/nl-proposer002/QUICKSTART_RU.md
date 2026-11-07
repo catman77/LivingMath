@@ -19,7 +19,7 @@ HTTPS/OAuth MCP. Старые восемь `formal_*` инструментов �
 
 ```json
 {
-  "project":"nl_demo",
+  "project":"qa_nl002_demo",
   "request_key":"proposal-1",
   "source_ref":"STORED_OBJECT_REF",
   "target_signature":{"sorts":["researcher","hypothesis"],"predicates":{"Checked":["researcher","hypothesis"]}},
@@ -49,3 +49,23 @@ HTTPS/OAuth MCP. Старые восемь `formal_*` инструментов �
 Смысл остаётся `PROPOSED`; математического `verified` и execution grant нет.
 `UNDECODABLE_FRAME`, `NO_WELL_TYPED_DECODING` и `PROVIDER_UNAVAILABLE` —
 сохраняемые результаты, а не повод подставить шаблонную формулу.
+
+Для полностью offline replay скачанного QA-пакета (без HTTP):
+
+```bash
+python tools/nl002_replay.py --candidates CANDIDATES_FROZEN.json --output replay.json
+```
+
+Опционально `--snapshots STRUCTURAL_RUN_SNAPSHOTS.json` повторяет также
+настоящие численные/символьные вычисления с точным сравнением result SHA256;
+для него предварительно установите math-зависимости и подготовьте native.
+Обычный replay декодера не загружает модель и запрещает открытие сокетов.
+
+Два полных JSON-запроса без placeholders:
+[`formal_store`](fixtures/valid_source_store.json),
+[`formal_nl_propose`](fixtures/valid_nl_propose.json).
+Перед ними создайте `qa_nl002_demo`; вызывайте по порядку. Content-addressed
+`source_ref` в примере — настоящий blob ref из `formal_store`, соответствующий
+**ровно** опубликованному `data`. Это не SHA текста и не digest самого `data`;
+при любом изменении source используйте ref из настоящего ответа `formal_store`.
+[Полные схемы новых инструментов](NL_PROPOSER_SCHEMAS.json).

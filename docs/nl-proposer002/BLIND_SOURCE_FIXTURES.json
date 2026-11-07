@@ -1,0 +1,1073 @@
+{
+  "schema_version": "nl002.public_sources.v1",
+  "created_utc": "2026-11-07T05:07:54.650488+00:00",
+  "provenance": {
+    "rights": "synthetic-original",
+    "method": "new manually composed synthetic Russian sentences; opaque random UUID4 external identifiers; no production/training source access",
+    "human_adjudication": "NOT_EXECUTED"
+  },
+  "source_count": 50,
+  "family_counts": {
+    "scope_quantifiers": 6,
+    "uniqueness_cardinality": 6,
+    "negation": 6,
+    "anaphora_coreference": 6,
+    "modal_temporal": 6,
+    "lexical_ellipsis_unsupported": 6,
+    "renamed_pair": 8,
+    "adversarial_verb": 2,
+    "control": 4
+  },
+  "sources": [
+    {
+      "id": "98249865-f16a-450b-a505-815a0268de11",
+      "text": "Каждая пекарня снабжает хотя бы одну кофейню.",
+      "sha256": "e46602f40eef5bd97cc4668bf1c1f370816b6537d5a2c193b26269c5fdd9a04b",
+      "rights": "synthetic-original",
+      "family": "scope_quantifiers",
+      "signature": {
+        "sorts": [
+          "bakery",
+          "cafe"
+        ],
+        "predicates": {
+          "Supplies": [
+            "bakery",
+            "cafe"
+          ]
+        }
+      }
+    },
+    {
+      "id": "822467fa-9e7b-45e9-a63e-3bea5df14f54",
+      "text": "Есть кладовщик, который выдал инструмент каждому механику.",
+      "sha256": "aa667c18e1225ade633f30a6ff2ab0777d8300c725a30b02fe1a998c7df25dcd",
+      "rights": "synthetic-original",
+      "family": "scope_quantifiers",
+      "signature": {
+        "sorts": [
+          "clerk",
+          "mechanic",
+          "tool"
+        ],
+        "predicates": {
+          "Issued": [
+            "clerk",
+            "tool",
+            "mechanic"
+          ]
+        }
+      }
+    },
+    {
+      "id": "6beb2330-c57a-46ed-9f28-13a92b5e3d12",
+      "text": "Хотя бы одну рукопись прочитал каждый рецензент.",
+      "sha256": "308e0961c3e87065ae959b3981056834e5e12cb87138388da7541ab1f48ead0a",
+      "rights": "synthetic-original",
+      "family": "scope_quantifiers",
+      "signature": {
+        "sorts": [
+          "reviewer",
+          "manuscript"
+        ],
+        "predicates": {
+          "Read": [
+            "reviewer",
+            "manuscript"
+          ]
+        }
+      }
+    },
+    {
+      "id": "4b50f1e1-978a-4fce-aa37-c1bee9222c2e",
+      "text": "Каждой аптеке поставляют все склады.",
+      "sha256": "b3aacd74c4a6eda094e2aee94d2cb451a68a8d39e89052eb22c4db35ee7e1405",
+      "rights": "synthetic-original",
+      "family": "scope_quantifiers",
+      "signature": {
+        "sorts": [
+          "pharmacy",
+          "warehouse"
+        ],
+        "predicates": {
+          "Supplies": [
+            "warehouse",
+            "pharmacy"
+          ]
+        }
+      }
+    },
+    {
+      "id": "d1b968d9-ff59-492b-a812-3705efe99c7b",
+      "text": "Кто-нибудь из курьеров доставил посылку всем адресатам.",
+      "sha256": "d263af2e34cffa8a74743010ad8de995ab8e33787543879d97aa8120b314299b",
+      "rights": "synthetic-original",
+      "family": "scope_quantifiers",
+      "signature": {
+        "sorts": [
+          "courier",
+          "parcel",
+          "recipient"
+        ],
+        "predicates": {
+          "Delivered": [
+            "courier",
+            "parcel",
+            "recipient"
+          ]
+        }
+      }
+    },
+    {
+      "id": "6fd9adce-dd94-4cd5-9179-e973f25282a9",
+      "text": "Есть пилот, осмотревший каждый ангар.",
+      "sha256": "b08bce3bca1c534757a4c2d851f09bd453fdce8c07637b7b4a2a7b484636f3fd",
+      "rights": "synthetic-original",
+      "family": "scope_quantifiers",
+      "signature": {
+        "sorts": [
+          "pilot",
+          "hangar"
+        ],
+        "predicates": {
+          "Inspected": [
+            "pilot",
+            "hangar"
+          ]
+        }
+      }
+    },
+    {
+      "id": "d9399151-3545-4a10-b95e-46adde45eb15",
+      "text": "Ровно один настройщик заметил хотя бы один сбой.",
+      "sha256": "0a4b2e17ca4cde57efacbebfb88f92a0fc103342109ff90bd025110850d05041",
+      "rights": "synthetic-original",
+      "family": "uniqueness_cardinality",
+      "signature": {
+        "sorts": [
+          "tuner",
+          "fault"
+        ],
+        "predicates": {
+          "Noticed": [
+            "tuner",
+            "fault"
+          ]
+        }
+      }
+    },
+    {
+      "id": "dcd8147b-1b77-4cc0-ae30-808c737f45bb",
+      "text": "Каждый архив содержит ровно две описи.",
+      "sha256": "3fb1cb315eae68d5177ff8c44cc1f0ee366c3b6fbb96fec0c71f126d9010544a",
+      "rights": "synthetic-original",
+      "family": "uniqueness_cardinality",
+      "signature": {
+        "sorts": [
+          "archive",
+          "inventory"
+        ],
+        "predicates": {
+          "Contains": [
+            "archive",
+            "inventory"
+          ]
+        }
+      }
+    },
+    {
+      "id": "c9d9f6cc-a28a-4c09-8051-515c53a99400",
+      "text": "Не более одного дежурного открыл каждый сейф.",
+      "sha256": "6d1ca3e0bbe86360981050736e66750bcb9c9707f1db61e4c5e6c46c332b3630",
+      "rights": "synthetic-original",
+      "family": "uniqueness_cardinality",
+      "signature": {
+        "sorts": [
+          "attendant",
+          "safe"
+        ],
+        "predicates": {
+          "Opened": [
+            "attendant",
+            "safe"
+          ]
+        }
+      }
+    },
+    {
+      "id": "9c5ca5ae-7cb0-44db-a045-9263c627ba30",
+      "text": "У каждой станции есть единственный диспетчер.",
+      "sha256": "4222381d5efce2f97e07fb18f96ff10c65292d2fc4b53a38462ed72c16ac502c",
+      "rights": "synthetic-original",
+      "family": "uniqueness_cardinality",
+      "signature": {
+        "sorts": [
+          "station",
+          "dispatcher"
+        ],
+        "predicates": {
+          "Assigned": [
+            "dispatcher",
+            "station"
+          ]
+        }
+      }
+    },
+    {
+      "id": "d623c0e9-4b94-4c59-a9a9-29224c915759",
+      "text": "Два разных водолаза обследовали один и тот же причал.",
+      "sha256": "a00768956b7b83ebd557f9512d4f0feffefa6f48ee076783920145dc5bfa3be1",
+      "rights": "synthetic-original",
+      "family": "uniqueness_cardinality",
+      "signature": {
+        "sorts": [
+          "diver",
+          "pier"
+        ],
+        "predicates": {
+          "Surveyed": [
+            "diver",
+            "pier"
+          ]
+        }
+      }
+    },
+    {
+      "id": "d5344db6-2caa-4179-8c68-fee19d2899c3",
+      "text": "Ни один прибор не связан более чем с одним датчиком.",
+      "sha256": "887eff04adf955e2daf016f6bd7a2dd80a4d14ab5625b888650941da264e2324",
+      "rights": "synthetic-original",
+      "family": "uniqueness_cardinality",
+      "signature": {
+        "sorts": [
+          "device",
+          "sensor"
+        ],
+        "predicates": {
+          "Linked": [
+            "device",
+            "sensor"
+          ]
+        }
+      }
+    },
+    {
+      "id": "b46255ee-9da5-47c0-81d3-203d90a8017e",
+      "text": "Ни один сторож не открыл все ворота.",
+      "sha256": "2386c84703d42fecc7ba5203f7055e038296f4455fb6d9e8365e9b152c3ef5a5",
+      "rights": "synthetic-original",
+      "family": "negation",
+      "signature": {
+        "sorts": [
+          "guard",
+          "gate"
+        ],
+        "predicates": {
+          "Opened": [
+            "guard",
+            "gate"
+          ]
+        }
+      }
+    },
+    {
+      "id": "f0ab9cbf-e315-4ab1-b0a8-b114e10b4221",
+      "text": "Не каждый садовник полил хотя бы одно дерево.",
+      "sha256": "f2eb3fbf79c273b644c91f6e0f90ad146173d42bd597494d94c24a4aba50403b",
+      "rights": "synthetic-original",
+      "family": "negation",
+      "signature": {
+        "sorts": [
+          "gardener",
+          "tree"
+        ],
+        "predicates": {
+          "Watered": [
+            "gardener",
+            "tree"
+          ]
+        }
+      }
+    },
+    {
+      "id": "858b3515-0080-4de2-b1c4-600cad894466",
+      "text": "Каждый кассир не выдал ни одного билета.",
+      "sha256": "a93c7415027b790876ec37d62d86a5242d12589e40249a660557e5d6b419cd50",
+      "rights": "synthetic-original",
+      "family": "negation",
+      "signature": {
+        "sorts": [
+          "cashier",
+          "ticket"
+        ],
+        "predicates": {
+          "Issued": [
+            "cashier",
+            "ticket"
+          ]
+        }
+      }
+    },
+    {
+      "id": "a94fe53d-d591-4958-8576-ab293d9d01b5",
+      "text": "Неверно, что существует туннель без датчиков.",
+      "sha256": "2d9bc1160aeb63902ae07e76612a8f76048c4185059ce7dc0fc060142272017f",
+      "rights": "synthetic-original",
+      "family": "negation",
+      "signature": {
+        "sorts": [
+          "tunnel",
+          "sensor"
+        ],
+        "predicates": {
+          "Located": [
+            "sensor",
+            "tunnel"
+          ]
+        }
+      }
+    },
+    {
+      "id": "cc18ae6c-d0d7-4876-b763-a748644675be",
+      "text": "Лишь один оператор не принял ни одной заявки.",
+      "sha256": "53ed4799031bcfaef45de6d41f0e726751485de60d4fbe123844f5aecf7ac5ba",
+      "rights": "synthetic-original",
+      "family": "negation",
+      "signature": {
+        "sorts": [
+          "operator",
+          "request"
+        ],
+        "predicates": {
+          "Accepted": [
+            "operator",
+            "request"
+          ]
+        }
+      }
+    },
+    {
+      "id": "1c570f64-66df-46fc-89dd-b1ef02a71263",
+      "text": "Каждый фермер не продал хотя бы одно животное.",
+      "sha256": "48f76f409195db7b48613418fb8a716e895a3218aee9f38ee2c6f3c8c5b04c66",
+      "rights": "synthetic-original",
+      "family": "negation",
+      "signature": {
+        "sorts": [
+          "farmer",
+          "animal"
+        ],
+        "predicates": {
+          "Sold": [
+            "farmer",
+            "animal"
+          ]
+        }
+      }
+    },
+    {
+      "id": "297ef16d-2dfd-4305-9dac-32e5ca27e74a",
+      "text": "Каждый слесарь взял ключ и положил его в шкаф.",
+      "sha256": "07ace21f4c9590b1b64a82fdf4bab77d15ec6ae58d9ea2eaa8de15c450ac9a53",
+      "rights": "synthetic-original",
+      "family": "anaphora_coreference",
+      "signature": {
+        "sorts": [
+          "worker",
+          "key",
+          "cabinet"
+        ],
+        "predicates": {
+          "Took": [
+            "worker",
+            "key"
+          ],
+          "Put": [
+            "worker",
+            "key",
+            "cabinet"
+          ]
+        }
+      }
+    },
+    {
+      "id": "6d5b6a0f-1475-4d2d-abb6-4e9abe2c3694",
+      "text": "Каждый сторож встретил курьера, который поприветствовал его.",
+      "sha256": "8f4e0441ec15f7b80f034bbd44724d9edbedf7c151dd60963b24295c90d74d3f",
+      "rights": "synthetic-original",
+      "family": "anaphora_coreference",
+      "signature": {
+        "sorts": [
+          "guard",
+          "courier"
+        ],
+        "predicates": {
+          "Met": [
+            "guard",
+            "courier"
+          ],
+          "Greeted": [
+            "courier",
+            "guard"
+          ]
+        }
+      }
+    },
+    {
+      "id": "2a5dcfb9-feac-4b59-bdb1-560df8f7821c",
+      "text": "Каждый техник передал коллеге прибор, и тот осмотрел его.",
+      "sha256": "8bb19ffffbf15a6690ff7712c14c7b630e969156d82ab28689fa5f39443b1623",
+      "rights": "synthetic-original",
+      "family": "anaphora_coreference",
+      "signature": {
+        "sorts": [
+          "person",
+          "device"
+        ],
+        "predicates": {
+          "Technician": [
+            "person"
+          ],
+          "Colleague": [
+            "person",
+            "person"
+          ],
+          "Passed": [
+            "person",
+            "person",
+            "device"
+          ],
+          "Inspected": [
+            "person",
+            "device"
+          ]
+        }
+      }
+    },
+    {
+      "id": "e38479c0-7c34-4695-8fed-bfa902e5746f",
+      "text": "Если механик обнаружил неисправность, он устраняет её.",
+      "sha256": "22a7196392a5eff5c90cc9ef882671904be3813ab9c4d4714e9d68a1796385ce",
+      "rights": "synthetic-original",
+      "family": "anaphora_coreference",
+      "signature": {
+        "sorts": [
+          "mechanic",
+          "fault"
+        ],
+        "predicates": {
+          "Detected": [
+            "mechanic",
+            "fault"
+          ],
+          "Repairs": [
+            "mechanic",
+            "fault"
+          ]
+        }
+      }
+    },
+    {
+      "id": "be0d8441-442e-4dfb-ba56-d391ffa18198",
+      "text": "Любой архивист, получивший папку от регистратора, возвращает ему эту папку.",
+      "sha256": "93c7c70a5bb28fb75b4fc5289593131d5b43c1313b4e1da9ea629ab6960f2bda",
+      "rights": "synthetic-original",
+      "family": "anaphora_coreference",
+      "signature": {
+        "sorts": [
+          "archivist",
+          "folder",
+          "registrar"
+        ],
+        "predicates": {
+          "Received": [
+            "archivist",
+            "folder",
+            "registrar"
+          ],
+          "Returns": [
+            "archivist",
+            "folder",
+            "registrar"
+          ]
+        }
+      }
+    },
+    {
+      "id": "c40e973e-9a19-40bb-a491-89c808701560",
+      "text": "Каждый проводник показал пассажиру его билет.",
+      "sha256": "2372983218f729da687f9ea861a62a2a26db740d28e1b99a1e7ab5c688a599ed",
+      "rights": "synthetic-original",
+      "family": "anaphora_coreference",
+      "signature": {
+        "sorts": [
+          "conductor",
+          "passenger",
+          "ticket"
+        ],
+        "predicates": {
+          "Showed": [
+            "conductor",
+            "passenger",
+            "ticket"
+          ],
+          "PassengerOwns": [
+            "passenger",
+            "ticket"
+          ],
+          "ConductorOwns": [
+            "conductor",
+            "ticket"
+          ]
+        }
+      }
+    },
+    {
+      "id": "c915a315-eb41-45fc-a3ce-c76bcce44b6b",
+      "text": "Любой техник может открыть каждый люк.",
+      "sha256": "41cddde402867a80cf6f821420e87c3cc96606e6d0409b7bce46d55220f105dd",
+      "rights": "synthetic-original",
+      "family": "modal_temporal",
+      "signature": {
+        "sorts": [
+          "technician",
+          "hatch"
+        ],
+        "predicates": {
+          "Opens": [
+            "technician",
+            "hatch"
+          ]
+        }
+      }
+    },
+    {
+      "id": "15c30de4-1ffc-461f-a370-fc83378b740e",
+      "text": "Раньше каждый поезд проходил хотя бы одну станцию, а теперь не проходит ни одной.",
+      "sha256": "c6192f22620e39d0d5b4268d783fb7400de9f6808479080929f637d969640a69",
+      "rights": "synthetic-original",
+      "family": "modal_temporal",
+      "signature": {
+        "sorts": [
+          "train",
+          "station"
+        ],
+        "predicates": {
+          "Passes": [
+            "train",
+            "station"
+          ]
+        }
+      }
+    },
+    {
+      "id": "1743a256-baa3-4113-9db2-8777158c3d2c",
+      "text": "После каждого сигнала хотя бы один датчик срабатывает.",
+      "sha256": "fb368d0b7c4d98dec9b58996a690221a36e7ec40c552918cce72f6fabba5f1c7",
+      "rights": "synthetic-original",
+      "family": "modal_temporal",
+      "signature": {
+        "sorts": [
+          "signal",
+          "sensor"
+        ],
+        "predicates": {
+          "Heard": [
+            "sensor",
+            "signal"
+          ],
+          "Activated": [
+            "sensor"
+          ]
+        }
+      }
+    },
+    {
+      "id": "e4518739-1bc2-42a1-b19f-65820721486a",
+      "text": "Ни один инспектор не обязан проверять каждый склад.",
+      "sha256": "839b38a44c1e90ef02048f7192ed1ae7fa9e00d571ef1deab1b8a95a49e1ac17",
+      "rights": "synthetic-original",
+      "family": "modal_temporal",
+      "signature": {
+        "sorts": [
+          "inspector",
+          "warehouse"
+        ],
+        "predicates": {
+          "Checks": [
+            "inspector",
+            "warehouse"
+          ]
+        }
+      }
+    },
+    {
+      "id": "ce469a63-f014-4d69-afb9-93c3ea635453",
+      "text": "Каждый клапан когда-нибудь снова откроется.",
+      "sha256": "dda882069e294eeeaa37d99f418684d16c129946196fcb772ad0c1c97a314a6c",
+      "rights": "synthetic-original",
+      "family": "modal_temporal",
+      "signature": {
+        "sorts": [
+          "valve"
+        ],
+        "predicates": {
+          "Opens": [
+            "valve"
+          ]
+        }
+      }
+    },
+    {
+      "id": "b1d88e5c-cd23-47f5-9fbc-04ff10b92112",
+      "text": "Любой журнал содержит хотя бы одну запись с более ранней датой, чем у другой записи этого журнала.",
+      "sha256": "c33ef83417f17a6ebe7667c7dbed917bf37c73df134e86337dbd7685cd9c851f",
+      "rights": "synthetic-original",
+      "family": "modal_temporal",
+      "signature": {
+        "sorts": [
+          "journal",
+          "entry"
+        ],
+        "predicates": {
+          "Contains": [
+            "journal",
+            "entry"
+          ],
+          "Earlier": [
+            "entry",
+            "entry"
+          ]
+        }
+      }
+    },
+    {
+      "id": "554913aa-ba8b-4c9f-8973-d7d5638e7ac1",
+      "text": "Каждый лектор похвалил студента, а каждый куратор — аспиранта.",
+      "sha256": "c62018bd01e53e754c095881131289bfab330e0402e25363f039128059adb2c6",
+      "rights": "synthetic-original",
+      "family": "lexical_ellipsis_unsupported",
+      "signature": {
+        "sorts": [
+          "lecturer",
+          "student",
+          "curator",
+          "graduate"
+        ],
+        "predicates": {
+          "PraisedStudent": [
+            "lecturer",
+            "student"
+          ],
+          "PraisedGraduate": [
+            "curator",
+            "graduate"
+          ]
+        }
+      }
+    },
+    {
+      "id": "91211baf-d09f-4cde-bb9e-b937d33aeeba",
+      "text": "Один хранитель принял ящик, другой — тюк.",
+      "sha256": "ee1e326a75cd03ec13b0054a135ef0d14912ae27c43937d65814c68eb5ebb21a",
+      "rights": "synthetic-original",
+      "family": "lexical_ellipsis_unsupported",
+      "signature": {
+        "sorts": [
+          "keeper",
+          "crate",
+          "bale"
+        ],
+        "predicates": {
+          "AcceptedCrate": [
+            "keeper",
+            "crate"
+          ],
+          "AcceptedBale": [
+            "keeper",
+            "bale"
+          ]
+        }
+      }
+    },
+    {
+      "id": "2677068b-54d0-4da5-858d-0d1cdb5915c4",
+      "text": "Каждый повар нарезал хотя бы одну буханку, а ни один пекарь — ни одной.",
+      "sha256": "b995c996f33002dc6db3183640b27494d9ba9b92c4965eabeee339652385bd5c",
+      "rights": "synthetic-original",
+      "family": "lexical_ellipsis_unsupported",
+      "signature": {
+        "sorts": [
+          "cook",
+          "baker",
+          "loaf"
+        ],
+        "predicates": {
+          "CutCook": [
+            "cook",
+            "loaf"
+          ],
+          "CutBaker": [
+            "baker",
+            "loaf"
+          ]
+        }
+      }
+    },
+    {
+      "id": "ec499bcd-6983-4a27-bd1b-a34d367f351a",
+      "text": "Каждый связной обошёл пост.",
+      "sha256": "937ec6aec52dd4cee61e3133492d78f8ae225ea3e8f647f663ead7ed6e79e268",
+      "rights": "synthetic-original",
+      "family": "lexical_ellipsis_unsupported",
+      "signature": {
+        "sorts": [
+          "messenger",
+          "post"
+        ],
+        "predicates": {
+          "Visited": [
+            "messenger",
+            "post"
+          ]
+        }
+      }
+    },
+    {
+      "id": "4ac88838-bc46-48bd-b374-356702eafb74",
+      "text": "Каждый ключ тяжелее любого замка.",
+      "sha256": "ad0b2646219049d588484841e55db6d030766f959c18ebf1ec5b9a460526d904",
+      "rights": "synthetic-original",
+      "family": "lexical_ellipsis_unsupported",
+      "signature": {
+        "sorts": [
+          "key",
+          "lock"
+        ],
+        "predicates": {
+          "Fits": [
+            "key",
+            "lock"
+          ]
+        }
+      }
+    },
+    {
+      "id": "76e751e1-080b-4631-8fca-4390f76c0c1d",
+      "text": "Каждый столяр измерил хотя бы одну доску.",
+      "sha256": "c400593a0f47fc026b2286d99b9d42996519e87a5accce60883ed4e6b1652e59",
+      "rights": "synthetic-original",
+      "family": "lexical_ellipsis_unsupported",
+      "signature": {
+        "sorts": [
+          "carpenter",
+          "board"
+        ],
+        "predicates": {
+          "Painted": [
+            "carpenter",
+            "board"
+          ]
+        }
+      }
+    },
+    {
+      "id": "40e7282e-ab30-40db-b9ad-44217eecdb38",
+      "text": "Каждый парикмахер поприветствовал хотя бы одного клиента.",
+      "sha256": "ea150d49f111f1ea2dd399ff061a74d07f82e335807d889c493b74c03e291d15",
+      "rights": "synthetic-original",
+      "family": "renamed_pair",
+      "signature": {
+        "sorts": [
+          "barber",
+          "client"
+        ],
+        "predicates": {
+          "Greeted": [
+            "barber",
+            "client"
+          ]
+        }
+      },
+      "pair_id": "902cbc36-5e09-4c6b-ac1c-80649eb27bee"
+    },
+    {
+      "id": "b3600571-a7ca-4414-b80e-c16437d92fde",
+      "text": "Каждый смотритель поприветствовал хотя бы одного посетителя.",
+      "sha256": "2ce072a9ba45ce5a93f648593147c1df0b4273b575e832e9a94f3a34304e8f5f",
+      "rights": "synthetic-original",
+      "family": "renamed_pair",
+      "signature": {
+        "sorts": [
+          "caretaker",
+          "visitor"
+        ],
+        "predicates": {
+          "Welcomed": [
+            "caretaker",
+            "visitor"
+          ]
+        }
+      },
+      "pair_id": "902cbc36-5e09-4c6b-ac1c-80649eb27bee"
+    },
+    {
+      "id": "fd183c68-cc00-42df-8981-81c348aa32f5",
+      "text": "Ровно один курьер доставил каждый конверт.",
+      "sha256": "6d9c6380f94c33f909de3bbb87b5eb01b82f78323e79322d616a30b6eb52fa68",
+      "rights": "synthetic-original",
+      "family": "renamed_pair",
+      "signature": {
+        "sorts": [
+          "courier",
+          "envelope"
+        ],
+        "predicates": {
+          "Delivered": [
+            "courier",
+            "envelope"
+          ]
+        }
+      },
+      "pair_id": "f8773f74-708d-46b4-81f1-65d6b8887f8d"
+    },
+    {
+      "id": "d30d2799-6f9b-4ffa-904d-364f1b18d469",
+      "text": "Ровно один буксир отбуксировал каждую баржу.",
+      "sha256": "88b00561b107242be69a509bacefd788117fdbe08323ebfff0bf860135dd01db",
+      "rights": "synthetic-original",
+      "family": "renamed_pair",
+      "signature": {
+        "sorts": [
+          "tug",
+          "barge"
+        ],
+        "predicates": {
+          "Towed": [
+            "tug",
+            "barge"
+          ]
+        }
+      },
+      "pair_id": "f8773f74-708d-46b4-81f1-65d6b8887f8d"
+    },
+    {
+      "id": "3a93ea11-eb9c-48ce-94b1-c014894d1c37",
+      "text": "Ни один редактор не отверг ни одного черновика, который он переработал.",
+      "sha256": "3e2b05ed22d02f7d7c570842531f55bc5a53df56cc3d2fc9ccff21187ded4239",
+      "rights": "synthetic-original",
+      "family": "renamed_pair",
+      "signature": {
+        "sorts": [
+          "editor",
+          "draft"
+        ],
+        "predicates": {
+          "Revised": [
+            "editor",
+            "draft"
+          ],
+          "Rejected": [
+            "editor",
+            "draft"
+          ]
+        }
+      },
+      "pair_id": "f84ecae7-ed50-471a-90b6-cdb70679a627"
+    },
+    {
+      "id": "293adfba-18bc-4ff2-addb-6dfb8c620fb0",
+      "text": "Ни один мастер не выбросил ни одного изделия, которое он починил.",
+      "sha256": "9cd43112f882b198251bda6efc8b97a6c1ea6fad10ab8df46718e84cb992731e",
+      "rights": "synthetic-original",
+      "family": "renamed_pair",
+      "signature": {
+        "sorts": [
+          "craftsperson",
+          "product"
+        ],
+        "predicates": {
+          "Repaired": [
+            "craftsperson",
+            "product"
+          ],
+          "Discarded": [
+            "craftsperson",
+            "product"
+          ]
+        }
+      },
+      "pair_id": "f84ecae7-ed50-471a-90b6-cdb70679a627"
+    },
+    {
+      "id": "b3b55e51-6842-4554-b66b-9f121c14c7ab",
+      "text": "Каждый библиотекарь передал читателю том, и тот пометил его.",
+      "sha256": "d1a15a1e9dd2d2571ea46e78f82db0ba961a7160304393e739f504ad4bc7ad24",
+      "rights": "synthetic-original",
+      "family": "renamed_pair",
+      "signature": {
+        "sorts": [
+          "librarian",
+          "reader",
+          "volume"
+        ],
+        "predicates": {
+          "Handed": [
+            "librarian",
+            "reader",
+            "volume"
+          ],
+          "Marked": [
+            "reader",
+            "volume"
+          ]
+        }
+      },
+      "pair_id": "34a701b8-029c-45dd-a679-1e927100cdfc"
+    },
+    {
+      "id": "6fd0ef06-65ac-47ed-b207-ae9ae9585c93",
+      "text": "Каждый ботаник передал лаборанту образец, и тот пометил его.",
+      "sha256": "3a2e86c07d7df53b3734ba0c144d7a07c51207b365c90060ee6383ef06841e36",
+      "rights": "synthetic-original",
+      "family": "renamed_pair",
+      "signature": {
+        "sorts": [
+          "botanist",
+          "assistant",
+          "sample"
+        ],
+        "predicates": {
+          "Passed": [
+            "botanist",
+            "assistant",
+            "sample"
+          ],
+          "Labeled": [
+            "assistant",
+            "sample"
+          ]
+        }
+      },
+      "pair_id": "34a701b8-029c-45dd-a679-1e927100cdfc"
+    },
+    {
+      "id": "8262e73a-7043-4b33-8b9f-bcc70e79d1fe",
+      "text": "Каждый реставратор сфотографировал хотя бы одну икону.",
+      "sha256": "b02638a9f117361a64a9f21bf609efac3b9cd260a3a28cbb5747cbf9d5e930ae",
+      "rights": "synthetic-original",
+      "family": "adversarial_verb",
+      "signature": {
+        "sorts": [
+          "restorer",
+          "icon"
+        ],
+        "predicates": {
+          "Restored": [
+            "restorer",
+            "icon"
+          ]
+        }
+      },
+      "control_group": "b407981e-63b3-40b4-bd3b-22a195998f81"
+    },
+    {
+      "id": "a6f404de-ea11-4956-ba77-fefd69daadb1",
+      "text": "Ни один диспетчер не забыл ни одного маршрута.",
+      "sha256": "ef90a6c5d5a0524e6d5d181a4f68c23d69f73d42c4e7649a5afa3525ef077a71",
+      "rights": "synthetic-original",
+      "family": "adversarial_verb",
+      "signature": {
+        "sorts": [
+          "dispatcher",
+          "route"
+        ],
+        "predicates": {
+          "Approved": [
+            "dispatcher",
+            "route"
+          ]
+        }
+      },
+      "control_group": "06233960-1749-41df-8471-994ddaa25d2d"
+    },
+    {
+      "id": "d03268f5-467c-448c-9e70-dc10b343279a",
+      "text": "Каждый реставратор восстановил хотя бы одну икону.",
+      "sha256": "19e1203146d91511de43bc91661f069176926ce6c9e56830988a43cb78bd90f8",
+      "rights": "synthetic-original",
+      "family": "control",
+      "signature": {
+        "sorts": [
+          "restorer",
+          "icon"
+        ],
+        "predicates": {
+          "Restored": [
+            "restorer",
+            "icon"
+          ]
+        }
+      },
+      "control_group": "b407981e-63b3-40b4-bd3b-22a195998f81"
+    },
+    {
+      "id": "384ed353-90bc-4576-ba0f-24993002485f",
+      "text": "Ни один диспетчер не утвердил ни одного маршрута.",
+      "sha256": "a77cd926489a7f366550b1f80bf8a3886144829df255f6613011526d17f13faa",
+      "rights": "synthetic-original",
+      "family": "control",
+      "signature": {
+        "sorts": [
+          "dispatcher",
+          "route"
+        ],
+        "predicates": {
+          "Approved": [
+            "dispatcher",
+            "route"
+          ]
+        }
+      },
+      "control_group": "06233960-1749-41df-8471-994ddaa25d2d"
+    },
+    {
+      "id": "17e85824-da35-4058-bd85-b34bd7ca0d41",
+      "text": "Хотя бы один архивариус внёс запись.",
+      "sha256": "5250982e72f794546afae2b0cea85533f1e452dfdd7d0cb34e0338fe3d2b1cd7",
+      "rights": "synthetic-original",
+      "family": "control",
+      "signature": {
+        "sorts": [
+          "archivist",
+          "entry"
+        ],
+        "predicates": {
+          "Logged": [
+            "archivist",
+            "entry"
+          ]
+        }
+      }
+    },
+    {
+      "id": "4152a532-f3c7-41a7-b10e-9adf538e0b3c",
+      "text": "Ни один автомат не принимает жетоны.",
+      "sha256": "92daa6d9bdbf1ca119dbd428e53ccd88d86d370c1e2048282246888700c04ce6",
+      "rights": "synthetic-original",
+      "family": "control",
+      "signature": {
+        "sorts": [
+          "machine",
+          "token"
+        ],
+        "predicates": {
+          "Accepts": [
+            "machine",
+            "token"
+          ]
+        }
+      }
+    }
+  ]
+}

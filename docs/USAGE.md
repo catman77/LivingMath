@@ -3,7 +3,7 @@
 ## Первое знакомство
 
 После подключения вызовите `bridge_system_status`, затем `bridge_catalog`.
-Текущий production `v0.4.5-developer-preview` предоставляет **83 инструмента**.
+Текущий production `v0.4.10-developer-preview` предоставляет **93 инструмента**.
 Новый локальный legacy стенд `unified_system.local` предоставляет 44.
 [Полный интерфейс, схемы, модули и запуск вычислений](MCP_INTERFACE.md).
 `mcp_server.py stdio`
@@ -192,3 +192,7 @@ Meaning014 сохраняет полную исходную A0 до критик
 execution grant. Исследовательские предложения, аудит, активация ограниченного
 эксперимента и завершение остаются раздельными. Операторские approvals/reviews
 выполняются независимо через CLI, не через самоподтверждение модели.
+
+## Source-bound NL proposals
+
+[Точная последовательность JSON без placeholders](nl-proposer002/QUICKSTART_RU.md) использует TextSource через formal_store и новые formal_nl_propose/formal_nl_inspect. В этом формате rights — строка; это отдельный контракт от livingmath-artifact/1. Typed/provenance/finite checks не удостоверяют смысл.

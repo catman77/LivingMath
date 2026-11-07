@@ -1,0 +1,1955 @@
+[
+  {
+    "schema": "nl-proposal-graph-example/1",
+    "source_ref": "fe7631a5996d7d8de27822346399c7934ca1ee4c251f5a1ef6872e3e801c23a4",
+    "source_sha256": "1bfb913518481ba0899018a463ab11fecb272ae1703d9139dc1f0ba27fc07389",
+    "source_analysis": {
+      "observations": [
+        {
+          "byte_status": "SOURCE_BOUND_CHECKED",
+          "interpretation": "Буквально «Каждый» задаёт универсальную квантификацию по исследователям.",
+          "origin": "EXTERNAL_LLM_PROPOSAL",
+          "receipt_digest": "36c4d96ccf1bc543c1ee31387b854df887eb38c573ce4c04bf934d02288970e4",
+          "role": "quantifier",
+          "span": {
+            "byte_utf8": [
+              0,
+              12
+            ],
+            "literal": "Каждый"
+          },
+          "syntactic_semantic_status": "PROPOSED"
+        },
+        {
+          "byte_status": "SOURCE_BOUND_CHECKED",
+          "interpretation": "Буквально назван исследователь; отождествление области agent с исследователями является допущением, а не свойством сигнатуры.",
+          "origin": "EXTERNAL_LLM_PROPOSAL",
+          "receipt_digest": "36c4d96ccf1bc543c1ee31387b854df887eb38c573ce4c04bf934d02288970e4",
+          "role": "entity/type",
+          "span": {
+            "byte_utf8": [
+              13,
+              39
+            ],
+            "literal": "исследователь"
+          },
+          "syntactic_semantic_status": "PROPOSED"
+        },
+        {
+          "byte_status": "SOURCE_BOUND_CHECKED",
+          "interpretation": "«Проверил» сопоставляется Checked(agent,item); прошедшее время отдельно не представимо в данной сигнатуре.",
+          "origin": "EXTERNAL_LLM_PROPOSAL",
+          "receipt_digest": "36c4d96ccf1bc543c1ee31387b854df887eb38c573ce4c04bf934d02288970e4",
+          "role": "predicate",
+          "span": {
+            "byte_utf8": [
+              40,
+              56
+            ],
+            "literal": "проверил"
+          },
+          "syntactic_semantic_status": "PROPOSED"
+        },
+        {
+          "byte_status": "SOURCE_BOUND_CHECKED",
+          "interpretation": "«Одну» допускает числительное прочтение «ровно одну» и неопределённое прочтение «некоторую одну».",
+          "origin": "EXTERNAL_LLM_PROPOSAL",
+          "receipt_digest": "36c4d96ccf1bc543c1ee31387b854df887eb38c573ce4c04bf934d02288970e4",
+          "role": "quantifier",
+          "span": {
+            "byte_utf8": [
+              57,
+              65
+            ],
+            "literal": "одну"
+          },
+          "syntactic_semantic_status": "PROPOSED"
+        },
+        {
+          "byte_status": "SOURCE_BOUND_CHECKED",
+          "interpretation": "Буквально названа гипотеза; ограничение области item гипотезами требует допущения.",
+          "origin": "EXTERNAL_LLM_PROPOSAL",
+          "receipt_digest": "36c4d96ccf1bc543c1ee31387b854df887eb38c573ce4c04bf934d02288970e4",
+          "role": "entity/type",
+          "span": {
+            "byte_utf8": [
+              66,
+              83
+            ],
+            "literal": "гипотезу."
+          },
+          "syntactic_semantic_status": "PROPOSED"
+        },
+        {
+          "byte_status": "SOURCE_BOUND_CHECKED",
+          "interpretation": "В предлагаемых базовых формулах объектный квантор находится внутри универсального; одинаковость гипотез у разных исследователей не утверждается.",
+          "origin": "EXTERNAL_LLM_PROPOSAL",
+          "receipt_digest": "36c4d96ccf1bc543c1ee31387b854df887eb38c573ce4c04bf934d02288970e4",
+          "role": "scope",
+          "span": {
+            "byte_utf8": [
+              57,
+              65
+            ],
+            "literal": "одну"
+          },
+          "syntactic_semantic_status": "PROPOSED"
+        }
+      ],
+      "open_alternatives": [
+        "Возможное широкое прочтение объектной группы: одна общая гипотеза для всех исследователей. Перестановки областей действия оставлены отдельному механизму; структурные трассы сами по себе не устанавливают это прочтение."
+      ],
+      "receipt_digest": "36c4d96ccf1bc543c1ee31387b854df887eb38c573ce4c04bf934d02288970e4",
+      "schema": "source-analysis/1",
+      "source_sha256": "1bfb913518481ba0899018a463ab11fecb272ae1703d9139dc1f0ba27fc07389",
+      "unsupported": []
+    },
+    "candidate": {
+      "added_assumptions": [
+        "Область agent ограничена релевантными исследователями, область item — релевантными гипотезами.",
+        "Checked передаёт проверку в подразумеваемом прошлом; временное значение не кодируется отдельно.",
+        "«Одну» понимается как «ровно одну», а не как требование общей гипотезы для всех.",
+        "Unadjudicated scope alternative; witnessed token order licenses search only, never source entailment."
+      ],
+      "binder_links": [
+        {
+          "byte_utf8": [
+            0,
+            12
+          ],
+          "var": "a"
+        },
+        {
+          "byte_utf8": [
+            57,
+            65
+          ],
+          "var": "h"
+        },
+        {
+          "byte_utf8": [
+            57,
+            65
+          ],
+          "var": "k"
+        }
+      ],
+      "candidate_ast_sha": "a1982281a04186f949cbbab55298e6f6552faffd898e6837ee692533ebafcd29",
+      "candidate_id": "5df41248e897671426f59d74104b248dc1d35c577f2111d0e4ffd405da4e63cc",
+      "checker_receipt_ref": "82b93dc8a168c18cecf81aafefea7f5b67a2c49812c34dc8e12f50aea0523198",
+      "competing_parse_refs": [
+        "3162a55b826f48a46ffa6c09b4dcd86cc5dc53c7082ea88838d43abcbea5b3cb",
+        "76a9abd7fd98862aa6cfe0da825804a69b22faee3cc894bbe8a7ede883c305e8",
+        "12dc71e07efc7a13fb184992ccfef060d6ae580e2e7dbdd9cd72f29e5f5de1e1"
+      ],
+      "contrast_refs": [
+        "ad150191333d5e3ca6e703958d3946935e7a2b17600d1a7fd77001306f24fb96"
+      ],
+      "creator": {
+        "model_id": "gpt-6.1-sol",
+        "provider": "owner_hosted",
+        "receipt_digest": "36c4d96ccf1bc543c1ee31387b854df887eb38c573ce4c04bf934d02288970e4",
+        "requested_search_seed": 2211,
+        "seed": null
+      },
+      "execution_permission": false,
+      "formula_ast": {
+        "body": {
+          "body": {
+            "and": [
+              {
+                "args": [
+                  {
+                    "var": "a"
+                  },
+                  {
+                    "var": "h"
+                  }
+                ],
+                "pred": "Checked"
+              },
+              {
+                "body": {
+                  "or": [
+                    {
+                      "not": {
+                        "args": [
+                          {
+                            "var": "a"
+                          },
+                          {
+                            "var": "k"
+                          }
+                        ],
+                        "pred": "Checked"
+                      }
+                    },
+                    {
+                      "eq": [
+                        {
+                          "var": "k"
+                        },
+                        {
+                          "var": "h"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "quant": "forall",
+                "sort": "item",
+                "var": "k"
+              }
+            ]
+          },
+          "quant": "forall",
+          "sort": "agent",
+          "var": "a"
+        },
+        "quant": "exists",
+        "sort": "item",
+        "var": "h"
+      },
+      "origin_status": "TRACE_LINK_CHECKED",
+      "premise_ledger": [
+        {
+          "claim": "Область agent ограничена релевантными исследователями, область item — релевантными гипотезами.",
+          "status": "UNADJUDICATED_ASSUMPTION"
+        },
+        {
+          "claim": "Checked передаёт проверку в подразумеваемом прошлом; временное значение не кодируется отдельно.",
+          "status": "UNADJUDICATED_ASSUMPTION"
+        },
+        {
+          "claim": "«Одну» понимается как «ровно одну», а не как требование общей гипотезы для всех.",
+          "status": "UNADJUDICATED_ASSUMPTION"
+        },
+        {
+          "claim": "Unadjudicated scope alternative; witnessed token order licenses search only, never source entailment.",
+          "status": "UNADJUDICATED_ASSUMPTION"
+        }
+      ],
+      "proof_status": "PROPOSED",
+      "reading": "Каждый исследователь проверил ровно одну гипотезу; у разных исследователей гипотезы могут различаться.",
+      "scope": {
+        "context_refs": [],
+        "model_class": "EXPLICIT_CLOSED_FINITE_MODELS",
+        "quantifier_domain": [
+          "agent",
+          "item"
+        ]
+      },
+      "semantic_alignment_status": "PROPOSED",
+      "source_analysis_ref": "97f2921a705846254fa6f78d4f2f6cf7f289757a62ddf567bfcdbb6e3dbae817",
+      "source_ref": "fe7631a5996d7d8de27822346399c7934ca1ee4c251f5a1ef6872e3e801c23a4",
+      "source_sha256": "1bfb913518481ba0899018a463ab11fecb272ae1703d9139dc1f0ba27fc07389",
+      "source_spans": [
+        {
+          "byte_utf8": [
+            0,
+            12
+          ],
+          "literal": "Каждый"
+        },
+        {
+          "byte_utf8": [
+            13,
+            39
+          ],
+          "literal": "исследователь"
+        },
+        {
+          "byte_utf8": [
+            40,
+            56
+          ],
+          "literal": "проверил"
+        },
+        {
+          "byte_utf8": [
+            57,
+            65
+          ],
+          "literal": "одну"
+        },
+        {
+          "byte_utf8": [
+            66,
+            83
+          ],
+          "literal": "гипотезу."
+        }
+      ],
+      "structural_move_log": [
+        {
+          "addition_assumption": "Unadjudicated scope alternative; witnessed token order licenses search only, never source entailment.",
+          "after_ast": {
+            "body": {
+              "body": {
+                "and": [
+                  {
+                    "args": [
+                      {
+                        "var": "a"
+                      },
+                      {
+                        "var": "h"
+                      }
+                    ],
+                    "pred": "Checked"
+                  },
+                  {
+                    "body": {
+                      "or": [
+                        {
+                          "not": {
+                            "args": [
+                              {
+                                "var": "a"
+                              },
+                              {
+                                "var": "k"
+                              }
+                            ],
+                            "pred": "Checked"
+                          }
+                        },
+                        {
+                          "eq": [
+                            {
+                              "var": "k"
+                            },
+                            {
+                              "var": "h"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "quant": "forall",
+                    "sort": "item",
+                    "var": "k"
+                  }
+                ]
+              },
+              "quant": "forall",
+              "sort": "agent",
+              "var": "a"
+            },
+            "quant": "exists",
+            "sort": "item",
+            "var": "h"
+          },
+          "after_ast_sha256": "a1982281a04186f949cbbab55298e6f6552faffd898e6837ee692533ebafcd29",
+          "before_ast": {
+            "body": {
+              "body": {
+                "and": [
+                  {
+                    "args": [
+                      {
+                        "var": "a"
+                      },
+                      {
+                        "var": "h"
+                      }
+                    ],
+                    "pred": "Checked"
+                  },
+                  {
+                    "body": {
+                      "or": [
+                        {
+                          "not": {
+                            "args": [
+                              {
+                                "var": "a"
+                              },
+                              {
+                                "var": "k"
+                              }
+                            ],
+                            "pred": "Checked"
+                          }
+                        },
+                        {
+                          "eq": [
+                            {
+                              "var": "k"
+                            },
+                            {
+                              "var": "h"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "quant": "forall",
+                    "sort": "item",
+                    "var": "k"
+                  }
+                ]
+              },
+              "quant": "exists",
+              "sort": "item",
+              "var": "h"
+            },
+            "quant": "forall",
+            "sort": "agent",
+            "var": "a"
+          },
+          "before_ast_sha256": "80e8178aff6855441ea54a623739c9cbf9284b889883e7bc15de1a489f39787b",
+          "binder_links": [
+            {
+              "byte_utf8": [
+                0,
+                12
+              ],
+              "var": "a"
+            },
+            {
+              "byte_utf8": [
+                57,
+                65
+              ],
+              "var": "h"
+            },
+            {
+              "byte_utf8": [
+                57,
+                65
+              ],
+              "var": "k"
+            }
+          ],
+          "control": null,
+          "kind": "QUANTIFIER_SPINE_PERMUTATION",
+          "operator_trace_ref": "3c77b619b8d9ffe56a10b4fe6636b420a635a6665adf11febbd391be8b2e48e9",
+          "origin_status": "TRACE_LINK_CHECKED",
+          "permutation": [
+            1,
+            0
+          ],
+          "source_licensed": false
+        }
+      ],
+      "token_role_links": [
+        {
+          "byte_utf8": [
+            0,
+            12
+          ],
+          "literal": "Каждый"
+        },
+        {
+          "byte_utf8": [
+            13,
+            39
+          ],
+          "literal": "исследователь"
+        },
+        {
+          "byte_utf8": [
+            40,
+            56
+          ],
+          "literal": "проверил"
+        },
+        {
+          "byte_utf8": [
+            57,
+            65
+          ],
+          "literal": "одну"
+        },
+        {
+          "byte_utf8": [
+            66,
+            83
+          ],
+          "literal": "гипотезу."
+        }
+      ],
+      "type_status": "TYPED",
+      "typecheck": {
+        "formula_sha256": "a1982281a04186f949cbbab55298e6f6552faffd898e6837ee692533ebafcd29",
+        "nodes": 9,
+        "signature_sha256": "4b15bac5759acb64459097035dcac14f6a9c25b106aee0e2b0c6259ef0b60485",
+        "status": "TYPED"
+      },
+      "white_star_trace_refs": [
+        "3c77b619b8d9ffe56a10b4fe6636b420a635a6665adf11febbd391be8b2e48e9",
+        "34853a9d59549750e7396c1774f7f1a576b53558485c279af394a70d945562c5",
+        "00c946a41dc3b6b0b741b481049c149aab6c6047c6657ba1cf479e9087da730a",
+        "5940c4d0066e03cc3656680191e7e106aae75dc18097ad965fba92aaa94d4b3d"
+      ]
+    },
+    "structural_frames": [
+      {
+        "engine": "symbolic_v1",
+        "input_sha256": "7dd91b673a5ed8f77b21889eca7bfc5415660bdb07fafdda96cea10de17f13fd",
+        "node_ref": "eb395fa8da49a49ba46b209be175d88630551ad90e36e0440fdc84fdac116a14",
+        "operator": "REVERSE",
+        "operator_trace": {
+          "events": [],
+          "node_id": "eb395fa8da49a49ba46b209be175d88630551ad90e36e0440fdc84fdac116a14",
+          "op": "REVERSE",
+          "op_args": {
+            "output_part": 0
+          },
+          "output_word_hash": "553674c95c560c7564d6fe4c68c5a6608b28faf3bd4f9d1a0495a6838f571c25",
+          "parent_ids": [
+            "406381424eb03faec4af087b1fc597740b94569f211761c11f8ab58b56b3316b"
+          ],
+          "source_spans": [
+            [
+              "1bfb913518481ba0899018a463ab11fecb272ae1703d9139dc1f0ba27fc07389",
+              0,
+              12
+            ],
+            [
+              "1bfb913518481ba0899018a463ab11fecb272ae1703d9139dc1f0ba27fc07389",
+              13,
+              39
+            ],
+            [
+              "1bfb913518481ba0899018a463ab11fecb272ae1703d9139dc1f0ba27fc07389",
+              40,
+              56
+            ],
+            [
+              "1bfb913518481ba0899018a463ab11fecb272ae1703d9139dc1f0ba27fc07389",
+              57,
+              65
+            ]
+          ]
+        },
+        "origin_status": "TRACE_LINK_CHECKED",
+        "parent_ids": [
+          "406381424eb03faec4af087b1fc597740b94569f211761c11f8ab58b56b3316b"
+        ],
+        "result_sha256": "1d47fe06dbb792e802d250c6d109f8ebd0acfd0e9d9a1f9cf2c716b7f461783f",
+        "run_id": "d97525fd0338ac13d3f1b31c0b62e2952becfe6ea6fede0e11d53ec31d3e512c",
+        "snapshot_sha256": "7dd91b673a5ed8f77b21889eca7bfc5415660bdb07fafdda96cea10de17f13fd",
+        "source_order": [
+          {
+            "byte_utf8": [
+              57,
+              65
+            ],
+            "literal": "одну"
+          },
+          {
+            "byte_utf8": [
+              40,
+              56
+            ],
+            "literal": "проверил"
+          },
+          {
+            "byte_utf8": [
+              13,
+              39
+            ],
+            "literal": "исследователь"
+          },
+          {
+            "byte_utf8": [
+              0,
+              12
+            ],
+            "literal": "Каждый"
+          }
+        ],
+        "trace_sha256": "3c77b619b8d9ffe56a10b4fe6636b420a635a6665adf11febbd391be8b2e48e9"
+      },
+      {
+        "engine": "symbolic_v1",
+        "input_sha256": "7dd91b673a5ed8f77b21889eca7bfc5415660bdb07fafdda96cea10de17f13fd",
+        "node_ref": "1962a645e414edc6e92b132b7270fb93a3b58cacaf0d21f82966fe2f5c7e19b7",
+        "operator": "REVERSE",
+        "operator_trace": {
+          "events": [],
+          "node_id": "1962a645e414edc6e92b132b7270fb93a3b58cacaf0d21f82966fe2f5c7e19b7",
+          "op": "REVERSE",
+          "op_args": {
+            "output_part": 0
+          },
+          "output_word_hash": "d53108bef1b78913a003b4d5c83da2a5c8d1b0a803d36e510cf6f33495992bac",
+          "parent_ids": [
+            "c42596bcd41ba9a0e785f8af48203d0a466aa902b0d0aad31fbb22b7102db899"
+          ],
+          "source_spans": [
+            [
+              "1bfb913518481ba0899018a463ab11fecb272ae1703d9139dc1f0ba27fc07389",
+              0,
+              12
+            ]
+          ]
+        },
+        "origin_status": "TRACE_LINK_CHECKED",
+        "parent_ids": [
+          "c42596bcd41ba9a0e785f8af48203d0a466aa902b0d0aad31fbb22b7102db899"
+        ],
+        "result_sha256": "1d47fe06dbb792e802d250c6d109f8ebd0acfd0e9d9a1f9cf2c716b7f461783f",
+        "run_id": "d97525fd0338ac13d3f1b31c0b62e2952becfe6ea6fede0e11d53ec31d3e512c",
+        "snapshot_sha256": "7dd91b673a5ed8f77b21889eca7bfc5415660bdb07fafdda96cea10de17f13fd",
+        "source_order": [
+          {
+            "byte_utf8": [
+              0,
+              12
+            ],
+            "literal": "Каждый"
+          }
+        ],
+        "trace_sha256": "34853a9d59549750e7396c1774f7f1a576b53558485c279af394a70d945562c5"
+      },
+      {
+        "engine": "symbolic_v1",
+        "input_sha256": "7dd91b673a5ed8f77b21889eca7bfc5415660bdb07fafdda96cea10de17f13fd",
+        "node_ref": "496153f9318a95e965da6b5ec049d871caaf3cc0e8bb65be357e3c2465c1f55d",
+        "operator": "REVERSE",
+        "operator_trace": {
+          "events": [],
+          "node_id": "496153f9318a95e965da6b5ec049d871caaf3cc0e8bb65be357e3c2465c1f55d",
+          "op": "REVERSE",
+          "op_args": {
+            "output_part": 0
+          },
+          "output_word_hash": "d88df9371b9d862c9d974584a0e57c8e8f23d69607e8dc58314f7bbce2c2d971",
+          "parent_ids": [
+            "1962a645e414edc6e92b132b7270fb93a3b58cacaf0d21f82966fe2f5c7e19b7"
+          ],
+          "source_spans": [
+            [
+              "1bfb913518481ba0899018a463ab11fecb272ae1703d9139dc1f0ba27fc07389",
+              0,
+              12
+            ]
+          ]
+        },
+        "origin_status": "TRACE_LINK_CHECKED",
+        "parent_ids": [
+          "1962a645e414edc6e92b132b7270fb93a3b58cacaf0d21f82966fe2f5c7e19b7"
+        ],
+        "result_sha256": "1d47fe06dbb792e802d250c6d109f8ebd0acfd0e9d9a1f9cf2c716b7f461783f",
+        "run_id": "d97525fd0338ac13d3f1b31c0b62e2952becfe6ea6fede0e11d53ec31d3e512c",
+        "snapshot_sha256": "7dd91b673a5ed8f77b21889eca7bfc5415660bdb07fafdda96cea10de17f13fd",
+        "source_order": [
+          {
+            "byte_utf8": [
+              0,
+              12
+            ],
+            "literal": "Каждый"
+          }
+        ],
+        "trace_sha256": "00c946a41dc3b6b0b741b481049c149aab6c6047c6657ba1cf479e9087da730a"
+      },
+      {
+        "engine": "symbolic_v1",
+        "input_sha256": "7dd91b673a5ed8f77b21889eca7bfc5415660bdb07fafdda96cea10de17f13fd",
+        "node_ref": "c710c44cdb7a43145d0829e4b6017106c514f548c919c18c098b729f5d1394a3",
+        "operator": "REVERSE",
+        "operator_trace": {
+          "events": [],
+          "node_id": "c710c44cdb7a43145d0829e4b6017106c514f548c919c18c098b729f5d1394a3",
+          "op": "REVERSE",
+          "op_args": {
+            "output_part": 0
+          },
+          "output_word_hash": "5aedea6b22e13afafe20031c0fb9e0d453c5cd4141919d45cb92b3cea7535f7a",
+          "parent_ids": [
+            "d132f05960b4661aae668fe223ba16c618dd93e55fdf4df2c64d855556e83674"
+          ],
+          "source_spans": [
+            [
+              "1bfb913518481ba0899018a463ab11fecb272ae1703d9139dc1f0ba27fc07389",
+              0,
+              12
+            ],
+            [
+              "1bfb913518481ba0899018a463ab11fecb272ae1703d9139dc1f0ba27fc07389",
+              13,
+              39
+            ]
+          ]
+        },
+        "origin_status": "TRACE_LINK_CHECKED",
+        "parent_ids": [
+          "d132f05960b4661aae668fe223ba16c618dd93e55fdf4df2c64d855556e83674"
+        ],
+        "result_sha256": "1d47fe06dbb792e802d250c6d109f8ebd0acfd0e9d9a1f9cf2c716b7f461783f",
+        "run_id": "d97525fd0338ac13d3f1b31c0b62e2952becfe6ea6fede0e11d53ec31d3e512c",
+        "snapshot_sha256": "7dd91b673a5ed8f77b21889eca7bfc5415660bdb07fafdda96cea10de17f13fd",
+        "source_order": [
+          {
+            "byte_utf8": [
+              13,
+              39
+            ],
+            "literal": "исследователь"
+          },
+          {
+            "byte_utf8": [
+              0,
+              12
+            ],
+            "literal": "Каждый"
+          }
+        ],
+        "trace_sha256": "5940c4d0066e03cc3656680191e7e106aae75dc18097ad965fba92aaa94d4b3d"
+      }
+    ],
+    "edges": [
+      {
+        "from": "source_spans",
+        "to": "analysis",
+        "kind": "BYTE_EVIDENCE_ONLY"
+      },
+      {
+        "from": "structural_frames",
+        "to": "structural_move_log",
+        "kind": "SEARCH_ORDER_NOT_ENTAILMENT"
+      },
+      {
+        "from": "structural_move_log",
+        "to": "a1982281a04186f949cbbab55298e6f6552faffd898e6837ee692533ebafcd29",
+        "kind": "REPRODUCIBLE_TYPED_AST_MOVE"
+      },
+      {
+        "from": "a1982281a04186f949cbbab55298e6f6552faffd898e6837ee692533ebafcd29",
+        "to": "5df41248e897671426f59d74104b248dc1d35c577f2111d0e4ffd405da4e63cc",
+        "kind": "EXISTING_FORMAL_CANDIDATE"
+      },
+      {
+        "from": "5df41248e897671426f59d74104b248dc1d35c577f2111d0e4ffd405da4e63cc",
+        "to": "82b93dc8a168c18cecf81aafefea7f5b67a2c49812c34dc8e12f50aea0523198",
+        "kind": "INDEPENDENT_TYPING_NOT_MEANING"
+      }
+    ]
+  },
+  {
+    "schema": "nl-proposal-graph-example/1",
+    "source_ref": "fe7631a5996d7d8de27822346399c7934ca1ee4c251f5a1ef6872e3e801c23a4",
+    "source_sha256": "1bfb913518481ba0899018a463ab11fecb272ae1703d9139dc1f0ba27fc07389",
+    "source_analysis": {
+      "observations": [
+        {
+          "byte_status": "SOURCE_BOUND_CHECKED",
+          "interpretation": "Буквально «Каждый» задаёт универсальную квантификацию по исследователям.",
+          "origin": "EXTERNAL_LLM_PROPOSAL",
+          "receipt_digest": "36c4d96ccf1bc543c1ee31387b854df887eb38c573ce4c04bf934d02288970e4",
+          "role": "quantifier",
+          "span": {
+            "byte_utf8": [
+              0,
+              12
+            ],
+            "literal": "Каждый"
+          },
+          "syntactic_semantic_status": "PROPOSED"
+        },
+        {
+          "byte_status": "SOURCE_BOUND_CHECKED",
+          "interpretation": "Буквально назван исследователь; отождествление области agent с исследователями является допущением, а не свойством сигнатуры.",
+          "origin": "EXTERNAL_LLM_PROPOSAL",
+          "receipt_digest": "36c4d96ccf1bc543c1ee31387b854df887eb38c573ce4c04bf934d02288970e4",
+          "role": "entity/type",
+          "span": {
+            "byte_utf8": [
+              13,
+              39
+            ],
+            "literal": "исследователь"
+          },
+          "syntactic_semantic_status": "PROPOSED"
+        },
+        {
+          "byte_status": "SOURCE_BOUND_CHECKED",
+          "interpretation": "«Проверил» сопоставляется Checked(agent,item); прошедшее время отдельно не представимо в данной сигнатуре.",
+          "origin": "EXTERNAL_LLM_PROPOSAL",
+          "receipt_digest": "36c4d96ccf1bc543c1ee31387b854df887eb38c573ce4c04bf934d02288970e4",
+          "role": "predicate",
+          "span": {
+            "byte_utf8": [
+              40,
+              56
+            ],
+            "literal": "проверил"
+          },
+          "syntactic_semantic_status": "PROPOSED"
+        },
+        {
+          "byte_status": "SOURCE_BOUND_CHECKED",
+          "interpretation": "«Одну» допускает числительное прочтение «ровно одну» и неопределённое прочтение «некоторую одну».",
+          "origin": "EXTERNAL_LLM_PROPOSAL",
+          "receipt_digest": "36c4d96ccf1bc543c1ee31387b854df887eb38c573ce4c04bf934d02288970e4",
+          "role": "quantifier",
+          "span": {
+            "byte_utf8": [
+              57,
+              65
+            ],
+            "literal": "одну"
+          },
+          "syntactic_semantic_status": "PROPOSED"
+        },
+        {
+          "byte_status": "SOURCE_BOUND_CHECKED",
+          "interpretation": "Буквально названа гипотеза; ограничение области item гипотезами требует допущения.",
+          "origin": "EXTERNAL_LLM_PROPOSAL",
+          "receipt_digest": "36c4d96ccf1bc543c1ee31387b854df887eb38c573ce4c04bf934d02288970e4",
+          "role": "entity/type",
+          "span": {
+            "byte_utf8": [
+              66,
+              83
+            ],
+            "literal": "гипотезу."
+          },
+          "syntactic_semantic_status": "PROPOSED"
+        },
+        {
+          "byte_status": "SOURCE_BOUND_CHECKED",
+          "interpretation": "В предлагаемых базовых формулах объектный квантор находится внутри универсального; одинаковость гипотез у разных исследователей не утверждается.",
+          "origin": "EXTERNAL_LLM_PROPOSAL",
+          "receipt_digest": "36c4d96ccf1bc543c1ee31387b854df887eb38c573ce4c04bf934d02288970e4",
+          "role": "scope",
+          "span": {
+            "byte_utf8": [
+              57,
+              65
+            ],
+            "literal": "одну"
+          },
+          "syntactic_semantic_status": "PROPOSED"
+        }
+      ],
+      "open_alternatives": [
+        "Возможное широкое прочтение объектной группы: одна общая гипотеза для всех исследователей. Перестановки областей действия оставлены отдельному механизму; структурные трассы сами по себе не устанавливают это прочтение."
+      ],
+      "receipt_digest": "36c4d96ccf1bc543c1ee31387b854df887eb38c573ce4c04bf934d02288970e4",
+      "schema": "source-analysis/1",
+      "source_sha256": "1bfb913518481ba0899018a463ab11fecb272ae1703d9139dc1f0ba27fc07389",
+      "unsupported": []
+    },
+    "candidate": {
+      "added_assumptions": [
+        "Область agent ограничена релевантными исследователями, область item — релевантными гипотезами.",
+        "Checked передаёт проверку в подразумеваемом прошлом; временное значение не кодируется отдельно.",
+        "«Одну» используется как неопределённая группа без утверждения, что других проверенных гипотез не было.",
+        "Unadjudicated scope alternative; witnessed token order licenses search only, never source entailment."
+      ],
+      "binder_links": [
+        {
+          "byte_utf8": [
+            0,
+            12
+          ],
+          "var": "a"
+        },
+        {
+          "byte_utf8": [
+            57,
+            65
+          ],
+          "var": "h"
+        }
+      ],
+      "candidate_ast_sha": "f934e59d80856bc08d69d0fb0adfbfcef8e498b747aff01c780d24c8fc98f60c",
+      "candidate_id": "3162a55b826f48a46ffa6c09b4dcd86cc5dc53c7082ea88838d43abcbea5b3cb",
+      "checker_receipt_ref": "82b93dc8a168c18cecf81aafefea7f5b67a2c49812c34dc8e12f50aea0523198",
+      "competing_parse_refs": [
+        "5df41248e897671426f59d74104b248dc1d35c577f2111d0e4ffd405da4e63cc",
+        "76a9abd7fd98862aa6cfe0da825804a69b22faee3cc894bbe8a7ede883c305e8",
+        "12dc71e07efc7a13fb184992ccfef060d6ae580e2e7dbdd9cd72f29e5f5de1e1"
+      ],
+      "contrast_refs": [
+        "ad150191333d5e3ca6e703958d3946935e7a2b17600d1a7fd77001306f24fb96"
+      ],
+      "creator": {
+        "model_id": "gpt-6.1-sol",
+        "provider": "owner_hosted",
+        "receipt_digest": "36c4d96ccf1bc543c1ee31387b854df887eb38c573ce4c04bf934d02288970e4",
+        "requested_search_seed": 2211,
+        "seed": null
+      },
+      "execution_permission": false,
+      "formula_ast": {
+        "body": {
+          "body": {
+            "args": [
+              {
+                "var": "a"
+              },
+              {
+                "var": "h"
+              }
+            ],
+            "pred": "Checked"
+          },
+          "quant": "forall",
+          "sort": "agent",
+          "var": "a"
+        },
+        "quant": "exists",
+        "sort": "item",
+        "var": "h"
+      },
+      "origin_status": "TRACE_LINK_CHECKED",
+      "premise_ledger": [
+        {
+          "claim": "Область agent ограничена релевантными исследователями, область item — релевантными гипотезами.",
+          "status": "UNADJUDICATED_ASSUMPTION"
+        },
+        {
+          "claim": "Checked передаёт проверку в подразумеваемом прошлом; временное значение не кодируется отдельно.",
+          "status": "UNADJUDICATED_ASSUMPTION"
+        },
+        {
+          "claim": "«Одну» используется как неопределённая группа без утверждения, что других проверенных гипотез не было.",
+          "status": "UNADJUDICATED_ASSUMPTION"
+        },
+        {
+          "claim": "Unadjudicated scope alternative; witnessed token order licenses search only, never source entailment.",
+          "status": "UNADJUDICATED_ASSUMPTION"
+        }
+      ],
+      "proof_status": "PROPOSED",
+      "reading": "Для каждого исследователя существует гипотеза, которую он проверил; исключительность не утверждается.",
+      "scope": {
+        "context_refs": [],
+        "model_class": "EXPLICIT_CLOSED_FINITE_MODELS",
+        "quantifier_domain": [
+          "agent",
+          "item"
+        ]
+      },
+      "semantic_alignment_status": "PROPOSED",
+      "source_analysis_ref": "97f2921a705846254fa6f78d4f2f6cf7f289757a62ddf567bfcdbb6e3dbae817",
+      "source_ref": "fe7631a5996d7d8de27822346399c7934ca1ee4c251f5a1ef6872e3e801c23a4",
+      "source_sha256": "1bfb913518481ba0899018a463ab11fecb272ae1703d9139dc1f0ba27fc07389",
+      "source_spans": [
+        {
+          "byte_utf8": [
+            0,
+            12
+          ],
+          "literal": "Каждый"
+        },
+        {
+          "byte_utf8": [
+            13,
+            39
+          ],
+          "literal": "исследователь"
+        },
+        {
+          "byte_utf8": [
+            40,
+            56
+          ],
+          "literal": "проверил"
+        },
+        {
+          "byte_utf8": [
+            57,
+            65
+          ],
+          "literal": "одну"
+        },
+        {
+          "byte_utf8": [
+            66,
+            83
+          ],
+          "literal": "гипотезу."
+        }
+      ],
+      "structural_move_log": [
+        {
+          "addition_assumption": "Unadjudicated scope alternative; witnessed token order licenses search only, never source entailment.",
+          "after_ast": {
+            "body": {
+              "body": {
+                "args": [
+                  {
+                    "var": "a"
+                  },
+                  {
+                    "var": "h"
+                  }
+                ],
+                "pred": "Checked"
+              },
+              "quant": "forall",
+              "sort": "agent",
+              "var": "a"
+            },
+            "quant": "exists",
+            "sort": "item",
+            "var": "h"
+          },
+          "after_ast_sha256": "f934e59d80856bc08d69d0fb0adfbfcef8e498b747aff01c780d24c8fc98f60c",
+          "before_ast": {
+            "body": {
+              "body": {
+                "args": [
+                  {
+                    "var": "a"
+                  },
+                  {
+                    "var": "h"
+                  }
+                ],
+                "pred": "Checked"
+              },
+              "quant": "exists",
+              "sort": "item",
+              "var": "h"
+            },
+            "quant": "forall",
+            "sort": "agent",
+            "var": "a"
+          },
+          "before_ast_sha256": "3d37caa93ce8d4bf52fc5d9c7a60d1f3f227de74faaa828986dede4c0e1f6b21",
+          "binder_links": [
+            {
+              "byte_utf8": [
+                0,
+                12
+              ],
+              "var": "a"
+            },
+            {
+              "byte_utf8": [
+                57,
+                65
+              ],
+              "var": "h"
+            }
+          ],
+          "control": null,
+          "kind": "QUANTIFIER_SPINE_PERMUTATION",
+          "operator_trace_ref": "3c77b619b8d9ffe56a10b4fe6636b420a635a6665adf11febbd391be8b2e48e9",
+          "origin_status": "TRACE_LINK_CHECKED",
+          "permutation": [
+            1,
+            0
+          ],
+          "source_licensed": false
+        }
+      ],
+      "token_role_links": [
+        {
+          "byte_utf8": [
+            0,
+            12
+          ],
+          "literal": "Каждый"
+        },
+        {
+          "byte_utf8": [
+            13,
+            39
+          ],
+          "literal": "исследователь"
+        },
+        {
+          "byte_utf8": [
+            40,
+            56
+          ],
+          "literal": "проверил"
+        },
+        {
+          "byte_utf8": [
+            57,
+            65
+          ],
+          "literal": "одну"
+        },
+        {
+          "byte_utf8": [
+            66,
+            83
+          ],
+          "literal": "гипотезу."
+        }
+      ],
+      "type_status": "TYPED",
+      "typecheck": {
+        "formula_sha256": "f934e59d80856bc08d69d0fb0adfbfcef8e498b747aff01c780d24c8fc98f60c",
+        "nodes": 3,
+        "signature_sha256": "4b15bac5759acb64459097035dcac14f6a9c25b106aee0e2b0c6259ef0b60485",
+        "status": "TYPED"
+      },
+      "white_star_trace_refs": [
+        "3c77b619b8d9ffe56a10b4fe6636b420a635a6665adf11febbd391be8b2e48e9",
+        "34853a9d59549750e7396c1774f7f1a576b53558485c279af394a70d945562c5",
+        "00c946a41dc3b6b0b741b481049c149aab6c6047c6657ba1cf479e9087da730a",
+        "5940c4d0066e03cc3656680191e7e106aae75dc18097ad965fba92aaa94d4b3d"
+      ]
+    },
+    "structural_frames": [
+      {
+        "engine": "symbolic_v1",
+        "input_sha256": "7dd91b673a5ed8f77b21889eca7bfc5415660bdb07fafdda96cea10de17f13fd",
+        "node_ref": "eb395fa8da49a49ba46b209be175d88630551ad90e36e0440fdc84fdac116a14",
+        "operator": "REVERSE",
+        "operator_trace": {
+          "events": [],
+          "node_id": "eb395fa8da49a49ba46b209be175d88630551ad90e36e0440fdc84fdac116a14",
+          "op": "REVERSE",
+          "op_args": {
+            "output_part": 0
+          },
+          "output_word_hash": "553674c95c560c7564d6fe4c68c5a6608b28faf3bd4f9d1a0495a6838f571c25",
+          "parent_ids": [
+            "406381424eb03faec4af087b1fc597740b94569f211761c11f8ab58b56b3316b"
+          ],
+          "source_spans": [
+            [
+              "1bfb913518481ba0899018a463ab11fecb272ae1703d9139dc1f0ba27fc07389",
+              0,
+              12
+            ],
+            [
+              "1bfb913518481ba0899018a463ab11fecb272ae1703d9139dc1f0ba27fc07389",
+              13,
+              39
+            ],
+            [
+              "1bfb913518481ba0899018a463ab11fecb272ae1703d9139dc1f0ba27fc07389",
+              40,
+              56
+            ],
+            [
+              "1bfb913518481ba0899018a463ab11fecb272ae1703d9139dc1f0ba27fc07389",
+              57,
+              65
+            ]
+          ]
+        },
+        "origin_status": "TRACE_LINK_CHECKED",
+        "parent_ids": [
+          "406381424eb03faec4af087b1fc597740b94569f211761c11f8ab58b56b3316b"
+        ],
+        "result_sha256": "1d47fe06dbb792e802d250c6d109f8ebd0acfd0e9d9a1f9cf2c716b7f461783f",
+        "run_id": "d97525fd0338ac13d3f1b31c0b62e2952becfe6ea6fede0e11d53ec31d3e512c",
+        "snapshot_sha256": "7dd91b673a5ed8f77b21889eca7bfc5415660bdb07fafdda96cea10de17f13fd",
+        "source_order": [
+          {
+            "byte_utf8": [
+              57,
+              65
+            ],
+            "literal": "одну"
+          },
+          {
+            "byte_utf8": [
+              40,
+              56
+            ],
+            "literal": "проверил"
+          },
+          {
+            "byte_utf8": [
+              13,
+              39
+            ],
+            "literal": "исследователь"
+          },
+          {
+            "byte_utf8": [
+              0,
+              12
+            ],
+            "literal": "Каждый"
+          }
+        ],
+        "trace_sha256": "3c77b619b8d9ffe56a10b4fe6636b420a635a6665adf11febbd391be8b2e48e9"
+      },
+      {
+        "engine": "symbolic_v1",
+        "input_sha256": "7dd91b673a5ed8f77b21889eca7bfc5415660bdb07fafdda96cea10de17f13fd",
+        "node_ref": "1962a645e414edc6e92b132b7270fb93a3b58cacaf0d21f82966fe2f5c7e19b7",
+        "operator": "REVERSE",
+        "operator_trace": {
+          "events": [],
+          "node_id": "1962a645e414edc6e92b132b7270fb93a3b58cacaf0d21f82966fe2f5c7e19b7",
+          "op": "REVERSE",
+          "op_args": {
+            "output_part": 0
+          },
+          "output_word_hash": "d53108bef1b78913a003b4d5c83da2a5c8d1b0a803d36e510cf6f33495992bac",
+          "parent_ids": [
+            "c42596bcd41ba9a0e785f8af48203d0a466aa902b0d0aad31fbb22b7102db899"
+          ],
+          "source_spans": [
+            [
+              "1bfb913518481ba0899018a463ab11fecb272ae1703d9139dc1f0ba27fc07389",
+              0,
+              12
+            ]
+          ]
+        },
+        "origin_status": "TRACE_LINK_CHECKED",
+        "parent_ids": [
+          "c42596bcd41ba9a0e785f8af48203d0a466aa902b0d0aad31fbb22b7102db899"
+        ],
+        "result_sha256": "1d47fe06dbb792e802d250c6d109f8ebd0acfd0e9d9a1f9cf2c716b7f461783f",
+        "run_id": "d97525fd0338ac13d3f1b31c0b62e2952becfe6ea6fede0e11d53ec31d3e512c",
+        "snapshot_sha256": "7dd91b673a5ed8f77b21889eca7bfc5415660bdb07fafdda96cea10de17f13fd",
+        "source_order": [
+          {
+            "byte_utf8": [
+              0,
+              12
+            ],
+            "literal": "Каждый"
+          }
+        ],
+        "trace_sha256": "34853a9d59549750e7396c1774f7f1a576b53558485c279af394a70d945562c5"
+      },
+      {
+        "engine": "symbolic_v1",
+        "input_sha256": "7dd91b673a5ed8f77b21889eca7bfc5415660bdb07fafdda96cea10de17f13fd",
+        "node_ref": "496153f9318a95e965da6b5ec049d871caaf3cc0e8bb65be357e3c2465c1f55d",
+        "operator": "REVERSE",
+        "operator_trace": {
+          "events": [],
+          "node_id": "496153f9318a95e965da6b5ec049d871caaf3cc0e8bb65be357e3c2465c1f55d",
+          "op": "REVERSE",
+          "op_args": {
+            "output_part": 0
+          },
+          "output_word_hash": "d88df9371b9d862c9d974584a0e57c8e8f23d69607e8dc58314f7bbce2c2d971",
+          "parent_ids": [
+            "1962a645e414edc6e92b132b7270fb93a3b58cacaf0d21f82966fe2f5c7e19b7"
+          ],
+          "source_spans": [
+            [
+              "1bfb913518481ba0899018a463ab11fecb272ae1703d9139dc1f0ba27fc07389",
+              0,
+              12
+            ]
+          ]
+        },
+        "origin_status": "TRACE_LINK_CHECKED",
+        "parent_ids": [
+          "1962a645e414edc6e92b132b7270fb93a3b58cacaf0d21f82966fe2f5c7e19b7"
+        ],
+        "result_sha256": "1d47fe06dbb792e802d250c6d109f8ebd0acfd0e9d9a1f9cf2c716b7f461783f",
+        "run_id": "d97525fd0338ac13d3f1b31c0b62e2952becfe6ea6fede0e11d53ec31d3e512c",
+        "snapshot_sha256": "7dd91b673a5ed8f77b21889eca7bfc5415660bdb07fafdda96cea10de17f13fd",
+        "source_order": [
+          {
+            "byte_utf8": [
+              0,
+              12
+            ],
+            "literal": "Каждый"
+          }
+        ],
+        "trace_sha256": "00c946a41dc3b6b0b741b481049c149aab6c6047c6657ba1cf479e9087da730a"
+      },
+      {
+        "engine": "symbolic_v1",
+        "input_sha256": "7dd91b673a5ed8f77b21889eca7bfc5415660bdb07fafdda96cea10de17f13fd",
+        "node_ref": "c710c44cdb7a43145d0829e4b6017106c514f548c919c18c098b729f5d1394a3",
+        "operator": "REVERSE",
+        "operator_trace": {
+          "events": [],
+          "node_id": "c710c44cdb7a43145d0829e4b6017106c514f548c919c18c098b729f5d1394a3",
+          "op": "REVERSE",
+          "op_args": {
+            "output_part": 0
+          },
+          "output_word_hash": "5aedea6b22e13afafe20031c0fb9e0d453c5cd4141919d45cb92b3cea7535f7a",
+          "parent_ids": [
+            "d132f05960b4661aae668fe223ba16c618dd93e55fdf4df2c64d855556e83674"
+          ],
+          "source_spans": [
+            [
+              "1bfb913518481ba0899018a463ab11fecb272ae1703d9139dc1f0ba27fc07389",
+              0,
+              12
+            ],
+            [
+              "1bfb913518481ba0899018a463ab11fecb272ae1703d9139dc1f0ba27fc07389",
+              13,
+              39
+            ]
+          ]
+        },
+        "origin_status": "TRACE_LINK_CHECKED",
+        "parent_ids": [
+          "d132f05960b4661aae668fe223ba16c618dd93e55fdf4df2c64d855556e83674"
+        ],
+        "result_sha256": "1d47fe06dbb792e802d250c6d109f8ebd0acfd0e9d9a1f9cf2c716b7f461783f",
+        "run_id": "d97525fd0338ac13d3f1b31c0b62e2952becfe6ea6fede0e11d53ec31d3e512c",
+        "snapshot_sha256": "7dd91b673a5ed8f77b21889eca7bfc5415660bdb07fafdda96cea10de17f13fd",
+        "source_order": [
+          {
+            "byte_utf8": [
+              13,
+              39
+            ],
+            "literal": "исследователь"
+          },
+          {
+            "byte_utf8": [
+              0,
+              12
+            ],
+            "literal": "Каждый"
+          }
+        ],
+        "trace_sha256": "5940c4d0066e03cc3656680191e7e106aae75dc18097ad965fba92aaa94d4b3d"
+      }
+    ],
+    "edges": [
+      {
+        "from": "source_spans",
+        "to": "analysis",
+        "kind": "BYTE_EVIDENCE_ONLY"
+      },
+      {
+        "from": "structural_frames",
+        "to": "structural_move_log",
+        "kind": "SEARCH_ORDER_NOT_ENTAILMENT"
+      },
+      {
+        "from": "structural_move_log",
+        "to": "f934e59d80856bc08d69d0fb0adfbfcef8e498b747aff01c780d24c8fc98f60c",
+        "kind": "REPRODUCIBLE_TYPED_AST_MOVE"
+      },
+      {
+        "from": "f934e59d80856bc08d69d0fb0adfbfcef8e498b747aff01c780d24c8fc98f60c",
+        "to": "3162a55b826f48a46ffa6c09b4dcd86cc5dc53c7082ea88838d43abcbea5b3cb",
+        "kind": "EXISTING_FORMAL_CANDIDATE"
+      },
+      {
+        "from": "3162a55b826f48a46ffa6c09b4dcd86cc5dc53c7082ea88838d43abcbea5b3cb",
+        "to": "82b93dc8a168c18cecf81aafefea7f5b67a2c49812c34dc8e12f50aea0523198",
+        "kind": "INDEPENDENT_TYPING_NOT_MEANING"
+      }
+    ]
+  },
+  {
+    "schema": "nl-proposal-graph-example/1",
+    "source_ref": "f50610e43d54062fbfa8955bbe7dd5a9689861379d53da81569b8b0272e6e47a",
+    "source_sha256": "8d8b6c4d0ae12d254f0c88eabeab2ee945cd6c18a3a5d43d9fcedfd6446b7d4f",
+    "source_analysis": {
+      "observations": [
+        {
+          "byte_status": "SOURCE_BOUND_CHECKED",
+          "interpretation": "Буквально «Любой» выражает универсальность; предлагается обычное распределительное, а не модальное прочтение.",
+          "origin": "EXTERNAL_LLM_PROPOSAL",
+          "receipt_digest": "36c4d96ccf1bc543c1ee31387b854df887eb38c573ce4c04bf934d02288970e4",
+          "role": "quantifier",
+          "span": {
+            "byte_utf8": [
+              0,
+              10
+            ],
+            "literal": "Любой"
+          },
+          "syntactic_semantic_status": "PROPOSED"
+        },
+        {
+          "byte_status": "SOURCE_BOUND_CHECKED",
+          "interpretation": "Буквально назван механик; ограничение области agent механиками не задано сигнатурой.",
+          "origin": "EXTERNAL_LLM_PROPOSAL",
+          "receipt_digest": "36c4d96ccf1bc543c1ee31387b854df887eb38c573ce4c04bf934d02288970e4",
+          "role": "entity/type",
+          "span": {
+            "byte_utf8": [
+              11,
+              25
+            ],
+            "literal": "механик"
+          },
+          "syntactic_semantic_status": "PROPOSED"
+        },
+        {
+          "byte_status": "SOURCE_BOUND_CHECKED",
+          "interpretation": "«Осмотрел» сопоставляется Inspects(agent,item); прошедшее время отдельно не кодируется.",
+          "origin": "EXTERNAL_LLM_PROPOSAL",
+          "receipt_digest": "36c4d96ccf1bc543c1ee31387b854df887eb38c573ce4c04bf934d02288970e4",
+          "role": "predicate",
+          "span": {
+            "byte_utf8": [
+              26,
+              42
+            ],
+            "literal": "осмотрел"
+          },
+          "syntactic_semantic_status": "PROPOSED"
+        },
+        {
+          "byte_status": "SOURCE_BOUND_CHECKED",
+          "interpretation": "«Какой-то» вводит неопределённый объект, не требуя его единственности.",
+          "origin": "EXTERNAL_LLM_PROPOSAL",
+          "receipt_digest": "36c4d96ccf1bc543c1ee31387b854df887eb38c573ce4c04bf934d02288970e4",
+          "role": "quantifier",
+          "span": {
+            "byte_utf8": [
+              43,
+              58
+            ],
+            "literal": "какой-то"
+          },
+          "syntactic_semantic_status": "PROPOSED"
+        },
+        {
+          "byte_status": "SOURCE_BOUND_CHECKED",
+          "interpretation": "Буквально назван прибор; ограничение области item приборами требует допущения.",
+          "origin": "EXTERNAL_LLM_PROPOSAL",
+          "receipt_digest": "36c4d96ccf1bc543c1ee31387b854df887eb38c573ce4c04bf934d02288970e4",
+          "role": "entity/type",
+          "span": {
+            "byte_utf8": [
+              59,
+              72
+            ],
+            "literal": "прибор."
+          },
+          "syntactic_semantic_status": "PROPOSED"
+        },
+        {
+          "byte_status": "SOURCE_BOUND_CHECKED",
+          "interpretation": "Базовая формула допускает зависимость выбора прибора от механика; текст не содержит явного указания на общий прибор.",
+          "origin": "EXTERNAL_LLM_PROPOSAL",
+          "receipt_digest": "36c4d96ccf1bc543c1ee31387b854df887eb38c573ce4c04bf934d02288970e4",
+          "role": "scope",
+          "span": {
+            "byte_utf8": [
+              43,
+              58
+            ],
+            "literal": "какой-то"
+          },
+          "syntactic_semantic_status": "PROPOSED"
+        }
+      ],
+      "open_alternatives": [
+        "Возможно широкое прочтение «какой-то прибор»: существует один прибор, осмотренный всеми механиками. Это вариант области действия, оставленный отдельному механизму.",
+        "Модальное прочтение «любой возможный механик» данной сигнатурой не выражается."
+      ],
+      "receipt_digest": "36c4d96ccf1bc543c1ee31387b854df887eb38c573ce4c04bf934d02288970e4",
+      "schema": "source-analysis/1",
+      "source_sha256": "8d8b6c4d0ae12d254f0c88eabeab2ee945cd6c18a3a5d43d9fcedfd6446b7d4f",
+      "unsupported": []
+    },
+    "candidate": {
+      "added_assumptions": [
+        "Область agent ограничена релевантными механиками, область item — релевантными приборами.",
+        "Inspects передаёт осмотр в подразумеваемом прошлом; временное значение не кодируется отдельно.",
+        "«Любой» читается как фактическое универсальное утверждение без модального компонента.",
+        "Неопределённость личности прибора для говорящего не кодируется как отдельное эпистемическое утверждение.",
+        "Unadjudicated scope alternative; witnessed token order licenses search only, never source entailment."
+      ],
+      "binder_links": [
+        {
+          "byte_utf8": [
+            0,
+            10
+          ],
+          "var": "a"
+        },
+        {
+          "byte_utf8": [
+            43,
+            58
+          ],
+          "var": "i"
+        }
+      ],
+      "candidate_ast_sha": "7a05d074237d00064861b0c0b4113fdc12a563c4c858566aa288df4d6142472c",
+      "candidate_id": "fece7f26abcfadb46c7ab333ebf8f5e5f7d47eb6f77f473ef138ca2cc066fe24",
+      "checker_receipt_ref": "e479215335d8e4fb45bb34e551d112b6e6af4786ea38d7c9356d40a28ce82ec2",
+      "competing_parse_refs": [
+        "4cfb5d75986d71ae9ed1ba88153da0f45b498640e913983b8b51464f3a0808ac"
+      ],
+      "contrast_refs": [
+        "49bd0108bdac3d21daaff610fd02f227b6ce99145823af938c43343f52c66f4a"
+      ],
+      "creator": {
+        "model_id": "gpt-6.1-sol",
+        "provider": "owner_hosted",
+        "receipt_digest": "36c4d96ccf1bc543c1ee31387b854df887eb38c573ce4c04bf934d02288970e4",
+        "requested_search_seed": 2211,
+        "seed": null
+      },
+      "execution_permission": false,
+      "formula_ast": {
+        "body": {
+          "body": {
+            "args": [
+              {
+                "var": "a"
+              },
+              {
+                "var": "i"
+              }
+            ],
+            "pred": "Inspects"
+          },
+          "quant": "forall",
+          "sort": "agent",
+          "var": "a"
+        },
+        "quant": "exists",
+        "sort": "item",
+        "var": "i"
+      },
+      "origin_status": "TRACE_LINK_CHECKED",
+      "premise_ledger": [
+        {
+          "claim": "Область agent ограничена релевантными механиками, область item — релевантными приборами.",
+          "status": "UNADJUDICATED_ASSUMPTION"
+        },
+        {
+          "claim": "Inspects передаёт осмотр в подразумеваемом прошлом; временное значение не кодируется отдельно.",
+          "status": "UNADJUDICATED_ASSUMPTION"
+        },
+        {
+          "claim": "«Любой» читается как фактическое универсальное утверждение без модального компонента.",
+          "status": "UNADJUDICATED_ASSUMPTION"
+        },
+        {
+          "claim": "Неопределённость личности прибора для говорящего не кодируется как отдельное эпистемическое утверждение.",
+          "status": "UNADJUDICATED_ASSUMPTION"
+        },
+        {
+          "claim": "Unadjudicated scope alternative; witnessed token order licenses search only, never source entailment.",
+          "status": "UNADJUDICATED_ASSUMPTION"
+        }
+      ],
+      "proof_status": "PROPOSED",
+      "reading": "Каждый механик осмотрел некоторый прибор; приборы у разных механиков могут различаться.",
+      "scope": {
+        "context_refs": [],
+        "model_class": "EXPLICIT_CLOSED_FINITE_MODELS",
+        "quantifier_domain": [
+          "agent",
+          "item"
+        ]
+      },
+      "semantic_alignment_status": "PROPOSED",
+      "source_analysis_ref": "7c64df53b4bfef4200d357f170b84047538494d11551fe8116c38929bc747fe3",
+      "source_ref": "f50610e43d54062fbfa8955bbe7dd5a9689861379d53da81569b8b0272e6e47a",
+      "source_sha256": "8d8b6c4d0ae12d254f0c88eabeab2ee945cd6c18a3a5d43d9fcedfd6446b7d4f",
+      "source_spans": [
+        {
+          "byte_utf8": [
+            0,
+            10
+          ],
+          "literal": "Любой"
+        },
+        {
+          "byte_utf8": [
+            11,
+            25
+          ],
+          "literal": "механик"
+        },
+        {
+          "byte_utf8": [
+            26,
+            42
+          ],
+          "literal": "осмотрел"
+        },
+        {
+          "byte_utf8": [
+            43,
+            58
+          ],
+          "literal": "какой-то"
+        },
+        {
+          "byte_utf8": [
+            59,
+            72
+          ],
+          "literal": "прибор."
+        }
+      ],
+      "structural_move_log": [
+        {
+          "addition_assumption": "Unadjudicated scope alternative; witnessed token order licenses search only, never source entailment.",
+          "after_ast": {
+            "body": {
+              "body": {
+                "args": [
+                  {
+                    "var": "a"
+                  },
+                  {
+                    "var": "i"
+                  }
+                ],
+                "pred": "Inspects"
+              },
+              "quant": "forall",
+              "sort": "agent",
+              "var": "a"
+            },
+            "quant": "exists",
+            "sort": "item",
+            "var": "i"
+          },
+          "after_ast_sha256": "7a05d074237d00064861b0c0b4113fdc12a563c4c858566aa288df4d6142472c",
+          "before_ast": {
+            "body": {
+              "body": {
+                "args": [
+                  {
+                    "var": "a"
+                  },
+                  {
+                    "var": "i"
+                  }
+                ],
+                "pred": "Inspects"
+              },
+              "quant": "exists",
+              "sort": "item",
+              "var": "i"
+            },
+            "quant": "forall",
+            "sort": "agent",
+            "var": "a"
+          },
+          "before_ast_sha256": "ab226684c48d4b8cbe9cb5ecf2661880813ad9cca58c2eb853d7509569f97ca7",
+          "binder_links": [
+            {
+              "byte_utf8": [
+                0,
+                10
+              ],
+              "var": "a"
+            },
+            {
+              "byte_utf8": [
+                43,
+                58
+              ],
+              "var": "i"
+            }
+          ],
+          "control": null,
+          "kind": "QUANTIFIER_SPINE_PERMUTATION",
+          "operator_trace_ref": "e25eea15da9f885bcd7b240f70942d2cf98a9ba5f6c92fd49eaf355a6bdc5ca6",
+          "origin_status": "TRACE_LINK_CHECKED",
+          "permutation": [
+            1,
+            0
+          ],
+          "source_licensed": false
+        }
+      ],
+      "token_role_links": [
+        {
+          "byte_utf8": [
+            0,
+            10
+          ],
+          "literal": "Любой"
+        },
+        {
+          "byte_utf8": [
+            11,
+            25
+          ],
+          "literal": "механик"
+        },
+        {
+          "byte_utf8": [
+            26,
+            42
+          ],
+          "literal": "осмотрел"
+        },
+        {
+          "byte_utf8": [
+            43,
+            58
+          ],
+          "literal": "какой-то"
+        },
+        {
+          "byte_utf8": [
+            59,
+            72
+          ],
+          "literal": "прибор."
+        }
+      ],
+      "type_status": "TYPED",
+      "typecheck": {
+        "formula_sha256": "7a05d074237d00064861b0c0b4113fdc12a563c4c858566aa288df4d6142472c",
+        "nodes": 3,
+        "signature_sha256": "c46402164c457e0252514bcb47968d3c9dd464a3c266ca1e24cd9b785b7d9f34",
+        "status": "TYPED"
+      },
+      "white_star_trace_refs": [
+        "e25eea15da9f885bcd7b240f70942d2cf98a9ba5f6c92fd49eaf355a6bdc5ca6",
+        "c154d0d3921a0591da1ecb15330b680094f4a79dea0b2f483a9e90a780596e74",
+        "8b920ea65f2b7b80332d1c281e2d16a12d00f506a7009a4300a7b4142a0547e9",
+        "690c1b68efb1b0f0aea467086a832552e462dd1f6f8d014b089b47509654c9d4"
+      ]
+    },
+    "structural_frames": [
+      {
+        "engine": "symbolic_v1",
+        "input_sha256": "81c30b702007d75b0858bc566d844458a27516884188fc08a06ef938a9ff54f0",
+        "node_ref": "a841d0c0f9212ede4477f0c7f6c10de37adc5b5434947592b5a9e1d2b7716c7a",
+        "operator": "REVERSE",
+        "operator_trace": {
+          "events": [],
+          "node_id": "a841d0c0f9212ede4477f0c7f6c10de37adc5b5434947592b5a9e1d2b7716c7a",
+          "op": "REVERSE",
+          "op_args": {
+            "output_part": 0
+          },
+          "output_word_hash": "3768dac4985b6718e55b69bc6d64e495f052d1dec55b2f854a3ec599bc23d0a3",
+          "parent_ids": [
+            "98b4cab0cb4b3e2347d6df6c8f3e4644459b21808ea73e304d9cbeb382c9fc97"
+          ],
+          "source_spans": [
+            [
+              "8d8b6c4d0ae12d254f0c88eabeab2ee945cd6c18a3a5d43d9fcedfd6446b7d4f",
+              0,
+              10
+            ],
+            [
+              "8d8b6c4d0ae12d254f0c88eabeab2ee945cd6c18a3a5d43d9fcedfd6446b7d4f",
+              11,
+              25
+            ],
+            [
+              "8d8b6c4d0ae12d254f0c88eabeab2ee945cd6c18a3a5d43d9fcedfd6446b7d4f",
+              26,
+              42
+            ],
+            [
+              "8d8b6c4d0ae12d254f0c88eabeab2ee945cd6c18a3a5d43d9fcedfd6446b7d4f",
+              43,
+              58
+            ]
+          ]
+        },
+        "origin_status": "TRACE_LINK_CHECKED",
+        "parent_ids": [
+          "98b4cab0cb4b3e2347d6df6c8f3e4644459b21808ea73e304d9cbeb382c9fc97"
+        ],
+        "result_sha256": "658e63214bd2f0b975c038cb58811f57dfbd8ceb02f80b01d950cd0d491387fb",
+        "run_id": "15ed2e9a4442bfb439920ad075dd6099868cc895774afb32c17a093331a90ecd",
+        "snapshot_sha256": "81c30b702007d75b0858bc566d844458a27516884188fc08a06ef938a9ff54f0",
+        "source_order": [
+          {
+            "byte_utf8": [
+              43,
+              58
+            ],
+            "literal": "какой-то"
+          },
+          {
+            "byte_utf8": [
+              26,
+              42
+            ],
+            "literal": "осмотрел"
+          },
+          {
+            "byte_utf8": [
+              11,
+              25
+            ],
+            "literal": "механик"
+          },
+          {
+            "byte_utf8": [
+              0,
+              10
+            ],
+            "literal": "Любой"
+          }
+        ],
+        "trace_sha256": "e25eea15da9f885bcd7b240f70942d2cf98a9ba5f6c92fd49eaf355a6bdc5ca6"
+      },
+      {
+        "engine": "symbolic_v1",
+        "input_sha256": "81c30b702007d75b0858bc566d844458a27516884188fc08a06ef938a9ff54f0",
+        "node_ref": "d8ee936c6850ee38959398ecfb7eee7b9cab4ae6db864bbe1543c4f529afec81",
+        "operator": "REVERSE",
+        "operator_trace": {
+          "events": [],
+          "node_id": "d8ee936c6850ee38959398ecfb7eee7b9cab4ae6db864bbe1543c4f529afec81",
+          "op": "REVERSE",
+          "op_args": {
+            "output_part": 0
+          },
+          "output_word_hash": "dd3c058bfb534a695f80c98e7eb9c975f4444117d1c422461221fa4be0a11740",
+          "parent_ids": [
+            "8ff4ff95cacd4623295a5d034c90977dde36ae9a1231cca8c0514eb46fb106f5"
+          ],
+          "source_spans": [
+            [
+              "8d8b6c4d0ae12d254f0c88eabeab2ee945cd6c18a3a5d43d9fcedfd6446b7d4f",
+              0,
+              10
+            ]
+          ]
+        },
+        "origin_status": "TRACE_LINK_CHECKED",
+        "parent_ids": [
+          "8ff4ff95cacd4623295a5d034c90977dde36ae9a1231cca8c0514eb46fb106f5"
+        ],
+        "result_sha256": "658e63214bd2f0b975c038cb58811f57dfbd8ceb02f80b01d950cd0d491387fb",
+        "run_id": "15ed2e9a4442bfb439920ad075dd6099868cc895774afb32c17a093331a90ecd",
+        "snapshot_sha256": "81c30b702007d75b0858bc566d844458a27516884188fc08a06ef938a9ff54f0",
+        "source_order": [
+          {
+            "byte_utf8": [
+              0,
+              10
+            ],
+            "literal": "Любой"
+          }
+        ],
+        "trace_sha256": "c154d0d3921a0591da1ecb15330b680094f4a79dea0b2f483a9e90a780596e74"
+      },
+      {
+        "engine": "symbolic_v1",
+        "input_sha256": "81c30b702007d75b0858bc566d844458a27516884188fc08a06ef938a9ff54f0",
+        "node_ref": "92030b5edb958e6af075784db94aff2faefdb29be9e3b0550ab8464590c0ae0e",
+        "operator": "REVERSE",
+        "operator_trace": {
+          "events": [],
+          "node_id": "92030b5edb958e6af075784db94aff2faefdb29be9e3b0550ab8464590c0ae0e",
+          "op": "REVERSE",
+          "op_args": {
+            "output_part": 0
+          },
+          "output_word_hash": "00a4c0ce1da0b8eb9cc6ba331597e8b7c48f9663aac390d10a12fd45394f0d74",
+          "parent_ids": [
+            "d8ee936c6850ee38959398ecfb7eee7b9cab4ae6db864bbe1543c4f529afec81"
+          ],
+          "source_spans": [
+            [
+              "8d8b6c4d0ae12d254f0c88eabeab2ee945cd6c18a3a5d43d9fcedfd6446b7d4f",
+              0,
+              10
+            ]
+          ]
+        },
+        "origin_status": "TRACE_LINK_CHECKED",
+        "parent_ids": [
+          "d8ee936c6850ee38959398ecfb7eee7b9cab4ae6db864bbe1543c4f529afec81"
+        ],
+        "result_sha256": "658e63214bd2f0b975c038cb58811f57dfbd8ceb02f80b01d950cd0d491387fb",
+        "run_id": "15ed2e9a4442bfb439920ad075dd6099868cc895774afb32c17a093331a90ecd",
+        "snapshot_sha256": "81c30b702007d75b0858bc566d844458a27516884188fc08a06ef938a9ff54f0",
+        "source_order": [
+          {
+            "byte_utf8": [
+              0,
+              10
+            ],
+            "literal": "Любой"
+          }
+        ],
+        "trace_sha256": "8b920ea65f2b7b80332d1c281e2d16a12d00f506a7009a4300a7b4142a0547e9"
+      },
+      {
+        "engine": "symbolic_v1",
+        "input_sha256": "81c30b702007d75b0858bc566d844458a27516884188fc08a06ef938a9ff54f0",
+        "node_ref": "d347594e43a0a7db90fb19c2419edcf442f1a9d6af0c9ced3c2a16b1a894f204",
+        "operator": "REVERSE",
+        "operator_trace": {
+          "events": [],
+          "node_id": "d347594e43a0a7db90fb19c2419edcf442f1a9d6af0c9ced3c2a16b1a894f204",
+          "op": "REVERSE",
+          "op_args": {
+            "output_part": 0
+          },
+          "output_word_hash": "7e5a20da6dd31e910998be639643b179bd2cb4dc3677eccef3d3b50527cc188c",
+          "parent_ids": [
+            "892e43b78950a248bbe968a4315d327e5fb619be981c7f2b833e63eaf8740574"
+          ],
+          "source_spans": [
+            [
+              "8d8b6c4d0ae12d254f0c88eabeab2ee945cd6c18a3a5d43d9fcedfd6446b7d4f",
+              0,
+              10
+            ],
+            [
+              "8d8b6c4d0ae12d254f0c88eabeab2ee945cd6c18a3a5d43d9fcedfd6446b7d4f",
+              11,
+              25
+            ]
+          ]
+        },
+        "origin_status": "TRACE_LINK_CHECKED",
+        "parent_ids": [
+          "892e43b78950a248bbe968a4315d327e5fb619be981c7f2b833e63eaf8740574"
+        ],
+        "result_sha256": "658e63214bd2f0b975c038cb58811f57dfbd8ceb02f80b01d950cd0d491387fb",
+        "run_id": "15ed2e9a4442bfb439920ad075dd6099868cc895774afb32c17a093331a90ecd",
+        "snapshot_sha256": "81c30b702007d75b0858bc566d844458a27516884188fc08a06ef938a9ff54f0",
+        "source_order": [
+          {
+            "byte_utf8": [
+              11,
+              25
+            ],
+            "literal": "механик"
+          },
+          {
+            "byte_utf8": [
+              0,
+              10
+            ],
+            "literal": "Любой"
+          }
+        ],
+        "trace_sha256": "690c1b68efb1b0f0aea467086a832552e462dd1f6f8d014b089b47509654c9d4"
+      }
+    ],
+    "edges": [
+      {
+        "from": "source_spans",
+        "to": "analysis",
+        "kind": "BYTE_EVIDENCE_ONLY"
+      },
+      {
+        "from": "structural_frames",
+        "to": "structural_move_log",
+        "kind": "SEARCH_ORDER_NOT_ENTAILMENT"
+      },
+      {
+        "from": "structural_move_log",
+        "to": "7a05d074237d00064861b0c0b4113fdc12a563c4c858566aa288df4d6142472c",
+        "kind": "REPRODUCIBLE_TYPED_AST_MOVE"
+      },
+      {
+        "from": "7a05d074237d00064861b0c0b4113fdc12a563c4c858566aa288df4d6142472c",
+        "to": "fece7f26abcfadb46c7ab333ebf8f5e5f7d47eb6f77f473ef138ca2cc066fe24",
+        "kind": "EXISTING_FORMAL_CANDIDATE"
+      },
+      {
+        "from": "fece7f26abcfadb46c7ab333ebf8f5e5f7d47eb6f77f473ef138ca2cc066fe24",
+        "to": "e479215335d8e4fb45bb34e551d112b6e6af4786ea38d7c9356d40a28ce82ec2",
+        "kind": "INDEPENDENT_TYPING_NOT_MEANING"
+      }
+    ]
+  }
+]

@@ -1,6 +1,6 @@
 # White Star — проверка через MCP и CLI
 
-Текущий production: **v0.4.5-developer-preview**, 83 инструмента. Версию всего
+Текущий production: **v0.4.10-developer-preview**, 93 инструмента. Версию всего
 сервера проверяйте через `bridge_system_status`; `white_star_status.release`
 сохраняет версию численного контракта v0.3. Адрес установленного сервера:
 `https://fares-september-rebel-board.trycloudflare.com/mcp`. Если список методов

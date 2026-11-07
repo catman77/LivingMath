@@ -1,0 +1,6512 @@
+{
+  "schema_version": "nl002.private_gold.v1",
+  "created_utc": "2026-11-07T05:07:54.650488+00:00",
+  "provenance": {
+    "origin": "isolated synthetic label holder",
+    "human_adjudication": "NOT_EXECUTED",
+    "claim_level": "synthetic constructed reference interpretations, not empirical linguistic consensus"
+  },
+  "source_count": 50,
+  "gold": [
+    {
+      "source_id": "98249865-f16a-450b-a505-815a0268de11",
+      "source_sha256": "e46602f40eef5bd97cc4668bf1c1f370816b6537d5a2c193b26269c5fdd9a04b",
+      "holder_local_key": "s1",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "supported",
+        "note": "",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "b",
+            "sort": "bakery",
+            "body": {
+              "quant": "exists",
+              "var": "c",
+              "sort": "cafe",
+              "body": {
+                "pred": "Supplies",
+                "args": [
+                  {
+                    "var": "b"
+                  },
+                  {
+                    "var": "c"
+                  }
+                ]
+              }
+            }
+          },
+          "basis": "Distributive existential object."
+        }
+      ],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "exists",
+            "var": "c",
+            "sort": "cafe",
+            "body": {
+              "quant": "forall",
+              "var": "b",
+              "sort": "bakery",
+              "body": {
+                "pred": "Supplies",
+                "args": [
+                  {
+                    "var": "b"
+                  },
+                  {
+                    "var": "c"
+                  }
+                ]
+              }
+            }
+          },
+          "reason": "Requires a common cafe."
+        }
+      ],
+      "unsupported_indications": []
+    },
+    {
+      "source_id": "822467fa-9e7b-45e9-a63e-3bea5df14f54",
+      "source_sha256": "aa667c18e1225ade633f30a6ff2ab0777d8300c725a30b02fe1a998c7df25dcd",
+      "holder_local_key": "s2",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "uncertain",
+        "note": "Object scope needs independent human adjudication; both indicated readings retained.",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [
+        {
+          "ast": {
+            "quant": "exists",
+            "var": "c",
+            "sort": "clerk",
+            "body": {
+              "quant": "forall",
+              "var": "m",
+              "sort": "mechanic",
+              "body": {
+                "quant": "exists",
+                "var": "t",
+                "sort": "tool",
+                "body": {
+                  "pred": "Issued",
+                  "args": [
+                    {
+                      "var": "c"
+                    },
+                    {
+                      "var": "t"
+                    },
+                    {
+                      "var": "m"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "basis": "One clerk; tools may vary by mechanic."
+        },
+        {
+          "ast": {
+            "quant": "exists",
+            "var": "c",
+            "sort": "clerk",
+            "body": {
+              "quant": "exists",
+              "var": "t",
+              "sort": "tool",
+              "body": {
+                "quant": "forall",
+                "var": "m",
+                "sort": "mechanic",
+                "body": {
+                  "pred": "Issued",
+                  "args": [
+                    {
+                      "var": "c"
+                    },
+                    {
+                      "var": "t"
+                    },
+                    {
+                      "var": "m"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "basis": "One clerk and one shared tool."
+        }
+      ],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "m",
+            "sort": "mechanic",
+            "body": {
+              "quant": "exists",
+              "var": "c",
+              "sort": "clerk",
+              "body": {
+                "quant": "exists",
+                "var": "t",
+                "sort": "tool",
+                "body": {
+                  "pred": "Issued",
+                  "args": [
+                    {
+                      "var": "c"
+                    },
+                    {
+                      "var": "t"
+                    },
+                    {
+                      "var": "m"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "reason": "Loses the common clerk."
+        }
+      ],
+      "unsupported_indications": []
+    },
+    {
+      "source_id": "6beb2330-c57a-46ed-9f28-13a92b5e3d12",
+      "source_sha256": "308e0961c3e87065ae959b3981056834e5e12cb87138388da7541ab1f48ead0a",
+      "holder_local_key": "s3",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "uncertain",
+        "note": "Quantifier scope ambiguity is intentionally retained, not adjudicated.",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [
+        {
+          "ast": {
+            "quant": "exists",
+            "var": "r",
+            "sort": "manuscript",
+            "body": {
+              "quant": "forall",
+              "var": "u",
+              "sort": "reviewer",
+              "body": {
+                "pred": "Read",
+                "args": [
+                  {
+                    "var": "u"
+                  },
+                  {
+                    "var": "r"
+                  }
+                ]
+              }
+            }
+          },
+          "basis": "Fronted object has shared witness."
+        },
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "u",
+            "sort": "reviewer",
+            "body": {
+              "quant": "exists",
+              "var": "r",
+              "sort": "manuscript",
+              "body": {
+                "pred": "Read",
+                "args": [
+                  {
+                    "var": "u"
+                  },
+                  {
+                    "var": "r"
+                  }
+                ]
+              }
+            }
+          },
+          "basis": "Distributive witness under subject scope."
+        }
+      ],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "r",
+            "sort": "manuscript",
+            "body": {
+              "quant": "exists",
+              "var": "u",
+              "sort": "reviewer",
+              "body": {
+                "pred": "Read",
+                "args": [
+                  {
+                    "var": "u"
+                  },
+                  {
+                    "var": "r"
+                  }
+                ]
+              }
+            }
+          },
+          "reason": "Quantifies over all manuscripts rather than all reviewers."
+        }
+      ],
+      "unsupported_indications": []
+    },
+    {
+      "source_id": "4b50f1e1-978a-4fce-aa37-c1bee9222c2e",
+      "source_sha256": "b3aacd74c4a6eda094e2aee94d2cb451a68a8d39e89052eb22c4db35ee7e1405",
+      "holder_local_key": "s4",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "supported",
+        "note": "",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "a",
+            "sort": "pharmacy",
+            "body": {
+              "quant": "forall",
+              "var": "w",
+              "sort": "warehouse",
+              "body": {
+                "pred": "Supplies",
+                "args": [
+                  {
+                    "var": "w"
+                  },
+                  {
+                    "var": "a"
+                  }
+                ]
+              }
+            }
+          },
+          "basis": "All warehouse/pharmacy pairs."
+        }
+      ],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "a",
+            "sort": "pharmacy",
+            "body": {
+              "quant": "exists",
+              "var": "w",
+              "sort": "warehouse",
+              "body": {
+                "pred": "Supplies",
+                "args": [
+                  {
+                    "var": "w"
+                  },
+                  {
+                    "var": "a"
+                  }
+                ]
+              }
+            }
+          },
+          "reason": "Weakens all warehouses to at least one."
+        }
+      ],
+      "unsupported_indications": []
+    },
+    {
+      "source_id": "d1b968d9-ff59-492b-a812-3705efe99c7b",
+      "source_sha256": "d263af2e34cffa8a74743010ad8de995ab8e33787543879d97aa8120b314299b",
+      "holder_local_key": "s5",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "uncertain",
+        "note": "Parcel scope is unresolved; synthetic references do not constitute human consensus.",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [
+        {
+          "ast": {
+            "quant": "exists",
+            "var": "c",
+            "sort": "courier",
+            "body": {
+              "quant": "exists",
+              "var": "p",
+              "sort": "parcel",
+              "body": {
+                "quant": "forall",
+                "var": "a",
+                "sort": "recipient",
+                "body": {
+                  "pred": "Delivered",
+                  "args": [
+                    {
+                      "var": "c"
+                    },
+                    {
+                      "var": "p"
+                    },
+                    {
+                      "var": "a"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "basis": "One courier and one parcel."
+        },
+        {
+          "ast": {
+            "quant": "exists",
+            "var": "c",
+            "sort": "courier",
+            "body": {
+              "quant": "forall",
+              "var": "a",
+              "sort": "recipient",
+              "body": {
+                "quant": "exists",
+                "var": "p",
+                "sort": "parcel",
+                "body": {
+                  "pred": "Delivered",
+                  "args": [
+                    {
+                      "var": "c"
+                    },
+                    {
+                      "var": "p"
+                    },
+                    {
+                      "var": "a"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "basis": "One courier with recipient-dependent parcels."
+        }
+      ],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "a",
+            "sort": "recipient",
+            "body": {
+              "quant": "exists",
+              "var": "c",
+              "sort": "courier",
+              "body": {
+                "quant": "exists",
+                "var": "p",
+                "sort": "parcel",
+                "body": {
+                  "pred": "Delivered",
+                  "args": [
+                    {
+                      "var": "c"
+                    },
+                    {
+                      "var": "p"
+                    },
+                    {
+                      "var": "a"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "reason": "Loses the common courier."
+        }
+      ],
+      "unsupported_indications": []
+    },
+    {
+      "source_id": "6fd9adce-dd94-4cd5-9179-e973f25282a9",
+      "source_sha256": "b08bce3bca1c534757a4c2d851f09bd453fdce8c07637b7b4a2a7b484636f3fd",
+      "holder_local_key": "s6",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "supported",
+        "note": "",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [
+        {
+          "ast": {
+            "quant": "exists",
+            "var": "p",
+            "sort": "pilot",
+            "body": {
+              "quant": "forall",
+              "var": "h",
+              "sort": "hangar",
+              "body": {
+                "pred": "Inspected",
+                "args": [
+                  {
+                    "var": "p"
+                  },
+                  {
+                    "var": "h"
+                  }
+                ]
+              }
+            }
+          },
+          "basis": "Existential pilot outscopes universal hangar."
+        }
+      ],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "h",
+            "sort": "hangar",
+            "body": {
+              "quant": "exists",
+              "var": "p",
+              "sort": "pilot",
+              "body": {
+                "pred": "Inspected",
+                "args": [
+                  {
+                    "var": "p"
+                  },
+                  {
+                    "var": "h"
+                  }
+                ]
+              }
+            }
+          },
+          "reason": "Allows a different pilot for every hangar."
+        }
+      ],
+      "unsupported_indications": []
+    },
+    {
+      "source_id": "d9399151-3545-4a10-b95e-46adde45eb15",
+      "source_sha256": "0a4b2e17ca4cde57efacbebfb88f92a0fc103342109ff90bd025110850d05041",
+      "holder_local_key": "u1",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "supported",
+        "note": "",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [
+        {
+          "ast": {
+            "quant": "exists",
+            "var": "x",
+            "sort": "tuner",
+            "body": {
+              "and": [
+                {
+                  "quant": "exists",
+                  "var": "f",
+                  "sort": "fault",
+                  "body": {
+                    "pred": "Noticed",
+                    "args": [
+                      {
+                        "var": "x"
+                      },
+                      {
+                        "var": "f"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "quant": "forall",
+                  "var": "y",
+                  "sort": "tuner",
+                  "body": {
+                    "or": [
+                      {
+                        "not": {
+                          "quant": "exists",
+                          "var": "g",
+                          "sort": "fault",
+                          "body": {
+                            "pred": "Noticed",
+                            "args": [
+                              {
+                                "var": "y"
+                              },
+                              {
+                                "var": "g"
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "eq": [
+                          {
+                            "var": "y"
+                          },
+                          {
+                            "var": "x"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "basis": "Exactly one tuner has any noticed fault."
+        }
+      ],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "exists",
+            "var": "x",
+            "sort": "tuner",
+            "body": {
+              "quant": "exists",
+              "var": "f",
+              "sort": "fault",
+              "body": {
+                "pred": "Noticed",
+                "args": [
+                  {
+                    "var": "x"
+                  },
+                  {
+                    "var": "f"
+                  }
+                ]
+              }
+            }
+          },
+          "reason": "Drops uniqueness."
+        }
+      ],
+      "unsupported_indications": []
+    },
+    {
+      "source_id": "dcd8147b-1b77-4cc0-ae30-808c737f45bb",
+      "source_sha256": "3fb1cb315eae68d5177ff8c44cc1f0ee366c3b6fbb96fec0c71f126d9010544a",
+      "holder_local_key": "u2",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "supported",
+        "note": "",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "a",
+            "sort": "archive",
+            "body": {
+              "quant": "exists",
+              "var": "i",
+              "sort": "inventory",
+              "body": {
+                "quant": "exists",
+                "var": "j",
+                "sort": "inventory",
+                "body": {
+                  "and": [
+                    {
+                      "not": {
+                        "eq": [
+                          {
+                            "var": "i"
+                          },
+                          {
+                            "var": "j"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "pred": "Contains",
+                      "args": [
+                        {
+                          "var": "a"
+                        },
+                        {
+                          "var": "i"
+                        }
+                      ]
+                    },
+                    {
+                      "pred": "Contains",
+                      "args": [
+                        {
+                          "var": "a"
+                        },
+                        {
+                          "var": "j"
+                        }
+                      ]
+                    },
+                    {
+                      "quant": "forall",
+                      "var": "k",
+                      "sort": "inventory",
+                      "body": {
+                        "or": [
+                          {
+                            "not": {
+                              "pred": "Contains",
+                              "args": [
+                                {
+                                  "var": "a"
+                                },
+                                {
+                                  "var": "k"
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "or": [
+                              {
+                                "eq": [
+                                  {
+                                    "var": "k"
+                                  },
+                                  {
+                                    "var": "i"
+                                  }
+                                ]
+                              },
+                              {
+                                "eq": [
+                                  {
+                                    "var": "k"
+                                  },
+                                  {
+                                    "var": "j"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "basis": "Two distinct contained inventories exhaust the archive's inventories."
+        }
+      ],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "a",
+            "sort": "archive",
+            "body": {
+              "quant": "exists",
+              "var": "i",
+              "sort": "inventory",
+              "body": {
+                "quant": "exists",
+                "var": "j",
+                "sort": "inventory",
+                "body": {
+                  "and": [
+                    {
+                      "not": {
+                        "eq": [
+                          {
+                            "var": "i"
+                          },
+                          {
+                            "var": "j"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "pred": "Contains",
+                      "args": [
+                        {
+                          "var": "a"
+                        },
+                        {
+                          "var": "i"
+                        }
+                      ]
+                    },
+                    {
+                      "pred": "Contains",
+                      "args": [
+                        {
+                          "var": "a"
+                        },
+                        {
+                          "var": "j"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "reason": "Only at least two."
+        }
+      ],
+      "unsupported_indications": []
+    },
+    {
+      "source_id": "c9d9f6cc-a28a-4c09-8051-515c53a99400",
+      "source_sha256": "6d1ca3e0bbe86360981050736e66750bcb9c9707f1db61e4c5e6c46c332b3630",
+      "holder_local_key": "u3",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "supported",
+        "note": "",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "x",
+            "sort": "attendant",
+            "body": {
+              "quant": "forall",
+              "var": "y",
+              "sort": "attendant",
+              "body": {
+                "or": [
+                  {
+                    "not": {
+                      "and": [
+                        {
+                          "quant": "forall",
+                          "var": "s",
+                          "sort": "safe",
+                          "body": {
+                            "pred": "Opened",
+                            "args": [
+                              {
+                                "var": "x"
+                              },
+                              {
+                                "var": "s"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "quant": "forall",
+                          "var": "t",
+                          "sort": "safe",
+                          "body": {
+                            "pred": "Opened",
+                            "args": [
+                              {
+                                "var": "y"
+                              },
+                              {
+                                "var": "t"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "eq": [
+                      {
+                        "var": "x"
+                      },
+                      {
+                        "var": "y"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "basis": "At most one attendant satisfies opening every safe; existence is not asserted."
+        }
+      ],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "exists",
+            "var": "x",
+            "sort": "attendant",
+            "body": {
+              "and": [
+                {
+                  "quant": "forall",
+                  "var": "s",
+                  "sort": "safe",
+                  "body": {
+                    "pred": "Opened",
+                    "args": [
+                      {
+                        "var": "x"
+                      },
+                      {
+                        "var": "s"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "quant": "forall",
+                  "var": "y",
+                  "sort": "attendant",
+                  "body": {
+                    "or": [
+                      {
+                        "not": {
+                          "quant": "forall",
+                          "var": "t",
+                          "sort": "safe",
+                          "body": {
+                            "pred": "Opened",
+                            "args": [
+                              {
+                                "var": "y"
+                              },
+                              {
+                                "var": "t"
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "eq": [
+                          {
+                            "var": "y"
+                          },
+                          {
+                            "var": "x"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "reason": "Incorrectly requires existence."
+        }
+      ],
+      "unsupported_indications": []
+    },
+    {
+      "source_id": "9c5ca5ae-7cb0-44db-a045-9263c627ba30",
+      "source_sha256": "4222381d5efce2f97e07fb18f96ff10c65292d2fc4b53a38462ed72c16ac502c",
+      "holder_local_key": "u4",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "supported",
+        "note": "",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "s",
+            "sort": "station",
+            "body": {
+              "quant": "exists",
+              "var": "d",
+              "sort": "dispatcher",
+              "body": {
+                "and": [
+                  {
+                    "pred": "Assigned",
+                    "args": [
+                      {
+                        "var": "d"
+                      },
+                      {
+                        "var": "s"
+                      }
+                    ]
+                  },
+                  {
+                    "quant": "forall",
+                    "var": "e",
+                    "sort": "dispatcher",
+                    "body": {
+                      "or": [
+                        {
+                          "not": {
+                            "pred": "Assigned",
+                            "args": [
+                              {
+                                "var": "e"
+                              },
+                              {
+                                "var": "s"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "eq": [
+                            {
+                              "var": "e"
+                            },
+                            {
+                              "var": "d"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "basis": "Each station has exactly one assigned dispatcher."
+        }
+      ],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "s",
+            "sort": "station",
+            "body": {
+              "quant": "exists",
+              "var": "d",
+              "sort": "dispatcher",
+              "body": {
+                "pred": "Assigned",
+                "args": [
+                  {
+                    "var": "d"
+                  },
+                  {
+                    "var": "s"
+                  }
+                ]
+              }
+            }
+          },
+          "reason": "Allows multiple assigned dispatchers."
+        }
+      ],
+      "unsupported_indications": []
+    },
+    {
+      "source_id": "d623c0e9-4b94-4c59-a9a9-29224c915759",
+      "source_sha256": "a00768956b7b83ebd557f9512d4f0feffefa6f48ee076783920145dc5bfa3be1",
+      "holder_local_key": "u5",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "uncertain",
+        "note": "Bare numeral exhaustivity requires adjudication; both logical alternatives are explicit.",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [
+        {
+          "ast": {
+            "quant": "exists",
+            "var": "a",
+            "sort": "diver",
+            "body": {
+              "quant": "exists",
+              "var": "b",
+              "sort": "diver",
+              "body": {
+                "quant": "exists",
+                "var": "p",
+                "sort": "pier",
+                "body": {
+                  "and": [
+                    {
+                      "not": {
+                        "eq": [
+                          {
+                            "var": "a"
+                          },
+                          {
+                            "var": "b"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "pred": "Surveyed",
+                      "args": [
+                        {
+                          "var": "a"
+                        },
+                        {
+                          "var": "p"
+                        }
+                      ]
+                    },
+                    {
+                      "pred": "Surveyed",
+                      "args": [
+                        {
+                          "var": "b"
+                        },
+                        {
+                          "var": "p"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "basis": "At least two distinct divers share a surveyed pier."
+        },
+        {
+          "ast": {
+            "quant": "exists",
+            "var": "p",
+            "sort": "pier",
+            "body": {
+              "quant": "exists",
+              "var": "a",
+              "sort": "diver",
+              "body": {
+                "quant": "exists",
+                "var": "b",
+                "sort": "diver",
+                "body": {
+                  "and": [
+                    {
+                      "not": {
+                        "eq": [
+                          {
+                            "var": "a"
+                          },
+                          {
+                            "var": "b"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "pred": "Surveyed",
+                      "args": [
+                        {
+                          "var": "a"
+                        },
+                        {
+                          "var": "p"
+                        }
+                      ]
+                    },
+                    {
+                      "pred": "Surveyed",
+                      "args": [
+                        {
+                          "var": "b"
+                        },
+                        {
+                          "var": "p"
+                        }
+                      ]
+                    },
+                    {
+                      "quant": "forall",
+                      "var": "c",
+                      "sort": "diver",
+                      "body": {
+                        "or": [
+                          {
+                            "not": {
+                              "pred": "Surveyed",
+                              "args": [
+                                {
+                                  "var": "c"
+                                },
+                                {
+                                  "var": "p"
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "or": [
+                              {
+                                "eq": [
+                                  {
+                                    "var": "c"
+                                  },
+                                  {
+                                    "var": "a"
+                                  }
+                                ]
+                              },
+                              {
+                                "eq": [
+                                  {
+                                    "var": "c"
+                                  },
+                                  {
+                                    "var": "b"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "basis": "Exhaustive numeral reading: exactly two surveyed that pier."
+        }
+      ],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "exists",
+            "var": "a",
+            "sort": "diver",
+            "body": {
+              "quant": "exists",
+              "var": "p",
+              "sort": "pier",
+              "body": {
+                "pred": "Surveyed",
+                "args": [
+                  {
+                    "var": "a"
+                  },
+                  {
+                    "var": "p"
+                  }
+                ]
+              }
+            }
+          },
+          "reason": "Does not require two distinct divers."
+        }
+      ],
+      "unsupported_indications": []
+    },
+    {
+      "source_id": "d5344db6-2caa-4179-8c68-fee19d2899c3",
+      "source_sha256": "887eff04adf955e2daf016f6bd7a2dd80a4d14ab5625b888650941da264e2324",
+      "holder_local_key": "u6",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "supported",
+        "note": "",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "d",
+            "sort": "device",
+            "body": {
+              "quant": "forall",
+              "var": "a",
+              "sort": "sensor",
+              "body": {
+                "quant": "forall",
+                "var": "b",
+                "sort": "sensor",
+                "body": {
+                  "or": [
+                    {
+                      "not": {
+                        "and": [
+                          {
+                            "pred": "Linked",
+                            "args": [
+                              {
+                                "var": "d"
+                              },
+                              {
+                                "var": "a"
+                              }
+                            ]
+                          },
+                          {
+                            "pred": "Linked",
+                            "args": [
+                              {
+                                "var": "d"
+                              },
+                              {
+                                "var": "b"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "eq": [
+                        {
+                          "var": "a"
+                        },
+                        {
+                          "var": "b"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "basis": "Each device has at most one linked sensor."
+        }
+      ],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "d",
+            "sort": "device",
+            "body": {
+              "quant": "exists",
+              "var": "a",
+              "sort": "sensor",
+              "body": {
+                "and": [
+                  {
+                    "pred": "Linked",
+                    "args": [
+                      {
+                        "var": "d"
+                      },
+                      {
+                        "var": "a"
+                      }
+                    ]
+                  },
+                  {
+                    "quant": "forall",
+                    "var": "b",
+                    "sort": "sensor",
+                    "body": {
+                      "or": [
+                        {
+                          "not": {
+                            "pred": "Linked",
+                            "args": [
+                              {
+                                "var": "d"
+                              },
+                              {
+                                "var": "b"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "eq": [
+                            {
+                              "var": "b"
+                            },
+                            {
+                              "var": "a"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "reason": "Requires a sensor even for unlinked devices."
+        }
+      ],
+      "unsupported_indications": []
+    },
+    {
+      "source_id": "b46255ee-9da5-47c0-81d3-203d90a8017e",
+      "source_sha256": "2386c84703d42fecc7ba5203f7055e038296f4455fb6d9e8365e9b152c3ef5a5",
+      "holder_local_key": "n1",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "supported",
+        "note": "",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "g",
+            "sort": "guard",
+            "body": {
+              "not": {
+                "quant": "forall",
+                "var": "t",
+                "sort": "gate",
+                "body": {
+                  "pred": "Opened",
+                  "args": [
+                    {
+                      "var": "g"
+                    },
+                    {
+                      "var": "t"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "basis": "Every guard fails to open all gates."
+        }
+      ],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "g",
+            "sort": "guard",
+            "body": {
+              "quant": "forall",
+              "var": "t",
+              "sort": "gate",
+              "body": {
+                "not": {
+                  "pred": "Opened",
+                  "args": [
+                    {
+                      "var": "g"
+                    },
+                    {
+                      "var": "t"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "reason": "Says no gate was opened."
+        }
+      ],
+      "unsupported_indications": []
+    },
+    {
+      "source_id": "f0ab9cbf-e315-4ab1-b0a8-b114e10b4221",
+      "source_sha256": "f2eb3fbf79c273b644c91f6e0f90ad146173d42bd597494d94c24a4aba50403b",
+      "holder_local_key": "n2",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "supported",
+        "note": "",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [
+        {
+          "ast": {
+            "not": {
+              "quant": "forall",
+              "var": "g",
+              "sort": "gardener",
+              "body": {
+                "quant": "exists",
+                "var": "t",
+                "sort": "tree",
+                "body": {
+                  "pred": "Watered",
+                  "args": [
+                    {
+                      "var": "g"
+                    },
+                    {
+                      "var": "t"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "basis": "At least one gardener watered no tree."
+        }
+      ],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "g",
+            "sort": "gardener",
+            "body": {
+              "not": {
+                "quant": "exists",
+                "var": "t",
+                "sort": "tree",
+                "body": {
+                  "pred": "Watered",
+                  "args": [
+                    {
+                      "var": "g"
+                    },
+                    {
+                      "var": "t"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "reason": "Says every gardener watered no tree."
+        }
+      ],
+      "unsupported_indications": []
+    },
+    {
+      "source_id": "858b3515-0080-4de2-b1c4-600cad894466",
+      "source_sha256": "a93c7415027b790876ec37d62d86a5242d12589e40249a660557e5d6b419cd50",
+      "holder_local_key": "n3",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "supported",
+        "note": "",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "c",
+            "sort": "cashier",
+            "body": {
+              "not": {
+                "quant": "exists",
+                "var": "t",
+                "sort": "ticket",
+                "body": {
+                  "pred": "Issued",
+                  "args": [
+                    {
+                      "var": "c"
+                    },
+                    {
+                      "var": "t"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "basis": "Negative concord gives absence of issued tickets."
+        }
+      ],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "c",
+            "sort": "cashier",
+            "body": {
+              "quant": "exists",
+              "var": "t",
+              "sort": "ticket",
+              "body": {
+                "pred": "Issued",
+                "args": [
+                  {
+                    "var": "c"
+                  },
+                  {
+                    "var": "t"
+                  }
+                ]
+              }
+            }
+          },
+          "reason": "Reverses negative concord into a positive existential."
+        }
+      ],
+      "unsupported_indications": []
+    },
+    {
+      "source_id": "a94fe53d-d591-4958-8576-ab293d9d01b5",
+      "source_sha256": "2d9bc1160aeb63902ae07e76612a8f76048c4185059ce7dc0fc060142272017f",
+      "holder_local_key": "n4",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "supported",
+        "note": "",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [
+        {
+          "ast": {
+            "not": {
+              "quant": "exists",
+              "var": "t",
+              "sort": "tunnel",
+              "body": {
+                "quant": "forall",
+                "var": "s",
+                "sort": "sensor",
+                "body": {
+                  "not": {
+                    "pred": "Located",
+                    "args": [
+                      {
+                        "var": "s"
+                      },
+                      {
+                        "var": "t"
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "basis": "No sensor-free tunnel."
+        }
+      ],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "exists",
+            "var": "s",
+            "sort": "sensor",
+            "body": {
+              "quant": "forall",
+              "var": "t",
+              "sort": "tunnel",
+              "body": {
+                "pred": "Located",
+                "args": [
+                  {
+                    "var": "s"
+                  },
+                  {
+                    "var": "t"
+                  }
+                ]
+              }
+            }
+          },
+          "reason": "Requires one shared sensor for all tunnels."
+        }
+      ],
+      "unsupported_indications": []
+    },
+    {
+      "source_id": "cc18ae6c-d0d7-4876-b763-a748644675be",
+      "source_sha256": "53ed4799031bcfaef45de6d41f0e726751485de60d4fbe123844f5aecf7ac5ba",
+      "holder_local_key": "n5",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "supported",
+        "note": "",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [
+        {
+          "ast": {
+            "quant": "exists",
+            "var": "x",
+            "sort": "operator",
+            "body": {
+              "and": [
+                {
+                  "not": {
+                    "quant": "exists",
+                    "var": "r",
+                    "sort": "request",
+                    "body": {
+                      "pred": "Accepted",
+                      "args": [
+                        {
+                          "var": "x"
+                        },
+                        {
+                          "var": "r"
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "quant": "forall",
+                  "var": "y",
+                  "sort": "operator",
+                  "body": {
+                    "or": [
+                      {
+                        "not": {
+                          "not": {
+                            "quant": "exists",
+                            "var": "s",
+                            "sort": "request",
+                            "body": {
+                              "pred": "Accepted",
+                              "args": [
+                                {
+                                  "var": "y"
+                                },
+                                {
+                                  "var": "s"
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "eq": [
+                          {
+                            "var": "y"
+                          },
+                          {
+                            "var": "x"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "basis": "Exactly one operator has no accepted requests."
+        }
+      ],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "exists",
+            "var": "x",
+            "sort": "operator",
+            "body": {
+              "not": {
+                "quant": "exists",
+                "var": "r",
+                "sort": "request",
+                "body": {
+                  "pred": "Accepted",
+                  "args": [
+                    {
+                      "var": "x"
+                    },
+                    {
+                      "var": "r"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "reason": "Drops uniqueness of the operator who accepted none."
+        }
+      ],
+      "unsupported_indications": []
+    },
+    {
+      "source_id": "1c570f64-66df-46fc-89dd-b1ef02a71263",
+      "source_sha256": "48f76f409195db7b48613418fb8a716e895a3218aee9f38ee2c6f3c8c5b04c66",
+      "holder_local_key": "n6",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "uncertain",
+        "note": "Negation/object scope is awkward but interpretable in two ways; no human judgment asserted.",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "f",
+            "sort": "farmer",
+            "body": {
+              "quant": "exists",
+              "var": "a",
+              "sort": "animal",
+              "body": {
+                "not": {
+                  "pred": "Sold",
+                  "args": [
+                    {
+                      "var": "f"
+                    },
+                    {
+                      "var": "a"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "basis": "Every farmer has at least one unsold animal."
+        },
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "f",
+            "sort": "farmer",
+            "body": {
+              "not": {
+                "quant": "exists",
+                "var": "a",
+                "sort": "animal",
+                "body": {
+                  "pred": "Sold",
+                  "args": [
+                    {
+                      "var": "f"
+                    },
+                    {
+                      "var": "a"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "basis": "Negation takes the existential object in its scope."
+        }
+      ],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "f",
+            "sort": "farmer",
+            "body": {
+              "quant": "exists",
+              "var": "a",
+              "sort": "animal",
+              "body": {
+                "pred": "Sold",
+                "args": [
+                  {
+                    "var": "f"
+                  },
+                  {
+                    "var": "a"
+                  }
+                ]
+              }
+            }
+          },
+          "reason": "Positive sale assertion loses negation."
+        }
+      ],
+      "unsupported_indications": []
+    },
+    {
+      "source_id": "297ef16d-2dfd-4305-9dac-32e5ca27e74a",
+      "source_sha256": "07ace21f4c9590b1b64a82fdf4bab77d15ec6ae58d9ea2eaa8de15c450ac9a53",
+      "holder_local_key": "a1",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "supported",
+        "note": "",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "w",
+            "sort": "worker",
+            "body": {
+              "quant": "exists",
+              "var": "k",
+              "sort": "key",
+              "body": {
+                "quant": "exists",
+                "var": "c",
+                "sort": "cabinet",
+                "body": {
+                  "and": [
+                    {
+                      "pred": "Took",
+                      "args": [
+                        {
+                          "var": "w"
+                        },
+                        {
+                          "var": "k"
+                        }
+                      ]
+                    },
+                    {
+                      "pred": "Put",
+                      "args": [
+                        {
+                          "var": "w"
+                        },
+                        {
+                          "var": "k"
+                        },
+                        {
+                          "var": "c"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "basis": "The key placed is the key taken by that worker."
+        }
+      ],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "w",
+            "sort": "worker",
+            "body": {
+              "quant": "exists",
+              "var": "k",
+              "sort": "key",
+              "body": {
+                "quant": "exists",
+                "var": "j",
+                "sort": "key",
+                "body": {
+                  "quant": "exists",
+                  "var": "c",
+                  "sort": "cabinet",
+                  "body": {
+                    "and": [
+                      {
+                        "pred": "Took",
+                        "args": [
+                          {
+                            "var": "w"
+                          },
+                          {
+                            "var": "k"
+                          }
+                        ]
+                      },
+                      {
+                        "pred": "Put",
+                        "args": [
+                          {
+                            "var": "w"
+                          },
+                          {
+                            "var": "j"
+                          },
+                          {
+                            "var": "c"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "reason": "Breaks key coreference."
+        }
+      ],
+      "unsupported_indications": []
+    },
+    {
+      "source_id": "6d5b6a0f-1475-4d2d-abb6-4e9abe2c3694",
+      "source_sha256": "8f4e0441ec15f7b80f034bbd44724d9edbedf7c151dd60963b24295c90d74d3f",
+      "holder_local_key": "a2",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "supported",
+        "note": "",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "g",
+            "sort": "guard",
+            "body": {
+              "quant": "exists",
+              "var": "c",
+              "sort": "courier",
+              "body": {
+                "and": [
+                  {
+                    "pred": "Met",
+                    "args": [
+                      {
+                        "var": "g"
+                      },
+                      {
+                        "var": "c"
+                      }
+                    ]
+                  },
+                  {
+                    "pred": "Greeted",
+                    "args": [
+                      {
+                        "var": "c"
+                      },
+                      {
+                        "var": "g"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "basis": "The met courier greeted that guard."
+        }
+      ],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "g",
+            "sort": "guard",
+            "body": {
+              "quant": "exists",
+              "var": "c",
+              "sort": "courier",
+              "body": {
+                "quant": "exists",
+                "var": "d",
+                "sort": "courier",
+                "body": {
+                  "and": [
+                    {
+                      "pred": "Met",
+                      "args": [
+                        {
+                          "var": "g"
+                        },
+                        {
+                          "var": "c"
+                        }
+                      ]
+                    },
+                    {
+                      "pred": "Greeted",
+                      "args": [
+                        {
+                          "var": "d"
+                        },
+                        {
+                          "var": "g"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "reason": "Allows an unrelated courier to greet."
+        }
+      ],
+      "unsupported_indications": []
+    },
+    {
+      "source_id": "2a5dcfb9-feac-4b59-bdb1-560df8f7821c",
+      "source_sha256": "8bb19ffffbf15a6690ff7712c14c7b630e969156d82ab28689fa5f39443b1623",
+      "holder_local_key": "a3",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "supported",
+        "note": "",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "p",
+            "sort": "person",
+            "body": {
+              "or": [
+                {
+                  "not": {
+                    "pred": "Technician",
+                    "args": [
+                      {
+                        "var": "p"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "quant": "exists",
+                  "var": "q",
+                  "sort": "person",
+                  "body": {
+                    "quant": "exists",
+                    "var": "d",
+                    "sort": "device",
+                    "body": {
+                      "and": [
+                        {
+                          "pred": "Colleague",
+                          "args": [
+                            {
+                              "var": "q"
+                            },
+                            {
+                              "var": "p"
+                            }
+                          ]
+                        },
+                        {
+                          "pred": "Passed",
+                          "args": [
+                            {
+                              "var": "p"
+                            },
+                            {
+                              "var": "q"
+                            },
+                            {
+                              "var": "d"
+                            }
+                          ]
+                        },
+                        {
+                          "pred": "Inspected",
+                          "args": [
+                            {
+                              "var": "q"
+                            },
+                            {
+                              "var": "d"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "basis": "Colleague is the inspector; device is shared."
+        }
+      ],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "p",
+            "sort": "person",
+            "body": {
+              "or": [
+                {
+                  "not": {
+                    "pred": "Technician",
+                    "args": [
+                      {
+                        "var": "p"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "quant": "exists",
+                  "var": "q",
+                  "sort": "person",
+                  "body": {
+                    "quant": "exists",
+                    "var": "d",
+                    "sort": "device",
+                    "body": {
+                      "and": [
+                        {
+                          "pred": "Colleague",
+                          "args": [
+                            {
+                              "var": "q"
+                            },
+                            {
+                              "var": "p"
+                            }
+                          ]
+                        },
+                        {
+                          "pred": "Passed",
+                          "args": [
+                            {
+                              "var": "p"
+                            },
+                            {
+                              "var": "q"
+                            },
+                            {
+                              "var": "d"
+                            }
+                          ]
+                        },
+                        {
+                          "pred": "Inspected",
+                          "args": [
+                            {
+                              "var": "p"
+                            },
+                            {
+                              "var": "d"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "reason": "Makes the technician the inspector."
+        }
+      ],
+      "unsupported_indications": []
+    },
+    {
+      "source_id": "e38479c0-7c34-4695-8fed-bfa902e5746f",
+      "source_sha256": "22a7196392a5eff5c90cc9ef882671904be3813ab9c4d4714e9d68a1796385ce",
+      "holder_local_key": "a4",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "supported",
+        "note": "",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "m",
+            "sort": "mechanic",
+            "body": {
+              "quant": "forall",
+              "var": "f",
+              "sort": "fault",
+              "body": {
+                "or": [
+                  {
+                    "not": {
+                      "pred": "Detected",
+                      "args": [
+                        {
+                          "var": "m"
+                        },
+                        {
+                          "var": "f"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "pred": "Repairs",
+                    "args": [
+                      {
+                        "var": "m"
+                      },
+                      {
+                        "var": "f"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "basis": "Generic conditional binds the mechanic and the same detected fault."
+        }
+      ],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "m",
+            "sort": "mechanic",
+            "body": {
+              "or": [
+                {
+                  "not": {
+                    "quant": "exists",
+                    "var": "f",
+                    "sort": "fault",
+                    "body": {
+                      "pred": "Detected",
+                      "args": [
+                        {
+                          "var": "m"
+                        },
+                        {
+                          "var": "f"
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "quant": "exists",
+                  "var": "g",
+                  "sort": "fault",
+                  "body": {
+                    "pred": "Repairs",
+                    "args": [
+                      {
+                        "var": "m"
+                      },
+                      {
+                        "var": "g"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "reason": "Repairs may target another fault."
+        }
+      ],
+      "unsupported_indications": []
+    },
+    {
+      "source_id": "be0d8441-442e-4dfb-ba56-d391ffa18198",
+      "source_sha256": "93c7c70a5bb28fb75b4fc5289593131d5b43c1313b4e1da9ea629ab6960f2bda",
+      "holder_local_key": "a5",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "supported",
+        "note": "",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "a",
+            "sort": "archivist",
+            "body": {
+              "quant": "forall",
+              "var": "f",
+              "sort": "folder",
+              "body": {
+                "quant": "forall",
+                "var": "r",
+                "sort": "registrar",
+                "body": {
+                  "or": [
+                    {
+                      "not": {
+                        "pred": "Received",
+                        "args": [
+                          {
+                            "var": "a"
+                          },
+                          {
+                            "var": "f"
+                          },
+                          {
+                            "var": "r"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "pred": "Returns",
+                      "args": [
+                        {
+                          "var": "a"
+                        },
+                        {
+                          "var": "f"
+                        },
+                        {
+                          "var": "r"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "basis": "Both folder and registrar are preserved by the anaphora."
+        }
+      ],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "a",
+            "sort": "archivist",
+            "body": {
+              "quant": "forall",
+              "var": "f",
+              "sort": "folder",
+              "body": {
+                "quant": "forall",
+                "var": "r",
+                "sort": "registrar",
+                "body": {
+                  "or": [
+                    {
+                      "not": {
+                        "pred": "Received",
+                        "args": [
+                          {
+                            "var": "a"
+                          },
+                          {
+                            "var": "f"
+                          },
+                          {
+                            "var": "r"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "quant": "exists",
+                      "var": "s",
+                      "sort": "registrar",
+                      "body": {
+                        "pred": "Returns",
+                        "args": [
+                          {
+                            "var": "a"
+                          },
+                          {
+                            "var": "f"
+                          },
+                          {
+                            "var": "s"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "reason": "Allows return to a different registrar."
+        }
+      ],
+      "unsupported_indications": []
+    },
+    {
+      "source_id": "c40e973e-9a19-40bb-a491-89c808701560",
+      "source_sha256": "2372983218f729da687f9ea861a62a2a26db740d28e1b99a1e7ab5c688a599ed",
+      "holder_local_key": "a6",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "uncertain",
+        "note": "Russian possessive antecedent is unresolved in the isolated sentence.",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "c",
+            "sort": "conductor",
+            "body": {
+              "quant": "exists",
+              "var": "p",
+              "sort": "passenger",
+              "body": {
+                "quant": "exists",
+                "var": "t",
+                "sort": "ticket",
+                "body": {
+                  "and": [
+                    {
+                      "pred": "Showed",
+                      "args": [
+                        {
+                          "var": "c"
+                        },
+                        {
+                          "var": "p"
+                        },
+                        {
+                          "var": "t"
+                        }
+                      ]
+                    },
+                    {
+                      "pred": "PassengerOwns",
+                      "args": [
+                        {
+                          "var": "p"
+                        },
+                        {
+                          "var": "t"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "basis": "Possessor is the passenger."
+        },
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "c",
+            "sort": "conductor",
+            "body": {
+              "quant": "exists",
+              "var": "p",
+              "sort": "passenger",
+              "body": {
+                "quant": "exists",
+                "var": "t",
+                "sort": "ticket",
+                "body": {
+                  "and": [
+                    {
+                      "pred": "Showed",
+                      "args": [
+                        {
+                          "var": "c"
+                        },
+                        {
+                          "var": "p"
+                        },
+                        {
+                          "var": "t"
+                        }
+                      ]
+                    },
+                    {
+                      "pred": "ConductorOwns",
+                      "args": [
+                        {
+                          "var": "c"
+                        },
+                        {
+                          "var": "t"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "basis": "Possessor is the conductor."
+        }
+      ],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "c",
+            "sort": "conductor",
+            "body": {
+              "quant": "exists",
+              "var": "p",
+              "sort": "passenger",
+              "body": {
+                "quant": "exists",
+                "var": "t",
+                "sort": "ticket",
+                "body": {
+                  "and": [
+                    {
+                      "pred": "Showed",
+                      "args": [
+                        {
+                          "var": "c"
+                        },
+                        {
+                          "var": "p"
+                        },
+                        {
+                          "var": "t"
+                        }
+                      ]
+                    },
+                    {
+                      "not": {
+                        "pred": "PassengerOwns",
+                        "args": [
+                          {
+                            "var": "p"
+                          },
+                          {
+                            "var": "t"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "not": {
+                        "pred": "ConductorOwns",
+                        "args": [
+                          {
+                            "var": "c"
+                          },
+                          {
+                            "var": "t"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "reason": "Explicitly denies both available possessors."
+        }
+      ],
+      "unsupported_indications": []
+    },
+    {
+      "source_id": "c915a315-eb41-45fc-a3ce-c76bcce44b6b",
+      "source_sha256": "41cddde402867a80cf6f821420e87c3cc96606e6d0409b7bce46d55220f105dd",
+      "holder_local_key": "m1",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "unsupported",
+        "note": "No modal or ability relation is supplied.",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "t",
+            "sort": "technician",
+            "body": {
+              "quant": "forall",
+              "var": "h",
+              "sort": "hatch",
+              "body": {
+                "pred": "Opens",
+                "args": [
+                  {
+                    "var": "t"
+                  },
+                  {
+                    "var": "h"
+                  }
+                ]
+              }
+            }
+          },
+          "reason": "Turns ability/possibility into actual opening."
+        }
+      ],
+      "unsupported_indications": [
+        "Modal ability/possibility is absent from the signature; actual Opens is insufficient."
+      ]
+    },
+    {
+      "source_id": "15c30de4-1ffc-461f-a370-fc83378b740e",
+      "source_sha256": "c6192f22620e39d0d5b4268d783fb7400de9f6808479080929f637d969640a69",
+      "holder_local_key": "m2",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "unsupported",
+        "note": "Past and present cannot be indexed by the provided binary predicate.",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "and": [
+              {
+                "quant": "forall",
+                "var": "t",
+                "sort": "train",
+                "body": {
+                  "quant": "exists",
+                  "var": "s",
+                  "sort": "station",
+                  "body": {
+                    "pred": "Passes",
+                    "args": [
+                      {
+                        "var": "t"
+                      },
+                      {
+                        "var": "s"
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "quant": "forall",
+                "var": "u",
+                "sort": "train",
+                "body": {
+                  "not": {
+                    "quant": "exists",
+                    "var": "r",
+                    "sort": "station",
+                    "body": {
+                      "pred": "Passes",
+                      "args": [
+                        {
+                          "var": "u"
+                        },
+                        {
+                          "var": "r"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "reason": "Collapses past and present into a contradictory extensional snapshot."
+        }
+      ],
+      "unsupported_indications": [
+        "Requires time indices or distinct temporal predicates absent from the signature."
+      ]
+    },
+    {
+      "source_id": "1743a256-baa3-4113-9db2-8777158c3d2c",
+      "source_sha256": "fb368d0b7c4d98dec9b58996a690221a36e7ec40c552918cce72f6fabba5f1c7",
+      "holder_local_key": "m3",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "unsupported",
+        "note": "The signature does not encode order or signal-specific activation events.",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "s",
+            "sort": "signal",
+            "body": {
+              "quant": "exists",
+              "var": "d",
+              "sort": "sensor",
+              "body": {
+                "and": [
+                  {
+                    "pred": "Heard",
+                    "args": [
+                      {
+                        "var": "d"
+                      },
+                      {
+                        "var": "s"
+                      }
+                    ]
+                  },
+                  {
+                    "pred": "Activated",
+                    "args": [
+                      {
+                        "var": "d"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "reason": "Adds hearing and loses after-ordering."
+        }
+      ],
+      "unsupported_indications": [
+        "Temporal after relation is absent; Heard and unary Activated do not express it."
+      ]
+    },
+    {
+      "source_id": "e4518739-1bc2-42a1-b19f-65820721486a",
+      "source_sha256": "839b38a44c1e90ef02048f7192ed1ae7fa9e00d571ef1deab1b8a95a49e1ac17",
+      "holder_local_key": "m4",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "unsupported",
+        "note": "No obligation operator or relation in the allowed signature.",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "i",
+            "sort": "inspector",
+            "body": {
+              "not": {
+                "quant": "forall",
+                "var": "w",
+                "sort": "warehouse",
+                "body": {
+                  "pred": "Checks",
+                  "args": [
+                    {
+                      "var": "i"
+                    },
+                    {
+                      "var": "w"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "reason": "Negates actual checking rather than obligation."
+        }
+      ],
+      "unsupported_indications": [
+        "Deontic obligation is not extensional Checks."
+      ]
+    },
+    {
+      "source_id": "ce469a63-f014-4d69-afb9-93c3ea635453",
+      "source_sha256": "dda882069e294eeeaa37d99f418684d16c129946196fcb772ad0c1c97a314a6c",
+      "holder_local_key": "m5",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "unsupported",
+        "note": "Future eventuality and a prior opening are absent from unary Opens.",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "v",
+            "sort": "valve",
+            "body": {
+              "pred": "Opens",
+              "args": [
+                {
+                  "var": "v"
+                }
+              ]
+            }
+          },
+          "reason": "Drops future eventuality and repetition."
+        }
+      ],
+      "unsupported_indications": [
+        "Requires temporal structure and a repetition/presupposition treatment."
+      ]
+    },
+    {
+      "source_id": "b1d88e5c-cd23-47f5-9fbc-04ff10b92112",
+      "source_sha256": "c33ef83417f17a6ebe7667c7dbed917bf37c73df134e86337dbd7685cd9c851f",
+      "holder_local_key": "m6",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "supported",
+        "note": "",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "j",
+            "sort": "journal",
+            "body": {
+              "quant": "exists",
+              "var": "e",
+              "sort": "entry",
+              "body": {
+                "quant": "exists",
+                "var": "f",
+                "sort": "entry",
+                "body": {
+                  "and": [
+                    {
+                      "not": {
+                        "eq": [
+                          {
+                            "var": "e"
+                          },
+                          {
+                            "var": "f"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "pred": "Contains",
+                      "args": [
+                        {
+                          "var": "j"
+                        },
+                        {
+                          "var": "e"
+                        }
+                      ]
+                    },
+                    {
+                      "pred": "Contains",
+                      "args": [
+                        {
+                          "var": "j"
+                        },
+                        {
+                          "var": "f"
+                        }
+                      ]
+                    },
+                    {
+                      "pred": "Earlier",
+                      "args": [
+                        {
+                          "var": "e"
+                        },
+                        {
+                          "var": "f"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "basis": "Temporal comparison is explicitly available as Earlier between two distinct contained entries."
+        }
+      ],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "j",
+            "sort": "journal",
+            "body": {
+              "quant": "exists",
+              "var": "e",
+              "sort": "entry",
+              "body": {
+                "and": [
+                  {
+                    "pred": "Contains",
+                    "args": [
+                      {
+                        "var": "j"
+                      },
+                      {
+                        "var": "e"
+                      }
+                    ]
+                  },
+                  {
+                    "quant": "forall",
+                    "var": "f",
+                    "sort": "entry",
+                    "body": {
+                      "or": [
+                        {
+                          "not": {
+                            "and": [
+                              {
+                                "pred": "Contains",
+                                "args": [
+                                  {
+                                    "var": "j"
+                                  },
+                                  {
+                                    "var": "f"
+                                  }
+                                ]
+                              },
+                              {
+                                "not": {
+                                  "eq": [
+                                    {
+                                      "var": "e"
+                                    },
+                                    {
+                                      "var": "f"
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "pred": "Earlier",
+                          "args": [
+                            {
+                              "var": "e"
+                            },
+                            {
+                              "var": "f"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "reason": "Asserts an entry earlier than every other one, and allows a singleton journal."
+        }
+      ],
+      "unsupported_indications": []
+    },
+    {
+      "source_id": "554913aa-ba8b-4c9f-8973-d7d5638e7ac1",
+      "source_sha256": "c62018bd01e53e754c095881131289bfab330e0402e25363f039128059adb2c6",
+      "holder_local_key": "l1",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "supported",
+        "note": "",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [
+        {
+          "ast": {
+            "and": [
+              {
+                "quant": "forall",
+                "var": "l",
+                "sort": "lecturer",
+                "body": {
+                  "quant": "exists",
+                  "var": "s",
+                  "sort": "student",
+                  "body": {
+                    "pred": "PraisedStudent",
+                    "args": [
+                      {
+                        "var": "l"
+                      },
+                      {
+                        "var": "s"
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "quant": "forall",
+                "var": "c",
+                "sort": "curator",
+                "body": {
+                  "quant": "exists",
+                  "var": "g",
+                  "sort": "graduate",
+                  "body": {
+                    "pred": "PraisedGraduate",
+                    "args": [
+                      {
+                        "var": "c"
+                      },
+                      {
+                        "var": "g"
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          "basis": "Ellipsis repeats praise with the appropriate role pair."
+        }
+      ],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "and": [
+              {
+                "quant": "exists",
+                "var": "s",
+                "sort": "student",
+                "body": {
+                  "quant": "forall",
+                  "var": "l",
+                  "sort": "lecturer",
+                  "body": {
+                    "pred": "PraisedStudent",
+                    "args": [
+                      {
+                        "var": "l"
+                      },
+                      {
+                        "var": "s"
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "quant": "exists",
+                "var": "g",
+                "sort": "graduate",
+                "body": {
+                  "quant": "forall",
+                  "var": "c",
+                  "sort": "curator",
+                  "body": {
+                    "pred": "PraisedGraduate",
+                    "args": [
+                      {
+                        "var": "c"
+                      },
+                      {
+                        "var": "g"
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          "reason": "Requires shared students and graduates."
+        }
+      ],
+      "unsupported_indications": []
+    },
+    {
+      "source_id": "91211baf-d09f-4cde-bb9e-b937d33aeeba",
+      "source_sha256": "ee1e326a75cd03ec13b0054a135ef0d14912ae27c43937d65814c68eb5ebb21a",
+      "holder_local_key": "l2",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "supported",
+        "note": "",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [
+        {
+          "ast": {
+            "quant": "exists",
+            "var": "a",
+            "sort": "keeper",
+            "body": {
+              "quant": "exists",
+              "var": "b",
+              "sort": "keeper",
+              "body": {
+                "quant": "exists",
+                "var": "c",
+                "sort": "crate",
+                "body": {
+                  "quant": "exists",
+                  "var": "d",
+                  "sort": "bale",
+                  "body": {
+                    "and": [
+                      {
+                        "not": {
+                          "eq": [
+                            {
+                              "var": "a"
+                            },
+                            {
+                              "var": "b"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "pred": "AcceptedCrate",
+                        "args": [
+                          {
+                            "var": "a"
+                          },
+                          {
+                            "var": "c"
+                          }
+                        ]
+                      },
+                      {
+                        "pred": "AcceptedBale",
+                        "args": [
+                          {
+                            "var": "b"
+                          },
+                          {
+                            "var": "d"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "basis": "Another keeper is distinct and shares the elided acceptance verb."
+        }
+      ],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "exists",
+            "var": "a",
+            "sort": "keeper",
+            "body": {
+              "quant": "exists",
+              "var": "c",
+              "sort": "crate",
+              "body": {
+                "quant": "exists",
+                "var": "d",
+                "sort": "bale",
+                "body": {
+                  "and": [
+                    {
+                      "pred": "AcceptedCrate",
+                      "args": [
+                        {
+                          "var": "a"
+                        },
+                        {
+                          "var": "c"
+                        }
+                      ]
+                    },
+                    {
+                      "pred": "AcceptedBale",
+                      "args": [
+                        {
+                          "var": "a"
+                        },
+                        {
+                          "var": "d"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "reason": "Uses one keeper for both events."
+        }
+      ],
+      "unsupported_indications": []
+    },
+    {
+      "source_id": "2677068b-54d0-4da5-858d-0d1cdb5915c4",
+      "source_sha256": "b995c996f33002dc6db3183640b27494d9ba9b92c4965eabeee339652385bd5c",
+      "holder_local_key": "l3",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "supported",
+        "note": "",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [
+        {
+          "ast": {
+            "and": [
+              {
+                "quant": "forall",
+                "var": "c",
+                "sort": "cook",
+                "body": {
+                  "quant": "exists",
+                  "var": "l",
+                  "sort": "loaf",
+                  "body": {
+                    "pred": "CutCook",
+                    "args": [
+                      {
+                        "var": "c"
+                      },
+                      {
+                        "var": "l"
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "quant": "forall",
+                "var": "b",
+                "sort": "baker",
+                "body": {
+                  "not": {
+                    "quant": "exists",
+                    "var": "m",
+                    "sort": "loaf",
+                    "body": {
+                      "pred": "CutBaker",
+                      "args": [
+                        {
+                          "var": "b"
+                        },
+                        {
+                          "var": "m"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "basis": "Ellipsis preserves negation and bread-cutting predicate."
+        }
+      ],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "and": [
+              {
+                "quant": "forall",
+                "var": "c",
+                "sort": "cook",
+                "body": {
+                  "quant": "exists",
+                  "var": "l",
+                  "sort": "loaf",
+                  "body": {
+                    "pred": "CutCook",
+                    "args": [
+                      {
+                        "var": "c"
+                      },
+                      {
+                        "var": "l"
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "quant": "forall",
+                "var": "b",
+                "sort": "baker",
+                "body": {
+                  "quant": "exists",
+                  "var": "m",
+                  "sort": "loaf",
+                  "body": {
+                    "pred": "CutBaker",
+                    "args": [
+                      {
+                        "var": "b"
+                      },
+                      {
+                        "var": "m"
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          "reason": "Drops the negative concord in the second clause."
+        }
+      ],
+      "unsupported_indications": []
+    },
+    {
+      "source_id": "ec499bcd-6983-4a27-bd1b-a34d367f351a",
+      "source_sha256": "937ec6aec52dd4cee61e3133492d78f8ae225ea3e8f647f663ead7ed6e79e268",
+      "holder_local_key": "l4",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "uncertain",
+        "note": "Visitation is expressible; bypassing or walking around is not. The sentence does not settle its lexical sense.",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "m",
+            "sort": "messenger",
+            "body": {
+              "quant": "exists",
+              "var": "p",
+              "sort": "post",
+              "body": {
+                "pred": "Visited",
+                "args": [
+                  {
+                    "var": "m"
+                  },
+                  {
+                    "var": "p"
+                  }
+                ]
+              }
+            }
+          },
+          "basis": "Conditional on the visitation sense of обошёл."
+        }
+      ],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "m",
+            "sort": "messenger",
+            "body": {
+              "quant": "forall",
+              "var": "p",
+              "sort": "post",
+              "body": {
+                "pred": "Visited",
+                "args": [
+                  {
+                    "var": "m"
+                  },
+                  {
+                    "var": "p"
+                  }
+                ]
+              }
+            }
+          },
+          "reason": "Every post is not asserted by the indefinite singular."
+        }
+      ],
+      "unsupported_indications": [
+        "The обход/avoidance sense cannot be represented by Visited alone."
+      ]
+    },
+    {
+      "source_id": "4ac88838-bc46-48bd-b374-356702eafb74",
+      "source_sha256": "ad0b2646219049d588484841e55db6d030766f959c18ebf1ec5b9a460526d904",
+      "holder_local_key": "l5",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "unsupported",
+        "note": "Mass comparison is absent from the signature.",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "k",
+            "sort": "key",
+            "body": {
+              "quant": "forall",
+              "var": "l",
+              "sort": "lock",
+              "body": {
+                "pred": "Fits",
+                "args": [
+                  {
+                    "var": "k"
+                  },
+                  {
+                    "var": "l"
+                  }
+                ]
+              }
+            }
+          },
+          "reason": "Fits does not mean heavier than."
+        }
+      ],
+      "unsupported_indications": [
+        "Missing heavier-than predicate; lexical substitution with Fits is not licensed."
+      ]
+    },
+    {
+      "source_id": "76e751e1-080b-4631-8fca-4390f76c0c1d",
+      "source_sha256": "c400593a0f47fc026b2286d99b9d42996519e87a5accce60883ed4e6b1652e59",
+      "holder_local_key": "l6",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "unsupported",
+        "note": "The only action predicate denotes painting, not measurement.",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "c",
+            "sort": "carpenter",
+            "body": {
+              "quant": "exists",
+              "var": "b",
+              "sort": "board",
+              "body": {
+                "pred": "Painted",
+                "args": [
+                  {
+                    "var": "c"
+                  },
+                  {
+                    "var": "b"
+                  }
+                ]
+              }
+            }
+          },
+          "reason": "Painted cannot stand for measured."
+        }
+      ],
+      "unsupported_indications": [
+        "Missing measured relation."
+      ]
+    },
+    {
+      "source_id": "40e7282e-ab30-40db-b9ad-44217eecdb38",
+      "source_sha256": "ea150d49f111f1ea2dd399ff061a74d07f82e335807d889c493b74c03e291d15",
+      "holder_local_key": "r1a",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "supported",
+        "note": "",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "a",
+            "sort": "barber",
+            "body": {
+              "quant": "exists",
+              "var": "b",
+              "sort": "client",
+              "body": {
+                "pred": "Greeted",
+                "args": [
+                  {
+                    "var": "a"
+                  },
+                  {
+                    "var": "b"
+                  }
+                ]
+              }
+            }
+          },
+          "basis": "Literal quantifier/coreference structure."
+        }
+      ],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "exists",
+            "var": "b",
+            "sort": "client",
+            "body": {
+              "quant": "forall",
+              "var": "a",
+              "sort": "barber",
+              "body": {
+                "pred": "Greeted",
+                "args": [
+                  {
+                    "var": "a"
+                  },
+                  {
+                    "var": "b"
+                  }
+                ]
+              }
+            }
+          },
+          "reason": "Changes the quantifier or coreference structure."
+        }
+      ],
+      "unsupported_indications": []
+    },
+    {
+      "source_id": "b3600571-a7ca-4414-b80e-c16437d92fde",
+      "source_sha256": "2ce072a9ba45ce5a93f648593147c1df0b4273b575e832e9a94f3a34304e8f5f",
+      "holder_local_key": "r1b",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "supported",
+        "note": "",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "a",
+            "sort": "caretaker",
+            "body": {
+              "quant": "exists",
+              "var": "b",
+              "sort": "visitor",
+              "body": {
+                "pred": "Welcomed",
+                "args": [
+                  {
+                    "var": "a"
+                  },
+                  {
+                    "var": "b"
+                  }
+                ]
+              }
+            }
+          },
+          "basis": "Literal quantifier/coreference structure under systematic renaming."
+        }
+      ],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "exists",
+            "var": "b",
+            "sort": "visitor",
+            "body": {
+              "quant": "forall",
+              "var": "a",
+              "sort": "caretaker",
+              "body": {
+                "pred": "Welcomed",
+                "args": [
+                  {
+                    "var": "a"
+                  },
+                  {
+                    "var": "b"
+                  }
+                ]
+              }
+            }
+          },
+          "reason": "The same structural error under renaming."
+        }
+      ],
+      "unsupported_indications": []
+    },
+    {
+      "source_id": "fd183c68-cc00-42df-8981-81c348aa32f5",
+      "source_sha256": "6d9c6380f94c33f909de3bbb87b5eb01b82f78323e79322d616a30b6eb52fa68",
+      "holder_local_key": "r2a",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "supported",
+        "note": "",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [
+        {
+          "ast": {
+            "quant": "exists",
+            "var": "a",
+            "sort": "courier",
+            "body": {
+              "and": [
+                {
+                  "quant": "forall",
+                  "var": "e",
+                  "sort": "envelope",
+                  "body": {
+                    "pred": "Delivered",
+                    "args": [
+                      {
+                        "var": "a"
+                      },
+                      {
+                        "var": "e"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "quant": "forall",
+                  "var": "b",
+                  "sort": "courier",
+                  "body": {
+                    "or": [
+                      {
+                        "not": {
+                          "quant": "forall",
+                          "var": "f",
+                          "sort": "envelope",
+                          "body": {
+                            "pred": "Delivered",
+                            "args": [
+                              {
+                                "var": "b"
+                              },
+                              {
+                                "var": "f"
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "eq": [
+                          {
+                            "var": "b"
+                          },
+                          {
+                            "var": "a"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "basis": "Literal quantifier/coreference structure."
+        }
+      ],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "exists",
+            "var": "a",
+            "sort": "courier",
+            "body": {
+              "quant": "forall",
+              "var": "e",
+              "sort": "envelope",
+              "body": {
+                "pred": "Delivered",
+                "args": [
+                  {
+                    "var": "a"
+                  },
+                  {
+                    "var": "e"
+                  }
+                ]
+              }
+            }
+          },
+          "reason": "Changes the quantifier or coreference structure."
+        }
+      ],
+      "unsupported_indications": []
+    },
+    {
+      "source_id": "d30d2799-6f9b-4ffa-904d-364f1b18d469",
+      "source_sha256": "88b00561b107242be69a509bacefd788117fdbe08323ebfff0bf860135dd01db",
+      "holder_local_key": "r2b",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "supported",
+        "note": "",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [
+        {
+          "ast": {
+            "quant": "exists",
+            "var": "a",
+            "sort": "tug",
+            "body": {
+              "and": [
+                {
+                  "quant": "forall",
+                  "var": "e",
+                  "sort": "barge",
+                  "body": {
+                    "pred": "Towed",
+                    "args": [
+                      {
+                        "var": "a"
+                      },
+                      {
+                        "var": "e"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "quant": "forall",
+                  "var": "b",
+                  "sort": "tug",
+                  "body": {
+                    "or": [
+                      {
+                        "not": {
+                          "quant": "forall",
+                          "var": "f",
+                          "sort": "barge",
+                          "body": {
+                            "pred": "Towed",
+                            "args": [
+                              {
+                                "var": "b"
+                              },
+                              {
+                                "var": "f"
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "eq": [
+                          {
+                            "var": "b"
+                          },
+                          {
+                            "var": "a"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "basis": "Literal quantifier/coreference structure under systematic renaming."
+        }
+      ],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "exists",
+            "var": "a",
+            "sort": "tug",
+            "body": {
+              "quant": "forall",
+              "var": "e",
+              "sort": "barge",
+              "body": {
+                "pred": "Towed",
+                "args": [
+                  {
+                    "var": "a"
+                  },
+                  {
+                    "var": "e"
+                  }
+                ]
+              }
+            }
+          },
+          "reason": "The same structural error under renaming."
+        }
+      ],
+      "unsupported_indications": []
+    },
+    {
+      "source_id": "3a93ea11-eb9c-48ce-94b1-c014894d1c37",
+      "source_sha256": "3e2b05ed22d02f7d7c570842531f55bc5a53df56cc3d2fc9ccff21187ded4239",
+      "holder_local_key": "r3a",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "supported",
+        "note": "",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "a",
+            "sort": "editor",
+            "body": {
+              "quant": "forall",
+              "var": "b",
+              "sort": "draft",
+              "body": {
+                "or": [
+                  {
+                    "not": {
+                      "pred": "Revised",
+                      "args": [
+                        {
+                          "var": "a"
+                        },
+                        {
+                          "var": "b"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "not": {
+                      "pred": "Rejected",
+                      "args": [
+                        {
+                          "var": "a"
+                        },
+                        {
+                          "var": "b"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "basis": "Literal quantifier/coreference structure."
+        }
+      ],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "a",
+            "sort": "editor",
+            "body": {
+              "quant": "forall",
+              "var": "b",
+              "sort": "draft",
+              "body": {
+                "or": [
+                  {
+                    "not": {
+                      "pred": "Revised",
+                      "args": [
+                        {
+                          "var": "a"
+                        },
+                        {
+                          "var": "b"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "pred": "Rejected",
+                    "args": [
+                      {
+                        "var": "a"
+                      },
+                      {
+                        "var": "b"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "reason": "Changes the quantifier or coreference structure."
+        }
+      ],
+      "unsupported_indications": []
+    },
+    {
+      "source_id": "293adfba-18bc-4ff2-addb-6dfb8c620fb0",
+      "source_sha256": "9cd43112f882b198251bda6efc8b97a6c1ea6fad10ab8df46718e84cb992731e",
+      "holder_local_key": "r3b",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "supported",
+        "note": "",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "a",
+            "sort": "craftsperson",
+            "body": {
+              "quant": "forall",
+              "var": "b",
+              "sort": "product",
+              "body": {
+                "or": [
+                  {
+                    "not": {
+                      "pred": "Repaired",
+                      "args": [
+                        {
+                          "var": "a"
+                        },
+                        {
+                          "var": "b"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "not": {
+                      "pred": "Discarded",
+                      "args": [
+                        {
+                          "var": "a"
+                        },
+                        {
+                          "var": "b"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "basis": "Literal quantifier/coreference structure under systematic renaming."
+        }
+      ],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "a",
+            "sort": "craftsperson",
+            "body": {
+              "quant": "forall",
+              "var": "b",
+              "sort": "product",
+              "body": {
+                "or": [
+                  {
+                    "not": {
+                      "pred": "Repaired",
+                      "args": [
+                        {
+                          "var": "a"
+                        },
+                        {
+                          "var": "b"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "pred": "Discarded",
+                    "args": [
+                      {
+                        "var": "a"
+                      },
+                      {
+                        "var": "b"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "reason": "The same structural error under renaming."
+        }
+      ],
+      "unsupported_indications": []
+    },
+    {
+      "source_id": "b3b55e51-6842-4554-b66b-9f121c14c7ab",
+      "source_sha256": "d1a15a1e9dd2d2571ea46e78f82db0ba961a7160304393e739f504ad4bc7ad24",
+      "holder_local_key": "r4a",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "supported",
+        "note": "",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "a",
+            "sort": "librarian",
+            "body": {
+              "quant": "exists",
+              "var": "b",
+              "sort": "reader",
+              "body": {
+                "quant": "exists",
+                "var": "c",
+                "sort": "volume",
+                "body": {
+                  "and": [
+                    {
+                      "pred": "Handed",
+                      "args": [
+                        {
+                          "var": "a"
+                        },
+                        {
+                          "var": "b"
+                        },
+                        {
+                          "var": "c"
+                        }
+                      ]
+                    },
+                    {
+                      "pred": "Marked",
+                      "args": [
+                        {
+                          "var": "b"
+                        },
+                        {
+                          "var": "c"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "basis": "Literal quantifier/coreference structure."
+        }
+      ],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "a",
+            "sort": "librarian",
+            "body": {
+              "quant": "exists",
+              "var": "b",
+              "sort": "reader",
+              "body": {
+                "quant": "exists",
+                "var": "c",
+                "sort": "volume",
+                "body": {
+                  "quant": "exists",
+                  "var": "d",
+                  "sort": "volume",
+                  "body": {
+                    "and": [
+                      {
+                        "pred": "Handed",
+                        "args": [
+                          {
+                            "var": "a"
+                          },
+                          {
+                            "var": "b"
+                          },
+                          {
+                            "var": "c"
+                          }
+                        ]
+                      },
+                      {
+                        "pred": "Marked",
+                        "args": [
+                          {
+                            "var": "b"
+                          },
+                          {
+                            "var": "d"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "reason": "Changes the quantifier or coreference structure."
+        }
+      ],
+      "unsupported_indications": []
+    },
+    {
+      "source_id": "6fd0ef06-65ac-47ed-b207-ae9ae9585c93",
+      "source_sha256": "3a2e86c07d7df53b3734ba0c144d7a07c51207b365c90060ee6383ef06841e36",
+      "holder_local_key": "r4b",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "supported",
+        "note": "",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "a",
+            "sort": "botanist",
+            "body": {
+              "quant": "exists",
+              "var": "b",
+              "sort": "assistant",
+              "body": {
+                "quant": "exists",
+                "var": "c",
+                "sort": "sample",
+                "body": {
+                  "and": [
+                    {
+                      "pred": "Passed",
+                      "args": [
+                        {
+                          "var": "a"
+                        },
+                        {
+                          "var": "b"
+                        },
+                        {
+                          "var": "c"
+                        }
+                      ]
+                    },
+                    {
+                      "pred": "Labeled",
+                      "args": [
+                        {
+                          "var": "b"
+                        },
+                        {
+                          "var": "c"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "basis": "Literal quantifier/coreference structure under systematic renaming."
+        }
+      ],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "a",
+            "sort": "botanist",
+            "body": {
+              "quant": "exists",
+              "var": "b",
+              "sort": "assistant",
+              "body": {
+                "quant": "exists",
+                "var": "c",
+                "sort": "sample",
+                "body": {
+                  "quant": "exists",
+                  "var": "d",
+                  "sort": "sample",
+                  "body": {
+                    "and": [
+                      {
+                        "pred": "Passed",
+                        "args": [
+                          {
+                            "var": "a"
+                          },
+                          {
+                            "var": "b"
+                          },
+                          {
+                            "var": "c"
+                          }
+                        ]
+                      },
+                      {
+                        "pred": "Labeled",
+                        "args": [
+                          {
+                            "var": "b"
+                          },
+                          {
+                            "var": "d"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "reason": "The same structural error under renaming."
+        }
+      ],
+      "unsupported_indications": []
+    },
+    {
+      "source_id": "8262e73a-7043-4b33-8b9f-bcc70e79d1fe",
+      "source_sha256": "b02638a9f117361a64a9f21bf609efac3b9cd260a3a28cbb5747cbf9d5e930ae",
+      "holder_local_key": "e1a",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "unsupported",
+        "note": "The familiar quantifier shell does not license an unavailable verb.",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "r",
+            "sort": "restorer",
+            "body": {
+              "quant": "exists",
+              "var": "i",
+              "sort": "icon",
+              "body": {
+                "pred": "Restored",
+                "args": [
+                  {
+                    "var": "r"
+                  },
+                  {
+                    "var": "i"
+                  }
+                ]
+              }
+            }
+          },
+          "reason": "Photographed is not Restored."
+        }
+      ],
+      "unsupported_indications": [
+        "No photographed predicate is supplied."
+      ]
+    },
+    {
+      "source_id": "a6f404de-ea11-4956-ba77-fefd69daadb1",
+      "source_sha256": "ef90a6c5d5a0524e6d5d181a4f68c23d69f73d42c4e7649a5afa3525ef077a71",
+      "holder_local_key": "e1b",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "unsupported",
+        "note": "Unavailable verb remains unavailable under negative concord.",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "d",
+            "sort": "dispatcher",
+            "body": {
+              "not": {
+                "quant": "exists",
+                "var": "r",
+                "sort": "route",
+                "body": {
+                  "pred": "Approved",
+                  "args": [
+                    {
+                      "var": "d"
+                    },
+                    {
+                      "var": "r"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "reason": "Forgot is not Approved; negation does not repair the lexical mismatch."
+        }
+      ],
+      "unsupported_indications": [
+        "No forgot or remembers predicate is supplied."
+      ]
+    },
+    {
+      "source_id": "d03268f5-467c-448c-9e70-dc10b343279a",
+      "source_sha256": "19e1203146d91511de43bc91661f069176926ce6c9e56830988a43cb78bd90f8",
+      "holder_local_key": "c1",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "supported",
+        "note": "",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "r",
+            "sort": "restorer",
+            "body": {
+              "quant": "exists",
+              "var": "i",
+              "sort": "icon",
+              "body": {
+                "pred": "Restored",
+                "args": [
+                  {
+                    "var": "r"
+                  },
+                  {
+                    "var": "i"
+                  }
+                ]
+              }
+            }
+          },
+          "basis": "Restored is the supplied action."
+        }
+      ],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "exists",
+            "var": "i",
+            "sort": "icon",
+            "body": {
+              "quant": "forall",
+              "var": "r",
+              "sort": "restorer",
+              "body": {
+                "pred": "Restored",
+                "args": [
+                  {
+                    "var": "r"
+                  },
+                  {
+                    "var": "i"
+                  }
+                ]
+              }
+            }
+          },
+          "reason": "Requires one shared icon."
+        }
+      ],
+      "unsupported_indications": []
+    },
+    {
+      "source_id": "384ed353-90bc-4576-ba0f-24993002485f",
+      "source_sha256": "a77cd926489a7f366550b1f80bf8a3886144829df255f6613011526d17f13faa",
+      "holder_local_key": "c2",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "supported",
+        "note": "",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "d",
+            "sort": "dispatcher",
+            "body": {
+              "not": {
+                "quant": "exists",
+                "var": "r",
+                "sort": "route",
+                "body": {
+                  "pred": "Approved",
+                  "args": [
+                    {
+                      "var": "d"
+                    },
+                    {
+                      "var": "r"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "basis": "Negative concord applies to supplied Approved."
+        }
+      ],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "d",
+            "sort": "dispatcher",
+            "body": {
+              "quant": "exists",
+              "var": "r",
+              "sort": "route",
+              "body": {
+                "pred": "Approved",
+                "args": [
+                  {
+                    "var": "d"
+                  },
+                  {
+                    "var": "r"
+                  }
+                ]
+              }
+            }
+          },
+          "reason": "Reverses the negative assertion."
+        }
+      ],
+      "unsupported_indications": []
+    },
+    {
+      "source_id": "17e85824-da35-4058-bd85-b34bd7ca0d41",
+      "source_sha256": "5250982e72f794546afae2b0cea85533f1e452dfdd7d0cb34e0338fe3d2b1cd7",
+      "holder_local_key": "c3",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "supported",
+        "note": "",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [
+        {
+          "ast": {
+            "quant": "exists",
+            "var": "a",
+            "sort": "archivist",
+            "body": {
+              "quant": "exists",
+              "var": "e",
+              "sort": "entry",
+              "body": {
+                "pred": "Logged",
+                "args": [
+                  {
+                    "var": "a"
+                  },
+                  {
+                    "var": "e"
+                  }
+                ]
+              }
+            }
+          },
+          "basis": "Existential agent and object."
+        }
+      ],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "a",
+            "sort": "archivist",
+            "body": {
+              "quant": "exists",
+              "var": "e",
+              "sort": "entry",
+              "body": {
+                "pred": "Logged",
+                "args": [
+                  {
+                    "var": "a"
+                  },
+                  {
+                    "var": "e"
+                  }
+                ]
+              }
+            }
+          },
+          "reason": "Replaces existential agent with universal."
+        }
+      ],
+      "unsupported_indications": []
+    },
+    {
+      "source_id": "4152a532-f3c7-41a7-b10e-9adf538e0b3c",
+      "source_sha256": "92daa6d9bdbf1ca119dbd428e53ccd88d86d370c1e2048282246888700c04ce6",
+      "holder_local_key": "c4",
+      "annotation_origin": "independent synthetic author construction; not human annotation",
+      "adequacy": {
+        "status": "supported",
+        "note": "",
+        "human_adjudication": "NOT_EXECUTED"
+      },
+      "reference_readings": [
+        {
+          "ast": {
+            "quant": "forall",
+            "var": "m",
+            "sort": "machine",
+            "body": {
+              "quant": "forall",
+              "var": "t",
+              "sort": "token",
+              "body": {
+                "not": {
+                  "pred": "Accepts",
+                  "args": [
+                    {
+                      "var": "m"
+                    },
+                    {
+                      "var": "t"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "basis": "No machine/token acceptance pair."
+        }
+      ],
+      "non_reference_readings": [
+        {
+          "ast": {
+            "not": {
+              "quant": "forall",
+              "var": "m",
+              "sort": "machine",
+              "body": {
+                "quant": "forall",
+                "var": "t",
+                "sort": "token",
+                "body": {
+                  "pred": "Accepts",
+                  "args": [
+                    {
+                      "var": "m"
+                    },
+                    {
+                      "var": "t"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "reason": "Merely denies universal acceptance."
+        }
+      ],
+      "unsupported_indications": []
+    }
+  ],
+  "renamed_pair_maps": [
+    {
+      "pair_id": "902cbc36-5e09-4c6b-ac1c-80649eb27bee",
+      "source_ids": [
+        "40e7282e-ab30-40db-b9ad-44217eecdb38",
+        "b3600571-a7ca-4414-b80e-c16437d92fde"
+      ],
+      "sort_renaming": {
+        "barber": "caretaker",
+        "client": "visitor"
+      },
+      "predicate_renaming": {
+        "Greeted": "Welcomed"
+      }
+    },
+    {
+      "pair_id": "f8773f74-708d-46b4-81f1-65d6b8887f8d",
+      "source_ids": [
+        "fd183c68-cc00-42df-8981-81c348aa32f5",
+        "d30d2799-6f9b-4ffa-904d-364f1b18d469"
+      ],
+      "sort_renaming": {
+        "courier": "tug",
+        "envelope": "barge"
+      },
+      "predicate_renaming": {
+        "Delivered": "Towed"
+      }
+    },
+    {
+      "pair_id": "f84ecae7-ed50-471a-90b6-cdb70679a627",
+      "source_ids": [
+        "3a93ea11-eb9c-48ce-94b1-c014894d1c37",
+        "293adfba-18bc-4ff2-addb-6dfb8c620fb0"
+      ],
+      "sort_renaming": {
+        "editor": "craftsperson",
+        "draft": "product"
+      },
+      "predicate_renaming": {
+        "Revised": "Repaired",
+        "Rejected": "Discarded"
+      }
+    },
+    {
+      "pair_id": "34a701b8-029c-45dd-a679-1e927100cdfc",
+      "source_ids": [
+        "b3b55e51-6842-4554-b66b-9f121c14c7ab",
+        "6fd0ef06-65ac-47ed-b207-ae9ae9585c93"
+      ],
+      "sort_renaming": {
+        "librarian": "botanist",
+        "reader": "assistant",
+        "volume": "sample"
+      },
+      "predicate_renaming": {
+        "Handed": "Passed",
+        "Marked": "Labeled"
+      }
+    }
+  ],
+  "independent_type_check": {
+    "result": "PASS",
+    "checked_sources": 50,
+    "ast_count": 97
+  },
+  "non_equivalence_witnesses": [
+    {
+      "source_id": "98249865-f16a-450b-a505-815a0268de11",
+      "non_reference_index": 0,
+      "reference_index": 0,
+      "domains": {
+        "bakery": [
+          0,
+          1
+        ],
+        "cafe": [
+          0,
+          1
+        ]
+      },
+      "relations": {
+        "Supplies": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      },
+      "reference_truth": true,
+      "non_reference_truth": false,
+      "search_trials": 18
+    },
+    {
+      "source_id": "822467fa-9e7b-45e9-a63e-3bea5df14f54",
+      "non_reference_index": 0,
+      "reference_index": 0,
+      "domains": {
+        "clerk": [
+          0,
+          1,
+          2
+        ],
+        "mechanic": [
+          0,
+          1
+        ],
+        "tool": [
+          0,
+          1
+        ]
+      },
+      "relations": {
+        "Issued": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            2,
+            0,
+            1
+          ]
+        ]
+      },
+      "reference_truth": false,
+      "non_reference_truth": true,
+      "search_trials": 26
+    },
+    {
+      "source_id": "822467fa-9e7b-45e9-a63e-3bea5df14f54",
+      "non_reference_index": 0,
+      "reference_index": 1,
+      "domains": {
+        "clerk": [
+          0,
+          1,
+          2
+        ],
+        "mechanic": [
+          0,
+          1
+        ],
+        "tool": [
+          0,
+          1
+        ]
+      },
+      "relations": {
+        "Issued": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            2,
+            1,
+            1
+          ]
+        ]
+      },
+      "reference_truth": false,
+      "non_reference_truth": true,
+      "search_trials": 10
+    },
+    {
+      "source_id": "6beb2330-c57a-46ed-9f28-13a92b5e3d12",
+      "non_reference_index": 0,
+      "reference_index": 0,
+      "domains": {
+        "reviewer": [
+          0
+        ],
+        "manuscript": [
+          0,
+          1
+        ]
+      },
+      "relations": {
+        "Read": [
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      "reference_truth": true,
+      "non_reference_truth": false,
+      "search_trials": 8
+    },
+    {
+      "source_id": "6beb2330-c57a-46ed-9f28-13a92b5e3d12",
+      "non_reference_index": 0,
+      "reference_index": 1,
+      "domains": {
+        "reviewer": [
+          0,
+          1
+        ],
+        "manuscript": [
+          0
+        ]
+      },
+      "relations": {
+        "Read": [
+          [
+            1,
+            0
+          ]
+        ]
+      },
+      "reference_truth": false,
+      "non_reference_truth": true,
+      "search_trials": 2
+    },
+    {
+      "source_id": "4b50f1e1-978a-4fce-aa37-c1bee9222c2e",
+      "non_reference_index": 0,
+      "reference_index": 0,
+      "domains": {
+        "pharmacy": [
+          0
+        ],
+        "warehouse": [
+          0,
+          1,
+          2
+        ]
+      },
+      "relations": {
+        "Supplies": [
+          [
+            1,
+            0
+          ]
+        ]
+      },
+      "reference_truth": false,
+      "non_reference_truth": true,
+      "search_trials": 13
+    },
+    {
+      "source_id": "d1b968d9-ff59-492b-a812-3705efe99c7b",
+      "non_reference_index": 0,
+      "reference_index": 0,
+      "domains": {
+        "courier": [
+          0,
+          1
+        ],
+        "parcel": [
+          0,
+          1
+        ],
+        "recipient": [
+          0,
+          1,
+          2
+        ]
+      },
+      "relations": {
+        "Delivered": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            2
+          ]
+        ]
+      },
+      "reference_truth": false,
+      "non_reference_truth": true,
+      "search_trials": 6
+    },
+    {
+      "source_id": "d1b968d9-ff59-492b-a812-3705efe99c7b",
+      "non_reference_index": 0,
+      "reference_index": 1,
+      "domains": {
+        "courier": [
+          0,
+          1,
+          2
+        ],
+        "parcel": [
+          0,
+          1
+        ],
+        "recipient": [
+          0,
+          1
+        ]
+      },
+      "relations": {
+        "Delivered": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            2,
+            0,
+            1
+          ]
+        ]
+      },
+      "reference_truth": false,
+      "non_reference_truth": true,
+      "search_trials": 60
+    },
+    {
+      "source_id": "6fd9adce-dd94-4cd5-9179-e973f25282a9",
+      "non_reference_index": 0,
+      "reference_index": 0,
+      "domains": {
+        "pilot": [
+          0,
+          1
+        ],
+        "hangar": [
+          0,
+          1
+        ]
+      },
+      "relations": {
+        "Inspected": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      },
+      "reference_truth": false,
+      "non_reference_truth": true,
+      "search_trials": 44
+    },
+    {
+      "source_id": "d9399151-3545-4a10-b95e-46adde45eb15",
+      "non_reference_index": 0,
+      "reference_index": 0,
+      "domains": {
+        "tuner": [
+          0,
+          1,
+          2
+        ],
+        "fault": [
+          0,
+          1
+        ]
+      },
+      "relations": {
+        "Noticed": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      },
+      "reference_truth": false,
+      "non_reference_truth": true,
+      "search_trials": 2
+    },
+    {
+      "source_id": "dcd8147b-1b77-4cc0-ae30-808c737f45bb",
+      "non_reference_index": 0,
+      "reference_index": 0,
+      "domains": {
+        "archive": [
+          0
+        ],
+        "inventory": [
+          0,
+          1,
+          2
+        ]
+      },
+      "relations": {
+        "Contains": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ]
+        ]
+      },
+      "reference_truth": false,
+      "non_reference_truth": true,
+      "search_trials": 37
+    },
+    {
+      "source_id": "c9d9f6cc-a28a-4c09-8051-515c53a99400",
+      "non_reference_index": 0,
+      "reference_index": 0,
+      "domains": {
+        "attendant": [
+          0,
+          1
+        ],
+        "safe": [
+          0,
+          1,
+          2
+        ]
+      },
+      "relations": {
+        "Opened": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "reference_truth": true,
+      "non_reference_truth": false,
+      "search_trials": 3
+    },
+    {
+      "source_id": "9c5ca5ae-7cb0-44db-a045-9263c627ba30",
+      "non_reference_index": 0,
+      "reference_index": 0,
+      "domains": {
+        "station": [
+          0,
+          1,
+          2
+        ],
+        "dispatcher": [
+          0,
+          1
+        ]
+      },
+      "relations": {
+        "Assigned": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "reference_truth": false,
+      "non_reference_truth": true,
+      "search_trials": 4
+    },
+    {
+      "source_id": "d623c0e9-4b94-4c59-a9a9-29224c915759",
+      "non_reference_index": 0,
+      "reference_index": 0,
+      "domains": {
+        "diver": [
+          0,
+          1
+        ],
+        "pier": [
+          0,
+          1,
+          2
+        ]
+      },
+      "relations": {
+        "Surveyed": [
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "reference_truth": false,
+      "non_reference_truth": true,
+      "search_trials": 3
+    },
+    {
+      "source_id": "d623c0e9-4b94-4c59-a9a9-29224c915759",
+      "non_reference_index": 0,
+      "reference_index": 1,
+      "domains": {
+        "diver": [
+          0,
+          1
+        ],
+        "pier": [
+          0,
+          1
+        ]
+      },
+      "relations": {
+        "Surveyed": [
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "reference_truth": false,
+      "non_reference_truth": true,
+      "search_trials": 2
+    },
+    {
+      "source_id": "d5344db6-2caa-4179-8c68-fee19d2899c3",
+      "non_reference_index": 0,
+      "reference_index": 0,
+      "domains": {
+        "device": [
+          0,
+          1
+        ],
+        "sensor": [
+          0,
+          1,
+          2
+        ]
+      },
+      "relations": {
+        "Linked": [
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "reference_truth": true,
+      "non_reference_truth": false,
+      "search_trials": 4
+    },
+    {
+      "source_id": "b46255ee-9da5-47c0-81d3-203d90a8017e",
+      "non_reference_index": 0,
+      "reference_index": 0,
+      "domains": {
+        "guard": [
+          0,
+          1
+        ],
+        "gate": [
+          0,
+          1,
+          2
+        ]
+      },
+      "relations": {
+        "Opened": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "reference_truth": true,
+      "non_reference_truth": false,
+      "search_trials": 2
+    },
+    {
+      "source_id": "f0ab9cbf-e315-4ab1-b0a8-b114e10b4221",
+      "non_reference_index": 0,
+      "reference_index": 0,
+      "domains": {
+        "gardener": [
+          0,
+          1,
+          2
+        ],
+        "tree": [
+          0,
+          1
+        ]
+      },
+      "relations": {
+        "Watered": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      },
+      "reference_truth": true,
+      "non_reference_truth": false,
+      "search_trials": 9
+    },
+    {
+      "source_id": "858b3515-0080-4de2-b1c4-600cad894466",
+      "non_reference_index": 0,
+      "reference_index": 0,
+      "domains": {
+        "cashier": [
+          0
+        ],
+        "ticket": [
+          0
+        ]
+      },
+      "relations": {
+        "Issued": [
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      "reference_truth": false,
+      "non_reference_truth": true,
+      "search_trials": 1
+    },
+    {
+      "source_id": "a94fe53d-d591-4958-8576-ab293d9d01b5",
+      "non_reference_index": 0,
+      "reference_index": 0,
+      "domains": {
+        "tunnel": [
+          0,
+          1,
+          2
+        ],
+        "sensor": [
+          0,
+          1
+        ]
+      },
+      "relations": {
+        "Located": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "reference_truth": true,
+      "non_reference_truth": false,
+      "search_trials": 49
+    },
+    {
+      "source_id": "cc18ae6c-d0d7-4876-b763-a748644675be",
+      "non_reference_index": 0,
+      "reference_index": 0,
+      "domains": {
+        "operator": [
+          0,
+          1
+        ],
+        "request": [
+          0
+        ]
+      },
+      "relations": {
+        "Accepted": []
+      },
+      "reference_truth": false,
+      "non_reference_truth": true,
+      "search_trials": 4
+    },
+    {
+      "source_id": "1c570f64-66df-46fc-89dd-b1ef02a71263",
+      "non_reference_index": 0,
+      "reference_index": 0,
+      "domains": {
+        "farmer": [
+          0,
+          1
+        ],
+        "animal": [
+          0,
+          1
+        ]
+      },
+      "relations": {
+        "Sold": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      },
+      "reference_truth": false,
+      "non_reference_truth": true,
+      "search_trials": 1
+    },
+    {
+      "source_id": "1c570f64-66df-46fc-89dd-b1ef02a71263",
+      "non_reference_index": 0,
+      "reference_index": 1,
+      "domains": {
+        "farmer": [
+          0
+        ],
+        "animal": [
+          0,
+          1,
+          2
+        ]
+      },
+      "relations": {
+        "Sold": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ]
+        ]
+      },
+      "reference_truth": false,
+      "non_reference_truth": true,
+      "search_trials": 2
+    },
+    {
+      "source_id": "297ef16d-2dfd-4305-9dac-32e5ca27e74a",
+      "non_reference_index": 0,
+      "reference_index": 0,
+      "domains": {
+        "worker": [
+          0
+        ],
+        "key": [
+          0,
+          1
+        ],
+        "cabinet": [
+          0
+        ]
+      },
+      "relations": {
+        "Took": [
+          [
+            0,
+            1
+          ]
+        ],
+        "Put": [
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "reference_truth": false,
+      "non_reference_truth": true,
+      "search_trials": 16
+    },
+    {
+      "source_id": "6d5b6a0f-1475-4d2d-abb6-4e9abe2c3694",
+      "non_reference_index": 0,
+      "reference_index": 0,
+      "domains": {
+        "guard": [
+          0,
+          1
+        ],
+        "courier": [
+          0,
+          1
+        ]
+      },
+      "relations": {
+        "Met": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "Greeted": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      },
+      "reference_truth": false,
+      "non_reference_truth": true,
+      "search_trials": 15
+    },
+    {
+      "source_id": "2a5dcfb9-feac-4b59-bdb1-560df8f7821c",
+      "non_reference_index": 0,
+      "reference_index": 0,
+      "domains": {
+        "person": [
+          0,
+          1
+        ],
+        "device": [
+          0,
+          1
+        ]
+      },
+      "relations": {
+        "Technician": [
+          [
+            0
+          ]
+        ],
+        "Colleague": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "Passed": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ],
+        "Inspected": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      },
+      "reference_truth": true,
+      "non_reference_truth": false,
+      "search_trials": 27
+    },
+    {
+      "source_id": "e38479c0-7c34-4695-8fed-bfa902e5746f",
+      "non_reference_index": 0,
+      "reference_index": 0,
+      "domains": {
+        "mechanic": [
+          0,
+          1
+        ],
+        "fault": [
+          0,
+          1
+        ]
+      },
+      "relations": {
+        "Detected": [
+          [
+            0,
+            0
+          ]
+        ],
+        "Repairs": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      },
+      "reference_truth": false,
+      "non_reference_truth": true,
+      "search_trials": 1
+    },
+    {
+      "source_id": "be0d8441-442e-4dfb-ba56-d391ffa18198",
+      "non_reference_index": 0,
+      "reference_index": 0,
+      "domains": {
+        "archivist": [
+          0,
+          1
+        ],
+        "folder": [
+          0
+        ],
+        "registrar": [
+          0,
+          1,
+          2
+        ]
+      },
+      "relations": {
+        "Received": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            2
+          ]
+        ],
+        "Returns": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            1,
+            0,
+            2
+          ]
+        ]
+      },
+      "reference_truth": false,
+      "non_reference_truth": true,
+      "search_trials": 2
+    },
+    {
+      "source_id": "c40e973e-9a19-40bb-a491-89c808701560",
+      "non_reference_index": 0,
+      "reference_index": 0,
+      "domains": {
+        "conductor": [
+          0,
+          1
+        ],
+        "passenger": [
+          0,
+          1,
+          2
+        ],
+        "ticket": [
+          0,
+          1
+        ]
+      },
+      "relations": {
+        "Showed": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            1,
+            2,
+            1
+          ]
+        ],
+        "PassengerOwns": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "ConductorOwns": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      },
+      "reference_truth": true,
+      "non_reference_truth": false,
+      "search_trials": 2
+    },
+    {
+      "source_id": "c40e973e-9a19-40bb-a491-89c808701560",
+      "non_reference_index": 0,
+      "reference_index": 1,
+      "domains": {
+        "conductor": [
+          0
+        ],
+        "passenger": [
+          0,
+          1
+        ],
+        "ticket": [
+          0,
+          1
+        ]
+      },
+      "relations": {
+        "Showed": [
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "PassengerOwns": [
+          [
+            1,
+            0
+          ]
+        ],
+        "ConductorOwns": []
+      },
+      "reference_truth": false,
+      "non_reference_truth": true,
+      "search_trials": 2
+    },
+    {
+      "source_id": "b1d88e5c-cd23-47f5-9fbc-04ff10b92112",
+      "non_reference_index": 0,
+      "reference_index": 0,
+      "domains": {
+        "journal": [
+          0,
+          1
+        ],
+        "entry": [
+          0,
+          1
+        ]
+      },
+      "relations": {
+        "Contains": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "Earlier": [
+          [
+            1,
+            0
+          ]
+        ]
+      },
+      "reference_truth": false,
+      "non_reference_truth": true,
+      "search_trials": 3
+    },
+    {
+      "source_id": "554913aa-ba8b-4c9f-8973-d7d5638e7ac1",
+      "non_reference_index": 0,
+      "reference_index": 0,
+      "domains": {
+        "lecturer": [
+          0,
+          1,
+          2
+        ],
+        "student": [
+          0,
+          1
+        ],
+        "curator": [
+          0
+        ],
+        "graduate": [
+          0,
+          1,
+          2
+        ]
+      },
+      "relations": {
+        "PraisedStudent": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            0
+          ]
+        ],
+        "PraisedGraduate": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ]
+        ]
+      },
+      "reference_truth": true,
+      "non_reference_truth": false,
+      "search_trials": 6
+    },
+    {
+      "source_id": "91211baf-d09f-4cde-bb9e-b937d33aeeba",
+      "non_reference_index": 0,
+      "reference_index": 0,
+      "domains": {
+        "keeper": [
+          0
+        ],
+        "crate": [
+          0,
+          1
+        ],
+        "bale": [
+          0
+        ]
+      },
+      "relations": {
+        "AcceptedCrate": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "AcceptedBale": [
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      "reference_truth": false,
+      "non_reference_truth": true,
+      "search_trials": 9
+    },
+    {
+      "source_id": "2677068b-54d0-4da5-858d-0d1cdb5915c4",
+      "non_reference_index": 0,
+      "reference_index": 0,
+      "domains": {
+        "cook": [
+          0,
+          1
+        ],
+        "baker": [
+          0,
+          1
+        ],
+        "loaf": [
+          0
+        ]
+      },
+      "relations": {
+        "CutCook": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "CutBaker": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      },
+      "reference_truth": false,
+      "non_reference_truth": true,
+      "search_trials": 3
+    },
+    {
+      "source_id": "ec499bcd-6983-4a27-bd1b-a34d367f351a",
+      "non_reference_index": 0,
+      "reference_index": 0,
+      "domains": {
+        "messenger": [
+          0,
+          1,
+          2
+        ],
+        "post": [
+          0,
+          1,
+          2
+        ]
+      },
+      "relations": {
+        "Visited": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      },
+      "reference_truth": true,
+      "non_reference_truth": false,
+      "search_trials": 1
+    },
+    {
+      "source_id": "40e7282e-ab30-40db-b9ad-44217eecdb38",
+      "non_reference_index": 0,
+      "reference_index": 0,
+      "domains": {
+        "barber": [
+          0,
+          1
+        ],
+        "client": [
+          0,
+          1,
+          2
+        ]
+      },
+      "relations": {
+        "Greeted": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      },
+      "reference_truth": true,
+      "non_reference_truth": false,
+      "search_trials": 3
+    },
+    {
+      "source_id": "b3600571-a7ca-4414-b80e-c16437d92fde",
+      "non_reference_index": 0,
+      "reference_index": 0,
+      "domains": {
+        "caretaker": [
+          0,
+          1,
+          2
+        ],
+        "visitor": [
+          0,
+          1,
+          2
+        ]
+      },
+      "relations": {
+        "Welcomed": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      },
+      "reference_truth": true,
+      "non_reference_truth": false,
+      "search_trials": 4
+    },
+    {
+      "source_id": "fd183c68-cc00-42df-8981-81c348aa32f5",
+      "non_reference_index": 0,
+      "reference_index": 0,
+      "domains": {
+        "courier": [
+          0,
+          1,
+          2
+        ],
+        "envelope": [
+          0
+        ]
+      },
+      "relations": {
+        "Delivered": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ]
+      },
+      "reference_truth": false,
+      "non_reference_truth": true,
+      "search_trials": 1
+    },
+    {
+      "source_id": "d30d2799-6f9b-4ffa-904d-364f1b18d469",
+      "non_reference_index": 0,
+      "reference_index": 0,
+      "domains": {
+        "tug": [
+          0,
+          1
+        ],
+        "barge": [
+          0
+        ]
+      },
+      "relations": {
+        "Towed": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      },
+      "reference_truth": false,
+      "non_reference_truth": true,
+      "search_trials": 12
+    },
+    {
+      "source_id": "3a93ea11-eb9c-48ce-94b1-c014894d1c37",
+      "non_reference_index": 0,
+      "reference_index": 0,
+      "domains": {
+        "editor": [
+          0,
+          1
+        ],
+        "draft": [
+          0,
+          1,
+          2
+        ]
+      },
+      "relations": {
+        "Revised": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "Rejected": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      },
+      "reference_truth": false,
+      "non_reference_truth": true,
+      "search_trials": 2
+    },
+    {
+      "source_id": "293adfba-18bc-4ff2-addb-6dfb8c620fb0",
+      "non_reference_index": 0,
+      "reference_index": 0,
+      "domains": {
+        "craftsperson": [
+          0,
+          1
+        ],
+        "product": [
+          0,
+          1
+        ]
+      },
+      "relations": {
+        "Repaired": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "Discarded": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      },
+      "reference_truth": true,
+      "non_reference_truth": false,
+      "search_trials": 1
+    },
+    {
+      "source_id": "b3b55e51-6842-4554-b66b-9f121c14c7ab",
+      "non_reference_index": 0,
+      "reference_index": 0,
+      "domains": {
+        "librarian": [
+          0,
+          1,
+          2
+        ],
+        "reader": [
+          0,
+          1
+        ],
+        "volume": [
+          0,
+          1,
+          2
+        ]
+      },
+      "relations": {
+        "Handed": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            2,
+            1,
+            1
+          ]
+        ],
+        "Marked": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "reference_truth": false,
+      "non_reference_truth": true,
+      "search_trials": 2
+    },
+    {
+      "source_id": "6fd0ef06-65ac-47ed-b207-ae9ae9585c93",
+      "non_reference_index": 0,
+      "reference_index": 0,
+      "domains": {
+        "botanist": [
+          0
+        ],
+        "assistant": [
+          0
+        ],
+        "sample": [
+          0,
+          1,
+          2
+        ]
+      },
+      "relations": {
+        "Passed": [
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "Labeled": [
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "reference_truth": false,
+      "non_reference_truth": true,
+      "search_trials": 6
+    },
+    {
+      "source_id": "d03268f5-467c-448c-9e70-dc10b343279a",
+      "non_reference_index": 0,
+      "reference_index": 0,
+      "domains": {
+        "restorer": [
+          0,
+          1
+        ],
+        "icon": [
+          0,
+          1,
+          2
+        ]
+      },
+      "relations": {
+        "Restored": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "reference_truth": true,
+      "non_reference_truth": false,
+      "search_trials": 10
+    },
+    {
+      "source_id": "384ed353-90bc-4576-ba0f-24993002485f",
+      "non_reference_index": 0,
+      "reference_index": 0,
+      "domains": {
+        "dispatcher": [
+          0
+        ],
+        "route": [
+          0,
+          1,
+          2
+        ]
+      },
+      "relations": {
+        "Approved": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ]
+        ]
+      },
+      "reference_truth": false,
+      "non_reference_truth": true,
+      "search_trials": 1
+    },
+    {
+      "source_id": "17e85824-da35-4058-bd85-b34bd7ca0d41",
+      "non_reference_index": 0,
+      "reference_index": 0,
+      "domains": {
+        "archivist": [
+          0,
+          1
+        ],
+        "entry": [
+          0
+        ]
+      },
+      "relations": {
+        "Logged": [
+          [
+            1,
+            0
+          ]
+        ]
+      },
+      "reference_truth": true,
+      "non_reference_truth": false,
+      "search_trials": 7
+    },
+    {
+      "source_id": "4152a532-f3c7-41a7-b10e-9adf538e0b3c",
+      "non_reference_index": 0,
+      "reference_index": 0,
+      "domains": {
+        "machine": [
+          0,
+          1
+        ],
+        "token": [
+          0,
+          1,
+          2
+        ]
+      },
+      "relations": {
+        "Accepts": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      },
+      "reference_truth": false,
+      "non_reference_truth": true,
+      "search_trials": 1
+    }
+  ],
+  "public_sources_file_sha256": "3a73d232c36ac1f02fd06019cd45758287d3e539894f840c2ed703f872147540"
+}

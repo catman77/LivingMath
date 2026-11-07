@@ -26,3 +26,9 @@ endpoint, health, четыре базы, старые записи и hash-chain
 workspace не входят в публичный пакет. Полный воспроизводимый QA использует
 `tools/nl002_mcp_qa.py`, `nl002_controls_qa.py`, независимый
 `nl002_independent_checker.py`, опубликованные fixtures и frozen receipts.
+
+Фактическая cutover-копия workspace использует полный
+`backup-before/assurance-workspaces.zip` плюс наложение
+`backup-cutover/delta-workspaces.zip`. Для восстановления нужны **оба** архива:
+сначала base, затем delta; полный SHA-инвентарь cutover проверяет результат.
+SQLite cutover snapshots самостоятельны. Delta не является полной копией.

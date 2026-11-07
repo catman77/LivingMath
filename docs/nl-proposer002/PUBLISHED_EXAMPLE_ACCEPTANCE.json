@@ -1,0 +1,16 @@
+{
+  "status": "PASS_PUBLIC_PUBLISHED_JSON_EXACT",
+  "project": "qa_nl002_demo",
+  "source_ref": "fe7631a5996d7d8de27822346399c7934ca1ee4c251f5a1ef6872e3e801c23a4",
+  "run_ref": "33eafd50b3d7c3e9b7e9d220b7e8055b9a6fe520d9213cd47442c8b6d2493202",
+  "candidates": [
+    "d4fda0ab75cd439161b1d6f1862e5e5787d839ec0ab31c63a6c56a9055a82f9b",
+    "fcb7f2216713250e8365081c71b83acda8e76aab225d77edca0e3dab1f8d308c"
+  ],
+  "source_fixture_sha256": "bd9c6d378a23825ab0c9dca5b61bf128a042659519d14c710f6e25639f141258",
+  "proposal_fixture_sha256": "0ceabfc67bbed08e054e0e0aebc1f545112783ac4d6c17f06fa49b00c4bb4332",
+  "public_HTTPS_OAuth": true,
+  "no_placeholders": true,
+  "duplicate_key_no_new_run": true,
+  "execution_permission": false
+}
