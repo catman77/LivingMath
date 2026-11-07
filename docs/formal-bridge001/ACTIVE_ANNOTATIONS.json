@@ -1,0 +1,114 @@
+{
+  "regular_even_a": [],
+  "regular_ab_plus": [
+    {
+      "query": {
+        "candidate_ids": [
+          "03031bd15260e8233016b0a8c87839e699317f0eaba5d646abaa65ca8708e270",
+          "5c278c1948aaf2b0e4765711d7ad3e1b0bf060a0ec55362adc989d0844b12eb6",
+          "c7db5f227a0ef7acd594af057c3d6ad764085890f1afb97f6ba72ad8f81a1d5d"
+        ],
+        "correct_label": null,
+        "equivalence_claim": false,
+        "execution_permission": false,
+        "external_annotation_required": true,
+        "prediction_vector": [
+          false,
+          true,
+          false
+        ],
+        "proof_sha256": [
+          "dd569c026172525edd2747b4316978b86aa0784a97cd27a2307ac813bd7acd8b",
+          "7a9ffc57766796d031d7f67da19f573318ac47c380550090d92c4f9b962d4d6a",
+          "f5f7957d609c00bbe8dca892695175aa9ccf52121d71ec0366d0fec39b810dc0"
+        ],
+        "query": {
+          "id": "a8950f05d3443e7921e7ec6fbe06c8febe40966a5db58b15f767a995d561290b",
+          "source": {
+            "edition": "formal-contrast/1",
+            "rights": "SYSTEM_GENERATED_CONTRAST",
+            "sha256": "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+            "text": "b"
+          },
+          "tokens": [
+            "b"
+          ]
+        },
+        "schema": "formal-contrast/1",
+        "status": "DISTINGUISHING_QUERY",
+        "words_checked": 3
+      },
+      "external_label": false,
+      "train_record": {
+        "id": "active-0-a8950f05d3443e7921e7",
+        "tokens": [
+          "b"
+        ],
+        "source": {
+          "text": "b",
+          "sha256": "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+          "rights": "ORIGINAL_TEST_FIXTURE",
+          "edition": "ROLE006 sealed/1"
+        },
+        "accepted": false
+      }
+    },
+    {
+      "query": {
+        "candidate_ids": [
+          "03031bd15260e8233016b0a8c87839e699317f0eaba5d646abaa65ca8708e270",
+          "c7db5f227a0ef7acd594af057c3d6ad764085890f1afb97f6ba72ad8f81a1d5d"
+        ],
+        "correct_label": null,
+        "equivalence_claim": false,
+        "execution_permission": false,
+        "external_annotation_required": true,
+        "prediction_vector": [
+          true,
+          false
+        ],
+        "proof_sha256": [
+          "276284643ad5c98c1c149e44b69943c6c5230ab078c170ae01b24a1d292f9895",
+          "eaec03d75eebd9b28f746a22b0851dcf853b11932721354046cbf0f3da65f213"
+        ],
+        "query": {
+          "id": "41ba152f70f92a034e7074bc6a43937b4e32ff29381a70926ca3ee0447cba0da",
+          "source": {
+            "edition": "formal-contrast/1",
+            "rights": "SYSTEM_GENERATED_CONTRAST",
+            "sha256": "06dfc02ed603bc520a5ea3f43157d6a67b96c1eefcc2bde6df8e34487673afbd",
+            "text": "a b b a b"
+          },
+          "tokens": [
+            "a",
+            "b",
+            "b",
+            "a",
+            "b"
+          ]
+        },
+        "schema": "formal-contrast/1",
+        "status": "DISTINGUISHING_QUERY",
+        "words_checked": 45
+      },
+      "external_label": false,
+      "train_record": {
+        "id": "active-1-41ba152f70f92a034e70",
+        "tokens": [
+          "a",
+          "b",
+          "b",
+          "a",
+          "b"
+        ],
+        "source": {
+          "text": "a b b a b",
+          "sha256": "06dfc02ed603bc520a5ea3f43157d6a67b96c1eefcc2bde6df8e34487673afbd",
+          "rights": "ORIGINAL_TEST_FIXTURE",
+          "edition": "ROLE006 sealed/1"
+        },
+        "accepted": false
+      }
+    }
+  ]
+}

@@ -3,7 +3,7 @@
 Целевой репозиторий: **[catman77/LivingMath](https://github.com/catman77/LivingMath)**.
 По GitHub metadata на 2026-11-06 он **public**. Видимость, настройки доступа и
 production данные этой публикацией не меняются. Публикуется исходный код
-**v0.4.8-developer-preview / 0.4.8.dev0**, уже прошедший production приёмку.
+**v0.4.9-developer-preview / 0.4.9.dev0**, уже прошедший production приёмку.
 
 ## Состав
 
@@ -17,7 +17,7 @@ production данные этой публикацией не меняются. �
   цикл, artifact/source pipeline, Bridge и операторские утилиты.
 - `assets/unified/`, схемы и тесты. Полный сервер использует весь checkout;
   package wheel содержит библиотеку/CLI, а не legacy host и deployment tools.
-- [Архитектура](../ARCHITECTURE.md), [интерфейс всех 83 методов](MCP_INTERFACE.md),
+- [Архитектура](../ARCHITECTURE.md), [интерфейс всех 91 методов](MCP_INTERFACE.md),
   [установка](INSTALL.md), [использование](USAGE.md), [тестирование](TESTING.md),
   contributor guide и third-party notices.
 - `suti_author_proposals/`: пять предложений автору SUTI, их основания и варианты
@@ -43,11 +43,11 @@ virtualenvs и неопубликованные полные исследова�
 
 ## Подтверждённые проверки
 
-Последний runtime release: **409 PASS** source tests, **409 PASS** установленного
+Последний runtime release: **430 PASS** source tests, **430 PASS** установленного
 wheel, **1066 PASS / 20 SKIPPED** legacy. Полная MCP-приёмка и31 обязательный gate
-содержатся в [отчёте DYCK006](symbolic-v1/dyck006/USER_REPORT_RU.md),
-[матрице](symbolic-v1/dyck006/acceptance_matrix.json) и
-[манифесте runtime](symbolic-v1/dyck006/release_manifest.json).
+содержатся в [отчёте Formal Bridge001](formal-bridge001/IMPLEMENTATION_REPORT_RU.md),
+[матрице](formal-bridge001/acceptance_matrix.json) и
+[манифесте runtime](formal-bridge001/release_manifest.json).
 Это разные проверки с указанной областью, а не суммарное число уникальных тестов.
 
 Перед публикацией проверяются соответствие отслеживаемого кода этому runtime
@@ -59,7 +59,7 @@ GitHub Actions проверяется отдельно: исторический
 
 Первоначальный checkout smoke на 44 инструмента и исходные 1074 PASS/12 SKIP
 сохранены как исторические данные в `publication-checks.json`; они не подменяют
-приёмку актуального сервера на 83 инструмента. Архивные записи не переписываются.
+приёмку актуального сервера на 91 инструмент. Архивные записи не переписываются.
 
 ## Публикация и эксплуатация
 
@@ -77,9 +77,14 @@ Meaning014 и литературного контроля сохранены.
 
 
 DYCK006: текущая поставка и source snapshot опубликованы в
-[v0.4.8-developer-preview](https://github.com/catman77/LivingMath/releases/tag/v0.4.8-developer-preview).
+[v0.4.9-developer-preview](https://github.com/catman77/LivingMath/releases/tag/v0.4.9-developer-preview).
 [Приёмка, исходные run IDs и данные](symbolic-v1/dyck006/USER_REPORT_RU.md).
 ZIP включает новый и historical0.4.7 wheels, исходный патч/full source,
 замороженные входы/gold, полные staged/public MCP трассы и failed attempts.
 Приватные конфигурации, OAuth credentials, production SQLite/workspaces исключены.
 Это developer preview, не R3 approval и не universal invariant.
+
+
+Текущая поставка Formal Bridge001:91 tools,12102 staged/12103 public checks,
+все старые31 gates PASS. Новые8 API —additive; native/frozen/SQLite сохранены.
+Новые контракты и точные реальные примеры: [quickstart](formal-bridge001/QUICKSTART_RU.md).

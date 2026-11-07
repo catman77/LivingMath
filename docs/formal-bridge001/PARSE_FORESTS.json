@@ -1,0 +1,694 @@
+{
+  "ambiguous_aaa": {
+    "candidate_id": "c65e19ffe1ce650998cc64de47ae87151089253419164d2b9f4491cfddf7faae",
+    "execution_permission": false,
+    "proof": {
+      "bounds_sha256": "6decb312e2959bb5e6139c8619a41b03d2e7ee78dfdf043296b1b2b61e948de7",
+      "decision": true,
+      "expanded_trees_complete": true,
+      "forest": [
+        {
+          "families": [
+            {
+              "children": [
+                {
+                  "index": 0,
+                  "source_span": [
+                    0,
+                    1
+                  ],
+                  "terminal": "a"
+                }
+              ],
+              "production_id": "p1"
+            }
+          ],
+          "node": [
+            "S",
+            0,
+            1
+          ]
+        },
+        {
+          "families": [
+            {
+              "children": [
+                {
+                  "node": [
+                    "S",
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "node": [
+                    "S",
+                    1,
+                    2
+                  ]
+                }
+              ],
+              "production_id": "p0"
+            }
+          ],
+          "node": [
+            "S",
+            0,
+            2
+          ]
+        },
+        {
+          "families": [
+            {
+              "children": [
+                {
+                  "node": [
+                    "S",
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "node": [
+                    "S",
+                    1,
+                    3
+                  ]
+                }
+              ],
+              "production_id": "p0"
+            },
+            {
+              "children": [
+                {
+                  "node": [
+                    "S",
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "node": [
+                    "S",
+                    2,
+                    3
+                  ]
+                }
+              ],
+              "production_id": "p0"
+            }
+          ],
+          "node": [
+            "S",
+            0,
+            3
+          ]
+        },
+        {
+          "families": [
+            {
+              "children": [
+                {
+                  "index": 1,
+                  "source_span": [
+                    2,
+                    3
+                  ],
+                  "terminal": "a"
+                }
+              ],
+              "production_id": "p1"
+            }
+          ],
+          "node": [
+            "S",
+            1,
+            2
+          ]
+        },
+        {
+          "families": [
+            {
+              "children": [
+                {
+                  "node": [
+                    "S",
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "node": [
+                    "S",
+                    2,
+                    3
+                  ]
+                }
+              ],
+              "production_id": "p0"
+            }
+          ],
+          "node": [
+            "S",
+            1,
+            3
+          ]
+        },
+        {
+          "families": [
+            {
+              "children": [
+                {
+                  "index": 2,
+                  "source_span": [
+                    4,
+                    5
+                  ],
+                  "terminal": "a"
+                }
+              ],
+              "production_id": "p1"
+            }
+          ],
+          "node": [
+            "S",
+            2,
+            3
+          ]
+        }
+      ],
+      "forest_complete": true,
+      "grammar_sha256": "c65e19ffe1ce650998cc64de47ae87151089253419164d2b9f4491cfddf7faae",
+      "record_ref": "644f6cb44ff682dfd1bc80387077a4616ba17c7c20e99b602955237978cf5b45",
+      "schema": "formal-membership-proof/1",
+      "source_sha256": "9529de5a9bf8a4cf6e5ff80ff227080b510fc35a0c43e974650c1972c7b84f52",
+      "start_symbol": "S",
+      "status": "ACCEPT_WITH_WITNESS",
+      "token_spans": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "tokens": [
+        "a",
+        "a",
+        "a"
+      ],
+      "trees": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "index": 0,
+                  "source_span": [
+                    0,
+                    1
+                  ],
+                  "terminal": "a"
+                }
+              ],
+              "node": [
+                "S",
+                0,
+                1
+              ],
+              "production_id": "p1"
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "index": 1,
+                      "source_span": [
+                        2,
+                        3
+                      ],
+                      "terminal": "a"
+                    }
+                  ],
+                  "node": [
+                    "S",
+                    1,
+                    2
+                  ],
+                  "production_id": "p1"
+                },
+                {
+                  "children": [
+                    {
+                      "index": 2,
+                      "source_span": [
+                        4,
+                        5
+                      ],
+                      "terminal": "a"
+                    }
+                  ],
+                  "node": [
+                    "S",
+                    2,
+                    3
+                  ],
+                  "production_id": "p1"
+                }
+              ],
+              "node": [
+                "S",
+                1,
+                3
+              ],
+              "production_id": "p0"
+            }
+          ],
+          "node": [
+            "S",
+            0,
+            3
+          ],
+          "production_id": "p0"
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "index": 0,
+                      "source_span": [
+                        0,
+                        1
+                      ],
+                      "terminal": "a"
+                    }
+                  ],
+                  "node": [
+                    "S",
+                    0,
+                    1
+                  ],
+                  "production_id": "p1"
+                },
+                {
+                  "children": [
+                    {
+                      "index": 1,
+                      "source_span": [
+                        2,
+                        3
+                      ],
+                      "terminal": "a"
+                    }
+                  ],
+                  "node": [
+                    "S",
+                    1,
+                    2
+                  ],
+                  "production_id": "p1"
+                }
+              ],
+              "node": [
+                "S",
+                0,
+                2
+              ],
+              "production_id": "p0"
+            },
+            {
+              "children": [
+                {
+                  "index": 2,
+                  "source_span": [
+                    4,
+                    5
+                  ],
+                  "terminal": "a"
+                }
+              ],
+              "node": [
+                "S",
+                2,
+                3
+              ],
+              "production_id": "p1"
+            }
+          ],
+          "node": [
+            "S",
+            0,
+            3
+          ],
+          "production_id": "p0"
+        }
+      ]
+    },
+    "status": "CHECKED_INSTANCE",
+    "verification": {
+      "UNIVERSAL_INVARIANT": false,
+      "checker": "formal-independent-checker/1",
+      "decision": true,
+      "execution_permission": false,
+      "proof_sha256": "345cad3cbcb911bda7b412fb3d7eee37614468fc93baf2629f002d2e5d3240fa",
+      "status": "CHECKED_INSTANCE"
+    }
+  },
+  "source_bound_nested": {
+    "candidate_id": "2848ab5d1d534d35ee27dd2d1164d363af228390a5815bc95c0becb24e915527",
+    "execution_permission": false,
+    "proof": {
+      "bounds_sha256": "6decb312e2959bb5e6139c8619a41b03d2e7ee78dfdf043296b1b2b61e948de7",
+      "decision": true,
+      "expanded_trees_complete": true,
+      "forest": [
+        {
+          "families": [
+            {
+              "children": [],
+              "production_id": "p0"
+            }
+          ],
+          "node": [
+            "D",
+            0,
+            0
+          ]
+        },
+        {
+          "families": [
+            {
+              "children": [
+                {
+                  "index": 0,
+                  "source_span": [
+                    0,
+                    1
+                  ],
+                  "terminal": "S"
+                },
+                {
+                  "node": [
+                    "D",
+                    1,
+                    3
+                  ]
+                },
+                {
+                  "index": 3,
+                  "source_span": [
+                    6,
+                    7
+                  ],
+                  "terminal": "P"
+                },
+                {
+                  "node": [
+                    "D",
+                    4,
+                    4
+                  ]
+                }
+              ],
+              "production_id": "p1"
+            }
+          ],
+          "node": [
+            "D",
+            0,
+            4
+          ]
+        },
+        {
+          "families": [
+            {
+              "children": [],
+              "production_id": "p0"
+            }
+          ],
+          "node": [
+            "D",
+            1,
+            1
+          ]
+        },
+        {
+          "families": [
+            {
+              "children": [
+                {
+                  "index": 1,
+                  "source_span": [
+                    2,
+                    3
+                  ],
+                  "terminal": "A"
+                },
+                {
+                  "node": [
+                    "D",
+                    2,
+                    2
+                  ]
+                },
+                {
+                  "index": 2,
+                  "source_span": [
+                    4,
+                    5
+                  ],
+                  "terminal": "B"
+                },
+                {
+                  "node": [
+                    "D",
+                    3,
+                    3
+                  ]
+                }
+              ],
+              "production_id": "p2"
+            }
+          ],
+          "node": [
+            "D",
+            1,
+            3
+          ]
+        },
+        {
+          "families": [
+            {
+              "children": [],
+              "production_id": "p0"
+            }
+          ],
+          "node": [
+            "D",
+            2,
+            2
+          ]
+        },
+        {
+          "families": [
+            {
+              "children": [],
+              "production_id": "p0"
+            }
+          ],
+          "node": [
+            "D",
+            3,
+            3
+          ]
+        },
+        {
+          "families": [
+            {
+              "children": [],
+              "production_id": "p0"
+            }
+          ],
+          "node": [
+            "D",
+            4,
+            4
+          ]
+        }
+      ],
+      "forest_complete": true,
+      "grammar_sha256": "2848ab5d1d534d35ee27dd2d1164d363af228390a5815bc95c0becb24e915527",
+      "record_ref": "528daad032069142342b1327dddffcd5d02c7e1de3b6cee35e7652fb862c00a1",
+      "schema": "formal-membership-proof/1",
+      "source_sha256": "8e66398ab71324de42e711bc8f397bb52821a1e95fa65188ae410727d024d607",
+      "start_symbol": "D",
+      "status": "ACCEPT_WITH_WITNESS",
+      "token_spans": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "tokens": [
+        "S",
+        "A",
+        "B",
+        "P"
+      ],
+      "trees": [
+        {
+          "children": [
+            {
+              "index": 0,
+              "source_span": [
+                0,
+                1
+              ],
+              "terminal": "S"
+            },
+            {
+              "children": [
+                {
+                  "index": 1,
+                  "source_span": [
+                    2,
+                    3
+                  ],
+                  "terminal": "A"
+                },
+                {
+                  "children": [],
+                  "node": [
+                    "D",
+                    2,
+                    2
+                  ],
+                  "production_id": "p0"
+                },
+                {
+                  "index": 2,
+                  "source_span": [
+                    4,
+                    5
+                  ],
+                  "terminal": "B"
+                },
+                {
+                  "children": [],
+                  "node": [
+                    "D",
+                    3,
+                    3
+                  ],
+                  "production_id": "p0"
+                }
+              ],
+              "node": [
+                "D",
+                1,
+                3
+              ],
+              "production_id": "p2"
+            },
+            {
+              "index": 3,
+              "source_span": [
+                6,
+                7
+              ],
+              "terminal": "P"
+            },
+            {
+              "children": [],
+              "node": [
+                "D",
+                4,
+                4
+              ],
+              "production_id": "p0"
+            }
+          ],
+          "node": [
+            "D",
+            0,
+            4
+          ],
+          "production_id": "p1"
+        }
+      ]
+    },
+    "status": "CHECKED_INSTANCE",
+    "verification": {
+      "UNIVERSAL_INVARIANT": false,
+      "checker": "formal-independent-checker/1",
+      "decision": true,
+      "execution_permission": false,
+      "proof_sha256": "be28a6ebb0f4379b0f0b0c469018b6fbe75ac2786812d79799952def0a423394",
+      "status": "CHECKED_INSTANCE"
+    }
+  },
+  "induced_two_NT_nonnullable_start": {
+    "candidate_id": "73cafeef4d907b8a2e3417c172775a3c252b98f7e6e851f9757ead5458b33635",
+    "execution_permission": false,
+    "proof": {
+      "bounds_sha256": "6decb312e2959bb5e6139c8619a41b03d2e7ee78dfdf043296b1b2b61e948de7",
+      "decision": false,
+      "forest": [
+        {
+          "families": [
+            {
+              "children": [],
+              "production_id": "p1"
+            }
+          ],
+          "node": [
+            "N1",
+            0,
+            0
+          ]
+        }
+      ],
+      "forest_complete": true,
+      "grammar_sha256": "73cafeef4d907b8a2e3417c172775a3c252b98f7e6e851f9757ead5458b33635",
+      "record_ref": "4241fd0dbd302dc19b0507defe58fd7e2af2e7554acd26a325d9b56fe6d50fe1",
+      "schema": "formal-membership-proof/1",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "start_symbol": "N0",
+      "status": "REJECT_COMPLETE",
+      "token_spans": [],
+      "tokens": [],
+      "trees": []
+    },
+    "status": "CHECKED_INSTANCE",
+    "verification": {
+      "UNIVERSAL_INVARIANT": false,
+      "checker": "formal-independent-checker/1",
+      "decision": false,
+      "execution_permission": false,
+      "proof_sha256": "5584570d159edb05f447e21155e060950dfd62fe97af8fed190e140c84e6e2ad",
+      "status": "CHECKED_INSTANCE"
+    }
+  }
+}

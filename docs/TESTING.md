@@ -1,6 +1,6 @@
 # Тестирование
 
-## Актуальный пакет v0.4.8
+## Актуальный пакет v0.4.9
 
 Из корня checkout после установки `python -m pip install '.[white-star,mcp,test]'`:
 
@@ -33,6 +33,27 @@ supplied-AST controls, не серверное открытие. Все31 пре
 Клиентский retry018_RESOURCE_BUSY не меняет worker/HTTP caps; другие ошибки
 не маскируются. Полные трассы, исходные RED/failed harness logs и offline
 REPLAY_MATCH входят в ZIP релиза. GitHub CI оценивается отдельно.
+
+## Formal Bridge001
+
+430 source PASS и430 installed-wheel PASS (последний с отключённым pytest
+pythonpath, вне checkout).1066 legacy PASS/20 прежних SKIP,225 supplied reference
+assertions/9450 membership comparisons.21 targeted tests включают nullable start,
+ambiguous forest, cycles/negative completeness, forged proofs, source types,
+canonical DFA, long prefix trie, total synthesis budget и FOL assumptions.
+
+`tools/formal001_fixture.py` сохраняет original8 cases и enriched query-only
+наборы, external gold и отдельный short-query annotation holder. Основная SDK/OAuth
+приёмка — `formal001_mcp_qa.py`; `formal001_controlled_qa.py` проверяет25 ручных
+source-aligned proposals и50 model evaluations. Ручные proposals не являются NLP
+accuracy. `formal001_report_scope.py` отдельно считает seen/unseen words: в `(ab)+`
+ε уже был размечен и не входит в130 новых query words.
+
+Прежние пять SDK suite повторяются через --allow-formal-api: исключаются ровно8
+известных additive имён, а83 старых схемы продолжают сравниваться полностью.
+Новые8 схем отдельно проверяет formal suite; неизвестные additions не скрываются.
+Стенд:12102 проверки; production:12103 проверки (включая aux), исходные неуспешные попытки и2 pre-active
+FP сохранены. GitHub Actions оценивается отдельно от local/installed/live evidence.
 
 ## Legacy тесты
 

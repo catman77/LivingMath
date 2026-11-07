@@ -1,0 +1,1 @@
+{"status": "REPLAY_MATCH", "kernel_binding": "93f24c25fd7e4080c27eb770995e2c329bbf945c4221ba3ffb026f673e716fa0", "result_sha256": "41b5071edfaaf7e2d7a313e38f325551f445336aecfbc1a2475d95ecf5b70460", "metrics": {"LLM_calls": 0, "job_cpu_s": 0.392991095, "max_rss_kib": 55280}, "execution_permission": false, "UNIVERSAL_INVARIANT": false}

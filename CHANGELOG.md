@@ -1,5 +1,18 @@
 # Changelog
 
+## v0.4.9-developer-preview — 2026-11-07
+
+- Add Formal Bridge v1: typed generic CFG/DFA IR, bounded train-only induction,
+  retained rivals, packed ambiguous forests and independent source-bound checking.
+- Add eight tools to existing MCP/worker/Workspace: store, synthesize, inspect,
+  verify, contrast, interpret, model_check and replay; preserve83 old contracts.
+- Add independently checked canonical DFA tables and active external annotations
+  as new train generations; preserve pre-active errors and distinguish seen controls.
+- Add explicit human/imported FOL proposals, separate typing/alignment/model truth,
+  finite countermodels with assumptions and25 controlled source cases. No general NLP claim.
+- Preserve original numeric/Symbolic/role/SP kernels, databases, old hashes, HTTP
+  budgets and public MCP address. Full staged/public acceptance and reproducible evidence.
+
 ## v0.4.8-developer-preview — 2026-11-07
 
 - Add train-generated finite role-sensitive branching programs with two recursive

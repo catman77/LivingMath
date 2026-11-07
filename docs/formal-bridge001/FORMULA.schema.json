@@ -1,0 +1,144 @@
+{
+  "oneOf": [
+    {
+      "type": "object",
+      "properties": {
+        "pred": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "args": {
+          "type": "array",
+          "maxItems": 3,
+          "items": {
+            "type": "object",
+            "properties": {
+              "var": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 128
+              }
+            },
+            "required": [
+              "var"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "pred",
+        "args"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "eq": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "object",
+            "properties": {
+              "var": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 128
+              }
+            },
+            "required": [
+              "var"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "eq"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "not": {
+          "$ref": "#"
+        }
+      },
+      "required": [
+        "not"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "and": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 16,
+          "items": {
+            "$ref": "#"
+          }
+        }
+      },
+      "required": [
+        "and"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "or": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 16,
+          "items": {
+            "$ref": "#"
+          }
+        }
+      },
+      "required": [
+        "or"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "quant": {
+          "enum": [
+            "forall",
+            "exists"
+          ]
+        },
+        "var": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "sort": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "body": {
+          "$ref": "#"
+        }
+      },
+      "required": [
+        "quant",
+        "var",
+        "sort",
+        "body"
+      ],
+      "additionalProperties": false
+    }
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Syntactic data contract only. Independent semantic validation checks bindings, source, bounds, typing and proofs."
+}

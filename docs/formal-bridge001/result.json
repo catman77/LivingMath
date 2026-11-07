@@ -1,0 +1,27 @@
+{
+  "status": "PASS_FINITE_FORMAL001",
+  "release": "v0.4.9-developer-preview",
+  "deployment": "formal001-20261107T032742Z",
+  "P0": "PASS",
+  "P1": "PASS_FINITE",
+  "P2": "PASS_FINITE_WITH_EXTERNAL_ANNOTATIONS",
+  "P3": "PASS_MANUAL_PROPOSED_TYPED_CONTRACT",
+  "P4": "PASS",
+  "totals": {
+    "staging": {
+      "checks": 12102,
+      "MCP_calls": 2465
+    },
+    "production": {
+      "checks": 12103,
+      "MCP_calls": 2466
+    }
+  },
+  "canary": "NOT_RECOVERED_IN_DECLARED_CATALOG;256UNKNOWN",
+  "general_NL_decoder": "NOT_IMPLEMENTED_NOT_CLAIMED; manual/provider proposals explicitly allowed in v1",
+  "native_SUTI": "NOT_EXECUTED",
+  "human_interpretation_agreement": null,
+  "R3": "PENDING",
+  "UNIVERSAL_INVARIANT": false,
+  "execution_permission": false
+}

@@ -1,0 +1,2312 @@
+{
+  "cfg_anbn-formal": {
+    "run_ref": "26bffbc32b6010122de6591d3c13c2a1b5247456c972e328714a4cfb4faa26ff",
+    "model_sha256": "677a6ee1e7878c21ac638c5bfb1e9124b24955f3cc48055fe0ddcbcc7c7af473",
+    "selected": "8d43a76bdb6d0065d7393f479443073920dd231a260723da3077753ed6e96c3d",
+    "candidates": [
+      {
+        "ast": {
+          "nonterminals": [
+            "N0"
+          ],
+          "productions": [
+            {
+              "id": "p0",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "EPS"
+                }
+              ]
+            },
+            {
+              "id": "p1",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "a"
+                },
+                {
+                  "name": "N0",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "b"
+                }
+              ]
+            }
+          ],
+          "schema": "formal-grammar-ir/1",
+          "start": "N0",
+          "terminals": [
+            "a",
+            "b"
+          ]
+        },
+        "candidate_id": "8d43a76bdb6d0065d7393f479443073920dd231a260723da3077753ed6e96c3d",
+        "origin": "TRAIN_PRIMITIVE_SEARCH",
+        "status": "TRAIN_COMPATIBLE",
+        "train_witnesses_checked": 84,
+        "type_status": "TYPED"
+      },
+      {
+        "ast": {
+          "nonterminals": [
+            "N0"
+          ],
+          "productions": [
+            {
+              "id": "p0",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "a"
+                },
+                {
+                  "op": "TERM",
+                  "value": "b"
+                }
+              ]
+            },
+            {
+              "id": "p1",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "a"
+                },
+                {
+                  "name": "N0",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "b"
+                }
+              ]
+            }
+          ],
+          "schema": "formal-grammar-ir/1",
+          "start": "N0",
+          "terminals": [
+            "a",
+            "b"
+          ]
+        },
+        "candidate_id": "a81c793255f1e4a03f9683480522e463ae8755b7bb2c1b78c1c92cb09af71cf2",
+        "origin": "TRAIN_PRIMITIVE_SEARCH",
+        "status": "TRAIN_COMPATIBLE",
+        "train_witnesses_checked": 84,
+        "type_status": "TYPED"
+      },
+      {
+        "ast": {
+          "nonterminals": [
+            "N0",
+            "N1"
+          ],
+          "productions": [
+            {
+              "id": "p0",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "a"
+                },
+                {
+                  "name": "N1",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "b"
+                }
+              ]
+            },
+            {
+              "id": "p1",
+              "lhs": "N1",
+              "rhs": [
+                {
+                  "op": "EPS"
+                }
+              ]
+            },
+            {
+              "id": "p2",
+              "lhs": "N1",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "a"
+                },
+                {
+                  "name": "N1",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "b"
+                }
+              ]
+            }
+          ],
+          "schema": "formal-grammar-ir/1",
+          "start": "N0",
+          "terminals": [
+            "a",
+            "b"
+          ]
+        },
+        "candidate_id": "73cafeef4d907b8a2e3417c172775a3c252b98f7e6e851f9757ead5458b33635",
+        "origin": "TRAIN_PRIMITIVE_SEARCH",
+        "status": "TRAIN_COMPATIBLE",
+        "train_witnesses_checked": 84,
+        "type_status": "TYPED"
+      }
+    ],
+    "search_status": "CATALOG_CHECKED",
+    "catalog": {
+      "alphabet": [
+        "a",
+        "b"
+      ],
+      "candidate_budget_unit": "Full-train candidates after explicit terminal-coverage and short-train counterexample pruning; all pruned ASTs retained, total bounded by CPU/steps",
+      "catalog_generation_status": "CATALOG_GENERATED",
+      "catalog_size": 27,
+      "constructors": [
+        "EPS",
+        "TERM",
+        "NT_REF",
+        "SEQ",
+        "ALT"
+      ],
+      "generation_limits": {
+        "alphabet": 4,
+        "materialized_shapes": 8192
+      },
+      "not_all_CFG": true,
+      "ordering": "AST size,terminal types,NT count,recursive arity,canonical SHA within declared generated catalog",
+      "pair_constraints_from_train": {
+        "required_for_nullable_or_pair_base": [
+          [
+            "a",
+            "b"
+          ]
+        ],
+        "short_negative_pruned_only_for_nullable_or_pair_base": [
+          [
+            "a",
+            "a"
+          ],
+          [
+            "b",
+            "a"
+          ],
+          [
+            "b",
+            "b"
+          ]
+        ]
+      },
+      "pair_relation_subsets_up_to": 4,
+      "schema": "finite-primitive-catalog/1",
+      "sequence_policy": "all two-terminal shuffles with1/2 NT_REF; EPS/literal-pair/observed-center bases; independent start; observed singleton+concat",
+      "unmaterialized_recipe": null
+    },
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.448769227,
+      "max_rss_kib": 61136
+    }
+  },
+  "cfg_anbn-annotated": {
+    "run_ref": "fc7ed4b6c58c1506ea3cf162fb245e065f2dfae5a820ed46a501f56853b6a4cf",
+    "model_sha256": "52bab9c1b85f00cb8401f35a1d0572dc88a3e8b6a14dff592eb0d5eb896ffe87",
+    "selected": "a81c793255f1e4a03f9683480522e463ae8755b7bb2c1b78c1c92cb09af71cf2",
+    "candidates": [
+      {
+        "ast": {
+          "nonterminals": [
+            "N0"
+          ],
+          "productions": [
+            {
+              "id": "p0",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "a"
+                },
+                {
+                  "op": "TERM",
+                  "value": "b"
+                }
+              ]
+            },
+            {
+              "id": "p1",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "a"
+                },
+                {
+                  "name": "N0",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "b"
+                }
+              ]
+            }
+          ],
+          "schema": "formal-grammar-ir/1",
+          "start": "N0",
+          "terminals": [
+            "a",
+            "b"
+          ]
+        },
+        "candidate_id": "a81c793255f1e4a03f9683480522e463ae8755b7bb2c1b78c1c92cb09af71cf2",
+        "origin": "TRAIN_PRIMITIVE_SEARCH",
+        "status": "TRAIN_COMPATIBLE",
+        "train_witnesses_checked": 85,
+        "type_status": "TYPED"
+      },
+      {
+        "ast": {
+          "nonterminals": [
+            "N0",
+            "N1"
+          ],
+          "productions": [
+            {
+              "id": "p0",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "a"
+                },
+                {
+                  "name": "N1",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "b"
+                }
+              ]
+            },
+            {
+              "id": "p1",
+              "lhs": "N1",
+              "rhs": [
+                {
+                  "op": "EPS"
+                }
+              ]
+            },
+            {
+              "id": "p2",
+              "lhs": "N1",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "a"
+                },
+                {
+                  "name": "N1",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "b"
+                }
+              ]
+            }
+          ],
+          "schema": "formal-grammar-ir/1",
+          "start": "N0",
+          "terminals": [
+            "a",
+            "b"
+          ]
+        },
+        "candidate_id": "73cafeef4d907b8a2e3417c172775a3c252b98f7e6e851f9757ead5458b33635",
+        "origin": "TRAIN_PRIMITIVE_SEARCH",
+        "status": "TRAIN_COMPATIBLE",
+        "train_witnesses_checked": 85,
+        "type_status": "TYPED"
+      }
+    ],
+    "search_status": "CATALOG_CHECKED",
+    "catalog": {
+      "alphabet": [
+        "a",
+        "b"
+      ],
+      "candidate_budget_unit": "Full-train candidates after explicit terminal-coverage and short-train counterexample pruning; all pruned ASTs retained, total bounded by CPU/steps",
+      "catalog_generation_status": "CATALOG_GENERATED",
+      "catalog_size": 27,
+      "constructors": [
+        "EPS",
+        "TERM",
+        "NT_REF",
+        "SEQ",
+        "ALT"
+      ],
+      "generation_limits": {
+        "alphabet": 4,
+        "materialized_shapes": 8192
+      },
+      "not_all_CFG": true,
+      "ordering": "AST size,terminal types,NT count,recursive arity,canonical SHA within declared generated catalog",
+      "pair_constraints_from_train": {
+        "required_for_nullable_or_pair_base": [
+          [
+            "a",
+            "b"
+          ]
+        ],
+        "short_negative_pruned_only_for_nullable_or_pair_base": [
+          [
+            "a",
+            "a"
+          ],
+          [
+            "b",
+            "a"
+          ],
+          [
+            "b",
+            "b"
+          ]
+        ]
+      },
+      "pair_relation_subsets_up_to": 4,
+      "schema": "finite-primitive-catalog/1",
+      "sequence_policy": "all two-terminal shuffles with1/2 NT_REF; EPS/literal-pair/observed-center bases; independent start; observed singleton+concat",
+      "unmaterialized_recipe": null
+    },
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.154945106,
+      "max_rss_kib": 60136
+    }
+  },
+  "cfg_even_palindrome-annotated": {
+    "run_ref": "32a28413d8e7f8e6a3d4119e8601b2eed370171b51cfcbb9895c84e2bc726b1d",
+    "model_sha256": "4c694b019cf025fe21240b91b4df22cc0d45b6770762bd5a3f5bd9b7ee2cd445",
+    "selected": "80fa2b3fed90bf8a2538bb8a63894cee2cd9e3bea52b6b41107df360155a304a",
+    "candidates": [
+      {
+        "ast": {
+          "nonterminals": [
+            "N0"
+          ],
+          "productions": [
+            {
+              "id": "p0",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "b"
+                },
+                {
+                  "op": "TERM",
+                  "value": "b"
+                }
+              ]
+            },
+            {
+              "id": "p1",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "a"
+                },
+                {
+                  "name": "N0",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "a"
+                }
+              ]
+            },
+            {
+              "id": "p2",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "b"
+                },
+                {
+                  "name": "N0",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "b"
+                }
+              ]
+            },
+            {
+              "id": "p3",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "a"
+                },
+                {
+                  "op": "TERM",
+                  "value": "a"
+                }
+              ]
+            }
+          ],
+          "schema": "formal-grammar-ir/1",
+          "start": "N0",
+          "terminals": [
+            "a",
+            "b"
+          ]
+        },
+        "candidate_id": "80fa2b3fed90bf8a2538bb8a63894cee2cd9e3bea52b6b41107df360155a304a",
+        "origin": "TRAIN_PRIMITIVE_SEARCH",
+        "status": "TRAIN_COMPATIBLE",
+        "train_witnesses_checked": 85,
+        "type_status": "TYPED"
+      },
+      {
+        "ast": {
+          "nonterminals": [
+            "N0",
+            "N1"
+          ],
+          "productions": [
+            {
+              "id": "p0",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "a"
+                },
+                {
+                  "name": "N1",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "a"
+                }
+              ]
+            },
+            {
+              "id": "p1",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "b"
+                },
+                {
+                  "name": "N1",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "b"
+                }
+              ]
+            },
+            {
+              "id": "p2",
+              "lhs": "N1",
+              "rhs": [
+                {
+                  "op": "EPS"
+                }
+              ]
+            },
+            {
+              "id": "p3",
+              "lhs": "N1",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "a"
+                },
+                {
+                  "name": "N1",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "a"
+                }
+              ]
+            },
+            {
+              "id": "p4",
+              "lhs": "N1",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "b"
+                },
+                {
+                  "name": "N1",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "b"
+                }
+              ]
+            }
+          ],
+          "schema": "formal-grammar-ir/1",
+          "start": "N0",
+          "terminals": [
+            "a",
+            "b"
+          ]
+        },
+        "candidate_id": "1d4531ef4e021d460e1b0162fb7c59e914536a61d7d97de4033f030a9e402098",
+        "origin": "TRAIN_PRIMITIVE_SEARCH",
+        "status": "TRAIN_COMPATIBLE",
+        "train_witnesses_checked": 85,
+        "type_status": "TYPED"
+      }
+    ],
+    "search_status": "CATALOG_CHECKED",
+    "catalog": {
+      "alphabet": [
+        "a",
+        "b"
+      ],
+      "candidate_budget_unit": "Full-train candidates after explicit terminal-coverage and short-train counterexample pruning; all pruned ASTs retained, total bounded by CPU/steps",
+      "catalog_generation_status": "CATALOG_GENERATED",
+      "catalog_size": 27,
+      "constructors": [
+        "EPS",
+        "TERM",
+        "NT_REF",
+        "SEQ",
+        "ALT"
+      ],
+      "generation_limits": {
+        "alphabet": 4,
+        "materialized_shapes": 8192
+      },
+      "not_all_CFG": true,
+      "ordering": "AST size,terminal types,NT count,recursive arity,canonical SHA within declared generated catalog",
+      "pair_constraints_from_train": {
+        "required_for_nullable_or_pair_base": [
+          [
+            "a",
+            "a"
+          ],
+          [
+            "b",
+            "b"
+          ]
+        ],
+        "short_negative_pruned_only_for_nullable_or_pair_base": [
+          [
+            "a",
+            "b"
+          ],
+          [
+            "b",
+            "a"
+          ]
+        ]
+      },
+      "pair_relation_subsets_up_to": 4,
+      "schema": "finite-primitive-catalog/1",
+      "sequence_policy": "all two-terminal shuffles with1/2 NT_REF; EPS/literal-pair/observed-center bases; independent start; observed singleton+concat",
+      "unmaterialized_recipe": null
+    },
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.290749898,
+      "max_rss_kib": 61176
+    }
+  },
+  "cfg_dyck2_new_stratified-formal": {
+    "run_ref": "0ec014eaa023bd313de6def4b90fc00bedcde4a63a251047a589f04c899c70b9",
+    "model_sha256": "6e9ff8e5bbb31ee02892894514a550d5daab35e358c9a7117931365e5eb40e14",
+    "selected": "30ab72a923dbcb8ab894c83a440174d044bad87c790c2fcb02342f3ede3c1957",
+    "candidates": [
+      {
+        "ast": {
+          "nonterminals": [
+            "N0"
+          ],
+          "productions": [
+            {
+              "id": "p0",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "EPS"
+                }
+              ]
+            },
+            {
+              "id": "p1",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "A"
+                },
+                {
+                  "name": "N0",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "B"
+                },
+                {
+                  "name": "N0",
+                  "op": "NT_REF"
+                }
+              ]
+            },
+            {
+              "id": "p2",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "S"
+                },
+                {
+                  "name": "N0",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "P"
+                },
+                {
+                  "name": "N0",
+                  "op": "NT_REF"
+                }
+              ]
+            }
+          ],
+          "schema": "formal-grammar-ir/1",
+          "start": "N0",
+          "terminals": [
+            "A",
+            "B",
+            "P",
+            "S"
+          ]
+        },
+        "candidate_id": "30ab72a923dbcb8ab894c83a440174d044bad87c790c2fcb02342f3ede3c1957",
+        "origin": "TRAIN_PRIMITIVE_SEARCH",
+        "status": "TRAIN_COMPATIBLE",
+        "train_witnesses_checked": 174,
+        "type_status": "TYPED"
+      },
+      {
+        "ast": {
+          "nonterminals": [
+            "N0"
+          ],
+          "productions": [
+            {
+              "id": "p0",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "name": "N0",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "S"
+                },
+                {
+                  "name": "N0",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "P"
+                }
+              ]
+            },
+            {
+              "id": "p1",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "EPS"
+                }
+              ]
+            },
+            {
+              "id": "p2",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "name": "N0",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "A"
+                },
+                {
+                  "name": "N0",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "B"
+                }
+              ]
+            }
+          ],
+          "schema": "formal-grammar-ir/1",
+          "start": "N0",
+          "terminals": [
+            "A",
+            "B",
+            "P",
+            "S"
+          ]
+        },
+        "candidate_id": "e7583b4dd7a211ae7955699a4a99cbeb49919bf700f7527061e715af47ddbe74",
+        "origin": "TRAIN_PRIMITIVE_SEARCH",
+        "status": "TRAIN_COMPATIBLE",
+        "train_witnesses_checked": 174,
+        "type_status": "TYPED"
+      },
+      {
+        "ast": {
+          "nonterminals": [
+            "N0",
+            "N1"
+          ],
+          "productions": [
+            {
+              "id": "p0",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "S"
+                },
+                {
+                  "name": "N1",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "P"
+                },
+                {
+                  "name": "N1",
+                  "op": "NT_REF"
+                }
+              ]
+            },
+            {
+              "id": "p1",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "A"
+                },
+                {
+                  "name": "N1",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "B"
+                },
+                {
+                  "name": "N1",
+                  "op": "NT_REF"
+                }
+              ]
+            },
+            {
+              "id": "p2",
+              "lhs": "N1",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "S"
+                },
+                {
+                  "name": "N1",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "P"
+                },
+                {
+                  "name": "N1",
+                  "op": "NT_REF"
+                }
+              ]
+            },
+            {
+              "id": "p3",
+              "lhs": "N1",
+              "rhs": [
+                {
+                  "op": "EPS"
+                }
+              ]
+            },
+            {
+              "id": "p4",
+              "lhs": "N1",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "A"
+                },
+                {
+                  "name": "N1",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "B"
+                },
+                {
+                  "name": "N1",
+                  "op": "NT_REF"
+                }
+              ]
+            }
+          ],
+          "schema": "formal-grammar-ir/1",
+          "start": "N0",
+          "terminals": [
+            "A",
+            "B",
+            "P",
+            "S"
+          ]
+        },
+        "candidate_id": "19634b011fe6a228263949e10dbe75637cb2f6624821a3aad922d5e9d0000e5e",
+        "origin": "TRAIN_PRIMITIVE_SEARCH",
+        "status": "TRAIN_COMPATIBLE",
+        "train_witnesses_checked": 174,
+        "type_status": "TYPED"
+      },
+      {
+        "ast": {
+          "nonterminals": [
+            "N0",
+            "N1"
+          ],
+          "productions": [
+            {
+              "id": "p0",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "name": "N1",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "S"
+                },
+                {
+                  "name": "N1",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "P"
+                }
+              ]
+            },
+            {
+              "id": "p1",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "name": "N1",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "A"
+                },
+                {
+                  "name": "N1",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "B"
+                }
+              ]
+            },
+            {
+              "id": "p2",
+              "lhs": "N1",
+              "rhs": [
+                {
+                  "name": "N1",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "S"
+                },
+                {
+                  "name": "N1",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "P"
+                }
+              ]
+            },
+            {
+              "id": "p3",
+              "lhs": "N1",
+              "rhs": [
+                {
+                  "op": "EPS"
+                }
+              ]
+            },
+            {
+              "id": "p4",
+              "lhs": "N1",
+              "rhs": [
+                {
+                  "name": "N1",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "A"
+                },
+                {
+                  "name": "N1",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "B"
+                }
+              ]
+            }
+          ],
+          "schema": "formal-grammar-ir/1",
+          "start": "N0",
+          "terminals": [
+            "A",
+            "B",
+            "P",
+            "S"
+          ]
+        },
+        "candidate_id": "468173129c887ac280354876df25746bcd795aebc403c46696b98a38944c5f76",
+        "origin": "TRAIN_PRIMITIVE_SEARCH",
+        "status": "TRAIN_COMPATIBLE",
+        "train_witnesses_checked": 174,
+        "type_status": "TYPED"
+      }
+    ],
+    "search_status": "CATALOG_CHECKED",
+    "catalog": {
+      "alphabet": [
+        "A",
+        "B",
+        "P",
+        "S"
+      ],
+      "candidate_budget_unit": "Full-train candidates after explicit terminal-coverage and short-train counterexample pruning; all pruned ASTs retained, total bounded by CPU/steps",
+      "catalog_generation_status": "CATALOG_GENERATED",
+      "catalog_size": 27,
+      "constructors": [
+        "EPS",
+        "TERM",
+        "NT_REF",
+        "SEQ",
+        "ALT"
+      ],
+      "generation_limits": {
+        "alphabet": 4,
+        "materialized_shapes": 8192
+      },
+      "not_all_CFG": true,
+      "ordering": "AST size,terminal types,NT count,recursive arity,canonical SHA within declared generated catalog",
+      "pair_constraints_from_train": {
+        "required_for_nullable_or_pair_base": [
+          [
+            "A",
+            "B"
+          ],
+          [
+            "S",
+            "P"
+          ]
+        ],
+        "short_negative_pruned_only_for_nullable_or_pair_base": [
+          [
+            "A",
+            "A"
+          ],
+          [
+            "A",
+            "P"
+          ],
+          [
+            "A",
+            "S"
+          ],
+          [
+            "B",
+            "A"
+          ],
+          [
+            "B",
+            "B"
+          ],
+          [
+            "B",
+            "P"
+          ],
+          [
+            "B",
+            "S"
+          ],
+          [
+            "P",
+            "A"
+          ],
+          [
+            "P",
+            "B"
+          ],
+          [
+            "P",
+            "P"
+          ],
+          [
+            "P",
+            "S"
+          ],
+          [
+            "S",
+            "A"
+          ],
+          [
+            "S",
+            "B"
+          ],
+          [
+            "S",
+            "S"
+          ]
+        ]
+      },
+      "pair_relation_subsets_up_to": 4,
+      "schema": "finite-primitive-catalog/1",
+      "sequence_policy": "all two-terminal shuffles with1/2 NT_REF; EPS/literal-pair/observed-center bases; independent start; observed singleton+concat",
+      "unmaterialized_recipe": null
+    },
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 1.161443603,
+      "max_rss_kib": 70164
+    }
+  },
+  "cfg_marked_palindrome-annotated": {
+    "run_ref": "b9fd9711fb8efab658ac80f4cd8db237533223ed70421a38b2b867ad47bb4803",
+    "model_sha256": "154ef32db9b9874ddaffbdfb32f2b46f2260927a5a230208ba60081f751d0947",
+    "selected": "27d20b64e6a28aee99331cca4bfb610dba5663b702baa214150863caea78aaac",
+    "candidates": [
+      {
+        "ast": {
+          "nonterminals": [
+            "N0"
+          ],
+          "productions": [
+            {
+              "id": "p0",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "a"
+                },
+                {
+                  "name": "N0",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "a"
+                }
+              ]
+            },
+            {
+              "id": "p1",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "b"
+                },
+                {
+                  "name": "N0",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "b"
+                }
+              ]
+            },
+            {
+              "id": "p2",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "b"
+                },
+                {
+                  "op": "TERM",
+                  "value": "#"
+                },
+                {
+                  "op": "TERM",
+                  "value": "b"
+                }
+              ]
+            },
+            {
+              "id": "p3",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "a"
+                },
+                {
+                  "op": "TERM",
+                  "value": "#"
+                },
+                {
+                  "op": "TERM",
+                  "value": "a"
+                }
+              ]
+            }
+          ],
+          "schema": "formal-grammar-ir/1",
+          "start": "N0",
+          "terminals": [
+            "#",
+            "a",
+            "b"
+          ]
+        },
+        "candidate_id": "27d20b64e6a28aee99331cca4bfb610dba5663b702baa214150863caea78aaac",
+        "origin": "TRAIN_PRIMITIVE_SEARCH",
+        "status": "TRAIN_COMPATIBLE",
+        "train_witnesses_checked": 22,
+        "type_status": "TYPED"
+      },
+      {
+        "ast": {
+          "nonterminals": [
+            "N0",
+            "N1"
+          ],
+          "productions": [
+            {
+              "id": "p0",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "a"
+                },
+                {
+                  "name": "N1",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "a"
+                }
+              ]
+            },
+            {
+              "id": "p1",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "b"
+                },
+                {
+                  "name": "N1",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "b"
+                }
+              ]
+            },
+            {
+              "id": "p2",
+              "lhs": "N1",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "a"
+                },
+                {
+                  "name": "N1",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "a"
+                }
+              ]
+            },
+            {
+              "id": "p3",
+              "lhs": "N1",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "b"
+                },
+                {
+                  "name": "N1",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "b"
+                }
+              ]
+            },
+            {
+              "id": "p4",
+              "lhs": "N1",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "#"
+                }
+              ]
+            }
+          ],
+          "schema": "formal-grammar-ir/1",
+          "start": "N0",
+          "terminals": [
+            "#",
+            "a",
+            "b"
+          ]
+        },
+        "candidate_id": "fe6b4f4482c520d933079c89fe011ad054950ff88994f2ec79861c449108aaa1",
+        "origin": "TRAIN_PRIMITIVE_SEARCH",
+        "status": "TRAIN_COMPATIBLE",
+        "train_witnesses_checked": 22,
+        "type_status": "TYPED"
+      },
+      {
+        "ast": {
+          "nonterminals": [
+            "N0"
+          ],
+          "productions": [
+            {
+              "id": "p0",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "a"
+                },
+                {
+                  "name": "N0",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "a"
+                }
+              ]
+            },
+            {
+              "id": "p1",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "#"
+                },
+                {
+                  "op": "TERM",
+                  "value": "#"
+                },
+                {
+                  "op": "TERM",
+                  "value": "#"
+                }
+              ]
+            },
+            {
+              "id": "p2",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "b"
+                },
+                {
+                  "name": "N0",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "b"
+                }
+              ]
+            },
+            {
+              "id": "p3",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "b"
+                },
+                {
+                  "op": "TERM",
+                  "value": "#"
+                },
+                {
+                  "op": "TERM",
+                  "value": "b"
+                }
+              ]
+            },
+            {
+              "id": "p4",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "#"
+                },
+                {
+                  "name": "N0",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "#"
+                }
+              ]
+            },
+            {
+              "id": "p5",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "a"
+                },
+                {
+                  "op": "TERM",
+                  "value": "#"
+                },
+                {
+                  "op": "TERM",
+                  "value": "a"
+                }
+              ]
+            }
+          ],
+          "schema": "formal-grammar-ir/1",
+          "start": "N0",
+          "terminals": [
+            "#",
+            "a",
+            "b"
+          ]
+        },
+        "candidate_id": "1977cfc7bd08a1daf307079a52258cd9a2844ccec94fb2511bf71279dbb12810",
+        "origin": "TRAIN_PRIMITIVE_SEARCH",
+        "status": "TRAIN_COMPATIBLE",
+        "train_witnesses_checked": 22,
+        "type_status": "TYPED"
+      },
+      {
+        "ast": {
+          "nonterminals": [
+            "N0"
+          ],
+          "productions": [
+            {
+              "id": "p0",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "#"
+                },
+                {
+                  "op": "TERM",
+                  "value": "#"
+                },
+                {
+                  "op": "TERM",
+                  "value": "a"
+                }
+              ]
+            },
+            {
+              "id": "p1",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "a"
+                },
+                {
+                  "name": "N0",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "a"
+                }
+              ]
+            },
+            {
+              "id": "p2",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "b"
+                },
+                {
+                  "name": "N0",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "b"
+                }
+              ]
+            },
+            {
+              "id": "p3",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "#"
+                },
+                {
+                  "name": "N0",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "a"
+                }
+              ]
+            },
+            {
+              "id": "p4",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "b"
+                },
+                {
+                  "op": "TERM",
+                  "value": "#"
+                },
+                {
+                  "op": "TERM",
+                  "value": "b"
+                }
+              ]
+            },
+            {
+              "id": "p5",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "a"
+                },
+                {
+                  "op": "TERM",
+                  "value": "#"
+                },
+                {
+                  "op": "TERM",
+                  "value": "a"
+                }
+              ]
+            }
+          ],
+          "schema": "formal-grammar-ir/1",
+          "start": "N0",
+          "terminals": [
+            "#",
+            "a",
+            "b"
+          ]
+        },
+        "candidate_id": "28da300ffb372ab3e2b3ef1e0d77131d88988bb5ca9724df7ed9c25d63790923",
+        "origin": "TRAIN_PRIMITIVE_SEARCH",
+        "status": "TRAIN_COMPATIBLE",
+        "train_witnesses_checked": 22,
+        "type_status": "TYPED"
+      },
+      {
+        "ast": {
+          "nonterminals": [
+            "N0"
+          ],
+          "productions": [
+            {
+              "id": "p0",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "a"
+                },
+                {
+                  "op": "TERM",
+                  "value": "#"
+                },
+                {
+                  "op": "TERM",
+                  "value": "#"
+                }
+              ]
+            },
+            {
+              "id": "p1",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "a"
+                },
+                {
+                  "name": "N0",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "#"
+                }
+              ]
+            },
+            {
+              "id": "p2",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "a"
+                },
+                {
+                  "name": "N0",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "a"
+                }
+              ]
+            },
+            {
+              "id": "p3",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "b"
+                },
+                {
+                  "name": "N0",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "b"
+                }
+              ]
+            },
+            {
+              "id": "p4",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "b"
+                },
+                {
+                  "op": "TERM",
+                  "value": "#"
+                },
+                {
+                  "op": "TERM",
+                  "value": "b"
+                }
+              ]
+            },
+            {
+              "id": "p5",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "a"
+                },
+                {
+                  "op": "TERM",
+                  "value": "#"
+                },
+                {
+                  "op": "TERM",
+                  "value": "a"
+                }
+              ]
+            }
+          ],
+          "schema": "formal-grammar-ir/1",
+          "start": "N0",
+          "terminals": [
+            "#",
+            "a",
+            "b"
+          ]
+        },
+        "candidate_id": "4ada5603fd76b492a745be1b6b36100bbc7e7a0bcfbbd19b7aef7eedd203e7fa",
+        "origin": "TRAIN_PRIMITIVE_SEARCH",
+        "status": "TRAIN_COMPATIBLE",
+        "train_witnesses_checked": 22,
+        "type_status": "TYPED"
+      },
+      {
+        "ast": {
+          "nonterminals": [
+            "N0"
+          ],
+          "productions": [
+            {
+              "id": "p0",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "b"
+                },
+                {
+                  "name": "N0",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "#"
+                }
+              ]
+            },
+            {
+              "id": "p1",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "b"
+                },
+                {
+                  "op": "TERM",
+                  "value": "#"
+                },
+                {
+                  "op": "TERM",
+                  "value": "#"
+                }
+              ]
+            },
+            {
+              "id": "p2",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "a"
+                },
+                {
+                  "name": "N0",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "a"
+                }
+              ]
+            },
+            {
+              "id": "p3",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "b"
+                },
+                {
+                  "name": "N0",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "b"
+                }
+              ]
+            },
+            {
+              "id": "p4",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "b"
+                },
+                {
+                  "op": "TERM",
+                  "value": "#"
+                },
+                {
+                  "op": "TERM",
+                  "value": "b"
+                }
+              ]
+            },
+            {
+              "id": "p5",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "a"
+                },
+                {
+                  "op": "TERM",
+                  "value": "#"
+                },
+                {
+                  "op": "TERM",
+                  "value": "a"
+                }
+              ]
+            }
+          ],
+          "schema": "formal-grammar-ir/1",
+          "start": "N0",
+          "terminals": [
+            "#",
+            "a",
+            "b"
+          ]
+        },
+        "candidate_id": "c6b2615fb403d7bea7abca13177332d2ae232f0b633d9ebec37931d3bd2535cd",
+        "origin": "TRAIN_PRIMITIVE_SEARCH",
+        "status": "TRAIN_COMPATIBLE",
+        "train_witnesses_checked": 22,
+        "type_status": "TYPED"
+      },
+      {
+        "ast": {
+          "nonterminals": [
+            "N0"
+          ],
+          "productions": [
+            {
+              "id": "p0",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "a"
+                },
+                {
+                  "name": "N0",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "a"
+                }
+              ]
+            },
+            {
+              "id": "p1",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "#"
+                },
+                {
+                  "op": "TERM",
+                  "value": "#"
+                },
+                {
+                  "op": "TERM",
+                  "value": "b"
+                }
+              ]
+            },
+            {
+              "id": "p2",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "#"
+                },
+                {
+                  "name": "N0",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "b"
+                }
+              ]
+            },
+            {
+              "id": "p3",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "b"
+                },
+                {
+                  "name": "N0",
+                  "op": "NT_REF"
+                },
+                {
+                  "op": "TERM",
+                  "value": "b"
+                }
+              ]
+            },
+            {
+              "id": "p4",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "b"
+                },
+                {
+                  "op": "TERM",
+                  "value": "#"
+                },
+                {
+                  "op": "TERM",
+                  "value": "b"
+                }
+              ]
+            },
+            {
+              "id": "p5",
+              "lhs": "N0",
+              "rhs": [
+                {
+                  "op": "TERM",
+                  "value": "a"
+                },
+                {
+                  "op": "TERM",
+                  "value": "#"
+                },
+                {
+                  "op": "TERM",
+                  "value": "a"
+                }
+              ]
+            }
+          ],
+          "schema": "formal-grammar-ir/1",
+          "start": "N0",
+          "terminals": [
+            "#",
+            "a",
+            "b"
+          ]
+        },
+        "candidate_id": "ed9db401252ff83ab68df347dcc985ec2ebd6f955f734b36265c61a4f21ae406",
+        "origin": "TRAIN_PRIMITIVE_SEARCH",
+        "status": "TRAIN_COMPATIBLE",
+        "train_witnesses_checked": 22,
+        "type_status": "TYPED"
+      }
+    ],
+    "search_status": "CATALOG_CHECKED",
+    "catalog": {
+      "alphabet": [
+        "#",
+        "a",
+        "b"
+      ],
+      "candidate_budget_unit": "Full-train candidates after explicit terminal-coverage and short-train counterexample pruning; all pruned ASTs retained, total bounded by CPU/steps",
+      "catalog_generation_status": "CATALOG_GENERATED",
+      "catalog_size": 5967,
+      "constructors": [
+        "EPS",
+        "TERM",
+        "NT_REF",
+        "SEQ",
+        "ALT"
+      ],
+      "generation_limits": {
+        "alphabet": 4,
+        "materialized_shapes": 8192
+      },
+      "not_all_CFG": true,
+      "ordering": "AST size,terminal types,NT count,recursive arity,canonical SHA within declared generated catalog",
+      "pair_constraints_from_train": {
+        "required_for_nullable_or_pair_base": [],
+        "short_negative_pruned_only_for_nullable_or_pair_base": [
+          [
+            "a",
+            "b"
+          ]
+        ]
+      },
+      "pair_relation_subsets_up_to": 4,
+      "schema": "finite-primitive-catalog/1",
+      "sequence_policy": "all two-terminal shuffles with1/2 NT_REF; EPS/literal-pair/observed-center bases; independent start; observed singleton+concat",
+      "unmaterialized_recipe": null
+    },
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 2.521993525,
+      "max_rss_kib": 95668
+    }
+  },
+  "regular_even_a-formal": {
+    "run_ref": "0e22bb8042dcc11b4a82882b342f5530b71f75214a62c9107b2eea997128542a",
+    "model_sha256": "6d0786bf47119f5803693dd0ff0ac14fbb6877c127c321d8a20c2c5af7a6025b",
+    "selected": "09bafc00c7cc1d808c548b73ba09523718abb09f223202de26a1d7f2c91512a0",
+    "candidates": [
+      {
+        "ast": {
+          "accepting": [
+            0
+          ],
+          "alphabet": [
+            "a",
+            "b"
+          ],
+          "delta": [
+            {
+              "from": 0,
+              "to": 1,
+              "token": "a"
+            },
+            {
+              "from": 0,
+              "to": 0,
+              "token": "b"
+            },
+            {
+              "from": 1,
+              "to": 0,
+              "token": "a"
+            },
+            {
+              "from": 1,
+              "to": 1,
+              "token": "b"
+            }
+          ],
+          "schema": "formal-dfa-ir/1",
+          "start": 0,
+          "states": [
+            0,
+            1
+          ]
+        },
+        "candidate_id": "09bafc00c7cc1d808c548b73ba09523718abb09f223202de26a1d7f2c91512a0",
+        "origin": "CANONICAL_PREFIX_CONSTRAINT_SEARCH",
+        "status": "TRAIN_COMPATIBLE",
+        "type_status": "TYPED"
+      },
+      {
+        "ast": {
+          "accepting": [
+            0
+          ],
+          "alphabet": [
+            "a",
+            "b"
+          ],
+          "delta": [
+            {
+              "from": 0,
+              "to": 0,
+              "token": "a"
+            },
+            {
+              "from": 0,
+              "to": 1,
+              "token": "b"
+            },
+            {
+              "from": 1,
+              "to": 1,
+              "token": "a"
+            },
+            {
+              "from": 1,
+              "to": 0,
+              "token": "b"
+            }
+          ],
+          "schema": "formal-dfa-ir/1",
+          "start": 0,
+          "states": [
+            0,
+            1
+          ]
+        },
+        "candidate_id": "52f6783919d7624a80df80abf6df88ca4dd15e471bf113e5f2ab06a0b7b189ef",
+        "origin": "CANONICAL_PREFIX_CONSTRAINT_SEARCH",
+        "status": "TRAIN_COMPATIBLE",
+        "type_status": "TYPED"
+      }
+    ],
+    "search_status": "FIRST_COMPATIBLE_STATE_LEVEL_CHECKED",
+    "catalog": {
+      "explored_through_states": 2,
+      "max_states": 4,
+      "minimality_claim": false,
+      "partial_nodes_visited": 266,
+      "prefix_nodes": 127,
+      "search": "prefix trie constraints; complete transition/accepting tables; BFS renaming canonicalization",
+      "untried_state_levels": [
+        3,
+        4
+      ]
+    },
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.10748052200000001,
+      "max_rss_kib": 79380
+    }
+  },
+  "regular_even_a-annotated": {
+    "run_ref": "e86b84ff543cad338df5b6a0b594392e22c382ece79650653492de250ae10c6b",
+    "model_sha256": "94c49d3dd6b37bb7b22fb88b7fe72c3331dfde52409539478566739bff591076",
+    "selected": "09bafc00c7cc1d808c548b73ba09523718abb09f223202de26a1d7f2c91512a0",
+    "candidates": [
+      {
+        "ast": {
+          "accepting": [
+            0
+          ],
+          "alphabet": [
+            "a",
+            "b"
+          ],
+          "delta": [
+            {
+              "from": 0,
+              "to": 1,
+              "token": "a"
+            },
+            {
+              "from": 0,
+              "to": 0,
+              "token": "b"
+            },
+            {
+              "from": 1,
+              "to": 0,
+              "token": "a"
+            },
+            {
+              "from": 1,
+              "to": 1,
+              "token": "b"
+            }
+          ],
+          "schema": "formal-dfa-ir/1",
+          "start": 0,
+          "states": [
+            0,
+            1
+          ]
+        },
+        "candidate_id": "09bafc00c7cc1d808c548b73ba09523718abb09f223202de26a1d7f2c91512a0",
+        "origin": "CANONICAL_PREFIX_CONSTRAINT_SEARCH",
+        "status": "TRAIN_COMPATIBLE",
+        "type_status": "TYPED"
+      }
+    ],
+    "search_status": "FIRST_COMPATIBLE_STATE_LEVEL_CHECKED",
+    "catalog": {
+      "explored_through_states": 2,
+      "max_states": 4,
+      "minimality_claim": false,
+      "partial_nodes_visited": 136,
+      "prefix_nodes": 127,
+      "search": "prefix trie constraints; complete transition/accepting tables; BFS renaming canonicalization",
+      "untried_state_levels": [
+        3,
+        4
+      ]
+    },
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.063203104,
+      "max_rss_kib": 79572
+    }
+  },
+  "regular_ab_plus-active-1": {
+    "run_ref": "86e50ce597ef63ac666c5563dd43a83fde076ec75eaf6260e46e909ff40bc046",
+    "model_sha256": "8a60bc2248c307c3ca19d84ccb8902136b4a9e89be7d688959a80fc8a1f9059f",
+    "selected": "c7db5f227a0ef7acd594af057c3d6ad764085890f1afb97f6ba72ad8f81a1d5d",
+    "candidates": [
+      {
+        "ast": {
+          "accepting": [
+            3
+          ],
+          "alphabet": [
+            "a",
+            "b"
+          ],
+          "delta": [
+            {
+              "from": 0,
+              "to": 1,
+              "token": "a"
+            },
+            {
+              "from": 0,
+              "to": 2,
+              "token": "b"
+            },
+            {
+              "from": 1,
+              "to": 2,
+              "token": "a"
+            },
+            {
+              "from": 1,
+              "to": 3,
+              "token": "b"
+            },
+            {
+              "from": 2,
+              "to": 2,
+              "token": "a"
+            },
+            {
+              "from": 2,
+              "to": 2,
+              "token": "b"
+            },
+            {
+              "from": 3,
+              "to": 1,
+              "token": "a"
+            },
+            {
+              "from": 3,
+              "to": 2,
+              "token": "b"
+            }
+          ],
+          "schema": "formal-dfa-ir/1",
+          "start": 0,
+          "states": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "candidate_id": "c7db5f227a0ef7acd594af057c3d6ad764085890f1afb97f6ba72ad8f81a1d5d",
+        "origin": "CANONICAL_PREFIX_CONSTRAINT_SEARCH",
+        "status": "TRAIN_COMPATIBLE",
+        "type_status": "TYPED"
+      }
+    ],
+    "search_status": "FIRST_COMPATIBLE_STATE_LEVEL_CHECKED",
+    "catalog": {
+      "explored_through_states": 4,
+      "max_states": 4,
+      "minimality_claim": false,
+      "partial_nodes_visited": 5834,
+      "prefix_nodes": 127,
+      "search": "prefix trie constraints; complete transition/accepting tables; BFS renaming canonicalization",
+      "untried_state_levels": []
+    },
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.0718059,
+      "max_rss_kib": 78780
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "actual_data_objects_validated": {
+    "GRAMMAR.schema.json": 89,
+    "DFA.schema.json": 4,
+    "FORMULA.schema.json": 3
+  },
+  "semantics": "Syntactic JSON schemas only; source/typing/proofs independently checked by actual worker"
+}

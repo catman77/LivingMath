@@ -1,0 +1,424 @@
+{
+  "manual_proposals": {
+    "candidates": [
+      {
+        "alternative_parse_refs": [
+          "fe25f25da80f7f61c20fa6f399ab9d0536e2cc498129fb823bf4f3fb59e7189b",
+          "63e96e809f1d0095b6403910f96820bed5c3effcfecea4df0f2e26c2cc357dfc"
+        ],
+        "assumptions": [],
+        "candidate_id": "5c2d278f23546be5e84aba40c918e51e1d933c00da529627e847ab8f33921ba2",
+        "candidate_provider": {
+          "kind": "human",
+          "provenance": {
+            "not_automatic_NLP": true,
+            "origin": "supplied source-bound hand annotations"
+          }
+        },
+        "construction_trace": [
+          {
+            "id": "I1_each_at_least_one",
+            "origin": "EXPLICIT_HUMAN_ANNOTATION"
+          }
+        ],
+        "derivation_hash": "0c99e511f9cca10c828b106975dc5980c82830908f757f774f88b42ec00cad1f",
+        "execution_permission": false,
+        "formula_ast": {
+          "body": {
+            "body": {
+              "args": [
+                {
+                  "var": "r"
+                },
+                {
+                  "var": "h"
+                }
+              ],
+              "pred": "Checked"
+            },
+            "quant": "exists",
+            "sort": "hypothesis",
+            "var": "h"
+          },
+          "quant": "forall",
+          "sort": "researcher",
+          "var": "r"
+        },
+        "limitation_tags": [
+          "NO_GENERAL_NL_DECODER",
+          "NO_AUTHOR_INTENT_CLAIM",
+          "FINITE_MODELS_ONLY"
+        ],
+        "proof_status": "PROPOSED",
+        "schema": "formal-candidate/1",
+        "semantic_alignment_status": "PROPOSED",
+        "signature": {
+          "predicates": {
+            "Checked": [
+              "researcher",
+              "hypothesis"
+            ]
+          },
+          "sorts": [
+            "researcher",
+            "hypothesis"
+          ]
+        },
+        "source_ref": "52f753407ca5f9aeea3552bdd7d4fce90c4b689ceba235ee06dadf0f3733835d",
+        "source_sha256": "1bfb913518481ba0899018a463ab11fecb272ae1703d9139dc1f0ba27fc07389",
+        "token_role_links": [
+          {
+            "byte_utf8": [
+              0,
+              12
+            ],
+            "literal": "Каждый"
+          },
+          {
+            "byte_utf8": [
+              57,
+              65
+            ],
+            "literal": "одну"
+          }
+        ],
+        "type_status": "TYPED",
+        "typecheck": {
+          "formula_sha256": "52e17b5002e162587a82a016ad8a84bb77f94b8df1b60c2f6f87c0e409169108",
+          "nodes": 3,
+          "signature_sha256": "d9055ff83654040479101eb0dd2bc9bfc2ed3f64afb9306426c668403cb3603b",
+          "status": "TYPED"
+        }
+      },
+      {
+        "alternative_parse_refs": [
+          "5c2d278f23546be5e84aba40c918e51e1d933c00da529627e847ab8f33921ba2",
+          "63e96e809f1d0095b6403910f96820bed5c3effcfecea4df0f2e26c2cc357dfc"
+        ],
+        "assumptions": [],
+        "candidate_id": "fe25f25da80f7f61c20fa6f399ab9d0536e2cc498129fb823bf4f3fb59e7189b",
+        "candidate_provider": {
+          "kind": "human",
+          "provenance": {
+            "not_automatic_NLP": true,
+            "origin": "supplied source-bound hand annotations"
+          }
+        },
+        "construction_trace": [
+          {
+            "id": "I2_one_common",
+            "origin": "EXPLICIT_HUMAN_ANNOTATION"
+          }
+        ],
+        "derivation_hash": "39abdb85fc896c59504f87e9ae170602e65803a6472305b73b6db90f7fb5fe2d",
+        "execution_permission": false,
+        "formula_ast": {
+          "body": {
+            "body": {
+              "args": [
+                {
+                  "var": "r"
+                },
+                {
+                  "var": "h"
+                }
+              ],
+              "pred": "Checked"
+            },
+            "quant": "forall",
+            "sort": "researcher",
+            "var": "r"
+          },
+          "quant": "exists",
+          "sort": "hypothesis",
+          "var": "h"
+        },
+        "limitation_tags": [
+          "NO_GENERAL_NL_DECODER",
+          "NO_AUTHOR_INTENT_CLAIM",
+          "FINITE_MODELS_ONLY"
+        ],
+        "proof_status": "PROPOSED",
+        "schema": "formal-candidate/1",
+        "semantic_alignment_status": "PROPOSED",
+        "signature": {
+          "predicates": {
+            "Checked": [
+              "researcher",
+              "hypothesis"
+            ]
+          },
+          "sorts": [
+            "researcher",
+            "hypothesis"
+          ]
+        },
+        "source_ref": "52f753407ca5f9aeea3552bdd7d4fce90c4b689ceba235ee06dadf0f3733835d",
+        "source_sha256": "1bfb913518481ba0899018a463ab11fecb272ae1703d9139dc1f0ba27fc07389",
+        "token_role_links": [
+          {
+            "byte_utf8": [
+              0,
+              12
+            ],
+            "literal": "Каждый"
+          },
+          {
+            "byte_utf8": [
+              57,
+              65
+            ],
+            "literal": "одну"
+          }
+        ],
+        "type_status": "TYPED",
+        "typecheck": {
+          "formula_sha256": "fa8a4d410b7e31cbdc7db551ac436b3bfd63232fd8fcbbe394e5769504e048a9",
+          "nodes": 3,
+          "signature_sha256": "d9055ff83654040479101eb0dd2bc9bfc2ed3f64afb9306426c668403cb3603b",
+          "status": "TYPED"
+        }
+      },
+      {
+        "alternative_parse_refs": [
+          "5c2d278f23546be5e84aba40c918e51e1d933c00da529627e847ab8f33921ba2",
+          "fe25f25da80f7f61c20fa6f399ab9d0536e2cc498129fb823bf4f3fb59e7189b"
+        ],
+        "assumptions": [],
+        "candidate_id": "63e96e809f1d0095b6403910f96820bed5c3effcfecea4df0f2e26c2cc357dfc",
+        "candidate_provider": {
+          "kind": "human",
+          "provenance": {
+            "not_automatic_NLP": true,
+            "origin": "supplied source-bound hand annotations"
+          }
+        },
+        "construction_trace": [
+          {
+            "id": "I3_each_exactly_one",
+            "origin": "EXPLICIT_HUMAN_ANNOTATION"
+          }
+        ],
+        "derivation_hash": "4f98174198f8529bdf68bba484e8262853da2140dba9ec215694241a950e2950",
+        "execution_permission": false,
+        "formula_ast": {
+          "body": {
+            "body": {
+              "and": [
+                {
+                  "args": [
+                    {
+                      "var": "r"
+                    },
+                    {
+                      "var": "h"
+                    }
+                  ],
+                  "pred": "Checked"
+                },
+                {
+                  "body": {
+                    "or": [
+                      {
+                        "not": {
+                          "args": [
+                            {
+                              "var": "r"
+                            },
+                            {
+                              "var": "h2"
+                            }
+                          ],
+                          "pred": "Checked"
+                        }
+                      },
+                      {
+                        "eq": [
+                          {
+                            "var": "h2"
+                          },
+                          {
+                            "var": "h"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "quant": "forall",
+                  "sort": "hypothesis",
+                  "var": "h2"
+                }
+              ]
+            },
+            "quant": "exists",
+            "sort": "hypothesis",
+            "var": "h"
+          },
+          "quant": "forall",
+          "sort": "researcher",
+          "var": "r"
+        },
+        "limitation_tags": [
+          "NO_GENERAL_NL_DECODER",
+          "NO_AUTHOR_INTENT_CLAIM",
+          "FINITE_MODELS_ONLY"
+        ],
+        "proof_status": "PROPOSED",
+        "schema": "formal-candidate/1",
+        "semantic_alignment_status": "PROPOSED",
+        "signature": {
+          "predicates": {
+            "Checked": [
+              "researcher",
+              "hypothesis"
+            ]
+          },
+          "sorts": [
+            "researcher",
+            "hypothesis"
+          ]
+        },
+        "source_ref": "52f753407ca5f9aeea3552bdd7d4fce90c4b689ceba235ee06dadf0f3733835d",
+        "source_sha256": "1bfb913518481ba0899018a463ab11fecb272ae1703d9139dc1f0ba27fc07389",
+        "token_role_links": [
+          {
+            "byte_utf8": [
+              0,
+              12
+            ],
+            "literal": "Каждый"
+          },
+          {
+            "byte_utf8": [
+              57,
+              65
+            ],
+            "literal": "одну"
+          }
+        ],
+        "type_status": "TYPED",
+        "typecheck": {
+          "formula_sha256": "a30c6af936ba42812fe544a6f021852cde71a4692d2b4f69140cc6984afd25c3",
+          "nodes": 9,
+          "signature_sha256": "d9055ff83654040479101eb0dd2bc9bfc2ed3f64afb9306426c668403cb3603b",
+          "status": "TYPED"
+        }
+      }
+    ],
+    "execution_permission": false,
+    "generation": "EXPLICIT_PROVIDER_PROPOSALS_NOT_AUTOMATIC_NLP",
+    "schema": "formal-interpretations/1",
+    "source_ref": "52f753407ca5f9aeea3552bdd7d4fce90c4b689ceba235ee06dadf0f3733835d",
+    "status": "PROPOSED"
+  },
+  "models": [
+    {
+      "name": "different_hypotheses",
+      "truth_vector": [
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "name": "common_but_one_researcher_checks_two",
+      "truth_vector": [
+        true,
+        true,
+        false
+      ]
+    }
+  ],
+  "rejected_type": {
+    "candidates": [
+      {
+        "alternative_parse_refs": [],
+        "assumptions": [],
+        "candidate_id": "09f9ea68bdbe1f7ff4f81c73976f928a57f7d2ff8b07d90fc191903b558ec1b5",
+        "candidate_provider": {
+          "kind": "imported",
+          "provenance": {
+            "origin": "adversarial wrong type"
+          }
+        },
+        "construction_trace": [
+          {
+            "id": "I1_each_at_least_one",
+            "origin": "EXPLICIT_HUMAN_ANNOTATION"
+          }
+        ],
+        "derivation_hash": "8e4b5fcb8365674bb286315b9a5415a30244f2ae6f60dfcdfaed938a26f549a8",
+        "execution_permission": false,
+        "formula_ast": {
+          "body": {
+            "body": {
+              "args": [
+                {
+                  "var": "h"
+                },
+                {
+                  "var": "r"
+                }
+              ],
+              "pred": "Checked"
+            },
+            "quant": "exists",
+            "sort": "hypothesis",
+            "var": "h"
+          },
+          "quant": "forall",
+          "sort": "researcher",
+          "var": "r"
+        },
+        "limitation_tags": [
+          "NO_GENERAL_NL_DECODER",
+          "NO_AUTHOR_INTENT_CLAIM",
+          "FINITE_MODELS_ONLY"
+        ],
+        "proof_status": "PROPOSED",
+        "schema": "formal-candidate/1",
+        "semantic_alignment_status": "PROPOSED",
+        "signature": {
+          "predicates": {
+            "Checked": [
+              "researcher",
+              "hypothesis"
+            ]
+          },
+          "sorts": [
+            "researcher",
+            "hypothesis"
+          ]
+        },
+        "source_ref": "52f753407ca5f9aeea3552bdd7d4fce90c4b689ceba235ee06dadf0f3733835d",
+        "source_sha256": "1bfb913518481ba0899018a463ab11fecb272ae1703d9139dc1f0ba27fc07389",
+        "token_role_links": [
+          {
+            "byte_utf8": [
+              0,
+              12
+            ],
+            "literal": "Каждый"
+          },
+          {
+            "byte_utf8": [
+              57,
+              65
+            ],
+            "literal": "одну"
+          }
+        ],
+        "type_status": "TYPE_REJECTED",
+        "typecheck": {
+          "reason": "PREDICATE_SORT_MISMATCH",
+          "status": "TYPE_REJECTED"
+        }
+      }
+    ],
+    "execution_permission": false,
+    "generation": "EXPLICIT_PROVIDER_PROPOSALS_NOT_AUTOMATIC_NLP",
+    "schema": "formal-interpretations/1",
+    "source_ref": "52f753407ca5f9aeea3552bdd7d4fce90c4b689ceba235ee06dadf0f3733835d",
+    "status": "PROPOSED"
+  }
+}

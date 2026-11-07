@@ -1,7 +1,7 @@
 # Архитектура MCP-сервера LivingMath
 
-Срез архитектуры: **v0.4.8-developer-preview**, пакет Python `0.4.8.dev0`.
-Production объединяет **83 MCP-инструмента** в одном authenticated Streamable HTTP
+Срез архитектуры: **v0.4.9-developer-preview**, пакет Python `0.4.9.dev0`.
+Production объединяет **91 MCP-инструмент** в одном authenticated Streamable HTTP
 endpoint `/mcp`. [Справочник интерфейса](docs/MCP_INTERFACE.md),
 [установка](docs/INSTALL.md), [примеры запросов](docs/USAGE.md).
 
@@ -175,6 +175,59 @@ P1 harness фиксирует один hypothesis_digest для32 inference batc
 Он не группирует по высоте. HTTP429 retry находится только в QA transport,
 срабатывает только на явный pre-execution018_RESOURCE_BUSY, сохраняет request key.
 [Схемы и контракт](docs/symbolic-v1/dyck006/QUICKSTART_RU.md).
+
+## Formal Bridge v1
+
+Восьми новым MCP tools соответствует отдельный opt-in namespace;83 старых
+контракта сохранены. Сервис использует тот же Workspace и общий isolated executor
+через существующий observer_verify action; whitelist исходного worker не изменён.
+
+```mermaid
+flowchart TD
+  D[Owned train dataset] --> G[Finite primitive CFG or canonical DFA search]
+  G --> H[Retained candidates and frozen model]
+  H --> Q[Query-only predictions]
+  Q --> V[Independent forest or transition checker]
+  H --> C[Bounded distinguishing query]
+  C --> E[External label and new train generation]
+  E --> D
+  S[Source bytes and explicit provider proposals] --> T[Typed FOL candidates: PROPOSED]
+  T --> M[Exact declared finite model]
+  T --> F[Finite countermodel search under assumptions]
+  V --> A[Immutable artifacts and append-only history]
+  M --> A
+  F --> A
+```
+
+| Модуль `formal_bridge/` | Назначение |
+|---|---|
+| `ir.py` | Closed grammar/DFA IR, UTF-8 source binding, explicit finite bounds и CPU/step accounting |
+| `search.py` | Data-bound terminal relations, EPS/center/literal bases, sequence shuffles, ALT и независимый start; compatible rivals и контрпримеры |
+| `chart.py` | Least fixed-point chart, complete packed alternatives, конечные expanded trees и UNKNOWN для циклов/лимитов |
+| `dfa.py` | Ограниченный поиск полных transition tables по prefix constraints; канонизация BFS state names, trace |
+| `proof_checker.py` | Отдельная source reconstruction и saturation/transition verification; без импорта search/producer |
+| `fol.py` | Source links, scoped variable sorts, proposed interpretations, exact closed finite models и assumption-aware contrast |
+| `engine.py` | Чистые worker operations; fit без queries, seal, independently checked predictions и общий synthesis CPU budget |
+| `service.py` | Owned refs, idempotent reserve/finish, recovery, blobs, pagination, replay; без новых SQLite |
+| `contracts.py`, `mcp.py` | Восемь bounded additive APIs в том же FastMCP/HTTPS/OAuth |
+
+CFG search перебирает объявленный каталог, не все КС-грамматики. Структурные
+терминальные и короткие train-контрпримеры отсеиваются до полного fit; они остаются
+в diagnostics. Short negative pair pruning применим только к nullable/pair base,
+не к center base. Генерация сама ограничена CPU/steps, алфавитом≤4 и8192 shapes;
+max_candidates128 относится к full-train этапу после явных pruning checks.
+
+DFA search рассматривает states1…4 и останавливается на первом совместимом
+уровне; это ресурсная политика, не теорема глобальной минимальности.
+Packed CFG forest повторно проверяется отдельной global saturation, positive
+содержит production/child order/spans/start/SHA; negative требует полного chart.
+UNKNOWN_BOUND/UNKNOWN_CYCLE не превращаются в false.
+
+FOL provider явно передаёт proposals (human/imported/external provenance).
+Сервис не декодирует произвольный русский текст. Typechecked syntax, proposed
+source alignment и truth in a stated finite model — отдельные статусы.
+Контрмодель сравнивает кандидатов только там, где все их предпосылки истинны.
+Старые numerical/Symbolic/role/SP/frozen kernels и четыре SQLite не меняются.
 
 ## Данные и происхождение
 

@@ -1,0 +1,86 @@
+{
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "formal-dfa-ir/1"
+    },
+    "states": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 4,
+      "uniqueItems": true,
+      "items": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 3
+      }
+    },
+    "alphabet": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 8,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 128
+      }
+    },
+    "start": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 3
+    },
+    "accepting": {
+      "type": "array",
+      "uniqueItems": true,
+      "maxItems": 4,
+      "items": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 3
+      }
+    },
+    "delta": {
+      "type": "array",
+      "maxItems": 32,
+      "items": {
+        "type": "object",
+        "properties": {
+          "from": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 3
+          },
+          "token": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "to": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 3
+          }
+        },
+        "required": [
+          "from",
+          "token",
+          "to"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "schema",
+    "states",
+    "alphabet",
+    "start",
+    "accepting",
+    "delta"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Syntactic data contract only. Independent semantic validation checks bindings, source, bounds, typing and proofs."
+}

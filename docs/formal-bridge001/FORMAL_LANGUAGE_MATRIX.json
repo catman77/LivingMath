@@ -1,0 +1,678 @@
+{
+  "cfg_anbn": {
+    "TP": 1,
+    "TN": 255,
+    "FP": 0,
+    "FN": 0,
+    "UNKNOWN": 0,
+    "total": 256,
+    "positive_rate": 0.00390625,
+    "balanced_accuracy": 1.0,
+    "train_word_overlap": 0,
+    "seen_control_ids": [],
+    "unseen_total": 256,
+    "unseen_metrics": {
+      "TP": 1,
+      "TN": 255,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0
+    },
+    "evaluation_scope": "FINITE_UNSEEN_WORDS"
+  },
+  "cfg_anbn-enriched": {
+    "TP": 3,
+    "TN": 3,
+    "FP": 0,
+    "FN": 0,
+    "UNKNOWN": 0,
+    "total": 6,
+    "positive_rate": 0.5,
+    "balanced_accuracy": 1.0,
+    "train_word_overlap": 0,
+    "seen_control_ids": [],
+    "unseen_total": 6,
+    "unseen_metrics": {
+      "TP": 3,
+      "TN": 3,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0
+    },
+    "evaluation_scope": "FINITE_UNSEEN_WORDS"
+  },
+  "cfg_even_palindrome": {
+    "TP": 16,
+    "TN": 240,
+    "FP": 0,
+    "FN": 0,
+    "UNKNOWN": 0,
+    "total": 256,
+    "positive_rate": 0.0625,
+    "balanced_accuracy": 1.0,
+    "train_word_overlap": 0,
+    "seen_control_ids": [],
+    "unseen_total": 256,
+    "unseen_metrics": {
+      "TP": 16,
+      "TN": 240,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0
+    },
+    "evaluation_scope": "FINITE_UNSEEN_WORDS"
+  },
+  "cfg_even_palindrome-enriched": {
+    "TP": 16,
+    "TN": 16,
+    "FP": 0,
+    "FN": 0,
+    "UNKNOWN": 0,
+    "total": 32,
+    "positive_rate": 0.5,
+    "balanced_accuracy": 1.0,
+    "train_word_overlap": 0,
+    "seen_control_ids": [],
+    "unseen_total": 32,
+    "unseen_metrics": {
+      "TP": 16,
+      "TN": 16,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0
+    },
+    "evaluation_scope": "FINITE_UNSEEN_WORDS"
+  },
+  "cfg_dyck1": {
+    "TP": 14,
+    "TN": 242,
+    "FP": 0,
+    "FN": 0,
+    "UNKNOWN": 0,
+    "total": 256,
+    "positive_rate": 0.0546875,
+    "balanced_accuracy": 1.0,
+    "train_word_overlap": 0,
+    "seen_control_ids": [],
+    "unseen_total": 256,
+    "unseen_metrics": {
+      "TP": 14,
+      "TN": 242,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0
+    },
+    "evaluation_scope": "FINITE_UNSEEN_WORDS"
+  },
+  "cfg_dyck2_new_stratified": {
+    "TP": 40,
+    "TN": 216,
+    "FP": 0,
+    "FN": 0,
+    "UNKNOWN": 0,
+    "total": 256,
+    "positive_rate": 0.15625,
+    "balanced_accuracy": 1.0,
+    "train_word_overlap": 0,
+    "seen_control_ids": [],
+    "unseen_total": 256,
+    "unseen_metrics": {
+      "TP": 40,
+      "TN": 216,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0
+    },
+    "evaluation_scope": "FINITE_UNSEEN_WORDS"
+  },
+  "cfg_dyck2_new_stratified-enriched": {
+    "TP": 40,
+    "TN": 40,
+    "FP": 0,
+    "FN": 0,
+    "UNKNOWN": 0,
+    "total": 80,
+    "positive_rate": 0.5,
+    "balanced_accuracy": 1.0,
+    "train_word_overlap": 0,
+    "seen_control_ids": [],
+    "unseen_total": 80,
+    "unseen_metrics": {
+      "TP": 40,
+      "TN": 40,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0
+    },
+    "evaluation_scope": "FINITE_UNSEEN_WORDS"
+  },
+  "cfg_marked_palindrome": {
+    "TP": 8,
+    "TN": 56,
+    "FP": 0,
+    "FN": 0,
+    "UNKNOWN": 0,
+    "total": 64,
+    "positive_rate": 0.125,
+    "balanced_accuracy": 1.0,
+    "train_word_overlap": 0,
+    "seen_control_ids": [],
+    "unseen_total": 64,
+    "unseen_metrics": {
+      "TP": 8,
+      "TN": 56,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0
+    },
+    "evaluation_scope": "FINITE_UNSEEN_WORDS"
+  },
+  "cfg_marked_palindrome-enriched": {
+    "TP": 16,
+    "TN": 16,
+    "FP": 0,
+    "FN": 0,
+    "UNKNOWN": 0,
+    "total": 32,
+    "positive_rate": 0.5,
+    "balanced_accuracy": 1.0,
+    "train_word_overlap": 0,
+    "seen_control_ids": [],
+    "unseen_total": 32,
+    "unseen_metrics": {
+      "TP": 16,
+      "TN": 16,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0
+    },
+    "evaluation_scope": "FINITE_UNSEEN_WORDS"
+  },
+  "regular_even_a": {
+    "TP": 128,
+    "TN": 128,
+    "FP": 0,
+    "FN": 0,
+    "UNKNOWN": 0,
+    "total": 256,
+    "positive_rate": 0.5,
+    "balanced_accuracy": 1.0,
+    "train_word_overlap": 0,
+    "seen_control_ids": [],
+    "unseen_total": 256,
+    "unseen_metrics": {
+      "TP": 128,
+      "TN": 128,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0
+    },
+    "evaluation_scope": "FINITE_UNSEEN_WORDS"
+  },
+  "regular_even_a-enriched": {
+    "TP": 64,
+    "TN": 64,
+    "FP": 0,
+    "FN": 0,
+    "UNKNOWN": 0,
+    "total": 128,
+    "positive_rate": 0.5,
+    "balanced_accuracy": 1.0,
+    "train_word_overlap": 0,
+    "seen_control_ids": [],
+    "unseen_total": 128,
+    "unseen_metrics": {
+      "TP": 64,
+      "TN": 64,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0
+    },
+    "evaluation_scope": "FINITE_UNSEEN_WORDS"
+  },
+  "regular_even_a-enriched-pre-active": {
+    "TP": 64,
+    "TN": 64,
+    "FP": 0,
+    "FN": 0,
+    "UNKNOWN": 0,
+    "total": 128,
+    "positive_rate": 0.5,
+    "balanced_accuracy": 1.0,
+    "train_word_overlap": 0,
+    "seen_control_ids": [],
+    "unseen_total": 128,
+    "unseen_metrics": {
+      "TP": 64,
+      "TN": 64,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0
+    },
+    "evaluation_scope": "FINITE_UNSEEN_WORDS"
+  },
+  "regular_ab_plus": {
+    "TP": 1,
+    "TN": 255,
+    "FP": 0,
+    "FN": 0,
+    "UNKNOWN": 0,
+    "total": 256,
+    "positive_rate": 0.00390625,
+    "balanced_accuracy": 1.0,
+    "train_word_overlap": 0,
+    "seen_control_ids": [],
+    "unseen_total": 256,
+    "unseen_metrics": {
+      "TP": 1,
+      "TN": 255,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0
+    },
+    "evaluation_scope": "FINITE_UNSEEN_WORDS"
+  },
+  "regular_ab_plus-enriched": {
+    "TP": 2,
+    "TN": 129,
+    "FP": 0,
+    "FN": 0,
+    "UNKNOWN": 0,
+    "total": 131,
+    "positive_rate": 0.015267175572519083,
+    "balanced_accuracy": 1.0,
+    "train_word_overlap": 1,
+    "seen_control_ids": [
+      "fh-4f53cda18c2baa0c0354"
+    ],
+    "unseen_total": 130,
+    "unseen_metrics": {
+      "TP": 2,
+      "TN": 128,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0
+    },
+    "evaluation_scope": "FINITE_HOLDOUT_WITH_SEPARATE_SEEN_CONTROLS"
+  },
+  "regular_ab_plus-enriched-pre-active": {
+    "TP": 2,
+    "TN": 127,
+    "FP": 2,
+    "FN": 0,
+    "UNKNOWN": 0,
+    "total": 131,
+    "positive_rate": 0.015267175572519083,
+    "balanced_accuracy": 0.9922480620155039,
+    "train_word_overlap": 1,
+    "seen_control_ids": [
+      "fh-4f53cda18c2baa0c0354"
+    ],
+    "unseen_total": 130,
+    "unseen_metrics": {
+      "TP": 2,
+      "TN": 126,
+      "FP": 2,
+      "FN": 0,
+      "UNKNOWN": 0
+    },
+    "evaluation_scope": "FINITE_HOLDOUT_WITH_SEPARATE_SEEN_CONTROLS"
+  },
+  "noncfg_anbncn_canary": {
+    "TP": 0,
+    "TN": 0,
+    "FP": 0,
+    "FN": 0,
+    "UNKNOWN": 256,
+    "total": 256,
+    "positive_rate": 0.00390625,
+    "balanced_accuracy": 0.0,
+    "train_word_overlap": 0,
+    "seen_control_ids": [],
+    "unseen_total": 256,
+    "unseen_metrics": {
+      "TP": 0,
+      "TN": 0,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 256
+    },
+    "evaluation_scope": "FINITE_UNSEEN_WORDS"
+  },
+  "cfg_anbn-role_branching_ast": {
+    "TP": 1,
+    "TN": 255,
+    "FP": 0,
+    "FN": 0,
+    "UNKNOWN": 0,
+    "total": 256,
+    "positive_rate": 0.00390625,
+    "balanced_accuracy": 1.0,
+    "train_word_overlap": 0,
+    "seen_control_ids": [],
+    "unseen_total": 256,
+    "unseen_metrics": {
+      "TP": 1,
+      "TN": 255,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0
+    },
+    "evaluation_scope": "FINITE_UNSEEN_WORDS"
+  },
+  "cfg_anbn-auto": {
+    "TP": 1,
+    "TN": 255,
+    "FP": 0,
+    "FN": 0,
+    "UNKNOWN": 0,
+    "total": 256,
+    "positive_rate": 0.00390625,
+    "balanced_accuracy": 1.0,
+    "train_word_overlap": 0,
+    "seen_control_ids": [],
+    "unseen_total": 256,
+    "unseen_metrics": {
+      "TP": 1,
+      "TN": 255,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0
+    },
+    "evaluation_scope": "FINITE_UNSEEN_WORDS"
+  },
+  "cfg_even_palindrome-role_branching_ast": {
+    "TP": 0,
+    "TN": 240,
+    "FP": 0,
+    "FN": 16,
+    "UNKNOWN": 0,
+    "total": 256,
+    "positive_rate": 0.0625,
+    "balanced_accuracy": 0.5,
+    "train_word_overlap": 0,
+    "seen_control_ids": [],
+    "unseen_total": 256,
+    "unseen_metrics": {
+      "TP": 0,
+      "TN": 240,
+      "FP": 0,
+      "FN": 16,
+      "UNKNOWN": 0
+    },
+    "evaluation_scope": "FINITE_UNSEEN_WORDS"
+  },
+  "cfg_even_palindrome-auto": {
+    "TP": 16,
+    "TN": 240,
+    "FP": 0,
+    "FN": 0,
+    "UNKNOWN": 0,
+    "total": 256,
+    "positive_rate": 0.0625,
+    "balanced_accuracy": 1.0,
+    "train_word_overlap": 0,
+    "seen_control_ids": [],
+    "unseen_total": 256,
+    "unseen_metrics": {
+      "TP": 16,
+      "TN": 240,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0
+    },
+    "evaluation_scope": "FINITE_UNSEEN_WORDS"
+  },
+  "cfg_dyck1-role_branching_ast": {
+    "TP": 14,
+    "TN": 242,
+    "FP": 0,
+    "FN": 0,
+    "UNKNOWN": 0,
+    "total": 256,
+    "positive_rate": 0.0546875,
+    "balanced_accuracy": 1.0,
+    "train_word_overlap": 0,
+    "seen_control_ids": [],
+    "unseen_total": 256,
+    "unseen_metrics": {
+      "TP": 14,
+      "TN": 242,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0
+    },
+    "evaluation_scope": "FINITE_UNSEEN_WORDS"
+  },
+  "cfg_dyck1-auto": {
+    "TP": 14,
+    "TN": 242,
+    "FP": 0,
+    "FN": 0,
+    "UNKNOWN": 0,
+    "total": 256,
+    "positive_rate": 0.0546875,
+    "balanced_accuracy": 1.0,
+    "train_word_overlap": 0,
+    "seen_control_ids": [],
+    "unseen_total": 256,
+    "unseen_metrics": {
+      "TP": 14,
+      "TN": 242,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0
+    },
+    "evaluation_scope": "FINITE_UNSEEN_WORDS"
+  },
+  "cfg_dyck2_new_stratified-role_branching_ast": {
+    "TP": 0,
+    "TN": 216,
+    "FP": 0,
+    "FN": 40,
+    "UNKNOWN": 0,
+    "total": 256,
+    "positive_rate": 0.15625,
+    "balanced_accuracy": 0.5,
+    "train_word_overlap": 0,
+    "seen_control_ids": [],
+    "unseen_total": 256,
+    "unseen_metrics": {
+      "TP": 0,
+      "TN": 216,
+      "FP": 0,
+      "FN": 40,
+      "UNKNOWN": 0
+    },
+    "evaluation_scope": "FINITE_UNSEEN_WORDS"
+  },
+  "cfg_dyck2_new_stratified-auto": {
+    "TP": 0,
+    "TN": 216,
+    "FP": 0,
+    "FN": 40,
+    "UNKNOWN": 0,
+    "total": 256,
+    "positive_rate": 0.15625,
+    "balanced_accuracy": 0.5,
+    "train_word_overlap": 0,
+    "seen_control_ids": [],
+    "unseen_total": 256,
+    "unseen_metrics": {
+      "TP": 0,
+      "TN": 216,
+      "FP": 0,
+      "FN": 40,
+      "UNKNOWN": 0
+    },
+    "evaluation_scope": "FINITE_UNSEEN_WORDS"
+  },
+  "cfg_marked_palindrome-role_branching_ast": {
+    "TP": 0,
+    "TN": 56,
+    "FP": 0,
+    "FN": 8,
+    "UNKNOWN": 0,
+    "total": 64,
+    "positive_rate": 0.125,
+    "balanced_accuracy": 0.5,
+    "train_word_overlap": 0,
+    "seen_control_ids": [],
+    "unseen_total": 64,
+    "unseen_metrics": {
+      "TP": 0,
+      "TN": 56,
+      "FP": 0,
+      "FN": 8,
+      "UNKNOWN": 0
+    },
+    "evaluation_scope": "FINITE_UNSEEN_WORDS"
+  },
+  "cfg_marked_palindrome-auto": {
+    "TP": 8,
+    "TN": 56,
+    "FP": 0,
+    "FN": 0,
+    "UNKNOWN": 0,
+    "total": 64,
+    "positive_rate": 0.125,
+    "balanced_accuracy": 1.0,
+    "train_word_overlap": 0,
+    "seen_control_ids": [],
+    "unseen_total": 64,
+    "unseen_metrics": {
+      "TP": 8,
+      "TN": 56,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0
+    },
+    "evaluation_scope": "FINITE_UNSEEN_WORDS"
+  },
+  "regular_even_a-role_branching_ast": {
+    "TP": 128,
+    "TN": 0,
+    "FP": 128,
+    "FN": 0,
+    "UNKNOWN": 0,
+    "total": 256,
+    "positive_rate": 0.5,
+    "balanced_accuracy": 0.5,
+    "train_word_overlap": 0,
+    "seen_control_ids": [],
+    "unseen_total": 256,
+    "unseen_metrics": {
+      "TP": 128,
+      "TN": 0,
+      "FP": 128,
+      "FN": 0,
+      "UNKNOWN": 0
+    },
+    "evaluation_scope": "FINITE_UNSEEN_WORDS"
+  },
+  "regular_even_a-auto": {
+    "TP": 128,
+    "TN": 0,
+    "FP": 128,
+    "FN": 0,
+    "UNKNOWN": 0,
+    "total": 256,
+    "positive_rate": 0.5,
+    "balanced_accuracy": 0.5,
+    "train_word_overlap": 0,
+    "seen_control_ids": [],
+    "unseen_total": 256,
+    "unseen_metrics": {
+      "TP": 128,
+      "TN": 0,
+      "FP": 128,
+      "FN": 0,
+      "UNKNOWN": 0
+    },
+    "evaluation_scope": "FINITE_UNSEEN_WORDS"
+  },
+  "regular_ab_plus-role_branching_ast": {
+    "TP": 1,
+    "TN": 255,
+    "FP": 0,
+    "FN": 0,
+    "UNKNOWN": 0,
+    "total": 256,
+    "positive_rate": 0.00390625,
+    "balanced_accuracy": 1.0,
+    "train_word_overlap": 0,
+    "seen_control_ids": [],
+    "unseen_total": 256,
+    "unseen_metrics": {
+      "TP": 1,
+      "TN": 255,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0
+    },
+    "evaluation_scope": "FINITE_UNSEEN_WORDS"
+  },
+  "regular_ab_plus-auto": {
+    "TP": 1,
+    "TN": 255,
+    "FP": 0,
+    "FN": 0,
+    "UNKNOWN": 0,
+    "total": 256,
+    "positive_rate": 0.00390625,
+    "balanced_accuracy": 1.0,
+    "train_word_overlap": 0,
+    "seen_control_ids": [],
+    "unseen_total": 256,
+    "unseen_metrics": {
+      "TP": 1,
+      "TN": 255,
+      "FP": 0,
+      "FN": 0,
+      "UNKNOWN": 0
+    },
+    "evaluation_scope": "FINITE_UNSEEN_WORDS"
+  },
+  "noncfg_anbncn_canary-role_branching_ast": {
+    "TP": 0,
+    "TN": 255,
+    "FP": 0,
+    "FN": 1,
+    "UNKNOWN": 0,
+    "total": 256,
+    "positive_rate": 0.00390625,
+    "balanced_accuracy": 0.5,
+    "train_word_overlap": 0,
+    "seen_control_ids": [],
+    "unseen_total": 256,
+    "unseen_metrics": {
+      "TP": 0,
+      "TN": 255,
+      "FP": 0,
+      "FN": 1,
+      "UNKNOWN": 0
+    },
+    "evaluation_scope": "FINITE_UNSEEN_WORDS"
+  },
+  "noncfg_anbncn_canary-auto": {
+    "TP": 0,
+    "TN": 255,
+    "FP": 0,
+    "FN": 1,
+    "UNKNOWN": 0,
+    "total": 256,
+    "positive_rate": 0.00390625,
+    "balanced_accuracy": 0.5,
+    "train_word_overlap": 0,
+    "seen_control_ids": [],
+    "unseen_total": 256,
+    "unseen_metrics": {
+      "TP": 0,
+      "TN": 255,
+      "FP": 0,
+      "FN": 1,
+      "UNKNOWN": 0
+    },
+    "evaluation_scope": "FINITE_UNSEEN_WORDS"
+  }
+}

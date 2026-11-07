@@ -1,0 +1,339 @@
+{
+  "worker_limits": {
+    "CPU_s": 5,
+    "wall_s": 6,
+    "RAM_MiB": 512,
+    "shared_active": 2,
+    "shared_queue": 16,
+    "request_bytes": 262144,
+    "result_bytes": 33554432
+  },
+  "formal_limits": {
+    "max_tokens": 12,
+    "max_steps": 100000,
+    "max_forest_edges": 4096,
+    "max_trees": 32,
+    "max_candidates": 128,
+    "max_cpu_ms": 4000,
+    "max_rules": 6,
+    "max_nt": 2,
+    "max_ast_nodes": 32,
+    "max_rhs": 5,
+    "max_states": 4,
+    "max_length": 6,
+    "max_words": 512,
+    "max_models": 512
+  },
+  "actual_core_job_metrics": {
+    "cfg_anbn-formal": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.448769227,
+      "max_rss_kib": 61136
+    },
+    "cfg_anbn-fresh": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.417835892,
+      "max_rss_kib": 60708
+    },
+    "cfg_anbn-contrast": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.01155571,
+      "max_rss_kib": 60848
+    },
+    "cfg_anbn-annotated": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.154945106,
+      "max_rss_kib": 60136
+    },
+    "cfg_even_palindrome-formal": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.658248507,
+      "max_rss_kib": 60392
+    },
+    "cfg_even_palindrome-annotated": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.290749898,
+      "max_rss_kib": 61176
+    },
+    "cfg_dyck1-formal": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.6329865429999999,
+      "max_rss_kib": 63340
+    },
+    "cfg_dyck2_new_stratified-formal": {
+      "LLM_calls": 0,
+      "job_cpu_s": 1.161443603,
+      "max_rss_kib": 70164
+    },
+    "cfg_dyck2_new_stratified-fresh": {
+      "LLM_calls": 0,
+      "job_cpu_s": 1.158072532,
+      "max_rss_kib": 65208
+    },
+    "cfg_dyck2_new_stratified-annotated": {
+      "LLM_calls": 0,
+      "job_cpu_s": 1.00705456,
+      "max_rss_kib": 69232
+    },
+    "cfg_marked_palindrome-formal": {
+      "LLM_calls": 0,
+      "job_cpu_s": 3.420372498,
+      "max_rss_kib": 99000
+    },
+    "cfg_marked_palindrome-annotated": {
+      "LLM_calls": 0,
+      "job_cpu_s": 2.521993525,
+      "max_rss_kib": 95668
+    },
+    "regular_even_a-formal": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.10748052200000001,
+      "max_rss_kib": 79380
+    },
+    "regular_even_a-contrast": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.010807567,
+      "max_rss_kib": 75604
+    },
+    "regular_even_a-annotated": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.063203104,
+      "max_rss_kib": 79572
+    },
+    "regular_ab_plus-formal": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.109035548,
+      "max_rss_kib": 73140
+    },
+    "regular_ab_plus-annotated": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.135419251,
+      "max_rss_kib": 82832
+    },
+    "regular_ab_plus-active-query-0": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.011658668,
+      "max_rss_kib": 72604
+    },
+    "regular_ab_plus-active-0": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.085940528,
+      "max_rss_kib": 79788
+    },
+    "regular_ab_plus-active-query-1": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.021882376,
+      "max_rss_kib": 72604
+    },
+    "regular_ab_plus-active-1": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.0718059,
+      "max_rss_kib": 78780
+    },
+    "noncfg_anbncn_canary-formal": {
+      "LLM_calls": 0,
+      "job_cpu_s": 4.2127759650000005,
+      "max_rss_kib": 92888
+    },
+    "control-ambiguous_concat": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.009002184,
+      "max_rss_kib": 78000
+    },
+    "control-dyck2": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.008098404,
+      "max_rss_kib": 79316
+    },
+    "control-dyck2_untyped": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.008285034,
+      "max_rss_kib": 76992
+    },
+    "record-aaa": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.00867509,
+      "max_rss_kib": 75068
+    },
+    "ambiguous-forest": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.010056514,
+      "max_rss_kib": 77776
+    },
+    "typed-vs-untyped": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.013073577,
+      "max_rss_kib": 74532
+    },
+    "record-nested": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.008955336,
+      "max_rss_kib": 77776
+    },
+    "source-proof": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.013186067,
+      "max_rss_kib": 75068
+    },
+    "tamper-sha": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.008240376,
+      "max_rss_kib": 76992
+    },
+    "reject-sha": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.009228752,
+      "max_rss_kib": 75068
+    },
+    "tamper-rule": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.009084225,
+      "max_rss_kib": 76992
+    },
+    "reject-rule": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.010030305,
+      "max_rss_kib": 75068
+    },
+    "tamper-span": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.008899423,
+      "max_rss_kib": 76992
+    },
+    "reject-span": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.00946833,
+      "max_rss_kib": 75068
+    },
+    "tamper-start": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.009123936,
+      "max_rss_kib": 76992
+    },
+    "reject-start": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.009286856,
+      "max_rss_kib": 75068
+    },
+    "tamper-token": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.009203484,
+      "max_rss_kib": 76992
+    },
+    "reject-token": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.009494311,
+      "max_rss_kib": 75068
+    },
+    "tamper-order": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.008470178,
+      "max_rss_kib": 76992
+    },
+    "reject-order": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.009810108,
+      "max_rss_kib": 75068
+    },
+    "proof-bound": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.009814827,
+      "max_rss_kib": 77776
+    },
+    "fol-source": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.008510150000000001,
+      "max_rss_kib": 74312
+    },
+    "fol-three": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.008147201,
+      "max_rss_kib": 76016
+    },
+    "fol-model-0": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.008722186,
+      "max_rss_kib": 74276
+    },
+    "fol-model-0-candidate-0": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.008579050999999999,
+      "max_rss_kib": 76112
+    },
+    "fol-model-0-candidate-1": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.008403582,
+      "max_rss_kib": 74404
+    },
+    "fol-model-0-candidate-2": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.009027956,
+      "max_rss_kib": 76112
+    },
+    "fol-model-1": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.009125325,
+      "max_rss_kib": 74276
+    },
+    "fol-model-1-candidate-0": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.009361524,
+      "max_rss_kib": 76112
+    },
+    "fol-model-1-candidate-1": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.008818116,
+      "max_rss_kib": 74404
+    },
+    "fol-model-1-candidate-2": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.008724892,
+      "max_rss_kib": 76112
+    },
+    "fol-pair-01": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.010170868,
+      "max_rss_kib": 74340
+    },
+    "fol-pair-02": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.009604853,
+      "max_rss_kib": 76048
+    },
+    "fol-pair-12": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.009517763,
+      "max_rss_kib": 74340
+    },
+    "fol-invalid-type": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.008613946,
+      "max_rss_kib": 76016
+    },
+    "replay-cfg_anbn-formal": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.412679054,
+      "max_rss_kib": 75068
+    },
+    "replay-cfg_dyck2_new_stratified-formal": {
+      "LLM_calls": 0,
+      "job_cpu_s": 1.1216597899999998,
+      "max_rss_kib": 76768
+    },
+    "replay-regular_even_a-annotated": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.064192771,
+      "max_rss_kib": 75068
+    },
+    "replay-fol-three": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.009103481,
+      "max_rss_kib": 76016
+    }
+  },
+  "max_actual_core_CPU_s": 4.2127759650000005,
+  "max_actual_core_RSS_KiB": 99000,
+  "same_existing_runtime_dependency_versions": 48,
+  "LLM_calls_new_route": 0,
+  "resource_exhaustion": "UNKNOWN_BOUND, unresolved forest cycles UNKNOWN_CYCLE; no universal exhaustion claim"
+}

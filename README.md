@@ -4,11 +4,22 @@
 свидетели и контрпримеры → сохраняемая история исследования. MCP-интерфейс
 объединяет LivingMath, проверку исходных схем SUTI и алхимическую модель ALCH006.
 
-Текущий продукт: **`v0.4.8-developer-preview`**: assurance CLI, Semantic Bridge, численная White Star и Symbolic V1; 83 MCP-инструмента (82 прежних + независимый verifier наблюдателя). [Установка](README_QUICKSTART_RU.md), [White Star и сравнение режимов](docs/white-star/QUICKSTART_RU.md), [Semantic Bridge](docs/semantic-bridge/QUICKSTART_RU.md), [CLI](CLI_REFERENCE.md), [границы возможностей](LIMITATIONS.md).
+Текущий продукт: **`v0.4.9-developer-preview`**: assurance CLI, Semantic Bridge, численная White Star и Symbolic V1; 91 MCP-инструмент (83 прежних +8 Formal Bridge). [Установка](README_QUICKSTART_RU.md), [White Star и сравнение режимов](docs/white-star/QUICKSTART_RU.md), [Semantic Bridge](docs/semantic-bridge/QUICKSTART_RU.md), [CLI](CLI_REFERENCE.md), [границы возможностей](LIMITATIONS.md).
+
+
+**Formal Bridge v1 (0.4.9)** добавляет ограниченный поиск CFG/DFA из train,
+packed forests с независимой проверкой, различающие запросы и отдельные
+source-bound типизированные FOL proposals. Проверены два типа пар, палиндромы,
+автомат чётности и активное уточнение `(ab)+`; разные трактовки и деревья сохраняются.
+Три предложенных чтения одной фразы дают различные следствия в конечных моделях.
+[Результаты и точные границы](docs/formal-bridge001/IMPLEMENTATION_REPORT_RU.md),
+[MCP-контракт и примеры](docs/formal-bridge001/QUICKSTART_RU.md).
+Человеческие FOL-аннотации остаются `PROPOSED`; автоматический общий NL→FOL
+декодер не заявлен. `UNIVERSAL_INVARIANT=false`.
 
 Основной репозиторий: **[catman77/LivingMath](https://github.com/catman77/LivingMath)**.
 [Архитектура сервера и назначение модулей](ARCHITECTURE.md) ·
-[MCP-интерфейс: транспорт, 83 инструмента, схемы и примеры](docs/MCP_INTERFACE.md) ·
+[MCP-интерфейс: транспорт, 91 инструмент, схемы и примеры](docs/MCP_INTERFACE.md) ·
 [Установка CLI, legacy и полного production entry](docs/INSTALL.md).
 
 White Star использует предоставленное неизменённое ядро Белая звезда → CAD → Удав. Один frozen semantic snapshot можно передать ему и действующему Bridge/assurance без повторного extraction. Численные предложения и сохранённые LLM-прочтения разделены; native SUTI не исполняется. [Отчёт, фактическое сравнение и приёмка](docs/white-star/USER_REPORT_RU.md).
@@ -40,7 +51,7 @@ DYCK006 добавляет автоматически порождаемые р�
 результат: `UNIVERSAL_INVARIANT=false`, семейство остаётся `UNDERDETERMINED`.
 [Отчёт и результаты](docs/symbolic-v1/dyck006/USER_REPORT_RU.md),
 [точный MCP-контракт и воспроизведение](docs/symbolic-v1/dyck006/QUICKSTART_RU.md),
-[релиз с полной воспроизводимой поставкой](https://github.com/catman77/LivingMath/releases/tag/v0.4.8-developer-preview).
+[релиз с полной воспроизводимой поставкой](https://github.com/catman77/LivingMath/releases/tag/v0.4.9-developer-preview).
 
 ## Установка и первый запуск
 
@@ -61,7 +72,7 @@ python -m pytest -q tests
 
 Это установка текущего кода и локальная проверка; HTTP автоматически не запускается.
 Действующий полный сервер запускается через `tools/release_v01_entry.py` с
-приватной owner-конфигурацией и публикует **83** инструмента. Отдельный
+приватной owner-конфигурацией и публикует **91** инструмент. Отдельный
 `unified_system.local prepare/serve/smoke` создаёт новый legacy стенд с **44**
 инструментами; он не является установщиком полного production release.
 

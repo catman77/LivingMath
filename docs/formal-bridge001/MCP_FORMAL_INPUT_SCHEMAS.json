@@ -1,0 +1,847 @@
+{
+  "formal_store": {
+    "type": "object",
+    "properties": {
+      "project": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+      },
+      "request_key": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9_.:-]{1,128}$"
+      },
+      "budget": {
+        "type": "object",
+        "properties": {
+          "max_tokens": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 12
+          },
+          "max_steps": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 100000
+          },
+          "max_forest_edges": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 4096
+          },
+          "max_trees": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 32
+          },
+          "max_candidates": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 128
+          },
+          "max_cpu_ms": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 4000
+          },
+          "max_rules": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 6
+          },
+          "max_nt": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 2
+          },
+          "max_ast_nodes": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 32
+          },
+          "max_rhs": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5
+          },
+          "max_states": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 4
+          },
+          "max_length": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 6
+          },
+          "max_words": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 512
+          },
+          "max_models": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 512
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "kind": {
+        "enum": [
+          "source",
+          "model",
+          "record",
+          "grammar",
+          "dfa",
+          "proof"
+        ]
+      },
+      "data": {
+        "type": "object"
+      }
+    },
+    "required": [
+      "project",
+      "request_key",
+      "kind",
+      "data"
+    ],
+    "additionalProperties": false
+  },
+  "formal_synthesize": {
+    "type": "object",
+    "properties": {
+      "project": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+      },
+      "request_key": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9_.:-]{1,128}$"
+      },
+      "budget": {
+        "type": "object",
+        "properties": {
+          "max_tokens": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 12
+          },
+          "max_steps": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 100000
+          },
+          "max_forest_edges": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 4096
+          },
+          "max_trees": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 32
+          },
+          "max_candidates": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 128
+          },
+          "max_cpu_ms": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 4000
+          },
+          "max_rules": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 6
+          },
+          "max_nt": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 2
+          },
+          "max_ast_nodes": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 32
+          },
+          "max_rhs": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5
+          },
+          "max_states": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 4
+          },
+          "max_length": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 6
+          },
+          "max_words": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 512
+          },
+          "max_models": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 512
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "train_ref": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "predict_ref": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "constraints": {
+        "type": "object",
+        "properties": {
+          "kind": {
+            "enum": [
+              "cfg",
+              "dfa"
+            ]
+          }
+        },
+        "required": [
+          "kind"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "required": [
+      "project",
+      "request_key",
+      "train_ref",
+      "predict_ref",
+      "constraints"
+    ],
+    "additionalProperties": false
+  },
+  "formal_inspect": {
+    "type": "object",
+    "properties": {
+      "project": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+      },
+      "run_ref": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "view": {
+        "enum": [
+          "summary",
+          "result",
+          "model",
+          "candidates",
+          "predictions",
+          "considered",
+          "objects",
+          "object",
+          "packet",
+          "bundle"
+        ]
+      },
+      "object_ref": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "offset": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 10000000
+      },
+      "limit": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 128
+      }
+    },
+    "required": [
+      "project",
+      "run_ref"
+    ],
+    "additionalProperties": false
+  },
+  "formal_verify": {
+    "type": "object",
+    "properties": {
+      "project": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+      },
+      "request_key": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9_.:-]{1,128}$"
+      },
+      "budget": {
+        "type": "object",
+        "properties": {
+          "max_tokens": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 12
+          },
+          "max_steps": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 100000
+          },
+          "max_forest_edges": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 4096
+          },
+          "max_trees": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 32
+          },
+          "max_candidates": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 128
+          },
+          "max_cpu_ms": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 4000
+          },
+          "max_rules": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 6
+          },
+          "max_nt": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 2
+          },
+          "max_ast_nodes": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 32
+          },
+          "max_rhs": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5
+          },
+          "max_states": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 4
+          },
+          "max_length": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 6
+          },
+          "max_words": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 512
+          },
+          "max_models": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 512
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "run_ref": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "candidate_ref": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "source_ref": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "proof_ref": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      }
+    },
+    "required": [
+      "project",
+      "request_key",
+      "run_ref",
+      "source_ref"
+    ],
+    "additionalProperties": false
+  },
+  "formal_contrast": {
+    "type": "object",
+    "properties": {
+      "project": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+      },
+      "request_key": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9_.:-]{1,128}$"
+      },
+      "budget": {
+        "type": "object",
+        "properties": {
+          "max_tokens": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 12
+          },
+          "max_steps": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 100000
+          },
+          "max_forest_edges": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 4096
+          },
+          "max_trees": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 32
+          },
+          "max_candidates": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 128
+          },
+          "max_cpu_ms": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 4000
+          },
+          "max_rules": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 6
+          },
+          "max_nt": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 2
+          },
+          "max_ast_nodes": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 32
+          },
+          "max_rhs": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5
+          },
+          "max_states": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 4
+          },
+          "max_length": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 6
+          },
+          "max_words": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 512
+          },
+          "max_models": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 512
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "run_ref": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "candidate_refs": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "maxItems": 16,
+        "minItems": 2
+      }
+    },
+    "required": [
+      "project",
+      "request_key",
+      "run_ref",
+      "candidate_refs"
+    ],
+    "additionalProperties": false
+  },
+  "formal_interpret": {
+    "type": "object",
+    "properties": {
+      "project": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+      },
+      "request_key": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9_.:-]{1,128}$"
+      },
+      "budget": {
+        "type": "object",
+        "properties": {
+          "max_tokens": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 12
+          },
+          "max_steps": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 100000
+          },
+          "max_forest_edges": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 4096
+          },
+          "max_trees": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 32
+          },
+          "max_candidates": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 128
+          },
+          "max_cpu_ms": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 4000
+          },
+          "max_rules": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 6
+          },
+          "max_nt": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 2
+          },
+          "max_ast_nodes": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 32
+          },
+          "max_rhs": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5
+          },
+          "max_states": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 4
+          },
+          "max_length": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 6
+          },
+          "max_words": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 512
+          },
+          "max_models": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 512
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "source_ref": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "candidate_provider": {
+        "type": "object",
+        "properties": {
+          "kind": {
+            "enum": [
+              "human",
+              "imported",
+              "white_star",
+              "external_llm"
+            ]
+          },
+          "provenance": {
+            "type": "object"
+          }
+        },
+        "required": [
+          "kind",
+          "provenance"
+        ],
+        "additionalProperties": false
+      },
+      "target_signature": {
+        "type": "object"
+      },
+      "proposals": {
+        "type": "array",
+        "items": {
+          "type": "object"
+        },
+        "maxItems": 16,
+        "minItems": 1
+      }
+    },
+    "required": [
+      "project",
+      "request_key",
+      "source_ref",
+      "candidate_provider",
+      "target_signature",
+      "proposals"
+    ],
+    "additionalProperties": false
+  },
+  "formal_model_check": {
+    "type": "object",
+    "properties": {
+      "project": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+      },
+      "request_key": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9_.:-]{1,128}$"
+      },
+      "budget": {
+        "type": "object",
+        "properties": {
+          "max_tokens": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 12
+          },
+          "max_steps": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 100000
+          },
+          "max_forest_edges": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 4096
+          },
+          "max_trees": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 32
+          },
+          "max_candidates": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 128
+          },
+          "max_cpu_ms": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 4000
+          },
+          "max_rules": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 6
+          },
+          "max_nt": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 2
+          },
+          "max_ast_nodes": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 32
+          },
+          "max_rhs": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5
+          },
+          "max_states": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 4
+          },
+          "max_length": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 6
+          },
+          "max_words": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 512
+          },
+          "max_models": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 512
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "run_ref": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "candidate_ref": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "model_ref": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      }
+    },
+    "required": [
+      "project",
+      "request_key",
+      "run_ref",
+      "candidate_ref",
+      "model_ref"
+    ],
+    "additionalProperties": false
+  },
+  "formal_replay": {
+    "type": "object",
+    "properties": {
+      "project": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+      },
+      "request_key": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9_.:-]{1,128}$"
+      },
+      "budget": {
+        "type": "object",
+        "properties": {
+          "max_tokens": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 12
+          },
+          "max_steps": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 100000
+          },
+          "max_forest_edges": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 4096
+          },
+          "max_trees": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 32
+          },
+          "max_candidates": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 128
+          },
+          "max_cpu_ms": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 4000
+          },
+          "max_rules": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 6
+          },
+          "max_nt": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 2
+          },
+          "max_ast_nodes": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 32
+          },
+          "max_rhs": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5
+          },
+          "max_states": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 4
+          },
+          "max_length": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 6
+          },
+          "max_words": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 512
+          },
+          "max_models": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 512
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "run_ref": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      }
+    },
+    "required": [
+      "project",
+      "request_key",
+      "run_ref"
+    ],
+    "additionalProperties": false
+  }
+}

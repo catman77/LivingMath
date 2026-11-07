@@ -1,8 +1,8 @@
-# MCP-интерфейс LivingMath v0.4.8
+# MCP-интерфейс LivingMath v0.4.9
 
-Актуальная production-композиция: **83 инструмента**, версия сервера
-`v0.4.8-developer-preview`, пакет `0.4.8.dev0`. [Архитектура](../ARCHITECTURE.md),
-[установка и различия 44/83](INSTALL.md), [исходный текст и rights](USAGE.md).
+Актуальная production-композиция: **91 инструмент**, версия сервера
+`v0.4.9-developer-preview`, пакет `0.4.9.dev0`. [Архитектура](../ARCHITECTURE.md),
+[установка и различия 44/91](INSTALL.md), [исходный текст и rights](USAGE.md).
 
 ## Транспорт и обнаружение
 
@@ -53,7 +53,8 @@ MCP `initialize`, `notifications/initialized`, затем `tools/list` и `tools
 | Численная White Star и сравнение | 8 | `src/lm_suti_assurance/white_star/mcp.py` |
 | Symbolic V1 | 3 | `src/lm_suti_assurance/symbolic/mcp.py` |
 | SP-комплексы, dataset/observer, replay | 8 | `src/lm_suti_assurance/symbolic_complex/mcp.py` |
-| **Всего** | **83** | `tools/release_v01_entry.py` объединяет регистрации |
+| Formal Bridge v1 | 8 | `src/lm_suti_assurance/formal_bridge/mcp.py` |
+| **Всего** | **91** | `tools/release_v01_entry.py` объединяет регистрации |
 
 ## Проекты, запросы и разрешения
 
@@ -329,7 +330,7 @@ counterexamples содержат sample_id, record_ref, expected и observed. У
 
 ## DYCK006: роль, две ветви и независимая проверка query
 
-Число инструментов остаётся83. В `white_star_symbolic_observer_synthesize`
+В выпуске DYCK006 число инструментов составляло83; Formal Bridge расширяет его до91. В `white_star_symbolic_observer_synthesize`
 `request.promotion_policy.mode` дополнен значением `role_branching_ast`, а policy —
 необязательными `role_max_tokens` (1…12), `role_max_cells` (1…91),
 `role_max_split_trials` (1…512). Роли выводятся из train, готовый AST клиентом
@@ -349,3 +350,26 @@ counterexamples содержат sample_id, record_ref, expected и observed. У
 [TypeScript типы](symbolic-v1/dyck006/types.ts).
 Schemas проверены на1650 действительных программ/сертификатов ответа, включая
 UNKNOWN за пределами scope; семантическая проверка выполняется отдельно.
+
+
+## Formal Bridge v1:91 tools
+
+Восемь additive инструментов перечислены в
+[QUICKSTART](formal-bridge001/QUICKSTART_RU.md);83 прежних input/output/annotation
+schemas проверены на точное сохранение. `formal_store` регистрирует owned source,
+model, record, imported grammar/DFA или untrusted proof. `formal_synthesize`
+принимает train_ref/predict_ref из existing dataset_store, constraints.kind=cfg|dfa
+и finite budget. `formal_inspect` читает immutable sections/list pages/object chunks.
+`formal_verify`, `formal_contrast`, `formal_interpret`, `formal_model_check` и
+`formal_replay` выполняются в том же worker pool и оставляют append-only receipts.
+
+Операционный `data.status=COMPLETED` означает окончание job. Содержательный
+`data.result_status` отделён; результат/proof читается по run_ref через inspect.
+Все ответы execution_permission=false. `TYPE_REJECTED`, `REJECTED_PROOF`,
+`UNKNOWN_BOUND`, `UNKNOWN_CYCLE`, `NO_DIFFERENCE_WITHIN_BOUND` не означают grant,
+refutation of author intent или equivalence. `CHECKED_INSTANCE` — конечная проверка.
+
+После обновления сервера клиент должен повторить tools/list. Если ChatGPT
+показывает прежние83 метода, в настройках приложения LivingMath обновите список
+инструментов; если функции обновления нет — отключите и подключите приложение
+снова с тем же MCP URL/OAuth. Новый адрес не требуется.

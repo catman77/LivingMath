@@ -19,15 +19,15 @@
 ## Tasks and checks
 
 - [x] Preserve/hash archive/manifest; inspect real0.4.8 API/code and backup4SQLite/workspaces.
-- [ ] Baseline409source+1066legacy, supplied225reference, five exact originalrun replay; freeze originaldataset shapes before modification.
-- [ ] Add tests/test_formal_bridge.py negative-first cases: independent start EPS, two branch types, ambiguous aaa, cyclic forest, forged source/rule/span/order, DFA trace, FOL typing and models.
-- [ ] Create formal_bridge/ir.py (validate_grammar,validate_dfa,source), chart.py (parse with full forest), proof_checker.py (verify independent chart/trace), search.py (finite grammar catalog/train fitting), dfa.py (canonical search), fol.py (typecheck/evaluate/model contrast).
-- [ ] Add engine.py (dispatch/fit/predict/contrast/interpret), contracts.py (closed bounded API), service.py (same-project owned refs, idempotent append-only runs), mcp.py (register existing server additive tools).
-- [ ] Modify symbolic_complex/app.py binding/dispatch only; register additive tools in symbolic_complex/mcp.py. Update release loader hash modules to include new folder only when present, preserving all archived binding calculations.
-- [ ] Fit sealed previous cases and new positive-enriched/hard-negative queries; compare role/auto/formal without seed cherry-picking. Required anbn epsilon, multi-pair, palindrome, DFA, both contrast witnesses; marked reverse/abplus/canary controls.
-- [ ] Demonstrate3manual proposed FOL readings under one source,2models/truth vectors, allpair countermodels and forged-type rejection. Preserve parser ambiguity2trees.
-- [ ] Full source/installed/legacy tests and independent adversarial review; build0.4.9 package, native prepare originalSHA, stage actual SDK/OAuth acceptance including prior suites.
-- [ ] Quiescent backup, production HTTP-only update sameURL/tunnel, repeat actual HTTPS/OAuth acceptance and data/hashes integrity.
+- [x] Baseline409source+1066legacy, supplied225reference, five exact originalrun replay; freeze originaldataset shapes before modification.
+- [x] Add tests/test_formal_bridge.py negative-first cases: independent start EPS, two branch types, ambiguous aaa, cyclic forest, forged source/rule/span/order, DFA trace, FOL typing and models.
+- [x] Create formal_bridge/ir.py (validate_grammar,validate_dfa,source), chart.py (parse with full forest), proof_checker.py (verify independent chart/trace), search.py (finite grammar catalog/train fitting), dfa.py (canonical search), fol.py (typecheck/evaluate/model contrast).
+- [x] Add engine.py (dispatch/fit/predict/contrast/interpret), contracts.py (closed bounded API), service.py (same-project owned refs, idempotent append-only runs), mcp.py (register existing server additive tools).
+- [x] Modify symbolic_complex/app.py binding/dispatch only; register additive tools in symbolic_complex/mcp.py. Update release loader hash modules to include new folder only when present, preserving all archived binding calculations.
+- [x] Fit sealed previous cases and new positive-enriched/hard-negative queries; compare role/auto/formal without seed cherry-picking. Required anbn epsilon, multi-pair, palindrome, DFA, both contrast witnesses; marked reverse/abplus/canary controls.
+- [x] Demonstrate3manual proposed FOL readings under one source,2models/truth vectors, allpair countermodels and forged-type rejection. Preserve parser ambiguity2trees.
+- [x] Full source/installed/legacy tests and independent adversarial review; build0.4.9 package, native prepare originalSHA, stage actual SDK/OAuth acceptance including prior suites.
+- [x] Quiescent backup, production HTTP-only update sameURL/tunnel, repeat actual HTTPS/OAuth acceptance and data/hashes integrity.
 - [ ] Publish source/tag/repro ZIP and required report matrices, full failed/success traces, docs and source/asset public readback. Check CI honestly; preserve userWIP.
 
 ## Implementation interfaces

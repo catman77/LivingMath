@@ -1,6 +1,6 @@
 # Установка SUTI–Bridge–LivingMath
 
-Актуальный код: **v0.4.8-developer-preview** / пакет `0.4.8.dev0`.
+Актуальный код: **v0.4.9-developer-preview** / пакет `0.4.9.dev0`.
 Исходники: [catman77/LivingMath](https://github.com/catman77/LivingMath).
 Есть три отдельных пути запуска:
 
@@ -8,7 +8,7 @@
 |---|---|
 | Пакет `lm-suti-assurance` из корня | Текущий CLI и вычислительные модули; сам по себе не поднимает HTTP |
 | `unified_system.local` из `live_math_mcp_prod/` | Новый изолированный legacy HTTPS/OAuth стенд с 44 инструментами |
-| `tools/release_v01_entry.py --config ...` | Полная production-композиция на 83 инструмента; требует приватный установленный legacy слой и owner approvals |
+| `tools/release_v01_entry.py --config ...` | Полная production-композиция на 91 инструмент; требует приватный установленный legacy слой и owner approvals |
 
 ## Актуальный пакет и вычислительные модули
 
@@ -28,7 +28,7 @@ assurance CLI достаточно `python -m pip install .`; White Star extras 
 Linux с Landlock ABI≥3 и C++17. Ручные proposals и offline replay модели не
 используют. [Пример полного CLI-цикла](../README_QUICKSTART_RU.md).
 
-## Полный установленный сервер: 83 инструмента
+## Полный установленный сервер: 91 инструмент
 
 Точка входа совпадает с production:
 
@@ -51,7 +51,7 @@ Entry проверяет SHA `release_manifest.json` и каждого файл�
 установкой. Приватный config и approvals не входят в Git. Автоматического
 установщика полного нового production экземпляра в репозитории пока нет;
 `unified_system.local prepare` его не заменяет. Для разработчика доступны CLI,
-тесты, новый legacy стенд ниже и опубликованный контракт всех 83 методов.
+тесты, новый legacy стенд ниже и опубликованный контракт всех 91 метода.
 
 Сборка package wheel не включает `live_math_mcp_prod/` и `tools/`: полный сервер
 публикуется **весь checkout**, а wheel — библиотека/CLI. Перед обновлением рабочего
@@ -202,3 +202,15 @@ python admin.py --db /absolute/private/research.sqlite3 backup /absolute/backups
 Для первого знакомства безопаснее создать другое имя экземпляра и проверить
 новый checkout отдельно. Production promotion и восстановление существующих
 данных — отдельные операторские процедуры; `prepare` их не подменяет.
+
+
+## Formal Bridge001
+
+Версия0.4.9 включает новый namespace в том же entry/worker pool; отдельный сервер
+и новые базы не нужны. Для обновления существующего экземпляра сохраняются
+legacy dependencies и все SQLite/workspace paths. Проверенный набор точных
+версий зависимостей включён в delivery ZIP как runtime-constraints.txt; root wheel
+сам по себе не устанавливает legacy HTTP runtime (в частности tiktoken).
+Источник, wheel и tools/release_v01_entry.py должны соответствовать одному
+подписанному release manifest. Сначала native prepare, затем tests и real MCP QA.
+[Контракт и примеры](formal-bridge001/QUICKSTART_RU.md).
