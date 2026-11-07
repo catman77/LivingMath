@@ -28,7 +28,7 @@
 - [x] Demonstrate3manual proposed FOL readings under one source,2models/truth vectors, allpair countermodels and forged-type rejection. Preserve parser ambiguity2trees.
 - [x] Full source/installed/legacy tests and independent adversarial review; build0.4.9 package, native prepare originalSHA, stage actual SDK/OAuth acceptance including prior suites.
 - [x] Quiescent backup, production HTTP-only update sameURL/tunnel, repeat actual HTTPS/OAuth acceptance and data/hashes integrity.
-- [ ] Publish source/tag/repro ZIP and required report matrices, full failed/success traces, docs and source/asset public readback. Check CI honestly; preserve userWIP.
+- [x] Publish source/tag/repro ZIP and required report matrices, full failed/success traces, docs and source/asset public readback. Check CI honestly; preserve userWIP.
 
 ## Implementation interfaces
 

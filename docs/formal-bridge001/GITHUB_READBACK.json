@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "remote": "https://github.com/catman77/LivingMath",
+  "tag": "v0.4.9-developer-preview",
+  "commit": "6675c2251e85039d7f49fae011fc2efee66fb121",
+  "files_all_Git_blobs_exact": 1617,
+  "local_uncommitted_user_files_not_compared": true
+}

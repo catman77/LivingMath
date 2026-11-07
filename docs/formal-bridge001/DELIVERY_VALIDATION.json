@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "sha256": "27bf00ad81b2734f4889f9fa8dc4aabc8b18ce619dec4911cb321a524ae6fdfb",
+  "files_checked": 735,
+  "source_git_blobs_exact": 1617,
+  "runtime_Python_files_exact": 124,
+  "credentials_excluded": true,
+  "source_commit": "6675c2251e85039d7f49fae011fc2efee66fb121",
+  "validation": "All payload bytes streamed and hashed; only source extracted to preserve disk"
+}

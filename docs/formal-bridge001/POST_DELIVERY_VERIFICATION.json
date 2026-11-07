@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "payload_files": 735,
+  "source_blobs": 1617,
+  "runtime_Python_files": 124,
+  "extracted_source_targeted_tests": 21,
+  "native_SHA_unchanged": true,
+  "public_asset_download_exact": true,
+  "all_user87_changes_preserved": true,
+  "formatting_python_AST_exactly_unchanged": true
+}

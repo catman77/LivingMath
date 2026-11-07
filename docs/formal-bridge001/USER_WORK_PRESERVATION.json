@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "pre_existing_user_changes": 87,
+  "all_bytes_symlink_targets_modes_and_missing_states_preserved": true,
+  "AGENTS_and_user_gitignore_unchanged": true,
+  "root_main_fast_forward": "6675c2251e85039d7f49fae011fc2efee66fb121",
+  "delivery_root_docs_hardlink": "/home/catman/CatmanCode/LivingMath/docs/LIVINGMATH_FORMAL_BRIDGE_V1_DELIVERY_20261107.zip"
+}
