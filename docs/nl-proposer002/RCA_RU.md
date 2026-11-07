@@ -43,3 +43,7 @@ EXTERNAL_ADJUDICATION_NOT_EXECUTED, PARTIAL, semantic generalization NOT_EVALUAT
 candidate freeze; OS owner общий, поэтому это процедурная, не криптографическая
 изоляция. Model revision/seed/temperature UNKNOWN; фактические расходы различны
 при одинаковых nominal budgets. WHITE_STAR_INCREMENTAL_BENEFIT_NOT_ESTABLISHED.
+
+Финальные контрольные показатели: source-only A1, numeric B6, permuted C6,
+alternate D7 совпадений с неэталонными synthetic finite vectors. Поэтому
+увеличение числа typed/trace-linked кандидатов нельзя объявлять улучшением качества.

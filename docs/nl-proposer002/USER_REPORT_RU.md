@@ -17,8 +17,9 @@ source spans, настоящий trace и явно добавленную пре
 
 B дал70 typed кандидатов против49 у A,20 связаны с реальным AST move. Покрытие
 сравнимого synthetic эталона одинаково:40/40. Всего эталонных чтений47;
-семь остались UNKNOWN_BOUND при конечной vector проверке. Дополнительные
-кандидаты не означают лучшее понимание. **WHITE_STAR_INCREMENTAL_BENEFIT_NOT_ESTABLISHED**.
+семь остались UNKNOWN_BOUND при конечной vector проверке. Совпадения с контрольными неэталонными
+чтениями в том же конечном классе: A1/B6/C6/D7. Дополнительные кандидаты
+не означают лучшее понимание. **WHITE_STAR_INCREMENTAL_BENEFIT_NOT_ESTABLISHED**.
 Человеческая оценка не выполнена: **PARTIAL; semantic generalization NOT_EVALUATED**.
 
 Проверки:447 source PASS,447 installed-wheel PASS и447 PASS в отдельном
