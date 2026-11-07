@@ -157,6 +157,9 @@ async def run(a):
                     t["name"]: t for t in json.loads(a.baseline.read_text())["tools"]
                 }
                 after = {t.name: t.model_dump(mode="json") for t in listing.tools}
+                if a.allow_formal_api:
+                    from formal001_compat import legacy_view
+                    after=legacy_view(after)
                 if a.allow_role_api:
                     schema = after["white_star_symbolic_observer_synthesize"][
                         "inputSchema"
@@ -508,6 +511,7 @@ async def run(a):
 
 if __name__ == "__main__":
     p = argparse.ArgumentParser()
+    p.add_argument("--allow-formal-api",action="store_true")
     p.add_argument("--allow-role-api", action="store_true")
     p.add_argument("--retry-resource-busy", action="store_true")
     p.add_argument("--origin", required=True)

@@ -86,7 +86,7 @@ async def run(a):
       comparison[name+'-'+mode]={'run':old,'predictions':values};save('comparison.json',comparison)
      backend='dfa' if name.startswith('regular') else 'cfg'
      r,v=await op('synthesize',name+'-formal',train_ref=trrefs[name],predict_ref=qrefs[name],constraints={'kind':backend})
-     predictions[name]=v['predictions'];check('fit labels hidden '+name,v['checks']['holdout_labels_read'] is False and v['checks']['hypothesis_frozen_before_queries'] is True)
+     predictions[name]=v['predictions'];save('predictions.json',predictions);check('fit labels hidden '+name,v['checks']['holdout_labels_read'] is False and v['checks']['hypothesis_frozen_before_queries'] is True)
      # Match same sealed request with fresh key; canonical model/result identical.
      if name in ['cfg_anbn','cfg_dyck2_new_stratified']:
       rr,vv=await op('synthesize',name+'-fresh',train_ref=trrefs[name],predict_ref=qrefs[name],constraints={'kind':backend});check('fresh key deterministic '+name,v==vv and r['run_ref']!=rr['run_ref'])
@@ -98,8 +98,25 @@ async def run(a):
       if name=='cfg_anbn':check('epsilon first discriminator',cv['query']['tokens']==[])
      if 'enriched_queries' in case:
       train=case['train']+case.get('annotation',[]);newref=await ds(name+'-external-annotation-v2',train,'train');qr=await ds(name+'-enriched',case['enriched_queries'],'queries')
-      rr,vv=await op('synthesize',name+'-annotated',train_ref=newref,predict_ref=qr,constraints={'kind':backend});predictions[name+'-enriched']=vv['predictions'];check('annotation new train generation '+name,newref!=trrefs[name]);check('enriched definite predictions '+name,all(p['status']=='CHECKED_INSTANCE' for p in vv['predictions']))
+      rr,vv=await op('synthesize',name+'-annotated',train_ref=newref,predict_ref=qr,constraints={'kind':backend});predictions[name+'-enriched']=vv['predictions'];save('predictions.json',predictions);check('annotation generation scope '+name,(newref!=trrefs[name])==bool(case.get('annotation')));check('enriched definite predictions '+name,all(p['status']=='CHECKED_INSTANCE' for p in vv['predictions']))
       if name=='regular_even_a':check('two state induced DFA',len(vv['model']['candidates'][0]['ast']['states'])==2)
+      if backend=='dfa':
+       predictions[name+'-enriched-pre-active']=vv['predictions']
+       annotations=[]
+       for generation in range(4):
+        cs=vv['model']['candidates']
+        if len(cs)<2:break
+        _,cv=await op('contrast',name+'-active-query-'+str(generation),run_ref=rr['run_ref'],candidate_refs=[c['candidate_id'] for c in cs[:16]])
+        if cv['status']=='NO_DIFFERENCE_WITHIN_BOUND':break
+        check('active external question '+name,cv['status']=='DISTINGUISHING_QUERY' and cv['correct_label'] is None)
+        tokens=cv['query']['tokens'];holder=json.loads((a.fixture/'external-annotations.json').read_text());label=holder[name][digest(tokens)]
+        check('active question outside existing train '+name,all(r['tokens']!=tokens for r in train))
+        annotation=record(tokens,label,prefix='active-'+str(generation));train=[*train,annotation];annotations.append({'query':cv,'external_label':label,'train_record':annotation})
+        newref=await ds(name+'-active-train-'+str(generation),train,'train')
+        rr,vv=await op('synthesize',name+'-active-'+str(generation),train_ref=newref,predict_ref=qr,constraints={'kind':'dfa'})
+       save(name+'-ACTIVE_ANNOTATIONS.json',annotations);predictions[name+'-enriched']=vv['predictions'];save('predictions.json',predictions)
+       check('active final model train-compatible '+name,vv['model']['status']=='TRAIN_COMPATIBLE')
+
     # Verify actual two-alternative forest, typed role mistakes and bound/cycle statuses.
     grammar=data['grammar_controls']['grammars']
     def convert(x):
@@ -164,8 +181,8 @@ async def run(a):
       else:counts['TP' if y and v else 'FN' if y else 'FP' if v else 'TN']+=1
      return {**counts,'total':len(target),'positive_rate':sum(target.values())/len(target),'balanced_accuracy':0.5*(counts['TP']/max(1,sum(target.values()))+counts['TN']/max(1,len(target)-sum(target.values())))}
     for name,rows in predictions.items():
-     matrix[name]=score(rows,gold[name]);check('finite epistemic boundary '+name,all(r.get('verification',{}).get('UNIVERSAL_INVARIANT') is not True for r in rows))
-     if name!='noncfg_anbncn_canary':check('holdout exact '+name,matrix[name]['FP']==matrix[name]['FN']==matrix[name]['UNKNOWN']==0)
+     matrix[name]=score(rows,gold[name.removesuffix('-pre-active')]);save('FORMAL_LANGUAGE_MATRIX.json',matrix);check('finite epistemic boundary '+name,all(r.get('verification',{}).get('UNIVERSAL_INVARIANT') is not True for r in rows))
+     if name!='noncfg_anbncn_canary' and not name.endswith('-pre-active'):check('holdout exact '+name,matrix[name]['FP']==matrix[name]['FN']==matrix[name]['UNKNOWN']==0)
     for key,v in comparison.items():matrix[key]=score(v['predictions'],gold[key.rsplit('-',1)[0]],True)
     save('FORMAL_LANGUAGE_MATRIX.json',matrix);save('predictions.json',predictions);save('comparison.json',comparison);save('transcript.json',calls)
     save('result.json',{'status':'PASS_FINITE_FORMAL001','checks':len(checks),'MCP_calls':len(calls),'project':project,'version':a.version,'public_HTTPS_tested':a.loopback_port is None,'models':{k:r['run_ref'] for k,r in runs.items()},'external_gold_loaded_after_inference':True,'UNIVERSAL_INVARIANT':False,'execution_permission':False});print('FORMAL001_PASS',len(checks),len(calls),flush=True)

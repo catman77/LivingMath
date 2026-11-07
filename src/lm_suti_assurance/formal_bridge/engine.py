@@ -39,6 +39,7 @@ def contrast(candidates,bounds):
 
 
 def synthesize(train,queries,constraints,bounds):
+    work=Budget(bounds)
     need(isinstance(constraints,dict) and set(constraints)=={'kind'} and constraints['kind'] in ('cfg','dfa'),'INVALID_CONSTRAINTS')
     need(0<len(train)<=256 and len(queries)<=256,'DATASET_BOUND')
     for r in train:validate_record(r,'train')
@@ -54,9 +55,16 @@ def synthesize(train,queries,constraints,bounds):
         model=fit(train,constraints,bounds)
     seal=digest(model);predictions=[]
     selected=next((c for c in model['candidates'] if c['candidate_id']==model['selected']),None)
-    work=Budget(bounds)
+    exhausted=False
     for r in queries:
-        work.tick();validate_record(r,'queries')
+        validate_record(r,'queries')
+        try:
+            if exhausted:raise Bound('TOTAL_SYNTHESIS_BOUND')
+            work.tick()
+        except Bound:
+            exhausted=True
+            predictions.append({'record_ref':digest(r),'record_id':r['id'],'source_sha256':r['source']['sha256'],'decision':None,'status':'UNKNOWN_BOUND'})
+            continue
         if selected is None:
             predictions.append({'record_ref':digest(r),'record_id':r['id'],'decision':None,'status':'UNKNOWN_NO_COMPATIBLE_MODEL','source_sha256':r['source']['sha256']});continue
         proof=membership(selected['ast'],r,bounds);checked=verify(selected['ast'],r,bounds,proof)

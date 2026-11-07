@@ -143,3 +143,12 @@ def test_countermodel_respects_shared_assumptions():
  atom={'pred':'P','args':[{'var':'v'}]};all_p={'quant':'forall','var':'v','sort':'x','body':atom};tautology={'quant':'forall','var':'v','sort':'x','body':{'eq':[{'var':'v'},{'var':'v'}]}}
  cs=[{'candidate_id':str(i),'signature':sig,'formula_ast':f,'assumptions':[all_p],'type_status':'TYPED'} for i,f in enumerate([all_p,tautology])]
  out=countermodels(cs,limits());assert out['status']=='NO_COUNTERMODEL_WITHIN_BOUND' and out['equivalence_claim'] is False
+
+
+def test_total_synthesis_budget_returns_unknown_not_internal_error():
+ from lm_suti_assurance.formal_bridge.engine import synthesize
+ train=[rec(w,w==('a','b')) for w in itertools.product('ab',repeat=2)]
+ queries=[{**rec('ab'),'id':'query-'+str(i)} for i in range(256)]
+ result=synthesize(train,queries,{'kind':'cfg'},limits({'max_cpu_ms':1}))
+ assert len(result['predictions'])==256
+ assert all(p['decision'] is None and p['status'].startswith('UNKNOWN') for p in result['predictions'])

@@ -168,6 +168,9 @@ async def run(a):
                     t["name"]: t for t in json.loads(a.baseline.read_text())["tools"]
                 }
                 after = {t.name: t.model_dump(mode="json") for t in listing.tools}
+                if a.allow_formal_api:
+                    from formal001_compat import legacy_view
+                    after=legacy_view(after)
                 comp = after if a.phase == "baseline" else normalize(after)
                 check(
                     "83 schemas preserved except declared additive role inputs",
@@ -752,6 +755,7 @@ async def run(a):
 
 if __name__ == "__main__":
     p = argparse.ArgumentParser()
+    p.add_argument("--allow-formal-api",action="store_true")
     p.add_argument("--origin", required=True)
     p.add_argument("--endpoint", required=True)
     p.add_argument("--version", required=True)
