@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "total": 1024,
+  "correct": 1024,
+  "families": [
+    {
+      "family": "cfg_dyck2_new_stratified",
+      "rows": 256,
+      "correct": 256,
+      "unknown": 0,
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED"
+    },
+    {
+      "family": "cfg_even_palindrome",
+      "rows": 256,
+      "correct": 256,
+      "unknown": 0,
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED"
+    },
+    {
+      "family": "regular_even_a",
+      "rows": 256,
+      "correct": 256,
+      "unknown": 0,
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED"
+    },
+    {
+      "family": "cfg_anbn",
+      "rows": 256,
+      "correct": 256,
+      "unknown": 0,
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED"
+    }
+  ],
+  "MCP_calls": 667,
+  "checks": 869
+}

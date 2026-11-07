@@ -1,0 +1,67 @@
+[
+  {
+    "id": "U21",
+    "candidates": [
+      {
+        "sha256": "bb36dce3625106e67bc10098c8c10b915a2a1dd237a13fe0cf1d62b9a0104e69",
+        "relation": "STRONGER_ON_BOUND",
+        "differences": 176,
+        "models": 530,
+        "primitive_cost": 1
+      }
+    ],
+    "verdict": "NO_INCREMENTAL_STRUCTURAL_EXPRESSIVITY_ON_BOUND"
+  },
+  {
+    "id": "U22",
+    "candidates": [
+      {
+        "sha256": "44d6d9e87e1bb14ca0a3f2f7ec9d7e5f8a8edf7b972644252cf2fc51c1223f8c",
+        "relation": "STRONGER_ON_BOUND",
+        "differences": 176,
+        "models": 530,
+        "primitive_cost": 1
+      }
+    ],
+    "verdict": "NO_INCREMENTAL_STRUCTURAL_EXPRESSIVITY_ON_BOUND"
+  },
+  {
+    "id": "U23",
+    "candidates": [
+      {
+        "sha256": "e80a78675fdd65a6b5e342d103de96203be924401028e010058382a69bc1171d",
+        "relation": "STRONGER_ON_BOUND",
+        "differences": 176,
+        "models": 530,
+        "primitive_cost": 1
+      }
+    ],
+    "verdict": "NO_INCREMENTAL_STRUCTURAL_EXPRESSIVITY_ON_BOUND"
+  },
+  {
+    "id": "U24",
+    "candidates": [
+      {
+        "sha256": "38e54508600dd78b2fde0f75e1381be72d1e80db660716a139008dcae3925500",
+        "relation": "STRONGER_ON_BOUND",
+        "differences": 176,
+        "models": 530,
+        "primitive_cost": 1
+      }
+    ],
+    "verdict": "NO_INCREMENTAL_STRUCTURAL_EXPRESSIVITY_ON_BOUND"
+  },
+  {
+    "id": "U25",
+    "candidates": [
+      {
+        "sha256": "0df525447b3705eb6d967b5604bf193eb133d79eb938ce03bbfbcfacce782438",
+        "relation": "STRONGER_ON_BOUND",
+        "differences": 176,
+        "models": 530,
+        "primitive_cost": 1
+      }
+    ],
+    "verdict": "NO_INCREMENTAL_STRUCTURAL_EXPRESSIVITY_ON_BOUND"
+  }
+]

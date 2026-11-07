@@ -1,0 +1,593 @@
+{
+  "schema": "lm-nl-independent-evaluation-manifest/1",
+  "mcp_project": "nl_independent_eval_20261107",
+  "server_version": "v0.4.10-developer-preview",
+  "deployment_id": "nl002-20261107T060243Z",
+  "reference_SHA256": {
+    "pilot": "8bb2a83ca39f8fcb9af24c42f9ba35f31b261e359c6f634f6cbb1567d1839694",
+    "extension": "13dfe9f4c995f796de841f2f7f9e50bc0d7a196ab9f64d2a552fda42d0b8adf5",
+    "ambiguity": "1b176c55edd263461e9c4aad9c26bde82cf1bf4c596069279c6315960b315540"
+  },
+  "sources": [
+    {
+      "id": "T01",
+      "text": "Каждый студент прочитал ровно одну книгу.",
+      "sha256": "683083de2cdbd2021ded96d20b11ad1ea6519eaa1b43b1af1c77f8d24224ca24",
+      "signature": {
+        "predicates": {
+          "Read": [
+            "student",
+            "book"
+          ]
+        },
+        "sorts": [
+          "student",
+          "book"
+        ]
+      },
+      "set": "batch1",
+      "source_ref": "61af244df2e9e3cb96f3aff7a863099fd2206611bdbfb8df9820c9138746cbca",
+      "structural_run_id": "081bb60623a4b7108c21744c52b93b4864a8fb0065a1619f81c2a82af1cd08be"
+    },
+    {
+      "id": "T02",
+      "text": "Все студенты прочитали одну и ту же книгу.",
+      "sha256": "dcdd626ee33edc2debb2f9ed491bf924d51aef008ad87ae614b6ce12f4c651b9",
+      "signature": {
+        "predicates": {
+          "Read": [
+            "student",
+            "book"
+          ]
+        },
+        "sorts": [
+          "student",
+          "book"
+        ]
+      },
+      "set": "batch1",
+      "source_ref": "75ade2c3dc9334f54ff520fb260933c49c912167f1bc8232a6065b1ea3553b26",
+      "structural_run_id": "aa5bafed3bc88e047ea8a81dfb8ec30f35002875ba73a0056ea91f37adb4e29c"
+    },
+    {
+      "id": "T03",
+      "text": "Не каждый студент прочитал хотя бы одну книгу.",
+      "sha256": "48bf8695a26102d5478e726a20f3f5d22ad14e2bcf060cc8b2b0580de3af6bec",
+      "signature": {
+        "predicates": {
+          "Read": [
+            "student",
+            "book"
+          ]
+        },
+        "sorts": [
+          "student",
+          "book"
+        ]
+      },
+      "set": "batch1",
+      "source_ref": "80cc2110237a526fcfef0f4ccdd7b982b080b214ef269cc5dfc4c55c2fa1edb4",
+      "structural_run_id": "7aaa50c2e394897d1d5b33b6f018289af4a5dec266bf2672905e950d75c1cb2d"
+    },
+    {
+      "id": "T04",
+      "text": "Ни один студент не прочитал ни одной книги.",
+      "sha256": "8c8ab3355565196d4225af159e26821e53aa6f6008b54ac47c333a583906542d",
+      "signature": {
+        "predicates": {
+          "Read": [
+            "student",
+            "book"
+          ]
+        },
+        "sorts": [
+          "student",
+          "book"
+        ]
+      },
+      "set": "batch1",
+      "source_ref": "3892975089b191355c003a2f0bfa51ea29777ce882836f880872aafd8321cd36",
+      "structural_run_id": "14b5d037954e576eac39660817370aaf7afaabba70a0dcf313d8bde40c56a684"
+    },
+    {
+      "id": "T05",
+      "text": "Хотя бы один врач осмотрел каждого пациента.",
+      "sha256": "167171719ef8ad8af3640765dcfd6cd8726dca934cf0480072b249916e5a9216",
+      "signature": {
+        "predicates": {
+          "Examined": [
+            "doctor",
+            "patient"
+          ]
+        },
+        "sorts": [
+          "doctor",
+          "patient"
+        ]
+      },
+      "set": "batch1",
+      "source_ref": "8f358c26e9c55b976e4e4befb3cf634a6403252e1c008563edce2cd5e01b5f50",
+      "structural_run_id": "06b35ca5661352cca20c20213949c93dc3e024e9b55fca6c8e5be8c78e0bb37e"
+    },
+    {
+      "id": "T06",
+      "text": "Каждый врач осмотрел хотя бы одного пациента.",
+      "sha256": "d3fa1079ac5363dafe4010cbb595ea771596b6f1846c8817edd85486f9923919",
+      "signature": {
+        "predicates": {
+          "Examined": [
+            "doctor",
+            "patient"
+          ]
+        },
+        "sorts": [
+          "doctor",
+          "patient"
+        ]
+      },
+      "set": "batch1",
+      "source_ref": "a18b2318f7816c41a6e5a4ef10a29d62e29394a5b152a8793eaa57b1d3a3b57e",
+      "structural_run_id": "f956bbc3c4f8137b9de97b5dbf3552b2f1597432f5cffa27965a2710bd50e923"
+    },
+    {
+      "id": "T07",
+      "text": "Каждый студент прочитал не каждую книгу.",
+      "sha256": "584e2e7674f815d14a768940c782574befb864839bb7446d2f0cfb1b9675ec15",
+      "signature": {
+        "predicates": {
+          "Read": [
+            "student",
+            "book"
+          ]
+        },
+        "sorts": [
+          "student",
+          "book"
+        ]
+      },
+      "set": "batch2",
+      "source_ref": "2df48209ff0e50e954682026789479f15ad7cf1bd2012015c58f95513a359d4c",
+      "structural_run_id": "6ba5b312bcf7e48b7e48506326f5b1616cce1304d70ca0022e98a576ae01595d"
+    },
+    {
+      "id": "T08",
+      "text": "Ни один студент не прочитал все книги.",
+      "sha256": "7d89dd124db15d74037554d4749722974d6e681b552c27be0934a1c0c46c2313",
+      "signature": {
+        "predicates": {
+          "Read": [
+            "student",
+            "book"
+          ]
+        },
+        "sorts": [
+          "student",
+          "book"
+        ]
+      },
+      "set": "batch2",
+      "source_ref": "7dcbd26c1eb847837b200a94f17d8802d87c6150143de29f8a5ee330ea2bb173",
+      "structural_run_id": "aca525195bb9b6a990e0f620571b9ba46fa653812d0b87ed716fe22aaf86e25d"
+    },
+    {
+      "id": "E09",
+      "text": "Каждая медсестра наблюдала хотя бы одного пациента.",
+      "sha256": "ec72a91913f989a85f99cbe59aa11033234933cd9823b446c33383e657cea258",
+      "signature": {
+        "predicates": {
+          "Observed": [
+            "nurse",
+            "patient"
+          ]
+        },
+        "sorts": [
+          "nurse",
+          "patient"
+        ]
+      },
+      "set": "extension",
+      "source_ref": "deeaa395eb5f3741878eb7c11f202f32787efb7db7917d13f797b0f7f9fdd86b",
+      "structural_run_id": "930ff10086d309315294c742944a0ab50f11301b590802f8e5e32501f16ff451"
+    },
+    {
+      "id": "E10",
+      "text": "По крайней мере одна медсестра наблюдала всех пациентов.",
+      "sha256": "6e688b2fbffe703d50fbedbcadd666126cc3f7ff1b3f0487f3081af94ac7fce3",
+      "signature": {
+        "predicates": {
+          "Observed": [
+            "nurse",
+            "patient"
+          ]
+        },
+        "sorts": [
+          "nurse",
+          "patient"
+        ]
+      },
+      "set": "extension",
+      "source_ref": "a1f93c45f7262cdcd4f72df1bd9e63356733b7785e39fddfcb1d5367e6ac0b57",
+      "structural_run_id": "f8e2059db621301d0ac195eef023a7afa72dee8519555c6d379c8abbb47022be"
+    },
+    {
+      "id": "E11",
+      "text": "Не каждая медсестра наблюдала всех пациентов.",
+      "sha256": "d47b358011bd21e82f0dc3b44777c0500a21cf75504ebf918b32995ea434e88e",
+      "signature": {
+        "predicates": {
+          "Observed": [
+            "nurse",
+            "patient"
+          ]
+        },
+        "sorts": [
+          "nurse",
+          "patient"
+        ]
+      },
+      "set": "extension",
+      "source_ref": "6e9d1f4e5ecf224f9ffa8682a42657beff4039fd29147c8e263db8c7bf29136a",
+      "structural_run_id": "6a8ead5b4a0b0f4271539c02857369619fe81df36f08756be87f911ecfe27f4f"
+    },
+    {
+      "id": "E12",
+      "text": "Ни одна медсестра не наблюдала ни одного пациента.",
+      "sha256": "9f4331c592bc0c9626c7733291d82612b0e6d15ea95d9e2b12d92d1657908c19",
+      "signature": {
+        "predicates": {
+          "Observed": [
+            "nurse",
+            "patient"
+          ]
+        },
+        "sorts": [
+          "nurse",
+          "patient"
+        ]
+      },
+      "set": "extension",
+      "source_ref": "9494db0908a169b1dbd14abe0492faa77d76ce52c10d790a01a84a27bfb15271",
+      "structural_run_id": "b6459f5a1cae83c3a7bb36fff44f8e6f086f622c832da2f6f08cf5300c9875bd"
+    },
+    {
+      "id": "E13",
+      "text": "Существует студент, который не прочитал ни одной книги.",
+      "sha256": "48a5007bb31d04bdecef1849e927033c69b440b287d473847f3f0b2560d0099f",
+      "signature": {
+        "predicates": {
+          "Read": [
+            "student",
+            "book"
+          ]
+        },
+        "sorts": [
+          "student",
+          "book"
+        ]
+      },
+      "set": "extension",
+      "source_ref": "d4934875435c432719d60e6c456bbcf5be8e1458c5d470d6156198a7274d2e2e",
+      "structural_run_id": "3610efa9d5554a28571b18f90bb74ca63abeaeef4591df2e3191d719b8c3db3a"
+    },
+    {
+      "id": "E14",
+      "text": "Не существует книги, которую прочитал каждый студент.",
+      "sha256": "c21c801b36e869a2d48ed639218ea619bf7a9a7a8b6826ffcbbf492cb52b9541",
+      "signature": {
+        "predicates": {
+          "Read": [
+            "student",
+            "book"
+          ]
+        },
+        "sorts": [
+          "student",
+          "book"
+        ]
+      },
+      "set": "extension",
+      "source_ref": "817094df30db620a256e12db7a3ee86dd4c0750911b1b6058dadebc3d9d286d0",
+      "structural_run_id": "47f17f600b11d85d21eae463be99317825703211cf3f092952b73f792fe59257"
+    },
+    {
+      "id": "E15",
+      "text": "Каждый студент прочитал хотя бы две разные книги.",
+      "sha256": "f84d06fe63968ae6c90bf30f091dfd4ba84cc42edbf0ff76b2b409b60f40bde5",
+      "signature": {
+        "predicates": {
+          "Read": [
+            "student",
+            "book"
+          ]
+        },
+        "sorts": [
+          "student",
+          "book"
+        ]
+      },
+      "set": "extension",
+      "source_ref": "0e9cab30a1c56b7a9d1c9008387821675d4c48782d469c1258ee475fc04803be",
+      "structural_run_id": "9e9bc9b046be99b790d731b149e9fa3988deba830fb9fd26ad1b710196eb073d"
+    },
+    {
+      "id": "E16",
+      "text": "Каждый студент прочитал не более одной книги.",
+      "sha256": "29e6aac11e67296fc6cbdf643bf23c1b503a43c103bcd7afa3b0b22d17ab4315",
+      "signature": {
+        "predicates": {
+          "Read": [
+            "student",
+            "book"
+          ]
+        },
+        "sorts": [
+          "student",
+          "book"
+        ]
+      },
+      "set": "extension",
+      "source_ref": "7255930874cf9a0e057e8b9434a851552158ae3708914fcedddc02827f9867aa",
+      "structural_run_id": "d90237cf2a462ee7f776504bb51b5388a60a2c35cacce36f3e48a8a798decb3c"
+    },
+    {
+      "id": "E17",
+      "text": "Существует ровно один студент, прочитавший хоть какую-нибудь книгу.",
+      "sha256": "adb19a2ca6dc357a8fb5736d0f3b6b9a31ba06727c9732475edab990b263c0e2",
+      "signature": {
+        "predicates": {
+          "Read": [
+            "student",
+            "book"
+          ]
+        },
+        "sorts": [
+          "student",
+          "book"
+        ]
+      },
+      "set": "extension",
+      "source_ref": "100d1c316d74fed3425d1b14ec07c2082c465135d8793d4ea8a3bc46633995a2",
+      "structural_run_id": "7937942f92f3894996620eee879624e039b47f489646906fea2cf5eb90d124c0"
+    },
+    {
+      "id": "E18",
+      "text": "Существует ровно одна книга, которую прочитал каждый студент.",
+      "sha256": "334bcc3e3a1fbba01808fb428ac9e8b87a1d4be8e7be19b0770a4d4a25c340ad",
+      "signature": {
+        "predicates": {
+          "Read": [
+            "student",
+            "book"
+          ]
+        },
+        "sorts": [
+          "student",
+          "book"
+        ]
+      },
+      "set": "extension",
+      "source_ref": "bf88c054d4652356715bc42416019baa9b7cb8d9d658b6ca5ce5f2be3a3bb65d",
+      "structural_run_id": "aff5fbd5e40ad5742dbd0db73ed1cf6ac51f3305631fe6c6c0ca0930f2dc07b9"
+    },
+    {
+      "id": "E19",
+      "text": "Каждую книгу прочитал хотя бы один студент.",
+      "sha256": "652050e89dd9ba9d194e1e7f6df23510933de31ed9b0c7ab6caa1b45f0becf98",
+      "signature": {
+        "predicates": {
+          "Read": [
+            "student",
+            "book"
+          ]
+        },
+        "sorts": [
+          "student",
+          "book"
+        ]
+      },
+      "set": "extension",
+      "source_ref": "a9e09badbe06c42d465511f13b13904e83a29fe588b3dc99f35f8931d9ac7663",
+      "structural_run_id": "fe3ce8f87fc73503a81222180bbd3def30c350123b8e1f60d43adf80c10ac72d"
+    },
+    {
+      "id": "E20",
+      "text": "Каждый студент прочитал хотя бы одну книгу, но не все книги.",
+      "sha256": "16a5eb8daed28cc710d07fa50ce242b40119c8f8c7b118b2a19e32a38ed683f6",
+      "signature": {
+        "predicates": {
+          "Read": [
+            "student",
+            "book"
+          ]
+        },
+        "sorts": [
+          "student",
+          "book"
+        ]
+      },
+      "set": "extension",
+      "source_ref": "225bf9edb784643acb163032e155b93dc5a2f40c204058405bc490a516ae34f6",
+      "structural_run_id": "a4b73059a0a23c5a24296e7ea2b10b78733bb6e9a680a18a6e8a4338432ac432"
+    },
+    {
+      "id": "U21",
+      "text": "Каждый врач осмотрел одного пациента.",
+      "sha256": "e0e0d9f86abe3aec673d62931d36c7f6c043094894f2bcd15e743f8239e45a00",
+      "signature": {
+        "predicates": {
+          "Examined": [
+            "doctor",
+            "patient"
+          ]
+        },
+        "sorts": [
+          "doctor",
+          "patient"
+        ]
+      },
+      "set": "ambiguity",
+      "source_ref": "1e93eb8d52b95634e739491cb2dc0a31d5107c7b43a091bd914080c305045903",
+      "structural_run_id": "4de080765e8e901a9a5e843a4c6c70d6968fc6bc00956cca0c0dc171b236734c"
+    },
+    {
+      "id": "U22",
+      "text": "Каждый инженер проверил один прибор.",
+      "sha256": "d1e5a43e122b686e991f8de18838557cafff8fa490c958a46ad086c225a8be7f",
+      "signature": {
+        "predicates": {
+          "Tested": [
+            "engineer",
+            "device"
+          ]
+        },
+        "sorts": [
+          "engineer",
+          "device"
+        ]
+      },
+      "set": "ambiguity",
+      "source_ref": "227b2fddf68d604a59e09ac4c32039ebadb3b843d266226a4cb4b15c954ffcc0",
+      "structural_run_id": "314f373491979253ec0caecd8d7647e6e71072af6121d667495083225391de05"
+    },
+    {
+      "id": "U23",
+      "text": "Каждая медсестра навестила одного пациента.",
+      "sha256": "ec259ce5add8b8d15dc9f8b8e347e8621ab913e0c3271a45a8988168a4c12197",
+      "signature": {
+        "predicates": {
+          "Visited": [
+            "nurse",
+            "patient"
+          ]
+        },
+        "sorts": [
+          "nurse",
+          "patient"
+        ]
+      },
+      "set": "ambiguity",
+      "source_ref": "2504a5e64b5c1272456f97e395d7fd001659a2ec747ef1596ead108ba2250f11",
+      "structural_run_id": "fe7a621841b5cb572b854de17e8103aefceac1d3d90a7e1637b8ebb66e8b9d3e"
+    },
+    {
+      "id": "U24",
+      "text": "Каждый преподаватель оценил одну работу.",
+      "sha256": "40a2a27d5a58628fdb64502dcf5f26be09e2e3e4da5ed1aa9e2f649e5ac3e466",
+      "signature": {
+        "predicates": {
+          "Graded": [
+            "teacher",
+            "paper"
+          ]
+        },
+        "sorts": [
+          "teacher",
+          "paper"
+        ]
+      },
+      "set": "ambiguity",
+      "source_ref": "e5b56316cede3511671af388d57a8338db0cd6a294a387125d2148e836c10063",
+      "structural_run_id": "40651e777aeb54df3ea2dc89752371e31ab43a3a602772299abbaea910cfe5e6"
+    },
+    {
+      "id": "U25",
+      "text": "Каждый турист сфотографировал один памятник.",
+      "sha256": "159eafbc09cb7fb70a4e959a5c2590b4882e156cb0021d03d4e538348eb5dc03",
+      "signature": {
+        "predicates": {
+          "Photographed": [
+            "tourist",
+            "monument"
+          ]
+        },
+        "sorts": [
+          "tourist",
+          "monument"
+        ]
+      },
+      "set": "ambiguity",
+      "source_ref": "a223b111db9da9b1f226ecbdf2b1edb1509c4b13cc91a06b9c2d75e32b5e48e5",
+      "structural_run_id": "7ff7eb4c1d9d963244ad11b8f73b717e616b8ec760ae717868d4c865a85a1a48"
+    },
+    {
+      "id": "U26",
+      "text": "Один журналист опросил каждого свидетеля.",
+      "sha256": "503167289a90b9c4923e80a7029d5fef51349dd66b54084e9ee199d6141235a6",
+      "signature": {
+        "predicates": {
+          "Interviewed": [
+            "journalist",
+            "witness"
+          ]
+        },
+        "sorts": [
+          "journalist",
+          "witness"
+        ]
+      },
+      "set": "ambiguity",
+      "source_ref": "1e86e97a7684b15294dd06c8b99ceeb7257e25c36f4d576c76dedbdb419ecc60",
+      "structural_run_id": "885513eb638bc71ca04b51c82c167cc3327ee6238a21d8914f0896880305bd71"
+    }
+  ],
+  "nl_runs": {
+    "pilot": {
+      "A": [
+        "88a7f3b3dd217c6a8021d486963428fb1bae76759593b31160ec07c9dde15f3a",
+        "aa7d3525a537cde3d00297d8b2648dd4f7e23b5df7ca6f49a5f18365a05a6544"
+      ],
+      "B": [
+        "6415c1dec7d7aacbcc1901ade49e7e4c22ecd673bd51a6c8ca3df28426af8754",
+        "b125219d43502795aff9d6ad739b8aa766be6a413ca9c06f5c7f961d4f8ccf09"
+      ],
+      "C": [
+        "d8d11f205dd04b98ac6a183336805abddab509009bd1b2f4ccd7dcd17fd6634d",
+        "a4b1ea39a87ac9ae907eefab915a95465ad5ba10b420b8fc02499d1445e12ff9"
+      ]
+    },
+    "extension": {
+      "A": [
+        "1170467dadcb11abf86c99176dafd50f7a5d2c47acb10fca14c00d5f966f773e",
+        "3527589ec26c5110de6502e5a7a73e70888e89c631c7cb7494aeae0171b3a3b6"
+      ],
+      "B": [
+        "9729b2dafcf80f6d43f0cd9eeea35c135ea8ae0c9699e6eb5eed194a34b78273",
+        "075858f13c72dde40818452870a0af3f3c638f14412668d61851ab62b9c12daf"
+      ],
+      "C": [
+        "57d4fa3669485a315130badf4d530477a1397fd8d2985abf63ed81ddd8836db2",
+        "300931ca2120cac9fc262ecbafff7a1a42e73427e4043ff83c07704fce97776e"
+      ]
+    },
+    "ambiguity": {
+      "A": [
+        "8f0c58adc0dc4c3a7279203cce6be439d75de6c47ca5a690c468cf47eb9f793c"
+      ],
+      "B": [
+        "b09e3b06b9251b1ac3297023fa098fc3305fe3c02e34839402d4bee3d13118f2"
+      ],
+      "C": [
+        "076ccc229e6c661dae47459449ffc28f5e499f90c68ffe03bb10cc77a7f2ef46"
+      ]
+    }
+  },
+  "arms": {
+    "A": "source_only",
+    "B": "white_star_structural",
+    "C": "matched_ablation"
+  },
+  "policy": {
+    "max_candidates": 5,
+    "max_model_calls": 1,
+    "max_tokens": 110000,
+    "max_cpu_ms": 4000,
+    "max_frames": 4,
+    "seed": 2211
+  },
+  "constraints": {
+    "model_revision_fixed": false,
+    "actual_token_usage_matched": false,
+    "human_expert_annotation": false,
+    "model_universe": "n=1,2,3; all 2^(n^2) relations"
+  }
+}

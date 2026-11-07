@@ -74,6 +74,8 @@ async def run(a):
                 }
                 if a.allow_nl_api:
                     for name in ('formal_nl_propose','formal_nl_inspect'):tools.pop(name,None)
+                if a.allow_causal_api:
+                    tools.pop('formal_nl_redecode', None)
                 check(
                     "all83 old schemas unchanged",
                     all(tools.get(n) == v for n, v in baseline.items()),
@@ -833,4 +835,5 @@ if __name__ == "__main__":
     )
     p.add_argument("--loopback-port", type=int)
     p.add_argument("--allow-nl-api",action="store_true")
+    p.add_argument("--allow-causal-api",action="store_true")
     asyncio.run(run(p.parse_args()))

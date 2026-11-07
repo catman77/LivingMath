@@ -1,4 +1,4 @@
-# LivingMath × SUTI v0.4.10 — developer preview
+# LivingMath × SUTI v0.4.11 — developer preview
 
 Однопользовательский CLI для конечных проверок и проверок исходных документов. Он использует **неизменённые** verifier ASSURANCE-001 и binder ASSURANCE-002 из сохранённой поставки ASSURANCE-003. Модель, API-ключ и подписка для ручного пути и replay не нужны.
 
@@ -14,7 +14,7 @@ lm-suti doctor --smoke
 ```
 
 Из wheel, предварительно собранного командой `python -m pip wheel --no-deps . -w dist`:
-`python -m pip install dist/lm_suti_assurance-0.4.10.dev0-py3-none-any.whl`.
+`python -m pip install dist/lm_suti_assurance-0.4.11.dev0-py3-none-any.whl`.
 Установка зависимостей может требовать интернет; сам replay сеть не использует. Офлайн-установка: заранее собрать wheelhouse через `python -m pip download --only-binary=:all: -d wheelhouse ./dist/*.whl`, затем `pip install --no-index --find-links wheelhouse lm-suti-assurance`. Бинарные зависимости должны соответствовать Python и платформе получателя.
 
 ## Полный ручной путь
@@ -65,8 +65,8 @@ CHECKED_FINITE относится только к полному объявле�
 
 [Semantic Bridge: полный путь](docs/semantic-bridge/QUICKSTART_RU.md) добавляет `semantic source/draft/revise/compare/report/withdraw`. В production опубликованы девять `semantic_*` инструментов; прежние 55 input schemas сохранены. Для генерации нужен уже авторизованный Codex CLI с ChatGPT-login; ручной импорт и replay этого не требуют. При недоступности backend возвращается `MODEL_UNAVAILABLE`.
 
-Пакет Python имеет версию `0.4.10.dev0`, основной MCP endpoint — `v0.4.10-developer-preview`, 93 инструмент. `doctor.release`, `assurance_contract.release` и префикс `lm-suti --version` сохраняют базовую версию assurance v0.1 для совместимости; `semantic_contract.release` показывает сохранённый контракт v0.2, `white_star_status.release` — v0.3. Frozen verifier/binder не менялись. Версия всего сервера читается через `bridge_system_status` или MCP initialize.
+Пакет Python имеет версию `0.4.11.dev0`, основной MCP endpoint — `v0.4.11-developer-preview`, 94 инструмента. `doctor.release`, `assurance_contract.release` и префикс `lm-suti --version` сохраняют базовую версию assurance v0.1 для совместимости; `semantic_contract.release` показывает сохранённый контракт v0.2, `white_star_status.release` — v0.3. Frozen verifier/binder не менялись. Версия всего сервера читается через `bridge_system_status` или MCP initialize.
 
 ## Белая звезда
 
-Для этого дополнительного режима нужны Linux с Landlock ABI≥3, Python 3.13+, C++17, NumPy 2.3.5 и pandas 2.2.3. Проверенный путь: `pip install '.[white-star,mcp,test]'`, затем `lm-suti white-star prepare`. Сборка выполняется явно до запросов. [Полный цикл, произвольный текст, экспорт и сравнение](docs/white-star/QUICKSTART_RU.md). Обычный assurance CLI не требует NumPy/C++ или модели. Legacy development endpoint публикует 44 инструмента; production release entry объединяет 93. [Архитектура](ARCHITECTURE.md), [MCP-справочник](docs/MCP_INTERFACE.md), [различия запуска](docs/INSTALL.md).
+Для этого дополнительного режима нужны Linux с Landlock ABI≥3, Python 3.13+, C++17, NumPy 2.3.5 и pandas 2.2.3. Проверенный путь: `pip install '.[white-star,mcp,test]'`, затем `lm-suti white-star prepare`. Сборка выполняется явно до запросов. [Полный цикл, произвольный текст, экспорт и сравнение](docs/white-star/QUICKSTART_RU.md). Обычный assurance CLI не требует NumPy/C++ или модели. Legacy development endpoint публикует 44 инструмента; production release entry объединяет 94. [Архитектура](ARCHITECTURE.md), [MCP-справочник](docs/MCP_INTERFACE.md), [различия запуска](docs/INSTALL.md).

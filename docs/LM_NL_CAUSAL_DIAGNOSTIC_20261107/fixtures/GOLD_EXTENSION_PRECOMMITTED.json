@@ -1,0 +1,724 @@
+{
+  "blinding": "oracle_formulae remain in local file, never sent to model/provider",
+  "corpus": [
+    {
+      "family": "forall_exists",
+      "id": "E09",
+      "oracle_formulae": [
+        {
+          "body": {
+            "body": {
+              "args": [
+                {
+                  "var": "n"
+                },
+                {
+                  "var": "p"
+                }
+              ],
+              "pred": "Observed"
+            },
+            "quant": "exists",
+            "sort": "patient",
+            "var": "p"
+          },
+          "quant": "forall",
+          "sort": "nurse",
+          "var": "n"
+        }
+      ],
+      "rights": "synthetic-original-private-evaluation",
+      "set": "extension",
+      "sha256": "ec72a91913f989a85f99cbe59aa11033234933cd9823b446c33383e657cea258",
+      "signature": {
+        "predicates": {
+          "Observed": [
+            "nurse",
+            "patient"
+          ]
+        },
+        "sorts": [
+          "nurse",
+          "patient"
+        ]
+      },
+      "source_ambiguity": false,
+      "text": "Каждая медсестра наблюдала хотя бы одного пациента."
+    },
+    {
+      "family": "exists_forall",
+      "id": "E10",
+      "oracle_formulae": [
+        {
+          "body": {
+            "body": {
+              "args": [
+                {
+                  "var": "n"
+                },
+                {
+                  "var": "p"
+                }
+              ],
+              "pred": "Observed"
+            },
+            "quant": "forall",
+            "sort": "patient",
+            "var": "p"
+          },
+          "quant": "exists",
+          "sort": "nurse",
+          "var": "n"
+        }
+      ],
+      "rights": "synthetic-original-private-evaluation",
+      "set": "extension",
+      "sha256": "6e688b2fbffe703d50fbedbcadd666126cc3f7ff1b3f0487f3081af94ac7fce3",
+      "signature": {
+        "predicates": {
+          "Observed": [
+            "nurse",
+            "patient"
+          ]
+        },
+        "sorts": [
+          "nurse",
+          "patient"
+        ]
+      },
+      "source_ambiguity": false,
+      "text": "По крайней мере одна медсестра наблюдала всех пациентов."
+    },
+    {
+      "family": "negation_scope",
+      "id": "E11",
+      "oracle_formulae": [
+        {
+          "not": {
+            "body": {
+              "body": {
+                "args": [
+                  {
+                    "var": "n"
+                  },
+                  {
+                    "var": "p"
+                  }
+                ],
+                "pred": "Observed"
+              },
+              "quant": "forall",
+              "sort": "patient",
+              "var": "p"
+            },
+            "quant": "forall",
+            "sort": "nurse",
+            "var": "n"
+          }
+        }
+      ],
+      "rights": "synthetic-original-private-evaluation",
+      "set": "extension",
+      "sha256": "d47b358011bd21e82f0dc3b44777c0500a21cf75504ebf918b32995ea434e88e",
+      "signature": {
+        "predicates": {
+          "Observed": [
+            "nurse",
+            "patient"
+          ]
+        },
+        "sorts": [
+          "nurse",
+          "patient"
+        ]
+      },
+      "source_ambiguity": false,
+      "text": "Не каждая медсестра наблюдала всех пациентов."
+    },
+    {
+      "family": "double_negation",
+      "id": "E12",
+      "oracle_formulae": [
+        {
+          "body": {
+            "body": {
+              "not": {
+                "args": [
+                  {
+                    "var": "n"
+                  },
+                  {
+                    "var": "p"
+                  }
+                ],
+                "pred": "Observed"
+              }
+            },
+            "quant": "forall",
+            "sort": "patient",
+            "var": "p"
+          },
+          "quant": "forall",
+          "sort": "nurse",
+          "var": "n"
+        }
+      ],
+      "rights": "synthetic-original-private-evaluation",
+      "set": "extension",
+      "sha256": "9f4331c592bc0c9626c7733291d82612b0e6d15ea95d9e2b12d92d1657908c19",
+      "signature": {
+        "predicates": {
+          "Observed": [
+            "nurse",
+            "patient"
+          ]
+        },
+        "sorts": [
+          "nurse",
+          "patient"
+        ]
+      },
+      "source_ambiguity": false,
+      "text": "Ни одна медсестра не наблюдала ни одного пациента."
+    },
+    {
+      "family": "exists_no_objects",
+      "id": "E13",
+      "oracle_formulae": [
+        {
+          "body": {
+            "body": {
+              "not": {
+                "args": [
+                  {
+                    "var": "s"
+                  },
+                  {
+                    "var": "b"
+                  }
+                ],
+                "pred": "Read"
+              }
+            },
+            "quant": "forall",
+            "sort": "book",
+            "var": "b"
+          },
+          "quant": "exists",
+          "sort": "student",
+          "var": "s"
+        }
+      ],
+      "rights": "synthetic-original-private-evaluation",
+      "set": "extension",
+      "sha256": "48a5007bb31d04bdecef1849e927033c69b440b287d473847f3f0b2560d0099f",
+      "signature": {
+        "predicates": {
+          "Read": [
+            "student",
+            "book"
+          ]
+        },
+        "sorts": [
+          "student",
+          "book"
+        ]
+      },
+      "source_ambiguity": false,
+      "text": "Существует студент, который не прочитал ни одной книги."
+    },
+    {
+      "family": "not_shared",
+      "id": "E14",
+      "oracle_formulae": [
+        {
+          "not": {
+            "body": {
+              "body": {
+                "args": [
+                  {
+                    "var": "s"
+                  },
+                  {
+                    "var": "b"
+                  }
+                ],
+                "pred": "Read"
+              },
+              "quant": "forall",
+              "sort": "student",
+              "var": "s"
+            },
+            "quant": "exists",
+            "sort": "book",
+            "var": "b"
+          }
+        }
+      ],
+      "rights": "synthetic-original-private-evaluation",
+      "set": "extension",
+      "sha256": "c21c801b36e869a2d48ed639218ea619bf7a9a7a8b6826ffcbbf492cb52b9541",
+      "signature": {
+        "predicates": {
+          "Read": [
+            "student",
+            "book"
+          ]
+        },
+        "sorts": [
+          "student",
+          "book"
+        ]
+      },
+      "source_ambiguity": false,
+      "text": "Не существует книги, которую прочитал каждый студент."
+    },
+    {
+      "family": "at_least_two_distinct",
+      "id": "E15",
+      "oracle_formulae": [
+        {
+          "body": {
+            "body": {
+              "body": {
+                "and": [
+                  {
+                    "not": {
+                      "eq": [
+                        {
+                          "var": "b"
+                        },
+                        {
+                          "var": "c"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "args": [
+                      {
+                        "var": "s"
+                      },
+                      {
+                        "var": "b"
+                      }
+                    ],
+                    "pred": "Read"
+                  },
+                  {
+                    "args": [
+                      {
+                        "var": "s"
+                      },
+                      {
+                        "var": "c"
+                      }
+                    ],
+                    "pred": "Read"
+                  }
+                ]
+              },
+              "quant": "exists",
+              "sort": "book",
+              "var": "c"
+            },
+            "quant": "exists",
+            "sort": "book",
+            "var": "b"
+          },
+          "quant": "forall",
+          "sort": "student",
+          "var": "s"
+        }
+      ],
+      "rights": "synthetic-original-private-evaluation",
+      "set": "extension",
+      "sha256": "f84d06fe63968ae6c90bf30f091dfd4ba84cc42edbf0ff76b2b409b60f40bde5",
+      "signature": {
+        "predicates": {
+          "Read": [
+            "student",
+            "book"
+          ]
+        },
+        "sorts": [
+          "student",
+          "book"
+        ]
+      },
+      "source_ambiguity": false,
+      "text": "Каждый студент прочитал хотя бы две разные книги."
+    },
+    {
+      "family": "at_most_one",
+      "id": "E16",
+      "oracle_formulae": [
+        {
+          "body": {
+            "body": {
+              "body": {
+                "or": [
+                  {
+                    "not": {
+                      "and": [
+                        {
+                          "args": [
+                            {
+                              "var": "s"
+                            },
+                            {
+                              "var": "b"
+                            }
+                          ],
+                          "pred": "Read"
+                        },
+                        {
+                          "args": [
+                            {
+                              "var": "s"
+                            },
+                            {
+                              "var": "c"
+                            }
+                          ],
+                          "pred": "Read"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "eq": [
+                      {
+                        "var": "b"
+                      },
+                      {
+                        "var": "c"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "quant": "forall",
+              "sort": "book",
+              "var": "c"
+            },
+            "quant": "forall",
+            "sort": "book",
+            "var": "b"
+          },
+          "quant": "forall",
+          "sort": "student",
+          "var": "s"
+        }
+      ],
+      "rights": "synthetic-original-private-evaluation",
+      "set": "extension",
+      "sha256": "29e6aac11e67296fc6cbdf643bf23c1b503a43c103bcd7afa3b0b22d17ab4315",
+      "signature": {
+        "predicates": {
+          "Read": [
+            "student",
+            "book"
+          ]
+        },
+        "sorts": [
+          "student",
+          "book"
+        ]
+      },
+      "source_ambiguity": false,
+      "text": "Каждый студент прочитал не более одной книги."
+    },
+    {
+      "family": "exactly_one_subject",
+      "id": "E17",
+      "oracle_formulae": [
+        {
+          "body": {
+            "and": [
+              {
+                "body": {
+                  "args": [
+                    {
+                      "var": "s"
+                    },
+                    {
+                      "var": "b"
+                    }
+                  ],
+                  "pred": "Read"
+                },
+                "quant": "exists",
+                "sort": "book",
+                "var": "b"
+              },
+              {
+                "body": {
+                  "or": [
+                    {
+                      "not": {
+                        "body": {
+                          "args": [
+                            {
+                              "var": "t"
+                            },
+                            {
+                              "var": "b"
+                            }
+                          ],
+                          "pred": "Read"
+                        },
+                        "quant": "exists",
+                        "sort": "book",
+                        "var": "b"
+                      }
+                    },
+                    {
+                      "eq": [
+                        {
+                          "var": "t"
+                        },
+                        {
+                          "var": "s"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "quant": "forall",
+                "sort": "student",
+                "var": "t"
+              }
+            ]
+          },
+          "quant": "exists",
+          "sort": "student",
+          "var": "s"
+        }
+      ],
+      "rights": "synthetic-original-private-evaluation",
+      "set": "extension",
+      "sha256": "adb19a2ca6dc357a8fb5736d0f3b6b9a31ba06727c9732475edab990b263c0e2",
+      "signature": {
+        "predicates": {
+          "Read": [
+            "student",
+            "book"
+          ]
+        },
+        "sorts": [
+          "student",
+          "book"
+        ]
+      },
+      "source_ambiguity": false,
+      "text": "Существует ровно один студент, прочитавший хоть какую-нибудь книгу."
+    },
+    {
+      "family": "exactly_one_shared",
+      "id": "E18",
+      "oracle_formulae": [
+        {
+          "body": {
+            "and": [
+              {
+                "body": {
+                  "args": [
+                    {
+                      "var": "s"
+                    },
+                    {
+                      "var": "b"
+                    }
+                  ],
+                  "pred": "Read"
+                },
+                "quant": "forall",
+                "sort": "student",
+                "var": "s"
+              },
+              {
+                "body": {
+                  "or": [
+                    {
+                      "not": {
+                        "body": {
+                          "args": [
+                            {
+                              "var": "s"
+                            },
+                            {
+                              "var": "c"
+                            }
+                          ],
+                          "pred": "Read"
+                        },
+                        "quant": "forall",
+                        "sort": "student",
+                        "var": "s"
+                      }
+                    },
+                    {
+                      "eq": [
+                        {
+                          "var": "c"
+                        },
+                        {
+                          "var": "b"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "quant": "forall",
+                "sort": "book",
+                "var": "c"
+              }
+            ]
+          },
+          "quant": "exists",
+          "sort": "book",
+          "var": "b"
+        }
+      ],
+      "rights": "synthetic-original-private-evaluation",
+      "set": "extension",
+      "sha256": "334bcc3e3a1fbba01808fb428ac9e8b87a1d4be8e7be19b0770a4d4a25c340ad",
+      "signature": {
+        "predicates": {
+          "Read": [
+            "student",
+            "book"
+          ]
+        },
+        "sorts": [
+          "student",
+          "book"
+        ]
+      },
+      "source_ambiguity": false,
+      "text": "Существует ровно одна книга, которую прочитал каждый студент."
+    },
+    {
+      "family": "forall_exists_inverse",
+      "id": "E19",
+      "oracle_formulae": [
+        {
+          "body": {
+            "body": {
+              "args": [
+                {
+                  "var": "s"
+                },
+                {
+                  "var": "b"
+                }
+              ],
+              "pred": "Read"
+            },
+            "quant": "exists",
+            "sort": "student",
+            "var": "s"
+          },
+          "quant": "forall",
+          "sort": "book",
+          "var": "b"
+        }
+      ],
+      "rights": "synthetic-original-private-evaluation",
+      "set": "extension",
+      "sha256": "652050e89dd9ba9d194e1e7f6df23510933de31ed9b0c7ab6caa1b45f0becf98",
+      "signature": {
+        "predicates": {
+          "Read": [
+            "student",
+            "book"
+          ]
+        },
+        "sorts": [
+          "student",
+          "book"
+        ]
+      },
+      "source_ambiguity": false,
+      "text": "Каждую книгу прочитал хотя бы один студент."
+    },
+    {
+      "family": "conjunction_quantified",
+      "id": "E20",
+      "oracle_formulae": [
+        {
+          "body": {
+            "and": [
+              {
+                "body": {
+                  "args": [
+                    {
+                      "var": "s"
+                    },
+                    {
+                      "var": "b"
+                    }
+                  ],
+                  "pred": "Read"
+                },
+                "quant": "exists",
+                "sort": "book",
+                "var": "b"
+              },
+              {
+                "not": {
+                  "body": {
+                    "args": [
+                      {
+                        "var": "s"
+                      },
+                      {
+                        "var": "b"
+                      }
+                    ],
+                    "pred": "Read"
+                  },
+                  "quant": "forall",
+                  "sort": "book",
+                  "var": "b"
+                }
+              }
+            ]
+          },
+          "quant": "forall",
+          "sort": "student",
+          "var": "s"
+        }
+      ],
+      "rights": "synthetic-original-private-evaluation",
+      "set": "extension",
+      "sha256": "16a5eb8daed28cc710d07fa50ce242b40119c8f8c7b118b2a19e32a38ed683f6",
+      "signature": {
+        "predicates": {
+          "Read": [
+            "student",
+            "book"
+          ]
+        },
+        "sorts": [
+          "student",
+          "book"
+        ]
+      },
+      "source_ambiguity": false,
+      "text": "Каждый студент прочитал хотя бы одну книгу, но не все книги."
+    }
+  ],
+  "method": "assistant-authored precommitted references, NOT expert adjudication",
+  "model_universe": {
+    "binary_relations": "enumerate all subsets of n x n",
+    "domain_sizes": [
+      1,
+      2,
+      3
+    ]
+  },
+  "precommit": "before extension source registration and model calls",
+  "schema": "lm-nl-independent-eval-extension/1"
+}

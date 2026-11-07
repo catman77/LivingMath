@@ -1,14 +1,14 @@
-# MCP-интерфейс LivingMath v0.4.10
+# MCP-интерфейс LivingMath v0.4.11
 
-Актуальная production-композиция: **93 инструмента**, версия сервера
-`v0.4.10-developer-preview`, пакет `0.4.10.dev0`. [Архитектура](../ARCHITECTURE.md),
-[установка и различия 44/93](INSTALL.md), [исходный текст и rights](USAGE.md).
+Актуальная production-композиция: **94 инструмента**, версия сервера
+`v0.4.11-developer-preview`, пакет `0.4.11.dev0`. [Архитектура](../ARCHITECTURE.md),
+[установка и различия 44/94](INSTALL.md), [исходный текст и rights](USAGE.md).
 
 ## Транспорт и обнаружение
 
 Endpoint — `https://<origin>/mcp`, протокол **MCP Streamable HTTP**, OAuth/PKCE.
 Работающий экземпляр использует origin
-`https://fares-september-rebel-board.trycloudflare.com`; адрес не зашит в ядро.
+`https://difficulty-nightlife-rca-missions.trycloudflare.com`; адрес не зашит в ядро.
 Точный HTTPS origin задаётся оператором. Он должен совпасть с issuer/resource и
 публичным адресом клиента, включая порт, без дополнительного path.
 
@@ -34,11 +34,13 @@ MCP `initialize`, `notifications/initialized`, затем `tools/list` и `tools
 не доказывает эффективность исследования.
 
 Полные input/output schemas, описания и annotations всех методов:
-[MCP_TOOL_SCHEMAS.json](symbolic-v1/patch005/MCP_TOOL_SCHEMAS.json).
+[MCP_TOOL_SCHEMAS.json](nl-causal003/MCP_TOOL_SCHEMAS.json).
 Это неизменённый ответ настоящего production `tools/list` из последней приёмки,
 не схема, восстановленная из описания. Для конкретного подключения приоритет
 имеет его текущий `tools/list`. При закешированном старом наборе обновите
-подключение по тому же URL; публикация GitHub сама по себе не требует restart.
+подключение к текущему origin, указанному выше, затем проверьте94 tools. Старый
+удалённый Cloudflare URL обновлением списка не восстановить. Публикация GitHub
+сама по себе не перезапускает сервер.
 
 ## Слои регистрации
 
@@ -55,7 +57,8 @@ MCP `initialize`, `notifications/initialized`, затем `tools/list` и `tools
 | SP-комплексы, dataset/observer, replay | 8 | `src/lm_suti_assurance/symbolic_complex/mcp.py` |
 | Formal Bridge v1 | 8 | `src/lm_suti_assurance/formal_bridge/mcp.py` |
 | NLProposalBridge/1 | 2 | `src/lm_suti_assurance/nl_proposal/mcp.py` |
-| **Всего** | **93** | `tools/release_v01_entry.py` объединяет регистрации |
+| Frozen causal decoder |1| `nl_proposal/causal_mcp.py` |
+| **Всего** | **94** | `tools/release_v01_entry.py` объединяет регистрации |
 
 ## Проекты, запросы и разрешения
 
@@ -370,12 +373,12 @@ model, record, imported grammar/DFA или untrusted proof. `formal_synthesize`
 `UNKNOWN_BOUND`, `UNKNOWN_CYCLE`, `NO_DIFFERENCE_WITHIN_BOUND` не означают grant,
 refutation of author intent или equivalence. `CHECKED_INSTANCE` — конечная проверка.
 
-После обновления сервера клиент должен повторить tools/list. Если ChatGPT
-показывает прежние83 метода, в настройках приложения LivingMath обновите список
-инструментов; если функции обновления нет — отключите и подключите приложение
-снова с тем же MCP URL/OAuth. Новый адрес не требуется.
+После обновления клиент повторяет initialize/tools/list: текущая композиция94 tools.
+Для этой поставки прежний Cloudflare origin был удалён; подключите LivingMath к
+`https://difficulty-nightlife-rca-missions.trycloudflare.com/mcp`, затем обновите
+список инструментов. Сохранённые runs читаются из прежней базы.
 
-## NLProposalBridge/1: 93 tools
+## NLProposalBridge/1 (историческое расширение0.4.10 до93 tools)
 
 `formal_nl_propose` — opt-in owner-hosted source analysis, проверка owned
 source/trace и порождение нескольких FOL AST через существующий Formal Bridge.
@@ -390,6 +393,14 @@ parents, snapshot и AST guards отклоняются отдельно. `matche
 Старый `formal_interpret` принимает provider.kind как DECLARED_UNVERIFIED;
 это предупреждение явно опубликовано также в bridge_system_status.
 
-Для ChatGPT после обновления обновите инструменты приложения в настройках.
-Если tools/list всё ещё содержит91 метод, отключите и подключите то же
-приложение по прежнему URL; дождитесь повторного initialize/tools/list.
+Для ChatGPT после обновления используйте текущий origin из начала документа.
+Если tools/list ещё содержит91 или93 метода, переподключите LivingMath к новому
+адресу и дождитесь повторного initialize/tools/list с94 инструментами.
+
+## Frozen NL causal redecode (добавлен0.4.11)
+
+`formal_nl_redecode(project, request_key, source_nl_run_ref,
+source_item_indices, structural_run_refs?, arms, policy)` возвращает append-only
+COMPLETED run без provider/network calls. [Полный точный JSON, схемы границ,
+пагинация и replay](nl-causal003/QUICKSTART_RU.md). Старые93 tools/list записи
+сохранены целиком. `formal_nl_inspect` читает как прежние, так и новые run refs.

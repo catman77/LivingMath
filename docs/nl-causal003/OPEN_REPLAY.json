@@ -1,0 +1,8 @@
+{
+  "status": "REPLAY_MATCH",
+  "expected_sha256": "0ae7fda338ec85555e66267993edde5c7429dde9edc64e10ab6c2930465b9132",
+  "actual_sha256": "0ae7fda338ec85555e66267993edde5c7429dde9edc64e10ab6c2930465b9132",
+  "LLM_calls": 0,
+  "network_calls": 0,
+  "execution_permission": false
+}

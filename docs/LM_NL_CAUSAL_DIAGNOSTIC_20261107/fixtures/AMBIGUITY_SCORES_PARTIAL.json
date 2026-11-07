@@ -1,0 +1,99 @@
+{
+  "schema": "lm-nl-ambiguity-scores-partial/1",
+  "project": "nl_independent_eval_20261107",
+  "precommit_sha256": "1b176c55edd263461e9c4aad9c26bde82cf1bf4c596069279c6315960b315540",
+  "denominator": 5,
+  "invalid_precommit": [
+    "U26"
+  ],
+  "n_models_per_source": 530,
+  "A": {
+    "run_ref": "8f0c58adc0dc4c3a7279203cce6be439d75de6c47ca5a690c468cf47eb9f793c",
+    "narrow_covered": 5,
+    "wide_covered": 0,
+    "candidates": 10,
+    "off_two_scope_reference": 5,
+    "provider_calls": 1,
+    "input_tokens": 18437,
+    "output_tokens": 4433
+  },
+  "B": {
+    "run_ref": "b09e3b06b9251b1ac3297023fa098fc3305fe3c02e34839402d4bee3d13118f2",
+    "narrow_covered": 5,
+    "wide_covered": 5,
+    "candidates": 20,
+    "trace_derived": 10,
+    "off_two_scope_reference": 10,
+    "provider_calls": 1,
+    "input_tokens": 20355,
+    "output_tokens": 5360
+  },
+  "C": {
+    "run_ref": "076ccc229e6c661dae47459449ffc28f5e499f90c68ffe03bb10cc77a7f2ef46",
+    "job_status_last_seen": "COMPLETED",
+    "evaluation": "NOT_EXECUTED_MCP_CONNECTOR_INTERNAL_ERROR",
+    "provider_calls": null
+  },
+  "source_rows": [
+    {
+      "id": "U21",
+      "narrow_ast_sha256_A_and_B": "8b128cfd92dd0d7aa458253899f712183c2fe47cf0e6bd3214088728bbb0e0f8",
+      "wide_ast_sha256_B": "bb36dce3625106e67bc10098c8c10b915a2a1dd237a13fe0cf1d62b9a0104e69",
+      "mismatch_narrow_to_wide": 176,
+      "B_origin": "TRACE_LINK_CHECKED",
+      "A_contains_narrow": true,
+      "A_contains_wide": false,
+      "B_contains_narrow": true,
+      "B_contains_wide": true
+    },
+    {
+      "id": "U22",
+      "narrow_ast_sha256_A_and_B": "fdc8a8d68f73b9e390e7f756515c1957a80da7dd71172b2806f27553d987c3bd",
+      "wide_ast_sha256_B": "44d6d9e87e1bb14ca0a3f2f7ec9d7e5f8a8edf7b972644252cf2fc51c1223f8c",
+      "mismatch_narrow_to_wide": 176,
+      "B_origin": "TRACE_LINK_CHECKED",
+      "A_contains_narrow": true,
+      "A_contains_wide": false,
+      "B_contains_narrow": true,
+      "B_contains_wide": true
+    },
+    {
+      "id": "U23",
+      "narrow_ast_sha256_A_and_B": "ffb2ed76d788f4083dabfb0223e84690281d0531c8b06d8009791de435b69671",
+      "wide_ast_sha256_B": "e80a78675fdd65a6b5e342d103de96203be924401028e010058382a69bc1171d",
+      "mismatch_narrow_to_wide": 176,
+      "B_origin": "TRACE_LINK_CHECKED",
+      "A_contains_narrow": true,
+      "A_contains_wide": false,
+      "B_contains_narrow": true,
+      "B_contains_wide": true
+    },
+    {
+      "id": "U24",
+      "narrow_ast_sha256_A_and_B": "12595cf79df9fbdbe7441b69a6a0419b4cb6e746a9329c58215eab7c02278b0c",
+      "wide_ast_sha256_B": "38e54508600dd78b2fde0f75e1381be72d1e80db660716a139008dcae3925500",
+      "mismatch_narrow_to_wide": 176,
+      "B_origin": "TRACE_LINK_CHECKED",
+      "A_contains_narrow": true,
+      "A_contains_wide": false,
+      "B_contains_narrow": true,
+      "B_contains_wide": true
+    },
+    {
+      "id": "U25",
+      "narrow_ast_sha256_A_and_B": "0cdd9bf14b831aa23c5abef72efd057ab180a633c595735642adf8316e782008",
+      "wide_ast_sha256_B": "0df525447b3705eb6d967b5604bf193eb133d79eb938ce03bbfbcfacce782438",
+      "mismatch_narrow_to_wide": 176,
+      "B_origin": "TRACE_LINK_CHECKED",
+      "A_contains_narrow": true,
+      "A_contains_wide": false,
+      "B_contains_narrow": true,
+      "B_contains_wide": true
+    }
+  ],
+  "warnings": [
+    "Source ambiguity candidate readings do not equal human adjudication",
+    "Cannot claim B outperforms C because C result not inspected",
+    "U26 precommitted oracle invalid and not rescored post hoc"
+  ]
+}

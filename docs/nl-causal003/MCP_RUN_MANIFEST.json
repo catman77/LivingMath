@@ -1,0 +1,20 @@
+[
+  {
+    "kind": "open",
+    "project": "nl_independent_eval_20261107",
+    "run_ref": "9affcb8dc71e99df09776b57cd748c9806043be5f0248e17685382882e43f40f",
+    "source_nl_run_ref": "8f0c58adc0dc4c3a7279203cce6be439d75de6c47ca5a690c468cf47eb9f793c"
+  },
+  {
+    "kind": "hidden",
+    "project": "qa-nl003-holdout",
+    "run_ref": "17e1baa1aae91fac343eefa82acb1644cc58f7f9f7bb41ea705c567b7954242d",
+    "source_nl_run_ref": "794a2282a67bbcf512f48cb6db18ff6f6021781b0fecd3589a32635e1e7ff684"
+  },
+  {
+    "kind": "hidden",
+    "project": "qa-nl003-holdout",
+    "run_ref": "f4e31007063f4071a9881a75f7ccb7c4962008a58576df5f1229de1aeab57164",
+    "source_nl_run_ref": "7a0d655a73e2ca2a39576fc8175f373b66366449ca4e553788c100b1a123155f"
+  }
+]

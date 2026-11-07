@@ -1,0 +1,40 @@
+{
+  "status": "PRIMITIVE_CONSTRUCTION_CHECKED_OUTSIDE_PREREGISTERED_DEPTH",
+  "source_id": "H05",
+  "candidate_sha256": "a0cf34b5ffc75b281691d4e453bda58825136442e6fb7824447b8a545e41fd63",
+  "minimum_cost": 3,
+  "lower_bound": "Permutation[2,1,0] has3 inversions. Each adjacent swap changes inversion count by1; alpha-renaming cannot alter binder order. Three swaps attain this bound.",
+  "steps": [
+    {
+      "primitive": {
+        "operator": "SWAP_ADJACENT_OUTER_QUANTIFIERS",
+        "index": 0,
+        "cost": 1
+      },
+      "before_ast_sha256": "abf83ddd8d8f71c1aef26f23c945f4124f29650e13c5f0ce73e647cf3f284783",
+      "after_ast_sha256": "7663e7c29d0cb726e26150ff953b95c23ac6886ee3d7c5ec2e1589a6b0fa603b"
+    },
+    {
+      "primitive": {
+        "operator": "SWAP_ADJACENT_OUTER_QUANTIFIERS",
+        "index": 1,
+        "cost": 1
+      },
+      "before_ast_sha256": "7663e7c29d0cb726e26150ff953b95c23ac6886ee3d7c5ec2e1589a6b0fa603b",
+      "after_ast_sha256": "b1db87e2cf7faf785859b543dcf0eb43184f9c1251f294fbdafa3965b3592757"
+    },
+    {
+      "primitive": {
+        "operator": "SWAP_ADJACENT_OUTER_QUANTIFIERS",
+        "index": 0,
+        "cost": 1
+      },
+      "before_ast_sha256": "b1db87e2cf7faf785859b543dcf0eb43184f9c1251f294fbdafa3965b3592757",
+      "after_ast_sha256": "a0cf34b5ffc75b281691d4e453bda58825136442e6fb7824447b8a545e41fd63"
+    }
+  ],
+  "predeclared_closure_depth": 2,
+  "same_budget_comparison": false,
+  "semantic_licensing": "HUMAN_NOT_EVALUATED",
+  "execution_permission": false
+}

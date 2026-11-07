@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.4.11-developer-preview — 2026-11-07
+
+- Add one opt-in frozen `formal_nl_redecode` tool; preserve all93 old tool schemas and exact mathematical kernels.
+- Isolate decoder-only sham, trace-blind bounded primitive closure and independent finite truth-set comparisons.
+- Preserve actual provider receipts and append-only owned results; no provider calls or grants on redecode/replay.
+- Recover old C, rerun open controls and a precommitted12-source assistant-authored holdout; human semantic adjudication remains unperformed.
+
+
 ## v0.4.10-developer-preview — 2026-11-07
 
 - Add opt-in NLProposalBridge/1 with two MCP tools; preserve all91 old schemas

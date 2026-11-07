@@ -4,8 +4,13 @@
 свидетели и контрпримеры → сохраняемая история исследования. MCP-интерфейс
 объединяет LivingMath, проверку исходных схем SUTI и алхимическую модель ALCH006.
 
-Текущий продукт: **`v0.4.10-developer-preview`**: assurance CLI, Semantic Bridge, численная White Star и Symbolic V1; 93 MCP-инструмента (91 прежний +2 NLProposalBridge). [Установка](README_QUICKSTART_RU.md), [White Star и сравнение режимов](docs/white-star/QUICKSTART_RU.md), [Semantic Bridge](docs/semantic-bridge/QUICKSTART_RU.md), [CLI](CLI_REFERENCE.md), [границы возможностей](LIMITATIONS.md).
+Текущий продукт: **`v0.4.11-developer-preview`**: assurance CLI, Semantic Bridge, численная White Star и Symbolic V1; 94 MCP-инструмента (93 прежних + frozen redecode). [Установка](README_QUICKSTART_RU.md), [White Star и сравнение режимов](docs/white-star/QUICKSTART_RU.md), [Semantic Bridge](docs/semantic-bridge/QUICKSTART_RU.md), [CLI](CLI_REFERENCE.md), [границы возможностей](LIMITATIONS.md).
 
+
+**NLFrozenCounterfactual/1 (0.4.11)**: `formal_nl_redecode` сравнивает четыре
+декодирования одного сохранённого ответа без нового модельного вызова. Старые
+93 схемы и вычислительные ядра сохранены. [Точный запрос](docs/nl-causal003/QUICKSTART_RU.md),
+[эксперимент и ограничения](docs/nl-causal003/USER_REPORT_RU.md).
 
 **NLProposalBridge/1 (0.4.10)** добавляет opt-in source-bound NL proposals,
 проверяемое происхождение White Star, общий типизированный AST move и replay
@@ -29,7 +34,7 @@ source-bound типизированные FOL proposals. Проверены дв
 
 Основной репозиторий: **[catman77/LivingMath](https://github.com/catman77/LivingMath)**.
 [Архитектура сервера и назначение модулей](ARCHITECTURE.md) ·
-[MCP-интерфейс: транспорт, 93 инструмента, схемы и примеры](docs/MCP_INTERFACE.md) ·
+[MCP-интерфейс: транспорт, 94 инструмента, схемы и примеры](docs/MCP_INTERFACE.md) ·
 [Установка CLI, legacy и полного production entry](docs/INSTALL.md).
 
 White Star использует предоставленное неизменённое ядро Белая звезда → CAD → Удав. Один frozen semantic snapshot можно передать ему и действующему Bridge/assurance без повторного extraction. Численные предложения и сохранённые LLM-прочтения разделены; native SUTI не исполняется. [Отчёт, фактическое сравнение и приёмка](docs/white-star/USER_REPORT_RU.md).

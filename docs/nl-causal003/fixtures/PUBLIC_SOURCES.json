@@ -1,0 +1,239 @@
+{
+  "sources": [
+    {
+      "id": "H01",
+      "text": "Каждый куратор назначил одному стажёру некоторую задачу.",
+      "sha256": "4569cf65df1fd4a13601676c2e3f15febd549ec269a6f5710cb9e137028c2916",
+      "rights": "ORIGINAL_ASSISTANT_AUTHORED_TEST_FIXTURE; owner-authorized nonprivate experimental data",
+      "signature": {
+        "sorts": [
+          "curator",
+          "intern",
+          "task"
+        ],
+        "predicates": {
+          "Assigned": [
+            "curator",
+            "intern",
+            "task"
+          ]
+        }
+      }
+    },
+    {
+      "id": "H02",
+      "text": "Каждый техник не проверил хотя бы один модуль.",
+      "sha256": "419656c373d6795cd2ef0845ed47ef08459ae4f169361fc7b9bbaf7118fd4f61",
+      "rights": "ORIGINAL_ASSISTANT_AUTHORED_TEST_FIXTURE; owner-authorized nonprivate experimental data",
+      "signature": {
+        "sorts": [
+          "technician",
+          "module"
+        ],
+        "predicates": {
+          "Tested": [
+            "technician",
+            "module"
+          ]
+        }
+      }
+    },
+    {
+      "id": "H03",
+      "text": "Каждый садовник дал ребёнку плод, который тот вырастил.",
+      "sha256": "2e7fd0fc0e81c01f3bdd914a6c15f202ad980fa5bc0c998ae625d8bea3d48f67",
+      "rights": "ORIGINAL_ASSISTANT_AUTHORED_TEST_FIXTURE; owner-authorized nonprivate experimental data",
+      "signature": {
+        "sorts": [
+          "gardener",
+          "child",
+          "fruit"
+        ],
+        "predicates": {
+          "Gave": [
+            "gardener",
+            "child",
+            "fruit"
+          ],
+          "Grew": [
+            "child",
+            "fruit"
+          ]
+        }
+      }
+    },
+    {
+      "id": "H04",
+      "text": "Каждый диспетчер может назначить каждому водителю некоторый маршрут.",
+      "sha256": "30c40bcbdc1be9bdacf2050f74ee5eb04252743537f00f8e0787e9767cbbf191",
+      "rights": "ORIGINAL_ASSISTANT_AUTHORED_TEST_FIXTURE; owner-authorized nonprivate experimental data",
+      "signature": {
+        "sorts": [
+          "dispatcher",
+          "driver",
+          "route"
+        ],
+        "predicates": {
+          "Assigned": [
+            "dispatcher",
+            "driver",
+            "route"
+          ]
+        }
+      }
+    },
+    {
+      "id": "H05",
+      "text": "Один и тот же архивариус передал каждому читателю некоторую папку.",
+      "sha256": "9822c54750ceba5559f54d095fbedefec0b433288789921c8480f02ff76e4cbe",
+      "rights": "ORIGINAL_ASSISTANT_AUTHORED_TEST_FIXTURE; owner-authorized nonprivate experimental data",
+      "signature": {
+        "sorts": [
+          "archivist",
+          "reader",
+          "folder"
+        ],
+        "predicates": {
+          "Handed": [
+            "archivist",
+            "reader",
+            "folder"
+          ]
+        }
+      }
+    },
+    {
+      "id": "H06",
+      "text": "Каждый редактор выбрал рецензента, который прочитал некоторую рукопись.",
+      "sha256": "dedabc516c231e6bca8f441a6e98bf5f93b9a5858a60148ca13f2de0a420bf36",
+      "rights": "ORIGINAL_ASSISTANT_AUTHORED_TEST_FIXTURE; owner-authorized nonprivate experimental data",
+      "signature": {
+        "sorts": [
+          "editor",
+          "reviewer",
+          "manuscript"
+        ],
+        "predicates": {
+          "Chose": [
+            "editor",
+            "reviewer"
+          ],
+          "Read": [
+            "reviewer",
+            "manuscript"
+          ]
+        }
+      }
+    },
+    {
+      "id": "H07",
+      "text": "Каждый инспектор проверил каждый датчик.",
+      "sha256": "9621759f09e57ea924f2f4d460a609999236674b070229fb60143bd46ba13551",
+      "rights": "ORIGINAL_ASSISTANT_AUTHORED_TEST_FIXTURE; owner-authorized nonprivate experimental data",
+      "signature": {
+        "sorts": [
+          "inspector",
+          "sensor"
+        ],
+        "predicates": {
+          "Checked": [
+            "inspector",
+            "sensor"
+          ]
+        }
+      }
+    },
+    {
+      "id": "H08",
+      "text": "Некоторый механик починил некоторый насос.",
+      "sha256": "ecb4a4f7441ac40a132f6a86d2e891dfa2695fe5e516706af492a2d0d43c581c",
+      "rights": "ORIGINAL_ASSISTANT_AUTHORED_TEST_FIXTURE; owner-authorized nonprivate experimental data",
+      "signature": {
+        "sorts": [
+          "mechanic",
+          "pump"
+        ],
+        "predicates": {
+          "Fixed": [
+            "mechanic",
+            "pump"
+          ]
+        }
+      }
+    },
+    {
+      "id": "H09",
+      "text": "Ни один сторож не открыл ни одну дверь.",
+      "sha256": "a733cb5b22f9727b33c10087703f85c112f99d26f00ac343d1d694c8c1a3d697",
+      "rights": "ORIGINAL_ASSISTANT_AUTHORED_TEST_FIXTURE; owner-authorized nonprivate experimental data",
+      "signature": {
+        "sorts": [
+          "guard",
+          "door"
+        ],
+        "predicates": {
+          "Opened": [
+            "guard",
+            "door"
+          ]
+        }
+      }
+    },
+    {
+      "id": "H10",
+      "text": "Некоторый смотритель спит.",
+      "sha256": "3de0905ac25435afd560ca419560c559eb932922eec409203ce15cbd3854ad6b",
+      "rights": "ORIGINAL_ASSISTANT_AUTHORED_TEST_FIXTURE; owner-authorized nonprivate experimental data",
+      "signature": {
+        "sorts": [
+          "keeper"
+        ],
+        "predicates": {
+          "Sleeps": [
+            "keeper"
+          ]
+        }
+      }
+    },
+    {
+      "id": "H11",
+      "text": "Каждый астроном показал одному ученику некоторую звезду, но не одному и тому же ученику.",
+      "sha256": "a6e341c92cbc1cc36f4f61a6cd95f58b4f12b126603c729e7f5bf78266e92f7b",
+      "rights": "ORIGINAL_ASSISTANT_AUTHORED_TEST_FIXTURE; owner-authorized nonprivate experimental data",
+      "signature": {
+        "sorts": [
+          "astronomer",
+          "pupil",
+          "star"
+        ],
+        "predicates": {
+          "Showed": [
+            "astronomer",
+            "pupil",
+            "star"
+          ]
+        }
+      }
+    },
+    {
+      "id": "H12",
+      "text": "Каждый картограф поручил одному курьеру не показывать некоторую карту.",
+      "sha256": "8d71634ea8339ef973e54c5dffc2471051a4830e022db8b2dfabc6f831c15fec",
+      "rights": "ORIGINAL_ASSISTANT_AUTHORED_TEST_FIXTURE; owner-authorized nonprivate experimental data",
+      "signature": {
+        "sorts": [
+          "cartographer",
+          "courier",
+          "map"
+        ],
+        "predicates": {
+          "Showed": [
+            "cartographer",
+            "courier",
+            "map"
+          ]
+        }
+      }
+    }
+  ]
+}

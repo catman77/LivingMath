@@ -1,0 +1,79 @@
+{
+  "status": "ASSISTANT_AUTHORED_ORACLE",
+  "human_adjudication": "HUMAN_NOT_EVALUATED",
+  "semantic_gold": false,
+  "items": [
+    {
+      "id": "H01",
+      "stratum": "THREE_QUANTIFIERS",
+      "review_requirements": "Three quantifiers; possible dependencies require external adjudication.",
+      "source_sha256": "4569cf65df1fd4a13601676c2e3f15febd549ec269a6f5710cb9e137028c2916"
+    },
+    {
+      "id": "H02",
+      "stratum": "NEGATION_INSIDE_SCOPE",
+      "review_requirements": "Distinguish not exists/exists not; operator must not cross internal negation.",
+      "source_sha256": "419656c373d6795cd2ef0845ed47ef08459ae4f169361fc7b9bbaf7118fd4f61"
+    },
+    {
+      "id": "H03",
+      "stratum": "COREFERENCE_RELATIVE",
+      "review_requirements": "Anaphor and relative clause; loss or unsupported reading must be reported.",
+      "source_sha256": "2e7fd0fc0e81c01f3bdd914a6c15f202ad980fa5bc0c998ae625d8bea3d48f67"
+    },
+    {
+      "id": "H04",
+      "stratum": "MODAL_UNSUPPORTED",
+      "review_requirements": "Signature has no modal operator; accepting modal truth as extensional truth is unlicensed.",
+      "source_sha256": "30c40bcbdc1be9bdacf2050f74ee5eb04252743537f00f8e0787e9767cbbf191"
+    },
+    {
+      "id": "H05",
+      "stratum": "EXPLICIT_SAME_ONE_THREE",
+      "review_requirements": "Explicit shared archivist, different folder dependencies; reordering is a search candidate only.",
+      "source_sha256": "9822c54750ceba5559f54d095fbedefec0b433288789921c8480f02ff76e4cbe"
+    },
+    {
+      "id": "H06",
+      "stratum": "RELATIVE_THREE",
+      "review_requirements": "Relative restriction must not vanish; three bindings.",
+      "source_sha256": "dedabc516c231e6bca8f441a6e98bf5f93b9a5858a60148ca13f2de0a420bf36"
+    },
+    {
+      "id": "H07",
+      "stratum": "NEGATIVE_ALL_UNIVERSAL",
+      "review_requirements": "Swapping two universals must be SAME_ON_BOUND, no novelty in truth.",
+      "source_sha256": "9621759f09e57ea924f2f4d460a609999236674b070229fb60143bd46ba13551"
+    },
+    {
+      "id": "H08",
+      "stratum": "NEGATIVE_ALL_EXISTENTIAL",
+      "review_requirements": "Swapping two existentials must be SAME_ON_BOUND.",
+      "source_sha256": "ecb4a4f7441ac40a132f6a86d2e891dfa2695fe5e516706af492a2d0d43c581c"
+    },
+    {
+      "id": "H09",
+      "stratum": "NEGATIVE_CLOSED_SCOPE",
+      "review_requirements": "No scope movement through NOT; typing is not linguistic validation.",
+      "source_sha256": "a733cb5b22f9727b33c10087703f85c112f99d26f00ac343d1d694c8c1a3d697"
+    },
+    {
+      "id": "H10",
+      "stratum": "NEGATIVE_ONE_BINDER",
+      "review_requirements": "A single binder has no quantifier permutation.",
+      "source_sha256": "3de0905ac25435afd560ca419560c559eb932922eec409203ce15cbd3854ad6b"
+    },
+    {
+      "id": "H11",
+      "stratum": "THREE_WITH_NONIDENTITY",
+      "review_requirements": "Unsupported nonidentity discourse must remain an explicit limitation.",
+      "source_sha256": "a6e341c92cbc1cc36f4f61a6cd95f58b4f12b126603c729e7f5bf78266e92f7b"
+    },
+    {
+      "id": "H12",
+      "stratum": "THREE_WITH_NEGATION",
+      "review_requirements": "No imperative/modal predicates in signature; unsupported or assumption labels required.",
+      "source_sha256": "8d71634ea8339ef973e54c5dffc2471051a4830e022db8b2dfabc6f831c15fec"
+    }
+  ]
+}

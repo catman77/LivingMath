@@ -1,0 +1,449 @@
+{
+  "engineering_status": "PASS",
+  "semantic_benefit": "UNCONFIRMED",
+  "checks": [
+    {
+      "name": "93 historical published tools byte-identical",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "only formal_nl_redecode additive",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "old C completed actual receipt retained",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "old C replay with zero model/network",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "open hard frozen invariants",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "U21 actual frozen one-swap 176/530",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "U21 exact published B wide SHA",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "U21 no incremental expressivity",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "U21 equal attempt ceilings",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "U22 actual frozen one-swap 176/530",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "U22 exact published B wide SHA",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "U22 no incremental expressivity",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "U22 equal attempt ceilings",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "U23 actual frozen one-swap 176/530",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "U23 exact published B wide SHA",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "U23 no incremental expressivity",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "U23 equal attempt ceilings",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "U24 actual frozen one-swap 176/530",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "U24 exact published B wide SHA",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "U24 no incremental expressivity",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "U24 equal attempt ceilings",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "U25 actual frozen one-swap 176/530",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "U25 exact published B wide SHA",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "U25 no incremental expressivity",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "U25 equal attempt ceilings",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "idempotent exact record",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "request key conflict",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "foreign source fail closed",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "error": "INVALID_INPUT",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "missing traces fail closed",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "error": "INVALID_INPUT",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "fake node fail closed",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "error": "INVALID_INPUT",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "stale snapshot fail closed",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "error": "INVALID_INPUT",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "wrong source fail closed",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "error": "INVALID_INPUT",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "raw output injection fail closed",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "error": "INVALID_INPUT",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "duplicate index fail closed",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "error": "INVALID_INPUT",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "forged expected AST fail closed",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "new frozen offline replay",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "old A immutable",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "new holdout precommit preserved",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "fresh source-only provider 0",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "real structural source H01",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "real structural source H02",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "real structural source H03",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "real structural source H04",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "real structural source H05",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "real structural source H06",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "hidden zero provider calls 0",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "hidden same frozen inputs 0",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "hidden exact replay 0",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "hidden request repeat 0",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "fresh source-only provider 1",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "real structural source H07",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "real structural source H08",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "real structural source H09",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "real structural source H10",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "real structural source H11",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "real structural source H12",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "hidden zero provider calls 1",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "hidden same frozen inputs 1",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "hidden exact replay 1",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "hidden request repeat 1",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "production-causal-qa/checks.json"
+    },
+    {
+      "name": "source tests",
+      "status": "PASS",
+      "evidence": "LOCAL_CHECKED",
+      "count": 464,
+      "artifact": "source-tests-final.log"
+    },
+    {
+      "name": "installed wheel tests",
+      "status": "PASS",
+      "evidence": "LOCAL_CHECKED",
+      "count": 464,
+      "artifact": "installed-tests-final.log"
+    },
+    {
+      "name": "new focused tests",
+      "status": "PASS",
+      "evidence": "LOCAL_CHECKED",
+      "count": 17,
+      "artifact": "unit-final.log"
+    },
+    {
+      "name": "legacy1024",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "artifact": "LEGACY_1024.json"
+    },
+    {
+      "name": "old12replays",
+      "status": "PASS",
+      "evidence": "REAL_SERVER_EXECUTED",
+      "count": 12,
+      "artifact": "production-old-replays/result.json"
+    },
+    {
+      "name": "SQLite, original bytes and journal hash-prefix preservation",
+      "status": "PASS",
+      "evidence": "LOCAL_CHECKED",
+      "artifact": "PRODUCTION_INTEGRITY.json"
+    },
+    {
+      "name": "native and old mathematical kernels unchanged",
+      "status": "PASS",
+      "evidence": "LOCAL_CHECKED",
+      "artifact": "KERNEL_PRESERVATION.json"
+    },
+    {
+      "name": "three-swap H05 constructive explanation",
+      "status": "PASS",
+      "evidence": "LOCAL_CHECKED",
+      "artifact": "H05_BOUND_DIAGNOSTIC.json"
+    },
+    {
+      "name": "independent human semantic licensing",
+      "status": "HUMAN_NOT_EVALUATED",
+      "evidence": "NOT_EXECUTED",
+      "reason": "No external linguistic experts; assistant-authored fixtures do not replace them"
+    },
+    {
+      "name": "general semantic benefit of White Star",
+      "status": "UNCONFIRMED",
+      "evidence": "CONJECTURE",
+      "reason": "No independent human adjudication or superiority on this bounded comparison"
+    },
+    {
+      "name": "17 actual structural kernels recomputed offline",
+      "status": "PASS",
+      "evidence": "LOCAL_CHECKED",
+      "artifact": "STRUCTURAL_REPLAY.json"
+    }
+  ],
+  "historical_failures_retained": [
+    "capture.log:expired Cloudflare tunnel",
+    "STAGE_FORMAL.log:wrong older83baseline, corrected to actual pre-formal schema",
+    "STAGE_CAUSAL.log:process-wide CPU mixed concurrent requests; fixed thread clock regression"
+  ],
+  "execution_permission": false
+}

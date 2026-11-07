@@ -1,7 +1,7 @@
 # Архитектура MCP-сервера LivingMath
 
-Срез архитектуры: **v0.4.10-developer-preview**, пакет Python `0.4.10.dev0`.
-Production объединяет **93 MCP-инструмент** в одном authenticated Streamable HTTP
+Срез архитектуры: **v0.4.11-developer-preview**, пакет Python `0.4.11.dev0`.
+Production объединяет **94 MCP-инструмента** в одном authenticated Streamable HTTP
 endpoint `/mcp`. [Справочник интерфейса](docs/MCP_INTERFACE.md),
 [установка](docs/INSTALL.md), [примеры запросов](docs/USAGE.md).
 
@@ -15,6 +15,10 @@ flowchart TD
     Transport --> Assurance[Assurance и Semantic Bridge]
     Transport --> Numeric[Численная White Star]
     Transport --> NL[Opt-in NLProposalBridge / source analysis]
+    Transport --> Causal[Frozen counterfactual decoder]
+    Causal --> Workspace
+    Causal --> Frozen[Frozen source-bound NL receipt]
+    Causal --> Finite[Independent finite relation checker]
     NL --> Formal[Existing Formal Bridge / typed FOL]
     NL --> Pipe
     NL --> Workspace
@@ -298,3 +302,26 @@ legacy lifecycle эксперимента отдельно проверяет sc
 
 Отдельный namespace и две новые операции сохраняют прежние ядра.
 [Модули, граф порождения, provider isolation и пределы](docs/nl-proposer002/ARCHITECTURE_RU.md).
+
+## Frozen counterfactual decoder (0.4.11)
+
+`formal_nl_redecode` → `nl_proposal/causal_mcp.py` (контракт и прежний inspector)
+→ `causal_service.py` (owned run, SHA, replay gate, idempotency, append-only CAS)
+→ `causal.py` (четыре arm и проверяемая primitive BFS) →
+`finite_relations.py` (независимое перечисление явно ограниченных моделей).
+
+Декодер не импортирует provider и не выполняет сетевые запросы. Перед вычислением
+существующий `provenance.traces` проверяет принадлежность реального вычисления
+проекту, source bytes и snapshot. SHA одного receipt, source packet, binders и
+base AST общие для всех arm. SHAM меняет только decoder source_order.
+
+CPU измеряется по текущему вычислительному потоку, с одинаковой зарезервированной
+долей для каждого arm; максимум 4000 ms на вычисление, 8 кандидатов на источник.
+При исчерпании границы возвращается UNKNOWN_BOUND. Inspector сохраняет прежнюю
+схему и экспортирует новые data-only result/bundle с байтовой пагинацией.
+Replay сравнивает содержательные SHA без замеров времени; расхождение границ
+отмечается REPLAY_BOUND_DIVERGENCE. Исторический matched_ablation остаётся
+воспроизводимым, но содержит двойную интервенцию и не используется как causal arm.
+
+Ни типы, ни происхождение, ни конечные контрмодели не дают semantic licensing
+или execution grant. [Полный контракт](docs/nl-causal003/QUICKSTART_RU.md).

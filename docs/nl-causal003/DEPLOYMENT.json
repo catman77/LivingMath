@@ -1,0 +1,19 @@
+{
+  "status": "ACCEPTED_PUBLIC_HTTPS_OAUTH_MCP",
+  "version": "v0.4.11-developer-preview",
+  "deployment_id": "nl003-20261107T201856Z",
+  "release_manifest_sha256": "4a321cf66012ab1fb5b5767eaa933ce181ee32851f805e4e41c2ad4080965eb1",
+  "url": "https://difficulty-nightlife-rca-missions.trycloudflare.com/mcp",
+  "HTTP_only_restarted": true,
+  "tunnel_pid_unchanged": true,
+  "tunnel_pid": 1474115,
+  "backup_integrity": "4/4 ok",
+  "staged_QA_projects_imported": [
+    "qa-nl003-holdout"
+  ],
+  "staged_provider_receipts_not_claimed_public_model_calls": true,
+  "semantic_acceptance": "HUMAN_NOT_EVALUATED",
+  "execution_permission": false,
+  "integrity": "PASS",
+  "actual_tools": 94
+}

@@ -28,3 +28,17 @@ by literal train labels, not by an invented identity of different source edition
 ## NLProposalBridge/1 (0.4.10)
 
 Опциональная LLM предлагает source-bound FOL, а общий decoder переставляет только поддержанный типизированный кванторный spine. Численные кадры часто UNDECODABLE_FRAME. Истинность смысла, авторское намерение, общее NL→FOL и преимущество White Star не следуют из typing/provenance/finite checks. Human adjudication NOT_EXECUTED; R3 PENDING. Модельный seed/temperature/revision не закреплены, token usage проверяется после вызова.
+
+## Frozen causal comparison (0.4.11)
+
+A typed scope permutation is a proposed search alternative, not a licensed reading.
+Uniform nonempty finite domains are explicit; SAME_ON_BOUND is not universal equivalence.
+Candidates outside a depth/candidate-limited primitive closure may still have short
+primitive derivations. The12 new sources and review rubric are assistant-authored;
+HUMAN_NOT_EVALUATED applies to every semantic result. No expert or physical claim
+is inferred. Historical matched_ablation changes both prompt and decoder and is
+retained solely for exact history/replay, not treated as a causal experiment.
+
+The recovered quick-tunnel address replaced a Cloudflare-deleted name. A stable
+custom-domain tunnel is not configured. The active URL is read from the operator's
+private mcp-url state and must match OAuth issuer/resource.

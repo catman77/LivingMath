@@ -1,0 +1,41 @@
+{
+  "schema": "lm-nl-causal-status/1",
+  "date": "2026-11-07",
+  "production_server_last_verified_version": "v0.4.10-developer-preview",
+  "production_deployment_id_last_verified": "nl002-20261107T060243Z",
+  "mcp_project": "nl_independent_eval_20261107",
+  "current_connector_status": "The tool failed internally",
+  "current_connector_root_cause": "UNDETERMINED",
+  "unread_completed_C_run_ref": "076ccc229e6c661dae47459449ffc28f5e499f90c68ffe03bb10cc77a7f2ef46",
+  "U21_to_U25_source_only_run_ref": "8f0c58adc0dc4c3a7279203cce6be439d75de6c47ca5a690c468cf47eb9f793c",
+  "U21_to_U25_white_star_B_run_ref": "b09e3b06b9251b1ac3297023fa098fc3305fe3c02e34839402d4bee3d13118f2",
+  "precommit_ambiguity_sha256": "1b176c55edd263461e9c4aad9c26bde82cf1bf4c596069279c6315960b315540",
+  "precommit_oracle_excluded_id": "U26",
+  "source_code_refs": {
+    "decoder.py": {
+      "github_path": "src/lm_suti_assurance/nl_proposal/decoder.py",
+      "blob_sha1": "6d75ee3575b75f122acb10dfabdba5e8f5cc79ad"
+    },
+    "service.py": {
+      "github_path": "src/lm_suti_assurance/nl_proposal/service.py",
+      "blob_sha1": "3434b9e777f7c1087649f11f947dc3db4d312e1a"
+    },
+    "provenance.py": {
+      "github_path": "src/lm_suti_assurance/nl_proposal/provenance.py",
+      "blob_sha1": "30c040e0f667bb7574d602d0ff7a31d747e143fc"
+    }
+  },
+  "local_experiment": {
+    "case_ids": ["U21","U22","U23","U24","U25"],
+    "deterministic_swap_candidate_ast_sha_exact_matches": 5,
+    "cases_checked": 5,
+    "finite_models_per_case": 530,
+    "different_truth_vectors_per_case": 176,
+    "llm_calls": 0,
+    "white_star_calls": 0,
+    "status": "PASS",
+    "scope": "LOCAL_PRECOMMITTED_AST_MATCH, NOT PRODUCTION_FROZEN_RECEIPT_REPLAY"
+  },
+  "production_change_performed": false,
+  "semantic_human_adjudication": "NOT_EXECUTED"
+}

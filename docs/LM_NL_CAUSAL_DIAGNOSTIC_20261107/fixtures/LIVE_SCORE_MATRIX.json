@@ -1,0 +1,824 @@
+{
+  "schema": "lm-nl-independent-scores/1",
+  "scope": "20 precommitted assistant-authored references; enumerate 530 binary models per candidate; synthetic finite bounded comparison only",
+  "source": "LIVE_MCP_INSPECT",
+  "project": "nl_independent_eval_20261107",
+  "summary": {
+    "A": {
+      "sources": 20,
+      "candidate_count": 21,
+      "covered": 20,
+      "finite_reference_matches": 20,
+      "finite_reference_nonmatches": 1,
+      "trace_link_checked": 0,
+      "models_per_candidate": 530,
+      "provider_calls": 4,
+      "input_tokens": 73627,
+      "output_tokens": 10252,
+      "total_tokens": 83879
+    },
+    "B": {
+      "sources": 20,
+      "candidate_count": 27,
+      "covered": 20,
+      "finite_reference_matches": 20,
+      "finite_reference_nonmatches": 7,
+      "trace_link_checked": 7,
+      "models_per_candidate": 530,
+      "provider_calls": 4,
+      "input_tokens": 82561,
+      "output_tokens": 10080,
+      "total_tokens": 92641
+    },
+    "C": {
+      "sources": 20,
+      "candidate_count": 27,
+      "covered": 20,
+      "finite_reference_matches": 20,
+      "finite_reference_nonmatches": 7,
+      "trace_link_checked": 0,
+      "models_per_candidate": 530,
+      "provider_calls": 4,
+      "input_tokens": 82535,
+      "output_tokens": 10069,
+      "total_tokens": 92604
+    }
+  },
+  "per_source": {
+    "A": [
+      {
+        "id": "T01",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "T02",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "T03",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "T04",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "T05",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "T06",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "T07",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "T08",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "E09",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "E10",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "E11",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "E12",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "E13",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "E14",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "E15",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "E16",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "E17",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "E18",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "E19",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "E20",
+        "count": 2,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          },
+          {
+            "mismatches": 140,
+            "kind": "EXTRA_SOURCE_BOUND_CHECKED",
+            "sha256": "1d13697f060194139d5e516fa5e25550beb6f5b04dd4272f7c5c673a5b10a5ac",
+            "direction": "STRENGTHENING"
+          }
+        ],
+        "covered": true
+      }
+    ],
+    "B": [
+      {
+        "id": "T01",
+        "count": 2,
+        "candidates": [
+          {
+            "mismatches": 26,
+            "kind": "TRACE_LINK_CHECKED",
+            "sha256": "fc662ddefee56594ca17c80f257ab1d8f498beda3c9e25c9977763ce58b93b1b",
+            "direction": "STRENGTHENING"
+          },
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "T02",
+        "count": 2,
+        "candidates": [
+          {
+            "mismatches": 176,
+            "kind": "TRACE_LINK_CHECKED",
+            "sha256": "b8e48c850417bc51ddff4d4719af126cf4cdf3c14f90ce369b93e130fa0fb062",
+            "direction": "WEAKENING"
+          },
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "T03",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "T04",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "T05",
+        "count": 2,
+        "candidates": [
+          {
+            "mismatches": 176,
+            "kind": "TRACE_LINK_CHECKED",
+            "sha256": "820a3907c21e78dfd1e086c3f3bda4307f5f649e4a378abc3ef5bb4d4fa2f996",
+            "direction": "WEAKENING"
+          },
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "T06",
+        "count": 2,
+        "candidates": [
+          {
+            "mismatches": 176,
+            "kind": "TRACE_LINK_CHECKED",
+            "sha256": "bb36dce3625106e67bc10098c8c10b915a2a1dd237a13fe0cf1d62b9a0104e69",
+            "direction": "STRENGTHENING"
+          },
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "T07",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "T08",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "E09",
+        "count": 2,
+        "candidates": [
+          {
+            "mismatches": 176,
+            "kind": "TRACE_LINK_CHECKED",
+            "sha256": "92aaae4fbc83fc100419c6911ad10abb1a06d267a607df825efe610bae263461",
+            "direction": "STRENGTHENING"
+          },
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "E10",
+        "count": 2,
+        "candidates": [
+          {
+            "mismatches": 176,
+            "kind": "TRACE_LINK_CHECKED",
+            "sha256": "a679d8c183832c4f56153bc4826632b883491ca2a64b971db9d7cc00cd695c0f",
+            "direction": "WEAKENING"
+          },
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "E11",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "E12",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "E13",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "E14",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "E15",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "E16",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "E17",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "E18",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "E19",
+        "count": 2,
+        "candidates": [
+          {
+            "mismatches": 176,
+            "kind": "TRACE_LINK_CHECKED",
+            "sha256": "601dce3b72dc6681af0a062af314364b4fd874e4cc88e752a9fa3df693754547",
+            "direction": "STRENGTHENING"
+          },
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "E20",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      }
+    ],
+    "C": [
+      {
+        "id": "T01",
+        "count": 2,
+        "candidates": [
+          {
+            "mismatches": 26,
+            "kind": "DECLARED_UNVERIFIED_CONTROL",
+            "sha256": "fc662ddefee56594ca17c80f257ab1d8f498beda3c9e25c9977763ce58b93b1b",
+            "direction": "STRENGTHENING"
+          },
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "T02",
+        "count": 2,
+        "candidates": [
+          {
+            "mismatches": 176,
+            "kind": "DECLARED_UNVERIFIED_CONTROL",
+            "sha256": "b8e48c850417bc51ddff4d4719af126cf4cdf3c14f90ce369b93e130fa0fb062",
+            "direction": "WEAKENING"
+          },
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "T03",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "T04",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "T05",
+        "count": 2,
+        "candidates": [
+          {
+            "mismatches": 176,
+            "kind": "DECLARED_UNVERIFIED_CONTROL",
+            "sha256": "820a3907c21e78dfd1e086c3f3bda4307f5f649e4a378abc3ef5bb4d4fa2f996",
+            "direction": "WEAKENING"
+          },
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "T06",
+        "count": 2,
+        "candidates": [
+          {
+            "mismatches": 176,
+            "kind": "DECLARED_UNVERIFIED_CONTROL",
+            "sha256": "bb36dce3625106e67bc10098c8c10b915a2a1dd237a13fe0cf1d62b9a0104e69",
+            "direction": "STRENGTHENING"
+          },
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "T07",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "T08",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "E09",
+        "count": 2,
+        "candidates": [
+          {
+            "mismatches": 176,
+            "kind": "DECLARED_UNVERIFIED_CONTROL",
+            "sha256": "92aaae4fbc83fc100419c6911ad10abb1a06d267a607df825efe610bae263461",
+            "direction": "STRENGTHENING"
+          },
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "E10",
+        "count": 2,
+        "candidates": [
+          {
+            "mismatches": 176,
+            "kind": "DECLARED_UNVERIFIED_CONTROL",
+            "sha256": "a679d8c183832c4f56153bc4826632b883491ca2a64b971db9d7cc00cd695c0f",
+            "direction": "WEAKENING"
+          },
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "E11",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "E12",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "E13",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "E14",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "E15",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "E16",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "E17",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "E18",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "E19",
+        "count": 2,
+        "candidates": [
+          {
+            "mismatches": 176,
+            "kind": "DECLARED_UNVERIFIED_CONTROL",
+            "sha256": "601dce3b72dc6681af0a062af314364b4fd874e4cc88e752a9fa3df693754547",
+            "direction": "STRENGTHENING"
+          },
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      },
+      {
+        "id": "E20",
+        "count": 1,
+        "candidates": [
+          {
+            "mismatches": 0,
+            "kind": "BASE_SOURCE_BOUND_CHECKED"
+          }
+        ],
+        "covered": true
+      }
+    ]
+  },
+  "replays": {
+    "12_total": 12,
+    "matched": 12,
+    "LLM_calls": 0,
+    "network_calls": 0
+  },
+  "adversarial": {
+    "cross_source_trace": "SOURCE_BINDING_MISMATCH"
+  },
+  "white_star_diff": {
+    "new_reference_coverage": 0,
+    "additional_trace_candidates": 7,
+    "additional_trace_candidates_matched_reference": 0,
+    "all_seven_trace_ast_sha_matched_placebo": true
+  },
+  "human_external_review": "NOT_EXECUTED",
+  "model_revision": "NOT_FIXED",
+  "provider_sampling_seed": "NOT_CONTROLLED",
+  "semantic_equivalence": "BOUNDED_FINITE_VECTOR_ONLY"
+}

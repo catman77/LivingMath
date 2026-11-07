@@ -1,0 +1,393 @@
+{
+  "blinding": "both allowed ASTs withheld from MCP candidate provider",
+  "corpus": [
+    {
+      "allowed_formulae": [
+        {
+          "body": {
+            "body": {
+              "args": [
+                {
+                  "var": "d"
+                },
+                {
+                  "var": "p"
+                }
+              ],
+              "pred": "Examined"
+            },
+            "quant": "exists",
+            "sort": "patient",
+            "var": "p"
+          },
+          "quant": "forall",
+          "sort": "doctor",
+          "var": "d"
+        },
+        {
+          "body": {
+            "body": {
+              "args": [
+                {
+                  "var": "d"
+                },
+                {
+                  "var": "p"
+                }
+              ],
+              "pred": "Examined"
+            },
+            "quant": "forall",
+            "sort": "doctor",
+            "var": "d"
+          },
+          "quant": "exists",
+          "sort": "patient",
+          "var": "p"
+        }
+      ],
+      "id": "U21",
+      "rights": "synthetic-original-private-evaluation",
+      "set": "ambiguity",
+      "sha256": "e0e0d9f86abe3aec673d62931d36c7f6c043094894f2bcd15e743f8239e45a00",
+      "signature": {
+        "predicates": {
+          "Examined": [
+            "doctor",
+            "patient"
+          ]
+        },
+        "sorts": [
+          "doctor",
+          "patient"
+        ]
+      },
+      "source_ambiguity": "POTENTIAL_SCOPE_AMBIGUITY_ASSISTANT_ANNOTATED",
+      "text": "Каждый врач осмотрел одного пациента."
+    },
+    {
+      "allowed_formulae": [
+        {
+          "body": {
+            "body": {
+              "args": [
+                {
+                  "var": "e"
+                },
+                {
+                  "var": "d"
+                }
+              ],
+              "pred": "Tested"
+            },
+            "quant": "exists",
+            "sort": "device",
+            "var": "d"
+          },
+          "quant": "forall",
+          "sort": "engineer",
+          "var": "e"
+        },
+        {
+          "body": {
+            "body": {
+              "args": [
+                {
+                  "var": "e"
+                },
+                {
+                  "var": "d"
+                }
+              ],
+              "pred": "Tested"
+            },
+            "quant": "forall",
+            "sort": "engineer",
+            "var": "e"
+          },
+          "quant": "exists",
+          "sort": "device",
+          "var": "d"
+        }
+      ],
+      "id": "U22",
+      "rights": "synthetic-original-private-evaluation",
+      "set": "ambiguity",
+      "sha256": "d1e5a43e122b686e991f8de18838557cafff8fa490c958a46ad086c225a8be7f",
+      "signature": {
+        "predicates": {
+          "Tested": [
+            "engineer",
+            "device"
+          ]
+        },
+        "sorts": [
+          "engineer",
+          "device"
+        ]
+      },
+      "source_ambiguity": "POTENTIAL_SCOPE_AMBIGUITY_ASSISTANT_ANNOTATED",
+      "text": "Каждый инженер проверил один прибор."
+    },
+    {
+      "allowed_formulae": [
+        {
+          "body": {
+            "body": {
+              "args": [
+                {
+                  "var": "n"
+                },
+                {
+                  "var": "p"
+                }
+              ],
+              "pred": "Visited"
+            },
+            "quant": "exists",
+            "sort": "patient",
+            "var": "p"
+          },
+          "quant": "forall",
+          "sort": "nurse",
+          "var": "n"
+        },
+        {
+          "body": {
+            "body": {
+              "args": [
+                {
+                  "var": "n"
+                },
+                {
+                  "var": "p"
+                }
+              ],
+              "pred": "Visited"
+            },
+            "quant": "forall",
+            "sort": "nurse",
+            "var": "n"
+          },
+          "quant": "exists",
+          "sort": "patient",
+          "var": "p"
+        }
+      ],
+      "id": "U23",
+      "rights": "synthetic-original-private-evaluation",
+      "set": "ambiguity",
+      "sha256": "ec259ce5add8b8d15dc9f8b8e347e8621ab913e0c3271a45a8988168a4c12197",
+      "signature": {
+        "predicates": {
+          "Visited": [
+            "nurse",
+            "patient"
+          ]
+        },
+        "sorts": [
+          "nurse",
+          "patient"
+        ]
+      },
+      "source_ambiguity": "POTENTIAL_SCOPE_AMBIGUITY_ASSISTANT_ANNOTATED",
+      "text": "Каждая медсестра навестила одного пациента."
+    },
+    {
+      "allowed_formulae": [
+        {
+          "body": {
+            "body": {
+              "args": [
+                {
+                  "var": "t"
+                },
+                {
+                  "var": "p"
+                }
+              ],
+              "pred": "Graded"
+            },
+            "quant": "exists",
+            "sort": "paper",
+            "var": "p"
+          },
+          "quant": "forall",
+          "sort": "teacher",
+          "var": "t"
+        },
+        {
+          "body": {
+            "body": {
+              "args": [
+                {
+                  "var": "t"
+                },
+                {
+                  "var": "p"
+                }
+              ],
+              "pred": "Graded"
+            },
+            "quant": "forall",
+            "sort": "teacher",
+            "var": "t"
+          },
+          "quant": "exists",
+          "sort": "paper",
+          "var": "p"
+        }
+      ],
+      "id": "U24",
+      "rights": "synthetic-original-private-evaluation",
+      "set": "ambiguity",
+      "sha256": "40a2a27d5a58628fdb64502dcf5f26be09e2e3e4da5ed1aa9e2f649e5ac3e466",
+      "signature": {
+        "predicates": {
+          "Graded": [
+            "teacher",
+            "paper"
+          ]
+        },
+        "sorts": [
+          "teacher",
+          "paper"
+        ]
+      },
+      "source_ambiguity": "POTENTIAL_SCOPE_AMBIGUITY_ASSISTANT_ANNOTATED",
+      "text": "Каждый преподаватель оценил одну работу."
+    },
+    {
+      "allowed_formulae": [
+        {
+          "body": {
+            "body": {
+              "args": [
+                {
+                  "var": "t"
+                },
+                {
+                  "var": "m"
+                }
+              ],
+              "pred": "Photographed"
+            },
+            "quant": "exists",
+            "sort": "monument",
+            "var": "m"
+          },
+          "quant": "forall",
+          "sort": "tourist",
+          "var": "t"
+        },
+        {
+          "body": {
+            "body": {
+              "args": [
+                {
+                  "var": "t"
+                },
+                {
+                  "var": "m"
+                }
+              ],
+              "pred": "Photographed"
+            },
+            "quant": "forall",
+            "sort": "tourist",
+            "var": "t"
+          },
+          "quant": "exists",
+          "sort": "monument",
+          "var": "m"
+        }
+      ],
+      "id": "U25",
+      "rights": "synthetic-original-private-evaluation",
+      "set": "ambiguity",
+      "sha256": "159eafbc09cb7fb70a4e959a5c2590b4882e156cb0021d03d4e538348eb5dc03",
+      "signature": {
+        "predicates": {
+          "Photographed": [
+            "tourist",
+            "monument"
+          ]
+        },
+        "sorts": [
+          "tourist",
+          "monument"
+        ]
+      },
+      "source_ambiguity": "POTENTIAL_SCOPE_AMBIGUITY_ASSISTANT_ANNOTATED",
+      "text": "Каждый турист сфотографировал один памятник."
+    },
+    {
+      "allowed_formulae": [
+        {
+          "body": {
+            "body": {
+              "args": [
+                {
+                  "var": "j"
+                },
+                {
+                  "var": "w"
+                }
+              ],
+              "pred": "Interviewed"
+            },
+            "quant": "exists",
+            "sort": "witness",
+            "var": "w"
+          },
+          "quant": "forall",
+          "sort": "journalist",
+          "var": "j"
+        },
+        {
+          "body": {
+            "body": {
+              "args": [
+                {
+                  "var": "j"
+                },
+                {
+                  "var": "w"
+                }
+              ],
+              "pred": "Interviewed"
+            },
+            "quant": "forall",
+            "sort": "journalist",
+            "var": "j"
+          },
+          "quant": "exists",
+          "sort": "witness",
+          "var": "w"
+        }
+      ],
+      "id": "U26",
+      "rights": "synthetic-original-private-evaluation",
+      "set": "ambiguity",
+      "sha256": "503167289a90b9c4923e80a7029d5fef51349dd66b54084e9ee199d6141235a6",
+      "signature": {
+        "predicates": {
+          "Interviewed": [
+            "journalist",
+            "witness"
+          ]
+        },
+        "sorts": [
+          "journalist",
+          "witness"
+        ]
+      },
+      "source_ambiguity": "POTENTIAL_SCOPE_AMBIGUITY_ASSISTANT_ANNOTATED",
+      "surface_reading_preference": "EXISTS_FORALL",
+      "text": "Один журналист опросил каждого свидетеля."
+    }
+  ],
+  "schema": "lm-nl-ambiguity-precommit/1",
+  "source": "assistant-authored scope alternatives, not independently reviewed by human experts",
+  "test": "cover each of two bounded model truth vectors; new valid variants beyond source_only"
+}

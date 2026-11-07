@@ -1,0 +1,138 @@
+{
+  "schema": "lm-frozen-ast-counterfactual/1",
+  "status": "PASS",
+  "run_mode": "LOCAL_DETERMINISTIC_NO_LLM_NO_WHITE_STAR",
+  "scope": "narrow base AST originally authored in precommit and hash-matched to actual prior source-only model output; not a frozen production provider receipt",
+  "number_of_cases": 5,
+  "swapped_candidates_matching_actual_B": 5,
+  "runtime_LLM_calls": 0,
+  "runtime_white_star_calls": 0,
+  "oracle_U26_status": "EXCLUDED_INVALID_PRECOMMITTED_ORACLE",
+  "rows": [
+    {
+      "id": "U21",
+      "source": "Каждый врач осмотрел одного пациента.",
+      "base_ast_sha256": "8b128cfd92dd0d7aa458253899f712183c2fe47cf0e6bd3214088728bbb0e0f8",
+      "white_star_B_wide_sha256": "bb36dce3625106e67bc10098c8c10b915a2a1dd237a13fe0cf1d62b9a0104e69",
+      "frozen_base_swap_sha256": "bb36dce3625106e67bc10098c8c10b915a2a1dd237a13fe0cf1d62b9a0104e69",
+      "matched_exactly": true,
+      "models_checked": 530,
+      "models_distinguishing": 176,
+      "countermodel": {
+        "domain_size_each": 2,
+        "relation_pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "narrow_truth": true,
+        "wide_truth": false
+      }
+    },
+    {
+      "id": "U22",
+      "source": "Каждый инженер проверил один прибор.",
+      "base_ast_sha256": "fdc8a8d68f73b9e390e7f756515c1957a80da7dd71172b2806f27553d987c3bd",
+      "white_star_B_wide_sha256": "44d6d9e87e1bb14ca0a3f2f7ec9d7e5f8a8edf7b972644252cf2fc51c1223f8c",
+      "frozen_base_swap_sha256": "44d6d9e87e1bb14ca0a3f2f7ec9d7e5f8a8edf7b972644252cf2fc51c1223f8c",
+      "matched_exactly": true,
+      "models_checked": 530,
+      "models_distinguishing": 176,
+      "countermodel": {
+        "domain_size_each": 2,
+        "relation_pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "narrow_truth": true,
+        "wide_truth": false
+      }
+    },
+    {
+      "id": "U23",
+      "source": "Каждая медсестра навестила одного пациента.",
+      "base_ast_sha256": "ffb2ed76d788f4083dabfb0223e84690281d0531c8b06d8009791de435b69671",
+      "white_star_B_wide_sha256": "e80a78675fdd65a6b5e342d103de96203be924401028e010058382a69bc1171d",
+      "frozen_base_swap_sha256": "e80a78675fdd65a6b5e342d103de96203be924401028e010058382a69bc1171d",
+      "matched_exactly": true,
+      "models_checked": 530,
+      "models_distinguishing": 176,
+      "countermodel": {
+        "domain_size_each": 2,
+        "relation_pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "narrow_truth": true,
+        "wide_truth": false
+      }
+    },
+    {
+      "id": "U24",
+      "source": "Каждый преподаватель оценил одну работу.",
+      "base_ast_sha256": "12595cf79df9fbdbe7441b69a6a0419b4cb6e746a9329c58215eab7c02278b0c",
+      "white_star_B_wide_sha256": "38e54508600dd78b2fde0f75e1381be72d1e80db660716a139008dcae3925500",
+      "frozen_base_swap_sha256": "38e54508600dd78b2fde0f75e1381be72d1e80db660716a139008dcae3925500",
+      "matched_exactly": true,
+      "models_checked": 530,
+      "models_distinguishing": 176,
+      "countermodel": {
+        "domain_size_each": 2,
+        "relation_pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "narrow_truth": true,
+        "wide_truth": false
+      }
+    },
+    {
+      "id": "U25",
+      "source": "Каждый турист сфотографировал один памятник.",
+      "base_ast_sha256": "0cdd9bf14b831aa23c5abef72efd057ab180a633c595735642adf8316e782008",
+      "white_star_B_wide_sha256": "0df525447b3705eb6d967b5604bf193eb133d79eb938ce03bbfbcfacce782438",
+      "frozen_base_swap_sha256": "0df525447b3705eb6d967b5604bf193eb133d79eb938ce03bbfbcfacce782438",
+      "matched_exactly": true,
+      "models_checked": 530,
+      "models_distinguishing": 176,
+      "countermodel": {
+        "domain_size_each": 2,
+        "relation_pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "narrow_truth": true,
+        "wide_truth": false
+      }
+    }
+  ]
+}

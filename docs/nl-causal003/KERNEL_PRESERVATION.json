@@ -1,0 +1,34 @@
+{
+  "white_star": {
+    "old_files": 99,
+    "all_bytes_unchanged": true
+  },
+  "symbolic": {
+    "old_files": 13,
+    "all_bytes_unchanged": true
+  },
+  "symbolic_complex": {
+    "old_files": 9,
+    "all_bytes_unchanged": true
+  },
+  "observer_synthesis": {
+    "old_files": 17,
+    "all_bytes_unchanged": true
+  },
+  "formal_bridge": {
+    "old_files": 11,
+    "all_bytes_unchanged": true
+  },
+  "semantic_bridge": {
+    "old_files": 27,
+    "all_bytes_unchanged": true
+  },
+  "_frozen": {
+    "old_files": 13,
+    "all_bytes_unchanged": true
+  },
+  "status": "PASS",
+  "formal_kernel_binding": "93f24c25fd7e4080c27eb770995e2c329bbf945c4221ba3ffb026f673e716fa0",
+  "old_NL_modules_unchanged": 8,
+  "AGENTS_sha256": "968331ddc809f60cdbe7499abf212ddbfe52fca1d91bda425688d7dca4a7559b"
+}

@@ -1,0 +1,418 @@
+{
+  "corpus": [
+    {
+      "family": "exactly_one",
+      "id": "T01",
+      "oracle_formulae": [
+        {
+          "body": {
+            "body": {
+              "and": [
+                {
+                  "args": [
+                    {
+                      "var": "r"
+                    },
+                    {
+                      "var": "h"
+                    }
+                  ],
+                  "pred": "Read"
+                },
+                {
+                  "body": {
+                    "or": [
+                      {
+                        "not": {
+                          "args": [
+                            {
+                              "var": "r"
+                            },
+                            {
+                              "var": "k"
+                            }
+                          ],
+                          "pred": "Read"
+                        }
+                      },
+                      {
+                        "eq": [
+                          {
+                            "var": "k"
+                          },
+                          {
+                            "var": "h"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "quant": "forall",
+                  "sort": "book",
+                  "var": "k"
+                }
+              ]
+            },
+            "quant": "exists",
+            "sort": "book",
+            "var": "h"
+          },
+          "quant": "forall",
+          "sort": "student",
+          "var": "r"
+        }
+      ],
+      "rights": "synthetic-original-private-evaluation",
+      "set": "batch1",
+      "sha256": "683083de2cdbd2021ded96d20b11ad1ea6519eaa1b43b1af1c77f8d24224ca24",
+      "signature": {
+        "predicates": {
+          "Read": [
+            "student",
+            "book"
+          ]
+        },
+        "sorts": [
+          "student",
+          "book"
+        ]
+      },
+      "source_ambiguity": false,
+      "text": "Каждый студент прочитал ровно одну книгу."
+    },
+    {
+      "family": "shared_scope",
+      "id": "T02",
+      "oracle_formulae": [
+        {
+          "body": {
+            "body": {
+              "args": [
+                {
+                  "var": "r"
+                },
+                {
+                  "var": "h"
+                }
+              ],
+              "pred": "Read"
+            },
+            "quant": "forall",
+            "sort": "student",
+            "var": "r"
+          },
+          "quant": "exists",
+          "sort": "book",
+          "var": "h"
+        }
+      ],
+      "rights": "synthetic-original-private-evaluation",
+      "set": "batch1",
+      "sha256": "dcdd626ee33edc2debb2f9ed491bf924d51aef008ad87ae614b6ce12f4c651b9",
+      "signature": {
+        "predicates": {
+          "Read": [
+            "student",
+            "book"
+          ]
+        },
+        "sorts": [
+          "student",
+          "book"
+        ]
+      },
+      "source_ambiguity": true,
+      "text": "Все студенты прочитали одну и ту же книгу."
+    },
+    {
+      "family": "negation_scope",
+      "id": "T03",
+      "oracle_formulae": [
+        {
+          "not": {
+            "body": {
+              "body": {
+                "args": [
+                  {
+                    "var": "r"
+                  },
+                  {
+                    "var": "h"
+                  }
+                ],
+                "pred": "Read"
+              },
+              "quant": "exists",
+              "sort": "book",
+              "var": "h"
+            },
+            "quant": "forall",
+            "sort": "student",
+            "var": "r"
+          }
+        }
+      ],
+      "rights": "synthetic-original-private-evaluation",
+      "set": "batch1",
+      "sha256": "48bf8695a26102d5478e726a20f3f5d22ad14e2bcf060cc8b2b0580de3af6bec",
+      "signature": {
+        "predicates": {
+          "Read": [
+            "student",
+            "book"
+          ]
+        },
+        "sorts": [
+          "student",
+          "book"
+        ]
+      },
+      "source_ambiguity": false,
+      "text": "Не каждый студент прочитал хотя бы одну книгу."
+    },
+    {
+      "family": "double_negation",
+      "id": "T04",
+      "oracle_formulae": [
+        {
+          "body": {
+            "body": {
+              "not": {
+                "args": [
+                  {
+                    "var": "r"
+                  },
+                  {
+                    "var": "h"
+                  }
+                ],
+                "pred": "Read"
+              }
+            },
+            "quant": "forall",
+            "sort": "book",
+            "var": "h"
+          },
+          "quant": "forall",
+          "sort": "student",
+          "var": "r"
+        }
+      ],
+      "rights": "synthetic-original-private-evaluation",
+      "set": "batch1",
+      "sha256": "8c8ab3355565196d4225af159e26821e53aa6f6008b54ac47c333a583906542d",
+      "signature": {
+        "predicates": {
+          "Read": [
+            "student",
+            "book"
+          ]
+        },
+        "sorts": [
+          "student",
+          "book"
+        ]
+      },
+      "source_ambiguity": false,
+      "text": "Ни один студент не прочитал ни одной книги."
+    },
+    {
+      "family": "exists_forall",
+      "id": "T05",
+      "oracle_formulae": [
+        {
+          "body": {
+            "body": {
+              "args": [
+                {
+                  "var": "r"
+                },
+                {
+                  "var": "h"
+                }
+              ],
+              "pred": "Examined"
+            },
+            "quant": "forall",
+            "sort": "patient",
+            "var": "h"
+          },
+          "quant": "exists",
+          "sort": "doctor",
+          "var": "r"
+        }
+      ],
+      "rights": "synthetic-original-private-evaluation",
+      "set": "batch1",
+      "sha256": "167171719ef8ad8af3640765dcfd6cd8726dca934cf0480072b249916e5a9216",
+      "signature": {
+        "predicates": {
+          "Examined": [
+            "doctor",
+            "patient"
+          ]
+        },
+        "sorts": [
+          "doctor",
+          "patient"
+        ]
+      },
+      "source_ambiguity": false,
+      "text": "Хотя бы один врач осмотрел каждого пациента."
+    },
+    {
+      "family": "forall_exists",
+      "id": "T06",
+      "oracle_formulae": [
+        {
+          "body": {
+            "body": {
+              "args": [
+                {
+                  "var": "r"
+                },
+                {
+                  "var": "h"
+                }
+              ],
+              "pred": "Examined"
+            },
+            "quant": "exists",
+            "sort": "patient",
+            "var": "h"
+          },
+          "quant": "forall",
+          "sort": "doctor",
+          "var": "r"
+        }
+      ],
+      "rights": "synthetic-original-private-evaluation",
+      "set": "batch1",
+      "sha256": "d3fa1079ac5363dafe4010cbb595ea771596b6f1846c8817edd85486f9923919",
+      "signature": {
+        "predicates": {
+          "Examined": [
+            "doctor",
+            "patient"
+          ]
+        },
+        "sorts": [
+          "doctor",
+          "patient"
+        ]
+      },
+      "source_ambiguity": false,
+      "text": "Каждый врач осмотрел хотя бы одного пациента."
+    },
+    {
+      "family": "negation_scope",
+      "id": "T07",
+      "oracle_formulae": [
+        {
+          "body": {
+            "not": {
+              "body": {
+                "args": [
+                  {
+                    "var": "r"
+                  },
+                  {
+                    "var": "h"
+                  }
+                ],
+                "pred": "Read"
+              },
+              "quant": "forall",
+              "sort": "book",
+              "var": "h"
+            }
+          },
+          "quant": "forall",
+          "sort": "student",
+          "var": "r"
+        }
+      ],
+      "rights": "synthetic-original-private-evaluation",
+      "set": "batch2",
+      "sha256": "584e2e7674f815d14a768940c782574befb864839bb7446d2f0cfb1b9675ec15",
+      "signature": {
+        "predicates": {
+          "Read": [
+            "student",
+            "book"
+          ]
+        },
+        "sorts": [
+          "student",
+          "book"
+        ]
+      },
+      "source_ambiguity": false,
+      "text": "Каждый студент прочитал не каждую книгу."
+    },
+    {
+      "family": "negation_scope",
+      "id": "T08",
+      "oracle_formulae": [
+        {
+          "not": {
+            "body": {
+              "body": {
+                "args": [
+                  {
+                    "var": "r"
+                  },
+                  {
+                    "var": "h"
+                  }
+                ],
+                "pred": "Read"
+              },
+              "quant": "forall",
+              "sort": "book",
+              "var": "h"
+            },
+            "quant": "exists",
+            "sort": "student",
+            "var": "r"
+          }
+        }
+      ],
+      "rights": "synthetic-original-private-evaluation",
+      "set": "batch2",
+      "sha256": "7d89dd124db15d74037554d4749722974d6e681b552c27be0934a1c0c46c2313",
+      "signature": {
+        "predicates": {
+          "Read": [
+            "student",
+            "book"
+          ]
+        },
+        "sorts": [
+          "student",
+          "book"
+        ]
+      },
+      "source_ambiguity": false,
+      "text": "Ни один студент не прочитал все книги."
+    }
+  ],
+  "method": "assistant-authored precommitted reference; NOT external human expert annotation",
+  "model_universe": {
+    "binary_relations": "enumerate all subsets of n x n",
+    "domain_sizes": [
+      1,
+      2,
+      3
+    ],
+    "scope": "bounded finite-model agreement, NOT universal logical equivalence"
+  },
+  "protocol": {
+    "A": "source_only",
+    "B": "white_star_structural",
+    "C": "matched_ablation",
+    "evaluation": "score exact semantic vectors; track proposals, abstentions, trace-backed, cost, reproducibility",
+    "status": "precommitted before any novel model calls"
+  },
+  "schema": "lm-nl-independent-eval/1"
+}

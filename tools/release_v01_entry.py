@@ -37,7 +37,7 @@ def serve(path):
         p = (layer/name).resolve(strict=True)
         if not p.is_relative_to(layer) or sha(p) != expected:
             raise ValueError('RELEASE_FILE_MISMATCH')
-    if cfg['release'] not in ('v0.1.0-developer-preview','v0.2.0-developer-preview','v0.3.0-developer-preview','v0.4.0-developer-preview','v0.4.1-developer-preview','v0.4.2-developer-preview','v0.4.3-developer-preview','v0.4.4-developer-preview','v0.4.5-developer-preview','v0.4.6-developer-preview','v0.4.7-developer-preview','v0.4.8-developer-preview','v0.4.9-developer-preview','v0.4.10-developer-preview'):
+    if cfg['release'] not in ('v0.1.0-developer-preview','v0.2.0-developer-preview','v0.3.0-developer-preview','v0.4.0-developer-preview','v0.4.1-developer-preview','v0.4.2-developer-preview','v0.4.3-developer-preview','v0.4.4-developer-preview','v0.4.5-developer-preview','v0.4.6-developer-preview','v0.4.7-developer-preview','v0.4.8-developer-preview','v0.4.9-developer-preview','v0.4.10-developer-preview','v0.4.11-developer-preview'):
         raise ValueError('RELEASE_VERSION_MISMATCH')
     expected = {'release':cfg['release'],'release_manifest_sha256':cfg['release_manifest_sha256'],
                 'deployment_id':cfg['deployment_id'],'action':'INSTALL_EXACT_OWNER_AUTHORIZED_PREVIEW'}
@@ -142,6 +142,8 @@ def serve(path):
         register_extensions(server, cfg['assurance_state'], symbolic_pool, recover=True, replay_profiles=extension_replay_profiles)
         from lm_suti_assurance.nl_proposal.mcp import register_tools as register_nl
         register_nl(server, cfg['assurance_state'], symbolic_pool, nl_provider, recover=True)
+        from lm_suti_assurance.nl_proposal.causal_mcp import register_tools as register_causal
+        register_causal(server, cfg['assurance_state'], symbolic_pool)
         server._mcp_server.version = active_release
         server._mcp_server.instructions += ' For finite assurance use assurance_contract; manual proposals, exact task review and offline export/replay are separate steps.'
         for name in ('bridge_system_status','service_health','research_contract'):
@@ -158,6 +160,7 @@ def serve(path):
                         value['symbolic_v1'] = capabilities(symbolic_pool, replay_profiles)
                         from lm_suti_assurance.nl_proposal.mcp import capabilities as nl_capabilities
                         value['nl_proposal_bridge'] = nl_capabilities(nl_provider)
+                        value['nl_causal_decoder'] = {'version': 'NLFrozenCounterfactual/1', 'status': 'READY_OPT_IN', 'tool': 'formal_nl_redecode', 'model_calls': 0, 'historical_matched_ablation': 'DOUBLE_INTERVENTION_NOT_CAUSAL', 'human_licensing': 'HUMAN_NOT_EVALUATED', 'execution_permission': False}
                         from lm_suti_assurance.symbolic_complex.mcp import capabilities as extension_capabilities
                         value.update(extension_capabilities(symbolic_pool, extension_replay_profiles))
                     value['legacy_protocol_version'] = value.get('version')

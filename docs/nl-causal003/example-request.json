@@ -1,0 +1,36 @@
+{
+  "project": "nl_independent_eval_20261107",
+  "request_key": "example-nl003-u21-v1",
+  "source_nl_run_ref": "8f0c58adc0dc4c3a7279203cce6be439d75de6c47ca5a690c468cf47eb9f793c",
+  "source_item_indices": [
+    0
+  ],
+  "structural_run_refs": [
+    {
+      "engine": "symbolic_v1",
+      "run_id": "4de080765e8e901a9a5e843a4c6c70d6968fc6bc00956cca0c0dc171b236734c"
+    }
+  ],
+  "arms": [
+    "NO_MOVE",
+    "REAL_TRACE",
+    "SHAM_ORDER",
+    "PRIMITIVE_CLOSURE"
+  ],
+  "policy": {
+    "max_candidates_per_source": 8,
+    "max_ast_nodes": 32,
+    "max_cpu_ms": 4000,
+    "sham_seed": 2211,
+    "max_primitive_depth": 2,
+    "model_class": {
+      "domain_sizes": [
+        1,
+        2,
+        3
+      ],
+      "max_models": 530,
+      "max_relation_cells": 9
+    }
+  }
+}

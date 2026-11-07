@@ -1,0 +1,20 @@
+{
+  "schema": "nl-causal003-precommit/1",
+  "utc": "2026-11-07T20:11:10.585869+00:00",
+  "files": {
+    "PUBLIC_SOURCES.json": "7ef25b599ec08cf6c295b3492dbcd0d57de306f4d0ea909b3fb89bfa498191c3",
+    "SEALED_ORACLE.json": "a5172682f52bb10684dd75f041bee236396a50874480de2caeaffd5b41494695"
+  },
+  "held_out_from_generator": true,
+  "independence_scope": "Fresh model sees source/signature only; author and evaluator are assistants, not independent linguists",
+  "model_calls_planned": 2,
+  "items_per_call": 6,
+  "model": "gpt-6.1-sol",
+  "frozen_redecode_model_calls": 0,
+  "human_licensing": "HUMAN_NOT_EVALUATED",
+  "source_count": 12,
+  "candidate_ceiling": 8,
+  "decoder_CPU_ms_total": 4000,
+  "primitive_depth": 2,
+  "semantic_benefit_gate": "NOT_EVALUATED_WITHOUT_INDEPENDENT_HUMANS"
+}

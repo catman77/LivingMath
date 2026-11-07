@@ -1,0 +1,1212 @@
+{
+  "name": "SUTI-Bridge-LivingMath",
+  "version": "v0.4.11-developer-preview",
+  "deployment_id": "nl003-20261107T201856Z",
+  "components": {
+    "legacy": "RC020/27 tools and original operator boundaries",
+    "SUTI_bridge": "source-bound004 schemas/references",
+    "alchemical_model": "ALCH006 public snapshot",
+    "DAV": "dav001.1 + reaction_network",
+    "automation": "research-automation/1 + artifact009/1"
+  },
+  "artifact_research": {
+    "version": "artifact-service009/1",
+    "profile": "typed008/1",
+    "target": "reaction_network",
+    "input_format": "livingmath-artifact/1",
+    "kinds": [
+      "GUARDED_TRANSFORMATION",
+      "TEXTUAL_PROGRESSION",
+      "SIGNED_RESPONSE",
+      "STATE_TRANSITION"
+    ],
+    "general_interpretation": {
+      "opt_in": "source.interpretation=\"general011\"",
+      "source_descriptor": "source-relations011/1",
+      "observer": "source-observer011/1",
+      "backend_status": "REAL_LLM_SOURCE_PROPOSER",
+      "model": "gpt-6.1-sol",
+      "last_call_status": "NOT_YET_CALLED",
+      "provider_binding": "302c270e49eece66fb2da495615bb35cfd616e754069d6fda017e23aeb2f3f93",
+      "max_model_calls_per_task": 8,
+      "model_call_wall_s": 120,
+      "source_truth_verification": false
+    },
+    "observer_semantics": {
+      "opt_in": "source.interpretation=\"observer012\"",
+      "source_descriptor": "source-relations012/1",
+      "source_graph": "source-graph012/1",
+      "observer": "source-observer012/1",
+      "meta_only": true,
+      "target_model_optional": true,
+      "source_verified": false,
+      "new_fundamental_operations": false
+    },
+    "raw_input": true,
+    "server_owned_compilation": true,
+    "source_registration": "research_autonomy_ingest",
+    "task_status": "research_autonomy_status",
+    "task_control": "research_autonomy_control",
+    "history_export": "research_autonomy_history(view=export)",
+    "readable_report": "research_autonomy_history(view=report)",
+    "limits": {
+      "raw_UTF8_bytes": 48000,
+      "source_views": 4,
+      "worker_CPU_seconds": 5,
+      "worker_wall_seconds": 6,
+      "worker_AS_MiB": 512,
+      "worker_input_bytes": 64000,
+      "worker_output_bytes": 256000,
+      "species": 8,
+      "reactions": 12,
+      "guards": 4,
+      "markings": 256,
+      "task_workers_max": 128,
+      "task_models_max": 64,
+      "task_retries_max": 3
+    },
+    "compiler_observer_hashes": {
+      "semantic_repair/observe009.py": "09c7aeb7cd3f68e359c1ea70a5a8b02bf0027f98944f4ce5425dbbd9ec5f5857",
+      "semantic_repair/observe008.py": "bb9398a87959bd4998d18b5ac16acd83ca447268b78a4c0e2c01ad9ff1c8e32b",
+      "semantic_repair/observe005.py": "86049c6f130ae19b754d325dbe85ca4879ba1f736cfb863d990984991b3756e7",
+      "semantic_repair/alignment.py": "ba56a42fcd8f09d00ccef5d5cb366adad59fa27041ab3b84f777817be8ea2b14",
+      "semantic_repair/compiler.py": "91e8744d431dd498ea7d94dfa45b0d4554469a728a6d080aa7bedca297ded683",
+      "semantic_repair/contract.py": "3d7dce37e675e7c612f8c2f12b111064b7127f9b9e394161281b70453e66b823",
+      "semantic_repair/realization.py": "590eecbdf53454ed9cebde2fb124112170e091f8dc388a0cd906e4d869172a22",
+      "semantic_repair/context009.py": "9338d01393afc59d6fa0007cc1cdadfead04d058015cfe838f497a21a76c05a7",
+      "semantic_repair/runtime009.py": "d51f1a0103a31c6ced385c29282d04a8957ff818e5404866554a668b92d522a6",
+      "semantic_repair/trace008.py": "360bf62325cd7b6ff9cf055f2534b8dda16f87d37ed3b469922195468682e49b",
+      "semantic_repair/check009.py": "df99f0715aa8b4b98378a8c7e4a6c391eed0eecf8f8e3df139437403b68b01b2",
+      "semantic_repair/worker.py": "c5ecbaaaf248456d16d741dc1d265dc68441137ce130ca1a198f0acb0394856d",
+      "semantic_repair/relations011.py": "73b648d7c22ed6c0e889170dc144082d91ec84d4b0cc1b661dbd7650d0687ec6",
+      "semantic_repair/prompts011.py": "8984d376eabbdaef567a71124045a1a59589b8ac1ed9298851d0c4ba33fc57e8",
+      "semantic_repair/inference011.py": "615d721b22bcffcb172a015117d87ea4d43f2d420f412d2c3947726f124d9b18",
+      "semantic_repair/observe011.py": "3c4e82bebbc750d5dea8cff503c538432cc8399b66e8847d0ffe118ef918a05f",
+      "semantic_repair/realization011.py": "79383e4e4602781a980bec819aa6be91105721f927d2a8a9ce7ea3dd00face7a",
+      "semantic_repair/check011.py": "fc3e308ece1e9bee7a147cc0c78f0330c69f84ad86ac963d7c4faf3cff2b25e7",
+      "semantic_repair/relations012.py": "dcc455d107641efe7cb03b17d290f7ecef5276db0eac4339a85cc22809885d0b",
+      "semantic_repair/prompts012.py": "8987bd63ff8b2d0b33d2f880eb47c844707e90d94a7e2010ec3f194b767b2401",
+      "semantic_repair/observe012.py": "13360d88d54e4c4f817fcbb64360271bc6e1e25c0b02fd4e4f6cd73841eaa3da",
+      "semantic_repair/realization012.py": "d5205ff98ceaee7684ffbe239197d6d34790a85b21ef5d4a3140ad1372a85827",
+      "semantic_repair/check012.py": "9a9865f97a5a65319eca077e3405b3a8bdb7b023c9b8fb21a24bda8a10a577d9"
+    },
+    "installed_profile_binding": "d1cace6b08d37958fc9d699bbb9d06836b9ef66f4b86097f173867cd2297ab2f",
+    "backend_binding": "c1857f2a38634303701870a2ffeec0c1f91bf4936da8e17ce2be45908126d5cd",
+    "reaction_SMT": "UNKNOWN_REACTION_SMT_NOT_IMPLEMENTED_USE_EXACT_FINITE",
+    "source_semantics": "CONDITIONAL_NOT_VERIFIED",
+    "physical_realization": "NOT_ESTABLISHED"
+  },
+  "SUTI_native_runtime": "NOT_EXECUTED",
+  "source_manifest": {
+    "alch006.json": "02414a3c38f0dfa6541176ac62b5fb4c26555cb02f65d0ced171588b238aa3f9",
+    "bridge.json": "6756bfeeb2b10ebffb77a0bd88cf48beb4ff0d41e2e7f24b17306b212798564c"
+  },
+  "tool_count": 94,
+  "proof_status": "unverified",
+  "execution_permission": {
+    "allowed": false
+  },
+  "automation_running": "automatic server lifespan; inspect research_autonomy_status(project)",
+  "start_checks": [
+    "bridge_catalog",
+    "bridge_inspect(source_id=\"ALCH006\")",
+    "bridge_validate_records(source_id=\"P1-001\")",
+    "bridge_run_alchemy(project=\"BRIDGE_QA_CHATGPT_ALCH\",request_key=\"alchemy-first\")"
+  ],
+  "symbolic_v1": {
+    "version": "symbolic_v1/1-patch002",
+    "historical_replay_bindings": [
+      "404d9d2612633ee1f673dfdfeaa22dc8365ec59efb3902e70470497c69093cc7",
+      "ea8df7eaa0f9e32e78cc86e7907606d7d9b7b5f857a8ca5fa73733062fd716fa"
+    ],
+    "engine": "symbolic_v1",
+    "status": "READY",
+    "kernel_binding": "7ce5c5ba0620b4dad1b3f1b62b2cba3338a1efb4a7852a6e1bf768fe5fd0a0c9",
+    "search_policy": "symbolic-local-pareto-frontier/2",
+    "fallback_scope": "Untried stored-node/operator pairs; one clock-sampled argument variant per pair, within original budgets. No global exhaustion claim.",
+    "limits": {
+      "request_bytes": 262144,
+      "source_bytes": 48000,
+      "max_word_tokens": 2048,
+      "max_nodes": 8192,
+      "max_steps": 4096,
+      "max_candidates_per_step": 16,
+      "max_observations": 8192,
+      "max_total_tokens": 131072,
+      "worker_cpu_s": 5,
+      "worker_wall_s": 6,
+      "worker_memory_bytes": 536870912,
+      "result_bytes": 33554432,
+      "concurrent_jobs": 2,
+      "queue": 16,
+      "page_default": 32,
+      "page_max": 128,
+      "max_rules": 15,
+      "max_features": 64
+    },
+    "request_schema": {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "const": "levinmas-white-star-symbolic-request/1"
+        },
+        "source": {
+          "type": "object",
+          "properties": {
+            "text": {
+              "type": "string",
+              "maxLength": 48000
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "title": {
+              "type": "string",
+              "maxLength": 48000
+            },
+            "author": {
+              "type": "string",
+              "maxLength": 48000
+            },
+            "edition": {
+              "type": "string",
+              "maxLength": 48000
+            },
+            "language": {
+              "type": "string",
+              "maxLength": 48000
+            },
+            "url": {
+              "type": "string",
+              "maxLength": 48000
+            },
+            "rights": {
+              "type": "string",
+              "maxLength": 48000
+            },
+            "alphabet": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1024
+              },
+              "maxItems": 256,
+              "minItems": 1
+            },
+            "segments": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "maxLength": 48000
+                  },
+                  "parent_id": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "kind": {
+                    "type": "string",
+                    "maxLength": 48000
+                  },
+                  "byte_start": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 48000
+                  },
+                  "byte_end": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 48000
+                  }
+                },
+                "required": [
+                  "id",
+                  "kind",
+                  "byte_start",
+                  "byte_end"
+                ],
+                "additionalProperties": false
+              },
+              "maxItems": 256,
+              "minItems": 0
+            },
+            "layout": {
+              "type": "object",
+              "maxProperties": 256
+            }
+          },
+          "required": [
+            "text",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "normalization": {
+          "enum": [
+            "none",
+            "NFC"
+          ]
+        },
+        "segmentation": {
+          "type": "object",
+          "properties": {
+            "unit": {
+              "enum": [
+                "codepoint",
+                "literal_token",
+                "whitespace",
+                "line"
+              ]
+            },
+            "record_boundaries": {
+              "enum": [
+                "lines",
+                "whole"
+              ]
+            },
+            "renaming_scope": {
+              "enum": [
+                "global",
+                "local"
+              ]
+            },
+            "tokens": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "token": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 1024
+                  },
+                  "byte_start": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 48000
+                  },
+                  "byte_end": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 48000
+                  }
+                },
+                "required": [
+                  "token",
+                  "byte_start",
+                  "byte_end"
+                ],
+                "additionalProperties": false
+              },
+              "maxItems": 2048,
+              "minItems": 0
+            }
+          },
+          "required": [
+            "unit",
+            "record_boundaries",
+            "renaming_scope"
+          ],
+          "additionalProperties": false
+        },
+        "algebra": {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "enum": [
+                "SP",
+                "FREE"
+              ]
+            },
+            "allow_reduce": {
+              "type": "boolean"
+            },
+            "preserve_history": {
+              "const": true
+            }
+          },
+          "required": [
+            "kind",
+            "allow_reduce",
+            "preserve_history"
+          ],
+          "additionalProperties": false
+        },
+        "observers": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "literal",
+              "alpha_pattern",
+              "adjacency",
+              "substring_contexts",
+              "composition",
+              "sp_reduce",
+              "hierarchy"
+            ]
+          },
+          "maxItems": 7,
+          "minItems": 1
+        },
+        "operators": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "CONCAT",
+              "SPLIT",
+              "RENAME",
+              "SUBSTITUTE",
+              "REVERSE",
+              "SP_INV",
+              "REDUCE_SP",
+              "INSERT_CANCEL_PAIR"
+            ]
+          },
+          "maxItems": 8,
+          "minItems": 1
+        },
+        "search": {
+          "type": "object",
+          "properties": {
+            "seed": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 4294967295
+            },
+            "max_steps": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 4096
+            },
+            "max_candidates_per_step": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 16
+            },
+            "max_word_tokens": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 2048
+            },
+            "max_nodes": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 8192
+            },
+            "max_observations": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 8192
+            },
+            "max_total_tokens": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 131072
+            },
+            "strategy": {
+              "enum": [
+                "local_structural_novelty",
+                "random_local"
+              ]
+            },
+            "history_identity": {
+              "enum": [
+                "word",
+                "provenance"
+              ]
+            }
+          },
+          "required": [
+            "seed",
+            "max_steps",
+            "max_candidates_per_step",
+            "max_word_tokens",
+            "max_nodes",
+            "strategy"
+          ],
+          "additionalProperties": false
+        },
+        "task": {
+          "type": "object",
+          "properties": {
+            "mode": {
+              "enum": [
+                "discover_relations",
+                "descriptive",
+                "predictive"
+              ]
+            },
+            "train": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "tokens": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 1024
+                    },
+                    "maxItems": 512,
+                    "minItems": 0
+                  },
+                  "accepted": {
+                    "type": "boolean"
+                  }
+                },
+                "required": [
+                  "tokens",
+                  "accepted"
+                ],
+                "additionalProperties": false
+              },
+              "maxItems": 256,
+              "minItems": 0
+            },
+            "predict": {
+              "type": "array",
+              "items": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 1024
+                },
+                "maxItems": 512,
+                "minItems": 0
+              },
+              "maxItems": 256,
+              "minItems": 0
+            },
+            "max_rules": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 15
+            }
+          },
+          "required": [
+            "mode"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "schema",
+        "source",
+        "segmentation",
+        "algebra",
+        "observers",
+        "operators",
+        "search",
+        "task"
+      ],
+      "additionalProperties": false
+    },
+    "response_schema": {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "const": "levinmas-white-star-symbolic-response/1"
+        },
+        "ok": {
+          "type": "boolean"
+        },
+        "status": {
+          "type": "string"
+        },
+        "execution_permission": {
+          "const": false
+        },
+        "data": {
+          "type": "object"
+        },
+        "error": {
+          "type": "object",
+          "properties": {
+            "code": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "field_path": {
+              "type": "string"
+            },
+            "run_id": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "code",
+            "message",
+            "field_path",
+            "run_id"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "schema",
+        "ok",
+        "status",
+        "execution_permission"
+      ],
+      "additionalProperties": false,
+      "oneOf": [
+        {
+          "required": [
+            "data"
+          ],
+          "properties": {
+            "ok": {
+              "const": true
+            }
+          }
+        },
+        {
+          "required": [
+            "error"
+          ],
+          "properties": {
+            "ok": {
+              "const": false
+            }
+          }
+        }
+      ]
+    },
+    "tools": [
+      "white_star_symbolic_explore",
+      "white_star_symbolic_inspect",
+      "white_star_symbolic_replay"
+    ],
+    "worker": {
+      "ready": true,
+      "workers": [
+        {
+          "clock": "supplied ReversibleUDAV",
+          "engine": "symbolic_v1",
+          "isolation": {
+            "Landlock_ABI": 9,
+            "credentials_denied": true,
+            "filesystem_writes_denied": true,
+            "network": "audit-denied inside job",
+            "physical_execution": false,
+            "read_allowlist": "installed immutable code and interpreter libraries only"
+          },
+          "numeric": {
+            "algorithm": "UNCHANGED_SUPPLIED_CODE",
+            "files": 75,
+            "native_sha256": "d808f08afa2375a4c84e958ac0c34df7d13e8b6c0a4a8e629e0d66cfb29929ee"
+          },
+          "ready": true
+        },
+        {
+          "clock": "supplied ReversibleUDAV",
+          "engine": "symbolic_v1",
+          "isolation": {
+            "Landlock_ABI": 9,
+            "credentials_denied": true,
+            "filesystem_writes_denied": true,
+            "network": "audit-denied inside job",
+            "physical_execution": false,
+            "read_allowlist": "installed immutable code and interpreter libraries only"
+          },
+          "numeric": {
+            "algorithm": "UNCHANGED_SUPPLIED_CODE",
+            "files": 75,
+            "native_sha256": "d808f08afa2375a4c84e958ac0c34df7d13e8b6c0a4a8e629e0d66cfb29929ee"
+          },
+          "ready": true
+        }
+      ],
+      "error": null
+    },
+    "execution_permission": false,
+    "boundary": "Full symbolic histories; exact finite identities and empirical train-only grammars. No semantic verification."
+  },
+  "nl_proposal_bridge": {
+    "version": "NLProposalBridge/1",
+    "status": "READY_OPT_IN",
+    "tools": [
+      "formal_nl_propose",
+      "formal_nl_inspect"
+    ],
+    "origin": "SOURCE_BOUND_CHECKED or TRACE_LINK_CHECKED; neither establishes meaning",
+    "semantic_alignment_status": "PROPOSED",
+    "legacy_formal_interpret_origin": "DECLARED_UNVERIFIED; provider.kind is an unchecked declaration",
+    "human_adjudication": "NOT_EXECUTED",
+    "execution_permission": false,
+    "limits": {
+      "active_jobs": 4,
+      "provider_concurrency": 1,
+      "max_batch": 6,
+      "max_frames_per_source": 4,
+      "max_candidates_per_source": 8,
+      "model_calls_per_job": 1,
+      "CPU_ms_decoder": 4000,
+      "tokens": "post-call checked usage; CLI has no hard generation token ceiling",
+      "sampling": "model revision, seed, temperature not controlled by CLI"
+    }
+  },
+  "nl_causal_decoder": {
+    "version": "NLFrozenCounterfactual/1",
+    "status": "READY_OPT_IN",
+    "tool": "formal_nl_redecode",
+    "model_calls": 0,
+    "historical_matched_ablation": "DOUBLE_INTERVENTION_NOT_CAUSAL",
+    "human_licensing": "HUMAN_NOT_EVALUATED",
+    "execution_permission": false
+  },
+  "formal_bridge_v1": {
+    "version": "formal-bridge/1",
+    "status": "READY",
+    "formats": [
+      "formal-grammar-ir/1",
+      "formal-dfa-ir/1",
+      "formal-candidate/1",
+      "formal-contrast/1"
+    ],
+    "candidate_classes": "bounded primitive sequence/alternative grammars and canonical finite transition tables; not all CFG",
+    "semantic_proposer": "EXPLICIT_HUMAN_OR_IMPORTED_PROPOSALS; no general NL decoder",
+    "limits": {
+      "max_tokens": 12,
+      "max_NT": 2,
+      "max_rules": 6,
+      "max_ast_nodes": 32,
+      "max_states": 4,
+      "worker_CPU_s": 5,
+      "worker_wall_s": 6,
+      "worker_RAM_MiB": 512,
+      "shared_active": 2,
+      "shared_queue": 16
+    },
+    "execution_permission": false
+  },
+  "historical_extension_replay_bindings": [
+    "2a84ffeb20db666e46fe6cb423bef39a19622f448c74cefe599ade5d7699d5d2",
+    "3b3925d9672d841ee5708aad492437c55a313c6b2df6abaa7dc26f85c90cceaa",
+    "5b5ec1450f1fdd4c03da4fa126252f2ed3b5ce046f1e54f568ff67ffa91d8cca",
+    "81fe95f44b6a193922679d877940f87dc2b42ded4a83b79f69c8a0dfc35416f8",
+    "d25d2636fea12a3bfec9a267a7332347c1347b16739f0ab957ef7026e0730f28",
+    "d83508d18d7ba5758d99729b7610441fc0627de135fce5919ef4eac3fdeab178"
+  ],
+  "symbolic_complex_v1": {
+    "version": "symbolic_complex_v1/1-patch003-acceptance1",
+    "status": "READY",
+    "kernel_binding": "93f24c25fd7e4080c27eb770995e2c329bbf945c4221ba3ffb026f673e716fa0",
+    "max_fixture_length": 10,
+    "proof_boundary": "Only explicitly defined finite SP 2-complex with independently checked local peak/strict-length proof; H1 alone proves no pi1 claim.",
+    "request_schema": {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "const": "livingmath-symbolic-complex-request/1"
+        },
+        "complex_source": {
+          "oneOf": [
+            {
+              "type": "object",
+              "properties": {
+                "kind": {
+                  "const": "sp_balanced_fixture"
+                },
+                "max_length": {
+                  "enum": [
+                    2,
+                    4,
+                    6,
+                    8,
+                    10
+                  ]
+                },
+                "rewrite_rules": {
+                  "const": [
+                    "SP_TO_EMPTY",
+                    "PS_TO_EMPTY"
+                  ]
+                },
+                "edge_identity": {
+                  "const": "source_position_rule"
+                }
+              },
+              "required": [
+                "kind",
+                "max_length",
+                "rewrite_rules",
+                "edge_identity"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "kind": {
+                  "const": "saved_symbolic_history"
+                },
+                "project": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+                },
+                "run_id": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                },
+                "only_verified_edges": {
+                  "const": true
+                }
+              },
+              "required": [
+                "kind",
+                "project",
+                "run_id",
+                "only_verified_edges"
+              ],
+              "additionalProperties": false
+            }
+          ]
+        },
+        "cells": {
+          "type": "object",
+          "properties": {
+            "policy": {
+              "enum": [
+                "all_local_peaks",
+                "none",
+                "bigons_only",
+                "diamonds_only"
+              ]
+            },
+            "join_depth_limit": {
+              "const": 1
+            }
+          },
+          "required": [
+            "policy",
+            "join_depth_limit"
+          ],
+          "additionalProperties": false
+        },
+        "analysis": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "graph_cycles",
+              "homology_F2",
+              "path_coherence",
+              "pi1_certificate"
+            ]
+          },
+          "maxItems": 4,
+          "minItems": 1
+        },
+        "budgets": {
+          "type": "object",
+          "properties": {
+            "max_vertices": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 8192
+            },
+            "max_edges": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 16384
+            },
+            "max_cells": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 5000
+            },
+            "max_cpu_ms": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 4000
+            }
+          },
+          "required": [
+            "max_vertices",
+            "max_edges",
+            "max_cells",
+            "max_cpu_ms"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "schema",
+        "complex_source",
+        "cells",
+        "analysis",
+        "budgets"
+      ],
+      "additionalProperties": false
+    },
+    "limits": {
+      "request_bytes": 262144,
+      "source_bytes": 48000,
+      "max_word_tokens": 2048,
+      "max_nodes": 8192,
+      "max_steps": 4096,
+      "max_candidates_per_step": 16,
+      "max_observations": 8192,
+      "max_total_tokens": 131072,
+      "worker_cpu_s": 5,
+      "worker_wall_s": 6,
+      "worker_memory_bytes": 536870912,
+      "result_bytes": 33554432,
+      "concurrent_jobs": 2,
+      "queue": 16,
+      "page_default": 32,
+      "page_max": 128,
+      "max_rules": 15,
+      "max_features": 64
+    },
+    "execution_permission": false
+  },
+  "observer_synthesis_v1": {
+    "version": "observer_synthesis_v1/5-role-branching",
+    "status": "READY",
+    "kernel_binding": "93f24c25fd7e4080c27eb770995e2c329bbf945c4221ba3ffb026f673e716fa0",
+    "role_branching": {
+      "mode": "role_branching_ast",
+      "role_max_tokens": 12,
+      "max_interval_cells": 91,
+      "max_split_trials": 512,
+      "proof": "full intervals + actual SPLIT/CONCAT branches; no NF invariance"
+    },
+    "composition_promotion": {
+      "default": "literal_context_only",
+      "max_tokens": 8,
+      "max_train_witnesses": 256,
+      "source_run": "same-project immutable symbolic AST, exact input/train/kernel binding"
+    },
+    "request_schema": {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "const": "livingmath-symbolic-observer-synthesis-request/1"
+        },
+        "source_run_id": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "promotion_policy": {
+          "type": "object",
+          "properties": {
+            "mode": {
+              "enum": [
+                "literal_context_only",
+                "compositional_ast",
+                "auto",
+                "role_branching_ast"
+              ]
+            },
+            "candidate_sources": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "derivation_trace",
+                  "source_run_id"
+                ]
+              },
+              "minItems": 1,
+              "maxItems": 2,
+              "uniqueItems": true
+            },
+            "role_max_tokens": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 12
+            },
+            "role_max_cells": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 91
+            },
+            "role_max_split_trials": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 512
+            },
+            "max_ast_nodes": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 32
+            },
+            "max_ast_depth": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 8
+            },
+            "max_recursion_steps": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 8
+            },
+            "max_tokens": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 8
+            },
+            "max_train_witnesses": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 256
+            },
+            "max_runtime_ms": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 4000
+            },
+            "require_independent_checker": {
+              "const": true
+            }
+          },
+          "required": [],
+          "additionalProperties": false
+        },
+        "task": {
+          "type": "object",
+          "properties": {
+            "mode": {
+              "const": "context_relation_induction"
+            },
+            "conflict_policy": {
+              "enum": [
+                "report_only",
+                "exclude_with_report",
+                "retain_as_empirical"
+              ]
+            },
+            "train_ref": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "predict_ref": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "holdout_labels_visible": {
+              "const": false
+            },
+            "structure_levels": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "word",
+                  "line",
+                  "quatrain",
+                  "century"
+                ]
+              },
+              "maxItems": 4,
+              "minItems": 0
+            },
+            "candidate_transformations": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "SWAP_LINES_2_3",
+                  "REVERSE",
+                  "RENAME"
+                ]
+              },
+              "maxItems": 3,
+              "minItems": 0
+            }
+          },
+          "required": [
+            "mode",
+            "train_ref",
+            "predict_ref",
+            "holdout_labels_visible",
+            "structure_levels",
+            "candidate_transformations"
+          ],
+          "additionalProperties": false
+        },
+        "feature_policy": {
+          "type": "object",
+          "properties": {
+            "enabled_builtins": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "literal",
+                  "alpha_pattern",
+                  "adjacency",
+                  "substring_contexts",
+                  "composition",
+                  "sp_reduce",
+                  "hierarchy"
+                ]
+              },
+              "maxItems": 7,
+              "minItems": 0
+            },
+            "feature_allowlist": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "maxLength": 1024
+              },
+              "maxItems": 128,
+              "minItems": 0
+            },
+            "feature_denylist": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "maxLength": 1024
+              },
+              "maxItems": 128,
+              "minItems": 0
+            },
+            "prohibit_undocumented_builtins": {
+              "const": true
+            },
+            "synthesis_origin_required": {
+              "const": true
+            },
+            "renaming_scope": {
+              "const": "per_variant"
+            },
+            "strict_source_boundaries": {
+              "const": true
+            },
+            "representation": {
+              "enum": [
+                "literal",
+                "global_alpha",
+                "local_alpha",
+                "punctuation",
+                "length"
+              ]
+            },
+            "derive_relations": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "enabled_builtins",
+            "prohibit_undocumented_builtins",
+            "synthesis_origin_required",
+            "renaming_scope",
+            "strict_source_boundaries"
+          ],
+          "additionalProperties": false
+        },
+        "search": {
+          "type": "object",
+          "properties": {
+            "seed": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 4294967295
+            },
+            "max_composition_depth": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 4
+            },
+            "max_proposals": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 128
+            },
+            "max_contexts": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 256
+            },
+            "max_witnesses": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 512
+            },
+            "max_cpu_ms": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 4000
+            }
+          },
+          "required": [
+            "seed",
+            "max_composition_depth",
+            "max_proposals",
+            "max_contexts",
+            "max_witnesses",
+            "max_cpu_ms"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "schema",
+        "task",
+        "feature_policy",
+        "search"
+      ],
+      "additionalProperties": false
+    },
+    "limits": {
+      "train_records": 2048,
+      "query_records": 1024,
+      "dataset_parts": 64,
+      "max_total_tokens": 131072,
+      "worker": {
+        "request_bytes": 262144,
+        "source_bytes": 48000,
+        "max_word_tokens": 2048,
+        "max_nodes": 8192,
+        "max_steps": 4096,
+        "max_candidates_per_step": 16,
+        "max_observations": 8192,
+        "max_total_tokens": 131072,
+        "worker_cpu_s": 5,
+        "worker_wall_s": 6,
+        "worker_memory_bytes": 536870912,
+        "result_bytes": 33554432,
+        "concurrent_jobs": 2,
+        "queue": 16,
+        "page_default": 32,
+        "page_max": 128,
+        "max_rules": 15,
+        "max_features": 64
+      }
+    },
+    "proof_boundary": "Train-only empirical candidates and builtin origin audit; sealed queries contain no labels; UNDERDETERMINED is not a theorem.",
+    "execution_permission": false
+  },
+  "pairwise_context_v1": {
+    "status": "READY",
+    "version": "pairwise_context_v1/1",
+    "statuses": [
+      "PREFERENCE",
+      "TIE",
+      "NOT_IDENTIFIABLE",
+      "UNDERDETERMINED"
+    ],
+    "semantic_truth_claimed": false
+  },
+  "legacy_protocol_version": "1.2.0rc3-observer012",
+  "assurance_release": {
+    "release": "v0.4.11-developer-preview",
+    "gate": "NL003_FROZEN_CAUSAL_TECHNICAL_PREVIEW_HUMAN_NOT_EVALUATED",
+    "release_manifest_sha256": "4a321cf66012ab1fb5b5767eaa933ce181ee32851f805e4e41c2ad4080965eb1",
+    "external_human_replays": 0,
+    "tool_count": 94,
+    "execution_permission": false
+  }
+}
