@@ -1,0 +1,179 @@
+{
+  "contrasts": [
+    {
+      "countermodel": {
+        "examined": 8,
+        "left": true,
+        "model": {
+          "domains": {
+            "hypothesis": [
+              "h0",
+              "h1"
+            ],
+            "researcher": [
+              "r0",
+              "r1"
+            ]
+          },
+          "relations": {
+            "Checked": [
+              [
+                "r0",
+                "h1"
+              ],
+              [
+                "r1",
+                "h0"
+              ]
+            ]
+          }
+        },
+        "proof_status": "FINITE_COUNTERMODEL",
+        "right": false
+      },
+      "pair": [
+        "I1_each_at_least_one",
+        "I2_one_common"
+      ]
+    },
+    {
+      "countermodel": {
+        "examined": 12,
+        "left": true,
+        "model": {
+          "domains": {
+            "hypothesis": [
+              "h0",
+              "h1"
+            ],
+            "researcher": [
+              "r0",
+              "r1"
+            ]
+          },
+          "relations": {
+            "Checked": [
+              [
+                "r0",
+                "h1"
+              ],
+              [
+                "r1",
+                "h0"
+              ],
+              [
+                "r1",
+                "h1"
+              ]
+            ]
+          }
+        },
+        "proof_status": "FINITE_COUNTERMODEL",
+        "right": false
+      },
+      "pair": [
+        "I1_each_at_least_one",
+        "I3_each_exactly_one"
+      ]
+    },
+    {
+      "countermodel": {
+        "examined": 8,
+        "left": false,
+        "model": {
+          "domains": {
+            "hypothesis": [
+              "h0",
+              "h1"
+            ],
+            "researcher": [
+              "r0",
+              "r1"
+            ]
+          },
+          "relations": {
+            "Checked": [
+              [
+                "r0",
+                "h1"
+              ],
+              [
+                "r1",
+                "h0"
+              ]
+            ]
+          }
+        },
+        "proof_status": "FINITE_COUNTERMODEL",
+        "right": true
+      },
+      "pair": [
+        "I2_one_common",
+        "I3_each_exactly_one"
+      ]
+    },
+    {
+      "active_query": {
+        "bounded_to": 6,
+        "left": false,
+        "right": true,
+        "status": "DISTINGUISHING_WORD",
+        "word": []
+      },
+      "pair": [
+        "anbn_nonempty",
+        "anbn_nullable"
+      ]
+    },
+    {
+      "active_query": {
+        "bounded_to": 6,
+        "left": false,
+        "right": true,
+        "status": "DISTINGUISHING_WORD",
+        "word": [
+          "a",
+          "b",
+          "a",
+          "b"
+        ]
+      },
+      "pair": [
+        "anbn_nullable",
+        "dyck1"
+      ]
+    },
+    {
+      "active_query": {
+        "bounded_to": 6,
+        "left": false,
+        "right": true,
+        "status": "DISTINGUISHING_WORD",
+        "word": [
+          "S",
+          "B"
+        ]
+      },
+      "pair": [
+        "dyck2",
+        "dyck2_untyped"
+      ]
+    },
+    {
+      "active_query": {
+        "bounded_to": 6,
+        "left": false,
+        "right": true,
+        "status": "DISTINGUISHING_WORD",
+        "word": []
+      },
+      "pair": [
+        "even_palindrome",
+        "even_palindrome_nullable"
+      ]
+    }
+  ],
+  "generated_by": "finite enumeration of explicit reference candidates",
+  "schema": "livingmath-active-contrast-oracle/1",
+  "warning": "Absence of a differentiating word up to N cannot prove CFG equivalence."
+}

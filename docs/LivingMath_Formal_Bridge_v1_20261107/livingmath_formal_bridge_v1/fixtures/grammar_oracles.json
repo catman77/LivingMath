@@ -1,0 +1,185 @@
+{
+  "grammars": {
+    "ambiguous_concat": {
+      "rules": {
+        "S": [
+          [
+            "n:S",
+            "n:S"
+          ],
+          [
+            "t:a"
+          ]
+        ]
+      },
+      "start": "S"
+    },
+    "anbn_nonempty": {
+      "rules": {
+        "S": [
+          [
+            "t:a",
+            "t:b"
+          ],
+          [
+            "t:a",
+            "n:S",
+            "t:b"
+          ]
+        ]
+      },
+      "start": "S"
+    },
+    "anbn_nullable": {
+      "rules": {
+        "S": [
+          [],
+          [
+            "t:a",
+            "n:S",
+            "t:b"
+          ]
+        ]
+      },
+      "start": "S"
+    },
+    "dyck1": {
+      "rules": {
+        "D": [
+          [],
+          [
+            "t:a",
+            "n:D",
+            "t:b",
+            "n:D"
+          ]
+        ]
+      },
+      "start": "D"
+    },
+    "dyck2": {
+      "rules": {
+        "D": [
+          [],
+          [
+            "t:S",
+            "n:D",
+            "t:P",
+            "n:D"
+          ],
+          [
+            "t:A",
+            "n:D",
+            "t:B",
+            "n:D"
+          ]
+        ]
+      },
+      "start": "D"
+    },
+    "dyck2_untyped": {
+      "rules": {
+        "D": [
+          [],
+          [
+            "t:S",
+            "n:D",
+            "t:P",
+            "n:D"
+          ],
+          [
+            "t:S",
+            "n:D",
+            "t:B",
+            "n:D"
+          ],
+          [
+            "t:A",
+            "n:D",
+            "t:P",
+            "n:D"
+          ],
+          [
+            "t:A",
+            "n:D",
+            "t:B",
+            "n:D"
+          ]
+        ]
+      },
+      "start": "D"
+    },
+    "even_palindrome": {
+      "rules": {
+        "P": [
+          [
+            "t:a",
+            "t:a"
+          ],
+          [
+            "t:b",
+            "t:b"
+          ],
+          [
+            "t:a",
+            "n:P",
+            "t:a"
+          ],
+          [
+            "t:b",
+            "n:P",
+            "t:b"
+          ]
+        ]
+      },
+      "start": "P"
+    },
+    "even_palindrome_nullable": {
+      "rules": {
+        "P": [
+          [],
+          [
+            "t:a",
+            "n:P",
+            "t:a"
+          ],
+          [
+            "t:b",
+            "n:P",
+            "t:b"
+          ]
+        ]
+      },
+      "start": "P"
+    },
+    "marked_reverse": {
+      "rules": {
+        "S": [
+          [
+            "t:a",
+            "t:#",
+            "t:a"
+          ],
+          [
+            "t:b",
+            "t:#",
+            "t:b"
+          ],
+          [
+            "t:a",
+            "n:S",
+            "t:a"
+          ],
+          [
+            "t:b",
+            "n:S",
+            "t:b"
+          ]
+        ]
+      },
+      "start": "S"
+    }
+  },
+  "schema": "livingmath-reference-grammar-fixture/1",
+  "warning": "REFERENCE ORACLES ONLY. DO NOT import these definitions into production synthesis."
+}

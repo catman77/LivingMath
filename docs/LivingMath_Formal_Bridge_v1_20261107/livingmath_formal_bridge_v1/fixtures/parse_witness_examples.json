@@ -1,0 +1,357 @@
+{
+  "examples": {
+    "ambiguous_concat": {
+      "trees": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "span": [
+                    0,
+                    1
+                  ],
+                  "terminal": "a"
+                }
+              ],
+              "nt": "S",
+              "rule": 1,
+              "span": [
+                0,
+                1
+              ]
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "span": [
+                        1,
+                        2
+                      ],
+                      "terminal": "a"
+                    }
+                  ],
+                  "nt": "S",
+                  "rule": 1,
+                  "span": [
+                    1,
+                    2
+                  ]
+                },
+                {
+                  "children": [
+                    {
+                      "span": [
+                        2,
+                        3
+                      ],
+                      "terminal": "a"
+                    }
+                  ],
+                  "nt": "S",
+                  "rule": 1,
+                  "span": [
+                    2,
+                    3
+                  ]
+                }
+              ],
+              "nt": "S",
+              "rule": 0,
+              "span": [
+                1,
+                3
+              ]
+            }
+          ],
+          "nt": "S",
+          "rule": 0,
+          "span": [
+            0,
+            3
+          ]
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "span": [
+                        0,
+                        1
+                      ],
+                      "terminal": "a"
+                    }
+                  ],
+                  "nt": "S",
+                  "rule": 1,
+                  "span": [
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "children": [
+                    {
+                      "span": [
+                        1,
+                        2
+                      ],
+                      "terminal": "a"
+                    }
+                  ],
+                  "nt": "S",
+                  "rule": 1,
+                  "span": [
+                    1,
+                    2
+                  ]
+                }
+              ],
+              "nt": "S",
+              "rule": 0,
+              "span": [
+                0,
+                2
+              ]
+            },
+            {
+              "children": [
+                {
+                  "span": [
+                    2,
+                    3
+                  ],
+                  "terminal": "a"
+                }
+              ],
+              "nt": "S",
+              "rule": 1,
+              "span": [
+                2,
+                3
+              ]
+            }
+          ],
+          "nt": "S",
+          "rule": 0,
+          "span": [
+            0,
+            3
+          ]
+        }
+      ],
+      "word": [
+        "a",
+        "a",
+        "a"
+      ]
+    },
+    "anbn_nonempty": {
+      "trees": [
+        {
+          "children": [
+            {
+              "span": [
+                0,
+                1
+              ],
+              "terminal": "a"
+            },
+            {
+              "children": [
+                {
+                  "span": [
+                    1,
+                    2
+                  ],
+                  "terminal": "a"
+                },
+                {
+                  "span": [
+                    2,
+                    3
+                  ],
+                  "terminal": "b"
+                }
+              ],
+              "nt": "S",
+              "rule": 0,
+              "span": [
+                1,
+                3
+              ]
+            },
+            {
+              "span": [
+                3,
+                4
+              ],
+              "terminal": "b"
+            }
+          ],
+          "nt": "S",
+          "rule": 1,
+          "span": [
+            0,
+            4
+          ]
+        }
+      ],
+      "word": [
+        "a",
+        "a",
+        "b",
+        "b"
+      ]
+    },
+    "dyck2": {
+      "trees": [
+        {
+          "children": [
+            {
+              "span": [
+                0,
+                1
+              ],
+              "terminal": "S"
+            },
+            {
+              "children": [
+                {
+                  "span": [
+                    1,
+                    2
+                  ],
+                  "terminal": "A"
+                },
+                {
+                  "children": [],
+                  "nt": "D",
+                  "rule": 0,
+                  "span": [
+                    2,
+                    2
+                  ]
+                },
+                {
+                  "span": [
+                    2,
+                    3
+                  ],
+                  "terminal": "B"
+                },
+                {
+                  "children": [],
+                  "nt": "D",
+                  "rule": 0,
+                  "span": [
+                    3,
+                    3
+                  ]
+                }
+              ],
+              "nt": "D",
+              "rule": 2,
+              "span": [
+                1,
+                3
+              ]
+            },
+            {
+              "span": [
+                3,
+                4
+              ],
+              "terminal": "P"
+            },
+            {
+              "children": [],
+              "nt": "D",
+              "rule": 0,
+              "span": [
+                4,
+                4
+              ]
+            }
+          ],
+          "nt": "D",
+          "rule": 1,
+          "span": [
+            0,
+            4
+          ]
+        }
+      ],
+      "word": [
+        "S",
+        "A",
+        "B",
+        "P"
+      ]
+    },
+    "even_palindrome": {
+      "trees": [
+        {
+          "children": [
+            {
+              "span": [
+                0,
+                1
+              ],
+              "terminal": "a"
+            },
+            {
+              "children": [
+                {
+                  "span": [
+                    1,
+                    2
+                  ],
+                  "terminal": "b"
+                },
+                {
+                  "span": [
+                    2,
+                    3
+                  ],
+                  "terminal": "b"
+                }
+              ],
+              "nt": "P",
+              "rule": 1,
+              "span": [
+                1,
+                3
+              ]
+            },
+            {
+              "span": [
+                3,
+                4
+              ],
+              "terminal": "a"
+            }
+          ],
+          "nt": "P",
+          "rule": 2,
+          "span": [
+            0,
+            4
+          ]
+        }
+      ],
+      "word": [
+        "a",
+        "b",
+        "b",
+        "a"
+      ]
+    }
+  },
+  "warning": "Witnesses independently checked by run_acceptance.py; these are reference trees, not discovered by live MCP."
+}

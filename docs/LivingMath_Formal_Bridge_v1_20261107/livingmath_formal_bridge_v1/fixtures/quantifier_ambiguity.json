@@ -1,0 +1,286 @@
+{
+  "candidate_generation_status": "NOT_EXECUTED_ON_LIVE_MCP",
+  "candidates": [
+    {
+      "annotation_origin": "HAND_AUTHORED_ORACLE",
+      "candidate_id": "I1_each_at_least_one",
+      "formalization_status": "PROPOSED_MANUAL_NOT_NL_DISCOVERED",
+      "formula_ast": {
+        "body": {
+          "body": {
+            "args": [
+              {
+                "var": "r"
+              },
+              {
+                "var": "h"
+              }
+            ],
+            "pred": "Checked"
+          },
+          "quant": "exists",
+          "sort": "hypothesis",
+          "var": "h"
+        },
+        "quant": "forall",
+        "sort": "researcher",
+        "var": "r"
+      },
+      "model_truth_status": "EVALUABLE_FINITE",
+      "source_token_links": [
+        {
+          "byte_utf8": [
+            0,
+            12
+          ],
+          "codepoint": [
+            0,
+            6
+          ],
+          "literal": "Каждый"
+        },
+        {
+          "byte_utf8": [
+            57,
+            65
+          ],
+          "codepoint": [
+            30,
+            34
+          ],
+          "literal": "одну"
+        }
+      ],
+      "type_status": "CHECKED_REFERENCE"
+    },
+    {
+      "annotation_origin": "HAND_AUTHORED_ORACLE",
+      "candidate_id": "I2_one_common",
+      "formalization_status": "PROPOSED_MANUAL_NOT_NL_DISCOVERED",
+      "formula_ast": {
+        "body": {
+          "body": {
+            "args": [
+              {
+                "var": "r"
+              },
+              {
+                "var": "h"
+              }
+            ],
+            "pred": "Checked"
+          },
+          "quant": "forall",
+          "sort": "researcher",
+          "var": "r"
+        },
+        "quant": "exists",
+        "sort": "hypothesis",
+        "var": "h"
+      },
+      "model_truth_status": "EVALUABLE_FINITE",
+      "source_token_links": [
+        {
+          "byte_utf8": [
+            0,
+            12
+          ],
+          "codepoint": [
+            0,
+            6
+          ],
+          "literal": "Каждый"
+        },
+        {
+          "byte_utf8": [
+            57,
+            65
+          ],
+          "codepoint": [
+            30,
+            34
+          ],
+          "literal": "одну"
+        }
+      ],
+      "type_status": "CHECKED_REFERENCE"
+    },
+    {
+      "annotation_origin": "HAND_AUTHORED_ORACLE",
+      "candidate_id": "I3_each_exactly_one",
+      "formalization_status": "PROPOSED_MANUAL_NOT_NL_DISCOVERED",
+      "formula_ast": {
+        "body": {
+          "body": {
+            "and": [
+              {
+                "args": [
+                  {
+                    "var": "r"
+                  },
+                  {
+                    "var": "h"
+                  }
+                ],
+                "pred": "Checked"
+              },
+              {
+                "body": {
+                  "or": [
+                    {
+                      "not": {
+                        "args": [
+                          {
+                            "var": "r"
+                          },
+                          {
+                            "var": "h2"
+                          }
+                        ],
+                        "pred": "Checked"
+                      }
+                    },
+                    {
+                      "eq": [
+                        {
+                          "var": "h2"
+                        },
+                        {
+                          "var": "h"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "quant": "forall",
+                "sort": "hypothesis",
+                "var": "h2"
+              }
+            ]
+          },
+          "quant": "exists",
+          "sort": "hypothesis",
+          "var": "h"
+        },
+        "quant": "forall",
+        "sort": "researcher",
+        "var": "r"
+      },
+      "model_truth_status": "EVALUABLE_FINITE",
+      "source_token_links": [
+        {
+          "byte_utf8": [
+            0,
+            12
+          ],
+          "codepoint": [
+            0,
+            6
+          ],
+          "literal": "Каждый"
+        },
+        {
+          "byte_utf8": [
+            57,
+            65
+          ],
+          "codepoint": [
+            30,
+            34
+          ],
+          "literal": "одну"
+        }
+      ],
+      "type_status": "CHECKED_REFERENCE"
+    }
+  ],
+  "finite_models": [
+    {
+      "model": {
+        "domains": {
+          "hypothesis": [
+            "h1",
+            "h2"
+          ],
+          "researcher": [
+            "r1",
+            "r2"
+          ]
+        },
+        "relations": {
+          "Checked": [
+            [
+              "r1",
+              "h1"
+            ],
+            [
+              "r2",
+              "h2"
+            ]
+          ]
+        }
+      },
+      "name": "different_hypotheses",
+      "truth_vector": {
+        "I1_each_at_least_one": true,
+        "I2_one_common": false,
+        "I3_each_exactly_one": true
+      }
+    },
+    {
+      "model": {
+        "domains": {
+          "hypothesis": [
+            "h1",
+            "h2"
+          ],
+          "researcher": [
+            "r1",
+            "r2"
+          ]
+        },
+        "relations": {
+          "Checked": [
+            [
+              "r1",
+              "h1"
+            ],
+            [
+              "r1",
+              "h2"
+            ],
+            [
+              "r2",
+              "h1"
+            ]
+          ]
+        }
+      },
+      "name": "common_but_one_researcher_checks_two",
+      "truth_vector": {
+        "I1_each_at_least_one": true,
+        "I2_one_common": true,
+        "I3_each_exactly_one": false
+      }
+    }
+  ],
+  "limit": "No claim that any candidate captures authors intended meaning",
+  "nonempty_sorts": [
+    "researcher",
+    "hypothesis"
+  ],
+  "open_world_real_facts_not_assumed": true,
+  "schema": "livingmath-nl-formal-fixture/1",
+  "signature": {
+    "Checked": [
+      "researcher",
+      "hypothesis"
+    ]
+  },
+  "source": {
+    "language": "ru",
+    "rights": "synthetic-original-controlled-example",
+    "sha256": "1bfb913518481ba0899018a463ab11fecb272ae1703d9139dc1f0ba27fc07389",
+    "text": "Каждый исследователь проверил одну гипотезу."
+  }
+}

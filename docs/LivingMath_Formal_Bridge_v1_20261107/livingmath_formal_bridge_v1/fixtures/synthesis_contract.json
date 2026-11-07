@@ -1,0 +1,52 @@
+{
+  "automaton_primitives": [
+    "STATE",
+    "TRANSITION",
+    "ACCEPTING_STATE"
+  ],
+  "candidate_bound_example": {
+    "max_ast_nodes": 32,
+    "max_cpu_ms_per_run": 4000,
+    "max_grammar_nt": 2,
+    "max_parser_tokens": 12,
+    "max_rhs_symbols": 5,
+    "max_rules": 6,
+    "stop": "UNKNOWN_BOUND"
+  },
+  "grammar_primitives": [
+    "EPS",
+    "TERM",
+    "NT_REF",
+    "SEQ",
+    "ALT"
+  ],
+  "held_out_forbidden": [
+    "query.accepted",
+    "query.class_name",
+    "oracle_grammar"
+  ],
+  "held_out_input": [
+    "query.tokens",
+    "query.source_sha256"
+  ],
+  "induction_allowed_input": [
+    "train.tokens",
+    "train.accepted",
+    "train.source_sha256"
+  ],
+  "output_requirements": [
+    "grammar_ast",
+    "parse_witness",
+    "source_spans",
+    "candidate_status",
+    "untried_bound",
+    "countermodels",
+    "replay_hash"
+  ],
+  "security": [
+    "no_execute_source_text",
+    "strict_sha256",
+    "no_secret_exfiltration"
+  ],
+  "status": "TO_IMPLEMENT_NOT_CURRENT_MCP_API"
+}

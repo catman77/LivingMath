@@ -19,7 +19,7 @@ def binding():
             "symbolic_binding": symbolic_binding(),
             "modules": {
                 str(p.relative_to(root.parent)): byte_digest(p.read_bytes())
-                for folder in (root, root.parent / "observer_synthesis")
+                for folder in (root, root.parent / "observer_synthesis", root.parent / "formal_bridge")
                 for p in sorted(folder.glob("*.py"))
             },
         }
@@ -126,6 +126,13 @@ def execute(engine, request, resolved):
 
 def dispatch(packet):
     action = packet["action"]
+    if action == "observer_verify" and "formal_packet" in packet:
+        from ..formal_bridge.engine import dispatch as formal_dispatch
+        from ..errors import AssuranceError
+        try:
+            return formal_dispatch(packet["formal_packet"])
+        except (ValueError,TypeError,KeyError) as exc:
+            raise AssuranceError("FORMAL_INVALID_INPUT",details={"message":str(exc)[:256]})
     if action == "extension_run":
         return execute(packet["engine"], packet["request"], packet.get("resolved", {}))
     if action == "complex_verify":

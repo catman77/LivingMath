@@ -1,0 +1,65 @@
+{
+  "passed": 225,
+  "failed": 0,
+  "suites": [
+    {
+      "suite": "anbn_nonempty",
+      "TP": 4,
+      "TN": 507,
+      "FP": 0,
+      "FN": 0
+    },
+    {
+      "suite": "anbn_nullable",
+      "TP": 5,
+      "TN": 506,
+      "FP": 0,
+      "FN": 0
+    },
+    {
+      "suite": "dyck1",
+      "TP": 23,
+      "TN": 488,
+      "FP": 0,
+      "FN": 0
+    },
+    {
+      "suite": "dyck2",
+      "TP": 51,
+      "TN": 5410,
+      "FP": 0,
+      "FN": 0
+    },
+    {
+      "suite": "dyck2_untyped",
+      "TP": 37,
+      "TN": 304,
+      "FP": 0,
+      "FN": 0
+    },
+    {
+      "suite": "even_palindrome",
+      "TP": 30,
+      "TN": 481,
+      "FP": 0,
+      "FN": 0
+    },
+    {
+      "suite": "even_palindrome_nullable",
+      "TP": 31,
+      "TN": 480,
+      "FP": 0,
+      "FN": 0
+    },
+    {
+      "suite": "marked_reverse",
+      "TP": 6,
+      "TN": 1087,
+      "FP": 0,
+      "FN": 0
+    }
+  ],
+  "MCP_modified": false,
+  "NL_to_FOL_discovery_implemented": false,
+  "proof_claim": "finite checked examples only"
+}

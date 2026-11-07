@@ -1,0 +1,1627 @@
+{
+  "checks": [
+    {
+      "detail": null,
+      "name": "witness_verified_anbn_nonempty_ab",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_anbn_nonempty_aabb",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_anbn_nonempty_aaabbb",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_anbn_nonempty_aaaabbbb",
+      "passed": true
+    },
+    {
+      "detail": {
+        "FN": 0,
+        "FP": 0,
+        "TN": 507,
+        "TP": 4,
+        "max_len": 8
+      },
+      "name": "oracle_match_anbn_nonempty",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_anbn_nullable_",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_anbn_nullable_ab",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_anbn_nullable_aabb",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_anbn_nullable_aaabbb",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_anbn_nullable_aaaabbbb",
+      "passed": true
+    },
+    {
+      "detail": {
+        "FN": 0,
+        "FP": 0,
+        "TN": 506,
+        "TP": 5,
+        "max_len": 8
+      },
+      "name": "oracle_match_anbn_nullable",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck1_",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck1_ab",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck1_aabb",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck1_abab",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck1_aaabbb",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck1_aababb",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck1_aabbab",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck1_abaabb",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck1_ababab",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck1_aaaabbbb",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck1_aaababbb",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck1_aaabbabb",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck1_aaabbbab",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck1_aabaabbb",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck1_aabababb",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck1_aababbab",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck1_aabbaabb",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck1_aabbabab",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck1_abaaabbb",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck1_abaababb",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck1_abaabbab",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck1_ababaabb",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck1_abababab",
+      "passed": true
+    },
+    {
+      "detail": {
+        "FN": 0,
+        "FP": 0,
+        "TN": 488,
+        "TP": 23,
+        "max_len": 8
+      },
+      "name": "oracle_match_dyck1",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_SP",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_AB",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_SSPP",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_SPSP",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_SPAB",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_SABP",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_ASPB",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_AABB",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_ABSP",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_ABAB",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_SSSPPP",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_SSPSPP",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_SSPPSP",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_SSPPAB",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_SSPABP",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_SSABPP",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_SPSSPP",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_SPSPSP",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_SPSPAB",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_SPSABP",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_SPASPB",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_SPAABB",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_SPABSP",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_SPABAB",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_SASPBP",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_SAABBP",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_SABSPP",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_SABPSP",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_SABPAB",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_SABABP",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_ASSPPB",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_ASPSPB",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_ASPABB",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_ASPBSP",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_ASPBAB",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_ASABPB",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_AASPBB",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_AAABBB",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_AABSPB",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_AABABB",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_AABBSP",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_AABBAB",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_ABSSPP",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_ABSPSP",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_ABSPAB",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_ABSABP",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_ABASPB",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_ABAABB",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_ABABSP",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_ABABAB",
+      "passed": true
+    },
+    {
+      "detail": {
+        "FN": 0,
+        "FP": 0,
+        "TN": 5410,
+        "TP": 51,
+        "max_len": 6
+      },
+      "name": "oracle_match_dyck2",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_untyped_",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_untyped_SP",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_untyped_SB",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_untyped_AP",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_untyped_AB",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_untyped_SSPP",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_untyped_SSPB",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_untyped_SSBP",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_untyped_SSBB",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_untyped_SPSP",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_untyped_SPSB",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_untyped_SPAP",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_untyped_SPAB",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_untyped_SAPP",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_untyped_SAPB",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_untyped_SABP",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_untyped_SABB",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_untyped_SBSP",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_untyped_SBSB",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_untyped_SBAP",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_untyped_SBAB",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_untyped_ASPP",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_untyped_ASPB",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_untyped_ASBP",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_untyped_ASBB",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_untyped_APSP",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_untyped_APSB",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_untyped_APAP",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_untyped_APAB",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_untyped_AAPP",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_untyped_AAPB",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_untyped_AABP",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_untyped_AABB",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_untyped_ABSP",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_untyped_ABSB",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_untyped_ABAP",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_dyck2_untyped_ABAB",
+      "passed": true
+    },
+    {
+      "detail": {
+        "FN": 0,
+        "FP": 0,
+        "TN": 304,
+        "TP": 37,
+        "max_len": 4
+      },
+      "name": "oracle_match_dyck2_untyped",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_aa",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_bb",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_aaaa",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_abba",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_baab",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_bbbb",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_aaaaaa",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_aabbaa",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_abaaba",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_abbbba",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_baaaab",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_babbab",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_bbaabb",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_bbbbbb",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_aaaaaaaa",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_aaabbaaa",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_aabaabaa",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_aabbbbaa",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_abaaaaba",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_ababbaba",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_abbaabba",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_abbbbbba",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_baaaaaab",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_baabbaab",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_babaabab",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_babbbbab",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_bbaaaabb",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_bbabbabb",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_bbbaabbb",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_bbbbbbbb",
+      "passed": true
+    },
+    {
+      "detail": {
+        "FN": 0,
+        "FP": 0,
+        "TN": 481,
+        "TP": 30,
+        "max_len": 8
+      },
+      "name": "oracle_match_even_palindrome",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_nullable_",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_nullable_aa",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_nullable_bb",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_nullable_aaaa",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_nullable_abba",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_nullable_baab",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_nullable_bbbb",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_nullable_aaaaaa",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_nullable_aabbaa",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_nullable_abaaba",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_nullable_abbbba",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_nullable_baaaab",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_nullable_babbab",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_nullable_bbaabb",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_nullable_bbbbbb",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_nullable_aaaaaaaa",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_nullable_aaabbaaa",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_nullable_aabaabaa",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_nullable_aabbbbaa",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_nullable_abaaaaba",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_nullable_ababbaba",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_nullable_abbaabba",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_nullable_abbbbbba",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_nullable_baaaaaab",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_nullable_baabbaab",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_nullable_babaabab",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_nullable_babbbbab",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_nullable_bbaaaabb",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_nullable_bbabbabb",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_nullable_bbbaabbb",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_even_palindrome_nullable_bbbbbbbb",
+      "passed": true
+    },
+    {
+      "detail": {
+        "FN": 0,
+        "FP": 0,
+        "TN": 480,
+        "TP": 31,
+        "max_len": 8
+      },
+      "name": "oracle_match_even_palindrome_nullable",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_marked_reverse_a#a",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_marked_reverse_b#b",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_marked_reverse_aa#aa",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_marked_reverse_ab#ba",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_marked_reverse_ba#ab",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "witness_verified_marked_reverse_bb#bb",
+      "passed": true
+    },
+    {
+      "detail": {
+        "FN": 0,
+        "FP": 0,
+        "TN": 1087,
+        "TP": 6,
+        "max_len": 6
+      },
+      "name": "oracle_match_marked_reverse",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "epsilon_separation",
+      "passed": true
+    },
+    {
+      "detail": {
+        "count": 5461,
+        "domain_max_len": 6,
+        "tokens": 4
+      },
+      "name": "simultaneous_role_terminal_rename",
+      "passed": true
+    },
+    {
+      "detail": {
+        "example": "aaa",
+        "n_derivations": 2
+      },
+      "name": "ambiguity_keeps_distinct_proofs",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "forged_rule_rejected",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "forged_span_rejected",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "forged_terminal_rejected",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "source_bound_proof_verified",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "source_sha_forgery_rejected",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "source_span_forgery_rejected",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "grammar_sha_forgery_rejected",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "terminal_role_forgery_rejected",
+      "passed": true
+    },
+    {
+      "detail": {
+        "exhaustive_total": 1023
+      },
+      "name": "DFA_parity_up_to_9",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "DFA_fake_trace_rejected",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "FOL_well_typed_I1_each_at_least_one",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "FOL_well_typed_I2_one_common",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "FOL_well_typed_I3_each_exactly_one",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "FOL_swapped_sorts_rejected",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "FOL_free_vars_rejected",
+      "passed": true
+    },
+    {
+      "detail": {
+        "I1_each_at_least_one": true,
+        "I2_one_common": false,
+        "I3_each_exactly_one": true
+      },
+      "name": "interpretations_different_hypotheses",
+      "passed": true
+    },
+    {
+      "detail": {
+        "I1_each_at_least_one": true,
+        "I2_one_common": true,
+        "I3_each_exactly_one": false
+      },
+      "name": "interpretations_exactly_one",
+      "passed": true
+    },
+    {
+      "detail": {
+        "examined": 8,
+        "left": true,
+        "model": {
+          "domains": {
+            "hypothesis": [
+              "h0",
+              "h1"
+            ],
+            "researcher": [
+              "r0",
+              "r1"
+            ]
+          },
+          "relations": {
+            "Checked": [
+              [
+                "r0",
+                "h1"
+              ],
+              [
+                "r1",
+                "h0"
+              ]
+            ]
+          }
+        },
+        "proof_status": "FINITE_COUNTERMODEL",
+        "right": false
+      },
+      "name": "countermodel_I1_each_at_least_one_I2_one_common",
+      "passed": true
+    },
+    {
+      "detail": {
+        "examined": 12,
+        "left": true,
+        "model": {
+          "domains": {
+            "hypothesis": [
+              "h0",
+              "h1"
+            ],
+            "researcher": [
+              "r0",
+              "r1"
+            ]
+          },
+          "relations": {
+            "Checked": [
+              [
+                "r0",
+                "h1"
+              ],
+              [
+                "r1",
+                "h0"
+              ],
+              [
+                "r1",
+                "h1"
+              ]
+            ]
+          }
+        },
+        "proof_status": "FINITE_COUNTERMODEL",
+        "right": false
+      },
+      "name": "countermodel_I1_each_at_least_one_I3_each_exactly_one",
+      "passed": true
+    },
+    {
+      "detail": {
+        "examined": 8,
+        "left": false,
+        "model": {
+          "domains": {
+            "hypothesis": [
+              "h0",
+              "h1"
+            ],
+            "researcher": [
+              "r0",
+              "r1"
+            ]
+          },
+          "relations": {
+            "Checked": [
+              [
+                "r0",
+                "h1"
+              ],
+              [
+                "r1",
+                "h0"
+              ]
+            ]
+          }
+        },
+        "proof_status": "FINITE_COUNTERMODEL",
+        "right": true
+      },
+      "name": "countermodel_I2_one_common_I3_each_exactly_one",
+      "passed": true
+    },
+    {
+      "detail": {
+        "bounded_to": 6,
+        "left": false,
+        "right": true,
+        "status": "DISTINGUISHING_WORD",
+        "word": []
+      },
+      "name": "active_query_anbn_nonempty_anbn_nullable",
+      "passed": true
+    },
+    {
+      "detail": {
+        "bounded_to": 6,
+        "left": false,
+        "right": true,
+        "status": "DISTINGUISHING_WORD",
+        "word": [
+          "a",
+          "b",
+          "a",
+          "b"
+        ]
+      },
+      "name": "active_query_anbn_nullable_dyck1",
+      "passed": true
+    },
+    {
+      "detail": {
+        "bounded_to": 6,
+        "left": false,
+        "right": true,
+        "status": "DISTINGUISHING_WORD",
+        "word": [
+          "S",
+          "B"
+        ]
+      },
+      "name": "active_query_dyck2_dyck2_untyped",
+      "passed": true
+    },
+    {
+      "detail": {
+        "bounded_to": 6,
+        "left": false,
+        "right": true,
+        "status": "DISTINGUISHING_WORD",
+        "word": []
+      },
+      "name": "active_query_even_palindrome_even_palindrome_nullable",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "correct_source_sha",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "correct_source_span",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "forged_source_span_rejected",
+      "passed": true
+    }
+  ],
+  "distinguishers": [
+    {
+      "countermodel": {
+        "examined": 8,
+        "left": true,
+        "model": {
+          "domains": {
+            "hypothesis": [
+              "h0",
+              "h1"
+            ],
+            "researcher": [
+              "r0",
+              "r1"
+            ]
+          },
+          "relations": {
+            "Checked": [
+              [
+                "r0",
+                "h1"
+              ],
+              [
+                "r1",
+                "h0"
+              ]
+            ]
+          }
+        },
+        "proof_status": "FINITE_COUNTERMODEL",
+        "right": false
+      },
+      "pair": [
+        "I1_each_at_least_one",
+        "I2_one_common"
+      ]
+    },
+    {
+      "countermodel": {
+        "examined": 12,
+        "left": true,
+        "model": {
+          "domains": {
+            "hypothesis": [
+              "h0",
+              "h1"
+            ],
+            "researcher": [
+              "r0",
+              "r1"
+            ]
+          },
+          "relations": {
+            "Checked": [
+              [
+                "r0",
+                "h1"
+              ],
+              [
+                "r1",
+                "h0"
+              ],
+              [
+                "r1",
+                "h1"
+              ]
+            ]
+          }
+        },
+        "proof_status": "FINITE_COUNTERMODEL",
+        "right": false
+      },
+      "pair": [
+        "I1_each_at_least_one",
+        "I3_each_exactly_one"
+      ]
+    },
+    {
+      "countermodel": {
+        "examined": 8,
+        "left": false,
+        "model": {
+          "domains": {
+            "hypothesis": [
+              "h0",
+              "h1"
+            ],
+            "researcher": [
+              "r0",
+              "r1"
+            ]
+          },
+          "relations": {
+            "Checked": [
+              [
+                "r0",
+                "h1"
+              ],
+              [
+                "r1",
+                "h0"
+              ]
+            ]
+          }
+        },
+        "proof_status": "FINITE_COUNTERMODEL",
+        "right": true
+      },
+      "pair": [
+        "I2_one_common",
+        "I3_each_exactly_one"
+      ]
+    },
+    {
+      "active_query": {
+        "bounded_to": 6,
+        "left": false,
+        "right": true,
+        "status": "DISTINGUISHING_WORD",
+        "word": []
+      },
+      "pair": [
+        "anbn_nonempty",
+        "anbn_nullable"
+      ]
+    },
+    {
+      "active_query": {
+        "bounded_to": 6,
+        "left": false,
+        "right": true,
+        "status": "DISTINGUISHING_WORD",
+        "word": [
+          "a",
+          "b",
+          "a",
+          "b"
+        ]
+      },
+      "pair": [
+        "anbn_nullable",
+        "dyck1"
+      ]
+    },
+    {
+      "active_query": {
+        "bounded_to": 6,
+        "left": false,
+        "right": true,
+        "status": "DISTINGUISHING_WORD",
+        "word": [
+          "S",
+          "B"
+        ]
+      },
+      "pair": [
+        "dyck2",
+        "dyck2_untyped"
+      ]
+    },
+    {
+      "active_query": {
+        "bounded_to": 6,
+        "left": false,
+        "right": true,
+        "status": "DISTINGUISHING_WORD",
+        "word": []
+      },
+      "pair": [
+        "even_palindrome",
+        "even_palindrome_nullable"
+      ]
+    }
+  ],
+  "kind": "REFERENCE_TESTS_ONLY_NOT_MCP_DISCOVERY",
+  "models": [
+    {
+      "model": {
+        "domains": {
+          "hypothesis": [
+            "h1",
+            "h2"
+          ],
+          "researcher": [
+            "r1",
+            "r2"
+          ]
+        },
+        "relations": {
+          "Checked": [
+            [
+              "r1",
+              "h1"
+            ],
+            [
+              "r2",
+              "h2"
+            ]
+          ]
+        }
+      },
+      "name": "different_hypotheses",
+      "truth": {
+        "I1_each_at_least_one": true,
+        "I2_one_common": false,
+        "I3_each_exactly_one": true
+      }
+    },
+    {
+      "model": {
+        "domains": {
+          "hypothesis": [
+            "h1",
+            "h2"
+          ],
+          "researcher": [
+            "r1",
+            "r2"
+          ]
+        },
+        "relations": {
+          "Checked": [
+            [
+              "r1",
+              "h1"
+            ],
+            [
+              "r1",
+              "h2"
+            ],
+            [
+              "r2",
+              "h1"
+            ]
+          ]
+        }
+      },
+      "name": "common_but_not_exactly_one",
+      "truth": {
+        "I1_each_at_least_one": true,
+        "I2_one_common": true,
+        "I3_each_exactly_one": false
+      }
+    }
+  ],
+  "summary": {
+    "MCP_modified": false,
+    "NL_to_FOL_discovery_implemented": false,
+    "failed": 0,
+    "passed": 225,
+    "proof_claim": "finite checked examples only",
+    "suites": [
+      {
+        "FN": 0,
+        "FP": 0,
+        "TN": 507,
+        "TP": 4,
+        "suite": "anbn_nonempty"
+      },
+      {
+        "FN": 0,
+        "FP": 0,
+        "TN": 506,
+        "TP": 5,
+        "suite": "anbn_nullable"
+      },
+      {
+        "FN": 0,
+        "FP": 0,
+        "TN": 488,
+        "TP": 23,
+        "suite": "dyck1"
+      },
+      {
+        "FN": 0,
+        "FP": 0,
+        "TN": 5410,
+        "TP": 51,
+        "suite": "dyck2"
+      },
+      {
+        "FN": 0,
+        "FP": 0,
+        "TN": 304,
+        "TP": 37,
+        "suite": "dyck2_untyped"
+      },
+      {
+        "FN": 0,
+        "FP": 0,
+        "TN": 481,
+        "TP": 30,
+        "suite": "even_palindrome"
+      },
+      {
+        "FN": 0,
+        "FP": 0,
+        "TN": 480,
+        "TP": 31,
+        "suite": "even_palindrome_nullable"
+      },
+      {
+        "FN": 0,
+        "FP": 0,
+        "TN": 1087,
+        "TP": 6,
+        "suite": "marked_reverse"
+      }
+    ]
+  }
+}

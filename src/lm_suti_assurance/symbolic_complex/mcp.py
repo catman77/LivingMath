@@ -97,7 +97,9 @@ RESPONSE["properties"]["schema"] = {"const": "livingmath-symbolic-extension-resp
 
 def capabilities(executor, replay_profiles=None):
     ready = bool(executor and executor.status()["ready"])
+    from ..formal_bridge.mcp import capabilities as formal_capabilities
     return {
+        "formal_bridge_v1": formal_capabilities(executor),
         "historical_extension_replay_bindings": sorted(replay_profiles or {}),
         "symbolic_complex_v1": {
             "version": VERSION,
@@ -271,4 +273,6 @@ def register_tools(server, root, executor, recover=False, replay_profiles=None):
         metadata = tool.fn_metadata.model_dump()
         metadata["output_schema"] = RESPONSE
         tool.fn_metadata = RawMetadata(**metadata)
+    from ..formal_bridge.mcp import register_tools as register_formal
+    register_formal(server,root,executor,recover=recover)
     return service
