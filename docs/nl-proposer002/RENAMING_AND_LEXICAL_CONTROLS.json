@@ -1,0 +1,379 @@
+{
+  "status": "MEASURED_POST_FREEZE",
+  "human_semantic_accuracy": null,
+  "semantic_generalization": "NOT_EVALUATED",
+  "renamed_pairs": [
+    {
+      "arm": "A",
+      "pair_id": "902cbc36-5e09-4c6b-ac1c-80649eb27bee",
+      "source_ids": [
+        "40e7282e-ab30-40db-b9ad-44217eecdb38",
+        "b3600571-a7ca-4414-b80e-c16437d92fde"
+      ],
+      "left_candidates": 1,
+      "right_candidates": 1,
+      "typed_signature_covariance": "PASS",
+      "exact_alpha_AST_set_covariance": true,
+      "nonempty_comparison": true,
+      "bounded_vector_set_covariance": true,
+      "bounded_vectors_not_equivalence_proof": true,
+      "semantic_invariance": "NOT_ESTABLISHED"
+    },
+    {
+      "arm": "A",
+      "pair_id": "f8773f74-708d-46b4-81f1-65d6b8887f8d",
+      "source_ids": [
+        "fd183c68-cc00-42df-8981-81c348aa32f5",
+        "d30d2799-6f9b-4ffa-904d-364f1b18d469"
+      ],
+      "left_candidates": 1,
+      "right_candidates": 1,
+      "typed_signature_covariance": "PASS",
+      "exact_alpha_AST_set_covariance": true,
+      "nonempty_comparison": true,
+      "bounded_vector_set_covariance": true,
+      "bounded_vectors_not_equivalence_proof": true,
+      "semantic_invariance": "NOT_ESTABLISHED"
+    },
+    {
+      "arm": "A",
+      "pair_id": "f84ecae7-ed50-471a-90b6-cdb70679a627",
+      "source_ids": [
+        "3a93ea11-eb9c-48ce-94b1-c014894d1c37",
+        "293adfba-18bc-4ff2-addb-6dfb8c620fb0"
+      ],
+      "left_candidates": 1,
+      "right_candidates": 1,
+      "typed_signature_covariance": "PASS",
+      "exact_alpha_AST_set_covariance": true,
+      "nonempty_comparison": true,
+      "bounded_vector_set_covariance": true,
+      "bounded_vectors_not_equivalence_proof": true,
+      "semantic_invariance": "NOT_ESTABLISHED"
+    },
+    {
+      "arm": "A",
+      "pair_id": "34a701b8-029c-45dd-a679-1e927100cdfc",
+      "source_ids": [
+        "b3b55e51-6842-4554-b66b-9f121c14c7ab",
+        "6fd0ef06-65ac-47ed-b207-ae9ae9585c93"
+      ],
+      "left_candidates": 1,
+      "right_candidates": 1,
+      "typed_signature_covariance": "PASS",
+      "exact_alpha_AST_set_covariance": true,
+      "nonempty_comparison": true,
+      "bounded_vector_set_covariance": null,
+      "bounded_vectors_not_equivalence_proof": true,
+      "semantic_invariance": "NOT_ESTABLISHED"
+    },
+    {
+      "arm": "B",
+      "pair_id": "902cbc36-5e09-4c6b-ac1c-80649eb27bee",
+      "source_ids": [
+        "40e7282e-ab30-40db-b9ad-44217eecdb38",
+        "b3600571-a7ca-4414-b80e-c16437d92fde"
+      ],
+      "left_candidates": 1,
+      "right_candidates": 1,
+      "typed_signature_covariance": "PASS",
+      "exact_alpha_AST_set_covariance": true,
+      "nonempty_comparison": true,
+      "bounded_vector_set_covariance": true,
+      "bounded_vectors_not_equivalence_proof": true,
+      "semantic_invariance": "NOT_ESTABLISHED"
+    },
+    {
+      "arm": "B",
+      "pair_id": "f8773f74-708d-46b4-81f1-65d6b8887f8d",
+      "source_ids": [
+        "fd183c68-cc00-42df-8981-81c348aa32f5",
+        "d30d2799-6f9b-4ffa-904d-364f1b18d469"
+      ],
+      "left_candidates": 3,
+      "right_candidates": 3,
+      "typed_signature_covariance": "PASS",
+      "exact_alpha_AST_set_covariance": true,
+      "nonempty_comparison": true,
+      "bounded_vector_set_covariance": true,
+      "bounded_vectors_not_equivalence_proof": true,
+      "semantic_invariance": "NOT_ESTABLISHED"
+    },
+    {
+      "arm": "B",
+      "pair_id": "f84ecae7-ed50-471a-90b6-cdb70679a627",
+      "source_ids": [
+        "3a93ea11-eb9c-48ce-94b1-c014894d1c37",
+        "293adfba-18bc-4ff2-addb-6dfb8c620fb0"
+      ],
+      "left_candidates": 1,
+      "right_candidates": 1,
+      "typed_signature_covariance": "PASS",
+      "exact_alpha_AST_set_covariance": true,
+      "nonempty_comparison": true,
+      "bounded_vector_set_covariance": true,
+      "bounded_vectors_not_equivalence_proof": true,
+      "semantic_invariance": "NOT_ESTABLISHED"
+    },
+    {
+      "arm": "B",
+      "pair_id": "34a701b8-029c-45dd-a679-1e927100cdfc",
+      "source_ids": [
+        "b3b55e51-6842-4554-b66b-9f121c14c7ab",
+        "6fd0ef06-65ac-47ed-b207-ae9ae9585c93"
+      ],
+      "left_candidates": 1,
+      "right_candidates": 1,
+      "typed_signature_covariance": "PASS",
+      "exact_alpha_AST_set_covariance": true,
+      "nonempty_comparison": true,
+      "bounded_vector_set_covariance": null,
+      "bounded_vectors_not_equivalence_proof": true,
+      "semantic_invariance": "NOT_ESTABLISHED"
+    },
+    {
+      "arm": "C",
+      "pair_id": "902cbc36-5e09-4c6b-ac1c-80649eb27bee",
+      "source_ids": [
+        "40e7282e-ab30-40db-b9ad-44217eecdb38",
+        "b3600571-a7ca-4414-b80e-c16437d92fde"
+      ],
+      "left_candidates": 2,
+      "right_candidates": 2,
+      "typed_signature_covariance": "PASS",
+      "exact_alpha_AST_set_covariance": true,
+      "nonempty_comparison": true,
+      "bounded_vector_set_covariance": true,
+      "bounded_vectors_not_equivalence_proof": true,
+      "semantic_invariance": "NOT_ESTABLISHED"
+    },
+    {
+      "arm": "C",
+      "pair_id": "f8773f74-708d-46b4-81f1-65d6b8887f8d",
+      "source_ids": [
+        "fd183c68-cc00-42df-8981-81c348aa32f5",
+        "d30d2799-6f9b-4ffa-904d-364f1b18d469"
+      ],
+      "left_candidates": 2,
+      "right_candidates": 2,
+      "typed_signature_covariance": "PASS",
+      "exact_alpha_AST_set_covariance": true,
+      "nonempty_comparison": true,
+      "bounded_vector_set_covariance": true,
+      "bounded_vectors_not_equivalence_proof": true,
+      "semantic_invariance": "NOT_ESTABLISHED"
+    },
+    {
+      "arm": "C",
+      "pair_id": "f84ecae7-ed50-471a-90b6-cdb70679a627",
+      "source_ids": [
+        "3a93ea11-eb9c-48ce-94b1-c014894d1c37",
+        "293adfba-18bc-4ff2-addb-6dfb8c620fb0"
+      ],
+      "left_candidates": 1,
+      "right_candidates": 1,
+      "typed_signature_covariance": "PASS",
+      "exact_alpha_AST_set_covariance": true,
+      "nonempty_comparison": true,
+      "bounded_vector_set_covariance": true,
+      "bounded_vectors_not_equivalence_proof": true,
+      "semantic_invariance": "NOT_ESTABLISHED"
+    },
+    {
+      "arm": "C",
+      "pair_id": "34a701b8-029c-45dd-a679-1e927100cdfc",
+      "source_ids": [
+        "b3b55e51-6842-4554-b66b-9f121c14c7ab",
+        "6fd0ef06-65ac-47ed-b207-ae9ae9585c93"
+      ],
+      "left_candidates": 1,
+      "right_candidates": 1,
+      "typed_signature_covariance": "PASS",
+      "exact_alpha_AST_set_covariance": true,
+      "nonempty_comparison": true,
+      "bounded_vector_set_covariance": null,
+      "bounded_vectors_not_equivalence_proof": true,
+      "semantic_invariance": "NOT_ESTABLISHED"
+    },
+    {
+      "arm": "D",
+      "pair_id": "902cbc36-5e09-4c6b-ac1c-80649eb27bee",
+      "source_ids": [
+        "40e7282e-ab30-40db-b9ad-44217eecdb38",
+        "b3600571-a7ca-4414-b80e-c16437d92fde"
+      ],
+      "left_candidates": 2,
+      "right_candidates": 2,
+      "typed_signature_covariance": "PASS",
+      "exact_alpha_AST_set_covariance": true,
+      "nonempty_comparison": true,
+      "bounded_vector_set_covariance": true,
+      "bounded_vectors_not_equivalence_proof": true,
+      "semantic_invariance": "NOT_ESTABLISHED"
+    },
+    {
+      "arm": "D",
+      "pair_id": "f8773f74-708d-46b4-81f1-65d6b8887f8d",
+      "source_ids": [
+        "fd183c68-cc00-42df-8981-81c348aa32f5",
+        "d30d2799-6f9b-4ffa-904d-364f1b18d469"
+      ],
+      "left_candidates": 2,
+      "right_candidates": 2,
+      "typed_signature_covariance": "PASS",
+      "exact_alpha_AST_set_covariance": true,
+      "nonempty_comparison": true,
+      "bounded_vector_set_covariance": true,
+      "bounded_vectors_not_equivalence_proof": true,
+      "semantic_invariance": "NOT_ESTABLISHED"
+    },
+    {
+      "arm": "D",
+      "pair_id": "f84ecae7-ed50-471a-90b6-cdb70679a627",
+      "source_ids": [
+        "3a93ea11-eb9c-48ce-94b1-c014894d1c37",
+        "293adfba-18bc-4ff2-addb-6dfb8c620fb0"
+      ],
+      "left_candidates": 1,
+      "right_candidates": 1,
+      "typed_signature_covariance": "PASS",
+      "exact_alpha_AST_set_covariance": true,
+      "nonempty_comparison": true,
+      "bounded_vector_set_covariance": true,
+      "bounded_vectors_not_equivalence_proof": true,
+      "semantic_invariance": "NOT_ESTABLISHED"
+    },
+    {
+      "arm": "D",
+      "pair_id": "34a701b8-029c-45dd-a679-1e927100cdfc",
+      "source_ids": [
+        "b3b55e51-6842-4554-b66b-9f121c14c7ab",
+        "6fd0ef06-65ac-47ed-b207-ae9ae9585c93"
+      ],
+      "left_candidates": 1,
+      "right_candidates": 1,
+      "typed_signature_covariance": "PASS",
+      "exact_alpha_AST_set_covariance": true,
+      "nonempty_comparison": true,
+      "bounded_vector_set_covariance": null,
+      "bounded_vectors_not_equivalence_proof": true,
+      "semantic_invariance": "NOT_ESTABLISHED"
+    }
+  ],
+  "lexical_alpha_pair": [
+    {
+      "arm": "A",
+      "source_ids": [
+        "8262e73a-7043-4b33-8b9f-bcc70e79d1fe",
+        "a6f404de-ea11-4956-ba77-fefd69daadb1"
+      ],
+      "same_alpha_pattern": false,
+      "literal_source_SHA_distinct": true,
+      "source_refs_distinct": true,
+      "typed_predicate_sets": [
+        [],
+        []
+      ],
+      "declared_predicates": [
+        [
+          "Restored"
+        ],
+        [
+          "Approved"
+        ]
+      ],
+      "no_semantic_equality_claim": true
+    },
+    {
+      "arm": "B",
+      "source_ids": [
+        "8262e73a-7043-4b33-8b9f-bcc70e79d1fe",
+        "a6f404de-ea11-4956-ba77-fefd69daadb1"
+      ],
+      "same_alpha_pattern": false,
+      "literal_source_SHA_distinct": true,
+      "source_refs_distinct": true,
+      "typed_predicate_sets": [
+        [],
+        []
+      ],
+      "declared_predicates": [
+        [
+          "Restored"
+        ],
+        [
+          "Approved"
+        ]
+      ],
+      "no_semantic_equality_claim": true
+    },
+    {
+      "arm": "C",
+      "source_ids": [
+        "8262e73a-7043-4b33-8b9f-bcc70e79d1fe",
+        "a6f404de-ea11-4956-ba77-fefd69daadb1"
+      ],
+      "same_alpha_pattern": false,
+      "literal_source_SHA_distinct": true,
+      "source_refs_distinct": true,
+      "typed_predicate_sets": [
+        [],
+        []
+      ],
+      "declared_predicates": [
+        [
+          "Restored"
+        ],
+        [
+          "Approved"
+        ]
+      ],
+      "no_semantic_equality_claim": true
+    },
+    {
+      "arm": "D",
+      "source_ids": [
+        "8262e73a-7043-4b33-8b9f-bcc70e79d1fe",
+        "a6f404de-ea11-4956-ba77-fefd69daadb1"
+      ],
+      "same_alpha_pattern": false,
+      "literal_source_SHA_distinct": true,
+      "source_refs_distinct": true,
+      "typed_predicate_sets": [
+        [],
+        []
+      ],
+      "declared_predicates": [
+        [
+          "Restored"
+        ],
+        [
+          "Approved"
+        ]
+      ],
+      "no_semantic_equality_claim": true
+    }
+  ],
+  "summary": {
+    "A": {
+      "pairs": 4,
+      "exact_AST_set_covariant": 4,
+      "bounded_vector_set_covariant": 3
+    },
+    "B": {
+      "pairs": 4,
+      "exact_AST_set_covariant": 4,
+      "bounded_vector_set_covariant": 3
+    },
+    "C": {
+      "pairs": 4,
+      "exact_AST_set_covariant": 4,
+      "bounded_vector_set_covariant": 3
+    },
+    "D": {
+      "pairs": 4,
+      "exact_AST_set_covariant": 4,
+      "bounded_vector_set_covariant": 3
+    }
+  }
+}
