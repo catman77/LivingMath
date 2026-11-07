@@ -1,0 +1,257 @@
+{
+  "commit": "14330a1f92791487b5744da92cb553d7343cdfd2",
+  "checks": [
+    {
+      "id": 128329237778,
+      "name": "Assurance and Semantic compatibility (Python 3.14)",
+      "status": "completed",
+      "conclusion": "failure",
+      "html_url": "https://github.com/catman77/LivingMath/actions/runs/42347803891/job/128329237778",
+      "started_at": "2026-11-07T06:37:01Z",
+      "completed_at": "2026-11-07T06:37:03Z",
+      "output": {
+        "title": null,
+        "summary": null,
+        "text": null,
+        "annotations_count": 2,
+        "annotations_url": "https://api.github.com/repos/catman77/LivingMath/check-runs/128329237778/annotations"
+      },
+      "annotations": [
+        {
+          "path": ".github",
+          "blob_href": "https://github.com/catman77/LivingMath/blob/14330a1f92791487b5744da92cb553d7343cdfd2/.github",
+          "start_line": 1,
+          "start_column": null,
+          "end_line": 1,
+          "end_column": null,
+          "annotation_level": "failure",
+          "title": "",
+          "message": "The job was not started because your account is locked due to a billing issue.",
+          "raw_details": ""
+        },
+        {
+          "path": ".github",
+          "blob_href": "https://github.com/catman77/LivingMath/blob/14330a1f92791487b5744da92cb553d7343cdfd2/.github",
+          "start_line": 1,
+          "start_column": null,
+          "end_line": 1,
+          "end_column": null,
+          "annotation_level": "notice",
+          "title": "",
+          "message": "\"The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748\"",
+          "raw_details": ""
+        }
+      ]
+    },
+    {
+      "id": 128329237627,
+      "name": "Assurance and Semantic compatibility (Python 3.14)",
+      "status": "completed",
+      "conclusion": "failure",
+      "html_url": "https://github.com/catman77/LivingMath/actions/runs/42347803938/job/128329237627",
+      "started_at": "2026-11-07T06:37:01Z",
+      "completed_at": "2026-11-07T06:37:03Z",
+      "output": {
+        "title": null,
+        "summary": null,
+        "text": null,
+        "annotations_count": 2,
+        "annotations_url": "https://api.github.com/repos/catman77/LivingMath/check-runs/128329237627/annotations"
+      },
+      "annotations": [
+        {
+          "path": ".github",
+          "blob_href": "https://github.com/catman77/LivingMath/blob/14330a1f92791487b5744da92cb553d7343cdfd2/.github",
+          "start_line": 1,
+          "start_column": null,
+          "end_line": 1,
+          "end_column": null,
+          "annotation_level": "failure",
+          "title": "",
+          "message": "The job was not started because your account is locked due to a billing issue.",
+          "raw_details": ""
+        },
+        {
+          "path": ".github",
+          "blob_href": "https://github.com/catman77/LivingMath/blob/14330a1f92791487b5744da92cb553d7343cdfd2/.github",
+          "start_line": 1,
+          "start_column": null,
+          "end_line": 1,
+          "end_column": null,
+          "annotation_level": "notice",
+          "title": "",
+          "message": "\"The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748\"",
+          "raw_details": ""
+        }
+      ]
+    },
+    {
+      "id": 128329237505,
+      "name": "pytest",
+      "status": "completed",
+      "conclusion": "failure",
+      "html_url": "https://github.com/catman77/LivingMath/actions/runs/42347803908/job/128329237505",
+      "started_at": "2026-11-07T06:37:01Z",
+      "completed_at": "2026-11-07T06:37:03Z",
+      "output": {
+        "title": null,
+        "summary": null,
+        "text": null,
+        "annotations_count": 2,
+        "annotations_url": "https://api.github.com/repos/catman77/LivingMath/check-runs/128329237505/annotations"
+      },
+      "annotations": [
+        {
+          "path": ".github",
+          "blob_href": "https://github.com/catman77/LivingMath/blob/14330a1f92791487b5744da92cb553d7343cdfd2/.github",
+          "start_line": 1,
+          "start_column": null,
+          "end_line": 1,
+          "end_column": null,
+          "annotation_level": "failure",
+          "title": "",
+          "message": "The job was not started because your account is locked due to a billing issue.",
+          "raw_details": ""
+        },
+        {
+          "path": ".github",
+          "blob_href": "https://github.com/catman77/LivingMath/blob/14330a1f92791487b5744da92cb553d7343cdfd2/.github",
+          "start_line": 1,
+          "start_column": null,
+          "end_line": 1,
+          "end_column": null,
+          "annotation_level": "notice",
+          "title": "",
+          "message": "\"The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748\"",
+          "raw_details": ""
+        }
+      ]
+    },
+    {
+      "id": 128329237489,
+      "name": "Full package (Python 3.13)",
+      "status": "completed",
+      "conclusion": "failure",
+      "html_url": "https://github.com/catman77/LivingMath/actions/runs/42347803891/job/128329237489",
+      "started_at": "2026-11-07T06:37:01Z",
+      "completed_at": "2026-11-07T06:37:03Z",
+      "output": {
+        "title": null,
+        "summary": null,
+        "text": null,
+        "annotations_count": 2,
+        "annotations_url": "https://api.github.com/repos/catman77/LivingMath/check-runs/128329237489/annotations"
+      },
+      "annotations": [
+        {
+          "path": ".github",
+          "blob_href": "https://github.com/catman77/LivingMath/blob/14330a1f92791487b5744da92cb553d7343cdfd2/.github",
+          "start_line": 1,
+          "start_column": null,
+          "end_line": 1,
+          "end_column": null,
+          "annotation_level": "failure",
+          "title": "",
+          "message": "The job was not started because your account is locked due to a billing issue.",
+          "raw_details": ""
+        },
+        {
+          "path": ".github",
+          "blob_href": "https://github.com/catman77/LivingMath/blob/14330a1f92791487b5744da92cb553d7343cdfd2/.github",
+          "start_line": 1,
+          "start_column": null,
+          "end_line": 1,
+          "end_column": null,
+          "annotation_level": "notice",
+          "title": "",
+          "message": "\"The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748\"",
+          "raw_details": ""
+        }
+      ]
+    },
+    {
+      "id": 128329237484,
+      "name": "Full package (Python 3.13)",
+      "status": "completed",
+      "conclusion": "failure",
+      "html_url": "https://github.com/catman77/LivingMath/actions/runs/42347803938/job/128329237484",
+      "started_at": "2026-11-07T06:37:01Z",
+      "completed_at": "2026-11-07T06:37:03Z",
+      "output": {
+        "title": null,
+        "summary": null,
+        "text": null,
+        "annotations_count": 2,
+        "annotations_url": "https://api.github.com/repos/catman77/LivingMath/check-runs/128329237484/annotations"
+      },
+      "annotations": [
+        {
+          "path": ".github",
+          "blob_href": "https://github.com/catman77/LivingMath/blob/14330a1f92791487b5744da92cb553d7343cdfd2/.github",
+          "start_line": 1,
+          "start_column": null,
+          "end_line": 1,
+          "end_column": null,
+          "annotation_level": "failure",
+          "title": "",
+          "message": "The job was not started because your account is locked due to a billing issue.",
+          "raw_details": ""
+        },
+        {
+          "path": ".github",
+          "blob_href": "https://github.com/catman77/LivingMath/blob/14330a1f92791487b5744da92cb553d7343cdfd2/.github",
+          "start_line": 1,
+          "start_column": null,
+          "end_line": 1,
+          "end_column": null,
+          "annotation_level": "notice",
+          "title": "",
+          "message": "\"The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748\"",
+          "raw_details": ""
+        }
+      ]
+    },
+    {
+      "id": 128329237454,
+      "name": "pytest",
+      "status": "completed",
+      "conclusion": "failure",
+      "html_url": "https://github.com/catman77/LivingMath/actions/runs/42347803855/job/128329237454",
+      "started_at": "2026-11-07T06:37:01Z",
+      "completed_at": "2026-11-07T06:37:03Z",
+      "output": {
+        "title": null,
+        "summary": null,
+        "text": null,
+        "annotations_count": 2,
+        "annotations_url": "https://api.github.com/repos/catman77/LivingMath/check-runs/128329237454/annotations"
+      },
+      "annotations": [
+        {
+          "path": ".github",
+          "blob_href": "https://github.com/catman77/LivingMath/blob/14330a1f92791487b5744da92cb553d7343cdfd2/.github",
+          "start_line": 1,
+          "start_column": null,
+          "end_line": 1,
+          "end_column": null,
+          "annotation_level": "failure",
+          "title": "",
+          "message": "The job was not started because your account is locked due to a billing issue.",
+          "raw_details": ""
+        },
+        {
+          "path": ".github",
+          "blob_href": "https://github.com/catman77/LivingMath/blob/14330a1f92791487b5744da92cb553d7343cdfd2/.github",
+          "start_line": 1,
+          "start_column": null,
+          "end_line": 1,
+          "end_column": null,
+          "annotation_level": "notice",
+          "title": "",
+          "message": "\"The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748\"",
+          "raw_details": ""
+        }
+      ]
+    }
+  ]
+}

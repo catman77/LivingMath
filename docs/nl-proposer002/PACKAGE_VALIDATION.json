@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "asset_sha256": "359d48b59df614010b38f3b10c8f81845bd120423d3eddbe41fc3fc5dc79a844",
+  "manifest_payloads": 537,
+  "source_git_blobs_exact": 1705,
+  "runtime_files_exact": 223,
+  "no_private_credentials_or_databases_in_package": "Separate recursive secret scan required",
+  "source_commit": "14330a1f92791487b5744da92cb553d7343cdfd2"
+}

@@ -14,6 +14,7 @@
 [Запросы и rights](docs/nl-proposer002/QUICKSTART_RU.md),
 [архитектура адаптера](docs/nl-proposer002/ARCHITECTURE_RU.md),
 [приёмка и границы](docs/nl-proposer002/IMPLEMENTATION_REPORT_RU.md).
+[Опубликованный release и полный пакет](docs/nl-proposer002/DELIVERY_RU.md).
 
 
 **Formal Bridge v1 (0.4.9)** добавляет ограниченный поиск CFG/DFA из train,

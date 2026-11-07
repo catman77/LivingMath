@@ -1,0 +1,15 @@
+{
+  "status": "PUBLISHED_AND_ANONYMOUSLY_READ_BACK",
+  "version": "v0.4.10-developer-preview",
+  "source_commit": "14330a1f92791487b5744da92cb553d7343cdfd2",
+  "release_url": "https://github.com/catman77/LivingMath/releases/tag/v0.4.10-developer-preview",
+  "asset_url": "https://github.com/catman77/LivingMath/releases/download/v0.4.10-developer-preview/LIVINGMATH_NL_PROPOSER002_DELIVERY_20261107.zip",
+  "asset_bytes": 238017907,
+  "asset_sha256": "359d48b59df614010b38f3b10c8f81845bd120423d3eddbe41fc3fc5dc79a844",
+  "all_public_source_blobs_exact": 1705,
+  "production": "ACCEPTED_PUBLIC_HTTPS_OAUTH_MCP",
+  "CI": "NOT_EXECUTED_GITHUB_ACCOUNT_BILLING_LOCK",
+  "semantic_generalization": "NOT_EVALUATED",
+  "external_human_adjudication": "NOT_EXECUTED",
+  "white_star_incremental_benefit": "NOT_ESTABLISHED"
+}
