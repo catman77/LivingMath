@@ -24,3 +24,7 @@ short Dyck has no admissible new composition and the subsequent literary stage i
 not run under the supplied roadmap stop criterion. General semantic transfer and
 independent R3 acceptance remain unconfirmed. A legacy grammar source is matched
 by literal train labels, not by an invented identity of different source editions.
+
+## NLProposalBridge/1 (0.4.10)
+
+Опциональная LLM предлагает source-bound FOL, а общий decoder переставляет только поддержанный типизированный кванторный spine. Численные кадры часто UNDECODABLE_FRAME. Истинность смысла, авторское намерение, общее NL→FOL и преимущество White Star не следуют из typing/provenance/finite checks. Human adjudication NOT_EXECUTED; R3 PENDING. Модельный seed/temperature/revision не закреплены, token usage проверяется после вызова.

@@ -37,7 +37,7 @@ def serve(path):
         p = (layer/name).resolve(strict=True)
         if not p.is_relative_to(layer) or sha(p) != expected:
             raise ValueError('RELEASE_FILE_MISMATCH')
-    if cfg['release'] not in ('v0.1.0-developer-preview','v0.2.0-developer-preview','v0.3.0-developer-preview','v0.4.0-developer-preview','v0.4.1-developer-preview','v0.4.2-developer-preview','v0.4.3-developer-preview','v0.4.4-developer-preview','v0.4.5-developer-preview','v0.4.6-developer-preview','v0.4.7-developer-preview','v0.4.8-developer-preview','v0.4.9-developer-preview'):
+    if cfg['release'] not in ('v0.1.0-developer-preview','v0.2.0-developer-preview','v0.3.0-developer-preview','v0.4.0-developer-preview','v0.4.1-developer-preview','v0.4.2-developer-preview','v0.4.3-developer-preview','v0.4.4-developer-preview','v0.4.5-developer-preview','v0.4.6-developer-preview','v0.4.7-developer-preview','v0.4.8-developer-preview','v0.4.9-developer-preview','v0.4.10-developer-preview'):
         raise ValueError('RELEASE_VERSION_MISMATCH')
     expected = {'release':cfg['release'],'release_manifest_sha256':cfg['release_manifest_sha256'],
                 'deployment_id':cfg['deployment_id'],'action':'INSTALL_EXACT_OWNER_AUTHORIZED_PREVIEW'}
@@ -109,6 +109,16 @@ def serve(path):
             raise ValueError('PRIVATE_SEMANTIC_PROPOSER_SPOOL_REQUIRED')
         from lm_suti_assurance.semantic_bridge.owner_pipe import HostedPipe
         provider = HostedPipe(spool)
+    nl_provider = None
+    if cfg.get('nl_proposer') is not None:
+        settings = cfg['nl_proposer']
+        if set(settings) != {'spool','enabled'} or settings['enabled'] is not True:
+            raise ValueError('OWNER_NL_PROPOSER_OPT_IN_REQUIRED')
+        spool = Path(settings['spool']).resolve()
+        if not spool.is_relative_to(Path.home()/'.local/state/livingmath'):
+            raise ValueError('PRIVATE_NL_PROPOSER_SPOOL_REQUIRED')
+        from lm_suti_assurance.nl_proposal.owner_pipe import HostedProvider
+        nl_provider = HostedProvider(spool)
     import unified_deploy as legacy
     # Its loader still checks the immutable original observer profile.
     legacy_cfg = legacy.load(Path(cfg['legacy_config']))
@@ -130,6 +140,8 @@ def serve(path):
         register_symbolic(server, cfg['assurance_state'], symbolic_pool, recover=True, replay_profiles=replay_profiles)
         from lm_suti_assurance.symbolic_complex.mcp import register_tools as register_extensions
         register_extensions(server, cfg['assurance_state'], symbolic_pool, recover=True, replay_profiles=extension_replay_profiles)
+        from lm_suti_assurance.nl_proposal.mcp import register_tools as register_nl
+        register_nl(server, cfg['assurance_state'], symbolic_pool, nl_provider, recover=True)
         server._mcp_server.version = active_release
         server._mcp_server.instructions += ' For finite assurance use assurance_contract; manual proposals, exact task review and offline export/replay are separate steps.'
         for name in ('bridge_system_status','service_health','research_contract'):
@@ -144,6 +156,8 @@ def serve(path):
                     if tool_name == 'bridge_system_status':
                         from lm_suti_assurance.symbolic.mcp import capabilities
                         value['symbolic_v1'] = capabilities(symbolic_pool, replay_profiles)
+                        from lm_suti_assurance.nl_proposal.mcp import capabilities as nl_capabilities
+                        value['nl_proposal_bridge'] = nl_capabilities(nl_provider)
                         from lm_suti_assurance.symbolic_complex.mcp import capabilities as extension_capabilities
                         value.update(extension_capabilities(symbolic_pool, extension_replay_profiles))
                     value['legacy_protocol_version'] = value.get('version')
@@ -180,6 +194,7 @@ def serve(path):
     try:
         legacy.serve(legacy_cfg)
     finally:
+        if nl_provider is not None:nl_provider.close()
         if provider is not None:provider.close()
         if white_pool is not None:white_pool.close()
         symbolic_pool.close()

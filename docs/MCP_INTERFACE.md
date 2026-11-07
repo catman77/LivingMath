@@ -1,8 +1,8 @@
-# MCP-интерфейс LivingMath v0.4.9
+# MCP-интерфейс LivingMath v0.4.10
 
-Актуальная production-композиция: **91 инструмент**, версия сервера
-`v0.4.9-developer-preview`, пакет `0.4.9.dev0`. [Архитектура](../ARCHITECTURE.md),
-[установка и различия 44/91](INSTALL.md), [исходный текст и rights](USAGE.md).
+Актуальная production-композиция: **93 инструмента**, версия сервера
+`v0.4.10-developer-preview`, пакет `0.4.10.dev0`. [Архитектура](../ARCHITECTURE.md),
+[установка и различия 44/93](INSTALL.md), [исходный текст и rights](USAGE.md).
 
 ## Транспорт и обнаружение
 
@@ -54,7 +54,8 @@ MCP `initialize`, `notifications/initialized`, затем `tools/list` и `tools
 | Symbolic V1 | 3 | `src/lm_suti_assurance/symbolic/mcp.py` |
 | SP-комплексы, dataset/observer, replay | 8 | `src/lm_suti_assurance/symbolic_complex/mcp.py` |
 | Formal Bridge v1 | 8 | `src/lm_suti_assurance/formal_bridge/mcp.py` |
-| **Всего** | **91** | `tools/release_v01_entry.py` объединяет регистрации |
+| NLProposalBridge/1 | 2 | `src/lm_suti_assurance/nl_proposal/mcp.py` |
+| **Всего** | **93** | `tools/release_v01_entry.py` объединяет регистрации |
 
 ## Проекты, запросы и разрешения
 
@@ -373,3 +374,22 @@ refutation of author intent или equivalence. `CHECKED_INSTANCE` — коне�
 показывает прежние83 метода, в настройках приложения LivingMath обновите список
 инструментов; если функции обновления нет — отключите и подключите приложение
 снова с тем же MCP URL/OAuth. Новый адрес не требуется.
+
+## NLProposalBridge/1: 93 tools
+
+`formal_nl_propose` — opt-in owner-hosted source analysis, проверка owned
+source/trace и порождение нескольких FOL AST через существующий Formal Bridge.
+`formal_nl_inspect` — summary/result/private bundle и offline replay. Два метода
+добавлены, все91 прежние схемы сохранены. [Полный пример rights и запроса](nl-proposer002/QUICKSTART_RU.md).
+
+Ответ RUNNING требует polling; большие results содержат base64 byte pages с
+SHA256. `PROVIDER_UNAVAILABLE` не подменяется фикстурой. Fake run/frame, source,
+parents, snapshot и AST guards отклоняются отдельно. `matched_ablation` —
+контрольная перестановка, а не подтверждённый White Star origin. Проверка
+происхождения не даёт математического verified, semantic truth или grant.
+Старый `formal_interpret` принимает provider.kind как DECLARED_UNVERIFIED;
+это предупреждение явно опубликовано также в bridge_system_status.
+
+Для ChatGPT после обновления обновите инструменты приложения в настройках.
+Если tools/list всё ещё содержит91 метод, отключите и подключите то же
+приложение по прежнему URL; дождитесь повторного initialize/tools/list.

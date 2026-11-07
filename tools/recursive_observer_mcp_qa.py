@@ -171,6 +171,8 @@ async def run(a):
                     t["name"]: t for t in json.loads(a.baseline.read_text())["tools"]
                 }
                 after = {t.name: t.model_dump(mode="json") for t in listing.tools}
+                if a.allow_nl_api:
+                    for name in ('formal_nl_propose','formal_nl_inspect'):after.pop(name,None)
                 if a.allow_formal_api:
                     from formal001_compat import legacy_view
                     after=legacy_view(after)
@@ -1266,6 +1268,7 @@ async def run(a):
 if __name__ == "__main__":
     p = argparse.ArgumentParser()
     p.add_argument("--allow-formal-api",action="store_true")
+    p.add_argument("--allow-nl-api",action="store_true")
     p.add_argument("--expected-version", default="v0.4.6-developer-preview")
     p.add_argument(
         "--expected-observer-version",

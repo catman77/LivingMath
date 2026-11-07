@@ -1,5 +1,18 @@
 # Changelog
 
+## v0.4.10-developer-preview — 2026-11-07
+
+- Add opt-in NLProposalBridge/1 with two MCP tools; preserve all91 old schemas
+  and exact numeric/symbolic/Formal Bridge kernels.
+- Add owner-hosted fresh source analysis, independent typing, checked project
+  trace provenance, generic AST scope moves, explicit assumptions and rivals.
+- Bind frozen offline replay to the exact request, source, provider output,
+  trace hashes and resulting ASTs. Separate origin from proposed semantics.
+- Fix traced-job lock re-entry and serialize bounded admission before accepting
+  fresh jobs; idempotent retries remain available at capacity.
+- Run real matched A/B/C/D and independent sealed synthetic controls. Human
+  semantic adjudication remains NOT_EXECUTED; no semantic improvement claim.
+
 ## v0.4.9-developer-preview — 2026-11-07
 
 - Add Formal Bridge v1: typed generic CFG/DFA IR, bounded train-only induction,

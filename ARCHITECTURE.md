@@ -1,7 +1,7 @@
 # Архитектура MCP-сервера LivingMath
 
-Срез архитектуры: **v0.4.9-developer-preview**, пакет Python `0.4.9.dev0`.
-Production объединяет **91 MCP-инструмент** в одном authenticated Streamable HTTP
+Срез архитектуры: **v0.4.10-developer-preview**, пакет Python `0.4.10.dev0`.
+Production объединяет **93 MCP-инструмент** в одном authenticated Streamable HTTP
 endpoint `/mcp`. [Справочник интерфейса](docs/MCP_INTERFACE.md),
 [установка](docs/INSTALL.md), [примеры запросов](docs/USAGE.md).
 
@@ -14,6 +14,10 @@ flowchart TD
     Transport --> Legacy[Ledger / DAV / автономный цикл / Bridge]
     Transport --> Assurance[Assurance и Semantic Bridge]
     Transport --> Numeric[Численная White Star]
+    Transport --> NL[Opt-in NLProposalBridge / source analysis]
+    NL --> Formal[Existing Formal Bridge / typed FOL]
+    NL --> Pipe
+    NL --> Workspace
     Transport --> Symbolic[Symbolic V1 / SP-комплексы / observer synthesis]
     Legacy --> SQLite[Четыре приватных SQLite-хранилища]
     Assurance --> Workspace[Приватные project workspaces / objects / journal]
@@ -288,3 +292,8 @@ legacy lifecycle эксперимента отдельно проверяет sc
 `complete` от MCP-клиента с `018_OPERATOR_AUTHORITY_REQUIRED`: эти действия
 требуют отдельного операторского пути. Native SUTI остаётся `NOT_EXECUTED`, внешний
 человеческий gate R3 — `PENDING`.
+
+## NLProposalBridge/1
+
+Отдельный namespace и две новые операции сохраняют прежние ядра.
+[Модули, граф порождения, provider isolation и пределы](docs/nl-proposer002/ARCHITECTURE_RU.md).

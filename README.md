@@ -4,7 +4,16 @@
 свидетели и контрпримеры → сохраняемая история исследования. MCP-интерфейс
 объединяет LivingMath, проверку исходных схем SUTI и алхимическую модель ALCH006.
 
-Текущий продукт: **`v0.4.9-developer-preview`**: assurance CLI, Semantic Bridge, численная White Star и Symbolic V1; 91 MCP-инструмент (83 прежних +8 Formal Bridge). [Установка](README_QUICKSTART_RU.md), [White Star и сравнение режимов](docs/white-star/QUICKSTART_RU.md), [Semantic Bridge](docs/semantic-bridge/QUICKSTART_RU.md), [CLI](CLI_REFERENCE.md), [границы возможностей](LIMITATIONS.md).
+Текущий продукт: **`v0.4.10-developer-preview`**: assurance CLI, Semantic Bridge, численная White Star и Symbolic V1; 93 MCP-инструмента (91 прежний +2 NLProposalBridge). [Установка](README_QUICKSTART_RU.md), [White Star и сравнение режимов](docs/white-star/QUICKSTART_RU.md), [Semantic Bridge](docs/semantic-bridge/QUICKSTART_RU.md), [CLI](CLI_REFERENCE.md), [границы возможностей](LIMITATIONS.md).
+
+
+**NLProposalBridge/1 (0.4.10)** добавляет opt-in source-bound NL proposals,
+проверяемое происхождение White Star, общий типизированный AST move и replay
+замороженного provider receipt. Импортный `formal_interpret` сохранён как путь
+деклараций. Гипотезы остаются `PROPOSED`; происхождение и типы не доказывают смысл.
+[Запросы и rights](docs/nl-proposer002/QUICKSTART_RU.md),
+[архитектура адаптера](docs/nl-proposer002/ARCHITECTURE_RU.md),
+[приёмка и границы](docs/nl-proposer002/IMPLEMENTATION_REPORT_RU.md).
 
 
 **Formal Bridge v1 (0.4.9)** добавляет ограниченный поиск CFG/DFA из train,
@@ -19,7 +28,7 @@ source-bound типизированные FOL proposals. Проверены дв
 
 Основной репозиторий: **[catman77/LivingMath](https://github.com/catman77/LivingMath)**.
 [Архитектура сервера и назначение модулей](ARCHITECTURE.md) ·
-[MCP-интерфейс: транспорт, 91 инструмент, схемы и примеры](docs/MCP_INTERFACE.md) ·
+[MCP-интерфейс: транспорт, 93 инструмента, схемы и примеры](docs/MCP_INTERFACE.md) ·
 [Установка CLI, legacy и полного production entry](docs/INSTALL.md).
 
 White Star использует предоставленное неизменённое ядро Белая звезда → CAD → Удав. Один frozen semantic snapshot можно передать ему и действующему Bridge/assurance без повторного extraction. Численные предложения и сохранённые LLM-прочтения разделены; native SUTI не исполняется. [Отчёт, фактическое сравнение и приёмка](docs/white-star/USER_REPORT_RU.md).

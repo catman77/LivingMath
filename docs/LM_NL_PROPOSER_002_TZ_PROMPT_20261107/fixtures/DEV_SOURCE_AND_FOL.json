@@ -1,0 +1,397 @@
+{
+  "schema": "lm-nl-proposer-dev-fixtures/1",
+  "status": "HAND_AUTHORED_DEVELOPMENT_REFERENCE_NOT_BLIND",
+  "primary_source": {
+    "text_utf8": "Каждый исследователь проверил одну гипотезу.",
+    "sha256": "1bfb913518481ba0899018a463ab11fecb272ae1703d9139dc1f0ba27fc07389",
+    "rights": "synthetic-original",
+    "spans": [
+      {
+        "byte_utf8": [
+          0,
+          12
+        ],
+        "literal": "Каждый"
+      },
+      {
+        "byte_utf8": [
+          13,
+          39
+        ],
+        "literal": "исследователь"
+      },
+      {
+        "byte_utf8": [
+          40,
+          56
+        ],
+        "literal": "проверил"
+      },
+      {
+        "byte_utf8": [
+          57,
+          65
+        ],
+        "literal": "одну"
+      },
+      {
+        "byte_utf8": [
+          66,
+          82
+        ],
+        "literal": "гипотезу"
+      }
+    ]
+  },
+  "target_signature": {
+    "sorts": [
+      "researcher",
+      "hypothesis"
+    ],
+    "predicates": {
+      "Checked": [
+        "researcher",
+        "hypothesis"
+      ]
+    }
+  },
+  "formal_candidates": [
+    {
+      "id": "I1_each_at_least_one",
+      "source": "human-dev-reference",
+      "formula_ast": {
+        "quant": "forall",
+        "var": "r",
+        "sort": "researcher",
+        "body": {
+          "quant": "exists",
+          "var": "h",
+          "sort": "hypothesis",
+          "body": {
+            "pred": "Checked",
+            "args": [
+              {
+                "var": "r"
+              },
+              {
+                "var": "h"
+              }
+            ]
+          }
+        }
+      },
+      "token_role_links": [
+        {
+          "byte_utf8": [
+            0,
+            12
+          ],
+          "literal": "Каждый"
+        },
+        {
+          "byte_utf8": [
+            57,
+            65
+          ],
+          "literal": "одну"
+        }
+      ],
+      "assumptions": [],
+      "expected_status": "PROPOSED_AND_TYPED_NOT_SEMANTICALLY_PROVED"
+    },
+    {
+      "id": "I2_shared_one",
+      "source": "human-dev-reference",
+      "formula_ast": {
+        "quant": "exists",
+        "var": "h",
+        "sort": "hypothesis",
+        "body": {
+          "quant": "forall",
+          "var": "r",
+          "sort": "researcher",
+          "body": {
+            "pred": "Checked",
+            "args": [
+              {
+                "var": "r"
+              },
+              {
+                "var": "h"
+              }
+            ]
+          }
+        }
+      },
+      "token_role_links": [
+        {
+          "byte_utf8": [
+            0,
+            12
+          ],
+          "literal": "Каждый"
+        },
+        {
+          "byte_utf8": [
+            57,
+            65
+          ],
+          "literal": "одну"
+        }
+      ],
+      "assumptions": [],
+      "expected_status": "PROPOSED_AND_TYPED_NOT_SEMANTICALLY_PROVED"
+    },
+    {
+      "id": "I3_each_exactly_one",
+      "source": "human-dev-reference",
+      "formula_ast": {
+        "quant": "forall",
+        "var": "r",
+        "sort": "researcher",
+        "body": {
+          "quant": "exists",
+          "var": "h",
+          "sort": "hypothesis",
+          "body": {
+            "and": [
+              {
+                "pred": "Checked",
+                "args": [
+                  {
+                    "var": "r"
+                  },
+                  {
+                    "var": "h"
+                  }
+                ]
+              },
+              {
+                "quant": "forall",
+                "var": "h2",
+                "sort": "hypothesis",
+                "body": {
+                  "or": [
+                    {
+                      "not": {
+                        "pred": "Checked",
+                        "args": [
+                          {
+                            "var": "r"
+                          },
+                          {
+                            "var": "h2"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "eq": [
+                        {
+                          "var": "h2"
+                        },
+                        {
+                          "var": "h"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      "token_role_links": [
+        {
+          "byte_utf8": [
+            0,
+            12
+          ],
+          "literal": "Каждый"
+        },
+        {
+          "byte_utf8": [
+            57,
+            65
+          ],
+          "literal": "одну"
+        }
+      ],
+      "assumptions": [],
+      "expected_status": "PROPOSED_AND_TYPED_NOT_SEMANTICALLY_PROVED"
+    },
+    {
+      "id": "I4_overstrong_adversarial",
+      "source": "human-dev-reference",
+      "formula_ast": {
+        "quant": "forall",
+        "var": "r",
+        "sort": "researcher",
+        "body": {
+          "quant": "forall",
+          "var": "h",
+          "sort": "hypothesis",
+          "body": {
+            "pred": "Checked",
+            "args": [
+              {
+                "var": "r"
+              },
+              {
+                "var": "h"
+              }
+            ]
+          }
+        }
+      },
+      "token_role_links": [
+        {
+          "byte_utf8": [
+            0,
+            12
+          ],
+          "literal": "Каждый"
+        },
+        {
+          "byte_utf8": [
+            57,
+            65
+          ],
+          "literal": "одну"
+        }
+      ],
+      "assumptions": [],
+      "expected_status": "PROPOSED_AND_TYPED_NOT_SEMANTICALLY_PROVED"
+    }
+  ],
+  "finite_models": [
+    {
+      "id": "M1_distinct",
+      "model": {
+        "domains": {
+          "researcher": [
+            "r1",
+            "r2"
+          ],
+          "hypothesis": [
+            "h1",
+            "h2"
+          ]
+        },
+        "relations": {
+          "Checked": [
+            [
+              "r1",
+              "h1"
+            ],
+            [
+              "r2",
+              "h2"
+            ]
+          ]
+        },
+        "world": "closed"
+      },
+      "expected_truth_vector": {
+        "I1_each_at_least_one": true,
+        "I2_shared_one": false,
+        "I3_each_exactly_one": true,
+        "I4_overstrong_adversarial": false
+      }
+    },
+    {
+      "id": "M2_common_multiple",
+      "model": {
+        "domains": {
+          "researcher": [
+            "r1",
+            "r2"
+          ],
+          "hypothesis": [
+            "h1",
+            "h2"
+          ]
+        },
+        "relations": {
+          "Checked": [
+            [
+              "r1",
+              "h1"
+            ],
+            [
+              "r1",
+              "h2"
+            ],
+            [
+              "r2",
+              "h1"
+            ]
+          ]
+        },
+        "world": "closed"
+      },
+      "expected_truth_vector": {
+        "I1_each_at_least_one": true,
+        "I2_shared_one": true,
+        "I3_each_exactly_one": false,
+        "I4_overstrong_adversarial": false
+      }
+    }
+  ],
+  "alpha_pair": [
+    {
+      "text_utf8": "Каждый студент прочитал одну книгу.",
+      "sha256": "c116839d1a17bc8a5316d202cba8737eabb07ac2798d5fc2e5a6a0086d8df9f7",
+      "tokens": [
+        "Каждый",
+        "студент",
+        "прочитал",
+        "одну",
+        "книгу."
+      ],
+      "alpha_pattern": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "disclaimer": "alpha-equivalence does not imply predicate/semantic equivalence"
+    },
+    {
+      "text_utf8": "Каждый студент потерял одну книгу.",
+      "sha256": "9eaacbdb9318be91833a15cebe7e93885cabf24c70269f8e1a56633941a8bca6",
+      "tokens": [
+        "Каждый",
+        "студент",
+        "потерял",
+        "одну",
+        "книгу."
+      ],
+      "alpha_pattern": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "disclaimer": "alpha-equivalence does not imply predicate/semantic equivalence"
+    }
+  ],
+  "negative_provenance": {
+    "provider_kind": "white_star",
+    "fake_run_id": "0000000000000000000000000000000000000000000000000000000000000000",
+    "fake_frame_id": "F99",
+    "expected_in_new_verified_path": "UNBACKED_ORIGIN",
+    "expected_old_formal_interpret": "DECLARATION_ACCEPTED_AS_PROPOSED"
+  },
+  "negative_span": {
+    "claimed_literal": "Каждый",
+    "incorrect_byte_utf8": [
+      13,
+      39
+    ],
+    "existing_checker_status": "SOURCE_SPAN_TEXT_MISMATCH"
+  }
+}

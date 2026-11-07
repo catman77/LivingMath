@@ -1,0 +1,80 @@
+{
+  "schema": "livingmath-nl-proposer-diagnostics/1",
+  "date": "2026-11-07",
+  "deployed_version_at_tests": "v0.4.9-developer-preview",
+  "deployment_id": "formal001-20261107T032742Z",
+  "project": "lm_nl_proposer_diag_20261107",
+  "proof_boundary": "These are operational MCP facts and finite diagnostics, not semantic truth or a proof of autonomous interpretation.",
+  "tests": [
+    {
+      "id": "E1_symbolic_lexical_minimal_pair",
+      "operation": "white_star_symbolic_explore",
+      "run_id": "5ad2cad63f84ba9a5f1988fa5ba348e5e0f7dabbb2df4fbfbf28d3dbc1690756",
+      "source_sha256": "f4b1839d56e9f039553d03a70951007fed2cdfb948c9bab899e8daba80e8a60d",
+      "seed": 2211,
+      "max_steps": 30,
+      "observed": {"status": "COMPLETED", "nodes": 89, "candidate_attempts": 90, "distinct_alpha_classes": 32, "witnesses": 198, "empirical_claims": 0, "grammar": "UNDERDETERMINED", "prediction": "UNASSESSED", "literal_equality": false, "alpha_equality": true, "LLM_calls": 0, "job_cpu_s": 0.024370941}
+    },
+    {
+      "id": "E2_numeric_human_coordinates_A",
+      "operation": "white_star_explore",
+      "run_id": "a918c1cce18e69213a710f87cfb1b2ebbb1cb60498a825afc355f81e9e63f4bc",
+      "source_sha256": "1bfb913518481ba0899018a463ab11fecb272ae1703d9139dc1f0ba27fc07389",
+      "seed": 42,
+      "steps": 24,
+      "coords": {"each": [-2, 1], "checked": [1, -1], "one": [1, 2]},
+      "observed": {"beta0": 1, "beta1": 1, "frame_slots": 4, "first_frame_first_relation": "ALIGN", "LLM_calls": 0, "job_cpu_s": 0.008469817},
+      "limitation": "Axes and coordinates were manually supplied, not inferred."
+    },
+    {
+      "id": "E2_numeric_human_coordinates_B",
+      "operation": "white_star_explore",
+      "run_id": "a4339a511499861e93762cca957887a8cf46d8e80384a9889a1d8cb5cff058d1",
+      "source_sha256": "1bfb913518481ba0899018a463ab11fecb272ae1703d9139dc1f0ba27fc07389",
+      "seed": 42,
+      "steps": 24,
+      "coords": {"each": [-2, 1], "checked": [1, -1], "one": [-1, -2]},
+      "observed": {"beta0": 1, "beta1": 0, "frame_slots": 4, "first_frame_first_relation": "TENSION", "LLM_calls": 0, "job_cpu_s": 0.0076050549999999995},
+      "limitation": "Same text and seed, changed one manually supplied concept coordinate; this is not a semantic truth measure."
+    },
+    {
+      "id": "E3_false_white_star_provenance",
+      "operation": "formal_interpret",
+      "run_ref": "447c861da67d491a0c929214beda1be119b05e9ee83e84675ffa394b4c5da68f",
+      "candidate_id": "4ec4f88ba9e9a4a36c76462fb46da55d965a6dfc77e4bcaa98a800b14449645f",
+      "source_ref": "fe7631a5996d7d8de27822346399c7934ca1ee4c251f5a1ef6872e3e801c23a4",
+      "provider_kind": "white_star",
+      "fake_run_id": "0000000000000000000000000000000000000000000000000000000000000000",
+      "fake_frame_id": "F99",
+      "observed": {"result_status": "PROPOSED", "type_status": "TYPED", "semantic_alignment_status": "PROPOSED"},
+      "interpretation": "Expected behavior of explicit imported provider declarations. NOT checked origin; new verified-origin path must reject it."
+    },
+    {
+      "id": "E4_typable_but_overstrong_semantics",
+      "operation": "formal_interpret",
+      "run_ref": "67a98f030eebc87650d58b812f929f119d6856959315ec2ae8c404495677bbad",
+      "source_ref": "fe7631a5996d7d8de27822346399c7934ca1ee4c251f5a1ef6872e3e801c23a4",
+      "formula_reading": "forall r forall h Checked(r,h)",
+      "observed": {"result_status": "PROPOSED", "type_status": "TYPED", "semantic_alignment_status": "PROPOSED"},
+      "interpretation": "Type validity does not imply fidelity to one-hypothesis reading."
+    },
+    {
+      "id": "E5_wrong_utf8_span_rejected",
+      "operation": "formal_interpret",
+      "failed_run_ref": "8916348799812b477b7900f9668d9698c420386a83bad2a34d70afd09bab03f3",
+      "source_ref": "fe7631a5996d7d8de27822346399c7934ca1ee4c251f5a1ef6872e3e801c23a4",
+      "claimed_literal": "Каждый",
+      "supplied_byte_utf8": [13, 39],
+      "actual_literal": "исследователь",
+      "observed": "SOURCE_SPAN_TEXT_MISMATCH",
+      "interpretation": "Existing source span guard works; preserve it."
+    }
+  ],
+  "not_executed": [
+    "Independent human semantic annotation of generated interpretations",
+    "End-to-end automatic NL-to-FOL via White Star with exact source trace",
+    "Matched ablation WhiteStar vs source-only vs shuffled frame with real provider",
+    "Semantic recall/precision claims for fresh blind Russian sentences",
+    "New NLProposalBridge product code"
+  ]
+}

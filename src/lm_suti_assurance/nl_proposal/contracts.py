@@ -1,0 +1,10 @@
+"""Two additive MCP contracts, explicit bounded opt-in calls."""
+from ..symbolic.contracts import obj,arr,integer,PROJECT,KEY,REF
+TRACE=obj({'engine':{'enum':['symbolic_v1','white_star']},'run_id':REF,'frame_ids':arr({'type':'string'},4,1),'node_refs':arr(REF,4,1),'parent_ids':arr(REF,4),'input_sha256':REF,'snapshot_sha256':REF},['engine','run_id'])
+ITEM=obj({'source_ref':REF,'target_signature':{'type':'object'},'structural_run_refs':arr(TRACE,4),'expected_source_sha256':REF},['source_ref','target_signature'])
+POLICY=obj({'mode':{'enum':['source_only','white_star_structural','white_star_numeric','matched_ablation']},'max_candidates':integer(1,8),'max_model_calls':{'const':1},'max_tokens':integer(1000,120000),'max_cpu_ms':integer(100,4000),'max_frames':integer(1,4),'seed':integer(0,2147483647)},['mode','max_candidates','max_model_calls','max_tokens','max_cpu_ms','max_frames','seed'])
+REQUIREMENTS=obj({k:{'const':True} for k in ['exact_source_bindings','typed_ast','independent_checker','no_gold_labels']},['exact_source_bindings','typed_ast','independent_checker','no_gold_labels'])
+TOOLS={
+'formal_nl_propose':obj({'project':PROJECT,'request_key':KEY,'source_ref':REF,'target_signature':{'type':'object'},'structural_run_refs':arr(TRACE,4),'expected_source_sha256':REF,'items':arr(ITEM,6,1),'normalization':{'enum':['none','NFC']},'provider':obj({'kind':{'const':'owner_hosted'}},['kind']),'policy':POLICY,'requirements':REQUIREMENTS},['project','request_key','provider','policy','requirements']),
+'formal_nl_inspect':obj({'project':PROJECT,'run_ref':REF,'view':{'enum':['summary','result','bundle','replay']},'expected_ast_sha256':REF,'offset':integer(0,10000000),'limit':integer(1,48)},['project','run_ref'])}
+TOOLS['formal_nl_propose']['oneOf']=[{'required':['source_ref','target_signature'],'not':{'required':['items']}},{'required':['items'],'not':{'anyOf':[{'required':['source_ref']},{'required':['target_signature']},{'required':['structural_run_refs']},{'required':['expected_source_sha256']}]}}]
