@@ -206,7 +206,7 @@
     },
     {
       "path": "docs/nl-proposer002/RCA_RU.md",
-      "sha256": "f255cdd57bee9eaf236128f955f8ef30e9d39c8a32d869fa6b40782bd6df1fbb"
+      "sha256": "a7fb5ef1c1fac39e42098eb1efaa351a22fa8f6c3123eeb8a7457c530693ca50"
     },
     {
       "path": "docs/nl-proposer002/REAL_FILES_CHANGED.json",
@@ -234,7 +234,7 @@
     },
     {
       "path": "docs/nl-proposer002/RESULTS_B_C_RU.md",
-      "sha256": "553126b40550e78360a48b6b5cacf53087adbca0430d1c81f5741b589a42cede"
+      "sha256": "15c79d1b678933621ae4f290df0295a797223fb075546502f90ff4a427bb92f7"
     },
     {
       "path": "docs/nl-proposer002/ROLLBACK_RU.md",
@@ -250,7 +250,7 @@
     },
     {
       "path": "docs/nl-proposer002/USER_REPORT_RU.md",
-      "sha256": "f82d617ec426900c49b176c474726dcd19025238c1729ec6adaeb1004bcbe98a"
+      "sha256": "4141f9ee0c69037b5efb6d21d00b1d17fee2ba990940729625626417f40ccc65"
     },
     {
       "path": "docs/nl-proposer002/fixtures/valid_nl_propose.json",
@@ -338,7 +338,7 @@
     },
     {
       "path": "tools/nl002_score.py",
-      "sha256": "ba9eb727835a7b9b4c2c35e65c78d45c3dde931e47526eed6d1da3cb48beab9a"
+      "sha256": "7c7a51a07487ede3122140f35765becfe46801f9dfaf8bc387fcc1e63e1fa19b"
     },
     {
       "path": "tools/recursive_observer_mcp_qa.py",
