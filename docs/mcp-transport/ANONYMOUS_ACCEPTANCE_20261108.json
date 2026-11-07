@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "anonymous_SDK_initialize": true,
+  "authentication": "none",
+  "version": "v0.4.11-developer-preview",
+  "tools": 94,
+  "all94_tool_schemas_unchanged": true,
+  "health": "PASS",
+  "old_C_replay": "REPLAY_MATCH",
+  "model_calls": 0,
+  "url": "https://difficulty-nightlife-rca-missions.trycloudflare.com/mcp",
+  "stores": {
+    "canonical": {
+      "integrity": "ok",
+      "path_inode_preserved": true,
+      "original_rows_preserved": true
+    },
+    "typed": {
+      "integrity": "ok",
+      "path_inode_preserved": true,
+      "original_rows_preserved": true
+    },
+    "oauth": {
+      "integrity": "ok",
+      "path_inode_preserved": true,
+      "original_rows_preserved": "auth expiry not asserted"
+    },
+    "dav": {
+      "integrity": "ok",
+      "path_inode_preserved": true,
+      "original_rows_preserved": true
+    }
+  },
+  "HTTP_tests": 25,
+  "deployment": {
+    "status": "ANONYMOUS_REAL_HTTPS_TOOLS_LIST_PASS",
+    "version": "v0.4.11-developer-preview",
+    "authentication": "none",
+    "deployment_id": "noauth-20261107T222747Z",
+    "url": "https://difficulty-nightlife-rca-missions.trycloudflare.com/mcp",
+    "tools": 94,
+    "tunnel_pid_unchanged": true,
+    "backup_stores": 4,
+    "release_manifest_sha256": "edce62e5b3982cbb3c27c9044271ba3da9de437cc6e4ba025e85aab873e44e3f"
+  }
+}

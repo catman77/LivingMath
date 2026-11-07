@@ -45,6 +45,14 @@ python tools/release_v01_entry.py --config /absolute/private/release-config.json
 `symbolic_replay_profiles` и `extension_replay_profiles` описывают только заранее
 установленные operator-пути; клиент MCP их задавать не может.
 
+Аутентификацию полного release entry задаёт `"authentication":"oauth"`
+(значение по умолчанию) или `"authentication":"none"`. В действующем экземпляре
+по указанию владельца установлено `none`: MCP не требует токена и не публикует
+OAuth/login маршруты. Это открывает сетевой доступ к инструментам. Host/origin и
+ограничения запросов сохраняются; локальные owner approvals и исследовательские
+проверки остаются самостоятельными требованиями. `tools/release_transport.py`
+должен входить в release layer и SHA-манифест вместе с entry.
+
 Entry проверяет SHA `release_manifest.json` и каждого файла, точное разрешение
 владельца на этот release/deployment, затем сохранённую legacy-конфигурацию с её
 собственными проверками. Простая подстановка путей в неполный JSON не является

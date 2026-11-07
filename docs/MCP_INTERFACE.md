@@ -6,14 +6,18 @@
 
 ## Транспорт и обнаружение
 
-Endpoint — `https://<origin>/mcp`, протокол **MCP Streamable HTTP**, OAuth/PKCE.
+Endpoint — `https://<origin>/mcp`, протокол **MCP Streamable HTTP**.
+С2026-11-08 текущий production работает с `authentication=none`: без OAuth,
+пароля и Bearer-токена. Доступ к MCP открыт для любого клиента с этим URL.
 Работающий экземпляр использует origin
 `https://difficulty-nightlife-rca-missions.trycloudflare.com`; адрес не зашит в ядро.
-Точный HTTPS origin задаётся оператором. Он должен совпасть с issuer/resource и
-публичным адресом клиента, включая порт, без дополнительного path.
+Точный HTTPS origin задаётся оператором и совпадает с публичным адресом клиента,
+включая порт, без дополнительного path. При включённом OAuth он также совпадает
+с issuer/resource.
 
-Сначала клиент проходит OAuth discovery/registration/owner login/token exchange,
-MCP `initialize`, `notifications/initialized`, затем `tools/list` и `tools/call`.
+Текущий клиент сразу выполняет MCP `initialize`, `notifications/initialized`,
+затем `tools/list` и `tools/call`, не отправляя Authorization. При явно выбранном
+OAuth-режиме перед этим выполняется discovery/login/token exchange.
 В последней реальной приёмке согласован `protocolVersion=2025-11-25`.
 Позвольте SDK согласовать версию; не отправляйте запросы как отдельный REST API.
 `tools/list` при наличии `nextCursor` нужно дочитать до конца.

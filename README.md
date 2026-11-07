@@ -7,6 +7,9 @@
 Текущий продукт: **`v0.4.11-developer-preview`**: assurance CLI, Semantic Bridge, численная White Star и Symbolic V1; 94 MCP-инструмента (93 прежних + frozen redecode). [Установка](README_QUICKSTART_RU.md), [White Star и сравнение режимов](docs/white-star/QUICKSTART_RU.md), [Semantic Bridge](docs/semantic-bridge/QUICKSTART_RU.md), [CLI](CLI_REFERENCE.md), [границы возможностей](LIMITATIONS.md).
 
 
+Текущий MCP доступен **без аутентификации** по прежнему HTTPS-адресу;
+`authentication=none`. [Транспорт и подключение](docs/MCP_INTERFACE.md).
+
 **NLFrozenCounterfactual/1 (0.4.11)**: `formal_nl_redecode` сравнивает четыре
 декодирования одного сохранённого ответа без нового модельного вызова. Старые
 93 схемы и вычислительные ядра сохранены. [Точный запрос](docs/nl-causal003/QUICKSTART_RU.md),
@@ -87,7 +90,7 @@ python -m pytest -q tests
 
 Это установка текущего кода и локальная проверка; HTTP автоматически не запускается.
 Действующий полный сервер запускается через `tools/release_v01_entry.py` с
-приватной owner-конфигурацией и публикует **91** инструмент. Отдельный
+приватной owner-конфигурацией и публикует **94** инструмента. Отдельный
 `unified_system.local prepare/serve/smoke` создаёт новый legacy стенд с **44**
 инструментами; он не является установщиком полного production release.
 

@@ -2,6 +2,7 @@
 
 ## Первое знакомство
 
+Текущий MCP подключается без OAuth и токена (`authentication=none`).
 После подключения вызовите `bridge_system_status`, затем `bridge_catalog`.
 Текущий production `v0.4.11-developer-preview` предоставляет **94 инструмента**.
 Новый локальный legacy стенд `unified_system.local` предоставляет 44.

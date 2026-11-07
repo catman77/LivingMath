@@ -9,7 +9,7 @@ endpoint `/mcp`. [Справочник интерфейса](docs/MCP_INTERFACE.
 
 ```mermaid
 flowchart TD
-    Client[ChatGPT или MCP SDK] --> Transport[HTTPS / OAuth / FastMCP]
+    Client[ChatGPT или MCP SDK] --> Transport[HTTPS / FastMCP / configurable auth]
     Entry[release_v01_entry.py: проверка манифеста и конфигурации] --> Transport
     Transport --> Legacy[Ledger / DAV / автономный цикл / Bridge]
     Transport --> Assurance[Assurance и Semantic Bridge]
@@ -325,3 +325,12 @@ Replay сравнивает содержательные SHA без замеро
 
 Ни типы, ни происхождение, ни конечные контрмодели не дают semantic licensing
 или execution grant. [Полный контракт](docs/nl-causal003/QUICKSTART_RU.md).
+
+## Аутентификация транспорта
+
+`release_transport.py` применяет owner-конфигурацию до сборки FastMCP ASGI app.
+`authentication=oauth` сохраняет прежний OAuth/PKCE путь по умолчанию. Явное
+`none` отключает SDK verifier, OAuth discovery/endpoints и legacy login route.
+На текущем production установлен `none`; доступ открытый. При этом HTTP host/origin,
+body limits,94 tool schemas, project boundaries и локальная operator authority
+остаются прежними. Режим сообщается в service_health и bridge_system_status.

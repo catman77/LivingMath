@@ -28,6 +28,9 @@ def load_private(path):
 
 def serve(path):
     cfg = load_private(path)
+    authentication = cfg.get('authentication', 'oauth')
+    if authentication not in ('oauth', 'none'):
+        raise ValueError('INVALID_TRANSPORT_AUTHENTICATION')
     layer = Path(cfg['release_layer']).resolve(strict=True)
     manifest_path = layer/'release_manifest.json'
     if sha(manifest_path) != cfg['release_manifest_sha256']:
@@ -130,6 +133,8 @@ def serve(path):
     original_mount = bridge.mount
 
     def mount(server, *args, **kwargs):
+        from release_transport import configure_authentication
+        configure_authentication(server, authentication)
         original_mount(server, *args, **kwargs)
         register_tools(server, cfg['assurance_state'])
         from lm_suti_assurance.semantic_bridge.mcp import register_tools as register_semantic
@@ -166,6 +171,7 @@ def serve(path):
                     value['legacy_protocol_version'] = value.get('version')
                     value['version'] = active_release
                     value['deployment_id'] = cfg['deployment_id']
+                    value['authentication'] = authentication
                     value['assurance_release'] = {'release':active_release,'gate':cfg['release_gate'],
                         'release_manifest_sha256':cfg['release_manifest_sha256'],
                         'external_human_replays':cfg['external_human_replays'],
