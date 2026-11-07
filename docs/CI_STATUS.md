@@ -1,6 +1,23 @@
 # GitHub Actions: запуск пока заблокирован
 
-## Подтверждённая причина на 2026-11-06
+## Текущая проверка v0.4.11 от2026-11-07
+
+Code commit `e7b92a9ebb00055d9f2d96a44d66fdfc81c25df8` и
+[релиз](https://github.com/catman77/LivingMath/releases/tag/v0.4.11-developer-preview)
+опубликованы. Анонимно скачаны и сверены1766 source blobs и ZIP86 390 583 bytes.
+Локально464/464 source tests и464/464 installed-wheel tests; на production
+60 causal checks,869 formal checks/667 MCP calls,1024/1024 legacy rows и12 old replay.
+
+У всех6 GitHub checks conclusion=failure; annotation сообщает:
+
+> The job was not started because your account is locked due to a billing issue.
+
+GitHub-тесты не запускались. CI=`NOT_RUN_ACCOUNT_BILLING_LOCK`, а не PASS.
+[Фактические checks/annotations](nl-causal003/GITHUB_CI.json),
+[публичная сверка](nl-causal003/PUBLIC_READBACK.json). Условия тестов и workflow
+не ослаблялись; billing не менялся.
+
+## Предыдущая проверка v0.4.5 от2026-11-06
 
 Код v0.4.5 опубликован в `main`, commit
 `5f7ebe0a5c57be2d48251e09950917f2706f8328`. Обратное сетевое клонирование
