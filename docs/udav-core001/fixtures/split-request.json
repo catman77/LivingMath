@@ -1,0 +1,51 @@
+{
+  "algebra": {
+    "allow_reduce": false,
+    "kind": "FREE",
+    "preserve_history": true
+  },
+  "normalization": "none",
+  "observers": [
+    "literal",
+    "alpha_pattern",
+    "adjacency",
+    "composition"
+  ],
+  "operators": [
+    "SPLIT"
+  ],
+  "schema": "levinmas-white-star-symbolic-request/1",
+  "search": {
+    "history_identity": "word",
+    "max_candidates_per_step": 3,
+    "max_nodes": 180,
+    "max_observations": 180,
+    "max_steps": 24,
+    "max_total_tokens": 500,
+    "max_word_tokens": 8,
+    "seed": 119,
+    "strategy": "local_structural_novelty"
+  },
+  "segmentation": {
+    "record_boundaries": "whole",
+    "renaming_scope": "global",
+    "unit": "whitespace"
+  },
+  "source": {
+    "alphabet": [
+      "a",
+      "b",
+      "c"
+    ],
+    "edition": "synthetic-20261108",
+    "language": "synthetic",
+    "rights": "synthetic-original",
+    "sha256": "25200dac09708da26462b5807bfcd61cf46c37155785088bf73a6e1dc13395a4",
+    "text": "a b c a b c a b",
+    "title": "All-contiguous-substrings reachable in two splits"
+  },
+  "task": {
+    "max_rules": 4,
+    "mode": "discover_relations"
+  }
+}

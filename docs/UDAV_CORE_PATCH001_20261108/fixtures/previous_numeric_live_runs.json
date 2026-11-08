@@ -1,0 +1,34 @@
+{
+  "project": "udav_space_diag_20261108",
+  "live_version": "v0.4.11-developer-preview",
+  "deployment_id": "noauth-20261107T222747Z",
+  "synthetic_source_utf8": "A B C D E F G H",
+  "synthetic_source_sha256": "bbebffe92c183094c6641400139773466c8ebf6e41e629ce4afcaa6562f5b690",
+  "source_code_blobs": {
+    "native_white_star_cpp": "56fc2dc827e2e14aff0087a86f63f86f902ce670",
+    "udav_py": "9315160123a7ca10d2f0eedc4424b74a378da82f",
+    "source_py": "2d0c572bd7d0ac605b1d2aaa1e4efd4c41f51661",
+    "numeric_adapter_py": "8639 bytes, src/lm_suti_assurance/white_star/vendor/integration/white_star_adapter.py"
+  },
+  "runs": {
+    "quadratic_seed21_k3": "0c3efc53f62225dca2b8079c311047711a95853e7afb507b44930707c86a4426",
+    "quadratic_seed21_k8": "cf43088edf4bff2e8277ca702dffd8048cfb5519608e64683eb3c9de255ff126",
+    "quadratic_seed22_k3": "af0bc015edd79a952e4360c799656022f2a30943e6e2023d55c90517f2d5d975",
+    "quadratic_seed22_k8": "550ff9c27fdf5074af75b727008d03d387f954fbcfe5855cb3f0eacf39efc0f5",
+    "cubic_seed22_k8": "cd77184b170465e6c73bcc6ad6e72a3664ca37565ef2f03aaa68bd24a3b18b4c",
+    "reverse_quadratic_seed22_k8": "f37e685190a85c5ec1c47a8312d6627a33a2c8aa4667731458270e53d401c189",
+    "scale3_seed22_k8": "dc3f29633cb76263cb832ba30e8a4758c6e82c36301d1ba78e87477a60fd3ba3",
+    "scale7_seed22_k8": "ad7a957ede02e63a6aeab6e9234d85d0058133284c037485f072d37ce6a08a41",
+    "source_relation_added_seed22_k8": "f898181d0069bddd22b9c19c7c0578ea99f0b5907ec9140b67b6ab4f6c295364",
+    "holdout_seed23_k8": "7fad7fe316b8385f299deb1142d9e47f3d1f432dff3606eddc05a2c69b9b7173",
+    "holdout_seed24_k8": "7d95588d80e32c484cd085c93768a514a295c0ebf34329436e9b2b8614e73429",
+    "holdout_seed25_k8": "3212ecc64a8aac8fa3239b259ea6d584c688933e587970bdacb4cea13fe94791",
+    "holdout_seed26_k8": "0c6a492a45fb17e9aa7961c3845b0f1c64a657202209a6f62c79778a32d6b1c2"
+  },
+  "intervention_checks": {
+    "quadratic_vs_cubic": "same candidate views 24/24; selected charts 8/24",
+    "quadratic_vs_reverse_quadratic": "same candidate views 24/24; selected charts 7/24",
+    "source_relations_addition": "same candidate views, scores, selected charts, signatures 24/24",
+    "scale3_vs_scale7": "same candidate views, scores, selected charts, signatures 24/24"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "artifact": "UDAV_CORE_PATCH001_20261108",
+  "artifact_kind": "CODE_AGENT_IMPLEMENTATION_SPEC_AND_REFERENCE_ORACLES",
+  "created_date": "2026-11-08",
+  "status": "SPEC_READY_NOT_DEPLOYED",
+  "contains_production_patch": false,
+  "tests_local_reference_only": "5/5 PASS + 4 oracle scripts PASS",
+  "files": [
+    {
+      "path": "ACCEPTANCE_MATRIX.json",
+      "bytes": 1794,
+      "sha256": "51229276e5322c9361801ca637e05dae3246b6445369ec42f99cc46e1700fe5e"
+    },
+    {
+      "path": "MCP_API_PROPOSAL_RU.md",
+      "bytes": 3634,
+      "sha256": "fc92d73c2faf136da57eef7537ab078839e50df86fa6e490604bc907a972c4ba"
+    },
+    {
+      "path": "PROMPT_CODE_AGENT_RU.md",
+      "bytes": 6043,
+      "sha256": "528e4e45028b053991daf5e34ab88fbe71d0c038c382f8615d15972df14e5736"
+    },
+    {
+      "path": "RCA_SCOPE_RU.md",
+      "bytes": 5365,
+      "sha256": "4701831305294926cdd75e7c09859da291fe4600cb8571884a0134eee02332b1"
+    },
+    {
+      "path": "README_RU.md",
+      "bytes": 1939,
+      "sha256": "4578369491d7cafb4fa4103755bbb09827c99f61648b50d2621e91ad9302d282"
+    },
+    {
+      "path": "RUN_LOCAL_CHECKS.sh",
+      "bytes": 420,
+      "sha256": "6eb0f1b77773b3041b6d9a01d329803de58ef38223c5252b63edf8068c925874"
+    },
+    {
+      "path": "TZ_CODE_AGENT_RU.md",
+      "bytes": 24350,
+      "sha256": "f32cfccca1e96418e916cc99b1a569bb446c68665f81364425b763bec33b271a"
+    },
+    {
+      "path": "fixtures/CODE_BASELINE.json",
+      "bytes": 2167,
+      "sha256": "f3dac497630dd91eb411ad784997f3bbe85e633d747226deb581caa418ec9a39"
+    },
+    {
+      "path": "fixtures/DEFERRED_NEXT008_NOT_SCOPE.md",
+      "bytes": 5849,
+      "sha256": "b47eb5f106b61fa0dd8084643aa1f24aa3a1cfa9aa748f875afef7f2f2559b0f"
+    },
+    {
+      "path": "fixtures/previous_numeric_live_runs.json",
+      "bytes": 2260,
+      "sha256": "f295ab613689c7f761fc3ac1b0c92a7583d1f0e64dc56c4530d7bf12793ca4e9"
+    },
+    {
+      "path": "reference_oracles/factorial_frontier.py",
+      "bytes": 8354,
+      "sha256": "e8aff94a2629705597a95dbf4251d8f9b5070901a23db58ff07291e289d35263"
+    },
+    {
+      "path": "reference_oracles/frozen_counterfactual.py",
+      "bytes": 4885,
+      "sha256": "656e56427454365b56fe12d545696f8f3ff538a728bdab9133795359c9e359a3"
+    },
+    {
+      "path": "reference_oracles/independent_native_reference.py",
+      "bytes": 8614,
+      "sha256": "25426857837afa46ef7d216c8253918ac0de82800c3d8f8f3604a782de0a84a3"
+    },
+    {
+      "path": "reference_oracles/oracle_substrings.py",
+      "bytes": 1761,
+      "sha256": "b0a872ff1f4885cdbb887ddd8ee68c067e1b88004b38085333a040a35ff346aa"
+    },
+    {
+      "path": "tests/test_package_references.py",
+      "bytes": 1833,
+      "sha256": "6978826359d801b2d6b85867eb86808843e7a5133b173c72350d9f90b33fb978"
+    }
+  ]
+}

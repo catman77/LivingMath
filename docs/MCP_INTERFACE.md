@@ -1,8 +1,8 @@
-# MCP-интерфейс LivingMath v0.4.11
+# MCP-интерфейс LivingMath v0.4.12
 
-Актуальная production-композиция: **94 инструмента**, версия сервера
-`v0.4.11-developer-preview`, пакет `0.4.11.dev0`. [Архитектура](../ARCHITECTURE.md),
-[установка и различия 44/94](INSTALL.md), [исходный текст и rights](USAGE.md).
+Актуальная production-композиция: **98 инструментов**, версия сервера
+`v0.4.12-developer-preview`, пакет `0.4.12.dev0`. [Архитектура](../ARCHITECTURE.md),
+[установка и различия 44/98](INSTALL.md), [исходный текст и rights](USAGE.md).
 
 ## Транспорт и обнаружение
 
@@ -38,11 +38,11 @@ OAuth-режиме перед этим выполняется discovery/login/to
 не доказывает эффективность исследования.
 
 Полные input/output schemas, описания и annotations всех методов:
-[MCP_TOOL_SCHEMAS.json](nl-causal003/MCP_TOOL_SCHEMAS.json).
+[MCP_TOOL_SCHEMAS.json](udav-core001/MCP_TOOL_SCHEMAS.json).
 Это неизменённый ответ настоящего production `tools/list` из последней приёмки,
 не схема, восстановленная из описания. Для конкретного подключения приоритет
 имеет его текущий `tools/list`. При закешированном старом наборе обновите
-подключение к текущему origin, указанному выше, затем проверьте94 tools. Старый
+подключение к текущему origin, указанному выше, затем проверьте98 tools. Старый
 удалённый Cloudflare URL обновлением списка не восстановить. Публикация GitHub
 сама по себе не перезапускает сервер.
 
@@ -62,7 +62,8 @@ OAuth-режиме перед этим выполняется discovery/login/to
 | Formal Bridge v1 | 8 | `src/lm_suti_assurance/formal_bridge/mcp.py` |
 | NLProposalBridge/1 | 2 | `src/lm_suti_assurance/nl_proposal/mcp.py` |
 | Frozen causal decoder |1| `nl_proposal/causal_mcp.py` |
-| **Всего** | **94** | `tools/release_v01_entry.py` объединяет регистрации |
+| UDAV Core opt-in |4| `src/lm_suti_assurance/udav_core/mcp.py` |
+| **Всего** | **98** | `tools/release_v01_entry.py` объединяет регистрации |
 
 ## Проекты, запросы и разрешения
 
@@ -377,7 +378,7 @@ model, record, imported grammar/DFA или untrusted proof. `formal_synthesize`
 `UNKNOWN_BOUND`, `UNKNOWN_CYCLE`, `NO_DIFFERENCE_WITHIN_BOUND` не означают grant,
 refutation of author intent или equivalence. `CHECKED_INSTANCE` — конечная проверка.
 
-После обновления клиент повторяет initialize/tools/list: текущая композиция94 tools.
+После обновления клиент повторяет initialize/tools/list: текущая композиция98 tools.
 Для этой поставки прежний Cloudflare origin был удалён; подключите LivingMath к
 `https://difficulty-nightlife-rca-missions.trycloudflare.com/mcp`, затем обновите
 список инструментов. Сохранённые runs читаются из прежней базы.
@@ -399,7 +400,7 @@ parents, snapshot и AST guards отклоняются отдельно. `matche
 
 Для ChatGPT после обновления используйте текущий origin из начала документа.
 Если tools/list ещё содержит91 или93 метода, переподключите LivingMath к новому
-адресу и дождитесь повторного initialize/tools/list с94 инструментами.
+адресу и дождитесь повторного initialize/tools/list с98 инструментами.
 
 ## Frozen NL causal redecode (добавлен0.4.11)
 
@@ -408,3 +409,19 @@ source_item_indices, structural_run_refs?, arms, policy)` возвращает a
 COMPLETED run без provider/network calls. [Полный точный JSON, схемы границ,
 пагинация и replay](nl-causal003/QUICKSTART_RU.md). Старые93 tools/list записи
 сохранены целиком. `formal_nl_inspect` читает как прежние, так и новые run refs.
+
+## UDAV Core (добавлен0.4.12)
+
+| Метод | Обязательные аргументы | Назначение |
+|---|---|---|
+| `udav_symbolic_explore` | `project`, `request_key`, `request` | Реальный символьный фронтир; `request.search.strategy="frontier_argument_coverage_v1"` |
+| `white_star_explore_v2` | `project`, `request_key`, `request`, `selection_policy` | Численный selector; `selection_policy="cat_distinction_tiebreak_v1"` |
+| `udav_inspect` | `project`, `run_id` | `view`: summary/result/diagnostics/bundle; byte offset, limit1…48 KiB; необязательный expected_result_sha256 |
+| `udav_replay` | `project`, `run_id` | Повтор собственных входов через установленный bounded worker, с проверкой binding и SHA |
+
+Сначала `assurance_project_new`. Полностью заполненные запросы, включая rights,
+точные source SHA и реальные run IDs: [MCP_EXAMPLES.json](udav-core001/MCP_EXAMPLES.json).
+[Порядок вызовов и офлайн replay](udav-core001/QUICKSTART_RU.md).
+Ответ использует `data`/`error`; статус COMPLETED означает сохранённый результат
+вычисления. Причина прекращения поиска находится внутри summary.halt_reason.
+Ни аудит, ни запуск не дают execution permission или semantic verification.

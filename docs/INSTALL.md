@@ -1,6 +1,6 @@
 # Установка SUTI–Bridge–LivingMath
 
-Актуальный код: **v0.4.11-developer-preview** / пакет `0.4.11.dev0`.
+Актуальный код: **v0.4.12-developer-preview** / пакет `0.4.12.dev0`.
 Исходники: [catman77/LivingMath](https://github.com/catman77/LivingMath).
 Есть три отдельных пути запуска:
 
@@ -8,7 +8,7 @@
 |---|---|
 | Пакет `lm-suti-assurance` из корня | Текущий CLI и вычислительные модули; сам по себе не поднимает HTTP |
 | `unified_system.local` из `live_math_mcp_prod/` | Новый изолированный legacy HTTPS/OAuth стенд с 44 инструментами |
-| `tools/release_v01_entry.py --config ...` | Полная production-композиция на 94 инструмента; требует приватный установленный legacy слой и owner approvals |
+| `tools/release_v01_entry.py --config ...` | Полная production-композиция на 98 инструментов; требует приватный установленный legacy слой и owner approvals |
 
 ## Актуальный пакет и вычислительные модули
 
@@ -28,7 +28,7 @@ assurance CLI достаточно `python -m pip install .`; White Star extras 
 Linux с Landlock ABI≥3 и C++17. Ручные proposals и offline replay модели не
 используют. [Пример полного CLI-цикла](../README_QUICKSTART_RU.md).
 
-## Полный установленный сервер: 94 инструмента
+## Полный установленный сервер: 98 инструментов
 
 Точка входа совпадает с production:
 
@@ -59,7 +59,7 @@ Entry проверяет SHA `release_manifest.json` и каждого файл�
 установкой. Приватный config и approvals не входят в Git. Автоматического
 установщика полного нового production экземпляра в репозитории пока нет;
 `unified_system.local prepare` его не заменяет. Для разработчика доступны CLI,
-тесты, новый legacy стенд ниже и опубликованный контракт всех 94 методов.
+тесты, новый legacy стенд ниже и опубликованный контракт всех 98 методов.
 
 Сборка package wheel не включает `live_math_mcp_prod/` и `tools/`: полный сервер
 публикуется **весь checkout**, а wheel — библиотека/CLI. Перед обновлением рабочего
@@ -226,3 +226,13 @@ legacy dependencies и все SQLite/workspace paths. Проверенный н�
 ## Opt-in NL provider
 
 [Установка, owner-config и закрытый pipe](nl-proposer002/ARCHITECTURE_RU.md), [запросы](nl-proposer002/QUICKSTART_RU.md), [резервирование и откат](nl-proposer002/ROLLBACK_RU.md). Используется существующая ChatGPT-login подписка владельца; API key не передаётся и не требуется для этого backend.
+
+## Дополнительные UDAV Core инструменты
+
+В0.4.12 оператор добавляет `"udav_core":{"enabled":true,"numeric":true}` в
+приватный release config и заново связывает SHA-манифест с owner authorization.
+Это публикует четыре новых метода; для каждого запуска клиент явно выбирает
+новую policy. При отсутствии секции старые регистрации и поведение сохранены.
+Предварительный `lm-suti white-star prepare` обязателен. Новые workers разделяют
+старые квоты2 active/16 queued на engine; job ceilings5 CPU sec/6 wall sec/512 MiB
+не повышены. [Точные вызовы](udav-core001/QUICKSTART_RU.md).

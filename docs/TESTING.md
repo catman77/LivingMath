@@ -124,3 +124,18 @@ production dependency ради CI не меняется. Старый `.github/w
 При заполненной client-registration quota QA поддерживает
 `LIVINGMATH_QA_CLIENT_FILE` с существующим owner-only mode600 OAuth client JSON;
 токены/пароли не выводятся и не публикуются. Защитные лимиты сервера не меняются.
+
+## UDAV Core0.4.12
+
+Final installed wheel:485 PASS (17 focused UDAV tests); legacy1066 PASS/20
+исторических SKIP. Для старых017/018/019 тестов задайте LM_ENGINE017_POLICY
+путём к оригинальному frozen/pre-registration.json своего установленного
+набора; без него fixture пытается читать старый /tmp/lm017_path. Это отдельный
+исторический prerequisite, не production database. Исходный fixture не
+подменяется, все тесты используют временные SQLite.
+
+Реальная public MCP приёмка:490 symbolic,1436 numeric и6 дополнительных checks.
+Команды `tools/udav001_mcp_qa.py --help` и `tools/udav001_numeric_qa.py --help`
+показывают endpoint/project/output/baseline параметры. Runner создаёт отдельный
+QA-проект; baseline — сохранённый JSON всех94 старых инструментов. [Точные
+результаты и границы](udav-core001/IMPLEMENTATION_REPORT_RU.md).

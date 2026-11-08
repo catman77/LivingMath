@@ -1,0 +1,1262 @@
+[
+  {
+    "geometry": "known-quadratic",
+    "seed": 23,
+    "pairs": 24,
+    "v2_run_id": "37bbec3dc02ef46a1624a8ed6b11e993ec44b9f1cf7fbe17a001f51e8b222a2f",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.018813167,
+      "max_rss_kib": 52992,
+      "server_elapsed_s": 0.0414304849691689,
+      "worker_wall_s": 0.03349926881492138
+    },
+    "legacy_pairs": 17,
+    "legacy_run_id": "b9772256d8fbfa5068de7439e6db0ca41bb0ddae53a3ed3a8e39e6fe62d15905",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.009610877,
+      "max_rss_kib": 58492,
+      "numeric_kernel_search_s": 0.0018805579748004675,
+      "result_serialization_s": 0.0007519519422203302,
+      "server_elapsed_s": 0.019531870959326625,
+      "source_preflight_s": 0.0028502950444817543,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.009654469089582562,
+      "worker_wall_s": 0.01592883002012968
+    }
+  },
+  {
+    "geometry": "known-quadratic",
+    "seed": 24,
+    "pairs": 23,
+    "v2_run_id": "ff92eaaffff25b8db44005acdcc9a290159d8203288f5ffa075528af670e589f",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.019199542,
+      "max_rss_kib": 53844,
+      "server_elapsed_s": 0.040571591118350625,
+      "worker_wall_s": 0.03181758802384138
+    },
+    "legacy_pairs": 20,
+    "legacy_run_id": "f1bd60257f9eaedb5c9a287d684367a13cd5d6431aad1fd8e8feeec27f502e90",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.009794483,
+      "max_rss_kib": 58572,
+      "numeric_kernel_search_s": 0.0019113810267299414,
+      "result_serialization_s": 0.0007763761095702648,
+      "server_elapsed_s": 0.019342150073498487,
+      "source_preflight_s": 0.0030416541267186403,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.00988540006801486,
+      "worker_wall_s": 0.015871361130848527
+    }
+  },
+  {
+    "geometry": "known-quadratic",
+    "seed": 25,
+    "pairs": 20,
+    "v2_run_id": "bde0ca5d3ca6c23338f2010501b73465723c17f47b26281e852b5d1e2f38d4fd",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.019027675,
+      "max_rss_kib": 53848,
+      "server_elapsed_s": 0.03918508603237569,
+      "worker_wall_s": 0.031307493103668094
+    },
+    "legacy_pairs": 16,
+    "legacy_run_id": "010c599e628236f6fb8eeaee20abfcfc2a96fdb9a58f42dbb7cd2a91754cdcf4",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.009762969000000002,
+      "max_rss_kib": 58520,
+      "numeric_kernel_search_s": 0.001921502873301506,
+      "result_serialization_s": 0.0007384719792753458,
+      "server_elapsed_s": 0.019682414131239057,
+      "source_preflight_s": 0.0032344558276236057,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.009907664032652974,
+      "worker_wall_s": 0.01594464504159987
+    }
+  },
+  {
+    "geometry": "known-quadratic",
+    "seed": 26,
+    "pairs": 22,
+    "v2_run_id": "6769f574f63b2a496e2111dae665a54867e06792d1654d90eba7ef8048a86e22",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.019684285,
+      "max_rss_kib": 53852,
+      "server_elapsed_s": 0.040951657108962536,
+      "worker_wall_s": 0.03199624991975725
+    },
+    "legacy_pairs": 18,
+    "legacy_run_id": "25ca72b85693becbfe054bd00e84795da54cd18591fe765edb7dc4af69deeedc",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.010186031,
+      "max_rss_kib": 58580,
+      "numeric_kernel_search_s": 0.0019504218362271786,
+      "result_serialization_s": 0.0007921401411294937,
+      "server_elapsed_s": 0.021445584017783403,
+      "source_preflight_s": 0.0032689799554646015,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.010000366950407624,
+      "worker_wall_s": 0.016686465125530958
+    }
+  },
+  {
+    "geometry": "known-quadratic",
+    "seed": 27,
+    "pairs": 23,
+    "v2_run_id": "87e97c6fd9f8c3cbc4f9f66b8d9d53e4b68f5f8ab751dac44725584a12fd2bce",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.018538616,
+      "max_rss_kib": 54460,
+      "server_elapsed_s": 0.048015110194683075,
+      "worker_wall_s": 0.03585582389496267
+    },
+    "legacy_pairs": 16,
+    "legacy_run_id": "e64384dfb37bcb08ff631c010c772179e2b98a5e3b6bb9afa7288b8c5e016ce1",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.010177833,
+      "max_rss_kib": 58568,
+      "numeric_kernel_search_s": 0.0020012010354548693,
+      "result_serialization_s": 0.000797168118879199,
+      "server_elapsed_s": 0.024198058992624283,
+      "source_preflight_s": 0.0031674650963395834,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.010081584099680185,
+      "worker_wall_s": 0.016055842861533165
+    }
+  },
+  {
+    "geometry": "known-quadratic",
+    "seed": 28,
+    "pairs": 23,
+    "v2_run_id": "cd6eb4bd7a324b0496cedbd5f10bda54f85ad94cf35b7471ab8981338b54ce5d",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.018745069,
+      "max_rss_kib": 54360,
+      "server_elapsed_s": 0.04562203004024923,
+      "worker_wall_s": 0.032297063851729035
+    },
+    "legacy_pairs": 16,
+    "legacy_run_id": "37f5f5cc71e8c7144bf128e75ed166be405e7baf4b353a8cd14193d3030597af",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.010290818,
+      "max_rss_kib": 58600,
+      "numeric_kernel_search_s": 0.001815269934013486,
+      "result_serialization_s": 0.0007538010831922293,
+      "server_elapsed_s": 0.0197475110180676,
+      "source_preflight_s": 0.0031920101027935743,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.010019428795203567,
+      "worker_wall_s": 0.01567531516775489
+    }
+  },
+  {
+    "geometry": "known-quadratic",
+    "seed": 29,
+    "pairs": 23,
+    "v2_run_id": "a8184aa7f2e32a55306873f5cf7c132c710c7f7d25223fafb9fb935376499fc1",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.019059352,
+      "max_rss_kib": 54364,
+      "server_elapsed_s": 0.040487658930942416,
+      "worker_wall_s": 0.032466007163748145
+    },
+    "legacy_pairs": 16,
+    "legacy_run_id": "ae4f21648dfa0e0c7e22f3de9b0c70522615575f32d528fb5684a9cb1c81443f",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.009724924000000001,
+      "max_rss_kib": 58572,
+      "numeric_kernel_search_s": 0.001879116054624319,
+      "result_serialization_s": 0.0007645641453564167,
+      "server_elapsed_s": 0.019094262970611453,
+      "source_preflight_s": 0.002789488062262535,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.009666349040344357,
+      "worker_wall_s": 0.015535124810412526
+    }
+  },
+  {
+    "geometry": "known-quadratic",
+    "seed": 30,
+    "pairs": 22,
+    "v2_run_id": "1bff27fb5ed867205c8d109651428da50f4010d3e42d1ce4f920646599b5fd87",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.019269202000000003,
+      "max_rss_kib": 54464,
+      "server_elapsed_s": 0.04679115512408316,
+      "worker_wall_s": 0.035091388039290905
+    },
+    "legacy_pairs": 16,
+    "legacy_run_id": "375d69ccdfce52ef33d4e8cb0fa38bfbe6060f4b3f7c0fbf51319f8795740d41",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.009793366,
+      "max_rss_kib": 58600,
+      "numeric_kernel_search_s": 0.0019069451373070478,
+      "result_serialization_s": 0.0009601011406630278,
+      "server_elapsed_s": 0.019283914007246494,
+      "source_preflight_s": 0.0028871719259768724,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.009546549990773201,
+      "worker_wall_s": 0.01578056998550892
+    }
+  },
+  {
+    "geometry": "known-quadratic",
+    "seed": 31,
+    "pairs": 23,
+    "v2_run_id": "e33a8ea1032bceb98823e34e369ea7f7f2b8ac7e67723031d8050922958dfc41",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.019118565,
+      "max_rss_kib": 54468,
+      "server_elapsed_s": 0.04089251300320029,
+      "worker_wall_s": 0.032393440837040544
+    },
+    "legacy_pairs": 17,
+    "legacy_run_id": "baa44c9ff83b174d8ce53dae748bf80f3170a421aca26a03a9961683346a2fc5",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.010879960000000001,
+      "max_rss_kib": 58576,
+      "numeric_kernel_search_s": 0.0020552321802824736,
+      "result_serialization_s": 0.0008044189307838678,
+      "server_elapsed_s": 0.10056057013571262,
+      "source_preflight_s": 0.003020525211468339,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.0102072989102453,
+      "worker_wall_s": 0.016442711930721998
+    }
+  },
+  {
+    "geometry": "known-quadratic",
+    "seed": 32,
+    "pairs": 24,
+    "v2_run_id": "f66fe49caf9222a52b59af26baedf21f522a843f1048d07b6f34d978d0fc1c0e",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.019016615,
+      "max_rss_kib": 54468,
+      "server_elapsed_s": 0.04027368198148906,
+      "worker_wall_s": 0.03190065594390035
+    },
+    "legacy_pairs": 20,
+    "legacy_run_id": "b045048d1d398099899b3a9bcd32f5440b0a2c7022d4903a8b220fb46f7ce8d9",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.010470278000000001,
+      "max_rss_kib": 58600,
+      "numeric_kernel_search_s": 0.0019143319223076105,
+      "result_serialization_s": 0.0007440610788762569,
+      "server_elapsed_s": 0.019513302017003298,
+      "source_preflight_s": 0.002898717997595668,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.009783236775547266,
+      "worker_wall_s": 0.01599777303636074
+    }
+  },
+  {
+    "geometry": "known-quadratic",
+    "seed": 33,
+    "pairs": 23,
+    "v2_run_id": "9b7344c67eafe0da108038dbb56c157a111a684a699e2d8617657d58b4cf04dd",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.019351531999999998,
+      "max_rss_kib": 54468,
+      "server_elapsed_s": 0.04125375393778086,
+      "worker_wall_s": 0.03247909597121179
+    },
+    "legacy_pairs": 16,
+    "legacy_run_id": "a7ec3b998e98bfc751293635d0a6911d284a83537f726ed320839fe7f118688f",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.0098013,
+      "max_rss_kib": 58580,
+      "numeric_kernel_search_s": 0.0019982620142400265,
+      "result_serialization_s": 0.0007767800707370043,
+      "server_elapsed_s": 0.01970341010019183,
+      "source_preflight_s": 0.003030934138223529,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.009818641934543848,
+      "worker_wall_s": 0.015951131004840136
+    }
+  },
+  {
+    "geometry": "known-quadratic",
+    "seed": 34,
+    "pairs": 23,
+    "v2_run_id": "0f54ee0920b57b5d72aeaa0888e54215720569f3d98ba499830be216b5aa9c5e",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.019208961,
+      "max_rss_kib": 54468,
+      "server_elapsed_s": 0.0408739869017154,
+      "worker_wall_s": 0.032015915028750896
+    },
+    "legacy_pairs": 15,
+    "legacy_run_id": "f83c561733d780585c18d3e5e92ca632fabc9b0904a5309f88ffcb88858bc25f",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.009443502,
+      "max_rss_kib": 58604,
+      "numeric_kernel_search_s": 0.0019286489114165306,
+      "result_serialization_s": 0.0007461481727659702,
+      "server_elapsed_s": 0.018839524127542973,
+      "source_preflight_s": 0.0029652381781488657,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.009606164880096912,
+      "worker_wall_s": 0.0154611780308187
+    }
+  },
+  {
+    "geometry": "known-quadratic",
+    "seed": 35,
+    "pairs": 23,
+    "v2_run_id": "25de16358369eb6d1c3bc63b3e424e075d0e43751d2d4f083edf8d5c899e80d6",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.019125216,
+      "max_rss_kib": 54468,
+      "server_elapsed_s": 0.040350457886233926,
+      "worker_wall_s": 0.03192493109963834
+    },
+    "legacy_pairs": 16,
+    "legacy_run_id": "72d50e90c574809669a314d62943794d9cee736fced8adebae5ab63454dc5824",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.009964005000000001,
+      "max_rss_kib": 58592,
+      "numeric_kernel_search_s": 0.0019256938248872757,
+      "result_serialization_s": 0.0007920418865978718,
+      "server_elapsed_s": 0.019927310990169644,
+      "source_preflight_s": 0.002967000938951969,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.009933484019711614,
+      "worker_wall_s": 0.01656209910288453
+    }
+  },
+  {
+    "geometry": "known-quadratic",
+    "seed": 36,
+    "pairs": 23,
+    "v2_run_id": "97e5940055679ba5f6af2800872ebf2d91a82d9f917e44c7f5503537131ad983",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.018911714,
+      "max_rss_kib": 54468,
+      "server_elapsed_s": 0.04639143496751785,
+      "worker_wall_s": 0.034626482985913754
+    },
+    "legacy_pairs": 17,
+    "legacy_run_id": "b0f7cd9bb8c51cde57725878bfb1208ddcc1beb6f3f9cccef7a477b2cabb0607",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.010547312,
+      "max_rss_kib": 58604,
+      "numeric_kernel_search_s": 0.0021895079407840967,
+      "result_serialization_s": 0.0008971630595624447,
+      "server_elapsed_s": 0.02030875184573233,
+      "source_preflight_s": 0.0029435958713293076,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.010573714971542358,
+      "worker_wall_s": 0.016827987041324377
+    }
+  },
+  {
+    "geometry": "known-quadratic",
+    "seed": 37,
+    "pairs": 23,
+    "v2_run_id": "428e20ece8d80a410b4c0cb9d0e078bf2f9f8d7b52b4b2b9e859020b92c98447",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.019329651,
+      "max_rss_kib": 54468,
+      "server_elapsed_s": 0.04025906906463206,
+      "worker_wall_s": 0.031499773962423205
+    },
+    "legacy_pairs": 17,
+    "legacy_run_id": "bc96b18b987034b141390ee8b387ae002a5815330d8eb194a305c40098791ab0",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.009785815000000002,
+      "max_rss_kib": 58592,
+      "numeric_kernel_search_s": 0.0021105180494487286,
+      "result_serialization_s": 0.0007581519894301891,
+      "server_elapsed_s": 0.02006140095181763,
+      "source_preflight_s": 0.002903770888224244,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.009830363793298602,
+      "worker_wall_s": 0.015737906098365784
+    }
+  },
+  {
+    "geometry": "known-quadratic",
+    "seed": 38,
+    "pairs": 20,
+    "v2_run_id": "ea0eaa7c924bb13e857991b3fd8eccee79a7c27b6a857cd76dc8c71c408f5cb7",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.01904923,
+      "max_rss_kib": 54468,
+      "server_elapsed_s": 0.03940323390997946,
+      "worker_wall_s": 0.031139238039031625
+    },
+    "legacy_pairs": 18,
+    "legacy_run_id": "204fbb98b349fde5a382b28402ba91cde21269418268f9c31734712c03168cd5",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.010187961,
+      "max_rss_kib": 58604,
+      "numeric_kernel_search_s": 0.001942700007930398,
+      "result_serialization_s": 0.0008919441606849432,
+      "server_elapsed_s": 0.019441897980868816,
+      "source_preflight_s": 0.0030529159121215343,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.009890174027532339,
+      "worker_wall_s": 0.01590623683296144
+    }
+  },
+  {
+    "geometry": "known-quadratic",
+    "seed": 39,
+    "pairs": 23,
+    "v2_run_id": "0cee763f91b129d1be8a011163b2af9831f52ac3ecab69c128b1e3c0ce173b84",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.019987313,
+      "max_rss_kib": 54468,
+      "server_elapsed_s": 0.040861432906240225,
+      "worker_wall_s": 0.03241337789222598
+    },
+    "legacy_pairs": 16,
+    "legacy_run_id": "0e8c5e42e885bcca2cfa442d70c8d0db9fd104c4a086967a70d815adb090b59c",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.010150652999999999,
+      "max_rss_kib": 58592,
+      "numeric_kernel_search_s": 0.0019319169223308563,
+      "result_serialization_s": 0.000770217040553689,
+      "server_elapsed_s": 0.019598223036155105,
+      "source_preflight_s": 0.0029233091045171022,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.009914653841406107,
+      "worker_wall_s": 0.01598440296947956
+    }
+  },
+  {
+    "geometry": "known-quadratic",
+    "seed": 40,
+    "pairs": 22,
+    "v2_run_id": "50a98aaf263ddd5ee6624439f371429ba780484739e567f2f40eb7e872e7e22f",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.018733501,
+      "max_rss_kib": 54468,
+      "server_elapsed_s": 0.03935255599208176,
+      "worker_wall_s": 0.031046543968841434
+    },
+    "legacy_pairs": 17,
+    "legacy_run_id": "d900c4b31582dda65af68acbf9e40d26c68dcd696bb65c686c9ce5ecc4582a70",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.00961455,
+      "max_rss_kib": 58604,
+      "numeric_kernel_search_s": 0.0018402179703116417,
+      "result_serialization_s": 0.0008304649963974953,
+      "server_elapsed_s": 0.02030338393524289,
+      "source_preflight_s": 0.0029198972042649984,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.009757194900885224,
+      "worker_wall_s": 0.0168123550247401
+    }
+  },
+  {
+    "geometry": "known-quadratic",
+    "seed": 41,
+    "pairs": 20,
+    "v2_run_id": "cab8b2cf62f61fb092630540d7897e12b3a0b3936d7114190108560fb5565f26",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.019054134,
+      "max_rss_kib": 54468,
+      "server_elapsed_s": 0.040211630053818226,
+      "worker_wall_s": 0.03174453810788691
+    },
+    "legacy_pairs": 15,
+    "legacy_run_id": "231f33330fbbfd691b01058204e674a8571281260f235e458293f150ac2fc913",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.010392741,
+      "max_rss_kib": 58592,
+      "numeric_kernel_search_s": 0.0019524889066815376,
+      "result_serialization_s": 0.0007929890416562557,
+      "server_elapsed_s": 0.01934695686213672,
+      "source_preflight_s": 0.0028822021558880806,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.00967673514969647,
+      "worker_wall_s": 0.015772308921441436
+    }
+  },
+  {
+    "geometry": "known-quadratic",
+    "seed": 42,
+    "pairs": 23,
+    "v2_run_id": "4c91f5f72cd55ee4bef2dce13e66d34d1dff0f869431af882f165d1327624990",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.018432711,
+      "max_rss_kib": 54468,
+      "server_elapsed_s": 0.03921386692672968,
+      "worker_wall_s": 0.030930037843063474
+    },
+    "legacy_pairs": 16,
+    "legacy_run_id": "90ee11a179b18a8da860f387756a5a0330450aea1de509c78ff1fc997638e8d5",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.01013936,
+      "max_rss_kib": 58604,
+      "numeric_kernel_search_s": 0.0019627921283245087,
+      "result_serialization_s": 0.0007449269760400057,
+      "server_elapsed_s": 0.020655225962400436,
+      "source_preflight_s": 0.0034786199685186148,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.010409100912511349,
+      "worker_wall_s": 0.016716510988771915
+    }
+  },
+  {
+    "geometry": "known-quadratic",
+    "seed": 43,
+    "pairs": 22,
+    "v2_run_id": "e95ed2fa8caae87637f2fd35c4cb5b4c68c67545e70dca9dae70c4e9adae922c",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.019153998999999998,
+      "max_rss_kib": 54468,
+      "server_elapsed_s": 0.05574747081845999,
+      "worker_wall_s": 0.04688923293724656
+    },
+    "legacy_pairs": 17,
+    "legacy_run_id": "5172140fe0e0bc71d5f7b5b0cd5c5270879080d01d8bf4308e2dad102eab0292",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.01022873,
+      "max_rss_kib": 58592,
+      "numeric_kernel_search_s": 0.001983191817998886,
+      "result_serialization_s": 0.0007943599484860897,
+      "server_elapsed_s": 0.019536910112947226,
+      "source_preflight_s": 0.0029436179902404547,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.009984096046537161,
+      "worker_wall_s": 0.016106985043734312
+    }
+  },
+  {
+    "geometry": "known-quadratic",
+    "seed": 44,
+    "pairs": 23,
+    "v2_run_id": "e884732a9088846546ff0932b9bfddc22f622fb0681ecfe533e704efd5a0bd49",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.019053828,
+      "max_rss_kib": 54468,
+      "server_elapsed_s": 0.038912357995286584,
+      "worker_wall_s": 0.030813627876341343
+    },
+    "legacy_pairs": 20,
+    "legacy_run_id": "6bad564be41bb6daa9bdc561a265303360f49c1b8bbc8d6ab6d7a1b7b78f5d01",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.009979931,
+      "max_rss_kib": 58604,
+      "numeric_kernel_search_s": 0.002194270957261324,
+      "result_serialization_s": 0.0007533440366387367,
+      "server_elapsed_s": 0.02001930493861437,
+      "source_preflight_s": 0.003103557974100113,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.010202990844845772,
+      "worker_wall_s": 0.01653213705867529
+    }
+  },
+  {
+    "geometry": "known-quadratic",
+    "seed": 45,
+    "pairs": 23,
+    "v2_run_id": "a18869eb1c45aeabbb6b9d1c897f8e97a3e5e8a96c945648f07e181a54711f22",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.019430334,
+      "max_rss_kib": 54472,
+      "server_elapsed_s": 0.10051324497908354,
+      "worker_wall_s": 0.03202244103886187
+    },
+    "legacy_pairs": 16,
+    "legacy_run_id": "8fb96894d498e134e612d2281b5037fa3277f86a63660ddfeaebd443873cd4ad",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.010863303000000001,
+      "max_rss_kib": 58592,
+      "numeric_kernel_search_s": 0.002043928951025009,
+      "result_serialization_s": 0.0009330029133707285,
+      "server_elapsed_s": 0.02015017089433968,
+      "source_preflight_s": 0.003063618903979659,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.010101482970640063,
+      "worker_wall_s": 0.01657321583479643
+    }
+  },
+  {
+    "geometry": "known-quadratic",
+    "seed": 46,
+    "pairs": 24,
+    "v2_run_id": "e3e58985c7fd6d26762c9dff3dde880c95933029e6ac5990a80558ff490116be",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.019362274,
+      "max_rss_kib": 54472,
+      "server_elapsed_s": 0.0400082019623369,
+      "worker_wall_s": 0.03167861979454756
+    },
+    "legacy_pairs": 16,
+    "legacy_run_id": "42ddff9fb6b27a9ff7adc747170adfa30499fee48f3276c87139c735fc61f8d5",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.010220716999999999,
+      "max_rss_kib": 58608,
+      "numeric_kernel_search_s": 0.001874282956123352,
+      "result_serialization_s": 0.0007574220653623343,
+      "server_elapsed_s": 0.020332232117652893,
+      "source_preflight_s": 0.0032098398078233004,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.010119451908394694,
+      "worker_wall_s": 0.016545749036595225
+    }
+  },
+  {
+    "geometry": "known-quadratic",
+    "seed": 47,
+    "pairs": 23,
+    "v2_run_id": "ae577c58dcbbb5b42252cada98347b5d5e9490cefb4bdfeb9c19225342e57673",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.020417114,
+      "max_rss_kib": 54472,
+      "server_elapsed_s": 0.04354971693828702,
+      "worker_wall_s": 0.03500578296370804
+    },
+    "legacy_pairs": 20,
+    "legacy_run_id": "3fa77c63b597b015b38b014125e21024d982aaa7a2e4c084b0050de524ef8252",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.009989138,
+      "max_rss_kib": 58592,
+      "numeric_kernel_search_s": 0.0019009469542652369,
+      "result_serialization_s": 0.0008045490831136703,
+      "server_elapsed_s": 0.019971030997112393,
+      "source_preflight_s": 0.003203993896022439,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.009991450933739543,
+      "worker_wall_s": 0.016311045037582517
+    }
+  },
+  {
+    "geometry": "known-quadratic",
+    "seed": 48,
+    "pairs": 23,
+    "v2_run_id": "4188b9c2fe77177fdb3e95d69573473001d7f1f21ac43823aba9e1982fb633b3",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.018631216,
+      "max_rss_kib": 54472,
+      "server_elapsed_s": 0.04258534801192582,
+      "worker_wall_s": 0.031198954908177257
+    },
+    "legacy_pairs": 18,
+    "legacy_run_id": "f1d52fe41eb3996ae5a4cb0f629b18b2fc708f83b8a9b6f56991e18389b3cb9a",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.010459191,
+      "max_rss_kib": 58608,
+      "numeric_kernel_search_s": 0.0019170360174030066,
+      "result_serialization_s": 0.000774140004068613,
+      "server_elapsed_s": 0.019248252967372537,
+      "source_preflight_s": 0.0029330418910831213,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.009866659063845873,
+      "worker_wall_s": 0.01562922401353717
+    }
+  },
+  {
+    "geometry": "known-quadratic",
+    "seed": 49,
+    "pairs": 23,
+    "v2_run_id": "a4e9ee91128fb6eddcc999b177833b5eb3dd25a0f01ddc2f785664e503a15e26",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.019740819000000003,
+      "max_rss_kib": 54472,
+      "server_elapsed_s": 0.04004219896160066,
+      "worker_wall_s": 0.03156343102455139
+    },
+    "legacy_pairs": 17,
+    "legacy_run_id": "45073b87064c3cd5e34cff4b3419abd06cadcb8131673f213035ee6bf9b5c1ec",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.010202265,
+      "max_rss_kib": 58592,
+      "numeric_kernel_search_s": 0.001988471020013094,
+      "result_serialization_s": 0.0009820600971579552,
+      "server_elapsed_s": 0.019984304904937744,
+      "source_preflight_s": 0.002959982957690954,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.009878251934424043,
+      "worker_wall_s": 0.016589127015322447
+    }
+  },
+  {
+    "geometry": "known-quadratic",
+    "seed": 50,
+    "pairs": 23,
+    "v2_run_id": "c9c92b01e6b7fdd328fba1b8fb6c83d9d11b1ed5d28a4d8f712e583e2c632b5f",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.019764766,
+      "max_rss_kib": 54472,
+      "server_elapsed_s": 0.04114359710365534,
+      "worker_wall_s": 0.03255033493041992
+    },
+    "legacy_pairs": 18,
+    "legacy_run_id": "3bfc6b9c0db2d18d2a66d8eeedef536ff16f0298e63e7598b524c31e222f7bb6",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.010004508,
+      "max_rss_kib": 58608,
+      "numeric_kernel_search_s": 0.001902563963085413,
+      "result_serialization_s": 0.0007953171152621508,
+      "server_elapsed_s": 0.01932694879360497,
+      "source_preflight_s": 0.002936352975666523,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.009926066035404801,
+      "worker_wall_s": 0.015844044974073768
+    }
+  },
+  {
+    "geometry": "known-quadratic",
+    "seed": 51,
+    "pairs": 23,
+    "v2_run_id": "edecd046a5fc8cabc63a6ae19ff58b87e251568a2b5f1d75137cfe3eb84ab5fe",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.019773331999999998,
+      "max_rss_kib": 54472,
+      "server_elapsed_s": 0.044213394867256284,
+      "worker_wall_s": 0.033566759899258614
+    },
+    "legacy_pairs": 15,
+    "legacy_run_id": "5af85e46f9b9acfa82c397efc28ea6d8588bb500290baf742c863e440158da16",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.010617394,
+      "max_rss_kib": 58592,
+      "numeric_kernel_search_s": 0.0023784080985933542,
+      "result_serialization_s": 0.0008061660919338465,
+      "server_elapsed_s": 0.020729474956169724,
+      "source_preflight_s": 0.0030296549666672945,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.01056786091066897,
+      "worker_wall_s": 0.016924130031839013
+    }
+  },
+  {
+    "geometry": "known-quadratic",
+    "seed": 52,
+    "pairs": 22,
+    "v2_run_id": "5651c1a7ede3735f04b4952e923d27af61e1dd821fdfb38104367be72f2eb87d",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.018749436999999997,
+      "max_rss_kib": 54472,
+      "server_elapsed_s": 0.04788308893330395,
+      "worker_wall_s": 0.03590123378671706
+    },
+    "legacy_pairs": 15,
+    "legacy_run_id": "1e24f5c93646f6f5935c46adf4a5c3c5600c6af2b5582dcbf020492d38b594ae",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.010777317000000002,
+      "max_rss_kib": 58608,
+      "numeric_kernel_search_s": 0.002103139879181981,
+      "result_serialization_s": 0.0007433111313730478,
+      "server_elapsed_s": 0.019815280102193356,
+      "source_preflight_s": 0.0031611931044608355,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.010145490989089012,
+      "worker_wall_s": 0.016191977076232433
+    }
+  },
+  {
+    "geometry": "shifted-quadratic",
+    "seed": 401,
+    "pairs": 22,
+    "v2_run_id": "e3fdeb26a34b8519e299129b02966eedf27685e49b5d5291a980c9a6bc0a242e",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.018554936,
+      "max_rss_kib": 54472,
+      "server_elapsed_s": 0.042538606096059084,
+      "worker_wall_s": 0.031351199140772223
+    },
+    "legacy_pairs": 17,
+    "legacy_run_id": "01906a51cb53aeeaa4c36906ef49da892ad6d4b3345cba77c58821670b91a848",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.009666286000000001,
+      "max_rss_kib": 58592,
+      "numeric_kernel_search_s": 0.001893164124339819,
+      "result_serialization_s": 0.000759835122153163,
+      "server_elapsed_s": 0.019482947885990143,
+      "source_preflight_s": 0.003130899043753743,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.009910115040838718,
+      "worker_wall_s": 0.01606093207374215
+    }
+  },
+  {
+    "geometry": "shifted-quadratic",
+    "seed": 402,
+    "pairs": 22,
+    "v2_run_id": "951629849b9260ac27bda3403de7c1772de3532a71371194de9780ed10bf85ba",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.019036046,
+      "max_rss_kib": 54472,
+      "server_elapsed_s": 0.048486934043467045,
+      "worker_wall_s": 0.036357710137963295
+    },
+    "legacy_pairs": 16,
+    "legacy_run_id": "18abc6b58f5f39927820b0af494ae47eea4966bc8300ab2e9a8e5703b529ef4f",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.010454848000000001,
+      "max_rss_kib": 58608,
+      "numeric_kernel_search_s": 0.0019808709621429443,
+      "result_serialization_s": 0.0007693080697208643,
+      "server_elapsed_s": 0.01910550193861127,
+      "source_preflight_s": 0.002996416063979268,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.009930259082466364,
+      "worker_wall_s": 0.015833931043744087
+    }
+  },
+  {
+    "geometry": "shifted-quadratic",
+    "seed": 403,
+    "pairs": 23,
+    "v2_run_id": "3ef4139997ddcd878830852d0881aea56288611bb2bf664e6b147ddc81cbb0db",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.018710779,
+      "max_rss_kib": 54472,
+      "server_elapsed_s": 0.04084543511271477,
+      "worker_wall_s": 0.032802029978483915
+    },
+    "legacy_pairs": 18,
+    "legacy_run_id": "db5691391aaafb0877e46b58fbcdcd912e559ce93a8b4644642a0c21d9878937",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.010754199999999998,
+      "max_rss_kib": 58592,
+      "numeric_kernel_search_s": 0.0019960009958595037,
+      "result_serialization_s": 0.0008098988328129053,
+      "server_elapsed_s": 0.019894946832209826,
+      "source_preflight_s": 0.003076208056882024,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.010031891986727715,
+      "worker_wall_s": 0.016219812911003828
+    }
+  },
+  {
+    "geometry": "shifted-quadratic",
+    "seed": 404,
+    "pairs": 24,
+    "v2_run_id": "c4db3b4fa6f21c55624da4bd9103f7e34c400182b1b3bfc1295ab3e0311f8f1a",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.019042769,
+      "max_rss_kib": 54472,
+      "server_elapsed_s": 0.04048788105137646,
+      "worker_wall_s": 0.031891319900751114
+    },
+    "legacy_pairs": 16,
+    "legacy_run_id": "0fcd607bd60e51fd3cb999ac0c9e7cf70b7f572d5fbaf8f4a6f5fa574b101690",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.010563111,
+      "max_rss_kib": 58608,
+      "numeric_kernel_search_s": 0.0019550700671970844,
+      "result_serialization_s": 0.0007737160194665194,
+      "server_elapsed_s": 0.02010205201804638,
+      "source_preflight_s": 0.0031501189805567265,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.010119900805875659,
+      "worker_wall_s": 0.016423017950728536
+    }
+  },
+  {
+    "geometry": "shifted-quadratic",
+    "seed": 405,
+    "pairs": 24,
+    "v2_run_id": "337c6ee96eacb6f125c4721ebf8ad12886589539b91fad5adee9efea769c25e9",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.019512199,
+      "max_rss_kib": 54472,
+      "server_elapsed_s": 0.05143944104202092,
+      "worker_wall_s": 0.038129743887111545
+    },
+    "legacy_pairs": 18,
+    "legacy_run_id": "580b2b1fb86ec5574f7e3fdb06addee2ca4a91dc034a08ee388880ba9533ae19",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.010755137,
+      "max_rss_kib": 58592,
+      "numeric_kernel_search_s": 0.0020391009747982025,
+      "result_serialization_s": 0.0007585689891129732,
+      "server_elapsed_s": 0.021112492075189948,
+      "source_preflight_s": 0.0033932740334421396,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.010455170879140496,
+      "worker_wall_s": 0.01668408210389316
+    }
+  },
+  {
+    "geometry": "odd-x",
+    "seed": 401,
+    "pairs": 24,
+    "v2_run_id": "486f2e7842cb001e4df4ea97502186ce673fb7098611bbc8408e0bdc44d1a53d",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.019647042,
+      "max_rss_kib": 54472,
+      "server_elapsed_s": 0.12469947384670377,
+      "worker_wall_s": 0.033400628017261624
+    },
+    "legacy_pairs": 16,
+    "legacy_run_id": "61b4957772852e2767bfc4e0ec20dba5067f4892c81b64fc09b1e2608b133889",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.010249747,
+      "max_rss_kib": 58608,
+      "numeric_kernel_search_s": 0.0019135340116918087,
+      "result_serialization_s": 0.000788344070315361,
+      "server_elapsed_s": 0.020232001086696982,
+      "source_preflight_s": 0.002942298073321581,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.009787316899746656,
+      "worker_wall_s": 0.015630437061190605
+    }
+  },
+  {
+    "geometry": "odd-x",
+    "seed": 402,
+    "pairs": 23,
+    "v2_run_id": "cd75e4add72675585985f74b4cbbba4a3825f1d3ea579c5dbe1ad8d26f2f9f20",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.019108452999999997,
+      "max_rss_kib": 54772,
+      "server_elapsed_s": 0.042586551047861576,
+      "worker_wall_s": 0.031192713882774115
+    },
+    "legacy_pairs": 19,
+    "legacy_run_id": "519dc62c11fbeb4bfbb999936f448085b63a1a83f0efbff75fbcf808623eb766",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.010801856,
+      "max_rss_kib": 58592,
+      "numeric_kernel_search_s": 0.002010089112445712,
+      "result_serialization_s": 0.0007863880600780249,
+      "server_elapsed_s": 0.019826951902359724,
+      "source_preflight_s": 0.00307024409994483,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.010172159876674414,
+      "worker_wall_s": 0.016410335898399353
+    }
+  },
+  {
+    "geometry": "odd-x",
+    "seed": 403,
+    "pairs": 24,
+    "v2_run_id": "624874f235253323d66916b2f8ef9072270eb23a0f08eb4e4059cce8e168d710",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.019331878,
+      "max_rss_kib": 54780,
+      "server_elapsed_s": 0.03990589617751539,
+      "worker_wall_s": 0.03128680703230202
+    },
+    "legacy_pairs": 17,
+    "legacy_run_id": "27c46bbd2404b0b583b01ba51af09e121e7f8b6040f9a66722d88c300115ef7f",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.0097778,
+      "max_rss_kib": 58736,
+      "numeric_kernel_search_s": 0.0018391439225524664,
+      "result_serialization_s": 0.0007654360961169004,
+      "server_elapsed_s": 0.01911235391162336,
+      "source_preflight_s": 0.002929045120254159,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.00957322889007628,
+      "worker_wall_s": 0.01574852899648249
+    }
+  },
+  {
+    "geometry": "odd-x",
+    "seed": 404,
+    "pairs": 23,
+    "v2_run_id": "26d3d5e6dfb8546b13c08bc8b7fa34dc079034cefec69b457a8af6b97ce1ba59",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.019644195,
+      "max_rss_kib": 54780,
+      "server_elapsed_s": 0.04016162781044841,
+      "worker_wall_s": 0.03178751305676997
+    },
+    "legacy_pairs": 16,
+    "legacy_run_id": "b2b766903327b34382850a497ae6264b7f0d578b516c4c41554c4bf959da1c17",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.009859594000000001,
+      "max_rss_kib": 58592,
+      "numeric_kernel_search_s": 0.002214970998466015,
+      "result_serialization_s": 0.0007423690985888243,
+      "server_elapsed_s": 0.018752713920548558,
+      "source_preflight_s": 0.002784576965495944,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.009700765833258629,
+      "worker_wall_s": 0.015428555896505713
+    }
+  },
+  {
+    "geometry": "odd-x",
+    "seed": 405,
+    "pairs": 22,
+    "v2_run_id": "727aaa866b0032a7232e50f68eb6e13537dea0ba9286c220d50675930eaa0ed0",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.018643726,
+      "max_rss_kib": 54780,
+      "server_elapsed_s": 0.04044503811746836,
+      "worker_wall_s": 0.03195944405160844
+    },
+    "legacy_pairs": 16,
+    "legacy_run_id": "2ee76327240d911a8bbcaa1bb7c9e07d3accb14643955b29b817dea202d09f5c",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.009911852,
+      "max_rss_kib": 58736,
+      "numeric_kernel_search_s": 0.0018130089156329632,
+      "result_serialization_s": 0.000757911941036582,
+      "server_elapsed_s": 0.018606611993163824,
+      "source_preflight_s": 0.0031370380893349648,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.009584432933479548,
+      "worker_wall_s": 0.015278591075912118
+    }
+  },
+  {
+    "geometry": "alias-collision",
+    "seed": 401,
+    "pairs": 0,
+    "v2_run_id": "c366aa923ff2ef2c47162e9e57ba99b118428cb0ae0de3815e075f804c044ed7",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.01953003,
+      "max_rss_kib": 54780,
+      "server_elapsed_s": 0.11715608602389693,
+      "worker_wall_s": 0.0331598490010947
+    },
+    "legacy_pairs": 0,
+    "legacy_run_id": "739f6afe7ffc08d90a19f982d8f52d56099c1609e74335c7af9443e026370dad",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.010505305,
+      "max_rss_kib": 58408,
+      "numeric_kernel_search_s": 0.0017725080251693726,
+      "result_serialization_s": 0.0008516779635101557,
+      "server_elapsed_s": 0.0205218109767884,
+      "source_preflight_s": 0.0028902748599648476,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.009952555876225233,
+      "worker_wall_s": 0.01658575003966689
+    }
+  },
+  {
+    "geometry": "alias-collision",
+    "seed": 402,
+    "pairs": 0,
+    "v2_run_id": "069755541cc8a3d80db5c9723b21090af3c008c3c4862be4d6ed95b02242eb5a",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.021116999,
+      "max_rss_kib": 54976,
+      "server_elapsed_s": 0.04536358593031764,
+      "worker_wall_s": 0.034004304092377424
+    },
+    "legacy_pairs": 0,
+    "legacy_run_id": "d8c7496d22babac6bf7c699644a37cbfa6268f7bf91ffa8f3564c48a0bde81f0",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.010660240999999999,
+      "max_rss_kib": 58736,
+      "numeric_kernel_search_s": 0.001759612001478672,
+      "result_serialization_s": 0.0008012938778847456,
+      "server_elapsed_s": 0.02068189694546163,
+      "source_preflight_s": 0.0033825079444795847,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.010294550796970725,
+      "worker_wall_s": 0.01659213798120618
+    }
+  },
+  {
+    "geometry": "alias-collision",
+    "seed": 403,
+    "pairs": 0,
+    "v2_run_id": "f8b69e583c372b3bc0a6c4f10682875617f4f2569fe7876dcbda3cb6b9631f56",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.021009613,
+      "max_rss_kib": 55036,
+      "server_elapsed_s": 0.04614415601827204,
+      "worker_wall_s": 0.03647969616577029
+    },
+    "legacy_pairs": 0,
+    "legacy_run_id": "156d6d20ee7f1babdad982350073ed12ca75d8c555eafdccb4193c21788b1103",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.010159300000000001,
+      "max_rss_kib": 58412,
+      "numeric_kernel_search_s": 0.0019901639316231012,
+      "result_serialization_s": 0.0009296410717070103,
+      "server_elapsed_s": 0.020154555095359683,
+      "source_preflight_s": 0.0028269109316170216,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.010088980896398425,
+      "worker_wall_s": 0.016457997960969806
+    }
+  },
+  {
+    "geometry": "alias-collision",
+    "seed": 404,
+    "pairs": 0,
+    "v2_run_id": "447483bb9e7f8693d6116491993690036739b40b63c17adf3c7548b1a4356cbf",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.019548298,
+      "max_rss_kib": 55080,
+      "server_elapsed_s": 0.04407722386531532,
+      "worker_wall_s": 0.033395834965631366
+    },
+    "legacy_pairs": 0,
+    "legacy_run_id": "3b15d24e4104314765ecdc44f9f42c8dcf7752b521a49295c09375ad43c13446",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.010648049,
+      "max_rss_kib": 58620,
+      "numeric_kernel_search_s": 0.0018613010179251432,
+      "result_serialization_s": 0.0008038359228521585,
+      "server_elapsed_s": 0.020494951168075204,
+      "source_preflight_s": 0.0030154858250170946,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.010033560916781425,
+      "worker_wall_s": 0.01629159995354712
+    }
+  },
+  {
+    "geometry": "alias-collision",
+    "seed": 405,
+    "pairs": 0,
+    "v2_run_id": "49d99eda2eff794503d51f6bb9da74410bc39edd856339dcdd98dc73dd2c9b5b",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.020262871000000002,
+      "max_rss_kib": 55080,
+      "server_elapsed_s": 0.04404684901237488,
+      "worker_wall_s": 0.03390414617024362
+    },
+    "legacy_pairs": 0,
+    "legacy_run_id": "44e2701210277aa023e62517130030f22b55aa267844b2b22a2fbfab60d46e1f",
+    "legacy_metrics": {
+      "LLM_calls": 0,
+      "cost_USD": null,
+      "job_cpu_s": 0.010684688000000001,
+      "max_rss_kib": 58424,
+      "numeric_kernel_search_s": 0.0017890771850943565,
+      "result_serialization_s": 0.0009364050347357988,
+      "server_elapsed_s": 0.05670583597384393,
+      "source_preflight_s": 0.003010246204212308,
+      "tokens": null,
+      "warm_adapter_or_check_s": 0.010069886920973659,
+      "worker_wall_s": 0.016712281852960587
+    }
+  }
+]

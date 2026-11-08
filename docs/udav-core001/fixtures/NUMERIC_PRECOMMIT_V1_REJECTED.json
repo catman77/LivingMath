@@ -1,0 +1,125 @@
+{
+  "schema": "udav001-new-geometry-precommit/1",
+  "utc": "2026-11-08T16:44:17.643009+00:00",
+  "source_rights": "ORIGINAL_TEST_FIXTURE",
+  "source_sha256": "bbebffe92c183094c6641400139773466c8ebf6e41e629ce4afcaa6562f5b690",
+  "geometries": {
+    "shifted-quadratic": [
+      [
+        1,
+        9
+      ],
+      [
+        2,
+        15
+      ],
+      [
+        3,
+        23
+      ],
+      [
+        4,
+        33
+      ],
+      [
+        5,
+        45
+      ],
+      [
+        6,
+        59
+      ],
+      [
+        7,
+        75
+      ],
+      [
+        8,
+        93
+      ]
+    ],
+    "odd-x": [
+      [
+        3,
+        2
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        7,
+        10
+      ],
+      [
+        9,
+        17
+      ],
+      [
+        11,
+        26
+      ],
+      [
+        13,
+        37
+      ],
+      [
+        15,
+        50
+      ],
+      [
+        17,
+        65
+      ]
+    ],
+    "alias-collision": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        4,
+        9
+      ],
+      [
+        4,
+        9
+      ],
+      [
+        5,
+        16
+      ],
+      [
+        6,
+        25
+      ]
+    ]
+  },
+  "seeds": [
+    401,
+    402,
+    403,
+    404,
+    405
+  ],
+  "k": 8,
+  "steps": 24,
+  "gates": [
+    "selected_primary equals candidate maximum on every step",
+    "independent deterministic replay",
+    "ambiguous aliases never mark arbitrary pairs visited"
+  ],
+  "semantic_evaluation": "NOT_EVALUATED_SYNTHETIC_ONLY"
+}

@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.4.12-developer-preview — 2026-11-08
+
+- Add four opt-in UDAV tools; preserve all94 existing MCP schemas and legacy kernels.
+- Cover lazy exact argument work, all SPLIT outputs and stable operator-set scheduling; keep bounded source/history provenance.
+- Separate raw observations from explicit structural quotients; undefined remains undefined.
+- Add genuine dynamic CAT-pair tie-breaking strictly after primary graph novelty; preserve ambiguous aliases without inventing a pair.
+- Validate real isolated-worker/MCP coverage, known30-seed regression,15 new geometry controls, exact historical replay and original datastore bytes. No semantic effectiveness or execution grants.
+
 ## v0.4.11-developer-preview — 2026-11-07
 
 - Add one opt-in frozen `formal_nl_redecode` tool; preserve all93 old tool schemas and exact mathematical kernels.

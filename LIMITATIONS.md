@@ -42,3 +42,13 @@ retained solely for exact history/replay, not treated as a causal experiment.
 The recovered quick-tunnel address replaced a Cloudflare-deleted name. A stable
 custom-domain tunnel is not configured. The active URL is read from the operator's
 private mcp-url state and must match OAuth issuer/resource.
+
+## UDAV Core0.4.12
+
+Новая политика численного выбора улучшает покрытие точных source-ID пар на
+известном synthetic regression, а не смысловую точность. Координаты входа
+декларативны, aliases могут быть неоднозначны. Структурные классы наблюдателей
+не объединяют source/history и не доказывают научные законы. Ресурсный halt
+сохраняет частичный результат; CPU-bound точка остановки может различаться
+между replay, в таком случае сервер возвращает REPLAY_MISMATCH. Глобальное
+исчерпание и универсальная полнота не заявлены. [Приёмка](docs/udav-core001/IMPLEMENTATION_REPORT_RU.md).

@@ -1,0 +1,28 @@
+{
+  "repository": "catman77/LivingMath",
+  "verified_date": "2026-11-08",
+  "server_release_observed": "v0.4.11-developer-preview",
+  "tool_count_observed": 94,
+  "symbolic_engine": "symbolic_v1/1-patch002",
+  "note": "Hashes below are git blob SHA (GitHub REST sha), NOT SHA256 of file bytes; inspect current branch before editing.",
+  "git_blob_sha": {
+    "src/lm_suti_assurance/symbolic/search.py": "7b83332112148701e94d5201c7c6279d27349129",
+    "src/lm_suti_assurance/symbolic/observers.py": "47d68e4407cbde383ea180ca8808d2a39cf82f2d",
+    "src/lm_suti_assurance/symbolic/kernel.py": "e2a5250c9d770efb118171a976319f46e97cefdb",
+    "src/lm_suti_assurance/white_star/vendor/code/experiments/white_star/source.py": "2d0c572bd7d0ac605b1d2aaa1e4efd4c41f51661",
+    "src/lm_suti_assurance/white_star/vendor/code/experiments/white_star/source_primitives/udav.py": "9315160123a7ca10d2f0eedc4424b74a378da82f",
+    "src/lm_suti_assurance/white_star/vendor/code/experiments/white_star/source_primitives/cad.py": "bdf642924a837d266ddd6383ccdbfe0a1e3e95ba",
+    "src/lm_suti_assurance/white_star/vendor/code/experiments/white_star/native/white_star.cpp": "56fc2dc827e2e14aff0087a86f63f86f902ce670",
+    "src/lm_suti_assurance/white_star/vendor/code/experiments/llm_white_star_transfer/rotated_atlas.py": "58ef6a372dd211c0b0b68d9c0fa4116b15ec8524"
+  },
+  "known_mcp_runs": {
+    "numeric_quadratic_seed21_k8": "cf43088edf4bff2e8277ca702dffd8048cfb5519608e64683eb3c9de255ff126",
+    "numeric_quadratic_seed22_k8": "550ff9c27fdf5074af75b727008d03d387f954fbcfe5855cb3f0eacf39efc0f5",
+    "symbolic_split_seed119": "5dfaf94551f98436aa1e94bc3cff90a43482a8f23e29421696ba2250b6aedd7f",
+    "symbolic_split_seed120": "84369614b05a1d9fac1b9bce819347e01793bb8c566758a40225b2af31bc3426",
+    "symbolic_split_seed121": "3456a60f88dab7aa580e145ee23fc0579f1e70b211f3537a85d42bde88efa493",
+    "symbolic_split_seed122": "7dcbfeae0ccf6c63f3650a18323013ba71035f6fda431fd40efc7cb18a4d4d41",
+    "symbolic_split_seed123": "9cbc737c93ae4375a1b82b171f0a3fe36f18fc0f1246c7c6fdac3c6c34f280cf",
+    "symbolic_split_seed124": "bece5377849b310f238d2cd5713a262b4e10f326dc621e3cf050536566de25b2"
+  }
+}

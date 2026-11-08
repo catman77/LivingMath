@@ -4,7 +4,7 @@
 
 Текущий MCP подключается без OAuth и токена (`authentication=none`).
 После подключения вызовите `bridge_system_status`, затем `bridge_catalog`.
-Текущий production `v0.4.11-developer-preview` предоставляет **94 инструмента**.
+Текущий production `v0.4.12-developer-preview` предоставляет **98 инструментов**.
 Новый локальный legacy стенд `unified_system.local` предоставляет 44.
 [Полный интерфейс, схемы, модули и запуск вычислений](MCP_INTERFACE.md).
 `mcp_server.py stdio`
@@ -204,3 +204,11 @@ execution grant. Исследовательские предложения, ау
 вызов LLM. [Рабочий JSON и чтение результатов](nl-causal003/QUICKSTART_RU.md).
 Исторический matched_ablation изменяет prompt и decoder одновременно и не
 подходит для такого причинного вывода. [Результат эксперимента](nl-causal003/USER_REPORT_RU.md).
+
+## Исследование фронтира UDAV Core
+
+Для ограниченного поиска с покрытием аргументов и отдельной raw/structural
+диагностикой используйте `udav_symbolic_explore`; для CAT-pair tie-break —
+`white_star_explore_v2`. Это явные opt-in инструменты, старые вызовы не меняют
+режим. [Полные запросы и права на исходник](udav-core001/MCP_EXAMPLES.json),
+[пошаговый запуск и экспорт](udav-core001/QUICKSTART_RU.md).

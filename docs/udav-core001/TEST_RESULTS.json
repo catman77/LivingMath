@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "baseline_source_tests": 468,
+  "installed_final_wheel_tests": 485,
+  "new_tests": 17,
+  "legacy_tests": 1066,
+  "legacy_historical_skips": 20,
+  "supplied_reference_tests": 5,
+  "public_symbolic_checks": 490,
+  "public_numeric_checks": 1436,
+  "public_additional_checks": 6,
+  "historical_full_hash_replays": 19,
+  "offline_export_replays": 2,
+  "tampered_bundles_rejected": 3,
+  "independent_numeric_candidate_checks": 55260,
+  "model_calls": 0,
+  "initial_attempts_preserved": [
+    "legacy-tests-final.log:25 fixture setup errors, missing LM_ENGINE017_POLICY; configured rerun passes",
+    "PUBLIC_EXTRA.log:zero-step fixture mistaken for invalid; v2 uses -1 without schema change",
+    "STAGE_SYMBOLIC.log:initial longest-first branch failure",
+    "STAGE_SYMBOLIC_V2.log:error envelope schema missing run_id",
+    "STAGE_NUMERIC.log:invalid initial duplicate-coordinate alias fixture"
+  ]
+}

@@ -1,7 +1,7 @@
 # Архитектура MCP-сервера LivingMath
 
-Срез архитектуры: **v0.4.11-developer-preview**, пакет Python `0.4.11.dev0`.
-Production объединяет **94 MCP-инструмента** в одном authenticated Streamable HTTP
+Срез архитектуры: **v0.4.12-developer-preview**, пакет Python `0.4.12.dev0`.
+Production объединяет **98 MCP-инструментов** в одном Streamable HTTP
 endpoint `/mcp`. [Справочник интерфейса](docs/MCP_INTERFACE.md),
 [установка](docs/INSTALL.md), [примеры запросов](docs/USAGE.md).
 
@@ -334,3 +334,28 @@ Replay сравнивает содержательные SHA без замеро
 На текущем production установлен `none`; доступ открытый. При этом HTTP host/origin,
 body limits,94 tool schemas, project boundaries и локальная operator authority
 остаются прежними. Режим сообщается в service_health и bridge_system_status.
+
+## UDAV Core opt-in (0.4.12)
+
+`udav_core/` — добавочный слой, использующий настоящие SymbolicState/History,
+CADObserver, WhiteStarOrbit и GraphTopology. Старые `symbolic/`, `white_star/` и
+vendor остаются байт-в-байт прежними.
+
+| Модуль | Назначение |
+|---|---|
+| `contracts.py` | Строгие входы, явные policy, source preflight; только descriptive task |
+| `frontier.py` | Ленивые `(node, op, parameter)` cursors, обе ветви SPLIT, бюджетные halt и раздельные raw/quotient классы |
+| `symbolic.py` | Реальная оркестрация состояний и наблюдателей, bindings, DAG и source links |
+| `numeric.py` | Динамический выбор: primary graph novelty → новое однозначное CAT-различие → старые counters |
+| `worker.py`, `executor.py` | Свежие изолированные fork jobs, общие со старыми engines квоты, прежние CPU/RAM limits |
+| `service.py` | Существующий Workspace/CAS, append-only `udav.start/finish`, идемпотентность, inspect и replay |
+| `mcp.py` | Четыре добавочные схемы, сохранённые94 интерфейса |
+
+Новый numeric worker подставляет новый selector только внутри отдельного job
+и восстанавливает module references в `finally`. Это собственная динамическая
+история, не перестановка сохранённых legacy scores. Все aliases сохраняются;
+неоднозначный chart не считается точной исследованной парой. Символьная
+группировка слов служит лишь расписанию и не склеивает provenance nodes.
+
+Схемы экспортированы из реального production [tools/list](docs/udav-core001/MCP_TOOL_SCHEMAS.json).
+Границы: [отчёт](docs/udav-core001/IMPLEMENTATION_REPORT_RU.md).

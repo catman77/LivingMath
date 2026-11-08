@@ -1,0 +1,20 @@
+{
+  "scope": "UDAV_CORE_PATCH001",
+  "status": "SPECIFICATION_ONLY_NOT_IMPLEMENTED",
+  "baseline": "LivingMath v0.4.11-developer-preview / 94 tools; live old search and numeric kernel unchanged",
+  "gates": [
+    {"id":"G0","label":"legacy tools/requests/old replay/source bytes","required":true,"expected":"PASS","actual":"NOT_EXECUTED"},
+    {"id":"G1","label":"real-MCP SPLIT oracle coverage >=21/22 all seeds119..124 at 72 applies","required":true,"expected":"PASS","actual":"NOT_EXECUTED"},
+    {"id":"G2","label":"no repeated epsilon work with unexpanded nontrivial frontier","required":true,"expected":"PASS","actual":"NOT_EXECUTED"},
+    {"id":"G3","label":"unique (node,operator,parameter), branch fairness, operator-order invariance","required":true,"expected":"PASS","actual":"NOT_EXECUTED"},
+    {"id":"G4","label":"raw vs structural novelty separation / undefined status","required":true,"expected":"PASS","actual":"NOT_EXECUTED"},
+    {"id":"G5","label":"numeric opt-in real dynamic selection and alias handling, mean >=21/28, old default identical","required":true,"expected":"PASS","actual":"NOT_EXECUTED"},
+    {"id":"G6","label":"budgets and resource bounds retained","required":true,"expected":"PASS","actual":"NOT_EXECUTED"},
+    {"id":"G7","label":"untrusted source/provenance/foreign project/fake run/request key rejected","required":true,"expected":"PASS","actual":"NOT_EXECUTED"},
+    {"id":"G8","label":"no internal LLM/theory synthesis or inflated epistemic statuses","required":true,"expected":"PASS","actual":"NOT_EXECUTED"}
+  ],
+  "partial_release_allowed": "P0+P1 only when G0/G1/G2/G3/G4/G6/G7/G8 PASS; P2 marked EXPERIMENTAL_NOT_DEPLOYED if G5 fails",
+  "count_ready_reference_tests":5,
+  "source_semantic_accuracy_claim":false,
+  "execution_permission":false
+}

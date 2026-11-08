@@ -1,0 +1,5 @@
+# Rollback UDAV001
+До cutover сохранены OLD_INSTALL.private.json, полная база backup-before, четыре SQLite online snapshot и архив103656 файлов Workspace. Во время остановленного HTTP создаётся второй quiescent snapshot и delta-overlay. Не перезапускать livingmath-https.service: сохраняется текущий tunnel и URL.
+Для отката к коду0.4.11 восстановить zz-release-v01.conf из backup-cutover/drop-in.conf и production-install.private.json из backup-cutover/production-install-before.private.json, выполнить systemctl --user daemon-reload и restart livingmath-http.service. Базы и Workspace при откате кода не заменять: старые модули не изменены, новые udav.start/finish append-only. Восстановление данных только отдельно с точным base ZIP +delta и отдельным разрешением; rollback кода его не требует.
+
+Точный приватный backup: `/home/catman/.local/state/livingmath/udav-core001/backup-before` и `backup-cutover`. Старый deployment: `noauth-20261107T222747Z`. Новый manifest SHA: `5c966bdc4a48708d795684c4bad463cde3a47625d4b74b6ce8f530dee9940ae9`.

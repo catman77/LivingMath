@@ -1,0 +1,101 @@
+{
+  "scope": "UDAV_CORE_PATCH001",
+  "status": "PASS",
+  "P0": "PASS",
+  "P1": "PASS",
+  "P2": "PASS",
+  "gates": [
+    {
+      "id": "G0",
+      "status": "PASS",
+      "finding": "94 old schemas exact;96/96 native selections;19 historical full-result SHA replay; original data byte-preservation",
+      "evidence": [
+        "production-symbolic-qa/tools.json",
+        "production-numeric-qa/checks.json",
+        "HISTORICAL_REPLAY.json",
+        "PRODUCTION_INTEGRITY.json"
+      ]
+    },
+    {
+      "id": "G1",
+      "status": "PASS",
+      "finding": "22/22 each seed119..124,72 actual SPLIT applies each, unchanged request ceilings",
+      "evidence": [
+        "production-symbolic-qa/checks.json"
+      ]
+    },
+    {
+      "id": "G2",
+      "status": "PASS",
+      "finding": "No repeated epsilon work or false global exhaustion on all six actual runs",
+      "evidence": [
+        "production-symbolic-qa/checks.json"
+      ]
+    },
+    {
+      "id": "G3",
+      "status": "PASS",
+      "finding": "Unique actual work tuples, both children expandable, word/provenance, operator-set permutation, SP/PS insert",
+      "evidence": [
+        "production-symbolic-qa/checks.json",
+        "symbolic-review.md"
+      ]
+    },
+    {
+      "id": "G4",
+      "status": "PASS",
+      "finding": "Raw hashes distinct from declared structural quotients; undefined and zero-growth controls",
+      "evidence": [
+        "production-symbolic-qa/raw-only.json",
+        "production-symbolic-qa/sampled-mapping.json"
+      ]
+    },
+    {
+      "id": "G5",
+      "status": "PASS",
+      "finding": "30 known seeds mean22.633333333333333 vs16.9;15 precommitted new geometry controls; primary maximum and aliases exact",
+      "evidence": [
+        "production-numeric-qa/checks.json",
+        "production-numeric-qa/RESULTS_TABLE.json",
+        "numeric-review-independent.json"
+      ]
+    },
+    {
+      "id": "G6",
+      "status": "PASS",
+      "finding": "Original CPU5s/wall6s/RAM512MiB/2active16queued; explicit node/token/CPU bounds preserve source DAG",
+      "evidence": [
+        "production-symbolic-qa/checks.json",
+        "production-numeric-qa/checks.json"
+      ]
+    },
+    {
+      "id": "G7",
+      "status": "PASS",
+      "finding": "Foreign/fake run, source SHA, hash guard, key substitution, invalid budget/operator/training fields rejected; negative history unchanged; fake alias unit check",
+      "evidence": [
+        "production-symbolic-qa/checks.json",
+        "production-extra-v2-qa/result.json",
+        "installed-tests-final.log"
+      ]
+    },
+    {
+      "id": "G8",
+      "status": "PASS",
+      "finding": "No model calls, theory bank, semantic proof or execution grant; regression corpus identified as known synthetic",
+      "evidence": [
+        "production-symbolic-qa/checks.json",
+        "production-numeric-qa/result.json",
+        "IMPLEMENTATION_REPORT_RU.md"
+      ]
+    }
+  ],
+  "actual_public_symbolic_checks": 490,
+  "actual_public_numeric_checks": 1436,
+  "actual_public_extra_checks": 6,
+  "model_calls": 0,
+  "execution_permission": false,
+  "semantic_effectiveness": "NOT_ASSESSED",
+  "scientific_discovery": "NOT_CLAIMED",
+  "CPU_bound_replay": "Time cutoff can differ; exact replay fails closed"
+}

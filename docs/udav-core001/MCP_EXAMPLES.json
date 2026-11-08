@@ -1,0 +1,298 @@
+{
+  "schema": "udav001-mcp-examples/1",
+  "transport": "MCP Streamable HTTP, no Authorization",
+  "endpoint": "https://difficulty-nightlife-rca-missions.trycloudflare.com/mcp",
+  "usage": "These are exact real accepted arguments. For a fresh run create your own project and new request_key; inspect/replay require the run_id from that response.",
+  "calls": [
+    {
+      "name": "assurance_project_new",
+      "arguments": {
+        "project": "qa-udav001-public-symbolic",
+        "request_key": "init"
+      }
+    },
+    {
+      "name": "udav_symbolic_explore",
+      "arguments": {
+        "project": "qa-udav001-public-symbolic",
+        "request_key": "production-release:split-119",
+        "request": {
+          "algebra": {
+            "allow_reduce": false,
+            "kind": "FREE",
+            "preserve_history": true
+          },
+          "normalization": "none",
+          "observers": [
+            "literal",
+            "alpha_pattern",
+            "adjacency",
+            "composition"
+          ],
+          "operators": [
+            "SPLIT"
+          ],
+          "schema": "levinmas-white-star-symbolic-request/1",
+          "search": {
+            "history_identity": "word",
+            "max_candidates_per_step": 3,
+            "max_nodes": 180,
+            "max_observations": 180,
+            "max_steps": 24,
+            "max_total_tokens": 500,
+            "max_word_tokens": 8,
+            "seed": 119,
+            "strategy": "frontier_argument_coverage_v1"
+          },
+          "segmentation": {
+            "record_boundaries": "whole",
+            "renaming_scope": "global",
+            "unit": "whitespace"
+          },
+          "source": {
+            "alphabet": [
+              "a",
+              "b",
+              "c"
+            ],
+            "edition": "synthetic-20261108",
+            "language": "synthetic",
+            "rights": "synthetic-original",
+            "sha256": "25200dac09708da26462b5807bfcd61cf46c37155785088bf73a6e1dc13395a4",
+            "text": "a b c a b c a b",
+            "title": "All-contiguous-substrings reachable in two splits"
+          },
+          "task": {
+            "max_rules": 4,
+            "mode": "discover_relations"
+          }
+        }
+      }
+    },
+    {
+      "name": "udav_inspect",
+      "arguments": {
+        "project": "qa-udav001-public-symbolic",
+        "run_id": "17e6395fea635b815bac61d88b2712137d9d9f6d9328b225ed28833a5f6f78b8",
+        "view": "diagnostics",
+        "offset": 0,
+        "limit": 48
+      }
+    },
+    {
+      "name": "udav_replay",
+      "arguments": {
+        "project": "qa-udav001-public-symbolic",
+        "run_id": "17e6395fea635b815bac61d88b2712137d9d9f6d9328b225ed28833a5f6f78b8",
+        "expected_result_sha256": "fc29baf4aba30d5345a9344f1a94ba537ccacccd312502c2116d1ad0a02f48c4"
+      }
+    },
+    {
+      "name": "assurance_project_new",
+      "arguments": {
+        "project": "qa-udav001-public-numeric",
+        "request_key": "init"
+      }
+    },
+    {
+      "name": "white_star_explore_v2",
+      "arguments": {
+        "project": "qa-udav001-public-numeric",
+        "request_key": "production-release:known-quadratic:23",
+        "selection_policy": "cat_distinction_tiebreak_v1",
+        "request": {
+          "schema": "levinmas-white-star-request/1",
+          "atlas_profile": "cj_v1",
+          "encoding": {
+            "schema": "llm-white-star-concepts/1",
+            "source": {
+              "author": "Assistant",
+              "title": "Original numerical control",
+              "text": "A B C D E F G H",
+              "sha256": "bbebffe92c183094c6641400139773466c8ebf6e41e629ce4afcaa6562f5b690",
+              "rights": "ORIGINAL_TEST_FIXTURE"
+            },
+            "axes": [
+              {
+                "id": "change",
+                "minus": "сохранение",
+                "plus": "изменение"
+              },
+              {
+                "id": "process",
+                "minus": "предмет",
+                "plus": "действие"
+              }
+            ],
+            "concepts": [
+              {
+                "id": "A",
+                "label": "A",
+                "coordinates": [
+                  1,
+                  1
+                ],
+                "encoding_rationale": "Declared synthetic coordinates",
+                "evidence": [
+                  {
+                    "line": 1,
+                    "byte_start": 0,
+                    "byte_end": 1,
+                    "quote": "A"
+                  }
+                ]
+              },
+              {
+                "id": "B",
+                "label": "B",
+                "coordinates": [
+                  2,
+                  4
+                ],
+                "encoding_rationale": "Declared synthetic coordinates",
+                "evidence": [
+                  {
+                    "line": 1,
+                    "byte_start": 2,
+                    "byte_end": 3,
+                    "quote": "B"
+                  }
+                ]
+              },
+              {
+                "id": "C",
+                "label": "C",
+                "coordinates": [
+                  3,
+                  9
+                ],
+                "encoding_rationale": "Declared synthetic coordinates",
+                "evidence": [
+                  {
+                    "line": 1,
+                    "byte_start": 4,
+                    "byte_end": 5,
+                    "quote": "C"
+                  }
+                ]
+              },
+              {
+                "id": "D",
+                "label": "D",
+                "coordinates": [
+                  4,
+                  16
+                ],
+                "encoding_rationale": "Declared synthetic coordinates",
+                "evidence": [
+                  {
+                    "line": 1,
+                    "byte_start": 6,
+                    "byte_end": 7,
+                    "quote": "D"
+                  }
+                ]
+              },
+              {
+                "id": "E",
+                "label": "E",
+                "coordinates": [
+                  5,
+                  25
+                ],
+                "encoding_rationale": "Declared synthetic coordinates",
+                "evidence": [
+                  {
+                    "line": 1,
+                    "byte_start": 8,
+                    "byte_end": 9,
+                    "quote": "E"
+                  }
+                ]
+              },
+              {
+                "id": "F",
+                "label": "F",
+                "coordinates": [
+                  6,
+                  36
+                ],
+                "encoding_rationale": "Declared synthetic coordinates",
+                "evidence": [
+                  {
+                    "line": 1,
+                    "byte_start": 10,
+                    "byte_end": 11,
+                    "quote": "F"
+                  }
+                ]
+              },
+              {
+                "id": "G",
+                "label": "G",
+                "coordinates": [
+                  7,
+                  49
+                ],
+                "encoding_rationale": "Declared synthetic coordinates",
+                "evidence": [
+                  {
+                    "line": 1,
+                    "byte_start": 12,
+                    "byte_end": 13,
+                    "quote": "G"
+                  }
+                ]
+              },
+              {
+                "id": "H",
+                "label": "H",
+                "coordinates": [
+                  8,
+                  64
+                ],
+                "encoding_rationale": "Declared synthetic coordinates",
+                "evidence": [
+                  {
+                    "line": 1,
+                    "byte_start": 14,
+                    "byte_end": 15,
+                    "quote": "H"
+                  }
+                ]
+              }
+            ],
+            "source_relations": [],
+            "uncertainties": [
+              "Превращение дома в дорогу — предложенная метафора, не физическое событие."
+            ],
+            "provenance": {
+              "encoder": "manual fixture authored for integration QA",
+              "remote_model_call": false
+            },
+            "protocol": {
+              "seed": 23,
+              "steps": 24,
+              "candidates_per_step": 8,
+              "frame_size": 3,
+              "decode_first_frames": 4,
+              "exclude_zero_direction": true,
+              "semantic_reranking": false,
+              "optimizer_feedback": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "udav_inspect",
+      "arguments": {
+        "project": "qa-udav001-public-numeric",
+        "run_id": "37bbec3dc02ef46a1624a8ed6b11e993ec44b9f1cf7fbe17a001f51e8b222a2f",
+        "view": "bundle",
+        "offset": 0,
+        "limit": 48
+      }
+    }
+  ]
+}

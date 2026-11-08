@@ -1,0 +1,182 @@
+{
+  "schema": "levinmas-white-star-request/1",
+  "atlas_profile": "cj_v1",
+  "encoding": {
+    "schema": "llm-white-star-concepts/1",
+    "source": {
+      "author": "Assistant",
+      "title": "Original numerical control",
+      "text": "A B C D E F G H",
+      "sha256": "bbebffe92c183094c6641400139773466c8ebf6e41e629ce4afcaa6562f5b690",
+      "rights": "ORIGINAL_TEST_FIXTURE"
+    },
+    "axes": [
+      {
+        "id": "change",
+        "minus": "сохранение",
+        "plus": "изменение"
+      },
+      {
+        "id": "process",
+        "minus": "предмет",
+        "plus": "действие"
+      }
+    ],
+    "concepts": [
+      {
+        "id": "A",
+        "label": "A",
+        "coordinates": [
+          1,
+          1
+        ],
+        "encoding_rationale": "Declared synthetic coordinates",
+        "evidence": [
+          {
+            "line": 1,
+            "byte_start": 0,
+            "byte_end": 1,
+            "quote": "A"
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "label": "B",
+        "coordinates": [
+          2,
+          4
+        ],
+        "encoding_rationale": "Declared synthetic coordinates",
+        "evidence": [
+          {
+            "line": 1,
+            "byte_start": 2,
+            "byte_end": 3,
+            "quote": "B"
+          }
+        ]
+      },
+      {
+        "id": "C",
+        "label": "C",
+        "coordinates": [
+          3,
+          9
+        ],
+        "encoding_rationale": "Declared synthetic coordinates",
+        "evidence": [
+          {
+            "line": 1,
+            "byte_start": 4,
+            "byte_end": 5,
+            "quote": "C"
+          }
+        ]
+      },
+      {
+        "id": "D",
+        "label": "D",
+        "coordinates": [
+          4,
+          16
+        ],
+        "encoding_rationale": "Declared synthetic coordinates",
+        "evidence": [
+          {
+            "line": 1,
+            "byte_start": 6,
+            "byte_end": 7,
+            "quote": "D"
+          }
+        ]
+      },
+      {
+        "id": "E",
+        "label": "E",
+        "coordinates": [
+          5,
+          25
+        ],
+        "encoding_rationale": "Declared synthetic coordinates",
+        "evidence": [
+          {
+            "line": 1,
+            "byte_start": 8,
+            "byte_end": 9,
+            "quote": "E"
+          }
+        ]
+      },
+      {
+        "id": "F",
+        "label": "F",
+        "coordinates": [
+          6,
+          36
+        ],
+        "encoding_rationale": "Declared synthetic coordinates",
+        "evidence": [
+          {
+            "line": 1,
+            "byte_start": 10,
+            "byte_end": 11,
+            "quote": "F"
+          }
+        ]
+      },
+      {
+        "id": "G",
+        "label": "G",
+        "coordinates": [
+          7,
+          49
+        ],
+        "encoding_rationale": "Declared synthetic coordinates",
+        "evidence": [
+          {
+            "line": 1,
+            "byte_start": 12,
+            "byte_end": 13,
+            "quote": "G"
+          }
+        ]
+      },
+      {
+        "id": "H",
+        "label": "H",
+        "coordinates": [
+          8,
+          64
+        ],
+        "encoding_rationale": "Declared synthetic coordinates",
+        "evidence": [
+          {
+            "line": 1,
+            "byte_start": 14,
+            "byte_end": 15,
+            "quote": "H"
+          }
+        ]
+      }
+    ],
+    "source_relations": [],
+    "uncertainties": [
+      "Превращение дома в дорогу — предложенная метафора, не физическое событие."
+    ],
+    "provenance": {
+      "encoder": "manual fixture authored for integration QA",
+      "remote_model_call": false
+    },
+    "protocol": {
+      "seed": 23,
+      "steps": 24,
+      "candidates_per_step": 8,
+      "frame_size": 3,
+      "decode_first_frames": 4,
+      "exclude_zero_direction": true,
+      "semantic_reranking": false,
+      "optimizer_feedback": false
+    }
+  }
+}
