@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "remote": "https://github.com/catman77/LivingMath",
+  "tag": "v0.4.12-developer-preview",
+  "source_commit": "210d6a36bbd8275ee26483b4afb10e8140318ae7",
+  "public_source_blobs_all_exact": 1836,
+  "downloaded_asset_bytes": 66482822,
+  "asset_sha256": "d54d6a766f4ecd6dfc95856991aead414b462d81626a9bd5d9bfa709e043621b",
+  "anonymous_public_readback": true,
+  "release_url": "https://github.com/catman77/LivingMath/releases/tag/v0.4.12-developer-preview"
+}

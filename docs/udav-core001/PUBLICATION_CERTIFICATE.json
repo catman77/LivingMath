@@ -1,0 +1,91 @@
+{
+  "status": "PASS_ENGINEERING_RELEASE_PUBLISHED",
+  "source_commit": "210d6a36bbd8275ee26483b4afb10e8140318ae7",
+  "tag": "v0.4.12-developer-preview",
+  "release": {
+    "release_id": 438395949,
+    "html_url": "https://github.com/catman77/LivingMath/releases/tag/v0.4.12-developer-preview",
+    "tag_name": "v0.4.12-developer-preview",
+    "target_commitish": "main",
+    "prerelease": true,
+    "asset_id": 724632907,
+    "asset_url": "https://github.com/catman77/LivingMath/releases/download/v0.4.12-developer-preview/UDAV_CORE_PATCH001_DELIVERY_20261108.zip",
+    "asset_bytes": 66482822,
+    "sha256": "d54d6a766f4ecd6dfc95856991aead414b462d81626a9bd5d9bfa709e043621b"
+  },
+  "package": {
+    "file": "UDAV_CORE_PATCH001_DELIVERY_20261108.zip",
+    "bytes": 66482822,
+    "sha256": "d54d6a766f4ecd6dfc95856991aead414b462d81626a9bd5d9bfa709e043621b",
+    "source_commit": "210d6a36bbd8275ee26483b4afb10e8140318ae7",
+    "payload_files": 661
+  },
+  "public_readback": {
+    "status": "PASS",
+    "remote": "https://github.com/catman77/LivingMath",
+    "tag": "v0.4.12-developer-preview",
+    "source_commit": "210d6a36bbd8275ee26483b4afb10e8140318ae7",
+    "public_source_blobs_all_exact": 1836,
+    "downloaded_asset_bytes": 66482822,
+    "asset_sha256": "d54d6a766f4ecd6dfc95856991aead414b462d81626a9bd5d9bfa709e043621b",
+    "anonymous_public_readback": true,
+    "release_url": "https://github.com/catman77/LivingMath/releases/tag/v0.4.12-developer-preview"
+  },
+  "package_validation": {
+    "status": "PASS",
+    "payload_files": 661,
+    "source_files_all_exact": 1836,
+    "source_commit": "210d6a36bbd8275ee26483b4afb10e8140318ae7",
+    "outer_sha256": "d54d6a766f4ecd6dfc95856991aead414b462d81626a9bd5d9bfa709e043621b",
+    "credentials_databases_excluded": true
+  },
+  "secret_scan": {
+    "status": "PASS",
+    "package_sha256": "d54d6a766f4ecd6dfc95856991aead414b462d81626a9bd5d9bfa709e043621b",
+    "known_secret_values_checked": 130,
+    "recursive_source_ZIP_wheel_gzip_scan": true,
+    "database_and_private_files_excluded": true
+  },
+  "binary_patch": {
+    "status": "PASS",
+    "base": "e2bc20b",
+    "source_commit": "210d6a36bbd8275ee26483b4afb10e8140318ae7",
+    "git_tree_exact_after_patch": "3f35960051e4d723f6abee7dab86c8437e7acab5",
+    "working_tree_unchanged": true
+  },
+  "installed_tests": 485,
+  "legacy_tests": 1066,
+  "legacy_skips": 20,
+  "production": {
+    "status": "ACCEPTED_PUBLIC_HTTPS_ANONYMOUS_MCP",
+    "version": "v0.4.12-developer-preview",
+    "deployment_id": "udav-core001-20261108T170545Z",
+    "release_manifest_sha256": "5c966bdc4a48708d795684c4bad463cde3a47625d4b74b6ce8f530dee9940ae9",
+    "url": "https://difficulty-nightlife-rca-missions.trycloudflare.com/mcp",
+    "HTTP_only_restarted": true,
+    "tunnel_pid_unchanged": true,
+    "tunnel_pid": 1474115,
+    "backup_integrity": "4/4 ok",
+    "staged_QA_projects_imported": [],
+    "model_calls": 0,
+    "semantic_acceptance": "HUMAN_NOT_EVALUATED",
+    "execution_permission": false,
+    "integrity": "PASS",
+    "actual_tools": 98
+  },
+  "final_public_check": {
+    "actual_tools": 98,
+    "version": "v0.4.12-developer-preview",
+    "authentication": "none",
+    "sqlite": "ok",
+    "audit": {
+      "ok": true,
+      "entries": 4817,
+      "last_hash": "c9c0048be5cc2e782cb2f2377da524e5ad04303d86b65792ef1d503b8c1c3d50"
+    }
+  },
+  "CI": "NOT_RUN_ACCOUNT_BILLING_LOCK",
+  "CI_checks": 3,
+  "scientific_semantic_claim": false,
+  "execution_permission": false
+}

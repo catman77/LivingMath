@@ -1,6 +1,15 @@
 # GitHub Actions: запуск пока заблокирован
 
-## Текущая проверка v0.4.11 от2026-11-07
+## Текущая проверка v0.4.12 от2026-11-08
+
+Code commit `210d6a36bbd8275ee26483b4afb10e8140318ae7`; [релиз](https://github.com/catman77/LivingMath/releases/tag/v0.4.12-developer-preview) опубликован. Анонимно скачаны и сверены1836 source blobs и ZIP66 482 822 bytes.
+Installed wheel485 PASS, legacy1066 PASS/20 SKIP, reference5 PASS; public MCP490 symbolic/1436 numeric/6 extra checks PASS.
+
+Все3 GitHub jobs не запустились: `The job was not started because your account is locked due to a billing issue.`
+CI=`NOT_RUN_ACCOUNT_BILLING_LOCK`, не PASS. Workflow и billing не менялись.
+[Фактические annotations](udav-core001/GITHUB_CI.json), [публичная сверка](udav-core001/PUBLIC_READBACK.json), [сертификат поставки](udav-core001/PUBLICATION_CERTIFICATE.json).
+
+## Предыдущая проверка v0.4.11 от2026-11-07
 
 Code commit `e7b92a9ebb00055d9f2d96a44d66fdfc81c25df8` и
 [релиз](https://github.com/catman77/LivingMath/releases/tag/v0.4.11-developer-preview)

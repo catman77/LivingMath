@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "base": "e2bc20b",
+  "source_commit": "210d6a36bbd8275ee26483b4afb10e8140318ae7",
+  "git_tree_exact_after_patch": "3f35960051e4d723f6abee7dab86c8437e7acab5",
+  "working_tree_unchanged": true
+}

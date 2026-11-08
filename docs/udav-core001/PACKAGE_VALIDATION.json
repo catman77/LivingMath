@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "payload_files": 661,
+  "source_files_all_exact": 1836,
+  "source_commit": "210d6a36bbd8275ee26483b4afb10e8140318ae7",
+  "outer_sha256": "d54d6a766f4ecd6dfc95856991aead414b462d81626a9bd5d9bfa709e043621b",
+  "credentials_databases_excluded": true
+}

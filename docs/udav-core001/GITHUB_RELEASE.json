@@ -1,0 +1,11 @@
+{
+  "release_id": 438395949,
+  "html_url": "https://github.com/catman77/LivingMath/releases/tag/v0.4.12-developer-preview",
+  "tag_name": "v0.4.12-developer-preview",
+  "target_commitish": "main",
+  "prerelease": true,
+  "asset_id": 724632907,
+  "asset_url": "https://github.com/catman77/LivingMath/releases/download/v0.4.12-developer-preview/UDAV_CORE_PATCH001_DELIVERY_20261108.zip",
+  "asset_bytes": 66482822,
+  "sha256": "d54d6a766f4ecd6dfc95856991aead414b462d81626a9bd5d9bfa709e043621b"
+}
