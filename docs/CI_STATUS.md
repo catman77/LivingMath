@@ -1,6 +1,15 @@
 # GitHub Actions: запуск пока заблокирован
 
-## Текущая проверка v0.4.12 от2026-11-08
+## Текущая проверка v0.4.14 от 2026-11-09
+
+[Релиз v0.4.14](https://github.com/catman77/LivingMath/releases/tag/v0.4.14-developer-preview) опубликован; production обновлён с сохранением URL и `authentication=none`. Код production: `23c4aac0d2793170def4642e0e53bde59e741ac4`; снимок исходников и документации: `e133c0c4b6bc3e3e0d5ffa6eea94d426988b3ada`. Подключённый MCP подтвердил версию и 102 инструмента.
+
+Анонимная обратная сверка: **1891 Git blob**, ZIP **40060274 bytes**, SHA256 `bf6bbe019373abfd004d18c6c5054e6b71a250de36f733f0a3bf712138a1fb15`. Локально **514 PASS**, legacy **1066 PASS / 20 прежних SKIP**; реальный HTTPS MCP **68/68**, staging **68/68**, три дополнительных постраничных представления PASS. Сценарии контекста независимо от типизации формулы исправлены; v0.4.13 сохранён как предыдущая версия.
+
+Все три GitHub jobs не запустились: `The job was not started because your account is locked due to a billing issue.` CI=`NOT_RUN_ACCOUNT_BILLING_LOCK`, не PASS. Workflow, тесты и billing не менялись.
+[Фактические annotations](semantic-bridge-patch001/GITHUB_CI.json), [публичная сверка](semantic-bridge-patch001/PUBLIC_READBACK.json), [сертификат поставки](semantic-bridge-patch001/PUBLICATION_CERTIFICATE.json).
+
+## Предыдущая проверка v0.4.12 от2026-11-08
 
 Code commit `210d6a36bbd8275ee26483b4afb10e8140318ae7`; [релиз](https://github.com/catman77/LivingMath/releases/tag/v0.4.12-developer-preview) опубликован. Анонимно скачаны и сверены1836 source blobs и ZIP66 482 822 bytes.
 Installed wheel485 PASS, legacy1066 PASS/20 SKIP, reference5 PASS; public MCP490 symbolic/1436 numeric/6 extra checks PASS.

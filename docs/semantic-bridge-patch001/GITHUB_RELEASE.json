@@ -1,0 +1,11 @@
+{
+  "release_id": 438722096,
+  "html_url": "https://github.com/catman77/LivingMath/releases/tag/v0.4.14-developer-preview",
+  "tag_name": "v0.4.14-developer-preview",
+  "target_commitish": "main",
+  "prerelease": true,
+  "asset_id": 726122883,
+  "asset_url": "https://github.com/catman77/LivingMath/releases/download/v0.4.14-developer-preview/SEMANTIC_BRIDGE_PATCH001_DELIVERY_20261109.zip",
+  "asset_bytes": 40060274,
+  "sha256": "bf6bbe019373abfd004d18c6c5054e6b71a250de36f733f0a3bf712138a1fb15"
+}

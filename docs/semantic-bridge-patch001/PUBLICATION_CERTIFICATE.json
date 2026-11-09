@@ -1,0 +1,134 @@
+{
+  "schema": "semantic-bridge-publication/1",
+  "status": "PUBLISHED_DEPLOYED_AND_PUBLIC_READBACK_PASS",
+  "version": "v0.4.14-developer-preview",
+  "github_repository": "https://github.com/catman77/LivingMath",
+  "release_url": "https://github.com/catman77/LivingMath/releases/tag/v0.4.14-developer-preview",
+  "tag": "v0.4.14-developer-preview",
+  "source_snapshot_commit": "e133c0c4b6bc3e3e0d5ffa6eea94d426988b3ada",
+  "deployed_code_commit": "23c4aac0d2793170def4642e0e53bde59e741ac4",
+  "production": {
+    "status": "ACCEPTED_PUBLIC_HTTPS_ANONYMOUS_MCP",
+    "version": "v0.4.14-developer-preview",
+    "deployment_id": "semantic-bridge001-final-20261109T032448Z",
+    "release_manifest_sha256": "3db9726007d6a4e1849f83008f313b8af289d4a5e5fc20218272e9733efb7723",
+    "url": "https://difficulty-nightlife-rca-missions.trycloudflare.com/mcp",
+    "HTTP_only_restarted": true,
+    "tunnel_pid_unchanged": true,
+    "tunnel_pid": 1474115,
+    "backup_integrity": "4/4 ok",
+    "staged_QA_projects_imported": [],
+    "model_calls": 0,
+    "semantic_acceptance": "HUMAN_NOT_EVALUATED",
+    "execution_permission": false,
+    "integrity": "PASS",
+    "actual_tools": 102
+  },
+  "connected_client": {
+    "version": "v0.4.14-developer-preview",
+    "tools": 102,
+    "authentication": "none"
+  },
+  "acceptance": {
+    "gates_G0_through_G9": "PASS",
+    "installed_wheel_tests": 514,
+    "targeted_tests": 29,
+    "independent_context_checks": 10,
+    "legacy_tests_pass": 1066,
+    "legacy_historical_skips": 20,
+    "public_HTTPS_MCP_checks": 68,
+    "staging_MCP_checks": 68,
+    "extra_public_paged_views": 3,
+    "historical_unchanged_proof_certificates_v0413": 44,
+    "historical_finite_implications_v0413": 704
+  },
+  "artifact": {
+    "file": "SEMANTIC_BRIDGE_PATCH001_DELIVERY_20261109.zip",
+    "bytes": 40060274,
+    "sha256": "bf6bbe019373abfd004d18c6c5054e6b71a250de36f733f0a3bf712138a1fb15",
+    "source_commit": "e133c0c4b6bc3e3e0d5ffa6eea94d426988b3ada",
+    "payload_files": 400
+  },
+  "artifact_url": "https://github.com/catman77/LivingMath/releases/download/v0.4.14-developer-preview/SEMANTIC_BRIDGE_PATCH001_DELIVERY_20261109.zip",
+  "package_validation": {
+    "status": "PASS",
+    "payload_files": 400,
+    "source_files_all_exact": 1891,
+    "source_commit": "e133c0c4b6bc3e3e0d5ffa6eea94d426988b3ada",
+    "outer_sha256": "bf6bbe019373abfd004d18c6c5054e6b71a250de36f733f0a3bf712138a1fb15",
+    "credentials_databases_excluded": true
+  },
+  "package_secret_scan": {
+    "status": "PASS",
+    "package_sha256": "bf6bbe019373abfd004d18c6c5054e6b71a250de36f733f0a3bf712138a1fb15",
+    "known_secret_values_checked": 130,
+    "recursive_ZIP_gzip_scan": true,
+    "PAT_private_key_patterns": true
+  },
+  "public_readback": {
+    "status": "PASS",
+    "remote": "https://github.com/catman77/LivingMath",
+    "tag": "v0.4.14-developer-preview",
+    "source_commit": "e133c0c4b6bc3e3e0d5ffa6eea94d426988b3ada",
+    "public_source_blobs_all_exact": 1891,
+    "downloaded_asset_bytes": 40060274,
+    "asset_sha256": "bf6bbe019373abfd004d18c6c5054e6b71a250de36f733f0a3bf712138a1fb15",
+    "anonymous_public_readback": true,
+    "release_url": "https://github.com/catman77/LivingMath/releases/tag/v0.4.14-developer-preview"
+  },
+  "patch_reproduction": {
+    "status": "PASS",
+    "baseline": "e65b1a1e06914d63f6048a04b5e065a610adb68d",
+    "snapshot": "e133c0c4b6bc3e3e0d5ffa6eea94d426988b3ada",
+    "reproduced_tree": "bc8aa3705f8ea87969c1e288228400663227a068",
+    "isolated_index": true
+  },
+  "data_preservation": {
+    "all_4_original_SQLite_integrity": "ok",
+    "original_rows_and_workspace_bytes_preserved": true,
+    "original_canonical_events": 2058,
+    "canonical_audit_unchanged_entries": 4817,
+    "canonical_audit_head_unchanged": "c9c0048be5cc2e782cb2f2377da524e5ad04303d86b65792ef1d503b8c1c3d50",
+    "native_kernel_unchanged": true,
+    "no_migration_or_new_production_database": true,
+    "QA_all_24_runs_terminated_exactly_once": true
+  },
+  "documentation_audit": {
+    "audit_id": "sb001-v0414-docs-repair",
+    "status": "current",
+    "blockers": []
+  },
+  "CI": {
+    "status": "NOT_RUN_ACCOUNT_BILLING_LOCK",
+    "jobs": 3,
+    "not_pytest_failure": true,
+    "not_claimed_PASS": true,
+    "details": "GITHUB_CI.json"
+  },
+  "previous_release_retained": "PREVIOUS_RELEASE_SUPERSEDED.json",
+  "publication_network_recovery": {
+    "initial_publish_PATCH_transport_timeout": true,
+    "inspected_existing_draft_and_exact_uploaded_asset": true,
+    "no_second_release_or_asset_created": true,
+    "resumed_same_release_id": 438722096,
+    "final_anonymous_readback": "PASS"
+  },
+  "interpretation_limits": {
+    "semantic_adjudication": "NOT_EVALUATED",
+    "causal_LLM_uplift": "NOT_MEASURED",
+    "new_layer_model_calls": 0,
+    "execution_permission": false
+  },
+  "receipt_files": [
+    "PACKAGE.json",
+    "PACKAGE_VALIDATION.json",
+    "PACKAGE_SECRET_SCAN.json",
+    "PATCH_REPRODUCTION.json",
+    "GITHUB_RELEASE.json",
+    "PUBLIC_READBACK.json",
+    "GITHUB_CI.json",
+    "PREVIOUS_RELEASE_SUPERSEDED.json",
+    "CONNECTED_CLIENT_FINAL.json"
+  ],
+  "snapshot_boundary": "This metadata closes publication after immutable source/package snapshot; production code is unchanged."
+}

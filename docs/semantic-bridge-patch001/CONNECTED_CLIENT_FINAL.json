@@ -1,0 +1,38 @@
+{
+  "source": "actual_connected_LivingMath_plugin",
+  "version": "v0.4.14-developer-preview",
+  "deployment_id": "semantic-bridge001-final-20261109T032448Z",
+  "tool_count": 102,
+  "authentication": "none",
+  "contextual_semantic_bridge": {
+    "version": "semantic-bridge-patch001/1",
+    "status": "READY_OPT_IN",
+    "tools": [
+      "semantic_bridge_register",
+      "semantic_bridge_analyze",
+      "semantic_bridge_inspect",
+      "semantic_bridge_replay"
+    ],
+    "LLM_calls": 0,
+    "semantic_adjudication": "NOT_EVALUATED",
+    "limits": {
+      "pairs": 10,
+      "scenarios": 8,
+      "hypotheses": 6,
+      "obligations_per_hypothesis": 8,
+      "source_links_per_hypothesis": 16,
+      "formula_nodes": 128,
+      "formula_depth": 16,
+      "boolean_atoms": 10,
+      "worker_CPU_s": 5,
+      "worker_wall_s": 6,
+      "worker_RAM_MiB": 512,
+      "shared_active": 2,
+      "shared_queue": 16
+    },
+    "execution_permission": false
+  },
+  "execution_permission": {
+    "allowed": false
+  }
+}

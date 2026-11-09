@@ -1,0 +1,13 @@
+{
+  "id": 438704018,
+  "tag": "v0.4.13-developer-preview",
+  "url": "https://github.com/catman77/LivingMath/releases/tag/v0.4.13-developer-preview",
+  "assets_preserved": [
+    [
+      726043751,
+      20341199,
+      "sha256:5c41fff84b73f136b59c970719aff9fa9bce455a17963844512058ef9a5ca689"
+    ]
+  ],
+  "note": "Superseded by v0.4.14-developer-preview: fixed independence of scenario context/assumptions from formula type status. Original tag, package and acceptance history are retained; see https://github.com/catman77/LivingMath/releases/tag/v0.4.14-developer-preview for the final corrected release."
+}
