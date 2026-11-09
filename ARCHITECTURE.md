@@ -1,6 +1,6 @@
 # Архитектура MCP-сервера LivingMath
 
-Срез архитектуры: **v0.4.14-developer-preview**, пакет Python `0.4.14.dev0`.
+Срез архитектуры: **v0.4.15-developer-preview**, пакет Python `0.4.15.dev0`.
 Production объединяет **102 MCP-инструмента** в одном Streamable HTTP
 endpoint `/mcp`. [Справочник интерфейса](docs/MCP_INTERFACE.md),
 [установка](docs/INSTALL.md), [примеры запросов](docs/USAGE.md).
@@ -360,39 +360,50 @@ vendor остаются байт-в-байт прежними.
 Схемы экспортированы из реального production [tools/list](docs/udav-core001/MCP_TOOL_SCHEMAS.json).
 Границы: [отчёт](docs/udav-core001/IMPLEMENTATION_REPORT_RU.md).
 
-## Contextual Semantic Bridge PATCH001 (0.4.13)
+## Contextual Semantic Bridge PATCH002 (0.4.15)
 
-Старый `semantic_bridge/` с его9 инструментами сохранён. Новые четыре метода
-находятся в `semantic_bridge/contextual/` и явно включаются оператором.
-Внешний клиент предлагает AST/assumptions/obligations; сервер работает только
-с данными и никогда не запрашивает LLM.
+Четыре opt-in метода, добавленные в0.4.13, сохраняют точные публичные схемы.
+Старый `semantic_bridge/` с9 инструментами и исторические вычислительные ядра
+не изменены. Клиент задаёт source-bound AST, предпосылки и OPEN obligations.
+Сервер не извлекает русский смысл и не вызывает LLM.
 
-| Модуль | Назначение |
+| Модуль в `semantic_bridge/contextual/` | Назначение |
 |---|---|
-| `contracts.py` | Строгая схема,6 hypotheses/10 pairs/8 scenarios, source SHA/UTF-8/JSON paths и resource guard |
-| `alpha.py` | Лексические индексы связанных переменных после неизменённого FOL typecheck |
-| `checker.py` | Независимая реконструкция α- и Boolean certificates со строгими JSON типами |
-| `relations.py` | Узкий forall-Boolean proof, неизменённые fol.countermodels/evaluate, обе направленные модели и applicability |
-| `engine.py` | Чистые register/analyze, отдельные language gaps и binding |
-| `service.py` | FormalService.owned, существующий CAS/journal, идемпотентность, immutable receipts, inspect/replay |
-| `worker.py`, `executor.py` | Отдельный фиксированный worker на старом supervisor и общей symbolic quota |
-| `mcp.py` | Четыре дополнительные регистрации и opt-in capability |
+| `contracts.py` | Прежние строгие схемы, source SHA/UTF-8/AST paths,6 hypotheses/10 pairs/8 scenarios |
+| `alpha.py` | Прежняя лексическая канонизация после FOL typecheck |
+| `proofs.py` | Узкая ННФ; достаточное Boolean-следование под одинаковым смешанным префиксом, ≤10 атомов |
+| `checker.py` | Независимая реконструкция из исходного AST, bindings/sorts, ННФ и всех Boolean-строк; строгие JSON типы |
+| `finite.py` | Единый поток уникальных closed worlds; все домены одновременно размера1, затем2; ≤16 relation cells |
+| `resources.py` | Локальные квоты пары для proof+search, оплачиваемые из прежних глобальных max_steps/max_cpu_ms |
+| `relations.py` | Подготовка всех доказательств; оба направления на одном мире для каждой активной пары; исходный fol.evaluate, проверка предпосылок, сохранение контрмоделей |
+| `engine.py` | Чистые register/analyze, граф без слияния, scenario vectors, directional coverage, binding всех новых proof/search/resource модулей |
+| `service.py` | Прежние FormalService.owned, CAS/journal, idempotency, immutable receipts и hash-guarded inspect/replay |
+| `worker.py`, `executor.py` | Прежний фиксированный supervisor, shared2-active/16-queued,5CPU/6wall/512MiB |
+| `mcp.py` | Те же4 инструмента, актуальная opt-in capability |
 
 ```mermaid
 flowchart LR
-    Client[External LLM or human proposals] --> Register[semantic_bridge_register]
-    Register --> Store[Existing Workspace and FormalService ownership]
-    Store --> Analyze[semantic_bridge_analyze]
-    Analyze --> Worker[Bounded isolated worker]
-    Worker --> Alpha[Exact lexical alpha certificate]
-    Alpha --> Boolean[Same-forall-prefix Boolean proof]
-    Boolean --> Finite[Existing directional finite countermodels]
-    Finite --> Checks[Existing FOL evaluation and independent certificate checks]
-    Checks --> Receipt[Immutable graph and scenario vectors]
+    Client[External proposals and semantic audit] --> Register[Immutable register]
+    Register --> Proof[Alpha then NNF and mixed-prefix certificates]
+    Proof --> Cursor[Unique closed world cursor]
+    Cursor --> Shares[All active pairs and both directions with local fuel]
+    Shares --> FOL[Unchanged FOL evaluation and common assumptions]
+    FOL --> Receipt[Directed witnesses and open coverage]
     Receipt --> Client
 ```
 
-Альфа-равенство относится к формулам, не объединяет истории или предпосылки.
-Контрмодели ищутся при ALL_CANDIDATE_ASSUMPTIONS_HOLD. Formula truth отдельно
-от applicability и source meaning. Неподдержанное время не заменяется FOL;
-UNKNOWN_BOUND не считается эквивалентностью. [Приёмка](docs/semantic-bridge-patch001/IMPLEMENTATION_REPORT_RU.md).
+Для одинакового префикса ∀ и ∃ монотонны по истинности матриц; порядок
+разнородных кванторов не переставляется. Независимый checker повторяет разбор
+AST и таблицу, не доверяет producer normal form. Равенство — независимый атом
+лишь для достаточной тавтологии. Это не полная процедура разрешения FOL.
+
+Счётчик max_models≤512 относится к реально проверенным уникальным мирам всего
+задания; сумма per-pair counts может быть больше за счёт совместного мира.
+При локальном исчерпании останавливается только пара. FINITE_EXHAUSTED
+означает исчерпание указанного конечного класса, не универсальную теорему.
+PROVED_LOGICAL_EQ требует двух точных направлений; α остаётся отдельным.
+Источник не лицензируется: PROPOSED/NOT_EVALUATED, OPEN и execution_permission=false.
+
+GitHub Actions отключён; wheel, тесты, staging, backup и HTTP-only cutover
+выполняются оператором локально. Старые binding/записи сохраняются; старый
+replay требует архивный runtime. [Приёмка PATCH002](docs/semantic-bridge-patch002/IMPLEMENTATION_REPORT_RU.md).

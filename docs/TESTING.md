@@ -1,6 +1,6 @@
 # Тестирование
 
-## Актуальный пакет v0.4.14
+## Актуальный пакет v0.4.15
 
 Из корня checkout после установки `python -m pip install '.[white-star,mcp,test]'`:
 
@@ -102,15 +102,23 @@ mypy добавляются через `requirements-dav-dev.txt`; lock019 уж�
 Формальное прохождение теста не является верификацией источниковой интерпретации.
 Научные отрицательные результаты сохраняйте отдельно от инженерного PASS.
 
-## GitHub Actions
+## GitHub Actions отключён
 
-`.github/workflows/assurance-v01.yml` устанавливает `white-star` extra и запускает
-**все** `tests/` на Python 3.13 без исключений и `continue-on-error`.
-Отдельный Python 3.14 job проверяет `test_release.py`, `test_semantic_bridge.py`
-и doctor smoke; он не заявляет проверку численного backend на 3.14.
-Зафиксированный pandas 2.2.3 имеет готовые cp313 wheels, но не cp314; версия
-production dependency ради CI не меняется. Старый `.github/workflows/test.yml`
-проверяет legacy с `PYTHONPATH=.:../src` для дочерних процессов.
+По прямому решению владельца от2026-11-09 repository Actions `enabled=false`.
+Два прежних workflow сохранены в `.github/workflows-disabled/*.disabled`;
+активных определений нет. Для этой поставки Actions не вызывается, jobs не
+ожидаются и CI PASS не заявляется. Исторические billing errors сохранены
+в [CI_STATUS.md](CI_STATUS.md). Все команды проверки выполняются локально.
+
+Локальная сборка wheel при установленном setuptools≥75 и wheel:
+
+```bash
+python -m pip wheel --no-deps --no-build-isolation --wheel-dir dist .
+```
+
+Проверяйте установленный wheel отдельно от checkout; `-o pythonpath=` отключает
+pytest-подстановку `src`. Native ядро готовьте в том окружении, где запускается
+worker. Production runtime не требует build toolchain.
 
 ## Проверка MCP-интерфейса
 
@@ -160,3 +168,23 @@ runner сохраняет полные request/response/wire и проверяе
 ложной проверяемой предпосылкой; типизированная формула с ill-typed assumption.
 Applicability вычисляется только из assumptions. Дополнительное независимое
 ревью проверило10 таких случаев. Первоначальные0.4.13 артефакты сохранены.
+
+## PATCH002 — направленные доказательства и fair search
+
+545 installed-wheel PASS, включая31 новый тест PATCH002;60 целевых/integration
+тестов двух contextual модулей. Полный legacy suite сохраняет1066 PASS/20 прежних
+SKIP. Точные последующие live counts и журналы находятся в
+[TEST_MATRIX.json](semantic-bridge-patch002/TEST_MATRIX.json).
+
+```bash
+python -m pytest -q tests/test_contextual_semantic_bridge.py tests/test_contextual_semantic_bridge002.py
+python docs/SEMANTIC_BRIDGE_PATCH002_20261109/fixtures/REFERENCE_VERIFY.py
+```
+
+Реальные SDK runners: `tools/semantic_bridge002_mcp_qa.py` (102 точных контракта,
+32/64 модели, перестановки, дорогая формула/локальная квота,77 старых EXP02 ячеек,
+factivity OPEN, реальные replay) и прежний `tools/semantic_bridge001_mcp_qa.py`
+(68 проверок SB-EXP01/security/контекста). Выполняйте в отдельном QA-проекте.
+`tools/semantic_bridge002_verify.py` использует только stdlib, проверяет
+сертификаты/контрмодели/векторы без импортов production кода. Отрицательные
+попытки и исходная критическая находка ревью включены в пакет, не удалены.

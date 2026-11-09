@@ -1,0 +1,602 @@
+{
+  "schema": "semantic-bridge-patch002-regression-fixtures/1",
+  "status": "DESIGNED_NOT_RUN_ON_NEW_PATCH",
+  "exp02_project": "sb_research_exp02_20261109",
+  "mathematical_assumptions": [
+    "All domains nonempty",
+    "All generated models explicitly closed",
+    "No server claims of semantic source truth"
+  ],
+  "logical_cases": [
+    {
+      "id": "T4_existence_projection",
+      "source": "Инженер сообщил аналитику, что он ошибся.",
+      "source_sha256": "d04b30eddf1d22672c7496749fd6bb54aaab26e88848159019fd448fc37eec21",
+      "signature": {
+        "sorts": [
+          "engineer",
+          "analyst"
+        ],
+        "predicates": {
+          "Said": [
+            "engineer",
+            "analyst"
+          ],
+          "MessageEngineerWrong": [
+            "engineer",
+            "analyst"
+          ],
+          "MessageAnalystWrong": [
+            "engineer",
+            "analyst"
+          ]
+        }
+      },
+      "formulas": {
+        "HmsgE": {
+          "quant": "exists",
+          "var": "e",
+          "sort": "engineer",
+          "body": {
+            "quant": "exists",
+            "var": "a",
+            "sort": "analyst",
+            "body": {
+              "and": [
+                {
+                  "pred": "Said",
+                  "args": [
+                    {
+                      "var": "e"
+                    },
+                    {
+                      "var": "a"
+                    }
+                  ]
+                },
+                {
+                  "pred": "MessageEngineerWrong",
+                  "args": [
+                    {
+                      "var": "e"
+                    },
+                    {
+                      "var": "a"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "Hskeleton": {
+          "quant": "exists",
+          "var": "e",
+          "sort": "engineer",
+          "body": {
+            "quant": "exists",
+            "var": "a",
+            "sort": "analyst",
+            "body": {
+              "pred": "Said",
+              "args": [
+                {
+                  "var": "e"
+                },
+                {
+                  "var": "a"
+                }
+              ]
+            }
+          }
+        },
+        "HmsgBoth": {
+          "quant": "exists",
+          "var": "e",
+          "sort": "engineer",
+          "body": {
+            "quant": "exists",
+            "var": "a",
+            "sort": "analyst",
+            "body": {
+              "and": [
+                {
+                  "pred": "Said",
+                  "args": [
+                    {
+                      "var": "e"
+                    },
+                    {
+                      "var": "a"
+                    }
+                  ]
+                },
+                {
+                  "pred": "MessageEngineerWrong",
+                  "args": [
+                    {
+                      "var": "e"
+                    },
+                    {
+                      "var": "a"
+                    }
+                  ]
+                },
+                {
+                  "pred": "MessageAnalystWrong",
+                  "args": [
+                    {
+                      "var": "e"
+                    },
+                    {
+                      "var": "a"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "HmsgA": {
+          "quant": "exists",
+          "var": "e",
+          "sort": "engineer",
+          "body": {
+            "quant": "exists",
+            "var": "a",
+            "sort": "analyst",
+            "body": {
+              "and": [
+                {
+                  "pred": "Said",
+                  "args": [
+                    {
+                      "var": "e"
+                    },
+                    {
+                      "var": "a"
+                    }
+                  ]
+                },
+                {
+                  "pred": "MessageAnalystWrong",
+                  "args": [
+                    {
+                      "var": "e"
+                    },
+                    {
+                      "var": "a"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      },
+      "directions": [
+        {
+          "left": "HmsgE",
+          "right": "Hskeleton",
+          "finite_counterexample_exists": false,
+          "universal_theorem": "PROVED_ENTAILMENT"
+        },
+        {
+          "left": "Hskeleton",
+          "right": "HmsgE",
+          "finite_counterexample_exists": true,
+          "must_find_with_max_models": 32
+        },
+        {
+          "left": "HmsgBoth",
+          "right": "HmsgE",
+          "finite_counterexample_exists": false,
+          "universal_theorem": "PROVED_ENTAILMENT"
+        },
+        {
+          "left": "HmsgE",
+          "right": "HmsgBoth",
+          "finite_counterexample_exists": true,
+          "must_find_with_max_models": 32
+        },
+        {
+          "left": "HmsgE",
+          "right": "HmsgA",
+          "finite_counterexample_exists": true
+        },
+        {
+          "left": "HmsgA",
+          "right": "HmsgE",
+          "finite_counterexample_exists": true
+        }
+      ],
+      "semantic_obligations": [
+        "Factivity is a client-side hypothesis; not asserted by MCP",
+        "Pronoun referent remains OPEN"
+      ],
+      "notes": "Checking 1/2-sized worlds yields 8+4096 models; this is an independent finite oracle, not a theorem proof."
+    },
+    {
+      "id": "T2_quantifier_negation",
+      "source": "Не все статьи прошли проверку.",
+      "signature": {
+        "sorts": [
+          "article"
+        ],
+        "predicates": {
+          "Verified": [
+            "article"
+          ]
+        }
+      },
+      "formulas": {
+        "not_all": {
+          "not": {
+            "quant": "forall",
+            "var": "x",
+            "sort": "article",
+            "body": {
+              "pred": "Verified",
+              "args": [
+                {
+                  "var": "x"
+                }
+              ]
+            }
+          }
+        },
+        "exists_not": {
+          "quant": "exists",
+          "var": "x",
+          "sort": "article",
+          "body": {
+            "not": {
+              "pred": "Verified",
+              "args": [
+                {
+                  "var": "x"
+                }
+              ]
+            }
+          }
+        },
+        "none": {
+          "quant": "forall",
+          "var": "x",
+          "sort": "article",
+          "body": {
+            "not": {
+              "pred": "Verified",
+              "args": [
+                {
+                  "var": "x"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "directions": [
+        {
+          "left": "not_all",
+          "right": "exists_not",
+          "finite_counterexample_exists": false,
+          "universal_theorem": "PROVED_LOGICAL_EQ_AS_TWO_DIRECTIONS"
+        },
+        {
+          "left": "exists_not",
+          "right": "not_all",
+          "finite_counterexample_exists": false
+        },
+        {
+          "left": "not_all",
+          "right": "none",
+          "finite_counterexample_exists": true
+        }
+      ],
+      "notes": "NEGATION_NORMAL_FORM proof needed; finite equivalence check is a regression, not sufficient proof."
+    },
+    {
+      "id": "T3_forall_distributivity_trap",
+      "source": "Каждый рецензент либо отклонил доклад, либо запросил правки.",
+      "signature": {
+        "sorts": [
+          "reviewer"
+        ],
+        "predicates": {
+          "Rejected": [
+            "reviewer"
+          ],
+          "AskedChanges": [
+            "reviewer"
+          ]
+        }
+      },
+      "formulas": {
+        "per": {
+          "quant": "forall",
+          "var": "r",
+          "sort": "reviewer",
+          "body": {
+            "or": [
+              {
+                "pred": "Rejected",
+                "args": [
+                  {
+                    "var": "r"
+                  }
+                ]
+              },
+              {
+                "pred": "AskedChanges",
+                "args": [
+                  {
+                    "var": "r"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "global": {
+          "or": [
+            {
+              "quant": "forall",
+              "var": "r",
+              "sort": "reviewer",
+              "body": {
+                "pred": "Rejected",
+                "args": [
+                  {
+                    "var": "r"
+                  }
+                ]
+              }
+            },
+            {
+              "quant": "forall",
+              "var": "r",
+              "sort": "reviewer",
+              "body": {
+                "pred": "AskedChanges",
+                "args": [
+                  {
+                    "var": "r"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "directions": [
+        {
+          "left": "per",
+          "right": "global",
+          "finite_counterexample_exists": true
+        },
+        {
+          "left": "global",
+          "right": "per",
+          "finite_counterexample_exists": false
+        }
+      ],
+      "notes": "Countermodel for per !=> global requires at least 2 reviewers."
+    },
+    {
+      "id": "boolean_commutativity",
+      "signature": {
+        "sorts": [
+          "researcher",
+          "hypothesis"
+        ],
+        "predicates": {
+          "Checked": [
+            "researcher",
+            "hypothesis"
+          ],
+          "Planned": [
+            "researcher",
+            "hypothesis"
+          ]
+        }
+      },
+      "formulas": {
+        "A": {
+          "quant": "forall",
+          "var": "r",
+          "sort": "researcher",
+          "body": {
+            "quant": "forall",
+            "var": "h",
+            "sort": "hypothesis",
+            "body": {
+              "or": [
+                {
+                  "pred": "Checked",
+                  "args": [
+                    {
+                      "var": "r"
+                    },
+                    {
+                      "var": "h"
+                    }
+                  ]
+                },
+                {
+                  "pred": "Planned",
+                  "args": [
+                    {
+                      "var": "r"
+                    },
+                    {
+                      "var": "h"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "B": {
+          "quant": "forall",
+          "var": "r",
+          "sort": "researcher",
+          "body": {
+            "quant": "forall",
+            "var": "h",
+            "sort": "hypothesis",
+            "body": {
+              "or": [
+                {
+                  "pred": "Planned",
+                  "args": [
+                    {
+                      "var": "r"
+                    },
+                    {
+                      "var": "h"
+                    }
+                  ]
+                },
+                {
+                  "pred": "Checked",
+                  "args": [
+                    {
+                      "var": "r"
+                    },
+                    {
+                      "var": "h"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      },
+      "directions": [
+        {
+          "left": "A",
+          "right": "B",
+          "finite_counterexample_exists": false,
+          "universal_theorem": "PROVED_LOGICAL_EQ"
+        },
+        {
+          "left": "B",
+          "right": "A",
+          "finite_counterexample_exists": false
+        }
+      ],
+      "notes": "Proof by two directions not merely FINITE_SAME_ON_BOUND."
+    },
+    {
+      "id": "T1_scope_change",
+      "signature": {
+        "sorts": [
+          "editor",
+          "manuscript"
+        ],
+        "predicates": {
+          "Approves": [
+            "editor",
+            "manuscript"
+          ]
+        }
+      },
+      "formulas": {
+        "each_some": {
+          "quant": "forall",
+          "var": "e",
+          "sort": "editor",
+          "body": {
+            "quant": "exists",
+            "var": "m",
+            "sort": "manuscript",
+            "body": {
+              "pred": "Approves",
+              "args": [
+                {
+                  "var": "e"
+                },
+                {
+                  "var": "m"
+                }
+              ]
+            }
+          }
+        },
+        "some_all": {
+          "quant": "exists",
+          "var": "m",
+          "sort": "manuscript",
+          "body": {
+            "quant": "forall",
+            "var": "e",
+            "sort": "editor",
+            "body": {
+              "pred": "Approves",
+              "args": [
+                {
+                  "var": "e"
+                },
+                {
+                  "var": "m"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "directions": [
+        {
+          "left": "each_some",
+          "right": "some_all",
+          "finite_counterexample_exists": true
+        },
+        {
+          "left": "some_all",
+          "right": "each_some",
+          "finite_counterexample_exists": false
+        }
+      ],
+      "notes": "Mixed prefix order must not be declared equivalence."
+    }
+  ],
+  "expected_live_gates": [
+    {
+      "case": "existential_projection",
+      "relations": [
+        "HmsgE=>Hskeleton PROVED with 0 models",
+        "HmsgBoth=>HmsgE PROVED with 0 models",
+        "Hskeleton!=>HmsgE countermodel <=32 and regardless input order"
+      ]
+    },
+    {
+      "case": "factivity",
+      "relations": [
+        "WrongEngineer is not logically sourced by reported statement",
+        "HmsgE and HmsgA remain alternate source hypotheses, ANAPHORA OPEN"
+      ]
+    },
+    {
+      "case": "finite_semantics",
+      "relations": [
+        "No universal EQUIVALENT claim from finite cutoff",
+        "No mutation of source rights or recorded assumptions"
+      ]
+    },
+    {
+      "case": "scope",
+      "relations": [
+        "forall exists vs exists forall not silently permuted"
+      ]
+    },
+    {
+      "case": "temporal",
+      "relations": [
+        "FOL STATIC proxy flagged lossy; unsupported temporal formula remains OPEN"
+      ]
+    }
+  ]
+}

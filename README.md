@@ -4,11 +4,19 @@
 свидетели и контрпримеры → сохраняемая история исследования. MCP-интерфейс
 объединяет LivingMath, проверку исходных схем SUTI и алхимическую модель ALCH006.
 
-Текущий продукт: **`v0.4.14-developer-preview`**: assurance CLI, Semantic Bridge, White Star, Symbolic V1, UDAV Core и contextual FOL checks; **102 MCP-инструмента** (98 прежних +4). [Установка](README_QUICKSTART_RU.md), [White Star и сравнение режимов](docs/white-star/QUICKSTART_RU.md), [Semantic Bridge](docs/semantic-bridge/QUICKSTART_RU.md), [CLI](CLI_REFERENCE.md), [границы возможностей](LIMITATIONS.md).
+Текущий продукт: **`v0.4.15-developer-preview`**: assurance CLI, Semantic Bridge, White Star, Symbolic V1, UDAV Core и contextual FOL checks; **102 MCP-инструмента** (98 прежних +4). [Установка](README_QUICKSTART_RU.md), [White Star и сравнение режимов](docs/white-star/QUICKSTART_RU.md), [Semantic Bridge](docs/semantic-bridge/QUICKSTART_RU.md), [CLI](CLI_REFERENCE.md), [границы возможностей](LIMITATIONS.md).
 
 
 Текущий MCP доступен **без аутентификации** по прежнему HTTPS-адресу;
 `authentication=none`. [Транспорт и подключение](docs/MCP_INTERFACE.md).
+
+**Semantic Bridge PATCH002 (0.4.15)** добавляет проверяемые доказательства для
+одинаковых смешанных ∀/∃-префиксов и узкой ННФ. Общий поток конечных миров
+проверяет обе направленности всех активных пар; локальные квоты шагов/CPU
+сохраняют возможность найти дешёвый контрпример рядом с тяжёлой формулой.
+Незакрытые направления видны явно. Все 102 схемы MCP сохранены.
+[Отчёт](docs/semantic-bridge-patch002/IMPLEMENTATION_REPORT_RU.md),
+[протокол смыслового аудита клиента](docs/semantic-bridge-patch002/LLM_SEMANTIC_AUDIT_PROTOCOL_RU.md).
 
 **Semantic Bridge PATCH001 (0.4.13)** принимает внешние FOL-гипотезы,
 сохраняет контекстные предпосылки и OPEN обязательства, проверяет α-равенство,
@@ -109,8 +117,10 @@ python -m pytest -q tests
 
 Подробно: [установка, запуск и подключение ChatGPT](docs/INSTALL.md),
 [использование и точные JSON-запросы](docs/USAGE.md), [тестирование](docs/TESTING.md).
-Исторический отказ запуска GitHub Actions от 2026-11-01 и его RCA сохранены
-в [CI_STATUS.md](docs/CI_STATUS.md); актуальный CI оценивается по run конкретного commit.
+GitHub Actions отключён по решению владельца: repository enabled=false, workflows
+сохранены в `.github/workflows-disabled/`. Сборка, проверки и deployment выполняются
+локально; GitHub используется для исходников и готовых release-пакетов.
+[Статус и историческая диагностика](docs/CI_STATUS.md).
 Для LLM-формализации требуется отдельно включить существующий Codex backend;
 инструкции описывают вход через ChatGPT без API-ключа.
 

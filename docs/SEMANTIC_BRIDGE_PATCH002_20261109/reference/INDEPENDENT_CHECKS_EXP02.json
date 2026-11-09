@@ -1,0 +1,448 @@
+{
+  "schema": "sb-exp02-independent-check/1",
+  "status": "PASS",
+  "independent_evaluator": "Python standard library, separately authored; no LivingMath imports",
+  "scenario_cases": 7,
+  "scenario_worlds": 25,
+  "scenario_cells": 77,
+  "scenario_truth_matrix": [
+    {
+      "case": "T1",
+      "world": 1,
+      "candidate_ids": [
+        "Hscope",
+        "Hswapped",
+        "Hrenamed"
+      ],
+      "truths": [
+        "TRUE",
+        "FALSE",
+        "TRUE"
+      ]
+    },
+    {
+      "case": "T1",
+      "world": 2,
+      "candidate_ids": [
+        "Hscope",
+        "Hswapped",
+        "Hrenamed"
+      ],
+      "truths": [
+        "TRUE",
+        "TRUE",
+        "TRUE"
+      ]
+    },
+    {
+      "case": "T1",
+      "world": 3,
+      "candidate_ids": [
+        "Hscope",
+        "Hswapped",
+        "Hrenamed"
+      ],
+      "truths": [
+        "FALSE",
+        "FALSE",
+        "FALSE"
+      ]
+    },
+    {
+      "case": "T2",
+      "world": 1,
+      "candidate_ids": [
+        "Hnotall",
+        "Hnone",
+        "Hexists"
+      ],
+      "truths": [
+        "TRUE",
+        "FALSE",
+        "TRUE"
+      ]
+    },
+    {
+      "case": "T2",
+      "world": 2,
+      "candidate_ids": [
+        "Hnotall",
+        "Hnone",
+        "Hexists"
+      ],
+      "truths": [
+        "FALSE",
+        "FALSE",
+        "FALSE"
+      ]
+    },
+    {
+      "case": "T2",
+      "world": 3,
+      "candidate_ids": [
+        "Hnotall",
+        "Hnone",
+        "Hexists"
+      ],
+      "truths": [
+        "TRUE",
+        "TRUE",
+        "TRUE"
+      ]
+    },
+    {
+      "case": "T3",
+      "world": 1,
+      "candidate_ids": [
+        "Hper",
+        "Hglobal",
+        "Hboth"
+      ],
+      "truths": [
+        "TRUE",
+        "FALSE",
+        "FALSE"
+      ]
+    },
+    {
+      "case": "T3",
+      "world": 2,
+      "candidate_ids": [
+        "Hper",
+        "Hglobal",
+        "Hboth"
+      ],
+      "truths": [
+        "TRUE",
+        "TRUE",
+        "FALSE"
+      ]
+    },
+    {
+      "case": "T3",
+      "world": 3,
+      "candidate_ids": [
+        "Hper",
+        "Hglobal",
+        "Hboth"
+      ],
+      "truths": [
+        "FALSE",
+        "FALSE",
+        "FALSE"
+      ]
+    },
+    {
+      "case": "T4",
+      "world": 1,
+      "candidate_ids": [
+        "Heng",
+        "Hanalyst",
+        "Hboth"
+      ],
+      "truths": [
+        "TRUE",
+        "FALSE",
+        "FALSE"
+      ]
+    },
+    {
+      "case": "T4",
+      "world": 2,
+      "candidate_ids": [
+        "Heng",
+        "Hanalyst",
+        "Hboth"
+      ],
+      "truths": [
+        "FALSE",
+        "TRUE",
+        "FALSE"
+      ]
+    },
+    {
+      "case": "T4",
+      "world": 3,
+      "candidate_ids": [
+        "Heng",
+        "Hanalyst",
+        "Hboth"
+      ],
+      "truths": [
+        "TRUE",
+        "TRUE",
+        "TRUE"
+      ]
+    },
+    {
+      "case": "T4",
+      "world": 4,
+      "candidate_ids": [
+        "Heng",
+        "Hanalyst",
+        "Hboth"
+      ],
+      "truths": [
+        "FALSE",
+        "FALSE",
+        "FALSE"
+      ]
+    },
+    {
+      "case": "T5",
+      "world": 1,
+      "candidate_ids": [
+        "Hconditional",
+        "Hconverse",
+        "Hexists"
+      ],
+      "truths": [
+        "TRUE",
+        "TRUE",
+        "FALSE"
+      ]
+    },
+    {
+      "case": "T5",
+      "world": 2,
+      "candidate_ids": [
+        "Hconditional",
+        "Hconverse",
+        "Hexists"
+      ],
+      "truths": [
+        "TRUE",
+        "TRUE",
+        "TRUE"
+      ]
+    },
+    {
+      "case": "T5",
+      "world": 3,
+      "candidate_ids": [
+        "Hconditional",
+        "Hconverse",
+        "Hexists"
+      ],
+      "truths": [
+        "FALSE",
+        "TRUE",
+        "FALSE"
+      ]
+    },
+    {
+      "case": "T5",
+      "world": 4,
+      "candidate_ids": [
+        "Hconditional",
+        "Hconverse",
+        "Hexists"
+      ],
+      "truths": [
+        "TRUE",
+        "FALSE",
+        "FALSE"
+      ]
+    },
+    {
+      "case": "T6",
+      "world": 1,
+      "candidate_ids": [
+        "Htemporal",
+        "Hstatic"
+      ],
+      "truths": [
+        "ILL_TYPED",
+        "TRUE"
+      ]
+    },
+    {
+      "case": "T6",
+      "world": 2,
+      "candidate_ids": [
+        "Htemporal",
+        "Hstatic"
+      ],
+      "truths": [
+        "ILL_TYPED",
+        "FALSE"
+      ]
+    },
+    {
+      "case": "T6",
+      "world": 3,
+      "candidate_ids": [
+        "Htemporal",
+        "Hstatic"
+      ],
+      "truths": [
+        "ILL_TYPED",
+        "UNKNOWN"
+      ]
+    },
+    {
+      "case": "T4R",
+      "world": 1,
+      "candidate_ids": [
+        "HmsgE",
+        "HmsgA",
+        "Hskeleton",
+        "HmsgBoth"
+      ],
+      "truths": [
+        "TRUE",
+        "FALSE",
+        "TRUE",
+        "FALSE"
+      ]
+    },
+    {
+      "case": "T4R",
+      "world": 2,
+      "candidate_ids": [
+        "HmsgE",
+        "HmsgA",
+        "Hskeleton",
+        "HmsgBoth"
+      ],
+      "truths": [
+        "FALSE",
+        "TRUE",
+        "TRUE",
+        "FALSE"
+      ]
+    },
+    {
+      "case": "T4R",
+      "world": 3,
+      "candidate_ids": [
+        "HmsgE",
+        "HmsgA",
+        "Hskeleton",
+        "HmsgBoth"
+      ],
+      "truths": [
+        "TRUE",
+        "TRUE",
+        "TRUE",
+        "TRUE"
+      ]
+    },
+    {
+      "case": "T4R",
+      "world": 4,
+      "candidate_ids": [
+        "HmsgE",
+        "HmsgA",
+        "Hskeleton",
+        "HmsgBoth"
+      ],
+      "truths": [
+        "FALSE",
+        "FALSE",
+        "TRUE",
+        "FALSE"
+      ]
+    },
+    {
+      "case": "T4R",
+      "world": 5,
+      "candidate_ids": [
+        "HmsgE",
+        "HmsgA",
+        "Hskeleton",
+        "HmsgBoth"
+      ],
+      "truths": [
+        "FALSE",
+        "FALSE",
+        "FALSE",
+        "FALSE"
+      ]
+    }
+  ],
+  "finite_directional_comparisons": [
+    {
+      "case": "T1",
+      "left": "Hscope",
+      "right": "Hswapped",
+      "no_countermodel_A_implies_B_size_1_2": false,
+      "no_countermodel_B_implies_A_size_1_2": true,
+      "models_with_assumptions_checked": 18
+    },
+    {
+      "case": "T1",
+      "left": "Hscope",
+      "right": "Hrenamed",
+      "no_countermodel_A_implies_B_size_1_2": true,
+      "no_countermodel_B_implies_A_size_1_2": true,
+      "models_with_assumptions_checked": 18
+    },
+    {
+      "case": "T2",
+      "left": "Hnotall",
+      "right": "Hnone",
+      "no_countermodel_A_implies_B_size_1_2": false,
+      "no_countermodel_B_implies_A_size_1_2": true,
+      "models_with_assumptions_checked": 6
+    },
+    {
+      "case": "T2",
+      "left": "Hnotall",
+      "right": "Hexists",
+      "no_countermodel_A_implies_B_size_1_2": true,
+      "no_countermodel_B_implies_A_size_1_2": true,
+      "models_with_assumptions_checked": 6
+    },
+    {
+      "case": "T3",
+      "left": "Hper",
+      "right": "Hglobal",
+      "no_countermodel_A_implies_B_size_1_2": false,
+      "no_countermodel_B_implies_A_size_1_2": true,
+      "models_with_assumptions_checked": 20
+    },
+    {
+      "case": "T3",
+      "left": "Hper",
+      "right": "Hboth",
+      "no_countermodel_A_implies_B_size_1_2": false,
+      "no_countermodel_B_implies_A_size_1_2": true,
+      "models_with_assumptions_checked": 20
+    },
+    {
+      "case": "T4",
+      "left": "Heng",
+      "right": "Hanalyst",
+      "no_countermodel_A_implies_B_size_1_2": false,
+      "no_countermodel_B_implies_A_size_1_2": false,
+      "models_with_assumptions_checked": 264
+    },
+    {
+      "case": "T4",
+      "left": "Heng",
+      "right": "Hboth",
+      "no_countermodel_A_implies_B_size_1_2": false,
+      "no_countermodel_B_implies_A_size_1_2": true,
+      "models_with_assumptions_checked": 264
+    },
+    {
+      "case": "T5",
+      "left": "Hconditional",
+      "right": "Hconverse",
+      "no_countermodel_A_implies_B_size_1_2": false,
+      "no_countermodel_B_implies_A_size_1_2": false,
+      "models_with_assumptions_checked": 146
+    },
+    {
+      "case": "T5",
+      "left": "Hconditional",
+      "right": "Hexists",
+      "no_countermodel_A_implies_B_size_1_2": true,
+      "no_countermodel_B_implies_A_size_1_2": false,
+      "models_with_assumptions_checked": 146
+    }
+  ],
+  "finite_directional_pairs_checked": 10,
+  "epistemic_limit": "All finite observations/implications conditional on the declared structures, not semantic validation of source text or universal equivalence; temporal gap unexpressed"
+}

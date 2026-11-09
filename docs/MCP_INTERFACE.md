@@ -1,7 +1,7 @@
-# MCP-интерфейс LivingMath v0.4.14
+# MCP-интерфейс LivingMath v0.4.15
 
 Актуальная production-композиция: **102 инструмента**, версия сервера
-`v0.4.14-developer-preview`, пакет `0.4.14.dev0`. [Архитектура](../ARCHITECTURE.md),
+`v0.4.14-developer-preview`, пакет `0.4.15.dev0`. [Архитектура](../ARCHITECTURE.md),
 [установка и различия 44/102](INSTALL.md), [исходный текст и rights](USAGE.md).
 
 ## Транспорт и обнаружение
@@ -444,3 +444,44 @@ COMPLETED run без provider/network calls. [Полный точный JSON, с
 TYPE_REJECTED/LANGUAGE_INSUFFICIENT кандидаты сохраняются с причиной и открытым
 language gap. PROVED_* — точные отношения формул в объявленной области;
 source_alignment_status остаётся PROPOSED, semantic_adjudication=NOT_EVALUATED.
+
+### PATCH002: правила и явное покрытие направлений
+
+102 полных tools/list records сохранены, новых аргументов/инструментов нет.
+`bridge_system_status.contextual_semantic_bridge.version=semantic-bridge-patch002/1`
+показывает текущие capabilities. Кэш старого description инструмента не меняет
+входной контракт; актуальные правила перечислены здесь и в capability.
+
+Анализ выдаёт независимые ALPHA_NORMALIZATION, NEGATION_NORMAL_FORM_EQUIVALENCE
+или SAME_PREFIX_BOOLEAN_MONOTONICITY certificates с исходными SHA и точными
+quantifier/sort prefix. ННФ ограничена отрицанием кванторов, двойным отрицанием
+и De Morgan. Матрица без внутренних кванторов, ≤10 Boolean atoms; равенство
+используется только как достаточный независимый атом. Оба доказанных направления
+дают PROVED_LOGICAL_EQ; перестановка ∀/∃ не разрешается.
+
+Каждый edge содержит `directions.A_IMPLIES_B/B_IMPLIES_A` со status,
+models_checked, proof_kind, halt_reason, counterexample_ref и отдельным
+finite_search. На уровне задания `checks.directional_coverage` содержит
+requested/completed/undecided; completed означает точный proof или контрмодель,
+а не конечное совпадение. completed_pairs считает пары с обоими закрытыми
+направлениями, prepared_pairs — завершённую подготовку proof-класса.
+CHECKED_WITH_OPEN_DIRECTIONS явно сохраняет UNKNOWN_BOUND/конечные незакрытые
+направления. При слишком малом топливе до подготовки остаётся UNKNOWN_BOUND.
+
+Глобальный курсор проверяет closed worlds всех сортов одновременно размера1,
+затем2; sorted sorts/predicates/tuples, False перед True. Каждый мир обслуживает
+все активные пары и оба направления при общих предпосылках соответствующей
+пары. max_models≤512 считает уникальные оценённые миры, не сумму per-pair counts.
+resource_allocation/charged_steps показывают локальные квоты, оплаченные из
+прежнего общего бюджета. Исчерпание квоты не уничтожает уже выданный proof или
+контрмодель и не останавливает соседнюю пару. FINITE_EXHAUSTED не доказывает
+универсальную эквивалентность. Конкретный счётчик шагов — логические ticks и
+оценённые FOL nodes; при FOL cutoff без node count консервативно списывается
+только выделенная локальная квота.
+
+Семантический риск передавайте существующими obligations/description,
+source_links и construction_trace. ANAPHORA/TEMPORALITY остаются OPEN;
+RISK_FACTIVITY_LEAK можно описать kind LEXICAL_ASSUMPTION/CONTEXT.
+[Практический клиентский протокол](semantic-bridge-patch002/LLM_SEMANTIC_AUDIT_PROTOCOL_RU.md).
+Старые immutable результаты доступны inspect; replay другого binding возвращает
+KERNEL_BINDING_UNAVAILABLE. [Полные актуальные вызовы](semantic-bridge-patch002/MCP_EXAMPLES.json).

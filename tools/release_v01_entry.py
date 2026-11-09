@@ -40,7 +40,7 @@ def serve(path):
         p = (layer/name).resolve(strict=True)
         if not p.is_relative_to(layer) or sha(p) != expected:
             raise ValueError('RELEASE_FILE_MISMATCH')
-    if cfg['release'] not in ('v0.1.0-developer-preview','v0.2.0-developer-preview','v0.3.0-developer-preview','v0.4.0-developer-preview','v0.4.1-developer-preview','v0.4.2-developer-preview','v0.4.3-developer-preview','v0.4.4-developer-preview','v0.4.5-developer-preview','v0.4.6-developer-preview','v0.4.7-developer-preview','v0.4.8-developer-preview','v0.4.9-developer-preview','v0.4.10-developer-preview','v0.4.11-developer-preview','v0.4.12-developer-preview','v0.4.13-developer-preview','v0.4.14-developer-preview'):
+    if cfg['release'] not in ('v0.1.0-developer-preview','v0.2.0-developer-preview','v0.3.0-developer-preview','v0.4.0-developer-preview','v0.4.1-developer-preview','v0.4.2-developer-preview','v0.4.3-developer-preview','v0.4.4-developer-preview','v0.4.5-developer-preview','v0.4.6-developer-preview','v0.4.7-developer-preview','v0.4.8-developer-preview','v0.4.9-developer-preview','v0.4.10-developer-preview','v0.4.11-developer-preview','v0.4.12-developer-preview','v0.4.13-developer-preview','v0.4.14-developer-preview','v0.4.15-developer-preview'):
         raise ValueError('RELEASE_VERSION_MISMATCH')
     expected = {'release':cfg['release'],'release_manifest_sha256':cfg['release_manifest_sha256'],
                 'deployment_id':cfg['deployment_id'],'action':'INSTALL_EXACT_OWNER_AUTHORIZED_PREVIEW'}

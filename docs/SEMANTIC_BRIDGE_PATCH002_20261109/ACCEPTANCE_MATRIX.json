@@ -1,0 +1,19 @@
+{
+  "schema": "semantic-bridge-patch002-acceptance-spec/1",
+  "status": "SPECIFICATION_ONLY_NOT_EXECUTED",
+  "date": "2026-11-09",
+  "gates": [
+    {"id":"G0","priority":"P0","status":"NOT_EXECUTED","required":"102 legacy schemas intact, native/FOL/UDAV/CAD/NOPS bytes preserved; code/runtime hash and historic run integrity verified"},
+    {"id":"G1","priority":"P0","status":"NOT_EXECUTED","required":"Sound mixed forall/exists same-prefix propositional entailment, certificate + independent checker; existential conjunction elimination 0 model enumeration"},
+    {"id":"G2","priority":"P0","status":"NOT_EXECUTED","required":"Quantifier-negation NNF equivalence, double negation and De Morgan sound; capture/type/sort/fake cert negative tests"},
+    {"id":"G3","priority":"P0","status":"NOT_EXECUTED","required":"Shared finite model cursor or equivalent fair scheduler for both directions + multiple pairs; swap/reorder invariant, no direction starvation with budgets 32/64"},
+    {"id":"G4","priority":"P0","status":"NOT_EXECUTED","required":"No false universal proof on incomplete search or malformed assumptions; directional UNKNOWN_BOUND + both verified countermodel directions retained"},
+    {"id":"G5","priority":"P0","status":"NOT_EXECUTED","required":"Both proved implications => PROVED_LOGICAL_EQ, alpha preserved; graph and run expose decided/open counts; hypothesis/source not merged"},
+    {"id":"G6","priority":"P0","status":"NOT_EXECUTED","required":"SB-EXP01/T1-T6/T4R old truths and assumption applicability unchanged; open-world UNKNOWN; ILL_TYPED and context independent"},
+    {"id":"G7","priority":"P0","status":"NOT_EXECUTED","required":"Client semantic protocol + LLM repair prompt delivered; T4 factivity issue not automatically licensed; ANAPHORA/TEMPORALITY OPEN; no LLM in server"},
+    {"id":"G8","priority":"P0","status":"NOT_EXECUTED","required":"Cross-project refs, SHA/span/AST tamper, request_key collisions, prompt injection, input complexity and CPU/memory/queue limits tested"},
+    {"id":"G9","priority":"P0","status":"NOT_EXECUTED","required":"Replay register/analyze, independent verifier, deterministic normal budgets, old binding fail-closed, rollback+manifest+real MCP receipts"},
+    {"id":"G10","priority":"P0","status":"NOT_EXECUTED","required":"Report distinguishes mechanical verified statements from semantic PROPOSED and LLM uplift NOT_MEASURED; no fictitious CI PASS"}
+  ],
+  "acceptance_rule":"All G0-G10 must PASS with actually executed evidence; else PARTIAL or FAIL. Prior EXP02 success is regression ground truth, not proof patch works."
+}

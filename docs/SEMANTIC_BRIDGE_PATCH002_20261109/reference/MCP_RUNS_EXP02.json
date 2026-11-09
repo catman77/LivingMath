@@ -1,0 +1,156 @@
+{
+  "schema": "sb-exp02-mcp-run-manifest/1",
+  "production_version": "v0.4.14-developer-preview",
+  "project": "sb_research_exp02_20261109",
+  "data_provenance": "Run IDs, status and SHA transcribed from live MCP responses. This manifest is not a full server bundle.",
+  "runs": {
+    "T1": {
+      "register_run_ref": "59b3097c59d077e4b69397d53f7bc344654b4b79a7e6afb573f501511567f6b4",
+      "analysis_run_ref": "6c65b17a57e443c4001f219a3a635e46282dd4caf65dcf5a1181a5fd7d3aece0",
+      "analysis_result_sha256": "71c47d2a76b94d508cf5377ee98ee7f6f5c9bc447f0069879097de6d08969c58",
+      "model_enumerations": 27,
+      "scenario_cells": 9,
+      "completed_pairs": 2,
+      "formal_contrast_calls": 2,
+      "analysis_status": "CHECKED",
+      "analysis_replay": "REPLAY_MATCH",
+      "findings": [
+        "Hscope→Hswapped countermodel",
+        "Hscope≈alpha(Hrenamed) PROVED_ALPHA_EQ",
+        "Reverse implication true but checker does not prove existential-prefix cases"
+      ]
+    },
+    "T2": {
+      "register_run_ref": "f649aac6219ad7264fe6382a89eef35e20a636a8394709759692da349f2461f4",
+      "analysis_run_ref": "2602ebba421c6be6469fcef3354c7a8bd0f023ee123998a5b9e1064b3ed3d91b",
+      "analysis_result_sha256": "c592b4ddd0175550058dbf5ca6f234336a6dbc1c246577b71c7604dfc57adc09",
+      "model_enumerations": 22,
+      "scenario_cells": 9,
+      "completed_pairs": 2,
+      "formal_contrast_calls": 4,
+      "analysis_status": "CHECKED",
+      "analysis_replay": "REPLAY_MATCH",
+      "findings": [
+        "Hnotall→Hnone countermodel",
+        "Hnotall and Hexists finite-same; no universal proof returned",
+        "¬∀xP(x) ↔ ∃x¬P(x) is an independent logical equivalence"
+      ]
+    },
+    "T3": {
+      "register_run_ref": "16cf3bcb7575fb0d5210b714237561f06d42e1c285704eb8d75fe8f91ba91603",
+      "analysis_run_ref": "a1a28d3f980625fba07226519b63315a4cb00a63d0460542ce134ab45622f3e4",
+      "analysis_result_sha256": "fb18e0f268f2230fbb595db42b325d92bff68cc5f5fc4391a6f101b58c4368de",
+      "model_enumerations": 33,
+      "scenario_cells": 9,
+      "completed_pairs": 2,
+      "formal_contrast_calls": 3,
+      "analysis_status": "CHECKED",
+      "analysis_replay": "REPLAY_MATCH",
+      "findings": [
+        "Hper→Hglobal countermodel",
+        "Hper→Hboth countermodel",
+        "Report is fixed/context-dependent and represented as unary predicates"
+      ]
+    },
+    "T4": {
+      "register_run_ref": "742a2bdaf1433b24bd16639f1ef6f27b29bfe86adb05b1bc0f5b20988949c72a",
+      "analysis_run_ref": "662833e8e0bdd2692b49c649b772b92486f6cb273d8382809b8d9e0c68d5f77a",
+      "analysis_result_sha256": "de4f009102a334a13df4ecce486b22639eefb79ebd8e712d230800dd5a5e6f4c",
+      "model_enumerations": 283,
+      "scenario_cells": 12,
+      "completed_pairs": 2,
+      "formal_contrast_calls": 4,
+      "analysis_status": "CHECKED",
+      "analysis_replay": "REPLAY_MATCH",
+      "findings": [
+        "Engineer-wrong and analyst-wrong incomparable, two countermodels",
+        "Original LLM FOL mistakenly asserted factual wrongness from a reported claim (factivity error)"
+      ]
+    },
+    "T5": {
+      "register_run_ref": "60dd108b6dc9d7fd11a29c2df5ec39b9ba4a109ed2fa3e8d3af2a6396d2e96d7",
+      "analysis_run_ref": "2661d67544dce34da05261da1581832c2345911a2593686e618b174ab777b673",
+      "analysis_result_sha256": "3f51640f4dd5adcf69f64184776543cd46ee4c91d28fa7767a54662f12240970",
+      "model_enumerations": 445,
+      "scenario_cells": 12,
+      "completed_pairs": 2,
+      "formal_contrast_calls": 4,
+      "analysis_status": "CHECKED",
+      "analysis_replay": "REPLAY_MATCH",
+      "findings": [
+        "Hconditional and Hconverse incomparable",
+        "Hconditional→Hexists under supervisor assumption not proved by server; finite example supports it",
+        "No supervisor: conditional TRUE but supervisor-existence assumption FALSE ⇒ CONTEXT_INCOMPATIBLE"
+      ]
+    },
+    "T6": {
+      "register_run_ref": "15c429ad97ff76971c5566bd6132ab548dd6dbad4220ae3ce7e91dbc4a6cd1c0",
+      "analysis_run_ref": "9ad5504df47a96f4781db5e19a947ad7e1d165893ad8a450f5a1c4729142c544",
+      "analysis_result_sha256": "d86f989319c2c09ab5c6c36812c54fec06352786ac1d530a9cf37079889cf9ff",
+      "model_enumerations": 0,
+      "scenario_cells": 6,
+      "completed_pairs": 1,
+      "formal_contrast_calls": 0,
+      "analysis_status": "CHECKED",
+      "analysis_replay": "REPLAY_MATCH",
+      "findings": [
+        "Temporal ordering is LANGUAGE_INSUFFICIENT",
+        "Static Checked∧Accepted is TYPED but source-incomplete",
+        "Open-world model returns UNKNOWN"
+      ]
+    },
+    "T4R": {
+      "register_run_ref": "90e2c162d67858ae9f7d1a06e8f4dd777644f1d5c159c5da9dcb771954a089ab",
+      "analysis_run_ref": "bb78d9d5025d64b06a00ce237831022da36cae176c90b867c0767117ed947847",
+      "analysis_result_sha256": "ca07a39a6ff3353df9fa67648cbab86c1a688138cb1a60d4f0d5625c45bb6875",
+      "model_enumerations": 512,
+      "scenario_cells": 20,
+      "completed_pairs": 3,
+      "formal_contrast_calls": 3,
+      "analysis_status": "CHECKED",
+      "analysis_replay": "REPLAY_MATCH",
+      "findings": [
+        "After LLM correction, content-of-message alternatives incomparable",
+        "No assertion of actual engineer/analyst wrongness",
+        "Sequential shared 512-model budget starves later search directions"
+      ]
+    }
+  },
+  "additional_order_probes": {
+    "reversed_skeleton": {
+      "run_ref": "cd9fcd5d74426abadabcfd267a0da412ec825ee4f699ae10943081d19e967519",
+      "status": "COUNTERMODEL_A_NOT_B",
+      "first_countermodel_after": 2,
+      "model_enumerations": 512
+    },
+    "engineer_vs_both_standalone": {
+      "run_ref": "4f8f51236ac2a469c3916e46f4450049d9b63d50c6b8eb3c07318ce9f51bd775",
+      "status": "COUNTERMODEL_A_NOT_B",
+      "first_countermodel_after": 4,
+      "model_enumerations": 512
+    },
+    "engineer_vs_skeleton_first": {
+      "run_ref": "0b125364e68a8ef6ff8286836deafb933d85ba6afb997237b4b27368e019f2ec",
+      "status": "UNKNOWN_BOUND",
+      "model_enumerations": 512,
+      "second_direction_models_checked": 0
+    }
+  },
+  "total": {
+    "initial_sources": 6,
+    "hypotheses_initial": 17,
+    "hypotheses_revised": 4,
+    "registered_hypotheses": 21,
+    "analysis_runs_main": 7,
+    "comparison_pairs_main": 14,
+    "scenario_cells_main": 77,
+    "main_enumerations_including_revisions": 1322,
+    "model_calls_server": 0
+  },
+  "limits": [
+    "no source-intent adjudication",
+    "no randomized model baseline",
+    "no small-model size comparison",
+    "finite SAME does not mean universally equivalent"
+  ]
+}

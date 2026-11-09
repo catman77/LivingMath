@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.4.15-developer-preview — 2026-11-09
+
+- Certify same mixed forall/exists prefix Boolean implications and narrow negation-normal-form equivalence with independent raw-AST reconstruction.
+- Share unique closed worlds across both directions and all active pairs. Add local step/CPU allocations charged into unchanged global limits; retain prior proofs/witnesses on exhaustion.
+- Report both directional statuses and requested/completed/undecided coverage; require two exact proofs for PROVED_LOGICAL_EQ.
+- Preserve all102 complete MCP tool records, original mathematical/native kernels and immutable historical data. Publish client factivity/anaphora/temporal audit instructions without server NLP or semantic licensing.
+- Disable repository GitHub Actions at the owner's request and archive workflows. Build, test and deploy locally.
+
 ## v0.4.14-developer-preview — 2026-11-09
 
 - Evaluate formula truth and declared assumptions independently, including unsupported formulas and ill-typed assumptions.

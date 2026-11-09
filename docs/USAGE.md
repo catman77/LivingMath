@@ -4,7 +4,7 @@
 
 Текущий MCP подключается без OAuth и токена (`authentication=none`).
 После подключения вызовите `bridge_system_status`, затем `bridge_catalog`.
-Текущий production `v0.4.14-developer-preview` предоставляет **102 инструмента**.
+Текущий production `v0.4.15-developer-preview` предоставляет **102 инструмента**.
 Новый локальный legacy стенд `unified_system.local` предоставляет 44.
 [Полный интерфейс, схемы, модули и запуск вычислений](MCP_INTERFACE.md).
 `mcp_server.py stdio`
@@ -220,3 +220,13 @@ execution grant. Исследовательские предложения, ау
 возвращает точные формальные отношения и отдельные сценарные оценки.
 Если формула TRUE, а предпосылка FALSE, applicability=CONTEXT_INCOMPATIBLE;
 это не меняет formula_truth. Открытый мир даёт UNKNOWN. [Пошаговый пример](semantic-bridge-patch001/QUICKSTART_RU.md).
+
+## Контекстный PATCH002
+
+Для source-bound гипотез используйте прежние semantic_bridge_register/analyze;
+точные запросы приведены в [MCP_EXAMPLES.json](semantic-bridge-patch002/MCP_EXAMPLES.json).
+Смотрите directional_coverage и оба направления, даже когда общий run завершён.
+UNKNOWN_BOUND/FINITE_EXHAUSTED не означают доказанную эквивалентность.
+Содержание сообщения и факт, анафору и временной порядок разграничивайте по
+[клиентскому протоколу](semantic-bridge-patch002/LLM_SEMANTIC_AUDIT_PROTOCOL_RU.md).
+Сервер не присваивает гипотезам смысловую достоверность.

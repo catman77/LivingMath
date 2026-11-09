@@ -18,7 +18,7 @@ def result(data=None,error=None):
 
 
 def capabilities(executor):
-    return {'version':'semantic-bridge-patch001/1','status':'READY_OPT_IN' if executor and executor.status()['ready'] else 'UNAVAILABLE','tools':list(TOOLS),'LLM_calls':0,'semantic_adjudication':'NOT_EVALUATED','limits':{'pairs':10,'scenarios':8,'hypotheses':6,'obligations_per_hypothesis':8,'source_links_per_hypothesis':16,'formula_nodes':128,'formula_depth':16,'boolean_atoms':10,'worker_CPU_s':5,'worker_wall_s':6,'worker_RAM_MiB':512,'shared_active':2,'shared_queue':16},'execution_permission':False}
+    return {'version':'semantic-bridge-patch002/1','status':'READY_OPT_IN' if executor and executor.status()['ready'] else 'UNAVAILABLE','tools':list(TOOLS),'LLM_calls':0,'semantic_adjudication':'NOT_EVALUATED','proof_classes':['ALPHA_NORMALIZATION','NEGATION_NORMAL_FORM_EQUIVALENCE','SAME_PREFIX_BOOLEAN_MONOTONICITY'],'proof_limits':'Sufficient exact rules, not complete FOL or source semantics','finite_search':'Shared deterministic closed-world cursor; both directions and all active pairs per world','directional_coverage':'requested/completed/undecided; finite exhaustion is not a theorem','client_semantic_protocol':'docs/semantic-bridge-patch002/LLM_SEMANTIC_AUDIT_PROTOCOL_RU.md','limits':{'pairs':10,'scenarios':8,'hypotheses':6,'obligations_per_hypothesis':8,'source_links_per_hypothesis':16,'formula_nodes':128,'formula_depth':16,'boolean_atoms':10,'unique_search_models':512,'relation_cells':16,'worker_CPU_s':5,'worker_wall_s':6,'worker_RAM_MiB':512,'shared_active':2,'shared_queue':16},'execution_permission':False}
 
 
 def register_tools(server,root,executor,recover=False):

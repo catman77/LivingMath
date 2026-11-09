@@ -1,6 +1,6 @@
 # Установка SUTI–Bridge–LivingMath
 
-Актуальный код: **v0.4.14-developer-preview** / пакет `0.4.14.dev0`.
+Актуальный код: **v0.4.15-developer-preview** / пакет `0.4.15.dev0`.
 Исходники: [catman77/LivingMath](https://github.com/catman77/LivingMath).
 Есть три отдельных пути запуска:
 
@@ -246,3 +246,17 @@ release config и заново свяжите манифест с owner authoriz
 5 CPU sec/6 wall sec/512MiB. Если новый worker недоступен, capability=UNAVAILABLE,
 старые методы продолжают работать. Provider/backend для нового слоя не нужен.
 [Точные вызовы](semantic-bridge-patch001/QUICKSTART_RU.md).
+
+## PATCH002 и локальная поставка v0.4.15
+
+Настройка opt-in `contextual_semantic_bridge` остаётся прежней;102 полных схемы
+не меняются. Новый wheel содержит proofs/finite/resources и новый kernel binding.
+Перед обновлением сохраните четыре реальные SQLite и Workspace, старый config,
+wheel/runtime и systemd drop-in. Тестируйте установленный wheel и отдельный
+staging. Обновление HTTP выполняется только после приёмки; cloudflared tunnel
+и origin не перезапускаются. Тестовый Workspace в production не импортируется.
+
+GitHub Actions отключён по решению владельца: сборка `pip wheel`, тесты и
+операторский deployment локальные. Push/tag/release загружают уже проверенный
+пакет, не запускают сборку. Базы, приватная конфигурация и credentials не входят
+в release. [Rollback](semantic-bridge-patch002/ROLLBACK_RU.md).
