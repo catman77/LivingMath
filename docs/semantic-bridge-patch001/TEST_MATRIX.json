@@ -2,16 +2,16 @@
   "schema": "semantic-bridge-patch001-tested/1",
   "status": "PASS",
   "baseline_commit": "e65b1a1e06914d63f6048a04b5e065a610adb68d",
-  "deployed_code_commit": "963fe1dfd0be96f003d8831cf8354e4bd6e7768e",
+  "deployed_code_commit": "23c4aac0d2793170def4642e0e53bde59e741ac4",
   "gates": [
     {
       "id": "G0",
       "status": "PASS",
-      "finding": "98 old complete tool records exact;233 old source files and native unchanged;511 installed and1066 legacy PASS;4 SQLite/all old bytes preserved",
+      "finding": "98 old complete tool records exact;233 old source files and native unchanged;514 installed and1066 legacy PASS;4 SQLite/all old bytes preserved",
       "evidence": [
         "production-qa/tools.json",
         "KERNEL_PRESERVATION.json",
-        "installed-tests-release.log",
+        "installed-tests.log",
         "legacy-tests-final.log",
         "PRODUCTION_INTEGRITY.json"
       ]
@@ -31,8 +31,8 @@
       "finding": "H0/H2 alpha certificate,0 enumerations; strict malformed certificates/captures rejected",
       "evidence": [
         "production-qa/checks.json",
-        "math-machine-checks.json",
-        "UNIT_PROOF_FIX.log"
+        "math-machine-checks-v0413.json",
+        "UNIT_CONTEXT_FIX.log"
       ]
     },
     {
@@ -41,7 +41,7 @@
       "finding": "H1=>H0 independent16-row certificate; reverse not inferred; unsupported proof class unknown",
       "evidence": [
         "production-qa/ANALYSIS_BUNDLE.json",
-        "math-machine-checks.json"
+        "math-machine-checks-v0413.json"
       ]
     },
     {
@@ -58,7 +58,8 @@
       "status": "PASS",
       "finding": "M4 H0 TRUE/assumption FALSE=>CONTEXT_INCOMPATIBLE;M5 open UNKNOWN; all original obligations OPEN",
       "evidence": [
-        "production-qa/checks.json"
+        "production-qa/checks.json",
+        "math-machine-checks.json"
       ]
     },
     {
@@ -101,15 +102,18 @@
     }
   ],
   "source_unit_baseline": 485,
-  "installed_final_tests": 511,
-  "new_tests": 26,
+  "installed_final_tests": 514,
+  "new_tests": 29,
   "legacy_tests": 1066,
   "historical_legacy_skips": 20,
-  "public_MCP_checks": 65,
-  "staging_MCP_checks": 65,
+  "public_MCP_checks": 68,
+  "staging_MCP_checks": 68,
   "independent_positional_certificates": 44,
   "independent_finite_implication_checks": 704,
   "semantic_adjudication": "NOT_EVALUATED",
   "causal_LLM_uplift": "NOT_MEASURED",
-  "execution_permission": false
+  "execution_permission": false,
+  "independent_context_checks": 10,
+  "proof_layer_evidence_version": "v0.4.13, unchanged proof code",
+  "previous_release": "v0.4.13-developer-preview retained/superseded"
 }

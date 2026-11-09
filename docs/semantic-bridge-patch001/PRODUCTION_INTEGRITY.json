@@ -578,14 +578,14 @@
   },
   "workspace_snapshots": {
     "initial": {
-      "original_files": 106566,
-      "byte_identical": 106566,
+      "original_files": 106661,
+      "byte_identical": 106661,
       "append_only_journal_extensions": 0,
       "all_original_bytes_preserved": true
     },
     "cutover": {
-      "original_files": 106566,
-      "byte_identical": 106566,
+      "original_files": 106661,
+      "byte_identical": 106661,
       "append_only_journal_extensions": 0,
       "all_original_bytes_preserved": true
     }
@@ -939,6 +939,18 @@
       "project": "qa-sb001-public-other"
     },
     {
+      "project_sha256": "c508ea4c2e13c0e17e20bbcf63fd7b56cf6802d308807a215d109cf34963c115",
+      "entries": 25,
+      "head": "85c7a311a9c601b1a4249018ad88463564863b5d050438eb890a82df20c63330",
+      "project": "qa-sb001-v0414-public"
+    },
+    {
+      "project_sha256": "78796b4cd8d2e7798aa825612314b7324d814e33fb78cfb4a20b16dca82e2d5f",
+      "entries": 3,
+      "head": "03d0112d42ef52a5d694e6560461a5b3f3e790678b0d4b656ad4627d44bc6d5d",
+      "project": "qa-sb001-v0414-public-other"
+    },
+    {
       "project_sha256": "14dcd757f9c7bd81e8a30a13d2b927a61921213cf843a07afcb1ad2d0a448892",
       "entries": 19,
       "head": "696004127d8cf68332652716855e0669847bd67e5347c1996b811b54d83d2f6a"
@@ -1101,19 +1113,19 @@
   ],
   "QA": {
     "causal_records": 0,
-    "runs": 11,
+    "runs": 24,
     "all_terminated_exactly_once": true,
     "execution_permission": false
   },
   "runtime_manifest": {
     "files": 247,
-    "sha256": "cb8bc82dcd59c4e01068becf825b2dae47ff64d49a60d80d34c2b0ad0e2b1a03",
+    "sha256": "3db9726007d6a4e1849f83008f313b8af289d4a5e5fc20218272e9733efb7723",
     "all_match": true
   },
   "MCP": {
-    "old_schemas_identical": 98,
+    "old_schemas_identical": 102,
     "actual_public_tool_count": 102,
-    "version": "v0.4.13-developer-preview",
+    "version": "v0.4.14-developer-preview",
     "public_HTTPS_anonymous_SDK_tested": true
   },
   "endpoint": {

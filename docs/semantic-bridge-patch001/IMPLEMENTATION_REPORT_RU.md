@@ -1,12 +1,12 @@
 # Semantic Bridge PATCH001: реализация и приёмка
 
 **G0–G9: PASS.** Реализовано, локально проверено и развёрнуто четыре новых
-opt-in инструмента. Production `v0.4.13-developer-preview`,102 tools,
-`semantic-bridge001-20261109T024106Z`. Адрес `https://difficulty-nightlife-rca-missions.trycloudflare.com/mcp` сохранён,
+opt-in инструмента. Production `v0.4.14-developer-preview`,102 tools,
+`semantic-bridge001-final-20261109T032448Z`. Адрес `https://difficulty-nightlife-rca-missions.trycloudflare.com/mcp` сохранён,
 аутентификация по прежней политике владельца отсутствует.
 
 Baseline commit: `e65b1a1e06914d63f6048a04b5e065a610adb68d`.
-Точный deployed code commit: `963fe1dfd0be96f003d8831cf8354e4bd6e7768e`. Последующие публикационные commits
+Точный deployed code commit: `23c4aac0d2793170def4642e0e53bde59e741ac4`. Последующие публикационные commits
 изменяют документацию/receipts, не runtime-код. Source snapshot/tag/delivery SHA
 публикуются в PUBLICATION_CERTIFICATE.json и PACKAGE_CONTENTS.json релизного ZIP.
 [Матрица](TEST_MATRIX.json), [происхождение](PROVENANCE.json), [MCP-примеры](QUICKSTART_RU.md).
@@ -19,7 +19,7 @@ Baseline commit: `e65b1a1e06914d63f6048a04b5e065a610adb68d`.
 `semantic_bridge/contextual/`, поскольку родительский пакет уже содержит9
 legacy методов. Старые233 исходных файла, все98 схемы, Formal Bridge, NL decoder,
 UDAV, CAD и native сохранены байт-в-байт. Из прежнего runtime изменён только
-bootstrap: опциональная регистрация и capabilities; пакет Python0.4.13.dev0.
+bootstrap: опциональная регистрация и capabilities; пакет Python0.4.14.dev0.
 
 Регистрация проверяет реальные source refs через FormalService.owned, SHA,
 UTF8 spans, существование AST paths и immutable request keys. Формулы,
@@ -45,10 +45,10 @@ guards — только ограничения поиска. Каждая мод
 | Проверка | Итог |
 |---|---|
 | Исходный baseline suite |485 PASS|
-| Финальный установленный wheel |511 PASS, из них26 новых|
+| Финальный установленный wheel |514 PASS, из них29 новых|
 | Legacy suite с оригинальной frozen017 policy |1066 PASS/20 прежних SKIP|
-| Настоящий staging MCP |65 PASS/102 tools|
-| Настоящий публичный HTTPS MCP |65 PASS/102 tools|
+| Настоящий staging MCP |68 PASS/102 tools|
+| Настоящий публичный HTTPS MCP |68 PASS/102 tools|
 | H0/H2 |PROVED_ALPHA_EQ,0 formal_contrast/переборов|
 | H1⇒H0 |PROVED_ENTAILMENT,16 строк; обратное имеет M1|
 | H0/H3 |Обе независимые контрмодели M2/M3, несравнимость|
@@ -73,7 +73,7 @@ step allocation учитывается консервативно как исч�
 
 ## Развёрнуто и сохранено
 
-До реализации:4 SQLite online backup и полный архив106566 Workspace файлов.
+До реализации:4 SQLite online backup и полный архив106661 Workspace файлов.
 Во время остановленного HTTP — quiescent SQLite snapshot и delta overlay.
 Туннель не перезапускался, staging-проекты не импортировались. Проверены исходные
 inode/path, все прежние строки/байты и journal hash-prefix; canonical audit
@@ -85,6 +85,19 @@ QA-источники изолированы; неизменённые AGENTS.md
 Новый слой разделяет существующую проверку выдачи refs по проектам. Публичный
 endpoint остаётся anonymous по указанию владельца; индивидуальную сетевую
 аутентификацию этот патч не добавляет и не заявляет.
+
+## Исправление независимости контекста в0.4.14
+
+При неподдержанной формуле предпосылки теперь оцениваются самостоятельно.
+H4 с пустыми assumptions имеет ILL_TYPED/APPLICABLE/NO_DECLARED_ASSUMPTIONS;
+H4 с A_exist наM4 — ILL_TYPED/FALSE/CONTEXT_INCOMPATIBLE. Валидная формула
+с неверно типизированной предпосылкой сохраняет свой truth, а контекст UNKNOWN.
+APPLICABLE относится только к предпосылкам, не делает формулу допустимой.
+Прежняя0.4.13 поставка и все её данные сохранены без переписывания. Новые
+анализы имеют новый binding; прежние replay воспроизводятся архивным0.4.13 wheel,
+а сервер с другим binding отклоняет такой replay, сохраняя доступность inspect.
+29 targeted tests и10 дополнительных независимых сценарных проверок PASS;
+44/704 проверки proof-класса относятся к неизменённому proof-слою0.4.13.
 
 ## Научно не установлено
 

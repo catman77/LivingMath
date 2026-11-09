@@ -1,7 +1,7 @@
-# MCP-интерфейс LivingMath v0.4.13
+# MCP-интерфейс LivingMath v0.4.14
 
 Актуальная production-композиция: **102 инструмента**, версия сервера
-`v0.4.13-developer-preview`, пакет `0.4.13.dev0`. [Архитектура](../ARCHITECTURE.md),
+`v0.4.14-developer-preview`, пакет `0.4.14.dev0`. [Архитектура](../ARCHITECTURE.md),
 [установка и различия 44/102](INSTALL.md), [исходный текст и rights](USAGE.md).
 
 ## Транспорт и обнаружение

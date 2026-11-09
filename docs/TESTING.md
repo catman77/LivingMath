@@ -1,6 +1,6 @@
 # Тестирование
 
-## Актуальный пакет v0.4.13
+## Актуальный пакет v0.4.14
 
 Из корня checkout после установки `python -m pip install '.[white-star,mcp,test]'`:
 
@@ -151,3 +151,12 @@ SB_EXP01_VERIFY.py запускается из отдельной копии, н
 runner сохраняет полные request/response/wire и проверяет source/ownership,
 сертификаты, оба направления countermodels, contexts, replay и ограничения.
 [Матрица](semantic-bridge-patch001/TEST_MATRIX.json).
+
+## Уточнение контекста0.4.14
+
+514 installed tests (29 contextual),1066 legacy PASS/20 прежних SKIP;68 staging
+и68 public MCP checks. Три сценария из CONTEXT_RED.log сначала реально FAIL,
+затем PASS: неподдержанная формула без assumptions; неподдержанная формула с
+ложной проверяемой предпосылкой; типизированная формула с ill-typed assumption.
+Applicability вычисляется только из assumptions. Дополнительное независимое
+ревью проверило10 таких случаев. Первоначальные0.4.13 артефакты сохранены.

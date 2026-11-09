@@ -37,8 +37,13 @@ sha256. Не конкатенируйте сами base64-строки. Ниче
 python tools/semantic_bridge001_replay.py ANALYSIS_BUNDLE.json --expected-sha256 <trusted_manifest_SHA>
 ```
 
-Нужны установленный0.4.13 wheel, Python3.13/Linux и подготовленное native ядро.
+Нужны установленный0.4.14 wheel, Python3.13/Linux и подготовленное native ядро.
 Код берётся только из установленного пакета, не из bundle. Сверьте внешний SHA
 архива и MANIFEST_SHA256.txt. Подмена input/result/binding отклоняется.
 Ресурсная CPU-отсечка может менять место остановки; такой partial replay
 честно вернёт REPLAY_MISMATCH. Нормальные конечные сценарии воспроизводятся точно.
+
+В0.4.14 контекст проверяется даже при неподдержанной формуле: ILL_TYPED
+с пустыми assumptions даёт APPLICABLE/NO_DECLARED_ASSUMPTIONS, а при ложной
+предпосылке — CONTEXT_INCOMPATIBLE. Это не делает формулу допустимой и не
+разрешает исполнение. Неверно типизированная предпосылка даёт UNKNOWN_CONTEXT.

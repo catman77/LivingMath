@@ -1,6 +1,6 @@
 # Архитектура MCP-сервера LivingMath
 
-Срез архитектуры: **v0.4.13-developer-preview**, пакет Python `0.4.13.dev0`.
+Срез архитектуры: **v0.4.14-developer-preview**, пакет Python `0.4.14.dev0`.
 Production объединяет **102 MCP-инструмента** в одном Streamable HTTP
 endpoint `/mcp`. [Справочник интерфейса](docs/MCP_INTERFACE.md),
 [установка](docs/INSTALL.md), [примеры запросов](docs/USAGE.md).

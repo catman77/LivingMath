@@ -1,11 +1,11 @@
 {
   "baseline_commit": "e65b1a1e06914d63f6048a04b5e065a610adb68d",
-  "deployed_code_commit": "963fe1dfd0be96f003d8831cf8354e4bd6e7768e",
+  "deployed_code_commit": "23c4aac0d2793170def4642e0e53bde59e741ac4",
   "deployment": {
     "status": "ACCEPTED_PUBLIC_HTTPS_ANONYMOUS_MCP",
-    "version": "v0.4.13-developer-preview",
-    "deployment_id": "semantic-bridge001-20261109T024106Z",
-    "release_manifest_sha256": "cb8bc82dcd59c4e01068becf825b2dae47ff64d49a60d80d34c2b0ad0e2b1a03",
+    "version": "v0.4.14-developer-preview",
+    "deployment_id": "semantic-bridge001-final-20261109T032448Z",
+    "release_manifest_sha256": "3db9726007d6a4e1849f83008f313b8af289d4a5e5fc20218272e9733efb7723",
     "url": "https://difficulty-nightlife-rca-missions.trycloudflare.com/mcp",
     "HTTP_only_restarted": true,
     "tunnel_pid_unchanged": true,
@@ -20,11 +20,11 @@
   },
   "archive_sha256": "0561c41212db2bab2154e164db3866782bdd73867d1fdaae820b1699df3201ca",
   "source_sha256": "2f27c8239b74438c5796715017e738aab3d0755e76c7eb1c4660412a205ad647",
-  "kernel_binding": "44fe2bfd3fba88d8f3ae0221bbeb96899ece67cb7715824264ffa9b8aea9d684",
-  "runtime_manifest_sha256": "cb8bc82dcd59c4e01068becf825b2dae47ff64d49a60d80d34c2b0ad0e2b1a03",
-  "wheel_sha256": "6c195f871e44fe1ac787c060af2741b98972bbc573ece4c459e0df764f116237",
-  "register_bundle_sha256": "6ddadfea6846eb6ae6679119106ddc4990568113dfeeea7d5f31c36a80c52e19",
-  "analysis_bundle_sha256": "93cdf0815258e628373fdaed66132261164867e30213d86d644b4f00f5fecadb",
+  "kernel_binding": "11033a621ef3201e074fa20f3c9645a9ca942aaa5658badd90c75f300871d485",
+  "runtime_manifest_sha256": "3db9726007d6a4e1849f83008f313b8af289d4a5e5fc20218272e9733efb7723",
+  "wheel_sha256": "1569bce5f5932e3d21092df3c073fc8462426992f03076568d82eaf87894290b",
+  "register_bundle_sha256": "759ea2ffbb2ac7e4c7ddef818e5cffb02b23af3b2a64303be675b06f068e92a4",
+  "analysis_bundle_sha256": "3eba13b737a601f843f9c704141e97ebeca3d3bf0f567091dc2a531053629adc",
   "independent_reference": {
     "status": "PASS",
     "exit_code": 0,
@@ -36,12 +36,10 @@
   "legacy_kernels": {
     "status": "PASS",
     "old_source_files_preserved": 233,
-    "only_old_file_changed": "tools/release_v01_entry.py",
     "all_previous_FOL_semantic_NL_UDAV_numeric_bytes_unchanged": true,
     "source_wheel_runtime_contextual_bytes_identical": true,
-    "native_sha256": "d808f08afa2375a4c84e958ac0c34df7d13e8b6c0a4a8e629e0d66cfb29929ee",
-    "runtime_manifest_sha256": "cb8bc82dcd59c4e01068becf825b2dae47ff64d49a60d80d34c2b0ad0e2b1a03",
-    "wheel_sha256": "6c195f871e44fe1ac787c060af2741b98972bbc573ece4c459e0df764f116237"
+    "runtime_manifest_sha256": "3db9726007d6a4e1849f83008f313b8af289d4a5e5fc20218272e9733efb7723",
+    "native_sha256": "d808f08afa2375a4c84e958ac0c34df7d13e8b6c0a4a8e629e0d66cfb29929ee"
   },
   "LLM_calls": 0,
   "semantic_adjudication": "NOT_EVALUATED"

@@ -1,6 +1,6 @@
 # Изменённые файлы
 
-Baseline:e65b1a1. Точный deployed code commit: `963fe1dfd0be96f003d8831cf8354e4bd6e7768e`. Старые233 src/schema файла и AGENTS.md сохранены; binary patch в release ZIP.
+Baseline:e65b1a1. Точный deployed code commit: `23c4aac0d2793170def4642e0e53bde59e741ac4`. Старые233 src/schema файла и AGENTS.md сохранены; binary patch в release ZIP.
 
 - `ARCHITECTURE.md`
 - `CHANGELOG.md`

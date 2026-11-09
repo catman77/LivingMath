@@ -4,7 +4,7 @@
 свидетели и контрпримеры → сохраняемая история исследования. MCP-интерфейс
 объединяет LivingMath, проверку исходных схем SUTI и алхимическую модель ALCH006.
 
-Текущий продукт: **`v0.4.13-developer-preview`**: assurance CLI, Semantic Bridge, White Star, Symbolic V1, UDAV Core и contextual FOL checks; **102 MCP-инструмента** (98 прежних +4). [Установка](README_QUICKSTART_RU.md), [White Star и сравнение режимов](docs/white-star/QUICKSTART_RU.md), [Semantic Bridge](docs/semantic-bridge/QUICKSTART_RU.md), [CLI](CLI_REFERENCE.md), [границы возможностей](LIMITATIONS.md).
+Текущий продукт: **`v0.4.14-developer-preview`**: assurance CLI, Semantic Bridge, White Star, Symbolic V1, UDAV Core и contextual FOL checks; **102 MCP-инструмента** (98 прежних +4). [Установка](README_QUICKSTART_RU.md), [White Star и сравнение режимов](docs/white-star/QUICKSTART_RU.md), [Semantic Bridge](docs/semantic-bridge/QUICKSTART_RU.md), [CLI](CLI_REFERENCE.md), [границы возможностей](LIMITATIONS.md).
 
 
 Текущий MCP доступен **без аутентификации** по прежнему HTTPS-адресу;

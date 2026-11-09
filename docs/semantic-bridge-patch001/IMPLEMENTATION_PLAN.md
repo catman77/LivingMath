@@ -23,3 +23,9 @@
 - [x] Run source/installed-wheel and negative tests, unchanged supplied independent verifier, frozen SB-EXP01 vectors, certificate tampering and bounds. Preserve failed attempts.
 - [x] Run actual MCP staging canary then backup/cutover preserving URL/noauth. Run same public HTTPS acceptance and data/hash-prefix integrity.
 - [ ] Publish full reproducible ZIP with schemas, traces, tests, hashes, reports/rollback and real release commit. Push code and release to GitHub, anonymously verify download and preserve87 user changes on root sync.
+
+## Финальное уточнение0.4.14
+
+- [x] Три реально неуспешные регрессии воспроизвели зависимость applicability от типа формулы.
+- [x] Разделить formula/assumption evaluations;29 targeted/514 installed tests и68 actual MCP checks.
+- [ ] Опубликовать исправленную0.4.14 поставку, сохранить0.4.13 архив и подтвердить публичный download.

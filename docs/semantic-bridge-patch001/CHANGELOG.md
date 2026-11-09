@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.4.14-developer-preview — 2026-11-09
+
+- Evaluate formula truth and declared assumptions independently, including unsupported formulas and ill-typed assumptions.
+- Compute contextual applicability only from assumptions; preserve ILL_TYPED formula status and pair-admission guards.
+- Add3 failing-then-passing regressions and real MCP unsupported-context acceptance; retain the0.4.13 release/data as historical evidence.
+
 ## v0.4.13-developer-preview — 2026-11-09
 
 - Add four opt-in contextual Semantic Bridge methods; retain all98 existing contracts and original mathematical kernels.

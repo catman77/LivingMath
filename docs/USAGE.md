@@ -4,7 +4,7 @@
 
 Текущий MCP подключается без OAuth и токена (`authentication=none`).
 После подключения вызовите `bridge_system_status`, затем `bridge_catalog`.
-Текущий production `v0.4.13-developer-preview` предоставляет **102 инструмента**.
+Текущий production `v0.4.14-developer-preview` предоставляет **102 инструмента**.
 Новый локальный legacy стенд `unified_system.local` предоставляет 44.
 [Полный интерфейс, схемы, модули и запуск вычислений](MCP_INTERFACE.md).
 `mcp_server.py stdio`

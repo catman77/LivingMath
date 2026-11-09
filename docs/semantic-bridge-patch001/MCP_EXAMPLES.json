@@ -1,20 +1,20 @@
 {
   "schema": "semantic-bridge-live-examples/1",
   "endpoint": "https://difficulty-nightlife-rca-missions.trycloudflare.com/mcp",
-  "note": "Exact accepted real arguments. For a new run create your own project and use the refs returned by its formal_store/register calls; request keys cannot be reused with changed input.",
+  "note": "Exact accepted real arguments. For a fresh run create your own project and use its returned refs and new request keys.",
   "calls": [
     {
       "name": "assurance_project_new",
       "arguments": {
-        "project": "qa-sb001-public",
+        "project": "qa-sb001-v0414-public",
         "request_key": "init"
       }
     },
     {
       "name": "formal_store",
       "arguments": {
-        "project": "qa-sb001-public",
-        "request_key": "sb001-public:source",
+        "project": "qa-sb001-v0414-public",
+        "request_key": "sb001-v0414-public:source",
         "kind": "source",
         "data": {
           "text_utf8": "Каждый исследователь сообщил своему руководителю обо всех гипотезах, которые он проверил, но не сообщил о тех, которые только предполагал проверить.",
@@ -28,8 +28,8 @@
     {
       "name": "formal_store",
       "arguments": {
-        "project": "qa-sb001-public",
-        "request_key": "sb001-public:M1_planned_checked_reported",
+        "project": "qa-sb001-v0414-public",
+        "request_key": "sb001-v0414-public:M1_planned_checked_reported",
         "kind": "model",
         "data": {
           "domains": {
@@ -77,8 +77,8 @@
     {
       "name": "formal_store",
       "arguments": {
-        "project": "qa-sb001-public",
-        "request_key": "sb001-public:M2_unverified_reported",
+        "project": "qa-sb001-v0414-public",
+        "request_key": "sb001-v0414-public:M2_unverified_reported",
         "kind": "model",
         "data": {
           "domains": {
@@ -116,8 +116,8 @@
     {
       "name": "formal_store",
       "arguments": {
-        "project": "qa-sb001-public",
-        "request_key": "sb001-public:M3_checked_unreported",
+        "project": "qa-sb001-v0414-public",
+        "request_key": "sb001-v0414-public:M3_checked_unreported",
         "kind": "model",
         "data": {
           "domains": {
@@ -154,8 +154,8 @@
     {
       "name": "formal_store",
       "arguments": {
-        "project": "qa-sb001-public",
-        "request_key": "sb001-public:M4_supervisor_absent",
+        "project": "qa-sb001-v0414-public",
+        "request_key": "sb001-v0414-public:M4_supervisor_absent",
         "kind": "model",
         "data": {
           "domains": {
@@ -182,8 +182,8 @@
     {
       "name": "formal_store",
       "arguments": {
-        "project": "qa-sb001-public",
-        "request_key": "sb001-public:M5_open_world",
+        "project": "qa-sb001-v0414-public",
+        "request_key": "sb001-v0414-public:M5_open_world",
         "kind": "model",
         "data": {
           "domains": {
@@ -231,8 +231,8 @@
     {
       "name": "semantic_bridge_register",
       "arguments": {
-        "project": "qa-sb001-public",
-        "request_key": "sb001-public:register",
+        "project": "qa-sb001-v0414-public",
+        "request_key": "sb001-v0414-public:register",
         "source_ref": "c1170957c9689a417470056f8b54ff3f8485e2c1830b06d7392923db143921fe",
         "expected_source_sha256": "2f27c8239b74438c5796715017e738aab3d0755e76c7eb1c4660412a205ad647",
         "target_signature": {
@@ -834,9 +834,9 @@
     {
       "name": "semantic_bridge_analyze",
       "arguments": {
-        "project": "qa-sb001-public",
-        "request_key": "sb001-public:analyze",
-        "batch_ref": "54c1319c8a3a6fdbc005e0d8524781b688f0c4838a6d164b8f7cd4188a2f74fc",
+        "project": "qa-sb001-v0414-public",
+        "request_key": "sb001-v0414-public:analyze",
+        "batch_ref": "2d04f36c63e07300c05b83f36775a64dfaba9e26a2da5a7a89eb25402c92f471",
         "pairs": [
           [
             "H0",
@@ -869,8 +869,8 @@
     {
       "name": "semantic_bridge_inspect",
       "arguments": {
-        "project": "qa-sb001-public",
-        "batch_or_run_ref": "dd197b81fdee72684f33bdc7f1744467b333e90c518fecf7ef22b7b9beec8f6e",
+        "project": "qa-sb001-v0414-public",
+        "batch_or_run_ref": "8814e1d98a5cf9e3e2206f93a7454306a0c71cfdae70177879dcfd0b1d9fd07d",
         "view": "bundle",
         "offset": 0,
         "limit": 48
@@ -879,9 +879,9 @@
     {
       "name": "semantic_bridge_replay",
       "arguments": {
-        "project": "qa-sb001-public",
-        "run_ref": "dd197b81fdee72684f33bdc7f1744467b333e90c518fecf7ef22b7b9beec8f6e",
-        "expected_result_sha256": "4ac034cc19638029b668c9894869729b0464148da6b8235d63e784b6a730b38a"
+        "project": "qa-sb001-v0414-public",
+        "run_ref": "8814e1d98a5cf9e3e2206f93a7454306a0c71cfdae70177879dcfd0b1d9fd07d",
+        "expected_result_sha256": "597725ba49e56a755f4851a0e9a9d8c6d557e93f843bfe8320b3c1fd98d50fa4"
       }
     }
   ]

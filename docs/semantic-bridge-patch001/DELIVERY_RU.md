@@ -1,6 +1,6 @@
 # Поставка Semantic Bridge PATCH001
 
-[GitHub release v0.4.13](https://github.com/catman77/LivingMath/releases/tag/v0.4.13-developer-preview)
+[GitHub release v0.4.14](https://github.com/catman77/LivingMath/releases/tag/v0.4.14-developer-preview)
 публикует единый SEMANTIC_BRIDGE_PATCH001_DELIVERY_20261109.zip: source/patch,
 wheel, исходное ТЗ, tests, API schemas, полные MCP traces, certificates,
 countermodels, replay bundles, integrity, ресурсы, negative attempts и rollback.
