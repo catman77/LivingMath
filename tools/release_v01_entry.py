@@ -40,7 +40,7 @@ def serve(path):
         p = (layer/name).resolve(strict=True)
         if not p.is_relative_to(layer) or sha(p) != expected:
             raise ValueError('RELEASE_FILE_MISMATCH')
-    if cfg['release'] not in ('v0.1.0-developer-preview','v0.2.0-developer-preview','v0.3.0-developer-preview','v0.4.0-developer-preview','v0.4.1-developer-preview','v0.4.2-developer-preview','v0.4.3-developer-preview','v0.4.4-developer-preview','v0.4.5-developer-preview','v0.4.6-developer-preview','v0.4.7-developer-preview','v0.4.8-developer-preview','v0.4.9-developer-preview','v0.4.10-developer-preview','v0.4.11-developer-preview','v0.4.12-developer-preview'):
+    if cfg['release'] not in ('v0.1.0-developer-preview','v0.2.0-developer-preview','v0.3.0-developer-preview','v0.4.0-developer-preview','v0.4.1-developer-preview','v0.4.2-developer-preview','v0.4.3-developer-preview','v0.4.4-developer-preview','v0.4.5-developer-preview','v0.4.6-developer-preview','v0.4.7-developer-preview','v0.4.8-developer-preview','v0.4.9-developer-preview','v0.4.10-developer-preview','v0.4.11-developer-preview','v0.4.12-developer-preview','v0.4.13-developer-preview'):
         raise ValueError('RELEASE_VERSION_MISMATCH')
     expected = {'release':cfg['release'],'release_manifest_sha256':cfg['release_manifest_sha256'],
                 'deployment_id':cfg['deployment_id'],'action':'INSTALL_EXACT_OWNER_AUTHORIZED_PREVIEW'}
@@ -65,6 +65,10 @@ def serve(path):
         if white_pool is not None:
             white_pool = BudgetedPool(white_pool, numeric_budget)
         udav_pool = UDAVExecutor(shared_symbolic_budget, numeric_budget)
+    contextual_pool = None
+    if cfg.get('contextual_semantic_bridge') == {'enabled':True}:
+        from lm_suti_assurance.semantic_bridge.contextual.executor import Executor as ContextualExecutor
+        contextual_pool = ContextualExecutor(shared_symbolic_budget)
     replay_profiles = {}
     # Profiles are owner-configured installed immutable layers, never client paths.
     from lm_suti_assurance.core import digest
@@ -160,6 +164,9 @@ def serve(path):
             from lm_suti_assurance.udav_core.mcp import register_tools as register_udav
             register_udav(server, cfg['assurance_state'], udav_pool,
                           numeric=cfg['udav_core'].get('numeric') is True, recover=True)
+        if contextual_pool is not None:
+            from lm_suti_assurance.semantic_bridge.contextual.mcp import register_tools as register_contextual
+            register_contextual(server, cfg['assurance_state'], contextual_pool, recover=True)
         server._mcp_server.version = active_release
         server._mcp_server.instructions += ' For finite assurance use assurance_contract; manual proposals, exact task review and offline export/replay are separate steps.'
         for name in ('bridge_system_status','service_health','research_contract'):
@@ -178,6 +185,9 @@ def serve(path):
                         value['nl_proposal_bridge'] = nl_capabilities(nl_provider)
                         if udav_pool is not None:
                             value['udav_core'] = {'version': 'udav-core/1', 'symbolic_policy': 'frontier_argument_coverage_v1', 'numeric_policy': 'cat_distinction_tiebreak_v1' if cfg['udav_core'].get('numeric') else 'EXPERIMENTAL_NOT_DEPLOYED', 'worker': udav_pool.status(), 'execution_permission': False}
+                        if contextual_pool is not None:
+                            from lm_suti_assurance.semantic_bridge.contextual.mcp import capabilities as contextual_capabilities
+                            value['contextual_semantic_bridge'] = contextual_capabilities(contextual_pool)
                         value['nl_causal_decoder'] = {'version': 'NLFrozenCounterfactual/1', 'status': 'READY_OPT_IN', 'tool': 'formal_nl_redecode', 'model_calls': 0, 'historical_matched_ablation': 'DOUBLE_INTERVENTION_NOT_CAUSAL', 'human_licensing': 'HUMAN_NOT_EVALUATED', 'execution_permission': False}
                         from lm_suti_assurance.symbolic_complex.mcp import capabilities as extension_capabilities
                         value.update(extension_capabilities(symbolic_pool, extension_replay_profiles))
@@ -220,6 +230,7 @@ def serve(path):
         if provider is not None:provider.close()
         if white_pool is not None:white_pool.close()
         if udav_pool is not None:udav_pool.close()
+        if contextual_pool is not None:contextual_pool.close()
         symbolic_pool.close()
         for profile in replay_profiles.values(): profile.close()
         for profile in extension_replay_profiles.values(): profile.close()

@@ -1,0 +1,53 @@
+{
+  "schema": "semantic-bridge-v0-exp01-independent-check/1",
+  "source_sha256": "2f27c8239b74438c5796715017e738aab3d0755e76c7eb1c4660412a205ad647",
+  "alpha_equivalence_proved_by_normal_form": [
+    "H0",
+    "H2"
+  ],
+  "global_entailment_proved_by_16_boolean_assignments": "H1 => H0",
+  "finite_structures_checked": 16,
+  "truth_table": {
+    "M1_planned_checked_reported": {
+      "H0": true,
+      "H1": false,
+      "H2": true,
+      "H3": true
+    },
+    "M2_unverified_reported": {
+      "H0": true,
+      "H1": true,
+      "H2": true,
+      "H3": false
+    },
+    "M3_checked_unreported": {
+      "H0": false,
+      "H1": false,
+      "H2": false,
+      "H3": true
+    },
+    "M4_supervisor_absent": {
+      "H0": true,
+      "H1": true,
+      "H2": true,
+      "H3": true
+    },
+    "M5_open_world": {
+      "H0": null,
+      "H1": null,
+      "H2": null,
+      "H3": null
+    }
+  },
+  "countermodels": {
+    "H0_true_H1_false": "M1_planned_checked_reported",
+    "H0_true_H3_false": "M2_unverified_reported",
+    "H3_true_H0_false": "M3_checked_unreported",
+    "vacuous_supervisor": "M4_supervisor_absent"
+  },
+  "limits": [
+    "No author intent oracle",
+    "Presupposed manager existence is not represented",
+    "The 16-valuation tautology is propositional (not exhaustive FOL for 2+ element sorts)"
+  ]
+}

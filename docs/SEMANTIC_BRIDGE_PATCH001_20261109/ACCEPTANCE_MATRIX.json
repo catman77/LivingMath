@@ -1,0 +1,74 @@
+{
+  "schema": "semantic-bridge-patch001-acceptance/1",
+  "baseline": {
+    "repo": "catman77/LivingMath",
+    "main_sha_2026-11-09": "e65b1a1e06914d63f6048a04b5e065a610adb68d",
+    "server_version": "v0.4.12-developer-preview",
+    "old_tool_count": 98,
+    "new_expected_tool_count": 102
+  },
+  "status": "SPECIFICATION_ONLY_NOT_EXECUTED",
+  "gates": [
+    {
+      "id": "G0",
+      "status": "NOT_EXECUTED",
+      "scope": "source and deployment safety",
+      "pass": "existing 98 tools names and entire schemas unchanged, native numeric SHA unchanged; backup/rollback documented; no legacy regressions"
+    },
+    {
+      "id": "G1",
+      "status": "NOT_EXECUTED",
+      "scope": "new API contract and provenance",
+      "pass": "4 opt-in tools; strict JSON schema; source UTF8 SHA, project ownership and typed AST paths validated; no LLM calls"
+    },
+    {
+      "id": "G2",
+      "status": "NOT_EXECUTED",
+      "scope": "alpha-equivalence",
+      "pass": "H0/H2 PROVED_ALPHA_EQ with independent certificate, zero formal_contrast/model enumeration; H0/H1 not alpha equivalent; malformed/capturing AST rejected"
+    },
+    {
+      "id": "G3",
+      "status": "NOT_EXECUTED",
+      "scope": "exact limited entailment",
+      "pass": "H1 => H0 proved by 16 assignments for 4 positional atoms; no converse claim; unsupported proof class returns UNKNOWN, no finite-guess theorem"
+    },
+    {
+      "id": "G4",
+      "status": "NOT_EXECUTED",
+      "scope": "finite countermodels and directionality",
+      "pass": "H0 true/H1 false on M1; H0 true/H3 false on M2 and H3 true/H0 false on M3, all verified by independent model evaluator"
+    },
+    {
+      "id": "G5",
+      "status": "NOT_EXECUTED",
+      "scope": "context obligations",
+      "pass": "M4 H0 TRUE but supervisor existence assumption FALSE => CONTEXT_INCOMPATIBLE; open-world M5 UNKNOWN; no auto semantic license"
+    },
+    {
+      "id": "G6",
+      "status": "NOT_EXECUTED",
+      "scope": "formal-language frontier",
+      "pass": "unsupported 'future' => LANGUAGE_INSUFFICIENT or TYPE_REJECTED plus open gap; no silent weakening"
+    },
+    {
+      "id": "G7",
+      "status": "NOT_EXECUTED",
+      "scope": "security and bounded execution",
+      "pass": "cross-project, corrupted SHA, span mismatch, request-key conflict, resource ceiling and prompt injection fail closed; no leakage"
+    },
+    {
+      "id": "G8",
+      "status": "NOT_EXECUTED",
+      "scope": "append-only replay integrity",
+      "pass": "register/analyze immutable input and receipt; replay match, tampering rejected, bounded inspect exact full pages"
+    },
+    {
+      "id": "G9",
+      "status": "NOT_EXECUTED",
+      "scope": "scientific and causal claims",
+      "pass": "no SERVER semantic scoring, no author-intent verification, no causal LLM uplift claim; semantic status NOT_EVALUATED, model_calls 0"
+    }
+  ],
+  "note": "No gate is PASS until the coding agent actually runs and documents independent checks."
+}

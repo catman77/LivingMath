@@ -1,0 +1,38 @@
+{
+  "project": "semantic_bridge_exp01",
+  "source_sha256": "2f27c8239b74438c5796715017e738aab3d0755e76c7eb1c4660412a205ad647",
+  "source_ref": "c1170957c9689a417470056f8b54ff3f8485e2c1830b06d7392923db143921fe",
+  "interpret_run": "1d7ac3d1a4ae84641e52deed419dd93a594c0c52d5804b5fb8d9b68f18d6a583",
+  "candidates": {
+    "H0": {"id":"25a2a2850298fce450f84560d923d3fc0cbb41e2762e0180f1d51e7f044480e0","object_ref":"cc0e44f630de05bb366e23f000dc35492d5204df8bf0e51fb3ac5446e6cefc24","type_status":"TYPED"},
+    "H1": {"id":"d2fe1f4ed58db8236c1e426905fa200fccc2750ce14961f2b1fa8edb726cfb29","object_ref":"63e72eb524be991dd6a4f6dfe3df95bac59ac591e4aaf1de5611b2e994bff3c1","type_status":"TYPED"},
+    "H2": {"id":"101249a50fc5aa39e1224341167867efe81c6a5b28ecc1fe187bc8f24278f43c","object_ref":"a885368c0c910de57a39712eda4473d55475affedfd9fa0283bd4db43e572e89","type_status":"TYPED"},
+    "H3": {"id":"116f3262d5feeace5336967db7663bb668e468d5da97ffced07b3a369a87de1d","object_ref":"710ecf07b3739087e807cd1fc53c6a301685529b0cb0e5c908462507ba58b5fb","type_status":"TYPED"},
+    "H4": {"id":"0cd593fe6a37e27617015f56a835ac39b2c613f9c63a1fd7f52a871b934270c8","object_ref":"60e55dd886e925a6878dcfe4263edde683fcc85c23ffe33fd1a215c77ac8833d","type_status":"TYPE_REJECTED","reason":"INVALID_FORMULA_OPERATOR"}
+  },
+  "contrasts": {
+    "H0_H1": {"run_ref":"16c17bb40c229e041727d4a28bc039c3daf6f08ac541e02076ef0d8f36cca25e","status":"FINITE_COUNTERMODEL","truth_vector":[true,false],"models_checked":16},
+    "H0_H2": {"run_ref":"4872893d0f2ea039ad29e1c5549abf92d72c08858df438dc7f2c2b69cf02714c","status":"UNKNOWN_BOUND","reason":"RELATION_CELL_BOUND","models_checked":16},
+    "H0_H3": {"run_ref":"f0bb3fbdd3a987d75793c042014cb04d78c4c33b48b4a8150536787302e09e8a","status":"FINITE_COUNTERMODEL","truth_vector":[true,false],"models_checked":4}
+  },
+  "model_refs": {
+    "M1": "b2f7aaa1c60bfb25ee0c7ec03b41a3c67390d10a8c6196e14d002b7cf30028db",
+    "M2": "a6bdec25ba71754a1ebd7c867cb5bd0467b7a429b3275841b4529f0b57de468b",
+    "M3": "22287a71313e5bf6d4f2dab2e44c32a0796caf942bc48699ce9ee8c1cea1fac8",
+    "M4": "02b634968221872355c482d0ca049bcb584affd25508636a5f3a5c2048963938",
+    "M5": "978c97a82aef80d6dd1281f03f2ed79e33ed39502c6d5e42a6671f1d8b927b42"
+  },
+  "assumption_probe": {
+    "interpret_run": "5918b35695f8b789094606f74e7ce9c6ee52614e3a744d865f63c5af86d095f1",
+    "candidate_ref": "e14ed26eda54a7d9a16d42d67991dc36760baae4c422cf973b6637094040185b",
+    "formula": "H0",
+    "assumption": "forall r:researcher exists m:manager Supervises(m,r)",
+    "M1": {"formula":"TRUE","assumption":"TRUE","run_ref":"c436c1a6d7f4cde7e568dcaab5842f3613148cfadce166683fe794dba9df65a0"},
+    "M4": {"formula":"TRUE","assumption":"FALSE","run_ref":"9cb92d7e9ff177c767040d9bb11000edd30a310f5a02482a7820cdd5beb80d37"}
+  },
+  "replay": {
+    "interpret": {"run_ref":"2b8c2e77fe1e6723a1f5937c63ce519d562c387151e09757a899acac9532f60c","status":"REPLAY_MATCH"},
+    "contrast": {"run_ref":"5a4af99169f33ef5d5e2488755b613bdf9473bad790de3ac1877856464eda100","status":"REPLAY_MATCH"},
+    "modelcheck": {"run_ref":"bc5b32338f7e2fe9cc9fbe07d3c51c25dba670d750291d8c4762d76530032780","status":"REPLAY_MATCH"}
+  }
+}
