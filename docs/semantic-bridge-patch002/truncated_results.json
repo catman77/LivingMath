@@ -1,0 +1,216 @@
+{
+  "transport_bytes_truncated": false,
+  "all_pages_hash_verified": true,
+  "open_computational_directions": [
+    {
+      "run_ref": "55397a054ccc6c5ecc38eff3811651208629f3fd7f1260bf982694641bc6cba2",
+      "pair": [
+        "HeavyA",
+        "HeavyB"
+      ],
+      "direction": "B_IMPLIES_A",
+      "status": "UNKNOWN_BOUND",
+      "reason": "TOTAL_MODEL_BOUND",
+      "models_checked": 32
+    },
+    {
+      "run_ref": "012491bf0c9c66882d6abc8fb9a4262a505b7e589037df9242e42f022e6da9c2",
+      "pair": [
+        "HeavyB",
+        "HeavyA"
+      ],
+      "direction": "A_IMPLIES_B",
+      "status": "UNKNOWN_BOUND",
+      "reason": "TOTAL_MODEL_BOUND",
+      "models_checked": 32
+    },
+    {
+      "run_ref": "271a972b42ef931d1cb490ae8791ab02a90fc6c4cffe5e1426985b680a6e53d0",
+      "pair": [
+        "HeavyA",
+        "HeavyB"
+      ],
+      "direction": "B_IMPLIES_A",
+      "status": "UNKNOWN_BOUND",
+      "reason": "TOTAL_MODEL_BOUND",
+      "models_checked": 64
+    },
+    {
+      "run_ref": "4ded7fd0ce85a55acb333e7fe5a4cde002bfec48b873d8b9fff21eaab10d9dee",
+      "pair": [
+        "HeavyB",
+        "HeavyA"
+      ],
+      "direction": "A_IMPLIES_B",
+      "status": "UNKNOWN_BOUND",
+      "reason": "TOTAL_MODEL_BOUND",
+      "models_checked": 64
+    },
+    {
+      "run_ref": "b81c4c7e0d6fe5bdcfbf8060a47da0072704e32f7d9c57c64eca3f61b673cfeb",
+      "pair": [
+        "HeavyAll",
+        "HeavySome"
+      ],
+      "direction": "A_IMPLIES_B",
+      "status": "UNKNOWN_BOUND",
+      "reason": "PAIR_FORMULA_EVALUATION_BOUND",
+      "models_checked": 5
+    },
+    {
+      "run_ref": "b81c4c7e0d6fe5bdcfbf8060a47da0072704e32f7d9c57c64eca3f61b673cfeb",
+      "pair": [
+        "HeavyAll",
+        "HeavySome"
+      ],
+      "direction": "B_IMPLIES_A",
+      "status": "UNKNOWN_BOUND",
+      "reason": "PAIR_FORMULA_EVALUATION_BOUND",
+      "models_checked": 5
+    },
+    {
+      "run_ref": "b81c4c7e0d6fe5bdcfbf8060a47da0072704e32f7d9c57c64eca3f61b673cfeb",
+      "pair": [
+        "Per",
+        "Global"
+      ],
+      "direction": "B_IMPLIES_A",
+      "status": "NO_COUNTERMODEL_WITHIN_BOUND",
+      "reason": "FINITE_EXHAUSTED",
+      "models_checked": 20
+    },
+    {
+      "run_ref": "cdfc04be49756c2e0bab714f1ed0a195b3665a4df8bdc642b3606265cf9fad99",
+      "pair": [
+        "HeavyAll",
+        "HeavySome"
+      ],
+      "direction": "A_IMPLIES_B",
+      "status": "UNKNOWN_BOUND",
+      "reason": "PAIR_FORMULA_EVALUATION_BOUND",
+      "models_checked": 5
+    },
+    {
+      "run_ref": "cdfc04be49756c2e0bab714f1ed0a195b3665a4df8bdc642b3606265cf9fad99",
+      "pair": [
+        "HeavyAll",
+        "HeavySome"
+      ],
+      "direction": "B_IMPLIES_A",
+      "status": "UNKNOWN_BOUND",
+      "reason": "PAIR_FORMULA_EVALUATION_BOUND",
+      "models_checked": 5
+    },
+    {
+      "run_ref": "cdfc04be49756c2e0bab714f1ed0a195b3665a4df8bdc642b3606265cf9fad99",
+      "pair": [
+        "Per",
+        "Global"
+      ],
+      "direction": "B_IMPLIES_A",
+      "status": "NO_COUNTERMODEL_WITHIN_BOUND",
+      "reason": "FINITE_EXHAUSTED",
+      "models_checked": 20
+    },
+    {
+      "run_ref": "0510864d701bd8e8df7e7a363e06ea4dad97c0ae08cb59e050cc55e6877206b3",
+      "pair": [
+        "not_all",
+        "none"
+      ],
+      "direction": "B_IMPLIES_A",
+      "status": "NO_COUNTERMODEL_WITHIN_BOUND",
+      "reason": "FINITE_EXHAUSTED",
+      "models_checked": 6
+    },
+    {
+      "run_ref": "6d2ea6f76f504669f22a6489d64d9580eba7f5d2895d6cbbb04b4656d06ebc75",
+      "pair": [
+        "per",
+        "global"
+      ],
+      "direction": "B_IMPLIES_A",
+      "status": "NO_COUNTERMODEL_WITHIN_BOUND",
+      "reason": "FINITE_EXHAUSTED",
+      "models_checked": 20
+    },
+    {
+      "run_ref": "97755a96678397540559db795b36e7c2a1507daf66aa0b1ea3fee0852e06bdfd",
+      "pair": [
+        "each_some",
+        "some_all"
+      ],
+      "direction": "B_IMPLIES_A",
+      "status": "NO_COUNTERMODEL_WITHIN_BOUND",
+      "reason": "FINITE_EXHAUSTED",
+      "models_checked": 18
+    },
+    {
+      "run_ref": "faa8647c3943e80fb961ef99229074cc9b1ea3e996837260fe7c08069ea30425",
+      "pair": [
+        "Hscope",
+        "Hswapped"
+      ],
+      "direction": "B_IMPLIES_A",
+      "status": "NO_COUNTERMODEL_WITHIN_BOUND",
+      "reason": "FINITE_EXHAUSTED",
+      "models_checked": 18
+    },
+    {
+      "run_ref": "2efa8677f1c97094bf8818ca93746a093b2d58573100f8493a09fa8cb40089bb",
+      "pair": [
+        "Hnotall",
+        "Hnone"
+      ],
+      "direction": "B_IMPLIES_A",
+      "status": "NO_COUNTERMODEL_WITHIN_BOUND",
+      "reason": "FINITE_EXHAUSTED",
+      "models_checked": 6
+    },
+    {
+      "run_ref": "1ed573fb4ef754b7754af83298506504303286afece798502c0d6af8e821bfa7",
+      "pair": [
+        "Hper",
+        "Hglobal"
+      ],
+      "direction": "B_IMPLIES_A",
+      "status": "NO_COUNTERMODEL_WITHIN_BOUND",
+      "reason": "FINITE_EXHAUSTED",
+      "models_checked": 20
+    },
+    {
+      "run_ref": "57b309bbb1976e966c70213a7e8e52ff0b6db074d4c0fe1d4dd9ca5b1c612006",
+      "pair": [
+        "Hconditional",
+        "Hexists"
+      ],
+      "direction": "A_IMPLIES_B",
+      "status": "NO_COUNTERMODEL_WITHIN_BOUND",
+      "reason": "FINITE_EXHAUSTED",
+      "models_checked": 260
+    },
+    {
+      "run_ref": "c6568fe0b2ac4f0228266a8613e00da62738b3783f5f8d5866d96a291d81cf34",
+      "pair": [
+        "Htemporal",
+        "Hstatic"
+      ],
+      "direction": "A_IMPLIES_B",
+      "status": "TYPE_REJECTED",
+      "reason": "UNTYPED_OR_UNSUPPORTED_CANDIDATE",
+      "models_checked": 0
+    },
+    {
+      "run_ref": "c6568fe0b2ac4f0228266a8613e00da62738b3783f5f8d5866d96a291d81cf34",
+      "pair": [
+        "Htemporal",
+        "Hstatic"
+      ],
+      "direction": "B_IMPLIES_A",
+      "status": "TYPE_REJECTED",
+      "reason": "UNTYPED_OR_UNSUPPORTED_CANDIDATE",
+      "models_checked": 0
+    }
+  ],
+  "interpretation": "Open directions are retained; finite exhaustion is not a universal theorem."
+}

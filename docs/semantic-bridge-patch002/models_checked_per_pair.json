@@ -1,0 +1,1738 @@
+[
+  {
+    "run_ref": "baab5582171f4433a3c21547a2619b93cc0859782ef3ffff4ba708f51e669413",
+    "label": "T4-forward32",
+    "client_ids": [
+      "HmsgE",
+      "Hskeleton"
+    ],
+    "models_checked": 2,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "PROVED_ENTAILMENT",
+        "models_checked": 0,
+        "proof_kind": "SAME_PREFIX_BOOLEAN_MONOTONICITY",
+        "halt_reason": null,
+        "counterexample_ref": null
+      },
+      "B_IMPLIES_A": {
+        "status": "COUNTERMODEL_B_NOT_A",
+        "models_checked": 2,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "a83f9565ed3c1739391f6d117cc49fe25883929a4c6301d63d7284c18684480e"
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 3500,
+      "max_steps": 87500,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 64
+  },
+  {
+    "run_ref": "6d4920fa4a2db7e8d49c6258f18acd19a884f442b1e1be1e708dd8fc828f8d5f",
+    "label": "T4-reverse32",
+    "client_ids": [
+      "Hskeleton",
+      "HmsgE"
+    ],
+    "models_checked": 2,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "COUNTERMODEL_A_NOT_B",
+        "models_checked": 2,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "a83f9565ed3c1739391f6d117cc49fe25883929a4c6301d63d7284c18684480e"
+      },
+      "B_IMPLIES_A": {
+        "status": "PROVED_ENTAILMENT",
+        "models_checked": 0,
+        "proof_kind": "SAME_PREFIX_BOOLEAN_MONOTONICITY",
+        "halt_reason": null,
+        "counterexample_ref": null
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 3500,
+      "max_steps": 87500,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 64
+  },
+  {
+    "run_ref": "58d21f19b37c02cbe84923e1a9cd42f760353f362fd494ce64a07644b32cd53d",
+    "label": "T4-permutation0",
+    "client_ids": [
+      "HmsgE",
+      "Hskeleton"
+    ],
+    "models_checked": 2,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "PROVED_ENTAILMENT",
+        "models_checked": 0,
+        "proof_kind": "SAME_PREFIX_BOOLEAN_MONOTONICITY",
+        "halt_reason": null,
+        "counterexample_ref": null
+      },
+      "B_IMPLIES_A": {
+        "status": "COUNTERMODEL_B_NOT_A",
+        "models_checked": 2,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "a83f9565ed3c1739391f6d117cc49fe25883929a4c6301d63d7284c18684480e"
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1166,
+      "max_steps": 29166,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 55
+  },
+  {
+    "run_ref": "58d21f19b37c02cbe84923e1a9cd42f760353f362fd494ce64a07644b32cd53d",
+    "label": "T4-permutation0",
+    "client_ids": [
+      "HmsgBoth",
+      "HmsgE"
+    ],
+    "models_checked": 4,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "PROVED_ENTAILMENT",
+        "models_checked": 0,
+        "proof_kind": "SAME_PREFIX_BOOLEAN_MONOTONICITY",
+        "halt_reason": null,
+        "counterexample_ref": null
+      },
+      "B_IMPLIES_A": {
+        "status": "COUNTERMODEL_B_NOT_A",
+        "models_checked": 4,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "6b1d778031c4aee8417be57493e47bbdced4e64ab7e437c3924ef69f1027fe17"
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1166,
+      "max_steps": 29166,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 112
+  },
+  {
+    "run_ref": "58d21f19b37c02cbe84923e1a9cd42f760353f362fd494ce64a07644b32cd53d",
+    "label": "T4-permutation0",
+    "client_ids": [
+      "HmsgE",
+      "HmsgA"
+    ],
+    "models_checked": 6,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "COUNTERMODEL_A_NOT_B",
+        "models_checked": 4,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "6b1d778031c4aee8417be57493e47bbdced4e64ab7e437c3924ef69f1027fe17"
+      },
+      "B_IMPLIES_A": {
+        "status": "COUNTERMODEL_B_NOT_A",
+        "models_checked": 6,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "a5f946bade9d9c37165f9d2a249798be6cb7f493c9593323a5c88fe35940dfa4"
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1166,
+      "max_steps": 29166,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 103
+  },
+  {
+    "run_ref": "d2d2054f62da222271341e29276fb7991397703d2b96234b70e599d4a158750e",
+    "label": "T4-permutation1",
+    "client_ids": [
+      "HmsgE",
+      "Hskeleton"
+    ],
+    "models_checked": 2,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "PROVED_ENTAILMENT",
+        "models_checked": 0,
+        "proof_kind": "SAME_PREFIX_BOOLEAN_MONOTONICITY",
+        "halt_reason": null,
+        "counterexample_ref": null
+      },
+      "B_IMPLIES_A": {
+        "status": "COUNTERMODEL_B_NOT_A",
+        "models_checked": 2,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "a83f9565ed3c1739391f6d117cc49fe25883929a4c6301d63d7284c18684480e"
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1166,
+      "max_steps": 29166,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 55
+  },
+  {
+    "run_ref": "d2d2054f62da222271341e29276fb7991397703d2b96234b70e599d4a158750e",
+    "label": "T4-permutation1",
+    "client_ids": [
+      "HmsgE",
+      "HmsgA"
+    ],
+    "models_checked": 6,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "COUNTERMODEL_A_NOT_B",
+        "models_checked": 4,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "6b1d778031c4aee8417be57493e47bbdced4e64ab7e437c3924ef69f1027fe17"
+      },
+      "B_IMPLIES_A": {
+        "status": "COUNTERMODEL_B_NOT_A",
+        "models_checked": 6,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "a5f946bade9d9c37165f9d2a249798be6cb7f493c9593323a5c88fe35940dfa4"
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1166,
+      "max_steps": 29166,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 103
+  },
+  {
+    "run_ref": "d2d2054f62da222271341e29276fb7991397703d2b96234b70e599d4a158750e",
+    "label": "T4-permutation1",
+    "client_ids": [
+      "HmsgBoth",
+      "HmsgE"
+    ],
+    "models_checked": 4,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "PROVED_ENTAILMENT",
+        "models_checked": 0,
+        "proof_kind": "SAME_PREFIX_BOOLEAN_MONOTONICITY",
+        "halt_reason": null,
+        "counterexample_ref": null
+      },
+      "B_IMPLIES_A": {
+        "status": "COUNTERMODEL_B_NOT_A",
+        "models_checked": 4,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "6b1d778031c4aee8417be57493e47bbdced4e64ab7e437c3924ef69f1027fe17"
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1166,
+      "max_steps": 29166,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 112
+  },
+  {
+    "run_ref": "cad4918ec0f74262e97e8038750f90b7780b488a861d7fb4313418e20fda20c2",
+    "label": "T4-permutation2",
+    "client_ids": [
+      "HmsgBoth",
+      "HmsgE"
+    ],
+    "models_checked": 4,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "PROVED_ENTAILMENT",
+        "models_checked": 0,
+        "proof_kind": "SAME_PREFIX_BOOLEAN_MONOTONICITY",
+        "halt_reason": null,
+        "counterexample_ref": null
+      },
+      "B_IMPLIES_A": {
+        "status": "COUNTERMODEL_B_NOT_A",
+        "models_checked": 4,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "6b1d778031c4aee8417be57493e47bbdced4e64ab7e437c3924ef69f1027fe17"
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1166,
+      "max_steps": 29166,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 112
+  },
+  {
+    "run_ref": "cad4918ec0f74262e97e8038750f90b7780b488a861d7fb4313418e20fda20c2",
+    "label": "T4-permutation2",
+    "client_ids": [
+      "HmsgE",
+      "Hskeleton"
+    ],
+    "models_checked": 2,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "PROVED_ENTAILMENT",
+        "models_checked": 0,
+        "proof_kind": "SAME_PREFIX_BOOLEAN_MONOTONICITY",
+        "halt_reason": null,
+        "counterexample_ref": null
+      },
+      "B_IMPLIES_A": {
+        "status": "COUNTERMODEL_B_NOT_A",
+        "models_checked": 2,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "a83f9565ed3c1739391f6d117cc49fe25883929a4c6301d63d7284c18684480e"
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1166,
+      "max_steps": 29166,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 55
+  },
+  {
+    "run_ref": "cad4918ec0f74262e97e8038750f90b7780b488a861d7fb4313418e20fda20c2",
+    "label": "T4-permutation2",
+    "client_ids": [
+      "HmsgE",
+      "HmsgA"
+    ],
+    "models_checked": 6,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "COUNTERMODEL_A_NOT_B",
+        "models_checked": 4,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "6b1d778031c4aee8417be57493e47bbdced4e64ab7e437c3924ef69f1027fe17"
+      },
+      "B_IMPLIES_A": {
+        "status": "COUNTERMODEL_B_NOT_A",
+        "models_checked": 6,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "a5f946bade9d9c37165f9d2a249798be6cb7f493c9593323a5c88fe35940dfa4"
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1166,
+      "max_steps": 29166,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 103
+  },
+  {
+    "run_ref": "8b4d562074a27f866796487a62b561eaffff38ecb86b1f11d392626b4293533a",
+    "label": "T4-permutation3",
+    "client_ids": [
+      "HmsgBoth",
+      "HmsgE"
+    ],
+    "models_checked": 4,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "PROVED_ENTAILMENT",
+        "models_checked": 0,
+        "proof_kind": "SAME_PREFIX_BOOLEAN_MONOTONICITY",
+        "halt_reason": null,
+        "counterexample_ref": null
+      },
+      "B_IMPLIES_A": {
+        "status": "COUNTERMODEL_B_NOT_A",
+        "models_checked": 4,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "6b1d778031c4aee8417be57493e47bbdced4e64ab7e437c3924ef69f1027fe17"
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1166,
+      "max_steps": 29166,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 112
+  },
+  {
+    "run_ref": "8b4d562074a27f866796487a62b561eaffff38ecb86b1f11d392626b4293533a",
+    "label": "T4-permutation3",
+    "client_ids": [
+      "HmsgE",
+      "HmsgA"
+    ],
+    "models_checked": 6,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "COUNTERMODEL_A_NOT_B",
+        "models_checked": 4,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "6b1d778031c4aee8417be57493e47bbdced4e64ab7e437c3924ef69f1027fe17"
+      },
+      "B_IMPLIES_A": {
+        "status": "COUNTERMODEL_B_NOT_A",
+        "models_checked": 6,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "a5f946bade9d9c37165f9d2a249798be6cb7f493c9593323a5c88fe35940dfa4"
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1166,
+      "max_steps": 29166,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 103
+  },
+  {
+    "run_ref": "8b4d562074a27f866796487a62b561eaffff38ecb86b1f11d392626b4293533a",
+    "label": "T4-permutation3",
+    "client_ids": [
+      "HmsgE",
+      "Hskeleton"
+    ],
+    "models_checked": 2,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "PROVED_ENTAILMENT",
+        "models_checked": 0,
+        "proof_kind": "SAME_PREFIX_BOOLEAN_MONOTONICITY",
+        "halt_reason": null,
+        "counterexample_ref": null
+      },
+      "B_IMPLIES_A": {
+        "status": "COUNTERMODEL_B_NOT_A",
+        "models_checked": 2,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "a83f9565ed3c1739391f6d117cc49fe25883929a4c6301d63d7284c18684480e"
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1166,
+      "max_steps": 29166,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 55
+  },
+  {
+    "run_ref": "5a1c16cbbd64d5dc5600513f473da7c77f8aca6fec2b0378b190b9a63d753795",
+    "label": "T4-permutation4",
+    "client_ids": [
+      "HmsgE",
+      "HmsgA"
+    ],
+    "models_checked": 6,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "COUNTERMODEL_A_NOT_B",
+        "models_checked": 4,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "6b1d778031c4aee8417be57493e47bbdced4e64ab7e437c3924ef69f1027fe17"
+      },
+      "B_IMPLIES_A": {
+        "status": "COUNTERMODEL_B_NOT_A",
+        "models_checked": 6,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "a5f946bade9d9c37165f9d2a249798be6cb7f493c9593323a5c88fe35940dfa4"
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1166,
+      "max_steps": 29166,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 103
+  },
+  {
+    "run_ref": "5a1c16cbbd64d5dc5600513f473da7c77f8aca6fec2b0378b190b9a63d753795",
+    "label": "T4-permutation4",
+    "client_ids": [
+      "HmsgE",
+      "Hskeleton"
+    ],
+    "models_checked": 2,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "PROVED_ENTAILMENT",
+        "models_checked": 0,
+        "proof_kind": "SAME_PREFIX_BOOLEAN_MONOTONICITY",
+        "halt_reason": null,
+        "counterexample_ref": null
+      },
+      "B_IMPLIES_A": {
+        "status": "COUNTERMODEL_B_NOT_A",
+        "models_checked": 2,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "a83f9565ed3c1739391f6d117cc49fe25883929a4c6301d63d7284c18684480e"
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1166,
+      "max_steps": 29166,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 55
+  },
+  {
+    "run_ref": "5a1c16cbbd64d5dc5600513f473da7c77f8aca6fec2b0378b190b9a63d753795",
+    "label": "T4-permutation4",
+    "client_ids": [
+      "HmsgBoth",
+      "HmsgE"
+    ],
+    "models_checked": 4,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "PROVED_ENTAILMENT",
+        "models_checked": 0,
+        "proof_kind": "SAME_PREFIX_BOOLEAN_MONOTONICITY",
+        "halt_reason": null,
+        "counterexample_ref": null
+      },
+      "B_IMPLIES_A": {
+        "status": "COUNTERMODEL_B_NOT_A",
+        "models_checked": 4,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "6b1d778031c4aee8417be57493e47bbdced4e64ab7e437c3924ef69f1027fe17"
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1166,
+      "max_steps": 29166,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 112
+  },
+  {
+    "run_ref": "06fb0f87511c4e11efa91857e5b0dbf5e4e6ceb348bbb48eab009af12c7aadeb",
+    "label": "T4-permutation5",
+    "client_ids": [
+      "HmsgE",
+      "HmsgA"
+    ],
+    "models_checked": 6,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "COUNTERMODEL_A_NOT_B",
+        "models_checked": 4,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "6b1d778031c4aee8417be57493e47bbdced4e64ab7e437c3924ef69f1027fe17"
+      },
+      "B_IMPLIES_A": {
+        "status": "COUNTERMODEL_B_NOT_A",
+        "models_checked": 6,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "a5f946bade9d9c37165f9d2a249798be6cb7f493c9593323a5c88fe35940dfa4"
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1166,
+      "max_steps": 29166,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 103
+  },
+  {
+    "run_ref": "06fb0f87511c4e11efa91857e5b0dbf5e4e6ceb348bbb48eab009af12c7aadeb",
+    "label": "T4-permutation5",
+    "client_ids": [
+      "HmsgBoth",
+      "HmsgE"
+    ],
+    "models_checked": 4,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "PROVED_ENTAILMENT",
+        "models_checked": 0,
+        "proof_kind": "SAME_PREFIX_BOOLEAN_MONOTONICITY",
+        "halt_reason": null,
+        "counterexample_ref": null
+      },
+      "B_IMPLIES_A": {
+        "status": "COUNTERMODEL_B_NOT_A",
+        "models_checked": 4,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "6b1d778031c4aee8417be57493e47bbdced4e64ab7e437c3924ef69f1027fe17"
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1166,
+      "max_steps": 29166,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 112
+  },
+  {
+    "run_ref": "06fb0f87511c4e11efa91857e5b0dbf5e4e6ceb348bbb48eab009af12c7aadeb",
+    "label": "T4-permutation5",
+    "client_ids": [
+      "HmsgE",
+      "Hskeleton"
+    ],
+    "models_checked": 2,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "PROVED_ENTAILMENT",
+        "models_checked": 0,
+        "proof_kind": "SAME_PREFIX_BOOLEAN_MONOTONICITY",
+        "halt_reason": null,
+        "counterexample_ref": null
+      },
+      "B_IMPLIES_A": {
+        "status": "COUNTERMODEL_B_NOT_A",
+        "models_checked": 2,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "a83f9565ed3c1739391f6d117cc49fe25883929a4c6301d63d7284c18684480e"
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1166,
+      "max_steps": 29166,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 55
+  },
+  {
+    "run_ref": "55397a054ccc6c5ecc38eff3811651208629f3fd7f1260bf982694641bc6cba2",
+    "label": "heavy-forward32",
+    "client_ids": [
+      "HeavyA",
+      "HeavyB"
+    ],
+    "models_checked": 32,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "COUNTERMODEL_A_NOT_B",
+        "models_checked": 15,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "c431fbeba0d7bd1fdb27799f818735ea2833862d0aa9d53bae1a4e29e891fef2"
+      },
+      "B_IMPLIES_A": {
+        "status": "UNKNOWN_BOUND",
+        "models_checked": 32,
+        "proof_kind": null,
+        "halt_reason": "TOTAL_MODEL_BOUND",
+        "counterexample_ref": null
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1166,
+      "max_steps": 29166,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 397
+  },
+  {
+    "run_ref": "55397a054ccc6c5ecc38eff3811651208629f3fd7f1260bf982694641bc6cba2",
+    "label": "heavy-forward32",
+    "client_ids": [
+      "HmsgE",
+      "Hskeleton"
+    ],
+    "models_checked": 2,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "PROVED_ENTAILMENT",
+        "models_checked": 0,
+        "proof_kind": "SAME_PREFIX_BOOLEAN_MONOTONICITY",
+        "halt_reason": null,
+        "counterexample_ref": null
+      },
+      "B_IMPLIES_A": {
+        "status": "COUNTERMODEL_B_NOT_A",
+        "models_checked": 2,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "a83f9565ed3c1739391f6d117cc49fe25883929a4c6301d63d7284c18684480e"
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1166,
+      "max_steps": 29166,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 55
+  },
+  {
+    "run_ref": "55397a054ccc6c5ecc38eff3811651208629f3fd7f1260bf982694641bc6cba2",
+    "label": "heavy-forward32",
+    "client_ids": [
+      "HmsgBoth",
+      "HmsgE"
+    ],
+    "models_checked": 4,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "PROVED_ENTAILMENT",
+        "models_checked": 0,
+        "proof_kind": "SAME_PREFIX_BOOLEAN_MONOTONICITY",
+        "halt_reason": null,
+        "counterexample_ref": null
+      },
+      "B_IMPLIES_A": {
+        "status": "COUNTERMODEL_B_NOT_A",
+        "models_checked": 4,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "6b1d778031c4aee8417be57493e47bbdced4e64ab7e437c3924ef69f1027fe17"
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1166,
+      "max_steps": 29166,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 112
+  },
+  {
+    "run_ref": "012491bf0c9c66882d6abc8fb9a4262a505b7e589037df9242e42f022e6da9c2",
+    "label": "heavy-reverse32",
+    "client_ids": [
+      "HmsgE",
+      "HmsgBoth"
+    ],
+    "models_checked": 4,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "COUNTERMODEL_A_NOT_B",
+        "models_checked": 4,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "6b1d778031c4aee8417be57493e47bbdced4e64ab7e437c3924ef69f1027fe17"
+      },
+      "B_IMPLIES_A": {
+        "status": "PROVED_ENTAILMENT",
+        "models_checked": 0,
+        "proof_kind": "SAME_PREFIX_BOOLEAN_MONOTONICITY",
+        "halt_reason": null,
+        "counterexample_ref": null
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1166,
+      "max_steps": 29166,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 112
+  },
+  {
+    "run_ref": "012491bf0c9c66882d6abc8fb9a4262a505b7e589037df9242e42f022e6da9c2",
+    "label": "heavy-reverse32",
+    "client_ids": [
+      "Hskeleton",
+      "HmsgE"
+    ],
+    "models_checked": 2,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "COUNTERMODEL_A_NOT_B",
+        "models_checked": 2,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "a83f9565ed3c1739391f6d117cc49fe25883929a4c6301d63d7284c18684480e"
+      },
+      "B_IMPLIES_A": {
+        "status": "PROVED_ENTAILMENT",
+        "models_checked": 0,
+        "proof_kind": "SAME_PREFIX_BOOLEAN_MONOTONICITY",
+        "halt_reason": null,
+        "counterexample_ref": null
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1166,
+      "max_steps": 29166,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 55
+  },
+  {
+    "run_ref": "012491bf0c9c66882d6abc8fb9a4262a505b7e589037df9242e42f022e6da9c2",
+    "label": "heavy-reverse32",
+    "client_ids": [
+      "HeavyB",
+      "HeavyA"
+    ],
+    "models_checked": 32,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "UNKNOWN_BOUND",
+        "models_checked": 32,
+        "proof_kind": null,
+        "halt_reason": "TOTAL_MODEL_BOUND",
+        "counterexample_ref": null
+      },
+      "B_IMPLIES_A": {
+        "status": "COUNTERMODEL_B_NOT_A",
+        "models_checked": 15,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "c431fbeba0d7bd1fdb27799f818735ea2833862d0aa9d53bae1a4e29e891fef2"
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1166,
+      "max_steps": 29166,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 397
+  },
+  {
+    "run_ref": "271a972b42ef931d1cb490ae8791ab02a90fc6c4cffe5e1426985b680a6e53d0",
+    "label": "heavy-forward64",
+    "client_ids": [
+      "HeavyA",
+      "HeavyB"
+    ],
+    "models_checked": 64,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "COUNTERMODEL_A_NOT_B",
+        "models_checked": 15,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "c431fbeba0d7bd1fdb27799f818735ea2833862d0aa9d53bae1a4e29e891fef2"
+      },
+      "B_IMPLIES_A": {
+        "status": "UNKNOWN_BOUND",
+        "models_checked": 64,
+        "proof_kind": null,
+        "halt_reason": "TOTAL_MODEL_BOUND",
+        "counterexample_ref": null
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1166,
+      "max_steps": 29166,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 805
+  },
+  {
+    "run_ref": "271a972b42ef931d1cb490ae8791ab02a90fc6c4cffe5e1426985b680a6e53d0",
+    "label": "heavy-forward64",
+    "client_ids": [
+      "HmsgE",
+      "Hskeleton"
+    ],
+    "models_checked": 2,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "PROVED_ENTAILMENT",
+        "models_checked": 0,
+        "proof_kind": "SAME_PREFIX_BOOLEAN_MONOTONICITY",
+        "halt_reason": null,
+        "counterexample_ref": null
+      },
+      "B_IMPLIES_A": {
+        "status": "COUNTERMODEL_B_NOT_A",
+        "models_checked": 2,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "a83f9565ed3c1739391f6d117cc49fe25883929a4c6301d63d7284c18684480e"
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1166,
+      "max_steps": 29166,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 55
+  },
+  {
+    "run_ref": "271a972b42ef931d1cb490ae8791ab02a90fc6c4cffe5e1426985b680a6e53d0",
+    "label": "heavy-forward64",
+    "client_ids": [
+      "HmsgBoth",
+      "HmsgE"
+    ],
+    "models_checked": 4,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "PROVED_ENTAILMENT",
+        "models_checked": 0,
+        "proof_kind": "SAME_PREFIX_BOOLEAN_MONOTONICITY",
+        "halt_reason": null,
+        "counterexample_ref": null
+      },
+      "B_IMPLIES_A": {
+        "status": "COUNTERMODEL_B_NOT_A",
+        "models_checked": 4,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "6b1d778031c4aee8417be57493e47bbdced4e64ab7e437c3924ef69f1027fe17"
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1166,
+      "max_steps": 29166,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 112
+  },
+  {
+    "run_ref": "4ded7fd0ce85a55acb333e7fe5a4cde002bfec48b873d8b9fff21eaab10d9dee",
+    "label": "heavy-reverse64",
+    "client_ids": [
+      "HmsgE",
+      "HmsgBoth"
+    ],
+    "models_checked": 4,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "COUNTERMODEL_A_NOT_B",
+        "models_checked": 4,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "6b1d778031c4aee8417be57493e47bbdced4e64ab7e437c3924ef69f1027fe17"
+      },
+      "B_IMPLIES_A": {
+        "status": "PROVED_ENTAILMENT",
+        "models_checked": 0,
+        "proof_kind": "SAME_PREFIX_BOOLEAN_MONOTONICITY",
+        "halt_reason": null,
+        "counterexample_ref": null
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1166,
+      "max_steps": 29166,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 112
+  },
+  {
+    "run_ref": "4ded7fd0ce85a55acb333e7fe5a4cde002bfec48b873d8b9fff21eaab10d9dee",
+    "label": "heavy-reverse64",
+    "client_ids": [
+      "Hskeleton",
+      "HmsgE"
+    ],
+    "models_checked": 2,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "COUNTERMODEL_A_NOT_B",
+        "models_checked": 2,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "a83f9565ed3c1739391f6d117cc49fe25883929a4c6301d63d7284c18684480e"
+      },
+      "B_IMPLIES_A": {
+        "status": "PROVED_ENTAILMENT",
+        "models_checked": 0,
+        "proof_kind": "SAME_PREFIX_BOOLEAN_MONOTONICITY",
+        "halt_reason": null,
+        "counterexample_ref": null
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1166,
+      "max_steps": 29166,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 55
+  },
+  {
+    "run_ref": "4ded7fd0ce85a55acb333e7fe5a4cde002bfec48b873d8b9fff21eaab10d9dee",
+    "label": "heavy-reverse64",
+    "client_ids": [
+      "HeavyB",
+      "HeavyA"
+    ],
+    "models_checked": 64,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "UNKNOWN_BOUND",
+        "models_checked": 64,
+        "proof_kind": null,
+        "halt_reason": "TOTAL_MODEL_BOUND",
+        "counterexample_ref": null
+      },
+      "B_IMPLIES_A": {
+        "status": "COUNTERMODEL_B_NOT_A",
+        "models_checked": 15,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "c431fbeba0d7bd1fdb27799f818735ea2833862d0aa9d53bae1a4e29e891fef2"
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1166,
+      "max_steps": 29166,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 805
+  },
+  {
+    "run_ref": "b81c4c7e0d6fe5bdcfbf8060a47da0072704e32f7d9c57c64eca3f61b673cfeb",
+    "label": "cost-fairness32",
+    "client_ids": [
+      "HeavyAll",
+      "HeavySome"
+    ],
+    "models_checked": 5,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "UNKNOWN_BOUND",
+        "models_checked": 5,
+        "proof_kind": null,
+        "halt_reason": "PAIR_FORMULA_EVALUATION_BOUND",
+        "counterexample_ref": null
+      },
+      "B_IMPLIES_A": {
+        "status": "UNKNOWN_BOUND",
+        "models_checked": 5,
+        "proof_kind": null,
+        "halt_reason": "PAIR_FORMULA_EVALUATION_BOUND",
+        "counterexample_ref": null
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1750,
+      "max_steps": 43750,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 43750
+  },
+  {
+    "run_ref": "b81c4c7e0d6fe5bdcfbf8060a47da0072704e32f7d9c57c64eca3f61b673cfeb",
+    "label": "cost-fairness32",
+    "client_ids": [
+      "Per",
+      "Global"
+    ],
+    "models_checked": 20,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "COUNTERMODEL_A_NOT_B",
+        "models_checked": 11,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "6c931ddb627d84397f6517389108f6f71776b5e92f65ea88590aefdff51835be"
+      },
+      "B_IMPLIES_A": {
+        "status": "NO_COUNTERMODEL_WITHIN_BOUND",
+        "models_checked": 20,
+        "proof_kind": null,
+        "halt_reason": "FINITE_EXHAUSTED",
+        "counterexample_ref": null
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1750,
+      "max_steps": 43750,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 275
+  },
+  {
+    "run_ref": "cdfc04be49756c2e0bab714f1ed0a195b3665a4df8bdc642b3606265cf9fad99",
+    "label": "cost-fairness64",
+    "client_ids": [
+      "HeavyAll",
+      "HeavySome"
+    ],
+    "models_checked": 5,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "UNKNOWN_BOUND",
+        "models_checked": 5,
+        "proof_kind": null,
+        "halt_reason": "PAIR_FORMULA_EVALUATION_BOUND",
+        "counterexample_ref": null
+      },
+      "B_IMPLIES_A": {
+        "status": "UNKNOWN_BOUND",
+        "models_checked": 5,
+        "proof_kind": null,
+        "halt_reason": "PAIR_FORMULA_EVALUATION_BOUND",
+        "counterexample_ref": null
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1750,
+      "max_steps": 43750,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 43750
+  },
+  {
+    "run_ref": "cdfc04be49756c2e0bab714f1ed0a195b3665a4df8bdc642b3606265cf9fad99",
+    "label": "cost-fairness64",
+    "client_ids": [
+      "Per",
+      "Global"
+    ],
+    "models_checked": 20,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "COUNTERMODEL_A_NOT_B",
+        "models_checked": 11,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "6c931ddb627d84397f6517389108f6f71776b5e92f65ea88590aefdff51835be"
+      },
+      "B_IMPLIES_A": {
+        "status": "NO_COUNTERMODEL_WITHIN_BOUND",
+        "models_checked": 20,
+        "proof_kind": null,
+        "halt_reason": "FINITE_EXHAUSTED",
+        "counterexample_ref": null
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1750,
+      "max_steps": 43750,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 275
+  },
+  {
+    "run_ref": "0510864d701bd8e8df7e7a363e06ea4dad97c0ae08cb59e050cc55e6877206b3",
+    "label": "T2_quantifier_negation",
+    "client_ids": [
+      "not_all",
+      "exists_not"
+    ],
+    "models_checked": 0,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "PROVED_ENTAILMENT",
+        "models_checked": 0,
+        "proof_kind": "NEGATION_NORMAL_FORM_EQUIVALENCE",
+        "halt_reason": null,
+        "counterexample_ref": null
+      },
+      "B_IMPLIES_A": {
+        "status": "PROVED_ENTAILMENT",
+        "models_checked": 0,
+        "proof_kind": "NEGATION_NORMAL_FORM_EQUIVALENCE",
+        "halt_reason": null,
+        "counterexample_ref": null
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1750,
+      "max_steps": 43750,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 25
+  },
+  {
+    "run_ref": "0510864d701bd8e8df7e7a363e06ea4dad97c0ae08cb59e050cc55e6877206b3",
+    "label": "T2_quantifier_negation",
+    "client_ids": [
+      "not_all",
+      "none"
+    ],
+    "models_checked": 6,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "COUNTERMODEL_A_NOT_B",
+        "models_checked": 4,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "21b64baec7be98759f8fd2dfcb201d5af6a3409eeee31e132efa3a941c9f7033"
+      },
+      "B_IMPLIES_A": {
+        "status": "NO_COUNTERMODEL_WITHIN_BOUND",
+        "models_checked": 6,
+        "proof_kind": null,
+        "halt_reason": "FINITE_EXHAUSTED",
+        "counterexample_ref": null
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1750,
+      "max_steps": 43750,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 77
+  },
+  {
+    "run_ref": "6d2ea6f76f504669f22a6489d64d9580eba7f5d2895d6cbbb04b4656d06ebc75",
+    "label": "T3_forall_distributivity_trap",
+    "client_ids": [
+      "per",
+      "global"
+    ],
+    "models_checked": 20,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "COUNTERMODEL_A_NOT_B",
+        "models_checked": 11,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "b25c37f61f96288827323df01b707aa0c522f9008d323f8ead1f046ba734fa3d"
+      },
+      "B_IMPLIES_A": {
+        "status": "NO_COUNTERMODEL_WITHIN_BOUND",
+        "models_checked": 20,
+        "proof_kind": null,
+        "halt_reason": "FINITE_EXHAUSTED",
+        "counterexample_ref": null
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 3500,
+      "max_steps": 87500,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 275
+  },
+  {
+    "run_ref": "5a3bb5b709aaf89a48eee1ba88262728fc13ae0df27c6d50c0be4db801cf67e8",
+    "label": "boolean_commutativity",
+    "client_ids": [
+      "A",
+      "B"
+    ],
+    "models_checked": 0,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "PROVED_ENTAILMENT",
+        "models_checked": 0,
+        "proof_kind": "SAME_PREFIX_BOOLEAN_MONOTONICITY",
+        "halt_reason": null,
+        "counterexample_ref": null
+      },
+      "B_IMPLIES_A": {
+        "status": "PROVED_ENTAILMENT",
+        "models_checked": 0,
+        "proof_kind": "SAME_PREFIX_BOOLEAN_MONOTONICITY",
+        "halt_reason": null,
+        "counterexample_ref": null
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 3500,
+      "max_steps": 87500,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 57
+  },
+  {
+    "run_ref": "97755a96678397540559db795b36e7c2a1507daf66aa0b1ea3fee0852e06bdfd",
+    "label": "T1_scope_change",
+    "client_ids": [
+      "each_some",
+      "some_all"
+    ],
+    "models_checked": 18,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "COUNTERMODEL_A_NOT_B",
+        "models_checked": 9,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "0cf6b9807e79e61928da480f8a0b180e92f4cf1a8918f9154e5195f17a44ba38"
+      },
+      "B_IMPLIES_A": {
+        "status": "NO_COUNTERMODEL_WITHIN_BOUND",
+        "models_checked": 18,
+        "proof_kind": null,
+        "halt_reason": "FINITE_EXHAUSTED",
+        "counterexample_ref": null
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 3500,
+      "max_steps": 87500,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 247
+  },
+  {
+    "run_ref": "3a84919cb4ffb059ddfa5e5090087969c19a9885bf3b06712e3ab4796d84c1f4",
+    "label": "factivity-control",
+    "client_ids": [
+      "HmsgE",
+      "Hfact"
+    ],
+    "models_checked": 7,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "COUNTERMODEL_A_NOT_B",
+        "models_checked": 7,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "0f1050bb0b54ca7476414e89f318dea74f15417a9c64e8a28076413ece9d54bd"
+      },
+      "B_IMPLIES_A": {
+        "status": "COUNTERMODEL_B_NOT_A",
+        "models_checked": 4,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "05110c638668c9962c7876e4f88b7af0abc57280f6e419200c391d271d0537d0"
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 3000,
+      "max_steps": 50000,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 132
+  },
+  {
+    "run_ref": "faa8647c3943e80fb961ef99229074cc9b1ea3e996837260fe7c08069ea30425",
+    "label": "EXP02-T1",
+    "client_ids": [
+      "Hscope",
+      "Hswapped"
+    ],
+    "models_checked": 18,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "COUNTERMODEL_A_NOT_B",
+        "models_checked": 9,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "0cf6b9807e79e61928da480f8a0b180e92f4cf1a8918f9154e5195f17a44ba38"
+      },
+      "B_IMPLIES_A": {
+        "status": "NO_COUNTERMODEL_WITHIN_BOUND",
+        "models_checked": 18,
+        "proof_kind": null,
+        "halt_reason": "FINITE_EXHAUSTED",
+        "counterexample_ref": null
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1500,
+      "max_steps": 25000,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 247
+  },
+  {
+    "run_ref": "faa8647c3943e80fb961ef99229074cc9b1ea3e996837260fe7c08069ea30425",
+    "label": "EXP02-T1",
+    "client_ids": [
+      "Hscope",
+      "Hrenamed"
+    ],
+    "models_checked": 0,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "PROVED_ALPHA_EQ",
+        "models_checked": 0,
+        "proof_kind": "ALPHA_NORMALIZATION",
+        "halt_reason": null,
+        "counterexample_ref": null
+      },
+      "B_IMPLIES_A": {
+        "status": "PROVED_ALPHA_EQ",
+        "models_checked": 0,
+        "proof_kind": "ALPHA_NORMALIZATION",
+        "halt_reason": null,
+        "counterexample_ref": null
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1500,
+      "max_steps": 25000,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 1
+  },
+  {
+    "run_ref": "2efa8677f1c97094bf8818ca93746a093b2d58573100f8493a09fa8cb40089bb",
+    "label": "EXP02-T2",
+    "client_ids": [
+      "Hnotall",
+      "Hnone"
+    ],
+    "models_checked": 6,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "COUNTERMODEL_A_NOT_B",
+        "models_checked": 4,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "21b64baec7be98759f8fd2dfcb201d5af6a3409eeee31e132efa3a941c9f7033"
+      },
+      "B_IMPLIES_A": {
+        "status": "NO_COUNTERMODEL_WITHIN_BOUND",
+        "models_checked": 6,
+        "proof_kind": null,
+        "halt_reason": "FINITE_EXHAUSTED",
+        "counterexample_ref": null
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1500,
+      "max_steps": 25000,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 77
+  },
+  {
+    "run_ref": "2efa8677f1c97094bf8818ca93746a093b2d58573100f8493a09fa8cb40089bb",
+    "label": "EXP02-T2",
+    "client_ids": [
+      "Hnotall",
+      "Hexists"
+    ],
+    "models_checked": 0,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "PROVED_ENTAILMENT",
+        "models_checked": 0,
+        "proof_kind": "NEGATION_NORMAL_FORM_EQUIVALENCE",
+        "halt_reason": null,
+        "counterexample_ref": null
+      },
+      "B_IMPLIES_A": {
+        "status": "PROVED_ENTAILMENT",
+        "models_checked": 0,
+        "proof_kind": "NEGATION_NORMAL_FORM_EQUIVALENCE",
+        "halt_reason": null,
+        "counterexample_ref": null
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1500,
+      "max_steps": 25000,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 25
+  },
+  {
+    "run_ref": "1ed573fb4ef754b7754af83298506504303286afece798502c0d6af8e821bfa7",
+    "label": "EXP02-T3",
+    "client_ids": [
+      "Hper",
+      "Hglobal"
+    ],
+    "models_checked": 20,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "COUNTERMODEL_A_NOT_B",
+        "models_checked": 11,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "b25c37f61f96288827323df01b707aa0c522f9008d323f8ead1f046ba734fa3d"
+      },
+      "B_IMPLIES_A": {
+        "status": "NO_COUNTERMODEL_WITHIN_BOUND",
+        "models_checked": 20,
+        "proof_kind": null,
+        "halt_reason": "FINITE_EXHAUSTED",
+        "counterexample_ref": null
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1500,
+      "max_steps": 25000,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 268
+  },
+  {
+    "run_ref": "1ed573fb4ef754b7754af83298506504303286afece798502c0d6af8e821bfa7",
+    "label": "EXP02-T3",
+    "client_ids": [
+      "Hper",
+      "Hboth"
+    ],
+    "models_checked": 2,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "COUNTERMODEL_A_NOT_B",
+        "models_checked": 2,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "5be41beab7cd95699a56ae9211e43b3309ad6dd38badbad46fe61d6ae3e90a04"
+      },
+      "B_IMPLIES_A": {
+        "status": "PROVED_ENTAILMENT",
+        "models_checked": 0,
+        "proof_kind": "SAME_PREFIX_BOOLEAN_MONOTONICITY",
+        "halt_reason": null,
+        "counterexample_ref": null
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1500,
+      "max_steps": 25000,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 62
+  },
+  {
+    "run_ref": "30a923074a2ea8c7fe024a9402acd1f34a40face1c3dd26c9605976fb61be8af",
+    "label": "EXP02-T4",
+    "client_ids": [
+      "Heng",
+      "Hanalyst"
+    ],
+    "models_checked": 7,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "COUNTERMODEL_A_NOT_B",
+        "models_checked": 6,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "ec833d6177177b3f4a022c554af53a104fd0b3e5975113408c31dc66fe58fd5b"
+      },
+      "B_IMPLIES_A": {
+        "status": "COUNTERMODEL_B_NOT_A",
+        "models_checked": 7,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "0bf749478d365adabf353dff4277322c096bc0e46e94c0978cfca276d82d2a84"
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1500,
+      "max_steps": 25000,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 134
+  },
+  {
+    "run_ref": "30a923074a2ea8c7fe024a9402acd1f34a40face1c3dd26c9605976fb61be8af",
+    "label": "EXP02-T4",
+    "client_ids": [
+      "Heng",
+      "Hboth"
+    ],
+    "models_checked": 6,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "COUNTERMODEL_A_NOT_B",
+        "models_checked": 6,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "ec833d6177177b3f4a022c554af53a104fd0b3e5975113408c31dc66fe58fd5b"
+      },
+      "B_IMPLIES_A": {
+        "status": "PROVED_ENTAILMENT",
+        "models_checked": 0,
+        "proof_kind": "SAME_PREFIX_BOOLEAN_MONOTONICITY",
+        "halt_reason": null,
+        "counterexample_ref": null
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1500,
+      "max_steps": 25000,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 108
+  },
+  {
+    "run_ref": "57b309bbb1976e966c70213a7e8e52ff0b6db074d4c0fe1d4dd9ca5b1c612006",
+    "label": "EXP02-T5",
+    "client_ids": [
+      "Hconditional",
+      "Hconverse"
+    ],
+    "models_checked": 60,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "COUNTERMODEL_A_NOT_B",
+        "models_checked": 60,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "08ce3125b07725744a9c54b674efe0134c36d2561bcdc75fee28f91db4b93992"
+      },
+      "B_IMPLIES_A": {
+        "status": "COUNTERMODEL_B_NOT_A",
+        "models_checked": 3,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "df7516e938b1d33f682e98c2a66f672f1fbfdfd273867001d433b05b6e455d97"
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1500,
+      "max_steps": 25000,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 297
+  },
+  {
+    "run_ref": "57b309bbb1976e966c70213a7e8e52ff0b6db074d4c0fe1d4dd9ca5b1c612006",
+    "label": "EXP02-T5",
+    "client_ids": [
+      "Hconditional",
+      "Hexists"
+    ],
+    "models_checked": 260,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "NO_COUNTERMODEL_WITHIN_BOUND",
+        "models_checked": 260,
+        "proof_kind": null,
+        "halt_reason": "FINITE_EXHAUSTED",
+        "counterexample_ref": null
+      },
+      "B_IMPLIES_A": {
+        "status": "COUNTERMODEL_B_NOT_A",
+        "models_checked": 122,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "4330a8767ff96af9714669064fe5bff4246bca5bbfe9176cd946ce3cef1bb91c"
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1500,
+      "max_steps": 25000,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 5026
+  },
+  {
+    "run_ref": "c6568fe0b2ac4f0228266a8613e00da62738b3783f5f8d5866d96a291d81cf34",
+    "label": "EXP02-T6",
+    "client_ids": [
+      "Htemporal",
+      "Hstatic"
+    ],
+    "models_checked": 0,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "TYPE_REJECTED",
+        "models_checked": 0,
+        "proof_kind": null,
+        "halt_reason": "UNTYPED_OR_UNSUPPORTED_CANDIDATE",
+        "counterexample_ref": null
+      },
+      "B_IMPLIES_A": {
+        "status": "TYPE_REJECTED",
+        "models_checked": 0,
+        "proof_kind": null,
+        "halt_reason": "UNTYPED_OR_UNSUPPORTED_CANDIDATE",
+        "counterexample_ref": null
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 3000,
+      "max_steps": 50000,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 1
+  },
+  {
+    "run_ref": "7aeca177ff531a064cf84e640684b9f320c46ddbd3abf6067f36d8a6cd169ea7",
+    "label": "EXP02-T4R",
+    "client_ids": [
+      "HmsgE",
+      "HmsgA"
+    ],
+    "models_checked": 6,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "COUNTERMODEL_A_NOT_B",
+        "models_checked": 4,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "6b1d778031c4aee8417be57493e47bbdced4e64ab7e437c3924ef69f1027fe17"
+      },
+      "B_IMPLIES_A": {
+        "status": "COUNTERMODEL_B_NOT_A",
+        "models_checked": 6,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "a5f946bade9d9c37165f9d2a249798be6cb7f493c9593323a5c88fe35940dfa4"
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1000,
+      "max_steps": 16666,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 103
+  },
+  {
+    "run_ref": "7aeca177ff531a064cf84e640684b9f320c46ddbd3abf6067f36d8a6cd169ea7",
+    "label": "EXP02-T4R",
+    "client_ids": [
+      "HmsgE",
+      "Hskeleton"
+    ],
+    "models_checked": 2,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "PROVED_ENTAILMENT",
+        "models_checked": 0,
+        "proof_kind": "SAME_PREFIX_BOOLEAN_MONOTONICITY",
+        "halt_reason": null,
+        "counterexample_ref": null
+      },
+      "B_IMPLIES_A": {
+        "status": "COUNTERMODEL_B_NOT_A",
+        "models_checked": 2,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "a83f9565ed3c1739391f6d117cc49fe25883929a4c6301d63d7284c18684480e"
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1000,
+      "max_steps": 16666,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 55
+  },
+  {
+    "run_ref": "7aeca177ff531a064cf84e640684b9f320c46ddbd3abf6067f36d8a6cd169ea7",
+    "label": "EXP02-T4R",
+    "client_ids": [
+      "HmsgE",
+      "HmsgBoth"
+    ],
+    "models_checked": 4,
+    "directions": {
+      "A_IMPLIES_B": {
+        "status": "COUNTERMODEL_A_NOT_B",
+        "models_checked": 4,
+        "proof_kind": "FINITE_COUNTERMODEL",
+        "halt_reason": "COUNTERMODEL_FOUND",
+        "counterexample_ref": "6b1d778031c4aee8417be57493e47bbdced4e64ab7e437c3924ef69f1027fe17"
+      },
+      "B_IMPLIES_A": {
+        "status": "PROVED_ENTAILMENT",
+        "models_checked": 0,
+        "proof_kind": "SAME_PREFIX_BOOLEAN_MONOTONICITY",
+        "halt_reason": null,
+        "counterexample_ref": null
+      }
+    },
+    "resource_allocation": {
+      "max_cpu_ms": 1000,
+      "max_steps": 16666,
+      "scope": "PAIR_PROOF_AND_SEARCH_SHARED_GLOBAL_CAP"
+    },
+    "charged_steps": 112
+  }
+]

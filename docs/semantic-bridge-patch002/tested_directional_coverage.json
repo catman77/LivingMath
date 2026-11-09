@@ -1,0 +1,192 @@
+{
+  "definition": "Per actual analysis request, including deliberate swaps/permutations; not unique semantic tasks.",
+  "per_run": [
+    {
+      "label": "T4-forward32",
+      "run_ref": "baab5582171f4433a3c21547a2619b93cc0859782ef3ffff4ba708f51e669413",
+      "completed": 2,
+      "requested": 2,
+      "undecided": 0
+    },
+    {
+      "label": "T4-reverse32",
+      "run_ref": "6d4920fa4a2db7e8d49c6258f18acd19a884f442b1e1be1e708dd8fc828f8d5f",
+      "completed": 2,
+      "requested": 2,
+      "undecided": 0
+    },
+    {
+      "label": "T4-permutation0",
+      "run_ref": "58d21f19b37c02cbe84923e1a9cd42f760353f362fd494ce64a07644b32cd53d",
+      "completed": 6,
+      "requested": 6,
+      "undecided": 0
+    },
+    {
+      "label": "T4-permutation1",
+      "run_ref": "d2d2054f62da222271341e29276fb7991397703d2b96234b70e599d4a158750e",
+      "completed": 6,
+      "requested": 6,
+      "undecided": 0
+    },
+    {
+      "label": "T4-permutation2",
+      "run_ref": "cad4918ec0f74262e97e8038750f90b7780b488a861d7fb4313418e20fda20c2",
+      "completed": 6,
+      "requested": 6,
+      "undecided": 0
+    },
+    {
+      "label": "T4-permutation3",
+      "run_ref": "8b4d562074a27f866796487a62b561eaffff38ecb86b1f11d392626b4293533a",
+      "completed": 6,
+      "requested": 6,
+      "undecided": 0
+    },
+    {
+      "label": "T4-permutation4",
+      "run_ref": "5a1c16cbbd64d5dc5600513f473da7c77f8aca6fec2b0378b190b9a63d753795",
+      "completed": 6,
+      "requested": 6,
+      "undecided": 0
+    },
+    {
+      "label": "T4-permutation5",
+      "run_ref": "06fb0f87511c4e11efa91857e5b0dbf5e4e6ceb348bbb48eab009af12c7aadeb",
+      "completed": 6,
+      "requested": 6,
+      "undecided": 0
+    },
+    {
+      "label": "heavy-forward32",
+      "run_ref": "55397a054ccc6c5ecc38eff3811651208629f3fd7f1260bf982694641bc6cba2",
+      "completed": 5,
+      "requested": 6,
+      "undecided": 1
+    },
+    {
+      "label": "heavy-reverse32",
+      "run_ref": "012491bf0c9c66882d6abc8fb9a4262a505b7e589037df9242e42f022e6da9c2",
+      "completed": 5,
+      "requested": 6,
+      "undecided": 1
+    },
+    {
+      "label": "heavy-forward64",
+      "run_ref": "271a972b42ef931d1cb490ae8791ab02a90fc6c4cffe5e1426985b680a6e53d0",
+      "completed": 5,
+      "requested": 6,
+      "undecided": 1
+    },
+    {
+      "label": "heavy-reverse64",
+      "run_ref": "4ded7fd0ce85a55acb333e7fe5a4cde002bfec48b873d8b9fff21eaab10d9dee",
+      "completed": 5,
+      "requested": 6,
+      "undecided": 1
+    },
+    {
+      "label": "cost-fairness32",
+      "run_ref": "b81c4c7e0d6fe5bdcfbf8060a47da0072704e32f7d9c57c64eca3f61b673cfeb",
+      "completed": 1,
+      "requested": 4,
+      "undecided": 3
+    },
+    {
+      "label": "cost-fairness64",
+      "run_ref": "cdfc04be49756c2e0bab714f1ed0a195b3665a4df8bdc642b3606265cf9fad99",
+      "completed": 1,
+      "requested": 4,
+      "undecided": 3
+    },
+    {
+      "label": "T2_quantifier_negation",
+      "run_ref": "0510864d701bd8e8df7e7a363e06ea4dad97c0ae08cb59e050cc55e6877206b3",
+      "completed": 3,
+      "requested": 4,
+      "undecided": 1
+    },
+    {
+      "label": "T3_forall_distributivity_trap",
+      "run_ref": "6d2ea6f76f504669f22a6489d64d9580eba7f5d2895d6cbbb04b4656d06ebc75",
+      "completed": 1,
+      "requested": 2,
+      "undecided": 1
+    },
+    {
+      "label": "boolean_commutativity",
+      "run_ref": "5a3bb5b709aaf89a48eee1ba88262728fc13ae0df27c6d50c0be4db801cf67e8",
+      "completed": 2,
+      "requested": 2,
+      "undecided": 0
+    },
+    {
+      "label": "T1_scope_change",
+      "run_ref": "97755a96678397540559db795b36e7c2a1507daf66aa0b1ea3fee0852e06bdfd",
+      "completed": 1,
+      "requested": 2,
+      "undecided": 1
+    },
+    {
+      "label": "factivity-control",
+      "run_ref": "3a84919cb4ffb059ddfa5e5090087969c19a9885bf3b06712e3ab4796d84c1f4",
+      "completed": 2,
+      "requested": 2,
+      "undecided": 0
+    },
+    {
+      "label": "EXP02-T1",
+      "run_ref": "faa8647c3943e80fb961ef99229074cc9b1ea3e996837260fe7c08069ea30425",
+      "completed": 3,
+      "requested": 4,
+      "undecided": 1
+    },
+    {
+      "label": "EXP02-T2",
+      "run_ref": "2efa8677f1c97094bf8818ca93746a093b2d58573100f8493a09fa8cb40089bb",
+      "completed": 3,
+      "requested": 4,
+      "undecided": 1
+    },
+    {
+      "label": "EXP02-T3",
+      "run_ref": "1ed573fb4ef754b7754af83298506504303286afece798502c0d6af8e821bfa7",
+      "completed": 3,
+      "requested": 4,
+      "undecided": 1
+    },
+    {
+      "label": "EXP02-T4",
+      "run_ref": "30a923074a2ea8c7fe024a9402acd1f34a40face1c3dd26c9605976fb61be8af",
+      "completed": 4,
+      "requested": 4,
+      "undecided": 0
+    },
+    {
+      "label": "EXP02-T5",
+      "run_ref": "57b309bbb1976e966c70213a7e8e52ff0b6db074d4c0fe1d4dd9ca5b1c612006",
+      "completed": 3,
+      "requested": 4,
+      "undecided": 1
+    },
+    {
+      "label": "EXP02-T6",
+      "run_ref": "c6568fe0b2ac4f0228266a8613e00da62738b3783f5f8d5866d96a291d81cf34",
+      "completed": 0,
+      "requested": 2,
+      "undecided": 2
+    },
+    {
+      "label": "EXP02-T4R",
+      "run_ref": "7aeca177ff531a064cf84e640684b9f320c46ddbd3abf6067f36d8a6cd169ea7",
+      "completed": 6,
+      "requested": 6,
+      "undecided": 0
+    }
+  ],
+  "totals": {
+    "requested": 112,
+    "completed": 93,
+    "undecided": 19
+  }
+}

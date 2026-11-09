@@ -1,0 +1,428 @@
+{
+  "PATCH002": [
+    {
+      "status": "REPLAY_MATCH",
+      "run_ref": "937408dfd5934a5c6d4d5319d44d5312cf20c139dfee5446e6b8d5d35f82a2a0",
+      "result_sha256": "e0c96fae3bb2053b56e8c926957783dc47bd01793f39b23136102dcbe4439c17",
+      "kernel_binding": "3b9ebc49a311f5165f72b4755ea0c6ec53abda2147408159276f545940051f7a",
+      "LLM_calls": 0,
+      "network_calls": 0,
+      "execution_permission": false
+    },
+    {
+      "status": "REPLAY_MATCH",
+      "run_ref": "baab5582171f4433a3c21547a2619b93cc0859782ef3ffff4ba708f51e669413",
+      "result_sha256": "912f8742561808f8a8f51e70735f6fea50abbf43582819d83d70c364bbe6b7fd",
+      "kernel_binding": "3b9ebc49a311f5165f72b4755ea0c6ec53abda2147408159276f545940051f7a",
+      "LLM_calls": 0,
+      "network_calls": 0,
+      "execution_permission": false
+    },
+    {
+      "status": "REPLAY_MATCH",
+      "run_ref": "6d4920fa4a2db7e8d49c6258f18acd19a884f442b1e1be1e708dd8fc828f8d5f",
+      "result_sha256": "4b45fdb2668be62d0127f00096ec13765c25059b4e6100c425d65cb9134b5e24",
+      "kernel_binding": "3b9ebc49a311f5165f72b4755ea0c6ec53abda2147408159276f545940051f7a",
+      "LLM_calls": 0,
+      "network_calls": 0,
+      "execution_permission": false
+    },
+    {
+      "status": "REPLAY_MATCH",
+      "run_ref": "58d21f19b37c02cbe84923e1a9cd42f760353f362fd494ce64a07644b32cd53d",
+      "result_sha256": "7cb158862b9121956c1e28a7a8d01f2cc50d344f71455694a18025f74fcb8366",
+      "kernel_binding": "3b9ebc49a311f5165f72b4755ea0c6ec53abda2147408159276f545940051f7a",
+      "LLM_calls": 0,
+      "network_calls": 0,
+      "execution_permission": false
+    },
+    {
+      "status": "REPLAY_MATCH",
+      "run_ref": "d2d2054f62da222271341e29276fb7991397703d2b96234b70e599d4a158750e",
+      "result_sha256": "803cf65c042c158ae5544664f44d3faa83abe9fc8b7741f49951913424737867",
+      "kernel_binding": "3b9ebc49a311f5165f72b4755ea0c6ec53abda2147408159276f545940051f7a",
+      "LLM_calls": 0,
+      "network_calls": 0,
+      "execution_permission": false
+    },
+    {
+      "status": "REPLAY_MATCH",
+      "run_ref": "cad4918ec0f74262e97e8038750f90b7780b488a861d7fb4313418e20fda20c2",
+      "result_sha256": "07d1e63ca80365875a12e2a38446358c3a5132d53f496ad0051c6eb180230ba4",
+      "kernel_binding": "3b9ebc49a311f5165f72b4755ea0c6ec53abda2147408159276f545940051f7a",
+      "LLM_calls": 0,
+      "network_calls": 0,
+      "execution_permission": false
+    },
+    {
+      "status": "REPLAY_MATCH",
+      "run_ref": "8b4d562074a27f866796487a62b561eaffff38ecb86b1f11d392626b4293533a",
+      "result_sha256": "2dd034ecfa716ebb96755adb47252d14e10e016a836ff867889a5c2a3cb479c3",
+      "kernel_binding": "3b9ebc49a311f5165f72b4755ea0c6ec53abda2147408159276f545940051f7a",
+      "LLM_calls": 0,
+      "network_calls": 0,
+      "execution_permission": false
+    },
+    {
+      "status": "REPLAY_MATCH",
+      "run_ref": "5a1c16cbbd64d5dc5600513f473da7c77f8aca6fec2b0378b190b9a63d753795",
+      "result_sha256": "1472478789ea4f62598745bec6f67684ffa6940a0ea54779d7b10d6202bd44cc",
+      "kernel_binding": "3b9ebc49a311f5165f72b4755ea0c6ec53abda2147408159276f545940051f7a",
+      "LLM_calls": 0,
+      "network_calls": 0,
+      "execution_permission": false
+    },
+    {
+      "status": "REPLAY_MATCH",
+      "run_ref": "06fb0f87511c4e11efa91857e5b0dbf5e4e6ceb348bbb48eab009af12c7aadeb",
+      "result_sha256": "1a8053a4109ac8bd9d405defd6734e21a1c4553608d8e653d5d59ccc40acad9a",
+      "kernel_binding": "3b9ebc49a311f5165f72b4755ea0c6ec53abda2147408159276f545940051f7a",
+      "LLM_calls": 0,
+      "network_calls": 0,
+      "execution_permission": false
+    },
+    {
+      "status": "REPLAY_MATCH",
+      "run_ref": "b40db0d5ef305884ea591ea28aa7c64e8acd0d30ef4928bdb55e44c1dfd2aea9",
+      "result_sha256": "2ab88ad6c75a7dc2d305afb5d18cce1f3794bb34148432b0b46fc95b13c74db2",
+      "kernel_binding": "3b9ebc49a311f5165f72b4755ea0c6ec53abda2147408159276f545940051f7a",
+      "LLM_calls": 0,
+      "network_calls": 0,
+      "execution_permission": false
+    },
+    {
+      "status": "REPLAY_MATCH",
+      "run_ref": "55397a054ccc6c5ecc38eff3811651208629f3fd7f1260bf982694641bc6cba2",
+      "result_sha256": "9dc9c1f3e53dcb886e2ce9631921fdae1f74d72e8c40ddafee1f5e20c939783a",
+      "kernel_binding": "3b9ebc49a311f5165f72b4755ea0c6ec53abda2147408159276f545940051f7a",
+      "LLM_calls": 0,
+      "network_calls": 0,
+      "execution_permission": false
+    },
+    {
+      "status": "REPLAY_MATCH",
+      "run_ref": "012491bf0c9c66882d6abc8fb9a4262a505b7e589037df9242e42f022e6da9c2",
+      "result_sha256": "312f5bed5a7f4109d3fb8a29bc9f4ed7c819a57be091b3778696093f4ab0b4ef",
+      "kernel_binding": "3b9ebc49a311f5165f72b4755ea0c6ec53abda2147408159276f545940051f7a",
+      "LLM_calls": 0,
+      "network_calls": 0,
+      "execution_permission": false
+    },
+    {
+      "status": "REPLAY_MATCH",
+      "run_ref": "271a972b42ef931d1cb490ae8791ab02a90fc6c4cffe5e1426985b680a6e53d0",
+      "result_sha256": "4ff08f2b249c43b42005e3d75169ff93e2584036e471ec779890a370f5e468de",
+      "kernel_binding": "3b9ebc49a311f5165f72b4755ea0c6ec53abda2147408159276f545940051f7a",
+      "LLM_calls": 0,
+      "network_calls": 0,
+      "execution_permission": false
+    },
+    {
+      "status": "REPLAY_MATCH",
+      "run_ref": "4ded7fd0ce85a55acb333e7fe5a4cde002bfec48b873d8b9fff21eaab10d9dee",
+      "result_sha256": "77e1c0ef8fc4187afaa224d1d6d0616f2007a0896f4982d7b722065bb6885505",
+      "kernel_binding": "3b9ebc49a311f5165f72b4755ea0c6ec53abda2147408159276f545940051f7a",
+      "LLM_calls": 0,
+      "network_calls": 0,
+      "execution_permission": false
+    },
+    {
+      "status": "REPLAY_MATCH",
+      "run_ref": "f1cd2ad22a60c31120352b856114eea29c40b78cc1bb9dec369458ea62affc9d",
+      "result_sha256": "757b466c9fcc5f7dd8be75e9948413804879ce73bf04b358b6d15b0b337a55e0",
+      "kernel_binding": "3b9ebc49a311f5165f72b4755ea0c6ec53abda2147408159276f545940051f7a",
+      "LLM_calls": 0,
+      "network_calls": 0,
+      "execution_permission": false
+    },
+    {
+      "status": "REPLAY_MATCH",
+      "run_ref": "b81c4c7e0d6fe5bdcfbf8060a47da0072704e32f7d9c57c64eca3f61b673cfeb",
+      "result_sha256": "ea74cb246e705c01f86ae4c8e5b8a8a4c2109566cd618a827f2a67629cf54461",
+      "kernel_binding": "3b9ebc49a311f5165f72b4755ea0c6ec53abda2147408159276f545940051f7a",
+      "LLM_calls": 0,
+      "network_calls": 0,
+      "execution_permission": false
+    },
+    {
+      "status": "REPLAY_MATCH",
+      "run_ref": "cdfc04be49756c2e0bab714f1ed0a195b3665a4df8bdc642b3606265cf9fad99",
+      "result_sha256": "ea74cb246e705c01f86ae4c8e5b8a8a4c2109566cd618a827f2a67629cf54461",
+      "kernel_binding": "3b9ebc49a311f5165f72b4755ea0c6ec53abda2147408159276f545940051f7a",
+      "LLM_calls": 0,
+      "network_calls": 0,
+      "execution_permission": false
+    },
+    {
+      "status": "REPLAY_MATCH",
+      "run_ref": "1edf086f3ba3c9e0e0ef031c75c49ddaa262ba5bde24564e6bb0247bb1e17ff9",
+      "result_sha256": "32268f9c6315d5f98f7436d73e512fbfaedf391798e46f107d6dfa731bf5cc2b",
+      "kernel_binding": "3b9ebc49a311f5165f72b4755ea0c6ec53abda2147408159276f545940051f7a",
+      "LLM_calls": 0,
+      "network_calls": 0,
+      "execution_permission": false
+    },
+    {
+      "status": "REPLAY_MATCH",
+      "run_ref": "0510864d701bd8e8df7e7a363e06ea4dad97c0ae08cb59e050cc55e6877206b3",
+      "result_sha256": "3c5dcebffd96e163114d4c40770c2ce2d96781340f8d69d31c2a79e6e29c73fc",
+      "kernel_binding": "3b9ebc49a311f5165f72b4755ea0c6ec53abda2147408159276f545940051f7a",
+      "LLM_calls": 0,
+      "network_calls": 0,
+      "execution_permission": false
+    },
+    {
+      "status": "REPLAY_MATCH",
+      "run_ref": "4881c8a516aaac062482d34eb4ecbaf5245bf6b0e10d825c35842c636990a3e4",
+      "result_sha256": "201b2471139f2fedc72af70f2fbe18f6e877de6a2589cdfcdaee084eddf71136",
+      "kernel_binding": "3b9ebc49a311f5165f72b4755ea0c6ec53abda2147408159276f545940051f7a",
+      "LLM_calls": 0,
+      "network_calls": 0,
+      "execution_permission": false
+    },
+    {
+      "status": "REPLAY_MATCH",
+      "run_ref": "6d2ea6f76f504669f22a6489d64d9580eba7f5d2895d6cbbb04b4656d06ebc75",
+      "result_sha256": "95d82e9a8862721ac13928189cce43a1fb30d913d09c5e0c8142ad7e3b82cdb5",
+      "kernel_binding": "3b9ebc49a311f5165f72b4755ea0c6ec53abda2147408159276f545940051f7a",
+      "LLM_calls": 0,
+      "network_calls": 0,
+      "execution_permission": false
+    },
+    {
+      "status": "REPLAY_MATCH",
+      "run_ref": "575b7804406ffe07ac1564c745c4503073963de054f540bcf3f431174db95f6f",
+      "result_sha256": "3bb687bf7bc0520508310bd50fd7f4f4dc0c82f802131ef62345849fc71d6507",
+      "kernel_binding": "3b9ebc49a311f5165f72b4755ea0c6ec53abda2147408159276f545940051f7a",
+      "LLM_calls": 0,
+      "network_calls": 0,
+      "execution_permission": false
+    },
+    {
+      "status": "REPLAY_MATCH",
+      "run_ref": "5a3bb5b709aaf89a48eee1ba88262728fc13ae0df27c6d50c0be4db801cf67e8",
+      "result_sha256": "7176e07fcce95dbbf748e7d91338fbc5a60d529278a24a5c36951bfd5e7dc05c",
+      "kernel_binding": "3b9ebc49a311f5165f72b4755ea0c6ec53abda2147408159276f545940051f7a",
+      "LLM_calls": 0,
+      "network_calls": 0,
+      "execution_permission": false
+    },
+    {
+      "status": "REPLAY_MATCH",
+      "run_ref": "f9ada9cd0bc0082b0d1292e6d1a109e80349b946f8bc818c7dccb77afabca20d",
+      "result_sha256": "bdfc93aa075f635fd55cdd19407e6e62d0d426d3c910d9ee3f33ccc22bf00220",
+      "kernel_binding": "3b9ebc49a311f5165f72b4755ea0c6ec53abda2147408159276f545940051f7a",
+      "LLM_calls": 0,
+      "network_calls": 0,
+      "execution_permission": false
+    },
+    {
+      "status": "REPLAY_MATCH",
+      "run_ref": "97755a96678397540559db795b36e7c2a1507daf66aa0b1ea3fee0852e06bdfd",
+      "result_sha256": "bf416fc37c0ddb7251931960c2fcec9c1cdaebe63bd02208bb7982be1df8d3b7",
+      "kernel_binding": "3b9ebc49a311f5165f72b4755ea0c6ec53abda2147408159276f545940051f7a",
+      "LLM_calls": 0,
+      "network_calls": 0,
+      "execution_permission": false
+    },
+    {
+      "status": "REPLAY_MATCH",
+      "run_ref": "c0255b48377130eaf1b86af7000636062c92f67e29082c3ff82511aed71ef836",
+      "result_sha256": "d5517cfd9ae90f45e93dc04071dec9419b418102403e5415d00ce767b96f09a6",
+      "kernel_binding": "3b9ebc49a311f5165f72b4755ea0c6ec53abda2147408159276f545940051f7a",
+      "LLM_calls": 0,
+      "network_calls": 0,
+      "execution_permission": false
+    },
+    {
+      "status": "REPLAY_MATCH",
+      "run_ref": "3a84919cb4ffb059ddfa5e5090087969c19a9885bf3b06712e3ab4796d84c1f4",
+      "result_sha256": "7cb5e5839937283b56041e6f0c44976b6da2445e7dccd39acebd61607852d0d9",
+      "kernel_binding": "3b9ebc49a311f5165f72b4755ea0c6ec53abda2147408159276f545940051f7a",
+      "LLM_calls": 0,
+      "network_calls": 0,
+      "execution_permission": false
+    },
+    {
+      "status": "REPLAY_MATCH",
+      "run_ref": "604687971c48357a6031f7e6965fdc164979cd286836b2ca3aebfc3fc1c65e65",
+      "result_sha256": "2c6939b3fad5e2922a491229fcf3d80a88f46423fd667b690baa89e6a2e1d62a",
+      "kernel_binding": "3b9ebc49a311f5165f72b4755ea0c6ec53abda2147408159276f545940051f7a",
+      "LLM_calls": 0,
+      "network_calls": 0,
+      "execution_permission": false
+    },
+    {
+      "status": "REPLAY_MATCH",
+      "run_ref": "faa8647c3943e80fb961ef99229074cc9b1ea3e996837260fe7c08069ea30425",
+      "result_sha256": "b8aef318d28b3e686d8e63426981669c79be8e2f9ea0e17af25f437b623e8f62",
+      "kernel_binding": "3b9ebc49a311f5165f72b4755ea0c6ec53abda2147408159276f545940051f7a",
+      "LLM_calls": 0,
+      "network_calls": 0,
+      "execution_permission": false
+    },
+    {
+      "status": "REPLAY_MATCH",
+      "run_ref": "bac22216025110b3555db0f697cf858e14a06779ecc56815d3edf68375fa01e7",
+      "result_sha256": "8cd7a85effbae6edbd347a73dba73de389dcd9c76c7c7c1abb81e4cb188555e8",
+      "kernel_binding": "3b9ebc49a311f5165f72b4755ea0c6ec53abda2147408159276f545940051f7a",
+      "LLM_calls": 0,
+      "network_calls": 0,
+      "execution_permission": false
+    },
+    {
+      "status": "REPLAY_MATCH",
+      "run_ref": "2efa8677f1c97094bf8818ca93746a093b2d58573100f8493a09fa8cb40089bb",
+      "result_sha256": "48c1ff83f6cd744f7c602df16bc43b10bec890dfc46719ec7256a47d8425f1d3",
+      "kernel_binding": "3b9ebc49a311f5165f72b4755ea0c6ec53abda2147408159276f545940051f7a",
+      "LLM_calls": 0,
+      "network_calls": 0,
+      "execution_permission": false
+    },
+    {
+      "status": "REPLAY_MATCH",
+      "run_ref": "2d95e85248c06f600b78228869f0b154d42a7c308f64ca8d17499a7de3bc5964",
+      "result_sha256": "a0d79d4dc0687871648eaa9affaa896967353c05d1a75eeced66eecae5892c26",
+      "kernel_binding": "3b9ebc49a311f5165f72b4755ea0c6ec53abda2147408159276f545940051f7a",
+      "LLM_calls": 0,
+      "network_calls": 0,
+      "execution_permission": false
+    },
+    {
+      "status": "REPLAY_MATCH",
+      "run_ref": "1ed573fb4ef754b7754af83298506504303286afece798502c0d6af8e821bfa7",
+      "result_sha256": "7db7e10b47971dfeee5069a1e3c7beba5efa474b34510900c2dc38dd5d5aa539",
+      "kernel_binding": "3b9ebc49a311f5165f72b4755ea0c6ec53abda2147408159276f545940051f7a",
+      "LLM_calls": 0,
+      "network_calls": 0,
+      "execution_permission": false
+    },
+    {
+      "status": "REPLAY_MATCH",
+      "run_ref": "7e3cf278b43310886454b2bed9a07c9dd982ecdadbc23772f03aa3f987489b92",
+      "result_sha256": "1c8e5dd927d5ea6c7439ad1af736f34015a2a2b194b87ca982bd47a952ec2b0b",
+      "kernel_binding": "3b9ebc49a311f5165f72b4755ea0c6ec53abda2147408159276f545940051f7a",
+      "LLM_calls": 0,
+      "network_calls": 0,
+      "execution_permission": false
+    },
+    {
+      "status": "REPLAY_MATCH",
+      "run_ref": "30a923074a2ea8c7fe024a9402acd1f34a40face1c3dd26c9605976fb61be8af",
+      "result_sha256": "8497ac1f9c4209573645a449ea30654c86bff227c3ff91aa488e8be33f7e5d7f",
+      "kernel_binding": "3b9ebc49a311f5165f72b4755ea0c6ec53abda2147408159276f545940051f7a",
+      "LLM_calls": 0,
+      "network_calls": 0,
+      "execution_permission": false
+    },
+    {
+      "status": "REPLAY_MATCH",
+      "run_ref": "ad1e951c013c4e96ae9fc1cf8071da1dda2d013c32833381a2048eb28a1e41ce",
+      "result_sha256": "0a59693a68a8c20dd678c0b3c496792113f56c57c918031110e71a11fd9c6bd6",
+      "kernel_binding": "3b9ebc49a311f5165f72b4755ea0c6ec53abda2147408159276f545940051f7a",
+      "LLM_calls": 0,
+      "network_calls": 0,
+      "execution_permission": false
+    },
+    {
+      "status": "REPLAY_MATCH",
+      "run_ref": "57b309bbb1976e966c70213a7e8e52ff0b6db074d4c0fe1d4dd9ca5b1c612006",
+      "result_sha256": "d9fa83612c2fd615c6822771220552a6bf6a62586bfdf5463c572d0cf8320413",
+      "kernel_binding": "3b9ebc49a311f5165f72b4755ea0c6ec53abda2147408159276f545940051f7a",
+      "LLM_calls": 0,
+      "network_calls": 0,
+      "execution_permission": false
+    },
+    {
+      "status": "REPLAY_MATCH",
+      "run_ref": "17a170522bdb27c1a7922627998d9163d901240efe90844e30baee7fe921ecfa",
+      "result_sha256": "2251802359e0e4e07b459ec391616b0460c272cfa7be9ab2da952bc168710cb4",
+      "kernel_binding": "3b9ebc49a311f5165f72b4755ea0c6ec53abda2147408159276f545940051f7a",
+      "LLM_calls": 0,
+      "network_calls": 0,
+      "execution_permission": false
+    },
+    {
+      "status": "REPLAY_MATCH",
+      "run_ref": "c6568fe0b2ac4f0228266a8613e00da62738b3783f5f8d5866d96a291d81cf34",
+      "result_sha256": "302cb0d9c74b615f431c6a48474aeb7021eda5afe8580eaabf79375694687baf",
+      "kernel_binding": "3b9ebc49a311f5165f72b4755ea0c6ec53abda2147408159276f545940051f7a",
+      "LLM_calls": 0,
+      "network_calls": 0,
+      "execution_permission": false
+    },
+    {
+      "status": "REPLAY_MATCH",
+      "run_ref": "f4a5699506ca8babd0831bed1025c4ef02b868b3046c5f75e48b601a2173a5d4",
+      "result_sha256": "0cc880668569f5d632d9ad3536e22d5f4465371734681c5c521b710d0235d5c4",
+      "kernel_binding": "3b9ebc49a311f5165f72b4755ea0c6ec53abda2147408159276f545940051f7a",
+      "LLM_calls": 0,
+      "network_calls": 0,
+      "execution_permission": false
+    },
+    {
+      "status": "REPLAY_MATCH",
+      "run_ref": "7aeca177ff531a064cf84e640684b9f320c46ddbd3abf6067f36d8a6cd169ea7",
+      "result_sha256": "a6868c678ba2c091929c231879ca0b4a26e44a3606f9d7139fefca015f82956d",
+      "kernel_binding": "3b9ebc49a311f5165f72b4755ea0c6ec53abda2147408159276f545940051f7a",
+      "LLM_calls": 0,
+      "network_calls": 0,
+      "execution_permission": false
+    }
+  ],
+  "SB_EXP01": [
+    {
+      "status": "REPLAY_MATCH",
+      "run_ref": "008132bbb2b9222e6e60a0933fedd536551d88ebd704c1798188c24282499bb3",
+      "result_sha256": "6681a6c998d1fbd3488aba3ec5a6dfd518f2f0b11ca8228cfc136a4afb6f07bd",
+      "kernel_binding": "3b9ebc49a311f5165f72b4755ea0c6ec53abda2147408159276f545940051f7a",
+      "LLM_calls": 0,
+      "network_calls": 0,
+      "execution_permission": false
+    },
+    {
+      "status": "REPLAY_MATCH",
+      "run_ref": "de13623f924b83c4f6c74eae6be818ba8d259bd6d0e71f1f985dd7e520a1835f",
+      "result_sha256": "f91003907d066fd2284c8a5cad6c7c788b44446868f02d442b0bc01a55fcf1bc",
+      "kernel_binding": "3b9ebc49a311f5165f72b4755ea0c6ec53abda2147408159276f545940051f7a",
+      "LLM_calls": 0,
+      "network_calls": 0,
+      "execution_permission": false
+    }
+  ],
+  "CLI": {
+    "status": "PASS",
+    "original_replays": 2,
+    "tamper_rejections": 3,
+    "checks": [
+      {
+        "name": "REGISTER_BUNDLE.json",
+        "status": "REPLAY_MATCH",
+        "actual_installed_worker": true
+      },
+      {
+        "name": "ANALYSIS_BUNDLE.json",
+        "status": "REPLAY_MATCH",
+        "actual_installed_worker": true
+      },
+      {
+        "attack": "packet",
+        "status": "PASS",
+        "actual_CLI_rejected": true,
+        "outer_file_digest_recomputed": true
+      },
+      {
+        "attack": "result",
+        "status": "PASS",
+        "actual_CLI_rejected": true,
+        "outer_file_digest_recomputed": true
+      },
+      {
+        "attack": "binding",
+        "status": "PASS",
+        "actual_CLI_rejected": true,
+        "outer_file_digest_recomputed": true
+      }
+    ]
+  }
+}

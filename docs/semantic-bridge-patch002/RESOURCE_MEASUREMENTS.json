@@ -1,0 +1,1051 @@
+{
+  "global_limits": {
+    "models": 512,
+    "steps": 100000,
+    "CPU_ms": 4000
+  },
+  "worker_limits": {
+    "CPU_s": 5,
+    "wall_s": 6,
+    "RAM_MiB": 512,
+    "active": 2,
+    "queue": 16
+  },
+  "measurements": [
+    {
+      "suite": "staging_patch002",
+      "run_ref": "9b0f5890e5ff0f988b9be6f4c744f16282ce49fb33ea5a118da78f8bfc1f4873",
+      "operation": "register",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.00023132700000000003,
+        "max_rss_kib": 51204,
+        "worker_wall_s": 0.0044092589523643255
+      }
+    },
+    {
+      "suite": "staging_patch002",
+      "run_ref": "2790ab2aa403cafbfd3caf52c1794d3909bb5defb20fe84ae3ec3c12c38968ff",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.001113983,
+        "max_rss_kib": 51608,
+        "worker_wall_s": 0.005672879982739687
+      }
+    },
+    {
+      "suite": "staging_patch002",
+      "run_ref": "be15e7728fd087139d537d589a98251c0c63515ef578bc3b78a2386835e1f732",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.001249065,
+        "max_rss_kib": 51464,
+        "worker_wall_s": 0.005469965049996972
+      }
+    },
+    {
+      "suite": "staging_patch002",
+      "run_ref": "41f96cb05925f4976187804525dd924de6c2eaecdf1f644efcbd45dcae73f250",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.004603673,
+        "max_rss_kib": 51612,
+        "worker_wall_s": 0.008487566141411662
+      }
+    },
+    {
+      "suite": "staging_patch002",
+      "run_ref": "940130756af7239bf1225b7b6e5e618e1261e9fff1faf04069a3515f8858157b",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.0048519570000000005,
+        "max_rss_kib": 51468,
+        "worker_wall_s": 0.008413294097408652
+      }
+    },
+    {
+      "suite": "staging_patch002",
+      "run_ref": "3309768199f8fff4eb4925b0690b988a8ca7f22165dfcac94351d53a2f365b25",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.00472487,
+        "max_rss_kib": 51612,
+        "worker_wall_s": 0.008982421830296516
+      }
+    },
+    {
+      "suite": "staging_patch002",
+      "run_ref": "23ab591e96623517940fffe02071d5fa616ba9492dd51525ef95d516c24e0efe",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.005103184,
+        "max_rss_kib": 51468,
+        "worker_wall_s": 0.009067158913239837
+      }
+    },
+    {
+      "suite": "staging_patch002",
+      "run_ref": "3c5e1b5806146786d3f72dc462367daf61349b3b50b42317c4fce020433a884d",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.004893392,
+        "max_rss_kib": 51616,
+        "worker_wall_s": 0.009360042167827487
+      }
+    },
+    {
+      "suite": "staging_patch002",
+      "run_ref": "6cb47540960f1d6fb1cceebf9152b76ca23f261274fc29582a717f5207367c91",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.00472584,
+        "max_rss_kib": 51472,
+        "worker_wall_s": 0.008826682111248374
+      }
+    },
+    {
+      "suite": "staging_patch002",
+      "run_ref": "a8de0a61bc42b3bbbfb2fb9802e7c16819619de89561a83acd6a8e841b96677d",
+      "operation": "register",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.00021640899999999998,
+        "max_rss_kib": 51360,
+        "worker_wall_s": 0.004101728089153767
+      }
+    },
+    {
+      "suite": "staging_patch002",
+      "run_ref": "3297770ff716937d4b9906926bcf4aafd268fe48c13c2167261ca96d2282df3b",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.007598065999999999,
+        "max_rss_kib": 51472,
+        "worker_wall_s": 0.012219317024573684
+      }
+    },
+    {
+      "suite": "staging_patch002",
+      "run_ref": "a0b8061ccb2a929bf8f977bf571636309a5d87f25000d75aa7b74fd267798617",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.008118724,
+        "max_rss_kib": 51744,
+        "worker_wall_s": 0.01345047214999795
+      }
+    },
+    {
+      "suite": "staging_patch002",
+      "run_ref": "c3d36ba75a986f5f511f35a5fc0adebf2cb1d649944537f42e59914522c75fac",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.012684662,
+        "max_rss_kib": 51472,
+        "worker_wall_s": 0.017438414972275496
+      }
+    },
+    {
+      "suite": "staging_patch002",
+      "run_ref": "4c7fac6eaf8594a9f2fa8c5b30724c5cab6fa099cde3e7cd7967dcf0b272d865",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.012625886000000001,
+        "max_rss_kib": 51616,
+        "worker_wall_s": 0.016950879944488406
+      }
+    },
+    {
+      "suite": "staging_patch002",
+      "run_ref": "d2db4af07d72fd48046524a4711592fa02a034bffc90578f6d65a93e7103026d",
+      "operation": "register",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.0,
+        "max_rss_kib": 51212,
+        "worker_wall_s": 0.0038149647880345583
+      }
+    },
+    {
+      "suite": "staging_patch002",
+      "run_ref": "ac063ff380335f0230a14854a9504593355826721132ef90b9a341812048802b",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.038011819,
+        "max_rss_kib": 51616,
+        "worker_wall_s": 0.04236415610648692
+      }
+    },
+    {
+      "suite": "staging_patch002",
+      "run_ref": "2957b0ca6d0d8a818d043eb4c33a5ec969483ca48e0a72a64da28f11f146ca05",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.039661036000000004,
+        "max_rss_kib": 51472,
+        "worker_wall_s": 0.044744992861524224
+      }
+    },
+    {
+      "suite": "staging_patch002",
+      "run_ref": "f5b0d2db418131dd8cc68db2a69fe1f79ca16ea96898d4877682973da0506484",
+      "operation": "register",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.0004069569999999999,
+        "max_rss_kib": 51360,
+        "worker_wall_s": 0.003883127123117447
+      }
+    },
+    {
+      "suite": "staging_patch002",
+      "run_ref": "752f7857f9886f88bfef08621dbb9b414bbc136f8e83daf3dd2f34a12732a14e",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.0018047410000000001,
+        "max_rss_kib": 51468,
+        "worker_wall_s": 0.006051505915820599
+      }
+    },
+    {
+      "suite": "staging_patch002",
+      "run_ref": "9587c3d42fb8d4e5501abfa25238773af79c39f4b32db9ee81f3c506e08ca767",
+      "operation": "register",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 9.188399999999998e-05,
+        "max_rss_kib": 51360,
+        "worker_wall_s": 0.004090763861313462
+      }
+    },
+    {
+      "suite": "staging_patch002",
+      "run_ref": "c4e7a598eaf4b52c7d349907f49e3c641a4cc7a61216bbbdce83f83c4645251b",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.0035417169999999998,
+        "max_rss_kib": 51472,
+        "worker_wall_s": 0.007933411048725247
+      }
+    },
+    {
+      "suite": "staging_patch002",
+      "run_ref": "da6bd6f240dcc1245f9539eb149b62190bb583dd6e25531b11861ca0f5fccf51",
+      "operation": "register",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.0,
+        "max_rss_kib": 51360,
+        "worker_wall_s": 0.0036703678779304028
+      }
+    },
+    {
+      "suite": "staging_patch002",
+      "run_ref": "12c8ea17e90a83829d5ff70354c79f0a4a89a05778400170a94a5eacbfc8c4d6",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.001422038,
+        "max_rss_kib": 51340,
+        "worker_wall_s": 0.004773586988449097
+      }
+    },
+    {
+      "suite": "staging_patch002",
+      "run_ref": "2b973354af5821e4425da45025023e9af67be7b3de413bf641e177fa70b70cc6",
+      "operation": "register",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.00036532200000000006,
+        "max_rss_kib": 51360,
+        "worker_wall_s": 0.003753475146368146
+      }
+    },
+    {
+      "suite": "staging_patch002",
+      "run_ref": "9cfd810a555cebb1bb9c21f6f8a24ad4fcbb24b3c75bcf9374802bf8288cd67e",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.003139777,
+        "max_rss_kib": 51468,
+        "worker_wall_s": 0.007301954086869955
+      }
+    },
+    {
+      "suite": "staging_patch002",
+      "run_ref": "f7cfbf3abe1cddb91a527a2175d8be03bcaf8a6a88005e65a50abd86b5776e40",
+      "operation": "register",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.00048439200000000005,
+        "max_rss_kib": 51360,
+        "worker_wall_s": 0.004050808027386665
+      }
+    },
+    {
+      "suite": "staging_patch002",
+      "run_ref": "714243d1a74b0fdc8b0676093897a4b0b1b41a4affdfc8a44e9cf08a7600cc5c",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.002819163,
+        "max_rss_kib": 51468,
+        "worker_wall_s": 0.007369958097115159
+      }
+    },
+    {
+      "suite": "staging_patch002",
+      "run_ref": "11835647f8dce829ea3801184a79e6b2bf5af4be81768ee467c67e78b97c2bb6",
+      "operation": "register",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 9.0956e-05,
+        "max_rss_kib": 51360,
+        "worker_wall_s": 0.003949326928704977
+      }
+    },
+    {
+      "suite": "staging_patch002",
+      "run_ref": "f5a343162b282b84fc3a26bfbd8dcff0b291c2f07a2251006f36d4ff5ac0fc16",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.004166689,
+        "max_rss_kib": 51472,
+        "worker_wall_s": 0.008676920086145401
+      }
+    },
+    {
+      "suite": "staging_patch002",
+      "run_ref": "bd67951faca8bea23fafe4686f54b2134c93288667dc92ec0132f934724780a8",
+      "operation": "register",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 9.6265e-05,
+        "max_rss_kib": 51360,
+        "worker_wall_s": 0.0038468409329652786
+      }
+    },
+    {
+      "suite": "staging_patch002",
+      "run_ref": "288ec9fc2601129e02257ac53d064eb8bf3265feff444d981fc92d2fba0bde66",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.002085111,
+        "max_rss_kib": 51468,
+        "worker_wall_s": 0.00618539284914732
+      }
+    },
+    {
+      "suite": "staging_patch002",
+      "run_ref": "a331b2c5e9a9d48312e6b976c3f946acbf33162391752d1258b2cebe8a4b8872",
+      "operation": "register",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.0,
+        "max_rss_kib": 51360,
+        "worker_wall_s": 0.003959686961025
+      }
+    },
+    {
+      "suite": "staging_patch002",
+      "run_ref": "5d3fa957e9fbc7dc00cc7362e5c1e8fb2eda46c55d0a49d409a0be0a1d868ff5",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.0049817130000000005,
+        "max_rss_kib": 51616,
+        "worker_wall_s": 0.009373876033350825
+      }
+    },
+    {
+      "suite": "staging_patch002",
+      "run_ref": "744073307ea7d24a9b888bd372e83cc0a070f00659dc4cd66160c0c480d23d03",
+      "operation": "register",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.0,
+        "max_rss_kib": 51124,
+        "worker_wall_s": 0.003922587959095836
+      }
+    },
+    {
+      "suite": "staging_patch002",
+      "run_ref": "03f7cd728e6ef54b5057ac9e7b297850c058a8422621cda4189b71175ab4fedd",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.005167196000000001,
+        "max_rss_kib": 51472,
+        "worker_wall_s": 0.009080539923161268
+      }
+    },
+    {
+      "suite": "staging_patch002",
+      "run_ref": "58abdcf61a6ddc366d4c3d463d123dbc29787bb5fd237e947fd3d4ee5a52782f",
+      "operation": "register",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 6.788400000000004e-05,
+        "max_rss_kib": 51424,
+        "worker_wall_s": 0.004125596024096012
+      }
+    },
+    {
+      "suite": "staging_patch002",
+      "run_ref": "0816788a006de459ab29bc59f62de55e0804737fb7c2e09d09c1bcde9079a7bf",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.051519843999999995,
+        "max_rss_kib": 52308,
+        "worker_wall_s": 0.05596442008391023
+      }
+    },
+    {
+      "suite": "staging_patch002",
+      "run_ref": "6388ea1acbea529b998544a5ac5427cd8bdd527756cb1c92801bdda2e96528eb",
+      "operation": "register",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.0,
+        "max_rss_kib": 51424,
+        "worker_wall_s": 0.0037075839936733246
+      }
+    },
+    {
+      "suite": "staging_patch002",
+      "run_ref": "0190d52661a63804aa25bb8ccf237615e98024e0fca21b950827d99b16fb353b",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.000643639,
+        "max_rss_kib": 51468,
+        "worker_wall_s": 0.004685831954702735
+      }
+    },
+    {
+      "suite": "staging_patch002",
+      "run_ref": "7f778fe5a95e4638529885578a21e3dd9836f9323f2b170b58c40e1cde7a0f5c",
+      "operation": "register",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.00038276200000000003,
+        "max_rss_kib": 51424,
+        "worker_wall_s": 0.004031136864796281
+      }
+    },
+    {
+      "suite": "staging_patch002",
+      "run_ref": "99bfeea7c0b88ad202158c6c8e6764b31bbdd6f86903c91bc50a412125c8eafb",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.006835834,
+        "max_rss_kib": 51472,
+        "worker_wall_s": 0.011131289880722761
+      }
+    },
+    {
+      "suite": "staging_exp01",
+      "run_ref": "a96dba1ac0bdde5fe1d4b1faa31b205fdf8311b2affdf513599f0da4fc4bba9e",
+      "operation": "register",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.000746098,
+        "max_rss_kib": 51212,
+        "worker_wall_s": 0.004677999997511506
+      }
+    },
+    {
+      "suite": "staging_exp01",
+      "run_ref": "03636faa652a72f267965f7bfa89fe8224ec068fc86a7b3efd395de04ae438c2",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.011215343000000001,
+        "max_rss_kib": 51616,
+        "worker_wall_s": 0.015919809928163886
+      }
+    },
+    {
+      "suite": "staging_exp01",
+      "run_ref": "6803639cd3fafbb0f1f70b399811ef1073df5645fae005b03e608e4c98fde58e",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.00037381299999999997,
+        "max_rss_kib": 51468,
+        "worker_wall_s": 0.0044280539732426405
+      }
+    },
+    {
+      "suite": "staging_exp01",
+      "run_ref": "13781a5bb08ca47712f1a39498300bd035879bb11f705f317e202f400b1236ff",
+      "operation": "register",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.00069803,
+        "max_rss_kib": 51424,
+        "worker_wall_s": 0.0043723080307245255
+      }
+    },
+    {
+      "suite": "staging_exp01",
+      "run_ref": "e3bb13913bc02f5150f0d20e5be4d64d686a916882027562f1578a373a9bfff5",
+      "operation": "register",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.000267173,
+        "max_rss_kib": 51212,
+        "worker_wall_s": 0.0045327909756451845
+      }
+    },
+    {
+      "suite": "staging_exp01",
+      "run_ref": "c63aee0788c35213be8a78a146dcb3e801c0e2ae9a2104d012ee0e30a1a5529e",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.0010156129999999998,
+        "max_rss_kib": 51680,
+        "worker_wall_s": 0.0059042940847575665
+      }
+    },
+    {
+      "suite": "public_patch002",
+      "run_ref": "937408dfd5934a5c6d4d5319d44d5312cf20c139dfee5446e6b8d5d35f82a2a0",
+      "operation": "register",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.000667066,
+        "max_rss_kib": 51316,
+        "worker_wall_s": 0.003410184057429433
+      }
+    },
+    {
+      "suite": "public_patch002",
+      "run_ref": "baab5582171f4433a3c21547a2619b93cc0859782ef3ffff4ba708f51e669413",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.0019270440000000002,
+        "max_rss_kib": 51576,
+        "worker_wall_s": 0.004922054009512067
+      }
+    },
+    {
+      "suite": "public_patch002",
+      "run_ref": "6d4920fa4a2db7e8d49c6258f18acd19a884f442b1e1be1e708dd8fc828f8d5f",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.0018528120000000001,
+        "max_rss_kib": 51584,
+        "worker_wall_s": 0.005756242899224162
+      }
+    },
+    {
+      "suite": "public_patch002",
+      "run_ref": "58d21f19b37c02cbe84923e1a9cd42f760353f362fd494ce64a07644b32cd53d",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.004496694,
+        "max_rss_kib": 51580,
+        "worker_wall_s": 0.008418687852099538
+      }
+    },
+    {
+      "suite": "public_patch002",
+      "run_ref": "d2d2054f62da222271341e29276fb7991397703d2b96234b70e599d4a158750e",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.004557703999999999,
+        "max_rss_kib": 51580,
+        "worker_wall_s": 0.008777366019785404
+      }
+    },
+    {
+      "suite": "public_patch002",
+      "run_ref": "cad4918ec0f74262e97e8038750f90b7780b488a861d7fb4313418e20fda20c2",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.004913654,
+        "max_rss_kib": 51584,
+        "worker_wall_s": 0.00849685212597251
+      }
+    },
+    {
+      "suite": "public_patch002",
+      "run_ref": "8b4d562074a27f866796487a62b561eaffff38ecb86b1f11d392626b4293533a",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.0043645970000000004,
+        "max_rss_kib": 51584,
+        "worker_wall_s": 0.008323789108544588
+      }
+    },
+    {
+      "suite": "public_patch002",
+      "run_ref": "5a1c16cbbd64d5dc5600513f473da7c77f8aca6fec2b0378b190b9a63d753795",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.004582873,
+        "max_rss_kib": 51652,
+        "worker_wall_s": 0.009649696061387658
+      }
+    },
+    {
+      "suite": "public_patch002",
+      "run_ref": "06fb0f87511c4e11efa91857e5b0dbf5e4e6ceb348bbb48eab009af12c7aadeb",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.005260065,
+        "max_rss_kib": 51584,
+        "worker_wall_s": 0.008485954022035003
+      }
+    },
+    {
+      "suite": "public_patch002",
+      "run_ref": "b40db0d5ef305884ea591ea28aa7c64e8acd0d30ef4928bdb55e44c1dfd2aea9",
+      "operation": "register",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.000585116,
+        "max_rss_kib": 51344,
+        "worker_wall_s": 0.004426542203873396
+      }
+    },
+    {
+      "suite": "public_patch002",
+      "run_ref": "55397a054ccc6c5ecc38eff3811651208629f3fd7f1260bf982694641bc6cba2",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.008578698999999999,
+        "max_rss_kib": 51584,
+        "worker_wall_s": 0.012003429001197219
+      }
+    },
+    {
+      "suite": "public_patch002",
+      "run_ref": "012491bf0c9c66882d6abc8fb9a4262a505b7e589037df9242e42f022e6da9c2",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.008495198,
+        "max_rss_kib": 51652,
+        "worker_wall_s": 0.01361538004130125
+      }
+    },
+    {
+      "suite": "public_patch002",
+      "run_ref": "271a972b42ef931d1cb490ae8791ab02a90fc6c4cffe5e1426985b680a6e53d0",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.012727164000000001,
+        "max_rss_kib": 51584,
+        "worker_wall_s": 0.0170453661121428
+      }
+    },
+    {
+      "suite": "public_patch002",
+      "run_ref": "4ded7fd0ce85a55acb333e7fe5a4cde002bfec48b873d8b9fff21eaab10d9dee",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.012058787000000001,
+        "max_rss_kib": 51652,
+        "worker_wall_s": 0.01725995191372931
+      }
+    },
+    {
+      "suite": "public_patch002",
+      "run_ref": "f1cd2ad22a60c31120352b856114eea29c40b78cc1bb9dec369458ea62affc9d",
+      "operation": "register",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.0006877300000000001,
+        "max_rss_kib": 51324,
+        "worker_wall_s": 0.003464585170149803
+      }
+    },
+    {
+      "suite": "public_patch002",
+      "run_ref": "b81c4c7e0d6fe5bdcfbf8060a47da0072704e32f7d9c57c64eca3f61b673cfeb",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.040510285,
+        "max_rss_kib": 51656,
+        "worker_wall_s": 0.04479152197018266
+      }
+    },
+    {
+      "suite": "public_patch002",
+      "run_ref": "cdfc04be49756c2e0bab714f1ed0a195b3665a4df8bdc642b3606265cf9fad99",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.038769145,
+        "max_rss_kib": 51584,
+        "worker_wall_s": 0.04278303822502494
+      }
+    },
+    {
+      "suite": "public_patch002",
+      "run_ref": "1edf086f3ba3c9e0e0ef031c75c49ddaa262ba5bde24564e6bb0247bb1e17ff9",
+      "operation": "register",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 4.6936999999999934e-05,
+        "max_rss_kib": 51348,
+        "worker_wall_s": 0.004472658969461918
+      }
+    },
+    {
+      "suite": "public_patch002",
+      "run_ref": "0510864d701bd8e8df7e7a363e06ea4dad97c0ae08cb59e050cc55e6877206b3",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.002521814,
+        "max_rss_kib": 51580,
+        "worker_wall_s": 0.005398237146437168
+      }
+    },
+    {
+      "suite": "public_patch002",
+      "run_ref": "4881c8a516aaac062482d34eb4ecbaf5245bf6b0e10d825c35842c636990a3e4",
+      "operation": "register",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.000271567,
+        "max_rss_kib": 51348,
+        "worker_wall_s": 0.004280997905880213
+      }
+    },
+    {
+      "suite": "public_patch002",
+      "run_ref": "6d2ea6f76f504669f22a6489d64d9580eba7f5d2895d6cbbb04b4656d06ebc75",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.003962447000000001,
+        "max_rss_kib": 51584,
+        "worker_wall_s": 0.007401420967653394
+      }
+    },
+    {
+      "suite": "public_patch002",
+      "run_ref": "575b7804406ffe07ac1564c745c4503073963de054f540bcf3f431174db95f6f",
+      "operation": "register",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.0,
+        "max_rss_kib": 51348,
+        "worker_wall_s": 0.003969952929764986
+      }
+    },
+    {
+      "suite": "public_patch002",
+      "run_ref": "5a3bb5b709aaf89a48eee1ba88262728fc13ae0df27c6d50c0be4db801cf67e8",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.0018465219999999997,
+        "max_rss_kib": 51452,
+        "worker_wall_s": 0.004487984115257859
+      }
+    },
+    {
+      "suite": "public_patch002",
+      "run_ref": "f9ada9cd0bc0082b0d1292e6d1a109e80349b946f8bc818c7dccb77afabca20d",
+      "operation": "register",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.0,
+        "max_rss_kib": 51348,
+        "worker_wall_s": 0.0037931781262159348
+      }
+    },
+    {
+      "suite": "public_patch002",
+      "run_ref": "97755a96678397540559db795b36e7c2a1507daf66aa0b1ea3fee0852e06bdfd",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.0035499320000000004,
+        "max_rss_kib": 51580,
+        "worker_wall_s": 0.006751747103407979
+      }
+    },
+    {
+      "suite": "public_patch002",
+      "run_ref": "c0255b48377130eaf1b86af7000636062c92f67e29082c3ff82511aed71ef836",
+      "operation": "register",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.0,
+        "max_rss_kib": 51348,
+        "worker_wall_s": 0.004652049159631133
+      }
+    },
+    {
+      "suite": "public_patch002",
+      "run_ref": "3a84919cb4ffb059ddfa5e5090087969c19a9885bf3b06712e3ab4796d84c1f4",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.0027792529999999998,
+        "max_rss_kib": 51580,
+        "worker_wall_s": 0.006974132964387536
+      }
+    },
+    {
+      "suite": "public_patch002",
+      "run_ref": "604687971c48357a6031f7e6965fdc164979cd286836b2ca3aebfc3fc1c65e65",
+      "operation": "register",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.0,
+        "max_rss_kib": 51348,
+        "worker_wall_s": 0.0038092350587248802
+      }
+    },
+    {
+      "suite": "public_patch002",
+      "run_ref": "faa8647c3943e80fb961ef99229074cc9b1ea3e996837260fe7c08069ea30425",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.005303444,
+        "max_rss_kib": 51584,
+        "worker_wall_s": 0.008528514998033643
+      }
+    },
+    {
+      "suite": "public_patch002",
+      "run_ref": "bac22216025110b3555db0f697cf858e14a06779ecc56815d3edf68375fa01e7",
+      "operation": "register",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.000368743,
+        "max_rss_kib": 51348,
+        "worker_wall_s": 0.0038064050022512674
+      }
+    },
+    {
+      "suite": "public_patch002",
+      "run_ref": "2efa8677f1c97094bf8818ca93746a093b2d58573100f8493a09fa8cb40089bb",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.0030482260000000002,
+        "max_rss_kib": 51580,
+        "worker_wall_s": 0.005934013985097408
+      }
+    },
+    {
+      "suite": "public_patch002",
+      "run_ref": "2d95e85248c06f600b78228869f0b154d42a7c308f64ca8d17499a7de3bc5964",
+      "operation": "register",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.000165544,
+        "max_rss_kib": 51348,
+        "worker_wall_s": 0.00394909200258553
+      }
+    },
+    {
+      "suite": "public_patch002",
+      "run_ref": "1ed573fb4ef754b7754af83298506504303286afece798502c0d6af8e821bfa7",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.0053685849999999995,
+        "max_rss_kib": 51584,
+        "worker_wall_s": 0.009218527004122734
+      }
+    },
+    {
+      "suite": "public_patch002",
+      "run_ref": "7e3cf278b43310886454b2bed9a07c9dd982ecdadbc23772f03aa3f987489b92",
+      "operation": "register",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.0,
+        "max_rss_kib": 51348,
+        "worker_wall_s": 0.0042273979634046555
+      }
+    },
+    {
+      "suite": "public_patch002",
+      "run_ref": "30a923074a2ea8c7fe024a9402acd1f34a40face1c3dd26c9605976fb61be8af",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.004526714,
+        "max_rss_kib": 51584,
+        "worker_wall_s": 0.008390880888327956
+      }
+    },
+    {
+      "suite": "public_patch002",
+      "run_ref": "ad1e951c013c4e96ae9fc1cf8071da1dda2d013c32833381a2048eb28a1e41ce",
+      "operation": "register",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.00035991999999999996,
+        "max_rss_kib": 51348,
+        "worker_wall_s": 0.003878328949213028
+      }
+    },
+    {
+      "suite": "public_patch002",
+      "run_ref": "57b309bbb1976e966c70213a7e8e52ff0b6db074d4c0fe1d4dd9ca5b1c612006",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.051780898,
+        "max_rss_kib": 52420,
+        "worker_wall_s": 0.05544343497604132
+      }
+    },
+    {
+      "suite": "public_patch002",
+      "run_ref": "17a170522bdb27c1a7922627998d9163d901240efe90844e30baee7fe921ecfa",
+      "operation": "register",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.0,
+        "max_rss_kib": 51348,
+        "worker_wall_s": 0.0037907620426267385
+      }
+    },
+    {
+      "suite": "public_patch002",
+      "run_ref": "c6568fe0b2ac4f0228266a8613e00da62738b3783f5f8d5866d96a291d81cf34",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.0012058120000000001,
+        "max_rss_kib": 51580,
+        "worker_wall_s": 0.004198093898594379
+      }
+    },
+    {
+      "suite": "public_patch002",
+      "run_ref": "f4a5699506ca8babd0831bed1025c4ef02b868b3046c5f75e48b601a2173a5d4",
+      "operation": "register",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.00023202599999999998,
+        "max_rss_kib": 51348,
+        "worker_wall_s": 0.004086986882612109
+      }
+    },
+    {
+      "suite": "public_patch002",
+      "run_ref": "7aeca177ff531a064cf84e640684b9f320c46ddbd3abf6067f36d8a6cd169ea7",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.0065274289999999995,
+        "max_rss_kib": 51584,
+        "worker_wall_s": 0.00985415792092681
+      }
+    },
+    {
+      "suite": "public_exp01",
+      "run_ref": "008132bbb2b9222e6e60a0933fedd536551d88ebd704c1798188c24282499bb3",
+      "operation": "register",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.00022061299999999993,
+        "max_rss_kib": 51328,
+        "worker_wall_s": 0.004769674967974424
+      }
+    },
+    {
+      "suite": "public_exp01",
+      "run_ref": "de13623f924b83c4f6c74eae6be818ba8d259bd6d0e71f1f985dd7e520a1835f",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.011096692,
+        "max_rss_kib": 51636,
+        "worker_wall_s": 0.016470093047246337
+      }
+    },
+    {
+      "suite": "public_exp01",
+      "run_ref": "9ee117486d3816b63399e4bbea15c87d1937a1eb5d7cc8c01b814995ed25c0db",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.0009653,
+        "max_rss_kib": 51604,
+        "worker_wall_s": 0.004462729906663299
+      }
+    },
+    {
+      "suite": "public_exp01",
+      "run_ref": "8199947fc69c95920c0f43eabfe34f4ca49defcea5a3ebb9a7a91bbb6ca23bd4",
+      "operation": "register",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.000880951,
+        "max_rss_kib": 51324,
+        "worker_wall_s": 0.00394957116805017
+      }
+    },
+    {
+      "suite": "public_exp01",
+      "run_ref": "d74c53c85dea6e812e139b87e2167ef146ec3e95cca3c88e7440b5a400ffc90c",
+      "operation": "register",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.0004005680000000001,
+        "max_rss_kib": 51324,
+        "worker_wall_s": 0.003954879939556122
+      }
+    },
+    {
+      "suite": "public_exp01",
+      "run_ref": "51dbb443442aff1f5bdf6c7bf7a892190b7d05c1d986454ac42e6bca73e324a1",
+      "operation": "analyze",
+      "metrics": {
+        "LLM_calls": 0,
+        "job_cpu_s": 0.001508329,
+        "max_rss_kib": 51604,
+        "worker_wall_s": 0.004928584909066558
+      }
+    }
+  ],
+  "limits_increased": false
+}

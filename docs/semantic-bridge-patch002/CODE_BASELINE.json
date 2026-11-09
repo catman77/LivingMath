@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "baseline": {
+    "project": "LivingMath",
+    "date": "2026-11-09",
+    "server_version_at_RCA": "v0.4.14-developer-preview",
+    "deployed_code_commit": "23c4aac0d2793170def4642e0e53bde59e741ac4",
+    "github_main_publication_commit_at_prior_review": "b48c44e0793490d7157df710cf9b2faa9cd3acb2",
+    "tool_count": 102,
+    "contextual_files_git_blob_sha": {
+      "relations.py": "417016b41c5c7d906df8974c394fdea108fcd345",
+      "checker.py": "ba94d4d32506ff5d30e15d8509eb80d64590c34b",
+      "engine.py": "0ece37317a09a96f3a18bf0a893bcc8014873404",
+      "service.py": "d66bbb6f6156d9482934360529e87a0cfd7495bf",
+      "contracts.py": "c0d57f98062c58dae43a3c0684a15b117ead66df",
+      "alpha.py": "5e28d195960e0ba4cd4af8fcab68cfcc3e041ccc"
+    },
+    "original_run_reference": {
+      "project": "sb_research_exp02_20261109",
+      "T4_revision_analyze": "bb78d9d5025d64b06a00ce237831022da36cae176c90b867c0767117ed947847",
+      "T4_original_analyze": "662833e8e0bdd2692b49c649b772b92486f6cb273d8382809b8d9e0c68d5f77a",
+      "HmsgE_to_Hskeleton_original_order": "0b125364e68a8ef6ff8286836deafb933d85ba6afb997237b4b27368e019f2ec",
+      "Hskeleton_to_HmsgE_reversed_order": "cd9fcd5d74426abadabcfd267a0da412ec825ee4f699ae10943081d19e967519",
+      "negation_T2": "2602ebba421c6be6469fcef3354c7a8bd0f023ee123998a5b9e1064b3ed3d91b"
+    },
+    "boundary": "Pre-patch experimental evidence only; revalidate live hashes before deployment and report actual changed code SHA."
+  },
+  "checked_contextual_files": {
+    "relations.py": {
+      "git_blob_sha": "417016b41c5c7d906df8974c394fdea108fcd345",
+      "runtime_sha256": "269d10c2aa4e742d70fee2ec4b37afadfb23cde962f6b01e2d0233397c26f4be",
+      "exact": true
+    },
+    "checker.py": {
+      "git_blob_sha": "ba94d4d32506ff5d30e15d8509eb80d64590c34b",
+      "runtime_sha256": "ed2aa639d99dedac2b3c5bd96572c1071287e0b5b6ff6a38ebbad9ac45768fa9",
+      "exact": true
+    },
+    "engine.py": {
+      "git_blob_sha": "0ece37317a09a96f3a18bf0a893bcc8014873404",
+      "runtime_sha256": "efef807a85a5720ac53ba5feb15dea7027e689e800d013cecc9e445b33ed01b3",
+      "exact": true
+    },
+    "service.py": {
+      "git_blob_sha": "d66bbb6f6156d9482934360529e87a0cfd7495bf",
+      "runtime_sha256": "ac59a132aa0d75ce288fee69464e40caa439414272072e82a5b365044ab50c94",
+      "exact": true
+    },
+    "contracts.py": {
+      "git_blob_sha": "c0d57f98062c58dae43a3c0684a15b117ead66df",
+      "runtime_sha256": "ebb2cb3f50d87b309ea14dec4de339424e9144d5ba6ab7a52a15cdc860fad396",
+      "exact": true
+    },
+    "alpha.py": {
+      "git_blob_sha": "5e28d195960e0ba4cd4af8fcab68cfcc3e041ccc",
+      "runtime_sha256": "99c417f661127c8d76fd3da04e529787fa1ae73d332069382b443be49a3a80ed",
+      "exact": true
+    }
+  },
+  "current_production_config_matches_prior_deployment": true
+}

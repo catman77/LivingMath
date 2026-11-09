@@ -1,0 +1,152 @@
+{
+  "schema": "semantic-bridge-patch002-tested/1",
+  "status": "PASS",
+  "gates": [
+    {
+      "id": "G0",
+      "priority": "P0",
+      "status": "PASS",
+      "required": "102 legacy schemas intact, native/FOL/UDAV/CAD/NOPS bytes preserved; code/runtime hash and historic run integrity verified",
+      "evidence": [
+        "docs/semantic-bridge-patch002/KERNEL_PRESERVATION.json",
+        "docs/semantic-bridge-patch002/PRODUCTION_INTEGRITY.json",
+        "docs/semantic-bridge-patch002/API_SCHEMAS.json",
+        "evidence/installed-tests-final.log",
+        "evidence/legacy-tests-current.log"
+      ]
+    },
+    {
+      "id": "G1",
+      "priority": "P0",
+      "status": "PASS",
+      "required": "Sound mixed forall/exists same-prefix propositional entailment, certificate + independent checker; existential conjunction elimination 0 model enumeration",
+      "evidence": [
+        "evidence/production-patch002-qa/checks.json",
+        "docs/semantic-bridge-patch002/proof_certificates.json",
+        "evidence/math-checks-final.json"
+      ]
+    },
+    {
+      "id": "G2",
+      "priority": "P0",
+      "status": "PASS",
+      "required": "Quantifier-negation NNF equivalence, double negation and De Morgan sound; capture/type/sort/fake cert negative tests",
+      "evidence": [
+        "docs/semantic-bridge-patch002/proof_certificates.json",
+        "evidence/production-patch002-qa/checks.json",
+        "evidence/math-checks-final.json"
+      ]
+    },
+    {
+      "id": "G3",
+      "priority": "P0",
+      "status": "PASS",
+      "required": "Shared finite model cursor or equivalent fair scheduler for both directions + multiple pairs; swap/reorder invariant, no direction starvation with budgets 32/64",
+      "evidence": [
+        "docs/semantic-bridge-patch002/models_checked_per_pair.json",
+        "docs/semantic-bridge-patch002/model_enumerations_total.json",
+        "evidence/math-checks.json",
+        "evidence/math-checks-final.json",
+        "evidence/UNIT_RESOURCE_REGRESSION.log"
+      ]
+    },
+    {
+      "id": "G4",
+      "priority": "P0",
+      "status": "PASS",
+      "required": "No false universal proof on incomplete search or malformed assumptions; directional UNKNOWN_BOUND + both verified countermodel directions retained",
+      "evidence": [
+        "docs/semantic-bridge-patch002/truncated_results.json",
+        "docs/semantic-bridge-patch002/countermodels.json",
+        "evidence/tamper-qa/result.json",
+        "evidence/service-checks.json"
+      ]
+    },
+    {
+      "id": "G5",
+      "priority": "P0",
+      "status": "PASS",
+      "required": "Both proved implications => PROVED_LOGICAL_EQ, alpha preserved; graph and run expose decided/open counts; hypothesis/source not merged",
+      "evidence": [
+        "docs/semantic-bridge-patch002/tested_directional_coverage.json",
+        "evidence/production-patch002-qa/checks.json"
+      ]
+    },
+    {
+      "id": "G6",
+      "priority": "P0",
+      "status": "PASS",
+      "required": "SB-EXP01/T1-T6/T4R old truths and assumption applicability unchanged; open-world UNKNOWN; ILL_TYPED and context independent",
+      "evidence": [
+        "evidence/historical-exp02/result.json",
+        "evidence/production-patch002-qa/checks.json",
+        "evidence/production-qa/checks.json"
+      ]
+    },
+    {
+      "id": "G7",
+      "priority": "P0",
+      "status": "PASS",
+      "required": "Client semantic protocol + LLM repair prompt delivered; T4 factivity issue not automatically licensed; ANAPHORA/TEMPORALITY OPEN; no LLM in server",
+      "evidence": [
+        "docs/semantic-bridge-patch002/LLM_SEMANTIC_AUDIT_PROTOCOL_RU.md",
+        "docs/semantic-bridge-patch002/LLM_REPAIR_PROMPT_RU.md",
+        "docs/semantic-bridge-patch002/semantic_review_provenance.json",
+        "evidence/production-patch002-qa/checks.json"
+      ]
+    },
+    {
+      "id": "G8",
+      "priority": "P0",
+      "status": "PASS",
+      "required": "Cross-project refs, SHA/span/AST tamper, request_key collisions, prompt injection, input complexity and CPU/memory/queue limits tested",
+      "evidence": [
+        "evidence/production-qa/checks.json",
+        "evidence/service-checks.json",
+        "docs/semantic-bridge-patch002/RESOURCE_MEASUREMENTS.json",
+        "evidence/tamper-qa/result.json"
+      ]
+    },
+    {
+      "id": "G9",
+      "priority": "P0",
+      "status": "PASS",
+      "required": "Replay register/analyze, independent verifier, deterministic normal budgets, old binding fail-closed, rollback+manifest+real MCP receipts",
+      "evidence": [
+        "docs/semantic-bridge-patch002/REPLAY_RECEIPTS.json",
+        "docs/semantic-bridge-patch002/PRODUCTION_INTEGRITY.json",
+        "docs/semantic-bridge-patch002/ROLLBACK_RU.md",
+        "docs/semantic-bridge-patch002/DEPLOYMENT_RECOVERY.json",
+        "evidence/math-checks-final.json"
+      ]
+    },
+    {
+      "id": "G10",
+      "priority": "P0",
+      "status": "PASS",
+      "required": "Report distinguishes mechanical verified statements from semantic PROPOSED and LLM uplift NOT_MEASURED; no fictitious CI PASS",
+      "evidence": [
+        "docs/semantic-bridge-patch002/semantic_review_provenance.json",
+        "docs/semantic-bridge-patch002/ACTIONS_DISABLED.json",
+        "docs/semantic-bridge-patch002/IMPLEMENTATION_REPORT_RU.md"
+      ]
+    }
+  ],
+  "unit_installed_wheel_pass": 545,
+  "targeted_integration_pass": 60,
+  "legacy_pass": 1066,
+  "legacy_historical_skip": 20,
+  "staging_patch002_checks": 236,
+  "public_patch002_checks": 236,
+  "staging_exp01_checks": 68,
+  "public_exp01_checks": 68,
+  "public_extra_paged_views": 3,
+  "historical_exp02_scenario_cells_retained": 77,
+  "native_unchanged": true,
+  "API_complete_records_unchanged": 102,
+  "CI": "DISABLED_BY_USER_REQUEST_NOT_EXECUTED",
+  "human_semantic_adjudication": "NOT_EVALUATED",
+  "causal_LLM_uplift": "NOT_MEASURED",
+  "execution_permission": false,
+  "evidence_root": "delivery ZIP root; repo-relative docs/ and evidence/ for private operator logs copied into the public delivery without databases/config"
+}

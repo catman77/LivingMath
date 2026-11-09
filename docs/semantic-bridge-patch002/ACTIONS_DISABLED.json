@@ -1,0 +1,15 @@
+{
+  "status": "DISABLED_BY_USER_REQUEST",
+  "repository": "catman77/LivingMath",
+  "before": {
+    "enabled": true,
+    "allowed_actions": "all",
+    "sha_pinning_required": false
+  },
+  "after": {
+    "enabled": false,
+    "sha_pinning_required": false
+  },
+  "build_test_deploy": "LOCAL_ONLY_NO_GITHUB_ACTIONS",
+  "operator_recovery": "PUT returned expected empty HTTP204; JSON parser corrected; subsequent GET confirms disabled, no repeated mutation"
+}

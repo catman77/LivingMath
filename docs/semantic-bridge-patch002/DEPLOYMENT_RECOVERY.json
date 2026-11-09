@@ -1,0 +1,10 @@
+{
+  "status": "AUTO_ROLLBACK_PRESERVED_OLD_PRODUCTION",
+  "cause": "OWNER_ONLY_RELEASE_CONFIGURATION_REQUIRED",
+  "configuration_mode_before": "0o644",
+  "configuration_mode_after": "0o600",
+  "old_drop_in_and_pointer_restored_exactly": true,
+  "first_backup_retained": "backup-cutover",
+  "second_backup": "backup-cutover-final",
+  "guard_unchanged": true
+}

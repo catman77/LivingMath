@@ -1,0 +1,648 @@
+[
+  {
+    "sha256": "57b027b9c0b6a961f14db324886472b321fda3514209f3167449c56771801b3e",
+    "certificate": {
+      "atoms": [
+        [
+          "pred",
+          "MessageEngineerWrong",
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          "pred",
+          "Said",
+          [
+            1,
+            0
+          ]
+        ]
+      ],
+      "checker_version": "sb-prefix-boolean/2",
+      "equality_treatment": "INDEPENDENT_BOOLEAN_ATOM_SUFFICIENT_ONLY",
+      "input_formula_sha256_left": "f368dc7e6d900a8d37be6eb0c11beff11c3ab8f21895d10f9c9bc638a4ef1ddb",
+      "input_formula_sha256_right": "1dbf173dc4d7caa9f129f4407e7697938a865729089f6bf901d852af9b000443",
+      "matrix_sha256_left": "74e9b8b7c6dd2f38dd08fc82e97506f56ddb8fa847f24afc6225a715b1ea586d",
+      "matrix_sha256_right": "c711136aeeb1c3669f982ffbef6fad269081eecb8c85984c3433b17c535d4055",
+      "prefix_quantifiers_and_sorts": [
+        [
+          "exists",
+          "engineer"
+        ],
+        [
+          "exists",
+          "analyst"
+        ]
+      ],
+      "result": "PROVED_ENTAILMENT",
+      "rows_checked": 4,
+      "rule": "SAME_PREFIX_BOOLEAN_MONOTONICITY",
+      "signature_sha256": "3dc93718ec629cf26287af0a4356ebc383787ce938915dc9008df508029bac0e",
+      "truth_table_sha256": "01072e902ba90272b1e0414c6a22c036f42e104932cf00b7fa7c4fbc6ed9e3e3"
+    },
+    "uses": [
+      {
+        "run_ref": "baab5582171f4433a3c21547a2619b93cc0859782ef3ffff4ba708f51e669413",
+        "pair": [
+          "HmsgE",
+          "Hskeleton"
+        ],
+        "direction": "A_IMPLIES_B"
+      },
+      {
+        "run_ref": "6d4920fa4a2db7e8d49c6258f18acd19a884f442b1e1be1e708dd8fc828f8d5f",
+        "pair": [
+          "Hskeleton",
+          "HmsgE"
+        ],
+        "direction": "B_IMPLIES_A"
+      },
+      {
+        "run_ref": "58d21f19b37c02cbe84923e1a9cd42f760353f362fd494ce64a07644b32cd53d",
+        "pair": [
+          "HmsgE",
+          "Hskeleton"
+        ],
+        "direction": "A_IMPLIES_B"
+      },
+      {
+        "run_ref": "d2d2054f62da222271341e29276fb7991397703d2b96234b70e599d4a158750e",
+        "pair": [
+          "HmsgE",
+          "Hskeleton"
+        ],
+        "direction": "A_IMPLIES_B"
+      },
+      {
+        "run_ref": "cad4918ec0f74262e97e8038750f90b7780b488a861d7fb4313418e20fda20c2",
+        "pair": [
+          "HmsgE",
+          "Hskeleton"
+        ],
+        "direction": "A_IMPLIES_B"
+      },
+      {
+        "run_ref": "8b4d562074a27f866796487a62b561eaffff38ecb86b1f11d392626b4293533a",
+        "pair": [
+          "HmsgE",
+          "Hskeleton"
+        ],
+        "direction": "A_IMPLIES_B"
+      },
+      {
+        "run_ref": "5a1c16cbbd64d5dc5600513f473da7c77f8aca6fec2b0378b190b9a63d753795",
+        "pair": [
+          "HmsgE",
+          "Hskeleton"
+        ],
+        "direction": "A_IMPLIES_B"
+      },
+      {
+        "run_ref": "06fb0f87511c4e11efa91857e5b0dbf5e4e6ceb348bbb48eab009af12c7aadeb",
+        "pair": [
+          "HmsgE",
+          "Hskeleton"
+        ],
+        "direction": "A_IMPLIES_B"
+      },
+      {
+        "run_ref": "55397a054ccc6c5ecc38eff3811651208629f3fd7f1260bf982694641bc6cba2",
+        "pair": [
+          "HmsgE",
+          "Hskeleton"
+        ],
+        "direction": "A_IMPLIES_B"
+      },
+      {
+        "run_ref": "012491bf0c9c66882d6abc8fb9a4262a505b7e589037df9242e42f022e6da9c2",
+        "pair": [
+          "Hskeleton",
+          "HmsgE"
+        ],
+        "direction": "B_IMPLIES_A"
+      },
+      {
+        "run_ref": "271a972b42ef931d1cb490ae8791ab02a90fc6c4cffe5e1426985b680a6e53d0",
+        "pair": [
+          "HmsgE",
+          "Hskeleton"
+        ],
+        "direction": "A_IMPLIES_B"
+      },
+      {
+        "run_ref": "4ded7fd0ce85a55acb333e7fe5a4cde002bfec48b873d8b9fff21eaab10d9dee",
+        "pair": [
+          "Hskeleton",
+          "HmsgE"
+        ],
+        "direction": "B_IMPLIES_A"
+      },
+      {
+        "run_ref": "7aeca177ff531a064cf84e640684b9f320c46ddbd3abf6067f36d8a6cd169ea7",
+        "pair": [
+          "HmsgE",
+          "Hskeleton"
+        ],
+        "direction": "A_IMPLIES_B"
+      }
+    ]
+  },
+  {
+    "sha256": "f550f1a97ba9cebd6d96d75922dca96469a8877358869d28202e12485823c1ac",
+    "certificate": {
+      "atoms": [
+        [
+          "pred",
+          "MessageAnalystWrong",
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          "pred",
+          "MessageEngineerWrong",
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          "pred",
+          "Said",
+          [
+            1,
+            0
+          ]
+        ]
+      ],
+      "checker_version": "sb-prefix-boolean/2",
+      "equality_treatment": "INDEPENDENT_BOOLEAN_ATOM_SUFFICIENT_ONLY",
+      "input_formula_sha256_left": "6cfd3d110f2345fbac8892cdca3289325fa8e92954807ad2d20e5852abf06079",
+      "input_formula_sha256_right": "f368dc7e6d900a8d37be6eb0c11beff11c3ab8f21895d10f9c9bc638a4ef1ddb",
+      "matrix_sha256_left": "480b7919e5e2c470f007f8ed9f9a39fa0934369f31483da383823d721d2e59cb",
+      "matrix_sha256_right": "74e9b8b7c6dd2f38dd08fc82e97506f56ddb8fa847f24afc6225a715b1ea586d",
+      "prefix_quantifiers_and_sorts": [
+        [
+          "exists",
+          "engineer"
+        ],
+        [
+          "exists",
+          "analyst"
+        ]
+      ],
+      "result": "PROVED_ENTAILMENT",
+      "rows_checked": 8,
+      "rule": "SAME_PREFIX_BOOLEAN_MONOTONICITY",
+      "signature_sha256": "3dc93718ec629cf26287af0a4356ebc383787ce938915dc9008df508029bac0e",
+      "truth_table_sha256": "851a9faec34ef7237fad6474cb0c1a516c88ad409e4650e166fe5b0ce2bd1229"
+    },
+    "uses": [
+      {
+        "run_ref": "58d21f19b37c02cbe84923e1a9cd42f760353f362fd494ce64a07644b32cd53d",
+        "pair": [
+          "HmsgBoth",
+          "HmsgE"
+        ],
+        "direction": "A_IMPLIES_B"
+      },
+      {
+        "run_ref": "d2d2054f62da222271341e29276fb7991397703d2b96234b70e599d4a158750e",
+        "pair": [
+          "HmsgBoth",
+          "HmsgE"
+        ],
+        "direction": "A_IMPLIES_B"
+      },
+      {
+        "run_ref": "cad4918ec0f74262e97e8038750f90b7780b488a861d7fb4313418e20fda20c2",
+        "pair": [
+          "HmsgBoth",
+          "HmsgE"
+        ],
+        "direction": "A_IMPLIES_B"
+      },
+      {
+        "run_ref": "8b4d562074a27f866796487a62b561eaffff38ecb86b1f11d392626b4293533a",
+        "pair": [
+          "HmsgBoth",
+          "HmsgE"
+        ],
+        "direction": "A_IMPLIES_B"
+      },
+      {
+        "run_ref": "5a1c16cbbd64d5dc5600513f473da7c77f8aca6fec2b0378b190b9a63d753795",
+        "pair": [
+          "HmsgBoth",
+          "HmsgE"
+        ],
+        "direction": "A_IMPLIES_B"
+      },
+      {
+        "run_ref": "06fb0f87511c4e11efa91857e5b0dbf5e4e6ceb348bbb48eab009af12c7aadeb",
+        "pair": [
+          "HmsgBoth",
+          "HmsgE"
+        ],
+        "direction": "A_IMPLIES_B"
+      },
+      {
+        "run_ref": "55397a054ccc6c5ecc38eff3811651208629f3fd7f1260bf982694641bc6cba2",
+        "pair": [
+          "HmsgBoth",
+          "HmsgE"
+        ],
+        "direction": "A_IMPLIES_B"
+      },
+      {
+        "run_ref": "012491bf0c9c66882d6abc8fb9a4262a505b7e589037df9242e42f022e6da9c2",
+        "pair": [
+          "HmsgE",
+          "HmsgBoth"
+        ],
+        "direction": "B_IMPLIES_A"
+      },
+      {
+        "run_ref": "271a972b42ef931d1cb490ae8791ab02a90fc6c4cffe5e1426985b680a6e53d0",
+        "pair": [
+          "HmsgBoth",
+          "HmsgE"
+        ],
+        "direction": "A_IMPLIES_B"
+      },
+      {
+        "run_ref": "4ded7fd0ce85a55acb333e7fe5a4cde002bfec48b873d8b9fff21eaab10d9dee",
+        "pair": [
+          "HmsgE",
+          "HmsgBoth"
+        ],
+        "direction": "B_IMPLIES_A"
+      },
+      {
+        "run_ref": "7aeca177ff531a064cf84e640684b9f320c46ddbd3abf6067f36d8a6cd169ea7",
+        "pair": [
+          "HmsgE",
+          "HmsgBoth"
+        ],
+        "direction": "B_IMPLIES_A"
+      }
+    ]
+  },
+  {
+    "sha256": "0d3d7926d8ae6e60033d786715c733c73c38e271fd2b2efe8c8835776b14f334",
+    "certificate": {
+      "checker_version": "sb-nnf/1",
+      "input_formula_sha256_left": "f87b2125d9c1d983d6611019f48c29ddb0b940cd0a68b6b6bde9cb6db8d19980",
+      "input_formula_sha256_right": "27458876eb2b583cb5453d7b2e8798791cfbea1331f48f0d25c2013826851f10",
+      "normal_sha256_left": "24f7fe8bbae4d7be21b16a9d581f8b6792171eec2a9e677e1966f160416c78ca",
+      "normal_sha256_right": "24f7fe8bbae4d7be21b16a9d581f8b6792171eec2a9e677e1966f160416c78ca",
+      "result": "PROVED_NEGATION_NORMAL_FORM_EQ",
+      "rule": "NEGATION_NORMAL_FORM_EQUIVALENCE",
+      "signature_sha256": "ec6988deadfb474da6679282bf26cac6d6815ea060be829d1a3bc19d2ade2b40"
+    },
+    "uses": [
+      {
+        "run_ref": "0510864d701bd8e8df7e7a363e06ea4dad97c0ae08cb59e050cc55e6877206b3",
+        "pair": [
+          "not_all",
+          "exists_not"
+        ],
+        "direction": "A_IMPLIES_B"
+      }
+    ]
+  },
+  {
+    "sha256": "6c2f38753705b439d7329c69bc0050ff906ab76602c848f29b2ee27f36e80a98",
+    "certificate": {
+      "checker_version": "sb-nnf/1",
+      "input_formula_sha256_left": "27458876eb2b583cb5453d7b2e8798791cfbea1331f48f0d25c2013826851f10",
+      "input_formula_sha256_right": "f87b2125d9c1d983d6611019f48c29ddb0b940cd0a68b6b6bde9cb6db8d19980",
+      "normal_sha256_left": "24f7fe8bbae4d7be21b16a9d581f8b6792171eec2a9e677e1966f160416c78ca",
+      "normal_sha256_right": "24f7fe8bbae4d7be21b16a9d581f8b6792171eec2a9e677e1966f160416c78ca",
+      "result": "PROVED_NEGATION_NORMAL_FORM_EQ",
+      "rule": "NEGATION_NORMAL_FORM_EQUIVALENCE",
+      "signature_sha256": "ec6988deadfb474da6679282bf26cac6d6815ea060be829d1a3bc19d2ade2b40"
+    },
+    "uses": [
+      {
+        "run_ref": "0510864d701bd8e8df7e7a363e06ea4dad97c0ae08cb59e050cc55e6877206b3",
+        "pair": [
+          "not_all",
+          "exists_not"
+        ],
+        "direction": "B_IMPLIES_A"
+      }
+    ]
+  },
+  {
+    "sha256": "b401c11227f75fb6eee185230a2f9abdbef2b6a756740cac5381d777ed0c03f1",
+    "certificate": {
+      "atoms": [
+        [
+          "pred",
+          "Checked",
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          "pred",
+          "Planned",
+          [
+            1,
+            0
+          ]
+        ]
+      ],
+      "checker_version": "sb-prefix-boolean/2",
+      "equality_treatment": "INDEPENDENT_BOOLEAN_ATOM_SUFFICIENT_ONLY",
+      "input_formula_sha256_left": "08c904a274f86d133559237ebac721561b127b71633c8aa3a427923eba3d68ac",
+      "input_formula_sha256_right": "028f1db56d133a838fcdc0c6c9ac7aa1418cb9753761deedae4109f0630a27ab",
+      "matrix_sha256_left": "24ac94eedf217711c23e02a4735a06a48dfa6524020bbb85a1d2a8b7caaf9806",
+      "matrix_sha256_right": "4c2d5ae1bcde9aa431fbfd8c47c36bfca9cd42131a2c91c457d3b4de2a48fb39",
+      "prefix_quantifiers_and_sorts": [
+        [
+          "forall",
+          "researcher"
+        ],
+        [
+          "forall",
+          "hypothesis"
+        ]
+      ],
+      "result": "PROVED_ENTAILMENT",
+      "rows_checked": 4,
+      "rule": "SAME_PREFIX_BOOLEAN_MONOTONICITY",
+      "signature_sha256": "f1326e28a80f83cb8e6503bec47e1037b9a441af1bb6302a18f27f7427adb5e8",
+      "truth_table_sha256": "c2940a19fe7fa39eab2307daeba5771867590c19c308b223401cdeec9baea467"
+    },
+    "uses": [
+      {
+        "run_ref": "5a3bb5b709aaf89a48eee1ba88262728fc13ae0df27c6d50c0be4db801cf67e8",
+        "pair": [
+          "A",
+          "B"
+        ],
+        "direction": "A_IMPLIES_B"
+      }
+    ]
+  },
+  {
+    "sha256": "efd5e5fc71ff617c6bf3cb31c8d706f57a402666ba5615569fdaf37f40d23b99",
+    "certificate": {
+      "atoms": [
+        [
+          "pred",
+          "Checked",
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          "pred",
+          "Planned",
+          [
+            1,
+            0
+          ]
+        ]
+      ],
+      "checker_version": "sb-prefix-boolean/2",
+      "equality_treatment": "INDEPENDENT_BOOLEAN_ATOM_SUFFICIENT_ONLY",
+      "input_formula_sha256_left": "028f1db56d133a838fcdc0c6c9ac7aa1418cb9753761deedae4109f0630a27ab",
+      "input_formula_sha256_right": "08c904a274f86d133559237ebac721561b127b71633c8aa3a427923eba3d68ac",
+      "matrix_sha256_left": "4c2d5ae1bcde9aa431fbfd8c47c36bfca9cd42131a2c91c457d3b4de2a48fb39",
+      "matrix_sha256_right": "24ac94eedf217711c23e02a4735a06a48dfa6524020bbb85a1d2a8b7caaf9806",
+      "prefix_quantifiers_and_sorts": [
+        [
+          "forall",
+          "researcher"
+        ],
+        [
+          "forall",
+          "hypothesis"
+        ]
+      ],
+      "result": "PROVED_ENTAILMENT",
+      "rows_checked": 4,
+      "rule": "SAME_PREFIX_BOOLEAN_MONOTONICITY",
+      "signature_sha256": "f1326e28a80f83cb8e6503bec47e1037b9a441af1bb6302a18f27f7427adb5e8",
+      "truth_table_sha256": "c2940a19fe7fa39eab2307daeba5771867590c19c308b223401cdeec9baea467"
+    },
+    "uses": [
+      {
+        "run_ref": "5a3bb5b709aaf89a48eee1ba88262728fc13ae0df27c6d50c0be4db801cf67e8",
+        "pair": [
+          "A",
+          "B"
+        ],
+        "direction": "B_IMPLIES_A"
+      }
+    ]
+  },
+  {
+    "sha256": "7178b5f90c2408846b100f79ae59363afc89e94511ac9205428f82f0264b658d",
+    "certificate": {
+      "canonical_sha256_left": "860f8353f6c626b4137b07348a5905a9b35a56ff2a919805f32779549bb0bbec",
+      "canonical_sha256_right": "860f8353f6c626b4137b07348a5905a9b35a56ff2a919805f32779549bb0bbec",
+      "checker_version": "sb-alpha/1",
+      "input_formula_sha256_left": "8eb26699eab9b1cf5d0522667de00369a62cb359238d65c602fc7f19e26cd6a5",
+      "input_formula_sha256_right": "2443ff1924efcab76aa5c7a93ea961e0c3a0b2f3ca375b508b6a19a45d262204",
+      "result": "PROVED_ALPHA_EQ",
+      "rule": "ALPHA_NORMALIZATION",
+      "signature_sha256": "e935f4e0c3d7781c2226daf998f8926999f459e4667d6aae6fd8f66655768db9"
+    },
+    "uses": [
+      {
+        "run_ref": "faa8647c3943e80fb961ef99229074cc9b1ea3e996837260fe7c08069ea30425",
+        "pair": [
+          "Hscope",
+          "Hrenamed"
+        ],
+        "direction": "A_IMPLIES_B"
+      }
+    ]
+  },
+  {
+    "sha256": "03c33f97d8813d64c12ef9afada05860a40b57b5555e170ee0b7ccc951a68c97",
+    "certificate": {
+      "canonical_sha256_left": "860f8353f6c626b4137b07348a5905a9b35a56ff2a919805f32779549bb0bbec",
+      "canonical_sha256_right": "860f8353f6c626b4137b07348a5905a9b35a56ff2a919805f32779549bb0bbec",
+      "checker_version": "sb-alpha/1",
+      "input_formula_sha256_left": "2443ff1924efcab76aa5c7a93ea961e0c3a0b2f3ca375b508b6a19a45d262204",
+      "input_formula_sha256_right": "8eb26699eab9b1cf5d0522667de00369a62cb359238d65c602fc7f19e26cd6a5",
+      "result": "PROVED_ALPHA_EQ",
+      "rule": "ALPHA_NORMALIZATION",
+      "signature_sha256": "e935f4e0c3d7781c2226daf998f8926999f459e4667d6aae6fd8f66655768db9"
+    },
+    "uses": [
+      {
+        "run_ref": "faa8647c3943e80fb961ef99229074cc9b1ea3e996837260fe7c08069ea30425",
+        "pair": [
+          "Hscope",
+          "Hrenamed"
+        ],
+        "direction": "B_IMPLIES_A"
+      }
+    ]
+  },
+  {
+    "sha256": "cb12545d3430c8f59ced91838f31063e3b6357fafb7e2b46da579f2996896b2b",
+    "certificate": {
+      "checker_version": "sb-nnf/1",
+      "input_formula_sha256_left": "907c391e1c00936f2851c6fa44b3a9490527bee8cac2e3df1c5066ec06225f35",
+      "input_formula_sha256_right": "2c285e831608c8777282f524efe2f65227a4b8c1e592e993ebf051fabde54219",
+      "normal_sha256_left": "24f7fe8bbae4d7be21b16a9d581f8b6792171eec2a9e677e1966f160416c78ca",
+      "normal_sha256_right": "24f7fe8bbae4d7be21b16a9d581f8b6792171eec2a9e677e1966f160416c78ca",
+      "result": "PROVED_NEGATION_NORMAL_FORM_EQ",
+      "rule": "NEGATION_NORMAL_FORM_EQUIVALENCE",
+      "signature_sha256": "ec6988deadfb474da6679282bf26cac6d6815ea060be829d1a3bc19d2ade2b40"
+    },
+    "uses": [
+      {
+        "run_ref": "2efa8677f1c97094bf8818ca93746a093b2d58573100f8493a09fa8cb40089bb",
+        "pair": [
+          "Hnotall",
+          "Hexists"
+        ],
+        "direction": "A_IMPLIES_B"
+      }
+    ]
+  },
+  {
+    "sha256": "37afce785a93cb330f430924a1962cfa46e3ba6d1f0e0b3677aa81a9c87ecba5",
+    "certificate": {
+      "checker_version": "sb-nnf/1",
+      "input_formula_sha256_left": "2c285e831608c8777282f524efe2f65227a4b8c1e592e993ebf051fabde54219",
+      "input_formula_sha256_right": "907c391e1c00936f2851c6fa44b3a9490527bee8cac2e3df1c5066ec06225f35",
+      "normal_sha256_left": "24f7fe8bbae4d7be21b16a9d581f8b6792171eec2a9e677e1966f160416c78ca",
+      "normal_sha256_right": "24f7fe8bbae4d7be21b16a9d581f8b6792171eec2a9e677e1966f160416c78ca",
+      "result": "PROVED_NEGATION_NORMAL_FORM_EQ",
+      "rule": "NEGATION_NORMAL_FORM_EQUIVALENCE",
+      "signature_sha256": "ec6988deadfb474da6679282bf26cac6d6815ea060be829d1a3bc19d2ade2b40"
+    },
+    "uses": [
+      {
+        "run_ref": "2efa8677f1c97094bf8818ca93746a093b2d58573100f8493a09fa8cb40089bb",
+        "pair": [
+          "Hnotall",
+          "Hexists"
+        ],
+        "direction": "B_IMPLIES_A"
+      }
+    ]
+  },
+  {
+    "sha256": "5f3af5eee99b8e70640ad237a2eb71cd56d829d0510802eafb0889152a4aa3b6",
+    "certificate": {
+      "atoms": [
+        [
+          "pred",
+          "AskedChanges",
+          [
+            0
+          ]
+        ],
+        [
+          "pred",
+          "Rejected",
+          [
+            0
+          ]
+        ]
+      ],
+      "checker_version": "sb-prefix-boolean/2",
+      "equality_treatment": "INDEPENDENT_BOOLEAN_ATOM_SUFFICIENT_ONLY",
+      "input_formula_sha256_left": "88db1c4ddae5dbd8f74588ed950d4ff92b4bda65c9ca622c3b0170bbaf7c3cf5",
+      "input_formula_sha256_right": "a4af53edc7706f8049b8f23c6fcff0da0196f0dc209c90e8bc5bf3938f92ff7d",
+      "matrix_sha256_left": "c5ca56798d11210d227b730cd1c87ee8d5938ab24bbe61fb83a4bd0f14fda067",
+      "matrix_sha256_right": "f7a427d2d4c5cb0edcd596ab27af1604cb1a680117553258324dd82aef54344a",
+      "prefix_quantifiers_and_sorts": [
+        [
+          "forall",
+          "reviewer"
+        ]
+      ],
+      "result": "PROVED_ENTAILMENT",
+      "rows_checked": 4,
+      "rule": "SAME_PREFIX_BOOLEAN_MONOTONICITY",
+      "signature_sha256": "9503452a92e2d602a1212d5e6d6950fac158a014374db167ee3015f154cc8f0f",
+      "truth_table_sha256": "1a30af1e502a9064c7c6608aa67045c0ddc204069fa334e6c6c98ce89b793a94"
+    },
+    "uses": [
+      {
+        "run_ref": "1ed573fb4ef754b7754af83298506504303286afece798502c0d6af8e821bfa7",
+        "pair": [
+          "Hper",
+          "Hboth"
+        ],
+        "direction": "B_IMPLIES_A"
+      }
+    ]
+  },
+  {
+    "sha256": "850d0e903d09bac55db3b703f908a0abce654b7b334749157ab43381c34334e6",
+    "certificate": {
+      "atoms": [
+        [
+          "pred",
+          "Said",
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          "pred",
+          "WrongAnalyst",
+          [
+            0
+          ]
+        ],
+        [
+          "pred",
+          "WrongEngineer",
+          [
+            1
+          ]
+        ]
+      ],
+      "checker_version": "sb-prefix-boolean/2",
+      "equality_treatment": "INDEPENDENT_BOOLEAN_ATOM_SUFFICIENT_ONLY",
+      "input_formula_sha256_left": "460a20bda986950631fe19cb96a0da7306da822e303fb28f3cd7262e5f44faaa",
+      "input_formula_sha256_right": "193c2dc710713f43ea60ac5cc1281f1a1572d16f508ea6673abdd2278da151e3",
+      "matrix_sha256_left": "71da7e71b9123ba896b49f4ebe5ca63293f24bf850b6a191afadb11d1b14cf42",
+      "matrix_sha256_right": "b6cab80fa15e8b5fe0dd89b8b347acb487dde23b1ee0bc484500596855f300cb",
+      "prefix_quantifiers_and_sorts": [
+        [
+          "exists",
+          "engineer"
+        ],
+        [
+          "exists",
+          "analyst"
+        ]
+      ],
+      "result": "PROVED_ENTAILMENT",
+      "rows_checked": 8,
+      "rule": "SAME_PREFIX_BOOLEAN_MONOTONICITY",
+      "signature_sha256": "5e3a0f0339bf11c110f05227da6018fa77c0208e70d31d1e003600e3f5fd7d16",
+      "truth_table_sha256": "d9c860d31aea61449c9a871eb43d3c063c54e0de98c970e5f2c794995cb4acc8"
+    },
+    "uses": [
+      {
+        "run_ref": "30a923074a2ea8c7fe024a9402acd1f34a40face1c3dd26c9605976fb61be8af",
+        "pair": [
+          "Heng",
+          "Hboth"
+        ],
+        "direction": "B_IMPLIES_A"
+      }
+    ]
+  }
+]

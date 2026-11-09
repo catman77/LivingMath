@@ -1,6 +1,12 @@
-# GitHub Actions: запуск пока заблокирован
+# GitHub Actions отключён владельцем
 
-## Текущая проверка v0.4.14 от 2026-11-09
+## Текущая поставка v0.4.15 — 2026-11-09
+
+По прямому указанию владельца GitHub Actions отключён в настройках catman77/LivingMath: **enabled=false**, подтверждено API GET. Оба определения перенесены из .github/workflows/ в .github/workflows-disabled/*.disabled с сохранением исходных bytes. Активных workflows в checkout нет. Сборка, unit/integration, installed-wheel проверки, staging и deployment выполняются локально; push/tag/release только публикует готовые файлы. Actions для этой поставки не запускался и не используется для обновления MCP. Статус **DISABLED_BY_USER_REQUEST_NOT_EXECUTED**, не PASS и не текущая ошибка pytest.
+
+Фактическая локальная/живая приёмка:545 installed-wheel PASS;1066 legacy PASS/20 прежних SKIP;236 PATCH002 +68 SB-EXP01 checks на staging и на публичном HTTPS MCP. [Настройки Actions](semantic-bridge-patch002/ACTIONS_DISABLED.json), [матрица](semantic-bridge-patch002/TEST_MATRIX.json), [отчёт](semantic-bridge-patch002/IMPLEMENTATION_REPORT_RU.md). Сведения о публикации появятся в отдельном PUBLICATION_CERTIFICATE.json после обратной сетевой сверки. Исторические отказы ниже сохранены.
+
+## Предыдущая проверка v0.4.14 от 2026-11-09
 
 [Релиз v0.4.14](https://github.com/catman77/LivingMath/releases/tag/v0.4.14-developer-preview) опубликован; production обновлён с сохранением URL и `authentication=none`. Код production: `23c4aac0d2793170def4642e0e53bde59e741ac4`; снимок исходников и документации: `e133c0c4b6bc3e3e0d5ffa6eea94d426988b3ada`. Подключённый MCP подтвердил версию и 102 инструмента.
 

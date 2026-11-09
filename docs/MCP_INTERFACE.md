@@ -1,7 +1,7 @@
 # MCP-интерфейс LivingMath v0.4.15
 
 Актуальная production-композиция: **102 инструмента**, версия сервера
-`v0.4.14-developer-preview`, пакет `0.4.15.dev0`. [Архитектура](../ARCHITECTURE.md),
+`v0.4.15-developer-preview`, пакет `0.4.15.dev0`. [Архитектура](../ARCHITECTURE.md),
 [установка и различия 44/102](INSTALL.md), [исходный текст и rights](USAGE.md).
 
 ## Транспорт и обнаружение
@@ -38,7 +38,7 @@ OAuth-режиме перед этим выполняется discovery/login/to
 не доказывает эффективность исследования.
 
 Полные input/output schemas, описания и annotations всех методов:
-[MCP_TOOL_SCHEMAS.json](semantic-bridge-patch001/API_SCHEMAS.json).
+[API_SCHEMAS.json](semantic-bridge-patch002/API_SCHEMAS.json).
 Это неизменённый ответ настоящего production `tools/list` из последней приёмки,
 не схема, восстановленная из описания. Для конкретного подключения приоритет
 имеет его текущий `tools/list`. При закешированном старом наборе обновите

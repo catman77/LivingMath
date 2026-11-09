@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "scope": "FINITE_MODELS_1_2_ONLY_NOT_SOURCE_SEMANTICS",
+  "checks": [
+    {
+      "case": "T4_existence_projection",
+      "worlds_checked": 4104,
+      "counterexamples": [
+        "Hskeleton!=>HmsgE",
+        "HmsgE!=>HmsgBoth",
+        "HmsgE!=>HmsgA",
+        "HmsgA!=>HmsgE"
+      ],
+      "PASS": true
+    },
+    {
+      "case": "T2_quantifier_negation",
+      "worlds_checked": 6,
+      "counterexamples": [
+        "not_all!=>none"
+      ],
+      "PASS": true
+    },
+    {
+      "case": "T3_forall_distributivity_trap",
+      "worlds_checked": 20,
+      "counterexamples": [
+        "per!=>global"
+      ],
+      "PASS": true
+    },
+    {
+      "case": "boolean_commutativity",
+      "worlds_checked": 260,
+      "counterexamples": [],
+      "PASS": true
+    },
+    {
+      "case": "T1_scope_change",
+      "worlds_checked": 18,
+      "counterexamples": [
+        "each_some!=>some_all"
+      ],
+      "PASS": true
+    }
+  ]
+}

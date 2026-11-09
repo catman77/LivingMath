@@ -1,0 +1,8 @@
+{
+  "status": "CLIENT_PROTOCOL_AND_SYNTHETIC_CONTROL_ONLY",
+  "human_adjudication": "NOT_EVALUATED",
+  "causal_LLM_uplift": "NOT_MEASURED",
+  "source_alignment": "PROPOSED",
+  "factivity_control": "Declared message TRUE/fact FALSE model; no Russian author-intent inference",
+  "original_EXP02_cells_recomputed": 77
+}
