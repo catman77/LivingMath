@@ -1,0 +1,20 @@
+[
+  {
+    "status": "REPLAY_MATCH",
+    "run_ref": "54c1319c8a3a6fdbc005e0d8524781b688f0c4838a6d164b8f7cd4188a2f74fc",
+    "result_sha256": "6681a6c998d1fbd3488aba3ec5a6dfd518f2f0b11ca8228cfc136a4afb6f07bd",
+    "kernel_binding": "44fe2bfd3fba88d8f3ae0221bbeb96899ece67cb7715824264ffa9b8aea9d684",
+    "LLM_calls": 0,
+    "network_calls": 0,
+    "execution_permission": false
+  },
+  {
+    "status": "REPLAY_MATCH",
+    "run_ref": "dd197b81fdee72684f33bdc7f1744467b333e90c518fecf7ef22b7b9beec8f6e",
+    "result_sha256": "4ac034cc19638029b668c9894869729b0464148da6b8235d63e784b6a730b38a",
+    "kernel_binding": "44fe2bfd3fba88d8f3ae0221bbeb96899ece67cb7715824264ffa9b8aea9d684",
+    "LLM_calls": 0,
+    "network_calls": 0,
+    "execution_permission": false
+  }
+]

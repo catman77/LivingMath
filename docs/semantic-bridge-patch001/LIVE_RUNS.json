@@ -1,0 +1,156 @@
+[
+  {
+    "kind": "register",
+    "LLM_calls": 0,
+    "batch_ref": "54c1319c8a3a6fdbc005e0d8524781b688f0c4838a6d164b8f7cd4188a2f74fc",
+    "error": null,
+    "execution_permission": false,
+    "hypothesis_refs": {
+      "H0": "9f935254a5394c0066b17695cd65708e3d412af7946aef32f0a47daf5c641e4c",
+      "H1": "7ae35bc1cbfff191b33852bf5bb3b8f8e8a24e1c2f58014f0cc919ddc270b3b9",
+      "H2": "fd8fdf67f7298c12fc3964e236f0f8cccfc507cf11bb0b8dcbbfde072d54acbe",
+      "H3": "b14d10f7b1839da67a0c0a8bbcb96b92d1156fa1144a2fa2c6ae3095ef17cb96",
+      "H4": "17452b8f17d200929fec28536806af5190619d8ce131a5f3078c7153f4f345d3"
+    },
+    "kernel_binding": "44fe2bfd3fba88d8f3ae0221bbeb96899ece67cb7715824264ffa9b8aea9d684",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.00076574,
+      "max_rss_kib": 51136,
+      "worker_wall_s": 0.004546932177618146
+    },
+    "operation": "register",
+    "packet_ref": "f1fd8d556f16f8c1d29ce7443ec25261f446a6118eedfa55542bf17abe893e9e",
+    "packet_sha256": "d0deb8489b5bc11ba7270c0449b0338e2d4513385a8c469d49d0a7c1e9be0660",
+    "rejected_or_unsupported": [
+      {
+        "assumption_typechecks": [],
+        "client_id": "H4",
+        "language_gap": {
+          "input_obligations_preserved": true,
+          "reason": "Unsupported temporal/modal operator in FOL_V1",
+          "source_links": [
+            {
+              "byte_utf8": [
+                0,
+                273
+              ],
+              "literal": "Каждый исследователь сообщил своему руководителю обо всех гипотезах, которые он проверил, но не сообщил о тех, которые только предполагал проверить.",
+              "role": "unexpressible-source"
+            }
+          ],
+          "status": "OPEN"
+        },
+        "obligation_typechecks": [],
+        "status": "LANGUAGE_INSUFFICIENT",
+        "typecheck": {
+          "reason": "Unsupported temporal/modal operator in FOL_V1",
+          "status": "LANGUAGE_INSUFFICIENT"
+        }
+      }
+    ],
+    "result_ref": "9f59afb3c86243a7372f934ea204643bda04614df705abafdc8cbf67b231ff0f",
+    "result_sha256": "6681a6c998d1fbd3488aba3ec5a6dfd518f2f0b11ca8228cfc136a4afb6f07bd",
+    "run_ref": "54c1319c8a3a6fdbc005e0d8524781b688f0c4838a6d164b8f7cd4188a2f74fc",
+    "schema": "semantic-bridge-run/1",
+    "status": "COMPLETED"
+  },
+  {
+    "kind": "analyze",
+    "LLM_calls": 0,
+    "error": null,
+    "execution_permission": false,
+    "kernel_binding": "44fe2bfd3fba88d8f3ae0221bbeb96899ece67cb7715824264ffa9b8aea9d684",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.013669177000000001,
+      "max_rss_kib": 51524,
+      "worker_wall_s": 0.018756601959466934
+    },
+    "operation": "analyze",
+    "packet_ref": "1638541a5a7acc8dbb03f1fdec0ec57ed125df6e68013a04e4afb2b9d7621958",
+    "packet_sha256": "f3ce2062c66df7d464b367bcdb2a0f2d6c4bc47d709d8d8a0fd072f261f926eb",
+    "result_ref": "6764b50bbfc1310d477d3251139f5de7037375d76a8079784c4493bf51ead1fa",
+    "result_sha256": "4ac034cc19638029b668c9894869729b0464148da6b8235d63e784b6a730b38a",
+    "run_ref": "dd197b81fdee72684f33bdc7f1744467b333e90c518fecf7ef22b7b9beec8f6e",
+    "schema": "semantic-bridge-run/1",
+    "status": "COMPLETED"
+  },
+  {
+    "kind": "bound",
+    "LLM_calls": 0,
+    "error": null,
+    "execution_permission": false,
+    "kernel_binding": "44fe2bfd3fba88d8f3ae0221bbeb96899ece67cb7715824264ffa9b8aea9d684",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.0010756849999999998,
+      "max_rss_kib": 51264,
+      "worker_wall_s": 0.004403804196044803
+    },
+    "operation": "analyze",
+    "packet_ref": "0d52a2acc14003e75271223f287e1d68dce3b8964de7005c218543fe48eb4f01",
+    "packet_sha256": "47a087db96a1d578c8dfa4ab8b264250777533ea3c601b8d975afba8c2a38ff6",
+    "result_ref": "9d1b68c6c03e9042ad54d9e635fb774590f9113f4295b08f6612177fc7e53d67",
+    "result_sha256": "4ee7287ee42d31987cd7205b78242864a5f1e0fa5f5148e0dd50356cfbaa465d",
+    "run_ref": "228208281cc1a03ad1be6c630abdbcafe8407f872e79cbc2cc3ce07aea6820dc",
+    "schema": "semantic-bridge-run/1",
+    "status": "COMPLETED"
+  },
+  {
+    "kind": "prompt-injection-data",
+    "LLM_calls": 0,
+    "batch_ref": "3a7e6019cbc1716234e57f472f157f8d8c6fb30c633276e4716a25f7b48d69f5",
+    "error": null,
+    "execution_permission": false,
+    "hypothesis_refs": {
+      "H0": "ab2538d4304e702b31ee70a8e75c5b35e6b52b1f87f06b8dfcd77a887959a05e",
+      "H1": "7ae35bc1cbfff191b33852bf5bb3b8f8e8a24e1c2f58014f0cc919ddc270b3b9",
+      "H2": "fd8fdf67f7298c12fc3964e236f0f8cccfc507cf11bb0b8dcbbfde072d54acbe",
+      "H3": "b14d10f7b1839da67a0c0a8bbcb96b92d1156fa1144a2fa2c6ae3095ef17cb96",
+      "H4": "17452b8f17d200929fec28536806af5190619d8ce131a5f3078c7153f4f345d3"
+    },
+    "kernel_binding": "44fe2bfd3fba88d8f3ae0221bbeb96899ece67cb7715824264ffa9b8aea9d684",
+    "metrics": {
+      "LLM_calls": 0,
+      "job_cpu_s": 0.0005212299999999999,
+      "max_rss_kib": 51312,
+      "worker_wall_s": 0.004228544887155294
+    },
+    "operation": "register",
+    "packet_ref": "bbb63f0fc1eb27a2a9c0d446b1fde411bc67333ea46cfccc3f466f9efe40d93f",
+    "packet_sha256": "2c13e899f653ce3b5a7c7ea3d4b19150472c9964366c381d008bf70a0d39dc2d",
+    "rejected_or_unsupported": [
+      {
+        "assumption_typechecks": [],
+        "client_id": "H4",
+        "language_gap": {
+          "input_obligations_preserved": true,
+          "reason": "Unsupported temporal/modal operator in FOL_V1",
+          "source_links": [
+            {
+              "byte_utf8": [
+                0,
+                273
+              ],
+              "literal": "Каждый исследователь сообщил своему руководителю обо всех гипотезах, которые он проверил, но не сообщил о тех, которые только предполагал проверить.",
+              "role": "unexpressible-source"
+            }
+          ],
+          "status": "OPEN"
+        },
+        "obligation_typechecks": [],
+        "status": "LANGUAGE_INSUFFICIENT",
+        "typecheck": {
+          "reason": "Unsupported temporal/modal operator in FOL_V1",
+          "status": "LANGUAGE_INSUFFICIENT"
+        }
+      }
+    ],
+    "result_ref": "041ebebf8c43425aed9cff4407b0d3c6987d43715e63b06cd846781c819ba027",
+    "result_sha256": "4b4fc2e88bb9ea7e2751f7118e42ae10f4f12d350e93e965dd7712a3d84c5a5e",
+    "run_ref": "3a7e6019cbc1716234e57f472f157f8d8c6fb30c633276e4716a25f7b48d69f5",
+    "schema": "semantic-bridge-run/1",
+    "status": "COMPLETED"
+  }
+]

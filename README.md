@@ -4,11 +4,18 @@
 свидетели и контрпримеры → сохраняемая история исследования. MCP-интерфейс
 объединяет LivingMath, проверку исходных схем SUTI и алхимическую модель ALCH006.
 
-Текущий продукт: **`v0.4.12-developer-preview`**: assurance CLI, Semantic Bridge, White Star, Symbolic V1 и opt-in UDAV Core; **98 MCP-инструментов** (94 прежних +4). [Установка](README_QUICKSTART_RU.md), [White Star и сравнение режимов](docs/white-star/QUICKSTART_RU.md), [Semantic Bridge](docs/semantic-bridge/QUICKSTART_RU.md), [CLI](CLI_REFERENCE.md), [границы возможностей](LIMITATIONS.md).
+Текущий продукт: **`v0.4.13-developer-preview`**: assurance CLI, Semantic Bridge, White Star, Symbolic V1, UDAV Core и contextual FOL checks; **102 MCP-инструмента** (98 прежних +4). [Установка](README_QUICKSTART_RU.md), [White Star и сравнение режимов](docs/white-star/QUICKSTART_RU.md), [Semantic Bridge](docs/semantic-bridge/QUICKSTART_RU.md), [CLI](CLI_REFERENCE.md), [границы возможностей](LIMITATIONS.md).
 
 
 Текущий MCP доступен **без аутентификации** по прежнему HTTPS-адресу;
 `authentication=none`. [Транспорт и подключение](docs/MCP_INTERFACE.md).
+
+**Semantic Bridge PATCH001 (0.4.13)** принимает внешние FOL-гипотезы,
+сохраняет контекстные предпосылки и OPEN обязательства, проверяет α-равенство,
+узкий класс логического следования и оба направления конечных контрмоделей.
+Смысловую оценку оставляет клиенту; сервер не вызывает LLM.
+[Отчёт](docs/semantic-bridge-patch001/IMPLEMENTATION_REPORT_RU.md),
+[точные MCP-запросы и replay](docs/semantic-bridge-patch001/QUICKSTART_RU.md).
 
 **UDAV Core PATCH001 (0.4.12)** добавляет отдельный ленивый фронтир
 `frontier_argument_coverage_v1`, раздельные raw/structural наблюдения и численную
@@ -43,7 +50,7 @@ source-bound типизированные FOL proposals. Проверены дв
 
 Основной репозиторий: **[catman77/LivingMath](https://github.com/catman77/LivingMath)**.
 [Архитектура сервера и назначение модулей](ARCHITECTURE.md) ·
-[MCP-интерфейс: транспорт, 98 инструментов, схемы и примеры](docs/MCP_INTERFACE.md) ·
+[MCP-интерфейс: транспорт, 102 инструмента, схемы и примеры](docs/MCP_INTERFACE.md) ·
 [Установка CLI, legacy и полного production entry](docs/INSTALL.md).
 
 White Star использует предоставленное неизменённое ядро Белая звезда → CAD → Удав. Один frozen semantic snapshot можно передать ему и действующему Bridge/assurance без повторного extraction. Численные предложения и сохранённые LLM-прочтения разделены; native SUTI не исполняется. [Отчёт, фактическое сравнение и приёмка](docs/white-star/USER_REPORT_RU.md).
@@ -96,7 +103,7 @@ python -m pytest -q tests
 
 Это установка текущего кода и локальная проверка; HTTP автоматически не запускается.
 Действующий полный сервер запускается через `tools/release_v01_entry.py` с
-приватной owner-конфигурацией и публикует **98** инструментов. Отдельный
+приватной owner-конфигурацией и публикует **102** инструмента. Отдельный
 `unified_system.local prepare/serve/smoke` создаёт новый legacy стенд с **44**
 инструментами; он не является установщиком полного production release.
 

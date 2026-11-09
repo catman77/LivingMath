@@ -1,0 +1,17 @@
+{
+  "status": "ACCEPTED_PUBLIC_HTTPS_ANONYMOUS_MCP",
+  "version": "v0.4.13-developer-preview",
+  "deployment_id": "semantic-bridge001-20261109T024106Z",
+  "release_manifest_sha256": "cb8bc82dcd59c4e01068becf825b2dae47ff64d49a60d80d34c2b0ad0e2b1a03",
+  "url": "https://difficulty-nightlife-rca-missions.trycloudflare.com/mcp",
+  "HTTP_only_restarted": true,
+  "tunnel_pid_unchanged": true,
+  "tunnel_pid": 1474115,
+  "backup_integrity": "4/4 ok",
+  "staged_QA_projects_imported": [],
+  "model_calls": 0,
+  "semantic_acceptance": "HUMAN_NOT_EVALUATED",
+  "execution_permission": false,
+  "integrity": "PASS",
+  "actual_tools": 102
+}

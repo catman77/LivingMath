@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.4.13-developer-preview — 2026-11-09
+
+- Add four opt-in contextual Semantic Bridge methods; retain all98 existing contracts and original mathematical kernels.
+- Check lexical alpha certificates and conservative forall-Boolean entailment before bounded directional countermodel search.
+- Preserve distinct hypotheses, both incomparable witnesses, source spans, OPEN obligations and explicit unsupported language gaps.
+- Separate formula truth, declared assumptions and contextual applicability; open-world and resource limits remain UNKNOWN. No server LLM or semantic licensing.
+- Add immutable owned register/analyze receipts, paged data-only bundles and actual isolated replay; validate frozen SB-EXP01 and real MCP canary.
+
 ## v0.4.12-developer-preview — 2026-11-08
 
 - Add four opt-in UDAV tools; preserve all94 existing MCP schemas and legacy kernels.

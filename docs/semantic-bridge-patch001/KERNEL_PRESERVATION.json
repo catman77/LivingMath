@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "old_source_files_preserved": 233,
+  "only_old_file_changed": "tools/release_v01_entry.py",
+  "all_previous_FOL_semantic_NL_UDAV_numeric_bytes_unchanged": true,
+  "source_wheel_runtime_contextual_bytes_identical": true,
+  "native_sha256": "d808f08afa2375a4c84e958ac0c34df7d13e8b6c0a4a8e629e0d66cfb29929ee",
+  "runtime_manifest_sha256": "cb8bc82dcd59c4e01068becf825b2dae47ff64d49a60d80d34c2b0ad0e2b1a03",
+  "wheel_sha256": "6c195f871e44fe1ac787c060af2741b98972bbc573ece4c459e0df764f116237"
+}

@@ -1,6 +1,6 @@
 # Тестирование
 
-## Актуальный пакет v0.4.9
+## Актуальный пакет v0.4.13
 
 Из корня checkout после установки `python -m pip install '.[white-star,mcp,test]'`:
 
@@ -139,3 +139,15 @@ Final installed wheel:485 PASS (17 focused UDAV tests); legacy1066 PASS/20
 показывают endpoint/project/output/baseline параметры. Runner создаёт отдельный
 QA-проект; baseline — сохранённый JSON всех94 старых инструментов. [Точные
 результаты и границы](udav-core001/IMPLEMENTATION_REPORT_RU.md).
+
+## Contextual Semantic Bridge0.4.13
+
+Финальный installed wheel:511 PASS, включая26 новых contextual тестов. Legacy:
+1066 PASS/20 прежних SKIP с оригинальной LM_ENGINE017_POLICY. Независимый
+SB_EXP01_VERIFY.py запускается из отдельной копии, не переписывая reference/.
+Выполнены65 staging и65 public MCP checks; предоставленный synthetic корпус
+не является blind semantic benchmark. `tools/semantic_bridge001_mcp_qa.py --help`
+показывает endpoint/baseline/output/project/tag. Работайте в отдельном QA-проекте;
+runner сохраняет полные request/response/wire и проверяет source/ownership,
+сертификаты, оба направления countermodels, contexts, replay и ограничения.
+[Матрица](semantic-bridge-patch001/TEST_MATRIX.json).

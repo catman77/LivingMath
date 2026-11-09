@@ -1,0 +1,74 @@
+[
+  {
+    "phase": "stage-release-qa",
+    "kind": "register",
+    "run_ref": "321d0ed27e7571f5e1e67f580d220892b2101eba7b8a7040883d8fd31896db84",
+    "LLM_calls": 0,
+    "job_cpu_s": 5.687800000000001e-05,
+    "max_rss_kib": 51252,
+    "worker_wall_s": 0.004986523883417249
+  },
+  {
+    "phase": "stage-release-qa",
+    "kind": "analyze",
+    "run_ref": "c6e5e9f4d5f4184f8fcd29cc42f54921fae41abb670ae8b1fb98dbf38111a780",
+    "LLM_calls": 0,
+    "job_cpu_s": 0.013626599,
+    "max_rss_kib": 51496,
+    "worker_wall_s": 0.018128256080672145
+  },
+  {
+    "phase": "stage-release-qa",
+    "kind": "bound",
+    "run_ref": "8a607682a01f5f67d3084e368d44fedc87641561d0c4900b73255cd6113ad2e2",
+    "LLM_calls": 0,
+    "job_cpu_s": 0.001169753,
+    "max_rss_kib": 51380,
+    "worker_wall_s": 0.004859283100813627
+  },
+  {
+    "phase": "stage-release-qa",
+    "kind": "prompt-injection-data",
+    "run_ref": "c57a319fe5e92a3797f17edcea2e9f539c87101fb66619ae3c1f7c6fb2612b85",
+    "LLM_calls": 0,
+    "job_cpu_s": 0.000851757,
+    "max_rss_kib": 51288,
+    "worker_wall_s": 0.004670328926295042
+  },
+  {
+    "phase": "production-qa",
+    "kind": "register",
+    "run_ref": "54c1319c8a3a6fdbc005e0d8524781b688f0c4838a6d164b8f7cd4188a2f74fc",
+    "LLM_calls": 0,
+    "job_cpu_s": 0.00076574,
+    "max_rss_kib": 51136,
+    "worker_wall_s": 0.004546932177618146
+  },
+  {
+    "phase": "production-qa",
+    "kind": "analyze",
+    "run_ref": "dd197b81fdee72684f33bdc7f1744467b333e90c518fecf7ef22b7b9beec8f6e",
+    "LLM_calls": 0,
+    "job_cpu_s": 0.013669177000000001,
+    "max_rss_kib": 51524,
+    "worker_wall_s": 0.018756601959466934
+  },
+  {
+    "phase": "production-qa",
+    "kind": "bound",
+    "run_ref": "228208281cc1a03ad1be6c630abdbcafe8407f872e79cbc2cc3ce07aea6820dc",
+    "LLM_calls": 0,
+    "job_cpu_s": 0.0010756849999999998,
+    "max_rss_kib": 51264,
+    "worker_wall_s": 0.004403804196044803
+  },
+  {
+    "phase": "production-qa",
+    "kind": "prompt-injection-data",
+    "run_ref": "3a7e6019cbc1716234e57f472f157f8d8c6fb30c633276e4716a25f7b48d69f5",
+    "LLM_calls": 0,
+    "job_cpu_s": 0.0005212299999999999,
+    "max_rss_kib": 51312,
+    "worker_wall_s": 0.004228544887155294
+  }
+]

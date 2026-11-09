@@ -1,7 +1,7 @@
 # Архитектура MCP-сервера LivingMath
 
-Срез архитектуры: **v0.4.12-developer-preview**, пакет Python `0.4.12.dev0`.
-Production объединяет **98 MCP-инструментов** в одном Streamable HTTP
+Срез архитектуры: **v0.4.13-developer-preview**, пакет Python `0.4.13.dev0`.
+Production объединяет **102 MCP-инструмента** в одном Streamable HTTP
 endpoint `/mcp`. [Справочник интерфейса](docs/MCP_INTERFACE.md),
 [установка](docs/INSTALL.md), [примеры запросов](docs/USAGE.md).
 
@@ -262,7 +262,7 @@ evidence refs проверяются в своём проекте. Для нов
 
 ## Изоляция и replay
 
-- OAuth/PKCE и точные origin/resource binding защищают HTTP-вход. Секреты и
+- В режиме `authentication=oauth` OAuth/PKCE и точные origin/resource binding защищают HTTP-вход. Секреты и
   операторские approvals не передаются в вычислительные задания.
 - Численный `white_star.pool.Pool` и символьный `symbolic.executor.Executor`
   используют отдельные процессы. Для symbolic current и исторических profiles
@@ -332,7 +332,7 @@ Replay сравнивает содержательные SHA без замеро
 `authentication=oauth` сохраняет прежний OAuth/PKCE путь по умолчанию. Явное
 `none` отключает SDK verifier, OAuth discovery/endpoints и legacy login route.
 На текущем production установлен `none`; доступ открытый. При этом HTTP host/origin,
-body limits,94 tool schemas, project boundaries и локальная operator authority
+body limits, схемы всех102 tools, project boundaries и локальная operator authority
 остаются прежними. Режим сообщается в service_health и bridge_system_status.
 
 ## UDAV Core opt-in (0.4.12)
@@ -359,3 +359,40 @@ vendor остаются байт-в-байт прежними.
 
 Схемы экспортированы из реального production [tools/list](docs/udav-core001/MCP_TOOL_SCHEMAS.json).
 Границы: [отчёт](docs/udav-core001/IMPLEMENTATION_REPORT_RU.md).
+
+## Contextual Semantic Bridge PATCH001 (0.4.13)
+
+Старый `semantic_bridge/` с его9 инструментами сохранён. Новые четыре метода
+находятся в `semantic_bridge/contextual/` и явно включаются оператором.
+Внешний клиент предлагает AST/assumptions/obligations; сервер работает только
+с данными и никогда не запрашивает LLM.
+
+| Модуль | Назначение |
+|---|---|
+| `contracts.py` | Строгая схема,6 hypotheses/10 pairs/8 scenarios, source SHA/UTF-8/JSON paths и resource guard |
+| `alpha.py` | Лексические индексы связанных переменных после неизменённого FOL typecheck |
+| `checker.py` | Независимая реконструкция α- и Boolean certificates со строгими JSON типами |
+| `relations.py` | Узкий forall-Boolean proof, неизменённые fol.countermodels/evaluate, обе направленные модели и applicability |
+| `engine.py` | Чистые register/analyze, отдельные language gaps и binding |
+| `service.py` | FormalService.owned, существующий CAS/journal, идемпотентность, immutable receipts, inspect/replay |
+| `worker.py`, `executor.py` | Отдельный фиксированный worker на старом supervisor и общей symbolic quota |
+| `mcp.py` | Четыре дополнительные регистрации и opt-in capability |
+
+```mermaid
+flowchart LR
+    Client[External LLM or human proposals] --> Register[semantic_bridge_register]
+    Register --> Store[Existing Workspace and FormalService ownership]
+    Store --> Analyze[semantic_bridge_analyze]
+    Analyze --> Worker[Bounded isolated worker]
+    Worker --> Alpha[Exact lexical alpha certificate]
+    Alpha --> Boolean[Same-forall-prefix Boolean proof]
+    Boolean --> Finite[Existing directional finite countermodels]
+    Finite --> Checks[Existing FOL evaluation and independent certificate checks]
+    Checks --> Receipt[Immutable graph and scenario vectors]
+    Receipt --> Client
+```
+
+Альфа-равенство относится к формулам, не объединяет истории или предпосылки.
+Контрмодели ищутся при ALL_CANDIDATE_ASSUMPTIONS_HOLD. Formula truth отдельно
+от applicability и source meaning. Неподдержанное время не заменяется FOL;
+UNKNOWN_BOUND не считается эквивалентностью. [Приёмка](docs/semantic-bridge-patch001/IMPLEMENTATION_REPORT_RU.md).

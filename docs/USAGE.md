@@ -4,7 +4,7 @@
 
 Текущий MCP подключается без OAuth и токена (`authentication=none`).
 После подключения вызовите `bridge_system_status`, затем `bridge_catalog`.
-Текущий production `v0.4.12-developer-preview` предоставляет **98 инструментов**.
+Текущий production `v0.4.13-developer-preview` предоставляет **102 инструмента**.
 Новый локальный legacy стенд `unified_system.local` предоставляет 44.
 [Полный интерфейс, схемы, модули и запуск вычислений](MCP_INTERFACE.md).
 `mcp_server.py stdio`
@@ -212,3 +212,11 @@ execution grant. Исследовательские предложения, ау
 `white_star_explore_v2`. Это явные opt-in инструменты, старые вызовы не меняют
 режим. [Полные запросы и права на исходник](udav-core001/MCP_EXAMPLES.json),
 [пошаговый запуск и экспорт](udav-core001/QUICKSTART_RU.md).
+
+## Контекстные гипотезы и различающие сценарии
+
+`semantic_bridge_register` принимает внешние FOL-гипотезы с source spans,
+типизированными assumptions и OPEN obligations. `semantic_bridge_analyze`
+возвращает точные формальные отношения и отдельные сценарные оценки.
+Если формула TRUE, а предпосылка FALSE, applicability=CONTEXT_INCOMPATIBLE;
+это не меняет formula_truth. Открытый мир даёт UNKNOWN. [Пошаговый пример](semantic-bridge-patch001/QUICKSTART_RU.md).

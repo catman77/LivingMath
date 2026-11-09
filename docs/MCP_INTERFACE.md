@@ -1,8 +1,8 @@
-# MCP-интерфейс LivingMath v0.4.12
+# MCP-интерфейс LivingMath v0.4.13
 
-Актуальная production-композиция: **98 инструментов**, версия сервера
-`v0.4.12-developer-preview`, пакет `0.4.12.dev0`. [Архитектура](../ARCHITECTURE.md),
-[установка и различия 44/98](INSTALL.md), [исходный текст и rights](USAGE.md).
+Актуальная production-композиция: **102 инструмента**, версия сервера
+`v0.4.13-developer-preview`, пакет `0.4.13.dev0`. [Архитектура](../ARCHITECTURE.md),
+[установка и различия 44/102](INSTALL.md), [исходный текст и rights](USAGE.md).
 
 ## Транспорт и обнаружение
 
@@ -38,11 +38,11 @@ OAuth-режиме перед этим выполняется discovery/login/to
 не доказывает эффективность исследования.
 
 Полные input/output schemas, описания и annotations всех методов:
-[MCP_TOOL_SCHEMAS.json](udav-core001/MCP_TOOL_SCHEMAS.json).
+[MCP_TOOL_SCHEMAS.json](semantic-bridge-patch001/API_SCHEMAS.json).
 Это неизменённый ответ настоящего production `tools/list` из последней приёмки,
 не схема, восстановленная из описания. Для конкретного подключения приоритет
 имеет его текущий `tools/list`. При закешированном старом наборе обновите
-подключение к текущему origin, указанному выше, затем проверьте98 tools. Старый
+подключение к текущему origin, указанному выше, затем проверьте102 tools. Старый
 удалённый Cloudflare URL обновлением списка не восстановить. Публикация GitHub
 сама по себе не перезапускает сервер.
 
@@ -63,7 +63,8 @@ OAuth-режиме перед этим выполняется discovery/login/to
 | NLProposalBridge/1 | 2 | `src/lm_suti_assurance/nl_proposal/mcp.py` |
 | Frozen causal decoder |1| `nl_proposal/causal_mcp.py` |
 | UDAV Core opt-in |4| `src/lm_suti_assurance/udav_core/mcp.py` |
-| **Всего** | **98** | `tools/release_v01_entry.py` объединяет регистрации |
+| Contextual Semantic Bridge |4| `src/lm_suti_assurance/semantic_bridge/contextual/mcp.py` |
+| **Всего** | **102** | `tools/release_v01_entry.py` объединяет регистрации |
 
 ## Проекты, запросы и разрешения
 
@@ -378,7 +379,7 @@ model, record, imported grammar/DFA или untrusted proof. `formal_synthesize`
 `UNKNOWN_BOUND`, `UNKNOWN_CYCLE`, `NO_DIFFERENCE_WITHIN_BOUND` не означают grant,
 refutation of author intent или equivalence. `CHECKED_INSTANCE` — конечная проверка.
 
-После обновления клиент повторяет initialize/tools/list: текущая композиция98 tools.
+После обновления клиент повторяет initialize/tools/list: текущая композиция102 tools.
 Для этой поставки прежний Cloudflare origin был удалён; подключите LivingMath к
 `https://difficulty-nightlife-rca-missions.trycloudflare.com/mcp`, затем обновите
 список инструментов. Сохранённые runs читаются из прежней базы.
@@ -400,7 +401,7 @@ parents, snapshot и AST guards отклоняются отдельно. `matche
 
 Для ChatGPT после обновления используйте текущий origin из начала документа.
 Если tools/list ещё содержит91 или93 метода, переподключите LivingMath к новому
-адресу и дождитесь повторного initialize/tools/list с98 инструментами.
+адресу и дождитесь повторного initialize/tools/list с102 инструментами.
 
 ## Frozen NL causal redecode (добавлен0.4.11)
 
@@ -425,3 +426,21 @@ COMPLETED run без provider/network calls. [Полный точный JSON, с
 Ответ использует `data`/`error`; статус COMPLETED означает сохранённый результат
 вычисления. Причина прекращения поиска находится внутри summary.halt_reason.
 Ни аудит, ни запуск не дают execution permission или semantic verification.
+
+## Contextual Semantic Bridge (добавлен0.4.13)
+
+| Метод | Обязательные аргументы | Назначение |
+|---|---|---|
+| `semantic_bridge_register` | project, request_key, source_ref, expected_source_sha256, target_signature, hypotheses | Immutable партия внешних гипотез; source предварительно через formal_store |
+| `semantic_bridge_analyze` | project, request_key, batch_ref, pairs, model_refs | α/узкий entailment/направленные контрмодели; сценарии заранее через formal_store |
+| `semantic_bridge_inspect` | project, batch_or_run_ref | summary/graph/obligations/checks/bundle; offset и limit1…48KiB |
+| `semantic_bridge_replay` | project, run_ref, expected_result_sha256 | Реальный повтор register/analyze с проверкой binding и result SHA |
+
+Пары используют client_id партии или выданные hypothesis_ref. Ссылки источника
+и моделей проверяет FormalService.owned; raw SHA из другого проекта недостаточен.
+Текущий anonymous transport сохраняется: изоляция выдачи refs относится к
+проектам, отдельной пользовательской аутентификации этот патч не добавляет.
+[Полные реальные примеры](semantic-bridge-patch001/MCP_EXAMPLES.json).
+TYPE_REJECTED/LANGUAGE_INSUFFICIENT кандидаты сохраняются с причиной и открытым
+language gap. PROVED_* — точные отношения формул в объявленной области;
+source_alignment_status остаётся PROPOSED, semantic_adjudication=NOT_EVALUATED.

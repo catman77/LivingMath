@@ -1,0 +1,888 @@
+{
+  "schema": "semantic-bridge-live-examples/1",
+  "endpoint": "https://difficulty-nightlife-rca-missions.trycloudflare.com/mcp",
+  "note": "Exact accepted real arguments. For a new run create your own project and use the refs returned by its formal_store/register calls; request keys cannot be reused with changed input.",
+  "calls": [
+    {
+      "name": "assurance_project_new",
+      "arguments": {
+        "project": "qa-sb001-public",
+        "request_key": "init"
+      }
+    },
+    {
+      "name": "formal_store",
+      "arguments": {
+        "project": "qa-sb001-public",
+        "request_key": "sb001-public:source",
+        "kind": "source",
+        "data": {
+          "text_utf8": "Каждый исследователь сообщил своему руководителю обо всех гипотезах, которые он проверил, но не сообщил о тех, которые только предполагал проверить.",
+          "sha256": "2f27c8239b74438c5796715017e738aab3d0755e76c7eb1c4660412a205ad647",
+          "spans": [],
+          "context_refs": [],
+          "rights": "synthetic-original"
+        }
+      }
+    },
+    {
+      "name": "formal_store",
+      "arguments": {
+        "project": "qa-sb001-public",
+        "request_key": "sb001-public:M1_planned_checked_reported",
+        "kind": "model",
+        "data": {
+          "domains": {
+            "researcher": [
+              "r0"
+            ],
+            "manager": [
+              "m0"
+            ],
+            "hypothesis": [
+              "h0"
+            ]
+          },
+          "relations": {
+            "Supervises": [
+              [
+                "m0",
+                "r0"
+              ]
+            ],
+            "Checked": [
+              [
+                "r0",
+                "h0"
+              ]
+            ],
+            "Planned": [
+              [
+                "r0",
+                "h0"
+              ]
+            ],
+            "Reported": [
+              [
+                "r0",
+                "m0",
+                "h0"
+              ]
+            ]
+          },
+          "world": "closed"
+        }
+      }
+    },
+    {
+      "name": "formal_store",
+      "arguments": {
+        "project": "qa-sb001-public",
+        "request_key": "sb001-public:M2_unverified_reported",
+        "kind": "model",
+        "data": {
+          "domains": {
+            "researcher": [
+              "r0"
+            ],
+            "manager": [
+              "m0"
+            ],
+            "hypothesis": [
+              "h0"
+            ]
+          },
+          "relations": {
+            "Supervises": [
+              [
+                "m0",
+                "r0"
+              ]
+            ],
+            "Checked": [],
+            "Planned": [],
+            "Reported": [
+              [
+                "r0",
+                "m0",
+                "h0"
+              ]
+            ]
+          },
+          "world": "closed"
+        }
+      }
+    },
+    {
+      "name": "formal_store",
+      "arguments": {
+        "project": "qa-sb001-public",
+        "request_key": "sb001-public:M3_checked_unreported",
+        "kind": "model",
+        "data": {
+          "domains": {
+            "researcher": [
+              "r0"
+            ],
+            "manager": [
+              "m0"
+            ],
+            "hypothesis": [
+              "h0"
+            ]
+          },
+          "relations": {
+            "Supervises": [
+              [
+                "m0",
+                "r0"
+              ]
+            ],
+            "Checked": [
+              [
+                "r0",
+                "h0"
+              ]
+            ],
+            "Planned": [],
+            "Reported": []
+          },
+          "world": "closed"
+        }
+      }
+    },
+    {
+      "name": "formal_store",
+      "arguments": {
+        "project": "qa-sb001-public",
+        "request_key": "sb001-public:M4_supervisor_absent",
+        "kind": "model",
+        "data": {
+          "domains": {
+            "researcher": [
+              "r0"
+            ],
+            "manager": [
+              "m0"
+            ],
+            "hypothesis": [
+              "h0"
+            ]
+          },
+          "relations": {
+            "Supervises": [],
+            "Checked": [],
+            "Planned": [],
+            "Reported": []
+          },
+          "world": "closed"
+        }
+      }
+    },
+    {
+      "name": "formal_store",
+      "arguments": {
+        "project": "qa-sb001-public",
+        "request_key": "sb001-public:M5_open_world",
+        "kind": "model",
+        "data": {
+          "domains": {
+            "researcher": [
+              "r0"
+            ],
+            "manager": [
+              "m0"
+            ],
+            "hypothesis": [
+              "h0"
+            ]
+          },
+          "relations": {
+            "Supervises": [
+              [
+                "m0",
+                "r0"
+              ]
+            ],
+            "Checked": [
+              [
+                "r0",
+                "h0"
+              ]
+            ],
+            "Planned": [
+              [
+                "r0",
+                "h0"
+              ]
+            ],
+            "Reported": [
+              [
+                "r0",
+                "m0",
+                "h0"
+              ]
+            ]
+          },
+          "world": "open"
+        }
+      }
+    },
+    {
+      "name": "semantic_bridge_register",
+      "arguments": {
+        "project": "qa-sb001-public",
+        "request_key": "sb001-public:register",
+        "source_ref": "c1170957c9689a417470056f8b54ff3f8485e2c1830b06d7392923db143921fe",
+        "expected_source_sha256": "2f27c8239b74438c5796715017e738aab3d0755e76c7eb1c4660412a205ad647",
+        "target_signature": {
+          "sorts": [
+            "researcher",
+            "manager",
+            "hypothesis"
+          ],
+          "predicates": {
+            "Supervises": [
+              "manager",
+              "researcher"
+            ],
+            "Checked": [
+              "researcher",
+              "hypothesis"
+            ],
+            "Planned": [
+              "researcher",
+              "hypothesis"
+            ],
+            "Reported": [
+              "researcher",
+              "manager",
+              "hypothesis"
+            ]
+          }
+        },
+        "hypotheses": [
+          {
+            "client_id": "H0",
+            "language": "FOL_V1",
+            "assumptions": [
+              {
+                "quant": "forall",
+                "var": "r",
+                "sort": "researcher",
+                "body": {
+                  "quant": "exists",
+                  "var": "m",
+                  "sort": "manager",
+                  "body": {
+                    "pred": "Supervises",
+                    "args": [
+                      {
+                        "var": "m"
+                      },
+                      {
+                        "var": "r"
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "source_links": [
+              {
+                "byte_utf8": [
+                  0,
+                  273
+                ],
+                "literal": "Каждый исследователь сообщил своему руководителю обо всех гипотезах, которые он проверил, но не сообщил о тех, которые только предполагал проверить.",
+                "role": "source-evidence",
+                "ast_path": []
+              }
+            ],
+            "construction_trace": [
+              {
+                "origin": "EXTERNAL_LLM_PROPOSED",
+                "status": "NOT_SEMANTICALLY_ADJUDICATED",
+                "candidate": "H0"
+              }
+            ],
+            "obligations": [
+              {
+                "id": "open_0",
+                "kind": "PRESUPPOSITION",
+                "description": "Предположение об обязательном существовании руководителя",
+                "status": "OPEN"
+              }
+            ],
+            "formula_ast": {
+              "quant": "forall",
+              "var": "r",
+              "sort": "researcher",
+              "body": {
+                "quant": "forall",
+                "var": "m",
+                "sort": "manager",
+                "body": {
+                  "quant": "forall",
+                  "var": "h",
+                  "sort": "hypothesis",
+                  "body": {
+                    "or": [
+                      {
+                        "not": {
+                          "pred": "Supervises",
+                          "args": [
+                            {
+                              "var": "m"
+                            },
+                            {
+                              "var": "r"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "and": [
+                          {
+                            "or": [
+                              {
+                                "not": {
+                                  "pred": "Checked",
+                                  "args": [
+                                    {
+                                      "var": "r"
+                                    },
+                                    {
+                                      "var": "h"
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "pred": "Reported",
+                                "args": [
+                                  {
+                                    "var": "r"
+                                  },
+                                  {
+                                    "var": "m"
+                                  },
+                                  {
+                                    "var": "h"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "or": [
+                              {
+                                "not": {
+                                  "pred": "Planned",
+                                  "args": [
+                                    {
+                                      "var": "r"
+                                    },
+                                    {
+                                      "var": "h"
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "pred": "Checked",
+                                "args": [
+                                  {
+                                    "var": "r"
+                                  },
+                                  {
+                                    "var": "h"
+                                  }
+                                ]
+                              },
+                              {
+                                "not": {
+                                  "pred": "Reported",
+                                  "args": [
+                                    {
+                                      "var": "r"
+                                    },
+                                    {
+                                      "var": "m"
+                                    },
+                                    {
+                                      "var": "h"
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          {
+            "client_id": "H1",
+            "language": "FOL_V1",
+            "assumptions": [],
+            "source_links": [
+              {
+                "byte_utf8": [
+                  0,
+                  273
+                ],
+                "literal": "Каждый исследователь сообщил своему руководителю обо всех гипотезах, которые он проверил, но не сообщил о тех, которые только предполагал проверить.",
+                "role": "source-evidence",
+                "ast_path": []
+              }
+            ],
+            "construction_trace": [
+              {
+                "origin": "EXTERNAL_LLM_PROPOSED",
+                "status": "NOT_SEMANTICALLY_ADJUDICATED",
+                "candidate": "H1"
+              }
+            ],
+            "obligations": [
+              {
+                "id": "open_1",
+                "kind": "CONTEXT",
+                "description": "Проверка соответствия естественному тексту остаётся открытой",
+                "status": "OPEN"
+              }
+            ],
+            "formula_ast": {
+              "quant": "forall",
+              "var": "r",
+              "sort": "researcher",
+              "body": {
+                "quant": "forall",
+                "var": "m",
+                "sort": "manager",
+                "body": {
+                  "quant": "forall",
+                  "var": "h",
+                  "sort": "hypothesis",
+                  "body": {
+                    "or": [
+                      {
+                        "not": {
+                          "pred": "Supervises",
+                          "args": [
+                            {
+                              "var": "m"
+                            },
+                            {
+                              "var": "r"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "and": [
+                          {
+                            "or": [
+                              {
+                                "not": {
+                                  "pred": "Checked",
+                                  "args": [
+                                    {
+                                      "var": "r"
+                                    },
+                                    {
+                                      "var": "h"
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "pred": "Reported",
+                                "args": [
+                                  {
+                                    "var": "r"
+                                  },
+                                  {
+                                    "var": "m"
+                                  },
+                                  {
+                                    "var": "h"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "or": [
+                              {
+                                "not": {
+                                  "pred": "Planned",
+                                  "args": [
+                                    {
+                                      "var": "r"
+                                    },
+                                    {
+                                      "var": "h"
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "not": {
+                                  "pred": "Reported",
+                                  "args": [
+                                    {
+                                      "var": "r"
+                                    },
+                                    {
+                                      "var": "m"
+                                    },
+                                    {
+                                      "var": "h"
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          {
+            "client_id": "H2",
+            "language": "FOL_V1",
+            "assumptions": [],
+            "source_links": [
+              {
+                "byte_utf8": [
+                  0,
+                  273
+                ],
+                "literal": "Каждый исследователь сообщил своему руководителю обо всех гипотезах, которые он проверил, но не сообщил о тех, которые только предполагал проверить.",
+                "role": "source-evidence",
+                "ast_path": []
+              }
+            ],
+            "construction_trace": [
+              {
+                "origin": "EXTERNAL_LLM_PROPOSED",
+                "status": "NOT_SEMANTICALLY_ADJUDICATED",
+                "candidate": "H2"
+              }
+            ],
+            "obligations": [
+              {
+                "id": "open_2",
+                "kind": "CONTEXT",
+                "description": "Проверка соответствия естественному тексту остаётся открытой",
+                "status": "OPEN"
+              }
+            ],
+            "formula_ast": {
+              "quant": "forall",
+              "var": "u",
+              "sort": "researcher",
+              "body": {
+                "quant": "forall",
+                "var": "v",
+                "sort": "manager",
+                "body": {
+                  "quant": "forall",
+                  "var": "t",
+                  "sort": "hypothesis",
+                  "body": {
+                    "or": [
+                      {
+                        "not": {
+                          "pred": "Supervises",
+                          "args": [
+                            {
+                              "var": "v"
+                            },
+                            {
+                              "var": "u"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "and": [
+                          {
+                            "or": [
+                              {
+                                "not": {
+                                  "pred": "Checked",
+                                  "args": [
+                                    {
+                                      "var": "u"
+                                    },
+                                    {
+                                      "var": "t"
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "pred": "Reported",
+                                "args": [
+                                  {
+                                    "var": "u"
+                                  },
+                                  {
+                                    "var": "v"
+                                  },
+                                  {
+                                    "var": "t"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "or": [
+                              {
+                                "not": {
+                                  "pred": "Planned",
+                                  "args": [
+                                    {
+                                      "var": "u"
+                                    },
+                                    {
+                                      "var": "t"
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "pred": "Checked",
+                                "args": [
+                                  {
+                                    "var": "u"
+                                  },
+                                  {
+                                    "var": "t"
+                                  }
+                                ]
+                              },
+                              {
+                                "not": {
+                                  "pred": "Reported",
+                                  "args": [
+                                    {
+                                      "var": "u"
+                                    },
+                                    {
+                                      "var": "v"
+                                    },
+                                    {
+                                      "var": "t"
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          {
+            "client_id": "H3",
+            "language": "FOL_V1",
+            "assumptions": [],
+            "source_links": [
+              {
+                "byte_utf8": [
+                  0,
+                  273
+                ],
+                "literal": "Каждый исследователь сообщил своему руководителю обо всех гипотезах, которые он проверил, но не сообщил о тех, которые только предполагал проверить.",
+                "role": "source-evidence",
+                "ast_path": []
+              }
+            ],
+            "construction_trace": [
+              {
+                "origin": "EXTERNAL_LLM_PROPOSED",
+                "status": "NOT_SEMANTICALLY_ADJUDICATED",
+                "candidate": "H3"
+              }
+            ],
+            "obligations": [
+              {
+                "id": "open_3",
+                "kind": "CONTEXT",
+                "description": "Проверка соответствия естественному тексту остаётся открытой",
+                "status": "OPEN"
+              }
+            ],
+            "formula_ast": {
+              "quant": "forall",
+              "var": "r",
+              "sort": "researcher",
+              "body": {
+                "quant": "forall",
+                "var": "m",
+                "sort": "manager",
+                "body": {
+                  "quant": "forall",
+                  "var": "h",
+                  "sort": "hypothesis",
+                  "body": {
+                    "or": [
+                      {
+                        "not": {
+                          "pred": "Supervises",
+                          "args": [
+                            {
+                              "var": "m"
+                            },
+                            {
+                              "var": "r"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "or": [
+                          {
+                            "not": {
+                              "pred": "Reported",
+                              "args": [
+                                {
+                                  "var": "r"
+                                },
+                                {
+                                  "var": "m"
+                                },
+                                {
+                                  "var": "h"
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "pred": "Checked",
+                            "args": [
+                              {
+                                "var": "r"
+                              },
+                              {
+                                "var": "h"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          {
+            "client_id": "H4",
+            "language": "FOL_V1",
+            "assumptions": [],
+            "construction_trace": [
+              {
+                "origin": "EXTERNAL_LLM_PROPOSED",
+                "status": "NOT_SEMANTICALLY_ADJUDICATED",
+                "candidate": "H4"
+              }
+            ],
+            "obligations": [
+              {
+                "id": "gap_future",
+                "kind": "LANGUAGE_GAP",
+                "description": "Требуется отдельный временной/модальный язык, не подменять FOL",
+                "status": "OPEN"
+              }
+            ],
+            "source_links": [
+              {
+                "byte_utf8": [
+                  0,
+                  273
+                ],
+                "literal": "Каждый исследователь сообщил своему руководителю обо всех гипотезах, которые он проверил, но не сообщил о тех, которые только предполагал проверить.",
+                "role": "unexpressible-source"
+              }
+            ],
+            "unsupported": {
+              "operator": "future",
+              "source_fragment": "только предполагал проверить",
+              "reason": "Unsupported temporal/modal operator in FOL_V1"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "semantic_bridge_analyze",
+      "arguments": {
+        "project": "qa-sb001-public",
+        "request_key": "sb001-public:analyze",
+        "batch_ref": "54c1319c8a3a6fdbc005e0d8524781b688f0c4838a6d164b8f7cd4188a2f74fc",
+        "pairs": [
+          [
+            "H0",
+            "H2"
+          ],
+          [
+            "H0",
+            "H1"
+          ],
+          [
+            "H0",
+            "H3"
+          ]
+        ],
+        "model_refs": [
+          "b2f7aaa1c60bfb25ee0c7ec03b41a3c67390d10a8c6196e14d002b7cf30028db",
+          "a6bdec25ba71754a1ebd7c867cb5bd0467b7a429b3275841b4529f0b57de468b",
+          "22287a71313e5bf6d4f2dab2e44c32a0796caf942bc48699ce9ee8c1cea1fac8",
+          "02b634968221872355c482d0ca049bcb584affd25508636a5f3a5c2048963938",
+          "978c97a82aef80d6dd1281f03f2ed79e33ed39502c6d5e42a6671f1d8b927b42"
+        ],
+        "scenario_origin": "LLM_PROPOSED",
+        "budget": {
+          "max_pairs": 10,
+          "max_models": 512,
+          "max_cpu_ms": 4000
+        }
+      }
+    },
+    {
+      "name": "semantic_bridge_inspect",
+      "arguments": {
+        "project": "qa-sb001-public",
+        "batch_or_run_ref": "dd197b81fdee72684f33bdc7f1744467b333e90c518fecf7ef22b7b9beec8f6e",
+        "view": "bundle",
+        "offset": 0,
+        "limit": 48
+      }
+    },
+    {
+      "name": "semantic_bridge_replay",
+      "arguments": {
+        "project": "qa-sb001-public",
+        "run_ref": "dd197b81fdee72684f33bdc7f1744467b333e90c518fecf7ef22b7b9beec8f6e",
+        "expected_result_sha256": "4ac034cc19638029b668c9894869729b0464148da6b8235d63e784b6a730b38a"
+      }
+    }
+  ]
+}
