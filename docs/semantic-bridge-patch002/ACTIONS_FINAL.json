@@ -1,0 +1,9 @@
+{
+  "status": "DISABLED_BY_USER_REQUEST_NOT_EXECUTED",
+  "actual_settings": {
+    "enabled": false,
+    "sha_pinning_required": false
+  },
+  "CI_job_queries_or_dispatch": false,
+  "build_test_deploy": "LOCAL_ONLY"
+}

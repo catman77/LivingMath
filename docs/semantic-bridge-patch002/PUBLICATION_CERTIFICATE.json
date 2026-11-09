@@ -1,0 +1,156 @@
+{
+  "schema": "semantic-bridge-patch002-publication/1",
+  "status": "PUBLISHED_DEPLOYED_AND_ANONYMOUS_READBACK_PASS",
+  "utc": "2026-11-09T07:34:25.921790+00:00",
+  "version": "v0.4.15-developer-preview",
+  "release_url": "https://github.com/catman77/LivingMath/releases/tag/v0.4.15-developer-preview",
+  "tag": "v0.4.15-developer-preview",
+  "source_snapshot_commit": "3b85954a5e789ef5992e7b30614686582bb260df",
+  "deployed_code_commit": "5c6f92db40e58cd8650dd2ba50a456cbec51a037",
+  "deployment": {
+    "status": "ACCEPTED_PUBLIC_HTTPS_ANONYMOUS_MCP",
+    "version": "v0.4.15-developer-preview",
+    "deployment_id": "semantic-bridge002-20261109T063739Z",
+    "release_manifest_sha256": "5babd4d534039672e690db01f34adab1077fba8b34af929e80a6b031e1fa07bf",
+    "url": "https://difficulty-nightlife-rca-missions.trycloudflare.com/mcp",
+    "HTTP_only_restarted": true,
+    "tunnel_pid_unchanged": true,
+    "tunnel_pid": 1474115,
+    "backup_integrity": "4/4 ok",
+    "staged_QA_projects_imported": [],
+    "model_calls": 0,
+    "semantic_acceptance": "HUMAN_NOT_EVALUATED",
+    "execution_permission": false,
+    "integrity": "PASS",
+    "actual_tools": 102
+  },
+  "acceptance": {
+    "G0_through_G10": "PASS",
+    "installed_wheel_tests": 545,
+    "targeted_integration_tests": 60,
+    "legacy_tests": 1066,
+    "legacy_historical_skips": 20,
+    "staging_patch002": 236,
+    "public_patch002": 236,
+    "staging_sbexp01": 68,
+    "public_sbexp01": 68,
+    "EXP02_cells_exact": 77,
+    "extra_public_paged_views": 3,
+    "actual_CLI_replays": 2,
+    "actual_CLI_tamper_rejections": 3,
+    "requested_directions": 112,
+    "completed_directions": 93,
+    "honestly_open_control_directions": 19
+  },
+  "package": {
+    "file": "SEMANTIC_BRIDGE_PATCH002_DELIVERY_20261109.zip",
+    "bytes": 27451421,
+    "sha256": "c00744c773d78948ddff8fc709b78fb4617122521ade7132adb7e8f87cd0f86b",
+    "source_commit": "3b85954a5e789ef5992e7b30614686582bb260df",
+    "deployed_code_commit": "5c6f92db40e58cd8650dd2ba50a456cbec51a037",
+    "payload_files": 621
+  },
+  "asset_url": "https://github.com/catman77/LivingMath/releases/download/v0.4.15-developer-preview/SEMANTIC_BRIDGE_PATCH002_DELIVERY_20261109.zip",
+  "public_readback": {
+    "status": "PASS",
+    "remote": "https://github.com/catman77/LivingMath",
+    "tag": "v0.4.15-developer-preview",
+    "source_commit": "3b85954a5e789ef5992e7b30614686582bb260df",
+    "public_source_blobs_all_exact": 1955,
+    "downloaded_asset_bytes": 27451421,
+    "asset_sha256": "c00744c773d78948ddff8fc709b78fb4617122521ade7132adb7e8f87cd0f86b",
+    "anonymous_public_readback": true,
+    "release_url": "https://github.com/catman77/LivingMath/releases/tag/v0.4.15-developer-preview"
+  },
+  "package_validation": {
+    "status": "PASS",
+    "payload_files": 621,
+    "source_files_all_exact": 1955,
+    "source_commit": "3b85954a5e789ef5992e7b30614686582bb260df",
+    "outer_sha256": "c00744c773d78948ddff8fc709b78fb4617122521ade7132adb7e8f87cd0f86b",
+    "credentials_databases_excluded": true
+  },
+  "secret_scan": {
+    "status": "PASS",
+    "package_sha256": "c00744c773d78948ddff8fc709b78fb4617122521ade7132adb7e8f87cd0f86b",
+    "known_secret_values_checked": 130,
+    "recursive_ZIP_gzip_scan": true,
+    "PAT_private_key_patterns": true
+  },
+  "binary_patch_reproduction": {
+    "status": "PASS",
+    "baseline": "b48c44e0793490d7157df710cf9b2faa9cd3acb2",
+    "snapshot": "3b85954a5e789ef5992e7b30614686582bb260df",
+    "reproduced_tree": "df99774bcac274867b3f4445118418636cecb39b",
+    "isolated_index": true
+  },
+  "source_root_sync": {
+    "status": "PASS",
+    "root_commit": "3b85954a5e789ef5992e7b30614686582bb260df",
+    "all_87_preexisting_tracked_user_changes_preserved": true,
+    "preexisting_changes_count": 87,
+    "AGENTS_unchanged": true,
+    "gitignore_unchanged": true,
+    "root_task_archive_matches_published_code": true
+  },
+  "local_delivery_file": "docs/SEMANTIC_BRIDGE_PATCH002_DELIVERY_20261109.zip",
+  "AGENTS_unchanged": true,
+  "all_87_prior_user_changes_preserved": true,
+  "data_preservation": {
+    "all4_original_SQLite_integrity": "ok",
+    "all_original_research_rows_and_hashes_preserved": true,
+    "all107297_original_Workspace_files_byte_identical": true,
+    "original_canonical_events": 2058,
+    "canonical_audit_entries_unchanged": 4817,
+    "canonical_audit_head_unchanged": "c9c0048be5cc2e782cb2f2377da524e5ad04303d86b65792ef1d503b8c1c3d50",
+    "new_QA_operations_exactly_one_start_finish": 95,
+    "new_semantic_bridge_QA_runs": 47,
+    "new_execution_grants": 0,
+    "migration_or_new_production_database": false
+  },
+  "CI": {
+    "status": "DISABLED_BY_USER_REQUEST_NOT_EXECUTED",
+    "actual_settings": {
+      "enabled": false,
+      "sha_pinning_required": false
+    },
+    "CI_job_queries_or_dispatch": false,
+    "build_test_deploy": "LOCAL_ONLY"
+  },
+  "documentation_audit": {
+    "id": "sb002-v0415-docs-repair",
+    "status": "CURRENT_FOR_RELEASE_SOURCE_SNAPSHOT",
+    "blockers": [],
+    "parent_publication_metadata_closure": [
+      "PUBLICATION_CERTIFICATE.json",
+      "release/readback/package/action/source-sync receipts",
+      "IMPLEMENTATION_PLAN.md final checkbox",
+      "docs/CI_STATUS.md publication sentence"
+    ]
+  },
+  "operator_errors_retained": {
+    "owner_configuration_first_cutover": "DEPLOYMENT_RECOVERY.json",
+    "initial_generated_replay_example": "RCA_RU.md plus immutable initial evidence in package",
+    "initial_duplicate_packaging_path": "PACKAGING_RECOVERY.json; failed before ZIP creation, all unique final payloads validated"
+  },
+  "scientific_boundary": {
+    "human_semantic_adjudication": "NOT_EVALUATED",
+    "causal_LLM_uplift": "NOT_MEASURED",
+    "new_layer_LLM_calls": 0,
+    "execution_permission": false
+  },
+  "receipt_files": [
+    "PACKAGE.json",
+    "PACKAGE_VALIDATION.json",
+    "PACKAGE_SECRET_SCAN.json",
+    "PATCH_REPRODUCTION.json",
+    "GITHUB_RELEASE.json",
+    "PUBLIC_READBACK.json",
+    "ACTIONS_FINAL.json",
+    "CONNECTED_CLIENT_FINAL.json",
+    "STAGING_SHUTDOWN.json",
+    "PACKAGING_RECOVERY.json",
+    "ROOT_SOURCE_SYNC.json"
+  ],
+  "metadata_boundary": "Source/deployed code and immutable asset do not change; this later commit closes publication and retains the source-snapshot provenance."
+}

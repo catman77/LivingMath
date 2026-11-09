@@ -4,7 +4,7 @@
 
 По прямому указанию владельца GitHub Actions отключён в настройках catman77/LivingMath: **enabled=false**, подтверждено API GET. Оба определения перенесены из .github/workflows/ в .github/workflows-disabled/*.disabled с сохранением исходных bytes. Активных workflows в checkout нет. Сборка, unit/integration, installed-wheel проверки, staging и deployment выполняются локально; push/tag/release только публикует готовые файлы. Actions для этой поставки не запускался и не используется для обновления MCP. Статус **DISABLED_BY_USER_REQUEST_NOT_EXECUTED**, не PASS и не текущая ошибка pytest.
 
-Фактическая локальная/живая приёмка:545 installed-wheel PASS;1066 legacy PASS/20 прежних SKIP;236 PATCH002 +68 SB-EXP01 checks на staging и на публичном HTTPS MCP. [Настройки Actions](semantic-bridge-patch002/ACTIONS_DISABLED.json), [матрица](semantic-bridge-patch002/TEST_MATRIX.json), [отчёт](semantic-bridge-patch002/IMPLEMENTATION_REPORT_RU.md). Сведения о публикации появятся в отдельном PUBLICATION_CERTIFICATE.json после обратной сетевой сверки. Исторические отказы ниже сохранены.
+Фактическая локальная/живая приёмка:545 installed-wheel PASS;1066 legacy PASS/20 прежних SKIP;236 PATCH002 +68 SB-EXP01 checks на staging и на публичном HTTPS MCP. [Настройки Actions](semantic-bridge-patch002/ACTIONS_DISABLED.json), [матрица](semantic-bridge-patch002/TEST_MATRIX.json), [отчёт](semantic-bridge-patch002/IMPLEMENTATION_REPORT_RU.md). Публикация и анонимная сверка1955 source blobs/ZIP подтверждены [сертификатом](semantic-bridge-patch002/PUBLICATION_CERTIFICATE.json); source snapshot `3b85954a5e789ef5992e7b30614686582bb260df`. Это проверка опубликованных файлов, не облачный CI. Исторические отказы ниже сохранены.
 
 ## Предыдущая проверка v0.4.14 от 2026-11-09
 

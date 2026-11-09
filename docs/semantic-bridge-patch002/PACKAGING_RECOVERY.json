@@ -1,0 +1,6 @@
+{
+  "initial_attempt": "Rejected duplicate math-final-adversarial.log before ZIP creation",
+  "source_or_production_changed": false,
+  "recovery": "Deduplicate identical evidence path selection; preserve initial failure log and every unique evidence payload",
+  "final_package_validation_required": true
+}

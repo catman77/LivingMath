@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "root_commit": "3b85954a5e789ef5992e7b30614686582bb260df",
+  "all_87_preexisting_tracked_user_changes_preserved": true,
+  "preexisting_changes_count": 87,
+  "AGENTS_unchanged": true,
+  "gitignore_unchanged": true,
+  "root_task_archive_matches_published_code": true
+}

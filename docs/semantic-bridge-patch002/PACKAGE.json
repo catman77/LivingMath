@@ -1,0 +1,8 @@
+{
+  "file": "SEMANTIC_BRIDGE_PATCH002_DELIVERY_20261109.zip",
+  "bytes": 27451421,
+  "sha256": "c00744c773d78948ddff8fc709b78fb4617122521ade7132adb7e8f87cd0f86b",
+  "source_commit": "3b85954a5e789ef5992e7b30614686582bb260df",
+  "deployed_code_commit": "5c6f92db40e58cd8650dd2ba50a456cbec51a037",
+  "payload_files": 621
+}

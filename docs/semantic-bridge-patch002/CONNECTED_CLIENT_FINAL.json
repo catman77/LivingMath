@@ -1,0 +1,49 @@
+{
+  "source": "actual_connected_LivingMath_client",
+  "version": "v0.4.15-developer-preview",
+  "deployment_id": "semantic-bridge002-20261109T063739Z",
+  "tool_count": 102,
+  "authentication": "none",
+  "contextual_semantic_bridge": {
+    "version": "semantic-bridge-patch002/1",
+    "status": "READY_OPT_IN",
+    "tools": [
+      "semantic_bridge_register",
+      "semantic_bridge_analyze",
+      "semantic_bridge_inspect",
+      "semantic_bridge_replay"
+    ],
+    "LLM_calls": 0,
+    "semantic_adjudication": "NOT_EVALUATED",
+    "proof_classes": [
+      "ALPHA_NORMALIZATION",
+      "NEGATION_NORMAL_FORM_EQUIVALENCE",
+      "SAME_PREFIX_BOOLEAN_MONOTONICITY"
+    ],
+    "proof_limits": "Sufficient exact rules, not complete FOL or source semantics",
+    "finite_search": "Shared deterministic closed-world cursor; both directions and all active pairs per world",
+    "directional_coverage": "requested/completed/undecided; finite exhaustion is not a theorem",
+    "client_semantic_protocol": "docs/semantic-bridge-patch002/LLM_SEMANTIC_AUDIT_PROTOCOL_RU.md",
+    "limits": {
+      "pairs": 10,
+      "scenarios": 8,
+      "hypotheses": 6,
+      "obligations_per_hypothesis": 8,
+      "source_links_per_hypothesis": 16,
+      "formula_nodes": 128,
+      "formula_depth": 16,
+      "boolean_atoms": 10,
+      "unique_search_models": 512,
+      "relation_cells": 16,
+      "worker_CPU_s": 5,
+      "worker_wall_s": 6,
+      "worker_RAM_MiB": 512,
+      "shared_active": 2,
+      "shared_queue": 16
+    },
+    "execution_permission": false
+  },
+  "execution_permission": {
+    "allowed": false
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "baseline": "b48c44e0793490d7157df710cf9b2faa9cd3acb2",
+  "snapshot": "3b85954a5e789ef5992e7b30614686582bb260df",
+  "reproduced_tree": "df99774bcac274867b3f4445118418636cecb39b",
+  "isolated_index": true
+}
