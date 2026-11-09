@@ -59,15 +59,18 @@ class Work:
 
 
 def scenario(hypothesis,signature,model,work):
-    valid=hypothesis['type_status']=='TYPED'
-    f=work.evaluate(hypothesis['formula_ast'],signature,model) if valid else {'status':'ILL_TYPED','truth':None}
-    assumptions=[work.evaluate(a,signature,model) for a in hypothesis['assumptions']] if valid else []
+    f=work.evaluate(hypothesis['formula_ast'],signature,model) if 'formula_ast' in hypothesis else {'status':'ILL_TYPED','truth':None}
+    assumptions=[]
+    for assumption in hypothesis['assumptions']:
+        value=work.evaluate(assumption,signature,model)
+        if value['status']=='ILL_TYPED':value={'status':'UNKNOWN','truth':None,'reason':'ILL_TYPED_ASSUMPTION','typecheck':value['typecheck'],'execution_permission':False}
+        assumptions.append(value)
     statuses=[x['status'] for x in assumptions]
-    applicability='CONTEXT_INCOMPATIBLE' if 'FALSE' in statuses else 'UNKNOWN_CONTEXT' if not valid or any(x!='TRUE' for x in statuses) else 'APPLICABLE'
+    applicability='CONTEXT_INCOMPATIBLE' if 'FALSE' in statuses else 'UNKNOWN_CONTEXT' if any(x!='TRUE' for x in statuses) else 'APPLICABLE'
     obligations=[]
     for o in hypothesis['obligations']:
         v={**o,'status':'OPEN'}
-        if valid and 'assumption_ast' in o:v['formal_assumption_check']=work.evaluate(o['assumption_ast'],signature,model)
+        if 'assumption_ast' in o:v['formal_assumption_check']=work.evaluate(o['assumption_ast'],signature,model)
         obligations.append(v)
     return {'hypothesis_ref':hypothesis['hypothesis_ref'],'client_id':hypothesis['client_id'],'formula_truth':f['status'] if f['status'] in ('TRUE','FALSE','ILL_TYPED') else 'UNKNOWN','formula_evaluation':f,'assumption_truths':assumptions,'applicability':applicability,'assumption_scope':'DECLARED_ASSUMPTIONS' if assumptions else 'NO_DECLARED_ASSUMPTIONS','source_alignment_status':'LANGUAGE_INSUFFICIENT' if hypothesis['type_status']=='LANGUAGE_INSUFFICIENT' else 'PROPOSED','obligations':obligations,'execution_permission':False}
 

@@ -191,3 +191,17 @@ def test_exhausted_evaluation_stops_total_analysis_budget():
     with pytest.raises(Bound,match='FORMULA_EVALUATION_BOUND'):work.evaluate(phi,sig,model)
     assert work.counter.steps==100
     model['world']='open';assert Work({'max_steps':100}).evaluate(phi,sig,model)['status']=='UNKNOWN'
+
+
+@pytest.mark.parametrize('case',['unsupported_empty','unsupported_false_context','typed_formula_bad_assumption'])
+def test_context_is_independent_of_formula_typing(case):
+    from lm_suti_assurance.semantic_bridge.contextual.engine import register
+    from lm_suti_assurance.semantic_bridge.contextual.relations import scenario,Work
+    q=make_arguments('a'*64)
+    if case=='unsupported_false_context':q['hypotheses'][4]['assumptions']=copy.deepcopy(q['hypotheses'][0]['assumptions'])
+    if case=='typed_formula_bad_assumption':q['hypotheses'][0]['assumptions']=[{'future':H['H0']}]
+    batch=register({'arguments':q,'source':PACK['source']});h=batch['hypotheses'][0 if case=='typed_formula_bad_assumption' else 4]
+    v=scenario(h,SIG,mk_model(0,0,0,0),Work({}))
+    if case=='unsupported_empty':assert v['formula_truth']=='ILL_TYPED' and v['applicability']=='APPLICABLE' and v['assumption_scope']=='NO_DECLARED_ASSUMPTIONS'
+    elif case=='unsupported_false_context':assert v['formula_truth']=='ILL_TYPED' and v['assumption_truths'][0]['status']=='FALSE' and v['applicability']=='CONTEXT_INCOMPATIBLE'
+    else:assert v['formula_truth']=='TRUE' and v['assumption_truths'][0]['status']=='UNKNOWN' and v['applicability']=='UNKNOWN_CONTEXT'
