@@ -1,0 +1,53 @@
+{
+  "schema": "mcp-completeness001-acceptance/1",
+  "status": "PASS_LOCAL_REAL_MCP_NOT_DEPLOYED",
+  "tests": {
+    "total_passed": 571,
+    "legacy_passed": 545,
+    "new_passed": 26,
+    "supplied_reference_passed": 25,
+    "real_MCP_checks_passed": 72,
+    "failures": 0
+  },
+  "fixture": {
+    "targets": 224,
+    "numeric_charts": 112,
+    "independent_pairs": 28,
+    "exact_partition_cells": 700,
+    "zero_boundary": 56,
+    "balance_boundary": 56,
+    "witness_max_L1": 18,
+    "witness_L1_bound": 24,
+    "pages_at_64": [
+      64,
+      64,
+      64,
+      32
+    ],
+    "executed_target_projections": 224,
+    "replayed_target_projections": 224,
+    "compute_complete": true,
+    "export_available": true,
+    "delivery_acked": true
+  },
+  "kernel_binding": "9dd0d9e26fd90b4e13b49f81ff3909ae5af8bdbfbb03b956c893d0c407d1e6be",
+  "plan_ref": "244bd1d1791aa64bb30e51a7275ea494d5308b22c461b59a9f557963fa9b6930",
+  "journal_entries": 8,
+  "journal_head": "efc72cf7817c8cd5bddc88c158ae159ccea0f54d7eb2349c069f3ce825ed6163",
+  "legacy_MCP_contracts_compared": 76,
+  "new_tools": 4,
+  "full_production_tool_count_unchanged": 102,
+  "scope": "cj_v1 finite integer qualitative coverage, not source semantics or infinite raw coverage",
+  "production": {
+    "deployed": false,
+    "version": "v0.4.15-developer-preview",
+    "deployment_id": "semantic-bridge002-20261109T063739Z",
+    "sqlite_integrity": "ok",
+    "audit_ok": true,
+    "events": 2058,
+    "audit_entries": 4817
+  },
+  "private_evidence_directory": "~/.local/state/livingmath/mcp-completeness001/acceptance-final",
+  "source_text_published": false,
+  "project_backups_created": 0
+}

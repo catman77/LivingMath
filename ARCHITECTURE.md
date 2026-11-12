@@ -39,6 +39,25 @@ HTTP-процесс проверяет входной контракт, прое
 Model pipe предлагает интерпретации; вычислительные workers и независимые
 проверяющие не используют LLM. Проверка вычислений не удостоверяет смысл текста.
 
+## Opt-in конечное CJ-покрытие (исходники, без production-установки)
+
+`src/lm_suti_assurance/completeness/` добавляет четыре инструмента:
+`coverage_plan`, `coverage_advance`, `coverage_inspect`, `coverage_replay`.
+`planner.py` вызывает прежний atlas compiler и строит adjugate witnesses;
+`verify.py` независимо восстанавливает атлас и точный Q-domain рациональными
+ячейками. `worker.py` выполняет исходный `cad.project` на настоящем Pair witness
+под прежней изоляцией; `executor.py` использует bounded transport и общий
+численный бюджет. `service.py` атомарно сохраняет checked receipts и следующий
+индекс в проектном Workspace. `contracts.py` закрепляет scope/лимиты/kernel,
+`mcp.py` публикует strict схемы и полные structured pages.
+
+Source/encoding/atlas, план и receipts адресуются содержимым; append-only журнал
+проверяется при resume. Coverage не обновляет heuristic clocks, signature graph
+или CAT memory. Готовность вычисления, доступность экспорта и подтверждение
+клиента имеют отдельные статусы. Vendor и прежние схемы не меняются. В entry
+регистрация включается только owner-настройкой `certified_coverage.enabled=true`.
+[Контракт и приёмка](docs/completeness001/USAGE_RU.md).
+
 ## Точки входа и сборка приложения
 
 | Файл | Назначение |

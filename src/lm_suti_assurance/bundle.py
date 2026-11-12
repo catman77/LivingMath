@@ -19,6 +19,10 @@ def export_bundle(workspace, audience='private'):
     with workspace.locked():
         rows = workspace.history()
         require(bool(rows), 'PROJECT_NOT_FOUND')
+        if any(r['action'].startswith('coverage.') for r in rows):
+            raise AssuranceError('COVERAGE_EXPORT_REQUIRES_PLAN_REF', details={
+                'tool': 'coverage_inspect', 'view': 'records',
+                'reason': 'Coverage source requests are private; generic bundles cannot assert publication rights or replay this journal.'})
         if any(r['action'].startswith('symbolic.') for r in rows):
             raise AssuranceError('SYMBOLIC_EXPORT_REQUIRES_RUN_ID', details={'tool':'white_star_symbolic_inspect','view':'export'})
         if any(r['action'].startswith('white.') for r in rows):

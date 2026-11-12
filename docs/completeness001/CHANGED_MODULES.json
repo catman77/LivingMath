@@ -1,0 +1,23 @@
+{
+  "schema": "completeness-changed-modules/1",
+  "base_commit": "b5408c7aa040ebaa018625282196e37d9516e6d9",
+  "kernel_binding": "9dd0d9e26fd90b4e13b49f81ff3909ae5af8bdbfbb03b956c893d0c407d1e6be",
+  "preserved_native_sha256": "d808f08afa2375a4c84e958ac0c34df7d13e8b6c0a4a8e629e0d66cfb29929ee",
+  "files": {
+    "src/lm_suti_assurance/bundle.py": "58670b2a5817208a2f7bad2a22fc82f2cc236c6f0196957937ee7d4b9edb3639",
+    "src/lm_suti_assurance/completeness/__init__.py": "cb3313dcaad4d2c638d6c7ccf51b40316eb110741c9c78d36d0c1420974ab550",
+    "src/lm_suti_assurance/completeness/contracts.py": "9e37cd19288b647c6f46d1746588d8efb026677ff0296940d5c5a59c23650c1e",
+    "src/lm_suti_assurance/completeness/executor.py": "76d3927db5b8aaba41045cf6501b7f7ae502ae19e2c349b8f62e99da10a08b0f",
+    "src/lm_suti_assurance/completeness/mcp.py": "19a7012dd24037c12c6aaab46079f86f8557a5916d105c4d44c67f0670989ea9",
+    "src/lm_suti_assurance/completeness/planner.py": "bfc5f68a4c2fee87826d23ad2ff69b88160dee946375e9cd84cfce481f4f7be1",
+    "src/lm_suti_assurance/completeness/service.py": "a9127f4075e245333dda8493173a71fe31d8486a7f945e2566336846eaa4a5bd",
+    "src/lm_suti_assurance/completeness/verify.py": "f5495a950df576f16332522cd22820b56bdee50b11346da39e6d94be76ab5ea2",
+    "src/lm_suti_assurance/completeness/worker.py": "126ee9b1999a2018ebaf88b3ff7154f3374d469a280796b91183e695b7dc1b43",
+    "tests/test_completeness.py": "080c0b85d8169dde625fed0e8bb25651da8b4a7dd9016de2fd41b4780191cca2",
+    "tests/test_completeness_boundaries.py": "41fce84c350529a6b8342278765c12ee2aac60ecca1624302ea24d477d3212d2",
+    "tools/completeness001_mcp_qa.py": "42f9574b28732fc68528be362b2b0a0103bd4e9ac06b090d7d149ad7fe802202",
+    "tools/completeness001_server.py": "e3e031424ae382868229603c7d6eb9e889added717ad38f7e2aa9b270ecd757f",
+    "tools/completeness001_verify.py": "ca6384a7f5271125ac7e24d17261ed0fe4d9f5bafd6c08c8bb0913f91a48e718",
+    "tools/release_v01_entry.py": "fb7708dc72e5aec1749b05bea1d71952273822ef8a83329b02d668c4793a5f33"
+  }
+}

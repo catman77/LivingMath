@@ -65,6 +65,15 @@ def serve(path):
         if white_pool is not None:
             white_pool = BudgetedPool(white_pool, numeric_budget)
         udav_pool = UDAVExecutor(shared_symbolic_budget, numeric_budget)
+    coverage_pool = None
+    if cfg.get('certified_coverage') == {'enabled':True}:
+        from lm_suti_assurance.completeness.executor import Executor as CoverageExecutor
+        if udav_pool is None:
+            numeric_budget = SharedBudget()
+            if white_pool is not None:
+                from lm_suti_assurance.udav_core.executor import BudgetedPool
+                white_pool = BudgetedPool(white_pool, numeric_budget)
+        coverage_pool = CoverageExecutor(numeric_budget)
     contextual_pool = None
     if cfg.get('contextual_semantic_bridge') == {'enabled':True}:
         from lm_suti_assurance.semantic_bridge.contextual.executor import Executor as ContextualExecutor
@@ -164,6 +173,9 @@ def serve(path):
             from lm_suti_assurance.udav_core.mcp import register_tools as register_udav
             register_udav(server, cfg['assurance_state'], udav_pool,
                           numeric=cfg['udav_core'].get('numeric') is True, recover=True)
+        if coverage_pool is not None:
+            from lm_suti_assurance.completeness.mcp import register_tools as register_coverage
+            register_coverage(server, cfg['assurance_state'], coverage_pool)
         if contextual_pool is not None:
             from lm_suti_assurance.semantic_bridge.contextual.mcp import register_tools as register_contextual
             register_contextual(server, cfg['assurance_state'], contextual_pool, recover=True)
@@ -185,6 +197,9 @@ def serve(path):
                         value['nl_proposal_bridge'] = nl_capabilities(nl_provider)
                         if udav_pool is not None:
                             value['udav_core'] = {'version': 'udav-core/1', 'symbolic_policy': 'frontier_argument_coverage_v1', 'numeric_policy': 'cat_distinction_tiebreak_v1' if cfg['udav_core'].get('numeric') else 'EXPERIMENTAL_NOT_DEPLOYED', 'worker': udav_pool.status(), 'execution_permission': False}
+                        if coverage_pool is not None:
+                            from lm_suti_assurance.completeness.mcp import capabilities as coverage_capabilities
+                            value['certified_coverage'] = coverage_capabilities(coverage_pool)
                         if contextual_pool is not None:
                             from lm_suti_assurance.semantic_bridge.contextual.mcp import capabilities as contextual_capabilities
                             value['contextual_semantic_bridge'] = contextual_capabilities(contextual_pool)
@@ -230,6 +245,7 @@ def serve(path):
         if provider is not None:provider.close()
         if white_pool is not None:white_pool.close()
         if udav_pool is not None:udav_pool.close()
+        if coverage_pool is not None:coverage_pool.close()
         if contextual_pool is not None:contextual_pool.close()
         symbolic_pool.close()
         for profile in replay_profiles.values(): profile.close()
