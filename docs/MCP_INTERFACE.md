@@ -1,8 +1,8 @@
-# MCP-интерфейс LivingMath v0.4.15
+# MCP-интерфейс LivingMath v0.4.16
 
-Актуальная production-композиция: **102 инструмента**, версия сервера
-`v0.4.15-developer-preview`, пакет `0.4.15.dev0`. [Архитектура](../ARCHITECTURE.md),
-[установка и различия 44/102](INSTALL.md), [исходный текст и rights](USAGE.md).
+Актуальная production-композиция: **106 инструментов**, версия сервера
+`v0.4.16-developer-preview`, пакет `0.4.16.dev0`. [Архитектура](../ARCHITECTURE.md),
+[установка и различия 44/106](INSTALL.md), [исходный текст и rights](USAGE.md).
 
 ## Транспорт и обнаружение
 
@@ -38,11 +38,11 @@ OAuth-режиме перед этим выполняется discovery/login/to
 не доказывает эффективность исследования.
 
 Полные input/output schemas, описания и annotations всех методов:
-[API_SCHEMAS.json](semantic-bridge-patch002/API_SCHEMAS.json).
+[API_SCHEMAS.json](completeness001/API_SCHEMAS.json).
 Это неизменённый ответ настоящего production `tools/list` из последней приёмки,
 не схема, восстановленная из описания. Для конкретного подключения приоритет
 имеет его текущий `tools/list`. При закешированном старом наборе обновите
-подключение к текущему origin, указанному выше, затем проверьте102 tools. Старый
+подключение к текущему origin, указанному выше, затем проверьте106 tools. Старый
 удалённый Cloudflare URL обновлением списка не восстановить. Публикация GitHub
 сама по себе не перезапускает сервер.
 
@@ -64,7 +64,8 @@ OAuth-режиме перед этим выполняется discovery/login/to
 | Frozen causal decoder |1| `nl_proposal/causal_mcp.py` |
 | UDAV Core opt-in |4| `src/lm_suti_assurance/udav_core/mcp.py` |
 | Contextual Semantic Bridge |4| `src/lm_suti_assurance/semantic_bridge/contextual/mcp.py` |
-| **Всего** | **102** | `tools/release_v01_entry.py` объединяет регистрации |
+| Certified CJ coverage |4| `src/lm_suti_assurance/completeness/mcp.py` |
+| **Всего** | **106** | `tools/release_v01_entry.py` объединяет регистрации |
 
 ## Проекты, запросы и разрешения
 
@@ -379,7 +380,7 @@ model, record, imported grammar/DFA или untrusted proof. `formal_synthesize`
 `UNKNOWN_BOUND`, `UNKNOWN_CYCLE`, `NO_DIFFERENCE_WITHIN_BOUND` не означают grant,
 refutation of author intent или equivalence. `CHECKED_INSTANCE` — конечная проверка.
 
-После обновления клиент повторяет initialize/tools/list: текущая композиция102 tools.
+После обновления клиент повторяет initialize/tools/list: текущая композиция106 tools.
 Для этой поставки прежний Cloudflare origin был удалён; подключите LivingMath к
 `https://difficulty-nightlife-rca-missions.trycloudflare.com/mcp`, затем обновите
 список инструментов. Сохранённые runs читаются из прежней базы.
@@ -401,7 +402,7 @@ parents, snapshot и AST guards отклоняются отдельно. `matche
 
 Для ChatGPT после обновления используйте текущий origin из начала документа.
 Если tools/list ещё содержит91 или93 метода, переподключите LivingMath к новому
-адресу и дождитесь повторного initialize/tools/list с102 инструментами.
+адресу и дождитесь повторного initialize/tools/list с106 инструментами.
 
 ## Frozen NL causal redecode (добавлен0.4.11)
 
@@ -485,3 +486,13 @@ RISK_FACTIVITY_LEAK можно описать kind LEXICAL_ASSUMPTION/CONTEXT.
 [Практический клиентский протокол](semantic-bridge-patch002/LLM_SEMANTIC_AUDIT_PROTOCOL_RU.md).
 Старые immutable результаты доступны inspect; replay другого binding возвращает
 KERNEL_BINDING_UNAVAILABLE. [Полные актуальные вызовы](semantic-bridge-patch002/MCP_EXAMPLES.json).
+
+## Certified finite CJ coverage (добавлено v0.4.16)
+
+`coverage_plan`, `coverage_advance`, `coverage_inspect`, `coverage_replay`
+обслуживают полный конечный качественный domain cj_v1; все102 прежних контракта
+сохранены. Source/encoding/atlas/kernel закреплены, checkpoints долговечны,
+полный export не зависит от preview кадров. Вычисление, доступность экспорта и
+явное client acknowledgement — разные статусы. Смысл источника не верифицируется.
+[Точные аргументы и воспроизведение](completeness001/USAGE_RU.md),
+[фактическая HTTPS-приёмка](completeness001/DEPLOYMENT_RU.md).

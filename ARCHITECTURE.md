@@ -1,7 +1,7 @@
 # Архитектура MCP-сервера LivingMath
 
-Срез архитектуры: **v0.4.15-developer-preview**, пакет Python `0.4.15.dev0`.
-Production объединяет **102 MCP-инструмента** в одном Streamable HTTP
+Срез архитектуры: **v0.4.16-developer-preview**, пакет Python `0.4.16.dev0`.
+Production объединяет **106 MCP-инструментов** в одном Streamable HTTP
 endpoint `/mcp`. [Справочник интерфейса](docs/MCP_INTERFACE.md),
 [установка](docs/INSTALL.md), [примеры запросов](docs/USAGE.md).
 
@@ -39,7 +39,7 @@ HTTP-процесс проверяет входной контракт, прое
 Model pipe предлагает интерпретации; вычислительные workers и независимые
 проверяющие не используют LLM. Проверка вычислений не удостоверяет смысл текста.
 
-## Opt-in конечное CJ-покрытие (исходники, без production-установки)
+## Opt-in конечное CJ-покрытие (v0.4.16, установлено в production)
 
 `src/lm_suti_assurance/completeness/` добавляет четыре инструмента:
 `coverage_plan`, `coverage_advance`, `coverage_inspect`, `coverage_replay`.

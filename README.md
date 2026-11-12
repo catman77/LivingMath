@@ -4,16 +4,16 @@
 свидетели и контрпримеры → сохраняемая история исследования. MCP-интерфейс
 объединяет LivingMath, проверку исходных схем SUTI и алхимическую модель ALCH006.
 
-Текущий продукт: **`v0.4.15-developer-preview`**: assurance CLI, Semantic Bridge, White Star, Symbolic V1, UDAV Core и contextual FOL checks; **102 MCP-инструмента** (98 прежних +4). [Установка](README_QUICKSTART_RU.md), [White Star и сравнение режимов](docs/white-star/QUICKSTART_RU.md), [Semantic Bridge](docs/semantic-bridge/QUICKSTART_RU.md), [CLI](CLI_REFERENCE.md), [границы возможностей](LIMITATIONS.md).
+Текущий продукт: **`v0.4.16-developer-preview`**: assurance CLI, Semantic Bridge, White Star, Symbolic V1, UDAV Core и contextual FOL checks; **106 MCP-инструментов** (102 прежних +4). [Установка](README_QUICKSTART_RU.md), [White Star и сравнение режимов](docs/white-star/QUICKSTART_RU.md), [Semantic Bridge](docs/semantic-bridge/QUICKSTART_RU.md), [CLI](CLI_REFERENCE.md), [границы возможностей](LIMITATIONS.md).
 
 
 Текущий MCP доступен **без аутентификации** по прежнему HTTPS-адресу;
 `authentication=none`. [Транспорт и подключение](docs/MCP_INTERFACE.md).
 
-В исходниках добавлен opt-in **MCP-COMPLETENESS-001**: конструктор полного
+В production установлен opt-in **MCP-COMPLETENESS-001**: конструктор полного
 конечного CJ-плана, обязательные CAD-проекции, долговечный checkpoint, полный
-экспорт и явное подтверждение клиента. Это отдельное расширение, ещё не
-установленное в текущий production. [Использование и воспроизведение](docs/completeness001/USAGE_RU.md).
+экспорт и явное подтверждение клиента. Развёртывание и 224/224 проекции проверены через действующий HTTPS MCP.
+[Приёмка production](docs/completeness001/DEPLOYMENT_RU.md). [Использование и воспроизведение](docs/completeness001/USAGE_RU.md).
 
 **Semantic Bridge PATCH002 (0.4.15)** добавляет проверяемые доказательства для
 одинаковых смешанных ∀/∃-префиксов и узкой ННФ. Общий поток конечных миров
@@ -63,7 +63,7 @@ source-bound типизированные FOL proposals. Проверены дв
 
 Основной репозиторий: **[catman77/LivingMath](https://github.com/catman77/LivingMath)**.
 [Архитектура сервера и назначение модулей](ARCHITECTURE.md) ·
-[MCP-интерфейс: транспорт, 102 инструмента, схемы и примеры](docs/MCP_INTERFACE.md) ·
+[MCP-интерфейс: транспорт, 106 инструментов, схемы и примеры](docs/MCP_INTERFACE.md) ·
 [Установка CLI, legacy и полного production entry](docs/INSTALL.md).
 
 White Star использует предоставленное неизменённое ядро Белая звезда → CAD → Удав. Один frozen semantic snapshot можно передать ему и действующему Bridge/assurance без повторного extraction. Численные предложения и сохранённые LLM-прочтения разделены; native SUTI не исполняется. [Отчёт, фактическое сравнение и приёмка](docs/white-star/USER_REPORT_RU.md).
@@ -116,7 +116,7 @@ python -m pytest -q tests
 
 Это установка текущего кода и локальная проверка; HTTP автоматически не запускается.
 Действующий полный сервер запускается через `tools/release_v01_entry.py` с
-приватной owner-конфигурацией и публикует **102** инструмента. Отдельный
+приватной owner-конфигурацией и публикует **106** инструментов. Отдельный
 `unified_system.local prepare/serve/smoke` создаёт новый legacy стенд с **44**
 инструментами; он не является установщиком полного production release.
 
