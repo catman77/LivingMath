@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.4.16-developer-preview — 2026-11-12
+
+- Add four opt-in MCP coverage tools for the finite `cj_v1` qualitative observer, using the original atlas and CAD primitive.
+- Persist immutable plans, checked target receipts and atomic prefix checkpoints; preserve retries, restart/resume, numerical aliases and boundary states.
+- Separate computation, complete export and explicit client delivery acknowledgement. Reject generic bundles for private coverage journals.
+- Keep all102 previous MCP contracts and native/mathematical kernels; full enabled composition exposes106 tools. No source semantics or execution grant is inferred.
+- Keep GitHub Actions disabled. Validate and deploy locally with the same HTTPS endpoint and existing databases.
+
 ## v0.4.15-developer-preview — 2026-11-09
 
 - Certify same mixed forall/exists prefix Boolean implications and narrow negation-normal-form equivalence with independent raw-AST reconstruction.

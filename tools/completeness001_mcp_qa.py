@@ -1,6 +1,6 @@
-"""Real loopback HTTP/MCP acceptance, restart/resume, and independent export audit.
+"""Real HTTP/MCP acceptance, resume, and independent export audit.
 
-All output is private. No production configuration/database is opened or cloned.
+All output is private. External endpoints receive only isolated QA projects.
 """
 import argparse
 import asyncio
@@ -38,7 +38,7 @@ async def main(a):
     request=json.loads(a.input.read_text())
     with socket.socket() as sock:
         sock.bind(('127.0.0.1',0)); port=sock.getsockname()[1]
-    endpoint=f'http://127.0.0.1:{port}/mcp'
+    endpoint=a.endpoint or f'http://127.0.0.1:{port}/mcp'
     child=None
     log=(out/'server.log').open('a')
     def stop():
@@ -50,6 +50,8 @@ async def main(a):
             child=None
     async def start(baseline=False):
         nonlocal child
+        if a.endpoint:
+            return
         args=[sys.executable,str(ROOT/'tools/completeness001_server.py'),'--state',str(out/'workspaces'),'--port',str(port)]
         if baseline: args.append('--without-coverage')
         child=subprocess.Popen(args,stdout=log,stderr=log,cwd=ROOT,env={**os.environ,'PYTHONDONTWRITEBYTECODE':'1'})
@@ -63,12 +65,18 @@ async def main(a):
     from contextlib import asynccontextmanager
     @asynccontextmanager
     async def connect():
-        async with httpx.AsyncClient(timeout=120) as http:
+        headers={'Host':a.host_header} if a.host_header else {}
+        async with httpx.AsyncClient(timeout=120,headers=headers) as http:
             async with streamable_http_client(endpoint,http_client=http) as (rd,wr,_):
                 async with ClientSession(TappedStream(rd,out/'wire.jsonl','server_to_client'),TappedStream(wr,out/'wire.jsonl','client_to_server')) as c:
                     info=await c.initialize(); save('initialize.json',info.model_dump(mode='json'))
+                    if a.expected_version:
+                        check('actual initialized server version',info.serverInfo.version==a.expected_version)
                     yield c
     async def call(c,tool,args,error=None):
+        args=dict(args)
+        if args.get('project')=='coverage-qa':args['project']=a.project
+        elif args.get('project')=='other-qa':args['project']=a.project+'-other'
         response=await c.call_tool(tool,args)
         with (out/'transcript.jsonl').open('a') as f:
             f.write(json.dumps({'tool':tool,'arguments':args,'response':response.model_dump(mode='json')},ensure_ascii=False)+'\n')
@@ -79,9 +87,13 @@ async def main(a):
         check('call '+tool+' succeeds',not response.isError and payload.get('ok',True))
         return payload.get('data',payload)
     try:
-        await start(True)
-        async with connect() as c:
-            baseline=(await c.list_tools()).model_dump(mode='json'); save('tools-before.json',baseline)
+        if a.endpoint:
+            assert a.baseline_tools is not None,'--baseline-tools required for external endpoint'
+            baseline=json.loads(a.baseline_tools.read_text());save('tools-before.json',baseline)
+        else:
+            await start(True)
+            async with connect() as c:
+                baseline=(await c.list_tools()).model_dump(mode='json'); save('tools-before.json',baseline)
         stop()
         await start()
         async with connect() as c:
@@ -119,7 +131,7 @@ async def main(a):
         stop();await start()
         async with connect() as c:
             restored=await call(c,'coverage_inspect',{'project':'coverage-qa','plan_ref':ref})
-            check('actual process restart restores exact committed prefix',restored['cursor']==current['cursor'] and restored['computed_count']==17)
+            check('client reconnect restores committed prefix' if a.endpoint else 'actual process restart restores exact committed prefix',restored['cursor']==current['cursor'] and restored['computed_count']==17)
             for n,budget in enumerate([47,64,96],2):
                 current=await call(c,'coverage_advance',{'project':'coverage-qa','plan_ref':ref,'request_key':f'work{n}','cursor':current['cursor'],'work_budget':budget})
                 check('no hidden CAT veto or lost work',current['advanced_count']==budget)
@@ -156,10 +168,12 @@ async def main(a):
             check('explicit named client acknowledgement persisted',final['delivery_acked'])
             save('final-summary.json',final)
         from lm_suti_assurance.workspace import Workspace,validate_history
-        w=Workspace(out/'workspaces','coverage-qa');rows=w.history()
-        head=validate_history(rows)
-        check('append-only journal and all content-addressed objects intact',all(w.get(r) is not None for row in rows for r in row['object_refs']))
-        save('result.json',{'status':'PASS','checks':len(checks),'failures':0,'endpoint_scope':'LOCAL_LOOPBACK_REAL_MCP_NOT_PRODUCTION','plan_ref':ref,'source_sha256':request['encoding']['source']['sha256'],'computed':224,'delivery_acked':True,'journal_entries':len(rows),'journal_head':head,'independent':independent,'production_deployed':False})
+        rows=[];head=None
+        if not a.endpoint:
+            w=Workspace(out/'workspaces',a.project);rows=w.history()
+            head=validate_history(rows)
+            check('append-only journal and all content-addressed objects intact',all(w.get(r) is not None for row in rows for r in row['object_refs']))
+        save('result.json',{'status':'PASS','checks':len(checks),'failures':0,'endpoint_scope':a.endpoint_scope if a.endpoint else 'LOCAL_LOOPBACK_REAL_MCP_NOT_PRODUCTION','plan_ref':ref,'project':a.project,'source_sha256':request['encoding']['source']['sha256'],'computed':224,'delivery_acked':True,'journal_entries':len(rows) if rows else None,'journal_head':head,'independent':independent,'production_deployed':bool(a.endpoint and a.endpoint_scope=='PRODUCTION_HTTPS')})
         print(json.dumps({'status':'PASS','checks':len(checks),'output':str(out)}))
     except BaseException as e:
         save('result.json',{'status':'FAIL','error':str(e),'checks':len(checks),'production_deployed':False})
@@ -172,4 +186,10 @@ if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--input',type=Path,required=True)
     p.add_argument('--output',type=Path,required=True)
+    p.add_argument('--endpoint')
+    p.add_argument('--baseline-tools',type=Path)
+    p.add_argument('--project',default='coverage-qa')
+    p.add_argument('--expected-version')
+    p.add_argument('--host-header')
+    p.add_argument('--endpoint-scope',choices=['STAGING_FULL_COMPOSITION','PRODUCTION_HTTPS'],default='STAGING_FULL_COMPOSITION')
     asyncio.run(main(p.parse_args()))
